@@ -1,0 +1,9 @@
+# figure: fig02 panel c (Extended Fig. 13b), without_Ketchesin
+# script: B/scripts/b4_fig13b_without_ketchesin.py (row logic of analyses/figure_exports/export_fig02_fig07.py::fig2_c), run 2026-10-19
+# input: A/scripts/a1_rerun_no_ketchesin/a1_*.tsv sha256 summary 08ae45afa14f, boot b565b7cc386a, pairs 25feae0dd641
+# brain-brain pairs from different groups, datasets with Gemma reanalyses; method published = the study's own list, gemma_sized = Gemma list cut to the same size; interval = dataset-level bootstrap (1000, seed 20260925) of the difference gemma minus published, not of each pooled fold
+kind	method	statistic	estimate	boot_lo95	boot_hi95	n_pairs	n_studies
+pooled	published	pooled_fold	1.43			28	8
+pooled	gemma_sized	pooled_fold	1.497			28	8
+difference	gemma_sized minus published	pooled_fold	0.06726	-0.3802	0.5708	28	
+difference	gemma_sized minus published	median_log2_fold	-0.03487	-0.6521	0.4604	28	

@@ -1,0 +1,24 @@
+# claim: 209 recurrent genes (study_brain; 376 with SZ sign) scored against Li 2007 agonal-stress gene lists; null = 10000 expression-decile-matched sets, seed 20261012
+# script: analyses/li2007_agonal_2026-10-12/score_li2007_209.py
+# source: li2007_agonal_genes.tsv sha256 35834e7ab8b93af342450a00401455b591fed8f14fd49c83f4b3c46d352250e1
+# source: recurrent_sets.tsv sha256 3c42f67cdd7acb751592af24bae4c2c1a917bc5a880b8fe74d2d14cd8ef85403; recurrence_genes.tsv sha256 dda5eb621c155963ef712788758e31b4cb169773fc7198fa4116cc89f4244195; axis_pritzker_agonal_GPL17027.tsv.gz sha256 1423d5dae86168f2de7e8b23ae671603001f18b6079a97f79fd0c94ded37e570; combined_controls_pH.tsv sha256 da2fc515de6286b23da791d241632669848d3afb258ce1ea4f39bad6efcb1484
+# Li symbol mapping to HGNC: {'approved': 1534, 'alias_or_previous': 319, 'unmapped': 31}; 1816 genes with a value
+# run: 2026-10-17
+# control-pH row same reference: rho_bar 0.1749, VIF 64.49, z 9.46 -> 1.18
+axis	reference	m_genes	genes_in_reference	n_pairs	rho_bar	rho_bar_lo	rho_bar_hi	VIF	z_uncorrected	z_corrected	p_corrected_one_sided
+Li 2007 agonal t (listed genes only)	five collections pooled (primary)	132	132	8644	0.3322	0.2903	0.3689	44.51	2.68	0.4	0.34395530119163886
+Li 2007 agonal t (listed genes only)	GTEx BA9	132	70	2415	0.3902			52.11	2.68	0.37	0.35522695271388727
+Li 2007 agonal t (listed genes only)	GTEx Cortex	132	70	2415	0.3488			46.69	2.68	0.39	0.3474551950373723
+Li 2007 agonal t (listed genes only)	GSE21138	132	130	8385	0.2733			36.8	2.68	0.44	0.3293281005911376
+Li 2007 agonal t (listed genes only)	GSE35977	132	130	8385	0.3675			49.14	2.68	0.38	0.3511147298843475
+Li 2007 agonal t (listed genes only)	GSE53987_BA46	132	131	8515	0.2518			33.99	2.68	0.46	0.3228768493058549
+Li 2007 agonal t (listed genes only)	GSE17612	132	129	8256	0.2937			39.47	2.68	0.43	0.3348388547427966
+Li 2007 agonal t (listed genes only)	GSE92538_GPL96	132	127	8001	0.4225			56.34	2.68	0.36	0.3605334978058614
+Li 2007 agonal t (genes outside the 2,000 listed = 0)	five collections pooled (primary)	376	373	69316	0.1729	0.1504	0.2019	65.84	10.51	1.3	0.09761053810366832
+Li 2007 agonal t (genes outside the 2,000 listed = 0)	GTEx BA9	376	194	18721	0.2419			91.72	10.51	1.1	0.13623463708443612
+Li 2007 agonal t (genes outside the 2,000 listed = 0)	GTEx Cortex	376	194	18721	0.2276			86.35	10.51	1.13	0.12902086601450374
+Li 2007 agonal t (genes outside the 2,000 listed = 0)	GSE21138	376	355	62835	0.1349			51.57	10.51	1.46	0.07166446845287383
+Li 2007 agonal t (genes outside the 2,000 listed = 0)	GSE35977	376	367	67161	0.1977			75.15	10.51	1.21	0.11268858265331627
+Li 2007 agonal t (genes outside the 2,000 listed = 0)	GSE53987_BA46	376	359	64261	0.144			54.99	10.51	1.42	0.07819476711144835
+Li 2007 agonal t (genes outside the 2,000 listed = 0)	GSE17612	376	351	61425	0.148			56.51	10.51	1.4	0.08104867573900099
+Li 2007 agonal t (genes outside the 2,000 listed = 0)	GSE92538_GPL96	376	309	47586	0.2511			95.15	10.51	1.08	0.14063740350035392

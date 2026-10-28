@@ -1,0 +1,19 @@
+# figure: fig08 panel e
+# script: analyses/redo_on_209_2026-10-11/3_ph_agonal_axes/export_fig08_209.py (copy of analyses/figure_exports/export_fig08_fig09_fig10.py: output folder, population text, results_516 in place of results_516, fig08 only), run 2026-10-11
+# input: analyses/gtex_ischemia_2026-10-08/results_by_region.tsv sha256 a980741caa30
+# GTEx v8 brain: per gene (median TPM >= 1 in the region) OLS of log2(TPM + 1) on ischemic time, age, sex and Hardy scale; 'hardy' = slow death (4) vs fast natural death (2) t statistic; Spearman rho with the control pH Z, PMI Z and the Dachet 24 h change. 13 regions; run 2026-10-08 (gtex_ischemic_time.py)
+# axis: unsuffixed pH columns = pH axis v2 (primary; inputs_ph_axis_v2/axis_v2_controls.tsv.gz sha256 2c72a9b279a2; 10 dataset-regions, persons counted once); columns ending _axis_v1 = v1 fork (5 donor-separate datasets; analyses/confounds/results/combined_controls_pH.tsv sha256 ebab86afedd3)
+region	samples	genes	rho_hardy_vs_ph	n_genes_ph	rho_hardy_vs_pmi	rho_hardy_vs_dachet	n_genes_dachet	rho_ischemic_vs_ph	rho_ischemic_vs_pmi	rho_ischemic_vs_dachet	rho_hardy_vs_ph_axis_v1	n_genes_ph_axis_v1	rho_ischemic_vs_ph_axis_v1
+Brain - Amygdala	152	15122	-0.14	11626	-0.281	0.396	12535	0.125	0.113	-0.228	-0.23	11555	0.128
+Brain - Anterior cingulate cortex (BA24)	176	15519	-0.39	11783	-0.47	0.58	12717	0.554	0.447	-0.638	-0.514	11704	0.633
+Brain - Caudate (basal ganglia)	246	15761	-0.389	11824	-0.379	0.522	12789	0.193	0.143	-0.294	-0.474	11745	0.188
+Brain - Cerebellar Hemisphere	215	17507	-0.265	11770	-0.151	0.141	12763	0.384	0.237	-0.168	-0.278	11688	0.396
+Brain - Cerebellum	241	17919	-0.176	11959	-0.28	0.18	12937	0.385	0.293	-0.203	-0.262	11871	0.442
+Brain - Cortex	255	16262	-0.357	12032	-0.409	0.452	12997	-0.225	0.08	0.017	-0.473	11947	-0.16
+Brain - Frontal Cortex (BA9)	209	16234	-0.46	12021	-0.446	0.449	13004	0.198	0.201	-0.275	-0.566	11938	0.261
+Brain - Hippocampus	197	15278	-0.2	11675	-0.149	0.189	12610	0.223	0.378	-0.558	-0.244	11601	0.282
+Brain - Hypothalamus	202	16206	-0.139	12049	-0.168	0.203	13059	0.491	0.088	-0.131	-0.198	11967	0.424
+Brain - Nucleus accumbens (basal ganglia)	246	15958	-0.276	11827	-0.169	0.301	12798	0.315	0.147	-0.275	-0.317	11744	0.306
+Brain - Putamen (basal ganglia)	205	15023	-0.183	11543	-0.111	0.148	12436	0.211	-0.057	0.001	-0.203	11472	0.124
+Brain - Spinal cord (cervical c-1)	159	16087	-0.082	11803	0.051	-0.024	12815	0.366	0.199	-0.355	-0.064	11723	0.332
+Brain - Substantia nigra	139	15245	-0.301	11628	-0.342	0.407	12572	-0.138	-0.046	-0.093	-0.385	11553	-0.169

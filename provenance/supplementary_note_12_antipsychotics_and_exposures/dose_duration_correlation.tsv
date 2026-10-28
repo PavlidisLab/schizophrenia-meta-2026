@@ -1,0 +1,5 @@
+# script: F/scripts/dose_duration_correlation.py (run 2026-10-19)
+# input: ~/.cache/stanley_demographics_local/matched_LOCAL_ONLY.tsv sha256 05d03a414d23 (laptop-only; aggregates only written)
+group	n	pearson_r	pearson_lo95	pearson_hi95	spearman_rho	vif_dose_given_duration_age_sex_pH_PMI	vif_duration_given_dose_age_sex_pH_PMI
+SZ only	49	0.060	-0.225	0.335	0.377	1.10	3.56
+SZ+BP	92	0.170	-0.036	0.362	0.326	1.55	2.22

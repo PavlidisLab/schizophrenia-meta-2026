@@ -1,0 +1,16 @@
+# figure: fig01 (pH handling and covariates per study, before 2016 against 2016 on); script: core80_sweep_2026-10-18/G1/build_g1.py (scipy 1.15.3); run 2026-10-18
+# input: figures/data/fig01/fig01_b_reporting_completeness_80.tsv sha256 a25c27cf37f4; 80 studies, PMIDs identical to base80_studies.tsv sha256 09dc9e52c590
+# rule, era: before 2016 = year <= 2015 (era_2016 = old, 31 studies); 2016 on = year >= 2016 (era_2016 = new, 49 studies)
+# rule, pH handled: cov_ph_v2 is one of 'adjusted covariate', 'matched', 'sensitivity only', 'not covariate in primary; sensitivity with pH'; not handled = 'silent', 'reported only', 'unread', 'discussed as confound without adjustment', 'considered as candidate covariate'; all 80 studies in the denominator (none is not_applicable for pH)
+# rule, covariates per study: number of covariates handled = cov_<name>_v2 in {adjusted, matched_or_compared, sensitivity} or, for pH, cov_ph_v2 in the pH-handled values above (the ACTED set of build_fig_corpus.py panel_f); not_applicable, reported_only, not_mentioned, unresolved, blank and the other pH values count as not handled; 10 covariates = age, sex, pmi, ph, rin, cause_of_death_agonal, medication, smoking, batch, cell_composition (as plotted); 13 = those plus substance_use, ancestry, hidden_factors
+# tests: Fisher exact test two-sided on the 2 x 2 table (era x pH handled); Mann-Whitney U two-sided (U is that of the before-2016 group; p exact where scipy picks the exact method, the extra column gives the asymptotic p with tie correction)
+quantity	group	n_studies	n_handled	value	statistic	p	extra
+pH handled (adjusted, matched or sensitivity)	before 2016	31	19	61.3%			
+pH handled (adjusted, matched or sensitivity)	2016 on	49	24	49.0%			
+pH handled: Fisher exact test, two-sided					odds ratio 1.649	P = 0.3589	
+covariates handled per study, 10 covariates of Fig. 1f	before 2016	31		mean 5.06 of 10; median 5			
+covariates handled per study, 10 covariates of Fig. 1f	2016 on	49		mean 5.86 of 10; median 6			
+covariates handled per study, 10 covariates of Fig. 1f: Mann-Whitney U, two-sided					U = 611 (U for before 2016)	P = 0.1391	0.1391 asymptotic
+covariates handled per study, all 13 covariates in the table (sensitivity)	before 2016	31		mean 5.71 of 13; median 6			
+covariates handled per study, all 13 covariates in the table (sensitivity)	2016 on	49		mean 6.73 of 13; median 7			
+covariates handled per study, all 13 covariates in the table (sensitivity): Mann-Whitney U, two-sided					U = 597.5 (U for before 2016)	P = 0.1075	0.1075 asymptotic

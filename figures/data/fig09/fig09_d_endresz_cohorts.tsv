@@ -1,0 +1,15 @@
+# figure: fig09 panel d  (81 base: studies of the 81 base, with full tables from published, our reproduction, Gemma, and the donor-level derived-tier fits of Arion 2017 and Abdolmaleky 2019)
+# script: sample_level_81_2026-10-15/code/assemble_d.py (panel logic of analyses/figure_exports/export_fig08_fig09_fig10.py fig9_d); run 2026-10-15
+# input: effect_sizes_d81x/effects_by_study.tsv sha256 440de656f98d
+# input: effect_sizes_d81x/data/by_group.tsv sha256 816498d192d6
+# input: effect_sizes_d81x/summary_by_type.tsv sha256 b352262919b7
+# study set: studies of the 81 base only (old_to_new.tsv, 81 PMIDs); headline = one per donor cluster among them; Arion 2017 (GSE87610, 17 SZ / 19 control donors, layers 3 and 5) and Abdolmaleky 2019 (GSE120340, 10 / 10) added from derived_lists_2026-10-14/work/stage2
+# the seven Endresz 2026 snRNA-seq cohorts in one pipeline (not headline: MSSM1 and MSSM2 share Mount Sinai donors)
+cohort	N	n_cases	n_controls	C_sd	n_cell_types
+Endresz cohort Batiuk (Batiuk 2022)	15.0	5.0	10.0	0.059697	24
+Endresz cohort McLean (Ruzicka 2024 (McLean))	32.0	14.0	18.0	0.071593	24
+Endresz cohort MSSM1 (Ruzicka 2024 (MSSM))	35.0	18.0	17.0	0.078725	24
+Endresz cohort Multiome (Emani 2024 (MultiomeBrain))	11.0	6.0	5.0	0.082535	24
+Endresz cohort Frohlich (Frohlich 2024)	61.0	32.0	29.0	0.070446	24
+Endresz cohort HBCC (PsychAD (HBCC))	130.0	51.0	79.0	0.066509	24
+Endresz cohort MSSM2 (PsychAD (MSSM))	185.0	45.0	140.0	0.015706	24

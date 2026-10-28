@@ -1,0 +1,16 @@
+# figure: suppnote6_pathways_coexpression panel l
+# script: analyses/figure_exports/export_suppnote6_coexpression_extra.py, run 2026-10-16
+# input: side-studies/coexpression/snap_sz/results/arm_b_delta.tsv sha256 66a7a71365be
+# input: side-studies/coexpression/snap_sz/results/snap_sz_meta.tsv sha256 0af95a020d36
+# same Ling LF4 astrocyte and glutamatergic weights applied gene by gene to microglia, endothelia and oligodendrocyte expression; interval = donor bootstrap (1,000) for datasets
+row_type	set	n_sz	n_ctrl	sz_effect_on_snap_cell_types_sd	sz_effect_on_other_cell_types_sd	delta_on_minus_off	delta_lo	delta_hi	off_classes
+dataset	Ling	87	93	-0.67156	-0.43012	-0.24144	-0.47029	-0.0054794	microglia,endothelia,oligodendrocyte
+dataset	HBCC_main	56	95	-0.49269	-0.4323	-0.060389	-0.40906	0.27068	microglia,endothelia,oligodendrocyte
+dataset	MSSM_main	127	261	-0.05763	-0.030669	-0.026961	-0.24833	0.1795	microglia,endothelia,oligodendrocyte
+dataset	MSSM_nodementia	43	261	-0.26464	-0.23673	-0.027904	-0.40267	0.31578	microglia,endothelia,oligodendrocyte
+dataset	SZBD_noLing	13	23	-0.36597	-0.17789	-0.18808	-0.62314	0.33077	microglia,oligodendrocyte
+dataset	SZBD_all	24	24	-0.6949	-0.33364	-0.36127	-0.69935	0.014322	microglia,oligodendrocyte
+dataset	CMC	47	53	-0.23704	0.22351	-0.46054	-0.87874	0.0639	microglia,endothelia,oligodendrocyte
+dataset	Multiome	6	5	-3.2709	-1.7113	-1.5596	-16.856	23.592	microglia,endothelia,oligodendrocyte
+dataset	NSW	43	33	-0.25403	-0.26659	0.01256	-0.32447	0.35713	microglia,endothelia,oligodendrocyte
+pooled, primary pool of four banks (random effects, Hartung-Knapp interval)	HBCC_main,MSSM_main,SZBD_noLing,NSW					-0.04178	-0.1407	0.05715	

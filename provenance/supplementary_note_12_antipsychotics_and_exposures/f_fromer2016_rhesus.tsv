@@ -1,0 +1,7 @@
+# figure: supp_fig_medication panel f
+# script: analyses/figure_exports/export_supp_fig_medication.py, run 2026-10-09
+# input: analyses/medication/results/primate_fromer2016.tsv sha256 9f75536e60ad
+# Fromer et al. 2016 (PMID 27668389) Supplementary Table 2A as read in primate_fromer2016.tsv; no gene list published
+drug	n_control	n_treated	genes_affected	enrichment_p	n_concordant_with_sz	concordance_p_enrichment	concordance_p_depletion
+Clozapine	8	9	31	0.320	22	0.0125	0.9875
+Haloperidol	8	17	237	1 x 10-9	35	>0.9999	< 0.0001

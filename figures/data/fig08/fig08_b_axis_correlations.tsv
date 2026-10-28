@@ -1,0 +1,13 @@
+# figure: fig08 panel b (context)
+# script: fdv2_2026-10-15/work/f08b_build.py running analyses/figure_exports/export_fig08_fig09_fig10.py fig8_b unchanged on decomposition outputs of axes_pritzker_agonal_2026-10-09/decomposition_axes.py, single_axis_same_genes.py and claims_vs_ph_axis_2026-10-08/decomposition.py (copies; only the pH-axis function edited), run 2026-10-15
+# input: work/b_v2/axes/results_remote/summary.txt sha256 7298f14fbd3e
+# parsed from summary.txt of axes_pritzker_agonal_2026-10-09/results_remote; Spearman correlation between axes over genes
+# axis: unsuffixed values = pH axis v2 (primary; inputs_ph_axis_v2/axis_v2_controls.tsv.gz sha256 2c72a9b279a2; leave-collection-out construction of the decomposition scripts with the v2 axis from the stored per-dataset limma fits, scripts v2axis.py); columns ending _axis_v1 = v1 fork (five-collection control pH axis)
+pair_of_axes	spearman	n_genes	spearman_axis_v1	n_genes_axis_v1
+Pritzker agonal vs GTEx Hardy	+0.603	8768	+0.603	8768
+Pritzker agonal vs pH axis (all five collections)	-0.652	10617	-0.725	9487
+GTEx Hardy vs pH axis	-0.418	11722	-0.549	8171
+Dai (+1/-1 symbols, 378 genes) vs Pritzker agonal, over Dai genes only	+0.680	377	+0.680	377
+Dai vs GTEx Hardy, over Dai genes only	+0.713	366	+0.713	366
+Dai (0 outside the sets) vs Pritzker agonal, all genes	+0.144	11835	+0.144	11835
+Dai (0 outside the sets) vs GTEx Hardy, all genes	+0.152	15356	+0.152	15356

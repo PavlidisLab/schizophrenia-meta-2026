@@ -1,0 +1,38 @@
+# figure: fig08 panel b (context)
+# script: fdv2_2026-10-15/work/f08b_build.py running analyses/figure_exports/export_fig08_fig09_fig10.py fig8_b unchanged on decomposition outputs of axes_pritzker_agonal_2026-10-09/decomposition_axes.py, single_axis_same_genes.py and claims_vs_ph_axis_2026-10-08/decomposition.py (copies; only the pH-axis function edited), run 2026-10-15
+# input: work/b_v2/axes/results_remote/summary.txt sha256 7298f14fbd3e
+# parsed from summary.txt: median rho of the SZ t with each axis over the datasets of the target set; 'expected sign' = negative for pH, positive for the others
+# axis: unsuffixed values = pH axis v2 (primary; inputs_ph_axis_v2/axis_v2_controls.tsv.gz sha256 2c72a9b279a2; leave-collection-out construction of the decomposition scripts with the v2 axis from the stored per-dataset limma fits, scripts v2axis.py); columns ending _axis_v1 = v1 fork (five-collection control pH axis)
+target_set	n_datasets	axis	level	median_rho	range_lo	range_hi	n_expected_sign	n_of	median_rho_axis_v1	range_lo_axis_v1	range_hi_axis_v1
+ALL	28	pH	L0	-0.129	-0.539	+0.502	19	28	-0.178	-0.566	+0.496
+ALL	28	GTEx	L0	+0.236	-0.239	+0.572	22	28	+0.236	-0.239	+0.572
+ALL	28	Pritz	L0	+0.168	-0.308	+0.494	22	28	+0.168	-0.308	+0.494
+ALL	28	Dai	L0	+0.049	-0.082	+0.170	22	28	+0.049	-0.082	+0.170
+ALL	28	pH	L4	-0.044	-0.528	+0.539	19	28	-0.080	-0.548	+0.521
+ALL	28	GTEx	L4	+0.200	-0.230	+0.566	20	28	+0.200	-0.230	+0.566
+ALL	28	Pritz	L4	+0.126	-0.390	+0.472	17	28	+0.126	-0.390	+0.472
+ALL	28	Dai	L4	+0.035	-0.074	+0.134	20	28	+0.035	-0.074	+0.134
+NOPRITZ	23	pH	L0	-0.015	-0.515	+0.502	14	23	-0.054	-0.566	+0.496
+NOPRITZ	23	GTEx	L0	+0.228	-0.239	+0.489	18	23	+0.228	-0.239	+0.489
+NOPRITZ	23	Pritz	L0	+0.147	-0.308	+0.494	17	23	+0.147	-0.308	+0.494
+NOPRITZ	23	Dai	L0	+0.029	-0.082	+0.116	18	23	+0.029	-0.082	+0.116
+NOPRITZ	23	pH	L4	-0.032	-0.515	+0.539	14	23	-0.028	-0.548	+0.521
+NOPRITZ	23	GTEx	L4	+0.176	-0.230	+0.566	15	23	+0.176	-0.230	+0.566
+NOPRITZ	23	Pritz	L4	+0.034	-0.390	+0.472	13	23	+0.034	-0.390	+0.472
+NOPRITZ	23	Dai	L4	+0.028	-0.074	+0.134	15	23	+0.028	-0.074	+0.134
+NOPRITZ2	22	pH	L0	-0.011	-0.515	+0.502	13	22	-0.038	-0.566	+0.496
+NOPRITZ2	22	GTEx	L0	+0.223	-0.239	+0.489	17	22	+0.223	-0.239	+0.489
+NOPRITZ2	22	Pritz	L0	+0.129	-0.308	+0.494	16	22	+0.129	-0.308	+0.494
+NOPRITZ2	22	Dai	L0	+0.027	-0.082	+0.116	17	22	+0.027	-0.082	+0.116
+NOPRITZ2	22	pH	L4	-0.030	-0.460	+0.539	13	22	-0.021	-0.494	+0.521
+NOPRITZ2	22	GTEx	L4	+0.157	-0.230	+0.566	14	22	+0.157	-0.230	+0.566
+NOPRITZ2	22	Pritz	L4	+0.033	-0.390	+0.472	12	22	+0.033	-0.390	+0.472
+NOPRITZ2	22	Dai	L4	+0.026	-0.074	+0.134	14	22	+0.026	-0.074	+0.134
+NODAI	16	pH	L0	+0.003	-0.384	+0.502	8	16	+0.005	-0.289	+0.496
+NODAI	16	GTEx	L0	+0.067	-0.239	+0.439	11	16	+0.067	-0.239	+0.439
+NODAI	16	Pritz	L0	+0.068	-0.308	+0.302	10	16	+0.068	-0.308	+0.302
+NODAI	16	Dai	L0	+0.025	-0.082	+0.102	11	16	+0.025	-0.082	+0.102
+NODAI	16	pH	L4	+0.016	-0.515	+0.504	8	16	+0.021	-0.548	+0.521
+NODAI	16	GTEx	L4	+0.053	-0.230	+0.514	9	16	+0.053	-0.230	+0.514
+NODAI	16	Pritz	L4	+0.013	-0.325	+0.412	8	16	+0.013	-0.325	+0.412
+NODAI	16	Dai	L4	+0.020	-0.074	+0.099	10	16	+0.020	-0.074	+0.099

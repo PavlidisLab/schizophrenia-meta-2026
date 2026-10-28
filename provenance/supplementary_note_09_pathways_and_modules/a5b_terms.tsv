@@ -1,0 +1,190 @@
+# a5b_go.py, run 2026-10-16; rule A primary lists, scenario 'published, brain'; GO BP from go_bp_sets.tsv.gz (sha256 efd94fc4462f); terms 5-200 genes; top pathways = up to 20 terms with hypergeometric p < 0.01 and >= 2 hits; nulls 100 replicates each, seed 20260925
+# terms in the top pathways of >= 2 lists; null means = expected number of lists
+term	name	n_lists_top	uniform_null_mean	deprior_null_mean	deprior_p_upper	lists
+GO:0006754	ATP biosynthetic process	8	0.25	0.03	0.009901	Maycox 2009; Wu 2012; Arion 2015; Enwright 2018; Lanz 2019; Bakshi 2020; Batiuk 2022; Zhu 2024
+GO:0015986	proton motive force-driven ATP synthesis	8	0.24	0.03	0.009901	Altar 2005; Maycox 2009; Wu 2012; Arion 2015; Enwright 2018; Lanz 2019; Bakshi 2020; Zhu 2024
+GO:0019646	aerobic electron transport chain	8	0.25	0.01	0.009901	Altar 2005; Maycox 2009; Wu 2012; Arion 2015; Enwright 2018; Lanz 2019; Bakshi 2020; Zhu 2024
+GO:0006119	oxidative phosphorylation	8	0.29	0.02	0.009901	Altar 2005; Maycox 2009; Wu 2012; Arion 2015; Enwright 2018; Lanz 2019; Bakshi 2020; Zhu 2024
+GO:0022904	respiratory electron transport chain	7	0.17	0.01	0.009901	Altar 2005; Maycox 2009; Wu 2012; Arion 2015; Enwright 2018; Lanz 2019; Bakshi 2020
+GO:0009145	purine nucleoside triphosphate biosynthetic process	7	0.18	0.03	0.009901	Wu 2012; Arion 2015; Enwright 2018; Lanz 2019; Bakshi 2020; Batiuk 2022; Zhu 2024
+GO:0009201	ribonucleoside triphosphate biosynthetic process	7	0.18	0.03	0.009901	Wu 2012; Arion 2015; Enwright 2018; Lanz 2019; Bakshi 2020; Batiuk 2022; Zhu 2024
+GO:0009206	purine ribonucleoside triphosphate biosynthetic process	7	0.18	0.03	0.009901	Wu 2012; Arion 2015; Enwright 2018; Lanz 2019; Bakshi 2020; Batiuk 2022; Zhu 2024
+GO:0022900	electron transport chain	7	0.22	0.01	0.009901	Altar 2005; Maycox 2009; Wu 2012; Arion 2015; Enwright 2018; Lanz 2019; Bakshi 2020
+GO:0060560	developmental growth involved in morphogenesis	7	0.23	1.17	0.009901	Narayan 2008; Arion 2010; Xiao 2014; Hu 2016; Jaffe 2018; Zeppillo 2022; Ling 2024
+GO:0042773	ATP synthesis coupled electron transport	7	0.18	0.01	0.009901	Altar 2005; Maycox 2009; Wu 2012; Arion 2015; Enwright 2018; Lanz 2019; Bakshi 2020
+GO:0042775	mitochondrial ATP synthesis coupled electron transport	7	0.18	0.01	0.009901	Altar 2005; Maycox 2009; Wu 2012; Arion 2015; Enwright 2018; Lanz 2019; Bakshi 2020
+GO:0009142	nucleoside triphosphate biosynthetic process	7	0.2	0.03	0.009901	Wu 2012; Arion 2015; Enwright 2018; Lanz 2019; Bakshi 2020; Batiuk 2022; Zhu 2024
+GO:0007272	ensheathment of neurons	6	0.25	0.62	0.009901	Aston 2004; Narayan 2008; Arion 2010; Zhao 2015; Benjamin 2022; Kwon 2026
+GO:0042776	proton motive force-driven mitochondrial ATP synthesis	6	0.31	0	0.009901	Wu 2012; Arion 2015; Enwright 2018; Lanz 2019; Bakshi 2020; Zhu 2024
+GO:0042552	myelination	6	0.32	0.63	0.009901	Aston 2004; Narayan 2008; Arion 2010; Zhao 2015; Benjamin 2022; Kwon 2026
+GO:1990138	neuron projection extension	6	0.23	0.77	0.009901	Hu 2016; Jaffe 2018; Zeppillo 2022; Benjamin 2022; Ling 2024; Ruzicka 2024
+GO:0097501	stress response to metal ion	5	0.14	0.09	0.009901	Chen 2013; Darby 2016; Kim 2016; Chang 2017; Mendez-Victoriano 2026
+GO:0060078	regulation of postsynaptic membrane potential	5	0.42	0.34	0.009901	Hu 2016; Puvogel 2022; Ling 2024; Ruzicka 2024; Singh 2026
+GO:0006120	mitochondrial electron transport, NADH to ubiquinone	5	0.24	0.03	0.009901	Wu 2012; Arion 2015; Enwright 2018; Lanz 2019; Bakshi 2020
+GO:0008366	axon ensheathment	5	0.24	0.58	0.009901	Aston 2004; Narayan 2008; Arion 2010; Zhao 2015; Benjamin 2022
+GO:0007611	learning or memory	5	0.27	1.15	0.0297	Narayan 2008; Chen 2013; Xiao 2014; Benjamin 2022; Ling 2024
+GO:0007411	axon guidance	4	0.28	3.47	0.5446	Xiao 2014; Hu 2016; Ruzicka 2024; Alsema 2025
+GO:0007269	neurotransmitter secretion	4	0.29	0.43	0.0198	Hakak 2001; Weidenhofer 2006; Bowden 2008; Xiao 2014
+GO:1902893	regulation of miRNA transcription	4	0.28	0.86	0.0198	Mauney 2015; Scarr 2018; Schulmann 2023; Yalcinbas 2025
+GO:0007215	glutamate receptor signaling pathway	4	0.21	0.38	0.009901	Bowden 2008; Perez 2021; Ling 2024; Ruzicka 2024
+GO:0010273	detoxification of copper ion	4	0.18	0.11	0.009901	Chen 2013; Kim 2016; Chang 2017; Scarr 2018
+GO:0050729	positive regulation of inflammatory response	4	0.27	1.13	0.0495	Fillman 2013; Darby 2016; Chang 2017; Mendez-Victoriano 2026
+GO:0071276	cellular response to cadmium ion	4	0.13	0.08	0.009901	Chen 2013; Darby 2016; Kim 2016; Mendez-Victoriano 2026
+GO:0097485	neuron projection guidance	4	0.27	3.33	0.4752	Xiao 2014; Hu 2016; Ruzicka 2024; Alsema 2025
+GO:0002455	humoral immune response mediated by circulating immunoglobulin	4	0.06	0.13	0.009901	Maas 2020; Weissleder 2021; Lindholm Carlström 2021; Arihisa 2023
+GO:0021537	telencephalon development	4	0.25	0.91	0.0198	Pietersen 2014 (PV neurons); Collado-Torres 2019; Arbabi 2025; Singh 2026
+GO:1990169	stress response to copper ion	4	0.16	0.11	0.009901	Chen 2013; Kim 2016; Chang 2017; Scarr 2018
+GO:0061614	miRNA transcription	4	0.26	0.77	0.0198	Mauney 2015; Scarr 2018; Schulmann 2023; Yalcinbas 2025
+GO:1900180	regulation of protein localization to nucleus	4	0.17	0.17	0.009901	Barnes 2011; Mladinov 2016; Enwright 2018; Wu 2021
+GO:0003333	amino acid transmembrane transport	4	0.33	0.54	0.009901	Saetre 2007; Bowden 2008; Voisey 2017; Perez 2021
+GO:0048588	developmental cell growth	4	0.28	1.01	0.009901	Narayan 2008; Hu 2016; Zeppillo 2022; Ruzicka 2024
+GO:0099643	signal release from synapse	4	0.25	0.42	0.0198	Hakak 2001; Weidenhofer 2006; Bowden 2008; Xiao 2014
+GO:0045664	regulation of neuron differentiation	3	0.28	0.72	0.0495	Hakak 2001; Saetre 2007; Benjamin 2022
+GO:0051851	host-mediated perturbation of symbiont process	3	0.26	0.19	0.009901	Aston 2004; Hwang 2013; Mladinov 2016
+GO:0010669	epithelial structure maintenance	3	0.1	0.16	0.009901	Kuromitsu 2001; Aston 2004; Voisey 2017
+GO:0002028	regulation of sodium ion transport	3	0.13	0.22	0.009901	Chen 2013; Hu 2016; Collado-Torres 2019
+GO:0035235	ionotropic glutamate receptor signaling pathway	3	0.22	0.28	0.009901	Bowden 2008; Perez 2021; Ruzicka 2024
+GO:0006882	intracellular zinc ion homeostasis	3	0.18	0.2	0.009901	Chu 2009; Chen 2013; Kim 2016
+GO:1902905	positive regulation of supramolecular fiber organization	3	0.2	0.56	0.0297	Hakak 2001; Saetre 2007; Maycox 2009
+GO:0048709	oligodendrocyte differentiation	3	0.18	0.5	0.0297	Saetre 2007; Arion 2010; Benjamin 2022
+GO:0006956	complement activation	3	0.17	0.21	0.009901	Maas 2020; Weissleder 2021; Lindholm Carlström 2021
+GO:0002269	leukocyte activation involved in inflammatory response	3	0.2	0.43	0.0297	Schmitt 2011; Fillman 2013; Kwon 2026
+GO:0002468	dendritic cell antigen processing and presentation	3	0.12	0.19	0.009901	Garbett 2008; Schmitt 2011; Kim 2016
+GO:0006958	complement activation, classical pathway	3	0.13	0.1	0.009901	Maas 2020; Weissleder 2021; Arihisa 2023
+GO:0051963	regulation of synapse assembly	3	0.28	0.77	0.0396	Hu 2016; Ruzicka 2024; Singh 2026
+GO:0032288	myelin assembly	3	0.31	0.43	0.0198	Aston 2004; Narayan 2008; Arion 2010
+GO:0098656	monoatomic anion transmembrane transport	3	0.31	0.23	0.009901	Hakak 2001; Collado-Torres 2019; Ling 2024
+GO:0043435	response to corticotropin-releasing hormone	3	0.12	0.06	0.009901	Voisey 2017; Akula 2021; Dean 2026
+GO:0046686	response to cadmium ion	3	0.26	0.15	0.009901	Darby 2016; Kim 2016; Mendez-Victoriano 2026
+GO:0051489	regulation of filopodium assembly	3	0.2	0.48	0.009901	Kuromitsu 2001; Fromer 2016; Ling 2024
+GO:0021543	pallium development	3	0.3	0.46	0.0198	Kuromitsu 2001; Collado-Torres 2019; Singh 2026
+GO:0001774	microglial cell activation	3	0.21	0.47	0.0297	Schmitt 2011; Fillman 2013; Kwon 2026
+GO:1901740	negative regulation of myoblast fusion	3	0.25	0.01	0.009901	Wu 2012; Voisey 2017; Kwon 2026
+GO:0150104	transport across blood-brain barrier	3	0.18	1.63	0.2475	Voisey 2017; Scarr 2018; Dean 2026
+GO:0051592	response to calcium ion	3	0.22	0.6	0.009901	Xiao 2014; Puvogel 2022; Frohlich 2024 (own list)
+GO:0061687	detoxification of inorganic compound	3	0.11	0.19	0.009901	Darby 2016; Kim 2016; Mendez-Victoriano 2026
+GO:0072376	protein activation cascade	3	0.19	0.44	0.009901	Maas 2020; Weissleder 2021; Lindholm Carlström 2021
+GO:0035821	modulation of process of another organism	3	0.27	0.19	0.009901	Aston 2004; Hwang 2013; Mladinov 2016
+GO:0010232	vascular transport	3	0.2	1.67	0.2673	Voisey 2017; Scarr 2018; Dean 2026
+GO:1904262	negative regulation of TORC1 signaling	2	0.21	0.04	0.009901	Frohlich 2024 (own list); Zhang 2026
+GO:0061684	chaperone-mediated autophagy	2	0.15	0.08	0.009901	Saetre 2007; Arion 2010
+GO:1990874	vascular associated smooth muscle cell proliferation	2	0.14	0.99	0.2079	Schulmann 2023; Alsema 2025
+GO:0014003	oligodendrocyte development	2	0.2	0.23	0.0297	Arion 2010; Benjamin 2022
+GO:0098883	synapse pruning	2	0.07	0.27	0.0396	Garbett 2008; Arihisa 2023
+GO:0072384	organelle transport along microtubule	2	0.29	0.08	0.009901	Enwright 2018; Benjamin 2022
+GO:0001765	membrane raft assembly	2	0.13	0.19	0.0198	Lindholm Carlström 2021; Schulmann 2023
+GO:1901379	regulation of potassium ion transmembrane transport	2	0.19	0.33	0.0495	Arbabi 2025; Singh 2026
+GO:0030010	establishment of cell polarity	2	0.26	0.17	0.009901	Hu 2016; Benjamin 2022
+GO:0048525	negative regulation of viral process	2	0.24	0.86	0.2178	Hwang 2013; Lindholm Carlström 2021
+GO:0014902	myotube differentiation	2	0.27	0.22	0.0396	Voisey 2017; Kwon 2026
+GO:1904357	negative regulation of telomere maintenance via telomere lengthening	2	0.23	0.03	0.009901	Barnes 2011; Fromer 2016
+GO:0060134	prepulse inhibition	2	0.13	0.06	0.0198	Benjamin 2022; Arbabi 2025
+GO:0032205	negative regulation of telomere maintenance	2	0.23	0.03	0.009901	Barnes 2011; Fromer 2016
+GO:1990806	ligand-gated ion channel signaling pathway	2	0.17	0.25	0.0396	Bowden 2008; Perez 2021
+GO:0060142	regulation of syncytium formation by plasma membrane fusion	2	0.17	0.02	0.009901	Voisey 2017; Kwon 2026
+GO:1901890	positive regulation of cell junction assembly	2	0.23	0.67	0.1881	Schulmann 2023; Ruzicka 2024
+GO:0008038	neuron recognition	2	0.19	0.51	0.1089	Ling 2024; Arbabi 2025
+GO:0030277	maintenance of gastrointestinal epithelium	2	0.19	0.15	0.0198	Kuromitsu 2001; Aston 2004
+GO:0014745	negative regulation of muscle adaptation	2	0.17	0.32	0.06931	Schulmann 2023; Yalcinbas 2025
+GO:0051057	positive regulation of small GTPase mediated signal transduction	2	0.3	0.28	0.0495	Hu 2016; Fromer 2016
+GO:0007520	myoblast fusion	2	0.24	0.09	0.009901	Voisey 2017; Kwon 2026
+GO:1904356	regulation of telomere maintenance via telomere lengthening	2	0.21	0.07	0.0198	Barnes 2011; Fromer 2016
+GO:2000142	regulation of DNA-templated transcription initiation	2	0.2	0.07	0.009901	Aston 2004; Mauney 2015
+GO:0099072	regulation of postsynaptic membrane neurotransmitter receptor levels	2	0.38	0.19	0.009901	Bowden 2008; Ruzicka 2024
+GO:1901739	regulation of myoblast fusion	2	0.14	0.03	0.009901	Voisey 2017; Kwon 2026
+GO:0032291	axon ensheathment in central nervous system	2	0.12	0.32	0.05941	Zhao 2015; Benjamin 2022
+GO:0030150	protein import into mitochondrial matrix	2	0.17	0.04	0.009901	Bakshi 2020; Batiuk 2022
+GO:0099550	trans-synaptic signaling, modulating synaptic transmission	2	0.15	0.32	0.06931	Ling 2024; Arbabi 2025
+GO:0099557	trans-synaptic signaling by trans-synaptic complex, modulating synaptic transmission	2	0.08	0.16	0.009901	Ling 2024; Arbabi 2025
+GO:0070050	neuron cellular homeostasis	2	0.22	0.18	0.009901	Hakak 2001; Hu 2016
+GO:0007612	learning	2	0.23	0.62	0.1188	Chen 2013; Ling 2024
+GO:0032204	regulation of telomere maintenance	2	0.29	0.04	0.009901	Kohen 2014; Fromer 2016
+GO:0006123	mitochondrial electron transport, cytochrome c to oxygen	2	0.2	0.03	0.009901	Wu 2012; Arion 2015
+GO:1902430	negative regulation of amyloid-beta formation	2	0.09	0.25	0.0396	Weidenhofer 2006; Saetre 2007
+GO:0090128	regulation of synapse maturation	2	0.25	0.14	0.009901	Bowden 2008; Mudge 2008
+GO:0016064	immunoglobulin mediated immune response	2	0.2	0.07	0.009901	Maas 2020; Arihisa 2023
+GO:1903312	negative regulation of mRNA metabolic process	2	0.26	0.09	0.009901	Barnes 2011; Mladinov 2016
+GO:0050435	amyloid-beta metabolic process	2	0.22	0.19	0.0198	Saetre 2007; Pietersen 2014
+GO:0051590	positive regulation of neurotransmitter transport	2	0.17	0.15	0.0198	Zeppillo 2022; Dean 2026
+GO:0071280	cellular response to copper ion	2	0.14	0.22	0.0297	Chu 2009; Kim 2016
+GO:0050679	positive regulation of epithelial cell proliferation	2	0.3	1.09	0.3168	Ketchesin 2023 (own list); Singh 2026
+GO:0097306	cellular response to alcohol	2	0.34	0.35	0.06931	Schmitt 2011; Zhu 2024
+GO:0016188	synaptic vesicle maturation	2	0.31	0.09	0.009901	Chen 2013; Hu 2016
+GO:0044380	protein localization to cytoskeleton	2	0.17	0.06	0.0198	Arion 2010; Mauney 2015
+GO:0002827	positive regulation of T-helper 1 type immune response	2	0.1	0.13	0.009901	Kim 2016; Gebicke-Haerter 2021
+GO:0021762	substantia nigra development	2	0.23	0.09	0.009901	Wu 2012; Santarelli 2019
+GO:0071248	cellular response to metal ion	2	0.33	0.69	0.1881	Xiao 2014; Darby 2016
+GO:0051480	regulation of cytosolic calcium ion concentration	2	0.23	0.33	0.0495	Hakak 2001; Alsema 2025
+GO:0006536	glutamate metabolic process	2	0.19	0.09	0.009901	Hakak 2001; Chen 2013
+GO:0044090	positive regulation of vacuole organization	2	0.17	0.05	0.009901	Zhao 2015; Zeppillo 2022
+GO:0070507	regulation of microtubule cytoskeleton organization	2	0.2	0.16	0.0297	Arion 2010; Mauney 2015
+GO:0050770	regulation of axonogenesis	2	0.32	0.97	0.2277	Hu 2016; Jaffe 2018
+GO:0043954	cellular component maintenance	2	0.26	0.38	0.0495	Weidenhofer 2006; Bowden 2008
+GO:0050806	positive regulation of synaptic transmission	2	0.27	0.5	0.07921	Xiao 2014; Ruzicka 2024
+GO:0043266	regulation of potassium ion transport	2	0.21	0.33	0.05941	Arbabi 2025; Singh 2026
+GO:1904862	inhibitory synapse assembly	2	0.21	0.15	0.0297	Ramaker 2017; Alsema 2025
+GO:0003161	cardiac conduction system development	2	0.16	0.29	0.0297	Pietersen 2014; Scarr 2018
+GO:0019724	B cell mediated immunity	2	0.2	0.09	0.009901	Maas 2020; Arihisa 2023
+GO:0051491	positive regulation of filopodium assembly	2	0.12	0.26	0.0297	Fromer 2016; Ramaker 2017
+GO:0048857	neural nucleus development	2	0.31	0.15	0.009901	Wu 2012; Santarelli 2019
+GO:1903241	U2-type prespliceosome assembly	2	0.16	0	0.009901	Barnes 2011; Santarelli 2019
+GO:0032456	endocytic recycling	2	0.17	0.07	0.009901	Mudge 2008; Batiuk 2022
+GO:0022029	telencephalon cell migration	2	0.17	0.2	0.0297	Singh 2026; Lee 2026 (PsychAD)
+GO:0015800	acidic amino acid transport	2	0.17	0.42	0.06931	Voisey 2017; Collado-Torres 2019
+GO:0022010	central nervous system myelination	2	0.14	0.33	0.06931	Zhao 2015; Benjamin 2022
+GO:0021987	cerebral cortex development	2	0.31	0.46	0.1188	Collado-Torres 2019; Singh 2026
+GO:0098754	detoxification	2	0.31	0.37	0.06931	Darby 2016; Scarr 2018
+GO:0042058	regulation of epidermal growth factor receptor signaling pathway	2	0.29	0.35	0.05941	Zhao 2015; Jaffe 2020
+GO:1904705	regulation of vascular associated smooth muscle cell proliferation	2	0.16	1.07	0.2277	Schulmann 2023; Alsema 2025
+GO:0042116	macrophage activation	2	0.15	0.69	0.1584	Schmitt 2011; Fillman 2013
+GO:0006904	vesicle docking involved in exocytosis	2	0.2	0.1	0.009901	Weidenhofer 2006; Yalcinbas 2025
+GO:0002504	antigen processing and presentation of peptide or polysaccharide antigen via MHC class II	2	0.21	0.28	0.0495	Schmitt 2011; Maas 2020
+GO:1901184	regulation of ERBB signaling pathway	2	0.32	0.34	0.0495	Zhao 2015; Jaffe 2020
+GO:0045071	negative regulation of viral genome replication	2	0.22	0.96	0.2475	Hwang 2013; Lindholm Carlström 2021
+GO:0070278	extracellular matrix constituent secretion	2	0.16	0.28	0.0396	Zeppillo 2022; Mendez-Victoriano 2026
+GO:1902895	positive regulation of miRNA transcription	2	0.22	0.77	0.2277	Scarr 2018; Schulmann 2023
+GO:0002577	regulation of antigen processing and presentation	2	0.18	0.14	0.0198	Schmitt 2011; Kim 2016
+GO:0033108	mitochondrial respiratory chain complex assembly	2	0.27	0.03	0.009901	Altar 2005; Arion 2015
+GO:0021885	forebrain cell migration	2	0.17	0.21	0.0198	Singh 2026; Lee 2026 (PsychAD)
+GO:0042274	ribosomal small subunit biogenesis	2	0.33	0.01	0.009901	Arion 2015; Mladinov 2016
+GO:1902992	negative regulation of amyloid precursor protein catabolic process	2	0.11	0.25	0.0396	Weidenhofer 2006; Saetre 2007
+GO:0090083	regulation of inclusion body assembly	2	0.08	0.2	0.0198	Weidenhofer 2006; Chu 2009
+GO:0002687	positive regulation of leukocyte migration	2	0.19	0.78	0.1485	Garbett 2008; Kwon 2026
+GO:0050920	regulation of chemotaxis	2	0.17	1.71	0.4653	Garbett 2008; Kohen 2014
+GO:0042311	vasodilation	2	0.14	0.52	0.1287	Scarr 2018; Yalcinbas 2025
+GO:0048813	dendrite morphogenesis	2	0.23	0.48	0.06931	Ruzicka 2024; Singh 2026
+GO:0097530	granulocyte migration	2	0.25	0.52	0.1089	Hwang 2013; Mendez-Victoriano 2026
+GO:1990709	presynaptic active zone organization	2	0.11	0.22	0.0396	Weidenhofer 2006; Ling 2024
+GO:0021953	central nervous system neuron differentiation	2	0.24	0.73	0.1881	Puvogel 2022; Arbabi 2025
+GO:0070935	3'-UTR-mediated mRNA stabilization	2	0.27	0.09	0.009901	Barnes 2011; Mladinov 2016
+GO:0010001	glial cell differentiation	2	0.32	1.36	0.4356	Saetre 2007; Benjamin 2022
+GO:0035249	synaptic transmission, glutamatergic	2	0.22	0.31	0.0297	Hu 2016; Ruzicka 2024
+GO:0000959	mitochondrial RNA metabolic process	2	0.24	0.02	0.009901	Pietersen 2014 (PV neurons); Jaffe 2018
+GO:2000674	regulation of type B pancreatic cell apoptotic process	2	0.07	0.08	0.009901	Mendez-Victoriano 2026; Dean 2026
+GO:0009448	GABA metabolic process	2	0.11	0.17	0.0198	Hakak 2001; Zeppillo 2022
+GO:0034242	negative regulation of syncytium formation by plasma membrane fusion	2	0.25	0.01	0.009901	Voisey 2017; Kwon 2026
+GO:0031122	cytoplasmic microtubule organization	2	0.27	0.2	0.0198	Pietersen 2014 (PV neurons); Zhu 2024
+GO:0034205	amyloid-beta formation	2	0.16	0.16	0.0396	Saetre 2007; Pietersen 2014
+GO:0045913	positive regulation of carbohydrate metabolic process	2	0.18	0.26	0.0396	Jaffe 2018; Zhang 2026
+GO:0032007	negative regulation of TOR signaling	2	0.27	0.03	0.009901	Frohlich 2024 (own list); Zhang 2026
+GO:0071806	protein transmembrane transport	2	0.31	0.04	0.009901	Bakshi 2020; Batiuk 2022
+GO:0072073	kidney epithelium development	2	0.22	2.13	0.6238	Hu 2016; Weissleder 2021
+GO:2000630	positive regulation of miRNA metabolic process	2	0.26	0.75	0.198	Scarr 2018; Schulmann 2023
+GO:0046597	host-mediated suppression of symbiont invasion	2	0.14	0.19	0.0396	Hwang 2013; Lindholm Carlström 2021
+GO:0034341	response to type II interferon	2	0.24	0.63	0.1287	Hwang 2013; Lindholm Carlström 2021
+GO:0010043	response to zinc ion	2	0.21	0.22	0.0297	Darby 2016; Mendez-Victoriano 2026
+GO:0031111	negative regulation of microtubule polymerization or depolymerization	2	0.2	0.24	0.0198	Arion 2010; Zeppillo 2022
+GO:2000628	regulation of miRNA metabolic process	2	0.31	0.72	0.1881	Scarr 2018; Schulmann 2023
+GO:0035455	response to interferon-alpha	2	0.22	0.15	0.0198	Hwang 2013; Lindholm Carlström 2021
+GO:0060840	artery development	2	0.2	1.58	0.4455	Hwang 2013; Pietersen 2014
+GO:0009266	response to temperature stimulus	2	0.27	0.18	0.0396	Chu 2009; Fillman 2013
+GO:0140253	cell-cell fusion	2	0.21	0.05	0.0198	Voisey 2017; Kwon 2026
+GO:0035456	response to interferon-beta	2	0.2	0.33	0.06931	Hwang 2013; Lindholm Carlström 2021
+GO:0150115	cell-substrate junction organization	2	0.14	0.51	0.1089	Santarelli 2019; Ruzicka 2024
+GO:0061298	retina vasculature development in camera-type eye	2	0.13	0.37	0.06931	Hwang 2013; Yalcinbas 2025
+GO:0141161	regulation of cAMP/PKA signal transduction	2	0.22	0.48	0.09901	Narayan 2008; Puvogel 2022
+GO:0010586	miRNA metabolic process	2	0.26	0.58	0.1386	Mauney 2015; Scarr 2018
+GO:2000786	positive regulation of autophagosome assembly	2	0.09	0.04	0.009901	Zhao 2015; Zeppillo 2022
+GO:0000768	syncytium formation by cell-cell fusion	2	0.23	0.04	0.0198	Voisey 2017; Kwon 2026
+GO:0010457	centriole-centriole cohesion	2	0.22	0.07	0.009901	Jaffe 2018; Alsema 2025
+GO:0031638	zymogen activation	2	0.21	0.68	0.1584	Fillman 2013; Lindholm Carlström 2021

@@ -1,0 +1,23 @@
+# copied 2026-10-21 as the source table of a hidden comment in supplement.md (Note 5, persons with expression data); original location: <analysis repo> (tables/hetero_lmer_results_809.tsv (script ph_heterogeneity_mixed_models/hetero_lmer.R))
+item	est	se	stat	df	P	lo	hi	note
+primary_fixed_sz	-0.0547502345992476	0.0644083023508251	NA	NA	NA	NA	NA	REML
+LRT_cohort_slope_2df	NA	NA	13.3883803248791	2	0.00123808411540036	NA	NA	ML; naive chi2(2) P; boundary mixture 0.5chi2(1)+0.5chi2(2) P=0.0007456
+LRT_cohort_slope_uncorrelated_1df	NA	NA	13.223562863427	1	0.000138225805848939	NA	NA	ML; boundary 0.5*chi2(1)
+LRT_cohort_slope_param_bootstrap	NA	NA	13.3883803248791	2	0.00497512437810945	NA	NA	parametric bootstrap nsim=200
+SD_diagnosis_across_cohorts	0.157911560283037	NA	NA	NA	NA	0.0681168609038419	0.294688955376406	profile (row .sig01,.sig02,.sig03,.sig04,.sigma); bootstrap 95% 0.024 to 0.257; boot share SD<0.01=0.01
+primary_fixed_sz_boot	-0.0547502345992476	NA	NA	NA	NA	-0.165279566005048	0.0494098658464646	parametric bootstrap
+primary_fixed_sz_profile	-0.0547502345992476	NA	NA	NA	NA	-0.190629447527912	0.0814072611342031	profile
+LRT_study_slope_within_cohort_1df	0.0359043402207206	NA	0.147663585661576	1	0.350389096742736	NA	NA	ML; adds (0+sz|study:cohort) to primary; boundary 0.5*chi2(1); est = REML SD of study slope within cohort
+SD_study_slope_within_cohort	0.0359043402207206	NA	NA	NA	NA	NA	NA	profile table rows: .sig01,.sig02,.sig03,.sig04,.sig05,.sigma; bootstrap SD(study) 95% 0 to 0.0882; SD(cohort slope) in this model 0.154 (boot 0.0447 to 0.251)
+LRT_study_slope_only_1df	0.112563953993864	NA	12.0681152166043	1	0.000256457648357247	NA	NA	ML; (0+sz|study:cohort) with no cohort slope vs no slope; boundary; profile rows .sig01,.sig02,.sig03,.sigma
+LRT_fixed_sz_x_cohort	NA	NA	35.0259298925904	6	4.25993763960343e-06	NA	NA	ML; ph ~ sz+cohort+(1|study:cohort) vs sz*cohort
+F_LS_sz_x_cohort	NA	NA	5.82856257689006	6,778	5.89817009774694e-06	NA	NA	ordinary LS, study:cohort fixed; sz x cohort (6 df)
+F_LS_sz_x_study_within_cohort	NA	NA	1.6037609681176	14,764	0.0726159894263046	NA	NA	ordinary LS; extra diagnosis-by-study terms beyond diagnosis-by-cohort (sc-specific slopes vs cohort-specific slopes)
+expr14_sz_x_e14_interaction_primary_structure	-0.123839739516577	0.0467927486824771	6.95848263955651	1	0.00834227522261285	-0.218921845771956	-0.0332122495232048	difference (expr14 minus other) in SZ-minus-control; profile CI; LRT ML; random slope by cohort retained
+expr14_interaction_bootstrap	-0.123839739516577	NA	NA	NA	NA	-0.214931971246898	-0.0340950986945488	parametric bootstrap
+expr14_sz_effect_in_other_(sz_main)	0.00202722774186723	0.0575949860109491	NA	NA	NA	NA	NA	SZ effect when e14=0 in the interaction model
+expr14_interaction_no_random_slope	-0.137767767700402	0.0378443751209726	13.1404685788537	1	0.000288985576651913	NA	NA	ML fit, Wald SE; cohort random intercept only
+expr14_interaction_LS_study_fixed	-0.13697034916175	0.0379271879120395	-3.61140270877478	783	0.000323953510004473	-0.211421355095542	-0.0625193432279566	ordinary LS, study:cohort fixed effect, sz*e14; t test
+expr14_separate_fit_expr14	-0.144365531047223	0.0496068386722608	NA	NA	NA	-0.250873628205111	-0.0353514334069485	n=296 SZ=150 CTRL=146 cohorts=6
+expr14_separate_fit_other	0.0700826775187511	0.0869395143531402	NA	NA	NA	-0.111946890918681	0.257872426304859	n=513 SZ=251 CTRL=262 cohorts=6
+expr14_separate_fit_difference	-0.214448208565974	0.100096541393874	-2.14241376954407	NA	0.0321602008319909	-0.410637429697967	-0.0182589874339803	expr14 minus other; independent Wald z from the two refits (Wald SEs)

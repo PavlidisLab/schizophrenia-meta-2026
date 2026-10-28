@@ -1,0 +1,505 @@
+# figure: fig09 panel a  (81 base: datasets of the studies in the 81 base)
+# script: sample_level_81_2026-10-15/code/assemble_a.py (panel logic of analyses/figure_exports/export_fig08_fig09_fig10.py fig9_a); run 2026-10-15
+# dataset set: S34 (80-study base) (26 bulk datasets); pair rule: R1 (relation_group == subject-separate of subject_relations.tsv, the rule behind the stored 192 pairs); covariate level of bulk partners: L2
+# input: out/validate28_b/b_pairs.tsv (rerun of fairness_sample_level/scripts/b_covariate_series.R, unchanged) sha256 e8f364bedc34
+# input: out/new_pairs/pairs_rho_from_b_de.tsv sha256 6d275e1e4f9c
+# input: single_cell/results/sc_cross_pairs.tsv sha256 c1ab1ef25978
+# input: subject_relations/subject_relations.tsv sha256 7c13a8fb0f19
+# input: fairness_sample_level/results/datasets_used.tsv sha256 9b86004e1f04; derived-unit sizes from derived_lists_2026-10-14/work/stage2/*meta.tsv
+# one row per pair of datasets with separate subjects: Spearman rho of the SZ vs control t statistics over shared genes against n_per_group = the smaller of (SZ, control) group sizes over the two datasets. Bulk: 229 pairs; single nucleus: Endresz 2026 cohort pairs (7 cohorts), one row per Gemma cell class (14) and pair, relation subject-separate (266 rows)
+data_type	class_or_bulk	unit_a	unit_b	relation	n_per_group	rho_t
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE21138	GSE35977	subject-separate	28	0.367647
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE21138	GSE35974	subject-separate	28	0.264064
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE21138	GSE53987_BA46	subject-separate	15	0.474683
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE21138	GSE53987_hippocampus	subject-separate	15	0.458587
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE21138	GSE53987_striatum	subject-separate	18	0.37449
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE21138	GSE17612	subject-separate	22	0.186833
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE21138	GSE21935	subject-separate	19	0.197342
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE21138	GSE80655_DLPFC	subject-separate	23	0.426217
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE21138	GSE80655_AnCg	subject-separate	24	0.380384
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE21138	GSE80655_nAcc	subject-separate	22	0.232347
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE21138	GSE202537_NAc	subject-separate	28	0.196886
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE21138	GSE202537_caudate	subject-separate	28	-0.022229
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE21138	GSE202537_putamen	subject-separate	28	0.013573
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE21138	GSE224683	subject-separate	15	0.459691
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE21138	GSE26927_temporal	subject-separate	10	-0.004765
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE21138	GSE138082_CA1	subject-separate	13	-0.223532
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE21138	GSE138082_CA3	subject-separate	12	0.217741
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE21138	GSE138082_DG	subject-separate	13	-0.249762
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE35977	GSE53987_BA46	subject-separate	15	0.380004
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE35977	GSE53987_hippocampus	subject-separate	15	0.255488
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE35977	GSE53987_striatum	subject-separate	18	0.209166
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE35977	GSE17612	subject-separate	22	0.15878
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE35977	GSE21935	subject-separate	19	0.188415
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE35977	GSE80655_DLPFC	subject-separate	23	0.42177
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE35977	GSE80655_AnCg	subject-separate	24	0.241734
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE35977	GSE80655_nAcc	subject-separate	22	0.177889
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE35977	GSE202537_NAc	subject-separate	28	0.224474
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE35977	GSE202537_caudate	subject-separate	28	-0.053034
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE35977	GSE202537_putamen	subject-separate	28	0.088584
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE35977	GSE224683	subject-separate	15	0.352774
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE35977	GSE26927_temporal	subject-separate	10	0.141283
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE35977	GSE138082_CA1	subject-separate	13	-0.164708
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE35977	GSE138082_CA3	subject-separate	12	0.14369
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE35977	GSE138082_DG	subject-separate	13	-0.109854
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE35974	GSE53987_BA46	subject-separate	15	0.261968
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE35974	GSE53987_hippocampus	subject-separate	15	0.194203
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE35974	GSE53987_striatum	subject-separate	18	0.168119
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE35974	GSE17612	subject-separate	22	0.139972
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE35974	GSE21935	subject-separate	19	0.069206
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE35974	GSE80655_DLPFC	subject-separate	23	0.29848
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE35974	GSE80655_AnCg	subject-separate	24	0.159482
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE35974	GSE80655_nAcc	subject-separate	22	0.175553
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE35974	GSE202537_NAc	subject-separate	28	0.220218
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE35974	GSE202537_caudate	subject-separate	28	-0.079375
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE35974	GSE202537_putamen	subject-separate	28	0.095379
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE35974	GSE224683	subject-separate	15	0.21783
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE35974	GSE26927_temporal	subject-separate	10	0.120422
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE35974	GSE138082_CA1	subject-separate	13	-0.151865
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE35974	GSE138082_CA3	subject-separate	12	0.112571
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE35974	GSE138082_DG	subject-separate	13	-0.10857
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE53987_BA46	GSE17612	subject-separate	15	0.237437
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE53987_BA46	GSE21935	subject-separate	15	0.194135
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE53987_BA46	GSE80655_DLPFC	subject-separate	15	0.406313
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE53987_BA46	GSE80655_AnCg	subject-separate	15	0.222704
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE53987_BA46	GSE80655_nAcc	subject-separate	15	0.149518
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE53987_BA46	GSE26927_temporal	subject-separate	10	0.023654
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE53987_BA46	GSE138082_CA1	subject-separate	13	-0.090751
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE53987_BA46	GSE138082_CA3	subject-separate	12	0.13537
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE53987_BA46	GSE138082_DG	subject-separate	13	-0.104971
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE53987_hippocampus	GSE17612	subject-separate	15	0.248289
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE53987_hippocampus	GSE21935	subject-separate	15	0.184864
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE53987_hippocampus	GSE80655_DLPFC	subject-separate	15	0.291382
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE53987_hippocampus	GSE80655_AnCg	subject-separate	15	0.359681
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE53987_hippocampus	GSE80655_nAcc	subject-separate	15	0.302621
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE53987_hippocampus	GSE26927_temporal	subject-separate	10	0.052556
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE53987_hippocampus	GSE138082_CA1	subject-separate	13	-0.259697
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE53987_hippocampus	GSE138082_CA3	subject-separate	12	0.34883
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE53987_hippocampus	GSE138082_DG	subject-separate	13	-0.280694
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE53987_striatum	GSE17612	subject-separate	18	0.166529
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE53987_striatum	GSE21935	subject-separate	18	0.156928
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE53987_striatum	GSE80655_DLPFC	subject-separate	18	0.252577
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE53987_striatum	GSE80655_AnCg	subject-separate	18	0.345261
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE53987_striatum	GSE80655_nAcc	subject-separate	18	0.299777
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE53987_striatum	GSE26927_temporal	subject-separate	10	0.012029
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE53987_striatum	GSE138082_CA1	subject-separate	13	-0.141378
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE53987_striatum	GSE138082_CA3	subject-separate	12	0.265788
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE53987_striatum	GSE138082_DG	subject-separate	13	-0.19746
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE17612	GSE80655_DLPFC	subject-separate	22	0.17749
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE17612	GSE80655_AnCg	subject-separate	22	0.071187
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE17612	GSE80655_nAcc	subject-separate	22	0.135889
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE17612	GSE202537_NAc	subject-separate	22	0.205784
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE17612	GSE202537_caudate	subject-separate	22	0.088869
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE17612	GSE202537_putamen	subject-separate	22	0.142321
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE17612	GSE224683	subject-separate	15	0.14563
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE17612	GSE26927_temporal	subject-separate	10	0.08035
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE17612	GSE138082_CA1	subject-separate	13	-0.027285
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE17612	GSE138082_CA3	subject-separate	12	0.091119
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE17612	GSE138082_DG	subject-separate	13	0.006181
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE21935	GSE80655_DLPFC	subject-separate	19	0.136388
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE21935	GSE80655_AnCg	subject-separate	19	0.008395
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE21935	GSE80655_nAcc	subject-separate	19	0.108539
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE21935	GSE202537_NAc	subject-separate	19	0.146967
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE21935	GSE202537_caudate	subject-separate	19	0.100143
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE21935	GSE202537_putamen	subject-separate	19	0.207291
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE21935	GSE224683	subject-separate	15	0.084736
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE21935	GSE26927_temporal	subject-separate	10	0.063731
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE21935	GSE138082_CA1	subject-separate	13	-0.052474
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE21935	GSE138082_CA3	subject-separate	12	0.148702
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE21935	GSE138082_DG	subject-separate	13	0.089429
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE80655_DLPFC	GSE202537_NAc	subject-separate	23	0.226397
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE80655_DLPFC	GSE202537_caudate	subject-separate	23	-0.067987
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE80655_DLPFC	GSE202537_putamen	subject-separate	23	0.118408
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE80655_DLPFC	GSE224683	subject-separate	15	0.428966
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE80655_DLPFC	GSE26927_temporal	subject-separate	10	0.045594
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE80655_DLPFC	GSE138082_CA1	subject-separate	13	-0.130164
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE80655_DLPFC	GSE138082_CA3	subject-separate	12	0.11583
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE80655_DLPFC	GSE138082_DG	subject-separate	13	-0.13829
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE80655_AnCg	GSE202537_NAc	subject-separate	24	0.092111
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE80655_AnCg	GSE202537_caudate	subject-separate	24	-0.004238
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE80655_AnCg	GSE202537_putamen	subject-separate	24	-0.138247
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE80655_AnCg	GSE224683	subject-separate	15	0.420614
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE80655_AnCg	GSE26927_temporal	subject-separate	10	0.013277
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE80655_AnCg	GSE138082_CA1	subject-separate	13	-0.243637
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE80655_AnCg	GSE138082_CA3	subject-separate	12	0.236636
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE80655_AnCg	GSE138082_DG	subject-separate	13	-0.337993
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE80655_nAcc	GSE202537_NAc	subject-separate	22	0.214594
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE80655_nAcc	GSE202537_caudate	subject-separate	22	-0.113929
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE80655_nAcc	GSE202537_putamen	subject-separate	22	0.050282
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE80655_nAcc	GSE26927_temporal	subject-separate	10	0.025034
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE80655_nAcc	GSE138082_CA1	subject-separate	13	-0.164021
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE80655_nAcc	GSE138082_CA3	subject-separate	12	0.185288
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE80655_nAcc	GSE138082_DG	subject-separate	13	-0.142035
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE202537_NAc	GSE26927_temporal	subject-separate	10	-0.020153
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE202537_NAc	GSE138082_CA1	subject-separate	13	-0.012074
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE202537_NAc	GSE138082_CA3	subject-separate	12	0.12638
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE202537_NAc	GSE138082_DG	subject-separate	13	0.005464
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE202537_caudate	GSE26927_temporal	subject-separate	10	-0.069959
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE202537_caudate	GSE138082_CA1	subject-separate	13	0.142645
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE202537_caudate	GSE138082_CA3	subject-separate	12	0.018588
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE202537_caudate	GSE138082_DG	subject-separate	13	0.08221
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE202537_putamen	GSE26927_temporal	subject-separate	10	-0.080459
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE202537_putamen	GSE138082_CA1	subject-separate	13	0.20712
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE202537_putamen	GSE138082_CA3	subject-separate	12	-0.131659
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE202537_putamen	GSE138082_DG	subject-separate	13	0.299928
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE224683	GSE26927_temporal	subject-separate	10	-0.050657
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE224683	GSE138082_CA1	subject-separate	13	-0.113346
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE224683	GSE138082_CA3	subject-separate	12	0.121834
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE224683	GSE138082_DG	subject-separate	13	-0.210771
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE26927_temporal	GSE138082_CA1	subject-separate	10	-0.146105
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE26927_temporal	GSE138082_CA3	subject-separate	10	0.029093
+bulk dataset pair (Gemma, level L2)	bulk tissue	GSE26927_temporal	GSE138082_DG	subject-separate	10	-0.017832
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE120340	GSE17612	subject-separate	10	0.131437
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE120340	GSE202537_NAc	subject-separate	10	0.131782
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE120340	GSE202537_caudate	subject-separate	10	-0.03826
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE120340	GSE202537_putamen	subject-separate	10	0.199896
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE120340	GSE21138	subject-separate	10	0.187767
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE120340	GSE224683	subject-separate	10	0.194588
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE120340	GSE53987_BA46	subject-separate	10	0.285096
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE120340	GSE53987_hippocampus	subject-separate	10	0.038702
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE120340	GSE53987_striatum	subject-separate	10	0.029879
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE120340	GSE80655_AnCg	subject-separate	10	0.053712
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE120340	GSE80655_DLPFC	subject-separate	10	0.298106
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE120340	GSE80655_nAcc	subject-separate	10	-0.001316
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE12649	GSE17612	subject-separate	22	0.169535
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE12649	GSE202537_NAc	subject-separate	28	0.150454
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE12649	GSE202537_caudate	subject-separate	28	-0.043837
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE12649	GSE202537_putamen	subject-separate	28	0.147832
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE12649	GSE21138	subject-separate	28	0.276455
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE12649	GSE224683	subject-separate	15	0.194465
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE12649	GSE53987_BA46	subject-separate	15	0.344868
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE12649	GSE53987_hippocampus	subject-separate	15	0.175607
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE12649	GSE53987_striatum	subject-separate	18	0.122937
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE12649	GSE80655_AnCg	subject-separate	24	0.036407
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE12649	GSE80655_DLPFC	subject-separate	23	0.267112
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE12649	GSE80655_nAcc	subject-separate	22	0.086535
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE12654	GSE12649	subject-separate	13	0.15543
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE12654	GSE17612	subject-separate	13	0.110885
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE12654	GSE202537_NAc	subject-separate	13	0.123785
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE12654	GSE202537_caudate	subject-separate	13	0.083945
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE12654	GSE202537_putamen	subject-separate	13	0.252912
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE12654	GSE21138	subject-separate	13	0.056526
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE12654	GSE224683	subject-separate	13	0.034972
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE12654	GSE53987_BA46	subject-separate	13	0.106628
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE12654	GSE53987_hippocampus	subject-separate	13	0.039189
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE12654	GSE53987_striatum	subject-separate	13	0.066083
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE12654	GSE80655_AnCg	subject-separate	13	-0.028373
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE12654	GSE80655_DLPFC	subject-separate	13	0.117411
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE12654	GSE80655_nAcc	subject-separate	13	0.044237
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE62191	GSE17612	subject-separate	22	0.131166
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE62191	GSE202537_NAc	subject-separate	28	0.174088
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE62191	GSE202537_caudate	subject-separate	28	-0.117098
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE62191	GSE202537_putamen	subject-separate	28	0.095984
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE62191	GSE21138	subject-separate	28	0.318509
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE62191	GSE224683	subject-separate	15	0.357992
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE62191	GSE53987_BA46	subject-separate	15	0.359116
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE62191	GSE53987_hippocampus	subject-separate	15	0.15772
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE62191	GSE53987_striatum	subject-separate	18	0.127873
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE62191	GSE80655_AnCg	subject-separate	24	0.151479
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE62191	GSE80655_DLPFC	subject-separate	23	0.356255
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE62191	GSE80655_nAcc	subject-separate	22	0.145904
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE78936_BA11	GSE12654	subject-separate	12	-0.117569
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE78936_BA11	GSE17612	subject-separate	12	0.025019
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE78936_BA11	GSE202537_NAc	subject-separate	12	0.075772
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE78936_BA11	GSE202537_caudate	subject-separate	12	-0.080944
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE78936_BA11	GSE202537_putamen	subject-separate	12	-0.175313
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE78936_BA11	GSE21138	subject-separate	12	0.28234
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE78936_BA11	GSE224683	subject-separate	12	0.299516
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE78936_BA11	GSE53987_BA46	subject-separate	12	0.186666
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE78936_BA11	GSE53987_hippocampus	subject-separate	12	0.21145
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE78936_BA11	GSE53987_striatum	subject-separate	12	0.164263
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE78936_BA11	GSE80655_AnCg	subject-separate	12	0.295405
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE78936_BA11	GSE80655_DLPFC	subject-separate	12	0.211987
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE78936_BA11	GSE80655_nAcc	subject-separate	12	0.156148
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE78936_BA24	GSE12654	subject-separate	6	0.029824
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE78936_BA24	GSE17612	subject-separate	6	0.180018
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE78936_BA24	GSE202537_NAc	subject-separate	6	0.240007
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE78936_BA24	GSE202537_caudate	subject-separate	6	-0.099468
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE78936_BA24	GSE202537_putamen	subject-separate	6	-0.002054
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE78936_BA24	GSE21138	subject-separate	6	0.481235
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE78936_BA24	GSE224683	subject-separate	6	0.553705
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE78936_BA24	GSE53987_BA46	subject-separate	6	0.412113
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE78936_BA24	GSE53987_hippocampus	subject-separate	6	0.42012
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE78936_BA24	GSE53987_striatum	subject-separate	6	0.337992
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE78936_BA24	GSE80655_AnCg	subject-separate	6	0.553104
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE78936_BA24	GSE80655_DLPFC	subject-separate	6	0.511818
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE78936_BA24	GSE80655_nAcc	subject-separate	6	0.371767
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE78936_BA9	GSE12654	subject-separate	6	0.270843
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE78936_BA9	GSE17612	subject-separate	6	0.169527
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE78936_BA9	GSE202537_NAc	subject-separate	6	0.262366
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE78936_BA9	GSE202537_caudate	subject-separate	6	-0.032423
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE78936_BA9	GSE202537_putamen	subject-separate	6	0.348336
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE78936_BA9	GSE21138	subject-separate	6	0.314342
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE78936_BA9	GSE224683	subject-separate	6	0.296496
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE78936_BA9	GSE53987_BA46	subject-separate	6	0.393846
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE78936_BA9	GSE53987_hippocampus	subject-separate	6	0.205559
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE78936_BA9	GSE53987_striatum	subject-separate	6	0.209293
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE78936_BA9	GSE80655_AnCg	subject-separate	6	0.187627
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE78936_BA9	GSE80655_DLPFC	subject-separate	6	0.452515
+bulk dataset pair (derived-tier limma fit with a derived unit, level L1 as recorded)	bulk tissue	GSE78936_BA9	GSE80655_nAcc	subject-separate	6	0.199352
+single-nucleus cohort pair (Endresz 2026, one pipeline)	astrocyte	Endresz Batiuk	Endresz Frohlich	subject-separate	5.0	-0.1484
+single-nucleus cohort pair (Endresz 2026, one pipeline)	chandelier	Endresz Batiuk	Endresz Frohlich	subject-separate	5.0	-0.1157
+single-nucleus cohort pair (Endresz 2026, one pipeline)	deep non-IT	Endresz Batiuk	Endresz Frohlich	subject-separate	5.0	-0.2438
+single-nucleus cohort pair (Endresz 2026, one pipeline)	L2/3-6 IT	Endresz Batiuk	Endresz Frohlich	subject-separate	5.0	-0.3067
+single-nucleus cohort pair (Endresz 2026, one pipeline)	LAMP5	Endresz Batiuk	Endresz Frohlich	subject-separate	5.0	-0.162
+single-nucleus cohort pair (Endresz 2026, one pipeline)	microglia	Endresz Batiuk	Endresz Frohlich	subject-separate	5.0	0.2357
+single-nucleus cohort pair (Endresz 2026, one pipeline)	oligodendrocyte	Endresz Batiuk	Endresz Frohlich	subject-separate	5.0	-0.0222
+single-nucleus cohort pair (Endresz 2026, one pipeline)	OPC	Endresz Batiuk	Endresz Frohlich	subject-separate	5.0	-0.0242
+single-nucleus cohort pair (Endresz 2026, one pipeline)	PAX6	Endresz Batiuk	Endresz Frohlich	subject-separate	5.0	-0.0552
+single-nucleus cohort pair (Endresz 2026, one pipeline)	PVALB	Endresz Batiuk	Endresz Frohlich	subject-separate	5.0	-0.3041
+single-nucleus cohort pair (Endresz 2026, one pipeline)	SNCG	Endresz Batiuk	Endresz Frohlich	subject-separate	5.0	-0.0543
+single-nucleus cohort pair (Endresz 2026, one pipeline)	SST	Endresz Batiuk	Endresz Frohlich	subject-separate	5.0	-0.1427
+single-nucleus cohort pair (Endresz 2026, one pipeline)	vascular	Endresz Batiuk	Endresz Frohlich	subject-separate	5.0	0.1102
+single-nucleus cohort pair (Endresz 2026, one pipeline)	VIP	Endresz Batiuk	Endresz Frohlich	subject-separate	5.0	-0.2236
+single-nucleus cohort pair (Endresz 2026, one pipeline)	astrocyte	Endresz Batiuk	Endresz HBCC	subject-separate	5.0	-0.185
+single-nucleus cohort pair (Endresz 2026, one pipeline)	chandelier	Endresz Batiuk	Endresz HBCC	subject-separate	5.0	-0.1866
+single-nucleus cohort pair (Endresz 2026, one pipeline)	deep non-IT	Endresz Batiuk	Endresz HBCC	subject-separate	5.0	-0.1617
+single-nucleus cohort pair (Endresz 2026, one pipeline)	L2/3-6 IT	Endresz Batiuk	Endresz HBCC	subject-separate	5.0	-0.3201
+single-nucleus cohort pair (Endresz 2026, one pipeline)	LAMP5	Endresz Batiuk	Endresz HBCC	subject-separate	5.0	-0.2371
+single-nucleus cohort pair (Endresz 2026, one pipeline)	microglia	Endresz Batiuk	Endresz HBCC	subject-separate	5.0	0.2518
+single-nucleus cohort pair (Endresz 2026, one pipeline)	oligodendrocyte	Endresz Batiuk	Endresz HBCC	subject-separate	5.0	0.0055
+single-nucleus cohort pair (Endresz 2026, one pipeline)	OPC	Endresz Batiuk	Endresz HBCC	subject-separate	5.0	-0.0927
+single-nucleus cohort pair (Endresz 2026, one pipeline)	PAX6	Endresz Batiuk	Endresz HBCC	subject-separate	5.0	-0.2034
+single-nucleus cohort pair (Endresz 2026, one pipeline)	PVALB	Endresz Batiuk	Endresz HBCC	subject-separate	5.0	-0.3414
+single-nucleus cohort pair (Endresz 2026, one pipeline)	SNCG	Endresz Batiuk	Endresz HBCC	subject-separate	5.0	-0.1481
+single-nucleus cohort pair (Endresz 2026, one pipeline)	SST	Endresz Batiuk	Endresz HBCC	subject-separate	5.0	-0.1329
+single-nucleus cohort pair (Endresz 2026, one pipeline)	vascular	Endresz Batiuk	Endresz HBCC	subject-separate	5.0	-0.13
+single-nucleus cohort pair (Endresz 2026, one pipeline)	VIP	Endresz Batiuk	Endresz HBCC	subject-separate	5.0	-0.2819
+single-nucleus cohort pair (Endresz 2026, one pipeline)	astrocyte	Endresz Frohlich	Endresz HBCC	subject-separate	29.0	0.3675
+single-nucleus cohort pair (Endresz 2026, one pipeline)	chandelier	Endresz Frohlich	Endresz HBCC	subject-separate	29.0	0.1326
+single-nucleus cohort pair (Endresz 2026, one pipeline)	deep non-IT	Endresz Frohlich	Endresz HBCC	subject-separate	29.0	0.2441
+single-nucleus cohort pair (Endresz 2026, one pipeline)	L2/3-6 IT	Endresz Frohlich	Endresz HBCC	subject-separate	29.0	0.3377
+single-nucleus cohort pair (Endresz 2026, one pipeline)	LAMP5	Endresz Frohlich	Endresz HBCC	subject-separate	29.0	0.1898
+single-nucleus cohort pair (Endresz 2026, one pipeline)	microglia	Endresz Frohlich	Endresz HBCC	subject-separate	29.0	0.2379
+single-nucleus cohort pair (Endresz 2026, one pipeline)	oligodendrocyte	Endresz Frohlich	Endresz HBCC	subject-separate	29.0	0.3978
+single-nucleus cohort pair (Endresz 2026, one pipeline)	OPC	Endresz Frohlich	Endresz HBCC	subject-separate	29.0	0.2726
+single-nucleus cohort pair (Endresz 2026, one pipeline)	PAX6	Endresz Frohlich	Endresz HBCC	subject-separate	29.0	0.1518
+single-nucleus cohort pair (Endresz 2026, one pipeline)	PVALB	Endresz Frohlich	Endresz HBCC	subject-separate	29.0	0.3135
+single-nucleus cohort pair (Endresz 2026, one pipeline)	SNCG	Endresz Frohlich	Endresz HBCC	subject-separate	29.0	0.138
+single-nucleus cohort pair (Endresz 2026, one pipeline)	SST	Endresz Frohlich	Endresz HBCC	subject-separate	29.0	0.2445
+single-nucleus cohort pair (Endresz 2026, one pipeline)	vascular	Endresz Frohlich	Endresz HBCC	subject-separate	29.0	0.1467
+single-nucleus cohort pair (Endresz 2026, one pipeline)	VIP	Endresz Frohlich	Endresz HBCC	subject-separate	29.0	0.3254
+single-nucleus cohort pair (Endresz 2026, one pipeline)	astrocyte	Endresz Batiuk	Endresz MSSM1	subject-separate	5.0	-0.0711
+single-nucleus cohort pair (Endresz 2026, one pipeline)	chandelier	Endresz Batiuk	Endresz MSSM1	subject-separate	5.0	-0.0997
+single-nucleus cohort pair (Endresz 2026, one pipeline)	deep non-IT	Endresz Batiuk	Endresz MSSM1	subject-separate	5.0	-0.0296
+single-nucleus cohort pair (Endresz 2026, one pipeline)	L2/3-6 IT	Endresz Batiuk	Endresz MSSM1	subject-separate	5.0	-0.251
+single-nucleus cohort pair (Endresz 2026, one pipeline)	LAMP5	Endresz Batiuk	Endresz MSSM1	subject-separate	5.0	-0.1023
+single-nucleus cohort pair (Endresz 2026, one pipeline)	microglia	Endresz Batiuk	Endresz MSSM1	subject-separate	5.0	-0.0743
+single-nucleus cohort pair (Endresz 2026, one pipeline)	oligodendrocyte	Endresz Batiuk	Endresz MSSM1	subject-separate	5.0	0.021
+single-nucleus cohort pair (Endresz 2026, one pipeline)	OPC	Endresz Batiuk	Endresz MSSM1	subject-separate	5.0	0.0324
+single-nucleus cohort pair (Endresz 2026, one pipeline)	PAX6	Endresz Batiuk	Endresz MSSM1	subject-separate	5.0	0.0143
+single-nucleus cohort pair (Endresz 2026, one pipeline)	PVALB	Endresz Batiuk	Endresz MSSM1	subject-separate	5.0	-0.0982
+single-nucleus cohort pair (Endresz 2026, one pipeline)	SNCG	Endresz Batiuk	Endresz MSSM1	subject-separate	5.0	-0.0677
+single-nucleus cohort pair (Endresz 2026, one pipeline)	SST	Endresz Batiuk	Endresz MSSM1	subject-separate	5.0	-0.0425
+single-nucleus cohort pair (Endresz 2026, one pipeline)	vascular	Endresz Batiuk	Endresz MSSM1	subject-separate	5.0	0.0993
+single-nucleus cohort pair (Endresz 2026, one pipeline)	VIP	Endresz Batiuk	Endresz MSSM1	subject-separate	5.0	-0.0483
+single-nucleus cohort pair (Endresz 2026, one pipeline)	astrocyte	Endresz Frohlich	Endresz MSSM1	subject-separate	17.0	0.1146
+single-nucleus cohort pair (Endresz 2026, one pipeline)	chandelier	Endresz Frohlich	Endresz MSSM1	subject-separate	17.0	0.0789
+single-nucleus cohort pair (Endresz 2026, one pipeline)	deep non-IT	Endresz Frohlich	Endresz MSSM1	subject-separate	17.0	0.1394
+single-nucleus cohort pair (Endresz 2026, one pipeline)	L2/3-6 IT	Endresz Frohlich	Endresz MSSM1	subject-separate	17.0	0.3063
+single-nucleus cohort pair (Endresz 2026, one pipeline)	LAMP5	Endresz Frohlich	Endresz MSSM1	subject-separate	17.0	0.1186
+single-nucleus cohort pair (Endresz 2026, one pipeline)	microglia	Endresz Frohlich	Endresz MSSM1	subject-separate	17.0	0.1246
+single-nucleus cohort pair (Endresz 2026, one pipeline)	oligodendrocyte	Endresz Frohlich	Endresz MSSM1	subject-separate	17.0	0.0985
+single-nucleus cohort pair (Endresz 2026, one pipeline)	OPC	Endresz Frohlich	Endresz MSSM1	subject-separate	17.0	0.0392
+single-nucleus cohort pair (Endresz 2026, one pipeline)	PAX6	Endresz Frohlich	Endresz MSSM1	subject-separate	17.0	0.142
+single-nucleus cohort pair (Endresz 2026, one pipeline)	PVALB	Endresz Frohlich	Endresz MSSM1	subject-separate	17.0	0.2231
+single-nucleus cohort pair (Endresz 2026, one pipeline)	SNCG	Endresz Frohlich	Endresz MSSM1	subject-separate	17.0	0.102
+single-nucleus cohort pair (Endresz 2026, one pipeline)	SST	Endresz Frohlich	Endresz MSSM1	subject-separate	17.0	0.0394
+single-nucleus cohort pair (Endresz 2026, one pipeline)	vascular	Endresz Frohlich	Endresz MSSM1	subject-separate	17.0	-0.0216
+single-nucleus cohort pair (Endresz 2026, one pipeline)	VIP	Endresz Frohlich	Endresz MSSM1	subject-separate	17.0	0.3193
+single-nucleus cohort pair (Endresz 2026, one pipeline)	astrocyte	Endresz HBCC	Endresz MSSM1	subject-separate	17.0	0.1867
+single-nucleus cohort pair (Endresz 2026, one pipeline)	chandelier	Endresz HBCC	Endresz MSSM1	subject-separate	17.0	0.1904
+single-nucleus cohort pair (Endresz 2026, one pipeline)	deep non-IT	Endresz HBCC	Endresz MSSM1	subject-separate	17.0	0.1441
+single-nucleus cohort pair (Endresz 2026, one pipeline)	L2/3-6 IT	Endresz HBCC	Endresz MSSM1	subject-separate	17.0	0.1991
+single-nucleus cohort pair (Endresz 2026, one pipeline)	LAMP5	Endresz HBCC	Endresz MSSM1	subject-separate	17.0	0.1762
+single-nucleus cohort pair (Endresz 2026, one pipeline)	microglia	Endresz HBCC	Endresz MSSM1	subject-separate	17.0	0.1296
+single-nucleus cohort pair (Endresz 2026, one pipeline)	oligodendrocyte	Endresz HBCC	Endresz MSSM1	subject-separate	17.0	0.1884
+single-nucleus cohort pair (Endresz 2026, one pipeline)	OPC	Endresz HBCC	Endresz MSSM1	subject-separate	17.0	0.0721
+single-nucleus cohort pair (Endresz 2026, one pipeline)	PAX6	Endresz HBCC	Endresz MSSM1	subject-separate	17.0	0.1105
+single-nucleus cohort pair (Endresz 2026, one pipeline)	PVALB	Endresz HBCC	Endresz MSSM1	subject-separate	17.0	0.2047
+single-nucleus cohort pair (Endresz 2026, one pipeline)	SNCG	Endresz HBCC	Endresz MSSM1	subject-separate	17.0	0.1769
+single-nucleus cohort pair (Endresz 2026, one pipeline)	SST	Endresz HBCC	Endresz MSSM1	subject-separate	17.0	0.0999
+single-nucleus cohort pair (Endresz 2026, one pipeline)	vascular	Endresz HBCC	Endresz MSSM1	subject-separate	17.0	0.0146
+single-nucleus cohort pair (Endresz 2026, one pipeline)	VIP	Endresz HBCC	Endresz MSSM1	subject-separate	17.0	0.2501
+single-nucleus cohort pair (Endresz 2026, one pipeline)	astrocyte	Endresz Batiuk	Endresz MSSM2	subject-separate	5.0	-0.1003
+single-nucleus cohort pair (Endresz 2026, one pipeline)	chandelier	Endresz Batiuk	Endresz MSSM2	subject-separate	5.0	-0.0229
+single-nucleus cohort pair (Endresz 2026, one pipeline)	deep non-IT	Endresz Batiuk	Endresz MSSM2	subject-separate	5.0	-0.0154
+single-nucleus cohort pair (Endresz 2026, one pipeline)	L2/3-6 IT	Endresz Batiuk	Endresz MSSM2	subject-separate	5.0	0.0484
+single-nucleus cohort pair (Endresz 2026, one pipeline)	LAMP5	Endresz Batiuk	Endresz MSSM2	subject-separate	5.0	0.0222
+single-nucleus cohort pair (Endresz 2026, one pipeline)	microglia	Endresz Batiuk	Endresz MSSM2	subject-separate	5.0	0.2896
+single-nucleus cohort pair (Endresz 2026, one pipeline)	oligodendrocyte	Endresz Batiuk	Endresz MSSM2	subject-separate	5.0	-0.0498
+single-nucleus cohort pair (Endresz 2026, one pipeline)	OPC	Endresz Batiuk	Endresz MSSM2	subject-separate	5.0	-0.3439
+single-nucleus cohort pair (Endresz 2026, one pipeline)	PAX6	Endresz Batiuk	Endresz MSSM2	subject-separate	5.0	-0.1304
+single-nucleus cohort pair (Endresz 2026, one pipeline)	PVALB	Endresz Batiuk	Endresz MSSM2	subject-separate	5.0	0.1917
+single-nucleus cohort pair (Endresz 2026, one pipeline)	SNCG	Endresz Batiuk	Endresz MSSM2	subject-separate	5.0	-0.0118
+single-nucleus cohort pair (Endresz 2026, one pipeline)	SST	Endresz Batiuk	Endresz MSSM2	subject-separate	5.0	0.0373
+single-nucleus cohort pair (Endresz 2026, one pipeline)	vascular	Endresz Batiuk	Endresz MSSM2	subject-separate	5.0	-0.085
+single-nucleus cohort pair (Endresz 2026, one pipeline)	VIP	Endresz Batiuk	Endresz MSSM2	subject-separate	5.0	0.0287
+single-nucleus cohort pair (Endresz 2026, one pipeline)	astrocyte	Endresz Frohlich	Endresz MSSM2	subject-separate	29.0	0.0405
+single-nucleus cohort pair (Endresz 2026, one pipeline)	chandelier	Endresz Frohlich	Endresz MSSM2	subject-separate	29.0	-0.0172
+single-nucleus cohort pair (Endresz 2026, one pipeline)	deep non-IT	Endresz Frohlich	Endresz MSSM2	subject-separate	29.0	0.0542
+single-nucleus cohort pair (Endresz 2026, one pipeline)	L2/3-6 IT	Endresz Frohlich	Endresz MSSM2	subject-separate	29.0	0.0714
+single-nucleus cohort pair (Endresz 2026, one pipeline)	LAMP5	Endresz Frohlich	Endresz MSSM2	subject-separate	29.0	0.0419
+single-nucleus cohort pair (Endresz 2026, one pipeline)	microglia	Endresz Frohlich	Endresz MSSM2	subject-separate	29.0	0.1718
+single-nucleus cohort pair (Endresz 2026, one pipeline)	oligodendrocyte	Endresz Frohlich	Endresz MSSM2	subject-separate	29.0	-0.0981
+single-nucleus cohort pair (Endresz 2026, one pipeline)	OPC	Endresz Frohlich	Endresz MSSM2	subject-separate	29.0	-0.0769
+single-nucleus cohort pair (Endresz 2026, one pipeline)	PAX6	Endresz Frohlich	Endresz MSSM2	subject-separate	29.0	-0.0215
+single-nucleus cohort pair (Endresz 2026, one pipeline)	PVALB	Endresz Frohlich	Endresz MSSM2	subject-separate	29.0	-0.1168
+single-nucleus cohort pair (Endresz 2026, one pipeline)	SNCG	Endresz Frohlich	Endresz MSSM2	subject-separate	29.0	-0.0075
+single-nucleus cohort pair (Endresz 2026, one pipeline)	SST	Endresz Frohlich	Endresz MSSM2	subject-separate	29.0	0.016
+single-nucleus cohort pair (Endresz 2026, one pipeline)	vascular	Endresz Frohlich	Endresz MSSM2	subject-separate	29.0	-0.0036
+single-nucleus cohort pair (Endresz 2026, one pipeline)	VIP	Endresz Frohlich	Endresz MSSM2	subject-separate	29.0	-0.022
+single-nucleus cohort pair (Endresz 2026, one pipeline)	astrocyte	Endresz HBCC	Endresz MSSM2	subject-separate	45.0	0.275
+single-nucleus cohort pair (Endresz 2026, one pipeline)	chandelier	Endresz HBCC	Endresz MSSM2	subject-separate	45.0	0.3427
+single-nucleus cohort pair (Endresz 2026, one pipeline)	deep non-IT	Endresz HBCC	Endresz MSSM2	subject-separate	45.0	0.1663
+single-nucleus cohort pair (Endresz 2026, one pipeline)	L2/3-6 IT	Endresz HBCC	Endresz MSSM2	subject-separate	45.0	0.1801
+single-nucleus cohort pair (Endresz 2026, one pipeline)	LAMP5	Endresz HBCC	Endresz MSSM2	subject-separate	45.0	0.1682
+single-nucleus cohort pair (Endresz 2026, one pipeline)	microglia	Endresz HBCC	Endresz MSSM2	subject-separate	45.0	0.3885
+single-nucleus cohort pair (Endresz 2026, one pipeline)	oligodendrocyte	Endresz HBCC	Endresz MSSM2	subject-separate	45.0	0.1218
+single-nucleus cohort pair (Endresz 2026, one pipeline)	OPC	Endresz HBCC	Endresz MSSM2	subject-separate	45.0	0.2575
+single-nucleus cohort pair (Endresz 2026, one pipeline)	PAX6	Endresz HBCC	Endresz MSSM2	subject-separate	45.0	0.1586
+single-nucleus cohort pair (Endresz 2026, one pipeline)	PVALB	Endresz HBCC	Endresz MSSM2	subject-separate	45.0	0.1398
+single-nucleus cohort pair (Endresz 2026, one pipeline)	SNCG	Endresz HBCC	Endresz MSSM2	subject-separate	45.0	0.1761
+single-nucleus cohort pair (Endresz 2026, one pipeline)	SST	Endresz HBCC	Endresz MSSM2	subject-separate	45.0	0.0441
+single-nucleus cohort pair (Endresz 2026, one pipeline)	vascular	Endresz HBCC	Endresz MSSM2	subject-separate	45.0	0.2047
+single-nucleus cohort pair (Endresz 2026, one pipeline)	VIP	Endresz HBCC	Endresz MSSM2	subject-separate	45.0	0.181
+single-nucleus cohort pair (Endresz 2026, one pipeline)	astrocyte	Endresz Batiuk	Endresz McLean	subject-separate	5.0	-0.1054
+single-nucleus cohort pair (Endresz 2026, one pipeline)	chandelier	Endresz Batiuk	Endresz McLean	subject-separate	5.0	0.0519
+single-nucleus cohort pair (Endresz 2026, one pipeline)	deep non-IT	Endresz Batiuk	Endresz McLean	subject-separate	5.0	-0.2141
+single-nucleus cohort pair (Endresz 2026, one pipeline)	L2/3-6 IT	Endresz Batiuk	Endresz McLean	subject-separate	5.0	-0.199
+single-nucleus cohort pair (Endresz 2026, one pipeline)	LAMP5	Endresz Batiuk	Endresz McLean	subject-separate	5.0	-0.0181
+single-nucleus cohort pair (Endresz 2026, one pipeline)	microglia	Endresz Batiuk	Endresz McLean	subject-separate	5.0	0.2982
+single-nucleus cohort pair (Endresz 2026, one pipeline)	oligodendrocyte	Endresz Batiuk	Endresz McLean	subject-separate	5.0	-0.0011
+single-nucleus cohort pair (Endresz 2026, one pipeline)	OPC	Endresz Batiuk	Endresz McLean	subject-separate	5.0	-0.1432
+single-nucleus cohort pair (Endresz 2026, one pipeline)	PAX6	Endresz Batiuk	Endresz McLean	subject-separate	5.0	-0.0149
+single-nucleus cohort pair (Endresz 2026, one pipeline)	PVALB	Endresz Batiuk	Endresz McLean	subject-separate	5.0	-0.1322
+single-nucleus cohort pair (Endresz 2026, one pipeline)	SNCG	Endresz Batiuk	Endresz McLean	subject-separate	5.0	0.01
+single-nucleus cohort pair (Endresz 2026, one pipeline)	SST	Endresz Batiuk	Endresz McLean	subject-separate	5.0	-0.0752
+single-nucleus cohort pair (Endresz 2026, one pipeline)	vascular	Endresz Batiuk	Endresz McLean	subject-separate	5.0	0.0465
+single-nucleus cohort pair (Endresz 2026, one pipeline)	VIP	Endresz Batiuk	Endresz McLean	subject-separate	5.0	0.0565
+single-nucleus cohort pair (Endresz 2026, one pipeline)	astrocyte	Endresz Frohlich	Endresz McLean	subject-separate	14.0	0.1428
+single-nucleus cohort pair (Endresz 2026, one pipeline)	chandelier	Endresz Frohlich	Endresz McLean	subject-separate	14.0	0.136
+single-nucleus cohort pair (Endresz 2026, one pipeline)	deep non-IT	Endresz Frohlich	Endresz McLean	subject-separate	14.0	0.2205
+single-nucleus cohort pair (Endresz 2026, one pipeline)	L2/3-6 IT	Endresz Frohlich	Endresz McLean	subject-separate	14.0	0.325
+single-nucleus cohort pair (Endresz 2026, one pipeline)	LAMP5	Endresz Frohlich	Endresz McLean	subject-separate	14.0	0.2807
+single-nucleus cohort pair (Endresz 2026, one pipeline)	microglia	Endresz Frohlich	Endresz McLean	subject-separate	14.0	0.1649
+single-nucleus cohort pair (Endresz 2026, one pipeline)	oligodendrocyte	Endresz Frohlich	Endresz McLean	subject-separate	14.0	0.174
+single-nucleus cohort pair (Endresz 2026, one pipeline)	OPC	Endresz Frohlich	Endresz McLean	subject-separate	14.0	0.1462
+single-nucleus cohort pair (Endresz 2026, one pipeline)	PAX6	Endresz Frohlich	Endresz McLean	subject-separate	14.0	0.1353
+single-nucleus cohort pair (Endresz 2026, one pipeline)	PVALB	Endresz Frohlich	Endresz McLean	subject-separate	14.0	0.4268
+single-nucleus cohort pair (Endresz 2026, one pipeline)	SNCG	Endresz Frohlich	Endresz McLean	subject-separate	14.0	0.1547
+single-nucleus cohort pair (Endresz 2026, one pipeline)	SST	Endresz Frohlich	Endresz McLean	subject-separate	14.0	0.1805
+single-nucleus cohort pair (Endresz 2026, one pipeline)	vascular	Endresz Frohlich	Endresz McLean	subject-separate	14.0	0.0198
+single-nucleus cohort pair (Endresz 2026, one pipeline)	VIP	Endresz Frohlich	Endresz McLean	subject-separate	14.0	0.3178
+single-nucleus cohort pair (Endresz 2026, one pipeline)	astrocyte	Endresz HBCC	Endresz McLean	subject-separate	14.0	0.2425
+single-nucleus cohort pair (Endresz 2026, one pipeline)	chandelier	Endresz HBCC	Endresz McLean	subject-separate	14.0	0.1106
+single-nucleus cohort pair (Endresz 2026, one pipeline)	deep non-IT	Endresz HBCC	Endresz McLean	subject-separate	14.0	0.1704
+single-nucleus cohort pair (Endresz 2026, one pipeline)	L2/3-6 IT	Endresz HBCC	Endresz McLean	subject-separate	14.0	0.2941
+single-nucleus cohort pair (Endresz 2026, one pipeline)	LAMP5	Endresz HBCC	Endresz McLean	subject-separate	14.0	0.2241
+single-nucleus cohort pair (Endresz 2026, one pipeline)	microglia	Endresz HBCC	Endresz McLean	subject-separate	14.0	0.227
+single-nucleus cohort pair (Endresz 2026, one pipeline)	oligodendrocyte	Endresz HBCC	Endresz McLean	subject-separate	14.0	0.2919
+single-nucleus cohort pair (Endresz 2026, one pipeline)	OPC	Endresz HBCC	Endresz McLean	subject-separate	14.0	0.2132
+single-nucleus cohort pair (Endresz 2026, one pipeline)	PAX6	Endresz HBCC	Endresz McLean	subject-separate	14.0	0.1385
+single-nucleus cohort pair (Endresz 2026, one pipeline)	PVALB	Endresz HBCC	Endresz McLean	subject-separate	14.0	0.2891
+single-nucleus cohort pair (Endresz 2026, one pipeline)	SNCG	Endresz HBCC	Endresz McLean	subject-separate	14.0	0.1942
+single-nucleus cohort pair (Endresz 2026, one pipeline)	SST	Endresz HBCC	Endresz McLean	subject-separate	14.0	0.1851
+single-nucleus cohort pair (Endresz 2026, one pipeline)	vascular	Endresz HBCC	Endresz McLean	subject-separate	14.0	0.1047
+single-nucleus cohort pair (Endresz 2026, one pipeline)	VIP	Endresz HBCC	Endresz McLean	subject-separate	14.0	0.205
+single-nucleus cohort pair (Endresz 2026, one pipeline)	astrocyte	Endresz MSSM1	Endresz McLean	subject-separate	14.0	0.1799
+single-nucleus cohort pair (Endresz 2026, one pipeline)	chandelier	Endresz MSSM1	Endresz McLean	subject-separate	14.0	0.0952
+single-nucleus cohort pair (Endresz 2026, one pipeline)	deep non-IT	Endresz MSSM1	Endresz McLean	subject-separate	14.0	0.1667
+single-nucleus cohort pair (Endresz 2026, one pipeline)	L2/3-6 IT	Endresz MSSM1	Endresz McLean	subject-separate	14.0	0.2448
+single-nucleus cohort pair (Endresz 2026, one pipeline)	LAMP5	Endresz MSSM1	Endresz McLean	subject-separate	14.0	0.1447
+single-nucleus cohort pair (Endresz 2026, one pipeline)	microglia	Endresz MSSM1	Endresz McLean	subject-separate	14.0	0.1747
+single-nucleus cohort pair (Endresz 2026, one pipeline)	oligodendrocyte	Endresz MSSM1	Endresz McLean	subject-separate	14.0	0.2355
+single-nucleus cohort pair (Endresz 2026, one pipeline)	OPC	Endresz MSSM1	Endresz McLean	subject-separate	14.0	0.0901
+single-nucleus cohort pair (Endresz 2026, one pipeline)	PAX6	Endresz MSSM1	Endresz McLean	subject-separate	14.0	0.1038
+single-nucleus cohort pair (Endresz 2026, one pipeline)	PVALB	Endresz MSSM1	Endresz McLean	subject-separate	14.0	0.257
+single-nucleus cohort pair (Endresz 2026, one pipeline)	SNCG	Endresz MSSM1	Endresz McLean	subject-separate	14.0	0.0978
+single-nucleus cohort pair (Endresz 2026, one pipeline)	SST	Endresz MSSM1	Endresz McLean	subject-separate	14.0	0.0475
+single-nucleus cohort pair (Endresz 2026, one pipeline)	vascular	Endresz MSSM1	Endresz McLean	subject-separate	14.0	0.0768
+single-nucleus cohort pair (Endresz 2026, one pipeline)	VIP	Endresz MSSM1	Endresz McLean	subject-separate	14.0	0.3509
+single-nucleus cohort pair (Endresz 2026, one pipeline)	astrocyte	Endresz MSSM2	Endresz McLean	subject-separate	14.0	0.0835
+single-nucleus cohort pair (Endresz 2026, one pipeline)	chandelier	Endresz MSSM2	Endresz McLean	subject-separate	14.0	0.0606
+single-nucleus cohort pair (Endresz 2026, one pipeline)	deep non-IT	Endresz MSSM2	Endresz McLean	subject-separate	14.0	0.0753
+single-nucleus cohort pair (Endresz 2026, one pipeline)	L2/3-6 IT	Endresz MSSM2	Endresz McLean	subject-separate	14.0	0.0522
+single-nucleus cohort pair (Endresz 2026, one pipeline)	LAMP5	Endresz MSSM2	Endresz McLean	subject-separate	14.0	0.0836
+single-nucleus cohort pair (Endresz 2026, one pipeline)	microglia	Endresz MSSM2	Endresz McLean	subject-separate	14.0	0.152
+single-nucleus cohort pair (Endresz 2026, one pipeline)	oligodendrocyte	Endresz MSSM2	Endresz McLean	subject-separate	14.0	-0.0148
+single-nucleus cohort pair (Endresz 2026, one pipeline)	OPC	Endresz MSSM2	Endresz McLean	subject-separate	14.0	0.0629
+single-nucleus cohort pair (Endresz 2026, one pipeline)	PAX6	Endresz MSSM2	Endresz McLean	subject-separate	14.0	0.052
+single-nucleus cohort pair (Endresz 2026, one pipeline)	PVALB	Endresz MSSM2	Endresz McLean	subject-separate	14.0	-0.0694
+single-nucleus cohort pair (Endresz 2026, one pipeline)	SNCG	Endresz MSSM2	Endresz McLean	subject-separate	14.0	0.0681
+single-nucleus cohort pair (Endresz 2026, one pipeline)	SST	Endresz MSSM2	Endresz McLean	subject-separate	14.0	-0.0236
+single-nucleus cohort pair (Endresz 2026, one pipeline)	vascular	Endresz MSSM2	Endresz McLean	subject-separate	14.0	0.1613
+single-nucleus cohort pair (Endresz 2026, one pipeline)	VIP	Endresz MSSM2	Endresz McLean	subject-separate	14.0	0.0606
+single-nucleus cohort pair (Endresz 2026, one pipeline)	astrocyte	Endresz Batiuk	Endresz Multiome	subject-separate	5.0	-0.0341
+single-nucleus cohort pair (Endresz 2026, one pipeline)	chandelier	Endresz Batiuk	Endresz Multiome	subject-separate	5.0	-0.0219
+single-nucleus cohort pair (Endresz 2026, one pipeline)	deep non-IT	Endresz Batiuk	Endresz Multiome	subject-separate	5.0	0.0337
+single-nucleus cohort pair (Endresz 2026, one pipeline)	L2/3-6 IT	Endresz Batiuk	Endresz Multiome	subject-separate	5.0	0.1091
+single-nucleus cohort pair (Endresz 2026, one pipeline)	LAMP5	Endresz Batiuk	Endresz Multiome	subject-separate	5.0	-0.0269
+single-nucleus cohort pair (Endresz 2026, one pipeline)	microglia	Endresz Batiuk	Endresz Multiome	subject-separate	5.0	0.0796
+single-nucleus cohort pair (Endresz 2026, one pipeline)	oligodendrocyte	Endresz Batiuk	Endresz Multiome	subject-separate	5.0	-0.0004
+single-nucleus cohort pair (Endresz 2026, one pipeline)	OPC	Endresz Batiuk	Endresz Multiome	subject-separate	5.0	0.0258
+single-nucleus cohort pair (Endresz 2026, one pipeline)	PAX6	Endresz Batiuk	Endresz Multiome	subject-separate	5.0	-0.104
+single-nucleus cohort pair (Endresz 2026, one pipeline)	PVALB	Endresz Batiuk	Endresz Multiome	subject-separate	5.0	0.099
+single-nucleus cohort pair (Endresz 2026, one pipeline)	SNCG	Endresz Batiuk	Endresz Multiome	subject-separate	5.0	-0.0753
+single-nucleus cohort pair (Endresz 2026, one pipeline)	SST	Endresz Batiuk	Endresz Multiome	subject-separate	5.0	-0.0277
+single-nucleus cohort pair (Endresz 2026, one pipeline)	vascular	Endresz Batiuk	Endresz Multiome	subject-separate	5.0	-0.0591
+single-nucleus cohort pair (Endresz 2026, one pipeline)	VIP	Endresz Batiuk	Endresz Multiome	subject-separate	5.0	-0.101
+single-nucleus cohort pair (Endresz 2026, one pipeline)	astrocyte	Endresz Frohlich	Endresz Multiome	subject-separate	5.0	0.2639
+single-nucleus cohort pair (Endresz 2026, one pipeline)	chandelier	Endresz Frohlich	Endresz Multiome	subject-separate	5.0	0.0259
+single-nucleus cohort pair (Endresz 2026, one pipeline)	deep non-IT	Endresz Frohlich	Endresz Multiome	subject-separate	5.0	0.0372
+single-nucleus cohort pair (Endresz 2026, one pipeline)	L2/3-6 IT	Endresz Frohlich	Endresz Multiome	subject-separate	5.0	0.0036
+single-nucleus cohort pair (Endresz 2026, one pipeline)	LAMP5	Endresz Frohlich	Endresz Multiome	subject-separate	5.0	-0.0032
+single-nucleus cohort pair (Endresz 2026, one pipeline)	microglia	Endresz Frohlich	Endresz Multiome	subject-separate	5.0	0.0514
+single-nucleus cohort pair (Endresz 2026, one pipeline)	oligodendrocyte	Endresz Frohlich	Endresz Multiome	subject-separate	5.0	0.0817
+single-nucleus cohort pair (Endresz 2026, one pipeline)	OPC	Endresz Frohlich	Endresz Multiome	subject-separate	5.0	0.1915
+single-nucleus cohort pair (Endresz 2026, one pipeline)	PAX6	Endresz Frohlich	Endresz Multiome	subject-separate	5.0	0.0109
+single-nucleus cohort pair (Endresz 2026, one pipeline)	PVALB	Endresz Frohlich	Endresz Multiome	subject-separate	5.0	-0.0095
+single-nucleus cohort pair (Endresz 2026, one pipeline)	SNCG	Endresz Frohlich	Endresz Multiome	subject-separate	5.0	-0.0251
+single-nucleus cohort pair (Endresz 2026, one pipeline)	SST	Endresz Frohlich	Endresz Multiome	subject-separate	5.0	0.0758
+single-nucleus cohort pair (Endresz 2026, one pipeline)	vascular	Endresz Frohlich	Endresz Multiome	subject-separate	5.0	0.0237
+single-nucleus cohort pair (Endresz 2026, one pipeline)	VIP	Endresz Frohlich	Endresz Multiome	subject-separate	5.0	-0.034
+single-nucleus cohort pair (Endresz 2026, one pipeline)	astrocyte	Endresz MSSM1	Endresz Multiome	subject-separate	5.0	0.1668
+single-nucleus cohort pair (Endresz 2026, one pipeline)	chandelier	Endresz MSSM1	Endresz Multiome	subject-separate	5.0	0.0605
+single-nucleus cohort pair (Endresz 2026, one pipeline)	deep non-IT	Endresz MSSM1	Endresz Multiome	subject-separate	5.0	0.0383
+single-nucleus cohort pair (Endresz 2026, one pipeline)	L2/3-6 IT	Endresz MSSM1	Endresz Multiome	subject-separate	5.0	-0.038
+single-nucleus cohort pair (Endresz 2026, one pipeline)	LAMP5	Endresz MSSM1	Endresz Multiome	subject-separate	5.0	0.078
+single-nucleus cohort pair (Endresz 2026, one pipeline)	microglia	Endresz MSSM1	Endresz Multiome	subject-separate	5.0	0.0451
+single-nucleus cohort pair (Endresz 2026, one pipeline)	oligodendrocyte	Endresz MSSM1	Endresz Multiome	subject-separate	5.0	0.0836
+single-nucleus cohort pair (Endresz 2026, one pipeline)	OPC	Endresz MSSM1	Endresz Multiome	subject-separate	5.0	0.0819
+single-nucleus cohort pair (Endresz 2026, one pipeline)	PAX6	Endresz MSSM1	Endresz Multiome	subject-separate	5.0	0.0448
+single-nucleus cohort pair (Endresz 2026, one pipeline)	PVALB	Endresz MSSM1	Endresz Multiome	subject-separate	5.0	0.0985
+single-nucleus cohort pair (Endresz 2026, one pipeline)	SNCG	Endresz MSSM1	Endresz Multiome	subject-separate	5.0	0.0506
+single-nucleus cohort pair (Endresz 2026, one pipeline)	SST	Endresz MSSM1	Endresz Multiome	subject-separate	5.0	0.0504
+single-nucleus cohort pair (Endresz 2026, one pipeline)	vascular	Endresz MSSM1	Endresz Multiome	subject-separate	5.0	-0.0399
+single-nucleus cohort pair (Endresz 2026, one pipeline)	VIP	Endresz MSSM1	Endresz Multiome	subject-separate	5.0	-0.0163
+single-nucleus cohort pair (Endresz 2026, one pipeline)	astrocyte	Endresz MSSM2	Endresz Multiome	subject-separate	5.0	0.0351
+single-nucleus cohort pair (Endresz 2026, one pipeline)	chandelier	Endresz MSSM2	Endresz Multiome	subject-separate	5.0	0.0599
+single-nucleus cohort pair (Endresz 2026, one pipeline)	deep non-IT	Endresz MSSM2	Endresz Multiome	subject-separate	5.0	0.0496
+single-nucleus cohort pair (Endresz 2026, one pipeline)	L2/3-6 IT	Endresz MSSM2	Endresz Multiome	subject-separate	5.0	0.1379
+single-nucleus cohort pair (Endresz 2026, one pipeline)	LAMP5	Endresz MSSM2	Endresz Multiome	subject-separate	5.0	0.0876
+single-nucleus cohort pair (Endresz 2026, one pipeline)	microglia	Endresz MSSM2	Endresz Multiome	subject-separate	5.0	0.0935
+single-nucleus cohort pair (Endresz 2026, one pipeline)	oligodendrocyte	Endresz MSSM2	Endresz Multiome	subject-separate	5.0	0.0763
+single-nucleus cohort pair (Endresz 2026, one pipeline)	OPC	Endresz MSSM2	Endresz Multiome	subject-separate	5.0	-0.0226
+single-nucleus cohort pair (Endresz 2026, one pipeline)	PAX6	Endresz MSSM2	Endresz Multiome	subject-separate	5.0	0.1068
+single-nucleus cohort pair (Endresz 2026, one pipeline)	PVALB	Endresz MSSM2	Endresz Multiome	subject-separate	5.0	0.1511
+single-nucleus cohort pair (Endresz 2026, one pipeline)	SNCG	Endresz MSSM2	Endresz Multiome	subject-separate	5.0	0.0966
+single-nucleus cohort pair (Endresz 2026, one pipeline)	SST	Endresz MSSM2	Endresz Multiome	subject-separate	5.0	0.0822
+single-nucleus cohort pair (Endresz 2026, one pipeline)	vascular	Endresz MSSM2	Endresz Multiome	subject-separate	5.0	0.0707
+single-nucleus cohort pair (Endresz 2026, one pipeline)	VIP	Endresz MSSM2	Endresz Multiome	subject-separate	5.0	0.1939
+single-nucleus cohort pair (Endresz 2026, one pipeline)	astrocyte	Endresz McLean	Endresz Multiome	subject-separate	5.0	0.0649
+single-nucleus cohort pair (Endresz 2026, one pipeline)	chandelier	Endresz McLean	Endresz Multiome	subject-separate	5.0	0.0293
+single-nucleus cohort pair (Endresz 2026, one pipeline)	deep non-IT	Endresz McLean	Endresz Multiome	subject-separate	5.0	0.0387
+single-nucleus cohort pair (Endresz 2026, one pipeline)	L2/3-6 IT	Endresz McLean	Endresz Multiome	subject-separate	5.0	0.0912
+single-nucleus cohort pair (Endresz 2026, one pipeline)	LAMP5	Endresz McLean	Endresz Multiome	subject-separate	5.0	0.0234
+single-nucleus cohort pair (Endresz 2026, one pipeline)	microglia	Endresz McLean	Endresz Multiome	subject-separate	5.0	0.081
+single-nucleus cohort pair (Endresz 2026, one pipeline)	oligodendrocyte	Endresz McLean	Endresz Multiome	subject-separate	5.0	0.1078
+single-nucleus cohort pair (Endresz 2026, one pipeline)	OPC	Endresz McLean	Endresz Multiome	subject-separate	5.0	0.0943
+single-nucleus cohort pair (Endresz 2026, one pipeline)	PAX6	Endresz McLean	Endresz Multiome	subject-separate	5.0	0.025
+single-nucleus cohort pair (Endresz 2026, one pipeline)	PVALB	Endresz McLean	Endresz Multiome	subject-separate	5.0	0.0653
+single-nucleus cohort pair (Endresz 2026, one pipeline)	SNCG	Endresz McLean	Endresz Multiome	subject-separate	5.0	-0.0121
+single-nucleus cohort pair (Endresz 2026, one pipeline)	SST	Endresz McLean	Endresz Multiome	subject-separate	5.0	0.0165
+single-nucleus cohort pair (Endresz 2026, one pipeline)	vascular	Endresz McLean	Endresz Multiome	subject-separate	5.0	-0.009
+single-nucleus cohort pair (Endresz 2026, one pipeline)	VIP	Endresz McLean	Endresz Multiome	subject-separate	5.0	-0.077

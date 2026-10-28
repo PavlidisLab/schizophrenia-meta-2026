@@ -1,0 +1,15 @@
+# figure: fig08 panel c (right)
+# script: analyses/redo_on_209_2026-10-11/3_ph_agonal_axes/export_fig08_209.py (copy of analyses/figure_exports/export_fig08_fig09_fig10.py: output folder, population text, results_516 in place of results_516, fig08 only), run 2026-10-11
+# input: analyses/confounds/results/combined_controls_pH.tsv sha256 74fdf88878ba
+# input: analyses/interneuron_ph_2026-10-01/results/specificity_MSSM.tsv.gz sha256 c3b841c2c9d1
+# input: analyses/confounds/ph_pHindex_2026-10-03/results/results.tsv sha256 2e968254320b
+# direction structure by cell class: Spearman rho of signed control-pH Z with the class's specificity over the genes tested (pH x specificity); recomputed here from the table fig08_c_gene_ph_specificity.tsv and set beside the 2026-10-03 values of ph_pHindex_2026-10-03/results/results.tsv
+# axis: unsuffixed pH columns = pH axis v2 (primary; inputs_ph_axis_v2/axis_v2_controls.tsv.gz sha256 2c72a9b279a2; 10 dataset-regions, persons counted once); columns ending _axis_v1 = v1 fork (5 donor-separate datasets; analyses/confounds/results/combined_controls_pH.tsv sha256 ebab86afedd3)
+class	n_genes	spearman_z_ph_vs_spec	value_in_results_2026-10-03	residual_after_expression_fit_2026-10-03	n_genes_axis_v1	spearman_z_ph_vs_spec_axis_v1
+EN	13556	0.4458048597938602	0.529	+0.523	13398	0.5286362489084251
+coarse_IN	13556	0.4302057871454158	0.496	+0.483	13398	0.49618687893562435
+Astro	13556	-0.3291247371522998	-0.349	-0.351	13398	-0.34855758374396256
+Oligo	13556	-0.09254007868481356	-0.164	-0.177	13398	-0.16387196970064274
+OPC	13556	-0.05275836779095981	-0.096	-0.111	13398	-0.09608241295304339
+Micro	13556	-0.04642911170150968	-0.112	-0.114	13398	-0.11210499677206559
+Vascular	13556	-0.16224104222948113	-0.207	-0.205	13398	-0.20718229035193897

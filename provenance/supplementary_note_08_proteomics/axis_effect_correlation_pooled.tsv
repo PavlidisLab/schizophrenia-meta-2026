@@ -1,0 +1,23 @@
+# built 2026-10-14 by scripts/analyze_axes.py; axes from axis_gene_table.tsv (sha256 ae8c71ea1854, built 2026-10-14 by the axis tool); orientation: positive axis value = predicted higher in SZ (pH: minus the tool's pH_axis; agonal: slow-minus-fast death t)
+# rho = Spearman between the protein's case-control effect (signed log2 fold change or the study's effect measure, see protein_tables_meta) and the axis value; positive = the study's protein effects lie along the axis in the direction the pH / slow-death account predicts; ci = 95% bootstrap over proteins (2,000 resamples; 1,000 for subsets); p_nominal treats proteins as independent
+# pH leaving out X: the Stouffer pH axis recomputed without collection X (the collection sharing a brain bank with the study), genes with data in at least 2 remaining collections
+# pooled = mean over donor groups of the mean rho over a group's units (all tested proteins); ci = bootstrap over proteins within each unit (1,000 resamples; 300 for leave-one-group-out), which does not include between-study or between-donor variation
+axis	units	pooled_rho_mean_over_donor_groups	ci_lo	ci_hi	donor_groups	units_n
+pH	all 10 full-table units	0.051287548151269326	0.027382782175534102	0.07490604468546132	6	10
+pH	without Testa 2026	0.04679332821372797	0.02207129541669549	0.0707986236273721	6	9
+pH	without the Pittsburgh group	0.03801346241734024	0.012115619291067196	0.0634631216605177	5	6
+agonal	all 10 full-table units	0.06903885846360087	0.04358615848917784	0.09375860000506349	6	10
+agonal	without Testa 2026	0.06252208071853775	0.03680000258564798	0.09008863379975027	6	9
+agonal	without the Pittsburgh group	0.04408627864817259	0.015536599910750907	0.07254807501932116	5	6
+pH	leave out group barcelona	0.05533153712655975	0.030228760224522623	0.08250685535813279	5	9
+pH	leave out group koopmans	0.05293648619912165	0.027765866060363974	0.08121439215477563	5	9
+pH	leave out group maryland	0.023349153902322138	-0.000904460174762647	0.04602493218022512	5	9
+pH	leave out group pitt	0.03801346241734024	0.01142213903403605	0.059868919546658024	5	6
+pH	leave out group stanley	0.07041033149077583	0.0474218780092345	0.09488885968959052	5	9
+pH	leave out group upv	0.06768431777149639	0.038734162382684484	0.09757462793247532	5	8
+agonal	leave out group barcelona	0.07216688842492396	0.046634164155282494	0.10001096213279514	5	9
+agonal	leave out group koopmans	0.06934921327145274	0.042483096329241805	0.10112532906064955	5	9
+agonal	leave out group maryland	0.06263003451650415	0.038355577373154905	0.08530204915720678	5	9
+agonal	leave out group pitt	0.04408627864817259	0.018773998009751772	0.07266088246889099	5	6
+agonal	leave out group stanley	0.06188953350059084	0.03390184241378994	0.08473217333135441	5	9
+agonal	leave out group upv	0.10411120241996104	0.07700566018424095	0.13270985460647355	5	8

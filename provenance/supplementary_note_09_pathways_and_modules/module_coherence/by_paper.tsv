@@ -1,0 +1,24 @@
+# aggregate_coherence.py (module_coherence); per_dataset_coherence.tsv sha256 1584de4df71e; modules_index.tsv 30ce9eb66e48
+# variant resid, all modules; mean pooled coherence excess per unit
+unit	mean_excess	k_mod	share_above_0
+Balasubramanian 2022	0.1299	3	1.0
+Chen 2023	0.5303	1	1.0
+CoPA_Kang_Oldham_2026_S14	0.369	69	1.0
+Doostparast Torshizi 2019	0.0298	7	0.2857
+Gandal2018_S5	0.179	34	0.9118
+Guan 2019	0.2301	16	1.0
+Kim 2016 (choroid plexus)	0.0552	2	1.0
+Kim 2016 (hippocampus)	0.1593	6	1.0
+Kim 2019	0.3391	2	1.0
+Lanz 2019	0.2078	12	0.9167
+Lian 2024	0.5334	1	1.0
+Lin 2021	0.2789	2	1.0
+Liu 2021	0.1133	3	0.6667
+MacDonald 2020	0.1328	3	1.0
+Nersisyan 2026	0.1586	6	1.0
+Ruzicka 2024	0.169	3	1.0
+Sadeghi 2022	0.2929	9	1.0
+Schulmann 2023	0.2124	4	1.0
+Smith 2026	0.1575	8	0.875
+Zhu 2017	0.1589	2	1.0
+Zhu 2019	0.5241	3	1.0

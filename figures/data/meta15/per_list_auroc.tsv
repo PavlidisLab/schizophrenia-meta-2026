@@ -1,0 +1,36 @@
+# figure: Fig. 2b per-list rows on the AUROC scale
+# script: meta15_pooled_auroc_2026-10-22/scripts/meta15_pooled_auroc.py (meta15_recurrent.py setup unchanged + new section), run 2026-10-22 on a remote machine; NPERM 5000, seed 20261016, same random calls in the same order as meta15_recurrent.py (the joint draws behind meta15_pooled_hits.tsv)
+# inputs (sha256 first 12): h3_units.tsv f24716bad32d; h3_inventory.tsv 75bb8a75dc47; recurrent_sets.tsv 3c42f67cdd7a; 1_global_our_prior.tsv 68272e907b72; hgnc_complete_set.txt 69bb5722d5a4; primary_lists.json 44fb07b1d2e5; universes.json 25a477fc64ae; meta15_input_datasets.tsv (91 slots, 42 datasets)
+# AUROC = P(a gene of the set outranks a gene of the rest of the ranked universe) + 0.5 P(tie); ranking = number of the lists that contain the gene (each list restricted to its own tested universe, fallback = core-80 brain union for units without one); null = joint random draws of the lists at their sizes (uniform: size fixed; DE prior: independent Bernoulli by DE-prior probability, as meta15_recurrent.py), P = (1+#sim>=obs)/(NPERM+1)
+# per list: ranking = membership of the list (two levels), universe = the list's own tested universe, positives = the set genes in it; AUROC = (1 + hits/set_genes - (list_genes - hits)/(universe - set_genes))/2 = mean of the true-positive and true-negative rates; null from the same draws (list size varies in the DE-prior null)
+meta_analysis	set	list_genes_in_universe	universe_n	set_genes_in_universe	observed_hits	share	auroc_observed	null_uniform_mean	null_uniform_lo95	null_uniform_hi95	P_ge_obs_uniform	null_deprior_mean	null_deprior_lo95	null_deprior_hi95	P_ge_obs_deprior
+Pérez-Santiago 2012	383	131	13634	332	49	0.374	0.5707	0.5	0.4951	0.5059	0.0002	0.5036	0.4975	0.5111	0.0002
+Mistry 2013	383	98	13634	332	17	0.1735	0.5226	0.5	0.4963	0.5056	0.0002	0.5028	0.4975	0.5098	0.0002
+Bergon 2015	383	265	21383	381	51	0.1925	0.5618	0.5001	0.495	0.5057	0.0002	0.5056	0.4987	0.5139	0.0002
+Hess 2016	383	90	21383	381	17	0.1889	0.5206	0.5	0.4979	0.5032	0.0002	0.5019	0.498	0.507	0.0002
+Qin 2016	383	607	13634	332	100	0.1647	0.6315	0.5001	0.4895	0.5111	0.0002	0.5166	0.5025	0.5312	0.0002
+Gandal 2018 (RNA-seq)	383	4538	21576	382	223	0.0491	0.6901	0.4999	0.4796	0.5209	0.0002	0.586	0.5633	0.6088	0.0002
+Gandal 2018 (arrays)	383	2028	12211	322	157	0.0774	0.6651	0.5001	0.4801	0.52	0.0002	0.5554	0.532	0.5792	0.0002
+Li 2022	383	36	34365	383	18	0.5	0.5232	0.5	0.4995	0.5021	0.0002	0.5008	0.4994	0.5035	0.0002
+Sadeghi 2022	383	75	17309	379	26	0.3467	0.5329	0.5	0.4978	0.5032	0.0002	0.5014	0.4978	0.5061	0.0002
+Bharadhwaj 2023	383	7	21569	381	0	0.0	0.4998	0.5	0.4998	0.5012	1.0	0.5001	0.4997	0.5013	0.7107
+Chen 2023	383	220	1275	54	34	0.1545	0.7386	0.4998	0.4486	0.5549	0.0002	0.5515	0.4969	0.6111	0.0002
+Priyanka 2025	383	444	25137	383	50	0.1126	0.5573	0.5001	0.4937	0.5069	0.0002	0.5087	0.5002	0.5185	0.0002
+Rebouças 2025	383	531	13634	332	59	0.1111	0.5711	0.5	0.4908	0.5109	0.0002	0.5144	0.5018	0.5283	0.0002
+Nakatsuka 2025	383	98	34365	383	3	0.0306	0.5025	0.5	0.4986	0.5025	0.1024	0.502	0.4986	0.5065	0.3849
+Endresz 2026 (bioRxiv)	383	4032	34365	383	185	0.0459	0.6849	0.4998	0.4842	0.5159	0.0002	0.5844	0.5627	0.6065	0.0002
+Pérez-Santiago 2012	107	131	13634	98	24	0.1832	0.6185	0.4999	0.4952	0.5106	0.0002	0.5044	0.4948	0.5206	0.0002
+Mistry 2013	107	98	13634	98	8	0.0816	0.5375	0.4999	0.4964	0.5118	0.0002	0.5033	0.4959	0.5171	0.0002
+Bergon 2015	107	265	21383	107	26	0.0981	0.6159	0.5001	0.4938	0.5126	0.0002	0.5068	0.4937	0.5226	0.0002
+Hess 2016	107	90	21383	107	6	0.0667	0.5261	0.5	0.4979	0.5073	0.0002	0.5023	0.4976	0.5121	0.0002
+Qin 2016	107	607	13634	98	37	0.061	0.6677	0.5	0.4827	0.5238	0.0002	0.5202	0.4942	0.5495	0.0002
+Gandal 2018 (RNA-seq)	107	4538	21576	107	70	0.0154	0.723	0.5001	0.4648	0.5399	0.0002	0.6065	0.5627	0.6521	0.0002
+Gandal 2018 (arrays)	107	2028	12211	94	50	0.0247	0.6843	0.5001	0.4646	0.5396	0.0002	0.5673	0.5234	0.6131	0.0002
+Li 2022	107	36	34365	107	9	0.25	0.5417	0.5	0.4995	0.5042	0.0002	0.5009	0.4993	0.5088	0.0002
+Sadeghi 2022	107	75	17309	105	16	0.2133	0.5745	0.5	0.4978	0.5074	0.0002	0.5018	0.4975	0.5122	0.0002
+Bharadhwaj 2023	107	7	21569	107	0	0.0	0.4998	0.5	0.4998	0.5045	1.0	0.5002	0.4997	0.5045	0.6315
+Chen 2023	107	220	1275	20	15	0.0682	0.7933	0.4996	0.4377	0.5901	0.0002	0.5498	0.4612	0.6469	0.0002
+Priyanka 2025	107	444	25137	107	24	0.0541	0.6038	0.5001	0.4911	0.5146	0.0002	0.5105	0.4955	0.529	0.0002
+Rebouças 2025	107	531	13634	98	25	0.0471	0.6089	0.5001	0.4855	0.5215	0.0002	0.5178	0.4951	0.5461	0.0002
+Nakatsuka 2025	107	98	34365	107	2	0.0204	0.5079	0.5	0.4986	0.5079	0.0374	0.5024	0.4984	0.5126	0.1182
+Endresz 2026 (bioRxiv)	107	4032	34365	107	56	0.0139	0.7037	0.4997	0.4693	0.5302	0.0002	0.5997	0.5575	0.6431	0.0002

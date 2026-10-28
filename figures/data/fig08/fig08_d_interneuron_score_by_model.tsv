@@ -1,0 +1,36 @@
+# figure: fig08 panel d (left)
+# script: analyses/redo_on_209_2026-10-11/3_ph_agonal_axes/export_fig08_209.py (copy of analyses/figure_exports/export_fig08_fig09_fig10.py: output folder, population text, results_516 in place of results_516, fig08 only), run 2026-10-11
+# population: sample-level data of the dataset-regions that record pH (18 dataset-regions, 1,034 subjects; 2026-10-08 subject-level run); the recurrent set only enters as the exclusion list of the random-gene pool: the 383 study-tier genes of the core-80 base (set study_brain, base78_2026-10-16/B80/out/recurrent_sets.tsv)
+# input: analyses/interneuron_ph_2026-10-01/results/subject_level_summary.tsv sha256 48c9b9cc1975
+# d_* = case-minus-control difference of the mean row-z score of the marker group (SD units), median over collection clusters: d_base adjusted for age and sex, d_pH + pH, d_pH_hyp + pH and S_hypoxia score; '__random' rows = 200 random gene sets matched to the group on pH Z, age Z, hypoxia loading and expression. Run 2026-10-08 (subject_level.py); 18 dataset-regions that record pH, 1,034 subjects
+# the legend's rows: CLEAN cortex (Stanley, Pritzker DLPFC; 2 clusters) IN_markers and IN_markers__random; the other sets are the five-cluster and leave-same-data-out variants
+# script: core80_work_2026-10-16/P11/int/run_int_core80.sh (copies of enrichment.py [patched: study_133 read from the base-80 recurrence_genes.tsv, 383 genes; assert 176/25/1478 -> 383/25/2422], per_sample.R, subject_level.py in a scratch ROOT; only the combined_controls_pH.tsv symlink differs between the v1 and v2 runs), run 2026-10-16
+# axis: unsuffixed values = score comparators built with pH axis v2 (the pH_Z matching covariate of the 200 random gene sets per group; marker-set rows do not use the axis); columns ending _axis_v1 = v1 fork. axis_v2 source inputs_ph_axis_v2/axis_v2_controls.tsv.gz sha256 2c72a9b279a2 via analyses/confounds/results/combined_controls_pH.tsv replaced by fdv2_2026-10-15/work/axis_v2_tables/combined_controls_pH.tsv sha256 ee79b19aed58
+# 2026-10-21: cohort clusters of the dataset-regions: GSE17612 (Maycox 2009, banks brain_other + harvard) also belongs to the cluster 'harvard' (cluster column: 'GSE17612+GSE21935; harvard'); the 'all datasets, by cluster' rows are medians over 6 clusters; other dataset-regions are single-cluster studies; script core80_work_2026-10-16/P11/int subject_level.py with the cluster column expanded (work/subject_level_sets.py)
+set	score	is_ph_matched_random	clusters	d_base	d_pH	d_pH_hyp	rho_ctl	rho_sz	slope_ctl	slope_sz	share_pH_median	clusters_d_base_negative	clusters_axis_v1	d_base_axis_v1	d_pH_axis_v1	d_pH_hyp_axis_v1	rho_ctl_axis_v1	rho_sz_axis_v1	slope_ctl_axis_v1	slope_sz_axis_v1	share_pH_median_axis_v1	clusters_d_base_negative_axis_v1
+CLEAN cortex (Stanley, Pritzker DLPFC)	EN_markers	no	2	-0.271	-0.114	-0.011	0.398	0.28	1.73	1.005	0.179	1	2	-0.271	-0.114	-0.002	0.398	0.28	1.73	1.005	0.179	1
+CLEAN cortex (Stanley, Pritzker DLPFC)	EN_markers__random	yes	2	-0.359	-0.191	-0.082	0.369	0.448	1.492	1.373	0.803	2	2	-0.349	-0.175	-0.057	0.399	0.438	1.641	1.356	1.062	2
+CLEAN cortex (Stanley, Pritzker DLPFC)	IEG	no	2	-0.576	-0.582	-0.585	0.051	0.012	0.372	-0.052	-0.011	2	2	-0.576	-0.582	-0.587	0.051	0.012	0.372	-0.052	-0.011	2
+CLEAN cortex (Stanley, Pritzker DLPFC)	IN_markers	no	2	-0.529	-0.39	-0.32	0.233	0.329	1.235	1.071	0.441	2	2	-0.529	-0.39	-0.314	0.233	0.329	1.235	1.071	0.441	2
+CLEAN cortex (Stanley, Pritzker DLPFC)	IN_markers__random	yes	2	-0.365	-0.197	-0.093	0.365	0.467	1.448	1.497	0.683	2	2	-0.377	-0.201	-0.086	0.402	0.463	1.629	1.477	0.809	2
+CLEAN cortex (Stanley, Pritzker DLPFC)	PVALB_markers	no	2	-0.483	-0.351	-0.343	0.222	0.295	1.359	0.868	0.509	2	2	-0.483	-0.351	-0.338	0.222	0.295	1.359	0.868	0.509	2
+CLEAN cortex (Stanley, Pritzker DLPFC)	PVALB_markers__random	yes	2	-0.394	-0.218	-0.128	0.387	0.439	1.572	1.522	0.708	2	2	-0.386	-0.205	-0.103	0.442	0.444	1.761	1.446	0.913	2
+CLEAN cortex (Stanley, Pritzker DLPFC)	SST_markers	no	2	-0.64	-0.48	-0.412	0.312	0.361	1.325	1.421	0.322	2	2	-0.64	-0.48	-0.402	0.312	0.361	1.325	1.421	0.322	2
+CLEAN cortex (Stanley, Pritzker DLPFC)	SST_markers__random	yes	2	-0.427	-0.254	-0.169	0.379	0.457	1.514	1.484	0.594	2	2	-0.396	-0.215	-0.112	0.412	0.462	1.692	1.492	0.8	2
+CLEAN cortex (Stanley, Pritzker DLPFC)	named_IN	no	2	-0.52	-0.381	-0.3	0.235	0.445	0.985	1.4	0.378	2	2	-0.52	-0.381	-0.289	0.235	0.445	0.985	1.4	0.378	2
+CLEAN cortex (Stanley, Pritzker DLPFC)	named_IN__random	yes	2	-0.233	-0.07	0.028	0.345	0.435	1.219	1.499	1.152	2	2	-0.237	-0.071	0.043	0.35	0.437	1.309	1.485	1.421	2
+CLEAN cortex (Stanley, Pritzker DLPFC)	named_neuronal	no	2	-0.37	-0.218	-0.116	0.365	0.38	1.731	1.131	0.803	2	2	-0.37	-0.218	-0.109	0.365	0.38	1.731	1.131	0.803	2
+CLEAN cortex (Stanley, Pritzker DLPFC)	named_neuronal__random	yes	2	-0.216	-0.055	0.053	0.319	0.434	1.313	1.399	1.346	2	2	-0.225	-0.065	0.057	0.319	0.431	1.331	1.384	1.51	2
+all datasets, by cluster	EN_markers	no	6	-0.24	-0.213	-0.02	0.195	0.233	0.89	1.032	0.155	5	6	-0.24	-0.213	-0.014	0.195	0.233	0.89	1.032	0.155	5
+all datasets, by cluster	EN_markers__random	yes	6	-0.419	-0.328	-0.066	0.361	0.339	1.293	1.404	0.265	6	6	-0.407	-0.333	-0.121	0.375	0.355	1.398	1.421	0.271	6
+all datasets, by cluster	IEG	no	6	-0.531	-0.466	-0.531	0.129	0.022	0.238	0.004	0.046	6	6	-0.531	-0.466	-0.535	0.129	0.022	0.238	0.004	0.046	6
+all datasets, by cluster	IN_markers	no	6	-0.487	-0.453	-0.236	0.256	0.266	1.208	1.087	0.114	4	6	-0.487	-0.453	-0.231	0.256	0.266	1.208	1.087	0.114	4
+all datasets, by cluster	IN_markers__random	yes	6	-0.356	-0.259	-0.025	0.334	0.332	1.222	1.424	0.172	5	6	-0.36	-0.268	-0.064	0.376	0.346	1.361	1.426	0.339	6
+all datasets, by cluster	PVALB_markers	no	6	-0.375	-0.366	-0.227	0.23	0.286	1.054	1.35	0.123	4	6	-0.375	-0.366	-0.219	0.23	0.286	1.054	1.35	0.123	4
+all datasets, by cluster	PVALB_markers__random	yes	6	-0.293	-0.194	0.02	0.336	0.325	1.368	1.469	0.198	5	6	-0.321	-0.24	-0.068	0.37	0.347	1.436	1.43	0.38	6
+all datasets, by cluster	SST_markers	no	6	-0.464	-0.43	-0.306	0.202	0.221	0.96	1.217	0.142	4	6	-0.464	-0.43	-0.298	0.202	0.221	0.96	1.217	0.142	4
+all datasets, by cluster	SST_markers__random	yes	6	-0.364	-0.259	-0.038	0.349	0.346	1.375	1.488	0.332	6	6	-0.355	-0.256	-0.061	0.398	0.347	1.439	1.461	0.361	6
+all datasets, by cluster	named_IN	no	6	-0.539	-0.467	-0.311	0.283	0.319	1.031	1.462	0.105	5	6	-0.539	-0.467	-0.303	0.283	0.319	1.031	1.462	0.105	5
+all datasets, by cluster	named_IN__random	yes	6	-0.392	-0.303	-0.016	0.302	0.299	1.113	1.435	0.15	4	6	-0.387	-0.293	-0.011	0.321	0.304	1.142	1.464	0.151	4
+all datasets, by cluster	named_neuronal	no	6	-0.352	-0.306	-0.118	0.185	0.255	0.965	1.4	0.18	6	6	-0.352	-0.306	-0.109	0.185	0.255	0.965	1.4	0.18	6
+all datasets, by cluster	named_neuronal__random	yes	6	-0.394	-0.325	0.007	0.238	0.321	0.95	1.398	0.192	5	6	-0.393	-0.319	-0.011	0.254	0.309	0.983	1.395	0.144	4

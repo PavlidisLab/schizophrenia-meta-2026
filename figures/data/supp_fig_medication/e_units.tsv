@@ -1,0 +1,25 @@
+# figure: supp_fig_medication panel e
+# script: analyses/figure_exports/export_supp_fig_medication.py, run 2026-10-09
+# input: analyses/medication/results/units_table.tsv sha256 d2d45dcd6248
+# one row per unit; drugs and n (drug/vehicle) listed per contrast in the same order
+unit	class	geo	species	region	drugs	n_drug_n_baseline	duration	dose
+GSE6511_brain	chronic	GSE6511	mouse	brain	clozapine; haloperidol	3/3; 3/3	4 weeks	per dataset description
+GSE6467_brain	chronic	GSE6467	mouse	brain	clozapine; haloperidol	10/10; 10/10	12 weeks	per dataset description
+GSE45229_striatum	chronic	GSE45229	mouse	striatum (Gemma subset: striatum)	haloperidol delivered at dose 1 mg/kg; haloperidol delivered at dose 0.3 mg/kg; quetiapine delivered at dose 100 mg/kg; quetiapine delivered at dose 10 mg/kg	2/2; 2/2; 2/2; 2/2	chronic	quetiapine 10, 100 mg/kg; haloperidol 0.3, 1 mg/kg
+GSE45229_frontal_cortex	chronic	GSE45229	mouse	frontal cortex (Gemma subset: frontal cortex)	haloperidol delivered at dose 1 mg/kg; haloperidol delivered at dose 0.3 mg/kg; quetiapine delivered at dose 100 mg/kg; quetiapine delivered at dose 10 mg/kg	2/2; 2/2; 2/2; 2/2	chronic	quetiapine 10, 100 mg/kg; haloperidol 0.3, 1 mg/kg
+GSE67723_striatum	chronic	GSE67723	mouse	striatum	risperidone	8/8	per description	risperidone
+GSE67753_whole_brain	chronic	GSE67753	mouse	whole brain (Gemma subset: brain)	haloperidol	10/10	chronic	haloperidol (Kim 2018, array)
+GSE67750_striatum	chronic	GSE67750	mouse	striatum	haloperidol	16/12	chronic	haloperidol (Kim 2018, RNA-seq; possibly the same animals as GSE67753, other tissue)
+GSE93918_PFC	chronic	GSE93918	mouse	prefrontal cortex	clozapine delivered at dose 10 mg/kg	6/6	chronic	clozapine 10 mg/kg
+GSE119772_hypothalamus	chronic	GSE119772	mouse	hypothalamus	olanzapine	8/8	per description	olanzapine
+GSE180473_striatum	chronic	GSE180473	mouse	striatum (Gemma subset: striatum)	risperidone delivered at dose 28 x 1 mg/kg; olanzapine delivered at dose 28 x 3.5 mg/kg	8/8; 8/8	28 days	olanzapine 3.5 mg/kg/d; risperidone 1 mg/kg/d
+GSE268867_lateral_septum	chronic	GSE268867	mouse	lateral septum	olanzapine delivered at dose 50 mg/kg and delivered for duration 12 weeks	3/3	12 weeks	olanzapine 50 mg/kg in chow (females)
+GSE2547_frontal_cortex	chronic	GSE2547	rat	frontal cortex	olanzapine	4/4	21 days	olanzapine 2 mg/kg/d i.p.
+GSE66275_3regions	chronic	GSE66275	rat	frontal cortex, hippocampus, striatum	haloperidol; risperidone	15/15; 15/15	21 days	haloperidol 0.25 mg/kg/d; risperidone 5 mg/kg/d
+GSE4031_cortex	chronic	GSE4031	rat	cerebral cortex	clozapine delivered at dose medium; haloperidol delivered at dose medium; clozapine delivered at dose high; haloperidol delivered at dose low; haloperidol delivered at dose high; clozapine delivered at dose low	9/9; 9/9; 8/9; 8/9; 9/9; 11/9	per description	haloperidol, clozapine at low / medium / high dose
+GSE227464_striatum	chronic	GSE227464	rat	striatum	haloperidol	6/6	per description	haloperidol
+GSE48954_striatum	acute	GSE48954	mouse	striatum	risperidone; clozapine; haloperidol	12/12; 12/12; 12/12	1 to 8 h	haloperidol, clozapine, risperidone (vehicle: tween 80)
+GSE59895_brain	acute	GSE59895	rat	brain	haloperidol delivered at dose 21 mg/kg	12/23	0.25 to 5 d	haloperidol 21 mg/kg (DrugMatrix)
+GSE163161_iN	cells	GSE163161	human	iPSC-derived excitatory neurons	clozapine	6/4	per description	clozapine
+GSE36678_SKNSH	cells	GSE36678	human	SK-N-SH neuroblastoma	risperidone delivered for duration 6 h; risperidone delivered for duration 24 h; risperidone delivered for duration 48 h	4/4; 4/4; 4/4	6, 24, 48 h	risperidone
+GSE197966_NT2N	cells	GSE197966	human	NT2-N neurons	quetiapine delivered at dose 50 uM and delivered for duration 24 h	4/7	24 h	quetiapine 50 uM

@@ -1,0 +1,25 @@
+# figure	script	used in (main text figures or supplement); generated from the figure links of the text on 2026-10-28; a script is named here when its fk.save() figure name is computed and cannot be detected; edit when a figure is added or retired
+fig_agreement	figures/scripts/build_fig_agreement.py	main
+fig_celltype_structure	supplementary_notes/death_signatures/build_supp_death_signatures.py	supplement
+fig_composition_key	supplementary_notes/composition_and_axes/build_supp_composition.py	supplement
+fig_corpus	figures/scripts/build_fig_corpus.py	main
+fig_dying	figures/scripts/build_fig_dying.py	main
+fig_livpm_vs_axes_383	supplementary_notes/death_signatures/build_supp_death_signatures.py	supplement
+fig_ph	figures/scripts/build_fig_ph.py	main
+fig_single_nucleus	figures/scripts/build_fig_single_nucleus.py	supplement
+fig_yaqubi_axes	supplementary_notes/death_signatures/build_supp_death_signatures.py	supplement
+supp_corpus	figures/scripts/build_fig_corpus.py	supplement
+supp_forking_paths_v2	figures/scripts/build_supp_forking_paths_v2.py	supplement
+supp_gemma_scan	figures/scripts/build_supp_gemma_scan.py	supplement
+supp_gtex_tissues	figures/scripts/build_supp_gtex_tissues.py	supplement
+supp_medication	figures/scripts/build_supp_medication.py	supplement
+supp_other_disorders	figures/scripts/build_supp_other_disorders.py	supplement
+supp_pathways_coexpression	supplementary_notes/pathways_coexpression_modules_and_snap/build_supp_pathways_coexpression.py	supplement
+supp_ph_covariates	figures/scripts/build_fig_ph.py	supplement
+supp_positive_controls	figures/scripts/build_supp_positive_controls.py	supplement
+supp_prisma	figures/scripts/build_supp_prisma.py	supplement
+supp_recurrent_genes	figures/scripts/build_fig_recurrent_genes.py	supplement
+supp_sample_size	figures/scripts/build_supp_sample_size.py	supplement
+supp_snap_bulk	supplementary_notes/pathways_coexpression_modules_and_snap/build_supp_snap_bulk.py	supplement
+supp_snap_ph	supplementary_notes/pathways_coexpression_modules_and_snap/build_supp_snap_ph.py	supplement
+supp_study_pairs	figures/scripts/build_supp_study_pairs.py	supplement

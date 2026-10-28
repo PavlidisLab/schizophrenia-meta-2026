@@ -1,0 +1,20 @@
+# built 2026-10-14 by scripts/analyze_lists.py; axes: axis_gene_table.tsv (sha256 ae8c71ea1854); top_n = genes with the largest |axis value|; predicted SZ direction = the one the axis predicts (positive axis value = up); pH axis = the tool's pH axis, recomputed leaving out the collection that shares a bank with the group (Stanley, Pitt/Pittsburgh, NSW, Pritzker for the Irvine study) where one does; 'pH' rows without a match use all 5 collections
+# unit of test = donor group (units sharing a bank pooled; a gene's direction = majority over the group's units, ties dropped); null: shuffle the group's up/down labels among its own called genes (5000 shuffles, seed 20261014), so the group's balance of up and down and the set of proteins it reports are held fixed
+# the excess is concordant share minus expected share; its interval is a jackknife over donor groups (+/-1.96 se); one group is one bank, so groups are not independent of the RNA collections
+set	axis	top_n	donor_groups_with_hits	hits	concordant	share	expected_share	excess	excess_ci_lo_jackknife_groups	excess_ci_hi_jackknife_groups	p_one_sided_shuffle	p_binomial_vs_half_two_sided
+all units (31 + 5 added)	pH_matched	200	17	135	74	0.548	0.485	0.064	-0.167	0.295	0.07278544291141771	0.3016825027456293
+all units (31 + 5 added)	pH_matched	500	17	299	174	0.582	0.52	0.062	-0.122	0.245	0.013797240551889621	0.005416721582240344
+all units (31 + 5 added)	agonal	200	8	32	25	0.781	0.452	0.33	-0.22	0.879	0.0005998800239952009	0.0021024015732109547
+all units (31 + 5 added)	agonal	500	12	70	50	0.714	0.468	0.246	-0.458	0.951	0.0001999600079984003	0.00044028500651396835
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	pH_matched	200	13	92	58	0.63	0.481	0.15	-0.106	0.405	0.0009998000399920016	0.01602027478889998
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	pH_matched	500	13	203	134	0.66	0.518	0.142	-0.043	0.327	0.0001999600079984003	5.937018787311268e-06
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	agonal	200	6	30	24	0.8	0.451	0.349	-0.228	0.925	0.0001999600079984003	0.0014309063553810122
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	agonal	500	9	63	48	0.762	0.471	0.291	-0.466	1.048	0.0001999600079984003	3.7606121325417525e-05
+all units without the Pittsburgh group	pH_matched	200	16	95	43	0.453	0.493	-0.041	-0.169	0.087	0.825634873025395	0.41191007368097665
+all units without the Pittsburgh group	pH_matched	500	16	226	115	0.509	0.525	-0.016	-0.14	0.108	0.7220555888822235	0.8418826617051977
+all units without the Pittsburgh group	agonal	200	7	13	7	0.538	0.498	0.04	-0.266	0.347	0.49350129974005197	1.0
+all units without the Pittsburgh group	agonal	500	11	31	12	0.387	0.503	-0.116	-0.423	0.191	0.9392121575684863	0.28104151505976915
+all units, Pittsburgh group without Testa 2026	pH_matched	200	17	107	48	0.449	0.496	-0.047	-0.159	0.065	0.8684263147370526	0.3337051161974391
+all units, Pittsburgh group without Testa 2026	pH_matched	500	17	247	126	0.51	0.524	-0.014	-0.127	0.099	0.6972605478904219	0.7991609821601157
+all units, Pittsburgh group without Testa 2026	agonal	200	8	14	7	0.5	0.497	0.003	-0.273	0.279	0.5940811837632474	1.0
+all units, Pittsburgh group without Testa 2026	agonal	500	12	32	12	0.375	0.502	-0.127	-0.419	0.165	0.9554089182163568	0.21532714972272515

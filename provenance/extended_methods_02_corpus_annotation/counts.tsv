@@ -1,0 +1,29 @@
+# counts.tsv: points and lines of the lineage explorer, core-80 base with lines to the outside-the-corpus studies (2026-10-18, edges build) against the core-80 build without them. Written by tests/make_counts.py from the two HTML files and tests/cdp_counts_*.txt (drawn counts from headless Chrome); no number typed.
+# Rule for nodes: drawn points = corpus studies (not outside sources, not the review node, not category 2) + the outside sources the page keeps (cited sources holding schizophrenia case-control expression data) + the Table 5 studies never in the corpus + 1 star for this study.
+# Register (lineage.json, sha256 a96d5f4b4e18f75f): 642 nodes = 509 corpus + 69 outside sources + 1 review + 63 kept out of the corpus; 1,102 edges.
+level	item	old_core80_no_outside_lines	new_core80_with_outside_lines	note
+page data	nodes (corpus + outside sources + review, plus the outside-the-corpus nodes)	590	590	579 from page_view() + 11 outside-the-corpus nodes
+page data	edges	1035	1050	page_view() output + 15 lines of build/inputs/extra_edges.tsv
+drawn	points (nodes drawn)	538	538	rule: 509 corpus studies + 17 outside sources + 11 outside the corpus + 1 star; the register's 642 nodes also hold 52 outside sources the page does not draw, the review node and 63 studies kept out of the corpus
+drawn	  corpus studies	509	509	
+drawn	  outside sources	17	17	
+drawn	  outside the corpus (Table 5)	11	11	
+drawn	lines (total)	1009	1024	between studies + to the star; +15 = lines to 7 of the 11 outside-the-corpus nodes
+drawn	lines from the primary studies to the star	80	80	one per primary study
+drawn	lines between studies	929	944	
+drawn	rows (lanes)	13	13	
+primary	primary studies (rings, star lines, Filter chip)	80	80	Supplementary Table 4 rows
+tier	authors' list (no ring)	67	67	Table 4 tier column
+tier	derived list (dashed ring)	13	13	Table 4 tier column
+tier	list-only tier (dotted ring)	4	4	declared fork; Table 5, data needed
+outcome	Included (Table 4)	80	80	Table 6
+outcome	Data needed (Table 5), in the corpus	18	18	
+outcome	Data needed (Table 5), not in the corpus	11	11	
+outcome	Data needed (Table 5), total	29	29	
+outcome	Excluded	411	411	not-brain 174; meta-analysis 90; reanalysis 85; proteome 35; non-mRNA 13; no-SZ 6; targeted 4; no-gene-level 1; core-base 1; first-release 1; same-subjects 1
+outcome	  of which core-base (Shao 2008)	1	1	new reason in Table 6
+outcome	rows of Supplementary Table 6 (outcome-carrying nodes)	520	520	corpus + not in corpus
+outcome	nodes carrying a Table 5 record	32	32	new: also Shao 2008, Ketchesin 2023, Pai 2019 (listed in Table 5, not Data needed)
+panel	studies with their own new DE list (Corpus panel)	200	200	Tang 2011 (category 2) is not drawn, so it is dropped
+file	size, bytes	13047793	13055877	
+file	sha256	dc8382092d729523c1481c984756bb1aa2cf0a67d9d2ea9684266ece19e62182	a5066f16ae702f8b12f871dbab3c8d08426775f35bdfd79f63033e165b0699ee	

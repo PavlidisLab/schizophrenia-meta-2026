@@ -1,0 +1,12 @@
+# script: analyses/mab_exports_code001_2026-10-11/q3_direction_both_versions.py (adapts recurrence_direction.py; exp_majority imported from it)
+# input: analyses/P11/b/T5/analyses/recurrence_genes.tsv sha256 039c3c5870ba184ab8d914c1b40ba2f2d8ac33f218040a77475b0035024d7835
+# input: analyses/P11/b/T3/analyses/recurrence_genes.tsv sha256 2824175f6637bd75811db470706622185b54f50f653fe8ef0fae4055c2e53379
+# scenario 'published, brain', study tier; up/down counts are identical in both inputs (asserted), only the q<0.1 gene sets differ
+# genes_sign_test_p05: recomputed here for every gene in the set with recurrence.sign_test (two-sided exact binomial, up vs down); the stored sign_test_p column is filled for the 383 study-tier q<0.1 genes of this base, so the direction_summary.tsv counts only those genes in the expression-matched, 3+ and 5+ rows
+gene_set	genes	list_hits_with_direction	in_majority_direction	share_majority	share_majority_if_random	genes_unanimous	genes_split_40pct_or_more	genes_sign_test_p05
+A study tier q<0.1, stated n_k (381)	381	3430	2929	0.854	0.632	115	27	186
+B study tier q<0.1, corrected n_k (383)	383	3443	2939	0.854	0.632	116	28	187
+A expression-matched q<0.1, stated n_k (110)	110	1091	969	0.888	0.625	33	7	72
+B expression-matched q<0.1, corrected n_k (140)	140	1342	1185	0.883	0.627	45	11	90
+3 or more studies	6796	29282	23617	0.807	0.693	2535	937	452
+5+ studies	2422	14669	11947	0.814	0.663	754	549	452

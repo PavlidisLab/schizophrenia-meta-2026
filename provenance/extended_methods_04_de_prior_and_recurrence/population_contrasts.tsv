@@ -1,0 +1,280 @@
+# script: analyses/redo_on_209_2026-10-11/4_recurrence_null/remote_run/summarize_209.py (draws from run_null.py on remote, 2000 draws per row, seed 20261010, run 2026-10-16); draws file _draws_raw.tsv sha256 a5435f1f2d80; SZ observed = analyses/redo_on_209_2026-10-11/4_recurrence_null/sz_gene_counts.tsv sha256 9d2364410f3f (62 'published, brain' study-tier lists, export_sz_inputs.py); Gemma cache = remote analyses/gemma_176_scan_2026-10-10/cache/de_cache.h5; public experiments only
+# the 277 public postmortem-brain contrasts (one per experiment; analyses/gemma_176_scan_nonhits_2026-10-10/postmortem_brain_contrasts_classified.tsv) with the number of genes tested and genes at BH q < 0.05 / p < 0.05 in the cache; pools: P1 = true_disease & not SZ-related, P2 = not SZ-related (sz_status neither and disorder not schizophrenia)
+gemma_id	short_name	factor	contrast_label	ctype	disorder	true_disease	case_like	n_samples	platform	sz_status	region	n_tested	n_fdr	n_nom
+1034	GSE14098	DiseaseState	choroid plexus papilloma	disease vs control	tumour	True	True	15	microarray	neither	white matter / other	12015	5539	6491
+10627	GSE80336	disease	bipolar disorder	disease vs control	bipolar	True	True	36	RNA-seq	neither	striatum / basal ganglia	22499	0	1283
+10878	GSE87610	disease	bipolar disorder	disease vs control	bipolar	True	True	286	microarray	in SZ corpus	prefrontal / frontal cortex	18379	0	1980
+10879	GSE93987	disease	schizoaffective disorder	disease vs control	schizophrenia / schizoaffective	True	True	208	microarray	in SZ corpus	prefrontal / frontal cortex	19899	0	2225
+10943	GSE32915	disease	multiple sclerosis with initial lesion	disease vs control	multiple sclerosis	True	True	16	microarray	neither	white matter / other	18415	0	611
+11612	GSE39420	genotype	V89L  PSEN1 [human] presenilin 1	genotype	Alzheimer	False	True	21	microarray	neither	cingulate	18703	0	1020
+11615	GSE44593	disease	major depressive disorder	disease vs control	depression	True	True	28	microarray	neither	hippocampus / amygdala	19896	0	2870
+11617	GSE49036	disease	Parkinson disease with Braak 5-6	disease vs control	Parkinson	True	True	28	microarray	neither	striatum / basal ganglia	19894	3830	7331
+11690	GSE99349	disease	cocaine abuse	disease vs control	substance use	True	True	36	RNA-seq	neither	prefrontal / frontal cortex	22048	0	2617
+11713	GSE2164	sex	male	sex	n/a (not a disease contrast)	False	False	87	microarray	neither	unspecified brain / other	8285	7	142
+11805	GSE102741	disease	autism spectrum disorder	disease vs control	autism	True	True	52	RNA-seq	neither	prefrontal / frontal cortex	23998	9	1694
+11883	GSE109706	cell type	undifferentiated  neural stem cell	brain region / cell type	n/a (not a disease contrast)	False	False	20	RNA-seq	neither	white matter / other	36828	27638	27954
+1204	GSE12654	disease	bipolar disorder	disease vs control	bipolar	True	True	50	microarray	in SZ corpus	prefrontal / frontal cortex	8247	0	349
+1205	GSE12649	ClinicalHistory	schizophrenia	disease vs control	schizophrenia / schizoaffective	True	False	102	microarray	in SZ corpus	prefrontal / frontal cortex	12016	363	2546
+12078	GSE104704	disease	Alzheimer disease	disease vs control	Alzheimer	True	True	30	RNA-seq	neither	temporal / parietal / occipital cortex	25024	514	4442
+12120	GSE20291	disease	Parkinson disease	disease vs control	Parkinson	True	True	35	microarray	neither	striatum / basal ganglia	12016	0	488
+12123	GSE20292	sex	female	sex	n/a (not a disease contrast)	False	False	29	microarray	neither	striatum / basal ganglia	12014	15	1652
+12193	GSE26586	age	9727 d	age	n/a (not a disease contrast)	False	False	12	microarray	neither	cerebellum	17922	0	356
+12290	GSE40562	organism part	parietal lobe	brain region / cell type	n/a (not a disease contrast)	False	False	8	microarray	neither	temporal / parietal / occipital cortex	19898	0	5395
+12325	GSE41919	disease	hepatic encephalopathy	disease vs control	other disease	True	True	19	microarray	neither	unspecified brain / other	19286	40	2642
+12362	GSE46236	treatment	lipopolysaccharide	treatment / drug	n/a (not a disease contrast)	False	False	6	microarray	neither	unspecified brain / other	18698	11	447
+12484	GSE57193	disease	hepatic encephalopathy	disease vs control	other disease	True	True	12	microarray	neither	unspecified brain / other	19324	1356	5671
+12525	GSE61196	disease	Alzheimer disease with Braak stage 3	disease vs control	Alzheimer	True	True	21	microarray	neither	white matter / other	17533	42	3106
+12607	GSE66333	environmental history	increased amount of  cellular response to DNA damage stimulus	treatment / drug	n/a (not a disease contrast)	False	False	8	microarray	neither	prefrontal / frontal cortex	19899	7841	9970
+12623	GSE67196	organism part	frontal cortex	brain region / cell type	n/a (not a disease contrast)	False	False	53	RNA-seq	neither	prefrontal / frontal cortex	20443	11385	12269
+12747	GSE53697	disease	Alzheimer disease	disease vs control	Alzheimer	True	True	17	RNA-seq	neither	prefrontal / frontal cortex	30886	0	1995
+12757	GSE58067	disease	Cockayne syndrome	disease vs control	other disease	True	True	12	microarray	neither	cerebellum	18971	8671	10147
+12775	GSE61019	disease	ataxia telangiectasia	disease vs control	other disease	True	True	7	microarray	neither	cerebellum	20461	7251	9421
+12810	GSE70430	sex	female	sex	n/a (not a disease contrast)	False	False	9	microarray	neither	striatum / basal ganglia	11338	0	390
+12819	GSE72930	organism part	brain white matter	brain region / cell type	n/a (not a disease contrast)	False	False	12	RNA-seq	neither	white matter / other	25586	6659	9550
+12925	GSE75303	disease	Rett syndrome	disease vs control	other disease	True	True	12	microarray	neither	unspecified brain / other	20459	0	1866
+12983	GSE78936	disease	bipolar disorder	disease vs control	bipolar	True	True	82	RNA-seq	in SZ corpus	unspecified brain / other	20722	0	1272
+12993	GSE79666	disease	Huntington disease with grade 2	disease vs control	Huntington	True	True	14	RNA-seq	neither	unspecified brain / other	25127	5	1170
+13014	GSE80655	disease	major depressive disorder	disease vs control	depression	True	True	281	RNA-seq	in SZ corpus	unspecified brain / other	36793	0	1256
+13042	GSE83670	disease	multiple sclerosis	disease vs control	multiple sclerosis	True	True	7	microarray	neither	white matter / other	19898	43	5665
+13158	GSE93885	disease	moderate intensity  Alzheimer disease	disease vs control	Alzheimer	True	True	18	microarray	neither	unspecified brain / other	25557	0	878
+13338	GSE81396	organism part	putamen	brain region / cell type	n/a (not a disease contrast)	False	False	16	RNA-seq	neither	striatum / basal ganglia	23544	1329	6094
+13350	GSE87823	biological sex	female	sex	n/a (not a disease contrast)	False	False	49	microarray	neither	striatum / basal ganglia	12014	3	426
+13475	GSE92839	cell type	neural stem cell	brain region / cell type	n/a (not a disease contrast)	False	False	12	RNA-seq	neither	unspecified brain / other	18275	14037	14259
+13484	GSE29507	disease	HIV infectious disease, meningeal tuberculosis	disease vs control	other disease	True	True	9	microarray	neither	prefrontal / frontal cortex	18415	0	5125
+13491	GSE16969	disease	tuberous sclerosis	disease vs control	other disease	True	True	10	microarray	neither	unspecified brain / other	19897	6388	9010
+134	GSE1147	sex	female	sex	n/a (not a disease contrast)	False	False	23	microarray	neither	striatum / basal ganglia	12015	7	639
+13578	GSE76734	treatment	TGFB1 [human] transforming growth factor beta 1  cytokine	treatment / drug	n/a (not a disease contrast)	False	False	15	microarray	neither	unspecified brain / other	25555	0	1766
+13696	GSE60914	cell type	CD8-positive, alpha-beta T cell	brain region / cell type	n/a (not a disease contrast)	False	False	9	microarray	neither	white matter / other	19643	8	2026
+1381	GSE17612	Sex	male	sex	n/a (not a disease contrast)	False	False	51	microarray	in SZ corpus	prefrontal / frontal cortex	19898	17	1347
+14141	GSE93577	disease	schizophrenia	disease vs control	schizophrenia / schizoaffective	True	True	141	microarray	held-out SZ experiment	prefrontal / frontal cortex	18378	297	4787
+14836	GSE132903	disease	Alzheimer disease	disease vs control	Alzheimer	True	True	195	microarray	neither	temporal / parietal / occipital cortex	14437	10590	10878
+15040	GSE42966	disease staging	Parkinson disease with Braak 3	disease vs control	Parkinson	True	True	15	microarray	neither	striatum / basal ganglia	18407	0	4689
+15115	GSE124571	disease	Creutzfeldt Jacob disease	disease vs control	other disease	True	True	21	microarray	neither	prefrontal / frontal cortex	16494	3515	5958
+15128	GSE106241	disease staging	Braak stage 2	disease vs control	other disease	True	True	60	microarray	neither	temporal / parietal / occipital cortex	16175	203	3786
+15477	GSE13744	collection of material	pool	treatment / drug	n/a (not a disease contrast)	False	False	7	microarray	neither	cerebellum	17921	42	4725
+15606	GSE113524	disease	Alzheimer disease	disease vs control	Alzheimer	True	True	39	RNA-seq	neither	unspecified brain / other	21092	0	1053
+15650	GSE95587	disease	Alzheimer disease	disease vs control	Alzheimer	True	True	117	RNA-seq	neither	unspecified brain / other	22177	8677	10490
+1565	GSE1297	disease	Alzheimer disease with incipient	disease vs control	Alzheimer	True	True	31	microarray	neither	hippocampus / amygdala	12011	0	274
+1580	GSE14880	DiseaseState	ganglioneuroblastoma	disease vs control	tumour	True	True	34	microarray	neither	unspecified brain / other	19899	84	2148
+15842	GSE68719	disease	Parkinson disease	disease vs control	Parkinson	True	True	73	RNA-seq	neither	prefrontal / frontal cortex	21657	7422	9577
+15843	GSE64810	disease	Huntington disease	disease vs control	Huntington	True	True	69	RNA-seq	neither	prefrontal / frontal cortex	21349	3989	6946
+15853	GSE135838	disease	sepsis	disease vs control	other disease	True	True	24	RNA-seq	neither	unspecified brain / other	22484	0	1423
+15884	GSE135511	disease	brain lesion derived from multiple sclerosis	disease vs control	multiple sclerosis	True	True	50	microarray	neither	unspecified brain / other	16414	3762	5749
+15898	GSE125681	disease	substance abuse	disease vs control	substance use	True	True	38	microarray	neither	prefrontal / frontal cortex	6149	1249	2083
+15899	GSE139384	disease	Alzheimer disease	disease vs control	Alzheimer	True	True	33	microarray	neither	prefrontal / frontal cortex	5033	212	1127
+15919	GSE134878	disease	essential tremor	disease vs control	other disease	True	True	54	RNA-seq	neither	cerebellum	9925	0	543
+15989	GSE45171	treatment	co-culture	treatment / drug	n/a (not a disease contrast)	False	False	8	microarray	neither	unspecified brain / other	18405	3	901
+16123	GSE92322	disease	glioblastoma	disease vs control	tumour	True	True	10	RNA-seq	neither	unspecified brain / other	25317	12593	14239
+16228	GSE6551	disease	brain aneurysm	disease vs control	other disease	True	True	5	microarray	neither	unspecified brain / other	19890	0	663
+16286	GSE140880	secondary structure	capillary	time / other	n/a (not a disease contrast)	False	False	12	microarray	neither	unspecified brain / other	17194	7955	9112
+16334	GSE122063	organism part	temporal cortex	brain region / cell type	n/a (not a disease contrast)	False	False	136	microarray	neither	prefrontal / frontal cortex	16673	0	1385
+16342	GSE126802	disease	multiple sclerosis	disease vs control	multiple sclerosis	True	True	54	microarray	neither	white matter / other	19597	590	3269
+16352	GSE20568	treatment	alcohol abuse	treatment / drug	substance use	False	False	20	microarray	neither	striatum / basal ganglia	3838	0	170
+16508	GSE145554	organism part	pyramidal neuron located in anterior cingulate cortex and deep 	brain region / cell type	n/a (not a disease contrast)	False	False	43	microarray	in SZ corpus	unspecified brain / other	18704	0	1167
+16634	GSE144254	genotype	Arg158Cys variant  APOE [human] apolipoprotein E	genotype	other disease	False	True	42	RNA-seq	neither	unspecified brain / other	22791	6807	9345
+16713	GSE128840	disease	Williams syndrome	disease vs control	other disease	True	True	6	RNA-seq	neither	prefrontal / frontal cortex	27217	0	2032
+16773	GSE112523	disease	schizophrenia	disease vs control	schizophrenia / schizoaffective	True	True	34	RNA-seq	in SZ corpus	unspecified brain / other	23504	0	476
+16782	GSE107896	disease	fragile X syndrome	disease vs control	other disease	True	True	4	RNA-seq	neither	unspecified brain / other	28321	0	914
+16792	GSE101913	cell type	cerebellum basket cell	brain region / cell type	n/a (not a disease contrast)	False	False	54	RNA-seq	neither	cerebellum	18451	10360	11106
+16822	GSE17757.1	developmental stage	71-80 years old	age	n/a (not a disease contrast)	False	False	25	microarray	neither	prefrontal / frontal cortex	18704	13	858
+16828	GSE113834	treatment	total RNA	treatment / drug	n/a (not a disease contrast)	False	False	27	microarray	neither	prefrontal / frontal cortex	18383	11461	12285
+17090	GSE138614	disease	multiple sclerosis	disease vs control	multiple sclerosis	True	True	98	RNA-seq	neither	white matter / other	24520	5897	8805
+17116	GSE126542	genotype	neuron negative for product of gene TARDBP [human] TAR DNA binding protein	genotype	other disease	False	True	16	RNA-seq	neither	prefrontal / frontal cortex	24381	0	1057
+17305	GSE149154	cell type	interneuron	brain region / cell type	n/a (not a disease contrast)	False	False	12	RNA-seq	neither	prefrontal / frontal cortex	13083	3828	4867
+17610	GSE157428	disease	myotonic dystrophy type 2	disease vs control	other disease	True	True	33	RNA-seq	neither	prefrontal / frontal cortex	24901	2	2042
+17741	GSE29652	diseaseState	Braak stage III-IV	disease vs control	other disease	True	False	18	microarray	neither	temporal / parietal / occipital cortex	19898	0	1724
+17767	GSE159260	disease	malignant glioma	disease vs control	tumour	True	True	20	RNA-seq	neither	unspecified brain / other	20613	2663	5802
+17783	GSE157363	phenotype	periventricular lesion  white matter	disease vs control	other disease	True	True	18	microarray	neither	white matter / other	19899	0	2033
+1779	GSE13564	biological sex	male	sex	n/a (not a disease contrast)	False	False	44	microarray	neither	prefrontal / frontal cortex	19887	19	1777
+17801	GSE160691	disease	Down syndrome	disease vs control	other disease	True	True	5	RNA-seq	neither	unspecified brain / other	20158	1985	5792
+17942	GSE160521	organism part	caudate nucleus	brain region / cell type	n/a (not a disease contrast)	False	False	177	RNA-seq	in SZ corpus	striatum / basal ganglia	23575	15012	15637
+17986	GSE161355	cell type	astrocyte	brain region / cell type	n/a (not a disease contrast)	False	False	33	microarray	neither	unspecified brain / other	19899	5258	8925
+18019	GSE166024	biological sex	female	sex	n/a (not a disease contrast)	False	False	14	RNA-seq	neither	striatum / basal ganglia	16619	4	532
+18048	GSE161986	disease	alcohol dependence	disease vs control	substance use	True	True	35	microarray	neither	prefrontal / frontal cortex	12013	0	1207
+18054	GSE165667	organism part	putamen	brain region / cell type	n/a (not a disease contrast)	False	False	6	RNA-seq	neither	prefrontal / frontal cortex	14117	408	2242
+1807	GSE20168	Sex	female	sex	n/a (not a disease contrast)	False	False	33	microarray	neither	prefrontal / frontal cortex	12012	148	2554
+1838	GSE17440	DiseaseState	major depressive disorder	disease vs control	depression	True	True	8	microarray	neither	prefrontal / frontal cortex	19897	57	3115
+18566	GSE71620	age	21-40	age	n/a (not a disease contrast)	False	False	420	microarray	neither	prefrontal / frontal cortex	16174	3063	4868
+18701	GSE15745.2	EFO_0000635	temporal cortex	disease vs control	other disease	False	False	584	microarray	neither	prefrontal / frontal cortex	8723	6738	6854
+1880	GSE21138	DiseaseState	schizophrenia	disease vs control	schizophrenia / schizoaffective	True	True	59	microarray	in SZ corpus	prefrontal / frontal cortex	19895	1	3649
+1881	GSE20146	DiseaseState	Parkinson disease	disease vs control	Parkinson	True	True	20	microarray	neither	striatum / basal ganglia	19899	2	1487
+1885	GSE20141	DiseaseState	Parkinson disease	disease vs control	Parkinson	True	True	18	microarray	neither	striatum / basal ganglia	19898	3555	7386
+18	GSE3489	disease	AIDS dementia complex	disease vs control	other disease	True	True	28	microarray	neither	prefrontal / frontal cortex	8280	5	1039
+1901	E-MEXP-2280	Sex	female	sex	n/a (not a disease contrast)	False	False	31	microarray	neither	temporal / parietal / occipital cortex	14543	0	1822
+19103	GSE176252	timepoint	1 d	time / other	n/a (not a disease contrast)	False	False	6	microarray	neither	unspecified brain / other	13785	29	2500
+19160	GSE169755	disease	Parkinson disease	disease vs control	Parkinson	True	True	12	RNA-seq	neither	striatum / basal ganglia	19949	132	2320
+19209	GSE171936	treatment	smoking behavior	treatment / drug	substance use	False	False	223	RNA-seq	neither	striatum / basal ganglia	24228	1	1556
+19282	GSE169512	treatment	retinoic acid delivered at dose 10 uM	treatment / drug	n/a (not a disease contrast)	False	False	8	RNA-seq	neither	unspecified brain / other	18929	4029	6913
+19457	GSE128380	disease	Rett syndrome	disease vs control	other disease	True	True	16	RNA-seq	neither	cingulate	21664	6	2034
+20506	GSE182321	disease	opioid abuse	disease vs control	substance use	True	True	41	RNA-seq	neither	prefrontal / frontal cortex	19605	96	2553
+20816	GSE182440	disease	alcohol abuse	disease vs control	substance use	True	True	24	RNA-seq	neither	striatum / basal ganglia	27323	11	3501
+20817	GSE182223	disease	alcohol abuse	disease vs control	substance use	True	True	24	RNA-seq	neither	striatum / basal ganglia	30313	0	803
+20818	GSE182173	disease	alcohol abuse	disease vs control	substance use	True	True	24	RNA-seq	neither	prefrontal / frontal cortex	27289	2	1765
+20820	GSE181981	disease	alcohol abuse	disease vs control	substance use	True	True	24	RNA-seq	neither	hippocampus / amygdala	24444	0	1502
+20821	GSE181813	disease	alcohol abuse	disease vs control	substance use	True	True	24	RNA-seq	neither	cerebellum	21648	0	1615
+20825	GSE181741	disease	alcohol abuse	disease vs control	substance use	True	True	24	RNA-seq	neither	striatum / basal ganglia	27363	0	1079
+20850	GSE153110	genotype	Overexpression of  3-microRNA mimic cocktail	genotype	other disease	False	True	8	RNA-seq	neither	unspecified brain / other	23390	9	3702
+21342	GSE175797	disease	varicella zoster infection	disease vs control	other disease	True	True	6	RNA-seq	neither	unspecified brain / other	12094	225	1441
+21443	GSE149326	disease	brain lesion	disease vs control	other disease	True	True	43	RNA-seq	neither	white matter / other	7865	226	1526
+21445	GSE182733	treatment	abnormal bronchial provocation	treatment / drug	n/a (not a disease contrast)	False	False	52	RNA-seq	neither	unspecified brain / other	17133	2997	5131
+23401	GSE106608	disease	Parkinson disease	disease vs control	Parkinson	True	True	16	RNA-seq	neither	striatum / basal ganglia	17936	39	2067
+23444	GSE165604	disease	schizophrenia	disease vs control	schizophrenia / schizoaffective	True	True	37	RNA-seq	in SZ corpus	prefrontal / frontal cortex	19322	0	1294
+23458	GSE150696	disease	Alzheimer disease	disease vs control	Alzheimer	True	True	42	microarray	neither	prefrontal / frontal cortex	23192	333	4425
+23556	GSE133101	disease	Parkinson disease	disease vs control	Parkinson	True	True	69	RNA-seq	neither	unspecified brain / other	19528	0	1070
+23589	GSE114517	disease	Parkinson disease	disease vs control	Parkinson	True	True	75	RNA-seq	neither	striatum / basal ganglia	24505	0	1071
+23645	GSE122377	disease	bacterial meningitis	disease vs control	other disease	True	True	31	RNA-seq	neither	white matter / other	29811	1	1472
+23657	GSE96613	organism part	nucleus accumbens	brain region / cell type	n/a (not a disease contrast)	False	False	20	RNA-seq	neither	prefrontal / frontal cortex	23831	1597	4856
+23704	GSE131281	disease	primary progressive multiple sclerosis	disease vs control	multiple sclerosis	True	True	106	microarray	neither	unspecified brain / other	20173	5	2945
+23706	GSE131279	collection of material	normal appearing grey matter (NAGM)	treatment / drug	control-like / normal	False	False	78	microarray	neither	unspecified brain / other	20434	2047	6817
+23781	GSE114918	disease	Parkinson disease	disease vs control	Parkinson	True	True	52	RNA-seq	neither	white matter / other	15331	1882	4122
+23814	GSE144032.2	developmental stage	prime adult stage	age	n/a (not a disease contrast)	False	False	8	RNA-seq	neither	prefrontal / frontal cortex	30254	0	1747
+23864	GSE106669.2	developmental stage	prime adult stage	age	n/a (not a disease contrast)	False	False	8	RNA-seq	neither	prefrontal / frontal cortex	24103	266	3774
+24167	GSE45642.1	biological sex	female	sex	n/a (not a disease contrast)	False	False	505	microarray	neither	unspecified brain / other	12016	11	866
+24236	GSE193417	disease	major depressive disorder	disease vs control	depression	True	True	12	RNA-seq	neither	cingulate	13091	0	748
+24331	GSE162955	disease	Ischemic stroke	disease vs control	other disease	True	True	12	microarray	neither	unspecified brain / other	23196	3069	8056
+24726	GSE150118	disease	Cornelia de Lange syndrome	disease vs control	other disease	True	True	10	RNA-seq	neither	prefrontal / frontal cortex	22436	27	2598
+24727	GSE150117	disease	Cornelia de Lange syndrome	disease vs control	other disease	True	True	9	RNA-seq	neither	prefrontal / frontal cortex	22163	98	3883
+25091	GSE199724	biological sex	male	sex	n/a (not a disease contrast)	False	False	12	RNA-seq	neither	cerebellum	20557	0	953
+25093	GSE199715	disease	multiple system atrophy	disease vs control	other disease	True	True	94	RNA-seq	neither	cerebellum	13956	3	1357
+25117	GSE199258	disease	multiple system atrophy, parkinsonian type	disease vs control	Parkinson	True	True	38	RNA-seq	neither	cerebellum	16866	0	548
+25131	GSE188847	biological sex	male	sex	n/a (not a disease contrast)	False	False	24	RNA-seq	neither	prefrontal / frontal cortex	24638	43	1500
+25373	GSE121519	disease	amyotrophic lateral sclerosis	disease vs control	ALS / FTD	True	True	10	RNA-seq	neither	white matter / other	19254	4	673
+25703	GSE186334	disease	hippocampal sclerosis of aging	disease vs control	other disease	True	True	68	RNA-seq	neither	temporal / parietal / occipital cortex	21938	16	1036
+2583	GSE4595	DiseaseState	sporadic  amyotrophic lateral sclerosis	disease vs control	ALS / FTD	True	True	20	microarray	neither	unspecified brain / other	18415	0	426
+25992	GSE206308.2	disease	Parkinson disease	disease vs control	Parkinson	True	True	7	RNA-seq	neither	striatum / basal ganglia	21771	8	2269
+26343	GSE214644	cell type	cerebral cortex	brain region / cell type	n/a (not a disease contrast)	False	False	12	microarray	neither	unspecified brain / other	13788	9425	9767
+26484	GSE175776	biological sex	male	sex	n/a (not a disease contrast)	False	False	12	RNA-seq	neither	cerebellum	19623	10	929
+26512	GSE2256	cell type	lens fiber cell located in lens cortex	brain region / cell type	n/a (not a disease contrast)	False	False	6	microarray	neither	unspecified brain / other	12015	562	3121
+26791	GSE168496	disease	Parkinson disease	disease vs control	Parkinson	True	True	16	RNA-seq	neither	striatum / basal ganglia	24706	0	1096
+26828	GSE222136	treatment	Fusobacterium nucleatum	treatment / drug	n/a (not a disease contrast)	False	False	9	RNA-seq	neither	unspecified brain / other	20492	0	874
+26947	GSE214267	disease	cocaine use disorder	disease vs control	substance use	True	True	89	RNA-seq	neither	striatum / basal ganglia	24706	0	1415
+27013	GSE216028	cell type	CD4-positive helper T cell	brain region / cell type	n/a (not a disease contrast)	False	False	34	RNA-seq	neither	white matter / other	6704	0	399
+27014	GSE216027	cell type	effector memory CD8-positive, alpha-beta T cell positive for product of gene PTPRC [human] protein tyrosine phosphatase receptor type C	brain region / cell type	n/a (not a disease contrast)	False	False	18	RNA-seq	neither	white matter / other	18682	0	906
+27189	GSE216330	disease	papillary craniopharyngioma	disease vs control	other disease	True	True	16	RNA-seq	neither	unspecified brain / other	24757	16071	16824
+27190	GSE216281	disease	Parkinson disease with Braak Lewy body stage 5	disease vs control	Parkinson	True	True	84	RNA-seq	neither	prefrontal / frontal cortex	25833	0	3842
+2725	GSE28521	OrganismPart	frontal cortex	brain region / cell type	n/a (not a disease contrast)	False	False	79	microarray	neither	prefrontal / frontal cortex	8098	5405	5599
+27626	GSE206961	disease	Alzheimer disease	disease vs control	Alzheimer	True	True	12	RNA-seq	neither	striatum / basal ganglia	19107	1461	4881
+27796	GSE205450	biological sex	female	sex	n/a (not a disease contrast)	False	False	150	RNA-seq	neither	striatum / basal ganglia	24081	35	2515
+27994	GSE217718	disease	adamantinous craniopharyngioma	disease vs control	other disease	True	True	11	RNA-seq	neither	unspecified brain / other	17993	3403	5995
+28041	GSE210064	biological sex	male	sex	n/a (not a disease contrast)	False	False	22	microarray	neither	hippocampus / amygdala	17219	17	1173
+28105	GSE224683	biological sex	male	sex	n/a (not a disease contrast)	False	False	30	RNA-seq	in SZ corpus	prefrontal / frontal cortex	23267	1	448
+28132	GSE193407	disease	severe intensity  traumatic encephalopathy	disease vs control	other disease	True	True	136	RNA-seq	neither	prefrontal / frontal cortex	22687	0	3747
+28133	GSE157330	disease	severe intensity  dementia pugilistica	disease vs control	other disease	True	True	76	RNA-seq	neither	prefrontal / frontal cortex	23932	678	5682
+28201	GSE197345	biological sex	male	sex	n/a (not a disease contrast)	False	False	40	RNA-seq	neither	cerebellum	20716	12	633
+28299	GSE223747	genotype	gene knockdown of  TARDBP [human] TAR DNA binding protein	genotype	other disease	False	True	18	RNA-seq	neither	temporal / parietal / occipital cortex	19017	106	1360
+31243	GSE44693	genotype	Overexpression of  MIR155 [human] microRNA 155	genotype	other disease	False	True	6	microarray	neither	unspecified brain / other	8272	1330	2539
+31269	GSE224952.2	treatment	electrical stimulation	treatment / drug	n/a (not a disease contrast)	False	False	16	RNA-seq	neither	temporal / parietal / occipital cortex	28022	19	1805
+31417	GSE131617.1.2	disease	Alzheimer disease with Braak stage 1 - 2	disease vs control	Alzheimer	True	True	212	microarray	neither	unspecified brain / other	17865	0	328
+31525	GSE214921	disease	major depressive disorder	disease vs control	depression	True	True	39	RNA-seq	neither	prefrontal / frontal cortex	22857	0	603
+31532	GSE239662	biological sex	female	sex	n/a (not a disease contrast)	False	False	39	RNA-seq	neither	prefrontal / frontal cortex	22229	4	1005
+31549	GSE224377	biological sex	male	sex	n/a (not a disease contrast)	False	False	18	RNA-seq	neither	white matter / other	19139	0	296
+31711	GSE236761	disease	autism spectrum disorder	disease vs control	autism	True	True	20	RNA-seq	neither	unspecified brain / other	20014	11	3790
+31723	GSE245677	treatment	BMS265246, lipopolysaccharide	treatment / drug	n/a (not a disease contrast)	False	False	12	RNA-seq	neither	unspecified brain / other	18032	9306	10246
+32055	GSE242231	genotype	gene knockdown of  HEXB [human] hexosaminidase subunit beta	genotype	other disease	False	True	6	RNA-seq	neither	unspecified brain / other	19537	9189	10281
+32073	GSE213907	disease	primary central nervous system vasculitis	disease vs control	other disease	True	True	17	RNA-seq	neither	unspecified brain / other	16566	4262	6454
+32397	GSE236562	disease	Alzheimer disease	disease vs control	Alzheimer	True	True	32	RNA-seq	neither	unspecified brain / other	25495	0	2127
+32411	GSE228458	disease	myotonic dystrophy type 1	disease vs control	other disease	True	True	13	RNA-seq	neither	white matter / other	25484	0	1907
+32511	GSE234488	genotype	APOEƐ3/APOEƐ3  APOE [human] apolipoprotein E	genotype	other disease	False	True	25	RNA-seq	neither	unspecified brain / other	11210	0	533
+326	GSE5389	Sex	female	sex	n/a (not a disease contrast)	False	False	21	microarray	neither	prefrontal / frontal cortex	12016	0	2870
+3349	GSE28894	OrganismPart	frontal cortex	brain region / cell type	n/a (not a disease contrast)	False	False	114	microarray	neither	prefrontal / frontal cortex	16134	1163	3432
+34722	GSE262948	organism part	auditory cortex	brain region / cell type	n/a (not a disease contrast)	False	False	8	RNA-seq	neither	prefrontal / frontal cortex	29122	0	931
+35055	GSE207680	disease	multiple sclerosis	disease vs control	multiple sclerosis	True	True	6	RNA-seq	neither	unspecified brain / other	31437	0	4953
+35169	GSE237919	genotype	gene knockdown of  PATJ [human] PATJ crumbs cell polarity complex component	genotype	other disease	False	True	8	microarray	neither	unspecified brain / other	13788	307	1768
+35387	GSE253155	disease	alcohol abuse	disease vs control	substance use	True	True	194	RNA-seq	neither	unspecified brain / other	29970	26	3776
+36060	GSE227729	cell type	cholinergic neuron with interneuron	brain region / cell type	n/a (not a disease contrast)	False	False	224	RNA-seq	neither	striatum / basal ganglia	21859	3352	5852
+365	GSE3790	DiseaseState	Huntington disease	disease vs control	Huntington	True	True	404	microarray	neither	prefrontal / frontal cortex	17745	9418	10376
+373	GSE6955	OrganismPart	Brodmann (1909) area 8	brain region / cell type	n/a (not a disease contrast)	False	False	6	microarray	neither	prefrontal / frontal cortex	8281	0	173
+37859	GSE260815	disease	brain lesion	disease vs control	other disease	True	True	12	microarray	neither	white matter / other	13789	0	65
+37953	GSE206641	treatment	extracellular exosome delivered for duration 36 h, extracellular exosome derives from cell neuron and has disease varicella zoster infection	treatment / drug	n/a (not a disease contrast)	False	False	6	RNA-seq	neither	unspecified brain / other	24019	1854	4940
+38073	GSE255290	organism part	gray matter	brain region / cell type	n/a (not a disease contrast)	False	False	10	RNA-seq	neither	white matter / other	19662	0	1184
+38112	GSE260757	treatment	EPHB2 [human] EPH receptor B2 delivered at dose 2 ug/ml and delivered for duration 24 h	treatment / drug	n/a (not a disease contrast)	False	False	12	RNA-seq	neither	white matter / other	25242	19	1918
+38272	GSE261817	block	B	brain region / cell type	n/a (not a disease contrast)	False	False	35	RNA-seq	neither	prefrontal / frontal cortex	25346	110	3378
+38330	GSE251939	disease	Down syndrome	disease vs control	other disease	True	True	82	RNA-seq	neither	prefrontal / frontal cortex	14337	245	1752
+38852	GSE53239	disease	bipolar disorder	disease vs control	bipolar	True	True	22	RNA-seq	neither	prefrontal / frontal cortex	33872	0	2958
+3886	GSE20163	DiseaseState	Parkinson disease	disease vs control	Parkinson	True	True	17	microarray	neither	striatum / basal ganglia	11949	604	3321
+3887	GSE20164	DiseaseState	Parkinson disease	disease vs control	Parkinson	True	True	11	microarray	neither	striatum / basal ganglia	12016	104	1650
+3888	GSE20314	disease	Parkinson disease	disease vs control	Parkinson	True	True	8	microarray	neither	striatum / basal ganglia	12015	0	1454
+3893	GSE20159	disease	Lewy body dementia	disease vs control	other disease	True	True	33	microarray	neither	striatum / basal ganglia	19625	0	1282
+39948	GSE275676	biological sex	male	sex	n/a (not a disease contrast)	False	False	39	RNA-seq	neither	prefrontal / frontal cortex	31611	36	1638
+39972	GSE280268	disease	Alzheimer disease	disease vs control	Alzheimer	True	True	90	RNA-seq	neither	unspecified brain / other	21236	571	3641
+40151	GSE156928	disease	Parkinson disease	disease vs control	Parkinson	True	True	15	RNA-seq	neither	prefrontal / frontal cortex	30648	0	5090
+4150	GSE21935	DiseaseState	schizophrenia	disease vs control	schizophrenia / schizoaffective	True	True	42	microarray	in SZ corpus	unspecified brain / other	19889	0	1356
+4354	byne-cc	RIN.Group	3	time / other	n/a (not a disease contrast)	False	False	93	microarray	held-out SZ experiment	white matter / other	8722	0	360
+4658	GSE37721	sex	female	sex	n/a (not a disease contrast)	False	False	37	microarray	neither	unspecified brain / other	12924	11	874
+4665	GSE37667	treatment	sleep recovery	treatment / drug	n/a (not a disease contrast)	False	False	27	microarray	neither	unspecified brain / other	19897	41	3132
+50251	GSE281250	genotype	gene knockdown of  USP9X [human] ubiquitin specific peptidase 9 X-linked	genotype	other disease	False	True	10	RNA-seq	neither	unspecified brain / other	20424	2997	5443
+50547	GSE287651	cell type	neuron negative for product of gene RBFOX1 [human] RNA binding fox-1 homolog 1	brain region / cell type	n/a (not a disease contrast)	False	False	15	RNA-seq	neither	temporal / parietal / occipital cortex	27553	13	2244
+51651	GSE101521.2	phenotype	major depressive disorder	disease vs control	depression	True	True	59	RNA-seq	neither	prefrontal / frontal cortex	27534	4	3178
+5243	GSE28160	DiseaseState	HIV-associated nephropathy	disease vs control	other disease	True	True	35	microarray	neither	unspecified brain / other	19899	10254	11732
+5446	GSE38010	DiseaseState	Acute plaque	disease vs control	other disease	True	True	7	microarray	neither	unspecified brain / other	19897	1129	4448
+549	GSE7621	Sex	male	sex	n/a (not a disease contrast)	False	False	25	microarray	neither	striatum / basal ganglia	19898	2314	5923
+5512	GSE32645	DiseaseState	Alzheimer disease	disease vs control	Alzheimer	True	True	12	microarray	neither	unspecified brain / other	18415	0	413
+5650	GSE7142	diseaseState	Precocious puberty	disease vs control	other disease	False	False	4	microarray	neither	striatum / basal ganglia	12014	0	309
+5653	GSE5839	diseaseState	multiple sclerosis	disease vs control	multiple sclerosis	True	False	4	microarray	neither	unspecified brain / other	12016	0	685
+5719	GSE38322	DiseaseState	autism	disease vs control	autism	True	True	36	microarray	neither	unspecified brain / other	20461	0	2068
+57675	GSE290343	treatment 1	2-deoxy-D-glucose delivered at dose 10 mM - 50 mM and delivered for duration 24 h	treatment / drug	n/a (not a disease contrast)	False	False	8	RNA-seq	neither	unspecified brain / other	28024	561	3993
+57776	GSE296710	genotype	gene knockdown of  TARDBP [human] TAR DNA binding protein	genotype	other disease	False	True	8	RNA-seq	neither	unspecified brain / other	29319	7627	10373
+57809	GSE285938	biological sex	male	sex	n/a (not a disease contrast)	False	False	36	RNA-seq	neither	white matter / other	24548	15	1328
+57812	GSE297158	genotype	gene knockdown of  TIA1 [human] TIA1 cytotoxic granule associated RNA binding protein	genotype	other disease	False	True	6	RNA-seq	neither	unspecified brain / other	22219	0	2100
+57826	GSE297551	disease	Alzheimer disease	disease vs control	Alzheimer	True	True	60	RNA-seq	neither	prefrontal / frontal cortex	28474	1209	6370
+57868	GSE261050	biological sex	male	sex	n/a (not a disease contrast)	False	False	101	RNA-seq	neither	unspecified brain / other	30887	30	1083
+58000	GSE282910	disease	Alzheimer disease with tau protein deposits and high seeder 	disease vs control	Alzheimer	True	True	28	RNA-seq	neither	unspecified brain / other	28349	57	6251
+5806	GSE23290	DiseaseState	Parkinson disease	disease vs control	Parkinson	True	True	14	microarray	neither	striatum / basal ganglia	17923	108	6643
+58082	GSE273787	biological sex	male	sex	n/a (not a disease contrast)	False	False	44	RNA-seq	neither	striatum / basal ganglia	23388	23	829
+5811	GSE37263	disease	Alzheimer disease	disease vs control	Alzheimer	True	True	16	microarray	neither	unspecified brain / other	17916	0	3291
+5857	GSE26972	DiseaseState	Alzheimer disease	disease vs control	Alzheimer	True	True	6	microarray	neither	temporal / parietal / occipital cortex	17910	3	3514
+5939	GSE35974	DiseaseState	bipolar disorder	disease vs control	bipolar	True	True	144	microarray	in SZ corpus	cerebellum	18698	644	3435
+594	GSE5388	diseaseState	bipolar disorder	disease vs control	bipolar	True	False	61	microarray	neither	prefrontal / frontal cortex	11999	0	2591
+6070	GSE35499	disease	central neurocytoma	disease vs control	other disease	True	True	10	microarray	neither	unspecified brain / other	11804	1822	3572
+6247	GSE30573	organism part	temporal cortex	brain region / cell type	n/a (not a disease contrast)	False	False	6	RNA-seq	neither	prefrontal / frontal cortex	22058	0	815
+627	GSE5390	DiseaseState	Down syndrome	disease vs control	other disease	True	True	15	microarray	neither	prefrontal / frontal cortex	12016	4952	6132
+6392	GSE46193	organism part	entorhinal cortex	brain region / cell type	n/a (not a disease contrast)	False	False	16	microarray	neither	temporal / parietal / occipital cortex	4569	0	48
+6428	GSE47130	Treatment	helper-dependent (HD) canine (CAV-2) adenovirus	treatment / drug	n/a (not a disease contrast)	False	False	30	microarray	neither	white matter / other	19899	99	2962
+6443	GSE46509	DiseaseState	schizophrenia	disease vs control	schizophrenia / schizoaffective	True	True	16	microarray	in SZ corpus	temporal / parietal / occipital cortex	19878	1	2207
+6488	GSE37981	disease	schizophrenia	disease vs control	schizophrenia / schizoaffective	True	True	18	microarray	in SZ corpus	temporal / parietal / occipital cortex	19879	52	3650
+6502	GSE29378	sex	male	sex	n/a (not a disease contrast)	False	False	63	microarray	neither	hippocampus / amygdala	19614	630	4672
+672	McLean_PFC	sex	male	sex	n/a (not a disease contrast)	False	False	66	microarray	held-out SZ experiment	prefrontal / frontal cortex	11998	10	1299
+721	GSE8919	OrganismPart	parietal cortex	brain region / cell type	n/a (not a disease contrast)	False	False	193	microarray	neither	prefrontal / frontal cortex	14455	206	2054
+738	GSE9770	OrganismPart	entorhinal cortex with cortical layer II	brain region / cell type	n/a (not a disease contrast)	False	False	34	microarray	neither	prefrontal / frontal cortex	19899	2409	5479
+7663	GSE36192	organism part	frontal cortex	brain region / cell type	n/a (not a disease contrast)	False	False	911	microarray	neither	prefrontal / frontal cortex	7846	7378	7382
+8062	GSE44456	sex	male	sex	n/a (not a disease contrast)	False	False	39	microarray	neither	hippocampus / amygdala	18704	77	3594
+831	stanley_feinberg	disease	depressive disorder	disease vs control	depression	True	True	50	microarray	held-out SZ experiment	cerebellum	8285	0	584
+833	stanley_kato	disease	bipolar disorder	disease vs control	bipolar	True	True	102	microarray	held-out SZ experiment	prefrontal / frontal cortex	11980	0	1740
+834	stanley_sklarA	disease	depressive disorder	disease vs control	depression	True	True	47	microarray	held-out SZ experiment	prefrontal / frontal cortex	8288	0	1969
+835	stanley_sklarB	disease	depressive disorder	disease vs control	depression	True	True	46	microarray	held-out SZ experiment	cerebellum	8288	0	671
+836	stanley_vawter	disease	schizophrenia	disease vs control	schizophrenia / schizoaffective	True	True	98	microarray	held-out SZ experiment	prefrontal / frontal cortex	13074	1	926
+837	stanley_young	disease	schizophrenia	disease vs control	schizophrenia / schizoaffective	True	True	105	microarray	held-out SZ experiment	prefrontal / frontal cortex	4710	0	21
+838	stanley_altarA	disease	bipolar disorder	disease vs control	bipolar	True	True	98	microarray	held-out SZ experiment	prefrontal / frontal cortex	11973	1	2022
+839	stanley_altarB	environmental history	drug dependence with Heavy in present	treatment / drug	n/a (not a disease contrast)	False	False	39	microarray	held-out SZ experiment	prefrontal / frontal cortex	6560	1	451
+840	stanley_altarC	disease	depressive disorder	disease vs control	depression	True	True	44	microarray	held-out SZ experiment	prefrontal / frontal cortex	12004	7914	8272
+841	stanley_bahn	disease	schizophrenia	disease vs control	schizophrenia / schizoaffective	True	True	99	microarray	held-out SZ experiment	prefrontal / frontal cortex	12016	0	883
+842	stanley_chen	biological sex	male	sex	n/a (not a disease contrast)	False	False	27	microarray	neither	prefrontal / frontal cortex	19891	13	1713
+843	stanley_dobrin	biological sex	male	sex	n/a (not a disease contrast)	False	False	78	microarray	held-out SZ experiment	prefrontal / frontal cortex	19881	20	1426
+85317	GSE244782	treatment	clozapine	treatment / drug	n/a (not a disease contrast)	False	False	26	microarray	in SZ corpus	prefrontal / frontal cortex	13786	0	596
+85643	GSE280304	treatment 1	idebenone delivered at dose 20 uM	treatment / drug	n/a (not a disease contrast)	False	False	12	RNA-seq	neither	unspecified brain / other	11476	33	769
+85644	GSE280303	treatment	irradiated with X-ray source and delivered at dose 16 Gy	treatment / drug	n/a (not a disease contrast)	False	False	18	RNA-seq	neither	unspecified brain / other	11859	0	928
+85829	GSE272142	disease	mesial temporal lobe epilepsy with hippocampal sclerosis	disease vs control	other disease	True	True	12	RNA-seq	neither	temporal / parietal / occipital cortex	31358	8	2659
+85938	GSE280431.2	treatment	heroin	treatment / drug	substance use	False	False	62	RNA-seq	neither	prefrontal / frontal cortex	33356	25	2887
+86314	GSE276756	disease	Alzheimer disease	disease vs control	Alzheimer	True	True	41	RNA-seq	neither	unspecified brain / other	18275	483	3544
+86343	GSE285831	disease	Alzheimer disease	disease vs control	Alzheimer	True	True	20	RNA-seq	neither	prefrontal / frontal cortex	17126	760	3554
+8758	GSE54562	disease	major depressive disorder	disease vs control	depression	True	True	20	microarray	neither	cingulate	19619	0	1821
+8759	GSE54563	disease	major depressive disorder	disease vs control	depression	True	True	50	microarray	neither	cingulate	19612	0	983
+8760	GSE54564	disease	major depressive disorder	disease vs control	depression	True	True	42	microarray	neither	hippocampus / amygdala	10820	0	993
+8761	GSE54565	disease	major depressive disorder	disease vs control	depression	True	True	32	microarray	neither	cingulate	19890	0	1332
+8762	GSE54566	disease	major depressive disorder	disease vs control	depression	True	True	28	microarray	neither	hippocampus / amygdala	19897	0	753
+8763	GSE54567	disease	major depressive disorder	disease vs control	depression	True	True	28	microarray	neither	prefrontal / frontal cortex	19899	0	1157
+8764	GSE54568	disease	major depressive disorder	disease vs control	depression	True	True	30	microarray	neither	prefrontal / frontal cortex	19899	1	3253
+8765	GSE54570	disease	major depressive disorder	disease vs control	depression	True	True	26	microarray	neither	prefrontal / frontal cortex	12015	12	1724
+8766	GSE54571	disease	major depressive disorder	disease vs control	depression	True	True	26	microarray	neither	cingulate	19898	1	2611
+8767	GSE54572	disease	major depressive disorder	disease vs control	depression	True	True	24	microarray	neither	cingulate	19899	1059	5521
+8768	GSE54575	disease	major depressive disorder	disease vs control	depression	True	True	24	microarray	neither	prefrontal / frontal cortex	12016	5828	6715
+8776	GSE54839	disease	cocaine dependence	disease vs control	substance use	True	True	60	microarray	neither	white matter / other	19594	564	3590
+8994	GSE60190	disease	eating disorder	disease vs control	other disease	True	True	133	microarray	neither	prefrontal / frontal cortex	12271	876	3218
+9095	GSE56267	disease	Ischemic stroke	disease vs control	other disease	True	True	13	RNA-seq	neither	unspecified brain / other	28386	1	4310
+910	GSE12685	DiseaseState	Alzheimer disease	disease vs control	Alzheimer	True	True	14	microarray	neither	prefrontal / frontal cortex	12014	4594	5947
+91396	GSE272200	disease model	obsessive-compulsive disorder	disease model	other disease	False	True	85	RNA-seq	neither	striatum / basal ganglia	27759	0	790
+91432	GSE319253	disease model	traumatic encephalopathy	disease model	other disease	False	True	24	RNA-seq	neither	prefrontal / frontal cortex	34136	5909	9994
+916	GSE13162	disease	GRN-related frontotemporal lobar degeneration with Tdp43 inclusions	disease vs control	ALS / FTD	True	True	56	microarray	neither	unspecified brain / other	12014	51	2628
+9226	GSE37264	disease	Alzheimer disease	disease vs control	Alzheimer	True	True	16	microarray	neither	unspecified brain / other	17916	0	3291
+946	GSE12679	DiseaseState	schizophrenia	disease vs control	schizophrenia / schizoaffective	True	True	32	microarray	in SZ corpus	prefrontal / frontal cortex	19898	0	1690
+9923	GSE62098	disease	autism spectrum disorder	disease vs control	autism	True	True	12	RNA-seq	neither	white matter / other	24486	0	146

@@ -1,0 +1,33 @@
+# figure: suppnote2_blood panel f (Note 6 panel d)
+# script: rerun_core80_2026-10-16/L14/N9_blood_lists/scripts/overlap_375.py (N9; periphery overlap script, libd-null patch of core80_work_2026-10-16/P11/b/f2/overlap_375_libd_core80.py) over sets_v2ph.tsv sha256 88fa3aac1afc (sets.tsv of n9_build_sets.py with the ph_top200* rows replaced by scripts/mk_sets_v2ph.py); rows selected and renamed by core80_work_2026-10-16/P11/b/f2/blood_fk_core80.py; run 2026-10-18 (G4)
+# input: n9_v2ph/results/direction.tsv (G4 run 2026-10-18) sha256 f37b510ac511; pH axis v2: ph_axis_v2_2026-10-14/axis_v2_controls.tsv.gz sha256 2c72a9b279a2 (z_stouffer, controls, ten dataset-regions); base sets recurrent_sets.tsv sha256 3c42f67cdd7a; blood DE prior 3_blood_our_prior.tsv sha256 085d429447dd
+# sets: recurrent_209 = the 383 recurrent genes (set study_brain; _up / _down = its up / down-direction members); recurrent_ge10 = study_brain_ge10 (107); recurrent_ge5 = study_brain_ge5 (2,422)
+# hits whose cluster direction (majority of member lists) and brain direction are both up or down: concordant / discordant; for ph_* sets the 'brain direction' is the direction low pH predicts in SZ (Z > 0 -> down); binom_p two-sided against 0.5
+# 2026-10-21: the 13 'brain' rows use the cohort-cluster sets of the seven multi-bank studies (21 clusters of the 72 lists; a spanning study's list counts in each of its clusters, so hits are (gene, cluster) pairs over 21 clusters); no spanning study among the 25 blood lists; N9 overlap_375.py (libd-null patch) with recurrence.py imported from a copy of the core-80 analyses tree
+scenario	set	hits_with_direction	concordant	discordant	share_concordant	binom_p	clusters_net_concordant	clusters_net_discordant	clusters_tied_or_none
+brain	recurrent_209	2047	1805	242	0.882	4.21e-295	17	2	2
+brain	recurrent_209_up	909	799	110	0.879	9.62e-130	17	2	2
+brain	recurrent_209_down	1138	1006	132	0.884	5.22e-167	16	3	2
+brain	recurrent_ge10	648	577	71	0.89	1.79e-99	14	4	3
+brain	recurrent_ge10_up	305	268	37	0.879	2.2e-44	13	3	5
+brain	recurrent_ge10_down	343	309	34	0.901	1.24e-56	13	3	5
+brain	recurrent_ge5	9826	8376	1450	0.852	0	19	1	1
+brain	recurrent_ge5_up	4362	3645	717	0.836	0	19	0	2
+brain	recurrent_ge5_down	5464	4731	733	0.866	0	17	3	1
+brain	careful_25	143	123	20	0.86	2.78e-19	11	2	8
+brain	ph_top200	701	626	75	0.893	3.84e-109	15	3	3
+brain	ph_top200_pos	295	262	33	0.888	2.06e-45	10	4	7
+brain	ph_top200_neg	406	364	42	0.897	3.91e-65	14	1	6
+blood	recurrent_209	401	215	186	0.536	0.162	14	6	2
+blood	recurrent_209_up	230	134	96	0.583	0.0145	12	8	2
+blood	recurrent_209_down	171	81	90	0.474	0.541	8	12	2
+blood	recurrent_ge10	122	60	62	0.492	0.928	5	12	5
+blood	recurrent_ge10_up	76	46	30	0.605	0.0846	9	8	5
+blood	recurrent_ge10_down	46	14	32	0.304	0.0114	2	11	9
+blood	recurrent_ge5	2145	1091	1054	0.509	0.437	12	8	2
+blood	recurrent_ge5_up	1074	527	547	0.491	0.562	11	10	1
+blood	recurrent_ge5_down	1071	564	507	0.527	0.087	12	9	1
+blood	careful_25	37	25	12	0.676	0.047	8	4	10
+blood	ph_top200	174	71	103	0.408	0.0185	8	10	4
+blood	ph_top200_pos	65	30	35	0.462	0.62	5	6	11
+blood	ph_top200_neg	109	41	68	0.376	0.0124	5	11	6

@@ -1,0 +1,34 @@
+# figure: fig06 panel e
+# script: core80_work_2026-10-16/P11/b/f6/export_fig06_core80.py (copy of analyses/figure_exports/export_fig06.py; paths and population stamp changed, panel d dropped), run 2026-10-17
+# population: core-80 base: 72 primary brain studies = lists (recurrence.py scenario 'published, brain', study tier; 80 studies, 72 contributing lists; Shao 2008 PMID 18191109 out); n_k = |M_k| (RECURRENCE_NK=membership); analysis set = the 383 study-tier genes at q_bh < 0.1 (set study_brain of base78_2026-10-16/B80/out/recurrent_sets.tsv), count set 107 genes in 10 or more lists (primary), 2,422 in 5 or more (sensitivity); recurrence_genes.tsv sha256 dda5eb621c15; recurrence.tsv sha256 bcbf50f8e334; corpus/lineage.json sha256 4f919a83fea3; panel a = the study-tier q<0.1 set of the in-place recurrence_genes.tsv (383), rows named 'q<0.1' = the in-place q_bh / q_expr_bh sets on this base
+# input: L07/recurrence_priors/set_auc.tsv sha256 4d2ab90440fb
+# AUC of the reference (DE prior or expression) ranking the set's genes above the other genes of the universe; 0.5 = chance; p_mannwhitney_two_sided of 0 is the file's underflow
+gene_set	reference	n_universe	n_set	n_set_in_universe	median_set	median_universe	auc	p_mannwhitney_two_sided	provisional
+study_brain (209-equivalent, q<0.1)	global prior, n_de_total	28333	383	383	706.0	246.0	0.8624	1.62e-131	
+study_brain_ge10 (primary, 10+ lists)	global prior, n_de_total	28333	107	107	798.0	246.0	0.8934	5.93e-45	
+study_brain_ge5 (fork, 5+ lists)	global prior, n_de_total	28333	2422	2422	563.0	246.0	0.8184	0	
+expression-matched q<0.1	global prior, n_de_total	28333	140	140	776.5	246.0	0.8618	1.59e-49	
+study_brain (209-equivalent, q<0.1)	global prior, de_prior_norm	28333	383	383	0.9389	0.6868	0.8767	6.17e-142	
+study_brain_ge10 (primary, 10+ lists)	global prior, de_prior_norm	28333	107	107	0.9637	0.6868	0.9133	1.98e-49	
+study_brain_ge5 (fork, 5+ lists)	global prior, de_prior_norm	28333	2422	2422	0.8849	0.6868	0.8223	0	
+expression-matched q<0.1	global prior, de_prior_norm	28333	140	140	0.9622	0.6868	0.8926	5.57e-58	
+study_brain (209-equivalent, q<0.1)	brain postmortem prior, n_de_total	28228	383	383	12.0	4.0	0.9063	1.17e-166	
+study_brain_ge10 (primary, 10+ lists)	brain postmortem prior, n_de_total	28228	107	107	14.0	4.0	0.9416	8.06e-57	
+study_brain_ge5 (fork, 5+ lists)	brain postmortem prior, n_de_total	28228	2422	2422	9.0	4.0	0.8547	0	
+expression-matched q<0.1	brain postmortem prior, n_de_total	28228	140	140	13.0	4.0	0.8794	6.98e-55	
+study_brain (209-equivalent, q<0.1)	brain postmortem prior, de_prior_norm	28228	383	383	0.916	0.4149	0.9089	6.96e-168	
+study_brain_ge10 (primary, 10+ lists)	brain postmortem prior, de_prior_norm	28228	107	107	0.9445	0.4149	0.952	3.8e-59	
+study_brain_ge5 (fork, 5+ lists)	brain postmortem prior, de_prior_norm	28228	2422	2422	0.8123	0.4149	0.857	0	
+expression-matched q<0.1	brain postmortem prior, de_prior_norm	28228	140	140	0.9277	0.4149	0.8947	6.06e-59	
+study_brain (209-equivalent, q<0.1)	brain postmortem, no SZ banks prior, n_de_total	28227	383	383	12.0	4.0	0.9063	1.15e-166	
+study_brain_ge10 (primary, 10+ lists)	brain postmortem, no SZ banks prior, n_de_total	28227	107	107	14.0	4.0	0.9416	8e-57	
+study_brain_ge5 (fork, 5+ lists)	brain postmortem, no SZ banks prior, n_de_total	28227	2422	2422	9.0	4.0	0.8547	0	
+expression-matched q<0.1	brain postmortem, no SZ banks prior, n_de_total	28227	140	140	13.0	4.0	0.8794	6.94e-55	
+study_brain (209-equivalent, q<0.1)	brain postmortem, no SZ banks prior, de_prior_norm	28227	383	383	0.916	0.4149	0.9089	7.01e-168	
+study_brain_ge10 (primary, 10+ lists)	brain postmortem, no SZ banks prior, de_prior_norm	28227	107	107	0.9445	0.4149	0.952	3.8e-59	
+study_brain_ge5 (fork, 5+ lists)	brain postmortem, no SZ banks prior, de_prior_norm	28227	2422	2422	0.8123	0.4149	0.857	0	
+expression-matched q<0.1	brain postmortem, no SZ banks prior, de_prior_norm	28227	140	140	0.9277	0.4149	0.8947	6.07e-59	
+study_brain (209-equivalent, q<0.1)	expression	19890	383	383	5.8696	3.5629	0.7449	1.01e-60	
+study_brain_ge10 (primary, 10+ lists)	expression	19890	107	107	5.485	3.5629	0.7372	2.3e-17	
+study_brain_ge5 (fork, 5+ lists)	expression	19890	2422	2418	5.6517	3.5629	0.7667	0	
+expression-matched q<0.1	expression	19890	140	129	3.6621	3.5629	0.5112	0.659	

@@ -1,0 +1,45 @@
+# script: 02_axes_and_sets.py, run 2026-10-18; NEW analysis; seed 20261018; 10000 matched sets (axis correlations use the first 5000); 1000 bootstrap resamples over genes (300 for cell-type rows)
+# inputs: contrast_effects.tsv sha256 a1eda8a59dd6; axis_v2_controls.tsv.gz 2c72a9b279a2 (z_stouffer; positive = higher at higher pH); hardy_t_by_region.tsv.gz 54f989c55753 (mean of BA9, BA24, Cortex; positive = higher in slow death);
+# recurrence_genes.tsv dda5eb621c15; recurrent_sets.tsv 3c42f67cdd7a; specificity_HBCC.tsv.gz 84842a9e04b2; MOESM3_ESM.xlsx (Supplementary Data 1-7) 8ab60f6b237f
+# effect sign: processed or autopsy minus 0 h CTRL (positive = higher after processing); 't:' = own OLS t from released counts, 'relLFC:' = released whole-transcriptome log2FC (baseMean >= 10)
+# matched null: published-brain genes with a SZ sign outside the 383, strata = expression decile x DE-prior quintile (ad_383.py); genes are not independent, intervals over genes are descriptive
+# share of set genes whose SZ sign (up - down of recurrence_genes.tsv) equals the sign of the effect; null = same share in matched sets; ref rows give the same test for the axes in the direction a lower pH or slower death would predict
+gene_set	effect	n_genes	concordant	frac_concordant	wilson95_low	wilson95_high	null_mean	null_sd	null_q025	null_q975	diff_from_null_mean	perm_p_two_sided
+383 recurrent (q_bh<0.1)	t:S_6h4C_vs_0h	374	184	0.492	0.442	0.542	0.488	0.024	0.441	0.535	0.004	0.8738
+383 recurrent (q_bh<0.1)	t:S_6h20C_vs_0h	374	205	0.548	0.497	0.598	0.565	0.024	0.517	0.612	-0.017	0.4813
+383 recurrent (q_bh<0.1)	t:S_24h4C_vs_0h	374	198	0.529	0.479	0.579	0.552	0.024	0.505	0.6	-0.023	0.3502
+383 recurrent (q_bh<0.1)	t:S_24h20C_vs_0h	374	194	0.519	0.468	0.569	0.555	0.024	0.508	0.604	-0.036	0.1383
+383 recurrent (q_bh<0.1)	t:S_36h4C_vs_0h	374	204	0.545	0.495	0.595	0.561	0.024	0.515	0.608	-0.016	0.5186
+383 recurrent (q_bh<0.1)	t:S_36h20C_vs_0h	374	198	0.529	0.479	0.579	0.555	0.024	0.507	0.603	-0.026	0.2944
+383 recurrent (q_bh<0.1)	t:S_20C_minus_4C_6h	374	213	0.57	0.519	0.619	0.574	0.024	0.526	0.621	-0.004	0.862
+383 recurrent (q_bh<0.1)	t:S_20C_minus_4C_24h	374	199	0.532	0.481	0.582	0.53	0.024	0.483	0.578	0.002	0.9316
+383 recurrent (q_bh<0.1)	t:S_20C_minus_4C_36h	374	196	0.524	0.473	0.574	0.527	0.024	0.48	0.575	-0.003	0.9088
+383 recurrent (q_bh<0.1)	t:S_20C_36h_minus_6h	374	197	0.527	0.476	0.577	0.533	0.024	0.485	0.581	-0.006	0.8063
+383 recurrent (q_bh<0.1)	t:S_4C_36h_minus_6h	374	219	0.586	0.535	0.634	0.587	0.024	0.541	0.634	-0.002	0.9403
+383 recurrent (q_bh<0.1)	t:A_LPMI_vs_CTRL	376	193	0.513	0.463	0.563	0.458	0.024	0.411	0.505	0.055	0.0243
+383 recurrent (q_bh<0.1)	t:A_SPMI_vs_CTRL	376	201	0.535	0.484	0.584	0.479	0.024	0.43	0.526	0.055	0.023
+383 recurrent (q_bh<0.1)	relLFC:S_24h20C_vs_0h	374	222	0.594	0.543	0.642	0.56	0.024	0.513	0.608	0.033	0.1681
+383 recurrent (q_bh<0.1)	relLFC:S_36h20C_vs_0h	374	204	0.545	0.495	0.595	0.561	0.024	0.513	0.607	-0.015	0.5374
+383 recurrent (q_bh<0.1)	relLFC:A_SPMI_vs_CTRL	376	206	0.548	0.497	0.597	0.48	0.024	0.432	0.528	0.068	0.0051
+383 recurrent (q_bh<0.1)	relLFC:A_LPMI_vs_CTRL	376	196	0.521	0.471	0.571	0.461	0.024	0.414	0.509	0.06	0.0139
+383 recurrent (q_bh<0.1)	ref: low-pH direction (minus pH axis z)	364	310	0.852	0.811	0.884	0.708	0.023	0.661	0.752	0.144	0.0001
+383 recurrent (q_bh<0.1)	ref: slow-death direction (GTEx t)	357	322	0.902	0.867	0.929	0.716	0.023	0.67	0.761	0.186	0.0001
+107 in >=10 lists	t:S_6h4C_vs_0h	105	51	0.486	0.392	0.58	0.475	0.048	0.383	0.57	0.01	0.8448
+107 in >=10 lists	t:S_6h20C_vs_0h	105	53	0.505	0.411	0.599	0.559	0.047	0.467	0.651	-0.054	0.2557
+107 in >=10 lists	t:S_24h4C_vs_0h	105	49	0.467	0.374	0.562	0.544	0.048	0.453	0.638	-0.078	0.1036
+107 in >=10 lists	t:S_24h20C_vs_0h	105	50	0.476	0.383	0.571	0.554	0.047	0.462	0.645	-0.078	0.1061
+107 in >=10 lists	t:S_36h4C_vs_0h	105	55	0.524	0.429	0.617	0.555	0.047	0.462	0.645	-0.031	0.5168
+107 in >=10 lists	t:S_36h20C_vs_0h	105	53	0.505	0.411	0.599	0.552	0.047	0.458	0.645	-0.047	0.3223
+107 in >=10 lists	t:S_20C_minus_4C_6h	105	58	0.552	0.457	0.644	0.573	0.047	0.477	0.664	-0.021	0.6929
+107 in >=10 lists	t:S_20C_minus_4C_24h	105	51	0.486	0.392	0.58	0.531	0.047	0.439	0.623	-0.046	0.3326
+107 in >=10 lists	t:S_20C_minus_4C_36h	105	50	0.476	0.383	0.571	0.529	0.048	0.434	0.623	-0.053	0.2603
+107 in >=10 lists	t:S_20C_36h_minus_6h	105	49	0.467	0.374	0.562	0.535	0.047	0.439	0.626	-0.068	0.1581
+107 in >=10 lists	t:S_4C_36h_minus_6h	105	60	0.571	0.476	0.662	0.585	0.047	0.495	0.676	-0.014	0.7754
+107 in >=10 lists	t:A_LPMI_vs_CTRL	106	53	0.5	0.406	0.594	0.457	0.047	0.364	0.551	0.043	0.3708
+107 in >=10 lists	t:A_SPMI_vs_CTRL	106	61	0.575	0.48	0.665	0.477	0.047	0.383	0.57	0.098	0.039
+107 in >=10 lists	relLFC:S_24h20C_vs_0h	105	58	0.552	0.457	0.644	0.561	0.047	0.467	0.654	-0.009	0.8917
+107 in >=10 lists	relLFC:S_36h20C_vs_0h	105	49	0.467	0.374	0.562	0.56	0.047	0.467	0.651	-0.093	0.05
+107 in >=10 lists	relLFC:A_SPMI_vs_CTRL	106	63	0.594	0.499	0.683	0.478	0.047	0.387	0.57	0.116	0.0143
+107 in >=10 lists	relLFC:A_LPMI_vs_CTRL	106	57	0.538	0.443	0.63	0.461	0.047	0.368	0.551	0.077	0.1153
+107 in >=10 lists	ref: low-pH direction (minus pH axis z)	104	94	0.904	0.832	0.947	0.712	0.044	0.623	0.796	0.192	0.0001
+107 in >=10 lists	ref: slow-death direction (GTEx t)	104	99	0.952	0.892	0.979	0.723	0.045	0.632	0.809	0.229	0.0001

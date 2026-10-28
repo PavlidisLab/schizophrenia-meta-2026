@@ -1,0 +1,38 @@
+# myelin_in_383.py (myelination_in_383); recurrence_genes.tsv sha256 324704506643; term_group_genes.tsv c8c03204dffb; recurrence_units.tsv a8a89c3a331a; 20000 draws, seed 20261023
+group	version	n_term_file	n_tested	n_drawn	background	matched_on	set	observed	expected	null_lo	null_hi	ratio	p_upper	p_lower
+myelin	terms	112	103	103	all tested genes	uniform	383	7	2.48305	0.0	6.0	2.81911	0.0118	0.99605
+myelin	terms	112	103	103	all tested genes	uniform	107	0	0.69185	0.0	3.0	0.0	1.0	0.49863
+myelin	terms	112	103	103	all tested genes	DE-prior quintile	383	7	3.9167	1.0	8.0	1.78722	0.09785	0.9576
+myelin	terms	112	103	103	all tested genes	DE-prior quintile	107	0	1.1657	0.0	4.0	0.0	1.0	0.31038
+myelin	terms	112	103	103	all tested genes	DE-prior x expression quintile	383	7	5.00975	1.0	9.0	1.39728	0.23374	0.87596
+myelin	terms	112	103	103	all tested genes	DE-prior x expression quintile	107	0	1.507	0.0	4.0	0.0	1.0	0.21419
+myelin	hits	61	61	61	all tested genes	uniform	383	6	1.48005	0.0	4.0	4.05392	0.00335	0.9994
+myelin	hits	61	61	61	all tested genes	uniform	107	0	0.4224	0.0	2.0	0.0	1.0	0.65217
+myelin	hits	61	61	61	all tested genes	DE-prior quintile	383	6	2.491	0.0	6.0	2.40867	0.03605	0.9884
+myelin	hits	61	61	61	all tested genes	DE-prior quintile	107	0	0.75485	0.0	3.0	0.0	1.0	0.46338
+myelin	hits	61	61	61	all tested genes	DE-prior x expression quintile	383	6	3.60415	1.0	7.0	1.66475	0.14339	0.936
+myelin	hits	61	61	61	all tested genes	DE-prior x expression quintile	107	0	1.1091	0.0	3.0	0.0	1.0	0.32208
+myelin	hits	61	61	61	tested genes with >= 1 list	uniform	383	6	1.4815	0.0	4.0	4.04995	0.0038	0.99935
+myelin	hits	61	61	61	tested genes with >= 1 list	uniform	107	0	0.41905	0.0	2.0	0.0	1.0	0.65707
+myelin	hits	61	61	61	tested genes with >= 1 list	DE-prior quintile	383	6	2.49295	0.0	6.0	2.40679	0.0364	0.98845
+myelin	hits	61	61	61	tested genes with >= 1 list	DE-prior quintile	107	0	0.765	0.0	3.0	0.0	1.0	0.45728
+myelin	hits	61	61	61	tested genes with >= 1 list	DE-prior x expression quintile	383	6	3.6168	1.0	8.0	1.65893	0.14759	0.9346
+myelin	hits	61	61	61	tested genes with >= 1 list	DE-prior x expression quintile	107	0	1.1159	0.0	3.0	0.0	1.0	0.32163
+oxphos	terms	216	182	182	all tested genes	uniform	383	3	4.3926	1.0	9.0	0.68297	0.82226	0.35348
+oxphos	terms	216	182	182	all tested genes	uniform	107	0	1.23505	0.0	4.0	0.0	1.0	0.29029
+oxphos	terms	216	182	182	all tested genes	DE-prior quintile	383	3	2.42585	0.0	6.0	1.23668	0.44163	0.77881
+oxphos	terms	216	182	182	all tested genes	DE-prior quintile	107	0	0.61185	0.0	2.0	0.0	1.0	0.53912
+oxphos	terms	216	182	182	all tested genes	DE-prior x expression quintile	383	3	2.4545	0.0	6.0	1.22224	0.44873	0.77041
+oxphos	terms	216	182	182	all tested genes	DE-prior x expression quintile	107	0	0.5867	0.0	2.0	0.0	1.0	0.55347
+oxphos	hits	130	130	130	all tested genes	uniform	383	3	3.1377	0.0	7.0	0.95611	0.61147	0.61587
+oxphos	hits	130	130	130	all tested genes	uniform	107	0	0.88185	0.0	3.0	0.0	1.0	0.41048
+oxphos	hits	130	130	130	all tested genes	DE-prior quintile	383	3	1.4223	0.0	4.0	2.10926	0.16854	0.948
+oxphos	hits	130	130	130	all tested genes	DE-prior quintile	107	0	0.3587	0.0	2.0	0.0	1.0	0.69612
+oxphos	hits	130	130	130	all tested genes	DE-prior x expression quintile	383	3	1.74455	0.0	5.0	1.71964	0.25099	0.9096
+oxphos	hits	130	130	130	all tested genes	DE-prior x expression quintile	107	0	0.4055	0.0	2.0	0.0	1.0	0.66212
+oxphos	hits	130	130	130	tested genes with >= 1 list	uniform	383	3	3.1506	0.0	7.0	0.9522	0.61237	0.61612
+oxphos	hits	130	130	130	tested genes with >= 1 list	uniform	107	0	0.8742	0.0	3.0	0.0	1.0	0.41328
+oxphos	hits	130	130	130	tested genes with >= 1 list	DE-prior quintile	383	3	1.43375	0.0	4.0	2.09241	0.17179	0.9447
+oxphos	hits	130	130	130	tested genes with >= 1 list	DE-prior quintile	107	0	0.3688	0.0	2.0	0.0	1.0	0.68787
+oxphos	hits	130	130	130	tested genes with >= 1 list	DE-prior x expression quintile	383	3	1.7518	0.0	5.0	1.71252	0.25419	0.9044
+oxphos	hits	130	130	130	tested genes with >= 1 list	DE-prior x expression quintile	107	0	0.4053	0.0	2.0	0.0	1.0	0.66482

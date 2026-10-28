@@ -1,0 +1,41 @@
+# built 2026-10-01 00:50 by casemix/scripts/casemix_pairs.R
+# agreement residualized on log neff (both units) and same technology; Spearman with |case-mix difference|; null permutes case-mix values across units (5000 permutations)
+# p_less: one-sided, larger difference with lower agreement; p_two: two-sided around the null mean
+# premortem is 1 for PsychAD Mount Sinai only, so its test is the Mount Sinai pairs against the rest (smallest attainable p = 1/n_units)
+set	measure	descriptor	n_pairs	n_units	rho	p_less	p_two
+subject-separate, bulk	rho_t	age_sz	235	24	-0.0285689191386892	0.385322935412917	0.836632673465307
+subject-separate, bulk	rho_t	age_gap	235	24	-0.00710484040793427	0.441111777644471	0.945210957808438
+subject-separate, bulk	rho_t	pH_sz	117	18	0.150953585017492	0.91501699660068	0.1749650069986
+subject-separate, bulk	rho_t	PMI_sz	235	24	-0.021469085849951	0.417116576684663	0.879424115176965
+subject-separate, bulk	rho_t	suicide_sz	107	17	-0.0888653919971864	0.270745850829834	0.562087582483503
+subject-separate, bulk	rho_t	premortem	235	24			
+subject-separate, bulk	top100_fold	age_sz	235	24	-0.0828234734757897	0.201559688062388	0.404319136172765
+subject-separate, bulk	top100_fold	age_gap	235	24	0.017883586333231	0.574485102979404	0.846430713857229
+subject-separate, bulk	top100_fold	pH_sz	117	18	0.00943650822069982	0.525694861027794	0.938012397520496
+subject-separate, bulk	top100_fold	PMI_sz	235	24	-0.176034344801311	0.0261947610477904	0.0529894021195761
+subject-separate, bulk	top100_fold	suicide_sz	107	17	0.0774991352409388	0.74625074985003	0.512297540491902
+subject-separate, bulk	top100_fold	premortem	235	24			
+subject-separate, with PsychAD	rho_t	age_sz	281	26	-0.145253598612075	0.116376724655069	0.201559688062388
+subject-separate, with PsychAD	rho_t	age_gap	281	26	0.000824390483632615	0.47250549890022	0.981003799240152
+subject-separate, with PsychAD	rho_t	pH_sz	117	18	0.121096404981882	0.870625874825035	0.265146970605879
+subject-separate, with PsychAD	rho_t	PMI_sz	281	26	0.0128080602242077	0.50129974005199	0.924415116976605
+subject-separate, with PsychAD	rho_t	suicide_sz	124	18	-0.291354218954897	0.0607878424315137	0.0713857228554289
+subject-separate, with PsychAD	rho_t	premortem	281	26	-0.315665370685798	0.0365926814637073	0.0365926814637073
+subject-separate, with PsychAD	top100_fold	age_sz	281	26	-0.173196350965412	0.0355928814237153	0.0597880423915217
+subject-separate, with PsychAD	top100_fold	age_gap	281	26	0.00816558931152299	0.534293141371726	0.92121575684863
+subject-separate, with PsychAD	top100_fold	pH_sz	117	18	-0.0263345287001023	0.392921415716857	0.803039392121576
+subject-separate, with PsychAD	top100_fold	PMI_sz	281	26	-0.138560037832369	0.0619876024795041	0.115976804639072
+subject-separate, with PsychAD	top100_fold	suicide_sz	124	18	-0.130370496265826	0.169766046790642	0.340531893621276
+subject-separate, with PsychAD	top100_fold	premortem	281	26	-0.270615532016162	0.0365926814637073	0.0365926814637073
+subject-separate, with PsychAD, without Mount Sinai	rho_t	age_sz	257	25	-0.0195384062152741	0.405318936212757	0.867426514697061
+subject-separate, with PsychAD, without Mount Sinai	rho_t	age_gap	257	25	-0.0228054903053808	0.390521895620876	0.844031193761248
+subject-separate, with PsychAD, without Mount Sinai	rho_t	pH_sz	117	18	0.14992674086916	0.915616876624675	0.172565486902619
+subject-separate, with PsychAD, without Mount Sinai	rho_t	PMI_sz	257	25	-0.00304342817539881	0.460507898420316	0.988602279544091
+subject-separate, with PsychAD, without Mount Sinai	rho_t	suicide_sz	107	17	-0.0792706583939114	0.294341131773645	0.616476704659068
+subject-separate, with PsychAD, without Mount Sinai	rho_t	premortem	257	25			
+subject-separate, with PsychAD, without Mount Sinai	top100_fold	age_sz	257	25	-0.0536622085365945	0.280143971205759	0.553889222155569
+subject-separate, with PsychAD, without Mount Sinai	top100_fold	age_gap	257	25	-0.0102005754679154	0.448910217956409	0.90501899620076
+subject-separate, with PsychAD, without Mount Sinai	top100_fold	pH_sz	117	18	0.00904675569689014	0.523495300939812	0.933613277344531
+subject-separate, with PsychAD, without Mount Sinai	top100_fold	PMI_sz	257	25	-0.182448521138801	0.0201959608078384	0.0413917216556689
+subject-separate, with PsychAD, without Mount Sinai	top100_fold	suicide_sz	107	17	0.076149489101286	0.743051389722056	0.516096780643871
+subject-separate, with PsychAD, without Mount Sinai	top100_fold	premortem	257	25			

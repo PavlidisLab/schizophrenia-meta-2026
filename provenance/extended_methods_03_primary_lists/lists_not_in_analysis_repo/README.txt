@@ -1,0 +1,1 @@
+Contents: Mauney 2015 extraction (with header); Abdolmaleky 2019 limma table of all 16,436 tested genes (behind the 0-gene status); derived_lists/ (28 derived-list files of the base-80 run with their own headers, copied unchanged from derived_all_2026-10-14/lists); the table of where every list file missing from data/lists lives. Written by RA 2026-10-23.

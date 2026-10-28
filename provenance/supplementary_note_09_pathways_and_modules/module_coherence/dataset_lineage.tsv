@@ -1,0 +1,32 @@
+# key = dataset package of artifact_sample_scores_run_2026-10-18 (out/ds/<key>); cluster and compartment from analyses/controls_age_sex/data/datasets.tsv (cluster = corpus/lineage.json cohort tier, sha256 606343fbca0d); lineage = bank_overlap.py labels
+# own = no named bank lineage (no module's discovery lineage can overlap it); NSW snRNA pseudobulk: cluster 'aus' (NSW Brain Tissue Resource Centre, GSE254569)
+key	compartment	cluster	lineage
+T1_GSE21138	bulk	aus	NSW/VBBN
+T1_GSE208338	bulk	aus	NSW/VBBN
+T1_GSE35977	bulk	stanley	Stanley/SMRI
+T1_GSE35974	bulk	stanley	Stanley/SMRI
+T1_GSE53987_BA46	bulk	cmc	CMC lineage
+T1_GSE53987_hippocampus	bulk	cmc	CMC lineage
+T1_GSE53987_striatum	bulk	cmc	CMC lineage
+T1_GSE202537_NAc	bulk	cmc	CMC lineage
+T1_GSE202537_caudate	bulk	cmc	CMC lineage
+T1_GSE202537_putamen	bulk	cmc	CMC lineage
+T1_GSE224683	bulk	cmc	CMC lineage
+T1_GSE17612	bulk	ba10	BA10/other
+T1_GSE21935	bulk	ba10	BA10/other
+T1_GSE92538_GPL570	bulk	pritzker	Pritzker
+T1_GSE92538_GPL96	bulk	pritzker	Pritzker
+T1_GSE80655_DLPFC	bulk	pritzker	Pritzker
+T1_GSE80655_AnCg	bulk	pritzker	Pritzker
+T1_GSE80655_nAcc	bulk	pritzker	Pritzker
+T1_GSE26927_temporal	bulk	own_GSE26927	own
+T1_GSE138082_CA1	bulk	own_GSE138082	own
+T1_GSE138082_CA3	bulk	own_GSE138082	own
+T1_GSE138082_DG	bulk	own_GSE138082	own
+T1_GSE37981	LCM neurons	harvard	McLean/Harvard
+T1_GSE112523	sorted NeuN+ nuclei	harvard	McLean/Harvard
+T1_GSE12679_neuron	LCM neurons	stanley	Stanley/SMRI
+T1_GSE12679_endothelial	LCM endothelial cells	stanley	Stanley/SMRI
+T1_GSE107638_NeuN	sorted NeuN+ nuclei	cmc|harvard	CMC lineage;McLean/Harvard
+T1_GSE107638_OLIG2	sorted OLIG2+ nuclei	cmc|harvard	CMC lineage;McLean/Harvard
+T1_NSW_OFC_snRNA_pseudobulk	snRNA pseudobulk	aus	NSW/VBBN

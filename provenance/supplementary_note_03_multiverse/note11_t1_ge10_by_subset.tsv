@@ -1,0 +1,50 @@
+# figure: extended_fig_13b_13c
+# script: computed 2026-10-22 from the source tables listed (no script file); unit: distinct analysis (hash_id), tier study, one row per hash_id x null
+# source: figures/data/forking_paths_v2/forking_v2_b_spec_curve.tsv sha256 7cf30383e8d8
+# median and range of observed over expected genes in 10 or more lists, by chance model; ge5 columns are the existing Note 11 quantity for comparison
+# ratio_ge10 = obs_over_exp_ge10 as in the source; where exp_ge10 is below 0.05 (stored to one decimal as 0.0) the ratio is unstable; n_obs0 = analyses with no gene in 10 or more lists; n_exp_lt1 = analyses with exp_ge10 < 1
+group	subset	null	n_analyses	median_ratio_ge10	min_ratio_ge10	max_ratio_ge10	median_obs_ge10	median_exp_ge10	n_obs0	n_exp_lt1	median_ratio_ge5	min_ratio_ge5	max_ratio_ge5
+fig13c	published, all analyses	uniform	129	869.936	54.506	1527559.059	37.0	0.0	0	124	3.567	1.454	17.693
+fig13c	published, all analyses	expr	129	38.08	12.665	4063.237	37.0	1.0	0	63	1.409	1.232	2.416
+fig13c	published, all analyses	de_prior_ours	129	3.231	1.33	998.051	37.0	12.3	0	41	1.121	0.876	2.025
+fig13c	published, all analyses	de_prior_global	129	0.636	0.252	53.922	37.0	71.0	0	2	0.8	0.513	0.997
+fig13c	published, study_filter=all	uniform	110	703.206	54.506	12541.089	48.0	0.1	0	105	3.421	1.454	8.723
+fig13c	published, study_filter=all	expr	110	35.517	12.665	209.739	48.0	1.7	0	46	1.395	1.232	2.416
+fig13c	published, study_filter=all	de_prior_ours	110	2.896	1.33	16.98	48.0	16.9	0	34	1.112	0.876	1.406
+fig13c	published, study_filter=all	de_prior_global	110	0.581	0.252	1.979	48.0	88.2	0	0	0.784	0.513	0.997
+fig13c	published, study_filter=n20	uniform	5	1924.462	1388.328	15231.783	35.0	0.0	0	5	4.397	4.123	9.462
+fig13c	published, study_filter=n20	expr	5	39.65	28.389	88.59	35.0	0.8	0	3	1.388	1.345	1.858
+fig13c	published, study_filter=n20	de_prior_ours	5	4.608	3.742	16.152	35.0	7.0	0	1	1.121	1.106	1.514
+fig13c	published, study_filter=n20	de_prior_global	5	0.796	0.701	1.547	35.0	40.0	0	0	0.834	0.82	0.881
+fig13c	published, study_filter=covariate_adjusted	uniform	5	4161.655	2706.364	7578.157	6.0	0.0	0	5	6.487	6.009	8.569
+fig13c	published, study_filter=covariate_adjusted	expr	5	48.908	30.507	53.253	6.0	0.1	0	5	1.593	1.536	1.709
+fig13c	published, study_filter=covariate_adjusted	de_prior_ours	5	5.632	4.225	7.19	6.0	1.1	0	1	1.22	1.197	1.315
+fig13c	published, study_filter=covariate_adjusted	de_prior_global	5	0.67	0.602	0.765	6.0	8.3	0	0	0.803	0.76	0.844
+fig13c	published, study_filter=from2016	uniform	4	5538.538	5231.306	43872.915	10.0	0.0	0	4	6.166	6.077	11.747
+fig13c	published, study_filter=from2016	expr	4	89.1	82.907	206.146	10.0	0.1	0	4	1.69	1.655	2.05
+fig13c	published, study_filter=from2016	de_prior_ours	4	8.482	8.1	37.499	10.0	1.15	0	1	1.247	1.229	1.675
+fig13c	published, study_filter=from2016	de_prior_global	4	1.06	1.01	3.057	10.0	9.6	0	1	0.814	0.798	0.916
+fig13c	published, study_filter=cortex	uniform	5	10789.143	7836.714	1527559.059	3.0	0.0	0	5	7.622	6.935	17.693
+fig13c	published, study_filter=cortex	expr	5	121.43	64.177	4063.237	3.0	0.0	0	5	1.787	1.556	2.354
+fig13c	published, study_filter=cortex	de_prior_ours	5	13.737	9.419	998.051	3.0	0.3	0	4	1.348	1.169	2.025
+fig13c	published, study_filter=cortex	de_prior_global	5	1.568	0.98	53.922	3.0	3.1	0	1	0.856	0.69	0.899
+fig13b	cut=published (all study filters)	uniform	129	869.936	54.506	1527559.059	37.0	0.0	0	124	3.567	1.454	17.693
+fig13b	cut=published (all study filters)	expr	129	38.08	12.665	4063.237	37.0	1.0	0	63	1.409	1.232	2.416
+fig13b	cut=published (all study filters)	de_prior_ours	129	3.231	1.33	998.051	37.0	12.3	0	41	1.121	0.876	2.025
+fig13b	cut=published (all study filters)	de_prior_global	129	0.636	0.252	53.922	37.0	71.0	0	2	0.8	0.513	0.997
+fig13b	cut=tight (all study filters)	uniform	22	0.0	0.0	300316.666	0.0	0.0	20	22	29.349	22.008	46.82
+fig13b	cut=tight (all study filters)	expr	22	0.0	0.0	1983.159	0.0	0.0	20	22	3.95	2.289	6.802
+fig13b	cut=tight (all study filters)	de_prior_ours	22	0.0	0.0	177.885	0.0	0.0	20	22	2.674	1.944	3.814
+fig13b	cut=tight (all study filters)	de_prior_global	22	0.0	0.0	12.29	0.0	0.0	20	22	1.195	0.804	1.529
+fig13b	cut=fc026 (all study filters)	uniform	24	170728.644	0.0	4533496.863	6.0	0.0	2	24	12.482	5.082	40.305
+fig13b	cut=fc026 (all study filters)	expr	24	2467.025	0.0	55015.797	6.0	0.0	2	24	3.57	1.814	8.381
+fig13b	cut=fc026 (all study filters)	de_prior_ours	24	143.38	0.0	2678.07	6.0	0.0	2	20	1.79	1.188	4.046
+fig13b	cut=fc026 (all study filters)	de_prior_global	24	11.612	0.0	149.433	6.0	0.35	2	16	0.885	0.758	1.515
+fig13b	cut=fc058 (all study filters)	uniform	24	0.0	0.0	13780933.393	0.0	0.0	13	24	29.884	9.299	124.626
+fig13b	cut=fc058 (all study filters)	expr	24	0.0	0.0	454749.054	0.0	0.0	13	24	7.233	2.896	29.858
+fig13b	cut=fc058 (all study filters)	de_prior_ours	24	0.0	0.0	8191.533	0.0	0.0	13	24	3.023	1.574	11.112
+fig13b	cut=fc058 (all study filters)	de_prior_global	24	0.0	0.0	385.133	0.0	0.0	13	22	1.262	0.825	3.963
+fig13b	cut=cap200 (all study filters)	uniform	24	3173885.876	0.0	194534018.898	1.0	0.0	9	24	69.004	25.62	138.641
+fig13b	cut=cap200 (all study filters)	expr	24	73015.146	0.0	3279565.052	1.0	0.0	9	24	14.386	6.701	27.156
+fig13b	cut=cap200 (all study filters)	de_prior_ours	24	2003.742	0.0	85841.85	1.0	0.0	9	24	5.762	2.869	11.435
+fig13b	cut=cap200 (all study filters)	de_prior_global	24	146.486	0.0	4824.151	1.0	0.0	9	24	2.326	1.445	4.643

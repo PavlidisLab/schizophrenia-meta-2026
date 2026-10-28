@@ -1,0 +1,12 @@
+# script: s2_recompute.py; genes with q_bh<0.1 (published, brain) per run and overlap with the original 383
+run	studies_removed	n_q10_genes	n_in_original_383
+full	none (validation)	383	383
+no_bank9	all nine bank-sharing studies	196	196
+drop_24702465	Pietersen 2014	362	361
+drop_24628518	Pietersen 2014 (PV neurons)	365	365
+drop_34440415	Lindholm Carlstrom 2021	376	376
+drop_38448582	Ling 2024	375	375
+drop_38781388	Ruzicka 2024	294	293
+drop_31288836	Mendizabal 2019	376	376
+drop_19255580	Maycox 2009	328	326
+drop_17822540	Saetre 2007	367	367

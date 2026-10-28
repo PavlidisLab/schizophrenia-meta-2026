@@ -1,0 +1,10 @@
+# figure: fig02 panel d
+# script: analyses/figure_exports/export_fig02_fig07.py, run 2026-10-16
+# population: 72 primary brain studies (recurrence.py scenario 'published, brain', study tier); n_k = |M_k| (RECURRENCE_NK=membership); analysis set = the 383 study-tier genes of analyses/confounds/recurrent_sets.tsv (set study_brain; the in-place recurrence_genes.tsv gives 383 at q < 0.1); recurrence.tsv sha256 bcbf50f8e334; corpus/lineage.json sha256 4f919a83fea3
+# input: side-studies/hoffman-2021/followup_summary.tsv sha256 ac80f5fd151a
+# input: side-studies/hoffman-2021/followup_data.tsv sha256 442e6f06917d
+# gene set both_82: the 82 genes significant (FDR 5%) in both Hoffman et al. 2021 cohorts; later studies 2021 on, meta-analyses and preprints excluded; observed = summed overlap of the 82 with each study's list; expectations = uniform hypergeometric within each study's tested universe / DE prior, summed; n_same_dir/n_opposite = overlap genes in / against Hoffman's direction
+group	group_in_source	n_studies	observed	exp_uniform	exp_deprior	n_same_dir	n_opposite	studies_p_lt_0.05
+other banks	no Hoffman bank	31	116	81.83	118.64	89	13	5
+shared bank	shares a Hoffman bank or donors	15	116	65.12	94.8	99	17	6
+CMC-HBCC reanalyses	CommonMind / HBCC data (same donors)	9	393	142.47	199.01	390	3	6

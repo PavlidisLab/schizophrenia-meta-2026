@@ -1,0 +1,176 @@
+{
+ "script": "analyses/h4/h4_effects.py",
+ "built": "2026-10-11T09:17:08.858262+00:00",
+ "python": "3.9.25",
+ "numpy": "1.24.4",
+ "scipy": "1.9.1",
+ "inputs": {
+  "analyses/h4/h4_effects_raw.tsv": "5ad9b0cba9700fcaf04c189848e0acf0870f5cd2d83dabc1f5ffa970374a9f3c",
+  "analyses/h4/h4_calls.tsv": "80f68117951e7209d09d9e8079c752038378d7be28f61a5cae9521a5307be2a1",
+  "analyses/h4/h4_pairs.tsv": "99bc3cd90e0a6897d7866e3af1f1ea28c1bfbb36c24bb44566977eee946e3583",
+  "analyses/h4/h4_findings.tsv": "aaf813e5887151847a6fd9d3a104a26b0eff810cdd4eb33511b523dee4ee7d5f",
+  "analyses/h4/symbol_fixes/decisions.tsv": "0121761c8401632629c8cbfb640584a00b2ee83376f222c547295f074d237575",
+  "data/reference/hgnc_complete_set.txt": "69bb5722d5a42bb355580deb2c9f197ce3d7f7d13807173b9674a7db65e52191"
+ },
+ "outputs": {
+  "analyses/h4/h4_effects.tsv": "7dd7aeaa3d0174d7f1943346fbeec4cbcdc4066eddd3f89b85fba2500c64acba",
+  "analyses/h4/h4_effects_coverage.tsv": "234ff2126486b7f18b32a2ea5676bae0fd6432ba5f23f86468ee07805c0faef2",
+  "analyses/h4/h4_effects_pooled.tsv": "39e886744f4d2f34d02bc413c9bcd867111ab70dc67dc77c3a4d9610492cb1c7",
+  "analyses/h4/h4_effects_bias.tsv": "6d3e214f151a74dd4c17b7a6d2d42d1339c66bb7d9306dfa829852d6330d6775",
+  "analyses/h4/h4_effects_pairs.tsv": "054a5246aff323688784c79339726de1c27980dcda8634511bf1e29b704fb8e1",
+  "analyses/h4/h4_effects_excess.tsv": "06f6a8c3e40d5e26f80945b5c9ebec22271612e12f828d64bfaa4162b015bb96",
+  "analyses/h4/fig_h4_effects_forest.svg": "4bbdeeabb0824bbeb7eeadaa4e740e21da3bcfe888c8f5bf381d25c654943c1e",
+  "analyses/h4/fig_h4_effects_funnel.svg": "6e645e6aebfd7c1eb14f7767d69d18e85f5a9378e4e23b7e4efb6f32a02e2981",
+  "analyses/h4/fig_h4_effects_year_n.svg": "8f5cea3522d0e5bf8a4d6361e68d35c39c45ed2c1793aa00b5ca5ad63117e4bf"
+ },
+ "params": {
+  "min_k_meta": 3,
+  "min_k_bias": 10,
+  "aliases_for_gene_check": {
+   "GAD1": [
+    "GAD67",
+    "GAD 67"
+   ],
+   "GAD2": [
+    "GAD65",
+    "GAD 65"
+   ],
+   "PVALB": [
+    "parvalbumin",
+    "PV"
+   ],
+   "SYP": [
+    "synaptophysin"
+   ],
+   "DLG4": [
+    "PSD-95",
+    "PSD95",
+    "SAP90"
+   ],
+   "RELN": [
+    "reelin"
+   ],
+   "SLC17A7": [
+    "VGLUT1",
+    "VGluT1",
+    "BNPI"
+   ],
+   "GRIN1": [
+    "NR1",
+    "GluN1",
+    "NMDAR1"
+   ],
+   "GRIN2A": [
+    "NR2A",
+    "GluN2A"
+   ],
+   "GRIN2B": [
+    "NR2B",
+    "GluN2B"
+   ],
+   "GRIA1": [
+    "GluR1",
+    "GluA1",
+    "GluR-A"
+   ],
+   "GRIA2": [
+    "GluR2",
+    "GluA2",
+    "GluR-B"
+   ],
+   "GRIA3": [
+    "GluR3",
+    "GluA3"
+   ],
+   "GRIA4": [
+    "GluR4",
+    "GluA4"
+   ],
+   "DRD2": [
+    "D2",
+    "D2R",
+    "D2 receptor"
+   ],
+   "DRD3": [
+    "D3",
+    "D3R",
+    "D3 receptor"
+   ],
+   "TH": [
+    "tyrosine hydroxylase"
+   ],
+   "SST": [
+    "somatostatin",
+    "SOM",
+    "SRIF"
+   ],
+   "SNAP25": [
+    "SNAP-25",
+    "SNAP 25"
+   ],
+   "MAP2": [
+    "MAP-2",
+    "MAP 2"
+   ],
+   "CALB1": [
+    "calbindin",
+    "CB"
+   ],
+   "CALB2": [
+    "calretinin",
+    "CR"
+   ],
+   "MBP": [
+    "myelin basic protein"
+   ],
+   "IL1B": [
+    "IL-1beta",
+    "IL-1b",
+    "IL1beta",
+    "IL-1\u03b2",
+    "interleukin-1"
+   ],
+   "NRG1": [
+    "neuregulin",
+    "NRG-1",
+    "NRG"
+   ],
+   "PPP1R1B": [
+    "DARPP-32",
+    "DARPP32"
+   ],
+   "CNR1": [
+    "CB1",
+    "CB1R",
+    "cannabinoid"
+   ],
+   "GFAP": [
+    "glial fibrillary"
+   ],
+   "BDNF": [
+    "brain-derived neurotrophic"
+   ],
+   "SLC1A2": [
+    "EAAT2",
+    "GLT-1",
+    "GLT1"
+   ],
+   "SLC1A3": [
+    "EAAT1",
+    "GLAST"
+   ],
+   "GSK3B": [
+    "GSK-3beta",
+    "GSK3beta",
+    "GSK-3\u03b2"
+   ],
+   "DNMT1": [
+    "DNMT-1"
+   ],
+   "DNMT3A": [
+    "DNMT-3a",
+    "DNMT 3a"
+   ]
+  }
+ }
+}

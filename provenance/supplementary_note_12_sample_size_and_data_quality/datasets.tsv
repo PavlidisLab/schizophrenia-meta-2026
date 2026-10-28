@@ -1,0 +1,20 @@
+# built 2026-10-11 03:36 by split_halves/scripts/summarize.py
+# datasets with at least 20 SZ and 20 controls after loading (split halves of >= 10 per group); results/prep_libd.tsv, prep_gemma.tsv
+# Gemma technology: see ../controls_age_sex/data/datasets.tsv and the Gemma record of each series
+dataset	family	technology	n_sz	n_ctl	n_male	n_female	genes	covariates	model	cluster	sz_reps_source	max_n_per_half
+LIBD_Phase1_DLPFC	LIBD	RNA-seq	175	209	258	126	19913	age + male + snpPC1 + RIN + mito	limma-trend	libd	split_halves/results/within_sz	87
+LIBD_Caudate	LIBD	RNA-seq	154	240	273	121	19761	age + male + race_aa + RIN + mito	limma-trend	libd	split_halves/results/within_sz	77
+LIBD_Habenula	LIBD	RNA-seq	35	33	68	0	18182	age + male + snpPC1 + RIN + mito	limma-trend	libd	split_halves/results/within_sz	16
+LIBD_Phase2_DLPFC	LIBD	RNA-seq	153	226	262	117	19429	age + male + snpPC1 + RIN + mito	limma-trend	libd	libd_brainseq/analysis/results/a_reps.tsv.gz	76
+LIBD_Phase2_HIPPO	LIBD	RNA-seq	133	200	229	104	19382	age + male + snpPC1 + RIN + mito	limma-trend	libd	libd_brainseq/analysis/results/a_reps.tsv.gz	66
+GSE21138	Gemma		28	29	47	10	17244	age + male	limma (eBayes, no trend)	aus	fairness_sample_level/results/a_reps.tsv.gz	14
+GSE35977	Gemma		51	50	72	29	16744	age + male	limma (eBayes, no trend)	stanley	fairness_sample_level/results/a_reps.tsv.gz	25
+GSE35974	Gemma		44	49	63	30	16744	age + male	limma (eBayes, no trend)	stanley	fairness_sample_level/results/a_reps.tsv.gz	22
+GSE17612	Gemma		28	22	30	20	17244	age + male	limma (eBayes, no trend)	GSE17612+GSE21935	fairness_sample_level/results/a_reps.tsv.gz	11
+GSE80655_DLPFC	Gemma		23	23	40	6	25518	age + male	limma (eBayes, no trend)	pritzker	fairness_sample_level/results/a_reps.tsv.gz	11
+GSE80655_AnCg	Gemma		24	24	42	6	25523	age + male	limma (eBayes, no trend)	pritzker	fairness_sample_level/results/a_reps.tsv.gz	12
+GSE80655_nAcc	Gemma		23	22	40	5	25527	age + male	limma (eBayes, no trend)	pritzker	fairness_sample_level/results/a_reps.tsv.gz	11
+GSE208338	Gemma		68	62	103	27	16101	age + male	limma (eBayes, no trend)	aus	fairness_sample_level/results/a_reps.tsv.gz	31
+GSE202537_NAc	Gemma		28	35	44	19	25596	age + male	limma (eBayes, no trend)	cmc+mssm+pitt+libd	fairness_sample_level/results/a_reps.tsv.gz	14
+GSE202537_caudate	Gemma		28	36	45	19	25155	age + male	limma (eBayes, no trend)	cmc+mssm+pitt+libd	fairness_sample_level/results/a_reps.tsv.gz	14
+GSE202537_putamen	Gemma		28	36	45	19	25107	age + male	limma (eBayes, no trend)	cmc+mssm+pitt+libd	fairness_sample_level/results/a_reps.tsv.gz	14

@@ -1,0 +1,386 @@
+# copied 2026-10-21 as the source table of a hidden comment in supplement.md (Note 9, hemoglobin); original location: <analysis repo> (analyses/hemoglobin_gene_analyses/gtex_brain_hardy_ischemic_hemoglobin.tsv)
+# script: analyses/hemoglobin_gene_analyses/03_summarize.py
+# run: 2026-10-11
+# input: analyses/gtex_ischemic_time/hardy_t_by_region.tsv.gz sha256 54f989c55753
+# input: analyses/gtex_ischemic_time/ischemic_t_by_region.tsv.gz sha256 2277947aac11
+# input: analyses/gtex_death_speed_all_tissues/slow_vs_fast_t_by_tissue.tsv.gz sha256 a41c086d6312
+# input: analyses/gtex_death_speed_all_tissues/ventilator_vs_fast_t_by_tissue.tsv.gz sha256 555fd6a27808
+# GTEx v8, per brain region, t of OLS (log2 TPM+1 ~ group + ischemic time + age + sex); t > 0: higher in slow death (Hardy 4) than fast natural death (Hardy 2); genes with region median TPM < 1 absent; percentile 1 = most positive t among tested genes
+region	gene	t_slow_vs_fast_death	percentile_of_genes_tested	n_genes_tested	t_ischemic_time	t_slow_vs_fast_all_tissue_file	t_ventilator_vs_fast
+Brain - Amygdala	HBB	2.7197	0.9440439182485614	15119	0.826	2.7197	
+Brain - Amygdala	HBA1	1.5887	0.7578543554467888	15119	0.7521	1.5887	
+Brain - Amygdala	HBA2	2.1411	0.8759838613664925	15119	0.8111	2.1411	
+Brain - Amygdala	HBD	2.4145	0.9142139030359151	15119	0.0602	2.4145	
+Brain - Amygdala	HBG1			15119			
+Brain - Amygdala	HBG2			15119			
+Brain - Amygdala	HBM			15119			
+Brain - Amygdala	HBQ1	-1.9873	0.024604801904887896	15119	1.7685	-1.9873	
+Brain - Amygdala	HBE1			15119			
+Brain - Amygdala	HBZ			15119			
+Brain - Amygdala	ALAS2			15119			
+Brain - Amygdala	SLC4A1			15119			
+Brain - Amygdala	GYPA			15119			
+Brain - Amygdala	GYPB			15119			
+Brain - Amygdala	AHSP			15119			
+Brain - Amygdala	CA1			15119			
+Brain - Amygdala	BPGM	1.0377	0.5873735035385939	15119	1.5621	1.0377	
+Brain - Amygdala	SLC25A37	3.1223	0.9669951716383358	15119	-0.7816	3.1223	
+Brain - Amygdala	EPB42			15119			
+Brain - Amygdala	S100A8	4.3336	0.9931212381771282	15119	-1.1938	4.3336	
+Brain - Amygdala	S100A9	4.5338	0.9949070705734506	15119	-1.8663	4.5338	
+Brain - Amygdala	S100A12	2.9383	0.9580660096567233	15119	-1.3695	2.9383	
+Brain - Amygdala	FCGR3B			15119			
+Brain - Amygdala	CSF3R	4.3409	0.9932535220583372	15119	-0.5236	4.3409	
+Brain - Amygdala	CXCR2			15119			
+Brain - Amygdala	FPR1	4.448	0.9943117931080098	15119	-0.1671	4.448	
+Brain - Amygdala	MNDA	3.8379	0.9859779085918381	15119	0.1795	3.8379	
+Brain - Amygdala	CD177			15119			
+Brain - Amygdala	MMP9			15119			
+Brain - Anterior cingulate cortex (BA24)	HBB	5.9018	0.9906530007090827	15513	-0.3142	5.9018	
+Brain - Anterior cingulate cortex (BA24)	HBA1	4.108	0.9518790691677947	15513	-0.203	4.108	
+Brain - Anterior cingulate cortex (BA24)	HBA2	5.8992	0.9905240765809321	15513	-0.6549	5.8992	
+Brain - Anterior cingulate cortex (BA24)	HBD			15513			
+Brain - Anterior cingulate cortex (BA24)	HBG1			15513			
+Brain - Anterior cingulate cortex (BA24)	HBG2			15513			
+Brain - Anterior cingulate cortex (BA24)	HBM			15513			
+Brain - Anterior cingulate cortex (BA24)	HBQ1	-2.9658	0.021401405272996832	15513	1.6024	-2.9658	
+Brain - Anterior cingulate cortex (BA24)	HBE1			15513			
+Brain - Anterior cingulate cortex (BA24)	HBZ			15513			
+Brain - Anterior cingulate cortex (BA24)	ALAS2			15513			
+Brain - Anterior cingulate cortex (BA24)	SLC4A1			15513			
+Brain - Anterior cingulate cortex (BA24)	GYPA			15513			
+Brain - Anterior cingulate cortex (BA24)	GYPB			15513			
+Brain - Anterior cingulate cortex (BA24)	AHSP			15513			
+Brain - Anterior cingulate cortex (BA24)	CA1			15513			
+Brain - Anterior cingulate cortex (BA24)	BPGM	0.0916	0.3875459292206537	15513	0.9596	0.0916	
+Brain - Anterior cingulate cortex (BA24)	SLC25A37	3.0657	0.8946689873009734	15513	-0.6269	3.0657	
+Brain - Anterior cingulate cortex (BA24)	EPB42			15513			
+Brain - Anterior cingulate cortex (BA24)	S100A8	7.166	0.9977438277573648	15513	-1.4396	7.166	
+Brain - Anterior cingulate cortex (BA24)	S100A9	7.4541	0.998452910462193	15513	-1.6075	7.4541	
+Brain - Anterior cingulate cortex (BA24)	S100A12	5.5857	0.9864629665441887	15513	-2.2803	5.5857	
+Brain - Anterior cingulate cortex (BA24)	FCGR3B			15513			
+Brain - Anterior cingulate cortex (BA24)	CSF3R	5.8577	0.9897505318120287	15513	-0.4076	5.8577	
+Brain - Anterior cingulate cortex (BA24)	CXCR2			15513			
+Brain - Anterior cingulate cortex (BA24)	FPR1	5.9032	0.990717462773158	15513	0.1381	5.9032	
+Brain - Anterior cingulate cortex (BA24)	MNDA	5.161	0.9797589118803585	15513	0.4504	5.161	
+Brain - Anterior cingulate cortex (BA24)	CD177			15513			
+Brain - Anterior cingulate cortex (BA24)	MMP9			15513			
+Brain - Caudate (basal ganglia)	HBB	3.2493	0.85008885503935	15756	-0.1262	3.2493	1.0004
+Brain - Caudate (basal ganglia)	HBA1	2.8697	0.8075653719218076	15756	-0.4192	2.8697	0.4765
+Brain - Caudate (basal ganglia)	HBA2	2.713	0.7846534653465347	15756	-0.3221	2.713	1.0048
+Brain - Caudate (basal ganglia)	HBD	2.4123	0.7344186341711094	15756	-0.8274	2.4123	0.7794
+Brain - Caudate (basal ganglia)	HBG1			15756			
+Brain - Caudate (basal ganglia)	HBG2			15756			
+Brain - Caudate (basal ganglia)	HBM			15756			
+Brain - Caudate (basal ganglia)	HBQ1	-2.7245	0.01713632901751716	15756	-1.318	-2.7245	0.3247
+Brain - Caudate (basal ganglia)	HBE1			15756			
+Brain - Caudate (basal ganglia)	HBZ			15756			
+Brain - Caudate (basal ganglia)	ALAS2			15756			
+Brain - Caudate (basal ganglia)	SLC4A1			15756			
+Brain - Caudate (basal ganglia)	GYPA			15756			
+Brain - Caudate (basal ganglia)	GYPB			15756			
+Brain - Caudate (basal ganglia)	AHSP			15756			
+Brain - Caudate (basal ganglia)	CA1			15756			
+Brain - Caudate (basal ganglia)	BPGM	1.0985	0.43926123381568927	15756	-0.8171	1.0985	0.0161
+Brain - Caudate (basal ganglia)	SLC25A37	2.0334	0.6592091901497842	15756	-2.3529	2.0334	1.154
+Brain - Caudate (basal ganglia)	EPB42			15756			
+Brain - Caudate (basal ganglia)	S100A8	7.9296	0.9958111195734958	15756	-0.8516	7.9296	3.9409
+Brain - Caudate (basal ganglia)	S100A9	8.5278	0.9981594313277482	15756	-1.2439	8.5278	4.0517
+Brain - Caudate (basal ganglia)	S100A12	6.5232	0.9847042396547347	15756	-0.598	6.5232	3.2765
+Brain - Caudate (basal ganglia)	FCGR3B			15756			
+Brain - Caudate (basal ganglia)	CSF3R	6.1082	0.978992129982229	15756	-1.8078	6.1082	1.0469
+Brain - Caudate (basal ganglia)	CXCR2			15756			
+Brain - Caudate (basal ganglia)	FPR1	6.9089	0.9892739273927392	15756	-1.0538	6.9089	4.8499
+Brain - Caudate (basal ganglia)	MNDA	5.4445	0.965981213505966	15756	0.3952	5.4445	1.32
+Brain - Caudate (basal ganglia)	CD177			15756			
+Brain - Caudate (basal ganglia)	MMP9			15756			
+Brain - Cerebellar Hemisphere	HBB	3.0463	0.9272233342865313	17485	0.5857	3.0463	2.7138
+Brain - Cerebellar Hemisphere	HBA1	1.7528	0.8332856734343723	17485	0.8437	1.7528	2.09
+Brain - Cerebellar Hemisphere	HBA2	2.7126	0.9091792965398914	17485	0.7507	2.7126	2.8132
+Brain - Cerebellar Hemisphere	HBD			17485			
+Brain - Cerebellar Hemisphere	HBG1			17485			
+Brain - Cerebellar Hemisphere	HBG2			17485			
+Brain - Cerebellar Hemisphere	HBM			17485			
+Brain - Cerebellar Hemisphere	HBQ1	0.6437	0.6741206748641693	17485	0.2035	0.6437	0.7135
+Brain - Cerebellar Hemisphere	HBE1			17485			
+Brain - Cerebellar Hemisphere	HBZ			17485			
+Brain - Cerebellar Hemisphere	ALAS2			17485			
+Brain - Cerebellar Hemisphere	SLC4A1	2.5066	0.8952244781241063	17485	-2.1212	2.5066	-0.027
+Brain - Cerebellar Hemisphere	GYPA			17485			
+Brain - Cerebellar Hemisphere	GYPB			17485			
+Brain - Cerebellar Hemisphere	AHSP			17485			
+Brain - Cerebellar Hemisphere	CA1			17485			
+Brain - Cerebellar Hemisphere	BPGM	-2.732	0.10534744066342583	17485	0.6906	-2.732	-2.0833
+Brain - Cerebellar Hemisphere	SLC25A37	2.0381	0.8612525021446955	17485	-0.4571	2.0381	-0.114
+Brain - Cerebellar Hemisphere	EPB42			17485			
+Brain - Cerebellar Hemisphere	S100A8	5.9394	0.9913068344295111	17485	-0.9115	5.9394	2.5773
+Brain - Cerebellar Hemisphere	S100A9	5.6238	0.988904775521876	17485	-1.1152	5.6238	1.4103
+Brain - Cerebellar Hemisphere	S100A12			17485			
+Brain - Cerebellar Hemisphere	FCGR3B			17485			
+Brain - Cerebellar Hemisphere	CSF3R	4.4025	0.9717472118959107	17485	-1.503	4.4025	-0.2939
+Brain - Cerebellar Hemisphere	CXCR2			17485			
+Brain - Cerebellar Hemisphere	FPR1			17485			
+Brain - Cerebellar Hemisphere	MNDA	3.2307	0.9357735201601373	17485	-0.5934	3.2307	-0.5691
+Brain - Cerebellar Hemisphere	CD177			17485			
+Brain - Cerebellar Hemisphere	MMP9			17485			
+Brain - Cerebellum	HBB	2.9095	0.903543087068291	17894	1.1249	2.9095	2.3963
+Brain - Cerebellum	HBA1	2.3012	0.859394210349838	17894	0.3062	2.3012	1.6776
+Brain - Cerebellum	HBA2	2.3824	0.8670504079579747	17894	0.7655	2.3824	2.3968
+Brain - Cerebellum	HBD			17894			
+Brain - Cerebellum	HBG1			17894			
+Brain - Cerebellum	HBG2			17894			
+Brain - Cerebellum	HBM			17894			
+Brain - Cerebellum	HBQ1	-0.2816	0.49801609478037334	17894	0.1403	-0.2816	-0.4558
+Brain - Cerebellum	HBE1			17894			
+Brain - Cerebellum	HBZ			17894			
+Brain - Cerebellum	ALAS2			17894			
+Brain - Cerebellum	SLC4A1	2.2507	0.8548116687157706	17894	-1.0539	2.2507	1.1829
+Brain - Cerebellum	GYPA			17894			
+Brain - Cerebellum	GYPB			17894			
+Brain - Cerebellum	AHSP			17894			
+Brain - Cerebellum	CA1			17894			
+Brain - Cerebellum	BPGM	-2.2104	0.20098915837710962	17894	1.5728	-2.2104	-1.4726
+Brain - Cerebellum	SLC25A37	1.2582	0.7473175366044484	17894	-0.9142	1.2582	0.1673
+Brain - Cerebellum	EPB42			17894			
+Brain - Cerebellum	S100A8	3.4743	0.9325472225326925	17894	0.2239	3.4743	4.6725
+Brain - Cerebellum	S100A9	3.7289	0.9433888454230468	17894	-0.4181	3.7289	4.0649
+Brain - Cerebellum	S100A12			17894			
+Brain - Cerebellum	FCGR3B			17894			
+Brain - Cerebellum	CSF3R	3.577	0.9367944562423158	17894	-1.5859	3.577	2.3512
+Brain - Cerebellum	CXCR2			17894			
+Brain - Cerebellum	FPR1			17894			
+Brain - Cerebellum	MNDA			17894			
+Brain - Cerebellum	CD177			17894			
+Brain - Cerebellum	MMP9			17894			
+Brain - Cortex	HBB	4.7432	0.9467790561742447	16253	0.8165	4.7432	3.3031
+Brain - Cortex	HBA1	4.2792	0.9265366393896511	16253	0.5883	4.2792	2.5975
+Brain - Cortex	HBA2	5.1081	0.9589614225066142	16253	1.0143	5.1081	3.7443
+Brain - Cortex	HBD			16253			
+Brain - Cortex	HBG1			16253			
+Brain - Cortex	HBG2			16253			
+Brain - Cortex	HBM			16253			
+Brain - Cortex	HBQ1	-3.1675	0.03162493078200945	16253	-0.3142	-3.1675	-0.814
+Brain - Cortex	HBE1			16253			
+Brain - Cortex	HBZ			16253			
+Brain - Cortex	ALAS2			16253			
+Brain - Cortex	SLC4A1			16253			
+Brain - Cortex	GYPA			16253			
+Brain - Cortex	GYPB			16253			
+Brain - Cortex	AHSP			16253			
+Brain - Cortex	CA1			16253			
+Brain - Cortex	BPGM	-0.2036	0.32550913677474924	16253	-1.57	-0.2036	0.4905
+Brain - Cortex	SLC25A37	2.7316	0.8063434442872085	16253	-2.8223	2.7316	1.4835
+Brain - Cortex	EPB42			16253			
+Brain - Cortex	S100A8	6.0611	0.9796345290100289	16253	-1.3654	6.0611	4.7444
+Brain - Cortex	S100A9	6.9404	0.9909555159047561	16253	-1.2497	6.9404	4.3178
+Brain - Cortex	S100A12	5.8156	0.9757583215406387	16253	-1.8024	5.8156	4.5278
+Brain - Cortex	FCGR3B			16253			
+Brain - Cortex	CSF3R	7.4247	0.9948932504768351	16253	-0.7131	7.4247	3.699
+Brain - Cortex	CXCR2			16253			
+Brain - Cortex	FPR1	7.217	0.9937857626284379	16253	-0.9201	7.217	5.8223
+Brain - Cortex	MNDA	5.281	0.9639451178244016	16253	-1.0134	5.281	1.1177
+Brain - Cortex	CD177			16253			
+Brain - Cortex	MMP9			16253			
+Brain - Frontal Cortex (BA9)	HBB	5.2872	0.9819414483821264	16225	0.4035	5.2872	1.5941
+Brain - Frontal Cortex (BA9)	HBA1	3.2624	0.920677966101695	16225	0.6716	3.2624	1.2687
+Brain - Frontal Cortex (BA9)	HBA2	4.5788	0.9667180277349768	16225	0.6507	4.5788	1.6679
+Brain - Frontal Cortex (BA9)	HBD	3.6936	0.9406471494607088	16225	0.3772	3.6936	2.0806
+Brain - Frontal Cortex (BA9)	HBG1			16225			
+Brain - Frontal Cortex (BA9)	HBG2			16225			
+Brain - Frontal Cortex (BA9)	HBM			16225			
+Brain - Frontal Cortex (BA9)	HBQ1	-5.2774	0.007765793528505371	16225	-0.3298	-5.2774	-3.207
+Brain - Frontal Cortex (BA9)	HBE1			16225			
+Brain - Frontal Cortex (BA9)	HBZ			16225			
+Brain - Frontal Cortex (BA9)	ALAS2			16225			
+Brain - Frontal Cortex (BA9)	SLC4A1			16225			
+Brain - Frontal Cortex (BA9)	GYPA			16225			
+Brain - Frontal Cortex (BA9)	GYPB			16225			
+Brain - Frontal Cortex (BA9)	AHSP			16225			
+Brain - Frontal Cortex (BA9)	CA1			16225			
+Brain - Frontal Cortex (BA9)	BPGM	-1.1438	0.33069337442218794	16225	0.1095	-1.1438	-1.4717
+Brain - Frontal Cortex (BA9)	SLC25A37	1.1316	0.7505701078582434	16225	-0.9322	1.1316	-0.2575
+Brain - Frontal Cortex (BA9)	EPB42			16225			
+Brain - Frontal Cortex (BA9)	S100A8	6.7562	0.9958705701078583	16225	-1.926	6.7562	2.8672
+Brain - Frontal Cortex (BA9)	S100A9	7.019	0.996979969183359	16225	-2.0675	7.019	2.2832
+Brain - Frontal Cortex (BA9)	S100A12	5.6436	0.9866872110939907	16225	-1.4498	5.6436	2.9716
+Brain - Frontal Cortex (BA9)	FCGR3B			16225			
+Brain - Frontal Cortex (BA9)	CSF3R	6.4502	0.9940215716486903	16225	-1.1966	6.4502	1.9428
+Brain - Frontal Cortex (BA9)	CXCR2			16225			
+Brain - Frontal Cortex (BA9)	FPR1	5.5723	0.9858243451463791	16225	-0.3932	5.5723	3.4192
+Brain - Frontal Cortex (BA9)	MNDA	6.1348	0.9918027734976887	16225	-0.1897	6.1348	1.1661
+Brain - Frontal Cortex (BA9)	CD177			16225			
+Brain - Frontal Cortex (BA9)	MMP9			16225			
+Brain - Hippocampus	HBB	2.7124	0.9511883716362208	15273	-0.9317	2.7124	
+Brain - Hippocampus	HBA1	2.8389	0.9567864859556079	15273	-0.0295	2.8389	
+Brain - Hippocampus	HBA2	2.6164	0.9461795325083481	15273	-0.3713	2.6164	
+Brain - Hippocampus	HBD	1.619	0.862175080206901	15273	-0.8983	1.619	
+Brain - Hippocampus	HBG1			15273			
+Brain - Hippocampus	HBG2			15273			
+Brain - Hippocampus	HBM			15273			
+Brain - Hippocampus	HBQ1	-0.7422	0.13402736855889474	15273	0.0723	-0.7422	
+Brain - Hippocampus	HBE1			15273			
+Brain - Hippocampus	HBZ			15273			
+Brain - Hippocampus	ALAS2			15273			
+Brain - Hippocampus	SLC4A1			15273			
+Brain - Hippocampus	GYPA			15273			
+Brain - Hippocampus	GYPB			15273			
+Brain - Hippocampus	AHSP			15273			
+Brain - Hippocampus	CA1			15273			
+Brain - Hippocampus	BPGM	-0.2789	0.2521443069468997	15273	-1.1976	-0.2789	
+Brain - Hippocampus	SLC25A37	3.2045	0.9676553394879853	15273	-1.9394	3.2045	
+Brain - Hippocampus	EPB42			15273			
+Brain - Hippocampus	S100A8	5.0398	0.9931251227656649	15273	-1.4862	5.0398	
+Brain - Hippocampus	S100A9	5.4982	0.9955476985530021	15273	-1.8758	5.4982	
+Brain - Hippocampus	S100A12	4.2438	0.9867085706802855	15273	-1.6333	4.2438	
+Brain - Hippocampus	FCGR3B			15273			
+Brain - Hippocampus	CSF3R	4.4675	0.9888037713612257	15273	-2.3352	4.4675	
+Brain - Hippocampus	CXCR2			15273			
+Brain - Hippocampus	FPR1	4.6312	0.9899823217442546	15273	-1.1362	4.6312	
+Brain - Hippocampus	MNDA	3.1007	0.9656910888496039	15273	-1.3096	3.1007	
+Brain - Hippocampus	CD177			15273			
+Brain - Hippocampus	MMP9			15273			
+Brain - Hypothalamus	HBB	2.2473	0.860538338066428	16198	-1.3424	2.2473	
+Brain - Hypothalamus	HBA1	2.157	0.8439622175577232	16198	-1.17	2.157	
+Brain - Hypothalamus	HBA2	2.0679	0.8252253364612915	16198	-1.0329	2.0679	
+Brain - Hypothalamus	HBD	1.5375	0.6715643906655142	16198	-0.2717	1.5375	
+Brain - Hypothalamus	HBG1			16198			
+Brain - Hypothalamus	HBG2			16198			
+Brain - Hypothalamus	HBM			16198			
+Brain - Hypothalamus	HBQ1	-1.2986	0.032997900975429095	16198	-0.2366	-1.2986	
+Brain - Hypothalamus	HBE1			16198			
+Brain - Hypothalamus	HBZ			16198			
+Brain - Hypothalamus	ALAS2			16198			
+Brain - Hypothalamus	SLC4A1			16198			
+Brain - Hypothalamus	GYPA			16198			
+Brain - Hypothalamus	GYPB			16198			
+Brain - Hypothalamus	AHSP			16198			
+Brain - Hypothalamus	CA1			16198			
+Brain - Hypothalamus	BPGM	0.7515	0.37183602913939995	16198	1.2185	0.7515	
+Brain - Hypothalamus	SLC25A37	4.0576	0.9726509445610569	16198	-0.8352	4.0576	
+Brain - Hypothalamus	EPB42			16198			
+Brain - Hypothalamus	S100A8	5.699	0.9932707741696506	16198	-1.7123	5.699	
+Brain - Hypothalamus	S100A9	6.1982	0.9957402148413385	16198	-1.8431	6.1982	
+Brain - Hypothalamus	S100A12	4.2098	0.9760464254846277	16198	-1.1404	4.2098	
+Brain - Hypothalamus	FCGR3B			16198			
+Brain - Hypothalamus	CSF3R	4.5998	0.9819730830966786	16198	-1.133	4.5998	
+Brain - Hypothalamus	CXCR2			16198			
+Brain - Hypothalamus	FPR1	6.161	0.9954932707741696	16198	-0.6828	6.161	
+Brain - Hypothalamus	MNDA	4.7121	0.9833930114828991	16198	0.7943	4.7121	
+Brain - Hypothalamus	CD177			16198			
+Brain - Hypothalamus	MMP9			16198			
+Brain - Nucleus accumbens (basal ganglia)	HBB	3.9512	0.9816950852557673	15952	0.501	3.9512	1.8747
+Brain - Nucleus accumbens (basal ganglia)	HBA1	4.6754	0.989154964894684	15952	0.7268	4.6754	1.5544
+Brain - Nucleus accumbens (basal ganglia)	HBA2	4.8936	0.9909729187562688	15952	0.5593	4.8936	2.4261
+Brain - Nucleus accumbens (basal ganglia)	HBD	4.1246	0.9835757271815446	15952	-1.0082	4.1246	2.4224
+Brain - Nucleus accumbens (basal ganglia)	HBG1			15952			
+Brain - Nucleus accumbens (basal ganglia)	HBG2			15952			
+Brain - Nucleus accumbens (basal ganglia)	HBM			15952			
+Brain - Nucleus accumbens (basal ganglia)	HBQ1	-1.252	0.3525263289869609	15952	2.0719	-1.252	-1.2535
+Brain - Nucleus accumbens (basal ganglia)	HBE1			15952			
+Brain - Nucleus accumbens (basal ganglia)	HBZ			15952			
+Brain - Nucleus accumbens (basal ganglia)	ALAS2			15952			
+Brain - Nucleus accumbens (basal ganglia)	SLC4A1			15952			
+Brain - Nucleus accumbens (basal ganglia)	GYPA			15952			
+Brain - Nucleus accumbens (basal ganglia)	GYPB			15952			
+Brain - Nucleus accumbens (basal ganglia)	AHSP			15952			
+Brain - Nucleus accumbens (basal ganglia)	CA1			15952			
+Brain - Nucleus accumbens (basal ganglia)	BPGM	-1.4683	0.28046639919759275	15952	1.4253	-1.4683	-1.761
+Brain - Nucleus accumbens (basal ganglia)	SLC25A37	0.7918	0.8593906720160481	15952	-0.3362	0.7918	-1.4735
+Brain - Nucleus accumbens (basal ganglia)	EPB42			15952			
+Brain - Nucleus accumbens (basal ganglia)	S100A8	7.8642	0.9994358074222668	15952	-0.9407	7.8642	4.626
+Brain - Nucleus accumbens (basal ganglia)	S100A9	7.5981	0.9992477432296891	15952	-1.0721	7.5981	3.6981
+Brain - Nucleus accumbens (basal ganglia)	S100A12	6.4982	0.9973044132397192	15952	-0.7918	6.4982	3.9329
+Brain - Nucleus accumbens (basal ganglia)	FCGR3B			15952			
+Brain - Nucleus accumbens (basal ganglia)	CSF3R	4.298	0.985017552657974	15952	-0.159	4.298	0.5438
+Brain - Nucleus accumbens (basal ganglia)	CXCR2			15952			
+Brain - Nucleus accumbens (basal ganglia)	FPR1	5.6538	0.9949222668004012	15952	-0.3947	5.6538	2.7257
+Brain - Nucleus accumbens (basal ganglia)	MNDA	3.2278	0.9709754262788365	15952	0.8546	3.2278	0.0271
+Brain - Nucleus accumbens (basal ganglia)	CD177			15952			
+Brain - Nucleus accumbens (basal ganglia)	MMP9			15952			
+Brain - Putamen (basal ganglia)	HBB	3.6056	0.9502030490646428	15021	0.5099	3.6056	
+Brain - Putamen (basal ganglia)	HBA1	3.6663	0.9520671060515279	15021	0.3723	3.6663	
+Brain - Putamen (basal ganglia)	HBA2	3.7672	0.9564609546634711	15021	0.7044	3.7672	
+Brain - Putamen (basal ganglia)	HBD	3.7381	0.9554623527062113	15021	0.302	3.7381	
+Brain - Putamen (basal ganglia)	HBG1			15021			
+Brain - Putamen (basal ganglia)	HBG2			15021			
+Brain - Putamen (basal ganglia)	HBM			15021			
+Brain - Putamen (basal ganglia)	HBQ1	-0.1685	0.11297516809799613	15021	0.1509	-0.1685	
+Brain - Putamen (basal ganglia)	HBE1			15021			
+Brain - Putamen (basal ganglia)	HBZ			15021			
+Brain - Putamen (basal ganglia)	ALAS2			15021			
+Brain - Putamen (basal ganglia)	SLC4A1			15021			
+Brain - Putamen (basal ganglia)	GYPA			15021			
+Brain - Putamen (basal ganglia)	GYPB			15021			
+Brain - Putamen (basal ganglia)	AHSP			15021			
+Brain - Putamen (basal ganglia)	CA1			15021			
+Brain - Putamen (basal ganglia)	BPGM	0.6664	0.2806404367219226	15021	0.7669	0.6664	
+Brain - Putamen (basal ganglia)	SLC25A37	2.3762	0.8374276013580987	15021	-1.547	2.3762	
+Brain - Putamen (basal ganglia)	EPB42			15021			
+Brain - Putamen (basal ganglia)	S100A8	7.4099	0.9980027960854804	15021	-0.3844	7.4099	
+Brain - Putamen (basal ganglia)	S100A9	7.2148	0.9974702083749417	15021	-0.8194	7.2148	
+Brain - Putamen (basal ganglia)	S100A12	6.4017	0.9948738432860662	15021	-0.7478	6.4017	
+Brain - Putamen (basal ganglia)	FCGR3B			15021			
+Brain - Putamen (basal ganglia)	CSF3R	5.0878	0.9848878237134678	15021	-0.7494	5.0878	
+Brain - Putamen (basal ganglia)	CXCR2			15021			
+Brain - Putamen (basal ganglia)	FPR1	4.172	0.9693762066440317	15021	-0.8383	4.172	
+Brain - Putamen (basal ganglia)	MNDA	1.6708	0.6437653951135078	15021	1.5714	1.6708	
+Brain - Putamen (basal ganglia)	CD177			15021			
+Brain - Putamen (basal ganglia)	MMP9			15021			
+Brain - Spinal cord (cervical c-1)	HBB	3.7717	0.9578305759422814	16078	0.9293	3.7717	
+Brain - Spinal cord (cervical c-1)	HBA1	3.4415	0.9432143301405648	16078	0.2775	3.4415	
+Brain - Spinal cord (cervical c-1)	HBA2	3.491	0.9464485632541361	16078	0.4704	3.491	
+Brain - Spinal cord (cervical c-1)	HBD	1.8797	0.7576502052494092	16078	-0.8459	1.8797	
+Brain - Spinal cord (cervical c-1)	HBG1			16078			
+Brain - Spinal cord (cervical c-1)	HBG2			16078			
+Brain - Spinal cord (cervical c-1)	HBM			16078			
+Brain - Spinal cord (cervical c-1)	HBQ1			16078			
+Brain - Spinal cord (cervical c-1)	HBE1			16078			
+Brain - Spinal cord (cervical c-1)	HBZ			16078			
+Brain - Spinal cord (cervical c-1)	ALAS2			16078			
+Brain - Spinal cord (cervical c-1)	SLC4A1			16078			
+Brain - Spinal cord (cervical c-1)	GYPA			16078			
+Brain - Spinal cord (cervical c-1)	GYPB			16078			
+Brain - Spinal cord (cervical c-1)	AHSP			16078			
+Brain - Spinal cord (cervical c-1)	CA1			16078			
+Brain - Spinal cord (cervical c-1)	BPGM	-0.0071	0.22994153501679315	16078	0.3055	-0.0071	
+Brain - Spinal cord (cervical c-1)	SLC25A37	5.5951	0.9963303893519094	16078	-1.6253	5.5951	
+Brain - Spinal cord (cervical c-1)	EPB42			16078			
+Brain - Spinal cord (cervical c-1)	S100A8	6.4206	0.9994402288841896	16078	-0.8079	6.4206	
+Brain - Spinal cord (cervical c-1)	S100A9	7.0302	0.9998134096280632	16078	-1.4252	7.0302	
+Brain - Spinal cord (cervical c-1)	S100A12	5.3178	0.9942156984699589	16078	-0.8672	5.3178	
+Brain - Spinal cord (cervical c-1)	FCGR3B			16078			
+Brain - Spinal cord (cervical c-1)	CSF3R	4.9741	0.9905771862171912	16078	-0.6498	4.9741	
+Brain - Spinal cord (cervical c-1)	CXCR2			16078			
+Brain - Spinal cord (cervical c-1)	FPR1	5.1509	0.9930339594476925	16078	-0.9475	5.1509	
+Brain - Spinal cord (cervical c-1)	MNDA	3.567	0.9500559771115811	16078	0.4225	3.567	
+Brain - Spinal cord (cervical c-1)	CD177			16078			
+Brain - Spinal cord (cervical c-1)	MMP9			16078			
+Brain - Substantia nigra	HBB	2.1194	0.9125500229613593	15243	1.2297	2.1194	
+Brain - Substantia nigra	HBA1	2.6418	0.9458767959063177	15243	0.91	2.6418	
+Brain - Substantia nigra	HBA2	2.1946	0.9188479958013515	15243	1.3163	2.1946	
+Brain - Substantia nigra	HBD	3.6708	0.977563471757528	15243	0.8324	3.6708	
+Brain - Substantia nigra	HBG1			15243			
+Brain - Substantia nigra	HBG2			15243			
+Brain - Substantia nigra	HBM			15243			
+Brain - Substantia nigra	HBQ1	-1.666	0.10982090139736267	15243	-0.4559	-1.666	
+Brain - Substantia nigra	HBE1			15243			
+Brain - Substantia nigra	HBZ			15243			
+Brain - Substantia nigra	ALAS2			15243			
+Brain - Substantia nigra	SLC4A1			15243			
+Brain - Substantia nigra	GYPA			15243			
+Brain - Substantia nigra	GYPB			15243			
+Brain - Substantia nigra	AHSP			15243			
+Brain - Substantia nigra	CA1			15243			
+Brain - Substantia nigra	BPGM	-0.5993	0.3024995079708719	15243	-0.9058	-0.5993	
+Brain - Substantia nigra	SLC25A37	3.3115	0.9695597979400381	15243	-2.1146	3.3115	
+Brain - Substantia nigra	EPB42			15243			
+Brain - Substantia nigra	S100A8	6.2015	0.9980318834875025	15243	0.311	6.2015	
+Brain - Substantia nigra	S100A9	6.1708	0.9979006757200026	15243	-0.1207	6.1708	
+Brain - Substantia nigra	S100A12	4.92	0.9930459883225087	15243	0.3598	4.92	
+Brain - Substantia nigra	FCGR3B			15243			
+Brain - Substantia nigra	CSF3R	3.522	0.9748737125237814	15243	-1.8501	3.522	
+Brain - Substantia nigra	CXCR2			15243			
+Brain - Substantia nigra	FPR1	4.2752	0.9874040543200158	15243	-1.0002	4.2752	
+Brain - Substantia nigra	MNDA	2.8741	0.9559141901200551	15243	-0.7236	2.8741	
+Brain - Substantia nigra	CD177			15243			
+Brain - Substantia nigra	MMP9			15243			

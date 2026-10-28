@@ -1,0 +1,244 @@
+# claim: SNAP against the estimated agonal score (slopes within controls and cases; schizophrenia effect on SNAP with and without the estimated agonal score and pH)
+# script: analyses/snap_what_is_it_2026-10-12/05_sn_covariates.py, 06_assemble.py
+# source: tests_GSE138082_CA1.tsv 22f8b45881ea; sn_est_agonal.tsv d03cd36c353c
+# date: 2026-10-12
+effect	lo95	hi95	dataset	cohort_group	model	analysis	group	n	n_sz	change_from_base	change_lo95	change_hi95	null_mean	rel	rel_lo95	rel_hi95	p_value_tsv_only
+-0.685864	-1.14645	-0.327578	GSE138082_CA1	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all (given diagnosis)	26					-0.0554939	-0.63037	-1.09095	-0.272084	0.00949905
+-0.700101	-1.1372	-0.356396	GSE138082_CA1	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all (given diagnosis)	26					-0.0432994	-0.656802	-1.0939	-0.313097	0.00649935
+-0.832096	-1.17078	-0.358766	GSE138082_CA3	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all (given diagnosis)	25					0.150496	-0.982592	-1.32128	-0.509261	9.999e-05
+-0.85325	-1.16208	-0.444311	GSE138082_CA3	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all (given diagnosis)	25					0.169925	-1.02318	-1.332	-0.614236	9.999e-05
+-0.768532	-1.11388	-0.534558	GSE138082_DG	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all (given diagnosis)	26					-0.197379	-0.571153	-0.916499	-0.33718	0.0138986
+-0.776022	-1.1634	-0.506378	GSE138082_DG	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all (given diagnosis)	26					-0.193354	-0.582668	-0.970049	-0.313025	0.0125987
+-0.787497	-1.13914	-0.62528	GSE17612	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	controls	22					-0.327561	-0.459937	-0.81158	-0.297719	0.00409959
+-0.842075	-1.22454	-0.675623	GSE17612	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	cases	28					0.122539	-0.964614	-1.34708	-0.798161	9.999e-05
+-0.778965	-0.960416	-0.658562	GSE17612	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all (given diagnosis)	50					-0.121408	-0.657557	-0.839008	-0.537154	0.00019998
+-0.793733	-1.19638	-0.626709	GSE17612	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	controls	22					-0.329694	-0.464039	-0.866685	-0.297015	0.00389961
+-0.856138	-1.2356	-0.680574	GSE17612	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	cases	28					0.149413	-1.00555	-1.38501	-0.829987	9.999e-05
+-0.787604	-0.958891	-0.662609	GSE17612	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all (given diagnosis)	50					-0.112537	-0.675066	-0.846353	-0.550072	0.00019998
+-1.29782	-1.72415	-1.07383	GSE202537_NAc	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	controls	35					0.173786	-1.47161	-1.89794	-1.24761	9.999e-05
+-0.649026	-1.18166	-0.422514	GSE202537_NAc	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	cases	28					-0.258968	-0.390058	-0.922697	-0.163546	0.0319968
+-0.824023	-1.25905	-0.608617	GSE202537_NAc	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all (given diagnosis)	63					-0.122594	-0.701428	-1.13646	-0.486023	0.00039996
+-1.29642	-1.77042	-1.07207	GSE202537_NAc	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	controls	35					0.181596	-1.47802	-1.95202	-1.25366	9.999e-05
+-0.657391	-1.15965	-0.473495	GSE202537_NAc	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	cases	28					-0.255691	-0.401701	-0.903959	-0.217805	0.0277972
+-0.830219	-1.25792	-0.650645	GSE202537_NAc	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all (given diagnosis)	63					-0.117221	-0.712998	-1.1407	-0.533425	0.00039996
+-1.12463	-1.44304	-0.942944	GSE202537_caudate	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	controls	36					0.3317	-1.45633	-1.77474	-1.27464	9.999e-05
+-0.720991	-1.0663	-0.564498	GSE202537_caudate	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	cases	28					0.117135	-0.838126	-1.18343	-0.681633	9.999e-05
+-0.889316	-1.13587	-0.712403	GSE202537_caudate	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all (given diagnosis)	64					0.191524	-1.08084	-1.32739	-0.903926	9.999e-05
+-1.13031	-1.46699	-0.962299	GSE202537_caudate	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	controls	36					0.343777	-1.47409	-1.81077	-1.30608	9.999e-05
+-0.728065	-1.13775	-0.564337	GSE202537_caudate	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	cases	28					0.122098	-0.850162	-1.25985	-0.686435	9.999e-05
+-0.895729	-1.1632	-0.733405	GSE202537_caudate	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all (given diagnosis)	64					0.199177	-1.09491	-1.36238	-0.932582	9.999e-05
+-1.09488	-1.46255	-0.892257	GSE202537_putamen	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	controls	36					0.146738	-1.24161	-1.60928	-1.03899	9.999e-05
+-0.769036	-1.33252	-0.592618	GSE202537_putamen	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	cases	28					-0.0345132	-0.734523	-1.298	-0.558105	9.999e-05
+-0.87255	-1.18737	-0.689871	GSE202537_putamen	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all (given diagnosis)	64					0.0308617	-0.903412	-1.21823	-0.720733	9.999e-05
+-1.10709	-1.49459	-0.905094	GSE202537_putamen	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	controls	36					0.155808	-1.2629	-1.65039	-1.0609	9.999e-05
+-0.774398	-1.28427	-0.598401	GSE202537_putamen	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	cases	28					-0.0296551	-0.744742	-1.25462	-0.568745	9.999e-05
+-0.880322	-1.19624	-0.723308	GSE202537_putamen	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all (given diagnosis)	64					0.0364312	-0.916753	-1.23268	-0.759739	9.999e-05
+-0.865735	-1.0703	-0.713621	GSE208338	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	controls	62					0.534646	-1.40038	-1.60494	-1.24827	9.999e-05
+-0.767247	-0.92759	-0.666632	GSE208338	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	cases	68					0.198039	-0.965286	-1.12563	-0.86467	9.999e-05
+-0.805669	-0.930876	-0.709808	GSE208338	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all (given diagnosis)	130					0.320991	-1.12666	-1.25187	-1.0308	9.999e-05
+-0.872721	-1.08184	-0.728998	GSE208338	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	controls	62					0.547209	-1.41993	-1.62905	-1.27621	9.999e-05
+-0.77419	-0.930119	-0.677474	GSE208338	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	cases	68					0.20646	-0.98065	-1.13658	-0.883934	9.999e-05
+-0.813049	-0.935734	-0.718898	GSE208338	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all (given diagnosis)	130					0.330539	-1.14359	-1.26627	-1.04944	9.999e-05
+-0.813345	-1.32902	-0.445007	GSE21138	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	controls	29					0.641201	-1.45455	-1.97022	-1.08621	9.999e-05
+-0.727908	-0.97891	-0.553731	GSE21138	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	cases	28					-0.173072	-0.554837	-0.805839	-0.38066	9.999e-05
+-0.757715	-1.0103	-0.579859	GSE21138	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all (given diagnosis)	57					0.0834741	-0.841189	-1.09378	-0.663333	9.999e-05
+-0.836951	-1.35426	-0.435	GSE21138	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	controls	29					0.647183	-1.48413	-2.00145	-1.08218	9.999e-05
+-0.7379	-0.976642	-0.568557	GSE21138	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	cases	28					-0.174214	-0.563685	-0.802428	-0.394343	9.999e-05
+-0.771876	-1.02288	-0.607347	GSE21138	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all (given diagnosis)	57					0.0806078	-0.852484	-1.10349	-0.687954	9.999e-05
+-0.828862	-1.6937	-0.618845	GSE21935	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	controls	19					-0.528165	-0.300697	-1.16553	-0.0906798	0.0486951
+-0.949144	-1.42485	-0.610599	GSE21935	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	cases	23					-0.000375666	-0.948769	-1.42447	-0.610223	9.999e-05
+-0.891186	-1.21564	-0.736512	GSE21935	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all (given diagnosis)	42					-0.281978	-0.609208	-0.933667	-0.454534	0.00089991
+-0.831458	-1.64062	-0.620234	GSE21935	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	controls	19					-0.526614	-0.304844	-1.114	-0.0936199	0.0472953
+-0.962979	-1.41352	-0.63063	GSE21935	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	cases	23					0.00167025	-0.964649	-1.41519	-0.6323	9.999e-05
+-0.897162	-1.21184	-0.745377	GSE21935	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all (given diagnosis)	42					-0.279792	-0.61737	-0.932047	-0.465585	0.00079992
+-0.647565	-1.96874	0.317577	GSE224683	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	controls	15					-0.770433	0.122869	-1.1983	1.08801	0.740726
+-0.73808	-1.18231	-0.512043	GSE224683	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	cases	15					-0.280242	-0.457838	-0.902065	-0.231801	0.00479952
+-0.738605	-1.04492	-0.570245	GSE224683	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all (given diagnosis)	30					-0.413437	-0.325168	-0.63148	-0.156808	0.0979902
+-0.657484	-1.92695	0.464036	GSE224683	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	controls	15					-0.775009	0.117525	-1.15194	1.23905	0.755824
+-0.741538	-1.16875	-0.552413	GSE224683	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	cases	15					-0.282432	-0.459105	-0.88632	-0.269981	0.00459954
+-0.744605	-1.03079	-0.578794	GSE224683	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all (given diagnosis)	30					-0.414687	-0.329917	-0.616105	-0.164107	0.0935906
+-0.856135	-1.17873	-0.711945	GSE26927_temporal	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all (given diagnosis)	20					-0.155348	-0.700787	-1.02338	-0.556597	0.0652935
+-0.861886	-1.2238	-0.711288	GSE26927_temporal	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all (given diagnosis)	20					-0.155089	-0.706797	-1.06871	-0.556199	0.0646935
+-0.720202	-0.985647	-0.438635	GSE35974	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	controls	49					0.334483	-1.05469	-1.32013	-0.773118	9.999e-05
+-0.560855	-0.787461	-0.445563	GSE35974	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	cases	44					0.212602	-0.773457	-1.00006	-0.658165	9.999e-05
+-0.596807	-0.737318	-0.469434	GSE35974	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all (given diagnosis)	93					0.250482	-0.847289	-0.9878	-0.719915	9.999e-05
+-0.734271	-0.980438	-0.400427	GSE35974	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	controls	49					0.337474	-1.07174	-1.31791	-0.737901	9.999e-05
+-0.576926	-0.77836	-0.445702	GSE35974	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	cases	44					0.20805	-0.784977	-0.98641	-0.653752	9.999e-05
+-0.612778	-0.744025	-0.487851	GSE35974	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all (given diagnosis)	93					0.248032	-0.86081	-0.992057	-0.735883	9.999e-05
+-0.831775	-1.29481	-0.679064	GSE35977	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	controls	50					-0.151189	-0.680585	-1.14362	-0.527875	0.00029997
+-1.01223	-1.23792	-0.873578	GSE35977	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	cases	51					0.54039	-1.55262	-1.7783	-1.41397	9.999e-05
+-0.898934	-1.1038	-0.782109	GSE35977	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all (given diagnosis)	101					0.0752014	-0.974135	-1.179	-0.85731	9.999e-05
+-0.834668	-1.14544	-0.671898	GSE35977	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	controls	50					-0.150718	-0.68395	-0.994721	-0.52118	0.00029997
+-1.01991	-1.26635	-0.868416	GSE35977	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	cases	51					0.541745	-1.56165	-1.80809	-1.41016	9.999e-05
+-0.903491	-1.10219	-0.782875	GSE35977	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all (given diagnosis)	101					0.0777515	-0.981242	-1.17994	-0.860626	9.999e-05
+-0.839948	-1.42684	-0.577748	GSE53987_BA46	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	controls	19					-0.411492	-0.428456	-1.01535	-0.166256	0.10029
+-1.09271	-2.59586	-0.727652	GSE53987_BA46	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	cases	15					-0.731228	-0.361478	-1.86463	0.00357627	0.00269973
+-1.00274	-1.42175	-0.77164	GSE53987_BA46	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all (given diagnosis)	34					-0.652462	-0.350277	-0.769289	-0.119178	0.00569943
+-0.858148	-1.4604	-0.596333	GSE53987_BA46	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	controls	19					-0.415203	-0.442945	-1.04519	-0.18113	0.0924908
+-1.08191	-2.50268	-0.720624	GSE53987_BA46	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	cases	15					-0.721039	-0.360872	-1.78165	0.000414679	0.00279972
+-1.01046	-1.39149	-0.793984	GSE53987_BA46	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all (given diagnosis)	34					-0.653086	-0.357377	-0.738404	-0.140898	0.00459954
+-1.22967	-1.81199	-0.936721	GSE53987_hippocampus	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	controls	18					0.833753	-2.06342	-2.64575	-1.77047	9.999e-05
+-0.754101	-1.02448	-0.559215	GSE53987_hippocampus	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	cases	15					-0.271369	-0.482732	-0.753106	-0.287846	0.0467953
+-0.902929	-1.25333	-0.715781	GSE53987_hippocampus	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all (given diagnosis)	33					0.0153529	-0.918282	-1.26868	-0.731134	9.999e-05
+-1.23445	-1.83744	-0.945586	GSE53987_hippocampus	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	controls	18					0.839527	-2.07397	-2.67697	-1.78511	9.999e-05
+-0.761251	-1.08406	-0.604976	GSE53987_hippocampus	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	cases	15					-0.267347	-0.493904	-0.816709	-0.337629	0.0427957
+-0.910136	-1.25536	-0.70511	GSE53987_hippocampus	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all (given diagnosis)	33					0.0186914	-0.928827	-1.27405	-0.723801	9.999e-05
+-1.10739	-1.62384	-0.910411	GSE53987_striatum	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	controls	18					0.293373	-1.40077	-1.91721	-1.20378	9.999e-05
+-0.872889	-1.31046	-0.647847	GSE53987_striatum	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	cases	18					-0.190748	-0.682141	-1.11972	-0.457099	9.999e-05
+-0.858869	-1.12642	-0.736715	GSE53987_striatum	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all (given diagnosis)	36					-0.166085	-0.692784	-0.960334	-0.57063	9.999e-05
+-1.11988	-1.64452	-0.935046	GSE53987_striatum	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	controls	18					0.294106	-1.41398	-1.93862	-1.22915	9.999e-05
+-0.879848	-1.30698	-0.59638	GSE53987_striatum	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	cases	18					-0.19284	-0.687008	-1.11414	-0.40354	9.999e-05
+-0.867332	-1.14398	-0.742693	GSE53987_striatum	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all (given diagnosis)	36					-0.16931	-0.698022	-0.974675	-0.573383	9.999e-05
+-0.916249	-1.35335	-0.47371	GSE80655_AnCg	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	controls	24					-0.0697403	-0.846508	-1.28361	-0.40397	9.999e-05
+-0.725714	-1.02348	-0.624651	GSE80655_AnCg	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	cases	24					0.239227	-0.96494	-1.2627	-0.863878	9.999e-05
+-0.776023	-1.01183	-0.648878	GSE80655_AnCg	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all (given diagnosis)	48					0.163499	-0.939522	-1.17533	-0.812376	9.999e-05
+-0.933169	-1.39433	-0.492646	GSE80655_AnCg	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	controls	24					-0.0691342	-0.864035	-1.3252	-0.423512	9.999e-05
+-0.731254	-1.02781	-0.625945	GSE80655_AnCg	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	cases	24					0.241278	-0.972532	-1.26909	-0.867223	9.999e-05
+-0.785188	-1.0798	-0.671902	GSE80655_AnCg	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all (given diagnosis)	48					0.165535	-0.950722	-1.24533	-0.837437	9.999e-05
+-1.11812	-1.61315	-0.75319	GSE80655_DLPFC	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	controls	23					-0.086428	-1.03169	-1.52672	-0.666762	0.00159984
+-0.68378	-1.38241	-0.518613	GSE80655_DLPFC	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	cases	23					0.19322	-0.877	-1.57563	-0.711833	9.999e-05
+-0.789929	-1.19001	-0.622293	GSE80655_DLPFC	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all (given diagnosis)	46					0.154262	-0.944191	-1.34427	-0.776555	9.999e-05
+-1.133	-1.76314	-0.776417	GSE80655_DLPFC	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	controls	23					-0.0990612	-1.03394	-1.66408	-0.677356	0.00179982
+-0.690255	-1.27256	-0.528227	GSE80655_DLPFC	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	cases	23					0.195332	-0.885587	-1.46789	-0.723558	9.999e-05
+-0.799235	-1.1231	-0.632909	GSE80655_DLPFC	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all (given diagnosis)	46					0.154723	-0.953958	-1.27782	-0.787632	9.999e-05
+-1.31284	-2.09377	-0.99998	GSE80655_nAcc	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	controls	22					-0.381608	-0.931236	-1.71217	-0.618372	0.00839916
+-0.692574	-1.13436	-0.580098	GSE80655_nAcc	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	cases	23					-0.181927	-0.510647	-0.952429	-0.398172	0.00209979
+-0.807168	-1.19194	-0.654385	GSE80655_nAcc	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all (given diagnosis)	45					-0.226026	-0.581143	-0.965919	-0.42836	0.00419958
+-1.32808	-2.03267	-1.01506	GSE80655_nAcc	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	controls	22					-0.382147	-0.945931	-1.65052	-0.632917	0.00789921
+-0.697084	-1.08295	-0.583999	GSE80655_nAcc	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	cases	23					-0.174879	-0.522206	-0.908076	-0.409121	0.00189981
+-0.814201	-1.16326	-0.664601	GSE80655_nAcc	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all (given diagnosis)	45					-0.219351	-0.59485	-0.943911	-0.445249	0.00309969
+-0.774074	-1.13759	-0.299374	GSE92538_GPL570	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	controls	32					-0.0125873	-0.761487	-1.125	-0.286787	9.999e-05
+-0.669112	-0.871604	-0.473242	GSE92538_GPL570	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	cases	17					0.172339	-0.84145	-1.04394	-0.645581	9.999e-05
+-0.714337	-0.90271	-0.531805	GSE92538_GPL570	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all (given diagnosis)	49					0.0893204	-0.803658	-0.99203	-0.621125	9.999e-05
+-0.792542	-1.14446	-0.335293	GSE92538_GPL570	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	controls	32					-0.0271722	-0.76537	-1.11729	-0.308121	9.999e-05
+-0.670359	-0.900491	-0.442215	GSE92538_GPL570	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	cases	17					0.175373	-0.845732	-1.07586	-0.617588	9.999e-05
+-0.721715	-0.924562	-0.549371	GSE92538_GPL570	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all (given diagnosis)	49					0.0861001	-0.807815	-1.01066	-0.635471	9.999e-05
+-0.841729	-0.995695	-0.720418	GSE92538_GPL96	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	controls	55					-0.520937	-0.320792	-0.474759	-0.199481	0.0208979
+-0.846112	-0.982	-0.73985	GSE92538_GPL96	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all (given diagnosis)	64					-0.490947	-0.355165	-0.491054	-0.248903	0.0159984
+-0.84854	-0.998548	-0.726646	GSE92538_GPL96	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	controls	55					-0.521915	-0.326626	-0.476634	-0.204732	0.0191981
+-0.855128	-1.00858	-0.757141	GSE92538_GPL96	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all (given diagnosis)	64					-0.49338	-0.361748	-0.515197	-0.263761	0.0152985
+-0.83147	-0.936896	-0.755253	GTEx_Anterior_cingulate_cortex_BA24	GTEx cortex	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all	176					-0.34835	-0.483119	-0.588546	-0.406903	9.999e-05
+-0.840398	-0.941442	-0.754052	GTEx_Anterior_cingulate_cortex_BA24	GTEx cortex	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all	176					-0.363101	-0.477297	-0.578341	-0.390951	9.999e-05
+-0.786166	-0.843871	-0.734947	GTEx_Cortex	GTEx cortex	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all	255					-0.210471	-0.575695	-0.6334	-0.524476	9.999e-05
+-0.797906	-0.8608	-0.745861	GTEx_Cortex	GTEx cortex	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all	255					-0.227674	-0.570232	-0.633126	-0.518187	9.999e-05
+-0.929228	-1.05722	-0.839616	GTEx_Frontal_Cortex_BA9	GTEx cortex	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all	209					-0.735914	-0.193315	-0.321311	-0.103702	9.999e-05
+-0.931335	-1.05891	-0.835132	GTEx_Frontal_Cortex_BA9	GTEx cortex	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all	209					-0.738346	-0.192989	-0.32056	-0.0967854	9.999e-05
+-0.80231	-0.831022	-0.774311	pooled over 8 cohort clusters (22 datasets)	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all (given diagnosis)	1146						-0.756181	-0.839883	-0.683314	
+-0.815595	-1.00274	-0.596807	median over 22 datasets (lo95/hi95 = minimum/maximum)	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all (given diagnosis)	1146									
+-0.794025	-0.844171	-0.74243	pooled over 6 cohort clusters (17 datasets)	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	cases	476						-0.867793	-1.00846	-0.720127	
+-0.73808	-1.09271	-0.560855	median over 17 datasets (lo95/hi95 = minimum/maximum)	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	cases	476									
+-0.875442	-0.961046	-0.795747	pooled over 6 cohort clusters (18 datasets)	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	controls	564						-0.841314	-1.12413	-0.555986	
+-0.853732	-1.31284	-0.647565	median over 18 datasets (lo95/hi95 = minimum/maximum)	bulk	SNAP total (SD) on estimated agonal score (SD), ex1000 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	controls	564									
+-0.811374	-0.840821	-0.783254	pooled over 8 cohort clusters (22 datasets)	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all (given diagnosis)	1146						-0.769376	-0.8521	-0.698848	
+-0.82221	-1.01046	-0.612778	median over 22 datasets (lo95/hi95 = minimum/maximum)	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	all (given diagnosis)	1146									
+-0.803481	-0.857263	-0.751231	pooled over 6 cohort clusters (17 datasets)	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	cases	476						-0.88562	-1.04498	-0.721965	
+-0.741538	-1.08191	-0.576926	median over 17 datasets (lo95/hi95 = minimum/maximum)	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	cases	476									
+-0.885064	-0.974591	-0.805516	pooled over 6 cohort clusters (18 datasets)	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	controls	564						-0.852075	-1.15893	-0.571513	
+-0.865434	-1.32808	-0.657484	median over 18 datasets (lo95/hi95 = minimum/maximum)	bulk	SNAP total (SD) on estimated agonal score (SD), ex200 (ex1000 / ex200 = SNAP top 1,000 / 200 genes removed from the axis); given age and sex	slope	controls	564									
+0.104141	-0.671616	0.793803	GSE138082_CA1	bulk	base: age, sex	sz_effect		26	13	0	0	0					
+0.148649	-0.375948	0.711429	GSE138082_CA1	bulk	+ estimated agonal (top 1,000 removed)	sz_effect		26	13	0.0445081	-0.484714	0.637596					
+0.146448	-0.370103	0.705288	GSE138082_CA1	bulk	+ estimated agonal (top 200 removed)	sz_effect		26	13	0.0423068	-0.486347	0.647609					
+-0.273467	-1.08486	0.497215	GSE138082_CA3	bulk	base: age, sex	sz_effect		25	13	0	0	0					
+-0.0456177	-0.601491	0.491354	GSE138082_CA3	bulk	+ estimated agonal (top 1,000 removed)	sz_effect		25	13	0.227849	-0.33756	0.869917					
+-0.0444966	-0.587893	0.490769	GSE138082_CA3	bulk	+ estimated agonal (top 200 removed)	sz_effect		25	13	0.22897	-0.348655	0.882632					
+0.288651	-0.593595	0.981896	GSE138082_DG	bulk	base: age, sex	sz_effect		26	13	0	0	0					
+0.138684	-0.393515	0.711691	GSE138082_DG	bulk	+ estimated agonal (top 1,000 removed)	sz_effect		26	13	-0.149967	-0.801163	0.482707					
+0.135151	-0.389573	0.701622	GSE138082_DG	bulk	+ estimated agonal (top 200 removed)	sz_effect		26	13	-0.1535	-0.805498	0.489217					
+-0.523077	-1.03824	-0.139548	GSE17612	bulk	base: age, sex	sz_effect		49	27	0	0	0					
+-0.317483	-0.569002	-0.0920012	GSE17612	bulk	+ estimated agonal (top 1,000 removed)	sz_effect		49	27	0.205594	-0.114012	0.57525					
+-0.30592	-0.553152	-0.0810894	GSE17612	bulk	+ estimated agonal (top 200 removed)	sz_effect		49	27	0.217157	-0.104102	0.594922					
+-0.18055	-0.82436	0.319643	GSE17612	bulk	+ pH	sz_effect		49	27	0.342528	-0.0513706	0.737311					
+-0.250098	-0.584436	0.0640724	GSE17612	bulk	+ estimated agonal (top 1,000 removed) + pH	sz_effect		49	27	0.27298	-0.112642	0.729424					
+-0.701571	-1.03374	-0.267639	GSE202537_NAc	bulk	base: age, sex	sz_effect		63	28	0	0	0					
+-0.184404	-0.428698	0.0298193	GSE202537_NAc	bulk	+ estimated agonal (top 1,000 removed)	sz_effect		63	28	0.517167	0.139565	0.816425					
+-0.181521	-0.420345	0.0256318	GSE202537_NAc	bulk	+ estimated agonal (top 200 removed)	sz_effect		63	28	0.52005	0.13957	0.822733					
+-0.676911	-1.02993	-0.227557	GSE202537_NAc	bulk	+ pH	sz_effect		63	28	0.0246604	-0.0964109	0.149142					
+-0.16375	-0.39147	0.0540109	GSE202537_NAc	bulk	+ estimated agonal (top 1,000 removed) + pH	sz_effect		63	28	0.537822	0.141294	0.856901					
+-0.241093	-0.621307	0.323764	GSE202537_caudate	bulk	base: age, sex	sz_effect		64	28	0	0	0					
+-0.0268408	-0.237757	0.238907	GSE202537_caudate	bulk	+ estimated agonal (top 1,000 removed)	sz_effect		64	28	0.214253	-0.268825	0.626942					
+-0.0234424	-0.229174	0.238074	GSE202537_caudate	bulk	+ estimated agonal (top 200 removed)	sz_effect		64	28	0.217651	-0.270045	0.626433					
+-0.168677	-0.563288	0.354507	GSE202537_caudate	bulk	+ pH	sz_effect		64	28	0.0724161	-0.108941	0.282923					
+-0.0105175	-0.219721	0.273207	GSE202537_caudate	bulk	+ estimated agonal (top 1,000 removed) + pH	sz_effect		64	28	0.230576	-0.24604	0.66173					
+-0.593804	-0.960914	-0.156936	GSE202537_putamen	bulk	base: age, sex	sz_effect		64	28	0	0	0					
+-0.185275	-0.439652	0.00191512	GSE202537_putamen	bulk	+ estimated agonal (top 1,000 removed)	sz_effect		64	28	0.408528	0.0136369	0.730257					
+-0.173083	-0.418515	0.0118456	GSE202537_putamen	bulk	+ estimated agonal (top 200 removed)	sz_effect		64	28	0.42072	0.0239048	0.741887					
+-0.511677	-0.860811	-0.103909	GSE202537_putamen	bulk	+ pH	sz_effect		64	28	0.0821267	-0.0858196	0.273373					
+-0.160526	-0.37183	0.024968	GSE202537_putamen	bulk	+ estimated agonal (top 1,000 removed) + pH	sz_effect		64	28	0.433277	0.01266	0.798976					
+-0.43289	-0.678366	-0.152002	GSE208338	bulk	base: age, sex	sz_effect		130	68	0	0	0					
+-0.107678	-0.249228	0.0290809	GSE208338	bulk	+ estimated agonal (top 1,000 removed)	sz_effect		130	68	0.325212	0.0596737	0.549785					
+-0.10354	-0.24276	0.0310094	GSE208338	bulk	+ estimated agonal (top 200 removed)	sz_effect		130	68	0.32935	0.0574408	0.550951					
+-0.39522	-0.64663	-0.0969696	GSE208338	bulk	+ pH	sz_effect		130	68	0.0376703	-0.0102249	0.109184					
+-0.10925	-0.251996	0.0291454	GSE208338	bulk	+ estimated agonal (top 1,000 removed) + pH	sz_effect		130	68	0.323641	0.0525086	0.543587					
+-0.641808	-0.994305	-0.254763	GSE21138	bulk	base: age, sex	sz_effect		57	28	0	0	0					
+-0.114063	-0.410064	0.212488	GSE21138	bulk	+ estimated agonal (top 1,000 removed)	sz_effect		57	28	0.527744	0.207685	0.865294					
+-0.0994654	-0.384686	0.215317	GSE21138	bulk	+ estimated agonal (top 200 removed)	sz_effect		57	28	0.542342	0.219986	0.880405					
+-0.622734	-0.977456	-0.236872	GSE21138	bulk	+ pH	sz_effect		57	28	0.019074	-0.0883417	0.21203					
+-0.121612	-0.413247	0.181154	GSE21138	bulk	+ estimated agonal (top 1,000 removed) + pH	sz_effect		57	28	0.520195	0.173641	0.85698					
+-0.273251	-0.856684	0.277742	GSE21935	bulk	base: age, sex	sz_effect		42	23	0	0	0					
+-0.141334	-0.336231	0.0848556	GSE21935	bulk	+ estimated agonal (top 1,000 removed)	sz_effect		42	23	0.131917	-0.389221	0.714979					
+-0.134476	-0.32578	0.090852	GSE21935	bulk	+ estimated agonal (top 200 removed)	sz_effect		42	23	0.138775	-0.382421	0.729125					
+0.00804211	-0.819725	0.800864	GSE21935	bulk	+ pH	sz_effect		42	23	0.281293	-0.170118	0.83649					
+-0.197284	-0.472339	0.0622873	GSE21935	bulk	+ estimated agonal (top 1,000 removed) + pH	sz_effect		42	23	0.0759669	-0.443493	0.642889					
+-1.22729	-2.0291	-0.504148	GSE224683	bulk	base: age, sex	sz_effect		30	15	0	0	0					
+-0.481768	-1.02049	0.039258	GSE224683	bulk	+ estimated agonal (top 1,000 removed)	sz_effect		30	15	0.74552	0.167795	1.43999					
+-0.467482	-0.995145	0.0486212	GSE224683	bulk	+ estimated agonal (top 200 removed)	sz_effect		30	15	0.759805	0.181002	1.44989					
+-1.27882	-2.0648	-0.305937	GSE224683	bulk	+ pH	sz_effect		30	15	-0.0515351	-0.371135	0.593184					
+-0.629132	-1.06133	-0.180683	GSE224683	bulk	+ estimated agonal (top 1,000 removed) + pH	sz_effect		30	15	0.598155	-0.0803263	1.35271					
+0.131774	-0.766322	0.883839	GSE26927_temporal	bulk	base: age, sex	sz_effect		20	10	0	0	0					
+-0.13282	-0.537096	0.177441	GSE26927_temporal	bulk	+ estimated agonal (top 1,000 removed)	sz_effect		20	10	-0.264593	-1.01531	0.470221					
+-0.131895	-0.528721	0.177838	GSE26927_temporal	bulk	+ estimated agonal (top 200 removed)	sz_effect		20	10	-0.263668	-1.0208	0.47187					
+-0.683461	-0.998197	-0.325907	GSE35974	bulk	base: age, sex	sz_effect		93	44	0	0	0					
+-0.284408	-0.555182	0.00948794	GSE35974	bulk	+ estimated agonal (top 1,000 removed)	sz_effect		93	44	0.399053	0.171852	0.628923					
+-0.271434	-0.540644	0.0148994	GSE35974	bulk	+ estimated agonal (top 200 removed)	sz_effect		93	44	0.412027	0.177	0.641945					
+-0.690773	-1.01725	-0.296444	GSE35974	bulk	+ pH	sz_effect		93	44	-0.00731221	-0.0890532	0.0724801					
+-0.300865	-0.579482	-0.00275783	GSE35974	bulk	+ estimated agonal (top 1,000 removed) + pH	sz_effect		93	44	0.382596	0.145188	0.621256					
+-0.301827	-0.738002	0.0821414	GSE35977	bulk	base: age, sex	sz_effect		101	51	0	0	0					
+-0.109656	-0.316885	0.0627844	GSE35977	bulk	+ estimated agonal (top 1,000 removed)	sz_effect		101	51	0.19217	-0.172984	0.566121					
+-0.100374	-0.302339	0.0702879	GSE35977	bulk	+ estimated agonal (top 200 removed)	sz_effect		101	51	0.201452	-0.164162	0.573647					
+-0.168832	-0.633806	0.225111	GSE35977	bulk	+ pH	sz_effect		101	51	0.132995	0.00805803	0.318228					
+-0.144749	-0.35398	0.0384266	GSE35977	bulk	+ estimated agonal (top 1,000 removed) + pH	sz_effect		101	51	0.157078	-0.217258	0.545788					
+-0.813514	-1.21112	-0.512046	GSE53987_BA46	bulk	base: age, sex	sz_effect		34	15	0	0	0					
+0.266088	-0.259912	0.593197	GSE53987_BA46	bulk	+ estimated agonal (top 1,000 removed)	sz_effect		34	15	1.0796	0.617828	1.51844					
+0.274273	-0.237571	0.588218	GSE53987_BA46	bulk	+ estimated agonal (top 200 removed)	sz_effect		34	15	1.08779	0.635673	1.52488					
+-0.822668	-1.31316	-0.528896	GSE53987_BA46	bulk	+ pH	sz_effect		34	15	-0.00915406	-0.243382	0.048331					
+0.255495	-0.263905	0.591334	GSE53987_BA46	bulk	+ estimated agonal (top 1,000 removed) + pH	sz_effect		34	15	1.06901	0.607198	1.50418					
+-0.858061	-1.34893	-0.292338	GSE53987_hippocampus	bulk	base: age, sex	sz_effect		33	15	0	0	0					
+-0.120688	-0.525866	0.169872	GSE53987_hippocampus	bulk	+ estimated agonal (top 1,000 removed)	sz_effect		33	15	0.737373	0.201655	1.24443					
+-0.105592	-0.498956	0.178234	GSE53987_hippocampus	bulk	+ estimated agonal (top 200 removed)	sz_effect		33	15	0.752469	0.215858	1.2611					
+-1.0889	-1.79423	-0.473327	GSE53987_hippocampus	bulk	+ pH	sz_effect		33	15	-0.230842	-0.860649	0.0341283					
+-0.121283	-0.805795	0.236629	GSE53987_hippocampus	bulk	+ estimated agonal (top 1,000 removed) + pH	sz_effect		33	15	0.736778	-0.0407595	1.30219					
+-0.713775	-1.10663	-0.201249	GSE53987_striatum	bulk	base: age, sex	sz_effect		36	18	0	0	0					
+-0.188842	-0.386709	0.0612201	GSE53987_striatum	bulk	+ estimated agonal (top 1,000 removed)	sz_effect		36	18	0.524933	0.0174373	1.00606					
+-0.169902	-0.361623	0.0814489	GSE53987_striatum	bulk	+ estimated agonal (top 200 removed)	sz_effect		36	18	0.543873	0.039678	1.03369					
+-0.713608	-1.33953	-0.204558	GSE53987_striatum	bulk	+ pH	sz_effect		36	18	0.000167402	-0.412899	0.0979713					
+-0.185244	-0.421411	0.0959458	GSE53987_striatum	bulk	+ estimated agonal (top 1,000 removed) + pH	sz_effect		36	18	0.528531	0.032534	1.02743					
+-0.881529	-1.26281	-0.557136	GSE80655_AnCg	bulk	base: age, sex	sz_effect		47	23	0	0	0					
+-0.306724	-0.585258	-0.0378261	GSE80655_AnCg	bulk	+ estimated agonal (top 1,000 removed)	sz_effect		47	23	0.574805	0.182872	1.02001					
+-0.28998	-0.567144	-0.0244972	GSE80655_AnCg	bulk	+ estimated agonal (top 200 removed)	sz_effect		47	23	0.591549	0.195192	1.0356					
+-0.860139	-1.31998	-0.552034	GSE80655_AnCg	bulk	+ pH	sz_effect		47	23	0.0213901	-0.255514	0.183631					
+-0.323167	-0.653709	-0.0583876	GSE80655_AnCg	bulk	+ estimated agonal (top 1,000 removed) + pH	sz_effect		47	23	0.558362	0.0778401	1.02009					
+-0.847408	-1.18368	-0.576514	GSE80655_DLPFC	bulk	base: age, sex	sz_effect		45	22	0	0	0					
+-0.291294	-0.669128	0.020612	GSE80655_DLPFC	bulk	+ estimated agonal (top 1,000 removed)	sz_effect		45	22	0.556114	0.174132	1.01378					
+-0.277405	-0.656107	0.0275978	GSE80655_DLPFC	bulk	+ estimated agonal (top 200 removed)	sz_effect		45	22	0.570003	0.18657	1.02963					
+-0.745003	-1.172	-0.410135	GSE80655_DLPFC	bulk	+ pH	sz_effect		45	22	0.102405	-0.0779372	0.298768					
+-0.30119	-0.715478	0.0157599	GSE80655_DLPFC	bulk	+ estimated agonal (top 1,000 removed) + pH	sz_effect		45	22	0.546218	0.112821	1.00944					
+-0.706899	-1.12893	-0.251072	GSE80655_nAcc	bulk	base: age, sex	sz_effect		44	22	0	0	0					
+-0.479414	-0.774716	-0.235399	GSE80655_nAcc	bulk	+ estimated agonal (top 1,000 removed)	sz_effect		44	22	0.227485	-0.362011	0.693053					
+-0.468278	-0.759966	-0.230292	GSE80655_nAcc	bulk	+ estimated agonal (top 200 removed)	sz_effect		44	22	0.238621	-0.341623	0.709948					
+-0.609219	-1.04072	-0.190789	GSE80655_nAcc	bulk	+ pH	sz_effect		44	22	0.0976795	-0.0819597	0.259816					
+-0.458855	-0.7487	-0.24912	GSE80655_nAcc	bulk	+ estimated agonal (top 1,000 removed) + pH	sz_effect		44	22	0.248044	-0.387909	0.715626					
+-0.858299	-1.58928	-0.22512	GSE92538_GPL570	bulk	base: age, sex	sz_effect		48	17	0	0	0					
+-0.589899	-1.18082	-0.134433	GSE92538_GPL570	bulk	+ estimated agonal (top 1,000 removed)	sz_effect		48	17	0.268401	-0.306627	0.820009					
+-0.575094	-1.16945	-0.124135	GSE92538_GPL570	bulk	+ estimated agonal (top 200 removed)	sz_effect		48	17	0.283205	-0.292286	0.839735					
+-0.831523	-1.59189	-0.147694	GSE92538_GPL570	bulk	+ pH	sz_effect		48	17	0.0267767	-0.0814575	0.185115					
+-0.578204	-1.18731	-0.112309	GSE92538_GPL570	bulk	+ estimated agonal (top 1,000 removed) + pH	sz_effect		48	17	0.280095	-0.288394	0.836751					
+-0.541463	-1.12627	0.0209405	GSE92538_GPL96	bulk	base: age, sex	sz_effect		54	9	0	0	0					
+0.00782672	-0.388876	0.364659	GSE92538_GPL96	bulk	+ estimated agonal (top 1,000 removed)	sz_effect		54	9	0.549289	0.015397	1.11418					
+0.00892387	-0.37857	0.357428	GSE92538_GPL96	bulk	+ estimated agonal (top 200 removed)	sz_effect		54	9	0.550387	0.0183739	1.11451					
+-0.496778	-1.06591	0.0464314	GSE92538_GPL96	bulk	+ pH	sz_effect		54	9	0.0446844	-0.123136	0.33177					
+0.00871369	-0.396963	0.349444	GSE92538_GPL96	bulk	+ estimated agonal (top 1,000 removed) + pH	sz_effect		54	9	0.550176	0.0178501	1.15373					
+-0.171327	-0.250016	-0.0842567	pooled over 8 cohort clusters (22 datasets)	bulk	+ estimated agonal (top 1,000 removed)	sz_effect		1131	530	0.238972	0.0503248	0.400473					
+-0.214593	-0.267962	-0.160846	pooled over 6 cohort clusters (18 datasets)	bulk	+ estimated agonal (top 1,000 removed) + pH	sz_effect		1034	481	0.361063	0.26392	0.469902					
+-0.163465	-0.24272	-0.079374	pooled over 8 cohort clusters (22 datasets)	bulk	+ estimated agonal (top 200 removed)	sz_effect		1131	530	0.246834	0.0638284	0.420213					
+-0.444287	-0.635998	-0.24537	pooled over 6 cohort clusters (18 datasets)	bulk	+ pH	sz_effect		1034	481	0.131369	0.0293903	0.243487					
+-0.410299	-0.610194	-0.189922	pooled over 8 cohort clusters (22 datasets)	bulk	base: age, sex	sz_effect		1131	530	0	0	0					

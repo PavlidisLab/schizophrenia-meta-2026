@@ -1,0 +1,19 @@
+# script: psychad_84_of_127.py
+# input: schizophrenia-transcriptome-replication/analyses/psychad_cellxgene/donors.tsv sha256 17f8c73f2f004742c9971e9f87684490aacb9e014a428a0ffedbad3f37c3779d
+# date: 2026-10-19
+# rule: dementia = regex dementia|alzheimer, case-insensitive, on CELLxGENE disease field; SZ = dx_gemma SZ
+# aggregate counts only; no donor-level rows
+bank	quantity	n
+HBCC	SZ cases (dx_gemma SZ)	56
+HBCC	SZ with dementia/alzheimer term	0
+HBCC	SZ without term (kept)	56
+MSSM	SZ cases (dx_gemma SZ)	127
+MSSM	SZ with dementia/alzheimer term	84
+MSSM	SZ without term (kept)	43
+MSSM	SZ donors carrying term "alzheimer disease" (donor can carry several)	11
+MSSM	SZ donors carrying term "dementia" (donor can carry several)	84
+MSSM	SZ donors carrying term "lewy body dementia" (donor can carry several)	1
+MSSM	SZ donors carrying term "vascular dementia" (donor can carry several)	4
+HBCC	CTRL (dx_gemma CTRL) with term	0
+MSSM	CTRL (dx_gemma CTRL) with term	0
+RADC	CTRL (dx_gemma CTRL) with term	0

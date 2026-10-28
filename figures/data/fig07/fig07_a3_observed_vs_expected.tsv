@@ -1,0 +1,17 @@
+# figure: fig07 panel a3
+# population: 72 primary brain studies (recurrence.py scenario 'published, brain', study tier); n_k = |M_k| (RECURRENCE_NK=membership); analysis set = the 383 study-tier genes of analyses/confounds/recurrent_sets.tsv (set study_brain; the in-place recurrence_genes.tsv gives 383 at q < 0.1); recurrence.tsv sha256 bcbf50f8e334; corpus/lineage.json sha256 4f919a83fea3
+# script: fdv2_2026-10-15/work/f07_core.py null_test (Python port of the expression-matched test of analyses/confounds/scripts/combine_datasets.R: 10,000 random gene sets matched on expression-percentile decile, same SZ directions, p = (1 + n_ge_observed)/10001), seed 20261015, run 2026-10-15
+# input: inputs_ph_axis_v2/axis_v2_controls.tsv.gz sha256 2c72a9b279a2 (v2 axis)
+# input: analyses/confounds/results/combined_controls_pH.tsv sha256 da2fc515de62 (v1 axis and expr_percentile used for the deciles; v2 genes without a v1 expression percentile are excluded from n_measured and from the null)
+# input: analyses/confounds/recurrent_sets.tsv sha256 3c42f67cdd7a
+# observed = set genes at pH-axis q < 0.05 with the confound-consistent sign (SZ-up genes higher at low pH, SZ-down lower); expected = mean of the 10,000 matched random sets; expected_exact_axis_v2 = exact expectation under the same positional pairing; observed_any_sign = set genes at q < 0.05 whatever the sign
+# v2: q = BH over all v2 genes; n_measured = set genes with a v2 pH z and an expression percentile; v1: measured in >= 4 of 5 datasets
+# 2026-10-21: cohort-tier rows with the rule that a study pooling donors from several banks is a member of the cohort cluster of each of its banks (RECURRENCE_MULTIBANK=sets, recurrence.py of cluster_sets_2026-10-21/ws/analyses); rows cohort_brain (140 genes) and cohort_brainFDR (22 genes) from recurrent_sets.tsv sha256 e62f6b012e1f (recurrence_genes.tsv of the membership run; analysis script f07_core.py null_test, seed 20261015, set order of the stored sets file); v1 columns of those two rows from q4_g3.R on the v1 table (10,000 draws, seed 20260924)
+set	set_label	n_set	n_measured	observed	expected	p	observed_any_sign	axis_primary	n_measured_axis_v1	observed_axis_v1	expected_axis_v1	p_axis_v1	observed_any_sign_axis_v1	expected_exact_axis_v2	ratio_obs_over_exp_axis_v2	ratio_obs_over_exp_axis_v1
+cohort_brain	cohort tier, 140 genes	140	138	82	26.48	1e-04	90	v2	138	71	23.22	1e-04	79	26.42	3.10	3.06
+study_brain	study tier, 383 genes (q < 0.1)	383	371	225	78.88	1e-04	240	v2	371	193	69.26	1e-04	205	78.83	2.85	2.79
+cohort_brainFDR	cohort tier, FDR lists	22	22	13	3.4	1e-04	14	v2	22	13	2.79	1e-04	14	3.40	3.82	4.66
+study_brainFDR	study tier, FDR lists	91	89	53	20.15	1e-04	56	v2	89	45	18.41	1e-04	47	20.14	2.63	2.44
+study_brain_ge10	study_brain_ge10	107	105	73	23.91	1e-04	76	v2	105	60	21.41	1e-04	62	23.89	3.05	2.80
+study_brain_ge5	study_brain_ge5	2422	2329	1043	448.17	1e-04	1209	v2	2329	922	385.17	1e-04	1073	448.23	2.33	2.39
+study_brain_5plus	5+ studies (study_brain_5plus of the sets file used)	2422	2329	1043	448.14	1e-04	1209	v2	2329	922	385.35	1e-04	1073	448.23	2.33	2.39

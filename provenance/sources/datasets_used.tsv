@@ -1,0 +1,30 @@
+# copied 2026-10-21 as the source table of a hidden comment in supplement.md line 461; original location: <analysis repo> (sample_level_reanalysis_of_datasets/results/datasets_used.tsv)
+dataset	gse	cluster	compartment	n_sz	n_ctl	has_pmi
+GSE21138	GSE21138	aus	bulk	28	29	TRUE
+GSE35977	GSE35977	stanley	bulk	51	50	TRUE
+GSE35974	GSE35974	stanley	bulk	44	49	TRUE
+GSE53987_BA46	GSE53987	cmc+mssm+pitt+libd	bulk	15	19	TRUE
+GSE53987_hippocampus	GSE53987	cmc+mssm+pitt+libd	bulk	15	18	TRUE
+GSE53987_striatum	GSE53987	cmc+mssm+pitt+libd	bulk	18	18	TRUE
+GSE17612	GSE17612	GSE17612+GSE21935	bulk	28	22	TRUE
+GSE21935	GSE21935	GSE17612+GSE21935	bulk	23	19	TRUE
+GSE92538_GPL570	GSE92538	pritzker	bulk	17	32	TRUE
+GSE92538_GPL96	GSE92538	pritzker	bulk	9	55	TRUE
+GSE80655_DLPFC	GSE80655	pritzker	bulk	23	23	TRUE
+GSE80655_AnCg	GSE80655	pritzker	bulk	24	24	TRUE
+GSE80655_nAcc	GSE80655	pritzker	bulk	23	22	TRUE
+GSE208338	GSE208338	aus	bulk	68	62	TRUE
+GSE202537_NAc	GSE202537	cmc+mssm+pitt+libd	bulk	28	35	TRUE
+GSE202537_caudate	GSE202537	cmc+mssm+pitt+libd	bulk	28	36	TRUE
+GSE202537_putamen	GSE202537	cmc+mssm+pitt+libd	bulk	28	36	TRUE
+GSE224683	GSE224683	cmc+mssm+pitt+libd	bulk	15	15	TRUE
+GSE26927_temporal	GSE26927	GSE26927	bulk	10	10	TRUE
+GSE138082_CA1	GSE138082	GSE138082	bulk	13	13	TRUE
+GSE138082_CA3	GSE138082	GSE138082	bulk	13	12	TRUE
+GSE138082_DG	GSE138082	GSE138082	bulk	13	13	TRUE
+GSE37981	GSE37981	harvard	LCM pyramidal neurons	8	8	TRUE
+GSE12679_neuron	GSE12679	stanley	LCM neurons	5	6	TRUE
+GSE12679_endothelial	GSE12679	stanley	LCM endothelial cells	11	5	TRUE
+GSE112523	GSE112523	harvard	sorted NeuN+ nuclei	7	17	TRUE
+GSE107638_NeuN	GSE107638	cmc+mssm+pitt+libd|harvard	sorted NeuN+ nuclei	23	27	TRUE
+GSE107638_OLIG2	GSE107638	cmc+mssm+pitt+libd|harvard	sorted OLIG2+ nuclei	17	22	TRUE

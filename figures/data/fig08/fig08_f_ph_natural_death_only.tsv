@@ -1,0 +1,7 @@
+# figure: fig08 panel f
+# script: analyses/redo_on_209_2026-10-11/3_ph_agonal_axes/export_fig08_209.py (copy of analyses/figure_exports/export_fig08_fig09_fig10.py: output folder, population text, results_516 in place of results_516, fig08 only), run 2026-10-11
+# input: analyses/hagihara_replication_2026-10-08/results/ph_natural_death_only.tsv sha256 75f34bc33f83
+# SZ minus control pH among natural deaths only, age + sex
+dataset	model	n_sz	n_ctl	coef_sz	se	p
+GSE208338	natural deaths only; age + sex	30	56	-0.15992378239015156	0.049459734621895644	0.0017632633342139102
+GSE202537	natural deaths only; age + sex	18	31	-0.2047492838437613	0.0823884850566832	0.01673295114613876

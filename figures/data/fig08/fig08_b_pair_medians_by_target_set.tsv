@@ -1,0 +1,151 @@
+# figure: fig08 panel b (context)
+# script: fdv2_2026-10-15/work/f08b_build.py running analyses/figure_exports/export_fig08_fig09_fig10.py fig8_b unchanged on decomposition outputs of axes_pritzker_agonal_2026-10-09/decomposition_axes.py, single_axis_same_genes.py and claims_vs_ph_axis_2026-10-08/decomposition.py (copies; only the pH-axis function edited), run 2026-10-15
+# input: work/b_v2/axes/results_remote/summary.txt sha256 7298f14fbd3e
+# parsed from summary.txt: on the gene set common to all four axes (differs from single_axis_same_genes by gene restriction), median pair agreement with the listed axes projected out ('none' = raw)
+# axis: unsuffixed values = pH axis v2 (primary; inputs_ph_axis_v2/axis_v2_controls.tsv.gz sha256 2c72a9b279a2; leave-collection-out construction of the decomposition scripts with the v2 axis from the stored per-dataset limma fits, scripts v2axis.py); columns ending _axis_v1 = v1 fork (five-collection control pH axis)
+# 2026-10-21: pair classes by the cluster rule: 11 pairs that are not proven subject-separate (GSE112523 with 8 datasets; GSE17612 with GSE37981, GSE107638_NeuN and GSE107638_OLIG2) are not in the all-pairs classes (297 pairs; NOPRITZ 184, NOPRITZ2 171, NODAI 86); both-bulk classes 192 pairs (NOPRITZ 109)
+target_set	pair_class	n_pairs	level	axes_removed	median_rho	median_rho_axis_v1
+ALL	both-bulk pairs	192	L0	none	0.1227	0.1234
+ALL	both-bulk pairs	192	L0	pH	0.1041	0.1072
+ALL	both-bulk pairs	192	L0	GTEx	0.0746	0.0737
+ALL	both-bulk pairs	192	L0	Pritz	0.0884	0.0869
+ALL	both-bulk pairs	192	L0	Dai	0.1146	0.1150
+ALL	both-bulk pairs	192	L0	pH+GTEx	0.0743	0.0772
+ALL	both-bulk pairs	192	L0	pH+Pritz	0.0925	0.0998
+ALL	both-bulk pairs	192	L0	pH+Pritz+Dai	0.0931	0.0976
+ALL	both-bulk pairs	192	L0	all4	0.0723	0.0731
+ALL	both-bulk pairs	192	L4	none	0.0708	0.0733
+ALL	both-bulk pairs	192	L4	pH	0.0737	0.0786
+ALL	both-bulk pairs	192	L4	GTEx	0.0486	0.0490
+ALL	both-bulk pairs	192	L4	Pritz	0.0766	0.0764
+ALL	both-bulk pairs	192	L4	Dai	0.0679	0.0650
+ALL	both-bulk pairs	192	L4	pH+GTEx	0.0493	0.0522
+ALL	both-bulk pairs	192	L4	pH+Pritz	0.0663	0.0753
+ALL	both-bulk pairs	192	L4	pH+Pritz+Dai	0.0634	0.0727
+ALL	both-bulk pairs	192	L4	all4	0.0471	0.0532
+ALL	all donor-separate pairs	297	L0	none	0.0509	0.0482
+ALL	all donor-separate pairs	297	L0	pH	0.0471	0.0565
+ALL	all donor-separate pairs	297	L0	GTEx	0.0307	0.0324
+ALL	all donor-separate pairs	297	L0	Pritz	0.0430	0.0419
+ALL	all donor-separate pairs	297	L0	Dai	0.0498	0.0470
+ALL	all donor-separate pairs	297	L0	pH+GTEx	0.0322	0.0420
+ALL	all donor-separate pairs	297	L0	pH+Pritz	0.0458	0.0558
+ALL	all donor-separate pairs	297	L0	pH+Pritz+Dai	0.0449	0.0557
+ALL	all donor-separate pairs	297	L0	all4	0.0323	0.0400
+ALL	all donor-separate pairs	297	L4	none	0.0272	0.0265
+ALL	all donor-separate pairs	297	L4	pH	0.0409	0.0433
+ALL	all donor-separate pairs	297	L4	GTEx	0.0220	0.0214
+ALL	all donor-separate pairs	297	L4	Pritz	0.0381	0.0376
+ALL	all donor-separate pairs	297	L4	Dai	0.0271	0.0251
+ALL	all donor-separate pairs	297	L4	pH+GTEx	0.0257	0.0330
+ALL	all donor-separate pairs	297	L4	pH+Pritz	0.0329	0.0392
+ALL	all donor-separate pairs	297	L4	pH+Pritz+Dai	0.0349	0.0412
+ALL	all donor-separate pairs	297	L4	all4	0.0292	0.0324
+NOPRITZ	both-bulk pairs	109	L0	none	0.1217	0.1233
+NOPRITZ	both-bulk pairs	109	L0	pH	0.1170	0.1223
+NOPRITZ	both-bulk pairs	109	L0	GTEx	0.0883	0.0832
+NOPRITZ	both-bulk pairs	109	L0	Pritz	0.0987	0.0948
+NOPRITZ	both-bulk pairs	109	L0	Dai	0.1147	0.1157
+NOPRITZ	both-bulk pairs	109	L0	pH+GTEx	0.0877	0.0845
+NOPRITZ	both-bulk pairs	109	L0	pH+Pritz	0.1107	0.1081
+NOPRITZ	both-bulk pairs	109	L0	pH+Pritz+Dai	0.1083	0.1065
+NOPRITZ	both-bulk pairs	109	L0	all4	0.0809	0.0831
+NOPRITZ	both-bulk pairs	109	L4	none	0.0498	0.0482
+NOPRITZ	both-bulk pairs	109	L4	pH	0.0747	0.0756
+NOPRITZ	both-bulk pairs	109	L4	GTEx	0.0381	0.0392
+NOPRITZ	both-bulk pairs	109	L4	Pritz	0.0674	0.0652
+NOPRITZ	both-bulk pairs	109	L4	Dai	0.0544	0.0535
+NOPRITZ	both-bulk pairs	109	L4	pH+GTEx	0.0543	0.0527
+NOPRITZ	both-bulk pairs	109	L4	pH+Pritz	0.0676	0.0752
+NOPRITZ	both-bulk pairs	109	L4	pH+Pritz+Dai	0.0649	0.0729
+NOPRITZ	both-bulk pairs	109	L4	all4	0.0498	0.0545
+NOPRITZ	all donor-separate pairs	184	L0	none	0.0437	0.0413
+NOPRITZ	all donor-separate pairs	184	L0	pH	0.0466	0.0580
+NOPRITZ	all donor-separate pairs	184	L0	GTEx	0.0273	0.0257
+NOPRITZ	all donor-separate pairs	184	L0	Pritz	0.0513	0.0522
+NOPRITZ	all donor-separate pairs	184	L0	Dai	0.0431	0.0388
+NOPRITZ	all donor-separate pairs	184	L0	pH+GTEx	0.0320	0.0485
+NOPRITZ	all donor-separate pairs	184	L0	pH+Pritz	0.0428	0.0573
+NOPRITZ	all donor-separate pairs	184	L0	pH+Pritz+Dai	0.0421	0.0579
+NOPRITZ	all donor-separate pairs	184	L0	all4	0.0342	0.0462
+NOPRITZ	all donor-separate pairs	184	L4	none	0.0060	0.0057
+NOPRITZ	all donor-separate pairs	184	L4	pH	0.0276	0.0332
+NOPRITZ	all donor-separate pairs	184	L4	GTEx	0.0057	0.0060
+NOPRITZ	all donor-separate pairs	184	L4	Pritz	0.0253	0.0270
+NOPRITZ	all donor-separate pairs	184	L4	Dai	0.0075	0.0073
+NOPRITZ	all donor-separate pairs	184	L4	pH+GTEx	0.0172	0.0221
+NOPRITZ	all donor-separate pairs	184	L4	pH+Pritz	0.0299	0.0316
+NOPRITZ	all donor-separate pairs	184	L4	pH+Pritz+Dai	0.0270	0.0318
+NOPRITZ	all donor-separate pairs	184	L4	all4	0.0197	0.0180
+NOPRITZ2	both-bulk pairs	99	L0	none	0.1203	0.1216
+NOPRITZ2	both-bulk pairs	99	L0	pH	0.1159	0.1084
+NOPRITZ2	both-bulk pairs	99	L0	GTEx	0.0801	0.0773
+NOPRITZ2	both-bulk pairs	99	L0	Pritz	0.0927	0.0929
+NOPRITZ2	both-bulk pairs	99	L0	Dai	0.1145	0.1143
+NOPRITZ2	both-bulk pairs	99	L0	pH+GTEx	0.0800	0.0825
+NOPRITZ2	both-bulk pairs	99	L0	pH+Pritz	0.1038	0.1031
+NOPRITZ2	both-bulk pairs	99	L0	pH+Pritz+Dai	0.1024	0.0990
+NOPRITZ2	both-bulk pairs	99	L0	all4	0.0799	0.0787
+NOPRITZ2	both-bulk pairs	99	L4	none	0.0498	0.0482
+NOPRITZ2	both-bulk pairs	99	L4	pH	0.0763	0.0780
+NOPRITZ2	both-bulk pairs	99	L4	GTEx	0.0381	0.0392
+NOPRITZ2	both-bulk pairs	99	L4	Pritz	0.0674	0.0652
+NOPRITZ2	both-bulk pairs	99	L4	Dai	0.0544	0.0535
+NOPRITZ2	both-bulk pairs	99	L4	pH+GTEx	0.0559	0.0602
+NOPRITZ2	both-bulk pairs	99	L4	pH+Pritz	0.0703	0.0754
+NOPRITZ2	both-bulk pairs	99	L4	pH+Pritz+Dai	0.0674	0.0739
+NOPRITZ2	both-bulk pairs	99	L4	all4	0.0549	0.0563
+NOPRITZ2	all donor-separate pairs	171	L0	none	0.0403	0.0384
+NOPRITZ2	all donor-separate pairs	171	L0	pH	0.0406	0.0546
+NOPRITZ2	all donor-separate pairs	171	L0	GTEx	0.0236	0.0227
+NOPRITZ2	all donor-separate pairs	171	L0	Pritz	0.0490	0.0511
+NOPRITZ2	all donor-separate pairs	171	L0	Dai	0.0372	0.0343
+NOPRITZ2	all donor-separate pairs	171	L0	pH+GTEx	0.0300	0.0417
+NOPRITZ2	all donor-separate pairs	171	L0	pH+Pritz	0.0378	0.0535
+NOPRITZ2	all donor-separate pairs	171	L0	pH+Pritz+Dai	0.0383	0.0548
+NOPRITZ2	all donor-separate pairs	171	L0	all4	0.0323	0.0438
+NOPRITZ2	all donor-separate pairs	171	L4	none	0.0055	0.0055
+NOPRITZ2	all donor-separate pairs	171	L4	pH	0.0253	0.0319
+NOPRITZ2	all donor-separate pairs	171	L4	GTEx	0.0012	-0.0004
+NOPRITZ2	all donor-separate pairs	171	L4	Pritz	0.0225	0.0254
+NOPRITZ2	all donor-separate pairs	171	L4	Dai	0.0070	0.0072
+NOPRITZ2	all donor-separate pairs	171	L4	pH+GTEx	0.0127	0.0188
+NOPRITZ2	all donor-separate pairs	171	L4	pH+Pritz	0.0299	0.0311
+NOPRITZ2	all donor-separate pairs	171	L4	pH+Pritz+Dai	0.0264	0.0317
+NOPRITZ2	all donor-separate pairs	171	L4	all4	0.0106	0.0150
+NODAI	both-bulk pairs	36	L0	none	0.0437	0.0413
+NODAI	both-bulk pairs	36	L0	pH	0.0943	0.1026
+NODAI	both-bulk pairs	36	L0	GTEx	0.0632	0.0579
+NODAI	both-bulk pairs	36	L0	Pritz	0.0849	0.0842
+NODAI	both-bulk pairs	36	L0	Dai	0.0447	0.0405
+NODAI	both-bulk pairs	36	L0	pH+GTEx	0.0723	0.0731
+NODAI	both-bulk pairs	36	L0	pH+Pritz	0.0847	0.0951
+NODAI	both-bulk pairs	36	L0	pH+Pritz+Dai	0.0848	0.0943
+NODAI	both-bulk pairs	36	L0	all4	0.0761	0.0766
+NODAI	both-bulk pairs	36	L4	none	0.0416	0.0377
+NODAI	both-bulk pairs	36	L4	pH	0.0449	0.0537
+NODAI	both-bulk pairs	36	L4	GTEx	0.0018	0.0028
+NODAI	both-bulk pairs	36	L4	Pritz	0.0302	0.0348
+NODAI	both-bulk pairs	36	L4	Dai	0.0442	0.0441
+NODAI	both-bulk pairs	36	L4	pH+GTEx	0.0349	0.0370
+NODAI	both-bulk pairs	36	L4	pH+Pritz	0.0302	0.0298
+NODAI	both-bulk pairs	36	L4	pH+Pritz+Dai	0.0270	0.0266
+NODAI	both-bulk pairs	36	L4	all4	0.0309	0.0358
+NODAI	all donor-separate pairs	86	L0	none	0.0000	0.0023
+NODAI	all donor-separate pairs	86	L0	pH	0.0082	0.0082
+NODAI	all donor-separate pairs	86	L0	GTEx	0.0140	0.0113
+NODAI	all donor-separate pairs	86	L0	Pritz	0.0092	0.0098
+NODAI	all donor-separate pairs	86	L0	Dai	0.0044	0.0058
+NODAI	all donor-separate pairs	86	L0	pH+GTEx	0.0034	0.0086
+NODAI	all donor-separate pairs	86	L0	pH+Pritz	0.0077	0.0093
+NODAI	all donor-separate pairs	86	L0	pH+Pritz+Dai	0.0083	0.0096
+NODAI	all donor-separate pairs	86	L0	all4	0.0059	0.0090
+NODAI	all donor-separate pairs	86	L4	none	-0.0062	-0.0064
+NODAI	all donor-separate pairs	86	L4	pH	-0.0052	-0.0063
+NODAI	all donor-separate pairs	86	L4	GTEx	-0.0081	-0.0105
+NODAI	all donor-separate pairs	86	L4	Pritz	-0.0069	-0.0063
+NODAI	all donor-separate pairs	86	L4	Dai	-0.0069	-0.0071
+NODAI	all donor-separate pairs	86	L4	pH+GTEx	0.0003	-0.0029
+NODAI	all donor-separate pairs	86	L4	pH+Pritz	-0.0052	-0.0075
+NODAI	all donor-separate pairs	86	L4	pH+Pritz+Dai	-0.0045	-0.0057
+NODAI	all donor-separate pairs	86	L4	all4	0.0022	-0.0015

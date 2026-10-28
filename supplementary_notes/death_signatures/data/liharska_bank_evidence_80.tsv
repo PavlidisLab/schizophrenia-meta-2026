@@ -1,0 +1,86 @@
+# script: scripts/s1_bank_table.py, run 2026-10-18
+# inputs (sha256 first 12): lineage.json d21252ed845e; base80_studies.tsv 09dc9e52c590; recurrence_units.tsv 53ff51cba570; recurrence_genes.tsv dda5eb621c15
+# genes_of_383_named = genes of the 383 (published, brain, q_bh < 0.1) whose 'studies' column names the study; 0 also for studies that are not the representative of their same-data group
+# shares_PM_bank is 'no bank named in the text checked' where the available text (several studies: abstract only) names none of Harvard/HBTRC/McLean, Columbia/NYBB, Miami/UMBEB; it is not proof of absence
+# 2026-10-21: column cohort_cluster: for the seven studies that pool several banks, the set of cohort clusters (multibank_cluster_sets.tsv), including Pai 2019 (empty list, in no recurrence run); shares_PM_bank and the nine studies naming the Harvard bank are text evidence and do not depend on the cluster rule
+pmid	study	lineage_lane	lineage_banks	shares_PM_bank	pm_bank	bank_evidence	donor_table_in_repo	cohort_cluster	contributes_list_among_72	list_genes	genes_of_383_named
+11296301	Hakak 2001	mssm		no bank named in the text checked				cmc+mssm+pitt+libd	yes	83	36
+15018814	Kuromitsu 2001	stanley		no bank named in the text checked				stanley	yes	45	11
+15334603	Aston 2004	stanley		no bank named in the text checked				stanley	yes	32	7
+16038679	Altar 2005	stanley		no bank named in the text checked				stanley	yes	45	4
+18771015	Garbett 2008	pitt		no bank named in the text checked				cmc+mssm+pitt+libd	yes	13	3
+18778695	Narayan 2008	aus		no bank named in the text checked				aus	yes	1506	116
+18985160	Mudge 2008	brain_other		no bank named in the text checked				brain_other:18985160	yes	196	8
+19255580	Maycox 2009	brain_other	brain_other+harvard	yes	HBTRC (reused data)	second cohort = DLPFC BA9, 16 SZ vs 26 controls, 'Harvard Brain Bank' = Glatt 2005 raw data re-analysed (lineage.json tissue_n, lane_by; list hbb_ba9); first cohort Charing Cross Hospital (UK)	none for Maycox; Glatt 2005 table McLean 46 (Glatt is not a base study)	brain_other:19255580; harvard	yes	2033	128
+19834500	Chu 2009	stanley		no bank named in the text checked				stanley	yes	254	28
+20034564	Arion 2010	pitt		no bank named in the text checked				cmc+mssm+pitt+libd	yes	1090	122
+21091092	Schmitt 2011	brain_other		no bank named in the text checked				brain_other:21091092	yes	760	32
+21538462	Barnes 2011	brain_other		no bank named in the text checked				brain_other:21538462	yes	51	4
+22558445	Wu 2012	aus		no bank named in the text checked				aus	yes	768	94
+22869038	Fillman 2013	aus		no bank named in the text checked				aus	yes	592	44
+24169640	Hwang 2013	stanley		no bank named in the text checked				stanley	yes	142	30
+24594777	Kohen 2014	stanley		no bank named in the text checked				stanley	yes	16	3
+24628518	Pietersen 2014 (PV neurons)	harvard		yes	HBTRC	HBTRC at McLean Hospital; same subjects as the pyramidal-neuron study (lineage.json parent; data/raw/24628518)	McLean 16 (GSE46509 table)	harvard	yes	692	40
+24702465	Pietersen 2014	harvard		yes	HBTRC	Harvard Brain Tissue Resource Center (HBTRC), McLean Hospital (lineage.json parent; data/raw/24702465 abstract/GEO text); same 16 subjects as the PV series (donor_overlap report)	McLean 18 (GSE37981 table)	harvard	yes	862	45
+24776767	Xiao 2014	brain_other		no bank named in the text checked				brain_other:24776767	yes	4041	302
+25113377	Zhao 2015	stanley		no bank named in the text checked				stanley	yes	104	8
+25560755	Arion 2015	pitt		no bank named in the text checked				cmc+mssm+pitt+libd	yes	71	9
+26585218	Mauney 2015			no bank named in the text checked				harvard	yes	447	13
+27622934	Darby 2016	stanley		no bank named in the text checked				stanley	yes	10	6
+27668389	Fromer 2016	cmc		no bank named in the text checked				cmc+mssm+pitt+libd	yes	669	36
+27801890	Scarr 2018	aus		no bank named in the text checked				aus	yes	98	15
+27898074	Kim 2016	stanley		no bank named in the text checked				stanley	yes	56	10
+27940260	Voisey 2017	brain_other		no bank named in the text checked				brain_other:27940260	yes	1132	103
+28123834	Mladinov 2016	brain_other		no bank named in the text checked				brain_other:28123834	yes	22	2
+28809853	Chang 2017	libd		no bank named in the text checked				cmc+mssm+pitt+libd	yes	854	97
+29112193	Enwright 2018	pitt		no bank named in the text checked				cmc+mssm+pitt+libd	yes	865	75
+29463818	Scarr 2018	aus		no bank named in the text checked				aus	yes	94	15
+30050107	Jaffe 2018	libd		no bank named in the text checked				cmc+mssm+pitt+libd	yes	761	57
+31123247	Lanz 2019	pitt		no bank named in the text checked				cmc+mssm+pitt+libd	yes	2016	227
+31174959	Collado-Torres 2019	libd		no bank named in the text checked				cmc+mssm+pitt+libd	yes	275	43
+31288836	Mendizabal 2019	brain_other	brain_other+harvard	yes	HBTRC+UMBEB	'NIH NeuroBioBank (The Harvard Brain Tissue Resource Center ...; ... University of Miami Brain Endowment Bank ...)' (data/raw/31288836); donor table McLean 9, Miami 2, CT Lab 37, HSB 13	McLean 9, Miami 2 (controls)	brain_other:31288836; harvard	yes	301	15
+32006661	Santarelli 2019	aus		no bank named in the text checked				aus	yes	191	15
+32152472	Perez 2021	brain_other		no bank named in the text checked				brain_other:32152472	yes	266	14
+32203495	Jaffe 2020	libd		no bank named in the text checked				cmc+mssm+pitt+libd	yes	25	0
+32513544	Zeppillo 2022	pritzker		no bank named in the text checked				pritzker	yes	328	72
+32566292	Bakshi 2020	stanley		no bank named in the text checked				stanley	yes	473	53
+33184259	Maas 2020	brain_other		no bank named in the text checked				brain_other:33184259	yes	135	25
+33558674	Akula 2021	cmc		no bank named in the text checked				cmc+mssm+pitt+libd	yes	22	4
+34004381	Gebicke-Haerter 2021	brain_other		no bank named in the text checked				brain_other:34004381	yes	504	13
+34059796	Weissleder 2021	stanley		no bank named in the text checked				stanley	yes	1279	114
+34272489	Wu 2021	mssm		no bank named in the text checked				cmc+mssm+pitt+libd	yes	243	7
+34440415	Lindholm Carlström 2021	harvard		yes	HBTRC	'international brain banks (Harvard Brain Tissue Resource Center, MRC Edinburgh Brain Bank, the University of Mississippi Medical Center and the London Brain Bank)' (data/raw/34440415/pmc_fulltext.txt)	none	harvard	yes	68	12
+36223459	Batiuk 2022	brain_other		no bank named in the text checked				brain_other:36223459	yes	173	10
+36319771	Benjamin 2022	libd		no bank named in the text checked				cmc+mssm+pitt+libd	yes	2566	137
+36932057	Schulmann 2023	cmc		no bank named in the text checked				cmc+mssm+pitt+libd	yes	2083	146
+37498306	Arihisa 2023	brain_other		no bank named in the text checked				brain_other:37498306	yes	113	20
+38448582	Ling 2024	harvard		yes	HBTRC	191 donors from the Harvard Brain Tissue Resource Center (McLean) / NIH NeuroBioBank (lineage.json lane_by; data/raw/38448582)	McLean 191	harvard	yes	189	32
+38781388	Ruzicka 2024	mssm	mssm+harvard	yes	HBTRC	McLean/Harvard Brain Tissue Resource Center cohort, 24 SZ + 24 control (+ Mount Sinai 41 SZ + 51 control) (lineage.json bank_names; data/raw/38781388)	McLean 48, MSSM 92	cmc+mssm+pitt+libd; harvard	yes	2449	184
+39526318	Zhang 2026	stanley		no bank named in the text checked				stanley	yes	2787	84
+41174894	Yalcinbas 2025	libd		no bank named in the text checked				cmc+mssm+pitt+libd	yes	158	7
+41210297	Mas 2025	brain_other		no bank named in the text checked				brain_other:41210297	yes	4	0
+41567988	Mendez-Victoriano 2026	stanley	stanley+aus	no bank named in the text checked				aus; stanley	yes	203	42
+41757081	Kwon 2026	libd		no bank named in the text checked				cmc+mssm+pitt+libd	yes	1010	107
+41942462	Singh 2026	cmc		no bank named in the text checked				cmc+mssm+pitt+libd	yes	841	45
+42461238	Dean 2026	aus		no bank named in the text checked				aus	yes	46	17
+42778699	Lee 2026 (PsychAD)	mssm	mssm+cmc	no bank named in the text checked				cmc+mssm+pitt+libd	yes	139	16
+17822540	Saetre 2007	brain_other	brain_other+harvard+stanley	yes	HBTRC	three banks: Stanley (30), Maudsley (48), Harvard Brain Tissue Resource Centre (32) (lineage.json parent; data/raw/17822540)	none	brain_other:17822540; harvard; stanley	yes	136	31
+38648100	Zhu 2024	brain_other		no bank named in the text checked				brain_other:38648100	yes	1687	108
+16236523	Weidenhofer 2006	brain_other		no bank named in the text checked				aus	yes	47	6
+18445270	Bowden 2008	aus		no bank named in the text checked				aus	yes	66	4
+36192459	Puvogel 2022	stanley		no bank named in the text checked				stanley	yes	13	2
+39237723	Arbabi 2025	pitt		no bank named in the text checked				cmc+mssm+pitt+libd	yes	163	15
+39397771	Alsema 2025	stanley		no bank named in the text checked				stanley	yes	106	16
+23147385	Chen 2013	stanley		no bank named in the text checked				stanley	yes	1378	112
+25981335	Maschietto 2015	stanley		no bank named in the text checked					no (empty list, dropped)	0	0
+25487697	de Baumont 2015	brain_other		no bank named in the text checked					no (empty list, dropped)	0	0
+28754123	Ramaker 2017	pritzker		no bank named in the text checked				pritzker	yes	97	11
+28476208	Arion 2017	pitt		no bank named in the text checked					no (empty list, dropped)	0	0
+19088852	Harris 2008	stanley		no bank named in the text checked					no (empty list, dropped)	0	0
+30468562	Abdolmaleky 2019	stanley		no bank named in the text checked					no (empty list, dropped)	0	0
+27661005	Hu 2016	stanley		no bank named in the text checked				stanley	yes	965	151
+14743183	Iwamoto 2004	stanley		no bank named in the text checked					no (empty list, dropped)	0	0
+15563509	Iwamoto 2005	stanley		no bank named in the text checked					no (empty list, dropped)	0	0
+31053723	Pai 2019 (own list)	brain_other	brain_other+harvard+pitt	yes	HBTRC+UMBEB	NIH NeuroBioBank Pittsburgh, Harvard BTRC, Sepulveda, Miami (lineage.json tissue_n; data/raw/31053723). Derived list holds 0 genes, so the study is dropped from the 72 lists	McLean 24, Maryland 34, Pittsburgh 1, Sepulveda 24 (no Miami rows)	brain_other:31053723; cmc+mssm+pitt+libd; harvard	no (empty list, dropped)	0	0
+36302706	Ketchesin 2023 (own list)	pitt		no bank named in the text checked				cmc+mssm+pitt+libd	yes	608	55
+39227716	Frohlich 2024 (own list)	aus		no bank named in the text checked				aus	yes	551	49

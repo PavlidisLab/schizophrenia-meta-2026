@@ -1,0 +1,22 @@
+# copied 2026-10-21 as the source table of a hidden comment in supplement.md (Note 12, datasets with no DE genes); original location: <analysis repo> (analyses/studies_without_gene_lists/results/c4_statements_of_zero_genes.tsv)
+# claim: lists or studies whose recorded text states that no gene passed (SZ vs control), the 113 'no list published' and others
+# script: analyses/studies_without_gene_lists/c_published_lists.py
+# run: 2026-10-12
+# source: primary_lists.json sha256 5bdce9b94e15
+# source: recurrence_units.tsv sha256 19df83c2cb0c
+# source: corpus/lineage.json sha256 ae68dae27337
+# source: analyses/summary.tsv sha256 9ef302baa9a0
+# source: corpus/corpus_exclusions.json sha256 00c5aecb15c9
+# not counted: Worf 2025 (0 genes at gene level for the pooled BD, MDD and SZ 'affected' group, not SZ only); Maekawa 2015 (miRNA microarray, in corpus_exclusions.json); candidate-gene papers that report no difference for a handful of named genes (Rastogi 2009, Fusté 2013, Kozlova 2022)
+list	label	pmid	lineage_study_status	threshold_recorded	quoted	source	in_corpus_exclusions
+19088852__none	Harris 2008	19088852	reproduced	FDR (level not stated)	no gene significant after FDR	analyses/summary.tsv status	False
+29463818__none_ba9	Scarr 2018 (frontal pole)	29463818	extracted	FDR 0.05 (secondary analysis)	the paper's secondary FDR 0.05 analysis found none	analyses/summary.tsv status	False
+29463818__none_ba33	Scarr 2018 (frontal pole)	29463818	extracted	FDR 0.05 (secondary analysis)	the paper's secondary FDR 0.05 analysis found none	analyses/summary.tsv status	False
+16604350__none	Vawter 2006	16604350	extracted	multiple-testing correction (method not stated)	none surviving multiple-testing correction	analyses/summary.tsv status	False
+27622934__none_ofc_sz	Darby 2016	27622934	extracted	corrected p (method not stated)	In OFC all genes had a corrected p value of 1 for differential expression in SZ	analyses/summary.tsv status	False
+41942462__sd3b_nonneuron_fdr05	Singh 2026	41942462	extracted	FDR < 0.05	No FDR-significant changes were observed in the non-neuronal samples	analyses/summary.tsv status	False
+18992130__none	Struyf 2008	18992130	not DE	q value, pi0 = 1.0	no significant features	analyses/summary.tsv status	False
+37861850__suppmat_table3_scz_fdr10	Hemmings 2022	37861850	extracted	DESeq2 FDR < 0.1	DESeq2 FDR < 0.1 gives 0 genes, as stated	analyses/primary_lists.json reason	False
+14993118__(in the 113)	Konradi 2004	14993118	no list published	FDR 2.9% (the authors' threshold)	was not met by a single gene in the schizophrenia group	corpus/lineage.json reason	False
+18545665__(in the 113)	Matigian 2008	18545665	no list published	Benjamini-Hochberg correction (level not stated in the reason text)	no gene significant after Benjamini-Hochberg correction in either tissue	corpus/lineage.json reason	False
+37454787__(in the 113)	Ma 2024	37454787	no list published	FDR < 0.05	no gene at FDR < 0.05 for any diagnosis contrast	corpus/lineage.json reason	False

@@ -1,0 +1,26 @@
+# input: ph_axis_v2_2026-10-14/reliability_summary.tsv sha256 14a9a535bd57; reliability_between_collections_point.tsv sha256 68d3d2afd2c7; pH axis v2 = control z over ten dataset-regions (ph_axis_v2_2026-10-14/axis_v2_controls.tsv.gz)
+# input: figures/data/figures_data_quality/panel_c.tsv of the manuscript repo sha256 64c51b03a54d (non-axis rows copied)
+# figure: figures_data_quality panel c; script: analyses/figures_data_quality_2026-10-10/build_figure.py (rows other than the recurrent-gene rows); recurrent-gene rows: core80_work_2026-10-16/P11/fdq/panel_c_core80.py (formula of comb_stats() in within_group_ph.R)
+# reliability estimates held in the project files; lo/hi = 2.5% and 97.5% quantiles of the 200 stored donor splits (GTEx only); see "what" for the definition of each row
+# input: analyses/fairness_sample_level/same_donors_pitt/results/g_individuals_summary.tsv sha256 a9e448b24f8a
+# input: analyses/psychad_cellxgene/results/e_individuals_identify_auroc_summary.tsv sha256 2982a0a4076e
+# input: analyses/libd_brainseq/analysis/results/e_individuals_regions_identify_auroc_summary.tsv sha256 fbbd8b0ad308
+# input: analyses/fairness_sample_level/same_donors_pitt/results/i_dx_neighbours_summary.tsv sha256 41230489b9d6
+# input: fig03/fig03_a_c_d_agreement_units.tsv sha256 9cb0c00db631
+# input: fig03/fig03_a_c_d_agreement_summary.tsv sha256 f9bfaa818fb3
+# input: analyses/residual_after_ph_agonal_2026-10-09/_remotereliability/results/gtex_reliability_split_summary.tsv sha256 c3fc7d5b9639
+# input: analyses/residual_after_ph_agonal_2026-10-09/_remotereliability/results/gtex_reliability_variance_bound.tsv sha256 b9fb553adf07
+# input: analyses/residual_after_ph_agonal_2026-10-09/results/axis_reliability_raw.tsv sha256 1c03e5aedf89
+# input: figure_data/ph_within_group/combined_per_gene.tsv (unit independent_5, columns slope_std_ctl and se_std_ctl) sha256 e3837e472c84; base78_2026-10-16/B80/out/recurrent_sets.tsv sha256 3c42f67cdd7a
+measure	reliability	lo	hi	what
+GTEx slow-vs-fast-death axis   two halves of different donors	0.93604	0.8841	0.9641	GTEx death-speed axis; Spearman-Brown reliability from 200 random donor splits (mean; 2.5% to 97.5% of splits)
+upper bound from shuffled labels	0.94237			GTEx death-speed axis; 1 - permuted/observed axis variance
+same donors in all 3 regions   (overstated)	0.961			stored three-region value; regions share donors so it overstates
+Control-pH axis, 5 collections combined	0.7174	0.5731	0.8185	pH axis v2; Spearman-Brown of the mean pairwise Spearman between the 5 collections (Stanley, Pitt, BA10, Pritzker, NSW), one Stouffer z per collection; lo/hi = point +- 1.96 bootstrap SE (200 donor bootstraps, Fisher z scale); ph_axis_v2_2026-10-14/reliability_summary.tsv row "v2 bulk (primary assignment)"
+4 collections combined	0.6701	0.5204	0.7798	pH axis v2; Spearman-Brown to 4 collections of the same mean pairwise Spearman; interval as above
+3 collections combined	0.6037	0.4522	0.7213	pH axis v2; Spearman-Brown to 3 collections of the same mean pairwise Spearman; interval as above
+1 collection alone	0.3367	0.2258	0.4391	pH axis v2; mean pairwise Spearman between the five collections; interval as above
+pH effect among controls   all genes (5 datasets)	0.78634			rel_ctl = 1 - mean(SE^2)/var(slopes) of control pH slopes, independent 5 datasets
+383 recurrent genes	0.90219			same, 371 measured genes of the 383 (recurrent set, study tier q < 0.1)
+107 genes in 10 or more lists	0.91041			same, 105 measured genes of the 107 (count set)
+2,422 genes in 5 or more lists	0.88085			same, 2329 measured genes of the 2,422 (5-or-more sensitivity set)

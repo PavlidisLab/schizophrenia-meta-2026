@@ -1,0 +1,199 @@
+# build_modules.py (module_retest); inputs sha256 prefixes: side-studies/coexpression_claims_survey/bank_overlap_claims.tsv 791e7832d415; side-studies/coexpression_claims_survey/coexpression_inventory.tsv 779209d35f25; analyses/coexpression_modules_2026-10-08/modules_axes_all.tsv 2e0f28372f28; analyses/coexpression_modules_2026-10-08/modules_batch1.tsv 22df140c85e4; analyses/coexpression_modules_2026-10-08/modules_batch2.tsv 472896209bd9; analyses/coexpression_modules_2026-10-08/modules_batch3.tsv 58102e56d98a; analyses/coexpression_modules_2026-10-08/modules_batch4.tsv ec1360023188; data/raw/30545856/zotero/aat8127_table_s5.xlsx a6c8ebbdb64f; side-studies/coexpression_claims_survey/copa_kang_oldham_2026/biorxiv_2026.08.25.747130_media-14.xlsx 5d4b65ca8eb3
+# one row per module with a gene list and a stated direction in schizophrenia (direction +1 = higher, -1 = lower in SZ, as the source states); lineage = discovery bank lineage labels (bank_overlap.py rules)
+module_uid	source	pmid	paper	module	direction	sz_linked	stated_significant	lineage	region	n_genes	stat
+M0000	paper_supplement	26077692	Kim 2016 (hippocampus)	S_M3	-1	yes		Stanley/SMRI	hippocampus	539	
+M0001	paper_supplement	26077692	Kim 2016 (hippocampus)	S_M8	1	yes		Stanley/SMRI	hippocampus	539	
+M0002	paper_supplement	26077692	Kim 2016 (hippocampus)	S_M13	1	yes		Stanley/SMRI	hippocampus	150	
+M0003	paper_supplement	26077692	Kim 2016 (hippocampus)	S_M16	1	yes		Stanley/SMRI	hippocampus	72	
+M0004	paper_supplement	26077692	Kim 2016 (hippocampus)	S_MA_M13	1	yes		Stanley/SMRI	hippocampus	181	
+M0005	paper_supplement	26077692	Kim 2016 (hippocampus)	S_MA_M20	1	yes		Stanley/SMRI	hippocampus	409	
+M0006	paper_supplement	30670680	Zhu 2019	E1	-1	yes		BA10/other;NSW/VBBN;Stanley/SMRI;unnamed	prefrontal cortex	500	
+M0007	paper_supplement	30670680	Zhu 2019	E2	1	yes		BA10/other;NSW/VBBN;Stanley/SMRI;unnamed	prefrontal cortex	104	
+M0008	paper_supplement	30670680	Zhu 2019	E1_M4	-1	yes		BA10/other;NSW/VBBN;Stanley/SMRI;unnamed	prefrontal cortex	208	
+M0009	paper_supplement	38781388	Ruzicka 2024	Ex_SZCS	1	yes		CMC lineage;McLean/Harvard	prefrontal cortex (snRNA-seq)	500	
+M0010	paper_supplement	38781388	Ruzicka 2024	In_SZCS	1	yes		CMC lineage;McLean/Harvard	prefrontal cortex (snRNA-seq)	500	
+M0011	paper_supplement	38781388	Ruzicka 2024	Ex_SZTR	-1	yes		CMC lineage;McLean/Harvard	prefrontal cortex (snRNA-seq)	500	
+M0012	paper_supplement	31127088	Guan 2019	M1	-1	yes		Stanley/SMRI	anterior cingulate cortex (BA24, SMRI)	318	
+M0013	paper_supplement	31127088	Guan 2019	M2	1	yes		Stanley/SMRI	anterior cingulate cortex (BA24, SMRI)	210	
+M0014	paper_supplement	31127088	Guan 2019	M3	-1	yes		Stanley/SMRI	anterior cingulate cortex (BA24, SMRI)	59	
+M0015	paper_supplement	31127088	Guan 2019	M4	1	yes		Stanley/SMRI	anterior cingulate cortex (BA24, SMRI)	56	
+M0016	paper_supplement	31127088	Guan 2019	M5	1	yes		Stanley/SMRI	anterior cingulate cortex (BA24, SMRI)	55	
+M0017	paper_supplement	31127088	Guan 2019	M6	-1	yes		Stanley/SMRI	anterior cingulate cortex (BA24, SMRI)	49	
+M0018	paper_supplement	31127088	Guan 2019	M7	1	yes		Stanley/SMRI	anterior cingulate cortex (BA24, SMRI)	46	
+M0019	paper_supplement	31127088	Guan 2019	M8	1	yes		Stanley/SMRI	anterior cingulate cortex (BA24, SMRI)	43	
+M0020	paper_supplement	31127088	Guan 2019	M9	-1	yes		Stanley/SMRI	anterior cingulate cortex (BA24, SMRI)	37	
+M0021	paper_supplement	31127088	Guan 2019	M11	1	yes		Stanley/SMRI	anterior cingulate cortex (BA24, SMRI)	30	
+M0022	paper_supplement	31127088	Guan 2019	M12	1	yes		Stanley/SMRI	anterior cingulate cortex (BA24, SMRI)	30	
+M0023	paper_supplement	31127088	Guan 2019	M13	-1	yes		Stanley/SMRI	anterior cingulate cortex (BA24, SMRI)	28	
+M0024	paper_supplement	31127088	Guan 2019	M16	-1	yes		Stanley/SMRI	anterior cingulate cortex (BA24, SMRI)	26	
+M0025	paper_supplement	31127088	Guan 2019	M18	1	yes		Stanley/SMRI	anterior cingulate cortex (BA24, SMRI)	24	
+M0026	paper_supplement	31127088	Guan 2019	M19	-1	yes		Stanley/SMRI	anterior cingulate cortex (BA24, SMRI)	24	
+M0027	paper_supplement	31127088	Guan 2019	M20	1	yes		Stanley/SMRI	anterior cingulate cortex (BA24, SMRI)	23	
+M0028	paper_supplement	41639050	Nersisyan 2026	mRNA_cluster_1	1	yes		CMC lineage	prefrontal cortex (HBCC)	283	
+M0029	paper_supplement	41639050	Nersisyan 2026	mRNA_cluster_2	-1	yes		CMC lineage	prefrontal cortex (HBCC)	220	
+M0030	paper_supplement	41639050	Nersisyan 2026	mRNA_cluster_3	-1	yes		CMC lineage	prefrontal cortex (HBCC)	286	
+M0031	paper_supplement	41639050	Nersisyan 2026	mRNA_cluster_4	-1	yes		CMC lineage	prefrontal cortex (HBCC)	231	
+M0032	paper_supplement	41639050	Nersisyan 2026	mRNA_cluster_5	1	yes		CMC lineage	prefrontal cortex (HBCC)	305	
+M0033	paper_supplement	41639050	Nersisyan 2026	mRNA_cluster_6	1	yes		CMC lineage	prefrontal cortex (HBCC)	117	
+M0034	paper_supplement	27898074	Kim 2016 (choroid plexus)	S_M16	1	yes		Stanley/SMRI;unnamed	choroid plexus (AC collection)	629	
+M0035	paper_supplement	27898074	Kim 2016 (choroid plexus)	S_Co_M16	1	yes		Stanley/SMRI;unnamed	choroid plexus (pooled)	352	
+M0036	paper_supplement	31535015	Doostparast Torshizi 2019	TCF4_regulon_CMC	1	yes		CMC lineage	DLPFC (CommonMind Consortium)	54	
+M0037	paper_supplement	31535015	Doostparast Torshizi 2019	NR1H2_regulon_CMC	1	yes		CMC lineage	DLPFC (CommonMind Consortium)	46	
+M0038	paper_supplement	31535015	Doostparast Torshizi 2019	HDAC9_regulon_CMC	1	yes		CMC lineage	DLPFC (CommonMind Consortium)	26	
+M0039	paper_supplement	31535015	Doostparast Torshizi 2019	ZNF436_regulon_CMC	-1	yes		CMC lineage	DLPFC (CommonMind Consortium)	28	
+M0040	paper_supplement	31535015	Doostparast Torshizi 2019	ZNF10_regulon_CMC	-1	yes		CMC lineage	DLPFC (CommonMind Consortium)	29	
+M0041	paper_supplement	31535015	Doostparast Torshizi 2019	TCF4_regulon_CNON	1	unknown		CMC lineage	cultured olfactory neuroepithelium-derived neuronal cells (CNON; not postmortem brain)	54	
+M0042	paper_supplement	31535015	Doostparast Torshizi 2019	ZNF436_regulon_CNON	-1	unknown		CMC lineage	cultured olfactory neuroepithelium-derived neuronal cells (CNON; not postmortem brain)	38	
+M0043	paper_supplement	36424395	Chen 2023	IRM4	-1	yes		BA10/other;NSW/VBBN	brain (cross-disorder microarray/RNA-seq meta-network)	417	
+M0044	paper_supplement	41714609	Smith 2026	geneM1	1	yes		CMC lineage	subgenual anterior cingulate cortex (sgACC)	2691	
+M0045	paper_supplement	41714609	Smith 2026	geneM14	-1	yes		CMC lineage	subgenual anterior cingulate cortex (sgACC)	259	
+M0046	paper_supplement	41714609	Smith 2026	geneM15	-1	yes		CMC lineage	subgenual anterior cingulate cortex (sgACC)	88	
+M0047	paper_supplement	41714609	Smith 2026	geneM2	1	yes		CMC lineage	subgenual anterior cingulate cortex (sgACC)	1985	
+M0048	paper_supplement	41714609	Smith 2026	geneM22	1	yes		CMC lineage	subgenual anterior cingulate cortex (sgACC)	55	
+M0049	paper_supplement	41714609	Smith 2026	geneM23	1	yes		CMC lineage	subgenual anterior cingulate cortex (sgACC)	42	
+M0050	paper_supplement	41714609	Smith 2026	geneM4	1	yes		CMC lineage	subgenual anterior cingulate cortex (sgACC)	800	
+M0051	paper_supplement	41714609	Smith 2026	geneM9	-1	yes		CMC lineage	subgenual anterior cingulate cortex (sgACC)	446	
+M0052	paper_supplement	30224231	Kim 2019	Sch_M14	1	yes		Stanley/SMRI	frontal cortex; SMRI (Stanley) RNA-seq, 62 SZ/51 CTL	127	
+M0053	paper_supplement	30224231	Kim 2019	Sch_M2	-1	yes		Stanley/SMRI	frontal cortex; SMRI (Stanley) RNA-seq, 62 SZ/51 CTL	481	
+M0054	paper_supplement	33079616	Lin 2021	exp_magenta	1	yes		CMC lineage	DLPFC; Illumina expression array (discovery)	229	
+M0055	paper_supplement	33079616	Lin 2021	exp_yellow	1	yes		CMC lineage	DLPFC; Illumina expression array (discovery)	892	
+M0056	paper_supplement	36385761	Balasubramanian 2022	M1	-1	yes		CMC lineage;Stanley/SMRI	cortex; BrainGVEX (PFC, syn4590909) + ASD pan-cortical (syn11242290) RNA-seq	499	
+M0057	paper_supplement	36385761	Balasubramanian 2022	M3	-1	yes		CMC lineage;Stanley/SMRI	cortex; BrainGVEX (PFC, syn4590909) + ASD pan-cortical (syn11242290) RNA-seq	578	
+M0058	paper_supplement	36385761	Balasubramanian 2022	M8	-1	yes		CMC lineage;Stanley/SMRI	cortex; BrainGVEX (PFC, syn4590909) + ASD pan-cortical (syn11242290) RNA-seq	836	
+M0059	paper_supplement	31642882	MacDonald 2020	hom_Turquoise	-1	yes		unnamed	primary auditory cortex (A1) grey-matter homogenate; targeted MS, 402 proteins	137	
+M0060	paper_supplement	31642882	MacDonald 2020	syn_Blue	-1	yes		unnamed	primary auditory cortex (A1) synaptosome; targeted MS, 155 enriched proteins	64	
+M0061	paper_supplement	31642882	MacDonald 2020	syn_Red	-1	yes		unnamed	primary auditory cortex (A1) synaptosome; targeted MS, 155 enriched proteins	29	
+M0062	paper_supplement	33805976	Liu 2021	factor_1	-1	yes		CMC lineage	DLPFC RNA-seq (subject IDs MSSM_RNA_PFC, Suppl Table 1)	339	
+M0063	paper_supplement	33805976	Liu 2021	factor_2	1	yes		CMC lineage	DLPFC RNA-seq (subject IDs MSSM_RNA_PFC, Suppl Table 1)	165	
+M0064	paper_supplement	33805976	Liu 2021	factor_5	1	unknown		CMC lineage	DLPFC RNA-seq (subject IDs MSSM_RNA_PFC, Suppl Table 1)	33	
+M0065	paper_supplement	36090817	Sadeghi 2022	M13	-1	yes		CMC lineage;Stanley/SMRI	multi-region brain (pooled cross-condition RNA-seq, 535 Scz samples; ComBat-merged)	293	
+M0066	paper_supplement	36090817	Sadeghi 2022	M14	1	yes		CMC lineage;Stanley/SMRI	multi-region brain (pooled cross-condition RNA-seq, 535 Scz samples; ComBat-merged)	258	
+M0067	paper_supplement	36090817	Sadeghi 2022	M15	-1	yes		CMC lineage;Stanley/SMRI	multi-region brain (pooled cross-condition RNA-seq, 535 Scz samples; ComBat-merged)	471	
+M0068	paper_supplement	36090817	Sadeghi 2022	M2	1	yes		CMC lineage;Stanley/SMRI	multi-region brain (pooled cross-condition RNA-seq, 535 Scz samples; ComBat-merged)	992	
+M0069	paper_supplement	36090817	Sadeghi 2022	M3	-1	yes		CMC lineage;Stanley/SMRI	multi-region brain (pooled cross-condition RNA-seq, 535 Scz samples; ComBat-merged)	950	
+M0070	paper_supplement	36090817	Sadeghi 2022	M4	-1	yes		CMC lineage;Stanley/SMRI	multi-region brain (pooled cross-condition RNA-seq, 535 Scz samples; ComBat-merged)	728	
+M0071	paper_supplement	36090817	Sadeghi 2022	M5	1	yes		CMC lineage;Stanley/SMRI	multi-region brain (pooled cross-condition RNA-seq, 535 Scz samples; ComBat-merged)	572	
+M0072	paper_supplement	36090817	Sadeghi 2022	M8	-1	yes		CMC lineage;Stanley/SMRI	multi-region brain (pooled cross-condition RNA-seq, 535 Scz samples; ComBat-merged)	459	
+M0073	paper_supplement	36090817	Sadeghi 2022	M9	-1	yes		CMC lineage;Stanley/SMRI	multi-region brain (pooled cross-condition RNA-seq, 535 Scz samples; ComBat-merged)	458	
+M0074	paper_supplement	29081874	Zhu 2017	M2c_sLED_primary	-1	yes		CMC lineage	cortex (CMC)	22	
+M0075	paper_supplement	29081874	Zhu 2017	M2c_sLED_secondary	-1	yes		CMC lineage	cortex (CMC)	85	
+M0076	paper_supplement	31123247	Lanz 2019	steelblue	-1	yes		CMC lineage	DLPFC, hippocampus, striatum (consensus across regions)	125	
+M0077	paper_supplement	31123247	Lanz 2019	turquoise	-1	yes		CMC lineage	DLPFC, hippocampus, striatum (consensus across regions)	1687	
+M0078	paper_supplement	31123247	Lanz 2019	yellow	-1	yes		CMC lineage	DLPFC, hippocampus, striatum (consensus across regions)	968	
+M0079	paper_supplement	31123247	Lanz 2019	magenta	-1	yes		CMC lineage	DLPFC, hippocampus, striatum (consensus across regions)	407	
+M0080	paper_supplement	31123247	Lanz 2019	lightcyan	-1	yes		CMC lineage	DLPFC, hippocampus, striatum (consensus across regions)	231	
+M0081	paper_supplement	31123247	Lanz 2019	violet	1	yes		CMC lineage	DLPFC, hippocampus, striatum (consensus across regions)	121	
+M0082	paper_supplement	31123247	Lanz 2019	darkturquoise	1	yes		CMC lineage	DLPFC, hippocampus, striatum (consensus across regions)	162	
+M0083	paper_supplement	31123247	Lanz 2019	paleturquoise	1	yes		CMC lineage	DLPFC, hippocampus, striatum (consensus across regions)	122	
+M0084	paper_supplement	31123247	Lanz 2019	darkred	1	yes		CMC lineage	DLPFC, hippocampus, striatum (consensus across regions)	175	
+M0085	paper_supplement	31123247	Lanz 2019	saddlebrown	1	yes		CMC lineage	DLPFC, hippocampus, striatum (consensus across regions)	127	
+M0086	paper_supplement	31123247	Lanz 2019	midnightblue	1	yes		CMC lineage	DLPFC, hippocampus, striatum (consensus across regions)	236	
+M0087	paper_supplement	31123247	Lanz 2019	plum1	1	yes		CMC lineage	DLPFC, hippocampus, striatum (consensus across regions)	61	
+M0088	paper_supplement	36932057	Schulmann 2023	M9	-1	yes		CMC lineage	DLPFC (CMC_HBCC human; consensus with CMC_macaque)	268	
+M0089	paper_supplement	36932057	Schulmann 2023	M10	-1	yes		CMC lineage	DLPFC (CMC_HBCC human; consensus with CMC_macaque)	241	
+M0090	paper_supplement	36932057	Schulmann 2023	M13	-1	yes		CMC lineage	DLPFC (CMC_HBCC human; consensus with CMC_macaque)	175	
+M0091	paper_supplement	36932057	Schulmann 2023	M25	-1	yes		CMC lineage	DLPFC (CMC_HBCC human; consensus with CMC_macaque)	112	
+M0092	paper_supplement	38390236	Lian 2024	brown_hub120	1	yes		CMC lineage	prefrontal cortex (GSE53987)	120	
+M0093	Gandal2018_S5	30545856	Gandal 2018	geneM3	1	yes	yes	BA10/other;NSW/VBBN;unnamed	cortex	1747	SCZ t 3.57 fdr 0.00236
+M0094	Gandal2018_S5	30545856	Gandal 2018	geneM4	-1	no	no	BA10/other;NSW/VBBN;unnamed	cortex	1388	SCZ t -1.67 fdr 0.163
+M0095	Gandal2018_S5	30545856	Gandal 2018	geneM5	1	yes	yes	BA10/other;NSW/VBBN;unnamed	cortex	579	SCZ t 6.10 fdr 3.25e-08
+M0096	Gandal2018_S5	30545856	Gandal 2018	geneM27	-1	no	no	BA10/other;NSW/VBBN;unnamed	cortex	80	SCZ t -1.64 fdr 0.166
+M0097	Gandal2018_S5	30545856	Gandal 2018	geneM2	-1	yes	yes	BA10/other;NSW/VBBN;unnamed	cortex	2203	SCZ t -3.18 fdr 0.00671
+M0098	Gandal2018_S5	30545856	Gandal 2018	geneM1	-1	no	no	BA10/other;NSW/VBBN;unnamed	cortex	2645	SCZ t -0.13 fdr 0.904
+M0099	Gandal2018_S5	30545856	Gandal 2018	geneM8	-1	yes	yes	BA10/other;NSW/VBBN;unnamed	cortex	507	SCZ t -2.77 fdr 0.0174
+M0100	Gandal2018_S5	30545856	Gandal 2018	geneM24	-1	no	no	BA10/other;NSW/VBBN;unnamed	cortex	89	SCZ t -0.31 fdr 0.788
+M0101	Gandal2018_S5	30545856	Gandal 2018	geneM12	-1	yes	yes	BA10/other;NSW/VBBN;unnamed	cortex	183	SCZ t -2.37 fdr 0.043
+M0102	Gandal2018_S5	30545856	Gandal 2018	geneM14	-1	no	no	BA10/other;NSW/VBBN;unnamed	cortex	151	SCZ t -0.62 fdr 0.599
+M0103	Gandal2018_S5	30545856	Gandal 2018	geneM18	-1	yes	yes	BA10/other;NSW/VBBN;unnamed	cortex	116	SCZ t -2.90 fdr 0.0134
+M0104	Gandal2018_S5	30545856	Gandal 2018	geneM26	-1	yes	yes	BA10/other;NSW/VBBN;unnamed	cortex	83	SCZ t -7.19 fdr 4.9e-11
+M0105	Gandal2018_S5	30545856	Gandal 2018	geneM9	1	no	no	BA10/other;NSW/VBBN;unnamed	cortex	262	SCZ t 0.56 fdr 0.638
+M0106	Gandal2018_S5	30545856	Gandal 2018	geneM10	1	yes	yes	BA10/other;NSW/VBBN;unnamed	cortex	232	SCZ t 2.60 fdr 0.0247
+M0107	Gandal2018_S5	30545856	Gandal 2018	geneM19	1	yes	yes	BA10/other;NSW/VBBN;unnamed	cortex	115	SCZ t 3.29 fdr 0.00503
+M0108	Gandal2018_S5	30545856	Gandal 2018	geneM17	1	no	no	BA10/other;NSW/VBBN;unnamed	cortex	118	SCZ t 2.10 fdr 0.0697
+M0109	Gandal2018_S5	30545856	Gandal 2018	geneM33	-1	yes	yes	BA10/other;NSW/VBBN;unnamed	cortex	61	SCZ t -2.95 fdr 0.0116
+M0110	Gandal2018_S5	30545856	Gandal 2018	geneM23	-1	no	no	BA10/other;NSW/VBBN;unnamed	cortex	93	SCZ t -2.17 fdr 0.0597
+M0111	Gandal2018_S5	30545856	Gandal 2018	geneM7	1	yes	yes	BA10/other;NSW/VBBN;unnamed	cortex	517	SCZ t 3.01 fdr 0.0106
+M0112	Gandal2018_S5	30545856	Gandal 2018	geneM16	1	yes	yes	BA10/other;NSW/VBBN;unnamed	cortex	120	SCZ t 2.35 fdr 0.043
+M0113	Gandal2018_S5	30545856	Gandal 2018	geneM6	-1	yes	yes	BA10/other;NSW/VBBN;unnamed	cortex	533	SCZ t -2.78 fdr 0.0174
+M0114	Gandal2018_S5	30545856	Gandal 2018	geneM11	1	no	no	BA10/other;NSW/VBBN;unnamed	cortex	190	SCZ t 1.35 fdr 0.264
+M0115	Gandal2018_S5	30545856	Gandal 2018	geneM13	1	yes	yes	BA10/other;NSW/VBBN;unnamed	cortex	179	SCZ t 7.64 fdr 3.63e-12
+M0116	Gandal2018_S5	30545856	Gandal 2018	geneM29	1	yes	yes	BA10/other;NSW/VBBN;unnamed	cortex	74	SCZ t 2.65 fdr 0.0227
+M0117	Gandal2018_S5	30545856	Gandal 2018	geneM28	1	no	no	BA10/other;NSW/VBBN;unnamed	cortex	80	SCZ t 1.83 fdr 0.117
+M0118	Gandal2018_S5	30545856	Gandal 2018	geneM25	-1	no	no	BA10/other;NSW/VBBN;unnamed	cortex	88	SCZ t -1.32 fdr 0.271
+M0119	Gandal2018_S5	30545856	Gandal 2018	geneM20	1	no	no	BA10/other;NSW/VBBN;unnamed	cortex	105	SCZ t 1.86 fdr 0.114
+M0120	Gandal2018_S5	30545856	Gandal 2018	geneM30	1	no	no	BA10/other;NSW/VBBN;unnamed	cortex	70	SCZ t 0.92 fdr 0.447
+M0121	Gandal2018_S5	30545856	Gandal 2018	geneM15	1	no	no	BA10/other;NSW/VBBN;unnamed	cortex	132	SCZ t 0.55 fdr 0.638
+M0122	Gandal2018_S5	30545856	Gandal 2018	geneM31	1	yes	yes	BA10/other;NSW/VBBN;unnamed	cortex	68	SCZ t 6.59 fdr 2e-09
+M0123	Gandal2018_S5	30545856	Gandal 2018	geneM32	1	yes	yes	BA10/other;NSW/VBBN;unnamed	cortex	61	SCZ t 2.33 fdr 0.0433
+M0124	Gandal2018_S5	30545856	Gandal 2018	geneM22	-1	yes	yes	BA10/other;NSW/VBBN;unnamed	cortex	94	SCZ t -3.35 fdr 0.00421
+M0125	Gandal2018_S5	30545856	Gandal 2018	geneM21	-1	yes	yes	BA10/other;NSW/VBBN;unnamed	cortex	94	SCZ t -5.36 fdr 1.38e-06
+M0126	Gandal2018_S5	30545856	Gandal 2018	geneM34	1	yes	yes	BA10/other;NSW/VBBN;unnamed	cortex	54	SCZ t 3.08 fdr 0.00847
+M0127	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	CMC|CTRL modules|1	-1	yes	yes	CMC lineage	snRNA	49	
+M0128	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	CMC|CTRL modules|106	-1	yes	yes	CMC lineage	snRNA	38	
+M0129	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	CMC|CTRL modules|117	-1	yes	yes	CMC lineage	snRNA	31	
+M0130	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	CMC|CTRL modules|120	-1	yes	yes	CMC lineage	snRNA	31	
+M0131	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	CMC|CTRL modules|122	-1	yes	yes	CMC lineage	snRNA	53	
+M0132	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	CMC|CTRL modules|160	-1	yes	yes	CMC lineage	snRNA	38	
+M0133	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	CMC|CTRL modules|17	-1	yes	yes	CMC lineage	snRNA	37	
+M0134	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	CMC|CTRL modules|240	-1	yes	yes	CMC lineage	snRNA	31	
+M0135	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	CMC|CTRL modules|29	-1	yes	yes	CMC lineage	snRNA	35	
+M0136	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	CMC|CTRL modules|328	-1	yes	yes	CMC lineage	snRNA	43	
+M0137	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	CMC|CTRL modules|51	-1	yes	yes	CMC lineage	snRNA	33	
+M0138	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	CMC|CTRL modules|6	-1	yes	yes	CMC lineage	snRNA	38	
+M0139	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	CMC|CTRL modules|681	1	yes	yes	CMC lineage	snRNA	35	
+M0140	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	CMC|SCZ mods|10	-1	yes	yes	CMC lineage	snRNA	35	
+M0141	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	CMC|SCZ mods|110	-1	yes	yes	CMC lineage	snRNA	33	
+M0142	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	CMC|SCZ mods|22	-1	yes	yes	CMC lineage	snRNA	30	
+M0143	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	CMC|SCZ mods|73	-1	yes	yes	CMC lineage	snRNA	34	
+M0144	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	CMC|SCZ mods|74	-1	yes	yes	CMC lineage	snRNA	33	
+M0145	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	SZBD|CTRL modules|1	-1	yes	yes	McLean/Harvard	snRNA	49	
+M0146	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	SZBD|CTRL modules|106	1	yes	yes	McLean/Harvard	snRNA	38	
+M0147	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	SZBD|CTRL modules|106	-1	yes	yes	McLean/Harvard	snRNA	38	
+M0148	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	SZBD|CTRL modules|112	-1	yes	yes	McLean/Harvard	snRNA	38	
+M0149	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	SZBD|CTRL modules|117	-1	yes	yes	McLean/Harvard	snRNA	31	
+M0150	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	SZBD|CTRL modules|120	-1	yes	yes	McLean/Harvard	snRNA	31	
+M0151	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	SZBD|CTRL modules|122	-1	yes	yes	McLean/Harvard	snRNA	53	
+M0152	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	SZBD|CTRL modules|137	-1	yes	yes	McLean/Harvard	snRNA	38	
+M0153	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	SZBD|CTRL modules|15	-1	yes	yes	McLean/Harvard	snRNA	31	
+M0154	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	SZBD|CTRL modules|17	-1	yes	yes	McLean/Harvard	snRNA	37	
+M0155	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	SZBD|CTRL modules|198	-1	yes	yes	McLean/Harvard	snRNA	36	
+M0156	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	SZBD|CTRL modules|211	-1	yes	yes	McLean/Harvard	snRNA	36	
+M0157	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	SZBD|CTRL modules|216	1	yes	yes	McLean/Harvard	snRNA	30	
+M0158	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	SZBD|CTRL modules|216	-1	yes	yes	McLean/Harvard	snRNA	30	
+M0159	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	SZBD|CTRL modules|240	-1	yes	yes	McLean/Harvard	snRNA	31	
+M0160	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	SZBD|CTRL modules|29	-1	yes	yes	McLean/Harvard	snRNA	35	
+M0161	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	SZBD|CTRL modules|316	-1	yes	yes	McLean/Harvard	snRNA	30	
+M0162	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	SZBD|CTRL modules|317	-1	yes	yes	McLean/Harvard	snRNA	32	
+M0163	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	SZBD|CTRL modules|328	-1	yes	yes	McLean/Harvard	snRNA	43	
+M0164	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	SZBD|CTRL modules|35	-1	yes	yes	McLean/Harvard	snRNA	34	
+M0165	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	SZBD|CTRL modules|36	-1	yes	yes	McLean/Harvard	snRNA	33	
+M0166	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	SZBD|CTRL modules|428	-1	yes	yes	McLean/Harvard	snRNA	32	
+M0167	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	SZBD|CTRL modules|48	-1	yes	yes	McLean/Harvard	snRNA	39	
+M0168	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	SZBD|CTRL modules|487	-1	yes	yes	McLean/Harvard	snRNA	43	
+M0169	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	SZBD|CTRL modules|51	-1	yes	yes	McLean/Harvard	snRNA	33	
+M0170	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	SZBD|CTRL modules|6	1	yes	yes	McLean/Harvard	snRNA	38	
+M0171	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	SZBD|CTRL modules|6	-1	yes	yes	McLean/Harvard	snRNA	38	
+M0172	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	SZBD|CTRL modules|65	-1	yes	yes	McLean/Harvard	snRNA	44	
+M0173	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	SZBD|SCZ mods|10	1	yes	yes	McLean/Harvard	snRNA	35	
+M0174	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	SZBD|SCZ mods|10	-1	yes	yes	McLean/Harvard	snRNA	35	
+M0175	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	SZBD|SCZ mods|105	-1	yes	yes	McLean/Harvard	snRNA	48	
+M0176	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	SZBD|SCZ mods|110	-1	yes	yes	McLean/Harvard	snRNA	33	
+M0177	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	SZBD|SCZ mods|137	1	yes	yes	McLean/Harvard	snRNA	31	
+M0178	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	SZBD|SCZ mods|137	-1	yes	yes	McLean/Harvard	snRNA	31	
+M0179	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	SZBD|SCZ mods|164	-1	yes	yes	McLean/Harvard	snRNA	38	
+M0180	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	SZBD|SCZ mods|169	-1	yes	yes	McLean/Harvard	snRNA	44	
+M0181	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	SZBD|SCZ mods|184	-1	yes	yes	McLean/Harvard	snRNA	37	
+M0182	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	SZBD|SCZ mods|22	-1	yes	yes	McLean/Harvard	snRNA	30	
+M0183	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	SZBD|SCZ mods|235	-1	yes	yes	McLean/Harvard	snRNA	35	
+M0184	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	SZBD|SCZ mods|24	-1	yes	yes	McLean/Harvard	snRNA	38	
+M0185	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	SZBD|SCZ mods|31	-1	yes	yes	McLean/Harvard	snRNA	41	
+M0186	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	SZBD|SCZ mods|36	-1	yes	yes	McLean/Harvard	snRNA	31	
+M0187	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	SZBD|SCZ mods|38	-1	yes	yes	McLean/Harvard	snRNA	53	
+M0188	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	SZBD|SCZ mods|52	-1	yes	yes	McLean/Harvard	snRNA	32	
+M0189	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	SZBD|SCZ mods|65	-1	yes	yes	McLean/Harvard	snRNA	34	
+M0190	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	SZBD|SCZ mods|73	-1	yes	yes	McLean/Harvard	snRNA	34	
+M0191	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	SZBD|SCZ mods|74	-1	yes	yes	McLean/Harvard	snRNA	33	
+M0192	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	SZBD|SCZ mods|77	-1	yes	yes	McLean/Harvard	snRNA	53	
+M0193	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	SZBD|SCZ mods|89	-1	yes	yes	McLean/Harvard	snRNA	32	
+M0194	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	SZBD|SCZ mods|91	1	yes	yes	McLean/Harvard	snRNA	40	
+M0195	CoPA_Kang_Oldham_2026_S14	42800954	Kang and Oldham 2026	SZBD|SCZ mods|91	-1	yes	yes	McLean/Harvard	snRNA	40	

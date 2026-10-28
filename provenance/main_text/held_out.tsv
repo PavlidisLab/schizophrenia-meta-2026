@@ -1,0 +1,116 @@
+gemma_id	short_name	hold_out_reason
+672	McLean_PFC	SZ factor or annotation
+831	stanley_feinberg	SZ factor or annotation
+833	stanley_kato	SZ factor or annotation
+834	stanley_sklarA	SZ factor or annotation
+835	stanley_sklarB	SZ factor or annotation
+836	stanley_vawter	SZ factor or annotation
+837	stanley_young	SZ factor or annotation
+838	stanley_altarA	SZ factor or annotation
+839	stanley_altarB	SZ factor or annotation
+840	stanley_altarC	SZ factor or annotation
+841	stanley_bahn	SZ factor or annotation
+843	stanley_dobrin	SZ factor or annotation
+946	GSE12679	in SZ corpus; SZ factor or annotation
+1204	GSE12654	in SZ corpus; SZ factor or annotation
+1205	GSE12649	in SZ corpus; SZ factor or annotation
+1381	GSE17612	in SZ corpus; SZ factor or annotation
+1866	Mirnics_sz	SZ factor or annotation
+1880	GSE21138	in SZ corpus; SZ factor or annotation
+2684	GSE26927	in SZ corpus; SZ factor or annotation
+2715	GSE25673	in SZ corpus; SZ factor or annotation
+4150	GSE21935	in SZ corpus; SZ factor or annotation
+4354	byne-cc	SZ factor or annotation
+5804	GSE18312	in SZ corpus; SZ factor or annotation
+5939	GSE35974	in SZ corpus; SZ factor or annotation
+6443	GSE46509	in SZ corpus; SZ factor or annotation
+6488	GSE37981	in SZ corpus; SZ factor or annotation
+6555	GSE48072	SZ factor or annotation
+6608	GSE27383	in SZ corpus; SZ factor or annotation
+8359	GSE53987	in SZ corpus; SZ factor or annotation
+8487	GSE40102	in SZ corpus; SZ factor or annotation
+8995	GSE62191	in SZ corpus; SZ factor or annotation
+9003	GSE62333	in SZ corpus; SZ factor or annotation
+9136	GSE57821	SZ factor or annotation
+10525	GSE46562	in SZ corpus; SZ factor or annotation
+10878	GSE87610	in SZ corpus; SZ factor or annotation
+10879	GSE93987	in SZ corpus; SZ factor or annotation
+10975	GSE7624	SZ factor or annotation
+12194	GSE26629	in SZ corpus; SZ factor or annotation
+12249	GSE35548	SZ factor or annotation
+12659	GSE71289	SZ factor or annotation
+12788	GSE63734	in SZ corpus; SZ factor or annotation
+12789	GSE63738	in SZ corpus; SZ factor or annotation
+12983	GSE78936	in SZ corpus; SZ factor or annotation
+13014	GSE80655	in SZ corpus; SZ factor or annotation
+13075	GSE86906	in SZ corpus; SZ factor or annotation
+13637	GSE92874	in SZ corpus; SZ factor or annotation
+13721	GSE80170	in SZ corpus; SZ factor or annotation
+14141	GSE93577	SZ factor or annotation
+14828	GSE116820	in SZ corpus; SZ factor or annotation
+14867	GSE121376	in SZ corpus; SZ factor or annotation
+14876	GSE92845	SZ factor or annotation
+14970	GSE118313	in SZ corpus; SZ factor or annotation
+15032	GSE125805	in SZ corpus; SZ factor or annotation
+15101	GSE125999	in SZ corpus; SZ factor or annotation
+15124	GSE118941	SZ factor or annotation
+15479	GSE107638	in SZ corpus; SZ factor or annotation
+15780	GSE73129	in SZ corpus; SZ factor or annotation
+15904	GSE69838	SZ factor or annotation
+15973	GSE128333	in SZ corpus; SZ factor or annotation
+16508	GSE145554	in SZ corpus; SZ factor or annotation
+16563	GSE145656	SZ factor or annotation
+16646	GSE92876	in SZ corpus; SZ factor or annotation
+16773	GSE112523	in SZ corpus; SZ factor or annotation
+17335	GSE149733	SZ factor or annotation
+17420	GSE148827	SZ factor or annotation
+17942	GSE160521	in SZ corpus
+17948	GSE164376	SZ factor or annotation
+18741	GSE92538.2	in SZ corpus; SZ factor or annotation
+18742	GSE92538.1	in SZ corpus; SZ factor or annotation
+18824	GSE82237	SZ factor or annotation
+18839	GSE74737	SZ factor or annotation
+19172	GSE174704	in SZ corpus; SZ factor or annotation
+19439	GSE106589	in SZ corpus; SZ factor or annotation
+20196	GSE181076	SZ factor or annotation
+20362	GSE184715	SZ factor or annotation
+20482	GSE182875	in SZ corpus; SZ factor or annotation
+21062	GSE186598	SZ factor or annotation
+23343	GSE191248	in SZ corpus; SZ factor or annotation
+23444	GSE165604	in SZ corpus; SZ factor or annotation
+23539	GSE152438	SZ factor or annotation
+23540	GSE132689	SZ factor or annotation
+23560	GSE133534	in SZ corpus; SZ factor or annotation
+23579	GSE138082	in SZ corpus; SZ factor or annotation
+23686	GSE127711	SZ factor or annotation
+23740	GSE123349	in SZ corpus; SZ factor or annotation
+24043	GSE144639	in SZ corpus; SZ factor or annotation
+24050	GSE173292	SZ factor or annotation
+24427	GSE66433	SZ factor or annotation
+24464	GSE69675	SZ factor or annotation
+24778	GSE143692	SZ factor or annotation
+25749	GSE202537	in SZ corpus; SZ factor or annotation
+25868	GSE155067	in SZ corpus; SZ factor or annotation
+26339	GSE215985	in SZ corpus; SZ factor or annotation
+26379	GSE215183	SZ factor or annotation
+26463	GSE213232	in SZ corpus; SZ factor or annotation
+26880	GSE208338	in SZ corpus; SZ factor or annotation
+26899	GSE184102	in SZ corpus; SZ factor or annotation
+28105	GSE224683	in SZ corpus; SZ factor or annotation
+32383	GSE203082	SZ factor or annotation
+33342	GSE217848	SZ factor or annotation
+33591	GSE185602	SZ factor or annotation
+33732	GSE159678	SZ factor or annotation
+36634	GSE38485.2	in SZ corpus; SZ factor or annotation
+36635	GSE38485.1	in SZ corpus; SZ factor or annotation
+37780	GSE263672	in SZ corpus; SZ factor or annotation
+38051	GSE263894	SZ factor or annotation
+38262	GSE263180	in SZ corpus; SZ factor or annotation
+38352	GSE188558	in SZ corpus; SZ factor or annotation
+50451	GSE282524	in SZ corpus; SZ factor or annotation
+51178	CMC	in SZ corpus
+51180	SZBDMulti-Seq	in SZ corpus
+51181	MultiomeBrain	in SZ corpus
+85317	GSE244782	in SZ corpus; SZ factor or annotation
+85586	GSE293155	in SZ corpus
+91898	GSE296979	SZ factor or annotation

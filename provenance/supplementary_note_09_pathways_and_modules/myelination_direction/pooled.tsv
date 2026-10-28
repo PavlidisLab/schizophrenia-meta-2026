@@ -1,0 +1,7 @@
+# ph_direction_sets.py (myelination_direction); term_group_genes.tsv sha256 c8c03204dffb; axis_v2_controls.tsv.gz 2c72a9b279a2; matrices expr sha256 prefixes: GSE208338=614dcde3551a GSE35977=fc425e0c5437 GSE202537_caudate=6ab90659e528 GSE21138=4df5c4582844 GSE17612=eef299f56c73 GSE80655_AnCg=144629cc0dd1 GSE53987_striatum=80b90f34a1d1 GSE224683=20f5cace7b0a GSE92538_GPL96=e8134a7c4b34 GSE92538_GPL570=f66425caaf5b
+# slope = SD of gene expression per SD of pH, controls, adjusted for age and sex; POSITIVE = higher at higher pH (lower at low pH), NEGATIVE = higher at low pH
+set	n_regions	n_regions_negative	n_ctl_total	pooled_mean_slope	lo95	hi95	median_of_region_medians
+myelin_hits	10	9	279	-0.0684	-0.1232	-0.0136	-0.0858
+myelin_terms	10	9	279	-0.0543	-0.0924	-0.0162	-0.071
+oxphos_hits	10	1	279	0.1692	0.0788	0.2595	0.2529
+oxphos_terms	10	2	279	0.1195	0.0481	0.1908	0.1779

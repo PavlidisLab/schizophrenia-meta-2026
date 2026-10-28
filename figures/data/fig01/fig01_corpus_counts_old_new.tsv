@@ -1,0 +1,116 @@
+# figure: fig01 panels b to e, corpus counts (kind, era, tissue, technology, bank, proteomics, single-cell / single-nucleus); old = 669 version nfill/regen_fig01_v2/fig01_b_corpus_studies.tsv sha256 fe33e814ef89 (669 studies), new = corpus_665_panel_move_2026-10-19/fig01/fig01_b_corpus_studies.tsv sha256 7000f6552535 (669 studies)
+# script: scripts/regen_counts.py (groupings of figures/scripts/build_fig_corpus.py), run 2026-10-19; category read from the lineage node (old: HEAD fd038872 lineage.json 353dea4ad8f0, new: working lineage.json 71b465fa61c8)
+table	category	old_669	new_665	delta
+corpus studies	all studies in the corpus	669	665	-4
+kind (lineage relation)	primary	351	347	-4
+kind (lineage relation)	reanalysis of public data	134	134	0
+kind (lineage relation)	meta-analysis / combined	111	111	0
+kind (lineage relation)	data reuse	47	47	0
+kind (lineage relation)	single-cell / single-nucleus	22	22	0
+kind (lineage relation)	single-gene follow-up	4	4	0
+lineage category (1 first look, 3 no new data, p proteome-wide, 1m multigene panel, None single-cell group)	3	294	294	0
+lineage category (1 first look, 3 no new data, p proteome-wide, 1m multigene panel, None single-cell group)	1	283	283	0
+lineage category (1 first look, 3 no new data, p proteome-wide, 1m multigene panel, None single-cell group)	p	66	66	0
+lineage category (1 first look, 3 no new data, p proteome-wide, 1m multigene panel, None single-cell group)	None	22	22	0
+lineage category (1 first look, 3 no new data, p proteome-wide, 1m multigene panel, None single-cell group)	1m	4	0	-4
+era 2016 (old = year <= 2015)	new	474	473	-1
+era 2016 (old = year <= 2015)	old	195	192	-3
+era 2020 (old = year <= 2019)	new	365	364	-1
+era 2020 (old = year <= 2019)	old	304	301	-3
+tissue (lineage tissue class)	brain	394	391	-3
+tissue (lineage tissue class)	blood	131	131	0
+tissue (lineage tissue class)	ipsc	56	56	0
+tissue (lineage tissue class)	mixed	50	50	0
+tissue (lineage tissue class)	other	25	24	-1
+tissue (lineage tissue class)	lcl	12	12	0
+tissue (lineage tissue class)	unknown	1	1	0
+tissue group (Fig. 1b)	brain	394	391	-3
+tissue group (Fig. 1b)	blood	131	131	0
+tissue group (Fig. 1b)	other / mixed	75	74	-1
+tissue group (Fig. 1b)	cells (iPSC, LCL)	68	68	0
+tissue group (Fig. 1b)	unassigned: unknown	1	1	0
+technology (lineage tech_tier)	rnaseq	246	246	0
+technology (lineage tech_tier)	array_whole	133	133	0
+technology (lineage tech_tier)	mixed	95	95	0
+technology (lineage tech_tier)	proteomics	70	70	0
+technology (lineage tech_tier)	array_early	45	45	0
+technology (lineage tech_tier)	single_cell	30	30	0
+technology (lineage tech_tier)	array_noncoding	22	22	0
+technology (lineage tech_tier)	array_unstated	13	13	0
+technology (lineage tech_tier)	other	12	8	-4
+technology (lineage tech_tier)	unknown	3	3	0
+technology group (Fig. 1c)	rnaseq	246	246	0
+technology group (Fig. 1c)	array	213	213	0
+technology group (Fig. 1c)	other	110	106	-4
+technology group (Fig. 1c)	proteomics	70	70	0
+technology group (Fig. 1c)	single_cell	30	30	0
+technology group, era_2016 = old (Fig. 1c)	array	117	117	0
+technology group, era_2016 = old (Fig. 1c)	proteomics	38	38	0
+technology group, era_2016 = old (Fig. 1c)	other	26	23	-3
+technology group, era_2016 = old (Fig. 1c)	rnaseq	14	14	0
+technology group, era_2016 = new (Fig. 1c)	rnaseq	232	232	0
+technology group, era_2016 = new (Fig. 1c)	array	96	96	0
+technology group, era_2016 = new (Fig. 1c)	other	84	83	-1
+technology group, era_2016 = new (Fig. 1c)	proteomics	32	32	0
+technology group, era_2016 = new (Fig. 1c)	single_cell	30	30	0
+bank (Fig. 1 bank label)	blood, LCL, other	161	160	-1
+bank (Fig. 1 bank label)	other brain	136	134	-2
+bank (Fig. 1 bank label)	meta-analyses	102	102	0
+bank (Fig. 1 bank label)	Stanley	63	62	-1
+bank (Fig. 1 bank label)	iPSC / organoids	56	56	0
+bank (Fig. 1 bank label)	CMC / HBCC	40	40	0
+bank (Fig. 1 bank label)	LIBD	27	27	0
+bank (Fig. 1 bank label)	NSW / Victoria	27	27	0
+bank (Fig. 1 bank label)	Pittsburgh	21	21	0
+bank (Fig. 1 bank label)	Mount Sinai	17	17	0
+bank (Fig. 1 bank label)	Harvard / McLean	15	15	0
+bank (Fig. 1 bank label)	Pritzker	4	4	0
+year of publication	2026	62	62	0
+year of publication	2024	59	59	0
+year of publication	2025	55	55	0
+year of publication	2023	52	52	0
+year of publication	2022	52	51	-1
+year of publication	2019	45	45	0
+year of publication	2020	43	43	0
+year of publication	2021	42	42	0
+year of publication	2015	31	31	0
+year of publication	2016	24	24	0
+year of publication	2018	22	22	0
+year of publication	2012	20	19	-1
+year of publication	2008	19	19	0
+year of publication	2017	18	18	0
+year of publication	2014	16	16	0
+year of publication	2013	16	14	-2
+year of publication	2009	14	14	0
+year of publication	2011	14	14	0
+year of publication	2006	13	13	0
+year of publication	2010	13	13	0
+year of publication	2005	9	9	0
+year of publication	2007	9	9	0
+year of publication	2004	5	5	0
+year of publication	2001	4	4	0
+year of publication	2002	3	3	0
+year of publication	2000	2	2	0
+year of publication	2003	2	2	0
+year of publication	1985	1	1	0
+year of publication	1992	1	1	0
+year of publication	1995	1	1	0
+year of publication	1996	1	1	0
+year of publication	1999	1	1	0
+proteomics and single-cell counts	proteomics: lineage category p (proteome-wide first-look studies)	66	66	0
+proteomics and single-cell counts	proteomics: tech_tier proteomics, all kinds	70	70	0
+proteomics and single-cell counts	proteomics: tech_tier proteomics, relation primary	67	67	0
+proteomics and single-cell counts	single-cell / single-nucleus: relation single-cell / single-nucleus (the manuscript's 22)	22	22	0
+proteomics and single-cell counts	single-cell / single-nucleus: tech_tier single_cell, all kinds	30	30	0
+proteomics and single-cell counts	single-cell / single-nucleus: tech_tier single_cell, relation primary	1	1	0
+proteomics and single-cell counts	single-cell / single-nucleus: tech_tier single_cell, relation not single-cell / single-nucleus	10	10	0
+proteomics and single-cell counts	analysis base: studies in the 80 with tech_tier single_cell	6	6	0
+proteomics and single-cell counts	analysis base: in_primary_population = yes (72 units in fig01_b; 80 studies in fig01_c_lineage_nodes_80)	72	72	0
+median n_total, relation primary or single-cell (Fig. 1d)	array: median	30.0	30.0	0.0
+median n_total, relation primary or single-cell (Fig. 1d)	array: studies with n_total	114	114	0
+median n_total, relation primary or single-cell (Fig. 1d)	rnaseq: median	31.0	31.0	0.0
+median n_total, relation primary or single-cell (Fig. 1d)	rnaseq: studies with n_total	148	148	0
+median n_total, relation primary or single-cell (Fig. 1d)	single_cell: median	39.0	39.0	0.0
+median n_total, relation primary or single-cell (Fig. 1d)	single_cell: studies with n_total	20	20	0
+median n_total, relation primary or single-cell (Fig. 1d)	proteomics: median	20.0	20.0	0.0
+median n_total, relation primary or single-cell (Fig. 1d)	proteomics: studies with n_total	60	60	0

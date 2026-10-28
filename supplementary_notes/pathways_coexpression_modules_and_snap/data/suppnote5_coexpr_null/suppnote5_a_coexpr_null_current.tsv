@@ -1,0 +1,63 @@
+# figure: Supplementary Note 5 Figure 1a, coexpression-preserving nulls
+# script: analyses/suppnote5_coexpr_null_2026-10-13/coexpr_null.py (remote environment) + summarize.py; list set 'core80': 71 lists, 2485 pairs, scenario 'published, brain', rule A primary lists (analyses/primary_lists.json sha256 44fb07b1d2e5)
+# statistics as fairness_lists/a5b_go.py (GO BP 5-200 genes; top pathways = up to 20 terms with p < 0.01 and >= 2 hits; mean pathway/gene Jaccard and shared totals over pairs); genes_in_k_or_more_lists = annotated tested genes that are hits in >= k lists
+# nulls: uniform_independent and de_prior_independent = a5b_go.py's draws (re-run here); rot_* = each list's hits moved by one circular shift along the GTEx v8 cortex co-expression ordering (rotation_lib.py of addendum 4a), within strata S0 (none) or 40 equal-count DE-prior bins; R1 lists shifted independently, R2 lists of one cohort cluster shifted together; 1000 draws each, seed 20261013
+# log2_lo95 / log2_hi95 = log2 of observed over the null's upper / lower 95% limit (as fig12 panel a); p_upper = (1 + replicates >= observed) / (1 + n); jack_list / jack_cluster = ratio x exp(+-1.96 SE) of a delete-one jackknife over lists (units) / cohort clusters (a multi-bank study sits in each of its clusters), pair metrics only
+# 2026-10-21: columns jack_cluster_lo, jack_cluster_hi, jack_cluster_n_units from the stored replicates with the cohort-cluster sets (20 clusters of the 71 lists); in the rot_R2 rows a list that spans several clusters is shifted on its own, because it cannot move together with more than one cluster
+level	metric	null	observed	null_mean	null_lo95	null_hi95	obs_over_null	log2_obs_over_null	log2_lo95	log2_hi95	p_upper	n_replicates	n_lists	n_pairs	jack_list_lo	jack_list_hi	jack_list_n_units	jack_cluster_lo	jack_cluster_hi	jack_cluster_n_units
+pathway	mean_pathway_jaccard	uniform_independent	0.0088357	0.0011478	0.00083316	0.0015209	7.6981	2.9445	2.5384	3.4067	0.000999	1000	71	2485	4.1548	14.263	71	4.7752	12.41	20
+pathway	shared_pathways_total	uniform_independent	710	95.408	68.975	126.02	7.4417	2.8956	2.4941	3.3637	0.000999	1000	71	2485	4.3879	12.621	71	5.0069	11.061	20
+gene	mean_gene_jaccard	uniform_independent	0.014404	0.0098467	0.0096925	0.0099999	1.4628	0.54877	0.5265	0.57153	0.000999	1000	71	2485	1.3095	1.6341	71	1.2797	1.6722	20
+gene	shared_genes_total	uniform_independent	54364	38670	38299	39055	1.4058	0.49143	0.47714	0.50535	0.000999	1000	71	2485	1.27	1.5562	71	1.3151	1.5028	20
+gene	genes_in_2_or_more_lists	uniform_independent	8339	9687.8	9617	9763.1	0.86078	-0.21629	-0.22746	-0.20571	1	1000	71	2485						
+gene	genes_in_3_or_more_lists	uniform_independent	5570	5954.7	5889	6020	0.93539	-0.096358	-0.11209	-0.080345	1	1000	71	2485						
+gene	genes_in_5_or_more_lists	uniform_independent	2103	1237.5	1188	1287	1.6993	0.76496	0.70841	0.82391	0.000999	1000	71	2485						
+gene	genes_in_10_or_more_lists	uniform_independent	101	1.242	0	4	81.32	6.3455	4.6582		0.000999	1000	71	2485						
+pathway	mean_pathway_jaccard	de_prior_independent	0.0088357	0.0029727	0.0022911	0.0037807	2.9723	1.5716	1.2247	1.9473	0.000999	1000	71	2485	1.6209	5.4506	71	1.9692	4.4864	20
+pathway	shared_pathways_total	de_prior_independent	710	267.77	206	341	2.6515	1.4068	1.058	1.7852	0.000999	1000	71	2485	1.5773	4.4573	71	1.8672	3.7653	20
+gene	mean_gene_jaccard	de_prior_independent	0.014404	0.013091	0.01286	0.01334	1.1003	0.13792	0.11073	0.16355	0.000999	1000	71	2485	0.98699	1.2267	71	0.96528	1.2542	20
+gene	shared_genes_total	de_prior_independent	54364	51303	50706	51922	1.0597	0.0836	0.066295	0.1005	0.000999	1000	71	2485	0.96009	1.1696	71	0.9849	1.1401	20
+gene	genes_in_2_or_more_lists	de_prior_independent	8339	8447.2	8376	8517	0.98719	-0.018598	-0.030475	-0.0063871	0.997	1000	71	2485						
+gene	genes_in_3_or_more_lists	de_prior_independent	5570	5643.8	5580	5708	0.98692	-0.019	-0.035314	-0.0025813	0.98901	1000	71	2485						
+gene	genes_in_5_or_more_lists	de_prior_independent	2103	2064.2	2013	2117	1.0188	0.026841	-0.0095895	0.06312	0.078921	1000	71	2485						
+gene	genes_in_10_or_more_lists	de_prior_independent	101	49.166	37	62	2.0543	1.0386	0.70402	1.4488	0.000999	1000	71	2485						
+pathway	mean_pathway_jaccard	rot_R1_S0_lists_independently	0.0088357	0.001329	0.00096007	0.0018454	6.6485	2.733	2.2594	3.2021	0.000999	1000	71	2485	3.5956	12.294	71	4.1497	10.652	20
+pathway	shared_pathways_total	rot_R1_S0_lists_independently	710	110.78	79	154.02	6.4092	2.6801	2.2047	3.1679	0.000999	1000	71	2485	3.7889	10.842	71	4.3365	9.4726	20
+gene	mean_gene_jaccard	rot_R1_S0_lists_independently	0.014404	0.0098456	0.0096851	0.010016	1.463	0.54892	0.52412	0.57264	0.000999	1000	71	2485	1.3101	1.6337	71	1.2806	1.6713	20
+gene	shared_genes_total	rot_R1_S0_lists_independently	54364	38655	38185	39177	1.4064	0.49201	0.47263	0.50965	0.000999	1000	71	2485	1.2707	1.5566	71	1.316	1.503	20
+gene	genes_in_2_or_more_lists	rot_R1_S0_lists_independently	8339	9687	9599	9772	0.86084	-0.21618	-0.22878	-0.20301	1	1000	71	2485						
+gene	genes_in_3_or_more_lists	rot_R1_S0_lists_independently	5570	5954.5	5887	6026	0.93542	-0.096312	-0.11352	-0.079849	1	1000	71	2485						
+gene	genes_in_5_or_more_lists	rot_R1_S0_lists_independently	2103	1236.2	1180	1302	1.7012	0.76653	0.69172	0.83366	0.000999	1000	71	2485						
+gene	genes_in_10_or_more_lists	rot_R1_S0_lists_independently	101	1.195	0	4	84.519	6.4012	4.6582		0.000999	1000	71	2485						
+pathway	mean_pathway_jaccard	rot_R2_S0_clusters_together	0.0088357	0.0014045	0.0010156	0.0020526	6.2911	2.6533	2.1059	3.121	0.000999	1000	71	2485	3.4252	11.555	71	3.9154	10.108	20
+pathway	shared_pathways_total	rot_R2_S0_clusters_together	710	116.82	85	168.02	6.0776	2.6035	2.0791	3.0623	0.000999	1000	71	2485	3.6182	10.209	71	4.111	8.9849	20
+gene	mean_gene_jaccard	rot_R2_S0_clusters_together	0.014404	0.010753	0.010569	0.010969	1.3395	0.42168	0.39299	0.4466	0.000999	1000	71	2485	1.2079	1.4854	71	1.1455	1.5663	20
+gene	shared_genes_total	rot_R2_S0_clusters_together	54364	40558	40002	41198	1.3404	0.42268	0.40007	0.44258	0.000999	1000	71	2485	1.2143	1.4796	71	1.2287	1.4623	20
+gene	genes_in_2_or_more_lists	rot_R2_S0_clusters_together	8339	9239.5	9151	9318	0.90254	-0.14794	-0.16015	-0.13406	1	1000	71	2485						
+gene	genes_in_3_or_more_lists	rot_R2_S0_clusters_together	5570	5705.9	5643	5773.1	0.97619	-0.034766	-0.051656	-0.018785	1	1000	71	2485						
+gene	genes_in_5_or_more_lists	rot_R2_S0_clusters_together	2103	1416.1	1364	1475	1.4851	0.57055	0.51168	0.62463	0.000999	1000	71	2485						
+gene	genes_in_10_or_more_lists	rot_R2_S0_clusters_together	101	7.473	3	13	13.515	3.7565	2.9578	5.0732	0.000999	1000	71	2485						
+pathway	mean_pathway_jaccard	rot_R1_DEprior40_lists_independently	0.0088357	0.001827	0.0013677	0.0023533	4.8361	2.2738	1.9087	2.6916	0.000999	1000	71	2485	2.5253	9.2615	71	3.1052	7.5318	20
+pathway	shared_pathways_total	rot_R1_DEprior40_lists_independently	710	161.09	121	207	4.4073	2.1399	1.7782	2.5528	0.000999	1000	71	2485	2.5088	7.7425	71	3.0184	6.4354	20
+gene	mean_gene_jaccard	rot_R1_DEprior40_lists_independently	0.014404	0.010941	0.010783	0.011115	1.3165	0.39672	0.37396	0.41766	0.000999	1000	71	2485	1.2079	1.4349	71	1.1748	1.4753	20
+gene	shared_genes_total	rot_R1_DEprior40_lists_independently	54364	42800	42414	43161	1.2702	0.34502	0.33292	0.35811	0.000999	1000	71	2485	1.1793	1.368	71	1.2031	1.3409	20
+gene	genes_in_2_or_more_lists	rot_R1_DEprior40_lists_independently	8339	9265.1	9199	9333	0.90004	-0.15193	-0.16247	-0.1416	1	1000	71	2485						
+gene	genes_in_3_or_more_lists	rot_R1_DEprior40_lists_independently	5570	5931.1	5863	5995	0.93913	-0.09061	-0.10608	-0.073962	1	1000	71	2485						
+gene	genes_in_5_or_more_lists	rot_R1_DEprior40_lists_independently	2103	1559.5	1514	1605	1.3485	0.43133	0.38985	0.47408	0.000999	1000	71	2485						
+gene	genes_in_10_or_more_lists	rot_R1_DEprior40_lists_independently	101	6.879	2	12	14.682	3.876	3.0732	5.6582	0.000999	1000	71	2485						
+pathway	mean_pathway_jaccard	rot_R2_DEprior40_clusters_together	0.0088357	0.0019	0.0014881	0.0024429	4.6503	2.2173	1.8547	2.5699	0.000999	1000	71	2485	2.439	8.8663	71	2.9765	7.2652	20
+pathway	shared_pathways_total	rot_R2_DEprior40_clusters_together	710	167.72	131	214	4.2332	2.0817	1.7302	2.4383	0.000999	1000	71	2485	2.42	7.405	71	2.899	6.1813	20
+gene	mean_gene_jaccard	rot_R2_DEprior40_clusters_together	0.014404	0.011607	0.011422	0.01178	1.241	0.31149	0.29008	0.33463	0.000999	1000	71	2485	1.1465	1.3432	71	1.0976	1.4032	20
+gene	shared_genes_total	rot_R2_DEprior40_clusters_together	54364	44259	43873	44669	1.2283	0.29667	0.28337	0.30932	0.000999	1000	71	2485	1.1487	1.3135	71	1.1451	1.3176	20
+gene	genes_in_2_or_more_lists	rot_R2_DEprior40_clusters_together	8339	9006.2	8939	9072	0.92592	-0.11104	-0.12155	-0.10024	1	1000	71	2485						
+gene	genes_in_3_or_more_lists	rot_R2_DEprior40_clusters_together	5570	5773.3	5709.9	5839	0.96479	-0.051713	-0.068044	-0.035801	1	1000	71	2485						
+gene	genes_in_5_or_more_lists	rot_R2_DEprior40_clusters_together	2103	1651.3	1603	1701	1.2736	0.34887	0.30607	0.39167	0.000999	1000	71	2485						
+gene	genes_in_10_or_more_lists	rot_R2_DEprior40_clusters_together	101	17.682	10	26	5.712	2.514	1.9578	3.3363	0.000999	1000	71	2485						
+pathway	mean_pathway_jaccard	control_DEprior40_strata_independent_no_coexpression	0.0088357	0.0018225	0.0013969	0.00236	4.8482	2.2775	1.9046	2.6611	0.000999	1000	71	2485	2.5298	9.2911	71	3.0939	7.5972	20
+pathway	shared_pathways_total	control_DEprior40_strata_independent_no_coexpression	710	160.83	124	208	4.4147	2.1423	1.7712	2.5175	0.000999	1000	71	2485	2.5106	7.7628	71	3.0203	6.4528	20
+gene	mean_gene_jaccard	control_DEprior40_strata_independent_no_coexpression	0.014404	0.010938	0.010777	0.011107	1.3169	0.39711	0.375	0.41852	0.000999	1000	71	2485	1.2082	1.4353	71	1.1746	1.4764	20
+gene	shared_genes_total	control_DEprior40_strata_independent_no_coexpression	54364	42795	42427	43170	1.2703	0.34521	0.33261	0.35767	0.000999	1000	71	2485	1.1796	1.3681	71	1.2029	1.3415	20
+gene	genes_in_2_or_more_lists	control_DEprior40_strata_independent_no_coexpression	8339	9266.8	9198	9328	0.89988	-0.1522	-0.1617	-0.14145	1	1000	71	2485						
+gene	genes_in_3_or_more_lists	control_DEprior40_strata_independent_no_coexpression	5570	5931.9	5868	5995	0.939	-0.090806	-0.10608	-0.075192	1	1000	71	2485						
+gene	genes_in_5_or_more_lists	control_DEprior40_strata_independent_no_coexpression	2103	1560	1510	1608	1.3481	0.43088	0.38718	0.4779	0.000999	1000	71	2485						
+gene	genes_in_10_or_more_lists	control_DEprior40_strata_independent_no_coexpression	101	6.933	2.975	13	14.568	3.8647	2.9578	5.0853	0.000999	1000	71	2485						

@@ -1,0 +1,66 @@
+# script: analyses/other_disorders_176_2026-10-09/other_disorders_176.py, run 2026-10-16; seed 20261009
+# population: confounds/recurrent_sets.tsv sha256 3c42f67cdd7a, set study_brain = 383 genes; SZ sign from recurrence_genes.tsv sha256 dda5eb621c15 (scenario 'published, brain'), sign(up - down); series restriction from adv014_shared_controls_2026-10-12/series_classification.tsv sha256 d548a0795e8e; DE prior = de_prior_hitlists column (n_de_total of de_prior_lists/our_prior/1_global_our_prior.tsv sha256 68272e907b72)
+# null pool: 13465 published-brain genes with a SZ sign, excluding the 383; strata = expr_decile x DE-prior quintile (quintile cuts over the pool); 10000 matched sets (per-list rows: 2000)
+# Gemma autism result sets: gemma_asd_cache/ (fetched 2026-10-10 GET only; gemma_asd_selection.tsv sha256 afc6ceb7b1b9); inputs: Gandal2018 array TableS1 csv sha256 ffd18233936d; Gandal2018 PsychENCODE aat8127_table_s1.xlsx sha256 e6f9c6ebab41; Gemma lists check1_lists.tsv sha256 faf82a103dd9 (result-set tables in checks_2026-09-29/cache/)
+# one row per Gemma BD or MDD postmortem-brain list at q < 0.05 (BH over genes, minimum-p probe per gene); perm_p from the first 2000 matched sets; tests are not corrected across lists
+# series_set: restricted = built only from series with no documented control-donor sharing with an SZ dataset; all series = tables dropped by that rule (unrestricted); reference = SZ and MDD tables, not restricted
+table	disorder	series_set	fdr_thr	n_209_measured	n_pool_measured	n_pool_DE	pool_DE_frac	obs_209_DE	frac_209_DE	hypergeom_p	null_mean	null_sd	fold_vs_null	perm_p	logit_expected	logit_p	list_id	n_case	n_control	genes_q05_in_list_file
+Gemma BD__GSE5389__all	BD	restricted	0.05	325	8147	0	0.0	0	0.0	1	0.0	0.0		1			BD__GSE5389__all	10	11	0
+Gemma BD__GSE5388__all	BD	all series	0.05	325	8133	4	0.0005	1	0.0031	0.178	0.14	0.38	7.32	0.118			BD__GSE5388__all	30	31	0
+Gemma BD__McLean_PFC__de_include	BD	restricted	0.05	325	8136	0	0.0	0	0.0	1	0.0	0.0		1			BD__McLean_PFC__de_include	18	27	0
+Gemma BD__stanley_feinberg__all	BD	all series	0.05	268	5731	728	0.127	41	0.153	0.126	36.92	5.67	1.11	0.234			BD__stanley_feinberg__all	12	14	802
+Gemma BD__stanley_kato__all	BD	all series	0.05	325	8116	1	0.0001	0	0.0	1	0.03	0.18	0.0	1			BD__stanley_kato__all	33	34	0
+Gemma BD__stanley_sklarA__all	BD	all series	0.05	269	5732	0	0.0	0	0.0	1	0.0	0.0		1			BD__stanley_sklarA__all	11	12	0
+Gemma BD__stanley_sklarB__all	BD	all series	0.05	269	5732	0	0.0	0	0.0	1	0.0	0.0		1			BD__stanley_sklarB__all	11	10	0
+Gemma BD__stanley_vawter__all	BD	all series	0.05	333	8913	74	0.0083	7	0.021	0.0263	1.89	1.38	3.69	0.001			BD__stanley_vawter__all	32	34	79
+Gemma BD__stanley_young__all	BD	all series	0.05	156	3366	0	0.0	0	0.0	1	0.0	0.0		1			BD__stanley_young__all	35	35	0
+Gemma BD__stanley_altarA__all	BD	all series	0.05	324	8117	0	0.0	0	0.0	1	0.0	0.0		1			BD__stanley_altarA__all	32	34	0
+Gemma BD__stanley_altarB__fixed	BD	all series	0.05	215	4527	30	0.0066	3	0.014	0.187	1.31	1.18	2.3	0.093			BD__stanley_altarB__fixed	5	6	33
+Gemma BD__stanley_altarC__all	BD	all series	0.05	325	8138	5687	0.6988	200	0.6154	0.999	223.2	8.65	0.9	0.995			BD__stanley_altarC__all	11	11	8047
+Gemma BD__stanley_bahn__all	BD	all series	0.05	325	8147	0	0.0	0	0.0	1	0.0	0.0		1			BD__stanley_bahn__all	32	33	0
+Gemma BD__stanley_chen__all	BD	all series	0.05	375	11904	0	0.0	0	0.0	1	0.0	0.0		1			BD__stanley_chen__all	14	13	0
+Gemma BD__stanley_dobrin__all	BD	all series	0.05	375	11895	0	0.0	0	0.0	1	0.0	0.0		1			BD__stanley_dobrin__all	27	25	0
+Gemma BD__GSE12679__all	BD	all series	0.05	375	11907	0	0.0	0	0.0	1	0.0	0.0		1			BD__GSE12679__all	5	11	0
+Gemma BD__GSE12654__all	BD	all series	0.05	266	5699	0	0.0	0	0.0	1	0.0	0.0		1			BD__GSE12654__all	11	15	0
+Gemma BD__GSE12649__all	BD	all series	0.05	325	8147	377	0.0463	34	0.1046	1.71e-05	16.78	4.02	2.03	0.0005			BD__GSE12649__all	33	34	263
+Gemma BD__byne-cc__all	BD	restricted	0.05	251	6526	0	0.0	0	0.0	1	0.0	0.0		1			BD__byne-cc__all	30	28	0
+Gemma BD__GSE35974__all	BD	all series	0.05	374	11563	523	0.0452	31	0.0829	0.00126	18.71	4.03	1.66	0.002			BD__GSE35974__all	37	50	767
+Gemma BD__GSE80336__all	BD	restricted	0.05	378	12151	0	0.0	0	0.0	1	0.0	0.0		1			BD__GSE80336__all	18	18	0
+Gemma BD__GSE87610__dorsolateral_prefrontal_cortex	BD	all series	0.05	378	11602	0	0.0	0	0.0	1	0.0	0.0		1			BD__GSE87610__dorsolateral_prefrontal_cortex	36	38	0
+Gemma BD__GSE78936__orbitofrontal_cortex	BD	all series	0.05	380	11968	0	0.0	0	0.0	1	0.0	0.0		1			BD__GSE78936__orbitofrontal_cortex	16	12	0
+Gemma BD__GSE80655__anterior_cingulate_cortex	BD	all series	0.05	377	13145	0	0.0	0	0.0	1	0.0	0.0		1			BD__GSE80655__anterior_cingulate_cortex	24	24	1
+Gemma BD__GSE81396__all	BD	restricted	0.05	381	12353	0	0.0	0	0.0	1	0.0	0.0		1			BD__GSE81396__all	8	8	0
+Gemma BD__GSE112523__all	BD	all series	0.05	377	12298	0	0.0	0	0.0	1	0.0	0.0		1			BD__GSE112523__all	10	17	0
+Gemma BD__GSE210064__all	BD	restricted	0.05	310	9627	1	0.0001	0	0.0	1	0.02	0.12	0.0	1			BD__GSE210064__all	11	11	0
+Gemma BD__GSE53239__all	BD	restricted	0.05	383	12920	0	0.0	0	0.0	1	0.0	0.0		1			BD__GSE53239__all	11	11	0
+Gemma MDD__stanley_feinberg__all	MDD	reference	0.05	268	5731	0	0.0	0	0.0	1	0.0	0.0		1			MDD__stanley_feinberg__all	13	14	0
+Gemma MDD__stanley_sklarA__all	MDD	reference	0.05	269	5732	0	0.0	0	0.0	1	0.0	0.0		1			MDD__stanley_sklarA__all	11	12	0
+Gemma MDD__stanley_sklarB__all	MDD	reference	0.05	269	5732	0	0.0	0	0.0	1	0.0	0.0		1			MDD__stanley_sklarB__all	13	10	0
+Gemma MDD__stanley_altarB__frozen_specimen	MDD	reference	0.05	215	4527	428	0.0945	13	0.0605	0.97	22.61	4.74	0.57	0.987			MDD__stanley_altarB__frozen_specimen	7	4	471
+Gemma MDD__stanley_altarC__all	MDD	reference	0.05	325	8138	5482	0.6736	186	0.5723	1	214.59	8.55	0.87	0.999			MDD__stanley_altarC__all	11	11	7760
+Gemma MDD__GSE12654__all	MDD	reference	0.05	266	5699	0	0.0	0	0.0	1	0.0	0.0		1			MDD__GSE12654__all	11	15	0
+Gemma MDD__GSE17440__all	MDD	reference	0.05	375	11908	69	0.0058	4	0.0107	0.183	5.53	2.25	0.72	0.695			MDD__GSE17440__all	4	4	1
+Gemma MDD__GSE35974__all	MDD	reference	0.05	374	11563	0	0.0	0	0.0	1	0.0	0.0		1			MDD__GSE35974__all	13	50	18
+Gemma MDD__GSE54562__all	MDD	reference	0.05	371	11567	0	0.0	0	0.0	1	0.0	0.0		1			MDD__GSE54562__all	10	10	0
+Gemma MDD__GSE54563__all	MDD	reference	0.05	371	11561	0	0.0	0	0.0	1	0.0	0.0		1			MDD__GSE54563__all	25	25	0
+Gemma MDD__GSE54564__all	MDD	reference	0.05	324	7991	0	0.0	0	0.0	1	0.0	0.0		1			MDD__GSE54564__all	21	21	0
+Gemma MDD__GSE54565__all	MDD	reference	0.05	375	11901	0	0.0	0	0.0	1	0.0	0.0		1			MDD__GSE54565__all	16	16	0
+Gemma MDD__GSE54566__all	MDD	reference	0.05	375	11907	0	0.0	0	0.0	1	0.0	0.0		1			MDD__GSE54566__all	14	14	0
+Gemma MDD__GSE54567__all	MDD	reference	0.05	375	11908	0	0.0	0	0.0	1	0.0	0.0		1			MDD__GSE54567__all	14	14	0
+Gemma MDD__GSE54568__all	MDD	reference	0.05	375	11908	1	0.0001	0	0.0	1	0.02	0.12	0.0	1			MDD__GSE54568__all	15	15	0
+Gemma MDD__GSE54570__all	MDD	reference	0.05	325	8146	2	0.0002	1	0.0031	0.111	0.01	0.12	75.28	0.0125			MDD__GSE54570__all	13	13	0
+Gemma MDD__GSE54571__all	MDD	reference	0.05	375	11907	2	0.0002	0	0.0	1	0.18	0.38	0.0	1			MDD__GSE54571__all	13	13	0
+Gemma MDD__GSE54572__all	MDD	reference	0.05	375	11908	840	0.0705	35	0.0933	0.0603	36.06	5.59	0.97	0.556			MDD__GSE54572__all	12	12	325
+Gemma MDD__GSE54575__all	MDD	reference	0.05	325	8147	3942	0.4839	123	0.3785	1	157.2	9.19	0.78	1			MDD__GSE54575__all	12	12	5518
+Gemma MDD__GSE87610__dorsolateral_prefrontal_cortex	MDD	reference	0.05	378	11602	0	0.0	0	0.0	1	0.0	0.0		1			MDD__GSE87610__dorsolateral_prefrontal_cortex	38	38	0
+Gemma MDD__GSE44593__all	MDD	reference	0.05	375	11906	0	0.0	0	0.0	1	0.0	0.0		1			MDD__GSE44593__all	14	14	0
+Gemma MDD__GSE80655__anterior_cingulate_cortex	MDD	reference	0.05	377	13145	0	0.0	0	0.0	1	0.0	0.0		1			MDD__GSE80655__anterior_cingulate_cortex	24	24	0
+Gemma MDD__GSE193417__all	MDD	reference	0.05	302	8878	0	0.0	0	0.0	1	0.0	0.0		1			MDD__GSE193417__all	6	6	0
+Gemma MDD__GSE214921__all	MDD	reference	0.05	380	12174	0	0.0	0	0.0	1	0.0	0.0		1			MDD__GSE214921__all	20	19	0
+Gemma MDD__GSE275676__all	MDD	reference	0.05	381	12808	0	0.0	0	0.0	1	0.0	0.0		1			MDD__GSE275676__all	20	19	0
+Gemma ASD__GSE28521__all	ASD	restricted	0.05	367	10673	1	0.0001	0	0.0	1	0.02	0.15	0.0	1			ASD__GSE28521__all			
+Gemma ASD__GSE38322__Brodmann_(1909)_area_19	ASD	restricted	0.05	375	11927	0	0.0	0	0.0	1	0.0	0.0		1			ASD__GSE38322__Brodmann_(1909)_area_19			
+Gemma ASD__GSE30573__all	ASD	restricted	0.05	382	12277	1	0.0001	0	0.0	1	0.03	0.17	0.0	1			ASD__GSE30573__all			
+Gemma ASD__GSE62098__all	ASD	restricted	0.05	375	12360	0	0.0	0	0.0	1	0.0	0.0		1			ASD__GSE62098__all			
+Gemma ASD__GSE102741__all	ASD	restricted	0.05	370	12381	6	0.0005	0	0.0	1	0.04	0.21	0.0	1			ASD__GSE102741__all			
+Gemma ASD__GSE236761__all	ASD	restricted	0.05	376	11631	8	0.0007	0	0.0	1	0.07	0.26	0.0	1			ASD__GSE236761__all			

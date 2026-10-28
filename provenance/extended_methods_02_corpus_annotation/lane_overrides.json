@@ -1,0 +1,142 @@
+{
+ "_about": "Hand lane assignments where the parent text names several banks or the regex picks the wrong one (lineage review 2026-09-24, review_2026-09-24/lineage_review.md). Applied last.",
+ "28754123": {
+  "lane": "pritzker",
+  "why": "Ramaker 2017: primary cohort is Pritzker; Stanley is secondary"
+ },
+ "33585819": {
+  "lane": "periph",
+  "why": "Gatta 2021: discovery data are lymphocytes"
+ },
+ "18191109": {
+  "lane": "stanley",
+  "why": "Shao 2008: describing paper of the Stanley Vawter SMRIDB dataset"
+ },
+ "20197298": {
+  "lane": "meta",
+  "why": "Torkamani 2010: two banks (Victorian Brain Bank and Harvard)"
+ },
+ "40796563": {
+  "lane": "meta",
+  "why": "Nakatsuka 2025: pools Batiuk, Ruzicka and Ling single-nucleus cohorts"
+ },
+ "36090817": {
+  "lane": "meta",
+  "why": "Sadeghi 2022: pools LIBD, CMC, CMC-HBCC, BrainGVEX and five other datasets"
+ },
+ "38790238": {
+  "lane": "meta",
+  "why": "Burrack 2024: 10 brain datasets and 3 blood datasets"
+ },
+ "33673722": {
+  "lane": "meta",
+  "why": "Hertzberg 2021: cerebellum meta-analysis of GEO, SMRI and NIMH datasets"
+ },
+ "37031222": {
+  "lane": "pritzker",
+  "why": "Medina 2023: Pritzker consortium samples and authors (Akil, Watson, Bunney, Vawter)"
+ },
+ "41567988": {
+  "lane": "stanley",
+  "also_banks": [
+   "aus"
+  ],
+  "why": "Mendez-Victoriano 2026: midbrain from the NSW Brain Tissue Resource Centre and the Stanley Array cohorts (Paul 2026-09-24: spans both; analyze the two parts separately where the paper allows)"
+ },
+ "41271614": {
+  "lane": "periph",
+  "why": "Zhao 2025: Xijing Hospital whole-blood cohort; the cmc lane came from the parent text 'no public consortium dataset (e.g., CMC, PsychENCODE, GEO) named' (batch 10 check, 2026-09-24)"
+ },
+ "16604350": {
+  "lane": "periph",
+  "why": "Vawter 2006: the SZ vs control transcriptome data are lymphoblastoid lines from one multiplex pedigree (Methods, read 2026-09-24); Stanley DLPFC CodeLink data are shown only for 4q33-35.1 genes"
+ },
+ "16549361": {
+  "lane": "harvard",
+  "why": "Novikova 2006 (proteomics): discovery cohort Harvard Brain Tissue Resource Center; Mount Sinai/Bronx VA is the replication cohort (batch 10, 2026-09-24)"
+ },
+ "34154796": {
+  "lane": "cmc",
+  "why": "Hoffman 2021: CommonMind release v2, MSSM-Penn-Pitt and NIMH-HBCC cohorts (Methods, Description of Cohorts; added 2026-09-25)"
+ },
+ "17822540": {
+  "lane": "brain_other",
+  "also_banks": [
+   "harvard",
+   "stanley"
+  ],
+  "why": "Saetre 2007: three banks, Maudsley Brain Bank (48), Harvard Brain Tissue Resource Centre (32), Stanley Foundation Brain Consortium (30) (Methods, PMC2080573; source audit 2026-09-25)"
+ },
+ "14993118": {
+  "lane": "harvard",
+  "why": "Konradi 2004: Benes FM (Harvard Brain Tissue Resource Center) is an author; McLean affiliation (PubMed record). Methods not read (source audit 2026-09-25)"
+ },
+ "17471287": {
+  "lane": "pitt",
+  "why": "Hashimoto 2008: Lewis DA and Mirnics K are authors; University of Pittsburgh affiliation (PubMed record). Methods not read (source audit 2026-09-25)"
+ },
+ "19834500": {
+  "lane": "stanley",
+  "why": "Chu 2009: listed as Stanley SMRIDB study 16 in Bergon 2015's dataset table; cites Torrey 2000 and acknowledges an SMRI grant (Nature article page). Methods not read (source audit 2026-09-25)"
+ },
+ "39355378": {
+  "lane": "ipsc",
+  "why": "Yang 2024: peripheral blood and brain organoids; iPSC lane includes organoid studies (Paul, 2026-09-25)"
+ },
+ "32143829": {
+  "lane": "periph",
+  "why": "Evgrafov 2020: cultured neural progenitor cells derived from olfactory neuroepithelium (CNON), not iPSC; the tissue rule matched 'neural progenitor' (added 2026-09-25)"
+ },
+ "30016334": {
+  "lane": "pritzker",
+  "relation": "primary",
+  "why": "Hagenauer 2018: first report of the Pritzker consortium's own DLPFC arrays (GSE92538, released with this paper; 'Our current analyses began with subject-level summary gene expression data (GSE92538)', 22 SZ / 71 controls, Brain Banks: UC-Irvine, Fig. 3); public datasets used only for replication (2026-09-26)"
+ },
+ "32513544": {
+  "lane": "pritzker",
+  "why": "Zeppillo 2022: 'Postmortem brain specimens of the DLPFC ... were obtained from the University of California Irvine Brain Bank (UCIBB)' (PMC7718399, Methods), the bank of the Pritzker consortium (2026-09-26)"
+ },
+ "11576761": {
+  "lane": "stanley",
+  "why": "Vawter 2001: 'The Stanley Foundation provided a set of cerebellum and prefrontal cortex samples ... A second cohort of tissue samples from the MTG (Brodmann area 21) were provided by the Stanley Consortium' (Methods, Zotero PDF; 2026-09-26)"
+ },
+ "15334603": {
+  "lane": "stanley",
+  "why": "Aston 2004: 'Post-mortem tissue was derived from BA21 of 12 patients with schizophrenia (DSM-IV) and 14 controls from the Stanley Foundation Consortium' (Materials and Methods, Zotero PDF; adversarial review round 1, D1, 2026-09-26)"
+ },
+ "16223876": {
+  "lane": "harvard",
+  "why": "Glatt 2005: 'Gene expression data were obtained from cRNA microarrays of fresh-frozen postmortem DLPFC tissue samples (50 mg) from 19 SZ patients and 27 nonpsychiatric control subjects in the National Brain Databank (NBD) maintained by the Harvard Brain Tissue Resource Center' (Methods, Gene Expression in DLPFC, Zotero PDF; adversarial review round 1, D1, 2026-09-26)"
+ },
+ "31288836": {
+  "lane": "brain_other",
+  "also_banks": [
+   "harvard"
+  ],
+  "why": "Mendizabal 2019: 'Human tissue samples were obtained from the NIH NeuroBioBank (The Harvard Brain Tissue Resource Center ...; the Human Brain and Spinal Fluid Resource Center, VA West Los Angeles Healthcare Center; and the University of Miami Brain Endowment Bank) and the UT Psychiatry Psychosis Research Program (Dallas Brain Collection)' (Acknowledgements, PMC full text); RNA-seq donors in Additional file 1 Table S1: Dallas (CT Lab) 26, Sepulveda (HSB) 13, HBTRC 9, Miami 2. Not CommonMind (the lane came from model text); multi-bank (adversarial review round 1, D1, 2026-09-26)"
+ },
+ "19255580": {
+  "lane": "brain_other",
+  "also_banks": [
+   "harvard"
+  ],
+  "why": "Maycox 2009: two cohorts, 'We then compared our study (Charing Cross Hospital prospective collection) with that of an independent prefrontal cortex dataset from the Harvard Brain Bank' (Abstract); for the second, the authors 'selected the raw data deposited in the public domain by Glatt et al., 2005 for the ‘McLean66’ set from the Harvard Brain Bank (HBB)' (Introduction, Zotero PDF). Charing Cross (CCHPC) has no lane of its own (adversarial review round 1, D10, 2026-09-26)"
+ },
+ "21538462": {
+  "lane": "brain_other",
+  "why": "Barnes 2011: Charing Cross Hospital Prospective Collection, BA22; 'We previously reported a transcriptomic analysis of the anterior prefrontal cortex (BA10) collected from the same subjects (Maycox et al., 2009), using the same array platform' (Introduction, Zotero PDF). Same subjects, different region as Maycox 2009's CCHPC arm; Maycox 2009 is in Glatt 2005's same_data_as group, which Glatt 2005 represents, so the CCHPC subjects enter the cohort tier once, through Barnes 2011 (adversarial review round 1, D10, 2026-09-26)"
+ },
+ "31053723": {
+  "lane": "brain_other",
+  "also_banks": [
+   "harvard",
+   "pitt"
+  ],
+  "why": "Pai 2019: 'Post-mortem brain samples of frontal cortex were obtained through the NIH NeuroBioBank at the University of Pittsburgh; the Harvard Brain Tissue Resource Center; the Human Brain and Spinal Fluid Resource Center at Sepulveda; and the University of Miami Brain Endowment Bank' (Methods, Zotero PDF); Supplementary Data 1 sources: Miami 34, Sepulveda 24, HBTRC 24, Pittsburgh 1; multi-bank (adversarial review round 1, D10, 2026-09-26)"
+ },
+ "40076849": {
+  "lane": "harvard",
+  "why": "Zhou 2025: reanalyses the SZBDMulti-Seq snRNA-seq cohort of brainSCOPE (48 samples, 24 SZ and 24 control; text: 'the snRNA-seq data of the SZBDMulti-Seq cohort were included'), which is Ruzicka 2024's McLean (HBTRC) cohort, 48 of 48 by identifier (gene-lists/donor_overlap report)",
+  "evidence": "Checked against the papers 2026-09-27; lane unchanged. Zhou 2025 names no brain bank: 'The single-nucleus sequencing dataset was obtained from the brainSCOPE resource portal ... the snRNA-seq data from the SZBDMulti-Seq cohort were selected for this study. It should be noted that the original SZBDMulti-Seq dataset comprises 72 samples in total, including 24 bipolar disorder cases that are not relevant to this study and were therefore excluded' (Materials and Methods 4.1, p. 16, Zotero PDF PMC11900070); 'This dataset, focusing on the SCZ cases in the original study [26], contained 48 samples, with 12 males and 12 females in the control group and 12 males and 12 females with SCZ' (Results 2.1, p. 2), where [26] is Ruzicka et al., medRxiv 2020, the preprint of Ruzicka 2024. Ruzicka 2024: tissue 'was obtained from two National Institute of Mental Health NeuroBioBank associated tissue repositories, the Harvard Brain Tissue Resource Center at McLean Hospital, and the Mount Sinai/JJ Peters VA Medical Center NIH Brain and Tissue Repository' (supplementary Materials and Methods, Assembly of the tissue cohorts, p. 2); 'The McLean (McL) cohort included 24 individuals with schizophrenia and 24 healthy individuals, balanced for sex (12 males and 12 females per group)' (main text p. 2); McL tissue is BA10 (supplement p. 2). Identifiers: the 48 SZ and control IDs of SZBDMulti-Seq in the brainSCOPE sample file (gene-lists/donor_overlap/raw/emani2024/PEC2_sample_metadata.txt; CON1-24, SZ1-24) are Ruzicka's Data S1 McLean IDs, 48 of 48, sex equal for all 48."
+ }
+}

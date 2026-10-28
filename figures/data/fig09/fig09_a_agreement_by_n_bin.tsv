@@ -1,0 +1,16 @@
+# figure: fig09 panel a  (81 base: datasets of the studies in the 81 base)
+# script: sample_level_81_2026-10-15/code/assemble_a.py (panel logic of analyses/figure_exports/export_fig08_fig09_fig10.py fig9_a); run 2026-10-15
+# dataset set: S34 (80-study base) (26 bulk datasets); pair rule: R1 (relation_group == subject-separate of subject_relations.tsv, the rule behind the stored 192 pairs); covariate level of bulk partners: L2
+# input: out/validate28_b/b_pairs.tsv (rerun of fairness_sample_level/scripts/b_covariate_series.R, unchanged) sha256 e8f364bedc34
+# input: out/new_pairs/pairs_rho_from_b_de.tsv sha256 6d275e1e4f9c
+# input: single_cell/results/sc_cross_pairs.tsv sha256 c1ab1ef25978
+# input: subject_relations/subject_relations.tsv sha256 7c13a8fb0f19
+# input: fairness_sample_level/results/datasets_used.tsv sha256 9b86004e1f04; derived-unit sizes from derived_lists_2026-10-14/work/stage2/*meta.tsv
+# medians of fig09_a_agreement_pairs.tsv within bins of the smaller group size (bins 0-10, 11-30, 31+); single nucleus = median over classes within each cohort pair first
+donors_per_group_bin	data_type	n_pairs	median_rho_t	q25	q75
+0-10	bulk dataset pairs	56	0.136533	0.02106	0.287946
+0-10	single-nucleus cohort pairs (median over classes)	10	-0.01505	-0.0496	0.0317
+11-30	bulk dataset pairs	173	0.145904	0.034972	0.224474
+11-30	single-nucleus cohort pairs (median over classes)	8	0.162575	0.102887	0.184688
+31+	bulk dataset pairs	0			
+31+	single-nucleus cohort pairs (median over classes)	1	0.1781	0.1781	0.1781

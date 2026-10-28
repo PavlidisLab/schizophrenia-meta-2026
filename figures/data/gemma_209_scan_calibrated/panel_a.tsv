@@ -1,0 +1,13 @@
+# run 2026-10-23: the 114 schizophrenia-related picked contrasts (in_sz_corpus or held_out in scan176_contrasts.tsv: 65 in the schizophrenia corpus plus 49 held-out SZ-annotated experiments) are excluded from every group before the counts (build_panels_ra.py with RA_EXCLUDE_SZ=1 = provenance/main_text/scripts/build_panels.py plus the exclusion and a count print; one scored-shard set, 33,713 contrasts)
+# claim: Extended Fig. 11 panels a and c under the calibrated per-contrast rule (the 383 genes (study tier q < 0.1); hit = z of the set above the 97.5th percentile of the contrast's own null of 200 decile-matched comparison sets, and AUROC above 0.5)
+# script: gemma_scans_375_2026-10-15/scripts/build_panels.py (build_sets_375.py, score375.py; arithmetic of calibrated_panels/score_grouped.py and build_calibrated_panels.py)
+# source: scored shards /home/paul/core80_work_2026-10-16/P6/M08/out/full: 33713 contrasts; sets_scoring.tsv d85e00b4875f; scan176_contrasts.tsv 1c71150f2205; all_contrasts_scored_public.tsv ff71aa122135; coi_scored.tsv c5a92fa053c1; flagged_candidates_classified.tsv 8eb7717b77e7
+# date: 2026-10-23
+# comparison_set_rate = mean over the 200 comparison sets of the set's own hit rate in the group (each set against the other 199 sets of the contrast); _lo, _hi = 2.5th and 97.5th percentile of the per-set rates
+# k, n = contrasts that are hits, contrasts counted (contrasts with no z for the set or a comparison set are not counted)
+panel	group	k	n	share	wilson95_lo	wilson95_hi	comparison_set_rate	comparison_set_rate_lo	comparison_set_rate_hi
+a	Postmortem brain	110	244	0.45082	0.38963	0.51353	0.029283	0.0081967	0.061475
+a	Other brain	35	104	0.33654	0.25299	0.43173	0.029471	0	0.067308
+a	Other tissues	460	3140	0.1465	0.13456	0.1593	0.029234	0.015916	0.055143
+a	Cell lines / in vitro	443	4332	0.10226	0.093589	0.11164	0.029221	0.015224	0.050156
+a	Blood	91	767	0.11864	0.097638	0.14345	0.029518	0.0090939	0.073175

@@ -1,0 +1,85 @@
+# calls_agonal_state_80.tsv
+# script: agonal_cod_calls_2026-10-18/build_final.py; built 2026-10-18; definitions BRIEF.md; two blind readers per study (sonnet subagents, reader A forward, reader B reverse order), quotes verified verbatim against the named text file after whitespace normalisation (verify_quotes.py); texts copied to texts/
+# input: studies_manifest.tsv sha256 3bf811583bc8; reader files sha256 A1:6ad13d911ad0, A2:030c022ec9fb, A3:54a812eaf9d7, B1:85cc8e71174d, B2:8685ced55ed2, B3:60d1073cf55c
+# call = agonal state or terminal condition (agonal factor, coma, hypoxia, terminal illness, ventilator, documented agonal exclusion rule); values adjusted > sensitivity > exclusion_rule > matched_or_compared > reported_only > not_mentioned
+pmid	label	year	call_a	quote_a	file_a	file_a_sha12	loc_a	reader_A_a	reader_B_a	basis_a	weak_a	note_a	old_call_cause_of_death_agonal
+11296301	Hakak 2001	2001	exclusion_rule	None of the patients died with a coma longer than 12 h, and all died of natural causes.	schizophrenia-transcriptome-replication/data/raw/11296301/zotero/text.txt	a815c18c1ab2	line 71-72	exclusion_rule	exclusion_rule	readers agree	no coma longer than 12 h and all natural causes: worded as a cohort property, selection rule inferred	stated as a cohort property; no test or model	matched_or_compared
+16038679	Altar 2005	2005	exclusion_rule	lower pH in this and other studies was associated with poor RNA quality and prolonged agonal conditions of anoxia, respiratory arrest, or coma (Harrison et al 1995; Johnston et al 1997; Kingsbury et al 1995; Li et al 2004). Such samples were excluded from the present study.	texts/altar.txt	b603957ff53e	Discussion, line ~1795	exclusion_rule	exclusion_rule	readers agree		also matched_or_compared: 'balanced across ... mode of death'; mode of death not in the 7-factor ANOVA model	matched_or_compared
+18985160	Mudge 2008	2008	not_mentioned					not_mentioned	not_mentioned	readers agree			adjusted
+21091092	Schmitt 2011	2011	not_mentioned					not_mentioned	not_mentioned	readers agree			reported_only
+22869038	Fillman 2013	2013	not_mentioned					sensitivity	sensitivity	readers agree; downgraded from sensitivity by rule: recent peripheral inflammation in the week before death is not agonal state, coma, hypoxia or a terminal-condition rule			reported_only
+24628518	Pietersen 2014 (PV neurons)	2014	not_mentioned					not_mentioned	not_mentioned	readers agree			reported_only
+25113377	Zhao 2015	2015	not_mentioned					not_mentioned	not_mentioned	readers agree			not_mentioned
+27668389	Fromer 2016	2016	exclusion_rule	Cases were excluded if they had neuropathology related to Alzheimer’s disease and/or Parkinson’s disease, acute neurological insults (anoxia, strokes, and/or traumatic brain injury) immediately prior to death, or were on ventilators near the time of death.	schizophrenia-transcriptome-replication/data/raw/27668389/fulltext/pmc_fulltext.txt	6a154b359c09	line 10 (Methods, sample selection)	exclusion_rule	exclusion_rule	readers agree		anoxia/ventilator exclusion; not a model covariate (covariates: Dx, age of death, sex, PMI, pH, RIN, institution etc.)	matched_or_compared
+27940260	Voisey 2017	2017	not_mentioned					not_mentioned	not_mentioned	readers agree			reported_only
+29112193	Enwright 2018	2018	not_mentioned					not_mentioned	not_mentioned	readers agree			adjusted
+31053723	Pai 2019	2019	not_mentioned					not_mentioned	not_mentioned	readers agree			reported_only
+31288836	Mendizabal 2019	2019	not_mentioned					not_mentioned	not_mentioned	readers agree			reported_only
+32203495	Jaffe 2020	2020	not_mentioned					not_mentioned	not_mentioned	readers agree			not_mentioned
+33184259	Maas 2020	2020	not_mentioned					not_mentioned	not_mentioned	readers agree			not_mentioned
+34059796	Weissleder 2021	2021	not_mentioned					not_mentioned	not_mentioned	readers agree			matched_or_compared
+36223459	Batiuk 2022	2022	not_mentioned					not_mentioned	not_mentioned	readers agree			matched_or_compared
+36932057	Schulmann 2023	2023	not_mentioned					not_mentioned	not_mentioned	readers agree			not_mentioned
+38781388	Ruzicka 2024	2024	not_mentioned					not_mentioned	not_mentioned	readers agree	partial text		not_mentioned
+41174894	Yalcinbas 2025	2025	not_mentioned					not_mentioned	not_mentioned	readers agree			not_mentioned
+41757081	Kwon 2026	2026	not_mentioned					not_mentioned	not_mentioned	readers agree			not_mentioned
+42778699	Lee 2026 (PsychAD)	2026	not_mentioned					not_mentioned	not_mentioned	readers agree			not_mentioned
+17822540	Saetre 2007	2007	reported_only	Information about brain bank of origin, gender, age, time post-mortem (PMI), agonal state, age of onset, brain pH and medication for the 110 individuals included in the study.	schizophrenia-transcriptome-replication/data/raw/17822540/fulltext/pmc_fulltext.txt	e31d130d18e4	line 50 (Supplementary Table 1 legend)	reported_only	reported_only	readers agree		agonal state listed in supplementary table only; no test, model or exclusion in text; infection-before-death re-analyses (line 665) are about cause of death (see B)	sensitivity
+16236523	Weidenhofer 2006	2006	exclusion_rule	Cases where there was a significant history of drug or alcohol abuse, neurological disorder or medical illness that might have influenced agonal state, any abnormality on neuropathological examination, head injury or where the postmortem interval exceeded 48 h were excluded.	texts/weid_raw.txt	6488ef4d9cc9	Methods, Case characteristics (line ~1080)	exclusion_rule	exclusion_rule	readers agree		exclusion is by medical illness that might have influenced agonal state; text from pdftotext of data/raw/16236523/zotero PDF	matched_or_compared
+39397771	Alsema 2025	2025	not_mentioned					not_mentioned	not_mentioned	readers agree	partial text (main text missing)		reported_only
+25487697	de Baumont 2015	2015	not_mentioned					not_mentioned	not_mentioned	readers agree			not_mentioned
+19088852	Harris 2008	2008	not_mentioned					not_mentioned	not_mentioned	readers agree			not_mentioned
+14743183	Iwamoto 2004	2004	not_mentioned					not_mentioned	not_mentioned	readers agree			not_mentioned
+15018814	Kuromitsu 2001	2001	not_mentioned					not_mentioned	not_mentioned	readers agree			not_mentioned
+18771015	Garbett 2008	2008	not_mentioned					not_mentioned	not_mentioned	readers agree			sensitivity
+19255580	Maycox 2009	2009	not_mentioned					not_mentioned	reported_only	adjudicated: Discussion remark only, no cohort data			matched_or_compared
+21538462	Barnes 2011	2011	not_mentioned					not_mentioned	not_mentioned	readers agree			matched_or_compared
+24169640	Hwang 2013	2013	not_mentioned					not_mentioned	not_mentioned	readers agree			not_mentioned
+24702465	Pietersen 2014	2014	not_mentioned					not_mentioned	not_mentioned	readers agree			reported_only
+25560755	Arion 2015	2015	reported_only	In the present study, all subjects died suddenly outside of a hospital setting, with little or no agonal state which can affect brain pH and RNA integrity	schizophrenia-transcriptome-replication/data/raw/25560755/fulltext/pmc_fulltext.txt	4a749c78f606	1396	reported_only	reported_only	readers agree	cohort description (died suddenly out of hospital, little or no agonal state), not a stated selection rule	statement about the cohort; no agonal measure, test or model	adjusted
+27801890	Scarr 2018	2018	not_mentioned					not_mentioned	not_mentioned	readers agree			reported_only
+28123834	Mladinov 2016	2016	not_mentioned					not_mentioned	not_mentioned	readers agree			reported_only
+29463818	Scarr 2018	2018	not_mentioned					not_mentioned	not_mentioned	readers agree			reported_only
+31123247	Lanz 2019	2019	not_mentioned					not_mentioned	not_mentioned	readers agree			adjusted
+32006661	Santarelli 2019	2019	not_mentioned					not_mentioned	not_mentioned	readers agree			reported_only
+32513544	Zeppillo 2022	2022	reported_only	pH, postmortem interval (PMI) and agonal factor score (AFS)(Tomita et al., 2004)	schizophrenia-transcriptome-replication/analyses/ph_agonal_handling_64_2026-10-09/text_cache/32513544/32513544__publisher__1-s2.0-S092099642030147X-mmc1.pdf.txt	bed7877c5fe5	26 (Supplementary figure 1 legend)	reported_only	matched_or_compared	adjudicated: agonal factor score reported and correlated with surrogate variables in a supplement figure; not a model term and not a test between groups		supplement figure shows correlation of surrogate variables SV1-4 (used in the DE model) with agonal factor score; AFS itself is not a model term; main text only has a speculative remark on agonal pH changes (line 349)	reported_only
+33558674	Akula 2021	2021	not_mentioned					not_mentioned	not_mentioned	readers agree			sensitivity
+34272489	Wu 2021	2021	not_mentioned					not_mentioned	not_mentioned	readers agree			not_mentioned
+36302706	Ketchesin 2023	2023	exclusion_rule	died by accident, natural causes or suicide, suddenly and out of hospital, with no evidence of an agonal state	schizophrenia-transcriptome-replication/analyses/ph_agonal_handling_64_2026-10-09/text_cache/36302706/36302706__publisher__1-s2.0-S0006322322015220-mmc1.pdf.txt	8bd02826bc7b	36-38 (supplement)	exclusion_rule	exclusion_rule	readers agree	one supplement inclusion sentence supports both calls	inclusion criterion 4 of 4; main text line 159 of pmc_fulltext.txt: all subjects died suddenly with limited or no agonal state	matched_or_compared
+37498306	Arihisa 2023	2023	not_mentioned					not_mentioned	not_mentioned	readers agree			not_mentioned
+39227716	Frohlich 2024	2024	not_mentioned					not_mentioned	not_mentioned	readers agree			not_mentioned
+41210297	Mas 2025	2025	not_mentioned					not_mentioned	not_mentioned	readers agree			reported_only
+41942462	Singh 2026	2026	not_mentioned					not_mentioned	not_mentioned	readers agree			not_mentioned
+26585218	Mauney 2015	2015	not_mentioned					not_mentioned	not_mentioned	readers agree			not_mentioned
+38648100	Zhu 2024	2024	not_mentioned					not_mentioned	not_mentioned	readers agree			reported_only
+18445270	Bowden 2008	2008	not_mentioned					not_mentioned	not_mentioned	readers agree			reported_only
+23147385	Chen 2013	2013	not_mentioned					not_mentioned	not_mentioned	readers agree			not_mentioned
+28754123	Ramaker 2017	2017	exclusion_rule	we included only patients with an agonal factor score of zero and a minimum brain pH of 6.5	schizophrenia-transcriptome-replication/data/raw/28754123/fulltext/pmc_fulltext.txt	3aac52a0ddce	127	exclusion_rule	exclusion_rule	readers agree		also line 170: controls matched for agonal state and brain pH (matched_or_compared level); agonal scores assigned from a published scale (line 8); not a DE model term	matched_or_compared
+30468562	Abdolmaleky 2019	2019	not_mentioned					not_mentioned	not_mentioned	readers agree			not_mentioned
+15563509	Iwamoto 2005	2005	sensitivity	However, in our case, the agonal state did not seem to affect the results of clustering analysis.	schizophrenia-transcriptome-replication/data/raw/15563509/fulltext/zotero_pdf.txt	3ceba3e7af92	3186-3188	sensitivity	sensitivity	readers agree	agonal state inferred from cause of death and annotated on a clustering figure; not a model term	agonal state was predicted from cause of death (line 16-18) and shown as type-I/type-II annotation on the clustering figure (line 2743); a visual check, not a model covariate; pH thresholds were the modelled check	sensitivity
+15334603	Aston 2004	2004	not_mentioned					not_mentioned	not_mentioned	readers agree			sensitivity
+18778695	Narayan 2008	2008	not_mentioned					not_mentioned	not_mentioned	readers agree			sensitivity
+20034564	Arion 2010	2010	not_mentioned					not_mentioned	not_mentioned	readers agree			reported_only
+22558445	Wu 2012	2012	exclusion_rule	agonal state were excluded.	schizophrenia-transcriptome-replication/data/raw/22558445/fulltext/zotero_pdf.txt	2544b6d327b1	line 4 (Sample preparation)	exclusion_rule	exclusion_rule	readers agree	quote starts mid-sentence (page break in extraction)	Start of the sentence is lost at a page break in the extraction (the preceding words are not in the text file); the visible text says subjects with agonal state were excluded.	matched_or_compared
+24594777	Kohen 2014	2014	not_mentioned					not_mentioned	not_mentioned	readers agree			not_mentioned
+24776767	Xiao 2014	2014	not_mentioned					not_mentioned	not_mentioned	readers agree			reported_only
+27622934	Darby 2016	2016	not_mentioned					not_mentioned	not_mentioned	readers agree			not_mentioned
+27898074	Kim 2016	2016	exclusion_rule	one schizophrenia case that died from septicemia and acute pancreatitis was excluded from the downstream analysis because this factor could have directly contributed to elevated immune markers at time of death.	schizophrenia-transcriptome-replication/data/raw/27898074/fulltext/fulltext.txt	17a1fe2671af	line 67	exclusion_rule	exclusion_rule	readers agree	one septicemia/pancreatitis case excluded; terminal condition by inference	Septicemia and acute pancreatitis read as a terminal condition; the same sentence supports call B. The word hypoxia appears only as an enriched gene-set term (line 114).	reported_only
+28809853	Chang 2017	2017	not_mentioned					not_mentioned	not_mentioned	readers agree			reported_only
+30050107	Jaffe 2018	2018	not_mentioned					not_mentioned	not_mentioned	readers agree			matched_or_compared
+31174959	Collado-Torres 2019	2019	not_mentioned					not_mentioned	not_mentioned	readers agree			not_mentioned
+32152472	Perez 2021	2021	exclusion_rule	without agonal duress or other brain disorders,	schizophrenia-transcriptome-replication/analyses/ph_agonal_handling_64_2026-10-09/text_cache/32152472/32152472__zotero__Perez et al. - 2021 - Hippocampal subfield transcriptome analysis in schizophrenia psychosis.pdf.txt	2931020ffe5e	lines 103-104 (Methods, human brain tissue)	exclusion_rule	exclusion_rule	readers agree		Selection rule for cases collected; two-column PDF text.	matched_or_compared
+32566292	Bakshi 2020	2020	not_mentioned					not_mentioned	not_mentioned	readers agree			not_mentioned
+34004381	Gebicke-Haerter 2021	2021	not_mentioned					not_mentioned	not_mentioned	readers agree			reported_only
+34440415	Lindholm Carlstrom 2021	2021	not_mentioned					not_mentioned	not_mentioned	readers agree			reported_only
+36319771	Benjamin 2022	2022	not_mentioned					not_mentioned	not_mentioned	readers agree			not_mentioned
+38448582	Ling 2024	2024	exclusion_rule	Donors were excluded on the basis of unusual gene-expression profiles and/or cell-type proportions (potentially related to agonal events) as outlined below.	schizophrenia-transcriptome-replication/data/raw/38448582/fulltext/pmc_fulltext.txt	9e79e18117f0	line 62	exclusion_rule	exclusion_rule	readers agree	donors excluded as expression outliers described as potentially agonal; not a clinical agonal criterion	Exclusion by expression profile; the text links it to possible agonal events. Supplement PDFs searched, nothing further.	matched_or_compared
+39526318	Zhang 2026	2026	not_mentioned					not_mentioned	not_mentioned	readers agree			sensitivity
+41567988	Mendez-Victoriano 2026	2026	not_mentioned					not_mentioned	not_mentioned	readers agree			reported_only
+42461238	Dean 2026	2026	not_mentioned					not_mentioned	not_mentioned	readers agree			matched_or_compared
+19834500	Chu 2009	2009	not_mentioned					not_mentioned	not_mentioned	readers agree	no full text locally (landing page only)		not_mentioned
+39237723	Arbabi 2025	2025	not_mentioned					not_mentioned	not_mentioned	readers agree			matched_or_compared
+36192459	Puvogel 2022	2022	not_mentioned					not_mentioned	not_mentioned	readers agree			reported_only
+25981335	Maschietto 2015	2015	not_mentioned					reported_only	not_mentioned	adjudicated: generic limitation sentence, no cohort data			not_mentioned
+28476208	Arion 2017	2017	not_mentioned					not_mentioned	not_mentioned	readers agree			adjusted
+27661005	Hu 2016	2016	not_mentioned					not_mentioned	not_mentioned	readers agree			not_mentioned

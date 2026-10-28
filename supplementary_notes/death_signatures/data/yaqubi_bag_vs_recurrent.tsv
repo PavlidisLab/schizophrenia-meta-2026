@@ -1,0 +1,10 @@
+# script: 06_bag.py, run 2026-10-18; NEW analysis (addition); seed 20261018; 10000 matched sets; 1000 bootstrap resamples over genes
+# inputs: MOESM3_ESM.xlsx Supplementary Data 4 sha256 8ab60f6b237f; axis_v2_controls.tsv.gz 2c72a9b279a2; hardy_t_by_region.tsv.gz 54f989c55753; recurrence_genes.tsv dda5eb621c15; recurrent_sets.tsv 3c42f67cdd7a; go_bp_sets.tsv.gz efd94fc4462f; term_group_genes.tsv c8c03204dffb
+# BAG direction as released (up/down in SPMI and LPMI vs CTRL); expected overlap for GO/axis rows = hypergeometric expectation with the genes of the pH axis as background (not DE-prior matched); fold for the recurrent sets in bag_vs_recurrent.tsv is over the matched null
+gene_set	bag_set	bag_genes_in_universe	overlap	null_mean	null_q025	null_q975	fold	fold_null_q025	fold_null_q975	n_with_SZ_sign	concordant	frac_concordant	wilson95_low	wilson95_high	null_frac_mean	null_frac_q025	null_frac_q975
+383 recurrent (q_bh<0.1)	BAG up	650	26	18.77	11.0	27.0	1.39	0.59	1.44	26	20	0.769	0.579	0.89	0.338	0.133	0.556
+383 recurrent (q_bh<0.1)	BAG down	229	11	5.46	2.0	10.0	2.01	0.37	1.83	11	9	0.818	0.523	0.949	0.624	0.0	1.0
+383 recurrent (q_bh<0.1)	BAG all	879	37	24.23	16.0	33.0	1.53	0.66	1.36	37	29	0.784	0.628	0.886	0.403	0.217	0.6
+107 in >=10 lists	BAG up	650	12	5.44	1.0	10.0	2.2	0.18	1.84	12	11	0.917	0.646	0.985	0.348	0.0	0.8
+107 in >=10 lists	BAG down	229	4	1.65	0.0	4.0	2.43	0.0	2.43	4	3	0.75	0.301	0.954	0.512	0.0	1.0
+107 in >=10 lists	BAG all	879	16	7.09	3.0	12.0	2.26	0.42	1.69	16	14	0.875	0.64	0.965	0.415	0.0	0.8

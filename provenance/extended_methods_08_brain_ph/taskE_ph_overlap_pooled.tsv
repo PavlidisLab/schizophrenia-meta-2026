@@ -1,0 +1,26 @@
+# figure/claim: Fig 4a: pooled overlap summaries for the sentence "pH ranges overlap heavily"
+# script: analyses/mab_numbers_2026-10-12/taskE_ph_overlap.py
+# source (sha256 first 12): analyses/confounds/data/covariates/GSE21138.tsv 451590bceb07; analyses/confounds/data/gemma/1880_processed.tsv.gz 4308a7fa69d4; analyses/confounds/data/covariates/GSE35977.tsv 5f6592ae8cf9; analyses/confounds/data/gemma/5949_processed.tsv.gz afae7e7eea96; analyses/confounds/data/covariates/GSE35974.tsv 3917ad394924; analyses/confounds/data/gemma/5939_processed.tsv.gz 1fbe9d64242a; analyses/confounds/data/covariates/GSE53987.tsv da0e8af3064f; analyses/confounds/data/gemma/8359_processed.tsv.gz ebe534ba8bc4; analyses/confounds/data/covariates/GSE17612.tsv 9af0f076c20b; analyses/confounds/data/gemma/1381_processed.tsv.gz ad31c75edf65; analyses/confounds/data/covariates/GSE21935.tsv 78174a63e5d6; analyses/confounds/data/gemma/4150_processed.tsv.gz 0e8bd37ac333; analyses/confounds/data/covariates/GSE92538_GPL10526.tsv 110e6b86101e; analyses/confounds/data/gemma/18742_processed.tsv.gz 0dcdbea82dc5; analyses/confounds/data/covariates/GSE92538_GPL17027.tsv 56540f581167; analyses/confounds/data/gemma/18741_processed.tsv.gz 1d573714ddd3; analyses/confounds/data/covariates/GSE80655.tsv 93cd2ee3ede0; analyses/confounds/data/gemma/13014_processed.tsv.gz c08b1691ea56; analyses/confounds/data/covariates/GSE208338.tsv 3b5e76afcb74; analyses/confounds/data/gemma/26880_processed.tsv.gz c871ff292c8a; analyses/confounds/results/group_differences.tsv eebec7999878
+# date: 2026-10-12
+# quartiles: numpy linear interpolation; "within" is inclusive of the bounds; 14 dataset-regions = the 14 in Fig 4a (fig07 a1, in_14_dataset_regions = yes); GSE208338 shares donors with GSE21138 so pooled counts are not donor-independent
+quantity	value
+regions	14
+studies	9
+cases_total	382
+controls_total	432
+count_weighted_share_cases_in_control_range	0.897906
+count_weighted_n_cases_in_control_range	343
+count_weighted_share_cases_in_control_iqr	0.418848
+count_weighted_n_cases_in_control_iqr	160
+median_of_region_shares_in_control_range	0.917017
+min_region_share_in_control_range	0.681818
+max_region_share_in_control_range	1
+median_of_region_shares_in_control_iqr	0.34058
+min_region_share_in_control_iqr	0.227273
+max_region_share_in_control_iqr	0.704545
+regions_case_median_below_control_median	13
+regions_case_median_within_control_iqr	7
+regions_with_case_range_inside_control_range	6
+count_weighted_share_cases_below_control_min	0.065445
+count_weighted_share_cases_above_control_max	0.0366492
+count_weighted_share_cases_below_control_q1	0.434555

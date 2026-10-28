@@ -1,0 +1,44 @@
+# figure: fig08 panel f
+# script: analyses/redo_on_209_2026-10-11/3_ph_agonal_axes/export_fig08_209.py (copy of analyses/figure_exports/export_fig08_fig09_fig10.py: output folder, population text, results_516 in place of results_516, fig08 only), run 2026-10-11
+# input: analyses/hagihara_replication_2026-10-08/results/gse92538_ph_models.tsv sha256 762ef58920b2
+# OLS (HC3 errors) of tissue pH on diagnosis (Control reference) and covariates, per platform and for both platforms with one row per subject; rows 'agonal' = pH per agonal-score point. Run 2026-10-08/09 on the remote environment
+subset	formula	term	n	coef	se	p
+GPL10526 (Schiz cohorts 1,2; Dep 5,6)	ph ~ C(dx, Treatment('Control')) + age + sex	Bipolar Disorder	73	-0.19605775169665499	0.16538467039122706	0.23583361306047668
+GPL10526 (Schiz cohorts 1,2; Dep 5,6)	ph ~ C(dx, Treatment('Control')) + age + sex	Major Depressive Disorder	73	-0.08019958828551109	0.10211722418306453	0.4322379050262892
+GPL10526 (Schiz cohorts 1,2; Dep 5,6)	ph ~ C(dx, Treatment('Control')) + age + sex	Schizophrenia	73	-0.11571929177314945	0.09173591130025445	0.20715058496072591
+GPL10526 (Schiz cohorts 1,2; Dep 5,6)	ph ~ C(dx, Treatment('Control')) + age + sex + pmi	Bipolar Disorder	73	-0.1925713098703177	0.16729480894164023	0.24969538798822677
+GPL10526 (Schiz cohorts 1,2; Dep 5,6)	ph ~ C(dx, Treatment('Control')) + age + sex + pmi	Major Depressive Disorder	73	-0.06764092250934958	0.10888759100116029	0.5344683356170573
+GPL10526 (Schiz cohorts 1,2; Dep 5,6)	ph ~ C(dx, Treatment('Control')) + age + sex + pmi	Schizophrenia	73	-0.10645736081598357	0.09091217487064963	0.24160229639212505
+GPL10526 (Schiz cohorts 1,2; Dep 5,6)	ph ~ C(dx, Treatment('Control')) + age + sex + pmi + agonal	Bipolar Disorder	73	-0.19909815880839923	0.16616413093872787	0.23083846945568642
+GPL10526 (Schiz cohorts 1,2; Dep 5,6)	ph ~ C(dx, Treatment('Control')) + age + sex + pmi + agonal	Major Depressive Disorder	73	-0.07594527339615957	0.10972384706467293	0.4888436345421062
+GPL10526 (Schiz cohorts 1,2; Dep 5,6)	ph ~ C(dx, Treatment('Control')) + age + sex + pmi + agonal	Schizophrenia	73	-0.1144341093026901	0.0910544710228774	0.20883859597354504
+GPL10526 (Schiz cohorts 1,2; Dep 5,6)	ph ~ C(dx, Treatment('Control')) + age + sex + pmi + I(agonal > 0)	Bipolar Disorder	73	-0.1990981588084016	0.16616413093872617	0.2308384694556762
+GPL10526 (Schiz cohorts 1,2; Dep 5,6)	ph ~ C(dx, Treatment('Control')) + age + sex + pmi + I(agonal > 0)	Major Depressive Disorder	73	-0.075945273396161	0.10972384706467289	0.4888436345420979
+GPL10526 (Schiz cohorts 1,2; Dep 5,6)	ph ~ C(dx, Treatment('Control')) + age + sex + pmi + I(agonal > 0)	Schizophrenia	73	-0.11443410930269082	0.09105447102287727	0.2088385959735416
+GPL10526 (Schiz cohorts 1,2; Dep 5,6)	ph ~ agonal + age + sex + pmi	agonal	73	-0.1282789184696479	inf	1.0
+GPL17027	ph ~ C(dx, Treatment('Control')) + age + sex	Bipolar Disorder	92	0.05689014001276632	0.06585637737906809	0.38766939231055464
+GPL17027	ph ~ C(dx, Treatment('Control')) + age + sex	Major Depressive Disorder	92	0.10825089888308681	0.06870045514596744	0.11509632775036435
+GPL17027	ph ~ C(dx, Treatment('Control')) + age + sex	Schizophrenia	92	-0.06191043693960174	0.1374724729910328	0.6524596190843673
+GPL17027	ph ~ C(dx, Treatment('Control')) + age + sex + pmi	Bipolar Disorder	92	0.030461907299691393	0.06971613311185985	0.6621534045920291
+GPL17027	ph ~ C(dx, Treatment('Control')) + age + sex + pmi	Major Depressive Disorder	92	0.08871701545985222	0.06642060071219019	0.1816521784180849
+GPL17027	ph ~ C(dx, Treatment('Control')) + age + sex + pmi	Schizophrenia	92	-0.03055857562863573	0.13595357445779932	0.8221565419625141
+GPL17027	ph ~ C(dx, Treatment('Control')) + age + sex + pmi + agonal	Bipolar Disorder	92	0.0006745165586309332	0.07266067655667263	0.9925932616657361
+GPL17027	ph ~ C(dx, Treatment('Control')) + age + sex + pmi + agonal	Major Depressive Disorder	92	0.04377567863673759	0.05940065790797594	0.46114903163880916
+GPL17027	ph ~ C(dx, Treatment('Control')) + age + sex + pmi + agonal	Schizophrenia	92	0.021851291997447175	0.10356865363294807	0.8329000339073758
+GPL17027	ph ~ C(dx, Treatment('Control')) + age + sex + pmi + I(agonal > 0)	Bipolar Disorder	92	0.021789822029206485	0.06829602779069922	0.7496888825722087
+GPL17027	ph ~ C(dx, Treatment('Control')) + age + sex + pmi + I(agonal > 0)	Major Depressive Disorder	92	0.0728552567702474	0.058999381261551125	0.21688714987680324
+GPL17027	ph ~ C(dx, Treatment('Control')) + age + sex + pmi + I(agonal > 0)	Schizophrenia	92	-0.013258427367475845	0.12618281049082655	0.9163177520061792
+GPL17027	ph ~ agonal + age + sex + pmi	agonal	92	-0.13911203648461212	0.0392760410652432	0.00039724735453018937
+both, one row per subject (GPL17027 preferred)	ph ~ C(dx, Treatment('Control')) + age + sex	Bipolar Disorder	157	-0.008613692139400334	0.059070082084367696	0.8840622471194078
+both, one row per subject (GPL17027 preferred)	ph ~ C(dx, Treatment('Control')) + age + sex	Major Depressive Disorder	157	0.03684322100628984	0.056932440858809906	0.5175417799178066
+both, one row per subject (GPL17027 preferred)	ph ~ C(dx, Treatment('Control')) + age + sex	Schizophrenia	157	-0.0813535158594807	0.0740623616222658	0.2720097204859159
+both, one row per subject (GPL17027 preferred)	ph ~ C(dx, Treatment('Control')) + age + sex + pmi	Bipolar Disorder	157	-0.017369412542534303	0.05979362742006856	0.7714418897604083
+both, one row per subject (GPL17027 preferred)	ph ~ C(dx, Treatment('Control')) + age + sex + pmi	Major Depressive Disorder	157	0.02846831272985914	0.058354672507735975	0.6256562655483048
+both, one row per subject (GPL17027 preferred)	ph ~ C(dx, Treatment('Control')) + age + sex + pmi	Schizophrenia	157	-0.08284543981053615	0.07379442838587756	0.26158545265866784
+both, one row per subject (GPL17027 preferred)	ph ~ C(dx, Treatment('Control')) + age + sex + pmi + agonal	Bipolar Disorder	157	-0.033948291855934246	0.06370834617245713	0.5941232970856138
+both, one row per subject (GPL17027 preferred)	ph ~ C(dx, Treatment('Control')) + age + sex + pmi + agonal	Major Depressive Disorder	157	0.00278372151215966	0.055105460576443915	0.9597109961260106
+both, one row per subject (GPL17027 preferred)	ph ~ C(dx, Treatment('Control')) + age + sex + pmi + agonal	Schizophrenia	157	-0.07406483145177578	0.06378952114599902	0.24560876657209907
+both, one row per subject (GPL17027 preferred)	ph ~ C(dx, Treatment('Control')) + age + sex + pmi + I(agonal > 0)	Bipolar Disorder	157	-0.020828397080737287	0.0609112240620473	0.7323909420998509
+both, one row per subject (GPL17027 preferred)	ph ~ C(dx, Treatment('Control')) + age + sex + pmi + I(agonal > 0)	Major Depressive Disorder	157	0.017411179824673977	0.054626935698064746	0.7499321435144293
+both, one row per subject (GPL17027 preferred)	ph ~ C(dx, Treatment('Control')) + age + sex + pmi + I(agonal > 0)	Schizophrenia	157	-0.08570764325452053	0.0692794391895082	0.2160389810818334
+both, one row per subject (GPL17027 preferred)	ph ~ agonal + age + sex + pmi	agonal	157	-0.13587685903861796	0.03485827193213015	9.699828492570972e-05

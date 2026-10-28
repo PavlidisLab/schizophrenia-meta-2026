@@ -1,0 +1,62 @@
+# figure: fig06 panel e
+# script: core80_work_2026-10-16/P11/b/f6/export_fig06_core80.py (copy of analyses/figure_exports/export_fig06.py; paths and population stamp changed, panel d dropped), run 2026-10-17
+# population: core-80 base: 72 primary brain studies = lists (recurrence.py scenario 'published, brain', study tier; 80 studies, 72 contributing lists; Shao 2008 PMID 18191109 out); n_k = |M_k| (RECURRENCE_NK=membership); analysis set = the 383 study-tier genes at q_bh < 0.1 (set study_brain of base78_2026-10-16/B80/out/recurrent_sets.tsv), count set 107 genes in 10 or more lists (primary), 2,422 in 5 or more (sensitivity); recurrence_genes.tsv sha256 dda5eb621c15; recurrence.tsv sha256 bcbf50f8e334; corpus/lineage.json sha256 4f919a83fea3; panel a = the study-tier q<0.1 set of the in-place recurrence_genes.tsv (383), rows named 'q<0.1' = the in-place q_bh / q_expr_bh sets on this base
+# input: L07/recurrence_priors/set_tests.tsv sha256 6728819dddf6
+# observed vs expected set genes in the top 10% / 25% of the reference
+gene_set	reference	top	threshold	n_universe	n_top	n_set_in_universe	observed	expected	fold	p_enrichment	p_depletion	provisional
+study_brain (209-equivalent, q<0.1)	global prior, n_de_total	10%	676.0	28333	2848	383	204	38.5	5.3	2.72e-101	1	
+study_brain (209-equivalent, q<0.1)	global prior, n_de_total	25%	440.0	28333	7090	383	303	95.84	3.16	7.8e-111	1	
+study_brain_ge10 (primary, 10+ lists)	global prior, n_de_total	10%	676.0	28333	2848	107	72	10.76	6.69	3.52e-46	1	
+study_brain_ge10 (primary, 10+ lists)	global prior, n_de_total	25%	440.0	28333	7090	107	92	26.78	3.44	3.17e-40	1	
+study_brain_ge5 (fork, 5+ lists)	global prior, n_de_total	10%	676.0	28333	2848	2422	861	243.46	3.54	6.93e-287	1	
+study_brain_ge5 (fork, 5+ lists)	global prior, n_de_total	25%	440.0	28333	7090	2422	1605	606.08	2.65	0	1	
+expression-matched q<0.1	global prior, n_de_total	10%	676.0	28333	2848	140	86	14.07	6.11	4.81e-50	1	
+expression-matched q<0.1	global prior, n_de_total	25%	440.0	28333	7090	140	115	35.03	3.28	8.46e-46	1	
+study_brain (209-equivalent, q<0.1)	global prior, de_prior_norm	10%	0.9251	28333	2835	383	218	38.32	5.69	1.06e-116	1	
+study_brain (209-equivalent, q<0.1)	global prior, de_prior_norm	25%	0.8346	28333	7084	383	319	95.76	3.33	5.18e-129	1	
+study_brain_ge10 (primary, 10+ lists)	global prior, de_prior_norm	10%	0.9251	28333	2835	107	78	10.71	7.29	2.59e-54	1	
+study_brain_ge10 (primary, 10+ lists)	global prior, de_prior_norm	25%	0.8346	28333	7084	107	97	26.75	3.63	5.19e-47	1	
+study_brain_ge5 (fork, 5+ lists)	global prior, de_prior_norm	10%	0.9251	28333	2835	2422	813	242.35	3.35	4.01e-250	1	
+study_brain_ge5 (fork, 5+ lists)	global prior, de_prior_norm	25%	0.8346	28333	7084	2422	1624	605.56	2.68	0	1	
+expression-matched q<0.1	global prior, de_prior_norm	10%	0.9251	28333	2835	140	97	14.01	6.92	7.16e-64	1	
+expression-matched q<0.1	global prior, de_prior_norm	25%	0.8346	28333	7084	140	122	35.0	3.49	2.22e-54	1	
+study_brain (209-equivalent, q<0.1)	brain postmortem prior, n_de_total	10%	10.0	28228	3245	383	280	44.03	6.36	4.59e-178	1	
+study_brain (209-equivalent, q<0.1)	brain postmortem prior, n_de_total	25%	7.0	28228	7331	383	340	99.47	3.42	1.6e-150	1	
+study_brain_ge10 (primary, 10+ lists)	brain postmortem prior, n_de_total	10%	10.0	28228	3245	107	94	12.3	7.64	5.78e-74	1	
+study_brain_ge10 (primary, 10+ lists)	brain postmortem prior, n_de_total	25%	7.0	28228	7331	107	101	27.79	3.63	1.35e-51	1	
+study_brain_ge5 (fork, 5+ lists)	brain postmortem prior, n_de_total	10%	10.0	28228	3245	2422	1196	278.43	4.3	0	1	
+study_brain_ge5 (fork, 5+ lists)	brain postmortem prior, n_de_total	25%	7.0	28228	7331	2422	1805	629.01	2.87	0	1	
+expression-matched q<0.1	brain postmortem prior, n_de_total	10%	10.0	28228	3245	140	96	16.09	5.96	5.35e-57	1	
+expression-matched q<0.1	brain postmortem prior, n_de_total	25%	7.0	28228	7331	140	119	36.36	3.27	1.02e-48	1	
+study_brain (209-equivalent, q<0.1)	brain postmortem prior, de_prior_norm	10%	0.8336	28228	2823	383	266	38.3	6.94	1.27e-175	1	
+study_brain (209-equivalent, q<0.1)	brain postmortem prior, de_prior_norm	25%	0.6586	28228	7057	383	340	95.75	3.55	4.84e-156	1	
+study_brain_ge10 (primary, 10+ lists)	brain postmortem prior, de_prior_norm	10%	0.8336	28228	2823	107	91	10.7	8.5	2.31e-74	1	
+study_brain_ge10 (primary, 10+ lists)	brain postmortem prior, de_prior_norm	25%	0.6586	28228	7057	107	103	26.75	3.85	9.3e-57	1	
+study_brain_ge5 (fork, 5+ lists)	brain postmortem prior, de_prior_norm	10%	0.8336	28228	2823	2422	1115	242.22	4.6	0	1	
+study_brain_ge5 (fork, 5+ lists)	brain postmortem prior, de_prior_norm	25%	0.6586	28228	7057	2422	1789	605.5	2.95	0	1	
+expression-matched q<0.1	brain postmortem prior, de_prior_norm	10%	0.8336	28228	2823	140	98	14.0	7.0	3.19e-65	1	
+expression-matched q<0.1	brain postmortem prior, de_prior_norm	25%	0.6586	28228	7057	140	120	35.0	3.43	7.94e-52	1	
+study_brain (209-equivalent, q<0.1)	brain postmortem, no SZ banks prior, n_de_total	10%	10.0	28227	3245	383	280	44.03	6.36	4.63e-178	1	
+study_brain (209-equivalent, q<0.1)	brain postmortem, no SZ banks prior, n_de_total	25%	7.0	28227	7331	383	340	99.47	3.42	1.62e-150	1	
+study_brain_ge10 (primary, 10+ lists)	brain postmortem, no SZ banks prior, n_de_total	10%	10.0	28227	3245	107	94	12.3	7.64	5.8e-74	1	
+study_brain_ge10 (primary, 10+ lists)	brain postmortem, no SZ banks prior, n_de_total	25%	7.0	28227	7331	107	101	27.79	3.63	1.36e-51	1	
+study_brain_ge5 (fork, 5+ lists)	brain postmortem, no SZ banks prior, n_de_total	10%	10.0	28227	3245	2422	1196	278.44	4.3	0	1	
+study_brain_ge5 (fork, 5+ lists)	brain postmortem, no SZ banks prior, n_de_total	25%	7.0	28227	7331	2422	1805	629.03	2.87	0	1	
+expression-matched q<0.1	brain postmortem, no SZ banks prior, n_de_total	10%	10.0	28227	3245	140	96	16.09	5.96	5.37e-57	1	
+expression-matched q<0.1	brain postmortem, no SZ banks prior, n_de_total	25%	7.0	28227	7331	140	119	36.36	3.27	1.03e-48	1	
+study_brain (209-equivalent, q<0.1)	brain postmortem, no SZ banks prior, de_prior_norm	10%	0.8336	28227	2823	383	266	38.3	6.94	1.28e-175	1	
+study_brain (209-equivalent, q<0.1)	brain postmortem, no SZ banks prior, de_prior_norm	25%	0.6586	28227	7057	383	340	95.75	3.55	4.89e-156	1	
+study_brain_ge10 (primary, 10+ lists)	brain postmortem, no SZ banks prior, de_prior_norm	10%	0.8336	28227	2823	107	91	10.7	8.5	2.32e-74	1	
+study_brain_ge10 (primary, 10+ lists)	brain postmortem, no SZ banks prior, de_prior_norm	25%	0.6586	28227	7057	107	103	26.75	3.85	9.34e-57	1	
+study_brain_ge5 (fork, 5+ lists)	brain postmortem, no SZ banks prior, de_prior_norm	10%	0.8336	28227	2823	2422	1115	242.23	4.6	0	1	
+study_brain_ge5 (fork, 5+ lists)	brain postmortem, no SZ banks prior, de_prior_norm	25%	0.6586	28227	7057	2422	1789	605.52	2.95	0	1	
+expression-matched q<0.1	brain postmortem, no SZ banks prior, de_prior_norm	10%	0.8336	28227	2823	140	98	14.0	7.0	3.2e-65	1	
+expression-matched q<0.1	brain postmortem, no SZ banks prior, de_prior_norm	25%	0.6586	28227	7057	140	120	35.0	3.43	7.97e-52	1	
+study_brain (209-equivalent, q<0.1)	expression	10%	6.7357	19890	1989	383	132	38.3	3.45	1.93e-39	1	
+study_brain (209-equivalent, q<0.1)	expression	25%	5.4303	19890	4973	383	212	95.76	2.21	1.94e-37	1	
+study_brain_ge10 (primary, 10+ lists)	expression	10%	6.7357	19890	1989	107	33	10.7	3.08	2.01e-09	1	
+study_brain_ge10 (primary, 10+ lists)	expression	25%	5.4303	19890	4973	107	55	26.75	2.06	3.82e-09	1	
+study_brain_ge5 (fork, 5+ lists)	expression	10%	6.7357	19890	1989	2418	719	241.8	2.97	2.42e-194	1	
+study_brain_ge5 (fork, 5+ lists)	expression	25%	5.4303	19890	4973	2418	1318	604.56	2.18	9.93e-245	1	
+expression-matched q<0.1	expression	10%	6.7357	19890	1989	129	9	12.9	0.7	0.908	0.158	
+expression-matched q<0.1	expression	25%	5.4303	19890	4973	129	24	32.25	0.74	0.966	0.0536	

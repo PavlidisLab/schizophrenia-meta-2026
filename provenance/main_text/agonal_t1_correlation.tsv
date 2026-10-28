@@ -1,0 +1,12 @@
+# figure: manuscript_ph.md Results, 'The recurrent genes are enriched for the agonal state-associated pattern' (analogue of the pH rows, Fig. 3b / 3d)
+# script: agonal_enrichment.py, run 2026-10-22
+# input: figures/data/fig07/fig07_a2_a4_gene_scatter.tsv sha256 558f09cf777a (gene sets: in_ge10, in_176 = the 383; z_sz_raw = schizophrenia effect, age+sex, combined over the ten dataset-regions; sz_direction)
+# input: analyses/gtex_ischemia_2026-10-08/hardy_t_by_region.tsv.gz sha256 54f989c55753; donor_counts_by_tissue.tsv sha256 15924d380d3e; combined_controls_pH.tsv sha256 74fdf88878ba (expr_percentile for deciles)
+# axis: mean over BA9, BA24, Cortex of the t of slow death (Hardy 4) minus fast natural death (Hardy 2); positive = higher after slow death. Axis q: intersection-union p (largest regional two-sided p, 1 if signs differ), BH over all genes measured in the three regions (conservative; same as agonal_axis_per_gene_383.tsv).
+# axis genes: 15356 measured in all three regions; 11647 of them with an expression percentile (null pool)
+# (a) Pearson r of the axis value with z_sz_raw, the statistic used for the pH r (not direction-signed). Interval: Fisher, genes independent (as the pH r); gene bootstrap 2,000 resamples alongside.
+set	n_set	n_with_axis_and_sz_effect	pearson_r	ci95_fisher	ci95_gene_bootstrap	spearman_rho
+107 genes in 10 or more lists	107	104	0.8788	0.826 to 0.916	0.844 to 0.912	0.8737
+383 recurrent genes	383	354	0.8451	0.812 to 0.872	0.817 to 0.872	0.8296
+105 genes in 10 or more lists with a pH measure	105	104	0.8788	0.826 to 0.916	0.844 to 0.912	0.8737
+371 of the 383 with a pH measure	371	354	0.8451	0.812 to 0.872	0.817 to 0.872	0.8296

@@ -1,0 +1,18 @@
+# medication/scripts/primate_tally.py from results/primate_genes.tsv (model extraction, quote-checked) and data/primate_hand_check.tsv
+measure	value
+genes (HGNC symbols) tested in antipsychotic-exposed monkeys	82
+... with a change reported in at least one cohort / drug	13
+... changed, same direction as the SZ change in the same papers	3
+... changed, opposite to the SZ change in the same papers	6
+... changed, SZ direction not stated or mixed	4
+genes tested that are in the rule-A recurrent set	15
+... of those, changed in monkeys	3
+genes tested that are LIBD DLPFC SZ q < 0.05	27
+... of those, changed in monkeys	2
+... of those, changed the way LIBD's SZ effect goes / the other way	1 / 1
+genes tested that are PsychAD HBCC whole-tissue SZ q < 0.05	0
+papers with monkey results (after quote check)	54
+cohort: Pittsburgh haloperidol decanoate, 4 pairs, 9-12 months (Akil 1999): gene x drug results / changed	11 / 1
+cohort: Pittsburgh oral haloperidol/olanzapine/sham, 17-27 months (Dorph-Petersen 2005): gene x drug results / changed	69 / 2
+cohort: Rhesus haloperidol/clozapine/vehicle, 6 months (Hemby; Fromer 2016 RNA-seq): gene x drug results / changed	28 / 11
+cohort: not stated: gene x drug results / changed	15 / 1

@@ -1,0 +1,24 @@
+dataset	n_eligible_persons	tier	pH_other_region	v1	priority	fold	n_ctl_kept	n_sz_kept	n_ctl_eligible	n_sz_eligible
+GSE208338	130	0	0	1	1	aus	62.0	68.0	62	68
+GSE35977	97	0	0	0	2	stanley	48.0	49.0	48	49
+GSE35974	83	0	0	1	3	stanley			43	40
+GSE202537_caudate	64	0	0	1	4	cmc+mssm+pitt+libd	36.0	28.0	36	28
+GSE202537_putamen	64	0	0	1	5	cmc+mssm+pitt+libd			36	28
+GSE202537_NAc	63	0	0	1	6	cmc+mssm+pitt+libd			35	28
+GSE21138	57	0	0	0	7	aus	11.0	10.0	29	28
+GSE17612	49	0	0	0	8	GSE17612+GSE21935	22.0	27.0	22	27
+GSE80655_AnCg	47	0	0	1	9	pritzker	24.0	23.0	24	23
+GSE80655_DLPFC	45	0	0	1	10	pritzker			23	22
+GSE80655_nAcc	44	0	0	1	11	pritzker			22	22
+GSE21935	42	0	0	1	12	GSE17612+GSE21935	3.0	4.0	19	23
+GSE53987_striatum	36	0	0	1	13	cmc+mssm+pitt+libd	12.0	10.0	18	18
+GSE53987_BA46	34	0	0	0	14	cmc+mssm+pitt+libd	1.0	1.0	19	15
+GSE53987_hippocampus	33	0	0	1	15	cmc+mssm+pitt+libd			18	15
+GSE224683	30	0	0	1	16	cmc+mssm+pitt+libd	14.0	12.0	15	15
+GSE92538_GPL96	54	0	1	0	17	pritzker	33.0	5.0	45	9
+GSE92538_GPL570	48	0	1	1	18	pritzker	17.0	5.0	31	17
+NSW_OFC_snRNA	79	1	0	1	19	aus	34.0	45.0	34	45
+GSE93987_L3	72	2	0	1	20	cmc+mssm+pitt+libd	23.0	16.0	36	36
+GSE93987_L5	70	2	0	1	21	cmc+mssm+pitt+libd			36	34
+GSE87610_L3	36	2	0	1	22	cmc+mssm+pitt+libd			19	17
+GSE87610_L5	36	2	0	1	23	cmc+mssm+pitt+libd			19	17

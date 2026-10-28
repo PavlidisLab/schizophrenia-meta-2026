@@ -1,0 +1,16 @@
+# figure: fig09 panel b
+# script: sample_level_81_2026-10-15/code/assemble_a.py (panel logic of analyses/figure_exports/export_fig08_fig09_fig10.py fig9_b, unchanged); run 2026-10-15
+# input: single_cell/results/sc_split_half_summary.tsv sha256 712ab9282682
+# PsychAD pseudobulk (Mount Sinai and HBCC banks), 20 donors per group per fit, medians over replicates: not part of the bulk dataset set
+comparison	contrast	median_over_classes	n_classes
+HBCC_vs_MSSM_main	age	0.17315	8
+HBCC_vs_MSSM_main	male	0.012	8
+HBCC_vs_MSSM_main	sz	0.041	7
+HBCC_vs_MSSM_nodementia	sz	0.1225	3
+split_HBCC_main	age	0.19695	8
+split_HBCC_main	male	0.1087	8
+split_HBCC_main	sz	0.19385	8
+split_MSSM_main	age	0.1168	8
+split_MSSM_main	male	-0.0046	8
+split_MSSM_main	sz	-0.0064	7
+split_MSSM_nodementia	sz	0.1089	3

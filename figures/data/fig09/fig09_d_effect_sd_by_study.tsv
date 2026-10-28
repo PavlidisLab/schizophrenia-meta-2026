@@ -1,0 +1,34 @@
+# figure: fig09 panel d  (81 base: studies of the 81 base, with full tables from published, our reproduction, Gemma, and the donor-level derived-tier fits of Arion 2017 and Abdolmaleky 2019)
+# script: sample_level_81_2026-10-15/code/assemble_d.py (panel logic of analyses/figure_exports/export_fig08_fig09_fig10.py fig9_d); run 2026-10-15
+# input: effect_sizes_d81x/effects_by_study.tsv sha256 440de656f98d
+# input: effect_sizes_d81x/data/by_group.tsv sha256 816498d192d6
+# input: effect_sizes_d81x/summary_by_type.tsv sha256 b352262919b7
+# study set: studies of the 81 base only (old_to_new.tsv, 81 PMIDs); headline = one per donor cluster among them; Arion 2017 (GSE87610, 17 SZ / 19 control donors, layers 3 and 5) and Abdolmaleky 2019 (GSE120340, 10 / 10) added from derived_lists_2026-10-14/work/stage2
+# one row per headline study and donor set (view C): C_sd = SD of the distribution of true SZ vs control log2 fold changes that ashr estimates from every tested gene's log2 FC and SE (median over cell types or regions); N = cases + controls; log scale; C_sd = 0 sits on the dashed line
+study	label	type	N	n_cases	n_controls	C_sd	C_top_group	C_top_sd	C_mean_abs_pm	C_frac_lfsr05	C_pi0	C_n_fitted	C_se_method	full_provenance	flags
+19088852	Harris 2008	bulk brain microarray	24.0	12.0	12.0	0.035587	all	0.035587	0.006856	0.0	0.6904	1.0	t:20848	reproduced	
+32152472	Perez 2021	bulk brain RNA-seq	26.0	13.0	13.0	0.025939	CA3 field of hippocampus	0.15367	0.002714	0.0	0.74539	3.0	t:25600	gemma	cell-enriched bulk
+36319771	Benjamin 2022	bulk brain RNA-seq	393.0	154.0	239.0	0.052574	all	0.052574	0.024753	0.15887	0.10896	1.0	t:18330	published	
+36302706	Ketchesin 2023	bulk brain RNA-seq	72.0	36.0	36.0	0.060204	all	0.060204	0.030092	0.068943	0.12562	1.0	se:13968	published	
+15563509	Iwamoto 2005	bulk brain microarray	69.0	35.0	34.0	0.044031	all	0.044031	0.01923	0.014481	0.41266	1.0	t:12016	gemma	
+18778695	Narayan 2008	bulk brain microarray	55.0	26.0	29.0	0.029436	all	0.029436	0.01012	0.001005	0.6198	1.0	t:19895	gemma	
+25560755	Arion 2015	bulk brain microarray	72.0	36.0	36.0	0.1326	dorsolateral prefrontal cortex layer 5	0.15595	0.056233	0.054475	0.3439	2.0	t:19899	gemma	cell-enriched bulk
+25981335	Maschietto 2015	bulk brain microarray	59.0	29.0	30.0	0.0	all	0.0	0.0	0.0	1.0	1.0	p_t:15495	reproduced	
+28476208	Arion 2017	bulk brain microarray	36.0	17.0	19.0	0.08447	L5	0.089769	0.025818	0.00646	0.28119	2.0	t:16486	reproduced	N = donors; full table left out (several samples per donor, no donor term); full table added 2026-10-15 from the derived-tier donor-level limma fit
+28754123	Ramaker 2017	bulk brain RNA-seq	48.0	24.0	24.0	0.048355	anterior cingulate cortex	0.096988	0.006413	8.2e-05	0.23467	3.0	t:36791	gemma	
+31053723	Pai 2019	bulk brain RNA-seq	34.0	17.0	17.0	0.0	all	0.0	0.0	0.0	1.0	1.0	t:23504	gemma	
+31123247	Lanz 2019	bulk brain microarray	38.0	19.0	19.0	0.058233	hippocampal formation	0.10618	0.025875	0.022379	0.22664	3.0	t:19885	gemma	
+32203495	Jaffe 2020	bulk brain RNA-seq	168.0	75.0	93.0	0.027654	all	0.027654	0.008183	0.002593	0.25212	1.0	t:16583	published	cell-enriched bulk
+14743183	Iwamoto 2004	bulk brain microarray	28.0	13.0	15.0	0.018317	all	0.018317	0.001749	0.0	0.95426	1.0	p_t:5389	reproduced	
+19255580	Maycox 2009	bulk brain microarray	51.0	28.0	23.0	0.0	all	0.0	0.0	0.0	1.0	1.0	t:19897	gemma	
+21538462	Barnes 2011	bulk brain microarray	42.0	23.0	19.0	0.003013	all	0.003013	2.6e-05	0.0	0.99986	1.0	t:19889	gemma	
+24702465	Pietersen 2014	bulk brain microarray	18.0	9.0	9.0	0.31032	all	0.31032	0.11514	0.001207	0.49522	1.0	t:19879	gemma	cell-enriched bulk
+27661005	Hu 2016	bulk brain RNA-seq	40.0	22.0	18.0	0.049	anterior cingulate cortex	0.32812	0.006159	0.0	0.77625	3.0	t:20722	gemma	
+23147385	Chen 2013	bulk brain microarray	91.0	45.0	46.0	0.034723	all	0.034723	0.01861	0.09247	0.09147	1.0	t:18698	gemma	
+36932057	Schulmann 2023	bulk brain RNA-seq	201.0	88.0	113.0	0.081788	all	0.081788	0.014581	0.0	0.50159	1.0	t:23267	gemma	
+39526318	Zhang 2026	bulk brain RNA-seq	30.0	15.0	15.0	0.37985	all	0.37985	0.20284	0.073155	0.047737	1.0	se:15802	published	
+41174894	Yalcinbas 2025	bulk brain RNA-seq	68.0	35.0	33.0	0.060848	all	0.060848	0.018454	0.008997	0.2551	1.0	t:22675	published	
+36223459	Batiuk 2022	single-nucleus brain	23.0	9.0	14.0	0.07049	L4_RORB_SCHLAP1_MET	0.16963	0.013965	0.000154	0.576	35.0	se:12350	published	
+42778699	Lee 2026 (PsychAD)	single-nucleus brain	439.0	120.0	319.0	0.021318	EN_L5_ET	0.19087	0.004488	0.0	0.66692	27.0	se:1623	published	
+39227716	Frohlich 2024	single-nucleus brain	87.0	54.0	33.0	0.013037	Exc_L4-6_1	0.046999	0.000861	0.0	0.96873	21.0	t:5035	published	
+30468562	Abdolmaleky 2019	bulk brain microarray	20.0	10.0	10.0	0.04657	all	0.04657	0.016627	0.0	0.33408	1.0	t:16436	reproduced	full table added 2026-10-15 from the derived-tier donor-level limma fit

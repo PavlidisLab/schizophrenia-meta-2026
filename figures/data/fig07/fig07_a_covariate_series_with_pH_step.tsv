@@ -1,0 +1,1158 @@
+# figure: fig07 panel b (Fig. 3d), covariate series with a pH-only step (L1p = age + sex + pH) added between L1 and L2
+# script: analyses/manuscript_checks_2026-10-12/q5_series_summary.py, run 2026-10-12; levels from analyses/fairness_sample_level/scripts/b_covariate_series.R (SERIES_LEVELS=L0,L1,L1p,L2,L3,L4)
+# population: the 28 datasets with sample-level data (Gemma / GEO matrices); pairs are the 192 subject-separate pairs of two bulk datasets (the pairs of Fig. 3d)
+# input: analyses/manuscript_checks_2026-10-12/b_series_with_pH_step/b_pairs.tsv sha256 03af3aa63523; shared levels identical to analyses/fairness_sample_level/results/b_pairs.tsv sha256 d46785a711fe (max |diff| rho_t 0)
+# rho = Spearman correlation of the SZ vs control limma t statistics of the two datasets over shared genes (rho_t); L1p is empty (NA) for a pair in which either dataset does not record pH; in_pH_recorded_in_both TRUE marks the pairs with an L1p value
+pair_id	model_step	rho	model_description	relation	both_bulk	n_common	in_pH_recorded_in_both
+GSE17612_GSE138082_CA1	L0	0.06027248291	no covariates	subject-separate	TRUE	17018	FALSE
+GSE17612_GSE138082_CA1	L1	0.09265629399	age + sex	subject-separate	TRUE	17018	FALSE
+GSE17612_GSE138082_CA1	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	17018	FALSE
+GSE17612_GSE138082_CA1	L2	-0.02728466251	age + sex + PMI	subject-separate	TRUE	17018	FALSE
+GSE17612_GSE138082_CA1	L3	0.1898543541	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	17018	FALSE
+GSE17612_GSE138082_CA1	L4	0.1313686351	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	17018	FALSE
+GSE17612_GSE138082_CA3	L0	-0.03530526593	no covariates	subject-separate	TRUE	17027	FALSE
+GSE17612_GSE138082_CA3	L1	-0.01255403967	age + sex	subject-separate	TRUE	17027	FALSE
+GSE17612_GSE138082_CA3	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	17027	FALSE
+GSE17612_GSE138082_CA3	L2	0.09111948633	age + sex + PMI	subject-separate	TRUE	17027	FALSE
+GSE17612_GSE138082_CA3	L3	-0.2441941484	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	17027	FALSE
+GSE17612_GSE138082_CA3	L4	-0.219715996	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	17027	FALSE
+GSE17612_GSE138082_DG	L0	0.07570255217	no covariates	subject-separate	TRUE	16995	FALSE
+GSE17612_GSE138082_DG	L1	0.1099585986	age + sex	subject-separate	TRUE	16995	FALSE
+GSE17612_GSE138082_DG	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	16995	FALSE
+GSE17612_GSE138082_DG	L2	0.00618093689	age + sex + PMI	subject-separate	TRUE	16995	FALSE
+GSE17612_GSE138082_DG	L3	0.3189919037	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	16995	FALSE
+GSE17612_GSE138082_DG	L4	0.2822104367	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	16995	FALSE
+GSE17612_GSE202537_NAc	L0	0.2383569088	no covariates	subject-separate	TRUE	17024	TRUE
+GSE17612_GSE202537_NAc	L1	0.1927988702	age + sex	subject-separate	TRUE	17024	TRUE
+GSE17612_GSE202537_NAc	L1p	0.04427587307	age + sex + pH (datasets that record pH)	subject-separate	TRUE	17024	TRUE
+GSE17612_GSE202537_NAc	L2	0.205784322	age + sex + PMI	subject-separate	TRUE	17024	TRUE
+GSE17612_GSE202537_NAc	L3	0.1055574967	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	17024	TRUE
+GSE17612_GSE202537_NAc	L4	0.1055574967	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	17024	TRUE
+GSE17612_GSE202537_caudate	L0	0.09841253365	no covariates	subject-separate	TRUE	16974	TRUE
+GSE17612_GSE202537_caudate	L1	0.1013970042	age + sex	subject-separate	TRUE	16974	TRUE
+GSE17612_GSE202537_caudate	L1p	0.03646478485	age + sex + pH (datasets that record pH)	subject-separate	TRUE	16974	TRUE
+GSE17612_GSE202537_caudate	L2	0.08886904696	age + sex + PMI	subject-separate	TRUE	16974	TRUE
+GSE17612_GSE202537_caudate	L3	-0.03512653528	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	16974	TRUE
+GSE17612_GSE202537_caudate	L4	-0.03512653528	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	16974	TRUE
+GSE17612_GSE202537_putamen	L0	0.2276877177	no covariates	subject-separate	TRUE	16938	TRUE
+GSE17612_GSE202537_putamen	L1	0.2117757194	age + sex	subject-separate	TRUE	16938	TRUE
+GSE17612_GSE202537_putamen	L1p	0.2391856738	age + sex + pH (datasets that record pH)	subject-separate	TRUE	16938	TRUE
+GSE17612_GSE202537_putamen	L2	0.1423211004	age + sex + PMI	subject-separate	TRUE	16938	TRUE
+GSE17612_GSE202537_putamen	L3	0.2448837793	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	16938	TRUE
+GSE17612_GSE202537_putamen	L4	0.2448837793	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	16938	TRUE
+GSE17612_GSE208338	L0	0.126158081	no covariates	subject-separate	TRUE	14500	TRUE
+GSE17612_GSE208338	L1	0.0975567333	age + sex	subject-separate	TRUE	14500	TRUE
+GSE17612_GSE208338	L1p	-0.01352523039	age + sex + pH (datasets that record pH)	subject-separate	TRUE	14500	TRUE
+GSE17612_GSE208338	L2	0.08212806261	age + sex + PMI	subject-separate	TRUE	14500	TRUE
+GSE17612_GSE208338	L3	-0.1318076277	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	14500	TRUE
+GSE17612_GSE208338	L4	-0.1318076277	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	14500	TRUE
+GSE17612_GSE224683	L0	0.2434887857	no covariates	subject-separate	TRUE	16808	TRUE
+GSE17612_GSE224683	L1	0.07554873958	age + sex	subject-separate	TRUE	16808	TRUE
+GSE17612_GSE224683	L1p	-0.2458915849	age + sex + pH (datasets that record pH)	subject-separate	TRUE	16808	TRUE
+GSE17612_GSE224683	L2	0.1456298199	age + sex + PMI	subject-separate	TRUE	16808	TRUE
+GSE17612_GSE224683	L3	-0.2283736624	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	16808	TRUE
+GSE17612_GSE224683	L4	-0.2283736624	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	16808	TRUE
+GSE17612_GSE26927_temporal	L0	0.009252622027	no covariates	subject-separate	TRUE	12821	FALSE
+GSE17612_GSE26927_temporal	L1	0.02941503915	age + sex	subject-separate	TRUE	12821	FALSE
+GSE17612_GSE26927_temporal	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	12821	FALSE
+GSE17612_GSE26927_temporal	L2	0.08034982489	age + sex + PMI	subject-separate	TRUE	12821	FALSE
+GSE17612_GSE26927_temporal	L3	0.07595504912	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	12821	FALSE
+GSE17612_GSE26927_temporal	L4	0.07595504912	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	12821	FALSE
+GSE17612_GSE80655_AnCg	L0	-0.02525987089	no covariates	subject-separate	TRUE	17085	TRUE
+GSE17612_GSE80655_AnCg	L1	-0.0592709038	age + sex	subject-separate	TRUE	17085	TRUE
+GSE17612_GSE80655_AnCg	L1p	-0.3648036442	age + sex + pH (datasets that record pH)	subject-separate	TRUE	17085	TRUE
+GSE17612_GSE80655_AnCg	L2	0.07118690504	age + sex + PMI	subject-separate	TRUE	17085	TRUE
+GSE17612_GSE80655_AnCg	L3	-0.3408117648	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	17085	TRUE
+GSE17612_GSE80655_AnCg	L4	-0.3408117648	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	17085	TRUE
+GSE17612_GSE80655_DLPFC	L0	0.189728849	no covariates	subject-separate	TRUE	17069	TRUE
+GSE17612_GSE80655_DLPFC	L1	0.1241141336	age + sex	subject-separate	TRUE	17069	TRUE
+GSE17612_GSE80655_DLPFC	L1p	-0.0830815714	age + sex + pH (datasets that record pH)	subject-separate	TRUE	17069	TRUE
+GSE17612_GSE80655_DLPFC	L2	0.1774898865	age + sex + PMI	subject-separate	TRUE	17069	TRUE
+GSE17612_GSE80655_DLPFC	L3	-0.07131996057	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	17069	TRUE
+GSE17612_GSE80655_DLPFC	L4	-0.07131996057	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	17069	TRUE
+GSE17612_GSE80655_nAcc	L0	0.04335628531	no covariates	subject-separate	TRUE	17073	TRUE
+GSE17612_GSE80655_nAcc	L1	0.05125217776	age + sex	subject-separate	TRUE	17073	TRUE
+GSE17612_GSE80655_nAcc	L1p	-0.04883171162	age + sex + pH (datasets that record pH)	subject-separate	TRUE	17073	TRUE
+GSE17612_GSE80655_nAcc	L2	0.1358889171	age + sex + PMI	subject-separate	TRUE	17073	TRUE
+GSE17612_GSE80655_nAcc	L3	-0.0269252219	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	17073	TRUE
+GSE17612_GSE80655_nAcc	L4	-0.0269252219	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	17073	TRUE
+GSE17612_GSE92538_GPL570	L0	-0.1862831875	no covariates	subject-separate	TRUE	16937	TRUE
+GSE17612_GSE92538_GPL570	L1	-0.1424130797	age + sex	subject-separate	TRUE	16937	TRUE
+GSE17612_GSE92538_GPL570	L1p	-0.4263039869	age + sex + pH (datasets that record pH)	subject-separate	TRUE	16937	TRUE
+GSE17612_GSE92538_GPL570	L2	0.04473507977	age + sex + PMI	subject-separate	TRUE	16937	TRUE
+GSE17612_GSE92538_GPL570	L3	-0.2954860847	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	16937	TRUE
+GSE17612_GSE92538_GPL570	L4	-0.2954860847	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	16937	TRUE
+GSE17612_GSE92538_GPL96	L0	0.2303821888	no covariates	subject-separate	TRUE	10673	TRUE
+GSE17612_GSE92538_GPL96	L1	0.1550402747	age + sex	subject-separate	TRUE	10673	TRUE
+GSE17612_GSE92538_GPL96	L1p	-0.03044078221	age + sex + pH (datasets that record pH)	subject-separate	TRUE	10673	TRUE
+GSE17612_GSE92538_GPL96	L2	0.1613187778	age + sex + PMI	subject-separate	TRUE	10673	TRUE
+GSE17612_GSE92538_GPL96	L3	0.1572347891	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	10673	TRUE
+GSE17612_GSE92538_GPL96	L4	0.1572347891	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	10673	TRUE
+GSE202537_NAc_GSE138082_CA1	L0	0.006746147245	no covariates	subject-separate	TRUE	25036	FALSE
+GSE202537_NAc_GSE138082_CA1	L1	0.02983051754	age + sex	subject-separate	TRUE	25036	FALSE
+GSE202537_NAc_GSE138082_CA1	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	25036	FALSE
+GSE202537_NAc_GSE138082_CA1	L2	-0.01207358844	age + sex + PMI	subject-separate	TRUE	25036	FALSE
+GSE202537_NAc_GSE138082_CA1	L3	0.1187461916	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	25036	FALSE
+GSE202537_NAc_GSE138082_CA1	L4	0.1108585354	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	25036	FALSE
+GSE202537_NAc_GSE138082_CA3	L0	0.1006913929	no covariates	subject-separate	TRUE	25000	FALSE
+GSE202537_NAc_GSE138082_CA3	L1	0.1110031638	age + sex	subject-separate	TRUE	25000	FALSE
+GSE202537_NAc_GSE138082_CA3	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	25000	FALSE
+GSE202537_NAc_GSE138082_CA3	L2	0.1263795765	age + sex + PMI	subject-separate	TRUE	25000	FALSE
+GSE202537_NAc_GSE138082_CA3	L3	0.005718403402	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	25000	FALSE
+GSE202537_NAc_GSE138082_CA3	L4	0.0439572795	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	25000	FALSE
+GSE202537_NAc_GSE138082_DG	L0	0.009092046312	no covariates	subject-separate	TRUE	24964	FALSE
+GSE202537_NAc_GSE138082_DG	L1	0.01433324591	age + sex	subject-separate	TRUE	24964	FALSE
+GSE202537_NAc_GSE138082_DG	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	24964	FALSE
+GSE202537_NAc_GSE138082_DG	L2	0.005463543339	age + sex + PMI	subject-separate	TRUE	24964	FALSE
+GSE202537_NAc_GSE138082_DG	L3	0.1285250282	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	24964	FALSE
+GSE202537_NAc_GSE138082_DG	L4	0.08476944289	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	24964	FALSE
+GSE202537_NAc_GSE26927_temporal	L0	-0.05856319772	no covariates	subject-separate	TRUE	13762	FALSE
+GSE202537_NAc_GSE26927_temporal	L1	-0.05428690174	age + sex	subject-separate	TRUE	13762	FALSE
+GSE202537_NAc_GSE26927_temporal	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	13762	FALSE
+GSE202537_NAc_GSE26927_temporal	L2	-0.02015258685	age + sex + PMI	subject-separate	TRUE	13762	FALSE
+GSE202537_NAc_GSE26927_temporal	L3	-0.08322084388	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	13762	FALSE
+GSE202537_NAc_GSE26927_temporal	L4	-0.08322084388	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	13762	FALSE
+GSE202537_caudate_GSE138082_CA1	L0	0.1182192942	no covariates	subject-separate	TRUE	24796	FALSE
+GSE202537_caudate_GSE138082_CA1	L1	0.1128370989	age + sex	subject-separate	TRUE	24796	FALSE
+GSE202537_caudate_GSE138082_CA1	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	24796	FALSE
+GSE202537_caudate_GSE138082_CA1	L2	0.1426447582	age + sex + PMI	subject-separate	TRUE	24796	FALSE
+GSE202537_caudate_GSE138082_CA1	L3	0.1151216083	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	24796	FALSE
+GSE202537_caudate_GSE138082_CA1	L4	0.1827056655	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	24796	FALSE
+GSE202537_caudate_GSE138082_CA3	L0	0.008612196588	no covariates	subject-separate	TRUE	24751	FALSE
+GSE202537_caudate_GSE138082_CA3	L1	-0.01283540613	age + sex	subject-separate	TRUE	24751	FALSE
+GSE202537_caudate_GSE138082_CA3	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	24751	FALSE
+GSE202537_caudate_GSE138082_CA3	L2	0.01858807564	age + sex + PMI	subject-separate	TRUE	24751	FALSE
+GSE202537_caudate_GSE138082_CA3	L3	0.005874694247	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	24751	FALSE
+GSE202537_caudate_GSE138082_CA3	L4	-0.09844866351	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	24751	FALSE
+GSE202537_caudate_GSE138082_DG	L0	0.09171156875	no covariates	subject-separate	TRUE	24765	FALSE
+GSE202537_caudate_GSE138082_DG	L1	0.09733718975	age + sex	subject-separate	TRUE	24765	FALSE
+GSE202537_caudate_GSE138082_DG	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	24765	FALSE
+GSE202537_caudate_GSE138082_DG	L2	0.08221028623	age + sex + PMI	subject-separate	TRUE	24765	FALSE
+GSE202537_caudate_GSE138082_DG	L3	0.05749289571	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	24765	FALSE
+GSE202537_caudate_GSE138082_DG	L4	0.1076855509	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	24765	FALSE
+GSE202537_caudate_GSE26927_temporal	L0	-0.07509347788	no covariates	subject-separate	TRUE	13738	FALSE
+GSE202537_caudate_GSE26927_temporal	L1	-0.08874252972	age + sex	subject-separate	TRUE	13738	FALSE
+GSE202537_caudate_GSE26927_temporal	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	13738	FALSE
+GSE202537_caudate_GSE26927_temporal	L2	-0.06995905196	age + sex + PMI	subject-separate	TRUE	13738	FALSE
+GSE202537_caudate_GSE26927_temporal	L3	-0.06418574885	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	13738	FALSE
+GSE202537_caudate_GSE26927_temporal	L4	-0.06418574885	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	13738	FALSE
+GSE202537_putamen_GSE138082_CA1	L0	0.2375261223	no covariates	subject-separate	TRUE	24753	FALSE
+GSE202537_putamen_GSE138082_CA1	L1	0.2547322149	age + sex	subject-separate	TRUE	24753	FALSE
+GSE202537_putamen_GSE138082_CA1	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	24753	FALSE
+GSE202537_putamen_GSE138082_CA1	L2	0.2071203832	age + sex + PMI	subject-separate	TRUE	24753	FALSE
+GSE202537_putamen_GSE138082_CA1	L3	0.2169251668	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	24753	FALSE
+GSE202537_putamen_GSE138082_CA1	L4	0.1719821231	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	24753	FALSE
+GSE202537_putamen_GSE138082_CA3	L0	-0.184352347	no covariates	subject-separate	TRUE	24712	FALSE
+GSE202537_putamen_GSE138082_CA3	L1	-0.1744364931	age + sex	subject-separate	TRUE	24712	FALSE
+GSE202537_putamen_GSE138082_CA3	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	24712	FALSE
+GSE202537_putamen_GSE138082_CA3	L2	-0.1316588885	age + sex + PMI	subject-separate	TRUE	24712	FALSE
+GSE202537_putamen_GSE138082_CA3	L3	-0.2158720299	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	24712	FALSE
+GSE202537_putamen_GSE138082_CA3	L4	-0.1949670365	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	24712	FALSE
+GSE202537_putamen_GSE138082_DG	L0	0.3005691148	no covariates	subject-separate	TRUE	24704	FALSE
+GSE202537_putamen_GSE138082_DG	L1	0.3045174566	age + sex	subject-separate	TRUE	24704	FALSE
+GSE202537_putamen_GSE138082_DG	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	24704	FALSE
+GSE202537_putamen_GSE138082_DG	L2	0.2999280359	age + sex + PMI	subject-separate	TRUE	24704	FALSE
+GSE202537_putamen_GSE138082_DG	L3	0.3499397148	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	24704	FALSE
+GSE202537_putamen_GSE138082_DG	L4	0.3140431285	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	24704	FALSE
+GSE202537_putamen_GSE26927_temporal	L0	-0.05110972507	no covariates	subject-separate	TRUE	13731	FALSE
+GSE202537_putamen_GSE26927_temporal	L1	-0.07025722191	age + sex	subject-separate	TRUE	13731	FALSE
+GSE202537_putamen_GSE26927_temporal	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	13731	FALSE
+GSE202537_putamen_GSE26927_temporal	L2	-0.08045927588	age + sex + PMI	subject-separate	TRUE	13731	FALSE
+GSE202537_putamen_GSE26927_temporal	L3	-0.1104748046	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	13731	FALSE
+GSE202537_putamen_GSE26927_temporal	L4	-0.1104748046	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	13731	FALSE
+GSE208338_GSE138082_CA1	L0	0.01371387089	no covariates	subject-separate	TRUE	15889	FALSE
+GSE208338_GSE138082_CA1	L1	0.04407747328	age + sex	subject-separate	TRUE	15889	FALSE
+GSE208338_GSE138082_CA1	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	15889	FALSE
+GSE208338_GSE138082_CA1	L2	0.0539285235	age + sex + PMI	subject-separate	TRUE	15889	FALSE
+GSE208338_GSE138082_CA1	L3	-0.054726349	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	15889	FALSE
+GSE208338_GSE138082_CA1	L4	-0.0546811498	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	15889	FALSE
+GSE208338_GSE138082_CA3	L0	-0.05777157213	no covariates	subject-separate	TRUE	15902	FALSE
+GSE208338_GSE138082_CA3	L1	-0.02571735025	age + sex	subject-separate	TRUE	15902	FALSE
+GSE208338_GSE138082_CA3	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	15902	FALSE
+GSE208338_GSE138082_CA3	L2	-0.01039565152	age + sex + PMI	subject-separate	TRUE	15902	FALSE
+GSE208338_GSE138082_CA3	L3	0.08356192483	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	15902	FALSE
+GSE208338_GSE138082_CA3	L4	0.05987086947	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	15902	FALSE
+GSE208338_GSE138082_DG	L0	-0.02683598136	no covariates	subject-separate	TRUE	15877	FALSE
+GSE208338_GSE138082_DG	L1	-0.03545753711	age + sex	subject-separate	TRUE	15877	FALSE
+GSE208338_GSE138082_DG	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	15877	FALSE
+GSE208338_GSE138082_DG	L2	-0.03234219875	age + sex + PMI	subject-separate	TRUE	15877	FALSE
+GSE208338_GSE138082_DG	L3	-0.1401321323	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	15877	FALSE
+GSE208338_GSE138082_DG	L4	-0.120510044	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	15877	FALSE
+GSE208338_GSE202537_NAc	L0	0.05500690229	no covariates	subject-separate	TRUE	15912	TRUE
+GSE208338_GSE202537_NAc	L1	0.06645427903	age + sex	subject-separate	TRUE	15912	TRUE
+GSE208338_GSE202537_NAc	L1p	0.09480335156	age + sex + pH (datasets that record pH)	subject-separate	TRUE	15912	TRUE
+GSE208338_GSE202537_NAc	L2	0.07429016943	age + sex + PMI	subject-separate	TRUE	15912	TRUE
+GSE208338_GSE202537_NAc	L3	0.08367041076	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	15912	TRUE
+GSE208338_GSE202537_NAc	L4	0.08367041076	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	15912	TRUE
+GSE208338_GSE202537_caudate	L0	0.06487323546	no covariates	subject-separate	TRUE	15877	TRUE
+GSE208338_GSE202537_caudate	L1	0.0511724283	age + sex	subject-separate	TRUE	15877	TRUE
+GSE208338_GSE202537_caudate	L1p	0.07100787482	age + sex + pH (datasets that record pH)	subject-separate	TRUE	15877	TRUE
+GSE208338_GSE202537_caudate	L2	0.03053805258	age + sex + PMI	subject-separate	TRUE	15877	TRUE
+GSE208338_GSE202537_caudate	L3	0.0805882322	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	15877	TRUE
+GSE208338_GSE202537_caudate	L4	0.0805882322	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	15877	TRUE
+GSE208338_GSE202537_putamen	L0	0.1349755137	no covariates	subject-separate	TRUE	15862	TRUE
+GSE208338_GSE202537_putamen	L1	0.1442461418	age + sex	subject-separate	TRUE	15862	TRUE
+GSE208338_GSE202537_putamen	L1p	0.132012022	age + sex + pH (datasets that record pH)	subject-separate	TRUE	15862	TRUE
+GSE208338_GSE202537_putamen	L2	0.1506273198	age + sex + PMI	subject-separate	TRUE	15862	TRUE
+GSE208338_GSE202537_putamen	L3	0.04246699868	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	15862	TRUE
+GSE208338_GSE202537_putamen	L4	0.04246699868	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	15862	TRUE
+GSE208338_GSE224683	L0	0.2207720488	no covariates	subject-separate	TRUE	15749	TRUE
+GSE208338_GSE224683	L1	0.2756717565	age + sex	subject-separate	TRUE	15749	TRUE
+GSE208338_GSE224683	L1p	0.224519615	age + sex + pH (datasets that record pH)	subject-separate	TRUE	15749	TRUE
+GSE208338_GSE224683	L2	0.2777018498	age + sex + PMI	subject-separate	TRUE	15749	TRUE
+GSE208338_GSE224683	L3	0.3017524813	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	15749	TRUE
+GSE208338_GSE224683	L4	0.3017524813	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	15749	TRUE
+GSE208338_GSE26927_temporal	L0	-0.05795296326	no covariates	subject-separate	TRUE	12686	FALSE
+GSE208338_GSE26927_temporal	L1	-0.06247569445	age + sex	subject-separate	TRUE	12686	FALSE
+GSE208338_GSE26927_temporal	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	12686	FALSE
+GSE208338_GSE26927_temporal	L2	-0.05012363298	age + sex + PMI	subject-separate	TRUE	12686	FALSE
+GSE208338_GSE26927_temporal	L3	-0.07769456951	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	12686	FALSE
+GSE208338_GSE26927_temporal	L4	-0.07769456951	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	12686	FALSE
+GSE21138_GSE138082_CA1	L0	-0.2481901966	no covariates	subject-separate	TRUE	17032	FALSE
+GSE21138_GSE138082_CA1	L1	-0.2158902477	age + sex	subject-separate	TRUE	17032	FALSE
+GSE21138_GSE138082_CA1	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	17032	FALSE
+GSE21138_GSE138082_CA1	L2	-0.2235319732	age + sex + PMI	subject-separate	TRUE	17032	FALSE
+GSE21138_GSE138082_CA1	L3	-0.1958696197	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	17032	FALSE
+GSE21138_GSE138082_CA1	L4	-0.07968443443	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	17032	FALSE
+GSE21138_GSE138082_CA3	L0	0.1789489486	no covariates	subject-separate	TRUE	17047	FALSE
+GSE21138_GSE138082_CA3	L1	0.2103290357	age + sex	subject-separate	TRUE	17047	FALSE
+GSE21138_GSE138082_CA3	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	17047	FALSE
+GSE21138_GSE138082_CA3	L2	0.2177407242	age + sex + PMI	subject-separate	TRUE	17047	FALSE
+GSE21138_GSE138082_CA3	L3	0.2204149522	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	17047	FALSE
+GSE21138_GSE138082_CA3	L4	0.2058566264	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	17047	FALSE
+GSE21138_GSE138082_DG	L0	-0.2497298055	no covariates	subject-separate	TRUE	17008	FALSE
+GSE21138_GSE138082_DG	L1	-0.2500171988	age + sex	subject-separate	TRUE	17008	FALSE
+GSE21138_GSE138082_DG	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	17008	FALSE
+GSE21138_GSE138082_DG	L2	-0.2497617803	age + sex + PMI	subject-separate	TRUE	17008	FALSE
+GSE21138_GSE138082_DG	L3	-0.2214244328	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	17008	FALSE
+GSE21138_GSE138082_DG	L4	-0.2163887715	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	17008	FALSE
+GSE21138_GSE17612	L0	0.1436418477	no covariates	subject-separate	TRUE	16833	TRUE
+GSE21138_GSE17612	L1	0.0684551232	age + sex	subject-separate	TRUE	16833	TRUE
+GSE21138_GSE17612	L1p	-0.2317794213	age + sex + pH (datasets that record pH)	subject-separate	TRUE	16833	TRUE
+GSE21138_GSE17612	L2	0.1868325796	age + sex + PMI	subject-separate	TRUE	16833	TRUE
+GSE21138_GSE17612	L3	-0.2034693613	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	16833	TRUE
+GSE21138_GSE17612	L4	-0.3042894592	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	16833	TRUE
+GSE21138_GSE202537_NAc	L0	0.1988876372	no covariates	subject-separate	TRUE	17039	TRUE
+GSE21138_GSE202537_NAc	L1	0.1943105195	age + sex	subject-separate	TRUE	17039	TRUE
+GSE21138_GSE202537_NAc	L1p	0.1864339992	age + sex + pH (datasets that record pH)	subject-separate	TRUE	17039	TRUE
+GSE21138_GSE202537_NAc	L2	0.1968864851	age + sex + PMI	subject-separate	TRUE	17039	TRUE
+GSE21138_GSE202537_NAc	L3	0.1329457263	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	17039	TRUE
+GSE21138_GSE202537_NAc	L4	0.01712372641	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	17039	TRUE
+GSE21138_GSE202537_caudate	L0	-0.01347774353	no covariates	subject-separate	TRUE	16994	TRUE
+GSE21138_GSE202537_caudate	L1	-0.01626257413	age + sex	subject-separate	TRUE	16994	TRUE
+GSE21138_GSE202537_caudate	L1p	-0.04403990605	age + sex + pH (datasets that record pH)	subject-separate	TRUE	16994	TRUE
+GSE21138_GSE202537_caudate	L2	-0.02222908435	age + sex + PMI	subject-separate	TRUE	16994	TRUE
+GSE21138_GSE202537_caudate	L3	-0.001475801032	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	16994	TRUE
+GSE21138_GSE202537_caudate	L4	0.08939749511	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	16994	TRUE
+GSE21138_GSE202537_putamen	L0	0.01275725212	no covariates	subject-separate	TRUE	16961	TRUE
+GSE21138_GSE202537_putamen	L1	0.007415926794	age + sex	subject-separate	TRUE	16961	TRUE
+GSE21138_GSE202537_putamen	L1p	0.002005480205	age + sex + pH (datasets that record pH)	subject-separate	TRUE	16961	TRUE
+GSE21138_GSE202537_putamen	L2	0.01357309456	age + sex + PMI	subject-separate	TRUE	16961	TRUE
+GSE21138_GSE202537_putamen	L3	-0.02808865681	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	16961	TRUE
+GSE21138_GSE202537_putamen	L4	-0.08949530029	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	16961	TRUE
+GSE21138_GSE21935	L0	0.221526193	no covariates	subject-separate	TRUE	16807	TRUE
+GSE21138_GSE21935	L1	0.1590164595	age + sex	subject-separate	TRUE	16807	TRUE
+GSE21138_GSE21935	L1p	-0.08316022192	age + sex + pH (datasets that record pH)	subject-separate	TRUE	16807	TRUE
+GSE21138_GSE21935	L2	0.1973420576	age + sex + PMI	subject-separate	TRUE	16807	TRUE
+GSE21138_GSE21935	L3	-0.06533184316	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	16807	TRUE
+GSE21138_GSE21935	L4	-0.1160711628	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	16807	TRUE
+GSE21138_GSE224683	L0	0.2935599479	no covariates	subject-separate	TRUE	16849	TRUE
+GSE21138_GSE224683	L1	0.4677561308	age + sex	subject-separate	TRUE	16849	TRUE
+GSE21138_GSE224683	L1p	0.4004923701	age + sex + pH (datasets that record pH)	subject-separate	TRUE	16849	TRUE
+GSE21138_GSE224683	L2	0.4596907133	age + sex + PMI	subject-separate	TRUE	16849	TRUE
+GSE21138_GSE224683	L3	0.3964993316	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	16849	TRUE
+GSE21138_GSE224683	L4	0.342673161	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	16849	TRUE
+GSE21138_GSE26927_temporal	L0	-0.08859645656	no covariates	subject-separate	TRUE	12871	FALSE
+GSE21138_GSE26927_temporal	L1	-0.06901558293	age + sex	subject-separate	TRUE	12871	FALSE
+GSE21138_GSE26927_temporal	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	12871	FALSE
+GSE21138_GSE26927_temporal	L2	-0.004765035927	age + sex + PMI	subject-separate	TRUE	12871	FALSE
+GSE21138_GSE26927_temporal	L3	-0.00355376137	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	12871	FALSE
+GSE21138_GSE26927_temporal	L4	-0.08088372431	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	12871	FALSE
+GSE21138_GSE35974	L0	0.2416559238	no covariates	subject-separate	TRUE	14757	TRUE
+GSE21138_GSE35974	L1	0.2348429089	age + sex	subject-separate	TRUE	14757	TRUE
+GSE21138_GSE35974	L1p	0.2165156225	age + sex + pH (datasets that record pH)	subject-separate	TRUE	14757	TRUE
+GSE21138_GSE35974	L2	0.2640635728	age + sex + PMI	subject-separate	TRUE	14757	TRUE
+GSE21138_GSE35974	L3	0.2457104345	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	14757	TRUE
+GSE21138_GSE35974	L4	0.1471689676	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	14757	TRUE
+GSE21138_GSE35977	L0	0.3094235397	no covariates	subject-separate	TRUE	14834	TRUE
+GSE21138_GSE35977	L1	0.3008421524	age + sex	subject-separate	TRUE	14834	TRUE
+GSE21138_GSE35977	L1p	0.09885115763	age + sex + pH (datasets that record pH)	subject-separate	TRUE	14834	TRUE
+GSE21138_GSE35977	L2	0.3676469743	age + sex + PMI	subject-separate	TRUE	14834	TRUE
+GSE21138_GSE35977	L3	0.1699485454	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	14834	TRUE
+GSE21138_GSE35977	L4	0.02949516407	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	14834	TRUE
+GSE21138_GSE53987_BA46	L0	0.4770152889	no covariates	subject-separate	TRUE	16826	TRUE
+GSE21138_GSE53987_BA46	L1	0.4772535193	age + sex	subject-separate	TRUE	16826	TRUE
+GSE21138_GSE53987_BA46	L1p	0.452315653	age + sex + pH (datasets that record pH)	subject-separate	TRUE	16826	TRUE
+GSE21138_GSE53987_BA46	L2	0.4746830847	age + sex + PMI	subject-separate	TRUE	16826	TRUE
+GSE21138_GSE53987_BA46	L3	0.4048311135	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	16826	TRUE
+GSE21138_GSE53987_BA46	L4	0.1770647403	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	16826	TRUE
+GSE21138_GSE53987_hippocampus	L0	0.4394124747	no covariates	subject-separate	TRUE	16818	TRUE
+GSE21138_GSE53987_hippocampus	L1	0.4516246736	age + sex	subject-separate	TRUE	16818	TRUE
+GSE21138_GSE53987_hippocampus	L1p	0.4540598958	age + sex + pH (datasets that record pH)	subject-separate	TRUE	16818	TRUE
+GSE21138_GSE53987_hippocampus	L2	0.4585869101	age + sex + PMI	subject-separate	TRUE	16818	TRUE
+GSE21138_GSE53987_hippocampus	L3	0.3870489661	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	16818	TRUE
+GSE21138_GSE53987_hippocampus	L4	0.2437587775	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	16818	TRUE
+GSE21138_GSE53987_striatum	L0	0.3792430487	no covariates	subject-separate	TRUE	16799	TRUE
+GSE21138_GSE53987_striatum	L1	0.373675011	age + sex	subject-separate	TRUE	16799	TRUE
+GSE21138_GSE53987_striatum	L1p	0.3394709739	age + sex + pH (datasets that record pH)	subject-separate	TRUE	16799	TRUE
+GSE21138_GSE53987_striatum	L2	0.3744904115	age + sex + PMI	subject-separate	TRUE	16799	TRUE
+GSE21138_GSE53987_striatum	L3	0.289715701	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	16799	TRUE
+GSE21138_GSE53987_striatum	L4	0.2881282928	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	16799	TRUE
+GSE21138_GSE80655_AnCg	L0	0.370610467	no covariates	subject-separate	TRUE	17105	TRUE
+GSE21138_GSE80655_AnCg	L1	0.3884322593	age + sex	subject-separate	TRUE	17105	TRUE
+GSE21138_GSE80655_AnCg	L1p	0.3308303787	age + sex + pH (datasets that record pH)	subject-separate	TRUE	17105	TRUE
+GSE21138_GSE80655_AnCg	L2	0.3803842209	age + sex + PMI	subject-separate	TRUE	17105	TRUE
+GSE21138_GSE80655_AnCg	L3	0.3274856198	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	17105	TRUE
+GSE21138_GSE80655_AnCg	L4	0.3261715128	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	17105	TRUE
+GSE21138_GSE80655_DLPFC	L0	0.4246392188	no covariates	subject-separate	TRUE	17087	TRUE
+GSE21138_GSE80655_DLPFC	L1	0.4369917658	age + sex	subject-separate	TRUE	17087	TRUE
+GSE21138_GSE80655_DLPFC	L1p	0.3735352018	age + sex + pH (datasets that record pH)	subject-separate	TRUE	17087	TRUE
+GSE21138_GSE80655_DLPFC	L2	0.4262172256	age + sex + PMI	subject-separate	TRUE	17087	TRUE
+GSE21138_GSE80655_DLPFC	L3	0.3729827647	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	17087	TRUE
+GSE21138_GSE80655_DLPFC	L4	0.215107967	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	17087	TRUE
+GSE21138_GSE80655_nAcc	L0	0.1883585655	no covariates	subject-separate	TRUE	17090	TRUE
+GSE21138_GSE80655_nAcc	L1	0.2264579916	age + sex	subject-separate	TRUE	17090	TRUE
+GSE21138_GSE80655_nAcc	L1p	0.171313354	age + sex + pH (datasets that record pH)	subject-separate	TRUE	17090	TRUE
+GSE21138_GSE80655_nAcc	L2	0.2323465876	age + sex + PMI	subject-separate	TRUE	17090	TRUE
+GSE21138_GSE80655_nAcc	L3	0.1834147591	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	17090	TRUE
+GSE21138_GSE80655_nAcc	L4	0.1069746058	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	17090	TRUE
+GSE21138_GSE92538_GPL570	L0	0.0328661489	no covariates	subject-separate	TRUE	16788	TRUE
+GSE21138_GSE92538_GPL570	L1	0.2190382916	age + sex	subject-separate	TRUE	16788	TRUE
+GSE21138_GSE92538_GPL570	L1p	0.2013163827	age + sex + pH (datasets that record pH)	subject-separate	TRUE	16788	TRUE
+GSE21138_GSE92538_GPL570	L2	0.2294822394	age + sex + PMI	subject-separate	TRUE	16788	TRUE
+GSE21138_GSE92538_GPL570	L3	0.2041388152	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	16788	TRUE
+GSE21138_GSE92538_GPL570	L4	0.2377189388	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	16788	TRUE
+GSE21138_GSE92538_GPL96	L0	0.4076538203	no covariates	subject-separate	TRUE	10634	TRUE
+GSE21138_GSE92538_GPL96	L1	0.4250060902	age + sex	subject-separate	TRUE	10634	TRUE
+GSE21138_GSE92538_GPL96	L1p	0.3553188074	age + sex + pH (datasets that record pH)	subject-separate	TRUE	10634	TRUE
+GSE21138_GSE92538_GPL96	L2	0.293806134	age + sex + PMI	subject-separate	TRUE	10634	TRUE
+GSE21138_GSE92538_GPL96	L3	0.1462107085	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	10634	TRUE
+GSE21138_GSE92538_GPL96	L4	0.078859022	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	10634	TRUE
+GSE21935_GSE138082_CA1	L0	-0.03766784427	no covariates	subject-separate	TRUE	17015	FALSE
+GSE21935_GSE138082_CA1	L1	0.0003866734986	age + sex	subject-separate	TRUE	17015	FALSE
+GSE21935_GSE138082_CA1	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	17015	FALSE
+GSE21935_GSE138082_CA1	L2	-0.05247383073	age + sex + PMI	subject-separate	TRUE	17015	FALSE
+GSE21935_GSE138082_CA1	L3	0.05406582671	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	17015	FALSE
+GSE21935_GSE138082_CA1	L4	0.1256578413	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	17015	FALSE
+GSE21935_GSE138082_CA3	L0	0.159859615	no covariates	subject-separate	TRUE	17024	FALSE
+GSE21935_GSE138082_CA3	L1	0.1302441442	age + sex	subject-separate	TRUE	17024	FALSE
+GSE21935_GSE138082_CA3	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	17024	FALSE
+GSE21935_GSE138082_CA3	L2	0.148701853	age + sex + PMI	subject-separate	TRUE	17024	FALSE
+GSE21935_GSE138082_CA3	L3	-0.01243385975	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	17024	FALSE
+GSE21935_GSE138082_CA3	L4	-0.03253813753	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	17024	FALSE
+GSE21935_GSE138082_DG	L0	0.06713170431	no covariates	subject-separate	TRUE	16994	FALSE
+GSE21935_GSE138082_DG	L1	0.1152263616	age + sex	subject-separate	TRUE	16994	FALSE
+GSE21935_GSE138082_DG	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	16994	FALSE
+GSE21935_GSE138082_DG	L2	0.0894287035	age + sex + PMI	subject-separate	TRUE	16994	FALSE
+GSE21935_GSE138082_DG	L3	0.2595014983	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	16994	FALSE
+GSE21935_GSE138082_DG	L4	0.2620635662	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	16994	FALSE
+GSE21935_GSE202537_NAc	L0	0.1734122631	no covariates	subject-separate	TRUE	17029	TRUE
+GSE21935_GSE202537_NAc	L1	0.1473805544	age + sex	subject-separate	TRUE	17029	TRUE
+GSE21935_GSE202537_NAc	L1p	0.02992470616	age + sex + pH (datasets that record pH)	subject-separate	TRUE	17029	TRUE
+GSE21935_GSE202537_NAc	L2	0.1469673989	age + sex + PMI	subject-separate	TRUE	17029	TRUE
+GSE21935_GSE202537_NAc	L3	0.04482189752	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	17029	TRUE
+GSE21935_GSE202537_NAc	L4	0.04482189752	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	17029	TRUE
+GSE21935_GSE202537_caudate	L0	0.1136007045	no covariates	subject-separate	TRUE	16974	TRUE
+GSE21935_GSE202537_caudate	L1	0.1070531969	age + sex	subject-separate	TRUE	16974	TRUE
+GSE21935_GSE202537_caudate	L1p	0.03619389095	age + sex + pH (datasets that record pH)	subject-separate	TRUE	16974	TRUE
+GSE21935_GSE202537_caudate	L2	0.1001430243	age + sex + PMI	subject-separate	TRUE	16974	TRUE
+GSE21935_GSE202537_caudate	L3	0.02119451568	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	16974	TRUE
+GSE21935_GSE202537_caudate	L4	0.02119451568	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	16974	TRUE
+GSE21935_GSE202537_putamen	L0	0.188425307	no covariates	subject-separate	TRUE	16940	TRUE
+GSE21935_GSE202537_putamen	L1	0.2054336168	age + sex	subject-separate	TRUE	16940	TRUE
+GSE21935_GSE202537_putamen	L1p	0.1674567604	age + sex + pH (datasets that record pH)	subject-separate	TRUE	16940	TRUE
+GSE21935_GSE202537_putamen	L2	0.2072909618	age + sex + PMI	subject-separate	TRUE	16940	TRUE
+GSE21935_GSE202537_putamen	L3	0.1703289951	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	16940	TRUE
+GSE21935_GSE202537_putamen	L4	0.1703289951	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	16940	TRUE
+GSE21935_GSE208338	L0	0.1164611537	no covariates	subject-separate	TRUE	14481	TRUE
+GSE21935_GSE208338	L1	0.08830296776	age + sex	subject-separate	TRUE	14481	TRUE
+GSE21935_GSE208338	L1p	-0.0714688063	age + sex + pH (datasets that record pH)	subject-separate	TRUE	14481	TRUE
+GSE21935_GSE208338	L2	0.08737059231	age + sex + PMI	subject-separate	TRUE	14481	TRUE
+GSE21935_GSE208338	L3	-0.1292453924	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	14481	TRUE
+GSE21935_GSE208338	L4	-0.1292453924	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	14481	TRUE
+GSE21935_GSE224683	L0	0.2267856222	no covariates	subject-separate	TRUE	16807	TRUE
+GSE21935_GSE224683	L1	0.05497196072	age + sex	subject-separate	TRUE	16807	TRUE
+GSE21935_GSE224683	L1p	-0.1989466148	age + sex + pH (datasets that record pH)	subject-separate	TRUE	16807	TRUE
+GSE21935_GSE224683	L2	0.08473602653	age + sex + PMI	subject-separate	TRUE	16807	TRUE
+GSE21935_GSE224683	L3	-0.1893879616	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	16807	TRUE
+GSE21935_GSE224683	L4	-0.1893879616	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	16807	TRUE
+GSE21935_GSE26927_temporal	L0	0.03978956688	no covariates	subject-separate	TRUE	12787	FALSE
+GSE21935_GSE26927_temporal	L1	0.04497333744	age + sex	subject-separate	TRUE	12787	FALSE
+GSE21935_GSE26927_temporal	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	12787	FALSE
+GSE21935_GSE26927_temporal	L2	0.063731154	age + sex + PMI	subject-separate	TRUE	12787	FALSE
+GSE21935_GSE26927_temporal	L3	0.1603257647	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	12787	FALSE
+GSE21935_GSE26927_temporal	L4	0.1603257647	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	12787	FALSE
+GSE21935_GSE80655_AnCg	L0	0.06799290162	no covariates	subject-separate	TRUE	17085	TRUE
+GSE21935_GSE80655_AnCg	L1	-0.03145000691	age + sex	subject-separate	TRUE	17085	TRUE
+GSE21935_GSE80655_AnCg	L1p	-0.2925740751	age + sex + pH (datasets that record pH)	subject-separate	TRUE	17085	TRUE
+GSE21935_GSE80655_AnCg	L2	0.008394719152	age + sex + PMI	subject-separate	TRUE	17085	TRUE
+GSE21935_GSE80655_AnCg	L3	-0.2828956346	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	17085	TRUE
+GSE21935_GSE80655_AnCg	L4	-0.2828956346	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	17085	TRUE
+GSE21935_GSE80655_DLPFC	L0	0.2105491136	no covariates	subject-separate	TRUE	17065	TRUE
+GSE21935_GSE80655_DLPFC	L1	0.1149873789	age + sex	subject-separate	TRUE	17065	TRUE
+GSE21935_GSE80655_DLPFC	L1p	-0.03900588132	age + sex + pH (datasets that record pH)	subject-separate	TRUE	17065	TRUE
+GSE21935_GSE80655_DLPFC	L2	0.1363883077	age + sex + PMI	subject-separate	TRUE	17065	TRUE
+GSE21935_GSE80655_DLPFC	L3	-0.03358177715	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	17065	TRUE
+GSE21935_GSE80655_DLPFC	L4	-0.03358177715	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	17065	TRUE
+GSE21935_GSE80655_nAcc	L0	0.08434434677	no covariates	subject-separate	TRUE	17076	TRUE
+GSE21935_GSE80655_nAcc	L1	0.08186539155	age + sex	subject-separate	TRUE	17076	TRUE
+GSE21935_GSE80655_nAcc	L1p	0.0649702964	age + sex + pH (datasets that record pH)	subject-separate	TRUE	17076	TRUE
+GSE21935_GSE80655_nAcc	L2	0.1085389476	age + sex + PMI	subject-separate	TRUE	17076	TRUE
+GSE21935_GSE80655_nAcc	L3	0.05859557809	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	17076	TRUE
+GSE21935_GSE80655_nAcc	L4	0.05859557809	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	17076	TRUE
+GSE21935_GSE92538_GPL570	L0	-0.08539989462	no covariates	subject-separate	TRUE	16851	TRUE
+GSE21935_GSE92538_GPL570	L1	-0.06915598628	age + sex	subject-separate	TRUE	16851	TRUE
+GSE21935_GSE92538_GPL570	L1p	-0.2062921034	age + sex + pH (datasets that record pH)	subject-separate	TRUE	16851	TRUE
+GSE21935_GSE92538_GPL570	L2	-0.0598099548	age + sex + PMI	subject-separate	TRUE	16851	TRUE
+GSE21935_GSE92538_GPL570	L3	-0.2061434288	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	16851	TRUE
+GSE21935_GSE92538_GPL570	L4	-0.2061434288	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	16851	TRUE
+GSE21935_GSE92538_GPL96	L0	0.1483366426	no covariates	subject-separate	TRUE	10649	TRUE
+GSE21935_GSE92538_GPL96	L1	0.06446891291	age + sex	subject-separate	TRUE	10649	TRUE
+GSE21935_GSE92538_GPL96	L1p	-0.1852332287	age + sex + pH (datasets that record pH)	subject-separate	TRUE	10649	TRUE
+GSE21935_GSE92538_GPL96	L2	0.06420730291	age + sex + PMI	subject-separate	TRUE	10649	TRUE
+GSE21935_GSE92538_GPL96	L3	-0.0348613211	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	10649	TRUE
+GSE21935_GSE92538_GPL96	L4	-0.0348613211	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	10649	TRUE
+GSE224683_GSE138082_CA1	L0	0.01551900455	no covariates	subject-separate	TRUE	23677	FALSE
+GSE224683_GSE138082_CA1	L1	-0.1184109309	age + sex	subject-separate	TRUE	23677	FALSE
+GSE224683_GSE138082_CA1	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	23677	FALSE
+GSE224683_GSE138082_CA1	L2	-0.1133458082	age + sex + PMI	subject-separate	TRUE	23677	FALSE
+GSE224683_GSE138082_CA1	L3	-0.1235497027	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	23677	FALSE
+GSE224683_GSE138082_CA1	L4	-0.1091607732	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	23677	FALSE
+GSE224683_GSE138082_CA3	L0	-0.08227156131	no covariates	subject-separate	TRUE	23666	FALSE
+GSE224683_GSE138082_CA3	L1	0.1154309858	age + sex	subject-separate	TRUE	23666	FALSE
+GSE224683_GSE138082_CA3	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	23666	FALSE
+GSE224683_GSE138082_CA3	L2	0.1218340887	age + sex + PMI	subject-separate	TRUE	23666	FALSE
+GSE224683_GSE138082_CA3	L3	0.1781667943	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	23666	FALSE
+GSE224683_GSE138082_CA3	L4	0.1715836718	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	23666	FALSE
+GSE224683_GSE138082_DG	L0	0.04400487261	no covariates	subject-separate	TRUE	23649	FALSE
+GSE224683_GSE138082_DG	L1	-0.2190117714	age + sex	subject-separate	TRUE	23649	FALSE
+GSE224683_GSE138082_DG	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	23649	FALSE
+GSE224683_GSE138082_DG	L2	-0.2107708239	age + sex + PMI	subject-separate	TRUE	23649	FALSE
+GSE224683_GSE138082_DG	L3	-0.2391560339	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	23649	FALSE
+GSE224683_GSE138082_DG	L4	-0.2451862082	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	23649	FALSE
+GSE224683_GSE26927_temporal	L0	4.045712448e-05	no covariates	subject-separate	TRUE	13673	FALSE
+GSE224683_GSE26927_temporal	L1	-0.1078757149	age + sex	subject-separate	TRUE	13673	FALSE
+GSE224683_GSE26927_temporal	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	13673	FALSE
+GSE224683_GSE26927_temporal	L2	-0.05065749799	age + sex + PMI	subject-separate	TRUE	13673	FALSE
+GSE224683_GSE26927_temporal	L3	-0.04128892984	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	13673	FALSE
+GSE224683_GSE26927_temporal	L4	-0.04128892984	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	13673	FALSE
+GSE26927_temporal_GSE138082_CA1	L0	-0.02405175577	no covariates	subject-separate	TRUE	13755	FALSE
+GSE26927_temporal_GSE138082_CA1	L1	-0.06330925901	age + sex	subject-separate	TRUE	13755	FALSE
+GSE26927_temporal_GSE138082_CA1	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	13755	FALSE
+GSE26927_temporal_GSE138082_CA1	L2	-0.1461049061	age + sex + PMI	subject-separate	TRUE	13755	FALSE
+GSE26927_temporal_GSE138082_CA1	L3	-0.1249727088	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	13755	FALSE
+GSE26927_temporal_GSE138082_CA1	L4	-0.08723394702	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	13755	FALSE
+GSE26927_temporal_GSE138082_CA3	L0	0.018487449	no covariates	subject-separate	TRUE	13753	FALSE
+GSE26927_temporal_GSE138082_CA3	L1	0.0036739105	age + sex	subject-separate	TRUE	13753	FALSE
+GSE26927_temporal_GSE138082_CA3	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	13753	FALSE
+GSE26927_temporal_GSE138082_CA3	L2	0.0290933383	age + sex + PMI	subject-separate	TRUE	13753	FALSE
+GSE26927_temporal_GSE138082_CA3	L3	0.05318849732	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	13753	FALSE
+GSE26927_temporal_GSE138082_CA3	L4	0.03504298266	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	13753	FALSE
+GSE26927_temporal_GSE138082_DG	L0	0.04846139219	no covariates	subject-separate	TRUE	13741	FALSE
+GSE26927_temporal_GSE138082_DG	L1	0.02845718123	age + sex	subject-separate	TRUE	13741	FALSE
+GSE26927_temporal_GSE138082_DG	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	13741	FALSE
+GSE26927_temporal_GSE138082_DG	L2	-0.01783176823	age + sex + PMI	subject-separate	TRUE	13741	FALSE
+GSE26927_temporal_GSE138082_DG	L3	-0.01916801064	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	13741	FALSE
+GSE26927_temporal_GSE138082_DG	L4	-0.02536446557	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	13741	FALSE
+GSE35974_GSE138082_CA1	L0	-0.120339569	no covariates	subject-separate	TRUE	16387	FALSE
+GSE35974_GSE138082_CA1	L1	-0.1043612232	age + sex	subject-separate	TRUE	16387	FALSE
+GSE35974_GSE138082_CA1	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	16387	FALSE
+GSE35974_GSE138082_CA1	L2	-0.1518654763	age + sex + PMI	subject-separate	TRUE	16387	FALSE
+GSE35974_GSE138082_CA1	L3	-0.1256091432	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	16387	FALSE
+GSE35974_GSE138082_CA1	L4	-0.1167658964	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	16387	FALSE
+GSE35974_GSE138082_CA3	L0	0.09079441818	no covariates	subject-separate	TRUE	16398	FALSE
+GSE35974_GSE138082_CA3	L1	0.1068868517	age + sex	subject-separate	TRUE	16398	FALSE
+GSE35974_GSE138082_CA3	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	16398	FALSE
+GSE35974_GSE138082_CA3	L2	0.1125714782	age + sex + PMI	subject-separate	TRUE	16398	FALSE
+GSE35974_GSE138082_CA3	L3	0.1285670445	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	16398	FALSE
+GSE35974_GSE138082_CA3	L4	0.1630331886	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	16398	FALSE
+GSE35974_GSE138082_DG	L0	-0.0972760029	no covariates	subject-separate	TRUE	16353	FALSE
+GSE35974_GSE138082_DG	L1	-0.09407689041	age + sex	subject-separate	TRUE	16353	FALSE
+GSE35974_GSE138082_DG	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	16353	FALSE
+GSE35974_GSE138082_DG	L2	-0.1085700751	age + sex + PMI	subject-separate	TRUE	16353	FALSE
+GSE35974_GSE138082_DG	L3	-0.09421961902	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	16353	FALSE
+GSE35974_GSE138082_DG	L4	-0.1386887165	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	16353	FALSE
+GSE35974_GSE17612	L0	0.147243005	no covariates	subject-separate	TRUE	14676	TRUE
+GSE35974_GSE17612	L1	0.1085642398	age + sex	subject-separate	TRUE	14676	TRUE
+GSE35974_GSE17612	L1p	0.01293039249	age + sex + pH (datasets that record pH)	subject-separate	TRUE	14676	TRUE
+GSE35974_GSE17612	L2	0.1399720634	age + sex + PMI	subject-separate	TRUE	14676	TRUE
+GSE35974_GSE17612	L3	-0.0005824458471	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	14676	TRUE
+GSE35974_GSE17612	L4	-0.0005824458471	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	14676	TRUE
+GSE35974_GSE202537_NAc	L0	0.2130566904	no covariates	subject-separate	TRUE	16426	TRUE
+GSE35974_GSE202537_NAc	L1	0.1990521691	age + sex	subject-separate	TRUE	16426	TRUE
+GSE35974_GSE202537_NAc	L1p	0.1847579667	age + sex + pH (datasets that record pH)	subject-separate	TRUE	16426	TRUE
+GSE35974_GSE202537_NAc	L2	0.2202181666	age + sex + PMI	subject-separate	TRUE	16426	TRUE
+GSE35974_GSE202537_NAc	L3	0.1725702841	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	16426	TRUE
+GSE35974_GSE202537_NAc	L4	0.1725702841	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	16426	TRUE
+GSE35974_GSE202537_caudate	L0	-0.08520103908	no covariates	subject-separate	TRUE	16330	TRUE
+GSE35974_GSE202537_caudate	L1	-0.08204785019	age + sex	subject-separate	TRUE	16330	TRUE
+GSE35974_GSE202537_caudate	L1p	-0.1089098109	age + sex + pH (datasets that record pH)	subject-separate	TRUE	16330	TRUE
+GSE35974_GSE202537_caudate	L2	-0.07937450609	age + sex + PMI	subject-separate	TRUE	16330	TRUE
+GSE35974_GSE202537_caudate	L3	-0.07290072585	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	16330	TRUE
+GSE35974_GSE202537_caudate	L4	-0.07290072585	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	16330	TRUE
+GSE35974_GSE202537_putamen	L0	0.08221052086	no covariates	subject-separate	TRUE	16337	TRUE
+GSE35974_GSE202537_putamen	L1	0.0748052146	age + sex	subject-separate	TRUE	16337	TRUE
+GSE35974_GSE202537_putamen	L1p	0.04786963144	age + sex + pH (datasets that record pH)	subject-separate	TRUE	16337	TRUE
+GSE35974_GSE202537_putamen	L2	0.09537878033	age + sex + PMI	subject-separate	TRUE	16337	TRUE
+GSE35974_GSE202537_putamen	L3	0.03648200873	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	16337	TRUE
+GSE35974_GSE202537_putamen	L4	0.03648200873	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	16337	TRUE
+GSE35974_GSE208338	L0	0.09913102503	no covariates	subject-separate	TRUE	15256	TRUE
+GSE35974_GSE208338	L1	0.1086843512	age + sex	subject-separate	TRUE	15256	TRUE
+GSE35974_GSE208338	L1p	0.0898898177	age + sex + pH (datasets that record pH)	subject-separate	TRUE	15256	TRUE
+GSE35974_GSE208338	L2	0.1282293534	age + sex + PMI	subject-separate	TRUE	15256	TRUE
+GSE35974_GSE208338	L3	0.1105348624	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	15256	TRUE
+GSE35974_GSE208338	L4	0.1105348624	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	15256	TRUE
+GSE35974_GSE21935	L0	0.08242035695	no covariates	subject-separate	TRUE	14657	TRUE
+GSE35974_GSE21935	L1	0.05566357086	age + sex	subject-separate	TRUE	14657	TRUE
+GSE35974_GSE21935	L1p	-0.01008592329	age + sex + pH (datasets that record pH)	subject-separate	TRUE	14657	TRUE
+GSE35974_GSE21935	L2	0.06920567916	age + sex + PMI	subject-separate	TRUE	14657	TRUE
+GSE35974_GSE21935	L3	-0.02628772185	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	14657	TRUE
+GSE35974_GSE21935	L4	-0.02628772185	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	14657	TRUE
+GSE35974_GSE224683	L0	0.1925741435	no covariates	subject-separate	TRUE	16184	TRUE
+GSE35974_GSE224683	L1	0.1920596326	age + sex	subject-separate	TRUE	16184	TRUE
+GSE35974_GSE224683	L1p	0.1629266047	age + sex + pH (datasets that record pH)	subject-separate	TRUE	16184	TRUE
+GSE35974_GSE224683	L2	0.2178304417	age + sex + PMI	subject-separate	TRUE	16184	TRUE
+GSE35974_GSE224683	L3	0.1827626288	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	16184	TRUE
+GSE35974_GSE224683	L4	0.1827626288	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	16184	TRUE
+GSE35974_GSE26927_temporal	L0	0.07260562614	no covariates	subject-separate	TRUE	12873	FALSE
+GSE35974_GSE26927_temporal	L1	0.1007216881	age + sex	subject-separate	TRUE	12873	FALSE
+GSE35974_GSE26927_temporal	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	12873	FALSE
+GSE35974_GSE26927_temporal	L2	0.120421817	age + sex + PMI	subject-separate	TRUE	12873	FALSE
+GSE35974_GSE26927_temporal	L3	0.1151415551	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	12873	FALSE
+GSE35974_GSE26927_temporal	L4	0.1151415551	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	12873	FALSE
+GSE35974_GSE53987_BA46	L0	0.2327818405	no covariates	subject-separate	TRUE	14796	TRUE
+GSE35974_GSE53987_BA46	L1	0.2406455105	age + sex	subject-separate	TRUE	14796	TRUE
+GSE35974_GSE53987_BA46	L1p	0.2255629058	age + sex + pH (datasets that record pH)	subject-separate	TRUE	14796	TRUE
+GSE35974_GSE53987_BA46	L2	0.2619677355	age + sex + PMI	subject-separate	TRUE	14796	TRUE
+GSE35974_GSE53987_BA46	L3	0.2437411035	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	14796	TRUE
+GSE35974_GSE53987_BA46	L4	0.2437411035	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	14796	TRUE
+GSE35974_GSE53987_hippocampus	L0	0.1822513254	no covariates	subject-separate	TRUE	14803	TRUE
+GSE35974_GSE53987_hippocampus	L1	0.1757133917	age + sex	subject-separate	TRUE	14803	TRUE
+GSE35974_GSE53987_hippocampus	L1p	0.1683389608	age + sex + pH (datasets that record pH)	subject-separate	TRUE	14803	TRUE
+GSE35974_GSE53987_hippocampus	L2	0.194202507	age + sex + PMI	subject-separate	TRUE	14803	TRUE
+GSE35974_GSE53987_hippocampus	L3	0.2166117457	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	14803	TRUE
+GSE35974_GSE53987_hippocampus	L4	0.2166117457	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	14803	TRUE
+GSE35974_GSE53987_striatum	L0	0.1479442509	no covariates	subject-separate	TRUE	14777	TRUE
+GSE35974_GSE53987_striatum	L1	0.1512050217	age + sex	subject-separate	TRUE	14777	TRUE
+GSE35974_GSE53987_striatum	L1p	0.1319413732	age + sex + pH (datasets that record pH)	subject-separate	TRUE	14777	TRUE
+GSE35974_GSE53987_striatum	L2	0.1681194812	age + sex + PMI	subject-separate	TRUE	14777	TRUE
+GSE35974_GSE53987_striatum	L3	0.1517048715	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	14777	TRUE
+GSE35974_GSE53987_striatum	L4	0.1517048715	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	14777	TRUE
+GSE35974_GSE80655_AnCg	L0	0.1172880866	no covariates	subject-separate	TRUE	16443	TRUE
+GSE35974_GSE80655_AnCg	L1	0.1378115343	age + sex	subject-separate	TRUE	16443	TRUE
+GSE35974_GSE80655_AnCg	L1p	0.1280255	age + sex + pH (datasets that record pH)	subject-separate	TRUE	16443	TRUE
+GSE35974_GSE80655_AnCg	L2	0.159482088	age + sex + PMI	subject-separate	TRUE	16443	TRUE
+GSE35974_GSE80655_AnCg	L3	0.1502723768	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	16443	TRUE
+GSE35974_GSE80655_AnCg	L4	0.1502723768	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	16443	TRUE
+GSE35974_GSE80655_DLPFC	L0	0.2822024569	no covariates	subject-separate	TRUE	16453	TRUE
+GSE35974_GSE80655_DLPFC	L1	0.2797408742	age + sex	subject-separate	TRUE	16453	TRUE
+GSE35974_GSE80655_DLPFC	L1p	0.2746127204	age + sex + pH (datasets that record pH)	subject-separate	TRUE	16453	TRUE
+GSE35974_GSE80655_DLPFC	L2	0.2984801612	age + sex + PMI	subject-separate	TRUE	16453	TRUE
+GSE35974_GSE80655_DLPFC	L3	0.2950694845	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	16453	TRUE
+GSE35974_GSE80655_DLPFC	L4	0.2950694845	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	16453	TRUE
+GSE35974_GSE80655_nAcc	L0	0.1685944335	no covariates	subject-separate	TRUE	16453	TRUE
+GSE35974_GSE80655_nAcc	L1	0.1728654848	age + sex	subject-separate	TRUE	16453	TRUE
+GSE35974_GSE80655_nAcc	L1p	0.178845192	age + sex + pH (datasets that record pH)	subject-separate	TRUE	16453	TRUE
+GSE35974_GSE80655_nAcc	L2	0.1755529922	age + sex + PMI	subject-separate	TRUE	16453	TRUE
+GSE35974_GSE80655_nAcc	L3	0.1799327532	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	16453	TRUE
+GSE35974_GSE80655_nAcc	L4	0.1799327532	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	16453	TRUE
+GSE35974_GSE92538_GPL570	L0	-0.03240212074	no covariates	subject-separate	TRUE	14608	TRUE
+GSE35974_GSE92538_GPL570	L1	0.07762234383	age + sex	subject-separate	TRUE	14608	TRUE
+GSE35974_GSE92538_GPL570	L1p	0.06758442893	age + sex + pH (datasets that record pH)	subject-separate	TRUE	14608	TRUE
+GSE35974_GSE92538_GPL570	L2	0.1125802911	age + sex + PMI	subject-separate	TRUE	14608	TRUE
+GSE35974_GSE92538_GPL570	L3	0.09459395229	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	14608	TRUE
+GSE35974_GSE92538_GPL570	L4	0.09459395229	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	14608	TRUE
+GSE35974_GSE92538_GPL96	L0	0.1160400275	no covariates	subject-separate	TRUE	9984	TRUE
+GSE35974_GSE92538_GPL96	L1	0.1136086407	age + sex	subject-separate	TRUE	9984	TRUE
+GSE35974_GSE92538_GPL96	L1p	0.09246400823	age + sex + pH (datasets that record pH)	subject-separate	TRUE	9984	TRUE
+GSE35974_GSE92538_GPL96	L2	0.06862891774	age + sex + PMI	subject-separate	TRUE	9984	TRUE
+GSE35974_GSE92538_GPL96	L3	0.01098286852	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	9984	TRUE
+GSE35974_GSE92538_GPL96	L4	0.01098286852	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	9984	TRUE
+GSE35977_GSE138082_CA1	L0	-0.1059760057	no covariates	subject-separate	TRUE	16427	FALSE
+GSE35977_GSE138082_CA1	L1	-0.1087279797	age + sex	subject-separate	TRUE	16427	FALSE
+GSE35977_GSE138082_CA1	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	16427	FALSE
+GSE35977_GSE138082_CA1	L2	-0.1647080951	age + sex + PMI	subject-separate	TRUE	16427	FALSE
+GSE35977_GSE138082_CA1	L3	-0.04219902435	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	16427	FALSE
+GSE35977_GSE138082_CA1	L4	-0.03113117418	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	16427	FALSE
+GSE35977_GSE138082_CA3	L0	0.1155746852	no covariates	subject-separate	TRUE	16433	FALSE
+GSE35977_GSE138082_CA3	L1	0.1373237768	age + sex	subject-separate	TRUE	16433	FALSE
+GSE35977_GSE138082_CA3	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	16433	FALSE
+GSE35977_GSE138082_CA3	L2	0.1436896708	age + sex + PMI	subject-separate	TRUE	16433	FALSE
+GSE35977_GSE138082_CA3	L3	0.009944978572	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	16433	FALSE
+GSE35977_GSE138082_CA3	L4	0.0090596642	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	16433	FALSE
+GSE35977_GSE138082_DG	L0	-0.03682020373	no covariates	subject-separate	TRUE	16396	FALSE
+GSE35977_GSE138082_DG	L1	-0.05374964136	age + sex	subject-separate	TRUE	16396	FALSE
+GSE35977_GSE138082_DG	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	16396	FALSE
+GSE35977_GSE138082_DG	L2	-0.1098542849	age + sex + PMI	subject-separate	TRUE	16396	FALSE
+GSE35977_GSE138082_DG	L3	0.1161411372	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	16396	FALSE
+GSE35977_GSE138082_DG	L4	0.07419679018	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	16396	FALSE
+GSE35977_GSE17612	L0	0.1582313793	no covariates	subject-separate	TRUE	14740	TRUE
+GSE35977_GSE17612	L1	0.1096323252	age + sex	subject-separate	TRUE	14740	TRUE
+GSE35977_GSE17612	L1p	0.1293436168	age + sex + pH (datasets that record pH)	subject-separate	TRUE	14740	TRUE
+GSE35977_GSE17612	L2	0.1587797832	age + sex + PMI	subject-separate	TRUE	14740	TRUE
+GSE35977_GSE17612	L3	0.1320742826	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	14740	TRUE
+GSE35977_GSE17612	L4	0.1320742826	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	14740	TRUE
+GSE35977_GSE202537_NAc	L0	0.2158215831	no covariates	subject-separate	TRUE	16461	TRUE
+GSE35977_GSE202537_NAc	L1	0.1906998995	age + sex	subject-separate	TRUE	16461	TRUE
+GSE35977_GSE202537_NAc	L1p	0.08572782571	age + sex + pH (datasets that record pH)	subject-separate	TRUE	16461	TRUE
+GSE35977_GSE202537_NAc	L2	0.2244738944	age + sex + PMI	subject-separate	TRUE	16461	TRUE
+GSE35977_GSE202537_NAc	L3	0.1286897781	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	16461	TRUE
+GSE35977_GSE202537_NAc	L4	0.1286897781	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	16461	TRUE
+GSE35977_GSE202537_caudate	L0	-0.0008589880965	no covariates	subject-separate	TRUE	16372	TRUE
+GSE35977_GSE202537_caudate	L1	-0.01579992597	age + sex	subject-separate	TRUE	16372	TRUE
+GSE35977_GSE202537_caudate	L1p	-0.004103813556	age + sex + pH (datasets that record pH)	subject-separate	TRUE	16372	TRUE
+GSE35977_GSE202537_caudate	L2	-0.05303426512	age + sex + PMI	subject-separate	TRUE	16372	TRUE
+GSE35977_GSE202537_caudate	L3	-0.03471996589	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	16372	TRUE
+GSE35977_GSE202537_caudate	L4	-0.03471996589	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	16372	TRUE
+GSE35977_GSE202537_putamen	L0	0.1311675125	no covariates	subject-separate	TRUE	16378	TRUE
+GSE35977_GSE202537_putamen	L1	0.09472724658	age + sex	subject-separate	TRUE	16378	TRUE
+GSE35977_GSE202537_putamen	L1p	0.1611939492	age + sex + pH (datasets that record pH)	subject-separate	TRUE	16378	TRUE
+GSE35977_GSE202537_putamen	L2	0.08858408321	age + sex + PMI	subject-separate	TRUE	16378	TRUE
+GSE35977_GSE202537_putamen	L3	0.1512521184	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	16378	TRUE
+GSE35977_GSE202537_putamen	L4	0.1512521184	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	16378	TRUE
+GSE35977_GSE208338	L0	0.1283928291	no covariates	subject-separate	TRUE	15376	TRUE
+GSE35977_GSE208338	L1	0.1328271772	age + sex	subject-separate	TRUE	15376	TRUE
+GSE35977_GSE208338	L1p	0.02803371048	age + sex + pH (datasets that record pH)	subject-separate	TRUE	15376	TRUE
+GSE35977_GSE208338	L2	0.1893146278	age + sex + PMI	subject-separate	TRUE	15376	TRUE
+GSE35977_GSE208338	L3	0.05651971961	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	15376	TRUE
+GSE35977_GSE208338	L4	0.05651971961	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	15376	TRUE
+GSE35977_GSE21935	L0	0.2432628881	no covariates	subject-separate	TRUE	14716	TRUE
+GSE35977_GSE21935	L1	0.2172836056	age + sex	subject-separate	TRUE	14716	TRUE
+GSE35977_GSE21935	L1p	0.307118448	age + sex + pH (datasets that record pH)	subject-separate	TRUE	14716	TRUE
+GSE35977_GSE21935	L2	0.1884152155	age + sex + PMI	subject-separate	TRUE	14716	TRUE
+GSE35977_GSE21935	L3	0.2533983891	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	14716	TRUE
+GSE35977_GSE21935	L4	0.2533983891	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	14716	TRUE
+GSE35977_GSE224683	L0	0.3023273155	no covariates	subject-separate	TRUE	16254	TRUE
+GSE35977_GSE224683	L1	0.2620808263	age + sex	subject-separate	TRUE	16254	TRUE
+GSE35977_GSE224683	L1p	0.01780576304	age + sex + pH (datasets that record pH)	subject-separate	TRUE	16254	TRUE
+GSE35977_GSE224683	L2	0.3527743713	age + sex + PMI	subject-separate	TRUE	16254	TRUE
+GSE35977_GSE224683	L3	0.09033284798	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	16254	TRUE
+GSE35977_GSE224683	L4	0.09033284798	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	16254	TRUE
+GSE35977_GSE26927_temporal	L0	0.1417443921	no covariates	subject-separate	TRUE	12957	FALSE
+GSE35977_GSE26927_temporal	L1	0.1591695926	age + sex	subject-separate	TRUE	12957	FALSE
+GSE35977_GSE26927_temporal	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	12957	FALSE
+GSE35977_GSE26927_temporal	L2	0.1412834797	age + sex + PMI	subject-separate	TRUE	12957	FALSE
+GSE35977_GSE26927_temporal	L3	0.2198757773	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	12957	FALSE
+GSE35977_GSE26927_temporal	L4	0.2198757773	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	12957	FALSE
+GSE35977_GSE53987_BA46	L0	0.3226902817	no covariates	subject-separate	TRUE	14890	TRUE
+GSE35977_GSE53987_BA46	L1	0.3274089399	age + sex	subject-separate	TRUE	14890	TRUE
+GSE35977_GSE53987_BA46	L1p	0.1610398799	age + sex + pH (datasets that record pH)	subject-separate	TRUE	14890	TRUE
+GSE35977_GSE53987_BA46	L2	0.3800041216	age + sex + PMI	subject-separate	TRUE	14890	TRUE
+GSE35977_GSE53987_BA46	L3	0.2292722845	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	14890	TRUE
+GSE35977_GSE53987_BA46	L4	0.2292722845	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	14890	TRUE
+GSE35977_GSE53987_hippocampus	L0	0.2145006101	no covariates	subject-separate	TRUE	14879	TRUE
+GSE35977_GSE53987_hippocampus	L1	0.2150965273	age + sex	subject-separate	TRUE	14879	TRUE
+GSE35977_GSE53987_hippocampus	L1p	-0.02577700346	age + sex + pH (datasets that record pH)	subject-separate	TRUE	14879	TRUE
+GSE35977_GSE53987_hippocampus	L2	0.2554876622	age + sex + PMI	subject-separate	TRUE	14879	TRUE
+GSE35977_GSE53987_hippocampus	L3	0.09800853473	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	14879	TRUE
+GSE35977_GSE53987_hippocampus	L4	0.09800853473	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	14879	TRUE
+GSE35977_GSE53987_striatum	L0	0.1680193617	no covariates	subject-separate	TRUE	14837	TRUE
+GSE35977_GSE53987_striatum	L1	0.1936180538	age + sex	subject-separate	TRUE	14837	TRUE
+GSE35977_GSE53987_striatum	L1p	0.03970737624	age + sex + pH (datasets that record pH)	subject-separate	TRUE	14837	TRUE
+GSE35977_GSE53987_striatum	L2	0.2091663824	age + sex + PMI	subject-separate	TRUE	14837	TRUE
+GSE35977_GSE53987_striatum	L3	0.09603826168	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	14837	TRUE
+GSE35977_GSE53987_striatum	L4	0.09603826168	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	14837	TRUE
+GSE35977_GSE80655_AnCg	L0	0.1684343274	no covariates	subject-separate	TRUE	16475	TRUE
+GSE35977_GSE80655_AnCg	L1	0.1917129894	age + sex	subject-separate	TRUE	16475	TRUE
+GSE35977_GSE80655_AnCg	L1p	-0.03738615136	age + sex + pH (datasets that record pH)	subject-separate	TRUE	16475	TRUE
+GSE35977_GSE80655_AnCg	L2	0.2417338395	age + sex + PMI	subject-separate	TRUE	16475	TRUE
+GSE35977_GSE80655_AnCg	L3	0.01370354646	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	16475	TRUE
+GSE35977_GSE80655_AnCg	L4	0.01370354646	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	16475	TRUE
+GSE35977_GSE80655_DLPFC	L0	0.375313549	no covariates	subject-separate	TRUE	16489	TRUE
+GSE35977_GSE80655_DLPFC	L1	0.3623637169	age + sex	subject-separate	TRUE	16489	TRUE
+GSE35977_GSE80655_DLPFC	L1p	0.228969725	age + sex + pH (datasets that record pH)	subject-separate	TRUE	16489	TRUE
+GSE35977_GSE80655_DLPFC	L2	0.4217699007	age + sex + PMI	subject-separate	TRUE	16489	TRUE
+GSE35977_GSE80655_DLPFC	L3	0.3014413807	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	16489	TRUE
+GSE35977_GSE80655_DLPFC	L4	0.3014413807	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	16489	TRUE
+GSE35977_GSE80655_nAcc	L0	0.1037226788	no covariates	subject-separate	TRUE	16478	TRUE
+GSE35977_GSE80655_nAcc	L1	0.1513884348	age + sex	subject-separate	TRUE	16478	TRUE
+GSE35977_GSE80655_nAcc	L1p	0.1090718362	age + sex + pH (datasets that record pH)	subject-separate	TRUE	16478	TRUE
+GSE35977_GSE80655_nAcc	L2	0.1778888614	age + sex + PMI	subject-separate	TRUE	16478	TRUE
+GSE35977_GSE80655_nAcc	L3	0.120736841	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	16478	TRUE
+GSE35977_GSE80655_nAcc	L4	0.120736841	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	16478	TRUE
+GSE35977_GSE92538_GPL570	L0	-0.02376252086	no covariates	subject-separate	TRUE	14669	TRUE
+GSE35977_GSE92538_GPL570	L1	0.1144370405	age + sex	subject-separate	TRUE	14669	TRUE
+GSE35977_GSE92538_GPL570	L1p	-0.02967340393	age + sex + pH (datasets that record pH)	subject-separate	TRUE	14669	TRUE
+GSE35977_GSE92538_GPL570	L2	0.1836135932	age + sex + PMI	subject-separate	TRUE	14669	TRUE
+GSE35977_GSE92538_GPL570	L3	0.004743870271	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	14669	TRUE
+GSE35977_GSE92538_GPL570	L4	0.004743870271	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	14669	TRUE
+GSE35977_GSE92538_GPL96	L0	0.07867642149	no covariates	subject-separate	TRUE	10031	TRUE
+GSE35977_GSE92538_GPL96	L1	0.06950605167	age + sex	subject-separate	TRUE	10031	TRUE
+GSE35977_GSE92538_GPL96	L1p	-0.1274949439	age + sex + pH (datasets that record pH)	subject-separate	TRUE	10031	TRUE
+GSE35977_GSE92538_GPL96	L2	0.08601401063	age + sex + PMI	subject-separate	TRUE	10031	TRUE
+GSE35977_GSE92538_GPL96	L3	-0.01119199012	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	10031	TRUE
+GSE35977_GSE92538_GPL96	L4	-0.01119199012	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	10031	TRUE
+GSE53987_BA46_GSE138082_CA1	L0	-0.1022271994	no covariates	subject-separate	TRUE	17058	FALSE
+GSE53987_BA46_GSE138082_CA1	L1	-0.06858837891	age + sex	subject-separate	TRUE	17058	FALSE
+GSE53987_BA46_GSE138082_CA1	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	17058	FALSE
+GSE53987_BA46_GSE138082_CA1	L2	-0.09075075528	age + sex + PMI	subject-separate	TRUE	17058	FALSE
+GSE53987_BA46_GSE138082_CA1	L3	-0.04989287845	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	17058	FALSE
+GSE53987_BA46_GSE138082_CA1	L4	-0.07213583728	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	17058	FALSE
+GSE53987_BA46_GSE138082_CA3	L0	0.08957154896	no covariates	subject-separate	TRUE	17063	FALSE
+GSE53987_BA46_GSE138082_CA3	L1	0.1145174568	age + sex	subject-separate	TRUE	17063	FALSE
+GSE53987_BA46_GSE138082_CA3	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	17063	FALSE
+GSE53987_BA46_GSE138082_CA3	L2	0.1353704041	age + sex + PMI	subject-separate	TRUE	17063	FALSE
+GSE53987_BA46_GSE138082_CA3	L3	0.08397339344	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	17063	FALSE
+GSE53987_BA46_GSE138082_CA3	L4	0.1027148829	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	17063	FALSE
+GSE53987_BA46_GSE138082_DG	L0	-0.1088993108	no covariates	subject-separate	TRUE	17031	FALSE
+GSE53987_BA46_GSE138082_DG	L1	-0.1084509902	age + sex	subject-separate	TRUE	17031	FALSE
+GSE53987_BA46_GSE138082_DG	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	17031	FALSE
+GSE53987_BA46_GSE138082_DG	L2	-0.1049712362	age + sex + PMI	subject-separate	TRUE	17031	FALSE
+GSE53987_BA46_GSE138082_DG	L3	-0.06265399251	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	17031	FALSE
+GSE53987_BA46_GSE138082_DG	L4	-0.1035743181	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	17031	FALSE
+GSE53987_BA46_GSE17612	L0	0.2626159281	no covariates	subject-separate	TRUE	16715	TRUE
+GSE53987_BA46_GSE17612	L1	0.1901017635	age + sex	subject-separate	TRUE	16715	TRUE
+GSE53987_BA46_GSE17612	L1p	-0.07881450613	age + sex + pH (datasets that record pH)	subject-separate	TRUE	16715	TRUE
+GSE53987_BA46_GSE17612	L2	0.2374366669	age + sex + PMI	subject-separate	TRUE	16715	TRUE
+GSE53987_BA46_GSE17612	L3	-0.01564897696	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	16715	TRUE
+GSE53987_BA46_GSE17612	L4	-0.01564897696	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	16715	TRUE
+GSE53987_BA46_GSE208338	L0	0.2279385949	no covariates	subject-separate	TRUE	14620	TRUE
+GSE53987_BA46_GSE208338	L1	0.2484626417	age + sex	subject-separate	TRUE	14620	TRUE
+GSE53987_BA46_GSE208338	L1p	0.2363335352	age + sex + pH (datasets that record pH)	subject-separate	TRUE	14620	TRUE
+GSE53987_BA46_GSE208338	L2	0.2528279683	age + sex + PMI	subject-separate	TRUE	14620	TRUE
+GSE53987_BA46_GSE208338	L3	0.2597266151	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	14620	TRUE
+GSE53987_BA46_GSE208338	L4	0.2597266151	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	14620	TRUE
+GSE53987_BA46_GSE21935	L0	0.2100664956	no covariates	subject-separate	TRUE	16669	TRUE
+GSE53987_BA46_GSE21935	L1	0.1662052837	age + sex	subject-separate	TRUE	16669	TRUE
+GSE53987_BA46_GSE21935	L1p	-0.02300231755	age + sex + pH (datasets that record pH)	subject-separate	TRUE	16669	TRUE
+GSE53987_BA46_GSE21935	L2	0.1941345228	age + sex + PMI	subject-separate	TRUE	16669	TRUE
+GSE53987_BA46_GSE21935	L3	-0.02145614225	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	16669	TRUE
+GSE53987_BA46_GSE21935	L4	-0.02145614225	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	16669	TRUE
+GSE53987_BA46_GSE26927_temporal	L0	-0.04026568215	no covariates	subject-separate	TRUE	12923	FALSE
+GSE53987_BA46_GSE26927_temporal	L1	-0.01984643234	age + sex	subject-separate	TRUE	12923	FALSE
+GSE53987_BA46_GSE26927_temporal	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	12923	FALSE
+GSE53987_BA46_GSE26927_temporal	L2	0.02365405777	age + sex + PMI	subject-separate	TRUE	12923	FALSE
+GSE53987_BA46_GSE26927_temporal	L3	-0.01141814307	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	12923	FALSE
+GSE53987_BA46_GSE26927_temporal	L4	-0.01141814307	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	12923	FALSE
+GSE53987_BA46_GSE80655_AnCg	L0	0.2103017258	no covariates	subject-separate	TRUE	17123	TRUE
+GSE53987_BA46_GSE80655_AnCg	L1	0.2284204195	age + sex	subject-separate	TRUE	17123	TRUE
+GSE53987_BA46_GSE80655_AnCg	L1p	0.2116193287	age + sex + pH (datasets that record pH)	subject-separate	TRUE	17123	TRUE
+GSE53987_BA46_GSE80655_AnCg	L2	0.2227043502	age + sex + PMI	subject-separate	TRUE	17123	TRUE
+GSE53987_BA46_GSE80655_AnCg	L3	0.1674417242	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	17123	TRUE
+GSE53987_BA46_GSE80655_AnCg	L4	0.1674417242	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	17123	TRUE
+GSE53987_BA46_GSE80655_DLPFC	L0	0.401778194	no covariates	subject-separate	TRUE	17106	TRUE
+GSE53987_BA46_GSE80655_DLPFC	L1	0.4201207974	age + sex	subject-separate	TRUE	17106	TRUE
+GSE53987_BA46_GSE80655_DLPFC	L1p	0.3882256332	age + sex + pH (datasets that record pH)	subject-separate	TRUE	17106	TRUE
+GSE53987_BA46_GSE80655_DLPFC	L2	0.4063131065	age + sex + PMI	subject-separate	TRUE	17106	TRUE
+GSE53987_BA46_GSE80655_DLPFC	L3	0.3710332563	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	17106	TRUE
+GSE53987_BA46_GSE80655_DLPFC	L4	0.3710332563	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	17106	TRUE
+GSE53987_BA46_GSE80655_nAcc	L0	0.09633326256	no covariates	subject-separate	TRUE	17103	TRUE
+GSE53987_BA46_GSE80655_nAcc	L1	0.1497294174	age + sex	subject-separate	TRUE	17103	TRUE
+GSE53987_BA46_GSE80655_nAcc	L1p	0.126644898	age + sex + pH (datasets that record pH)	subject-separate	TRUE	17103	TRUE
+GSE53987_BA46_GSE80655_nAcc	L2	0.1495181097	age + sex + PMI	subject-separate	TRUE	17103	TRUE
+GSE53987_BA46_GSE80655_nAcc	L3	0.117283844	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	17103	TRUE
+GSE53987_BA46_GSE80655_nAcc	L4	0.117283844	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	17103	TRUE
+GSE53987_BA46_GSE92538_GPL570	L0	0.006217807644	no covariates	subject-separate	TRUE	16623	TRUE
+GSE53987_BA46_GSE92538_GPL570	L1	0.1454522718	age + sex	subject-separate	TRUE	16623	TRUE
+GSE53987_BA46_GSE92538_GPL570	L1p	0.1420543473	age + sex + pH (datasets that record pH)	subject-separate	TRUE	16623	TRUE
+GSE53987_BA46_GSE92538_GPL570	L2	0.1975300021	age + sex + PMI	subject-separate	TRUE	16623	TRUE
+GSE53987_BA46_GSE92538_GPL570	L3	0.1672204854	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	16623	TRUE
+GSE53987_BA46_GSE92538_GPL570	L4	0.1672204854	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	16623	TRUE
+GSE53987_BA46_GSE92538_GPL96	L0	0.3467364724	no covariates	subject-separate	TRUE	10580	TRUE
+GSE53987_BA46_GSE92538_GPL96	L1	0.3544072991	age + sex	subject-separate	TRUE	10580	TRUE
+GSE53987_BA46_GSE92538_GPL96	L1p	0.3242811735	age + sex + pH (datasets that record pH)	subject-separate	TRUE	10580	TRUE
+GSE53987_BA46_GSE92538_GPL96	L2	0.2515573225	age + sex + PMI	subject-separate	TRUE	10580	TRUE
+GSE53987_BA46_GSE92538_GPL96	L3	0.1745426405	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	10580	TRUE
+GSE53987_BA46_GSE92538_GPL96	L4	0.1745426405	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	10580	TRUE
+GSE53987_hippocampus_GSE138082_CA1	L0	-0.2757045809	no covariates	subject-separate	TRUE	17053	FALSE
+GSE53987_hippocampus_GSE138082_CA1	L1	-0.255051386	age + sex	subject-separate	TRUE	17053	FALSE
+GSE53987_hippocampus_GSE138082_CA1	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	17053	FALSE
+GSE53987_hippocampus_GSE138082_CA1	L2	-0.2596973521	age + sex + PMI	subject-separate	TRUE	17053	FALSE
+GSE53987_hippocampus_GSE138082_CA1	L3	-0.100550222	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	17053	FALSE
+GSE53987_hippocampus_GSE138082_CA1	L4	-0.05551837067	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	17053	FALSE
+GSE53987_hippocampus_GSE138082_CA3	L0	0.356634791	no covariates	subject-separate	TRUE	17059	FALSE
+GSE53987_hippocampus_GSE138082_CA3	L1	0.3730135485	age + sex	subject-separate	TRUE	17059	FALSE
+GSE53987_hippocampus_GSE138082_CA3	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	17059	FALSE
+GSE53987_hippocampus_GSE138082_CA3	L2	0.3488296463	age + sex + PMI	subject-separate	TRUE	17059	FALSE
+GSE53987_hippocampus_GSE138082_CA3	L3	0.2663166295	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	17059	FALSE
+GSE53987_hippocampus_GSE138082_CA3	L4	0.2630196915	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	17059	FALSE
+GSE53987_hippocampus_GSE138082_DG	L0	-0.2686877845	no covariates	subject-separate	TRUE	17030	FALSE
+GSE53987_hippocampus_GSE138082_DG	L1	-0.2787206284	age + sex	subject-separate	TRUE	17030	FALSE
+GSE53987_hippocampus_GSE138082_DG	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	17030	FALSE
+GSE53987_hippocampus_GSE138082_DG	L2	-0.2806944615	age + sex + PMI	subject-separate	TRUE	17030	FALSE
+GSE53987_hippocampus_GSE138082_DG	L3	-0.1849811169	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	17030	FALSE
+GSE53987_hippocampus_GSE138082_DG	L4	-0.2018193745	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	17030	FALSE
+GSE53987_hippocampus_GSE17612	L0	0.1390839749	no covariates	subject-separate	TRUE	16705	TRUE
+GSE53987_hippocampus_GSE17612	L1	0.09225921101	age + sex	subject-separate	TRUE	16705	TRUE
+GSE53987_hippocampus_GSE17612	L1p	-0.3580522843	age + sex + pH (datasets that record pH)	subject-separate	TRUE	16705	TRUE
+GSE53987_hippocampus_GSE17612	L2	0.2482886216	age + sex + PMI	subject-separate	TRUE	16705	TRUE
+GSE53987_hippocampus_GSE17612	L3	-0.1527089057	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	16705	TRUE
+GSE53987_hippocampus_GSE17612	L4	-0.1527089057	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	16705	TRUE
+GSE53987_hippocampus_GSE208338	L0	0.03919977523	no covariates	subject-separate	TRUE	14609	TRUE
+GSE53987_hippocampus_GSE208338	L1	0.05636029291	age + sex	subject-separate	TRUE	14609	TRUE
+GSE53987_hippocampus_GSE208338	L1p	0.1051177215	age + sex + pH (datasets that record pH)	subject-separate	TRUE	14609	TRUE
+GSE53987_hippocampus_GSE208338	L2	0.05356052835	age + sex + PMI	subject-separate	TRUE	14609	TRUE
+GSE53987_hippocampus_GSE208338	L3	0.2588104213	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	14609	TRUE
+GSE53987_hippocampus_GSE208338	L4	0.2588104213	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	14609	TRUE
+GSE53987_hippocampus_GSE21935	L0	0.2174148733	no covariates	subject-separate	TRUE	16670	TRUE
+GSE53987_hippocampus_GSE21935	L1	0.1452330511	age + sex	subject-separate	TRUE	16670	TRUE
+GSE53987_hippocampus_GSE21935	L1p	-0.1440176813	age + sex + pH (datasets that record pH)	subject-separate	TRUE	16670	TRUE
+GSE53987_hippocampus_GSE21935	L2	0.1848638657	age + sex + PMI	subject-separate	TRUE	16670	TRUE
+GSE53987_hippocampus_GSE21935	L3	-0.0712728923	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	16670	TRUE
+GSE53987_hippocampus_GSE21935	L4	-0.0712728923	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	16670	TRUE
+GSE53987_hippocampus_GSE26927_temporal	L0	-0.01309104886	no covariates	subject-separate	TRUE	12917	FALSE
+GSE53987_hippocampus_GSE26927_temporal	L1	-0.01019119973	age + sex	subject-separate	TRUE	12917	FALSE
+GSE53987_hippocampus_GSE26927_temporal	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	12917	FALSE
+GSE53987_hippocampus_GSE26927_temporal	L2	0.05255582944	age + sex + PMI	subject-separate	TRUE	12917	FALSE
+GSE53987_hippocampus_GSE26927_temporal	L3	-0.02256453816	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	12917	FALSE
+GSE53987_hippocampus_GSE26927_temporal	L4	-0.02256453816	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	12917	FALSE
+GSE53987_hippocampus_GSE80655_AnCg	L0	0.3740973492	no covariates	subject-separate	TRUE	17119	TRUE
+GSE53987_hippocampus_GSE80655_AnCg	L1	0.3714825031	age + sex	subject-separate	TRUE	17119	TRUE
+GSE53987_hippocampus_GSE80655_AnCg	L1p	0.3711386513	age + sex + pH (datasets that record pH)	subject-separate	TRUE	17119	TRUE
+GSE53987_hippocampus_GSE80655_AnCg	L2	0.3596811199	age + sex + PMI	subject-separate	TRUE	17119	TRUE
+GSE53987_hippocampus_GSE80655_AnCg	L3	0.2555892099	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	17119	TRUE
+GSE53987_hippocampus_GSE80655_AnCg	L4	0.2555892099	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	17119	TRUE
+GSE53987_hippocampus_GSE80655_DLPFC	L0	0.3016763837	no covariates	subject-separate	TRUE	17104	TRUE
+GSE53987_hippocampus_GSE80655_DLPFC	L1	0.3011865675	age + sex	subject-separate	TRUE	17104	TRUE
+GSE53987_hippocampus_GSE80655_DLPFC	L1p	0.2991334786	age + sex + pH (datasets that record pH)	subject-separate	TRUE	17104	TRUE
+GSE53987_hippocampus_GSE80655_DLPFC	L2	0.2913823683	age + sex + PMI	subject-separate	TRUE	17104	TRUE
+GSE53987_hippocampus_GSE80655_DLPFC	L3	0.3232861417	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	17104	TRUE
+GSE53987_hippocampus_GSE80655_DLPFC	L4	0.3232861417	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	17104	TRUE
+GSE53987_hippocampus_GSE80655_nAcc	L0	0.3008443902	no covariates	subject-separate	TRUE	17099	TRUE
+GSE53987_hippocampus_GSE80655_nAcc	L1	0.3037337331	age + sex	subject-separate	TRUE	17099	TRUE
+GSE53987_hippocampus_GSE80655_nAcc	L1p	0.2325501703	age + sex + pH (datasets that record pH)	subject-separate	TRUE	17099	TRUE
+GSE53987_hippocampus_GSE80655_nAcc	L2	0.3026212817	age + sex + PMI	subject-separate	TRUE	17099	TRUE
+GSE53987_hippocampus_GSE80655_nAcc	L3	0.1449665251	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	17099	TRUE
+GSE53987_hippocampus_GSE80655_nAcc	L4	0.1449665251	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	17099	TRUE
+GSE53987_hippocampus_GSE92538_GPL570	L0	0.235578174	no covariates	subject-separate	TRUE	16629	TRUE
+GSE53987_hippocampus_GSE92538_GPL570	L1	0.3607438717	age + sex	subject-separate	TRUE	16629	TRUE
+GSE53987_hippocampus_GSE92538_GPL570	L1p	0.3371121831	age + sex + pH (datasets that record pH)	subject-separate	TRUE	16629	TRUE
+GSE53987_hippocampus_GSE92538_GPL570	L2	0.3414743986	age + sex + PMI	subject-separate	TRUE	16629	TRUE
+GSE53987_hippocampus_GSE92538_GPL570	L3	0.2034273664	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	16629	TRUE
+GSE53987_hippocampus_GSE92538_GPL570	L4	0.2034273664	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	16629	TRUE
+GSE53987_hippocampus_GSE92538_GPL96	L0	0.2485754898	no covariates	subject-separate	TRUE	10577	TRUE
+GSE53987_hippocampus_GSE92538_GPL96	L1	0.2849562729	age + sex	subject-separate	TRUE	10577	TRUE
+GSE53987_hippocampus_GSE92538_GPL96	L1p	0.2815917315	age + sex + pH (datasets that record pH)	subject-separate	TRUE	10577	TRUE
+GSE53987_hippocampus_GSE92538_GPL96	L2	0.163058596	age + sex + PMI	subject-separate	TRUE	10577	TRUE
+GSE53987_hippocampus_GSE92538_GPL96	L3	0.1401069859	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	10577	TRUE
+GSE53987_hippocampus_GSE92538_GPL96	L4	0.1401069859	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	10577	TRUE
+GSE53987_striatum_GSE138082_CA1	L0	-0.1741274597	no covariates	subject-separate	TRUE	17055	FALSE
+GSE53987_striatum_GSE138082_CA1	L1	-0.1541887796	age + sex	subject-separate	TRUE	17055	FALSE
+GSE53987_striatum_GSE138082_CA1	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	17055	FALSE
+GSE53987_striatum_GSE138082_CA1	L2	-0.1413784421	age + sex + PMI	subject-separate	TRUE	17055	FALSE
+GSE53987_striatum_GSE138082_CA1	L3	-0.02441705067	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	17055	FALSE
+GSE53987_striatum_GSE138082_CA1	L4	0.07392372045	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	17055	FALSE
+GSE53987_striatum_GSE138082_CA3	L0	0.2712744859	no covariates	subject-separate	TRUE	17059	FALSE
+GSE53987_striatum_GSE138082_CA3	L1	0.2654192978	age + sex	subject-separate	TRUE	17059	FALSE
+GSE53987_striatum_GSE138082_CA3	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	17059	FALSE
+GSE53987_striatum_GSE138082_CA3	L2	0.2657876563	age + sex + PMI	subject-separate	TRUE	17059	FALSE
+GSE53987_striatum_GSE138082_CA3	L3	0.2079399925	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	17059	FALSE
+GSE53987_striatum_GSE138082_CA3	L4	0.1681938244	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	17059	FALSE
+GSE53987_striatum_GSE138082_DG	L0	-0.2212201062	no covariates	subject-separate	TRUE	17029	FALSE
+GSE53987_striatum_GSE138082_DG	L1	-0.1944927636	age + sex	subject-separate	TRUE	17029	FALSE
+GSE53987_striatum_GSE138082_DG	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	17029	FALSE
+GSE53987_striatum_GSE138082_DG	L2	-0.1974597727	age + sex + PMI	subject-separate	TRUE	17029	FALSE
+GSE53987_striatum_GSE138082_DG	L3	-0.09008088246	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	17029	FALSE
+GSE53987_striatum_GSE138082_DG	L4	-0.05995993873	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	17029	FALSE
+GSE53987_striatum_GSE17612	L0	0.06860469767	no covariates	subject-separate	TRUE	16730	TRUE
+GSE53987_striatum_GSE17612	L1	0.03757632481	age + sex	subject-separate	TRUE	16730	TRUE
+GSE53987_striatum_GSE17612	L1p	-0.3299086243	age + sex + pH (datasets that record pH)	subject-separate	TRUE	16730	TRUE
+GSE53987_striatum_GSE17612	L2	0.1665286235	age + sex + PMI	subject-separate	TRUE	16730	TRUE
+GSE53987_striatum_GSE17612	L3	-0.1834937647	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	16730	TRUE
+GSE53987_striatum_GSE17612	L4	-0.1834937647	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	16730	TRUE
+GSE53987_striatum_GSE208338	L0	0.08041109711	no covariates	subject-separate	TRUE	14585	TRUE
+GSE53987_striatum_GSE208338	L1	0.08812823287	age + sex	subject-separate	TRUE	14585	TRUE
+GSE53987_striatum_GSE208338	L1p	0.1049064563	age + sex + pH (datasets that record pH)	subject-separate	TRUE	14585	TRUE
+GSE53987_striatum_GSE208338	L2	0.08203864194	age + sex + PMI	subject-separate	TRUE	14585	TRUE
+GSE53987_striatum_GSE208338	L3	0.1864822061	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	14585	TRUE
+GSE53987_striatum_GSE208338	L4	0.1864822061	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	14585	TRUE
+GSE53987_striatum_GSE21935	L0	0.1580605173	no covariates	subject-separate	TRUE	16673	TRUE
+GSE53987_striatum_GSE21935	L1	0.1239716266	age + sex	subject-separate	TRUE	16673	TRUE
+GSE53987_striatum_GSE21935	L1p	-0.1177953685	age + sex + pH (datasets that record pH)	subject-separate	TRUE	16673	TRUE
+GSE53987_striatum_GSE21935	L2	0.1569284088	age + sex + PMI	subject-separate	TRUE	16673	TRUE
+GSE53987_striatum_GSE21935	L3	-0.03694101764	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	16673	TRUE
+GSE53987_striatum_GSE21935	L4	-0.03694101764	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	16673	TRUE
+GSE53987_striatum_GSE26927_temporal	L0	-0.07174399176	no covariates	subject-separate	TRUE	12884	FALSE
+GSE53987_striatum_GSE26927_temporal	L1	-0.03566338617	age + sex	subject-separate	TRUE	12884	FALSE
+GSE53987_striatum_GSE26927_temporal	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	12884	FALSE
+GSE53987_striatum_GSE26927_temporal	L2	0.01202894535	age + sex + PMI	subject-separate	TRUE	12884	FALSE
+GSE53987_striatum_GSE26927_temporal	L3	-0.01631184799	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	12884	FALSE
+GSE53987_striatum_GSE26927_temporal	L4	-0.01631184799	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	12884	FALSE
+GSE53987_striatum_GSE80655_AnCg	L0	0.3790395138	no covariates	subject-separate	TRUE	17121	TRUE
+GSE53987_striatum_GSE80655_AnCg	L1	0.351417011	age + sex	subject-separate	TRUE	17121	TRUE
+GSE53987_striatum_GSE80655_AnCg	L1p	0.3121264766	age + sex + pH (datasets that record pH)	subject-separate	TRUE	17121	TRUE
+GSE53987_striatum_GSE80655_AnCg	L2	0.3452614239	age + sex + PMI	subject-separate	TRUE	17121	TRUE
+GSE53987_striatum_GSE80655_AnCg	L3	0.226750203	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	17121	TRUE
+GSE53987_striatum_GSE80655_AnCg	L4	0.226750203	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	17121	TRUE
+GSE53987_striatum_GSE80655_DLPFC	L0	0.2520988902	no covariates	subject-separate	TRUE	17103	TRUE
+GSE53987_striatum_GSE80655_DLPFC	L1	0.2569058703	age + sex	subject-separate	TRUE	17103	TRUE
+GSE53987_striatum_GSE80655_DLPFC	L1p	0.2163981167	age + sex + pH (datasets that record pH)	subject-separate	TRUE	17103	TRUE
+GSE53987_striatum_GSE80655_DLPFC	L2	0.2525771683	age + sex + PMI	subject-separate	TRUE	17103	TRUE
+GSE53987_striatum_GSE80655_DLPFC	L3	0.2027138629	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	17103	TRUE
+GSE53987_striatum_GSE80655_DLPFC	L4	0.2027138629	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	17103	TRUE
+GSE53987_striatum_GSE80655_nAcc	L0	0.3216097734	no covariates	subject-separate	TRUE	17102	TRUE
+GSE53987_striatum_GSE80655_nAcc	L1	0.2987633484	age + sex	subject-separate	TRUE	17102	TRUE
+GSE53987_striatum_GSE80655_nAcc	L1p	0.2139746485	age + sex + pH (datasets that record pH)	subject-separate	TRUE	17102	TRUE
+GSE53987_striatum_GSE80655_nAcc	L2	0.2997767433	age + sex + PMI	subject-separate	TRUE	17102	TRUE
+GSE53987_striatum_GSE80655_nAcc	L3	0.1886463545	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	17102	TRUE
+GSE53987_striatum_GSE80655_nAcc	L4	0.1886463545	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	17102	TRUE
+GSE53987_striatum_GSE92538_GPL570	L0	0.2897549073	no covariates	subject-separate	TRUE	16632	TRUE
+GSE53987_striatum_GSE92538_GPL570	L1	0.3614672556	age + sex	subject-separate	TRUE	16632	TRUE
+GSE53987_striatum_GSE92538_GPL570	L1p	0.3195077762	age + sex + pH (datasets that record pH)	subject-separate	TRUE	16632	TRUE
+GSE53987_striatum_GSE92538_GPL570	L2	0.3196283986	age + sex + PMI	subject-separate	TRUE	16632	TRUE
+GSE53987_striatum_GSE92538_GPL570	L3	0.2070934994	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	16632	TRUE
+GSE53987_striatum_GSE92538_GPL570	L4	0.2070934994	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	16632	TRUE
+GSE53987_striatum_GSE92538_GPL96	L0	0.2492969805	no covariates	subject-separate	TRUE	10574	TRUE
+GSE53987_striatum_GSE92538_GPL96	L1	0.2526365633	age + sex	subject-separate	TRUE	10574	TRUE
+GSE53987_striatum_GSE92538_GPL96	L1p	0.2232478309	age + sex + pH (datasets that record pH)	subject-separate	TRUE	10574	TRUE
+GSE53987_striatum_GSE92538_GPL96	L2	0.1794118092	age + sex + PMI	subject-separate	TRUE	10574	TRUE
+GSE53987_striatum_GSE92538_GPL96	L3	0.1135954971	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	10574	TRUE
+GSE53987_striatum_GSE92538_GPL96	L4	0.1135954971	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	10574	TRUE
+GSE80655_AnCg_GSE138082_CA1	L0	-0.3033359214	no covariates	subject-separate	TRUE	24835	FALSE
+GSE80655_AnCg_GSE138082_CA1	L1	-0.2674230252	age + sex	subject-separate	TRUE	24835	FALSE
+GSE80655_AnCg_GSE138082_CA1	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	24835	FALSE
+GSE80655_AnCg_GSE138082_CA1	L2	-0.2436371369	age + sex + PMI	subject-separate	TRUE	24835	FALSE
+GSE80655_AnCg_GSE138082_CA1	L3	-0.1791799774	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	24835	FALSE
+GSE80655_AnCg_GSE138082_CA1	L4	-0.1257900933	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	24835	FALSE
+GSE80655_AnCg_GSE138082_CA3	L0	0.2680215699	no covariates	subject-separate	TRUE	24825	FALSE
+GSE80655_AnCg_GSE138082_CA3	L1	0.2526142469	age + sex	subject-separate	TRUE	24825	FALSE
+GSE80655_AnCg_GSE138082_CA3	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	24825	FALSE
+GSE80655_AnCg_GSE138082_CA3	L2	0.2366357005	age + sex + PMI	subject-separate	TRUE	24825	FALSE
+GSE80655_AnCg_GSE138082_CA3	L3	0.2277468758	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	24825	FALSE
+GSE80655_AnCg_GSE138082_CA3	L4	0.2314067854	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	24825	FALSE
+GSE80655_AnCg_GSE138082_DG	L0	-0.3409266085	no covariates	subject-separate	TRUE	24764	FALSE
+GSE80655_AnCg_GSE138082_DG	L1	-0.3486838345	age + sex	subject-separate	TRUE	24764	FALSE
+GSE80655_AnCg_GSE138082_DG	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	24764	FALSE
+GSE80655_AnCg_GSE138082_DG	L2	-0.3379933865	age + sex + PMI	subject-separate	TRUE	24764	FALSE
+GSE80655_AnCg_GSE138082_DG	L3	-0.3208962316	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	24764	FALSE
+GSE80655_AnCg_GSE138082_DG	L4	-0.3171604005	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	24764	FALSE
+GSE80655_AnCg_GSE202537_NAc	L0	0.07782760926	no covariates	subject-separate	TRUE	24893	TRUE
+GSE80655_AnCg_GSE202537_NAc	L1	0.08338390793	age + sex	subject-separate	TRUE	24893	TRUE
+GSE80655_AnCg_GSE202537_NAc	L1p	0.04794875937	age + sex + pH (datasets that record pH)	subject-separate	TRUE	24893	TRUE
+GSE80655_AnCg_GSE202537_NAc	L2	0.09211149329	age + sex + PMI	subject-separate	TRUE	24893	TRUE
+GSE80655_AnCg_GSE202537_NAc	L3	0.0005272491396	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	24893	TRUE
+GSE80655_AnCg_GSE202537_NAc	L4	0.0005272491396	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	24893	TRUE
+GSE80655_AnCg_GSE202537_caudate	L0	0.02861689432	no covariates	subject-separate	TRUE	24684	TRUE
+GSE80655_AnCg_GSE202537_caudate	L1	-0.007559717975	age + sex	subject-separate	TRUE	24684	TRUE
+GSE80655_AnCg_GSE202537_caudate	L1p	-0.06445894514	age + sex + pH (datasets that record pH)	subject-separate	TRUE	24684	TRUE
+GSE80655_AnCg_GSE202537_caudate	L2	-0.004238033119	age + sex + PMI	subject-separate	TRUE	24684	TRUE
+GSE80655_AnCg_GSE202537_caudate	L3	-0.01387281713	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	24684	TRUE
+GSE80655_AnCg_GSE202537_caudate	L4	-0.01387281713	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	24684	TRUE
+GSE80655_AnCg_GSE202537_putamen	L0	-0.1563606894	no covariates	subject-separate	TRUE	24641	TRUE
+GSE80655_AnCg_GSE202537_putamen	L1	-0.15840895	age + sex	subject-separate	TRUE	24641	TRUE
+GSE80655_AnCg_GSE202537_putamen	L1p	-0.1618855985	age + sex + pH (datasets that record pH)	subject-separate	TRUE	24641	TRUE
+GSE80655_AnCg_GSE202537_putamen	L2	-0.1382469682	age + sex + PMI	subject-separate	TRUE	24641	TRUE
+GSE80655_AnCg_GSE202537_putamen	L3	-0.1802282573	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	24641	TRUE
+GSE80655_AnCg_GSE202537_putamen	L4	-0.1802282573	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	24641	TRUE
+GSE80655_AnCg_GSE208338	L0	0.08956695166	no covariates	subject-separate	TRUE	15996	TRUE
+GSE80655_AnCg_GSE208338	L1	0.1266075662	age + sex	subject-separate	TRUE	15996	TRUE
+GSE80655_AnCg_GSE208338	L1p	0.1189669866	age + sex + pH (datasets that record pH)	subject-separate	TRUE	15996	TRUE
+GSE80655_AnCg_GSE208338	L2	0.1223114145	age + sex + PMI	subject-separate	TRUE	15996	TRUE
+GSE80655_AnCg_GSE208338	L3	0.2193130733	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	15996	TRUE
+GSE80655_AnCg_GSE208338	L4	0.2193130733	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	15996	TRUE
+GSE80655_AnCg_GSE224683	L0	0.0262786109	no covariates	subject-separate	TRUE	23665	TRUE
+GSE80655_AnCg_GSE224683	L1	0.4328447623	age + sex	subject-separate	TRUE	23665	TRUE
+GSE80655_AnCg_GSE224683	L1p	0.4587903644	age + sex + pH (datasets that record pH)	subject-separate	TRUE	23665	TRUE
+GSE80655_AnCg_GSE224683	L2	0.4206138223	age + sex + PMI	subject-separate	TRUE	23665	TRUE
+GSE80655_AnCg_GSE224683	L3	0.4531772774	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	23665	TRUE
+GSE80655_AnCg_GSE224683	L4	0.4531772774	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	23665	TRUE
+GSE80655_AnCg_GSE26927_temporal	L0	-0.05037062619	no covariates	subject-separate	TRUE	13818	FALSE
+GSE80655_AnCg_GSE26927_temporal	L1	-0.04538246174	age + sex	subject-separate	TRUE	13818	FALSE
+GSE80655_AnCg_GSE26927_temporal	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	13818	FALSE
+GSE80655_AnCg_GSE26927_temporal	L2	0.01327693266	age + sex + PMI	subject-separate	TRUE	13818	FALSE
+GSE80655_AnCg_GSE26927_temporal	L3	0.007243472292	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	13818	FALSE
+GSE80655_AnCg_GSE26927_temporal	L4	0.007243472292	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	13818	FALSE
+GSE80655_DLPFC_GSE138082_CA1	L0	-0.1265622653	no covariates	subject-separate	TRUE	24825	FALSE
+GSE80655_DLPFC_GSE138082_CA1	L1	-0.09993821518	age + sex	subject-separate	TRUE	24825	FALSE
+GSE80655_DLPFC_GSE138082_CA1	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	24825	FALSE
+GSE80655_DLPFC_GSE138082_CA1	L2	-0.1301644355	age + sex + PMI	subject-separate	TRUE	24825	FALSE
+GSE80655_DLPFC_GSE138082_CA1	L3	-0.107357494	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	24825	FALSE
+GSE80655_DLPFC_GSE138082_CA1	L4	-0.09160605228	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	24825	FALSE
+GSE80655_DLPFC_GSE138082_CA3	L0	0.1060154763	no covariates	subject-separate	TRUE	24797	FALSE
+GSE80655_DLPFC_GSE138082_CA3	L1	0.1144619071	age + sex	subject-separate	TRUE	24797	FALSE
+GSE80655_DLPFC_GSE138082_CA3	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	24797	FALSE
+GSE80655_DLPFC_GSE138082_CA3	L2	0.1158298082	age + sex + PMI	subject-separate	TRUE	24797	FALSE
+GSE80655_DLPFC_GSE138082_CA3	L3	0.1350502494	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	24797	FALSE
+GSE80655_DLPFC_GSE138082_CA3	L4	0.1627647318	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	24797	FALSE
+GSE80655_DLPFC_GSE138082_DG	L0	-0.1174054188	no covariates	subject-separate	TRUE	24733	FALSE
+GSE80655_DLPFC_GSE138082_DG	L1	-0.144508017	age + sex	subject-separate	TRUE	24733	FALSE
+GSE80655_DLPFC_GSE138082_DG	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	24733	FALSE
+GSE80655_DLPFC_GSE138082_DG	L2	-0.1382904641	age + sex + PMI	subject-separate	TRUE	24733	FALSE
+GSE80655_DLPFC_GSE138082_DG	L3	-0.1092177917	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	24733	FALSE
+GSE80655_DLPFC_GSE138082_DG	L4	-0.1481303293	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	24733	FALSE
+GSE80655_DLPFC_GSE202537_NAc	L0	0.2588045282	no covariates	subject-separate	TRUE	24872	TRUE
+GSE80655_DLPFC_GSE202537_NAc	L1	0.2300740554	age + sex	subject-separate	TRUE	24872	TRUE
+GSE80655_DLPFC_GSE202537_NAc	L1p	0.2054457616	age + sex + pH (datasets that record pH)	subject-separate	TRUE	24872	TRUE
+GSE80655_DLPFC_GSE202537_NAc	L2	0.2263974391	age + sex + PMI	subject-separate	TRUE	24872	TRUE
+GSE80655_DLPFC_GSE202537_NAc	L3	0.1713491728	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	24872	TRUE
+GSE80655_DLPFC_GSE202537_NAc	L4	0.1713491728	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	24872	TRUE
+GSE80655_DLPFC_GSE202537_caudate	L0	-0.03516603141	no covariates	subject-separate	TRUE	24649	TRUE
+GSE80655_DLPFC_GSE202537_caudate	L1	-0.05801553036	age + sex	subject-separate	TRUE	24649	TRUE
+GSE80655_DLPFC_GSE202537_caudate	L1p	-0.1012821796	age + sex + pH (datasets that record pH)	subject-separate	TRUE	24649	TRUE
+GSE80655_DLPFC_GSE202537_caudate	L2	-0.06798680781	age + sex + PMI	subject-separate	TRUE	24649	TRUE
+GSE80655_DLPFC_GSE202537_caudate	L3	-0.07275035795	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	24649	TRUE
+GSE80655_DLPFC_GSE202537_caudate	L4	-0.07275035795	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	24649	TRUE
+GSE80655_DLPFC_GSE202537_putamen	L0	0.1293899682	no covariates	subject-separate	TRUE	24616	TRUE
+GSE80655_DLPFC_GSE202537_putamen	L1	0.1064502645	age + sex	subject-separate	TRUE	24616	TRUE
+GSE80655_DLPFC_GSE202537_putamen	L1p	0.07450125157	age + sex + pH (datasets that record pH)	subject-separate	TRUE	24616	TRUE
+GSE80655_DLPFC_GSE202537_putamen	L2	0.1184075455	age + sex + PMI	subject-separate	TRUE	24616	TRUE
+GSE80655_DLPFC_GSE202537_putamen	L3	0.05010612607	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	24616	TRUE
+GSE80655_DLPFC_GSE202537_putamen	L4	0.05010612607	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	24616	TRUE
+GSE80655_DLPFC_GSE208338	L0	0.248831652	no covariates	subject-separate	TRUE	15990	TRUE
+GSE80655_DLPFC_GSE208338	L1	0.2862691777	age + sex	subject-separate	TRUE	15990	TRUE
+GSE80655_DLPFC_GSE208338	L1p	0.2220030033	age + sex + pH (datasets that record pH)	subject-separate	TRUE	15990	TRUE
+GSE80655_DLPFC_GSE208338	L2	0.2854996306	age + sex + PMI	subject-separate	TRUE	15990	TRUE
+GSE80655_DLPFC_GSE208338	L3	0.2294317438	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	15990	TRUE
+GSE80655_DLPFC_GSE208338	L4	0.2294317438	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	15990	TRUE
+GSE80655_DLPFC_GSE224683	L0	0.348665337	no covariates	subject-separate	TRUE	23650	TRUE
+GSE80655_DLPFC_GSE224683	L1	0.4426209003	age + sex	subject-separate	TRUE	23650	TRUE
+GSE80655_DLPFC_GSE224683	L1p	0.3283877343	age + sex + pH (datasets that record pH)	subject-separate	TRUE	23650	TRUE
+GSE80655_DLPFC_GSE224683	L2	0.4289664275	age + sex + PMI	subject-separate	TRUE	23650	TRUE
+GSE80655_DLPFC_GSE224683	L3	0.3267233554	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	23650	TRUE
+GSE80655_DLPFC_GSE224683	L4	0.3267233554	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	23650	TRUE
+GSE80655_DLPFC_GSE26927_temporal	L0	-0.00573232294	no covariates	subject-separate	TRUE	13813	FALSE
+GSE80655_DLPFC_GSE26927_temporal	L1	-0.0008645520423	age + sex	subject-separate	TRUE	13813	FALSE
+GSE80655_DLPFC_GSE26927_temporal	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	13813	FALSE
+GSE80655_DLPFC_GSE26927_temporal	L2	0.04559383928	age + sex + PMI	subject-separate	TRUE	13813	FALSE
+GSE80655_DLPFC_GSE26927_temporal	L3	0.08773124458	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	13813	FALSE
+GSE80655_DLPFC_GSE26927_temporal	L4	0.08773124458	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	13813	FALSE
+GSE80655_nAcc_GSE138082_CA1	L0	-0.1396885671	no covariates	subject-separate	TRUE	24830	FALSE
+GSE80655_nAcc_GSE138082_CA1	L1	-0.1163652741	age + sex	subject-separate	TRUE	24830	FALSE
+GSE80655_nAcc_GSE138082_CA1	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	24830	FALSE
+GSE80655_nAcc_GSE138082_CA1	L2	-0.1640207217	age + sex + PMI	subject-separate	TRUE	24830	FALSE
+GSE80655_nAcc_GSE138082_CA1	L3	-0.08056112885	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	24830	FALSE
+GSE80655_nAcc_GSE138082_CA1	L4	-0.02371518262	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	24830	FALSE
+GSE80655_nAcc_GSE138082_CA3	L0	0.222233321	no covariates	subject-separate	TRUE	24820	FALSE
+GSE80655_nAcc_GSE138082_CA3	L1	0.2108523506	age + sex	subject-separate	TRUE	24820	FALSE
+GSE80655_nAcc_GSE138082_CA3	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	24820	FALSE
+GSE80655_nAcc_GSE138082_CA3	L2	0.1852881579	age + sex + PMI	subject-separate	TRUE	24820	FALSE
+GSE80655_nAcc_GSE138082_CA3	L3	0.201869003	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	24820	FALSE
+GSE80655_nAcc_GSE138082_CA3	L4	0.248705297	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	24820	FALSE
+GSE80655_nAcc_GSE138082_DG	L0	-0.1492924275	no covariates	subject-separate	TRUE	24761	FALSE
+GSE80655_nAcc_GSE138082_DG	L1	-0.1401882571	age + sex	subject-separate	TRUE	24761	FALSE
+GSE80655_nAcc_GSE138082_DG	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	24761	FALSE
+GSE80655_nAcc_GSE138082_DG	L2	-0.1420350302	age + sex + PMI	subject-separate	TRUE	24761	FALSE
+GSE80655_nAcc_GSE138082_DG	L3	-0.05830106961	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	24761	FALSE
+GSE80655_nAcc_GSE138082_DG	L4	-0.08498080013	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	24761	FALSE
+GSE80655_nAcc_GSE202537_NAc	L0	0.1971726778	no covariates	subject-separate	TRUE	24925	TRUE
+GSE80655_nAcc_GSE202537_NAc	L1	0.2092829275	age + sex	subject-separate	TRUE	24925	TRUE
+GSE80655_nAcc_GSE202537_NAc	L1p	0.174972084	age + sex + pH (datasets that record pH)	subject-separate	TRUE	24925	TRUE
+GSE80655_nAcc_GSE202537_NAc	L2	0.2145939456	age + sex + PMI	subject-separate	TRUE	24925	TRUE
+GSE80655_nAcc_GSE202537_NAc	L3	0.1306807059	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	24925	TRUE
+GSE80655_nAcc_GSE202537_NAc	L4	0.1306807059	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	24925	TRUE
+GSE80655_nAcc_GSE202537_caudate	L0	-0.09718640142	no covariates	subject-separate	TRUE	24684	TRUE
+GSE80655_nAcc_GSE202537_caudate	L1	-0.1172020903	age + sex	subject-separate	TRUE	24684	TRUE
+GSE80655_nAcc_GSE202537_caudate	L1p	-0.1645988017	age + sex + pH (datasets that record pH)	subject-separate	TRUE	24684	TRUE
+GSE80655_nAcc_GSE202537_caudate	L2	-0.1139289863	age + sex + PMI	subject-separate	TRUE	24684	TRUE
+GSE80655_nAcc_GSE202537_caudate	L3	-0.1236509801	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	24684	TRUE
+GSE80655_nAcc_GSE202537_caudate	L4	-0.1236509801	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	24684	TRUE
+GSE80655_nAcc_GSE202537_putamen	L0	5.799857199e-06	no covariates	subject-separate	TRUE	24662	TRUE
+GSE80655_nAcc_GSE202537_putamen	L1	0.03183813989	age + sex	subject-separate	TRUE	24662	TRUE
+GSE80655_nAcc_GSE202537_putamen	L1p	0.05102862206	age + sex + pH (datasets that record pH)	subject-separate	TRUE	24662	TRUE
+GSE80655_nAcc_GSE202537_putamen	L2	0.05028164647	age + sex + PMI	subject-separate	TRUE	24662	TRUE
+GSE80655_nAcc_GSE202537_putamen	L3	0.02660638019	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	24662	TRUE
+GSE80655_nAcc_GSE202537_putamen	L4	0.02660638019	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	24662	TRUE
+GSE80655_nAcc_GSE208338	L0	-0.03830522535	no covariates	subject-separate	TRUE	15984	TRUE
+GSE80655_nAcc_GSE208338	L1	0.02615545804	age + sex	subject-separate	TRUE	15984	TRUE
+GSE80655_nAcc_GSE208338	L1p	0.006757089435	age + sex + pH (datasets that record pH)	subject-separate	TRUE	15984	TRUE
+GSE80655_nAcc_GSE208338	L2	0.02507365142	age + sex + PMI	subject-separate	TRUE	15984	TRUE
+GSE80655_nAcc_GSE208338	L3	0.01704876895	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	15984	TRUE
+GSE80655_nAcc_GSE208338	L4	0.01704876895	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	15984	TRUE
+GSE80655_nAcc_GSE26927_temporal	L0	-0.006182919331	no covariates	subject-separate	TRUE	13812	FALSE
+GSE80655_nAcc_GSE26927_temporal	L1	-0.002396694963	age + sex	subject-separate	TRUE	13812	FALSE
+GSE80655_nAcc_GSE26927_temporal	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	13812	FALSE
+GSE80655_nAcc_GSE26927_temporal	L2	0.02503364865	age + sex + PMI	subject-separate	TRUE	13812	FALSE
+GSE80655_nAcc_GSE26927_temporal	L3	0.0536762497	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	13812	FALSE
+GSE80655_nAcc_GSE26927_temporal	L4	0.0536762497	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	13812	FALSE
+GSE92538_GPL570_GSE138082_CA1	L0	-0.1322853173	no covariates	subject-separate	TRUE	17013	FALSE
+GSE92538_GPL570_GSE138082_CA1	L1	-0.1791170457	age + sex	subject-separate	TRUE	17013	FALSE
+GSE92538_GPL570_GSE138082_CA1	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	17013	FALSE
+GSE92538_GPL570_GSE138082_CA1	L2	-0.139949167	age + sex + PMI	subject-separate	TRUE	17013	FALSE
+GSE92538_GPL570_GSE138082_CA1	L3	-0.08315804589	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	17013	FALSE
+GSE92538_GPL570_GSE138082_CA1	L4	-0.08316507216	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	17013	FALSE
+GSE92538_GPL570_GSE138082_CA3	L0	0.2078632955	no covariates	subject-separate	TRUE	17025	FALSE
+GSE92538_GPL570_GSE138082_CA3	L1	0.2364920148	age + sex	subject-separate	TRUE	17025	FALSE
+GSE92538_GPL570_GSE138082_CA3	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	17025	FALSE
+GSE92538_GPL570_GSE138082_CA3	L2	0.1895954295	age + sex + PMI	subject-separate	TRUE	17025	FALSE
+GSE92538_GPL570_GSE138082_CA3	L3	0.1852036468	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	17025	FALSE
+GSE92538_GPL570_GSE138082_CA3	L4	0.1972529902	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	17025	FALSE
+GSE92538_GPL570_GSE138082_DG	L0	-0.1506408274	no covariates	subject-separate	TRUE	16987	FALSE
+GSE92538_GPL570_GSE138082_DG	L1	-0.2156911257	age + sex	subject-separate	TRUE	16987	FALSE
+GSE92538_GPL570_GSE138082_DG	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	16987	FALSE
+GSE92538_GPL570_GSE138082_DG	L2	-0.2128756606	age + sex + PMI	subject-separate	TRUE	16987	FALSE
+GSE92538_GPL570_GSE138082_DG	L3	-0.1961500362	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	16987	FALSE
+GSE92538_GPL570_GSE138082_DG	L4	-0.2063081009	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	16987	FALSE
+GSE92538_GPL570_GSE202537_NAc	L0	0.0114396351	no covariates	subject-separate	TRUE	17024	TRUE
+GSE92538_GPL570_GSE202537_NAc	L1	0.09909110648	age + sex	subject-separate	TRUE	17024	TRUE
+GSE92538_GPL570_GSE202537_NAc	L1p	0.05742124681	age + sex + pH (datasets that record pH)	subject-separate	TRUE	17024	TRUE
+GSE92538_GPL570_GSE202537_NAc	L2	0.1314590969	age + sex + PMI	subject-separate	TRUE	17024	TRUE
+GSE92538_GPL570_GSE202537_NAc	L3	0.04850425513	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	17024	TRUE
+GSE92538_GPL570_GSE202537_NAc	L4	0.04850425513	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	17024	TRUE
+GSE92538_GPL570_GSE202537_caudate	L0	0.05679562611	no covariates	subject-separate	TRUE	16975	TRUE
+GSE92538_GPL570_GSE202537_caudate	L1	0.006819544434	age + sex	subject-separate	TRUE	16975	TRUE
+GSE92538_GPL570_GSE202537_caudate	L1p	-0.03956796586	age + sex + pH (datasets that record pH)	subject-separate	TRUE	16975	TRUE
+GSE92538_GPL570_GSE202537_caudate	L2	-0.002999383452	age + sex + PMI	subject-separate	TRUE	16975	TRUE
+GSE92538_GPL570_GSE202537_caudate	L3	0.006070966803	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	16975	TRUE
+GSE92538_GPL570_GSE202537_caudate	L4	0.006070966803	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	16975	TRUE
+GSE92538_GPL570_GSE202537_putamen	L0	-0.168877292	no covariates	subject-separate	TRUE	16936	TRUE
+GSE92538_GPL570_GSE202537_putamen	L1	-0.1369793976	age + sex	subject-separate	TRUE	16936	TRUE
+GSE92538_GPL570_GSE202537_putamen	L1p	-0.154877768	age + sex + pH (datasets that record pH)	subject-separate	TRUE	16936	TRUE
+GSE92538_GPL570_GSE202537_putamen	L2	-0.1168856197	age + sex + PMI	subject-separate	TRUE	16936	TRUE
+GSE92538_GPL570_GSE202537_putamen	L3	-0.1422723614	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	16936	TRUE
+GSE92538_GPL570_GSE202537_putamen	L4	-0.1422723614	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	16936	TRUE
+GSE92538_GPL570_GSE208338	L0	-0.07153800214	no covariates	subject-separate	TRUE	14440	TRUE
+GSE92538_GPL570_GSE208338	L1	-0.004449167844	age + sex	subject-separate	TRUE	14440	TRUE
+GSE92538_GPL570_GSE208338	L1p	0.01707155746	age + sex + pH (datasets that record pH)	subject-separate	TRUE	14440	TRUE
+GSE92538_GPL570_GSE208338	L2	0.03820048581	age + sex + PMI	subject-separate	TRUE	14440	TRUE
+GSE92538_GPL570_GSE208338	L3	0.1276009318	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	14440	TRUE
+GSE92538_GPL570_GSE208338	L4	0.1276009318	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	14440	TRUE
+GSE92538_GPL570_GSE26927_temporal	L0	-0.0295906933	no covariates	subject-separate	TRUE	12745	FALSE
+GSE92538_GPL570_GSE26927_temporal	L1	-0.01909183325	age + sex	subject-separate	TRUE	12745	FALSE
+GSE92538_GPL570_GSE26927_temporal	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	12745	FALSE
+GSE92538_GPL570_GSE26927_temporal	L2	0.01270836149	age + sex + PMI	subject-separate	TRUE	12745	FALSE
+GSE92538_GPL570_GSE26927_temporal	L3	-0.004919136114	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	12745	FALSE
+GSE92538_GPL570_GSE26927_temporal	L4	-0.004919136114	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	12745	FALSE
+GSE92538_GPL96_GSE138082_CA1	L0	-0.0981300356	no covariates	subject-separate	TRUE	10712	FALSE
+GSE92538_GPL96_GSE138082_CA1	L1	-0.06839946038	age + sex	subject-separate	TRUE	10712	FALSE
+GSE92538_GPL96_GSE138082_CA1	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	10712	FALSE
+GSE92538_GPL96_GSE138082_CA1	L2	0.0352716447	age + sex + PMI	subject-separate	TRUE	10712	FALSE
+GSE92538_GPL96_GSE138082_CA1	L3	0.07460541292	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	10712	FALSE
+GSE92538_GPL96_GSE138082_CA1	L4	0.05084105474	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	10712	FALSE
+GSE92538_GPL96_GSE138082_CA3	L0	0.04093862625	no covariates	subject-separate	TRUE	10724	FALSE
+GSE92538_GPL96_GSE138082_CA3	L1	0.1004358196	age + sex	subject-separate	TRUE	10724	FALSE
+GSE92538_GPL96_GSE138082_CA3	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	10724	FALSE
+GSE92538_GPL96_GSE138082_CA3	L2	0.05018070298	age + sex + PMI	subject-separate	TRUE	10724	FALSE
+GSE92538_GPL96_GSE138082_CA3	L3	-0.08640242558	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	10724	FALSE
+GSE92538_GPL96_GSE138082_CA3	L4	-0.0824289273	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	10724	FALSE
+GSE92538_GPL96_GSE138082_DG	L0	-0.1808897342	no covariates	subject-separate	TRUE	10705	FALSE
+GSE92538_GPL96_GSE138082_DG	L1	-0.2049809393	age + sex	subject-separate	TRUE	10705	FALSE
+GSE92538_GPL96_GSE138082_DG	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	10705	FALSE
+GSE92538_GPL96_GSE138082_DG	L2	-0.1034883816	age + sex + PMI	subject-separate	TRUE	10705	FALSE
+GSE92538_GPL96_GSE138082_DG	L3	0.01179262104	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	10705	FALSE
+GSE92538_GPL96_GSE138082_DG	L4	0.02036186741	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	10705	FALSE
+GSE92538_GPL96_GSE202537_NAc	L0	0.1514876141	no covariates	subject-separate	TRUE	10721	TRUE
+GSE92538_GPL96_GSE202537_NAc	L1	0.1579973089	age + sex	subject-separate	TRUE	10721	TRUE
+GSE92538_GPL96_GSE202537_NAc	L1p	0.1554725481	age + sex + pH (datasets that record pH)	subject-separate	TRUE	10721	TRUE
+GSE92538_GPL96_GSE202537_NAc	L2	0.09794647737	age + sex + PMI	subject-separate	TRUE	10721	TRUE
+GSE92538_GPL96_GSE202537_NAc	L3	0.07039099991	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	10721	TRUE
+GSE92538_GPL96_GSE202537_NAc	L4	0.07039099991	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	10721	TRUE
+GSE92538_GPL96_GSE202537_caudate	L0	0.04271685783	no covariates	subject-separate	TRUE	10693	TRUE
+GSE92538_GPL96_GSE202537_caudate	L1	0.03686291838	age + sex	subject-separate	TRUE	10693	TRUE
+GSE92538_GPL96_GSE202537_caudate	L1p	0.0352284222	age + sex + pH (datasets that record pH)	subject-separate	TRUE	10693	TRUE
+GSE92538_GPL96_GSE202537_caudate	L2	0.07154771068	age + sex + PMI	subject-separate	TRUE	10693	TRUE
+GSE92538_GPL96_GSE202537_caudate	L3	0.04751749924	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	10693	TRUE
+GSE92538_GPL96_GSE202537_caudate	L4	0.04751749924	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	10693	TRUE
+GSE92538_GPL96_GSE202537_putamen	L0	0.02586800734	no covariates	subject-separate	TRUE	10677	TRUE
+GSE92538_GPL96_GSE202537_putamen	L1	0.008936196266	age + sex	subject-separate	TRUE	10677	TRUE
+GSE92538_GPL96_GSE202537_putamen	L1p	0.02592468156	age + sex + pH (datasets that record pH)	subject-separate	TRUE	10677	TRUE
+GSE92538_GPL96_GSE202537_putamen	L2	0.04457378074	age + sex + PMI	subject-separate	TRUE	10677	TRUE
+GSE92538_GPL96_GSE202537_putamen	L3	0.08570454401	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	10677	TRUE
+GSE92538_GPL96_GSE202537_putamen	L4	0.08570454401	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	10677	TRUE
+GSE92538_GPL96_GSE208338	L0	0.2187834406	no covariates	subject-separate	TRUE	9907	TRUE
+GSE92538_GPL96_GSE208338	L1	0.2396627178	age + sex	subject-separate	TRUE	9907	TRUE
+GSE92538_GPL96_GSE208338	L1p	0.2201338652	age + sex + pH (datasets that record pH)	subject-separate	TRUE	9907	TRUE
+GSE92538_GPL96_GSE208338	L2	0.1998590695	age + sex + PMI	subject-separate	TRUE	9907	TRUE
+GSE92538_GPL96_GSE208338	L3	0.1166713382	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	9907	TRUE
+GSE92538_GPL96_GSE208338	L4	0.1166713382	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	9907	TRUE
+GSE92538_GPL96_GSE224683	L0	0.2061215812	no covariates	subject-separate	TRUE	10649	TRUE
+GSE92538_GPL96_GSE224683	L1	0.4041761283	age + sex	subject-separate	TRUE	10649	TRUE
+GSE92538_GPL96_GSE224683	L1p	0.3192469115	age + sex + pH (datasets that record pH)	subject-separate	TRUE	10649	TRUE
+GSE92538_GPL96_GSE224683	L2	0.274994204	age + sex + PMI	subject-separate	TRUE	10649	TRUE
+GSE92538_GPL96_GSE224683	L3	0.1173600384	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	10649	TRUE
+GSE92538_GPL96_GSE224683	L4	0.1173600384	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	10649	TRUE
+GSE92538_GPL96_GSE26927_temporal	L0	-0.2236521726	no covariates	subject-separate	TRUE	9156	FALSE
+GSE92538_GPL96_GSE26927_temporal	L1	-0.2154756443	age + sex	subject-separate	TRUE	9156	FALSE
+GSE92538_GPL96_GSE26927_temporal	L1p	NA	age + sex + pH (datasets that record pH)	subject-separate	TRUE	9156	FALSE
+GSE92538_GPL96_GSE26927_temporal	L2	-0.165706884	age + sex + PMI	subject-separate	TRUE	9156	FALSE
+GSE92538_GPL96_GSE26927_temporal	L3	-0.1123579151	age + sex + PMI + pH, RIN, agonal factor (where recorded)	subject-separate	TRUE	9156	FALSE
+GSE92538_GPL96_GSE26927_temporal	L4	-0.1123579151	L3 + medication (GSE21138, GSE138082 only)	subject-separate	TRUE	9156	FALSE

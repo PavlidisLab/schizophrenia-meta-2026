@@ -1,0 +1,15 @@
+# figure: suppnote6_pathways_coexpression panel k
+# script: analyses/figure_exports/export_suppnote6_coexpression_extra.py, run 2026-10-16
+# input: side-studies/coexpression/snap_sz/results/arm_a_summary.tsv sha256 c015eaaa9492
+# input: data/raw/doi_10.64898_2026.06.17.731965/Chu et al. - 2026 - Evaluation of analysis modes for RNA coexpression in single-cell and bulk tissue.pdf sha256 2bad2ea04f15
+# Chu rows are typed from the preprint text (PDF page text, sha above); they are not read from a table
+# Chu et al. is a bioRxiv preprint, not peer reviewed; its seven datasets have no schizophrenia donors
+source	dataset	n_donors_in_peer	sz_donors_present	best_abs_rho	statistic	note
+Chu et al. 2026 (preprint)	7 other single-nucleus datasets (Lau, Lim, Nagy/Pineda, Pineda, Ramos, ROSMAP, Velmeshev)		no	0.15	median best match over datasets	Results, 'Case study': median best match 0.15 over 210 comparisons
+Chu et al. 2026 (preprint)	7 other single-nucleus datasets		no	0.33	maximum best match	highest correlation 0.33, LF3 in the Lim data set; per-dataset values are in Supplemental Figure 3C only (figure, no table on disk)
+this project, Arm A (residuals, top 50% genes, K = 10)	brainSCOPE CMC	49	yes	0.2467	best |Spearman| with Ling LF4 loadings	pre-set call: not found
+this project, Arm A (residuals, top 50% genes, K = 10)	GSE254569	76	yes	0.4305	best |Spearman| with Ling LF4 loadings	pre-set call: partial
+this project, Arm A (residuals, top 50% genes, K = 10)	Ling 2024 (Gemma counts through this pipeline)	179	yes (positive control)	0.8439	best |Spearman| with Ling LF4 loadings	pre-set call: found
+this project, Arm A (residuals, top 50% genes, K = 10)	PsychAD HBCC	129	yes	0.3694	best |Spearman| with Ling LF4 loadings	pre-set call: partial
+this project, Arm A (residuals, top 50% genes, K = 10)	PsychAD Mount Sinai	350	yes	0.3748	best |Spearman| with Ling LF4 loadings	pre-set call: partial
+this project, Arm A (residuals, top 50% genes, K = 10)	SZBDMulti-Seq minus Ling donors	31	yes	0.5079	best |Spearman| with Ling LF4 loadings	pre-set call: found

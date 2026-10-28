@@ -1,0 +1,34 @@
+# figure: fig07 panel b
+# script: analyses/figure_exports/export_fig02_fig07.py, run 2026-10-16
+# population: 72 primary brain studies (recurrence.py scenario 'published, brain', study tier); n_k = |M_k| (RECURRENCE_NK=membership); analysis set = the 383 study-tier genes of analyses/confounds/recurrent_sets.tsv (set study_brain; the in-place recurrence_genes.tsv gives 383 at q < 0.1); recurrence.tsv sha256 bcbf50f8e334; corpus/lineage.json sha256 4f919a83fea3
+# input: analyses/fairness_sample_level/results/b_levels.tsv sha256 9800b41fd014
+# datasets entering the series and the covariates each level adds
+dataset	compartment	n_sz	n_ctl	n_genes	L2_adds	L3_adds	L4_adds	nsv_L5a	nsv_L5b	nq05_L0	nq05_L1	nq05_L2	nq05_L3	nq05_L4	nq05_L5a	nq05_L5b
+GSE21138	bulk	26	29	17244	PMI	pH	cpz_mg	10	9	1	1	1	1	0	0	0
+GSE35977	bulk	51	50	16744	PMI	pH		11	11	51	29	94	6	6	411	412
+GSE35974	bulk	44	49	16744	PMI	pH		16	16	1260	1358	1630	1424	1424	10	13
+GSE53987_BA46	bulk	15	19	17244	PMI	pH+RIN		8	8	64	355	307	77	77	0	0
+GSE53987_hippocampus	bulk	15	18	17244	PMI	pH+RIN		6	6	1465	1576	1549	0	0	0	0
+GSE53987_striatum	bulk	18	18	17244	PMI	pH+RIN		6	6	5	5	5	4	4	12	4
+GSE17612	bulk	27	22	17244	PMI	pH		9	9	0	0	0	0	0	1	0
+GSE21935	bulk	23	19	17244	PMI	pH		7	6	0	0	0	0	0	0	0
+GSE92538_GPL570	bulk	17	31	17244	PMI	pH+agonal		6	6	0	0	0	0	0	0	0
+GSE92538_GPL96	bulk	9	44	10800	PMI	pH+agonal		7	8	0	0	0	0	0	0	0
+GSE80655_DLPFC	bulk	22	23	25518	PMI	pH		10	9	0	0	0	0	0	0	0
+GSE80655_AnCg	bulk	23	24	25523	PMI	pH		10	10	0	6	0	0	0	70	1
+GSE80655_nAcc	bulk	22	22	25527	PMI	pH		8	8	0	0	0	0	0	0	0
+GSE208338	bulk	68	62	16101	PMI	pH+RIN		9	12	1	2	2	1	1	0	0
+GSE202537_NAc	bulk	28	35	25596	PMI	pH+RIN		10	11	0	0	0	0	0	30	28
+GSE202537_caudate	bulk	28	36	25155	PMI	pH+RIN		10	10	164	181	177	284	284	79	66
+GSE202537_putamen	bulk	28	36	25107	PMI	pH+RIN		9	9	388	493	423	715	715	1279	911
+GSE224683	bulk	15	15	24291	PMI	pH		5	5	0	0	0	0	0	0	0
+GSE26927_temporal	bulk	10	9	13858	PMI			3	2	0	0	0	0	0	0	0
+GSE138082_CA1	bulk	13	13	25478	PMI	RIN	on_drug	6	4	0	0	1	0	0	0	0
+GSE138082_CA3	bulk	13	12	25583	PMI	RIN	on_drug	6	6	0	0	0	0	0	0	0
+GSE138082_DG	bulk	13	13	25364	PMI	RIN	on_drug	6	5	0	0	0	0	0	0	0
+GSE37981	LCM pyramidal neurons	8	8	17430	PMI			4	3	6	1	1	1	1	1	2
+GSE12679_neuron	LCM neurons	5	6	17455	PMI			2	2	0	0	0	0	0	0	0
+GSE12679_endothelial	LCM endothelial cells	11	5	17455	PMI			4	3	0	0	0	0	0	0	0
+GSE112523	sorted NeuN+ nuclei	6	17	25105	PMI			5	5	0	0	0	0	0	0	0
+GSE107638_NeuN	sorted NeuN+ nuclei	23	27	25199	PMI	RIN		15	14	2	1	1	1	1	5	3
+GSE107638_OLIG2	sorted OLIG2+ nuclei	17	22	24553	PMI	RIN		13	13	1	0	0	1	1	0	0

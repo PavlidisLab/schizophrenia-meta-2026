@@ -1,0 +1,15 @@
+# Supplementary Note 8 inputs (summary tables from the level, composition-only simulation and composition analyses, 2026-10-18; crumblr for composition). Figures in results/ are drawn by build_supp_composition.py from the tables in data/. The OLS versions of the composition tables are not included.
+file	sha256_16	bytes
+ceiling_reliability.tsv	544e2f5a2161c445	1495
+comp_dx_effect.tsv	deddef2217dc13d2	99548
+comp_ph_effect_controls.tsv	0e10ea871dccff9a	26646
+composition_ph_summary_table.tsv	8c04962c497e0ae2	11800
+levels_all_rows.tsv	640477cab580f6ed	326422
+levels_summary_main_rows.tsv	172447ff3374f5ef	31220
+nested_models_two_targets.tsv	3f4f47d57370e5ba	4718
+nsw_class_composition_slopes.tsv	ba0be868216b487d	2743
+sim_fraction_of_ceiling.tsv	d949e076e5a9a334	1499
+sim_leave_one_class_out.tsv	a13bb2e41ffae4be	8094
+sim_rho_summary.tsv	27f8640c30490cff	77058
+fig_composition_key_data.tsv	4e9790a25960c7a1	3844
+fig_composition_key.png	700ff004667f3945	272664

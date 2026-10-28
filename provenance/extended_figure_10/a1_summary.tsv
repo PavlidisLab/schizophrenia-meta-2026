@@ -1,0 +1,33 @@
+# a1_uniform_vs_published.py, run 2026-10-11; rule A primary lists (published side); Gemma result sets from manifests/batch6_gemma.json (gemma/<GSE>/*_sz_vs_control.tsv)
+# left out: Iwamoto 2005: published list covers mitochondria-related probe sets only (targeted universe); Topol 2016: miRNA lists (universe type exclude)
+# summaries per pair class and method (fl_common.summarize); median_rho_gemma = Spearman of Gemma log2 fold changes over all shared genes
+pair_class	method	n_pairs	n_studies	median_fold	pooled_fold	n_top	pooled_top_fold	median_log2_fold	median_concordance	n_concordance	pooled_concordance	n_sig_p05	n_overlap0	median_rho_gemma	n_rho_gemma
+all pairs, different groups	published	297	25	0.9712	1.233	0		-0.01434	0.5263	147	0.5347	60	84	0.001342	297
+all pairs, different groups	gemma_sized	297	25	0.9836	1.196	0		-0.01275	0.55	147	0.5557	51	81	0.001342	297
+all pairs, different groups	published_topN	273	24	0	1.507	0		-0.009221	0.5	3	0.5674	10	179	0.001342	273
+all pairs, different groups	gemma_topN	273	24	0	1.368	0		-0.01375	0.1667	1	0.6328	17	194	0.001342	273
+all pairs, different groups	gemma_fdr	91	14	0.7515	1.154	0		-0.02475	0.5867	34	0.5638	12	39	0.0004097	91
+brain-brain, different groups	published	36	9	1.106	1.322	0		0.1375	0.6537	26	0.7424	11	4	0.06327	36
+brain-brain, different groups	gemma_sized	36	9	1.121	1.401	0		0.1581	0.7254	28	0.7542	9	3	0.06327	36
+brain-brain, different groups	published_topN	28	8	1.273	1.191	0		0.2225		0	0.6111	0	12	0.06327	28
+brain-brain, different groups	gemma_topN	28	8	0	0.9926	0		-0.3829		0	0.6	2	20	0.06327	28
+brain-brain, different groups	gemma_fdr	10	5	0.8026	0.8928	0		-0.09759	0.65	4	0.4637	0	3	0.01024	10
+ipsc-ipsc, different groups	published	75	13	1.138	1.854	0		0.1725	0.5076	33	0.4976	22	25	-0.007092	75
+ipsc-ipsc, different groups	gemma_sized	75	13	1.069	1.376	0		0.07633	0.5833	29	0.5548	16	24	-0.007092	75
+ipsc-ipsc, different groups	published_topN	75	13	0	2.658	0		-0.009379	0.25	2	0.549	8	50	-0.007092	75
+ipsc-ipsc, different groups	gemma_topN	75	13	0	1.98	0		-0.009379		0	0.6316	7	50	-0.007092	75
+ipsc-ipsc, different groups	gemma_fdr	15	6	1.196	1.406	0		0.2574	0.7222	8	0.7229	6	5	0.06075	15
+all pairs, different groups, contrasts match	published	207	21	0.9642	1.243	0		-0.02496	0.5126	92	0.5494	42	66	-0.0003241	207
+all pairs, different groups, contrasts match	gemma_sized	207	21	0.9813	1.177	0		-0.006465	0.5385	93	0.5452	33	65	-0.0003241	207
+all pairs, different groups, contrasts match	published_topN	187	20	0	1.854	0		-0.00743	0.5	3	0.5825	9	124	-0.0008687	187
+all pairs, different groups, contrasts match	gemma_topN	187	20	0	1.602	0		-0.01118	0.1667	1	0.5281	13	135	-0.0008687	187
+all pairs, different groups, contrasts match	gemma_fdr	55	11	0	1.184	0		-0.009976	0.6552	17	0.586	7	29	-0.000745	55
+brain-brain, different groups, contrasts match	published	21	7	1.114	1.255	0		0.1537	0.6843	14	0.7689	6	3	0.06739	21
+brain-brain, different groups, contrasts match	gemma_sized	21	7	1.129	1.273	0		0.1745	0.6991	16	0.6965	6	2	0.06739	21
+brain-brain, different groups, contrasts match	published_topN	15	6	0	1.111	0		-0.3557		0	0.875	0	8	0.06739	15
+brain-brain, different groups, contrasts match	gemma_topN	15	6	0	1.111	0		-0.3785		0	0.25	1	11	0.06739	15
+brain-brain, different groups, contrasts match	gemma_fdr	6	4	0.9059	0.9512	0		0.03199	0.6786	2	0.619	0	2	0.03215	6
+same group (shared lines)	published	3	3	2.257	2.366	0		0.6694		0	0.4	0	1	0.05862	3
+same group (shared lines)	gemma_sized	3	3	2.257	2.366	0		0.6694		0	0.6	0	1	0.05862	3
+same group (shared lines)	published_topN	3	3	0	8.88	0		-0.02542		0	1	1	2	0.05862	3
+same group (shared lines)	gemma_topN	3	3	0	4.44	0		-0.02542		0	1	0	2	0.05862	3

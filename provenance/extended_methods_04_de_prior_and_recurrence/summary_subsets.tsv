@@ -1,0 +1,93 @@
+# script: analyses/de_prior_stability_2026-10-12/summarize.py, run 2026-10-12
+# source: out/subset_runs.tsv sha256 b4b3d1535245; median and 2.5-97.5% over subsets
+pool	n	metric	median	lo	hi	n_reps	note
+all experiments	25	auroc_count	0.755	0.66398	0.80552	200	
+all experiments	50	auroc_count	0.81416	0.76732	0.85134	200	
+all experiments	100	auroc_count	0.84335	0.81707	0.86718	200	
+all experiments	200	auroc_count	0.86129	0.84383	0.87879	200	
+all experiments	400	auroc_count	0.873	0.857	0.88439	200	
+all experiments	800	auroc_count	0.87731	0.86974	0.88582	200	
+all experiments	1600	auroc_count	0.88054	0.87506	0.88605	200	
+all experiments	3200	auroc_count	0.88201	0.8784	0.88533	200	
+all experiments	8712	auroc_count	0.88271	0.88271	0.88271	1	
+all experiments	25	auroc_freq	0.72593	0.64835	0.7926	200	
+all experiments	50	auroc_freq	0.77726	0.72464	0.82144	200	
+all experiments	100	auroc_freq	0.80927	0.76254	0.84245	200	
+all experiments	200	auroc_freq	0.83088	0.80749	0.85433	200	
+all experiments	400	auroc_freq	0.84953	0.83059	0.86651	200	
+all experiments	800	auroc_freq	0.85809	0.84641	0.8705	200	
+all experiments	1600	auroc_freq	0.86465	0.85478	0.87309	200	
+all experiments	3200	auroc_freq	0.86752	0.86246	0.87265	200	
+all experiments	8712	auroc_freq	0.86954	0.86954	0.86954	1	
+all experiments	25	rho_disjoint_count	0.38844	0.24441	0.53097	200	
+all experiments	50	rho_disjoint_count	0.58816	0.48314	0.68248	200	
+all experiments	100	rho_disjoint_count	0.75248	0.6988	0.79804	200	
+all experiments	200	rho_disjoint_count	0.86672	0.84043	0.88676	200	
+all experiments	400	rho_disjoint_count	0.92838	0.91196	0.93896	200	
+all experiments	800	rho_disjoint_count	0.9622	0.95612	0.96616	200	
+all experiments	1600	rho_disjoint_count	0.98051	0.9761	0.98217	200	
+all experiments	3200	rho_disjoint_count	0.99006	0.9887	0.99077	200	
+all experiments	8712	rho_disjoint_count				1	not available (2n > pool)
+all experiments	25	rho_disjoint_freq	0.30047	0.18128	0.41624	200	
+all experiments	50	rho_disjoint_freq	0.44284	0.33819	0.52581	200	
+all experiments	100	rho_disjoint_freq	0.56932	0.50159	0.63221	200	
+all experiments	200	rho_disjoint_freq	0.69362	0.64651	0.73577	200	
+all experiments	400	rho_disjoint_freq	0.7977	0.75564	0.8224	200	
+all experiments	800	rho_disjoint_freq	0.87142	0.85425	0.88683	200	
+all experiments	1600	rho_disjoint_freq	0.92273	0.91267	0.93173	200	
+all experiments	3200	rho_disjoint_freq	0.9572	0.95316	0.96031	200	
+all experiments	8712	rho_disjoint_freq				1	not available (2n > pool)
+all experiments	25	rho_full_count	0.63524	0.45559	0.74796	200	
+all experiments	50	rho_full_count	0.777	0.66196	0.83922	200	
+all experiments	100	rho_full_count	0.87273	0.81679	0.90431	200	
+all experiments	200	rho_full_count	0.93204	0.91226	0.94417	200	
+all experiments	400	rho_full_count	0.96437	0.95615	0.97083	200	
+all experiments	800	rho_full_count	0.98246	0.97909	0.98467	200	
+all experiments	1600	rho_full_count	0.99192	0.99027	0.99285	200	
+all experiments	3200	rho_full_count	0.99681	0.99631	0.99713	200	
+all experiments	8712	rho_full_count	1	1	1	1	n = pool: identical to the full prior
+all experiments	25	rho_full_freq	0.52557	0.3407	0.65638	200	
+all experiments	50	rho_full_freq	0.65209	0.52072	0.72674	200	
+all experiments	100	rho_full_freq	0.7457	0.6665	0.79082	200	
+all experiments	200	rho_full_freq	0.82894	0.78603	0.86352	200	
+all experiments	400	rho_full_freq	0.8913	0.86757	0.90816	200	
+all experiments	800	rho_full_freq	0.93741	0.92345	0.94652	200	
+all experiments	1600	rho_full_freq	0.96652	0.95948	0.971	200	
+all experiments	3200	rho_full_freq	0.98577	0.98319	0.98776	200	
+all experiments	8712	rho_full_freq	1	1	1	1	n = pool: identical to the full prior
+postmortem brain	25	auroc_count	0.74761	0.62394	0.83551	200	
+postmortem brain	50	auroc_count	0.82659	0.75286	0.87585	200	
+postmortem brain	100	auroc_count	0.88833	0.85286	0.91053	200	
+postmortem brain	150	auroc_count	0.90787	0.89174	0.91975	200	
+postmortem brain	200	auroc_count	0.91924	0.90893	0.92591	200	
+postmortem brain	242	auroc_count	0.92455	0.92455	0.92455	1	
+postmortem brain	25	auroc_freq	0.72366	0.60892	0.81604	200	
+postmortem brain	50	auroc_freq	0.78602	0.71264	0.83918	200	
+postmortem brain	100	auroc_freq	0.84467	0.79856	0.87886	200	
+postmortem brain	150	auroc_freq	0.86909	0.84136	0.88985	200	
+postmortem brain	200	auroc_freq	0.88163	0.86535	0.89362	200	
+postmortem brain	242	auroc_freq	0.88992	0.88992	0.88992	1	
+postmortem brain	25	rho_disjoint_count	0.21662	0.090205	0.35777	200	
+postmortem brain	50	rho_disjoint_count	0.39358	0.25102	0.50174	200	
+postmortem brain	100	rho_disjoint_count	0.59954	0.53286	0.64013	200	
+postmortem brain	150	rho_disjoint_count				200	not available (2n > pool)
+postmortem brain	200	rho_disjoint_count				200	not available (2n > pool)
+postmortem brain	242	rho_disjoint_count				1	not available (2n > pool)
+postmortem brain	25	rho_disjoint_freq	0.17012	0.065837	0.28753	200	
+postmortem brain	50	rho_disjoint_freq	0.28201	0.16669	0.37775	200	
+postmortem brain	100	rho_disjoint_freq	0.40387	0.35332	0.45816	200	
+postmortem brain	150	rho_disjoint_freq				200	not available (2n > pool)
+postmortem brain	200	rho_disjoint_freq				200	not available (2n > pool)
+postmortem brain	242	rho_disjoint_freq				1	not available (2n > pool)
+postmortem brain	25	rho_full_count	0.52187	0.26621	0.75336	200	
+postmortem brain	50	rho_full_count	0.72175	0.53186	0.8472	200	
+postmortem brain	100	rho_full_count	0.87759	0.76624	0.93424	200	
+postmortem brain	150	rho_full_count	0.93985	0.87993	0.97537	200	
+postmortem brain	200	rho_full_count	0.98023	0.95859	0.99505	200	
+postmortem brain	242	rho_full_count	1	1	1	1	n = pool: identical to the full prior
+postmortem brain	25	rho_full_freq	0.43687	0.2612	0.66275	200	
+postmortem brain	50	rho_full_freq	0.61926	0.46182	0.74154	200	
+postmortem brain	100	rho_full_freq	0.79067	0.67101	0.87175	200	
+postmortem brain	150	rho_full_freq	0.8809	0.77529	0.94451	200	
+postmortem brain	200	rho_full_freq	0.95614	0.9077	0.9891	200	
+postmortem brain	242	rho_full_freq	1	1	1	1	n = pool: identical to the full prior

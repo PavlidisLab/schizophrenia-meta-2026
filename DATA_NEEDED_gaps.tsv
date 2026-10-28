@@ -1,0 +1,67 @@
+# DATA_NEEDED_gaps.tsv: cells of DATA_NEEDED.tsv that the analysis repository does not record, for Paul to fill (RA, 2026-10-23)
+source_id	missing_field	what_is_missing	where_you_looked
+gtex_v8_expression_annotation	version_or_retrieved	Download date and URL of GTEx_Analysis_2017-06-05_v8_RNASeQCv1.1.9_gene_tpm.gct.gz (only its sha256 and file name are recorded)	analyses/gtex_ischemic_time/gtex_ischemic_time.py docstring; manuscript MANIFEST source_header; side-studies/genetics_panels_ge10_2026-10-21/results provenance
+gtex_v8_expression_annotation	can_redistribute	Licence or terms of use for redistributing GTEx open-access files are not recorded	all script docstrings and READMEs searched for 'licen' and 'terms'
+gtex_v8_eqtl_median_tpm	ingest_script	Script that builds work/egenes_v8_long.tsv.gz and median_tpm_v8.tsv.gz from the eQTL tar is not in the analysis repository	side-studies/genetics_panels_ge10_2026-10-21/scripts; analyses/gwas_vs_de/scripts; handoff folders eqtl_constraint_2026-10-14 and genetic_note_for_supplement_2026-10-14
+gtex_v10_expression_annotation	version_or_retrieved	Download date and URL of the v10 TPM and annotation files	analyses/gtex_split_at_ph_size_2026-10-11/README.md and script; table header
+libd_twas_smr_portal_files	identifier	Portal URL(s) and access terms (open, registration or request) of the LIBD TWAS and SMR files	provenance_inputs.tsv of the eQTL/TWAS run; 07_q3_twas.py docstring; genetic_note_for_supplement_2026-10-14/supplementary_note_genetic.md
+libd_twas_smr_portal_files	version_or_retrieved	Download date of each file (only the copy date 2026-10-14 is recorded)	provenance_inputs.tsv of the eQTL/TWAS run
+ensembl_mgi_orthology_rodent	version_or_retrieved	Download dates of the Ensembl 116 and MGI files (only sha256 hashing date is recorded)	analyses/rodent_pmi_2026-10-11/results/downloads_sha256.tsv; README.md; report.md
+rodent_postmortem_geo_series	ingest_script	Script that builds panel_c_hypoxia_hallmark_burial.tsv (analyses/rodent_pmi_burial_2026-10-12) is not in the analysis repository	analyses/ (folder rodent_pmi_burial_2026-10-12 absent); MANIFEST source_header
+rodent_postmortem_geo_series	version_or_retrieved	GEO download dates	analyses/rodent_pmi_2026-10-11/README.md, report.md, results/downloads_sha256.tsv
+go_annotations_goa_obo	version_or_retrieved	Which GO/GOA release produced the Supplementary Note 5/6 pathway tables, and the release used for the GO sets in the pH reference gmt	analyses/uniform_vs_published_list_agreement/go_bp_sets_meta.json; analyses/patient_derived_agreement_2026-10-08 meta files; ph_pHindex_2026-10-03/what_are_the_pH_genes_meta.json
+hgnc_complete_set	version_or_retrieved	Download URL and download date of hgnc_complete_set.txt (only sha256 and internal date_modified values are available)	data/reference; analyses/extract.py; analyses/de_prior_lists/our_prior/build_meta.json
+geo_gpl_platform_annotations	version_or_retrieved	Download URL and date for each GPL annotation file	data/platforms; analyses/build_universes.py; data/manifest.json; data/retrieval_log.json
+gemma_rest_api	version_or_retrieved	A single Gemma release number for the whole project (only a design-file header 'Gemma 2.0.0-alpha-SNAPSHOT', 2026-10-12, and per-fetch dates are recorded)	analyses/gemma_host.py; _api/_log.json files; trace notes in stanley_death_speed_2026-10-19/TRACE.md
+gemma_human_experiment_listing_and_priors	notes	Reconciliation of 251/242 (supplement) with 256 (lists_meta.json, 2b group) postmortem-brain experiments, and of 784 (supplement) with 793 blood experiments	analyses/de_prior_lists/lists_meta.json; our_prior/build_meta.json; supplement.md Extended Methods 4 and 9
+gemma_deprior_ranks_external_build	identifier	GitHub repository location of the uploaded rank files (only 'uploaded 2026-09-28 (GitHub)' is recorded)	analyses/de_prior_lists/README.md; de_prior_ranks/readme.md
+gemma_postmortem_brain_pool_and_all_contrast_scan	ingest_script	scan176.py, scorelib.py and build_panels.py (fetching and scoring the scan) are not in the analysis repository; only the null and summary scripts are	analyses/gemma_176_scan_*; analyses/gemma_prior_resemblance_2026-10-11; handoff folders figure_data/gemma_209_all_contrasts/scripts and gemma_scans_375_2026-10-15
+gemma_postmortem_brain_pool_and_all_contrast_scan	version_or_retrieved	Exact fetch dates of the result sets in the cache (only the run dates 2026-10-10/11 are given)	FRZ_gemma_scan_all_contrasts_2026_10_11.md; figure_data/gemma_209_scan/README.md
+gemma_alzheimer_contrasts	ingest_script	fetch_gemma_ad.py / ad_383.py are outside the analysis repository (handoff folder alzheimer_recurrent_gene_test)	analyses/other_disorders_recurrent_genes; analyses/other_disorders_176_2026-10-09
+gemma_other_condition_classes	ingest_script	fetch_classes.py, select_classes.py, build_class_selection.py, classes_383.py are outside the analysis repository	analyses/; handoff folder disease_classes_383_2026-10-17
+gemma_stanley_rate_of_death	ingest_script	Scripts (s1_prep.py and others) are in the handoff folder stanley_death_speed_2026-10-19, not in the analysis repository	analyses/; MANUSCRIPT_TABLE_PROVENANCE_MAP_2026_10_22.md
+gemma_stanley_rate_of_death	identifier	SMRI's own definition of the four rate-of-death values and the SMRI source file for the column (expdesign.<study>.txt is on the lab server, not in the repository)	stanley_death_speed_2026-10-19/TRACE.md sections 2 and 4
+smri_demographics_workbooks	version_or_retrieved	Retrieval date and exact access route (login or request) for ArrayCollection.xlsx and NeuropathologyConsortium.xlsx	analyses/stanley_demographics_2026-10-08/README.md; data/stanley_sncid/README.md
+smri_sncid_raw_data	version_or_retrieved	Outcome of the 2026-09-30 RNA-seq data request	data/stanley_sncid/README.md; MAB/RA handoff index
+ALL_public_rows	can_redistribute	Licence or terms of use for redistribution of public downloads (GTEx, Gemma, GEO, Ensembl, HGNC, MSigDB, GO, HCOP, CELLxGENE, Zenodo, SEA-AD) are not recorded in the repositories; entries say 'only extracted values' because that is what the manuscript repository carries	READMEs, meta.json and script docstrings searched for licence and terms-of-use statements; only LIBD BrainSeq (CC BY-NC 4.0 / MIT) is stated
+seaad_mtg	ingest_script	seaad_class_shares.py and the SEA-AD download script are not in the analysis repository	analyses/ (grep SEAAD finds only tools/build_batch9_sc.py); handoff folder second_reference_seaad_2026-10-19
+lee_psychad_supplement_table3	version_or_retrieved	Download date of the publisher supplement	data/retrieval_log.json (no entry for 42778699); analyses/psychad_cell_proportions_by_age/README.md
+cmc_psychencode_controlled	identifier	Synapse ids of the CommonMind single-nucleus donor tables actually read	rerun_on_80_studies/sn_ph_and_hidden_factor_reruns/scripts/item10_scripts_edit.py (reads a pseudobulk cache); data/raw/synapse_cmc_portal_2026-09-28/index.json
+cmc_psychencode_controlled	ingest_script	item10_scripts_edit.py is in a handoff folder, not in the analysis repository	analyses/
+yaqubi_2026_supplements	ingest_script	01_build_effects.py and later scripts are in the handoff folder, not in the analysis repository	analyses/; handoff folder yaqubi_2026_axes_2026-10-18/scripts
+yaqubi_2026_supplements	identifier	Access terms of the Synapse raw data (syn52658339)	yaqubi_2026_axes_2026-10-18/README.md; yaqubi_synapse_2026-10-20/raw (empty)
+liharska_2025_supplement	version_or_retrieved	Download date of MOESM8 and MOESM12	liharska_living_vs_pm_2026-10-18/README.md and run_meta.json
+liharska_2025_supplement	ingest_script	s0_extract.py / s1_main.py are outside the analysis repository	analyses/; handoff folder liharska_living_vs_pm_2026-10-18
+collado_torres_2023_table_s4	ingest_script	s0_extract.py / s1_main.py are outside the analysis repository	analyses/; handoff folder liharska_living_vs_pm_2026-10-18
+hatano_2025_supplement	version_or_retrieved	Retrieval date; the file is absent from data/raw/40921414/supplement in the local checkout	data/raw/40921414; data/retrieval_log.json (no entry)
+dai_2021_supplement	version_or_retrieved	Retrieval date	data/raw/33841074 (no log); data/retrieval_log.json (no entry)
+li_2007_agonal_stress_lists	version_or_retrieved	Retrieval date and file name of Additional File 6	supplement.md SRC comment; data/raw (no folder for 17892578); data/retrieval_log.json
+li_2007_agonal_stress_lists	ingest_script	score_li2007_209.py (analyses/li2007_agonal_stress_scoring) is not in the analysis repository	analyses/
+romero_moreno_2024_supplement	identifier	DOI or PMID of Romero-Moreno et al. 2024 and download date	analyses/ph_and_confound_analyses/ph_pHindex_2026-10-03/README.md and what_are_the_pH_genes_meta.json; data/raw/107658
+tyssowski_2018_supplement	version_or_retrieved	Retrieval date	data/raw/tyssowski2018; data/retrieval_log.json
+ling_2024_snap_reference	version_or_retrieved	NeMO file URLs and download dates (fetch_log.json is on the compute host)	side-studies/coexpression/snap_sz/PLAN.md and snap_sz_meta.json
+smoking_signature_publications	version_or_retrieved	Download date and URL of the Huan 2016 supplement (ddw288)	analyses/h2/reference/huan2016; analyses/smoking_signature_2026-10-05/overlap_meta.json
+coexpression_module_lists_79_papers	version_or_retrieved	Download dates of the individual supplements	analyses/coexpression_modules_2026-10-08/README.md and BRIEF.md
+romero_moreno_2024_supplement	version_or_retrieved	Download date of media-3.xlsx	data/raw/107658/epmc; data/retrieval_log.json; ph_pHindex_2026-10-03/README.md
+list_18771015	identifier (DOI)	no DOI in data/retrieval_log.json for this PMID	data/retrieval_log.json
+list_42778699	identifier (DOI)	no DOI in data/retrieval_log.json for this PMID	data/retrieval_log.json
+list_42778699	version_or_retrieved	no entry/date in data/retrieval_log.json (list header gives source file and sha256 only)	data/retrieval_log.json
+derived_30468562	ingest_script	no list file matching this PMID in data/lists, no reproduce/ folder; the script that produced the derived list is not found	data/lists/30468562__*, data/reproduce/, data/gemma/, analyses/primary_lists.json
+derived_30468562	version_or_retrieved	no retrieval date or list header recorded in the analysis repository	data/lists, data/retrieval_log.json
+gemma_sc_de	version_or_retrieved	single retrieval date for the whole data/gemma folder not recorded (per-list dates only in list headers)	data/gemma/README.md, data/gemma/_stats.json, data/manifests/batch6_gemma.json
+libd_phase3_caudate_habenula_other	version_or_retrieved	retrieval date of the Benjamin supplement is in retrieval_log.json (list_36319771) but not tied to this use	data/retrieval_log.json
+psychad_RADC_donors_gemma	size	not measured	analyses/psychad_pseudobulk/_api
+smri_sncid_rawdata	used_for	"which manuscript tables derive from the SNCID downloads is not stated in MANIFEST headers (grep of ""sncid""/""stanley"" in figures/data/MANIFEST.tsv found only same_donors_pitt)"	figures/data/MANIFEST.tsv, supplementary_notes/*/data/MANIFEST.tsv
+smri_sncid_rawdata	can_redistribute	SMRI terms of use not recorded in the repository	data/stanley_sncid/README.md
+smri_sncid_rawdata	how_to_obtain	outcome of the 2026-09-30 RNA-seq request not recorded in the analysis repository folder	data/stanley_sncid/README.md
+lists_other_blood	per-study rows	group row only; per-study access not itemized	analyses/primary_lists.json, figures/data/MANIFEST.tsv
+lists_other_ipsc	per-study rows	group row only; per-study access not itemized	analyses/primary_lists.json, figures/data/MANIFEST.tsv
+lists_other_other	per-study rows / used_for	group row only; per-study access not itemized; which manuscript table uses these lists not traced (tissue class has no matching supplementary note identified)	analyses/primary_lists.json, figures/data/MANIFEST.tsv
+lists_other_brain	per-study rows / used_for	group row only; per-study access not itemized; which manuscript table uses these lists not traced (tissue class has no matching supplementary note identified)	analyses/primary_lists.json, figures/data/MANIFEST.tsv
+lists_other_lcl	per-study rows / used_for	group row only; per-study access not itemized; which manuscript table uses these lists not traced (tissue class has no matching supplementary note identified)	analyses/primary_lists.json, figures/data/MANIFEST.tsv
+ctrl_cmc_synapse	used_for / ingest_script	not ingested as far as found; the analysis repository reads the published list only	data/raw/<pmid>, data/lists
+ctrl_hbcc_dbgap_akula	used_for / ingest_script	not ingested as far as found; the analysis repository reads the published list only	data/raw/<pmid>, data/lists
+ctrl_ega_lindholm	used_for / ingest_script	not ingested as far as found; the analysis repository reads the published list only	data/raw/<pmid>, data/lists
+ctrl_nemo_ling	used_for / ingest_script	not ingested as far as found; the analysis repository reads the published list only	data/raw/<pmid>, data/lists
+ctrl_psychencode_ruzicka	used_for / ingest_script	not ingested as far as found; the analysis repository reads the published list only	data/raw/<pmid>, data/lists
+ctrl_dbgap_zhu	used_for / ingest_script	not ingested as far as found; the analysis repository reads the published list only	data/raw/<pmid>, data/lists

@@ -1,0 +1,13 @@
+# figure: manuscript_ph.md / supplement.md 'Lists from other brain diseases' (Extended Methods 4), re-scored at 10 or more lists and against the 383
+# script: null_overlap_sets.py and summarize.py of the analysis repository (run 2026-10-22), adapted from the script of the stored 5-or-more run
+# draws: rule A (top-L genes by P, L = the 72 schizophrenia list sizes permuted over 72 contrasts drawn without replacement), pool P1_disease (141 contrasts, 11 disease groups, schizophrenia excluded), 2,000 draws, seed 20261012 in 12 chunks: the same random stream as the stored 5-or-more run (check: K>=5 vs 2,422 reproduces its share and expectation, see validation row)
+# input: prepared draw inputs; sz_gene_counts_72.tsv sha256 dacfba3dd446 (n_lists >= 5: 2,422; >= 10: 107; in_recurrent_set: 383); draws_long.tsv sha256 6f21ee4b8c91
+# share = draw genes in the stated number of lists that are also in the SZ comparison set / draw genes in the stated number of lists (all, including genes outside the common universe, as the stored 5-or-more run). Expected = DE-prior stratified (20 equal-count strata of prior_n over the common genes), same as the stored 5-or-more run expected_share.
+# draws with no gene at the stated number of lists have no share; they are excluded from the medians and 2.5-97.5% ranges and counted in draws_with_no_gene_excluded. ratio = share / expected per draw. pooled_* = total overlap / total draw genes over draws (zero-gene draws contribute nothing).
+other_disease_genes_in_K_or_more	sz_comparison_set	genes_in_sz_set	draws	draws_with_no_gene_excluded	draw_genes_median	draw_genes_lo	draw_genes_hi	overlap_genes_median	share_lo	share_median	share_hi	expected_lo	expected_median	expected_hi	ratio_median	ratio_lo	ratio_hi	pooled_share	pooled_expected	draws_share_ge_expected
+>= 5 of 72	sz_5plus_2422	2422	2000	0	1495.5	1138.0	1866.0249999999999	552.0	0.3228	0.3713	0.4169	0.1723	0.1895	0.2053	1.96	1.73	2.19	0.3708	0.1891	1.0
+>= 5 of 72	sz_10plus_107	107	2000	0	1495.5	1138.0	1866.0249999999999	53.0	0.0253	0.0356	0.0456	0.0099	0.0115	0.0131	3.11	2.23	3.93	0.0356	0.0115	1.0
+>= 5 of 72	sz_383	383	2000	0	1495.5	1138.0	1866.0249999999999	144.0	0.0748	0.0965	0.117	0.0325	0.037	0.0414	2.62	2.07	3.14	0.0962	0.0369	1.0
+>= 10 of 72	sz_5plus_2422	2422	2000	1	15.0	4.0	37.0	11.0	0.4441	0.75	1.0	0.1876	0.2506	0.3073	2.99	1.77	4.28	0.7405	0.2481	0.996
+>= 10 of 72	sz_10plus_107	107	2000	1	15.0	4.0	37.0	2.0	0.0	0.1667	0.4286	0.0111	0.0195	0.0284	8.55	0.0	22.72	0.1751	0.0194	0.869
+>= 10 of 72	sz_383	383	2000	1	15.0	4.0	37.0	5.0	0.0528	0.3684	0.6667	0.0369	0.0584	0.0817	6.34	1.05	12.46	0.3739	0.0579	0.975

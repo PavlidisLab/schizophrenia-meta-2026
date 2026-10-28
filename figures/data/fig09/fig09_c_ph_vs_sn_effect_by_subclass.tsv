@@ -1,0 +1,35 @@
+# figure: fig09 panel c
+# script: core80_work_2026-10-16/P11/b/f9/ph_singlecell_v2.R and ph_singlecell_v1.R (copies of rerun_core80_2026-10-16/L05/single_nucleus/ph_singlecell_final.R with RG_PATH, GW_PATH, ENDRESZ_PATH and output paths edited), merged by fig09c_v2_core80.py, run 2026-10-17
+# population: core-80 base; ge10 = study_brain_ge10 (107 genes); 5plus columns = study_brain_ge5 (2,422 genes with a control-only pH Z); genome-wide = genes measured in the pH tables
+# input: P11/b/v2/run/work/axis_v2_tables/recurrent_genes_pH.tsv sha256 b583267694e3 and combined_controls_pH.tsv sha256 ee79b19aed58 (v2: pH columns replaced by pH axis v2; mk_v2_tables.py on the L05 recurrent_genes_pH.tsv)
+# input: rerun_core80_2026-10-16/L05/confounds_results/recurrent_genes_pH.tsv sha256 0cadc48df7f1 (v1); analyses/confounds/results/combined_controls_pH.tsv sha256 ebab86afedd3 (v1)
+# input: analyses/effect_sizes/data/endresz_DE_subclass_all_cohorts.tsv.gz (Endresz 2026 uniform voom-limma per cohort and subclass)
+# Pearson r between each gene's bulk control-only pH z and its single-nucleus SZ effect (Stouffer over the Endresz cohorts holding the subclass, weights sqrt N), per Endresz subclass
+# pH axis v2: ge10 negative in 23 of 24, median -0.249, range -0.664 to 0.207; ge5 negative in 21 of 24, median -0.076, range -0.277 to 0.047; genome-wide negative in 12 of 24, median -0.002, range -0.159 to 0.059
+# pH axis v1 (fork): ge10 negative in 23 of 24, median -0.288, range -0.648 to 0.110; ge5 negative in 24 of 24, median -0.114, range -0.278 to -0.001; genome-wide negative in 22 of 24, median -0.048, range -0.179 to 0.027
+# axis: unsuffixed = pH axis v2 (primary; inputs_ph_axis_v2/axis_v2_controls.tsv.gz sha256 2c72a9b279a2); *_axis_v1 = v1 fork
+subclass	n_genes_recurrent_universe	median_n_cohorts	r_ph_vs_sn_effect_5plus_universe	n_genes_genomewide	r_ph_vs_sn_effect_genomewide	n_genes_ge10_universe	median_n_cohorts_ge10	r_ph_vs_sn_effect_ge10_universe	n_genes_recurrent_universe_axis_v1	r_ph_vs_sn_effect_5plus_universe_axis_v1	n_genes_genomewide_axis_v1	r_ph_vs_sn_effect_genomewide_axis_v1	n_genes_ge10_universe_axis_v1	r_ph_vs_sn_effect_ge10_universe_axis_v1
+Astrocyte	2266	6	-0.189	13212	-0.052	102	6	-0.52	2261	-0.206	13065	-0.1	102	-0.498
+Chandelier	2023	7	-0.038	11373	0.047	82	6	-0.198	2018	-0.063	11277	-0.007	82	-0.195
+Endothelial	2111	4	-0.188	11035	-0.048	97	5	-0.616	2105	-0.146	10951	-0.034	97	-0.548
+L2/3 IT	2318	7	-0.026	14564	0.047	103	7	-0.283	2310	-0.081	14380	-0.019	103	-0.318
+L4 IT	2285	7	-0.019	13894	0.041	103	7	-0.289	2277	-0.057	13727	-0.01	103	-0.306
+L5 ET	1981	5	-0.176	11330	-0.143	79	5	-0.126	1976	-0.168	11225	-0.14	79	-0.092
+L5 IT	2290	7	-0.118	14034	-0.022	103	7	-0.382	2282	-0.155	13862	-0.068	103	-0.386
+L5/6 NP	2139	7	0.034	12384	0.038	88	6.5	-0.07	2132	-0.012	12251	-0.012	88	-0.14
+L6 CT	2178	7	-0.124	12702	-0.03	92	6	-0.11	2171	-0.165	12569	-0.071	92	-0.15
+L6 IT	2265	7	-0.075	13552	-0.025	101	7	-0.344	2257	-0.127	13392	-0.072	101	-0.359
+L6 IT Car3	2115	7	-0.112	12273	-0.048	87	6	-0.265	2109	-0.156	12143	-0.094	87	-0.293
+L6b	2194	7	0.047	12782	0.059	94	7	-0.113	2187	-0.001	12641	0.027	94	-0.133
+Lamp5	2206	7	-0.026	12998	0.028	94	7	-0.15	2199	-0.078	12849	-0.04	94	-0.211
+Lamp5 Lhx6	2089	7	-0.078	12120	-0.011	85	6	-0.373	2082	-0.121	12002	-0.066	85	-0.423
+Microglia-PVM	2100	4	-0.109	11472	0.008	94	4	-0.462	2097	-0.088	11378	0.002	94	-0.407
+OPC	2231	6	-0.205	12706	-0.077	100	5	-0.599	2225	-0.193	12578	-0.097	100	-0.597
+Oligodendrocyte	2274	6	-0.277	13292	-0.159	102	5	-0.637	2267	-0.278	13150	-0.179	102	-0.607
+Pax6	2079	7	-0.064	11859	0.001	86	6	-0.174	2075	-0.109	11749	-0.055	86	-0.221
+Pvalb	2277	7	0.013	13769	0.056	102	7	-0.128	2269	-0.053	13600	-0.021	102	-0.18
+Sncg	2102	7	-0.09	12090	-0.006	90	7	-0.122	2095	-0.137	11981	-0.068	90	-0.17
+Sst	2240	7	-0.067	13331	0.001	99	7	-0.233	2232	-0.12	13168	-0.069	99	-0.284
+Sst Chodl	1443	5	-0.029	6745	-0.005	49	6	0.207	1438	-0.04	6709	-0.022	49	0.11
+VLMC	2264	4	-0.126	12755	0.003	103	4	-0.664	2257	-0.106	12629	-0.003	103	-0.648
+Vip	2273	7	-0.014	13699	0.04	102	7	-0.176	2265	-0.076	13538	-0.035	102	-0.207

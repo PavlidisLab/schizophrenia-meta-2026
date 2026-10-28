@@ -1,0 +1,24 @@
+{
+ "seed": 20260930,
+ "fdr": 0.05,
+ "abs_log2fc": 1.0,
+ "date": "2026-09-30",
+ "gemma_host": "https://gemma2.msl.ubc.ca/rest/v2",
+ "auth": "basic auth as administrator",
+ "experiments_file": "experiments_all.tsv",
+ "experiments_sha256": "6ef464db4e0bc0b605e48bff9b07804f0970bbe0363040260f37dc8ac6c31717",
+ "external_prior_sha256": "4317ecc30c7e7f1ca9c55f20be8fe734a412eb316336eacdc1896bffccebac67",
+ "hgnc_sha256": "69bb5722d5a42bb355580deb2c9f197ce3d7f7d13807173b9674a7db65e52191",
+ "n_experiments": 8762,
+ "n_contrasts_used": 8712,
+ "n_skipped": 50,
+ "skipped_reasons": {
+  "result set has no rows": 17,
+  "no single-factor categorical contrast": 27,
+  "result set has rows but no columns for the picked contrast": 6
+ },
+ "n_used_zero_de": 1914,
+ "n_genes": 63865,
+ "rows_multigene": 8333838,
+ "rows_no_gene_id": 58196248
+}

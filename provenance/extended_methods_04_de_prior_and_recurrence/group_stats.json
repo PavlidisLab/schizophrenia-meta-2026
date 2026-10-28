@@ -1,0 +1,742 @@
+{
+ "1_global": {
+  "experiments_in_group_file": 8859,
+  "not_in_experiments_all (private)": 97,
+  "experiments": 8762,
+  "not_fetched": 0,
+  "skipped": {
+   "result set has no rows": 17,
+   "no single-factor categorical contrast": 27,
+   "result set has rows but no columns for the picked contrast": 6
+  },
+  "contrasts_used": 8712,
+  "contrasts_zero_de": 1914,
+  "genes": 63865,
+  "external_genes": 16872,
+  "shared_genes": 16872,
+  "ours_outside_external": 46993,
+  "external_not_in_ours": 0,
+  "spearman_n_de_total": 0.866362123383584,
+  "spearman_n_de_4fold_vs_external_n_de_total": 0.9926844381155421,
+  "spearman_frac_de_vs_external_n_de_total": 0.9344078219643851,
+  "spearman_de_prior_rank": 0.801737421644522,
+  "spearman_full_rank": 0.753629428533999,
+  "external_n_contrasts_used": 5785,
+  "locus_groups": {
+   "protein-coding gene": 19240,
+   "pseudogene": 1197,
+   "non-coding RNA": 8551,
+   "other": 534,
+   "not in HGNC": 34343
+  },
+  "named": {
+   "SMPD4": {
+    "n_tested": 4965,
+    "n_de": 109,
+    "n_de_4fold": 14,
+    "de_prior_rank": 37525.0,
+    "external_n_de_total": null
+   },
+   "WBP1": {
+    "n_tested": 3966,
+    "n_de": 185,
+    "n_de_4fold": 27,
+    "de_prior_rank": 41784.0,
+    "external_n_de_total": null
+   },
+   "TNIP2": {
+    "n_tested": 6255,
+    "n_de": 213,
+    "n_de_4fold": 32,
+    "de_prior_rank": 41729.0,
+    "external_n_de_total": null
+   },
+   "SNRPN": {
+    "n_tested": 3676,
+    "n_de": 289,
+    "n_de_4fold": 96,
+    "de_prior_rank": 50453.0,
+    "external_n_de_total": null
+   },
+   "SNURF": {
+    "n_tested": 3529,
+    "n_de": 286,
+    "n_de_4fold": 114,
+    "de_prior_rank": 47604.0,
+    "external_n_de_total": null
+   },
+   "XIST": {
+    "n_tested": 5867,
+    "n_de": 622,
+    "n_de_4fold": 463,
+    "de_prior_rank": 63820.0,
+    "external_n_de_total": null
+   }
+  }
+ },
+ "1_global_no_microarray": {
+  "experiments_in_group_file": 4181,
+  "not_in_experiments_all (private)": 91,
+  "experiments": 4090,
+  "not_fetched": 0,
+  "skipped": {
+   "result set has no rows": 11,
+   "no single-factor categorical contrast": 16,
+   "result set has rows but no columns for the picked contrast": 2
+  },
+  "contrasts_used": 4061,
+  "contrasts_zero_de": 730,
+  "genes": 43154,
+  "external_genes": 16872,
+  "shared_genes": 16872,
+  "ours_outside_external": 26282,
+  "external_not_in_ours": 0,
+  "spearman_n_de_total": 0.904993996617397,
+  "spearman_n_de_4fold_vs_external_n_de_total": 0.9924491117493215,
+  "spearman_frac_de_vs_external_n_de_total": 0.960085376414559,
+  "spearman_de_prior_rank": 0.8727993218630177,
+  "spearman_full_rank": 0.8256051693741124,
+  "external_n_contrasts_used": 2791,
+  "locus_groups": {
+   "protein-coding gene": 19231,
+   "other": 528,
+   "non-coding RNA": 8297,
+   "pseudogene": 1112,
+   "not in HGNC": 13986
+  },
+  "named": {
+   "SMPD4": {
+    "n_tested": 3959,
+    "n_de": 90,
+    "n_de_4fold": 10,
+    "de_prior_rank": 16285.0,
+    "external_n_de_total": null
+   },
+   "WBP1": {
+    "n_tested": 3964,
+    "n_de": 184,
+    "n_de_4fold": 26,
+    "de_prior_rank": 26456.0,
+    "external_n_de_total": null
+   },
+   "TNIP2": {
+    "n_tested": 3957,
+    "n_de": 163,
+    "n_de_4fold": 27,
+    "de_prior_rank": 22898.0,
+    "external_n_de_total": null
+   },
+   "SNRPN": {
+    "n_tested": 3669,
+    "n_de": 289,
+    "n_de_4fold": 96,
+    "de_prior_rank": 37008.0,
+    "external_n_de_total": null
+   },
+   "SNURF": {
+    "n_tested": 3529,
+    "n_de": 286,
+    "n_de_4fold": 114,
+    "de_prior_rank": 34380.0,
+    "external_n_de_total": null
+   },
+   "XIST": {
+    "n_tested": 3005,
+    "n_de": 325,
+    "n_de_4fold": 250,
+    "de_prior_rank": 43106.0,
+    "external_n_de_total": null
+   }
+  }
+ },
+ "2_brain_postmortem": {
+  "experiments_in_group_file": 261,
+  "not_in_experiments_all (private)": 5,
+  "experiments": 256,
+  "not_fetched": 0,
+  "skipped": {
+   "no single-factor categorical contrast": 9
+  },
+  "contrasts_used": 247,
+  "contrasts_zero_de": 98,
+  "genes": 42298,
+  "external_genes": 16872,
+  "shared_genes": 16872,
+  "ours_outside_external": 25426,
+  "external_not_in_ours": 0,
+  "spearman_n_de_total": 0.707717495520466,
+  "spearman_n_de_4fold_vs_external_n_de_total": 0.8636786861276494,
+  "spearman_frac_de_vs_external_n_de_total": 0.7301498824682521,
+  "spearman_de_prior_rank": 0.6398629200830412,
+  "spearman_full_rank": 0.6016327672738778,
+  "external_n_contrasts_used": 112,
+  "locus_groups": {
+   "protein-coding gene": 19230,
+   "non-coding RNA": 8478,
+   "pseudogene": 1176,
+   "not in HGNC": 13107,
+   "other": 307
+  },
+  "named": {
+   "SMPD4": {
+    "n_tested": 147,
+    "n_de": 1,
+    "n_de_4fold": 0,
+    "de_prior_rank": 7177.0,
+    "external_n_de_total": null
+   },
+   "WBP1": {
+    "n_tested": 117,
+    "n_de": 3,
+    "n_de_4fold": 2,
+    "de_prior_rank": 18482.5,
+    "external_n_de_total": null
+   },
+   "TNIP2": {
+    "n_tested": 170,
+    "n_de": 7,
+    "n_de_4fold": 3,
+    "de_prior_rank": 28284.0,
+    "external_n_de_total": null
+   },
+   "SNRPN": {
+    "n_tested": 122,
+    "n_de": 6,
+    "n_de_4fold": 1,
+    "de_prior_rank": 27135.5,
+    "external_n_de_total": null
+   },
+   "SNURF": {
+    "n_tested": 120,
+    "n_de": 7,
+    "n_de_4fold": 3,
+    "de_prior_rank": 30724.0,
+    "external_n_de_total": null
+   },
+   "XIST": {
+    "n_tested": 175,
+    "n_de": 23,
+    "n_de_4fold": 22,
+    "de_prior_rank": 42298.0,
+    "external_n_de_total": null
+   }
+  }
+ },
+ "2_brain_postmortem_no_microarray": {
+  "experiments_in_group_file": 139,
+  "not_in_experiments_all (private)": 5,
+  "experiments": 134,
+  "not_fetched": 0,
+  "skipped": {
+   "no single-factor categorical contrast": 7
+  },
+  "contrasts_used": 127,
+  "contrasts_zero_de": 44,
+  "genes": 41892,
+  "external_genes": 16872,
+  "shared_genes": 16872,
+  "ours_outside_external": 25020,
+  "external_not_in_ours": 0,
+  "spearman_n_de_total": 0.7143165900371142,
+  "spearman_n_de_4fold_vs_external_n_de_total": 0.8386653991589489,
+  "spearman_frac_de_vs_external_n_de_total": 0.7053591255390497,
+  "spearman_de_prior_rank": 0.6409188979898534,
+  "spearman_full_rank": 0.5921973171186743,
+  "external_n_contrasts_used": 55,
+  "locus_groups": {
+   "protein-coding gene": 19220,
+   "not in HGNC": 13030,
+   "non-coding RNA": 8238,
+   "pseudogene": 1103,
+   "other": 301
+  },
+  "named": {
+   "SMPD4": {
+    "n_tested": 124,
+    "n_de": 1,
+    "n_de_4fold": 0,
+    "de_prior_rank": 7563.5,
+    "external_n_de_total": null
+   },
+   "WBP1": {
+    "n_tested": 117,
+    "n_de": 3,
+    "n_de_4fold": 2,
+    "de_prior_rank": 20031.5,
+    "external_n_de_total": null
+   },
+   "TNIP2": {
+    "n_tested": 119,
+    "n_de": 7,
+    "n_de_4fold": 3,
+    "de_prior_rank": 32522.5,
+    "external_n_de_total": null
+   },
+   "SNRPN": {
+    "n_tested": 122,
+    "n_de": 6,
+    "n_de_4fold": 1,
+    "de_prior_rank": 31191.5,
+    "external_n_de_total": null
+   },
+   "SNURF": {
+    "n_tested": 120,
+    "n_de": 7,
+    "n_de_4fold": 3,
+    "de_prior_rank": 35071.0,
+    "external_n_de_total": null
+   },
+   "XIST": {
+    "n_tested": 101,
+    "n_de": 11,
+    "n_de_4fold": 11,
+    "de_prior_rank": 41883.0,
+    "external_n_de_total": null
+   }
+  }
+ },
+ "2b_brain_postmortem_no_sz_banks": {
+  "experiments_in_group_file": 256,
+  "not_in_experiments_all (private)": 5,
+  "experiments": 251,
+  "not_fetched": 0,
+  "skipped": {
+   "no single-factor categorical contrast": 9
+  },
+  "contrasts_used": 242,
+  "contrasts_zero_de": 96,
+  "genes": 42297,
+  "external_genes": 16872,
+  "shared_genes": 16872,
+  "ours_outside_external": 25425,
+  "external_not_in_ours": 0,
+  "spearman_n_de_total": 0.707954452479711,
+  "spearman_n_de_4fold_vs_external_n_de_total": 0.8638567883267855,
+  "spearman_frac_de_vs_external_n_de_total": 0.7309109661700655,
+  "spearman_de_prior_rank": 0.6402446766473026,
+  "spearman_full_rank": 0.6028784135804938,
+  "external_n_contrasts_used": 108,
+  "locus_groups": {
+   "protein-coding gene": 19230,
+   "non-coding RNA": 8478,
+   "pseudogene": 1175,
+   "not in HGNC": 13107,
+   "other": 307
+  },
+  "named": {
+   "SMPD4": {
+    "n_tested": 147,
+    "n_de": 1,
+    "n_de_4fold": 0,
+    "de_prior_rank": 7176.5,
+    "external_n_de_total": null
+   },
+   "WBP1": {
+    "n_tested": 117,
+    "n_de": 3,
+    "n_de_4fold": 2,
+    "de_prior_rank": 18481.5,
+    "external_n_de_total": null
+   },
+   "TNIP2": {
+    "n_tested": 169,
+    "n_de": 7,
+    "n_de_4fold": 3,
+    "de_prior_rank": 28283.0,
+    "external_n_de_total": null
+   },
+   "SNRPN": {
+    "n_tested": 122,
+    "n_de": 6,
+    "n_de_4fold": 1,
+    "de_prior_rank": 27134.5,
+    "external_n_de_total": null
+   },
+   "SNURF": {
+    "n_tested": 120,
+    "n_de": 7,
+    "n_de_4fold": 3,
+    "de_prior_rank": 30723.0,
+    "external_n_de_total": null
+   },
+   "XIST": {
+    "n_tested": 171,
+    "n_de": 20,
+    "n_de_4fold": 20,
+    "de_prior_rank": 42296.0,
+    "external_n_de_total": null
+   }
+  }
+ },
+ "2b_brain_postmortem_no_sz_banks_no_microarray": {
+  "experiments_in_group_file": 139,
+  "not_in_experiments_all (private)": 5,
+  "experiments": 134,
+  "not_fetched": 0,
+  "skipped": {
+   "no single-factor categorical contrast": 7
+  },
+  "contrasts_used": 127,
+  "contrasts_zero_de": 44,
+  "genes": 41892,
+  "external_genes": 16872,
+  "shared_genes": 16872,
+  "ours_outside_external": 25020,
+  "external_not_in_ours": 0,
+  "spearman_n_de_total": 0.7143165900371142,
+  "spearman_n_de_4fold_vs_external_n_de_total": 0.8386653991589489,
+  "spearman_frac_de_vs_external_n_de_total": 0.7053591255390497,
+  "spearman_de_prior_rank": 0.6409188979898534,
+  "spearman_full_rank": 0.5921973171186743,
+  "external_n_contrasts_used": 55,
+  "locus_groups": {
+   "protein-coding gene": 19220,
+   "not in HGNC": 13030,
+   "non-coding RNA": 8238,
+   "pseudogene": 1103,
+   "other": 301
+  },
+  "named": {
+   "SMPD4": {
+    "n_tested": 124,
+    "n_de": 1,
+    "n_de_4fold": 0,
+    "de_prior_rank": 7563.5,
+    "external_n_de_total": null
+   },
+   "WBP1": {
+    "n_tested": 117,
+    "n_de": 3,
+    "n_de_4fold": 2,
+    "de_prior_rank": 20031.5,
+    "external_n_de_total": null
+   },
+   "TNIP2": {
+    "n_tested": 119,
+    "n_de": 7,
+    "n_de_4fold": 3,
+    "de_prior_rank": 32522.5,
+    "external_n_de_total": null
+   },
+   "SNRPN": {
+    "n_tested": 122,
+    "n_de": 6,
+    "n_de_4fold": 1,
+    "de_prior_rank": 31191.5,
+    "external_n_de_total": null
+   },
+   "SNURF": {
+    "n_tested": 120,
+    "n_de": 7,
+    "n_de_4fold": 3,
+    "de_prior_rank": 35071.0,
+    "external_n_de_total": null
+   },
+   "XIST": {
+    "n_tested": 101,
+    "n_de": 11,
+    "n_de_4fold": 11,
+    "de_prior_rank": 41883.0,
+    "external_n_de_total": null
+   }
+  }
+ },
+ "3_blood": {
+  "experiments_in_group_file": 793,
+  "not_in_experiments_all (private)": 3,
+  "experiments": 790,
+  "not_fetched": 0,
+  "skipped": {
+   "result set has rows but no columns for the picked contrast": 2,
+   "result set has no rows": 1,
+   "no single-factor categorical contrast": 3
+  },
+  "contrasts_used": 784,
+  "contrasts_zero_de": 275,
+  "genes": 43589,
+  "external_genes": 16872,
+  "shared_genes": 16872,
+  "ours_outside_external": 26717,
+  "external_not_in_ours": 0,
+  "spearman_n_de_total": 0.7405022407604535,
+  "spearman_n_de_4fold_vs_external_n_de_total": 0.8274683664845246,
+  "spearman_frac_de_vs_external_n_de_total": 0.7473523794969862,
+  "spearman_de_prior_rank": 0.6924851757563408,
+  "spearman_full_rank": 0.5993166397384505,
+  "external_n_contrasts_used": 389,
+  "locus_groups": {
+   "non-coding RNA": 8549,
+   "protein-coding gene": 19239,
+   "pseudogene": 1192,
+   "not in HGNC": 14075,
+   "other": 534
+  },
+  "named": {
+   "SMPD4": {
+    "n_tested": 258,
+    "n_de": 5,
+    "n_de_4fold": 2,
+    "de_prior_rank": 22309.0,
+    "external_n_de_total": null
+   },
+   "WBP1": {
+    "n_tested": 132,
+    "n_de": 4,
+    "n_de_4fold": 2,
+    "de_prior_rank": 19589.0,
+    "external_n_de_total": null
+   },
+   "TNIP2": {
+    "n_tested": 439,
+    "n_de": 11,
+    "n_de_4fold": 2,
+    "de_prior_rank": 27325.0,
+    "external_n_de_total": null
+   },
+   "SNRPN": {
+    "n_tested": 133,
+    "n_de": 7,
+    "n_de_4fold": 3,
+    "de_prior_rank": 21721.0,
+    "external_n_de_total": null
+   },
+   "SNURF": {
+    "n_tested": 133,
+    "n_de": 6,
+    "n_de_4fold": 3,
+    "de_prior_rank": 21003.0,
+    "external_n_de_total": null
+   },
+   "XIST": {
+    "n_tested": 500,
+    "n_de": 45,
+    "n_de_4fold": 33,
+    "de_prior_rank": 43478.0,
+    "external_n_de_total": null
+   }
+  }
+ },
+ "3_blood_no_microarray": {
+  "experiments_in_group_file": 141,
+  "not_in_experiments_all (private)": 3,
+  "experiments": 138,
+  "not_fetched": 0,
+  "skipped": {
+   "no single-factor categorical contrast": 1
+  },
+  "contrasts_used": 137,
+  "contrasts_zero_de": 33,
+  "genes": 43142,
+  "external_genes": 16872,
+  "shared_genes": 16872,
+  "ours_outside_external": 26270,
+  "external_not_in_ours": 0,
+  "spearman_n_de_total": 0.6123465574027435,
+  "spearman_n_de_4fold_vs_external_n_de_total": 0.7536517299700123,
+  "spearman_frac_de_vs_external_n_de_total": 0.645419687455109,
+  "spearman_de_prior_rank": 0.596227092112536,
+  "spearman_full_rank": 0.5694027453191581,
+  "external_n_contrasts_used": 77,
+  "locus_groups": {
+   "other": 528,
+   "protein-coding gene": 19230,
+   "pseudogene": 1110,
+   "not in HGNC": 13984,
+   "non-coding RNA": 8290
+  },
+  "named": {
+   "SMPD4": {
+    "n_tested": 132,
+    "n_de": 3,
+    "n_de_4fold": 1,
+    "de_prior_rank": 20467.0,
+    "external_n_de_total": null
+   },
+   "WBP1": {
+    "n_tested": 132,
+    "n_de": 4,
+    "n_de_4fold": 2,
+    "de_prior_rank": 24521.0,
+    "external_n_de_total": null
+   },
+   "TNIP2": {
+    "n_tested": 133,
+    "n_de": 7,
+    "n_de_4fold": 1,
+    "de_prior_rank": 32920.0,
+    "external_n_de_total": null
+   },
+   "SNRPN": {
+    "n_tested": 133,
+    "n_de": 7,
+    "n_de_4fold": 3,
+    "de_prior_rank": 28313.0,
+    "external_n_de_total": null
+   },
+   "SNURF": {
+    "n_tested": 133,
+    "n_de": 6,
+    "n_de_4fold": 3,
+    "de_prior_rank": 26965.0,
+    "external_n_de_total": null
+   },
+   "XIST": {
+    "n_tested": 103,
+    "n_de": 6,
+    "n_de_4fold": 5,
+    "de_prior_rank": 43079.0,
+    "external_n_de_total": null
+   }
+  }
+ },
+ "4_global_minus_brain_blood": {
+  "experiments_in_group_file": 7805,
+  "not_in_experiments_all (private)": 89,
+  "experiments": 7716,
+  "not_fetched": 0,
+  "skipped": {
+   "result set has no rows": 16,
+   "no single-factor categorical contrast": 15,
+   "result set has rows but no columns for the picked contrast": 4
+  },
+  "contrasts_used": 7681,
+  "contrasts_zero_de": 1541,
+  "genes": 63865,
+  "external_genes": 16872,
+  "shared_genes": 16872,
+  "ours_outside_external": 46993,
+  "external_not_in_ours": 0,
+  "spearman_n_de_total": 0.8685484792407833,
+  "spearman_n_de_4fold_vs_external_n_de_total": 0.9922855688859308,
+  "spearman_frac_de_vs_external_n_de_total": 0.9375186676872348,
+  "spearman_de_prior_rank": 0.807915700340831,
+  "spearman_full_rank": 0.7588211370622358,
+  "external_n_contrasts_used": 5284,
+  "locus_groups": {
+   "protein-coding gene": 19240,
+   "pseudogene": 1197,
+   "non-coding RNA": 8551,
+   "other": 534,
+   "not in HGNC": 34343
+  },
+  "named": {
+   "SMPD4": {
+    "n_tested": 4560,
+    "n_de": 103,
+    "n_de_4fold": 12,
+    "de_prior_rank": 37638.0,
+    "external_n_de_total": null
+   },
+   "WBP1": {
+    "n_tested": 3717,
+    "n_de": 178,
+    "n_de_4fold": 23,
+    "de_prior_rank": 42300.0,
+    "external_n_de_total": null
+   },
+   "TNIP2": {
+    "n_tested": 5646,
+    "n_de": 195,
+    "n_de_4fold": 27,
+    "de_prior_rank": 41512.0,
+    "external_n_de_total": null
+   },
+   "SNRPN": {
+    "n_tested": 3421,
+    "n_de": 276,
+    "n_de_4fold": 92,
+    "de_prior_rank": 51373.0,
+    "external_n_de_total": null
+   },
+   "SNURF": {
+    "n_tested": 3276,
+    "n_de": 273,
+    "n_de_4fold": 108,
+    "de_prior_rank": 48405.0,
+    "external_n_de_total": null
+   },
+   "XIST": {
+    "n_tested": 5192,
+    "n_de": 554,
+    "n_de_4fold": 408,
+    "de_prior_rank": 63813.0,
+    "external_n_de_total": null
+   }
+  }
+ },
+ "4_global_minus_brain_blood_no_microarray": {
+  "experiments_in_group_file": 3901,
+  "not_in_experiments_all (private)": 83,
+  "experiments": 3818,
+  "not_fetched": 0,
+  "skipped": {
+   "result set has no rows": 11,
+   "no single-factor categorical contrast": 8,
+   "result set has rows but no columns for the picked contrast": 2
+  },
+  "contrasts_used": 3797,
+  "contrasts_zero_de": 653,
+  "genes": 43154,
+  "external_genes": 16872,
+  "shared_genes": 16872,
+  "ours_outside_external": 26282,
+  "external_not_in_ours": 0,
+  "spearman_n_de_total": 0.9055718498952376,
+  "spearman_n_de_4fold_vs_external_n_de_total": 0.99215553220628,
+  "spearman_frac_de_vs_external_n_de_total": 0.9602657636164247,
+  "spearman_de_prior_rank": 0.8750631040530295,
+  "spearman_full_rank": 0.8333203475855994,
+  "external_n_contrasts_used": 2659,
+  "locus_groups": {
+   "protein-coding gene": 19231,
+   "other": 528,
+   "non-coding RNA": 8297,
+   "pseudogene": 1112,
+   "not in HGNC": 13986
+  },
+  "named": {
+   "SMPD4": {
+    "n_tested": 3703,
+    "n_de": 86,
+    "n_de_4fold": 9,
+    "de_prior_rank": 16462.0,
+    "external_n_de_total": null
+   },
+   "WBP1": {
+    "n_tested": 3715,
+    "n_de": 177,
+    "n_de_4fold": 22,
+    "de_prior_rank": 26890.0,
+    "external_n_de_total": null
+   },
+   "TNIP2": {
+    "n_tested": 3705,
+    "n_de": 149,
+    "n_de_4fold": 23,
+    "de_prior_rank": 22188.0,
+    "external_n_de_total": null
+   },
+   "SNRPN": {
+    "n_tested": 3414,
+    "n_de": 276,
+    "n_de_4fold": 92,
+    "de_prior_rank": 37281.0,
+    "external_n_de_total": null
+   },
+   "SNURF": {
+    "n_tested": 3276,
+    "n_de": 273,
+    "n_de_4fold": 108,
+    "de_prior_rank": 34620.0,
+    "external_n_de_total": null
+   },
+   "XIST": {
+    "n_tested": 2801,
+    "n_de": 308,
+    "n_de_4fold": 234,
+    "de_prior_rank": 43091.0,
+    "external_n_de_total": null
+   }
+  }
+ }
+}

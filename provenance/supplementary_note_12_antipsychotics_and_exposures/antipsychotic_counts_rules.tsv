@@ -1,0 +1,9 @@
+# script: f_misc_checks.py part 1
+# input: core80_sweep_2026-10-18/G5/new_files/antipsychotic_record_counts_core80.tsv sha256 793d94c62c09
+# clusters: 5 named (stanley, cmc+mssm+pitt+libd, aus, harvard, pritzker) + 13 independent studies = 18; the 7 multi-bank studies sit in no cluster and are left out of the cluster count (the studies are still counted)
+rule	n_studies	n_clusters	of_n_studies	of_n_clusters
+strict: class testable (rule of counts.tsv)	10	6	80	18
+strict + Chen 2013 (GSE35977, the dataset the test was run in)	11	7	80	18
+strict + testable_provisional (Table 4 text only)	11	6	80	18
+strict + Chen 2013 + provisional	12	7	80	18
+any per-sample record (testable* + record_per_sample_not_testable + record_in_article_table_expression_public_not_counted)	28	11	80	18

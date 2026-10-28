@@ -1,0 +1,34 @@
+# run 2026-10-23: schizophrenia-related experiments excluded from every group before counting (the 114 picks flagged in_sz_corpus or held_out in scan176_contrasts.tsv; for the all-contrasts rows the 116 experiments flagged in either scan176_contrasts.tsv or all_contrasts_scored_public.tsv)
+# script: cq_ra.py (= build_calibrated_panels.py as run for the 383 genes, plus the exclusion and count prints; RA_EXCLUDE_SZ=1); input scored_g383.npz from out/full shards
+# claim: Extended Fig. 11 panels a and c under the calibrated per-contrast rule (209 genes; hit = z of the 209 above the 97.5th percentile of the contrast's own null of 200 decile-matched comparison sets, and AUROC above 0.5)
+# script: analyses/gemma_scan_null_check_2026-10-12/calibrated_panels/build_calibrated_panels.py (prepare_inputs.py, score_grouped.py on frink)
+# source sha256 (first 12): scored.npz c2e0239ffca8; sets_indep.tsv 1f5fcb115629; contrasts_to_score.tsv 797da63a95f4; scan176_contrasts.tsv 1c71150f2205; all_contrasts_scored_public.tsv ff71aa122135; coi_scored.tsv c5a92fa053c1; flagged_candidates_classified.tsv 8eb7717b77e7
+# date: 2026-10-23
+# value = share (or mean per-set rate for comparison-set rows); lo, hi = Wilson 95% (or 2.5th and 97.5th percentile of per-set rates for comparison-set rows)
+quantity	k	n	value	lo	hi	note
+comparison sets, per-set hit rate, Postmortem brain		244	0.029283	0.00819672131147541	0.06147540983606557	mean over 200 sets; lo, hi = 2.5th and 97.5th percentile of per-set rates; min 0.0000 max 0.0861
+comparison sets, per-set hit rate, Other brain		104	0.029471	0.0	0.0673076923076923	mean over 200 sets; lo, hi = 2.5th and 97.5th percentile of per-set rates; min 0.0000 max 0.0962
+comparison sets, per-set hit rate, Other tissues		3140	0.029234	0.0159156050955414	0.05514331210191084	mean over 200 sets; lo, hi = 2.5th and 97.5th percentile of per-set rates; min 0.0140 max 0.0758
+comparison sets, per-set hit rate, Cell lines / in vitro		4332	0.029221	0.015223915050784857	0.05015581717451525	mean over 200 sets; lo, hi = 2.5th and 97.5th percentile of per-set rates; min 0.0134 max 0.0693
+comparison sets, per-set hit rate, Blood		767	0.029518	0.00909387222946545	0.07317470664928295	mean over 200 sets; lo, hi = 2.5th and 97.5th percentile of per-set rates; min 0.0052 max 0.1056
+comparison sets reaching the 209 postmortem-brain share	0	200	0			sets whose per-set brain rate is >= the 209 share
+all tissues: all scored contrasts, pooled	4110	32828	0.1252	0.12166182527393966	0.12882188485181928	8506 experiments
+all tissues: mean over experiments of the share of their contrasts that are hits		8506	0.13309			experiments with a scored picked contrast
+all tissues: picked contrast per experiment	1138	8506	0.13379	0.12671851421457367	0.14118794090533218	is_pick of all_contrasts_scored_public.tsv
+postmortem brain: all scored contrasts, pooled	245	576	0.42535	0.3855978280955862	0.46608576802752955	244 experiments
+postmortem brain: mean over experiments of the share of their contrasts that are hits		244	0.43858			experiments with a scored picked contrast
+postmortem brain: picked contrast per experiment	110	244	0.45082	0.38963029603625354	0.5135336051595716	is_pick of all_contrasts_scored_public.tsv
+Other brain: all scored contrasts, pooled	104	292	0.35616	0.3034329588384685	0.41263117795412224	104 experiments
+Other brain: mean over experiments of the share of their contrasts that are hits		104	0.31838			experiments with a scored picked contrast
+Other brain: picked contrast per experiment	35	104	0.33654	0.2529886379944444	0.43173372803525933	is_pick of all_contrasts_scored_public.tsv
+Other tissues: all scored contrasts, pooled	1644	11651	0.1411	0.13490069945373687	0.14754342220120217	3110 experiments
+Other tissues: mean over experiments of the share of their contrasts that are hits		3110	0.14876			experiments with a scored picked contrast
+Other tissues: picked contrast per experiment	459	3110	0.14759	0.13555753387144434	0.16048883555819396	is_pick of all_contrasts_scored_public.tsv
+Cell lines / in vitro: all scored contrasts, pooled	1881	17742	0.10602	0.10157452772305671	0.11063527182953638	4284 experiments
+Cell lines / in vitro: mean over experiments of the share of their contrasts that are hits		4284	0.10441			experiments with a scored picked contrast
+Cell lines / in vitro: picked contrast per experiment	443	4284	0.10341	0.094642532119531	0.11288413774793579	is_pick of all_contrasts_scored_public.tsv
+Blood: all scored contrasts, pooled	236	2567	0.091936	0.08136029296960554	0.10373142368893898	764 experiments
+Blood: mean over experiments of the share of their contrasts that are hits		764	0.10734			experiments with a scored picked contrast
+Blood: picked contrast per experiment	91	764	0.11911	0.09802524083495895	0.14400578878938183	is_pick of all_contrasts_scored_public.tsv
+postmortem brain, sex contrasts (all candidate contrasts with condition class sex)	40	91	0.43956	0.34208833898116514	0.5419286286008322	60 experiments; mean over experiments 0.4231
+postmortem brain, sex contrasts that are the picked contrast	14	28	0.5			

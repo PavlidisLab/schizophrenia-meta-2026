@@ -1,0 +1,9 @@
+# 2026-10-21. Cohort clusters of the seven studies that pool donors from several banks (banks from corpus/lineage.json node field banks; checked against the papers: Maycox 2009, Mendizabal 2019 Table S2, Pai 2019 Supp. Data 1, Saetre 2007 Methods, Mendez-Victoriano 2026 Methods). A bank outside the named lanes (Charing Cross, Dallas, Miami, Sepulveda, Maudsley) gives the study its own one-study cluster. Rule in code/patch_rec.py (cluster_set).
+pmid	label	lineage_banks	cohort_clusters
+17822540	Saetre 2007	brain_other+harvard+stanley	brain_other:17822540; harvard; stanley
+19255580	Maycox 2009	brain_other+harvard	brain_other:19255580; harvard
+31053723	Pai 2019	brain_other+harvard+pitt	brain_other:31053723; cmc+mssm+pitt+libd; harvard
+31288836	Mendizabal 2019	brain_other+harvard	brain_other:31288836; harvard
+38781388	Ruzicka 2024	mssm+harvard	cmc+mssm+pitt+libd; harvard
+41567988	Mendez-Victoriano 2026	stanley+aus	aus; stanley
+42778699	Lee 2026 (PsychAD)	mssm+cmc	cmc+mssm+pitt+libd

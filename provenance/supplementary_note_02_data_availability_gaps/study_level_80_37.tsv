@@ -1,0 +1,117 @@
+# built by build_eligible_fraction_80_37.py; inputs supp_table3_data_included.tsv sha256 9e8f4064436f; supp_table4_data_needed.tsv 1c5f447731da; base81.tsv 51ace5bfc13b; study_level.tsv a6537b92948d
+table	study	pmid	eligible	cases	controls	size_source
+4	Hakak 2001	11296301	yes	12	12	base81.tsv
+4	Kuromitsu 2001	15018814	yes	8	8	base81.tsv
+4	Aston 2004	15334603	yes	12	14	base81.tsv
+4	Iwamoto 2004	14743183	yes	13	15	base81.tsv
+4	Altar 2005	16038679	yes	22	24	base81.tsv
+4	Iwamoto 2005	15563509	yes	35	34	base81.tsv
+4	Weidenhofer 2006	16236523	yes	7	7	base81.tsv
+4	Saetre 2007	17822540	yes	55	55	base81.tsv
+4	Garbett 2008	18771015	yes	12	6	base81.tsv
+4	Narayan 2008	18778695	yes	26	29	base81.tsv
+4	Mudge 2008	18985160	yes	14	6	base81.tsv
+4	Bowden 2008	18445270	yes	7	7	base81.tsv
+4	Harris 2008	19088852	yes	12	12	base81.tsv
+4	Maycox 2009	19255580	yes	28	23	base81.tsv
+4	Chu 2009	19834500	yes	11	12	base81.tsv
+4	Arion 2010	20034564	yes	8	8	base81.tsv
+4	Schmitt 2011	21091092	yes	10	10	base81.tsv
+4	Barnes 2011	21538462	yes	23	19	base81.tsv
+4	Wu 2012	22558445	yes	9	9	base81.tsv
+4	Fillman 2013	22869038	yes	20	20	base81.tsv
+4	Hwang 2013	24169640	yes	14	15	base81.tsv
+4	Chen 2013	23147385	yes	45	46	base81.tsv
+4	Kohen 2014	24594777	yes	17	29	base81.tsv
+4	Pietersen 2014 (PV neurons)	24628518	yes	8	8	base81.tsv
+4	Pietersen 2014	24702465	yes	9	9	base81.tsv
+4	Xiao 2014	24776767	yes	5	6	base81.tsv
+4	Zhao 2015	25113377	yes	31	26	base81.tsv
+4	Arion 2015	25560755	yes	36	36	base81.tsv
+4	Mauney 2015	26585218	yes	9	9	base81.tsv
+4	Maschietto 2015	25981335	yes	29	30	base81.tsv
+4	de Baumont 2015	25487697	yes	29	30	base81.tsv
+4	Darby 2016	27622934	yes	35	32	base81.tsv
+4	Fromer 2016	27668389	yes	258	279	base81.tsv
+4	Kim 2016	27898074	yes	48	45	base81.tsv
+4	Mladinov 2016	28123834	yes	6	6	base81.tsv
+4	Hu 2016	27661005	yes	22	18	base81.tsv
+4	Voisey 2017	27940260	yes	22	23	base81.tsv
+4	Chang 2017	28809853	yes	22	24	base81.tsv
+4	Ramaker 2017	28754123	yes	24	24	base81.tsv
+4	Arion 2017	28476208	yes	17	19	base81.tsv
+4	Scarr 2018	27801890	yes	30	15	base81.tsv
+4	Enwright 2018	29112193	yes	36	36	base81.tsv
+4	Scarr 2018	29463818	yes	15	15	base81.tsv
+4	Jaffe 2018	30050107	yes	155	196	base81.tsv
+4	Pai 2019	31053723	yes	17	17	base81.tsv
+4	Lanz 2019	31123247	yes	19	19	base81.tsv
+4	Collado-Torres 2019	31174959	yes	177	270	base81.tsv
+4	Mendizabal 2019	31288836	yes	23	27	base81.tsv
+4	Santarelli 2019	32006661	yes	37	37	base81.tsv
+4	Abdolmaleky 2019	30468562	yes	10	10	base81.tsv
+4	Jaffe 2020	32203495	yes	75	93	base81.tsv
+4	Bakshi 2020	32566292	yes	11	11	base81.tsv
+4	Maas 2020	33184259	yes	4	4	base81.tsv
+4	Perez 2021	32152472	yes	13	13	base81.tsv
+4	Akula 2021	33558674	yes	44	55	base81.tsv
+4	Gebicke-Haerter 2021	34004381	yes	10	10	base81.tsv
+4	Weissleder 2021	34059796	yes	19	20	base81.tsv
+4	Wu 2021	34272489	yes	12	12	base81.tsv
+4	Lindholm Carlström 2021	34440415	yes	68	44	base81.tsv
+4	Zeppillo 2022	32513544	yes	10	10	base81.tsv
+4	Batiuk 2022	36223459	yes	9	14	base81.tsv
+4	Benjamin 2022	36319771	yes	154	239	base81.tsv
+4	Puvogel 2022	36192459	yes	15	14	base81.tsv
+4	Ketchesin 2023	36302706	yes	28	36	base81.tsv
+4	Schulmann 2023	36932057	yes	88	113	base81.tsv
+4	Arihisa 2023	37498306	yes	10	5	base81.tsv
+4	Ling 2024	38448582	yes	87	93	base81.tsv
+4	Ruzicka 2024	38781388	yes	60	75	base81.tsv
+4	Frohlich 2024	39227716	yes	36	33	base81.tsv
+4	Zhu 2024	38648100	yes	29	29	base81.tsv
+4	Yalcinbas 2025	41174894	yes	35	33	base81.tsv
+4	Mas 2025	41210297	yes	16	16	base81.tsv
+4	Arbabi 2025	39237723	yes	19	19	base81.tsv
+4	Alsema 2025	39397771	yes	14	14	base81.tsv
+4	Zhang 2026	39526318	yes	15	15	base81.tsv
+4	Mendez-Victoriano 2026	41567988	yes	40	20	base81.tsv
+4	Kwon 2026	41757081	yes	32	31	base81.tsv
+4	Singh 2026	41942462	yes	22	26	base81.tsv
+4	Dean 2026	42461238	yes	81	70	base81.tsv
+4	Lee 2026 (PsychAD)	42778699	yes	120	319	base81.tsv
+5	Mirnics 2000	11086983	yes	6	6	study_level.tsv (base71)
+5	Hemby 2002	12090816	yes	4	4	study_level.tsv (base71)
+5	Chung 2003	12872291	yes	2	2	study_level.tsv (base71)
+5	Tkachev 2003	13678875	yes	15	15	study_level.tsv (base71)
+5	Konradi 2004	14993118	yes	8	10	study_level.tsv (base71)
+5	Prabakaran 2004	15098003	yes	48	44	study_level.tsv (base71)
+5	Sugai 2004	15542704	yes	6	6	study_level.tsv (base71)
+5	Katsel 2005	15923110	yes	21	18	study_level.tsv (base71)
+5	Katsel 2008	18322470	yes	16	19	study_level.tsv (base71)
+5	Ishiguro 2010	19011233	yes	10	10	study_level.tsv (base71)
+5	Cohen 2012	23062752	yes	4	4	study_level.tsv (base71)
+5	Roussos 2012	22868662	yes	21	19	study_level.tsv (base71)
+5	Gilabert-Juan 2015	26243375	yes	6	3	study_level.tsv (base71)
+5	Miyahara 2023 (PFC RNA-seq)	37142572	yes	25	21	study_level.tsv (base71)
+5	Borcuk 2026	41757030	yes	10	10	study_level.tsv (base71)
+5	Oldmeadow 2014	24507884	yes	37	37	study_level.tsv (base71)
+5	Bast 2025	40162239	yes	43	42	study_level.tsv (base71)
+5	Reiner 2020 (bioRxiv)		yes	39	39	study_level.tsv (base71)
+5	Mexal 2005	16122832	yes			study_level.tsv (base71); no recorded size
+5	Benes 2007	17553960	yes			study_level.tsv (base71); no recorded size
+5	Tkachev 2007	17291371	no (provisional)			study_level.tsv (base71); no recorded size
+5	Mexal 2006 (brain pH)	16843448	yes			study_level.tsv (base71); no recorded size
+5	Zhao 2015 (BA9 methylome and RNA-seq)	26462620	yes			study_level.tsv (base71); no recorded size
+5	González-Peñas 2019	30347265	yes			study_level.tsv (base71); no recorded size
+5	Hertzberg 2021	33141894	yes	14	15	study_level.tsv (base71)
+5	Osetrova 2025	40927413	yes	4	4	study_level.tsv (base71)
+5	Bizzotto 2026	42190661	yes	35	35	study_level.tsv (base71)
+5	Pantazopoulos 2021 (ECM)	33070392	no (provisional)			study_level.tsv (base71); no recorded size
+5	Dowling 2025		yes	39	39	study_level.tsv (base71)
+5	Shao 2008	18191109	yes	32	29	base81.tsv
+5	Mulcrone 1995	7766531	no (provisional)			no recorded size
+5	Whatley 1996	8897462	no (provisional)			no recorded size
+5	Johnston-Wilson 2001	11343633	yes			no recorded size
+5	Benes 2008	19104056	no (provisional)			no recorded size
+5	Miyahara 2026	41951663	no (provisional)			no recorded size

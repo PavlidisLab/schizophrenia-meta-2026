@@ -1,0 +1,32 @@
+# figure: suppnote6_pathways_coexpression panel g
+# script: analyses/figure_exports/export_suppnote1.py, run 2026-10-16
+# population: core-80 base: 80 studies, 72 contributing lists (recurrence.py scenario 'published, brain', study tier); Shao 2008 PMID 18191109 out; panels e to i do not read a recurrent set or the list set
+# input: side-studies/coexpression/snap_sz/results/snap_sz_per_dataset.tsv sha256 0f677be4fba3
+# input: side-studies/coexpression/snap_sz/results/snap_sz_meta.tsv sha256 0af95a020d36
+# input: side-studies/coexpression/snap_sz/results/arm_a_summary.tsv sha256 c015eaaa9492
+# input: side-studies/coexpression/snap_sz/results/arm_b_delta.tsv sha256 66a7a71365be
+# dataset rows: SZ effect in SD of Ling's fixed SNAP score; interval = estimate +/- 1.96 se (as combine.py); snap_sz_p_perm = permutation of the loadings, not SZ versus control
+# pooled rows: snap_sz_p_perm holds the Hartung-Knapp p; interval is the Hartung-Knapp interval; one donor set per bank
+row_type	set	dataset	role	n_sz	n_ctrl	snap_sz_sd	snap_sz_lo	snap_sz_hi	snap_sz_null_median	snap_sz_p_perm	snap_age_ctrl_per_decade	snap_a_sz	snap_n_sz	delta_on_minus_off	delta_lo	delta_hi	armA_best_rho_resid_top50_k10	armA_call
+dataset	Ling	Ling 2024 (McLean; discovery)	positive control	87	93	-0.6923	-0.961	-0.4236	0.07386	0.000999	-0.2481	-0.3819	-0.7062	-0.24144	-0.47029	-0.0054794	0.8439	found
+dataset	HBCC_main	PsychAD HBCC	primary	56	95	-0.604	-0.9176	-0.2904	0.0949	0.000999	-0.1776	-0.1247	-0.6647	-0.060389	-0.40906	0.27068	-0.3694	partial
+dataset	MSSM_main	PsychAD Mount Sinai	primary	127	261	-0.06835	-0.2787	0.142	-0.1168	0.991	-0.133	-0.1674	0.04088	-0.026961	-0.24833	0.1795	-0.3748	partial
+dataset	MSSM_nodementia	PsychAD Mount Sinai, no dementia	sensitivity	43	261	-0.3367	-0.654	-0.0194	-0.1099	0.000999	-0.1333	-0.3317	-0.2193	-0.027904	-0.40267	0.31578		
+dataset	SZBD_noLing	SZBDMulti-Seq minus Ling donors (McLean)	primary	13	23	-0.4717	-1.1367	0.1933	0.1165	0.000999	-0.4232	-0.1725	-0.6212	-0.18808	-0.62314	0.33077	-0.5079	found
+dataset	SZBD_all	SZBDMulti-Seq, all (McLean)	sensitivity	24	24	-0.7932	-1.3006	-0.2858	0.2983	0.000999	-0.3974	-0.3916	-0.9545	-0.36127	-0.69935	0.014322	-0.378	partial
+dataset	CMC	brainSCOPE CMC (Mount Sinai)	sensitivity	47	53	-0.2141	-0.6222	0.194	0.02583	0.000999	-0.22	-0.1561	-0.1586	-0.46054	-0.87874	0.0639	0.2467	not found
+dataset	NSW	GSE254569 (NSW, OFC)	primary	43	33	-0.3338	-0.7668	0.0992	0.2701	0.01199	-0.375	0.07937	-0.4438	0.01256	-0.32447	0.35713	0.4305	partial
+dataset	Multiome	brainSCOPE MultiomeBrain	sensitivity	6	5	-0.8757	-2.2712	0.5198	0.314	0.01598	0.373	-1.46	-0.7611	-1.5596	-16.856	23.592	0.1552	not found
+dataset	Batiuk	Batiuk 2022 (neurons only)	sensitivity (neurons only)	9	14	0.2004	-0.6644	1.0652	0.5053	0.999	-0.04826		0.2203				0.7526	partial
+pooled	HBCC_main,MSSM_main,SZBD_noLing,NSW	primary: SNAP total SZ	random effects (DerSimonian-Laird; Hartung-Knapp interval)			-0.3385	-0.7418	0.06487		0.07565	I2 0.639							
+pooled	HBCC_main,MSSM_main,SZBD_noLing,NSW	primary: SNAP-a SZ	random effects (DerSimonian-Laird; Hartung-Knapp interval)			-0.1243	-0.2781	0.02941		0.08224	I2 0							
+pooled	HBCC_main,MSSM_main,SZBD_noLing,NSW	primary: SNAP-n SZ	random effects (DerSimonian-Laird; Hartung-Knapp interval)			-0.3974	-0.9354	0.1407		0.1003	I2 0.8317							
+pooled	HBCC_main,MSSM_main,SZBD_noLing,NSW	primary: SNAP total age (controls, per decade)	random effects (DerSimonian-Laird; Hartung-Knapp interval)			-0.2367	-0.4524	-0.0209		0.03975	I2 0.6347							
+pooled	HBCC_main,MSSM_main,SZBD_noLing,NSW	primary: B_on	random effects (DerSimonian-Laird; Hartung-Knapp interval)			-0.2633	-0.5951	0.06845		0.08574	I2 0.4803							
+pooled	HBCC_main,MSSM_main,SZBD_noLing,NSW	primary: B_off	random effects (DerSimonian-Laird; Hartung-Knapp interval)			-0.2081	-0.5102	0.09399		0.116	I2 0.3772							
+pooled	HBCC_main,MSSM_main,SZBD_noLing,NSW	primary: Delta = B_on - B_off	random effects (DerSimonian-Laird; Hartung-Knapp interval)			-0.04178	-0.1407	0.05715		0.2715	I2 0							
+pooled	HBCC_main,MSSM_nodementia,SZBD_noLing,NSW	(a) MSSM without dementia-labelled SZ: SNAP total SZ	random effects (DerSimonian-Laird; Hartung-Knapp interval)			-0.4453	-0.6772	-0.2134		0.008807	I2 0							
+pooled	HBCC_main,SZBD_noLing,CMC,NSW	(b) CMC for Mount Sinai: SNAP total SZ	random effects (DerSimonian-Laird; Hartung-Knapp interval)			-0.4323	-0.734	-0.1306		0.01977	I2 0							
+pooled	HBCC_main,MSSM_main,SZBD_noLing,Multiome,NSW	(c) plus MultiomeBrain: SNAP total SZ	random effects (DerSimonian-Laird; Hartung-Knapp interval)			-0.3578	-0.6906	-0.02494		0.04056	I2 0.5579							
+pooled	HBCC_main,MSSM_main,SZBD_all,NSW	(d) SZBDMulti-Seq with Ling-matched donors: SNAP total SZ	random effects (DerSimonian-Laird; Hartung-Knapp interval)			-0.4159	-0.9239	0.0921		0.08	I2 0.7484							
+pooled	HBCC_main,MSSM_main,SZBD_noLing,NSW	(e) RIN / pH added where present: SNAP total SZ	random effects (DerSimonian-Laird; Hartung-Knapp interval)			-0.3317	-0.7395	0.07598		0.08112	I2 0.6352							

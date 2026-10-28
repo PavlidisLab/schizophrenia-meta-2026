@@ -1,0 +1,1871 @@
+{
+ "model": "claude-haiku-4-5-20251001",
+ "generated": "2026-09-25T22:19:52+00:00",
+ "source": "lineage.json tissue_n (biolit eligibility pass)",
+ "counts": {
+  "10208449": {
+   "cases": 7,
+   "controls": 7
+  },
+  "10822341": {
+   "cases": null,
+   "controls": null
+  },
+  "11086983": {
+   "cases": 10,
+   "controls": 10
+  },
+  "10924661": {
+   "cases": 14,
+   "controls": 9
+  },
+  "11296301": {
+   "cases": null,
+   "controls": null
+  },
+  "11149951": {
+   "cases": null,
+   "controls": null
+  },
+  "11326297": {
+   "cases": 10,
+   "controls": 10
+  },
+  "11576761": {
+   "cases": null,
+   "controls": null
+  },
+  "12090816": {
+   "cases": null,
+   "controls": null
+  },
+  "11923437": {
+   "cases": 10,
+   "controls": 10
+  },
+  "11930015": {
+   "cases": 45,
+   "controls": 45
+  },
+  "12363385": {
+   "cases": 15,
+   "controls": 15
+  },
+  "12872291": {
+   "cases": null,
+   "controls": null
+  },
+  "12867516": {
+   "cases": 15,
+   "controls": 15
+  },
+  "13678875": {
+   "cases": 15,
+   "controls": 15
+  },
+  "15334603": {
+   "cases": 12,
+   "controls": 14
+  },
+  "15194870": {
+   "cases": null,
+   "controls": null
+  },
+  "14743183": {
+   "cases": null,
+   "controls": null
+  },
+  "15362566": {
+   "cases": null,
+   "controls": null
+  },
+  "15098003": {
+   "cases": 48,
+   "controls": 44
+  },
+  "15542704": {
+   "cases": 6,
+   "controls": 6
+  },
+  "14741323": {
+   "cases": 5,
+   "controls": 9
+  },
+  "16038679": {
+   "cases": 22,
+   "controls": 24
+  },
+  "16223876": {
+   "cases": null,
+   "controls": null
+  },
+  "15563509": {
+   "cases": 35,
+   "controls": 34
+  },
+  "16044170": {
+   "cases": null,
+   "controls": null
+  },
+  "15923110": {
+   "cases": 13,
+   "controls": 13
+  },
+  "16139990": {
+   "cases": 13,
+   "controls": 13
+  },
+  "15892139": {
+   "cases": 33,
+   "controls": 33
+  },
+  "15726117": {
+   "cases": 10,
+   "controls": 10
+  },
+  "15645418": {
+   "cases": null,
+   "controls": null
+  },
+  "15920292": {
+   "cases": 13,
+   "controls": null
+  },
+  "16637010": {
+   "cases": null,
+   "controls": null
+  },
+  "16288314": {
+   "cases": null,
+   "controls": null
+  },
+  "16414245": {
+   "cases": 14,
+   "controls": 14
+  },
+  "17012699": {
+   "cases": 16,
+   "controls": 14
+  },
+  "16997002": {
+   "cases": 53,
+   "controls": 90
+  },
+  "16406496": {
+   "cases": 8,
+   "controls": 10
+  },
+  "16788776": {
+   "cases": null,
+   "controls": null
+  },
+  "16624532": {
+   "cases": 34,
+   "controls": 35
+  },
+  "16549361": {
+   "cases": 17,
+   "controls": null
+  },
+  "17012697": {
+   "cases": 14,
+   "controls": 14
+  },
+  "16604350": {
+   "cases": 5,
+   "controls": 5
+  },
+  "16236523": {
+   "cases": 11,
+   "controls": 11
+  },
+  "17568569": {
+   "cases": 14,
+   "controls": 14
+  },
+  "17668069": {
+   "cases": 6,
+   "controls": 6
+  },
+  "17464717": {
+   "cases": null,
+   "controls": null
+  },
+  "17291370": {
+   "cases": 13,
+   "controls": null
+  },
+  "17997842": {
+   "cases": null,
+   "controls": null
+  },
+  "17223013": {
+   "cases": 41,
+   "controls": 34
+  },
+  "17287082": {
+   "cases": 40,
+   "controls": 40
+  },
+  "17326821": {
+   "cases": 15,
+   "controls": 21
+  },
+  "18184693": {
+   "cases": 21,
+   "controls": 21
+  },
+  "18445270": {
+   "cases": 13,
+   "controls": 13
+  },
+  "18992145": {
+   "cases": 81,
+   "controls": 82
+  },
+  "18771015": {
+   "cases": null,
+   "controls": null
+  },
+  "19088852": {
+   "cases": 14,
+   "controls": 13
+  },
+  "18281411": {
+   "cases": 12,
+   "controls": 12
+  },
+  "18081029": {
+   "cases": 2,
+   "controls": 2
+  },
+  "18322470": {
+   "cases": 61,
+   "controls": 53
+  },
+  "18681948": {
+   "cases": null,
+   "controls": null
+  },
+  "18545665": {
+   "cases": 16,
+   "controls": 14
+  },
+  "18985160": {
+   "cases": 14,
+   "controls": 6
+  },
+  "18778695": {
+   "cases": 30,
+   "controls": 30
+  },
+  "17938637": {
+   "cases": 35,
+   "controls": 35
+  },
+  "18191109": {
+   "cases": null,
+   "controls": null
+  },
+  "18504422": {
+   "cases": 10,
+   "controls": 15
+  },
+  "18992130": {
+   "cases": null,
+   "controls": null
+  },
+  "18226501": {
+   "cases": null,
+   "controls": null
+  },
+  "18455303": {
+   "cases": 31,
+   "controls": 47
+  },
+  "19358997": {
+   "cases": 32,
+   "controls": 32
+  },
+  "19772658": {
+   "cases": 5,
+   "controls": 5
+  },
+  "19034380": {
+   "cases": 5,
+   "controls": 4
+  },
+  "19296286": {
+   "cases": 9,
+   "controls": 9
+  },
+  "19632097": {
+   "cases": 210,
+   "controls": 210
+  },
+  "19245676": {
+   "cases": 29,
+   "controls": 30
+  },
+  "20034564": {
+   "cases": 8,
+   "controls": 8
+  },
+  "19721432": {
+   "cases": 36,
+   "controls": 36
+  },
+  "19582768": {
+   "cases": 24,
+   "controls": 24
+  },
+  "19011233": {
+   "cases": 53,
+   "controls": 21
+  },
+  "20675101": {
+   "cases": 29,
+   "controls": 31
+  },
+  "18762803": {
+   "cases": 14,
+   "controls": 15
+  },
+  "20381070": {
+   "cases": 11,
+   "controls": 8
+  },
+  "20471030": {
+   "cases": 11,
+   "controls": 8
+  },
+  "20083392": {
+   "cases": 52,
+   "controls": 49
+  },
+  "20197298": {
+   "cases": null,
+   "controls": null
+  },
+  "19916557": {
+   "cases": 12,
+   "controls": 12
+  },
+  "21538462": {
+   "cases": 23,
+   "controls": 19
+  },
+  "21490598": {
+   "cases": 4,
+   "controls": 4
+  },
+  "20921955": {
+   "cases": 20,
+   "controls": 10
+  },
+  "21536977": {
+   "cases": 20,
+   "controls": 20
+  },
+  "21922000": {
+   "cases": null,
+   "controls": null
+  },
+  "20695885": {
+   "cases": null,
+   "controls": null
+  },
+  "21738743": {
+   "cases": 90,
+   "controls": 60
+  },
+  "22373040": {
+   "cases": null,
+   "controls": null
+  },
+  "21797804": {
+   "cases": 3,
+   "controls": null
+  },
+  "20404824": {
+   "cases": null,
+   "controls": null
+  },
+  "21111402": {
+   "cases": 37,
+   "controls": 37
+  },
+  "21091092": {
+   "cases": null,
+   "controls": null
+  },
+  "22832356": {
+   "cases": 24,
+   "controls": 34
+  },
+  "22545112": {
+   "cases": null,
+   "controls": null
+  },
+  "22936973": {
+   "cases": null,
+   "controls": null
+  },
+  "21727898": {
+   "cases": 112,
+   "controls": 76
+  },
+  "22503327": {
+   "cases": 26,
+   "controls": 26
+  },
+  "22675524": {
+   "cases": 15,
+   "controls": 15
+  },
+  "22315408": {
+   "cases": null,
+   "controls": null
+  },
+  "22954356": {
+   "cases": 107,
+   "controls": 118
+  },
+  "22161352": {
+   "cases": null,
+   "controls": null
+  },
+  "22441714": {
+   "cases": 10,
+   "controls": 10
+  },
+  "22397921": {
+   "cases": 67,
+   "controls": 68
+  },
+  "22832956": {
+   "cases": 282,
+   "controls": 385
+  },
+  "22558445": {
+   "cases": 37,
+   "controls": 37
+  },
+  "23282246": {
+   "cases": 3,
+   "controls": 3
+  },
+  "22761806": {
+   "cases": 121,
+   "controls": 118
+  },
+  "22433715": {
+   "cases": 202,
+   "controls": null
+  },
+  "22393424": {
+   "cases": 41,
+   "controls": 29
+  },
+  "23147385": {
+   "cases": 45,
+   "controls": 46
+  },
+  "22869038": {
+   "cases": 20,
+   "controls": 20
+  },
+  "23941741": {
+   "cases": 14,
+   "controls": 14
+  },
+  "23218666": {
+   "cases": 114,
+   "controls": 80
+  },
+  "24169640": {
+   "cases": 47,
+   "controls": 49
+  },
+  "24012176": {
+   "cases": null,
+   "controls": null
+  },
+  "22248022": {
+   "cases": 14,
+   "controls": 15
+  },
+  "23442539": {
+   "cases": 10,
+   "controls": 11
+  },
+  "23554570": {
+   "cases": null,
+   "controls": null
+  },
+  "22212594": {
+   "cases": 153,
+   "controls": 153
+  },
+  "24070017": {
+   "cases": null,
+   "controls": null
+  },
+  "23164819": {
+   "cases": 36,
+   "controls": 40
+  },
+  "23904455": {
+   "cases": 413,
+   "controls": 446
+  },
+  "25243493": {
+   "cases": null,
+   "controls": null
+  },
+  "25522406": {
+   "cases": 22,
+   "controls": 40
+  },
+  "24928144": {
+   "cases": null,
+   "controls": null
+  },
+  "24569695": {
+   "cases": 35,
+   "controls": 35
+  },
+  "23528911": {
+   "cases": 19,
+   "controls": 33
+  },
+  "24886351": {
+   "cases": null,
+   "controls": null
+  },
+  "25522158": {
+   "cases": 9,
+   "controls": 9
+  },
+  "24594777": {
+   "cases": 17,
+   "controls": 29
+  },
+  "24507884": {
+   "cases": 116,
+   "controls": 80
+  },
+  "24702465": {
+   "cases": 9,
+   "controls": 9
+  },
+  "25175639": {
+   "cases": null,
+   "controls": null
+  },
+  "24287731": {
+   "cases": 10,
+   "controls": 10
+  },
+  "24672753": {
+   "cases": 4,
+   "controls": 4
+  },
+  "25560755": {
+   "cases": 36,
+   "controls": 36
+  },
+  "26285829": {
+   "cases": 503,
+   "controls": 516
+  },
+  "24686136": {
+   "cases": 4,
+   "controls": 6
+  },
+  "25658856": {
+   "cases": 42,
+   "controls": 39
+  },
+  "25793610": {
+   "cases": null,
+   "controls": null
+  },
+  "25119539": {
+   "cases": 10,
+   "controls": 10
+  },
+  "26243375": {
+   "cases": 3,
+   "controls": 3
+  },
+  "25444170": {
+   "cases": 94,
+   "controls": 117
+  },
+  "25981335": {
+   "cases": 30,
+   "controls": 31
+  },
+  "25967042": {
+   "cases": 19,
+   "controls": 18
+  },
+  "25459892": {
+   "cases": null,
+   "controls": null
+  },
+  "26696568": {
+   "cases": null,
+   "controls": null
+  },
+  "26183697": {
+   "cases": 564,
+   "controls": 400
+  },
+  "25985888": {
+   "cases": 105,
+   "controls": 130
+  },
+  "25429046": {
+   "cases": 33,
+   "controls": 27
+  },
+  "26657146": {
+   "cases": null,
+   "controls": null
+  },
+  "25113377": {
+   "cases": 31,
+   "controls": 26
+  },
+  "26173148": {
+   "cases": 6,
+   "controls": 6
+  },
+  "25487697": {
+   "cases": null,
+   "controls": null
+  },
+  "25424713": {
+   "cases": 260,
+   "controls": 250
+  },
+  "27650396": {
+   "cases": 109,
+   "controls": 51
+  },
+  "27219343": {
+   "cases": 31,
+   "controls": 26
+  },
+  "27668389": {
+   "cases": 389,
+   "controls": 455
+  },
+  "27450777": {
+   "cases": 453,
+   "controls": 440
+  },
+  "27727244": {
+   "cases": 47,
+   "controls": 48
+  },
+  "27661005": {
+   "cases": 28,
+   "controls": 24
+  },
+  "26077692": {
+   "cases": null,
+   "controls": null
+  },
+  "27898074": {
+   "cases": 48,
+   "controls": 45
+  },
+  "27846841": {
+   "cases": 8,
+   "controls": 7
+  },
+  "26965827": {
+   "cases": null,
+   "controls": null
+  },
+  "27236410": {
+   "cases": 4,
+   "controls": 4
+  },
+  "26818902": {
+   "cases": null,
+   "controls": null
+  },
+  "27732689": {
+   "cases": 4,
+   "controls": 4
+  },
+  "27117414": {
+   "cases": 14,
+   "controls": 16
+  },
+  "27650867": {
+   "cases": 44,
+   "controls": 44
+  },
+  "26697997": {
+   "cases": 47,
+   "controls": 49
+  },
+  "10.1038/srep16767": {
+   "cases": 48,
+   "controls": 60
+  },
+  "26609121": {
+   "cases": null,
+   "controls": null
+  },
+  "28476208": {
+   "cases": 17,
+   "controls": 19
+  },
+  "28809853": {
+   "cases": 22,
+   "controls": 24
+  },
+  "28822801": {
+   "cases": 18,
+   "controls": 14
+  },
+  "10.1038/s41467-017-02330-5": {
+   "cases": 11,
+   "controls": 11
+  },
+  "28634288": {
+   "cases": null,
+   "controls": null
+  },
+  "28094170": {
+   "cases": 7,
+   "controls": 7
+  },
+  "28754123": {
+   "cases": 51,
+   "controls": 50
+  },
+  "28418402": {
+   "cases": 797,
+   "controls": 1106
+  },
+  "28736215": {
+   "cases": 4,
+   "controls": 3
+  },
+  "28280741": {
+   "cases": null,
+   "controls": null
+  },
+  "29081874": {
+   "cases": null,
+   "controls": null
+  },
+  "30545964": {
+   "cases": 95,
+   "controls": 225
+  },
+  "30115913": {
+   "cases": 514,
+   "controls": 690
+  },
+  "29112193": {
+   "cases": 36,
+   "controls": 36
+  },
+  "28641886": {
+   "cases": null,
+   "controls": null
+  },
+  "30545856": {
+   "cases": null,
+   "controls": null
+  },
+  "29439242": {
+   "cases": null,
+   "controls": null
+  },
+  "29632383": {
+   "cases": 283,
+   "controls": 291
+  },
+  "30016334": {
+   "cases": 22,
+   "controls": 71
+  },
+  "30050107": {
+   "cases": 314,
+   "controls": 368
+  },
+  "29391398": {
+   "cases": 142,
+   "controls": 158
+  },
+  "27801890": {
+   "cases": 30,
+   "controls": 15
+  },
+  "29463818": {
+   "cases": 15,
+   "controls": 15
+  },
+  "30077719": {
+   "cases": 22,
+   "controls": 24
+  },
+  "30177255": {
+   "cases": 341,
+   "controls": 332
+  },
+  "29665782": {
+   "cases": null,
+   "controls": null
+  },
+  "31073119": {
+   "cases": 259,
+   "controls": 431
+  },
+  "31174959": {
+   "cases": null,
+   "controls": null
+  },
+  "31535015": {
+   "cases": 450,
+   "controls": 357
+  },
+  "30645614": {
+   "cases": null,
+   "controls": null
+  },
+  "30870714": {
+   "cases": 36,
+   "controls": 15
+  },
+  "31078689": {
+   "cases": 189,
+   "controls": 103
+  },
+  "30203456": {
+   "cases": null,
+   "controls": null
+  },
+  "31127088": {
+   "cases": 31,
+   "controls": 26
+  },
+  "29740122": {
+   "cases": 258,
+   "controls": 279
+  },
+  "31551426": {
+   "cases": 353,
+   "controls": 501
+  },
+  "31431609": {
+   "cases": 34,
+   "controls": 102
+  },
+  "30967896": {
+   "cases": null,
+   "controls": null
+  },
+  "30911161": {
+   "cases": 40299,
+   "controls": 65264
+  },
+  "31540999": {
+   "cases": 1,
+   "controls": null
+  },
+  "30224231": {
+   "cases": 62,
+   "controls": 51
+  },
+  "31920755": {
+   "cases": null,
+   "controls": null
+  },
+  "31123247": {
+   "cases": 19,
+   "controls": 19
+  },
+  "31113746": {
+   "cases": 68,
+   "controls": 149
+  },
+  "31242417": {
+   "cases": 4,
+   "controls": 4
+  },
+  "31618642": {
+   "cases": null,
+   "controls": null
+  },
+  "30786269": {
+   "cases": 34,
+   "controls": 36
+  },
+  "31288836": {
+   "cases": null,
+   "controls": null
+  },
+  "30675529": {
+   "cases": null,
+   "controls": null
+  },
+  "31055969": {
+   "cases": null,
+   "controls": null
+  },
+  "31053723": {
+   "cases": 46,
+   "controls": 44
+  },
+  "30576541": {
+   "cases": 71,
+   "controls": 57
+  },
+  "30976116": {
+   "cases": null,
+   "controls": null
+  },
+  "30718903": {
+   "cases": null,
+   "controls": null
+  },
+  "31399567": {
+   "cases": null,
+   "controls": null
+  },
+  "30664768": {
+   "cases": 14,
+   "controls": 14
+  },
+  "30442475": {
+   "cases": null,
+   "controls": null
+  },
+  "31350824": {
+   "cases": null,
+   "controls": null
+  },
+  "30781971": {
+   "cases": 111,
+   "controls": 112
+  },
+  "30670680": {
+   "cases": null,
+   "controls": null
+  },
+  "10.1155/2020/5176834": {
+   "cases": 18,
+   "controls": 18
+  },
+  "31728928": {
+   "cases": null,
+   "controls": null
+  },
+  "32232389": {
+   "cases": null,
+   "controls": null
+  },
+  "31959813": {
+   "cases": 9,
+   "controls": 7
+  },
+  "32376074": {
+   "cases": null,
+   "controls": null
+  },
+  "33115248": {
+   "cases": 93,
+   "controls": 127
+  },
+  "31391148": {
+   "cases": null,
+   "controls": null
+  },
+  "32245959": {
+   "cases": null,
+   "controls": null
+  },
+  "32203495": {
+   "cases": 155,
+   "controls": 196
+  },
+  "10.1001/jamapsychiatry.2020.0196": {
+   "cases": 8,
+   "controls": 8
+  },
+  "31019265": {
+   "cases": 24,
+   "controls": 24
+  },
+  "32712449": {
+   "cases": null,
+   "controls": null
+  },
+  "31855458": {
+   "cases": null,
+   "controls": null
+  },
+  "32260267": {
+   "cases": 80,
+   "controls": 82
+  },
+  "30478419": {
+   "cases": 74,
+   "controls": 90
+  },
+  "sc:10.1101/2020.07.29.227355": {
+   "cases": null,
+   "controls": null
+  },
+  "32827700": {
+   "cases": null,
+   "controls": null
+  },
+  "33149139": {
+   "cases": null,
+   "controls": null
+  },
+  "38377413": {
+   "cases": 24,
+   "controls": 24
+  },
+  "sc:32764691": {
+   "cases": null,
+   "controls": null
+  },
+  "31811028": {
+   "cases": null,
+   "controls": null
+  },
+  "32545830": {
+   "cases": null,
+   "controls": null
+  },
+  "31563948": {
+   "cases": null,
+   "controls": null
+  },
+  "32639965": {
+   "cases": 4,
+   "controls": 4
+  },
+  "31157371": {
+   "cases": null,
+   "controls": null
+  },
+  "33087039": {
+   "cases": null,
+   "controls": null
+  },
+  "10.1038/s41386-020-00949-5": {
+   "cases": 44,
+   "controls": 55
+  },
+  "33508383": {
+   "cases": null,
+   "controls": null
+  },
+  "34348681": {
+   "cases": 45,
+   "controls": 46
+  },
+  "33442739": {
+   "cases": null,
+   "controls": null
+  },
+  "33585819": {
+   "cases": 29,
+   "controls": 28
+  },
+  "33673722": {
+   "cases": null,
+   "controls": null
+  },
+  "34957416": {
+   "cases": null,
+   "controls": null
+  },
+  "33958802": {
+   "cases": null,
+   "controls": null
+  },
+  "33708146": {
+   "cases": null,
+   "controls": null
+  },
+  "33079616": {
+   "cases": null,
+   "controls": null
+  },
+  "34440415": {
+   "cases": 68,
+   "controls": 44
+  },
+  "33805976": {
+   "cases": null,
+   "controls": null
+  },
+  "34054608": {
+   "cases": 14,
+   "controls": 14
+  },
+  "34831190": {
+   "cases": 559,
+   "controls": 936
+  },
+  "33677214": {
+   "cases": 5,
+   "controls": 5
+  },
+  "32152472": {
+   "cases": null,
+   "controls": null
+  },
+  "34439592": {
+   "cases": null,
+   "controls": null
+  },
+  "33562405": {
+   "cases": null,
+   "controls": null
+  },
+  "34969953": {
+   "cases": 19,
+   "controls": 17
+  },
+  "34952924": {
+   "cases": null,
+   "controls": null
+  },
+  "33410555": {
+   "cases": null,
+   "controls": null
+  },
+  "34630179": {
+   "cases": 10,
+   "controls": 20
+  },
+  "33288841": {
+   "cases": 7,
+   "controls": 6
+  },
+  "32542700": {
+   "cases": null,
+   "controls": null
+  },
+  "34059796": {
+   "cases": 19,
+   "controls": 20
+  },
+  "34272489": {
+   "cases": 12,
+   "controls": 12
+  },
+  "33946654": {
+   "cases": null,
+   "controls": null
+  },
+  "35354897": {
+   "cases": 10,
+   "controls": 10
+  },
+  "32197935": {
+   "cases": 21,
+   "controls": 19
+  },
+  "36385761": {
+   "cases": null,
+   "controls": null
+  },
+  "sc:36223459": {
+   "cases": null,
+   "controls": null
+  },
+  "36319771": {
+   "cases": 154,
+   "controls": 245
+  },
+  "36125368": {
+   "cases": null,
+   "controls": null
+  },
+  "35885983": {
+   "cases": null,
+   "controls": null
+  },
+  "35983039": {
+   "cases": null,
+   "controls": null
+  },
+  "35459277": {
+   "cases": 3,
+   "controls": 4
+  },
+  "sc:34728799": {
+   "cases": null,
+   "controls": null
+  },
+  "37861850": {
+   "cases": 16,
+   "controls": 18
+  },
+  "35339428": {
+   "cases": null,
+   "controls": null
+  },
+  "36162734": {
+   "cases": null,
+   "controls": null
+  },
+  "34936134": {
+   "cases": 5,
+   "controls": 5
+  },
+  "36233204": {
+   "cases": null,
+   "controls": null
+  },
+  "35016150": {
+   "cases": 15,
+   "controls": 15
+  },
+  "35660966": {
+   "cases": null,
+   "controls": null
+  },
+  "35543802": {
+   "cases": 3,
+   "controls": 3
+  },
+  "35701597": {
+   "cases": null,
+   "controls": null
+  },
+  "35386517": {
+   "cases": null,
+   "controls": null
+  },
+  "merikangas2022": {
+   "cases": null,
+   "controls": null
+  },
+  "sc:34789849": {
+   "cases": null,
+   "controls": null
+  },
+  "10.1038/s41380-022-01796-0": {
+   "cases": 15,
+   "controls": 14
+  },
+  "34954633": {
+   "cases": null,
+   "controls": null
+  },
+  "36405929": {
+   "cases": null,
+   "controls": null
+  },
+  "36090817": {
+   "cases": null,
+   "controls": null
+  },
+  "35855328": {
+   "cases": null,
+   "controls": null
+  },
+  "35981456": {
+   "cases": null,
+   "controls": null
+  },
+  "36187923": {
+   "cases": null,
+   "controls": null
+  },
+  "37158323": {
+   "cases": null,
+   "controls": null
+  },
+  "36462601": {
+   "cases": null,
+   "controls": null
+  },
+  "37611908": {
+   "cases": null,
+   "controls": null
+  },
+  "37117634": {
+   "cases": 9,
+   "controls": 6
+  },
+  "36424395": {
+   "cases": null,
+   "controls": null
+  },
+  "36652379": {
+   "cases": null,
+   "controls": null
+  },
+  "37605121": {
+   "cases": 10,
+   "controls": 10
+  },
+  "38092734": {
+   "cases": null,
+   "controls": null
+  },
+  "37200901": {
+   "cases": null,
+   "controls": null
+  },
+  "36640659": {
+   "cases": null,
+   "controls": null
+  },
+  "36302706": {
+   "cases": 36,
+   "controls": 36
+  },
+  "37149105": {
+   "cases": 20,
+   "controls": 17
+  },
+  "37100927": {
+   "cases": null,
+   "controls": null
+  },
+  "37383091": {
+   "cases": null,
+   "controls": null
+  },
+  "sc:36729133": {
+   "cases": null,
+   "controls": null
+  },
+  "37031222": {
+   "cases": null,
+   "controls": null
+  },
+  "37413782": {
+   "cases": null,
+   "controls": null
+  },
+  "37142572": {
+   "cases": 25,
+   "controls": 21
+  },
+  "37520228": {
+   "cases": 13,
+   "controls": null
+  },
+  "36379214": {
+   "cases": 23,
+   "controls": 21
+  },
+  "36932057": {
+   "cases": 88,
+   "controls": 113
+  },
+  "36693045": {
+   "cases": null,
+   "controls": null
+  },
+  "sc:37355690": {
+   "cases": null,
+   "controls": null
+  },
+  "36717018": {
+   "cases": null,
+   "controls": null
+  },
+  "37005977": {
+   "cases": null,
+   "controls": null
+  },
+  "37674553": {
+   "cases": 25,
+   "controls": 21
+  },
+  "36443250": {
+   "cases": null,
+   "controls": null
+  },
+  "37147304": {
+   "cases": 329,
+   "controls": 189
+  },
+  "sc:37895019": {
+   "cases": null,
+   "controls": null
+  },
+  "36977612": {
+   "cases": null,
+   "controls": null
+  },
+  "37267675": {
+   "cases": null,
+   "controls": null
+  },
+  "36680208": {
+   "cases": 48,
+   "controls": 36
+  },
+  "36333582": {
+   "cases": 132,
+   "controls": 199
+  },
+  "10.1016/j.biopsych.2023.08.017": {
+   "cases": 14,
+   "controls": 14
+  },
+  "38368435": {
+   "cases": null,
+   "controls": null
+  },
+  "38395959": {
+   "cases": 563,
+   "controls": 936
+  },
+  "38730231": {
+   "cases": null,
+   "controls": null
+  },
+  "38843579": {
+   "cases": null,
+   "controls": null
+  },
+  "38790238": {
+   "cases": null,
+   "controls": null
+  },
+  "39068467": {
+   "cases": 121,
+   "controls": 131
+  },
+  "39727940": {
+   "cases": null,
+   "controls": null
+  },
+  "39665607": {
+   "cases": null,
+   "controls": null
+  },
+  "38145985": {
+   "cases": null,
+   "controls": null
+  },
+  "39609319": {
+   "cases": null,
+   "controls": null
+  },
+  "sc:38781369": {
+   "cases": null,
+   "controls": null
+  },
+  "38508189": {
+   "cases": null,
+   "controls": null
+  },
+  "sc:39227716": {
+   "cases": null,
+   "controls": null
+  },
+  "39307399": {
+   "cases": null,
+   "controls": null
+  },
+  "39028640": {
+   "cases": null,
+   "controls": null
+  },
+  "38301948": {
+   "cases": 586,
+   "controls": 986
+  },
+  "39702523": {
+   "cases": 50,
+   "controls": 117
+  },
+  "38390236": {
+   "cases": null,
+   "controls": null
+  },
+  "sc:38448582": {
+   "cases": null,
+   "controls": null
+  },
+  "38255234": {
+   "cases": 15,
+   "controls": 15
+  },
+  "sc:38781388": {
+   "cases": null,
+   "controls": null
+  },
+  "sc:37915216": {
+   "cases": null,
+   "controls": null
+  },
+  "40162448": {
+   "cases": null,
+   "controls": null
+  },
+  "39624491": {
+   "cases": 322,
+   "controls": 459
+  },
+  "38688917": {
+   "cases": null,
+   "controls": null
+  },
+  "sc:38263175": {
+   "cases": null,
+   "controls": null
+  },
+  "38704507": {
+   "cases": 2,
+   "controls": 6
+  },
+  "38461955": {
+   "cases": null,
+   "controls": null
+  },
+  "38321095": {
+   "cases": null,
+   "controls": null
+  },
+  "38988837": {
+   "cases": 9,
+   "controls": 20
+  },
+  "38863043": {
+   "cases": null,
+   "controls": null
+  },
+  "38781321": {
+   "cases": null,
+   "controls": null
+  },
+  "sc:39355378": {
+   "cases": null,
+   "controls": null
+  },
+  "37993327": {
+   "cases": null,
+   "controls": null
+  },
+  "39237723": {
+   "cases": 19,
+   "controls": 19
+  },
+  "sc:40162239": {
+   "cases": null,
+   "controls": null
+  },
+  "sc:40819083": {
+   "cases": null,
+   "controls": null
+  },
+  "40770299": {
+   "cases": 10,
+   "controls": 10
+  },
+  "40634861": {
+   "cases": 10,
+   "controls": 10
+  },
+  "sc:40480991": {
+   "cases": null,
+   "controls": null
+  },
+  "sc:40053590": {
+   "cases": null,
+   "controls": null
+  },
+  "40267851": {
+   "cases": 126,
+   "controls": 217
+  },
+  "sc:42778699": {
+   "cases": 120,
+   "controls": 319
+  },
+  "39974493": {
+   "cases": 6,
+   "controls": null
+  },
+  "40665444": {
+   "cases": 45,
+   "controls": 45
+  },
+  "41210297": {
+   "cases": 16,
+   "controls": 16
+  },
+  "40796563": {
+   "cases": null,
+   "controls": null
+  },
+  "41206095": {
+   "cases": null,
+   "controls": null
+  },
+  "40015618": {
+   "cases": 84,
+   "controls": 97
+  },
+  "40473621": {
+   "cases": 36,
+   "controls": 59
+  },
+  "40727846": {
+   "cases": null,
+   "controls": null
+  },
+  "41173822": {
+   "cases": 25,
+   "controls": null
+  },
+  "sc:40750773": {
+   "cases": null,
+   "controls": null
+  },
+  "41422210": {
+   "cases": null,
+   "controls": null
+  },
+  "41422157": {
+   "cases": null,
+   "controls": null
+  },
+  "40259965": {
+   "cases": null,
+   "controls": null
+  },
+  "40253403": {
+   "cases": 68,
+   "controls": 62
+  },
+  "41125054": {
+   "cases": 12,
+   "controls": 12
+  },
+  "40242178": {
+   "cases": null,
+   "controls": null
+  },
+  "41174894": {
+   "cases": 35,
+   "controls": 33
+  },
+  "41398832": {
+   "cases": null,
+   "controls": null
+  },
+  "40419114": {
+   "cases": null,
+   "controls": null
+  },
+  "39972407": {
+   "cases": null,
+   "controls": null
+  },
+  "10.1038/s41398-025-03692-x": {
+   "cases": 43,
+   "controls": 60
+  },
+  "41330925": {
+   "cases": 226,
+   "controls": 237
+  },
+  "40076849": {
+   "cases": null,
+   "controls": null
+  },
+  "40214957": {
+   "cases": null,
+   "controls": null
+  },
+  "42117812": {
+   "cases": null,
+   "controls": null
+  },
+  "42380610": {
+   "cases": null,
+   "controls": null
+  },
+  "41984900": {
+   "cases": null,
+   "controls": null
+  },
+  "42416198": {
+   "cases": null,
+   "controls": null
+  },
+  "41788806": {
+   "cases": 21,
+   "controls": 92
+  },
+  "41757030": {
+   "cases": 10,
+   "controls": 10
+  },
+  "42276261": {
+   "cases": null,
+   "controls": null
+  },
+  "41748837": {
+   "cases": null,
+   "controls": null
+  },
+  "42364336": {
+   "cases": null,
+   "controls": null
+  },
+  "sc:10.64898/2026.09.18.752621": {
+   "cases": 171,
+   "controls": 298
+  },
+  "sc:41863598": {
+   "cases": null,
+   "controls": null
+  },
+  "40990808": {
+   "cases": null,
+   "controls": null
+  },
+  "41159096": {
+   "cases": 672,
+   "controls": 736
+  },
+  "41757081": {
+   "cases": 32,
+   "controls": 31
+  },
+  "41876515": {
+   "cases": null,
+   "controls": null
+  },
+  "42133007": {
+   "cases": null,
+   "controls": null
+  },
+  "10.1016/j.bpsgos.2025.100650": {
+   "cases": 40,
+   "controls": 20
+  },
+  "42463512": {
+   "cases": null,
+   "controls": null
+  },
+  "41506462": {
+   "cases": null,
+   "controls": null
+  },
+  "41788138": {
+   "cases": null,
+   "controls": null
+  },
+  "41714609": {
+   "cases": null,
+   "controls": null
+  },
+  "41443001": {
+   "cases": null,
+   "controls": null
+  },
+  "42623758": {
+   "cases": null,
+   "controls": null
+  },
+  "42033308": {
+   "cases": 100,
+   "controls": 36
+  },
+  "42693176": {
+   "cases": null,
+   "controls": null
+  },
+  "39526318": {
+   "cases": 15,
+   "controls": 15
+  },
+  "42094829": {
+   "cases": null,
+   "controls": null
+  },
+  "14993118": {
+   "cases": 8,
+   "controls": 10
+  },
+  "17822540": {
+   "cases": 55,
+   "controls": 55
+  },
+  "17471287": {
+   "cases": 14,
+   "controls": 14
+  },
+  "19834500": {
+   "cases": 14,
+   "controls": 12
+  },
+  "21532980": {
+   "cases": 13,
+   "controls": 8
+  },
+  "21972136": {
+   "cases": 9,
+   "controls": 12
+  },
+  "23062752": {
+   "cases": 16,
+   "controls": 16
+  },
+  "24628518": {
+   "cases": 8,
+   "controls": 8
+  },
+  "25708228": {
+   "cases": 4,
+   "controls": 6
+  },
+  "26485546": {
+   "cases": 4,
+   "controls": 6
+  },
+  "30468562": {
+   "cases": 10,
+   "controls": 10
+  },
+  "31477693": {
+   "cases": 5,
+   "controls": 11
+  },
+  "32143829": {
+   "cases": 144,
+   "controls": 111
+  },
+  "34154796": {
+   "cases": 341,
+   "controls": 437
+  },
+  "10.1038/s44220-024-00306-1": {
+   "cases": 43,
+   "controls": 60
+  },
+  "38648100": {
+   "cases": 29,
+   "controls": 29
+  }
+ }
+}

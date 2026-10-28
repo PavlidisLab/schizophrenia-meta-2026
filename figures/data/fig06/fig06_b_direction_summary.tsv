@@ -1,0 +1,11 @@
+# figure: fig06 panel b
+# script: core80_work_2026-10-16/P11/b/f6/export_fig06_core80.py (copy of analyses/figure_exports/export_fig06.py; paths and population stamp changed, panel d dropped), run 2026-10-17
+# population: core-80 base: 72 primary brain studies = lists (recurrence.py scenario 'published, brain', study tier; 80 studies, 72 contributing lists; Shao 2008 PMID 18191109 out); n_k = |M_k| (RECURRENCE_NK=membership); analysis set = the 383 study-tier genes at q_bh < 0.1 (set study_brain of base78_2026-10-16/B80/out/recurrent_sets.tsv), count set 107 genes in 10 or more lists (primary), 2,422 in 5 or more (sensitivity); recurrence_genes.tsv sha256 dda5eb621c15; recurrence.tsv sha256 bcbf50f8e334; corpus/lineage.json sha256 4f919a83fea3; panel a = the study-tier q<0.1 set of the in-place recurrence_genes.tsv (383), rows named 'q<0.1' = the in-place q_bh / q_expr_bh sets on this base
+# input: analyses/recurrence_direction/direction_summary.tsv sha256 8e392b2d9d28
+# share_majority_if_random = expected share in the majority direction if each list's direction were random (source column); rows: study tier q<0.1 uniform null (383), expression-matched q<0.1 (140), 3 or more studies, 5+ studies, 10 or more studies
+gene_set	genes	list_hits_with_direction	in_majority_direction	share_majority	share_majority_if_random	genes_unanimous	genes_split_40pct_or_more	genes_sign_test_p05
+study tier q<0.1 (uniform null)	383	3443	2939	0.854	0.632	116	28	187
+expression-matched q<0.1	140	1342	1185	0.883	0.627	45	11	85
+3 or more studies	6796	29282	23617	0.807	0.693	2535	937	187
+5+ studies	2422	14669	11947	0.814	0.663	754	549	187
+10 or more studies	107	1193	1043	0.874	0.619	27	6	73

@@ -1,0 +1,11 @@
+# built 2026-09-28T00:01:39 by gene-lists/coexpression/snap_sz/arm_b.py (--perm 1000 --boot 1000); SZ effect in SD of the score; age per decade in controls
+set	key	n_sz	n_ctrl	B_on	B_off	delta	se_B_on	se_B_off	se_delta	delta_lo	delta_hi	off_classes	n_boot
+Ling	ling	87	93	-0.67156	-0.43012	-0.24144	0.13698	0.12382	0.11591	-0.47029	-0.0054794	microglia,endothelia,oligodendrocyte	1000
+HBCC_main	psychad_hbcc	56	95	-0.49269	-0.4323	-0.060389	0.14723	0.16094	0.1711	-0.40906	0.27068	microglia,endothelia,oligodendrocyte	1000
+MSSM_main	psychad_mssm	127	261	-0.05763	-0.030669	-0.026961	0.11077	0.10387	0.11125	-0.24833	0.1795	microglia,endothelia,oligodendrocyte	1000
+MSSM_nodementia	psychad_mssm	43	261	-0.26464	-0.23673	-0.027904	0.19423	0.15559	0.17901	-0.40267	0.31578	microglia,endothelia,oligodendrocyte	1000
+SZBD_noLing	szbd	13	23	-0.36597	-0.17789	-0.18808	0.34947	0.40081	0.24758	-0.62314	0.33077	microglia,oligodendrocyte	1000
+SZBD_all	szbd	24	24	-0.6949	-0.33364	-0.36127	0.26249	0.29795	0.18688	-0.69935	0.014322	microglia,oligodendrocyte	1000
+CMC	cmc	47	53	-0.23704	0.22351	-0.46054	0.21527	0.20632	0.24948	-0.87874	0.0639	microglia,endothelia,oligodendrocyte	1000
+Multiome	multiome	6	5	-3.2709	-1.7113	-1.5596	6.7644	6.8808	12.665	-16.856	23.592	microglia,endothelia,oligodendrocyte	1000
+NSW	gse254569	43	33	-0.25403	-0.26659	0.01256	0.19068	0.15929	0.17256	-0.32447	0.35713	microglia,endothelia,oligodendrocyte	1000

@@ -1,0 +1,13 @@
+quantity	earlier_version	new
+alpha_hat	0.6467	0.6543
+lr_lo	0.6500	0.6500
+lr_hi	0.6500	0.6500
+loglik_max	-157201.8192	-157951.0473
+boot_lists_alpha_hat_95	0.470 to 0.820	0.481 to 0.830
+boot_clusters_alpha_hat_95	0.493 to 0.867	0.489 to 0.875
+boot_clusters_alpha_hat_median	0.6391	0.6457
+n_units	25	24
+exp5_at_alpha_hat	1515.7467	1522.7044
+exp10_at_alpha_hat	6.8694	7.0130
+exp5_at_lr_lo	1521.0500	1515.6518
+exp5_at_lr_hi	1521.0500	1515.6518

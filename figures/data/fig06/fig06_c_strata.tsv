@@ -1,0 +1,154 @@
+# figure: fig06 panel c
+# script: core80_work_2026-10-16/P11/b/f6/export_fig06_core80.py (copy of analyses/figure_exports/export_fig06.py; paths and population stamp changed, panel d dropped), run 2026-10-17
+# population: core-80 base: 72 primary brain studies = lists (recurrence.py scenario 'published, brain', study tier; 80 studies, 72 contributing lists; Shao 2008 PMID 18191109 out); n_k = |M_k| (RECURRENCE_NK=membership); analysis set = the 383 study-tier genes at q_bh < 0.1 (set study_brain of base78_2026-10-16/B80/out/recurrent_sets.tsv), count set 107 genes in 10 or more lists (primary), 2,422 in 5 or more (sensitivity); recurrence_genes.tsv sha256 dda5eb621c15; recurrence.tsv sha256 bcbf50f8e334; corpus/lineage.json sha256 4f919a83fea3; panel a = the study-tier q<0.1 set of the in-place recurrence_genes.tsv (383), rows named 'q<0.1' = the in-place q_bh / q_expr_bh sets on this base
+# input: analyses/recurrence_sources/strata.tsv sha256 adec2afb59d3
+# input: analyses/recurrence_sources/theme_strata.tsv sha256 4d0774a2ed04
+# stratum_type size / era / tech from strata.tsv (no permutation p is stored for these: perm_p empty); stratum_type theme from theme_strata.tsv (perm_p = 5000 permutations of theme membership across studies, seed 20260929; q_bh = BH over themes within a gene set)
+# share_slots = share of list slots, share_hits = share of the set's list hits; ratio = share_hits / share_slots
+# 2026-10-21: gene set '3+ cohort clusters' with spanning studies in each of their clusters (6,236 genes)
+gene_set	n_genes	stratum_type	stratum	n_studies	list_slots	share_slots	hits	share_hits	ratio	perm_p	q_bh
+study tier q<0.1	383	size	large (N >= 150)	9	6728	0.158	484	0.138	0.87		
+study tier q<0.1	383	size	not large	63	35806	0.842	3025	0.862	1.02		
+study tier q<0.1	383	era	era 2001-2012	16	6951	0.163	634	0.181	1.11		
+study tier q<0.1	383	era	era 2013-2018	22	13712	0.322	1169	0.333	1.03		
+study tier q<0.1	383	era	era 2019-2026	34	21871	0.514	1706	0.486	0.95		
+study tier q<0.1	383	tech	tech array_early	5	334	0.008	89	0.025	3.23		
+study tier q<0.1	383	tech	tech array_whole	23	11620	0.273	958	0.273	1.0		
+study tier q<0.1	383	tech	tech mixed	1	2022	0.048	128	0.036	0.77		
+study tier q<0.1	383	tech	tech other	1	1010	0.024	107	0.03	1.28		
+study tier q<0.1	383	tech	tech rnaseq	36	24035	0.565	1934	0.551	0.98		
+study tier q<0.1	383	tech	tech single_cell	6	3513	0.083	293	0.083	1.01		
+expression-matched q<0.1	140	size	large (N >= 150)	9	6728	0.158	178	0.131	0.83		
+expression-matched q<0.1	140	size	not large	63	35806	0.842	1181	0.869	1.03		
+expression-matched q<0.1	140	era	era 2001-2012	16	6951	0.163	214	0.157	0.96		
+expression-matched q<0.1	140	era	era 2013-2018	22	13712	0.322	481	0.354	1.1		
+expression-matched q<0.1	140	era	era 2019-2026	34	21871	0.514	664	0.489	0.95		
+expression-matched q<0.1	140	tech	tech array_early	5	334	0.008	31	0.023	2.9		
+expression-matched q<0.1	140	tech	tech array_whole	23	11620	0.273	319	0.235	0.86		
+expression-matched q<0.1	140	tech	tech mixed	1	2022	0.048	41	0.03	0.63		
+expression-matched q<0.1	140	tech	tech other	1	1010	0.024	46	0.034	1.43		
+expression-matched q<0.1	140	tech	tech rnaseq	36	24035	0.565	849	0.625	1.11		
+expression-matched q<0.1	140	tech	tech single_cell	6	3513	0.083	73	0.054	0.65		
+3+ cohort clusters	6236	size	large (N >= 150)	9	6728	0.158	3527	0.131	0.83		
+3+ cohort clusters	6236	size	not large	63	35806	0.842	23498	0.869	1.03		
+3+ cohort clusters	6236	era	era 2001-2012	16	6951	0.163	4951	0.183	1.12		
+3+ cohort clusters	6236	era	era 2013-2018	22	13712	0.322	8716	0.323	1.0		
+3+ cohort clusters	6236	era	era 2019-2026	34	21871	0.514	13358	0.494	0.96		
+3+ cohort clusters	6236	tech	tech array_early	5	334	0.008	303	0.011	1.43		
+3+ cohort clusters	6236	tech	tech array_whole	23	11620	0.273	7052	0.261	0.96		
+3+ cohort clusters	6236	tech	tech mixed	1	2022	0.048	1747	0.065	1.36		
+3+ cohort clusters	6236	tech	tech other	1	1010	0.024	606	0.022	0.94		
+3+ cohort clusters	6236	tech	tech rnaseq	36	24035	0.565	14632	0.541	0.96		
+3+ cohort clusters	6236	tech	tech single_cell	6	3513	0.083	2685	0.099	1.2		
+robust set (impact)	39	size	large (N >= 150)	9	6728	0.158	32	0.081	0.51		
+robust set (impact)	39	size	not large	63	35806	0.842	365	0.919	1.09		
+robust set (impact)	39	era	era 2001-2012	16	6951	0.163	79	0.199	1.22		
+robust set (impact)	39	era	era 2013-2018	22	13712	0.322	153	0.385	1.2		
+robust set (impact)	39	era	era 2019-2026	34	21871	0.514	165	0.416	0.81		
+robust set (impact)	39	tech	tech array_early	5	334	0.008	19	0.048	6.09		
+robust set (impact)	39	tech	tech array_whole	23	11620	0.273	92	0.232	0.85		
+robust set (impact)	39	tech	tech mixed	1	2022	0.048	13	0.033	0.69		
+robust set (impact)	39	tech	tech other	1	1010	0.024	19	0.048	2.02		
+robust set (impact)	39	tech	tech rnaseq	36	24035	0.565	239	0.602	1.07		
+robust set (impact)	39	tech	tech single_cell	6	3513	0.083	15	0.038	0.46		
+5+ studies	2422	size	large (N >= 150)	9	6728	0.158	2254	0.151	0.95		
+5+ studies	2422	size	not large	63	35806	0.842	12709	0.849	1.01		
+5+ studies	2422	era	era 2001-2012	16	6951	0.163	2496	0.167	1.02		
+5+ studies	2422	era	era 2013-2018	22	13712	0.322	4947	0.331	1.03		
+5+ studies	2422	era	era 2019-2026	34	21871	0.514	7520	0.503	0.98		
+5+ studies	2422	tech	tech array_early	5	334	0.008	211	0.014	1.8		
+5+ studies	2422	tech	tech array_whole	23	11620	0.273	4092	0.273	1.0		
+5+ studies	2422	tech	tech mixed	1	2022	0.048	603	0.04	0.85		
+5+ studies	2422	tech	tech other	1	1010	0.024	404	0.027	1.14		
+5+ studies	2422	tech	tech rnaseq	36	24035	0.565	8251	0.551	0.98		
+5+ studies	2422	tech	tech single_cell	6	3513	0.083	1402	0.094	1.13		
+study tier q<0.1		theme	immune / inflammation	27		0.425		0.457	1.08	0.2174	0.4847
+study tier q<0.1		theme	synapse / neurotransmission	29		0.353		0.37	1.05	0.3033	0.4847
+study tier q<0.1		theme	neurodevelopment	17		0.311		0.321	1.03	0.4235	0.5445
+study tier q<0.1		theme	GABA interneurons	12		0.091		0.11	1.21	0.1254	0.4847
+study tier q<0.1		theme	oligodendrocytes / myelin	8		0.061		0.101	1.66	0.0134	0.2412
+study tier q<0.1		theme	astrocytes	4		0.017		0.028	1.66	0.081	0.4847
+study tier q<0.1		theme	microglia	2		0.015		0.025	1.68	0.1784	0.4847
+study tier q<0.1		theme	mitochondria / energy metabolism	9		0.196		0.166	0.85	0.8454	0.8951
+study tier q<0.1		theme	stress response / hypoxia	1		0.017		0.027	1.61	0.3231	0.4847
+study tier q<0.1		theme	circadian	2		0.015		0.018	1.18	0.4121	0.5445
+study tier q<0.1		theme	vascular / endothelial	2		0.02		0.028	1.41	0.2737	0.4847
+study tier q<0.1		theme	epigenetics / chromatin	6		0.184		0.179	0.97	0.5973	0.7168
+study tier q<0.1		theme	RNA processing / non-coding RNA	7		0.104		0.123	1.18	0.2486	0.4847
+study tier q<0.1		theme	protein homeostasis / ubiquitin	6		0.026		0.019	0.73	0.9302	0.9302
+study tier q<0.1		theme	cell death / apoptosis	4		0.042		0.037	0.89	0.7207	0.8108
+study tier q<0.1		theme	hormones / HPA axis	1		0.001		0.003	2.47	0.1684	0.4847
+study tier q<0.1		theme	immune / inflammation OR stress response / hypoxia	27		0.425		0.457	1.08	0.2228	0.4847
+study tier q<0.1		theme	immune OR stress OR microglia OR astrocytes	29		0.432		0.469	1.09	0.1882	0.4847
+expression-matched q<0.1		theme	immune / inflammation	27		0.425		0.554	1.3	0.03	0.2095
+expression-matched q<0.1		theme	synapse / neurotransmission	29		0.353		0.381	1.08	0.2843	0.4652
+expression-matched q<0.1		theme	neurodevelopment	17		0.311		0.289	0.93	0.6605	0.7431
+expression-matched q<0.1		theme	GABA interneurons	12		0.091		0.107	1.18	0.2583	0.4649
+expression-matched q<0.1		theme	oligodendrocytes / myelin	8		0.061		0.093	1.53	0.0996	0.2561
+expression-matched q<0.1		theme	astrocytes	4		0.017		0.039	2.29	0.0582	0.2095
+expression-matched q<0.1		theme	microglia	2		0.015		0.058	3.99	0.0578	0.2095
+expression-matched q<0.1		theme	mitochondria / energy metabolism	9		0.196		0.182	0.93	0.6193	0.7431
+expression-matched q<0.1		theme	stress response / hypoxia	1		0.017		0.029	1.72	0.3161	0.4742
+expression-matched q<0.1		theme	circadian	2		0.015		0.026	1.71	0.2326	0.4649
+expression-matched q<0.1		theme	vascular / endothelial	2		0.02		0.042	2.1	0.1756	0.3951
+expression-matched q<0.1		theme	epigenetics / chromatin	6		0.184		0.146	0.8	0.773	0.8185
+expression-matched q<0.1		theme	RNA processing / non-coding RNA	7		0.104		0.113	1.08	0.4469	0.5995
+expression-matched q<0.1		theme	protein homeostasis / ubiquitin	6		0.026		0.014	0.55	0.9626	0.9626
+expression-matched q<0.1		theme	cell death / apoptosis	4		0.042		0.046	1.09	0.4663	0.5995
+expression-matched q<0.1		theme	hormones / HPA axis	1		0.001		0.007	5.75	0.0882	0.2561
+expression-matched q<0.1		theme	immune / inflammation OR stress response / hypoxia	27		0.425		0.554	1.3	0.0352	0.2095
+expression-matched q<0.1		theme	immune OR stress OR microglia OR astrocytes	29		0.432		0.564	1.31	0.0236	0.2095
+3+ cohort clusters		theme	immune / inflammation	27		0.425		0.406	0.96	0.8174	0.9598
+3+ cohort clusters		theme	synapse / neurotransmission	29		0.353		0.359	1.02	0.3565	0.9598
+3+ cohort clusters		theme	neurodevelopment	17		0.311		0.33	1.06	0.1826	0.8361
+3+ cohort clusters		theme	GABA interneurons	12		0.091		0.089	0.98	0.5717	0.9598
+3+ cohort clusters		theme	oligodendrocytes / myelin	8		0.061		0.069	1.14	0.0734	0.8361
+3+ cohort clusters		theme	astrocytes	4		0.017		0.02	1.15	0.1412	0.8361
+3+ cohort clusters		theme	microglia	2		0.015		0.011	0.76	0.9446	0.9598
+3+ cohort clusters		theme	mitochondria / energy metabolism	9		0.196		0.166	0.85	0.9598	0.9598
+3+ cohort clusters		theme	stress response / hypoxia	1		0.017		0.016	0.94	0.6573	0.9598
+3+ cohort clusters		theme	circadian	2		0.015		0.012	0.82	0.8512	0.9598
+3+ cohort clusters		theme	vascular / endothelial	2		0.02		0.02	0.99	0.5403	0.9598
+3+ cohort clusters		theme	epigenetics / chromatin	6		0.184		0.201	1.09	0.1858	0.8361
+3+ cohort clusters		theme	RNA processing / non-coding RNA	7		0.104		0.107	1.03	0.3739	0.9598
+3+ cohort clusters		theme	protein homeostasis / ubiquitin	6		0.026		0.022	0.84	0.9184	0.9598
+3+ cohort clusters		theme	cell death / apoptosis	4		0.042		0.037	0.9	0.7393	0.9598
+3+ cohort clusters		theme	hormones / HPA axis	1		0.001		0.001	0.84	0.756	0.9598
+3+ cohort clusters		theme	immune / inflammation OR stress response / hypoxia	27		0.425		0.406	0.96	0.8164	0.9598
+3+ cohort clusters		theme	immune OR stress OR microglia OR astrocytes	29		0.432		0.414	0.96	0.8098	0.9598
+robust set (impact)		theme	immune / inflammation	27		0.425		0.574	1.35	0.0286	0.1377
+robust set (impact)		theme	synapse / neurotransmission	29		0.353		0.378	1.07	0.3255	0.5326
+robust set (impact)		theme	neurodevelopment	17		0.311		0.307	0.99	0.5407	0.6492
+robust set (impact)		theme	GABA interneurons	12		0.091		0.144	1.58	0.0598	0.2106
+robust set (impact)		theme	oligodendrocytes / myelin	8		0.061		0.128	2.12	0.0282	0.1377
+robust set (impact)		theme	astrocytes	4		0.017		0.035	2.07	0.1072	0.2412
+robust set (impact)		theme	microglia	2		0.015		0.05	3.46	0.102	0.2412
+robust set (impact)		theme	mitochondria / energy metabolism	9		0.196		0.186	0.95	0.5771	0.6492
+robust set (impact)		theme	stress response / hypoxia	1		0.017		0.04	2.42	0.2533	0.4559
+robust set (impact)		theme	circadian	2		0.015		0.015	1.01	0.5337	0.6492
+robust set (impact)		theme	vascular / endothelial	2		0.02		0.043	2.15	0.2018	0.4036
+robust set (impact)		theme	epigenetics / chromatin	6		0.184		0.159	0.86	0.6719	0.7114
+robust set (impact)		theme	RNA processing / non-coding RNA	7		0.104		0.103	0.99	0.5357	0.6492
+robust set (impact)		theme	protein homeostasis / ubiquitin	6		0.026		0.013	0.49	0.9574	0.9574
+robust set (impact)		theme	cell death / apoptosis	4		0.042		0.04	0.97	0.5533	0.6492
+robust set (impact)		theme	hormones / HPA axis	1		0.001		0.008	6.56	0.0702	0.2106
+robust set (impact)		theme	immune / inflammation OR stress response / hypoxia	27		0.425		0.574	1.35	0.0306	0.1377
+robust set (impact)		theme	immune OR stress OR microglia OR astrocytes	29		0.432		0.587	1.36	0.0222	0.1377
+5+ studies		theme	immune / inflammation	27		0.425		0.422	0.99	0.5537	0.735
+5+ studies		theme	synapse / neurotransmission	29		0.353		0.356	1.01	0.4389	0.735
+5+ studies		theme	neurodevelopment	17		0.311		0.33	1.06	0.2132	0.735
+5+ studies		theme	GABA interneurons	12		0.091		0.096	1.06	0.2515	0.735
+5+ studies		theme	oligodendrocytes / myelin	8		0.061		0.08	1.33	0.0098	0.1764
+5+ studies		theme	astrocytes	4		0.017		0.02	1.2	0.1464	0.735
+5+ studies		theme	microglia	2		0.015		0.012	0.83	0.86	0.9544
+5+ studies		theme	mitochondria / energy metabolism	9		0.196		0.172	0.87	0.9144	0.9544
+5+ studies		theme	stress response / hypoxia	1		0.017		0.018	1.1	0.5007	0.735
+5+ studies		theme	circadian	2		0.015		0.017	1.1	0.4033	0.735
+5+ studies		theme	vascular / endothelial	2		0.02		0.024	1.18	0.2927	0.735
+5+ studies		theme	epigenetics / chromatin	6		0.184		0.193	1.05	0.3591	0.735
+5+ studies		theme	RNA processing / non-coding RNA	7		0.104		0.118	1.13	0.1442	0.735
+5+ studies		theme	protein homeostasis / ubiquitin	6		0.026		0.021	0.81	0.9544	0.9544
+5+ studies		theme	cell death / apoptosis	4		0.042		0.035	0.84	0.9034	0.9544
+5+ studies		theme	hormones / HPA axis	1		0.001		0.001	1.04	0.5717	0.735
+5+ studies		theme	immune / inflammation OR stress response / hypoxia	27		0.425		0.422	0.99	0.5683	0.735
+5+ studies		theme	immune OR stress OR microglia OR astrocytes	29		0.432		0.432	1.0	0.4931	0.735

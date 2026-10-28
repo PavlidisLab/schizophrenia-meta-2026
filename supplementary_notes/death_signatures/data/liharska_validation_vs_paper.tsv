@@ -1,0 +1,27 @@
+# inputs (sha256 prefix): Liharska ST1 d8a4171a6329 (extracted from MOESM8 sha256 prefix in the file header), ST5 498be821cb72 (MOESM12), Collado-Torres Table S4 5024842c8776 (github LieberInstitute/living_brain_reanalysis processed-data/SupplementaryTables/TableS4.csv, downloaded 2026-10-18)
+# recurrence_genes.tsv dda5eb621c15; recurrent_sets.tsv 3c42f67cdd7a; DE prior 68272e907b72; pH axis v2 controls 2c72a9b279a2; GTEx hardy_t_by_region 54f989c55753; HBCC specificity 84842a9e04b2
+# script: scripts/s1_main.py, run 2026-10-18; seed 20261018; matched sets 10000; bootstrap over genes: 2000 (set analyses), 1000 (genome-wide); symbols: ENSG -> HGNC approved symbol (HGNC ensembl_gene_id column via extract.load_hgnc), minimum-P row per symbol; NEW analysis
+# gene mapping: {'ST1_rows': 21635, 'ST1_unmapped_ENSG': 3139, 'ST1_symbols': 18496, 'CT_rows_expressed': 21155, 'CT_unmapped': 2735, 'ST5_rows': 29894, 'ST5_unmapped_ENSG': 7311, 'R2_axes_on_LIV-PM Liharska (ST1)': 0.0821, 'R2_axes_on_LIV-PM Collado-Torres, no qSVA': 0.1482, 'R2_axes_on_LIV-PM Collado-Torres, with qSVA': 0.069, 'R2_axes_on_SCZ1': 0.1566, 'R2_axes_on_SCZ2': 0.1576}
+# intervals: percentile bootstrap over genes (genes are not independent: co-expression); matched null = 10,000 sets drawn from published-brain genes with an SZ sign outside the 383, same expression decile x DE-prior quintile strata as ad_383.py; null columns give mean and 2.5%-97.5% range; perm P descriptive only
+# paper values from Liharska et al. 2025 Results (preprint text: ALZ1/ALZ2/SCZ1/SCZ2 vs primary LIV-PM; PD1/PD2 vs LIV-PM signatures from PM2/PM1 plus half of LIV, not in the supplement); statistic used by the paper (logFC or t) is not stated in the text, both given
+disease_signature	liv_pm_statistic	n_genes	spearman_here	boot95_low	boot95_high	paper_spearman	difference	note
+ALZ1	logFC	17200	0.3975	0.3837	0.4124	0.4	-0.0025	
+ALZ1	signed z / t	17200	0.4423	0.4291	0.4547	0.4	0.0423	
+ALZ2	logFC	16076	0.2797	0.2645	0.2955	0.27	0.0097	
+ALZ2	signed z / t	16076	0.3004	0.2861	0.3141	0.27	0.0304	
+SCZ1	logFC	16555	0.2	0.1851	0.2159	0.2	0.0	
+SCZ1	signed z / t	16555	0.1817	0.1668	0.1961	0.2	-0.0183	
+SCZ2	logFC	16910	0.1691	0.1543	0.1852	0.17	-0.0009	
+SCZ2	signed z / t	16910	0.1533	0.1381	0.1678	0.17	-0.0167	
+PD1	logFC	18496	0.6263	0.6154	0.6375	0.64	-0.0137	paper PD1 0.64 / PD2 0.39 use LIV-PM signatures from PM2 (PD1) or PM1 (PD2) plus half of the LIV samples, not in the supplement; primary signature used here
+PD1	signed z / t	18496	0.6488	0.6394	0.6569	0.64	0.0088	paper PD1 0.64 / PD2 0.39 use LIV-PM signatures from PM2 (PD1) or PM1 (PD2) plus half of the LIV samples, not in the supplement; primary signature used here
+PD2	logFC	18496	0.4143	0.4002	0.428	0.39	0.0243	paper PD1 0.64 / PD2 0.39 use LIV-PM signatures from PM2 (PD1) or PM1 (PD2) plus half of the LIV samples, not in the supplement; primary signature used here
+PD2	signed z / t	18496	0.4469	0.4351	0.4583	0.39	0.0569	paper PD1 0.64 / PD2 0.39 use LIV-PM signatures from PM2 (PD1) or PM1 (PD2) plus half of the LIV samples, not in the supplement; primary signature used here
+Collado-Torres 'original' t versus Liharska ST1 t	t	18321	0.99908					same results re-exported by Collado-Torres (sign and gene mapping check)
+LIV-PM Collado-Torres, no qSVA t versus Liharska ST1 t	t	18321	0.9419					
+LIV-PM Collado-Torres, with qSVA t versus Liharska ST1 t	t	18321	0.0114					
+ALZ1 vs ALZ2 (logFC)	-	16525	0.5008			0.49	0.0108	
+SCZ1 vs SCZ2 (logFC)	-	17561	0.2691			0.26	0.0091	
+PD1 vs PD2 (logFC)	-	18496	0.6307			0.63	0.0007	
+count of PM DEG (adj.P<0.05 and sign) vs 'DE status' column	t	7017						genes in DE status column (after min-p per symbol) = 7017
+count of LIV DEG (adj.P<0.05 and sign) vs 'DE status' column	t	7770						genes in DE status column (after min-p per symbol) = 7770

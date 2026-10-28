@@ -1,0 +1,11 @@
+# figure: Note 11 other paths in mapping_runs.tsv
+# script: computed 2026-10-22 from the source tables listed (no script file)
+# source: figures/data/forking_paths_v2/forking_v2_b_spec_curve.tsv sha256 7cf30383e8d8 (genes in 10+ lists, expectations); provenance/supplementary_note_03_multiverse/mapping_runs.tsv sha256 03998abc850c (overlap with the 383: columns s5_in_study_brain, s10_in_study_brain)
+# all six mapping_runs rows: genes in 5 and 10 or more lists and overlap with the 383; expectations at 10 or more are not in this file
+tag	n_studies	obs5	exp5_ours	obs10	s5_in_study_brain	s10_in_study_brain
+main	72	2422	2098.5	107	383	107
+jaffe_genelevel	72	2388	2064.7	103	383	103
+tight	59	184	77.0	1	128	1
+fc058	67	510	321.8	15	253	15
+cap200	72	198	69.0	4	144	4
+fc026	72	1147	929.0	48	351	48

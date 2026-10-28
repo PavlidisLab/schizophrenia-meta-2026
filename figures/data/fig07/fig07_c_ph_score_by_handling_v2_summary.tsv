@@ -1,0 +1,12 @@
+# figure: fig07 panel c (v2) summary; median and quartiles of signed_ph_score over studies with scored_ge10 = yes; n_all = all studies with the call
+# axis: signed_ph_score / n_scored / scored_ge10 use the control pH z of pH axis v2 (primary; analyses/confounds/results/combined_controls_pH.tsv replaced by the v2 table, sha256 of the v2 table 2a680040e199 from inputs_ph_axis_v2/axis_v2_controls.tsv.gz sha256 2c72a9b279a2); the *_axis_v1 columns are the v1 fork
+ph_call	n	median	q1	q3	n_all	axis_primary	n_axis_v1	median_axis_v1	q1_axis_v1	q3_axis_v1
+adjusted covariate	14	1.11	0.275	2.53	16	v2	14	0.876	0.345	1.96
+considered as candidate covariate	1	-0.415	-0.415	-0.415	1	v2	1	-0.447	-0.447	-0.447
+discussed as confound without adjustment	1	0.807	0.807	0.807	2	v2	1	0.544	0.544	0.544
+matched	16	0.916	0.494	1.435	16	v2	16	0.506	0.222	0.969
+not covariate in primary; sensitivity with pH	1	1.265	1.265	1.265	1	v2	1	0.858	0.858	0.858
+reported only	8	0.906	0.435	1.598	8	v2	8	0.912	0.455	1.164
+sensitivity only	5	0.849	-0.045	1.047	5	v2	5	0.735	-0.093	0.798
+silent	20	0.645	-0.002	1.384	22	v2	20	0.446	0.017	1.145
+unread	1	0.471	0.471	0.471	1	v2	1	-0.003	-0.003	-0.003

@@ -1,0 +1,36 @@
+# figure: fig08 panel a (right)
+# script: analyses/redo_on_209_2026-10-11/3_ph_agonal_axes/export_fig08_209.py (copy of analyses/figure_exports/export_fig08_fig09_fig10.py: output folder, population text, results_516 in place of results_516, fig08 only), run 2026-10-11
+# input: analyses/dachet_live_tissue_2026-10-08/results/alignment_by_time.tsv sha256 206a4895165c
+# Spearman rho of the change from 0 h with the control pH Z, the control PMI Z and Gandal 2018 SCZ / BD / ASD t statistics; Z > 0 = higher with higher pH / PMI in controls
+# axis: unsuffixed pH columns = pH axis v2 (primary; inputs_ph_axis_v2/axis_v2_controls.tsv.gz sha256 2c72a9b279a2; 10 dataset-regions, persons counted once); columns ending _axis_v1 = v1 fork (5 donor-separate datasets; analyses/confounds/results/combined_controls_pH.tsv sha256 ebab86afedd3)
+hours	axis	genes	rho	rho_axis_v1	genes_axis_v1	axis_of_row
+1	pH Z	13179	-0.466	-0.528	13027	v2 (primary); v1 in _axis_v1 columns
+1	PMI Z	13027	-0.401	-0.401	13027	not pH-axis dependent (columns _axis_v1 equal the primary)
+1	Gandal SCZ t	14702	-0.052	-0.052	14702	not pH-axis dependent (columns _axis_v1 equal the primary)
+1	Gandal BD t	14702	-0.146	-0.146	14702	not pH-axis dependent (columns _axis_v1 equal the primary)
+1	Gandal ASD t	14702	0.186	0.186	14702	not pH-axis dependent (columns _axis_v1 equal the primary)
+2	pH Z	13179	0.174	0.043	13027	v2 (primary); v1 in _axis_v1 columns
+2	PMI Z	13027	-0.19	-0.19	13027	not pH-axis dependent (columns _axis_v1 equal the primary)
+2	Gandal SCZ t	14702	0.07	0.07	14702	not pH-axis dependent (columns _axis_v1 equal the primary)
+2	Gandal BD t	14702	0.0	0.0	14702	not pH-axis dependent (columns _axis_v1 equal the primary)
+2	Gandal ASD t	14702	0.138	0.138	14702	not pH-axis dependent (columns _axis_v1 equal the primary)
+4	pH Z	13179	-0.462	-0.543	13027	v2 (primary); v1 in _axis_v1 columns
+4	PMI Z	13027	-0.428	-0.428	13027	not pH-axis dependent (columns _axis_v1 equal the primary)
+4	Gandal SCZ t	14702	-0.064	-0.064	14702	not pH-axis dependent (columns _axis_v1 equal the primary)
+4	Gandal BD t	14702	-0.188	-0.188	14702	not pH-axis dependent (columns _axis_v1 equal the primary)
+4	Gandal ASD t	14702	0.195	0.195	14702	not pH-axis dependent (columns _axis_v1 equal the primary)
+8	pH Z	13179	-0.23	-0.392	13027	v2 (primary); v1 in _axis_v1 columns
+8	PMI Z	13027	-0.519	-0.519	13027	not pH-axis dependent (columns _axis_v1 equal the primary)
+8	Gandal SCZ t	14702	-0.084	-0.084	14702	not pH-axis dependent (columns _axis_v1 equal the primary)
+8	Gandal BD t	14702	-0.207	-0.207	14702	not pH-axis dependent (columns _axis_v1 equal the primary)
+8	Gandal ASD t	14702	0.159	0.159	14702	not pH-axis dependent (columns _axis_v1 equal the primary)
+12	pH Z	13179	-0.379	-0.491	13027	v2 (primary); v1 in _axis_v1 columns
+12	PMI Z	13027	-0.486	-0.486	13027	not pH-axis dependent (columns _axis_v1 equal the primary)
+12	Gandal SCZ t	14702	-0.093	-0.093	14702	not pH-axis dependent (columns _axis_v1 equal the primary)
+12	Gandal BD t	14702	-0.202	-0.202	14702	not pH-axis dependent (columns _axis_v1 equal the primary)
+12	Gandal ASD t	14702	0.146	0.146	14702	not pH-axis dependent (columns _axis_v1 equal the primary)
+24	pH Z	13179	-0.368	-0.504	13027	v2 (primary); v1 in _axis_v1 columns
+24	PMI Z	13027	-0.522	-0.522	13027	not pH-axis dependent (columns _axis_v1 equal the primary)
+24	Gandal SCZ t	14702	-0.114	-0.114	14702	not pH-axis dependent (columns _axis_v1 equal the primary)
+24	Gandal BD t	14702	-0.228	-0.228	14702	not pH-axis dependent (columns _axis_v1 equal the primary)
+24	Gandal ASD t	14702	0.136	0.136	14702	not pH-axis dependent (columns _axis_v1 equal the primary)

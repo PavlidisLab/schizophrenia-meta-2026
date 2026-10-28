@@ -1,0 +1,129 @@
+{
+ "_doc": "Studies removed from the corpus by decision, keyed by PMID. build_lineage.py sets lineage category '2' for each (as page_view treats category 2); analyses/apply_corpus_exclusions.py sets in_corpus false in analyses/primary_lists.json. Study facts (scope, n_new_genes) are not changed. Corpus criterion: gene coverage that is relatively high and gene selection that is less biased; targeted panels fail the second. No minimum gene count for microarrays (decided 2026-10-11, reversing the 5,000-gene cut of 2026-10-10). Hoseth 2018 (141 Wnt genes on a genome-wide array) is treated as a panel.",
+ "11576761": {
+  "label": "Vawter 2001",
+  "reason": "targeted panel (selected genes) fails the gene-selection criterion",
+  "date": "2026-10-10",
+  "note": "Corpus criterion: gene coverage that is relatively high and gene selection that is less biased. Moved out of the corpus to the small-study set."
+ },
+ "11930015": {
+  "label": "Mimmack 2002",
+  "reason": "targeted panel (selected genes) fails the gene-selection criterion",
+  "date": "2026-10-10",
+  "note": "Corpus criterion: gene coverage that is relatively high and gene selection that is less biased. Moved out of the corpus to the small-study set."
+ },
+ "12363385": {
+  "label": "Vawter 2002",
+  "reason": "targeted panel (selected genes) fails the gene-selection criterion",
+  "date": "2026-10-10",
+  "note": "Corpus criterion: gene coverage that is relatively high and gene selection that is less biased. Moved out of the corpus to the small-study set."
+ },
+ "14741323": {
+  "label": "Vawter 2004",
+  "reason": "targeted panel (selected genes) fails the gene-selection criterion",
+  "date": "2026-10-10",
+  "note": "Corpus criterion: gene coverage that is relatively high and gene selection that is less biased. Moved out of the corpus to the small-study set."
+ },
+ "16103141": {
+  "label": "Frank 2005",
+  "reason": "targeted panel (selected genes) fails the gene-selection criterion",
+  "date": "2026-10-10",
+  "note": "Corpus criterion: gene coverage that is relatively high and gene selection that is less biased. Moved out of the corpus to the small-study set."
+ },
+ "17568569": {
+  "label": "Arion 2007",
+  "reason": "targeted panel (selected genes) fails the gene-selection criterion",
+  "date": "2026-10-10",
+  "note": "Corpus criterion: gene coverage that is relatively high and gene selection that is less biased. Moved out of the corpus to the small-study set."
+ },
+ "17326821": {
+  "label": "Perkins 2007",
+  "reason": "targeted panel (selected genes) fails the gene-selection criterion",
+  "date": "2026-10-10",
+  "note": "Corpus criterion: gene coverage that is relatively high and gene selection that is less biased. Moved out of the corpus to the small-study set."
+ },
+ "17471287": {
+  "label": "Hashimoto 2008",
+  "reason": "targeted panel (selected genes) fails the gene-selection criterion",
+  "date": "2026-10-10",
+  "note": "Corpus criterion: gene coverage that is relatively high and gene selection that is less biased. Moved out of the corpus to the small-study set."
+ },
+ "18683247": {
+  "label": "Narayan 2009",
+  "reason": "targeted panel (selected genes) fails the gene-selection criterion",
+  "date": "2026-10-10",
+  "note": "Corpus criterion: gene coverage that is relatively high and gene selection that is less biased. Moved out of the corpus to the small-study set."
+ },
+ "19721432": {
+  "label": "Beveridge 2010",
+  "reason": "targeted panel (selected genes) fails the gene-selection criterion",
+  "date": "2026-10-10",
+  "note": "Corpus criterion: gene coverage that is relatively high and gene selection that is less biased. Moved out of the corpus to the small-study set."
+ },
+ "20675101": {
+  "label": "Kim 2010",
+  "reason": "targeted panel (selected genes) fails the gene-selection criterion",
+  "date": "2026-10-10",
+  "note": "Corpus criterion: gene coverage that is relatively high and gene selection that is less biased. Moved out of the corpus to the small-study set."
+ },
+ "21183010": {
+  "label": "Moreau 2011",
+  "reason": "targeted panel (selected genes) fails the gene-selection criterion",
+  "date": "2026-10-10",
+  "note": "Corpus criterion: gene coverage that is relatively high and gene selection that is less biased. Moved out of the corpus to the small-study set."
+ },
+ "22675524": {
+  "label": "Matthews 2012",
+  "reason": "targeted panel (selected genes) fails the gene-selection criterion",
+  "date": "2026-10-10",
+  "note": "Corpus criterion: gene coverage that is relatively high and gene selection that is less biased. Moved out of the corpus to the small-study set."
+ },
+ "23528911": {
+  "label": "Guillozet-Bongaarts 2014",
+  "reason": "targeted panel (selected genes) fails the gene-selection criterion",
+  "date": "2026-10-10",
+  "note": "Corpus criterion: gene coverage that is relatively high and gene selection that is less biased. Moved out of the corpus to the small-study set."
+ },
+ "25433904": {
+  "label": "MacDonald 2015",
+  "reason": "targeted panel (selected genes) fails the gene-selection criterion",
+  "date": "2026-10-10",
+  "note": "Corpus criterion: gene coverage that is relatively high and gene selection that is less biased. Moved out of the corpus to the small-study set."
+ },
+ "25444170": {
+  "label": "Maekawa 2015",
+  "reason": "targeted panel (selected genes) fails the gene-selection criterion",
+  "date": "2026-10-10",
+  "note": "Corpus criterion: gene coverage that is relatively high and gene selection that is less biased. Moved out of the corpus to the small-study set."
+ },
+ "29467462": {
+  "label": "Casas 2018",
+  "reason": "targeted panel (selected genes) fails the gene-selection criterion",
+  "date": "2026-10-10",
+  "note": "Corpus criterion: gene coverage that is relatively high and gene selection that is less biased. Moved out of the corpus to the small-study set."
+ },
+ "31642882": {
+  "label": "MacDonald 2020",
+  "reason": "targeted panel (selected genes) fails the gene-selection criterion",
+  "date": "2026-10-10",
+  "note": "Corpus criterion: gene coverage that is relatively high and gene selection that is less biased. Moved out of the corpus to the small-study set."
+ },
+ "35705634": {
+  "label": "Casas 2022",
+  "reason": "targeted panel (selected genes) fails the gene-selection criterion",
+  "date": "2026-10-10",
+  "note": "Corpus criterion: gene coverage that is relatively high and gene selection that is less biased. Moved out of the corpus to the small-study set."
+ },
+ "37031222": {
+  "label": "Medina 2023",
+  "reason": "targeted panel (selected genes) fails the gene-selection criterion",
+  "date": "2026-10-10",
+  "note": "Corpus criterion: gene coverage that is relatively high and gene selection that is less biased. Moved out of the corpus to the small-study set."
+ },
+ "29507296": {
+  "label": "Hoseth 2018",
+  "reason": "141 Wnt pathway genes tested on a genome-wide array: a panel as a special case, fails the gene-selection criterion",
+  "date": "2026-10-11",
+  "note": "Corpus criterion: gene coverage that is relatively high and gene selection that is less biased. Moved out of the corpus to the small-study set."
+ }
+}

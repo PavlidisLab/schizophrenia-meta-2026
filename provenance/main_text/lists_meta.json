@@ -1,0 +1,36 @@
+{
+ "built": "2026-09-26",
+ "script": "gene-lists/de_prior_lists/build_lists.py",
+ "inputs": {
+  "cache/datasets.json": "73a65ac9b7ef280e57a4aef5205fde9d310fcfb77dd68108b4129d2d678d7db7",
+  "cache/analyses.json": "10b4d58a123737f8c62cb4d5be017934aab8238f43f607136aa41bd74a3f3cac",
+  "corpus/lineage.json": "423e05d212b05f8923c2a6518a8ff62a9a6d25e571d109aa42f77cda367930fb"
+ },
+ "human_datasets_listed": 10607,
+ "with_dea": 9135,
+ "held_out": 115,
+ "troubled": 0,
+ "single_cell": 162,
+ "tissue_class": {
+  "blood": 814,
+  "brain_other": 117,
+  "brain_postmortem": 333,
+  "in_vitro_or_cell_line": 4604,
+  "other": 3267
+ },
+ "postmortem_assumed": 146,
+ "group_counts": {
+  "1_global": 8859,
+  "1_global_no_microarray": 4181,
+  "2_brain_postmortem": 261,
+  "2_brain_postmortem_no_microarray": 139,
+  "2b_brain_postmortem_no_sz_banks": 256,
+  "2b_brain_postmortem_no_sz_banks_no_microarray": 139,
+  "3_blood": 793,
+  "3_blood_no_microarray": 141,
+  "4_global_minus_brain_blood": 7805,
+  "4_global_minus_brain_blood_no_microarray": 3901,
+  "brain_single_cell": 43,
+  "brain_single_cell_no_microarray": 43
+ }
+}

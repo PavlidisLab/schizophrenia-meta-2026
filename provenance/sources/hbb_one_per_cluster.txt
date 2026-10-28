@@ -1,0 +1,11 @@
+# copied 2026-10-21 as the source table of a hidden comment in supplement.md (Note 9, hemoglobin); original location: <analysis repo> (CD/tables/hbb_one_per_cluster.txt)
+all 22 (np.float64(0.22353485863173886), np.float64(0.008769084592701815), np.float64(0.4383006326707759), 22)
+one per cluster (np.float64(-0.1633398118670952), np.float64(-0.5560522275338048), np.float64(0.22937260379961436), 7)
+              dataset             cluster    n     logfc
+13          GSE208338                 aus  130  0.177687
+1            GSE35977             stanley  101 -0.091608
+15  GSE202537_caudate  cmc+mssm+pitt+libd   64  0.419093
+9      GSE92538_GPL96            pritzker   64 -0.134477
+6            GSE17612   GSE17612+GSE21935   50 -0.092166
+19      GSE138082_CA1           GSE138082   26 -0.488874
+18  GSE26927_temporal            GSE26927   20 -1.247049

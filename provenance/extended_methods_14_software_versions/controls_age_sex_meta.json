@@ -1,0 +1,1069 @@
+{
+ "generated": "2026-09-25T19:33:57.813682+00:00",
+ "python": "3.9.13",
+ "R": "R version 4.4.2 (2024-10-31) 3.62.2",
+ "run_order": [
+  "python3 scripts/fetch_gemma.py --samples-only",
+  "python3 scripts/build_covariates.py",
+  "python3 scripts/fetch_gemma.py --usable",
+  "Rscript scripts/de_contrasts.R full",
+  "Rscript scripts/de_contrasts.R matched <workdir>",
+  "python3 ../subject_relations/subject_relations.py (from gene-lists/)",
+  "python3 scripts/pairs.py <workdir> (or --summary-only)",
+  "python3 scripts/figures.py",
+  "python3 scripts/write_meta.py"
+ ],
+ "seeds": {
+  "de_contrasts.R": 20260925,
+  "pairs.py": 20260925
+ },
+ "gemma": {
+  "../confounds/data/gemma/13014_meta.json": {
+   "gemma_id": "13014",
+   "host": "https://gemma.msl.ubc.ca/rest/v2",
+   "method": "anonymous GET",
+   "retrieved": "2026-09-24T15:33:15.071407Z",
+   "files": {
+    "13014_processed.tsv.gz": {
+     "url": "https://gemma.msl.ubc.ca/rest/v2/datasets/13014/data/processed",
+     "sha256_body": "65c166604eee359e6a120be2af8dabf6c5a424dcbb33d220d5fb7dade575511b",
+     "bytes": 82999448
+    },
+    "13014_samples.json": {
+     "url": "https://gemma.msl.ubc.ca/rest/v2/datasets/13014/samples",
+     "sha256_body": "970ca4733866fd9c639491598c786be2a0a50fa4e0a09e3bf2206556d5864fc4",
+     "bytes": 2738756
+    }
+   }
+  },
+  "../confounds/data/gemma/1381_meta.json": {
+   "gemma_id": "1381",
+   "host": "https://gemma.msl.ubc.ca/rest/v2",
+   "method": "anonymous GET",
+   "retrieved": "2026-09-24T15:30:48.794676Z",
+   "files": {
+    "1381_processed.tsv.gz": {
+     "url": "https://gemma.msl.ubc.ca/rest/v2/datasets/1381/data/processed",
+     "sha256_body": "6a2c1e4819c641f8ec62e154bca45b4601a9477956dc5c1853aaed93bc9990f8",
+     "bytes": 23265278
+    },
+    "1381_samples.json": {
+     "url": "https://gemma.msl.ubc.ca/rest/v2/datasets/1381/samples",
+     "sha256_body": "438e0e8a8ddd6b0ec54f1a5cf61d4d7dae3056c26ec69054701bb3b09435cd19",
+     "bytes": 550262
+    }
+   }
+  },
+  "../confounds/data/gemma/18741_meta.json": {
+   "gemma_id": "18741",
+   "host": "https://gemma.msl.ubc.ca/rest/v2",
+   "method": "anonymous GET",
+   "retrieved": "2026-09-24T15:32:33.845202Z",
+   "files": {
+    "18741_processed.tsv.gz": {
+     "url": "https://gemma.msl.ubc.ca/rest/v2/datasets/18741/data/processed",
+     "sha256_body": "5f66f0fb1264089a37f28241b0c01a31e0e93febd4f8b864cd31c550400fee7c",
+     "bytes": 37996896
+    },
+    "18741_samples.json": {
+     "url": "https://gemma.msl.ubc.ca/rest/v2/datasets/18741/samples",
+     "sha256_body": "d7a72f49d0a21993ffa5154f42d862ff5b9c7fa7d982c610107c760df00c4e3a",
+     "bytes": 3006639
+    }
+   }
+  },
+  "../confounds/data/gemma/18742_meta.json": {
+   "gemma_id": "18742",
+   "host": "https://gemma.msl.ubc.ca/rest/v2",
+   "method": "anonymous GET",
+   "retrieved": "2026-09-24T15:31:45.987322Z",
+   "files": {
+    "18742_processed.tsv.gz": {
+     "url": "https://gemma.msl.ubc.ca/rest/v2/datasets/18742/data/processed",
+     "sha256_body": "61c696668e375d735f24b035102cbc13c4c2c6b851b659eb378d702355329f89",
+     "bytes": 52306482
+    },
+    "18742_samples.json": {
+     "url": "https://gemma.msl.ubc.ca/rest/v2/datasets/18742/samples",
+     "sha256_body": "8d52561ed7aafcfb1c9a0b3f21d7b46c95e3ccce355aed809367bab79432fe34",
+     "bytes": 1733700
+    }
+   }
+  },
+  "../confounds/data/gemma/1880_meta.json": {
+   "gemma_id": "1880",
+   "host": "https://gemma.msl.ubc.ca/rest/v2",
+   "method": "anonymous GET",
+   "retrieved": "2026-09-24T15:28:42.874933Z",
+   "files": {
+    "1880_processed.tsv.gz": {
+     "url": "https://gemma.msl.ubc.ca/rest/v2/datasets/1880/data/processed",
+     "sha256_body": "2c671d1cb0a53908cea72b78e509f904f2f3ab245dc4a10db7ba35ff4d440351",
+     "bytes": 25624081
+    },
+    "1880_samples.json": {
+     "url": "https://gemma.msl.ubc.ca/rest/v2/datasets/1880/samples",
+     "sha256_body": "7755cb5aa7df42ce4759910523186f2d6905c3a0e3e960afa7d28777f57f1d0d",
+     "bytes": 541943
+    }
+   }
+  },
+  "../confounds/data/gemma/26880_meta.json": {
+   "gemma_id": "26880",
+   "host": "https://gemma.msl.ubc.ca/rest/v2",
+   "method": "anonymous GET",
+   "retrieved": "2026-09-24T15:33:30.097441Z",
+   "files": {
+    "26880_processed.tsv.gz": {
+     "url": "https://gemma.msl.ubc.ca/rest/v2/datasets/26880/data/processed",
+     "sha256_body": "7755fea052986ea84d50d68d8aae3ea4c2b1b3e040a7c60f4cacfd05fe31807b",
+     "bytes": 27265092
+    },
+    "26880_samples.json": {
+     "url": "https://gemma.msl.ubc.ca/rest/v2/datasets/26880/samples",
+     "sha256_body": "dee7a11b691937aef056b2cbadccfab7a846e6896ec04acaa78e7f9c3f2b8443",
+     "bytes": 2705032
+    }
+   }
+  },
+  "../confounds/data/gemma/4150_meta.json": {
+   "gemma_id": "4150",
+   "host": "https://gemma.msl.ubc.ca/rest/v2",
+   "method": "anonymous GET",
+   "retrieved": "2026-09-24T15:31:17.402215Z",
+   "files": {
+    "4150_processed.tsv.gz": {
+     "url": "https://gemma.msl.ubc.ca/rest/v2/datasets/4150/data/processed",
+     "sha256_body": "1a38ea2573e63f0e62ece8e7a3a521844172ce9a35468307c1658f27ed072798",
+     "bytes": 19761982
+    },
+    "4150_samples.json": {
+     "url": "https://gemma.msl.ubc.ca/rest/v2/datasets/4150/samples",
+     "sha256_body": "cbe4fa8035465c96e108e821b75084469492ca81de5c8ecca794d2edd883710b",
+     "bytes": 467500
+    }
+   }
+  },
+  "../confounds/data/gemma/5939_meta.json": {
+   "gemma_id": "5939",
+   "host": "https://gemma.msl.ubc.ca/rest/v2",
+   "method": "anonymous GET",
+   "retrieved": "2026-09-24T15:28:48.788687Z",
+   "files": {
+    "5939_processed.tsv.gz": {
+     "url": "https://gemma.msl.ubc.ca/rest/v2/datasets/5939/data/processed",
+     "sha256_body": "c0719c87e50b92f12b2f841265371186383812441fb6676269be6ee259c7bccf",
+     "bytes": 35007664
+    },
+    "5939_samples.json": {
+     "url": "https://gemma.msl.ubc.ca/rest/v2/datasets/5939/samples",
+     "sha256_body": "160e549bed97e81e2e237ecc7f47079421f36eae95f0945385efbb2a3d66be0a",
+     "bytes": 1150953
+    }
+   }
+  },
+  "../confounds/data/gemma/5949_meta.json": {
+   "gemma_id": "5949",
+   "host": "https://gemma.msl.ubc.ca/rest/v2",
+   "method": "anonymous GET",
+   "retrieved": "2026-09-24T15:29:18.587969Z",
+   "files": {
+    "5949_processed.tsv.gz": {
+     "url": "https://gemma.msl.ubc.ca/rest/v2/datasets/5949/data/processed",
+     "sha256_body": "9ee50ce954a34285f40918dc7cf150955d1e0c6c020456a1f1ba54495f9dcfde",
+     "bytes": 39613889
+    },
+    "5949_samples.json": {
+     "url": "https://gemma.msl.ubc.ca/rest/v2/datasets/5949/samples",
+     "sha256_body": "8a0707ad5af0438a331ae6fed237d1ec2ad58baa75086f2beced82246e77e2d0",
+     "bytes": 2409138
+    }
+   }
+  },
+  "../confounds/data/gemma/8359_meta.json": {
+   "gemma_id": "8359",
+   "host": "https://gemma.msl.ubc.ca/rest/v2",
+   "method": "anonymous GET",
+   "retrieved": "2026-09-24T15:29:48.651708Z",
+   "files": {
+    "8359_processed.tsv.gz": {
+     "url": "https://gemma.msl.ubc.ca/rest/v2/datasets/8359/data/processed",
+     "sha256_body": "256b5939ea87b0c0593a7013e9be7f24bfebf2b11ba7e5611ed3774e83f138cf",
+     "bytes": 81754038
+    },
+    "8359_samples.json": {
+     "url": "https://gemma.msl.ubc.ca/rest/v2/datasets/8359/samples",
+     "sha256_body": "a527fb47c4341aff770921fafbff4d5618d4fc73e15ff3a65be157cedde97497",
+     "bytes": 2324626
+    }
+   }
+  },
+  "data/gemma/10878_meta.json": {
+   "gemma_id": 10878,
+   "host": "https://gemma2.msl.ubc.ca/rest/v2",
+   "method": "anonymous GET",
+   "files": {
+    "10878_samples.json": {
+     "url": "https://gemma2.msl.ubc.ca/rest/v2/datasets/10878/samples",
+     "sha256_body": "99b4dae74d6a748db836ce3469000465d2072451671aa8917cc1ee2fc2d8b89e",
+     "bytes": 2726326,
+     "retrieved": "2026-09-25T14:53:49.624414+00:00"
+    }
+   }
+  },
+  "data/gemma/10879_meta.json": {
+   "gemma_id": 10879,
+   "host": "https://gemma2.msl.ubc.ca/rest/v2",
+   "method": "anonymous GET",
+   "files": {
+    "10879_samples.json": {
+     "url": "https://gemma2.msl.ubc.ca/rest/v2/datasets/10879/samples",
+     "sha256_body": "41d8505a72b75f701d3d3cfa112c3c823c62b72911550f7bdfcc48227540768f",
+     "bytes": 1903156,
+     "retrieved": "2026-09-25T14:53:50.484391+00:00"
+    }
+   }
+  },
+  "data/gemma/1204_meta.json": {
+   "gemma_id": 1204,
+   "host": "https://gemma2.msl.ubc.ca/rest/v2",
+   "method": "anonymous GET",
+   "files": {
+    "1204_samples.json": {
+     "url": "https://gemma2.msl.ubc.ca/rest/v2/datasets/1204/samples",
+     "sha256_body": "4dce8ebb63c4527ea2dd86801b96fe69f23c7382f014afe29396fe967c2fe2ae",
+     "bytes": 386563,
+     "retrieved": "2026-09-25T14:52:24.523845+00:00"
+    },
+    "1204_processed.tsv.gz": {
+     "url": "https://gemma2.msl.ubc.ca/rest/v2/datasets/1204/data/processed",
+     "sha256_body": "d4bc94c5a6cd4e335c600feca797b803066b986b903ce8a58ac1a70c56d522cb",
+     "bytes": 5273233,
+     "retrieved": "2026-09-25T14:52:33.815785+00:00"
+    }
+   },
+   "note": "processed data fetched then deleted 2026-09-25: dataset not used (see ../excluded_datasets.tsv)"
+  },
+  "data/gemma/1205_meta.json": {
+   "gemma_id": 1205,
+   "host": "https://gemma2.msl.ubc.ca/rest/v2",
+   "method": "anonymous GET",
+   "files": {
+    "1205_samples.json": {
+     "url": "https://gemma2.msl.ubc.ca/rest/v2/datasets/1205/samples",
+     "sha256_body": "476d5afaf34f636dd9d7d152a3fd32e960c6955a7d2860302a077e02d4a56e95",
+     "bytes": 793185,
+     "retrieved": "2026-09-25T14:52:05.360455+00:00"
+    },
+    "1205_processed.tsv.gz": {
+     "url": "https://gemma2.msl.ubc.ca/rest/v2/datasets/1205/data/processed",
+     "sha256_body": "ef989d1f2a8655866db8b38b408b78bf6a9cf5ae562c71018a9395c96165567b",
+     "bytes": 15624897,
+     "retrieved": "2026-09-25T14:52:21.989979+00:00"
+    }
+   },
+   "note": "processed data fetched then deleted 2026-09-25: dataset not used (see ../excluded_datasets.tsv)"
+  },
+  "data/gemma/12983_meta.json": {
+   "gemma_id": 12983,
+   "host": "https://gemma2.msl.ubc.ca/rest/v2",
+   "method": "anonymous GET",
+   "files": {
+    "12983_samples.json": {
+     "url": "https://gemma2.msl.ubc.ca/rest/v2/datasets/12983/samples",
+     "sha256_body": "46c0876d0e7926401c59f02416780a0767eca27548c77c743ef92d7d34571dbd",
+     "bytes": 683022,
+     "retrieved": "2026-09-25T14:53:00.494430+00:00"
+    },
+    "12983_processed.tsv.gz": {
+     "url": "https://gemma2.msl.ubc.ca/rest/v2/datasets/12983/data/processed",
+     "sha256_body": "1015a33d1cd8fe46ccd6951a9be2d1ed7e040af6e103984c0abae3c285eeedbb",
+     "bytes": 27826034,
+     "retrieved": "2026-09-25T14:53:26.801649+00:00"
+    }
+   },
+   "note": "processed data fetched then deleted 2026-09-25: dataset not used (see ../excluded_datasets.tsv)"
+  },
+  "data/gemma/15479_meta.json": {
+   "gemma_id": 15479,
+   "host": "https://gemma2.msl.ubc.ca/rest/v2",
+   "method": "anonymous GET",
+   "files": {
+    "15479_samples.json": {
+     "url": "https://gemma2.msl.ubc.ca/rest/v2/datasets/15479/samples",
+     "sha256_body": "dff024adad67b7298c6f22c6b4ba142e2bab9ab114881777c5a3e5e668c656a7",
+     "bytes": 1317110,
+     "retrieved": "2026-09-25T14:53:52.499360+00:00"
+    },
+    "15479_processed.tsv.gz": {
+     "url": "https://gemma2.msl.ubc.ca/rest/v2/datasets/15479/data/processed",
+     "sha256_body": "3f860df84a40e5818ad8333fbcd06c1b4863c88a6aa85f4e59f9b9d5685d4739",
+     "bytes": 32581429,
+     "retrieved": "2026-09-25T14:57:27.828735+00:00"
+    }
+   }
+  },
+  "data/gemma/16773_meta.json": {
+   "gemma_id": 16773,
+   "host": "https://gemma2.msl.ubc.ca/rest/v2",
+   "method": "anonymous GET",
+   "files": {
+    "16773_samples.json": {
+     "url": "https://gemma2.msl.ubc.ca/rest/v2/datasets/16773/samples",
+     "sha256_body": "f2f7da21c7d872e390c0d049d691a796f6ad1a203b2046d832828cc75c2035a8",
+     "bytes": 228114,
+     "retrieved": "2026-09-25T14:53:51.753980+00:00"
+    },
+    "16773_processed.tsv.gz": {
+     "url": "https://gemma2.msl.ubc.ca/rest/v2/datasets/16773/data/processed",
+     "sha256_body": "5a3367d72ce8f8d7a311f60a460ca4e0bcdccf2300ffc576c6063f690ecd3885",
+     "bytes": 14119617,
+     "retrieved": "2026-09-25T14:57:52.700119+00:00"
+    }
+   }
+  },
+  "data/gemma/23579_meta.json": {
+   "gemma_id": 23579,
+   "host": "https://gemma2.msl.ubc.ca/rest/v2",
+   "method": "anonymous GET",
+   "files": {
+    "23579_samples.json": {
+     "url": "https://gemma2.msl.ubc.ca/rest/v2/datasets/23579/samples",
+     "sha256_body": "f20e31054e79c22b20243f2a96ed2a616f2eac8b08cc515bb717f0ab7832e5e4",
+     "bytes": 1005887,
+     "retrieved": "2026-09-25T14:53:46.810499+00:00"
+    },
+    "23579_processed.tsv.gz": {
+     "url": "https://gemma2.msl.ubc.ca/rest/v2/datasets/23579/data/processed",
+     "sha256_body": "32dae66a20943db1b1531b3c0d7118450d32c24274afddf85cbddf6f996a0637",
+     "bytes": 26638069,
+     "retrieved": "2026-09-25T14:58:19.495434+00:00"
+    }
+   }
+  },
+  "data/gemma/25749_meta.json": {
+   "gemma_id": 25749,
+   "host": "https://gemma2.msl.ubc.ca/rest/v2",
+   "method": "anonymous GET",
+   "files": {
+    "25749_samples.json": {
+     "url": "https://gemma2.msl.ubc.ca/rest/v2/datasets/25749/samples",
+     "sha256_body": "f551b9c1324a77c703118192e0d6bfb0356f1a7700ec683356854311e1050dd0",
+     "bytes": 2380603,
+     "retrieved": "2026-09-25T14:54:00.889009+00:00"
+    },
+    "25749_processed.tsv.gz": {
+     "url": "https://gemma2.msl.ubc.ca/rest/v2/datasets/25749/data/processed",
+     "sha256_body": "5e8de3a4f1ef96ee16d02ef2f33c819bbb63d29d16fd44d438d4431eec88d23d",
+     "bytes": 64464075,
+     "retrieved": "2026-09-25T14:58:23.121731+00:00"
+    }
+   }
+  },
+  "data/gemma/2684_meta.json": {
+   "gemma_id": 2684,
+   "host": "https://gemma2.msl.ubc.ca/rest/v2",
+   "method": "anonymous GET",
+   "files": {
+    "2684_samples.json": {
+     "url": "https://gemma2.msl.ubc.ca/rest/v2/datasets/2684/samples",
+     "sha256_body": "47be0014780be590c15669a2c456701d69944f03dfecf68ee63283e08d23d2fb",
+     "bytes": 1073832,
+     "retrieved": "2026-09-25T14:53:46.103279+00:00"
+    },
+    "2684_processed.tsv.gz": {
+     "url": "https://gemma2.msl.ubc.ca/rest/v2/datasets/2684/data/processed",
+     "sha256_body": "cfa8b34357a4a8502a11d8f0de3ea0e46fdbd4ae131c85f7c750d71b5fa55e15",
+     "bytes": 17388228,
+     "retrieved": "2026-09-25T14:56:26.270012+00:00"
+    }
+   }
+  },
+  "data/gemma/28105_meta.json": {
+   "gemma_id": 28105,
+   "host": "https://gemma2.msl.ubc.ca/rest/v2",
+   "method": "anonymous GET",
+   "files": {
+    "28105_samples.json": {
+     "url": "https://gemma2.msl.ubc.ca/rest/v2/datasets/28105/samples",
+     "sha256_body": "91f06b11fe1e8618a406d2848185356bd9021567b98644cfba6ddd986dc2057d",
+     "bytes": 343989,
+     "retrieved": "2026-09-25T14:53:45.354370+00:00"
+    },
+    "28105_processed.tsv.gz": {
+     "url": "https://gemma2.msl.ubc.ca/rest/v2/datasets/28105/data/processed",
+     "sha256_body": "65d436f074581c50f6f218bf2a170b1ab85ade5e6987918bd2ce4c3600e65cfe",
+     "bytes": 15161745,
+     "retrieved": "2026-09-25T14:58:53.620269+00:00"
+    }
+   }
+  },
+  "data/gemma/31972_meta.json": {
+   "gemma_id": 31972,
+   "host": "https://gemma2.msl.ubc.ca/rest/v2",
+   "method": "anonymous GET",
+   "files": {
+    "31972_samples.json": {
+     "url": "https://gemma2.msl.ubc.ca/rest/v2/datasets/31972/samples",
+     "sha256_body": "6d4a24a8045082a87689fd72e5fe5d6481b999a423014b466d993610987a1a30",
+     "bytes": 32894,
+     "retrieved": "2026-09-25T14:53:47.386274+00:00"
+    }
+   }
+  },
+  "data/gemma/6488_meta.json": {
+   "gemma_id": 6488,
+   "host": "https://gemma2.msl.ubc.ca/rest/v2",
+   "method": "anonymous GET",
+   "files": {
+    "6488_samples.json": {
+     "url": "https://gemma2.msl.ubc.ca/rest/v2/datasets/6488/samples",
+     "sha256_body": "3faa3de51f18a90c104041cb3f351fc0640c72891815f70109dae67a4244159a",
+     "bytes": 161361,
+     "retrieved": "2026-09-25T14:53:48.586931+00:00"
+    },
+    "6488_processed.tsv.gz": {
+     "url": "https://gemma2.msl.ubc.ca/rest/v2/datasets/6488/data/processed",
+     "sha256_body": "f5fc9f937243ca08361cd6ec8d5b43fc5b4f7d7e198102e8a60326bcd5468802",
+     "bytes": 10277011,
+     "retrieved": "2026-09-25T14:57:00.094921+00:00"
+    }
+   }
+  },
+  "data/gemma/85317_meta.json": {
+   "gemma_id": 85317,
+   "host": "https://gemma2.msl.ubc.ca/rest/v2",
+   "method": "anonymous GET",
+   "files": {
+    "85317_samples.json": {
+     "url": "https://gemma2.msl.ubc.ca/rest/v2/datasets/85317/samples",
+     "sha256_body": "fc807d380c1cfb99b98b97d5eae1184ba33bb573af41fac0fdbc0c9f9540fc73",
+     "bytes": 320599,
+     "retrieved": "2026-09-25T14:53:47.993180+00:00"
+    }
+   }
+  },
+  "data/gemma/8995_meta.json": {
+   "gemma_id": 8995,
+   "host": "https://gemma2.msl.ubc.ca/rest/v2",
+   "method": "anonymous GET",
+   "files": {
+    "8995_samples.json": {
+     "url": "https://gemma2.msl.ubc.ca/rest/v2/datasets/8995/samples",
+     "sha256_body": "c63ba604f14dc7b85cf60cf96f1245b843a603c794e60ae3ee5a793c703c4e4a",
+     "bytes": 809578,
+     "retrieved": "2026-09-25T14:52:35.013539+00:00"
+    },
+    "8995_processed.tsv.gz": {
+     "url": "https://gemma2.msl.ubc.ca/rest/v2/datasets/8995/data/processed",
+     "sha256_body": "409ead2850ec858fc07a13434a2ffd363f5765f3f6a89cdbd465382c16713fa1",
+     "bytes": 18412045,
+     "retrieved": "2026-09-25T14:52:56.696323+00:00"
+    }
+   },
+   "note": "processed data fetched then deleted 2026-09-25: dataset not used (see ../excluded_datasets.tsv)"
+  },
+  "data/gemma/946_meta.json": {
+   "gemma_id": 946,
+   "host": "https://gemma2.msl.ubc.ca/rest/v2",
+   "method": "anonymous GET",
+   "files": {
+    "946_samples.json": {
+     "url": "https://gemma2.msl.ubc.ca/rest/v2/datasets/946/samples",
+     "sha256_body": "550856ca23968f73706bbb0be7a5c3120095d380699d5227f4a6b5aafdd90e86",
+     "bytes": 360522,
+     "retrieved": "2026-09-25T14:53:51.121542+00:00"
+    },
+    "946_processed.tsv.gz": {
+     "url": "https://gemma2.msl.ubc.ca/rest/v2/datasets/946/data/processed",
+     "sha256_body": "74f64333fd3abe318d0cd04471182a3dff6a3463e0dd8d2fb54830d0827adad8",
+     "bytes": 14004773,
+     "retrieved": "2026-09-25T14:56:07.747075+00:00"
+    }
+   }
+  },
+  "data/gemma/platform_GPL1352_meta.json": {
+   "platform": "GPL1352",
+   "needed_by_gemma_id": 6488,
+   "url": "https://gemma2.msl.ubc.ca/rest/v2/platforms/GPL1352/annotations",
+   "method": "anonymous GET",
+   "sha256_body": "398a2d5605705eb1d804aba6dbc8f435107f42e70a4b43789df32bc7978d538f",
+   "bytes": 35020104,
+   "retrieved": "2026-09-25T15:07:31.040971+00:00"
+  },
+  "data/gemma/platform_GPL570_meta.json": {
+   "platform": "GPL570",
+   "needed_by_gemma_id": 946,
+   "url": "https://gemma2.msl.ubc.ca/rest/v2/platforms/GPL570/annotations",
+   "method": "anonymous GET",
+   "sha256_body": "da4f8cab60dbb835f7e9fef64d8a3cd40999b2c978ada87d615934546058b131",
+   "bytes": 32013248,
+   "retrieved": "2026-09-25T15:05:04.306027+00:00"
+  },
+  "data/gemma/platform_GPL6255_meta.json": {
+   "platform": "GPL6255",
+   "needed_by_gemma_id": 2684,
+   "url": "https://gemma2.msl.ubc.ca/rest/v2/platforms/GPL6255/annotations",
+   "method": "anonymous GET",
+   "sha256_body": "f3daba84e12d0c875e0d7e88e5fe2f4dd147a62ba774e97f19ec9cde337e9e94",
+   "bytes": 16934944,
+   "retrieved": "2026-09-25T15:05:08.445226+00:00"
+  }
+ },
+ "inputs": {
+  "../../corpus/lineage.json": {
+   "sha256": "606343fbca0dcaa859bb8ca17e6c540365849c5a05d2eca624dec7bc994b0903",
+   "bytes": 1565671
+  },
+  "../confounds/data/covariates/GSE17612.tsv": {
+   "sha256": "9af0f076c20be627346d89c0d14ae92f25534cddb05aa458c612df752b9274f5",
+   "bytes": 2495
+  },
+  "../confounds/data/covariates/GSE208338.tsv": {
+   "sha256": "3b5e76afcb74122fb243837532fbbe70d66c89255f277adb2eb13b6b913605c4",
+   "bytes": 8759
+  },
+  "../confounds/data/covariates/GSE21138.tsv": {
+   "sha256": "451590bceb07dce52c747abf653f3028d57cb889ae67b7fe78d14959fe2e27f8",
+   "bytes": 2973
+  },
+  "../confounds/data/covariates/GSE21935.tsv": {
+   "sha256": "78174a63e5d630d95244f8793ef9545825dbf86e6aa1746aad9b5a598c80d7b4",
+   "bytes": 2094
+  },
+  "../confounds/data/covariates/GSE35974.tsv": {
+   "sha256": "3917ad394924e3bbab5e848403d0be6393fda57a28cb013c9e45482c6c75ac41",
+   "bytes": 7114
+  },
+  "../confounds/data/covariates/GSE35977.tsv": {
+   "sha256": "5f6592ae8cf9e8f34510a2a06f51ac20bddbde72d48b93888e30cd45f66ccf99",
+   "bytes": 9017
+  },
+  "../confounds/data/covariates/GSE53987.tsv": {
+   "sha256": "da0e8af3064f544970fd6dd9028b8b0146ba4e84d600ca40725fcfc283ea85de",
+   "bytes": 12765
+  },
+  "../confounds/data/covariates/GSE80655.tsv": {
+   "sha256": "93cd2ee3ede0a2575d482ac5d84b47effcb72045c14d792aafa541e30426cc0d",
+   "bytes": 12589
+  },
+  "../confounds/data/covariates/GSE92538_GPL10526.tsv": {
+   "sha256": "110e6b86101e67510ba2da1ecb6185ebcbeec66f7053e8a4a67a733e030683bf",
+   "bytes": 8544
+  },
+  "../confounds/data/covariates/GSE92538_GPL17027.tsv": {
+   "sha256": "56540f581167389a17f725fe24ba63baf54af7a52409d037b1583fcee0c8d98c",
+   "bytes": 15130
+  },
+  "../confounds/data/gemma/13014_processed.tsv.gz": {
+   "sha256": "c08b1691ea565ff02340dad3fd711889404e648841ce5aac92e6e949d7aeda22",
+   "bytes": 23645954
+  },
+  "../confounds/data/gemma/13014_samples.json": {
+   "sha256": "970ca4733866fd9c639491598c786be2a0a50fa4e0a09e3bf2206556d5864fc4",
+   "bytes": 2738756
+  },
+  "../confounds/data/gemma/1381_processed.tsv.gz": {
+   "sha256": "ad31c75edf65dd5d7405b3af4ba4cfd815e1c3116d13c8a8e4f266fee2a17573",
+   "bytes": 9103684
+  },
+  "../confounds/data/gemma/1381_samples.json": {
+   "sha256": "438e0e8a8ddd6b0ec54f1a5cf61d4d7dae3056c26ec69054701bb3b09435cd19",
+   "bytes": 550262
+  },
+  "../confounds/data/gemma/18741_processed.tsv.gz": {
+   "sha256": "1d573714ddd3f07ee9850d4ac59f62300dbce32aa6d4d8c0bb2d48f11df69bf1",
+   "bytes": 14618176
+  },
+  "../confounds/data/gemma/18741_samples.json": {
+   "sha256": "d7a72f49d0a21993ffa5154f42d862ff5b9c7fa7d982c610107c760df00c4e3a",
+   "bytes": 3006639
+  },
+  "../confounds/data/gemma/18742_processed.tsv.gz": {
+   "sha256": "0dcdbea82dc5df5e5bcd7e4cfe89ef38e398b02dbb3df65f207f902fe639f4d6",
+   "bytes": 20244018
+  },
+  "../confounds/data/gemma/18742_samples.json": {
+   "sha256": "8d52561ed7aafcfb1c9a0b3f21d7b46c95e3ccce355aed809367bab79432fe34",
+   "bytes": 1733700
+  },
+  "../confounds/data/gemma/1880_processed.tsv.gz": {
+   "sha256": "4308a7fa69d47806ee1acd11b426165d4164ee76216a2ee6831014ace72ef9bb",
+   "bytes": 10097550
+  },
+  "../confounds/data/gemma/1880_samples.json": {
+   "sha256": "7755cb5aa7df42ce4759910523186f2d6905c3a0e3e960afa7d28777f57f1d0d",
+   "bytes": 541943
+  },
+  "../confounds/data/gemma/26880_processed.tsv.gz": {
+   "sha256": "c871ff292c8a67d3d9cf1e4f292d6b42d5d45a163caf303d74f13a84d5933f20",
+   "bytes": 10736143
+  },
+  "../confounds/data/gemma/26880_samples.json": {
+   "sha256": "dee7a11b691937aef056b2cbadccfab7a846e6896ec04acaa78e7f9c3f2b8443",
+   "bytes": 2705032
+  },
+  "../confounds/data/gemma/4150_processed.tsv.gz": {
+   "sha256": "0e8bd37ac333f4c93e2442fa88d34ebfa44457ddf80599fc6c76a1409c5a1279",
+   "bytes": 7730662
+  },
+  "../confounds/data/gemma/4150_samples.json": {
+   "sha256": "cbe4fa8035465c96e108e821b75084469492ca81de5c8ecca794d2edd883710b",
+   "bytes": 467500
+  },
+  "../confounds/data/gemma/5939_processed.tsv.gz": {
+   "sha256": "1fbe9d64242ac41faec1f7f0b5da3d7ef60049a90b4042cbe197536186978f28",
+   "bytes": 13746792
+  },
+  "../confounds/data/gemma/5939_samples.json": {
+   "sha256": "160e549bed97e81e2e237ecc7f47079421f36eae95f0945385efbb2a3d66be0a",
+   "bytes": 1150953
+  },
+  "../confounds/data/gemma/5949_processed.tsv.gz": {
+   "sha256": "afae7e7eea967f59dfae7319d0eff20e0f9b6f280c5d00d363b72afe0dec3e80",
+   "bytes": 15526627
+  },
+  "../confounds/data/gemma/5949_samples.json": {
+   "sha256": "8a0707ad5af0438a331ae6fed237d1ec2ad58baa75086f2beced82246e77e2d0",
+   "bytes": 2409138
+  },
+  "../confounds/data/gemma/8359_processed.tsv.gz": {
+   "sha256": "ebe534ba8bc43ba3f00f84d9abf189b577f5d8c73f220e27f01e19e82feea1bf",
+   "bytes": 31697542
+  },
+  "../confounds/data/gemma/8359_samples.json": {
+   "sha256": "a527fb47c4341aff770921fafbff4d5618d4fc73e15ff3a65be157cedde97497",
+   "bytes": 2324626
+  },
+  "../confounds/genesets/mistry2010_top10_PMI.tsv": {
+   "sha256": "a8cb949176c7351d5570101b806b01621f2f5d28a969af615342553928b74b57",
+   "bytes": 2351
+  },
+  "../confounds/genesets/mistry2010_top10_age.tsv": {
+   "sha256": "c63d8806c4037055874012e1049cca44a49cef57d1f2964fe6ce483f16ff31cc",
+   "bytes": 2332
+  },
+  "../confounds/genesets/mistry2010_top10_pH.tsv": {
+   "sha256": "887a6ed316d71864ec6d4935c424fd23c024e557e59dec73867d9d290f1cf3bd",
+   "bytes": 2347
+  },
+  "../confounds/genesets/mistry2010_top10_sex.tsv": {
+   "sha256": "c377f65eb1354205ea83dd808f6144e8490e1311561b63fe8cc1dd476173f44f",
+   "bytes": 2290
+  },
+  "data/covariates/15479.tsv": {
+   "sha256": "5eaa2bb690949b8523ce2ad586af1c3789b8b3f97b8063d944e7f2140a3634c7",
+   "bytes": 12241
+  },
+  "data/covariates/16773.tsv": {
+   "sha256": "c826a1c62aaf8610bef99e724a7fa1269e1b2466d91c3c6976b4c30cc9d37f97",
+   "bytes": 2448
+  },
+  "data/covariates/23579.tsv": {
+   "sha256": "c95e8d13170ea0789ea997494ae1fb7c94fd353052db659e06157ec915cb9419",
+   "bytes": 6343
+  },
+  "data/covariates/25749.tsv": {
+   "sha256": "83d0728236047efbe5d393577758cffa9a0e7e364223d27447326574376d1ac1",
+   "bytes": 14885
+  },
+  "data/covariates/2684.tsv": {
+   "sha256": "07c5049c9b3982a95fd2d2a55c9accabe87c30acd17ddfcc67c77fbd87138628",
+   "bytes": 8235
+  },
+  "data/covariates/28105.tsv": {
+   "sha256": "99166f9a1d017aaae0c50bd402cc06108bfadaf0f0714b1496044b6ec53f1788",
+   "bytes": 1868
+  },
+  "data/covariates/6488.tsv": {
+   "sha256": "313ce7d9d89117e3e554c4810bc3c1dc12dad2c341f2930efdc7ade669885217",
+   "bytes": 1204
+  },
+  "data/covariates/946.tsv": {
+   "sha256": "80848fd24a4d8817e5a0e7a540a0034c751ff0b693cc9b1ca2ec6ce8f554566b",
+   "bytes": 2325
+  },
+  "data/gemma/10878_samples.json": {
+   "sha256": "99b4dae74d6a748db836ce3469000465d2072451671aa8917cc1ee2fc2d8b89e",
+   "bytes": 2726326
+  },
+  "data/gemma/10879_samples.json": {
+   "sha256": "41d8505a72b75f701d3d3cfa112c3c823c62b72911550f7bdfcc48227540768f",
+   "bytes": 1903156
+  },
+  "data/gemma/1204_samples.json": {
+   "sha256": "4dce8ebb63c4527ea2dd86801b96fe69f23c7382f014afe29396fe967c2fe2ae",
+   "bytes": 386563
+  },
+  "data/gemma/1205_samples.json": {
+   "sha256": "476d5afaf34f636dd9d7d152a3fd32e960c6955a7d2860302a077e02d4a56e95",
+   "bytes": 793185
+  },
+  "data/gemma/12983_samples.json": {
+   "sha256": "46c0876d0e7926401c59f02416780a0767eca27548c77c743ef92d7d34571dbd",
+   "bytes": 683022
+  },
+  "data/gemma/15479_processed.tsv.gz": {
+   "sha256": "66e7a9c928664718ed6d3589ba1fa433b8ed1b4e2b70b46911e2a358653f3db7",
+   "bytes": 7449066
+  },
+  "data/gemma/15479_samples.json": {
+   "sha256": "dff024adad67b7298c6f22c6b4ba142e2bab9ab114881777c5a3e5e668c656a7",
+   "bytes": 1317110
+  },
+  "data/gemma/16773_processed.tsv.gz": {
+   "sha256": "a14c36148a88e530ef210934a4867780c1f249328764da7d55cd697ea3acbe3c",
+   "bytes": 3793806
+  },
+  "data/gemma/16773_samples.json": {
+   "sha256": "f2f7da21c7d872e390c0d049d691a796f6ad1a203b2046d832828cc75c2035a8",
+   "bytes": 228114
+  },
+  "data/gemma/23579_processed.tsv.gz": {
+   "sha256": "6c1ddb3ac110e75e26dcdd93daabc6601df0b59c485d17333ce4983fb0d22a35",
+   "bytes": 7544546
+  },
+  "data/gemma/23579_samples.json": {
+   "sha256": "f20e31054e79c22b20243f2a96ed2a616f2eac8b08cc515bb717f0ab7832e5e4",
+   "bytes": 1005887
+  },
+  "data/gemma/25749_processed.tsv.gz": {
+   "sha256": "9c10151febde2963cbef9cf98e54b5f3b30ba3673cc7762803fe465191a58d84",
+   "bytes": 18392462
+  },
+  "data/gemma/25749_samples.json": {
+   "sha256": "f551b9c1324a77c703118192e0d6bfb0356f1a7700ec683356854311e1050dd0",
+   "bytes": 2380603
+  },
+  "data/gemma/2684_processed.tsv.gz": {
+   "sha256": "ca2f6ef7f22b1e39d161ae3b2b20c7a153d227a6c30949598f6babd2fca43490",
+   "bytes": 6861945
+  },
+  "data/gemma/2684_samples.json": {
+   "sha256": "47be0014780be590c15669a2c456701d69944f03dfecf68ee63283e08d23d2fb",
+   "bytes": 1073832
+  },
+  "data/gemma/28105_processed.tsv.gz": {
+   "sha256": "b6ee2214bff51b127cad995129c8a9aebe3071f273c3a661f298279fab1caa9c",
+   "bytes": 3597493
+  },
+  "data/gemma/28105_samples.json": {
+   "sha256": "91f06b11fe1e8618a406d2848185356bd9021567b98644cfba6ddd986dc2057d",
+   "bytes": 343989
+  },
+  "data/gemma/31972_samples.json": {
+   "sha256": "6d4a24a8045082a87689fd72e5fe5d6481b999a423014b466d993610987a1a30",
+   "bytes": 32894
+  },
+  "data/gemma/6488_processed.tsv.gz": {
+   "sha256": "7e243a0bb831feedff7f05cd53076c19cc1aed5d3d26f66a3fc620078508ee33",
+   "bytes": 3491358
+  },
+  "data/gemma/6488_samples.json": {
+   "sha256": "3faa3de51f18a90c104041cb3f351fc0640c72891815f70109dae67a4244159a",
+   "bytes": 161361
+  },
+  "data/gemma/85317_samples.json": {
+   "sha256": "fc807d380c1cfb99b98b97d5eae1184ba33bb573af41fac0fdbc0c9f9540fc73",
+   "bytes": 320599
+  },
+  "data/gemma/8995_samples.json": {
+   "sha256": "c63ba604f14dc7b85cf60cf96f1245b843a603c794e60ae3ee5a793c703c4e4a",
+   "bytes": 809578
+  },
+  "data/gemma/946_processed.tsv.gz": {
+   "sha256": "277de6106161b1d9f0199e06239fbcb7daddb7a5fb71f41fe39feccd64b9dbc9",
+   "bytes": 4788212
+  },
+  "data/gemma/946_samples.json": {
+   "sha256": "550856ca23968f73706bbb0be7a5c3120095d380699d5227f4a6b5aafdd90e86",
+   "bytes": 360522
+  },
+  "data/gemma/platform_GPL1352_annotations.tsv.gz": {
+   "sha256": "b11ace34d1d5597d4834e632970cb5d82962651e21da2af257933b4ccfdc0988",
+   "bytes": 8195075
+  },
+  "data/gemma/platform_GPL570_annotations.tsv.gz": {
+   "sha256": "60be98bc7c1d1eb5e73cca0913dc2b57708e0d3a728c4897fdb140ee575414f7",
+   "bytes": 7488286
+  },
+  "data/gemma/platform_GPL6255_annotations.tsv.gz": {
+   "sha256": "2bc6a444a8a60fb0f942bbf932eb676558ecfbb8748173ba383f7be099b6a54d",
+   "bytes": 3879817
+  },
+  "../gemma/_stats.json": {
+   "sha256": "474700a576406c003bdfa2cf57961b0f7f5bdde5986b07d0797a79cc4a4c8213",
+   "bytes": 181539
+  },
+  "../h1.py": {
+   "sha256": "d8e0e144026b6b76d1c6a8c9be81ddfa6208d6ff282dd214118dfd5d724c6157",
+   "bytes": 54005
+  },
+  "../recurrence.py": {
+   "sha256": "53dc32bd4b5c93e7522c0f9679802cbb874b740cfa13e1aeaf8b07688e215e10",
+   "bytes": 52445
+  },
+  "../reference/DE_Prior.txt": {
+   "sha256": "e0c822026cc8159edd1d4f37e89e48c875fb1b92d0a21ac92a992827e2812881",
+   "bytes": 745389
+  },
+  "../reference/hgnc_complete_set.txt": {
+   "sha256": "69bb5722d5a42bb355580deb2c9f197ce3d7f7d13807173b9674a7db65e52191",
+   "bytes": 16940274
+  },
+  "../subject_relations/relations.py": {
+   "sha256": "c5e30788d8d58d1bf40dd70e73d877255e6bf0c1c4143b884351eb825367330a",
+   "bytes": 2970
+  },
+  "../subject_relations/subject_relations.tsv": {
+   "sha256": "9a1b7f16816cc1805f34dc05bd136a7051127a53837a4f960d9a00cf1fdec5dc",
+   "bytes": 350306
+  }
+ },
+ "outputs": {
+  "data/datasets.tsv": {
+   "sha256": "d833a7161a7e22ef9759e806db3a9b0994761470ca56a132ab065cec9e065f6a",
+   "bytes": 5903
+  },
+  "data/excluded_datasets.tsv": {
+   "sha256": "8f4ef7973d86a580c5c1d51bcabbb21227cbd82e1f009c5d4a5ddd09251dedb9",
+   "bytes": 6399
+  },
+  "data/usable_gemma_ids.txt": {
+   "sha256": "227c87145046b375728c5c1c1c35f087ecefc652c417395c45fe44e6989ce33a",
+   "bytes": 144
+  },
+  "de/GSE107638_NeuN.tsv": {
+   "sha256": "c9e4a446d04254b853c7e6320691a1134b93d89ce0ec0e0f268c84949529b0dd",
+   "bytes": 5091252
+  },
+  "de/GSE107638_OLIG2.tsv": {
+   "sha256": "218e856cb676d8eef4a073ff50980c099cbd02fbb2719d20529ec99ef079b76b",
+   "bytes": 5223553
+  },
+  "de/GSE112523.tsv": {
+   "sha256": "d07a3044faa1ee1ee9c151a991220e149e140056a8df70ecafc869a8b8a80fa2",
+   "bytes": 5100512
+  },
+  "de/GSE12679_endothelial.tsv": {
+   "sha256": "8f9b293222db886836cf5fe652454d47f616523cfb0bc2a6523de458f8bde455",
+   "bytes": 2544504
+  },
+  "de/GSE12679_neuron.tsv": {
+   "sha256": "4f25761a0eb7f44fc49e366047db4267a058ecb9198ea50e9f2b0fde16cd2b10",
+   "bytes": 2534404
+  },
+  "de/GSE138082_CA1.tsv": {
+   "sha256": "c93cc1b98a17e6968c2dfbd8f93804b59f25960feed436641047c8043e6f7db2",
+   "bytes": 5445717
+  },
+  "de/GSE138082_CA3.tsv": {
+   "sha256": "4e5e68d6f1358c6752729e6512a50b77ee086735e3e5344aa8a97f22964b6494",
+   "bytes": 5457433
+  },
+  "de/GSE138082_DG.tsv": {
+   "sha256": "b81e7694a94394b47bc9165d23afdf63802158c18ab26464b4357e8c83624341",
+   "bytes": 5429313
+  },
+  "de/GSE17612.tsv": {
+   "sha256": "dcb8604f27ae9374bf40335082035ecfb9913fcd187ac50eb46f47d4142857db",
+   "bytes": 3763205
+  },
+  "de/GSE202537_NAc.tsv": {
+   "sha256": "a8a32e75f3366d7548c5d23ed37edb2ba2b531f8f7b76e7af965732935b6d28d",
+   "bytes": 5520976
+  },
+  "de/GSE202537_caudate.tsv": {
+   "sha256": "54e1c14c9c3de8c5b5d4d922a00faa49a76c5ecc46a23e98fa990a371f63681d",
+   "bytes": 5408727
+  },
+  "de/GSE202537_putamen.tsv": {
+   "sha256": "2bf3dce8f2018c53d312e51f014983c69e60f92036935c9db0d6f12d40790178",
+   "bytes": 5410087
+  },
+  "de/GSE208338.tsv": {
+   "sha256": "9e6b132012220c112f842ff394b5747302829404984532b894aff5d6ace0faf0",
+   "bytes": 3406467
+  },
+  "de/GSE21138.tsv": {
+   "sha256": "eeb98dc44b4ec86bec8be14558f09ffb1db62c88c0bd3feac470f8e0eab87e14",
+   "bytes": 3741837
+  },
+  "de/GSE21935.tsv": {
+   "sha256": "b6a5e1eda61c0b239f90febb30e698b446f3cc00c1075d52f6aa98b53c394b31",
+   "bytes": 3738229
+  },
+  "de/GSE224683.tsv": {
+   "sha256": "171018e819bdc4c4b200f063d624b961ad38813fcc05c2fce18d2ac116843bf7",
+   "bytes": 4919925
+  },
+  "de/GSE26927_temporal.tsv": {
+   "sha256": "9a50e10366b89849f46d3b447dec3d150aa2bacef2e7a31b43cc83028b9d7060",
+   "bytes": 2965473
+  },
+  "de/GSE35974.tsv": {
+   "sha256": "4ec9e36fee3297e39b56664d8ce3a7cbe97de2b90f5e0c7a32b6268fb439188f",
+   "bytes": 3651296
+  },
+  "de/GSE35977.tsv": {
+   "sha256": "4da4b5825d0daa3d147fb2266e3565334c87e08dea26d00a7053cbebe079f5be",
+   "bytes": 3645990
+  },
+  "de/GSE37981.tsv": {
+   "sha256": "d7b81c025488302f1267680e712815d63deded4ab33e35bdbfc14a181383bbdb",
+   "bytes": 3697060
+  },
+  "de/GSE53987_BA46.tsv": {
+   "sha256": "15af3353e7e1907ee030bad62438e5b076109c619a43528dac2a4a10c8e2cd55",
+   "bytes": 3735148
+  },
+  "de/GSE53987_hippocampus.tsv": {
+   "sha256": "c2ed4851a5cf2ccf7a24f7590bda98898f3dfe3a31f87ec2f4c89f910f518f7f",
+   "bytes": 3721627
+  },
+  "de/GSE53987_striatum.tsv": {
+   "sha256": "64a1da4dce26d6f4a3d9b2f5ef0da2ee705d0e8d8c92c6ca57c13eabc72a8170",
+   "bytes": 3714264
+  },
+  "de/GSE80655_AnCg.tsv": {
+   "sha256": "d483c708e5f97782f2e8724143d381d167b42413d48dbb964943037f61c478cb",
+   "bytes": 5470109
+  },
+  "de/GSE80655_DLPFC.tsv": {
+   "sha256": "81edb60a545794089c598fc392a42845f8b9964d29d3bc6488e0127ad0dec279",
+   "bytes": 5465040
+  },
+  "de/GSE80655_nAcc.tsv": {
+   "sha256": "641055b65fc981f3f29f5eddceb923edfafc7b72faa8c5b1bd1e1ac2a98ce815",
+   "bytes": 5485889
+  },
+  "de/GSE92538_GPL570.tsv": {
+   "sha256": "5c9cb7025b299454cb45defdf9a0121590d7342dc30fa2824fab33cc2ca25dc7",
+   "bytes": 3727000
+  },
+  "de/GSE92538_GPL96.tsv": {
+   "sha256": "c01b0570172970395ee2aae4084ac01e5b14b34cd3f918133669de5b5b57f558",
+   "bytes": 2322827
+  },
+  "figures/fig1_pairwise_reproducibility.png": {
+   "sha256": "358afd1311ac93be4c4cb1a20a2c4372335c6c3acab4d1baaa99c409f969d1ad",
+   "bytes": 403545
+  },
+  "figures/fig1_pairwise_reproducibility.svg": {
+   "sha256": "4f5bdc4e920c56362123243e52bd3f1bb6619857e5401755953f504c68140e60",
+   "bytes": 528417
+  },
+  "figures/fig2_donor_relation.png": {
+   "sha256": "bfbf5bae905700f5d03453973c34f4bd73c1c8d4a4847d01aee57a2a19f6d0ae",
+   "bytes": 262087
+  },
+  "figures/fig2_donor_relation.svg": {
+   "sha256": "2e16ebcaf371e3c85baf4ce7a7f98a20ad559074b6a568707d266321f743a18b",
+   "bytes": 140698
+  },
+  "figures/fig3_sz_vs_age_sex_by_pair.png": {
+   "sha256": "9ae8a3c9f6dd89516406af96f97ede03ed317d5402c6b1f00772ca02c8743431",
+   "bytes": 144084
+  },
+  "figures/fig3_sz_vs_age_sex_by_pair.svg": {
+   "sha256": "14c8349d0dabe0b57e64abf77ae17218e66e28bdf8e70cf899b3943ca33cabf9",
+   "bytes": 39295
+  },
+  "pairs.tsv": {
+   "sha256": "b1865282675c2c6c69900dcd63d516a161fe48af0dfb7f33393c4cfd8744a687",
+   "bytes": 958992
+  },
+  "pairs_matched.tsv": {
+   "sha256": "ed0262627b4e89da55bf1bcdab4babe089f7b2b302dbcffd90009a5bdc820084",
+   "bytes": 521918
+  },
+  "results/de_n.tsv": {
+   "sha256": "997ce43bb7b2e4d707910f1a510c4c93e6f39d6e18842853ca3897494c27307b",
+   "bytes": 13077
+  },
+  "results/known_sets.tsv": {
+   "sha256": "23159b52c39344010ff3fb552df8aa75eb852a2ac94a750f20ade3c53de0e53e",
+   "bytes": 3291
+  },
+  "results/matched_design.tsv": {
+   "sha256": "a3fd5868a0bb5f9b455bc64c5a214ce35097dfa1cf4e65b98a641bf8075ca053",
+   "bytes": 1401
+  },
+  "results/recurrence.tsv": {
+   "sha256": "5290266437b4b465704e27b98a3368d2a4517cadc9b6187716e93ae3bda8c244",
+   "bytes": 4370
+  },
+  "results/recurrence_genes_age2_auto.tsv": {
+   "sha256": "aa954d6feaba162c36d929e8f44c5e8d2af99e8af385434250642e836471874f",
+   "bytes": 5311
+  },
+  "results/recurrence_genes_age_auto.tsv": {
+   "sha256": "f96f7062cb8c3fa190086c713b874f197bc7ca91ac800dae2729ad4544b2bd45",
+   "bytes": 8877
+  },
+  "results/recurrence_genes_age_ctl_auto.tsv": {
+   "sha256": "bb1d97294dfbfedec002bc0c2dacbb89f4e8ebbcca9bf71ad99c68f45a21f1e6",
+   "bytes": 5500
+  },
+  "results/recurrence_genes_sex_all.tsv": {
+   "sha256": "3a4bc558afe9eced0b892441e1a190ddbde7220a98082347df60a75735184482",
+   "bytes": 5673
+  },
+  "results/recurrence_genes_sex_auto.tsv": {
+   "sha256": "eef266a925b7f0ad2a4f9e7d03458f25e0563b715ee46a28ac5307516ffc9a9d",
+   "bytes": 2844
+  },
+  "results/recurrence_genes_sex_ctl_auto.tsv": {
+   "sha256": "37c14f4ecbb4c80c668b340a66917d7af3728b1e18c1ab48ec9e7614b041617c",
+   "bytes": 3154
+  },
+  "results/recurrence_genes_sz_auto.tsv": {
+   "sha256": "97dde8dbb519b2532dedb36cc18ee1371785b6fe5c92874a04e922611c664988",
+   "bytes": 5039
+  },
+  "results/sex_check.tsv": {
+   "sha256": "e360467398978d242646593e5b8818477f0b5382bc6f746c55ce1b16fe500812",
+   "bytes": 4095
+  },
+  "results/sex_check_samples.tsv": {
+   "sha256": "e6e74a1a158ce223191f9bd81fb3b1da606b7f5611166150ab0835be2ca45afa",
+   "bytes": 196588
+  },
+  "results/sex_sanity.tsv": {
+   "sha256": "bfd9c2fe7c4e82b6743b02c64d87a37e681ca75ae387c335dcee2c950a8f038d",
+   "bytes": 8907
+  },
+  "scripts/build_covariates.py": {
+   "sha256": "654161bb82dd7345785599d916731e89af0e19b40925a8588124c3e595973ca3",
+   "bytes": 12296
+  },
+  "scripts/de_contrasts.R": {
+   "sha256": "03a6fffdffc88227e2976c2b4974c110c7a9ed6f3a6348beef3e0bffd8d13a27",
+   "bytes": 13676
+  },
+  "scripts/fetch_gemma.py": {
+   "sha256": "f42ff008434471cbcf979c849b67f85346b40021f3e23639bff4f7633cf88145",
+   "bytes": 6189
+  },
+  "scripts/figures.py": {
+   "sha256": "b95d8097b76a18eb7395ddb93aa32440f01fae34cc172e388c4466fe0efec756",
+   "bytes": 8337
+  },
+  "scripts/pairs.py": {
+   "sha256": "57dca36d254416e8dab5fa6a9c02d56713c45351d6db27d82f6ccaebf4e83641",
+   "bytes": 31442
+  },
+  "scripts/write_meta.py": {
+   "sha256": "3d751e043220c6563440dcf7e2b720260ded713b367c42f107f380b40b2fab19",
+   "bytes": 3545
+  },
+  "subsample/rep_metrics.tsv.gz": {
+   "sha256": "550c042bcc3e5c811f84dc62b7b37b536f4134791c404a3cb8b2911f399b8329",
+   "bytes": 3273963
+  },
+  "summary.tsv": {
+   "sha256": "032b925ef834fea4d44b2ed5299815c5cd6b9d2e1ea14bbd71a6b1efebf119d8",
+   "bytes": 45122
+  }
+ }
+}

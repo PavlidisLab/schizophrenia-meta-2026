@@ -1,0 +1,13 @@
+# script: A/scripts/a1_counts.py; date 2026-10-19; seed none
+# input: schizophrenia-transcriptome-replication/corpus/curated_edges.json sha256 aeb5eae84c66
+# input: schizophrenia-transcriptome-replication/corpus/sc_banks.json sha256 a41e92cc100e
+# input: schizophrenia-transcriptome-reproducibility-manuscript/figures/data/fig01/fig01_c_lineage_edges.tsv sha256 62b8b9800370
+# base: 509-study corpus (all but covariate readers); covariate readers: core-80
+quantity	value
+curated_edges.json edges	251
+curated_edges.json with evidence	251
+sc_banks.json edges	22
+sc_banks.json with evidence	22
+register rows	1102
+register curated=yes	273
+register curated=yes with evidence	273

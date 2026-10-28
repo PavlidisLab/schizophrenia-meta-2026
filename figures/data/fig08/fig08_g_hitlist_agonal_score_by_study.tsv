@@ -1,0 +1,82 @@
+# figure: fig08 panel g (no panel yet)
+# script: core80_work_2026-10-16/P11/b/f8g/build_study_claims_375_scatter.py (copy of analyses/study_claims_2026-10-08/build_study_claims.py as patched for the 375 base; 24 h Dachet change read from fig08_a_dachet_gene_scatter.tsv instead of the tar), run 2026-10-17 on the remote environment with ANALYSES = the private core-80 tree
+# population: 72 modelled published brain studies of the core-80 base (recurrence_units.tsv, one representative list per recurrence unit); n_k = |M_k| (RECURRENCE_NK=membership)
+# input: P11/b/f8g/out/study_claims.tsv sha256 fd08ff4c2ea5 (output of this export)
+# input: figure_data_375_2026-10-15/fig08/fig08_a_dachet_gene_scatter.tsv (column change_24h, set-independent) sha256 9b04bb7f57c0
+# input: base78_2026-10-16/B80 primary_lists.json sha256 44fb07b1d2e5; B80/out/recurrence_units.tsv sha256 53ff51cba570; analyses/confounds/results/combined_controls_pH.tsv sha256 ebab86afedd3
+# agonal_score = mean over the study's listed genes with a direction of (SZ sign) x GTEx agonal t (slow vs fast natural death, cortical mean); positive = the list moves with the agonal state the way it moves in SZ. agonal_share = share of listed genes whose SZ direction equals the sign of the agonal t; dachet_share = share whose SZ direction equals the direction in dying fresh cortex at 24 h; *_z, *_p against 200 sign shuffles within the list.
+# agonal_share_z/_p and dachet_share_z/_p use 200 sign shuffles from one random stream (seed 20261008) running over the studies in order, so z and p of a study differ in the second or third digit when the study order changes; validation against the 375 file (studies present in both): differing cells per column {'label': 2, 'n_signed_genes': 2, 'ph_score': 67, 'agonal_score': 2, 'agonal_share': 2, 'agonal_share_z': 57, 'agonal_share_p': 21, 'dachet_share': 2, 'dachet_share_z': 57, 'dachet_share_p': 28}
+# 2026-10-21: column cluster: for the seven studies that pool several banks, the set of cohort clusters (multibank_cluster_sets.tsv)
+label	pmid	year	cluster	lane	ph_status	n_signed_genes	ph_score	agonal_score	agonal_share	agonal_share_z	agonal_share_p	dachet_share	dachet_share_z	dachet_share_p	themes	ph_score_axis_v1
+Hakak 2001	11296301	2001	cmc+mssm+pitt+libd	mssm	not_mentioned	83	-3.324	-1.851	0.037	-7.48	1.0	0.05	-7.14	1.0	oligodendrocytes / myelin; synapse / neurotransmission; neurodevelopment	-3.338
+Kuromitsu 2001	15018814	2001	stanley	stanley	not_mentioned	45	1.26	1.255	0.667	2.29	0.03	0.512	0.53	0.418	synapse / neurotransmission	1.063
+Aston 2004	15334603	2004	stanley	stanley	adjusted	32	0.808	0.47	0.6	1.47	0.124	0.367	-1.02	0.93	oligodendrocytes / myelin; neurodevelopment; circadian; epigenetics / chromatin	0.179
+Altar 2005	16038679	2005	stanley	stanley	adjusted	45	1.84	0.14	0.625	-0.36	0.816	0.5	-0.79	0.876	protein homeostasis / ubiquitin; mitochondria / energy metabolism; synapse / neurotransmission; neurodevelopment	1.655
+Weidenhofer 2006	16236523	2006	aus	aus	sensitivity	47	-0.067	0.03	0.488	-0.25	0.721	0.457	-0.6	0.841	synapse / neurotransmission; oligodendrocytes / myelin	-0.093
+Saetre 2007	17822540	2007	brain_other:17822540; harvard; stanley	brain_other	reported_only	136	-0.71	0.534	0.542	1.39	0.119	0.42	-1.05	0.91	immune / inflammation; oligodendrocytes / myelin	-0.415
+Bowden 2008	18445270	2008	aus	aus	matched_or_compared	66	0.596	1.018	0.729	2.46	0.035	0.714	2.67	0.02	synapse / neurotransmission; neurodevelopment	1.081
+Garbett 2008	18771015	2008	cmc+mssm+pitt+libd	pitt	not_mentioned	13	1.754	-0.705	0.25	nan	1.0	0.25	-1.08	0.98	synapse / neurotransmission	0.931
+Narayan 2008	18778695	2008	aus	aus	sensitivity	1505	1.047	0.24	0.523	5.98	0.005	0.527	3.42	0.005	RNA processing / non-coding RNA; immune / inflammation	0.735
+Mudge 2008	18985160	2008	brain_other:18985160	brain_other	adjusted	196	-0.34	0.674	0.682	3.76	0.005	0.506	0.03	0.522	synapse / neurotransmission; GABA interneurons	0.044
+Maycox 2009	19255580	2009	brain_other:19255580; harvard	brain_other	not_mentioned	2027	1.18	1.527	0.812	26.91	0.005	0.708	17.28	0.005	synapse / neurotransmission	1.39
+Chu 2009	19834500	2009	stanley	stanley	not_mentioned	254	2.498	-0.031	0.483	1.18	0.184	0.611	2.41	0.02	immune / inflammation; protein homeostasis / ubiquitin	1.759
+Arion 2010	20034564	2010	cmc+mssm+pitt+libd	pitt	matched_or_compared	1090	1.01	-0.231	0.423	-0.83	0.806	0.431	-3.82	1.0	neurodevelopment	0.374
+Schmitt 2011	21091092	2011	brain_other:21091092	brain_other	matched_or_compared	760	0.145	-0.454	0.46	-4.13	1.0	0.356	-8.16	1.0	immune / inflammation	-0.12
+Barnes 2011	21538462	2011	brain_other:21538462	brain_other	reported_only	51	0.471	0.748	0.564	0.85	0.294	0.262	-2.72	1.0	synapse / neurotransmission; cell death / apoptosis; protein homeostasis / ubiquitin	-0.003
+Wu 2012	22558445	2012	aus	aus	sensitivity	768	0.849	0.722	0.65	6.79	0.005	0.625	5.14	0.005	synapse / neurotransmission; neurodevelopment; GABA interneurons; immune / inflammation; oligodendrocytes / myelin; mitochondria / energy metabolism; stress response / hypoxia	0.798
+Fillman 2013	22869038	2013	aus	aus	adjusted	592	0.567	2.685	0.813	6.55	0.005	0.563	1.18	0.139	immune / inflammation; microglia	0.354
+Chen 2013	23147385	2013	stanley	stanley	adjusted	1378	1.412	1.103	0.764	18.98	0.005	0.642	9.77	0.005	neurodevelopment	1.281
+Hwang 2013	24169640	2013	stanley	stanley	sensitivity	142	1.756	2.945	0.79	2.95	0.02	0.382	-1.45	0.975	immune / inflammation; GABA interneurons	0.814
+Kohen 2014	24594777	2014	stanley	stanley	reported_only	0									RNA processing / non-coding RNA	
+Pietersen 2014 (PV neurons)	24628518	2014	harvard	harvard	reported_only	692	0.733	0.423	0.547	2.96	0.005	0.492	-0.22	0.617	GABA interneurons; cell death / apoptosis; RNA processing / non-coding RNA	0.57
+Pietersen 2014	24702465	2014	harvard	harvard	matched_or_compared	862	0.439	0.512	0.568	1.64	0.065	0.495	-0.71	0.776	synapse / neurotransmission; cell death / apoptosis	0.408
+Xiao 2014	24776767	2014	brain_other:24776767	brain_other	reported_only	4041	2.237	1.893	0.861	43.98	0.005	0.695	25.92	0.005	epigenetics / chromatin; neurodevelopment	2.17
+Zhao 2015	25113377	2015	stanley	stanley	adjusted	0										
+Arion 2015	25560755	2015	cmc+mssm+pitt+libd	pitt	adjusted	71	2.706	0.365	0.609	-0.31	0.821	0.585	0.31	0.582	mitochondria / energy metabolism; protein homeostasis / ubiquitin	2.138
+Mauney 2015	26585218	2015	harvard	harvard	not_mentioned	439	0.103	0.312	0.587	3.55	0.005	0.544	1.73	0.04	oligodendrocytes / myelin	0.257
+Darby 2016	27622934	2016	stanley	stanley	adjusted	10									GABA interneurons; synapse / neurotransmission; immune / inflammation	
+Hu 2016	27661005	2016	stanley	stanley	matched_or_compared	965	3.192	2.407	0.94	24.58	0.005	0.771	17.81	0.005	immune / inflammation; oligodendrocytes / myelin; epigenetics / chromatin; RNA processing / non-coding RNA	3.044
+Fromer 2016	27668389	2016	cmc+mssm+pitt+libd	cmc	not_mentioned	669	-0.456	1.205	0.785	14.35	0.005	0.56	2.93	0.005	neurodevelopment	-0.118
+Scarr 2018	27801890	2018	aus	aus	matched_or_compared	87	3.555	2.147	0.806	0.91	0.333	0.419	-1.1	0.93	neurodevelopment	3.464
+Kim 2016	27898074	2016	stanley	stanley	matched_or_compared	56	0.932	2.417	0.773	2.15	0.065	0.439	0.19	0.537	immune / inflammation; hormones / HPA axis	0.605
+Voisey 2017	27940260	2017	brain_other:27940260	brain_other	not_mentioned	1132	1.818	-0.2	0.514	0.09	0.483	0.69	12.86	0.005	immune / inflammation	1.659
+Mladinov 2016	28123834	2016	brain_other:28123834	brain_other	not_mentioned	22	-0.564	0.11	0.579	-0.38	0.816	0.667	0.17	0.711		-0.521
+Ramaker 2017	28754123	2017	pritzker	pritzker	adjusted	97	2.541	2.528	0.893	5.81	0.005	0.724	2.96	0.01	astrocytes; GABA interneurons	2.027
+Chang 2017	28809853	2017	cmc+mssm+pitt+libd	libd	not_mentioned	854	2.059	2.365	0.846	16.88	0.005	0.645	11.28	0.005	synapse / neurotransmission; immune / inflammation; vascular / endothelial	1.614
+Enwright 2018	29112193	2018	cmc+mssm+pitt+libd	pitt	sensitivity	865	1.707	0.777	0.686	8.95	0.005	0.596	5.32	0.005	GABA interneurons; mitochondria / energy metabolism	1.317
+Scarr 2018	29463818	2018	aus	aus	matched_or_compared	94	0.513	-1.067	0.404	-0.56	0.811	0.413	-1.33	0.93	immune / inflammation; neurodevelopment; synapse / neurotransmission	-0.247
+Jaffe 2018	30050107	2018	cmc+mssm+pitt+libd	libd	not_mentioned	761	-0.318	0.751	0.635	6.32	0.005	0.517	1.66	0.08	synapse / neurotransmission; neurodevelopment	-0.041
+Lanz 2019	31123247	2019	cmc+mssm+pitt+libd	pitt	adjusted	2016	2.799	1.182	0.748	24.0	0.005	0.634	7.0	0.005	immune / inflammation	2.339
+Collado-Torres 2019	31174959	2019	cmc+mssm+pitt+libd	libd	reported_only	275	0.807	0.506	0.573	2.11	0.025	0.322	-6.23	1.0		0.544
+Mendizabal 2019	31288836	2019	brain_other:31288836; harvard	brain_other	not_mentioned	301	-0.169	0.416	0.576	2.29	0.015	0.495	-0.29	0.662	epigenetics / chromatin	0.112
+Santarelli 2019	32006661	2019	aus	aus	matched_or_compared	191	-0.062	1.015	0.706	5.77	0.005	0.497	-0.13	0.632	neurodevelopment; oligodendrocytes / myelin; RNA processing / non-coding RNA	0.092
+Perez 2021	32152472	2021	brain_other:32152472	brain_other	not_mentioned	266	0.127	0.329	0.568	2.16	0.025	0.463	-1.05	0.861	astrocytes; immune / inflammation; synapse / neurotransmission	0.036
+Jaffe 2020	32203495	2020	cmc+mssm+pitt+libd	libd	reported_only	25	1.586	0.96	0.647	1.93	0.07	0.714	2.02	0.075		1.46
+Zeppillo 2022	32513544	2022	pritzker	pritzker	adjusted	328	1.903	2.099	0.881	13.8	0.005	0.655	4.86	0.005	synapse / neurotransmission	1.293
+Bakshi 2020	32566292	2020	stanley	stanley	not_mentioned	473	2.594	0.197	0.57	2.78	0.01	0.64	-0.97	0.871	synapse / neurotransmission; RNA processing / non-coding RNA	1.939
+Maas 2020	33184259	2020	brain_other:33184259	brain_other	not_mentioned	135	3.223	3.817	0.945	nan	1.0	0.439	nan	1.0		2.899
+Akula 2021	33558674	2021	cmc+mssm+pitt+libd	cmc	not_mentioned	22	-0.415					0.4	-1.01	0.945	synapse / neurotransmission	-0.447
+Gebicke-Haerter 2021	34004381	2021	brain_other:34004381	brain_other	matched_or_compared	500	0.941	0.325	0.601	3.43	0.005	0.603	3.77	0.005	immune / inflammation; protein homeostasis / ubiquitin	0.932
+Weissleder 2021	34059796	2021	stanley	stanley	not_mentioned	1278	0.316	1.923	0.795	18.51	0.005	0.664	9.96	0.005	immune / inflammation; neurodevelopment	0.47
+Wu 2021	34272489	2021	cmc+mssm+pitt+libd	mssm	matched_or_compared	243	-0.683	-0.245	0.46	-1.34	0.935	0.509	0.27	0.473	immune / inflammation; synapse / neurotransmission; protein homeostasis / ubiquitin	-0.495
+Lindholm Carlström 2021	34440415	2021	harvard	harvard	reported_only	68	1.632	4.328	0.953	2.77	0.119	0.456	-1.52	1.0	immune / inflammation; synapse / neurotransmission	1.042
+Puvogel 2022	36192459	2022	stanley	stanley	matched_or_compared	13	-0.045	1.213	0.5	0.12	0.657	0.462	-0.01	0.736	vascular / endothelial	-0.689
+Batiuk 2022	36223459	2022	brain_other:36223459	brain_other	not_mentioned	173	1.344	0.014	0.476	-0.6	0.761	0.599	2.18	0.03	GABA interneurons; synapse / neurotransmission; mitochondria / energy metabolism; neurodevelopment	0.908
+Ketchesin 2023 (own list)	36302706	2023	cmc+mssm+pitt+libd	pitt	not_mentioned	608	-0.457	1.259	0.643	4.39	0.005	0.334	-6.9	1.0	immune / inflammation; circadian; mitochondria / energy metabolism; RNA processing / non-coding RNA; synapse / neurotransmission	-0.35
+Benjamin 2022	36319771	2022	cmc+mssm+pitt+libd	libd	not_mentioned	2566	-0.932	-0.009	0.463	-3.86	1.0	0.254	-23.93	1.0		-0.822
+Schulmann 2023	36932057	2023	cmc+mssm+pitt+libd	cmc	adjusted	2083	0.261	2.061	0.853	28.51	0.005	0.593	8.36	0.005	synapse / neurotransmission; immune / inflammation; mitochondria / energy metabolism	0.429
+Arihisa 2023	37498306	2023	brain_other:37498306	brain_other	not_mentioned	113	0.631	0.64	0.567	-1.0	0.915	0.303	-4.9	1.0	immune / inflammation	0.065
+Ling 2024	38448582	2024	harvard	harvard	not_mentioned	0									synapse / neurotransmission; astrocytes; GABA interneurons	
+Zhu 2024	38648100	2024	brain_other:38648100	brain_other	reported_only	1687	1.079	0.899	0.692	14.59	0.005	0.556	4.49	0.005	epigenetics / chromatin	1.065
+Ruzicka 2024	38781388	2024	cmc+mssm+pitt+libd; harvard	mssm	not_mentioned	2340	0.389	0.512	0.596	7.94	0.005	0.566	1.72	0.045	neurodevelopment; synapse / neurotransmission	0.455
+Frohlich 2024 (own list)	39227716	2024	aus	aus	adjusted	551	0.153	1.612	0.784	10.16	0.005	0.51	0.29	0.413	synapse / neurotransmission; GABA interneurons	0.342
+Arbabi 2025	39237723	2025	cmc+mssm+pitt+libd	pitt	not_mentioned	158	0.575	0.139	0.523	0.65	0.294	0.472	-0.69	0.806	GABA interneurons; neurodevelopment	0.347
+Alsema 2025	39397771	2025	stanley	stanley	reported_only	106	0.636	0.519	0.578	1.3	0.159	0.606	2.22	0.025	GABA interneurons	0.782
+Zhang 2026	39526318	2026	stanley	stanley	matched_or_compared	2787	0.899	-0.195	0.436	-7.09	1.0	0.459	-4.13	1.0	mitochondria / energy metabolism; immune / inflammation	0.266
+Yalcinbas 2025	41174894	2025	cmc+mssm+pitt+libd	libd	not_mentioned	158	0.38	2.214	0.86	7.67	0.005	0.364	-2.42	0.995		0.177
+Mas 2025	41210297	2025	brain_other:41210297	brain_other	not_mentioned	0									immune / inflammation	
+Mendez-Victoriano 2026	41567988	2026	aus; stanley	stanley	sensitivity	203	1.265	4.115	0.925	7.97	0.005	0.627	3.96	0.005	immune / inflammation; astrocytes; microglia; cell death / apoptosis	0.858
+Kwon 2026	41757081	2026	cmc+mssm+pitt+libd	libd	not_mentioned	1008	0.88	0.82	0.637	7.6	0.005	0.502	0.72	0.274	synapse / neurotransmission; immune / inflammation; mitochondria / energy metabolism	0.605
+Singh 2026	41942462	2026	cmc+mssm+pitt+libd	cmc	not_mentioned	841	0.875	0.619	0.616	5.18	0.005	0.564	3.76	0.005	synapse / neurotransmission; epigenetics / chromatin	0.764
+Dean 2026	42461238	2026	aus	aus	matched_or_compared	46	2.83	2.668	0.929	5.63	0.005	0.571	1.29	0.154	immune / inflammation	2.987
+Lee 2026 (PsychAD)	42778699	2026	cmc+mssm+pitt+libd	mssm	not_mentioned	139	0.658	0.701	0.653	3.63	0.005	0.559	0.69	0.328		0.438

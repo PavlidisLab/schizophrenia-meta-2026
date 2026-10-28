@@ -1,0 +1,21 @@
+# script: scripts/compile_tables.py over scripts/expected_residual_core80_grid.py (scheme B: tau set so the simulated r_base equals the observed r_base of the design on axis v2; per-subject within-group reliability lam; 200 replicates; interval = 2.5/97.5% of replicate r_adj; seed 20261012 + int(lam*100); genes independent)
+# base: core-80; sets 383 and 2,422 from recurrent_sets.tsv sha256 3c42f67cdd7a; pH axis v2 = axis_v2_controls.tsv.gz sha256 2c72a9b279a2; observed values: tables/observed_by_design_axis_v2.tsv (sz_adjust_<d>.tsv, same files as the fig07 scatter; all-five rows equal fig07_a2_a4_gene_scatter*.tsv)
+# simulation inputs: five v1 covariate files GSE17612 9af0f076c20b, GSE21138 451590bceb07, GSE35977 5f6592ae8cf9, GSE53987 da0e8af3064f, GSE92538_GPL17027 56540f581167; curve files (sha256 first 12): all_five 3f2ba884bd1e; single_GSE17612 e778fb3443d3; single_GSE21138 136e398beda3; single_GSE35977 105bf5255c13; single_GSE53987_BA46 0a8cede63a7f; single_GSE92538_GPL96 2e87813226a8; val_v1 08d817035ad9; val_v2 72cc305f0ad1
+# design = the datasets that enter the SZ z (design, n and pH of the v1 datasets); the axis is simulated from the controls of the same datasets (the real axis v2 uses ten dataset-regions)
+design	set	G	reliability_lam	expected_r_adj	sim_lo_2.5pct	sim_hi_97.5pct	expected_r_adj_analytic	sim_r_base	tau	kappa	observed_r_base_v2	observed_r_adj_v2
+all five	383	371	0.5	-0.4934	-0.6465	-0.2888	-0.5279	-0.7715	0.4055	0.4519	-0.7624	-0.5482
+all five	2,422 (5 or more lists)	2337	0.5	-0.3505	-0.5192	-0.1685	-0.4185	-0.6718	0.3089	0.4519	-0.6642	-0.3622
+all five	383	371	0.54	-0.4387	-0.592	-0.2075	-0.4837	-0.7651	0.3938	0.4158	-0.7624	-0.5482
+all five	2,422 (5 or more lists)	2337	0.54	-0.3263	-0.4879	-0.09086	-0.3879	-0.6713	0.3	0.4158	-0.6642	-0.3622
+all five	383	371	0.6	-0.4072	-0.6067	-0.1715	-0.4356	-0.7704	0.3791	0.3615	-0.7624	-0.5482
+all five	2,422 (5 or more lists)	2337	0.6	-0.278	-0.4592	-0.09112	-0.3391	-0.6704	0.2888	0.3615	-0.6642	-0.3622
+all five	383	371	0.7	-0.2844	-0.5402	-0.02397	-0.3285	-0.7633	0.3628	0.2712	-0.7624	-0.5482
+all five	2,422 (5 or more lists)	2337	0.7	-0.2035	-0.3814	-0.006149	-0.2562	-0.6688	0.274	0.2712	-0.6642	-0.3622
+all five	383	371	0.74	-0.2433	-0.4466	0.001236	-0.2868	-0.7633	0.3575	0.235	-0.7624	-0.5482
+all five	2,422 (5 or more lists)	2337	0.74	-0.1726	-0.3355	0.02496	-0.2233	-0.6695	0.27	0.235	-0.6642	-0.3622
+all five	383	371	0.8	-0.2004	-0.446	0.04109	-0.2262	-0.7684	0.3513	0.1808	-0.7624	-0.5482
+all five	2,422 (5 or more lists)	2337	0.8	-0.1245	-0.2804	0.04655	-0.1715	-0.6678	0.2637	0.1808	-0.6642	-0.3622
+all five	383	371	0.86	-0.1471	-0.3844	0.08082	-0.1597	-0.7693	0.3452	0.1265	-0.7624	-0.5482
+all five	2,422 (5 or more lists)	2337	0.86	-0.06392	-0.207	0.06463	-0.1191	-0.6652	0.2592	0.1265	-0.6642	-0.3622
+all five	383	371	0.9	-0.0881	-0.273	0.1246	-0.113	-0.765	0.3422	0.09038	-0.7624	-0.5482
+all five	2,422 (5 or more lists)	2337	0.9	-0.04198	-0.1678	0.08986	-0.08526	-0.6659	0.2561	0.09038	-0.6642	-0.3622

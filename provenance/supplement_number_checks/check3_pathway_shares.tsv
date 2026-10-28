@@ -1,0 +1,7 @@
+# check3_pathway_shares.py; shared_pathways_by_group.tsv 23c97afd5c70; a5b_agreement.tsv 375400954cc2; observed 710, DE-prior null mean 265.6 (95% 211.4 to 344.3), excess 444.4
+group	shared_pathway_pairs	share_of_all_710_pairs	share_of_excess	share_of_excess_if_null_is_mean_hi95	share_of_excess_if_null_is_mean_lo95
+all terms in >= 2 lists	710	1.0	1.5977	1.9415	1.424
+oxphos	305	0.4296	0.6863	0.834	0.6117
+myelin	40	0.0563	0.09	0.1094	0.0802
+microglia	6	0.0085	0.0135	0.0164	0.012
+oxphos + myelin	345	0.4859	0.7763	0.9434	0.6919

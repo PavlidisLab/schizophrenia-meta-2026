@@ -1,0 +1,28 @@
+# inputs (sha256 prefix): Liharska ST1 d8a4171a6329 (extracted from MOESM8 sha256 prefix in the file header), ST5 498be821cb72 (MOESM12), Collado-Torres Table S4 5024842c8776 (github LieberInstitute/living_brain_reanalysis processed-data/SupplementaryTables/TableS4.csv, downloaded 2026-10-18)
+# recurrence_genes.tsv dda5eb621c15; recurrent_sets.tsv 3c42f67cdd7a; DE prior 68272e907b72; pH axis v2 controls 2c72a9b279a2; GTEx hardy_t_by_region 54f989c55753; HBCC specificity 84842a9e04b2
+# script: scripts/s1_main.py, run 2026-10-18; seed 20261018; matched sets 10000; bootstrap over genes: 2000 (set analyses), 1000 (genome-wide); symbols: ENSG -> HGNC approved symbol (HGNC ensembl_gene_id column via extract.load_hgnc), minimum-P row per symbol; NEW analysis
+# gene mapping: {'ST1_rows': 21635, 'ST1_unmapped_ENSG': 3139, 'ST1_symbols': 18496, 'CT_rows_expressed': 21155, 'CT_unmapped': 2735, 'ST5_rows': 29894, 'ST5_unmapped_ENSG': 7311, 'R2_axes_on_LIV-PM Liharska (ST1)': 0.0821, 'R2_axes_on_LIV-PM Collado-Torres, no qSVA': 0.1482, 'R2_axes_on_LIV-PM Collado-Torres, with qSVA': 0.069, 'R2_axes_on_SCZ1': 0.1566, 'R2_axes_on_SCZ2': 0.1576}
+# intervals: percentile bootstrap over genes (genes are not independent: co-expression); matched null = 10,000 sets drawn from published-brain genes with an SZ sign outside the 383, same expression decile x DE-prior quintile strata as ad_383.py; null columns give mean and 2.5%-97.5% range; perm P descriptive only
+# partial = Spearman-type partial correlation through normal scores, given pH and agonal axes (OLS residuals); genome-wide rows use genes with all four values
+liv_pm_signature	disease_signature	n_genes	spearman_raw	raw_boot95_low	raw_boot95_high	partial_given_pH_and_agonal	partial_boot95_low	partial_boot95_high
+LIV-PM Liharska (ST1)	SCZ1	12003	0.1878	0.1717	0.2051	0.1804	0.1624	0.1979
+LIV-PM Liharska (ST1)	SCZ2	11988	0.1521	0.1352	0.17	0.1363	0.1189	0.1536
+LIV-PM Liharska (ST1)	ALZ1	12033	0.4672	0.4528	0.4802	0.4236	0.4073	0.4384
+LIV-PM Liharska (ST1)	ALZ2	12077	0.3163	0.3017	0.332	0.2184	0.2028	0.2347
+LIV-PM Liharska (ST1)	PD1	12134	0.6572	0.6459	0.6661	0.632	0.6226	0.6401
+LIV-PM Liharska (ST1)	PD2	12134	0.4644	0.4515	0.4767	0.4389	0.4272	0.4506
+LIV-PM Liharska (ST1)	383-gene SZ sign (within the 383)	353	0.6718	0.6022	0.7302	0.3099	0.1944	0.4202
+LIV-PM Collado-Torres, no qSVA	SCZ1	12003	0.1482	0.1292	0.1655	0.1349	0.1169	0.154
+LIV-PM Collado-Torres, no qSVA	SCZ2	11988	0.1254	0.1103	0.1421	0.1054	0.0886	0.122
+LIV-PM Collado-Torres, no qSVA	ALZ1	12033	0.4905	0.4746	0.504	0.4277	0.4129	0.4417
+LIV-PM Collado-Torres, no qSVA	ALZ2	12077	0.3933	0.3783	0.4075	0.2619	0.2456	0.2796
+LIV-PM Collado-Torres, no qSVA	PD1	12132	0.7256	0.7161	0.7342	0.7197	0.711	0.7276
+LIV-PM Collado-Torres, no qSVA	PD2	12132	0.5577	0.5442	0.5706	0.5568	0.5448	0.5685
+LIV-PM Collado-Torres, no qSVA	383-gene SZ sign (within the 383)	353	0.7056	0.6416	0.76	0.2855	0.1715	0.393
+LIV-PM Collado-Torres, with qSVA	SCZ1	12003	0.2076	0.1896	0.2252	0.109	0.09	0.1275
+LIV-PM Collado-Torres, with qSVA	SCZ2	11988	0.1815	0.1623	0.1978	0.0947	0.0756	0.1134
+LIV-PM Collado-Torres, with qSVA	ALZ1	12033	-0.024	-0.0425	-0.0073	-0.0796	-0.0976	-0.0645
+LIV-PM Collado-Torres, with qSVA	ALZ2	12077	0.0021	-0.0157	0.0208	-0.0275	-0.0451	-0.0101
+LIV-PM Collado-Torres, with qSVA	PD1	12132	-0.0888	-0.1051	-0.0704	-0.1972	-0.2142	-0.1812
+LIV-PM Collado-Torres, with qSVA	PD2	12132	-0.035	-0.0519	-0.0169	-0.0472	-0.0643	-0.0305
+LIV-PM Collado-Torres, with qSVA	383-gene SZ sign (within the 383)	353	0.1983	0.1004	0.2981	0.0617	-0.0568	0.1794

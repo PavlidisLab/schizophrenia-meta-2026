@@ -1,0 +1,123 @@
+class_shown	geo_series	contrast	n_samples	effect_pH	effect_agonal	dropped	flagged_kept
+SUD	GSE99349	GSE99349 (cocaine abuse; class SUD)	36.0	-0.078	0.022	True	False
+SUD	GSE214267	GSE214267 (cocaine use disorder; class SUD)	89.0	0.003	-0.004	False	False
+SUD	GSE161986	GSE161986 (alcohol dependence; class SUD)	35.0	0.173	0.287	False	False
+SUD	GSE253155	GSE253155 (alcohol abuse; class SUD)	194.0	0.195	0.343	False	False
+SUD	GSE54839	GSE54839 (cocaine dependence; class SUD)	60.0	0.212	0.125	False	False
+SUD	GSE182321	GSE182321 (opioid abuse; class SUD)	41.0	0.225	0.392	False	False
+SUD	GSE181741	GSE181741 (alcohol abuse; class SUD)	24.0	0.24	0.253	False	False
+MS	GSE32915	GSE32915 (multiple sclerosis with initial lesion; class MS)	16.0	0.035	-0.018	False	True
+MS	GSE83670	GSE83670 (multiple sclerosis; class MS)	7.0	0.11	0.197	True	False
+MS	GSE5839	GSE5839 (multiple sclerosis; class MS)	4.0	0.162	0.2	False	False
+MS	GSE207680	GSE207680 (multiple sclerosis; class MS)	6.0	0.173	0.316	False	False
+MS	GSE131281	GSE131281 (primary progressive multiple sclerosis; class MS)	106.0	0.182	0.177	False	False
+MS	GSE126802	GSE126802 (multiple sclerosis; class MS)	54.0	0.201	0.096	False	False
+BD		McLean_PFC [BD__McLean_PFC__de_include]	45.0	-0.155	-0.277	False	False
+BD		GSE81396 [BD__GSE81396__all]	16.0	-0.0929	-0.1816	False	False
+BD		byne-cc [BD__byne-cc__all]	58.0	0.1019	0.1772	False	False
+BD		GSE5389 [BD__GSE5389__all]	21.0	0.1305	0.2325	False	False
+BD		GSE210064 [BD__GSE210064__all]	22.0	0.1518	0.0551	False	False
+BD		GSE53239 [BD__GSE53239__all]	22.0	0.2279	0.2351	False	False
+BD		GSE80336 [BD__GSE80336__all]	36.0	0.3723	0.2969	False	False
+OTHER	GSE272142	GSE272142 (mesial temporal lobe epilepsy with hippocampal sclerosis; class OTH)	12.0	-0.124	-0.013	True	False
+OTHER	GSE134878	GSE134878 (essential tremor; class OTH)	54.0	-0.085	-0.104	False	False
+OTHER	GSE160691	GSE160691 (Down syndrome; class OTH)	5.0	-0.064	0.032	False	False
+OTHER	GSE260815	GSE260815 (brain lesion; class OTH)	12.0	-0.054	0.012	True	False
+OTHER	GSE157363	GSE157363 (periventricular lesion  white matter; class OTH)	18.0	0.026	0.05	False	True
+OTHER	GSE6551	GSE6551 (brain aneurysm; class OTH)	5.0	0.034	0.104	True	False
+OTHER	GSE175797	GSE175797 (varicella zoster infection; class OTH)	6.0	0.076	0.063	True	False
+OTHER	GSE20159	GSE20159 (Lewy body dementia; class OTH)	33.0	0.089	0.178	False	False
+OTHER	GSE193407	GSE193407 (severe intensity  traumatic encephalopathy; class OTH)	136.0	0.1	0.083	False	False
+OTHER	GSE157330	GSE157330 (severe intensity  dementia pugilistica; class OTH)	76.0	0.12	0.032	False	False
+OTHER	GSE56267	GSE56267 (Ischemic stroke; class OTH)	13.0	0.136	0.051	False	True
+OTHER	GSE57193	GSE57193 (hepatic encephalopathy; class OTH)	12.0	0.154	0.122	False	False
+OTHER	GSE38010	GSE38010 (Acute plaque; class OTH)	7.0	0.155	0.135	False	False
+OTHER	GSE3489	GSE3489 (AIDS dementia complex; class OTH)	28.0	0.163	0.177	False	False
+OTHER	GSE128380	GSE128380 (Rett syndrome; class OTH)	16.0	0.173	0.212	False	False
+OTHER	GSE149326	GSE149326 (brain lesion; class OTH)	43.0	0.182	0.257	False	False
+OTHER	GSE157428	GSE157428 (myotonic dystrophy type 2; class OTH)	33.0	0.195	0.191	False	False
+OTHER	GSE150118	GSE150118 (Cornelia de Lange syndrome; class OTH)	10.0	0.206	0.242	True	False
+OTHER	GSE75303	GSE75303 (Rett syndrome; class OTH)	12.0	0.219	0.291	False	False
+OTHER	GSE29507	GSE29507 (HIV infectious disease, meningeal tuberculosis; class OTH)	9.0	0.225	0.357	False	False
+OTHER	GSE41919	GSE41919 (hepatic encephalopathy; class OTH)	19.0	0.227	0.124	False	False
+OTHER	GSE128840	GSE128840 (Williams syndrome; class OTH)	6.0	0.261	0.36	False	False
+OTHER	GSE135838	GSE135838 (sepsis; class OTH)	24.0	0.275	0.278	False	False
+OTHER	GSE60190	GSE60190 (eating disorder; class OTH)	133.0	0.282	0.407	False	False
+OTHER	GSE251939	GSE251939 (Down syndrome; class OTH)	82.0	0.325	0.347	True	False
+AD		GSE139384	33.0	-0.1599	0.0096	False	False
+AD		GSE113524	39.0	-0.0331	-0.0926	False	False
+AD		GSE53697	17.0	0.0069	0.0359	False	False
+AD		GSE261050	101.0	0.0296	0.0848	False	False
+AD		GSE32645	12.0	0.0456	-0.0276	False	False
+AD		E-MEXP-2280	31.0	0.0491	0.1086	False	False
+AD		GSE93885	18.0	0.0814	0.1627	False	False
+AD		GSE37263	16.0	0.0857	0.2896	False	False
+AD		GSE282910	28.0	0.0872	0.055	False	False
+AD		GSE104704	30.0	0.0969	0.1124	False	False
+AD		GSE1297	31.0	0.0992	0.0462	False	False
+AD		GSE297551	60.0	0.1019	0.1015	False	False
+AD		GSE131617	212.0	0.1128	0.018	False	False
+AD		GSE61196	21.0	0.1415	0.1646	False	False
+AD		GSE236562	32.0	0.1419	0.0451	False	False
+AD		GSE280268	90.0	0.1435	0.0219	False	False
+AD		GSE261817	35.0	0.1469	0.1465	False	False
+AD		GSE26972	6.0	0.1651	-0.0145	False	False
+AD		GSE150696	42.0	0.1836	0.0808	False	False
+AD		GSE276756	41.0	0.2049	0.3677	False	False
+AD		GSE285831	20.0	0.221	0.2844	False	False
+AD		GSE29378	63.0	0.2898	0.0894	False	False
+AD		GSE228458	13.0	0.3565	0.2031	False	False
+ASD		GSE236761 [ASD__GSE236761__all]	20.0	-0.0545	0.0432	False	False
+ASD		GSE102741 [ASD__GSE102741__all]	52.0	-0.0018	-0.0011	False	False
+ASD		GSE28521 [ASD__GSE28521__all]	79.0	0.0426	0.0731	False	False
+ASD		GSE30573 [ASD__GSE30573__all]	6.0	0.0896	0.0489	False	False
+ASD		GSE38322 [ASD__GSE38322__Brodmann_(1909)_area_19]	36.0	0.1571	0.3096	False	False
+ASD		G18-array ASD		0.2088	0.1364	False	False
+ASD		GSE62098 [ASD__GSE62098__all]	12.0	0.2494	0.1886	False	False
+MDD		GSE54570 [MDD__GSE54570__all]	26.0	-0.0658	-0.1404	False	False
+MDD		GSE35974 [MDD__GSE35974__all]	63.0	-0.0629	-0.0741	False	False
+MDD		GSE17440 [MDD__GSE17440__all]	8.0	-0.06	-0.2581	False	False
+MDD		GSE54572 [MDD__GSE54572__all]	24.0	-0.0501	-0.0881	False	False
+MDD		GSE44593 [MDD__GSE44593__all]	28.0	-0.0451	-0.075	False	False
+MDD		GSE193417 [MDD__GSE193417__all]	12.0	-0.0404	0.0299	False	False
+MDD		GSE54567 [MDD__GSE54567__all]	28.0	-0.0337	0.0394	False	False
+MDD		stanley_sklarB [MDD__stanley_sklarB__all]	23.0	-0.0273	-0.0056	False	False
+MDD		GSE54571 [MDD__GSE54571__all]	26.0	-0.0214	0.0461	False	False
+MDD		GSE54566 [MDD__GSE54566__all]	28.0	0.0386	0.082	False	False
+MDD		GSE54565 [MDD__GSE54565__all]	32.0	0.0393	0.0059	False	False
+MDD		GSE275676 [MDD__GSE275676__all]	39.0	0.0557	0.0651	False	False
+MDD		GSE87610 [MDD__GSE87610__dorsolateral_prefrontal_cortex]	76.0	0.065	0.0838	False	False
+MDD		stanley_altarB [MDD__stanley_altarB__frozen_specimen]	11.0	0.0734	0.0193	False	False
+MDD		GSE54562 [MDD__GSE54562__all]	20.0	0.09	0.0723	False	False
+MDD		stanley_feinberg [MDD__stanley_feinberg__all]	27.0	0.0957	0.1523	False	False
+MDD		G18-array MDD		0.1258	0.2931	False	False
+MDD		GSE54563 [MDD__GSE54563__all]	50.0	0.1511	0.2621	False	False
+MDD		GSE214921 [MDD__GSE214921__all]	39.0	0.1683	0.1071	False	False
+MDD		stanley_sklarA [MDD__stanley_sklarA__all]	23.0	0.1735	0.0675	False	False
+MDD		GSE54564 [MDD__GSE54564__all]	42.0	0.2099	0.2321	False	False
+MDD		GSE80655 [MDD__GSE80655__anterior_cingulate_cortex]	48.0	0.2103	0.2655	False	False
+MDD		GSE54568 [MDD__GSE54568__all]	30.0	0.2208	0.2915	False	False
+MDD		GSE12654 [MDD__GSE12654__all]	26.0	0.2313	0.0991	False	False
+PD	GSE168496	GSE168496 (Parkinson disease; class PD)	16.0	-0.323	-0.408	False	False
+PD	GSE114918	GSE114918 (Parkinson disease; class PD)	52.0	-0.039	-0.099	True	False
+PD	GSE206308	GSE206308 (Parkinson disease; class PD)	7.0	-0.014	-0.009	False	False
+PD	GSE23290	GSE23290 (Parkinson disease; class PD)	14.0	-0.009	-0.106	False	False
+PD	GSE169755	GSE169755 (Parkinson disease; class PD)	12.0	-0.005	-0.098	True	False
+PD	GSE20146	GSE20146 (Parkinson disease; class PD)	20.0	0.005	0.015	False	False
+PD	GSE114517	GSE114517 (Parkinson disease; class PD)	75.0	0.043	-0.021	False	False
+PD	GSE20314	GSE20314 (Parkinson disease; class PD)	8.0	0.064	0.029	False	False
+PD	GSE42966	GSE42966 (Parkinson disease with Braak 3; class PD)	15.0	0.067	-0.043	False	False
+PD	GSE156928	GSE156928 (Parkinson disease; class PD)	15.0	0.093	0.005	False	False
+PD	GSE20291	GSE20291 (Parkinson disease; class PD)	35.0	0.109	0.103	False	False
+PD	GSE20163	GSE20163 (Parkinson disease; class PD)	17.0	0.152	0.032	False	False
+PD	GSE20164	GSE20164 (Parkinson disease; class PD)	11.0	0.175	0.086	False	False
+PD	GSE199258	GSE199258 (multiple system atrophy, parkinsonian type; class PD)	38.0	0.212	0.338	False	False
+PD	GSE133101	GSE133101 (Parkinson disease; class PD)	69.0	0.218	0.163	False	False
+PD	GSE216281	GSE216281 (Parkinson disease with Braak Lewy body stage 5; class PD)	84.0	0.258	0.061	False	False
+PD	GSE106608	GSE106608 (Parkinson disease; class PD)	16.0	0.281	0.111	False	False
+OTHER	GSE121519	GSE121519 (amyotrophic lateral sclerosis; class ALS)	10.0	-0.128	-0.091	True	False
+OTHER	GSE13162	GSE13162 (GRN-related frontotemporal lobar degeneration with Tdp43 inclusions; class ALS)	56.0	0.088	0.003	False	False
+OTHER	GSE159260	GSE159260 (malignant glioma; class TUM)	20.0	0.147	0.024	True	False
+OTHER	GSE79666	GSE79666 (Huntington disease with grade 2; class HD)	14.0	0.186	0.099	False	False
+OTHER	GSE4595	GSE4595 (sporadic  amyotrophic lateral sclerosis; class ALS)	20.0	0.207	0.188	False	False
+OTHER	GSE3790	GSE3790 (Huntington disease; class HD)	404.0	0.28	0.17	False	False

@@ -1,0 +1,8 @@
+# copied 2026-10-21 as the source table of a hidden comment in supplement.md (Note 7, effect sizes along the axes); original location: <analysis repo> (rerun_on_80_studies/proteomics_overlap_and_axes/outputs/study_brain__axis_v2/axis_comparison_with_rna_pooled.tsv)
+# built 2026-10-14 by scripts/analyze_extra.py from axis_effect_correlation_by_unit.tsv; pooled = mean over donor groups of the mean rho over a group's units; Lorca 2024 (exploratory) left out
+axis	quantity	units	donor_groups	pooled_rho_mean_over_donor_groups	unit_rho_min	unit_rho_max
+pH	protein effect vs axis	10	6	0.051	-0.136	0.199
+pH	CommonMind RNA t vs axis, same proteins	10	6	-0.026	-0.099	0.003
+agonal	protein effect vs axis	10	6	0.069	-0.211	0.311
+agonal	CommonMind RNA t vs axis, same proteins	10	6	0.334	0.286	0.437
+-	protein effect vs CommonMind RNA t, same proteins	10	6	0.051	-0.012	0.2

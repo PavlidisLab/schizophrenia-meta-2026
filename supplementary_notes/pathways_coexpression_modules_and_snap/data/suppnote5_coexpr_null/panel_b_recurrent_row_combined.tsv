@@ -1,0 +1,18 @@
+# script: analyses/suppnote5_coexpr_null_2026-10-13/recurrent_row_ph.R, run 2026-10-16; set.seed(20261013); 10000 pH shuffles per dataset, shared by both sets
+# earlier_176 = recurrent_q10 == 1 rows of confounds/ph_pathways_direction_2026-09-30/results/recurrent_genes.tsv sha256 93eff2e3c93279cc6423a29a5a540bf50773270769a4eb44bb05fc97c9281cf0
+# frozen_209 = set study_brain of confounds/recurrent_sets.tsv.FROZEN_2026-10-14 sha256 d6274a47a8c5d3fed1bee1b8c7b68d677b86b5870612c110b87519ba5d4f5151
+# study_brain_383, study_brain_ge10 (107 genes), study_brain_ge5 (2,422 genes) = sets of confounds/recurrent_sets.tsv sha256 3c42f67cdd7acb751592af24bae4c2c1a917bc5a880b8fe74d2d14cd8ef85403
+# genes with a mixed or absent SZ direction are dropped as in ph_tests.R (n_set_genes counts the rest)
+# controls only, limma expression ~ pH + age + sex; z positive when the genes move with low pH the way the lists report for schizophrenia
+# PRIMARY = GSE21138, GSE35977, GSE53987_BA46, GSE17612, GSE92538_GPL96; ALT = GSE208338, GSE35977, GSE202537_caudate, GSE17612, GSE80655_AnCg
+combination	set	datasets	n_datasets	n_positive	n_set_genes	median_genes_measured	combined_perm_z	combined_p_one_sided
+PRIMARY	earlier_176	GSE21138,GSE35977,GSE53987_BA46,GSE17612,GSE92538_GPL96	5	4	175	169	3.412	0.000323
+PRIMARY	frozen_209	GSE21138,GSE35977,GSE53987_BA46,GSE17612,GSE92538_GPL96	5	4	208	200	3.718	0.000101
+PRIMARY	study_brain_383	GSE21138,GSE35977,GSE53987_BA46,GSE17612,GSE92538_GPL96	5	4	376	366	4.401	5.39e-06
+PRIMARY	study_brain_ge10	GSE21138,GSE35977,GSE53987_BA46,GSE17612,GSE92538_GPL96	5	4	106	105	4.066	2.39e-05
+PRIMARY	study_brain_ge5	GSE21138,GSE35977,GSE53987_BA46,GSE17612,GSE92538_GPL96	5	4	2323	2262	4.637	1.77e-06
+ALT	earlier_176	GSE35977,GSE17612,GSE208338,GSE202537_caudate,GSE80655_AnCg	5	5	175	169	6.204	2.75e-10
+ALT	frozen_209	GSE35977,GSE17612,GSE208338,GSE202537_caudate,GSE80655_AnCg	5	5	208	200	6.176	3.28e-10
+ALT	study_brain_383	GSE35977,GSE17612,GSE208338,GSE202537_caudate,GSE80655_AnCg	5	5	376	368	6.426	6.57e-11
+ALT	study_brain_ge10	GSE35977,GSE17612,GSE208338,GSE202537_caudate,GSE80655_AnCg	5	5	106	105	6.231	2.31e-10
+ALT	study_brain_ge5	GSE35977,GSE17612,GSE208338,GSE202537_caudate,GSE80655_AnCg	5	5	2323	2262	6.287	1.62e-10

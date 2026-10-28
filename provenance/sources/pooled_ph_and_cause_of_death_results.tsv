@@ -1,0 +1,17 @@
+# copied 2026-10-21 as the source table of a hidden comment in supplement.md (Note 5, manner and cause of death); original location: <analysis repo> (analyses/pooled_ph_and_cause_of_death/results.tsv)
+model	term	n	est	lo	hi	p
+controls: pH ~ study + slow-vs-fast + age	"C(speed, Treatment(""fast""))[T.slow]"	42	-0.003	-0.24	0.233	0.9766
+controls: pH ~ study + cod_class + age	"C(cod_class, Treatment(""cardiac_acute""))[T.accident_trauma]"	52	-0.225	-0.581	0.132	0.2097
+controls: pH ~ study + cod_class + age	"C(cod_class, Treatment(""cardiac_acute""))[T.ambiguous]"	52	0.001	-0.262	0.264	0.9944
+controls: pH ~ study + cod_class + age	"C(cod_class, Treatment(""cardiac_acute""))[T.cancer]"	52	0.048	-0.56	0.655	0.8752
+controls: pH ~ study + cod_class + age	"C(cod_class, Treatment(""cardiac_acute""))[T.other_chronic]"	52	-0.17	-0.5	0.16	0.3052
+controls: pH ~ study + cod_class + age	"C(cod_class, Treatment(""cardiac_acute""))[T.respiratory_infection]"	52	0.001	-0.287	0.289	0.995
+controls: pH ~ study + cod_class + age	"C(cod_class, Treatment(""cardiac_acute""))[T.suicide]"	52	-0.152	-0.608	0.304	0.505
+controls: pH ~ study + cod_class + age	"C(cod_class, Treatment(""cardiac_acute""))[T.undetermined]"	52	0.084	-0.527	0.695	0.7828
+controls: pH ~ study + cod_class + age	"C(cod_class, Treatment(""cardiac_acute""))[T.vascular_other]"	52	0.009	-0.286	0.304	0.9529
+controls within Gilabert-Juan 2015: slow-vs-fast + age	"C(speed, Treatment(""fast""))[T.slow]"	9	-0.056	-0.562	0.45	0.7955
+controls within Ishiguro 2010: slow-vs-fast + age	"C(speed, Treatment(""fast""))[T.slow]"	17	0.065	-0.312	0.443	0.7169
+SZ vs control: study + age	"C(dx, Treatment(""control""))[T.SZ]"	149	-0.021	-0.111	0.07	0.6488
+SZ vs control, speed-known donors: study + age	"C(dx, Treatment(""control""))[T.SZ]"	102	-0.034	-0.146	0.079	0.5539
+SZ vs control, speed-known donors: + slow-vs-fast	"C(dx, Treatment(""control""))[T.SZ]"	102	-0.032	-0.143	0.078	0.5649
+  slow-vs-fast term	"C(speed, Treatment(""fast""))[T.slow]"	102	-0.15	-0.295	-0.005	0.0431

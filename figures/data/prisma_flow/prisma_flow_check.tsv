@@ -1,0 +1,57 @@
+# arithmetic behind prisma_flow.tsv; lhs is computed from the files named there (or, for carried boxes, from the final boxes and base80_studies.tsv), rhs is the box n (or the independently stated figure); closes = yes when lhs == rhs
+# script: scripts/build_prisma_flow_665.py + scripts/finalize_prisma_funnel_665.py; built 2026-10-19
+# not repeated from the script's run: the checks that read analyses/primary_lists.json, recurrence_units.tsv and the funnel table of the unregenerated analysis base (C27, C30 to C32, C34 and the funnel cross-checks of that run); their arithmetic is repeated above on the final boxes and the final funnel table
+check_id	box_id	parent_box_id	formula	lhs	rhs	closes
+C01	ID11	ID09	ID09 - ID10 = ID11	14789	14789	yes
+C02	ID11	ID09	prisma_counts.tsv records_new_after_dedup summed over its 9 route rows = ID11	14789	14789	yes
+C03	ID11	ID09	pool_summary.json pool_final = ID11	14789	14789	yes
+C04	SC01	ID11	ID11 - SC00 = SC01	14788	14788	yes
+C05	SC03	SC01	SC01 - SC02 = SC03	1620	1620	yes
+C06	SC04	SC04	sum of SC04.nn = SC04	611	611	yes
+C07	SC05	SC03	SC03 - SC04 = SC05	1009	1009	yes
+C08	SC05	SC05	SC05a + SC05b = SC05	1009	1009	yes
+C09	SC06	SC01	SC01 - SC06 = SC05	1009	1009	yes
+C10	EL01	SC05;EL00b	SC05 - EL00a + EL00b = EL01	1263	1263	yes
+C11	EL01	SC05;EL00b	advancing records in queues (601) + EL00b = EL01	1263	1263	yes
+C12	EL02	EL01	no-full-text records 167 - retrieved later 43 = EL02	124	124	yes
+C13	EL02		fulltext_status.tsv: records with route none or pmc_not_oa = EL02	124	124	yes
+C14	EL03	EL01	EL01 - EL02 = EL03	1139	1139	yes
+C15	EL04	EL04	sum of EL04.nn = EL04	631	631	yes
+C16	EL07	EL07	EL07.01 + EL07.02 + EL07.03 + EL07.04 + EL07.05 (+ EL07.06) = EL07	380	380	yes
+C17	EL07.05	EL07.05	EL07.05a + EL07.05b = EL07.05	199	199	yes
+C18	EL07.05b	EL07.05b	EL07.05b1 + EL07.05b2 = EL07.05b	54	54	yes
+C19	EL07.01	EL07	reports that met the criteria (EL07.01 to EL07.04) = final_class add_primary, add_reanalysis_or_reuse, hold_conflicts_batch10_reject plus parked-retry transcriptome-wide includes	181	181	yes
+C20	EL07.01	EL07	decisions_181.tsv PMIDs = EL07 reports that met the criteria	181	181	yes
+C21	EL07.01	EL07	EL07.01 (+ EL07.06) = rows of added_oct_rescreen_2026-10-19.json	160	160	yes
+C22	IN00	EL00a;EL06;EL05	EL00a + EL06 + EL05 = IN00	536	536	yes
+C23	IN00b	IN00b	IN00b.01 + IN00b.02 = IN00b	157	157	yes
+C24	IN00b.02	EL07.01	EL07.01 = IN00b.02	156	156	yes
+C25	IN01	IN00;IN00a	IN00 - IN00a + IN00b = IN01	665	665	yes
+C26	IN01		lineage.json corpus nodes = decisions.tsv in_corpus_536 yes minus the excluded targeted gene-panel or small-set studies plus the studies added after the freeze	665	665	yes
+C27	EL01		decisions_ft_summary.md queue size corpus_misses = review_queue file rows	105	105	yes
+C28	EL01		decisions_ft_summary.md queue size new_includes = review_queue file rows	378	378	yes
+C29	EL01		decisions_ft_summary.md queue size unsure = review_queue file rows	718	718	yes
+C30	EL01		decisions_ft_summary.md queue size exclusion_sample = review_queue file rows	150	150	yes
+C31	SC05		recovery_report.md corpus recovered at pass 2 (include) = SC05a corpus members	431	431	yes
+C32	PF02x	PF01	PF01 - PF02 = PF02x	358	358	yes
+C33	PF03x	PF02	PF02 - PF03x = PF03	262	262	yes
+C34	PF04x	PF03	PF03 - PF04x = PF04	201	201	yes
+C35	PF06x	PF04	PF04 - PF06x = PF06	96	96	yes
+C36	PF09	PF08	PF08 - PF08a - PF08b - PF09x = PF09 (core 80 base: Shao 2008 leaves at the modelling stage)	73	73	yes
+C37	PF10	PF09	base80_studies.tsv rows = PF10	80	80	yes
+C38	PF09	PF08	base80_studies.tsv rows with a donor-group row in the earlier recurrence run (in_old_units) = PF09	73	73	yes
+C39	PF10	PF09	PF09 + derived-list studies without a row (base80_studies.tsv in_old_units = False) = PF10	80	80	yes
+C40	PF01	IN01	IN01 = PF01	665	665	yes
+C41	PF01		funnel_table.tsv step 1 n = PF01	665	665	yes
+C42	PF02		funnel_table.tsv step 2 n = PF02	307	307	yes
+C43	PF03		funnel_table.tsv step 3 n = PF03	262	262	yes
+C44	PF04		funnel_table.tsv step 4 n = PF04	201	201	yes
+C45	PF05		funnel_table.tsv step 5 n = PF05	194	194	yes
+C46	PF06		funnel_table.tsv step 6 n = PF06	96	96	yes
+C47	PF07		funnel_table.tsv step 7 n = PF07	94	94	yes
+C48	PF08		funnel_table.tsv step 8 n = PF08	88	88	yes
+C49	PF09		funnel_table.tsv step 11 n = PF09	73	73	yes
+C50	PF10		funnel_table.tsv step 12 n = PF10	80	80	yes
+C51	PF01	PF01	funnel_table.tsv steps 1a to 1f (relation) sum to PF01	665	665	yes
+C52	PF01	PF01	funnel_table.tsv steps 1g to 1l (group) sum to PF01	665	665	yes
+C53	PF01	PF01	funnel_table.tsv steps 1n to 1t (tissue) sum to PF01	665	665	yes

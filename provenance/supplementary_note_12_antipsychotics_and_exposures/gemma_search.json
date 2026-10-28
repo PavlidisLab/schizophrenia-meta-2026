@@ -1,0 +1,8279 @@
+[
+ {
+  "id": 383,
+  "short": "GSE6467",
+  "name": "Twelve weeks expression data of the antipsychotics Clozapine and Haloperidol in the mouse brain (Affymetrix, GCRMA).",
+  "taxon": "mouse",
+  "n": 30,
+  "q": [
+   "antipsychotic",
+   "clozapine",
+   "haloperidol"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 382,
+  "short": "GSE6511",
+  "name": "Four weeks expression data of the antipsychotics Clozapine and Haloperidol in the mouse brain (Affymetrix, GCRMA).",
+  "taxon": "mouse",
+  "n": 9,
+  "q": [
+   "antipsychotic",
+   "clozapine",
+   "haloperidol"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 13699,
+  "short": "GSE67753",
+  "name": "Chronic haloperidol effects on gene expression in mouse [array]",
+  "taxon": "mouse",
+  "n": 38,
+  "q": [
+   "antipsychotic",
+   "haloperidol"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 14610,
+  "short": "GSE67750",
+  "name": "Chronic haloperidol effects on gene expression in mouse [RNA-seq]",
+  "taxon": "mouse",
+  "n": 28,
+  "q": [
+   "antipsychotic",
+   "haloperidol"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 6233,
+  "short": "GSE45229",
+  "name": "Unique pharmacological actions of atypical neuroleptic quetiapine: possible role in cell cycle/fate control",
+  "taxon": "mouse",
+  "n": 20,
+  "q": [
+   "antipsychotic",
+   "haloperidol",
+   "quetiapine"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 7755,
+  "short": "GSE37755",
+  "name": "Haloperidol response across genetic backgrounds",
+  "taxon": "mouse",
+  "n": 275,
+  "q": [
+   "antipsychotic",
+   "haloperidol"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 23999,
+  "short": "GSE126219",
+  "name": "Transcriptome profiling of haloperidol treated mouse bone marrow LSK cells",
+  "taxon": "mouse",
+  "n": 6,
+  "q": [
+   "antipsychotic",
+   "haloperidol"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 57920,
+  "short": "GSE227464",
+  "name": "Role of the transcription factor Nur77 (Nr4a1) in the effects of antipsychotic drugs",
+  "taxon": "rat",
+  "n": 12,
+  "q": [
+   "antipsychotic",
+   "haloperidol"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 25051,
+  "short": "GSE174722",
+  "name": "Integrated Omic Analyses Identify Pathways and Regulators Associated with Chemical Alterations of in vitro\u00a0Neural Network Formation",
+  "taxon": "rat",
+  "n": 71,
+  "q": [
+   "antipsychotic",
+   "haloperidol"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 13715,
+  "short": "GSE66275",
+  "name": "Microarray profiling of rats treated for 21 days with haloperidol (0.25 mg/kg/d), risperidone (5 mg/kg/d) or vehicle",
+  "taxon": "rat",
+  "n": 45,
+  "q": [
+   "antipsychotic",
+   "haloperidol",
+   "risperidone"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 11672,
+  "short": "GSE89873",
+  "name": "Gene expression profiling of early-activated targets of antidepressants in glia cells",
+  "taxon": "rat",
+  "n": 28,
+  "q": [
+   "antipsychotic",
+   "haloperidol"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 13447,
+  "short": "GSE44110",
+  "name": "Behavioural and functional characterization of Kv10.1 (Eag1) knockout mice",
+  "taxon": "mouse",
+  "n": 8,
+  "q": [
+   "haloperidol"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 17126,
+  "short": "GSE129144",
+  "name": "A Multi-Omics Interpretable Machine Learning Model Reveals Modes of Action of Small Molecules",
+  "taxon": "mouse",
+  "n": 48,
+  "q": [
+   "antipsychotic",
+   "haloperidol"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 6714,
+  "short": "GSE48954",
+  "name": "Psychotropic drug-induced gene expression alterations in mouse striatum II",
+  "taxon": "mouse",
+  "n": 156,
+  "q": [
+   "antipsychotic",
+   "clozapine",
+   "haloperidol",
+   "risperidone"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 9888,
+  "short": "GSE62669",
+  "name": "Cosplicing network analysis of mammalian brain RNA-Seq data using WGCNA and Mantel correlations",
+  "taxon": "mouse",
+  "n": 60,
+  "q": [
+   "antipsychotic",
+   "haloperidol"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 18717,
+  "short": "GSE59895.1",
+  "name": "Exposure of rat to a variety of toxicants, brain assayed by CodeLink microarray - GPL5425",
+  "taxon": "rat",
+  "n": 176,
+  "q": [
+   "antipsychotic",
+   "haloperidol"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 24462,
+  "short": "GSE58279",
+  "name": "Alcohol potentiates the psychostimulant and reinforcing effects of mephedrone in adolescent mice: role of D3 receptors and associated changes in gene expression",
+  "taxon": "mouse",
+  "n": 12,
+  "q": [
+   "haloperidol"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 23444,
+  "short": "GSE165604",
+  "name": "Concordance of inflammatory markers in lymphocytes and prefrontal cortex in schizophrenia",
+  "taxon": "human",
+  "n": 37,
+  "q": [
+   "aripiprazole",
+   "clozapine",
+   "fluphenazine",
+   "haloperidol",
+   "lurasidone",
+   "olanzapine",
+   "quetiapine"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 1880,
+  "short": "GSE21138",
+  "name": "Gene Expression Profiles in BA46 of Subjects with Schizophrenia and Matched Controls",
+  "taxon": "human",
+  "n": 59,
+  "q": [
+   "chlorpromazine",
+   "clozapine",
+   "fluphenazine",
+   "haloperidol",
+   "risperidone"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33966,
+  "short": "GSE4031.1",
+  "name": "Split part 1 of: colan-affy-rat-89421 [collection of material = Experiment 3]",
+  "taxon": "rat",
+  "n": 63,
+  "q": [
+   "antipsychotic",
+   "clozapine",
+   "haloperidol"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 16068,
+  "short": "GSE5258",
+  "name": "Connectivity Map dataset (build01)",
+  "taxon": "human",
+  "n": 564,
+  "q": [
+   "antipsychotic",
+   "chlorpromazine",
+   "clozapine",
+   "fluphenazine",
+   "haloperidol"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 4,
+  "short": "GSE4036",
+  "name": "perro-affy-human-186940",
+  "taxon": "human",
+  "n": 28,
+  "q": [
+   "haloperidol"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 14218,
+  "short": "GSE93918",
+  "name": "Gene expression patterns after chronic clozapine in wild type mice and HDAC2 conditional knock-outs",
+  "taxon": "mouse",
+  "n": 12,
+  "q": [
+   "antipsychotic",
+   "clozapine"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 14959,
+  "short": "GSE133115",
+  "name": "Chronic, Chemogenetic Stimulation of The Nucleus Accumbens Produces Lasting Effects on Binge Drinking and Ameliorates Alcohol-Related Transcriptional and Morphological Changes",
+  "taxon": "mouse",
+  "n": 45,
+  "q": [
+   "antipsychotic",
+   "clozapine"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 16223,
+  "short": "GSE33822",
+  "name": "Transcriptome Atlases Of Mouse Brain Reveals Differential Expression Across Brain Regions And Genetic Backgrounds",
+  "taxon": "mouse",
+  "n": 96,
+  "q": [
+   "antipsychotic",
+   "clozapine"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 18011,
+  "short": "GSE163161",
+  "name": "Transcriptome Analysis of Human Induced Excitatory Neurons Supports a Strong Effect of Clozapine on Cholesterol Biosynthesis",
+  "taxon": "human",
+  "n": 10,
+  "q": [
+   "antipsychotic",
+   "clozapine"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 20275,
+  "short": "GSE88716.1.1",
+  "name": "Split part 1 of: Cell-type-specific Brain Methylomes Profiled via Ultralow-input Microfluidics - Mus musculus [collection of material = Experiment 1 ]",
+  "taxon": "mouse",
+  "n": 12,
+  "q": [
+   "antipsychotic",
+   "clozapine"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 23496,
+  "short": "GSE143475",
+  "name": "Exploitable, highly context-specific astrocytes",
+  "taxon": "mouse",
+  "n": 96,
+  "q": [
+   "antipsychotic",
+   "clozapine"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 59643,
+  "short": "GSE153791.2",
+  "name": "Split part 2 of: Exploitable, highly context-specific astrocytes [collection of material = Experiment 2]",
+  "taxon": "mouse",
+  "n": 16,
+  "q": [
+   "antipsychotic",
+   "clozapine"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 85317,
+  "short": "GSE244782",
+  "name": "Gene expression data from DLPFC of schizophrenia patients",
+  "taxon": "human",
+  "n": 26,
+  "q": [
+   "antipsychotic",
+   "clozapine"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 21027,
+  "short": "GSE187436",
+  "name": "Krencik NPCs, iAstros, Chemogenetic iAstros, OptoNeurons",
+  "taxon": "human",
+  "n": 18,
+  "q": [
+   "clozapine"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 26481,
+  "short": "GSE210528",
+  "name": "Genes that were altered after chemogenetic activation of endogenous oxytocin in the dorsal horn",
+  "taxon": "rat",
+  "n": 12,
+  "q": [
+   "clozapine"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 27969,
+  "short": "GSE229641",
+  "name": "Induction of astrocytic Slc22a3 regulates sensory processing through histone serotonylation (RNA-Seq)",
+  "taxon": "mouse",
+  "n": 48,
+  "q": [
+   "clozapine"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 28175,
+  "short": "GSE226066",
+  "name": "Bitter taste cells in the ventricular walls of the murine brain regulate glucose homeostasis",
+  "taxon": "mouse",
+  "n": 14,
+  "q": [
+   "clozapine"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 31124,
+  "short": "GSE197015.1",
+  "name": "Split part 1 of: Lipid-accumulated reactive astrocytes promote seizure activity in epilepsy [mouse] [collection of material = Experiment 2 ]",
+  "taxon": "mouse",
+  "n": 6,
+  "q": [
+   "clozapine"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 39092,
+  "short": "GSE154208",
+  "name": "Chemogenetic activation of astrocytes in the hippocampus and cortex changes the transcriptome of microglia",
+  "taxon": "mouse",
+  "n": 4,
+  "q": [
+   "clozapine"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 50457,
+  "short": "GSE243578",
+  "name": "Nociceptive neurons interact with gastric cancer cells via a CGRP/Ramp1 axis to promote tumor progression",
+  "taxon": "mouse",
+  "n": 9,
+  "q": [
+   "clozapine"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 1482,
+  "short": "GSE13974",
+  "name": "Genetic inactivation of serine racemase produces behavioral phenotypes related to schizophrenia in mice",
+  "taxon": "mouse",
+  "n": 24,
+  "q": [
+   "antipsychotic",
+   "clozapine"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 31313,
+  "short": "GSE218313.1",
+  "name": "Split part 1 of: Effects of optogenetic and chemogenetic LC activation on the hippocampal transcriptome [collection of material = Experiment 3]",
+  "taxon": "mouse",
+  "n": 30,
+  "q": [
+   "clozapine"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 31316,
+  "short": "GSE218313.4",
+  "name": "Split part 4 of: Effects of optogenetic and chemogenetic LC activation on the hippocampal transcriptome [collection of material = Experiment 1]",
+  "taxon": "mouse",
+  "n": 18,
+  "q": [
+   "clozapine"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 12512,
+  "short": "GSE59941",
+  "name": "Expression data from adult mouse cortex harvested at two different zeitgeber (ZT) timepoints of the 24h cycle",
+  "taxon": "mouse",
+  "n": 8,
+  "q": [
+   "clozapine"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 20276,
+  "short": "GSE88716.1.2",
+  "name": "Split part 2 of: Cell-type-specific Brain Methylomes Profiled via Ultralow-input Microfluidics - Mus musculus [collection of material = Experiment 2 ]",
+  "taxon": "mouse",
+  "n": 6,
+  "q": [
+   "antipsychotic",
+   "clozapine"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 28105,
+  "short": "GSE224683",
+  "name": "Transcriptomic profiling and electrophysiological analysis from microtransplanted synaptic membranes",
+  "taxon": "human",
+  "n": 30,
+  "q": [
+   "antipsychotic",
+   "clozapine",
+   "quetiapine"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 21296,
+  "short": "GSE173243",
+  "name": "CNO stimulated hM3Dq-expressing iPS cell-derived neural cells",
+  "taxon": "human",
+  "n": 6,
+  "q": [
+   "clozapine"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 23343,
+  "short": "GSE191248",
+  "name": "Gene expression analysis of astrocytes differentiated from iPS cells generated from monozygotic twins discordant for schizophrenia",
+  "taxon": "human",
+  "n": 16,
+  "q": [
+   "clozapine"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 31462,
+  "short": "GSE221991",
+  "name": "Pro\u2010inflammatory activation of microglia in the cerebellum hyperexcites Purkinje cells to trigger ataxia",
+  "taxon": "mouse",
+  "n": 9,
+  "q": [
+   "clozapine"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 35447,
+  "short": "GSE170737",
+  "name": "Increased homing of immune cells by orexigenic catecholaminergic neurons alleviates autoimmune disorder",
+  "taxon": "mouse",
+  "n": 16,
+  "q": [
+   "clozapine"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 700,
+  "short": "GSE2547",
+  "name": "Olanzapine vs. Saline rat pfc",
+  "taxon": "rat",
+  "n": 8,
+  "q": [
+   "antipsychotic",
+   "olanzapine"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 37733,
+  "short": "GSE268867",
+  "name": "Impact of Chronic Olanzapine Administration on Gene Expression in the Mouse Lateral Septum",
+  "taxon": "mouse",
+  "n": 6,
+  "q": [
+   "antipsychotic",
+   "olanzapine"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 29,
+  "short": "GSE1501",
+  "name": "Classification of Antipsychotic Drugs by Gene Expression in the Frontal Cortex of Mice",
+  "taxon": "mouse",
+  "n": 4,
+  "q": [
+   "antipsychotic",
+   "chlorpromazine",
+   "olanzapine",
+   "quetiapine"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 20169,
+  "short": "GSE180473",
+  "name": "Effects of antipsychotics risperidone and olanzapine on the striatum, liver, pancreas and adipose tissue",
+  "taxon": "mouse",
+  "n": 96,
+  "q": [
+   "antipsychotic",
+   "olanzapine",
+   "risperidone"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 14945,
+  "short": "GSE119772",
+  "name": "AP-induced hyperphagia is associated with a unique hypothalamic gene expression signature that is abrogated by adjuvant drug treatment",
+  "taxon": "mouse",
+  "n": 16,
+  "q": [
+   "antipsychotic",
+   "olanzapine"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 37730,
+  "short": "GSE268860",
+  "name": "Olanzapine suppresses mPFC-norepinephrine releasing to alleviate CLOCK-induced cancer stemness under chronic stress",
+  "taxon": "human",
+  "n": 6,
+  "q": [
+   "olanzapine"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 4657,
+  "short": "GSE29417",
+  "name": "A New Mouse Model for Mania Shares Genetic Correlates with Human Bipolar Disorder",
+  "taxon": "mouse",
+  "n": 12,
+  "q": [
+   "olanzapine"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 660,
+  "short": "GSE7036",
+  "name": "Expression profiling in monozygotic twins discordant for bipolar disorder",
+  "taxon": "human",
+  "n": 6,
+  "q": [
+   "olanzapine"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 18788,
+  "short": "GSE38206",
+  "name": "Transcription profiling of major depression peripheral blood mononuclear cells (PBMCs) at clinical remission compared to severe acute state",
+  "taxon": "human",
+  "n": 36,
+  "q": [
+   "aripiprazole",
+   "olanzapine"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 10975,
+  "short": "GSE7624",
+  "name": "Expression Profiles of Monozygotic Twin",
+  "taxon": "human",
+  "n": 34,
+  "q": [
+   "olanzapine"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 9489,
+  "short": "GSE36678",
+  "name": "Expression data SK-N-SH cells treated with risperidone",
+  "taxon": "human",
+  "n": 16,
+  "q": [
+   "antipsychotic",
+   "risperidone"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 13381,
+  "short": "GSE67723",
+  "name": "Network analysis of gene expression in mice provides new evidence of involvement of the mTOR pathway in antipsychotic-induced extrapyramidal symptoms",
+  "taxon": "mouse",
+  "n": 16,
+  "q": [
+   "antipsychotic",
+   "risperidone"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 17346,
+  "short": "GSE149611",
+  "name": "Assess the effects of antipsychotic use on gene expression changes in dementia",
+  "taxon": "human",
+  "n": 16,
+  "q": [
+   "antipsychotic",
+   "risperidone"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 26823,
+  "short": "GSE220510",
+  "name": "Expression data from rat prefrontal cortex administrated with MK-801",
+  "taxon": "rat",
+  "n": 10,
+  "q": [
+   "risperidone"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 1958,
+  "short": "GSE23848",
+  "name": "Peripheral blood gene-expression in depressed subjects with bipolar disorder vs healthy controls.",
+  "taxon": "human",
+  "n": 35,
+  "q": [
+   "antipsychotic",
+   "risperidone"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 35408,
+  "short": "GSE180856",
+  "name": "Next Generation Sequencing Facilitates Quantitative Analysis of Wild Type and NELL-1(+/6R) Mouse Hippocampus Transcriptomes",
+  "taxon": "mouse",
+  "n": 12,
+  "q": [
+   "risperidone"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 1812,
+  "short": "GSE19662",
+  "name": "Identification of biomarkers that distinguish chemical contaminants using a gradient feature selection method",
+  "taxon": "rat",
+  "n": 531,
+  "q": [
+   "antipsychotic",
+   "chlorpromazine"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33529,
+  "short": "GSE188203",
+  "name": "24 chemicals exposure to hESCs at different doses and time points",
+  "taxon": "human",
+  "n": 576,
+  "q": [
+   "antipsychotic",
+   "chlorpromazine"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 34537,
+  "short": "GSE93840",
+  "name": "Transcriptional comparisons of stem cell-derived hepatocytes (hiPS-Hep), HepaRG cells and 3D human hepatocyte spheroids as predictive in vitro systems for drug-induced liver injury",
+  "taxon": "human",
+  "n": 54,
+  "q": [
+   "antipsychotic",
+   "chlorpromazine"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 5633,
+  "short": "GSE40348",
+  "name": "Hepatotoxicity",
+  "taxon": "rat",
+  "n": 300,
+  "q": [
+   "antipsychotic",
+   "chlorpromazine"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 35253,
+  "short": "GSE192860",
+  "name": "Antipsychotic Drug Trifluoperazine as a Potential Therapeutic Agent against Nasopharyngeal Carcinoma",
+  "taxon": "human",
+  "n": 6,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 23579,
+  "short": "GSE138082",
+  "name": "Hippocampal Subfield Transcriptome Analysis in Schizophrenia Psychosis",
+  "taxon": "human",
+  "n": 78,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 57803,
+  "short": "GSE286555",
+  "name": "High-throughput screen reveals that atypical antipsychotics promote continual efferocytosis by antagonizing dopamine signaling and promoting vitamin A-dependent Arginase 1 upregulation",
+  "taxon": "mouse",
+  "n": 6,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 36634,
+  "short": "GSE38485.2",
+  "name": "A gene co-expression network in whole blood of schizophrenia patients is independent of antipsychotic-use and enriched for brain-expressed genes - GPL6947",
+  "taxon": "human",
+  "n": 202,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 36635,
+  "short": "GSE38485.1",
+  "name": "A gene co-expression network in whole blood of schizophrenia patients is independent of antipsychotic-use and enriched for brain-expressed genes - GPL6883",
+  "taxon": "human",
+  "n": 37,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 16508,
+  "short": "GSE145554",
+  "name": "Transcriptional profile of pyramidal neurons in chronic schizophrenia reveals lamina-specific dysfunction of neuronal immunity",
+  "taxon": "human",
+  "n": 43,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 17296,
+  "short": "GSE145915",
+  "name": "PCM1 is necessary for focal ciliary integrity and is a candidate for severe schizophrenia",
+  "taxon": "mouse",
+  "n": 18,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 2715,
+  "short": "GSE25673",
+  "name": "Comparing Control and Schizophrenic hiPSC-derived Neurons",
+  "taxon": "human",
+  "n": 24,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 453,
+  "short": "GSE4345",
+  "name": "In Vivo Regulation of Human Skeletal Muscle Gene Expression by Thyroid Hormone",
+  "taxon": "human",
+  "n": 24,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 1644,
+  "short": "GSE7242",
+  "name": "FDCPmix, ES cell line",
+  "taxon": "mouse",
+  "n": 19,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 2289,
+  "short": "GSE16157",
+  "name": "Mitochondria regulate the unfolded protein response leading to cancer cell survival under glucose deprivation conditions",
+  "taxon": "human",
+  "n": 38,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 2295,
+  "short": "GSE9195",
+  "name": "Predicting prognosis using molecular profiling in estrogen receptor-positive breast cancer treated with tamoxifen",
+  "taxon": "human",
+  "n": 77,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 2326,
+  "short": "GSE2677",
+  "name": "Prednisolone treated childhood ALL samples",
+  "taxon": "human",
+  "n": 39,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 2884,
+  "short": "GSE17705",
+  "name": "Endocrine Sensitivity Index Validation Dataset",
+  "taxon": "human",
+  "n": 298,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 3861,
+  "short": "GSE19684",
+  "name": "Atoh1 inhibits neuronal differentiation and collaborates with Gli1 to generate medulloblastoma-initiating cells",
+  "taxon": "mouse",
+  "n": 14,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 4622,
+  "short": "GSE12093",
+  "name": "The 76-gene Signature Defines High-Risk Patients that Benefit from Adjuvant Tamoxifen Therapy",
+  "taxon": "human",
+  "n": 136,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 4635,
+  "short": "GSE10255",
+  "name": "Gene expression in primary acute lymphoblastic leukemia (ALL) associated with methotrexate treatment response",
+  "taxon": "human",
+  "n": 161,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 5693,
+  "short": "GSE26002",
+  "name": "Inducible Astrocytomas in Genetically Engineered Mice: Affymetrix",
+  "taxon": "mouse",
+  "n": 8,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 7369,
+  "short": "GSE26971",
+  "name": "Affymetrix data for training of Endopredict algorithm",
+  "taxon": "human",
+  "n": 277,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 7607,
+  "short": "GSE35038",
+  "name": "DNA Damage Response and Inflammatory Signaling Limit the MLL-ENL-induced Leukemogenesis in vivo",
+  "taxon": "mouse",
+  "n": 29,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 7770,
+  "short": "GSE38048",
+  "name": "E2F1 loss induces spontaneous tumour development in Rb-deficient epidermis",
+  "taxon": "mouse",
+  "n": 20,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 8475,
+  "short": "GSE38511",
+  "name": "Aspirin Exposure Reveals Novel Genes Associated with Platelet Function and Cardiovascular Events (outpatient cardiology)",
+  "taxon": "human",
+  "n": 26,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 9119,
+  "short": "GSE60701",
+  "name": "Dopamine Signaling leads to loss of Polycomb Repression and Aberrant Gene [RNA-Seq]",
+  "taxon": "mouse",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 9260,
+  "short": "GSE56788",
+  "name": "RNA-seq analysis of vorinostat-resistant HCT116 cells following gene knockdown of potential vorinostat-resistance candidate genes",
+  "taxon": "human",
+  "n": 45,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 10163,
+  "short": "GSE69290",
+  "name": "Reactivation of multipotency by oncogenic PIK3CA induces breast tumor heterogeneity",
+  "taxon": "mouse",
+  "n": 28,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 10423,
+  "short": "GSE64637",
+  "name": "Let-7 and miR-125 cooperate to promote astrogliogenesis",
+  "taxon": "mouse",
+  "n": 24,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 10485,
+  "short": "GSE61328",
+  "name": "Next generation sequencing of miRNAs in folic acid-induced kidney damage",
+  "taxon": "mouse",
+  "n": 21,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 12917,
+  "short": "GSE69480",
+  "name": "Direct conversion of normal and patient human fibroblasts into neuronal cells",
+  "taxon": "human",
+  "n": 6,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 13130,
+  "short": "GSE90932",
+  "name": "FTY720 (fingolimod) regulates key target genes essential for inflammation in microglial cells",
+  "taxon": "mouse",
+  "n": 6,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 14204,
+  "short": "GSE104634",
+  "name": "Analysis of microarray data reliability and pathway networks using experimental formalin-fixed paraffin-embedded tissue",
+  "taxon": "mouse",
+  "n": 16,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 14416,
+  "short": "GSE40470",
+  "name": "Identification of Nkx6.1 regulated genes in mature pancreatic islets.",
+  "taxon": "mouse",
+  "n": 6,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 14709,
+  "short": "GSE24726",
+  "name": "Gene expression profile of mature plasmacytoid dendritic cells (PDC) after the deletion of transcription factor E2-2",
+  "taxon": "mouse",
+  "n": 8,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 15539,
+  "short": "GSE66104",
+  "name": "Transcriptomes of mesonephros- vs. ovary-derivd Gli1+ cells",
+  "taxon": "mouse",
+  "n": 6,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 15943,
+  "short": "GSE139298",
+  "name": "TIP60/KAT5 is required for neuronal viability in hippocampal CA1",
+  "taxon": "mouse",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 17943,
+  "short": "GSE160761",
+  "name": "RNA sequencing  in human  iPSCs derived from  bipolar  patients  to identify important therapeutic molecular targets of Valproate(VPA)",
+  "taxon": "human",
+  "n": 24,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 17999,
+  "short": "GSE163691",
+  "name": "Transcriptional profiling of microglia in the injured brain reveals distinct molecular features underlying neurodegeneration",
+  "taxon": "mouse",
+  "n": 32,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 19230,
+  "short": "GSE168059",
+  "name": "Differential expression analyses in microglial cells from APP-Psen1/+;Cx3cr1-Cre::ERT2/+; Vhl Flox/\u2013 mice treated with tamoxifen vs APP-Psen1/+;Cx3cr1-Cre::ERT2/+; Vhl Flox/\u2013 mice non treated",
+  "taxon": "mouse",
+  "n": 6,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 20278,
+  "short": "GSE185855",
+  "name": "Whole blood transcriptional signatures associated with rapid antidepressant response to ketamine in patients with treatment resistant depression.",
+  "taxon": "human",
+  "n": 69,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 20523,
+  "short": "GSE181933",
+  "name": "PARP1-mediated PARylation activity is essential for oligodendroglial differentiation and CNS myelination",
+  "taxon": "mouse",
+  "n": 6,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 20525,
+  "short": "GSE171704",
+  "name": "GIV/Girdin Regulates Spatiotemporal Signaling during Sperm Capacitation and is Required for Male Fertility",
+  "taxon": "mouse",
+  "n": 7,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 23346,
+  "short": "GSE164306",
+  "name": "Timecourse of epileptogenesis in an TSC1 inducible mouse model",
+  "taxon": "mouse",
+  "n": 24,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 23958,
+  "short": "GSE162556.1",
+  "name": "Split part 1 of: Mutations in distinct translation-dependent quality control pathways lead to convergent molecular pathogenesis and\u00a0neurodevelopmental defects. [collection of material = Experiment 1 ]",
+  "taxon": "mouse",
+  "n": 11,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 24345,
+  "short": "GSE169459.1",
+  "name": "Molecular regulation of melatonin biosynthesis pathway in unipolar and bipolar depression - Mus musculus",
+  "taxon": "mouse",
+  "n": 6,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 25090,
+  "short": "GSE199869",
+  "name": "Microglial-oligodendrocyte interactions in myelination and neurological function recovery after traumatic brain injury",
+  "taxon": "mouse",
+  "n": 14,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 25854,
+  "short": "GSE203553",
+  "name": "Effect of sex and brain region on gene expression within isolated microglia in adult C57Bl/6J mice.",
+  "taxon": "mouse",
+  "n": 35,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 25928,
+  "short": "GSE204751",
+  "name": "Transcriptomic analysis of wild-type microglia isolated from fluorescent reporter mice",
+  "taxon": "mouse",
+  "n": 5,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 26798,
+  "short": "GSE185499",
+  "name": "PTBP1 controls intestinal epithelial regeneration through post-transcriptional regulation of gene expression",
+  "taxon": "mouse",
+  "n": 6,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 31502,
+  "short": "GSE243287",
+  "name": "Forebrain neuronal Smc3 regulates weight and metabolic parameters partly through regulation of hypothalamic Melanocortin 4 receptor",
+  "taxon": "mouse",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33356,
+  "short": "GSE126981",
+  "name": "Effect of Salmeterol and Roflumilast N-oxide (RNO) alone and in combination on gene expression changes in BEAS-2B human airway epithelial cell line",
+  "taxon": "human",
+  "n": 28,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 35228,
+  "short": "GSE224853",
+  "name": "The P-body protein 4E-T regulates the balance between cell genesis and establishment of the postnatal neural stem cell pool by repressing mRNA translation [Ribotag]",
+  "taxon": "mouse",
+  "n": 6,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 35515,
+  "short": "GSE246160",
+  "name": "Molecular basis of neurodegeneration in a mouse model of Polr3-related disease (RNA)",
+  "taxon": "mouse",
+  "n": 24,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 35665,
+  "short": "GSE236182",
+  "name": "Kdm1a safeguards the topological boundaries of PRC2-repressed genes and prevents aging-related euchromatinization in neurons",
+  "taxon": "mouse",
+  "n": 6,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 37535,
+  "short": "GSE183050.2",
+  "name": "Split part 2 of: RNAseq of isolated astrocytes and microglia from APPPS1E4fl/fl mice following astroycte APOE removal [collection of material = has data]",
+  "taxon": "mouse",
+  "n": 27,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 39977,
+  "short": "GSE226122",
+  "name": "Effect of depletion of MED23 on gene expression during primary mouse OPC differentiation [RNA-seq]",
+  "taxon": "mouse",
+  "n": 8,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 40158,
+  "short": "GSE270835",
+  "name": "Sex-Specific modulation of Anxiety-Like behavior by Forebrain Neuronal SMC3 in Mice",
+  "taxon": "mouse",
+  "n": 22,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 40171,
+  "short": "GSE249687",
+  "name": "Three-dimensional chromatin architecture in DRG neurons following sciatic nerve injury in WT and Rad21 KO mice.",
+  "taxon": "mouse",
+  "n": 18,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 57880,
+  "short": "GSE296574",
+  "name": "Reduction of neuronal activity mediated by blood-vessel regression in the adult brain",
+  "taxon": "mouse",
+  "n": 8,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 85453,
+  "short": "GSE282368",
+  "name": "Multi-level expression profiling of cardiac and musculoskeletal Schwann cells, in young and old mice.",
+  "taxon": "mouse",
+  "n": 24,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 85798,
+  "short": "GSE304530",
+  "name": "Inducible Avp Knockout Mouse Line",
+  "taxon": "mouse",
+  "n": 8,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 85897,
+  "short": "GSE302588",
+  "name": "CXCL5 inhibition suppresses gastric mixed neuroendocrine-non-neuroendocrine neoplasms arising from transformed Pou2f3+ epithelium",
+  "taxon": "mouse",
+  "n": 15,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 31,
+  "short": "GSE857",
+  "name": "Triple treatment R6/2 mice",
+  "taxon": "mouse",
+  "n": 13,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 157,
+  "short": "GSE412",
+  "name": "Treatment-specific changes in gene expression discriminate in vivo drug response in human leukemia cells",
+  "taxon": "human",
+  "n": 120,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 161,
+  "short": "GSE776",
+  "name": "Physiologic cardiac hypertrophy",
+  "taxon": "rat",
+  "n": 24,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 400,
+  "short": "GSE2880",
+  "name": "dingl-affy-rat-50847",
+  "taxon": "rat",
+  "n": 62,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 550,
+  "short": "GSE5140",
+  "name": "Creatine increases health and life span in mice",
+  "taxon": "mouse",
+  "n": 13,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 676,
+  "short": "GSE9010",
+  "name": "HOXB4 target genes in adult hematopoietic stem and progenitor cells (HSC/HPCs)",
+  "taxon": "mouse",
+  "n": 10,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 694,
+  "short": "GSE8146",
+  "name": "Age-related transcriptional changes and the effect of dietary supplementation of vitamin E in the mouse heart",
+  "taxon": "mouse",
+  "n": 20,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 695,
+  "short": "GSE8150",
+  "name": "Age-related transcriptional changes and the effect of dietary supplementation of vitamin E in the mouse brain",
+  "taxon": "mouse",
+  "n": 20,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 747,
+  "short": "GSE9788",
+  "name": "Gene expression analysis of brain cortex of reserpine-treated rats",
+  "taxon": "rat",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 774,
+  "short": "GSE10748",
+  "name": "Expression data from brain tissue of Rattus norvegicus treated with D-Serine",
+  "taxon": "rat",
+  "n": 24,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 864,
+  "short": "GSE4206",
+  "name": "Reduced inflammatory response under candesartan pre-treatment  following transient focal ischemia in rats",
+  "taxon": "rat",
+  "n": 8,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 936,
+  "short": "GSE9000",
+  "name": "Effect of HDAC inhibitors on expression of androgen induced genes",
+  "taxon": "human",
+  "n": 24,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 1019,
+  "short": "GSE12860",
+  "name": "Antirheumatic Drug Response in Human Chondrocytes: Potential Molecular Targets to Stimulate Cartilage Regeneration",
+  "taxon": "human",
+  "n": 20,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 1061,
+  "short": "GSE14431",
+  "name": "Simvastatin attenuates lung vascular leak and inflammation in a murine model of radiation-induced lung injury",
+  "taxon": "mouse",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 1069,
+  "short": "GSE424",
+  "name": "Colon carcinoma cell line CC531 response to butyrate and aspirin",
+  "taxon": "rat",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 1091,
+  "short": "GSE13413",
+  "name": "Influence of hyperthyroid conditions on gene expression in rat tibialis anterior",
+  "taxon": "rat",
+  "n": 8,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 1092,
+  "short": "GSE13414",
+  "name": "Influence of hyperthyroid conditions on gene expression in rat extraocular muscles",
+  "taxon": "rat",
+  "n": 8,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 1212,
+  "short": "GSE11237",
+  "name": "Celecoxib pre-treatment in human colorectal adenocarcinoma patients.",
+  "taxon": "human",
+  "n": 23,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 1345,
+  "short": "GSE12517",
+  "name": "Differential gene expression in peripheral blood leukocytes as a function of estrogen",
+  "taxon": "human",
+  "n": 45,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 1354,
+  "short": "GSE17561",
+  "name": "Isoform-specific transcriptional activity of overlapping targets that respond to thyroid hormone receptors a1 and b1",
+  "taxon": "human",
+  "n": 18,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 1396,
+  "short": "GSE15813",
+  "name": "High weight differences between donor and recipient affect early kidney graft function -a role for IL-6 signaling",
+  "taxon": "rat",
+  "n": 8,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 1448,
+  "short": "GSE10896",
+  "name": "Impact of curcumin on human monocytes (U937 cells) exposed to oxidative stress",
+  "taxon": "human",
+  "n": 24,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 1492,
+  "short": "GSE1615",
+  "name": "Theca cell gene expression",
+  "taxon": "human",
+  "n": 26,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 1655,
+  "short": "GSE11826",
+  "name": "Identifying alterations of gene expression induced by two teratogenic agents which induce a similar phenotype",
+  "taxon": "mouse",
+  "n": 48,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 1657,
+  "short": "GSE11302",
+  "name": "Gene expression analysis upon exposure of hESCs to novel set of self-renewal and differentiation compounds",
+  "taxon": "human",
+  "n": 34,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 1871,
+  "short": "GSE15129",
+  "name": "Coenzyme Q10-dependent gene expression in SAMP1 mice tissues",
+  "taxon": "mouse",
+  "n": 72,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 1954,
+  "short": "GSE23639",
+  "name": "Transcriptomic definition of curcumin treated microglia",
+  "taxon": "mouse",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 2018,
+  "short": "GSE6914",
+  "name": "Gene expression associated with gemcitabine resistance and its reversal by bexarotene",
+  "taxon": "human",
+  "n": 20,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 2145,
+  "short": "GSE18503",
+  "name": "Effects of environmental chemicals on development of neuronal cell lineages derived from mouse ES cells",
+  "taxon": "mouse",
+  "n": 25,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 2192,
+  "short": "GSE18320",
+  "name": "Whole genome analysis of p38 SAPK-mediated gene expression upon stress",
+  "taxon": "mouse",
+  "n": 30,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 2198,
+  "short": "GSE23687",
+  "name": "Expression data from SPARKS CHARMS JIA cohort",
+  "taxon": "human",
+  "n": 22,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 2246,
+  "short": "GSE14986",
+  "name": "Antiestrogen-resistant subclones of MCF-7 human breast cancer cells are derived from a common clonal drug-resistant progenitor",
+  "taxon": "human",
+  "n": 30,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 2263,
+  "short": "GSE14973",
+  "name": "Antileukemic activity of valproic acid in chronic lymphocytic leukemia cells defined by microarray analysis",
+  "taxon": "human",
+  "n": 28,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 2282,
+  "short": "GSE2431",
+  "name": "microarray profiling of potential calorie restriction mimetics",
+  "taxon": "mouse",
+  "n": 32,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 2410,
+  "short": "GSE21048",
+  "name": "Prednisolone-induced differential gene expression in liver of mice carrying the wild type or a dimerization-defective glucocorticoid receptor",
+  "taxon": "mouse",
+  "n": 24,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 2801,
+  "short": "GSE12730",
+  "name": "Mouse gestational protein restriction: Newborn offspring liver and hindleg muscle",
+  "taxon": "mouse",
+  "n": 24,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 2883,
+  "short": "GSE17635",
+  "name": "Folic acid supplementation normalizes the endothelial progenitor cell transcriptome of patients with type 1 diabetes",
+  "taxon": "human",
+  "n": 32,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 2915,
+  "short": "GSE18753",
+  "name": "MOLECULAR MECHANISMS ASSOCIATED WITH MARKERS OF HEPATOCARCINOGENICITY DURING A 14 DAY DIETARY STUDY IN MALE FISCHER RAT",
+  "taxon": "rat",
+  "n": 48,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 2939,
+  "short": "GSE19143",
+  "name": "Gene expression data from children diagnosed with ALL in vitro sensitive or resistant to prednisolone",
+  "taxon": "human",
+  "n": 52,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 2969,
+  "short": "GSE19344",
+  "name": "Expression data from tamoxifen treated and control injection treated Tg(\u03b1MHC-MerCreMer) and wild type mus musculus.",
+  "taxon": "mouse",
+  "n": 21,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 3034,
+  "short": "GSE20538",
+  "name": "Gene expression profiles of fibroblasts from MCT8 patients",
+  "taxon": "human",
+  "n": 20,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 3137,
+  "short": "GSE23037",
+  "name": "Estrogens and selective estrogen receptor modulators regulate gene and protein expression in the mesenteric arteries",
+  "taxon": "rat",
+  "n": 20,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 3244,
+  "short": "GSE25295",
+  "name": "Critical Role of Sphingolipid Pathway Components in Murine Radiation-Induced Lung Injury: Protection by Sphingosine-1-Phosphate Analogues",
+  "taxon": "mouse",
+  "n": 25,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 3270,
+  "short": "GSE26114",
+  "name": "Combination of ABT-869 with SAHA on AML with FLT3-ITD",
+  "taxon": "human",
+  "n": 24,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 3284,
+  "short": "GSE26459",
+  "name": "High-throughput ectopic expression screen for tamoxifen resistance",
+  "taxon": "human",
+  "n": 24,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 3331,
+  "short": "GSE27954",
+  "name": "Probucol ameliorates renal and metabolic sequelae of primary CoQ deficiency in Pdss2 mutant mice",
+  "taxon": "mouse",
+  "n": 20,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 3355,
+  "short": "GSE29159",
+  "name": "Mutant thyroid hormone receptors (TRs) isolated from distinct cancer types display distinct target gene specificities: a unique regulatory repertoire associated with renal clear cell  carcinomas.",
+  "taxon": "human",
+  "n": 42,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 3374,
+  "short": "GSE29680",
+  "name": "Effects of DHA-rich n-3 fatty acid supplementation on gene expression in blood mononuclear leukocytes: the OmegAD study",
+  "taxon": "human",
+  "n": 31,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 3935,
+  "short": "GSE23873",
+  "name": "Stage-specific sensitivity to p53 restoration in lung cancer: cell line data",
+  "taxon": "mouse",
+  "n": 6,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 3936,
+  "short": "GSE23874",
+  "name": "Stage-specific sensitivity to p53 restoration in lung cancer: tumor data",
+  "taxon": "mouse",
+  "n": 18,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 4092,
+  "short": "GSE10911",
+  "name": "Expression data from MCF-7aro aromatase inhibitor-resistant, tamoxifen-resistant and LTEDaro lines.",
+  "taxon": "human",
+  "n": 42,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 4101,
+  "short": "GSE848",
+  "name": "E2 and SERM Treatment of MCF-7 Breast Cancer Cells",
+  "taxon": "human",
+  "n": 18,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 4117,
+  "short": "GSE4025",
+  "name": "Gene Expression Preferentially Regulated by Tamoxifen in Breast Cancer Cells",
+  "taxon": "human",
+  "n": 17,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 4149,
+  "short": "GSE8141",
+  "name": "Expression data from MCF7 wt and MCF7/HER2-18 xenografts",
+  "taxon": "human",
+  "n": 65,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 4152,
+  "short": "GSE28435",
+  "name": "Transcriptomic Analysis of Rat Brain Following Exposure to the Organophosphonate Anticholinesterase Sarin",
+  "taxon": "rat",
+  "n": 335,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 4447,
+  "short": "GSE24793",
+  "name": "Target genes of thyroid hormone in cerebellum neurons",
+  "taxon": "mouse",
+  "n": 8,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 4812,
+  "short": "GSE12665",
+  "name": "Gene expression profiling of invasive breast cancer events from the tamoxifen prevention trial",
+  "taxon": "human",
+  "n": 108,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 4880,
+  "short": "GSE16233",
+  "name": "Expression profiles from kidneys of rats treated with nephrotoxicants and with controls",
+  "taxon": "rat",
+  "n": 89,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 4893,
+  "short": "GSE16777",
+  "name": "Discrimination of Tumorigenic Triazole Conazoles from Phenobarbital by Transcriptional Analyses of Mouse Liver",
+  "taxon": "mouse",
+  "n": 38,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 5139,
+  "short": "GSE21307",
+  "name": "Characterization of Directly Regulated Thyroid Hormone Mediated Gene Expression Following Short-Term Perturbations in Thyroid Hormone Levels in Juvenile Mice",
+  "taxon": "mouse",
+  "n": 34,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 5153,
+  "short": "GSE2303",
+  "name": "Rat liver response to Clofibrate, DEHP or VPA",
+  "taxon": "rat",
+  "n": 94,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 5260,
+  "short": "GSE28644",
+  "name": "Gene Expression Data Following Chronic Vehicle or Fluoxetine Treatment in Thirty Mouse Inbred Lines",
+  "taxon": "mouse",
+  "n": 60,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 5408,
+  "short": "GSE32962",
+  "name": "In vitro prednisolone resistance signature in MLL-rearranged infant ALL",
+  "taxon": "human",
+  "n": 43,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 5490,
+  "short": "GSE16648",
+  "name": "Networking of differentially expressed genes in human cancer cell lines resistant to methotrexate",
+  "taxon": "human",
+  "n": 42,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 5703,
+  "short": "GSE32918",
+  "name": "Whole genome expression profiling based on paraffin embedded tissue can be used to classify diffuse large b-cell lymphoma and predict clinical outcome",
+  "taxon": "human",
+  "n": 249,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 5770,
+  "short": "GSE27465",
+  "name": "Fish oil alters tamoxifen-modulated expression of genes related to differentiation, proliferation, metastasis, and immune response in rat mammary tumors",
+  "taxon": "rat",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 5784,
+  "short": "GSE29338",
+  "name": "Benign Breast Cores from Healthy Women Treated with Tamoxifen or Placebo",
+  "taxon": "human",
+  "n": 80,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 5931,
+  "short": "GSE35206",
+  "name": "Specific transcriptional response of four blockers of estrogen receptors on estradiol-modulated genes in the mouse mammary gland",
+  "taxon": "mouse",
+  "n": 14,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 5968,
+  "short": "GSE39270",
+  "name": "Corticosterone regulation of mRNAs and and corresponding RU486 antagonism in astrocytes in vitro",
+  "taxon": "mouse",
+  "n": 36,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 6376,
+  "short": "GSE46703",
+  "name": "The Pelvic Radiation and Vorinostat (PRAVO) Study - Histone Deacetylase Inhibitor Activity",
+  "taxon": "human",
+  "n": 42,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 6450,
+  "short": "GSE47452",
+  "name": "Mouse brain microarray, Chronic HDAC inhibitor treatment",
+  "taxon": "mouse",
+  "n": 36,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 6503,
+  "short": "GSE43375",
+  "name": "Striatal molecular signature of subchronic subthalamic nucleus high frequency stimulation in parkinsonian rat",
+  "taxon": "rat",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 6713,
+  "short": "GSE48951",
+  "name": "Psychotropic drug-induced gene expression alterations in mouse striatum I",
+  "taxon": "mouse",
+  "n": 60,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 6771,
+  "short": "GSE39350",
+  "name": "Gene expression profiles of non-genotoxic hepatocarcinogens and hepatotoxicants in rat liver",
+  "taxon": "rat",
+  "n": 38,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 6961,
+  "short": "GSE45607",
+  "name": "Maternal folic acid supplementation alters gene expression in the offspring brain",
+  "taxon": "mouse",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 7056,
+  "short": "GSE40928",
+  "name": "The influence of folate supplementation on global gene expression in normal colonic mucosa of subjects with colorectal adenoma",
+  "taxon": "human",
+  "n": 28,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 7110,
+  "short": "GSE44207",
+  "name": "CCAAT/enhancer-binding protein alpha is epigenetically silenced by histone acetylation in endometriosis and promotes the pathogenesis of endometriosis: a novel therapeutic target",
+  "taxon": "human",
+  "n": 16,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 7237,
+  "short": "GSE16816",
+  "name": "Combinatorial targeting of glycolysis and oxidative phosphorylation suppresses tumor growth and metastases.",
+  "taxon": "human",
+  "n": 24,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 7270,
+  "short": "GSE51444",
+  "name": "Statin induced changes in gene expression in EBV-transformed and native B-cells",
+  "taxon": "human",
+  "n": 48,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 7271,
+  "short": "GSE52204",
+  "name": "A Global Approach to Dissect Palmitate-induced Impairment of Hepatic Glucose Production",
+  "taxon": "rat",
+  "n": 48,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 7437,
+  "short": "GSE30242",
+  "name": "Time course effect of the glucocorticoid mometasone furoate on the proliferation of primary human lung fibroblasts",
+  "taxon": "human",
+  "n": 24,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 7516,
+  "short": "GSE33248",
+  "name": "MMS toxicogenomics collaboration Affymetrix data",
+  "taxon": "mouse",
+  "n": 52,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 7629,
+  "short": "GSE35428",
+  "name": "Transcriptional profiling of clinically relevant SERMs and SERM/estradiol complexes in a cellular model of breast cancer",
+  "taxon": "human",
+  "n": 106,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 7828,
+  "short": "GSE3952",
+  "name": "Organ - specific expression profiles of rat treated with targretin, 9-cis retinoic acid, and 4-hydroxyphenylretinamide",
+  "taxon": "rat",
+  "n": 43,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 7857,
+  "short": "GSE40120",
+  "name": "Microarray analysis of genes activated by mouse CAR and human CAR in vivo.",
+  "taxon": "mouse",
+  "n": 24,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 7859,
+  "short": "GSE40165",
+  "name": "Immune correlates of early prednisolone therapy in children and adolescents with dengue",
+  "taxon": "human",
+  "n": 358,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 7888,
+  "short": "GSE40936",
+  "name": "Metformin mild supplementation improves health and survival of mice",
+  "taxon": "mouse",
+  "n": 30,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 7960,
+  "short": "GSE43010",
+  "name": "HDAC Inhibitors induce tumor cell-selective pro-apoptotic transcriptional responses.",
+  "taxon": "human",
+  "n": 42,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 7989,
+  "short": "GSE43702",
+  "name": "Gene expression profiles of MCF7 breast cancer cells following estrogen and anti-estrogen treatment.",
+  "taxon": "human",
+  "n": 38,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 7990,
+  "short": "GSE43748",
+  "name": "Transcriptional profiles of psychostimulant reinforcement in rats",
+  "taxon": "rat",
+  "n": 63,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 8065,
+  "short": "GSE44621",
+  "name": "Expression profiling comparisons of human PBMC treated with class I/IIb or class IIa HDAC inhibitors",
+  "taxon": "human",
+  "n": 20,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 8081,
+  "short": "GSE45587",
+  "name": "Expression data for developing a GE-HTS signature for neuroblastoma differentiation",
+  "taxon": "human",
+  "n": 35,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 8144,
+  "short": "GSE49158",
+  "name": "HDAC inhibitor kinetic rate constants correlate with cellular histone acetylation but not transcription and cell viability",
+  "taxon": "human",
+  "n": 35,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 8170,
+  "short": "GSE51285",
+  "name": "Expression and Metabolic Profiles in a Panel of Five Neural Tube Defect Mouse Models",
+  "taxon": "mouse",
+  "n": 36,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 8259,
+  "short": "GSE8396",
+  "name": "Effect of Synthetic Dietary Triglycerides: a Novel Research Paradigm for Nutrigenomics",
+  "taxon": "mouse",
+  "n": 76,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 8285,
+  "short": "GSE9387",
+  "name": "Triazole Antifungal Toxicogenomics: rat_primary_hepatocyte_CellzDirect",
+  "taxon": "rat",
+  "n": 35,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 8287,
+  "short": "GSE9533",
+  "name": "PPARalpha-mediated effects of dietary lipids on intestinal barrier gene expression",
+  "taxon": "mouse",
+  "n": 35,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 8506,
+  "short": "GSE41831",
+  "name": "Remission in Juvenile Idiopathic Arthritis Achieved on Different Drug Regimens",
+  "taxon": "human",
+  "n": 78,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 8558,
+  "short": "GSE45867",
+  "name": "Effects of tocilizumab versus methotrexate therapy on gene expression profiles in the early rheumatoid arthrtis synovium",
+  "taxon": "human",
+  "n": 40,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 8626,
+  "short": "GSE49195",
+  "name": "Gene expression profiling of liver tissue from lean (WT) and obese (ob/ob) mice following a chronic exposure of low doses of pharmaceuticals",
+  "taxon": "mouse",
+  "n": 24,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 8686,
+  "short": "GSE51885",
+  "name": "Liver mRNA microarray study for mice treated with various diets",
+  "taxon": "mouse",
+  "n": 27,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 8771,
+  "short": "GSE54597",
+  "name": "Dose-response modeling of early molecular and cellular key events in CAR-mediated hepatocarcinogenesis pathway",
+  "taxon": "mouse",
+  "n": 96,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 8779,
+  "short": "GSE55084",
+  "name": "Mouse liver transcription profiling by array",
+  "taxon": "mouse",
+  "n": 120,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 8780,
+  "short": "GSE55096",
+  "name": "Molecular Adaptations of Striatal Spiny Projection Neurons During Levodopa-Induced Dyskinesia",
+  "taxon": "mouse",
+  "n": 77,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 8783,
+  "short": "GSE55143",
+  "name": "Effect of  chronic valproic acid treatment on hepatic gene expression profile in Wfs1 knockout mouse.",
+  "taxon": "mouse",
+  "n": 48,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 8814,
+  "short": "GSE56188",
+  "name": "Combinatorial targeting of the AR for treatment of prostate cancer.",
+  "taxon": "human",
+  "n": 42,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 8902,
+  "short": "GSE35765",
+  "name": "Effect of fluoxetine treatment on translational profiles of S100a10 cortical pyramidal cells in p11 KOs",
+  "taxon": "mouse",
+  "n": 6,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 8958,
+  "short": "GSE48252",
+  "name": "Inducing pluripotency from mouse somatic cells by small-molecule compounds [RNA-Seq]",
+  "taxon": "mouse",
+  "n": 13,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 9004,
+  "short": "GSE47875",
+  "name": "SEQC Toxicogenomics Study: microarray data set",
+  "taxon": "rat",
+  "n": 105,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 9180,
+  "short": "GSE74010",
+  "name": "Correlating behavoir and molecular endpoints indentifies IFN\u03b3-regulated genes in the dopaminergic system after modafinil administration in mouse",
+  "taxon": "mouse",
+  "n": 36,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 9235,
+  "short": "GSE62240",
+  "name": "A novel approach to Alzheimer\u2019s Disease treatment: HDACs & PDE5 inhibition",
+  "taxon": "mouse",
+  "n": 24,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 9449,
+  "short": "GSE47669",
+  "name": "Genome-wide analysis of parental and wild-type SK-N-Be(2)C neuroblastoma cell lines as well as those co-treated with the histone deacetylase inhibitor SAHA",
+  "taxon": "human",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 9713,
+  "short": "GSE38701",
+  "name": "Transcriptional expression patterns triggered by chemically distinct neuroprotective molecules",
+  "taxon": "mouse",
+  "n": 48,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 9721,
+  "short": "GSE40990",
+  "name": "Preparation of archival formalin-fixed paraffin-embedded mouse liver samples for use with the Agilent gene expression microarray platform",
+  "taxon": "mouse",
+  "n": 28,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 10078,
+  "short": "GSE70689",
+  "name": "Microarray and Pathway Analysis Reveal Distinct Mechanisms Underlying Cannabinoid-Mediated Modulation of LPS-Induced Activation of BV-2 Microglial Cells",
+  "taxon": "mouse",
+  "n": 24,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 10087,
+  "short": "GSE65370",
+  "name": "Eicosapentaenoic and docosahexaenoic acid-enriched high fat diet delays the development of fatty liver in mice.",
+  "taxon": "mouse",
+  "n": 24,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 10143,
+  "short": "GSE68391",
+  "name": "Efficacy of retinoids in IKZF1-mutated BCR-ABL1 acute lymphoblastic leukemia",
+  "taxon": "mouse",
+  "n": 37,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 10370,
+  "short": "GSE52594",
+  "name": "Antioxidants Accelerate Lung Cancer Progression in Mice",
+  "taxon": "mouse",
+  "n": 30,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 10421,
+  "short": "GSE64476",
+  "name": "Transcriptomic analysis of folic acid effects in doxorubicin-induced cardiotoxicity",
+  "taxon": "mouse",
+  "n": 20,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 10467,
+  "short": "GSE60174",
+  "name": "Transcriptomic characterization of C57BL/6 mouse embryonic stem cell differentiation and its modulation by developmental toxicants",
+  "taxon": "mouse",
+  "n": 30,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 10522,
+  "short": "GSE80067",
+  "name": "Effects of model chylomicron remants on gene expresssion in human aortic endothelial cells (HAEC)",
+  "taxon": "human",
+  "n": 24,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 10855,
+  "short": "GSE56072",
+  "name": "eIF4E hypersensitive mRNA translation is characterized by long and structured untranslated regions",
+  "taxon": "mouse",
+  "n": 50,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 11625,
+  "short": "GSE56028",
+  "name": "Molecular regulation in the hippocampal dentate gyrus in the onset and treatment of depression",
+  "taxon": "rat",
+  "n": 21,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 11695,
+  "short": "GSE109445",
+  "name": "RNA sequencing analysis of  gene expression in rat hippocampus exposed to chronic stress and albiforin treatment",
+  "taxon": "rat",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 11794,
+  "short": "GSE101239",
+  "name": "Next Generation Sequencing Facilitates Quantitative Analysis of  Transcriptomes of neural stem/progenitor cells (NS/PCs) in control and prenatal valproic acid (VPA) exposed mice with or without voluntary exercise",
+  "taxon": "mouse",
+  "n": 21,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 12047,
+  "short": "GSE90158",
+  "name": "A paternal methyl donor-rich diet altered cognitive and neural functions in offspring mice [expression profiling]",
+  "taxon": "mouse",
+  "n": 24,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 12171,
+  "short": "GSE35761",
+  "name": "Effect of fluoxetine treatment on translational profiles of S100a10 cortical pyramidal cells",
+  "taxon": "mouse",
+  "n": 6,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 12172,
+  "short": "GSE35763",
+  "name": "Effect of fluoxetine treatment on translational profiles of Glt25d2 cortical pyramidal cells",
+  "taxon": "mouse",
+  "n": 6,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 12203,
+  "short": "GSE2739",
+  "name": "Effect of AT1 receptor anatagonist on brain microvessels from hypertensive and normotensive rats",
+  "taxon": "rat",
+  "n": 9,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 12231,
+  "short": "GSE33137",
+  "name": "Expression data from  hippocampus and cortex of 6- and 12-week curcumin-treated 15-month-old rats",
+  "taxon": "rat",
+  "n": 16,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 12237,
+  "short": "GSE33619",
+  "name": "Methylphenidate exposure induces dopamine neuron loss and activation of microglia in the basal ganglia of mice",
+  "taxon": "mouse",
+  "n": 9,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 12284,
+  "short": "GSE39634",
+  "name": "Influence of 3,5,3'-Triiodothyronine (T3) on differentiating progenitor cells of the enteric nervous system (ENS)",
+  "taxon": "mouse",
+  "n": 6,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 12287,
+  "short": "GSE39980",
+  "name": "Effect of zonisamide co-administration with levodopa on global gene expression in the striata of rats with Parkinson\u2019s disease",
+  "taxon": "rat",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 12311,
+  "short": "GSE29419",
+  "name": "Chronic SAHA in mouse frontal cortex",
+  "taxon": "mouse",
+  "n": 6,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 12334,
+  "short": "GSE42904",
+  "name": "Reduced adult neurogenesis and neuronal abnormalities in the hippocampus underlie cognitive deficiency following prenatal administration of the anti-epileptic drug valproic acid",
+  "taxon": "mouse",
+  "n": 59,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 12335,
+  "short": "GSE42940",
+  "name": "postnatal fluoxetine evoked gene expression changes in the rat hippocampus",
+  "taxon": "rat",
+  "n": 8,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 12342,
+  "short": "GSE43927",
+  "name": "Exposure to Propylthiouracil in Pregnant Mice Potentiates the Transcriptional Response to Thyroid Hormone in the Fetal Cerebral Cortex",
+  "taxon": "mouse",
+  "n": 19,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 12473,
+  "short": "GSE56780",
+  "name": "VPA alleviates neurological deficits and restores gene expression in a mouse model of Rett syndrome",
+  "taxon": "mouse",
+  "n": 9,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 12480,
+  "short": "GSE57015",
+  "name": "Hippocampal expression data from FTY720- and vehicle-treated SCID mice following fear consolidation testing",
+  "taxon": "mouse",
+  "n": 8,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 12517,
+  "short": "GSE60531",
+  "name": "Higher maternal folic acid during gestation dysregulates expression of several genes in mice offspring cerebellum",
+  "taxon": "mouse",
+  "n": 6,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 12527,
+  "short": "GSE61301",
+  "name": "Gene expression of 7 day combinatorial yohimbine and imipramine treated rat hippocampi",
+  "taxon": "rat",
+  "n": 8,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 12560,
+  "short": "GSE63005",
+  "name": "Epigenetic effects of antidepressants to neuroprotective genes in neuronal cultured cells",
+  "taxon": "mouse",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 12571,
+  "short": "GSE64123",
+  "name": "Human embryonic stem cell based neuro-developmental toxicity assay: response to valproic acid and carbamazepine exposure",
+  "taxon": "human",
+  "n": 93,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 12617,
+  "short": "GSE67036",
+  "name": "Candesartan neuroprotection on Rat Primary cerebellar granule cells (CGCs)",
+  "taxon": "rat",
+  "n": 16,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 12646,
+  "short": "GSE70368",
+  "name": "Nurr1 and Retinoid X Receptor ligands stimulate Ret signaling in dopamine neurons and can alleviate \u03b1-synuclein disrupted gene expression",
+  "taxon": "mouse",
+  "n": 19,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 12657,
+  "short": "GSE71025",
+  "name": "Minocycline counter regulates the global pro-inflammatory response in microglia and protects from retinal degeneration",
+  "taxon": "mouse",
+  "n": 6,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 12740,
+  "short": "GSE50215",
+  "name": "Transcriptomics changes in neural differentiated mouse embryonic stem cells (mESCs) under exposure to sodium valproate",
+  "taxon": "mouse",
+  "n": 6,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 12790,
+  "short": "GSE63943",
+  "name": "mRNA-Seq of the CA1 hippocampal subregion and liver from 3 month and 20 month old animals treated orally with vehicle or SAHA and mRNA-Seq of CA1 of 10 month old WT or APP/PS1-21 transgenic animals treated orally with vehicle or SAHA",
+  "taxon": "mouse",
+  "n": 69,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 12906,
+  "short": "GSE68949",
+  "name": "Insight into the role of thyroid hormone on neocortex development through global transcriptome analysis of primary cerebrocortical cells: Identification of genes regulated directly and indirectly by triiodothyronine in specific cell types",
+  "taxon": "mouse",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 12958,
+  "short": "GSE77648",
+  "name": "GABAA receptors and mother-derived taurine regulate neural progenitor cells specification in the mouse developing cortex",
+  "taxon": "mouse",
+  "n": 6,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 13035,
+  "short": "GSE83336",
+  "name": "Epigenetics and energetics in ventral hippocampus mediate rapid antidepressant action: implications for treatment-resistance",
+  "taxon": "rat",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 13128,
+  "short": "GSE90837",
+  "name": "Impact of melatonin on gene expression in colonic epithelium of pinealectomized rats",
+  "taxon": "rat",
+  "n": 6,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 13143,
+  "short": "GSE93041",
+  "name": "Gene expression in the anterior cingulate cortex in mice treated with ketamine (3mg/kg) or sleep deprivation (SD) during 12 hrs., and saline as the control group.",
+  "taxon": "mouse",
+  "n": 9,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 13155,
+  "short": "GSE93695",
+  "name": "Antidyskinetic effects of MEK inhibitor are associated with multiple neurochemical alterations in the striatum of hemiparkinsonian rats",
+  "taxon": "rat",
+  "n": 15,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 13159,
+  "short": "GSE93976",
+  "name": "In vivo analysis of injury sites presenting full or attenuated pericyte-derived scarring after spinal cord injury (SCI)",
+  "taxon": "mouse",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 13194,
+  "short": "GSE97324",
+  "name": "RNA-seq analysis of MCT8-deficient and healthy control brain microvascular endothelial cells (BMECs) and neural cells",
+  "taxon": "human",
+  "n": 42,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 13211,
+  "short": "GSE98777",
+  "name": "Amygdala transcriptome in rats prenatally exposed to valproic acid",
+  "taxon": "rat",
+  "n": 15,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 13263,
+  "short": "GSE86392",
+  "name": "Genome-wide Transcriptome Analysis of Hippocampus, Frontal cortex and Pituitary gland in Rats Elucidated the Pathogenisis  of  Depressive Disorder Induced by Chronic Restraint",
+  "taxon": "rat",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 13297,
+  "short": "GSE57823",
+  "name": "A low dose of \u03949-THC improves cognitive functions and synaptogenesis in old mice through an epigenetic mechanism",
+  "taxon": "mouse",
+  "n": 16,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 13309,
+  "short": "GSE65663",
+  "name": "A comparison of physiological and transcriptome responses to water deprivation and salt loading in the rat supraoptic nucleus",
+  "taxon": "rat",
+  "n": 10,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 13327,
+  "short": "GSE76694",
+  "name": "Transcriptomic effects of prenatal exposure to corticosteroids on synaptic transmission",
+  "taxon": "rat",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 13415,
+  "short": "GSE80587",
+  "name": "High-dose maternal folic acid supplementation before conception impairs reversal learning in offspring mice",
+  "taxon": "mouse",
+  "n": 11,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 13433,
+  "short": "GSE74382",
+  "name": "Pramipexole induced place preference promoted after L-dopa therapy and nigral dopaminergic loss: linking behavior to transcriptional modifications",
+  "taxon": "rat",
+  "n": 56,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 13458,
+  "short": "GSE81672",
+  "name": "Ketamine and Imipramine Reverse Transcriptional Signatures of Susceptibility and Induce Resilience-Specific Gene Expression Profiles",
+  "taxon": "mouse",
+  "n": 99,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 13602,
+  "short": "GSE84183",
+  "name": "Transcription profiling of dentate gyrus and anterior cingulate cortex in mice exposed Unpredicatble Chronic Mild Stress and treated with fluoxetine",
+  "taxon": "mouse",
+  "n": 64,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 13653,
+  "short": "GSE98822",
+  "name": "Constitutive and Tamoxifen inducible knockout of HDAC1 and HDAC2 in Microglia",
+  "taxon": "mouse",
+  "n": 50,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 13674,
+  "short": "GSE48169",
+  "name": "Transcriptomic effects of early life and peripubertal dietary vitamin D deficiency on mouse pituitary gland",
+  "taxon": "mouse",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 13680,
+  "short": "GSE66276",
+  "name": "Microarray profiling of rats treated for 21 days with Lithium chloride (0.2% in chow), Lamotrigine (30 mg/kg), or appropriately matched vehicles",
+  "taxon": "rat",
+  "n": 60,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 13736,
+  "short": "GSE73799",
+  "name": "Molecular profile of ketamine in comparison to memantine and phencyclidyne and other psychotropic drugs [mouse striatum]",
+  "taxon": "mouse",
+  "n": 60,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 14032,
+  "short": "GSE91",
+  "name": "Effect of dietary oils on hippocampus and liver gene expression",
+  "taxon": "mouse",
+  "n": 17,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 14179,
+  "short": "GSE110372",
+  "name": "Regulation of Gene Expression by Thyroid Hormone in Cultured Astrocytes: Transcriptional Targets and Factors Influencing the Genomic Response",
+  "taxon": "mouse",
+  "n": 23,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 14192,
+  "short": "GSE97444",
+  "name": "Rapid functional genetics of the oligodendrocyte lineage using pluripotent stem cells",
+  "taxon": "mouse",
+  "n": 18,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 14287,
+  "short": "GSE69845",
+  "name": "Expression data for MCF7 cells treated with 34 different chemicals",
+  "taxon": "human",
+  "n": 360,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 14830,
+  "short": "GSE112624",
+  "name": "Zonisamide facilitates survival of human iPS cell-derived dopaminergic neurons in the rat striatum",
+  "taxon": "rat",
+  "n": 6,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 14841,
+  "short": "GSE120546",
+  "name": "Psychosocial stress-induced brain atrophy and its suppression via theanine intake",
+  "taxon": "mouse",
+  "n": 8,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 14863,
+  "short": "GSE128095",
+  "name": "Expression data from limbic area of mouse brain",
+  "taxon": "mouse",
+  "n": 9,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 14907,
+  "short": "GSE131230",
+  "name": "Deep sequencing of somatosensory neurons reveals molecular determinants of intrinsic physiological properties",
+  "taxon": "mouse",
+  "n": 26,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 14908,
+  "short": "GSE125325",
+  "name": "Quetiapine induces oligodendrocyte precursor cell differentiation by cholesterol biosynthesis",
+  "taxon": "rat",
+  "n": 24,
+  "q": [
+   "antipsychotic",
+   "quetiapine"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 14909,
+  "short": "GSE133508",
+  "name": "Gene Expression Profiling of Oligodendrocyte Precursor Cells Conditioned with Interferon gamma",
+  "taxon": "rat",
+  "n": 27,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 14917,
+  "short": "GSE128422",
+  "name": "Gene expression analysis in the hippocampus of Tg2576 mice after different treatments with HDAC and PDE inhibitors",
+  "taxon": "mouse",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 14943,
+  "short": "GSE116813",
+  "name": "Adolescent \u03949-THC exposure and astrocyte-specific genetic vulnerability converge on NF-\u03baB-COX-2 signaling to impair memory in adulthood",
+  "taxon": "mouse",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 15054,
+  "short": "GSE132423",
+  "name": "Genome-wide analysis of T3 and CORT dependent gene expression and hormone synergy in mouse hippocampal neurons (HT-22)",
+  "taxon": "mouse",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 15083,
+  "short": "GSE121409",
+  "name": "Competitive repopulation of an empty microglial yields functionally distinct subsets of microglia-like cells",
+  "taxon": "mouse",
+  "n": 31,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 15138,
+  "short": "GSE84302",
+  "name": "RNA sequencing to identify common targets for GSK3",
+  "taxon": "mouse",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 15143,
+  "short": "GSE115769",
+  "name": "RNA-Sequencing of carnosine treated wild-type BDF1 (WT) and transgenic Thy1-aSyn mice",
+  "taxon": "mouse",
+  "n": 15,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 15502,
+  "short": "GSE57871",
+  "name": "RNA-seq analysis of vorinostat-resistant HCT116 cells following gene knockdown of GLI1 or PSMD13 with or without vorinostat treatment",
+  "taxon": "human",
+  "n": 42,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 15660,
+  "short": "GSE134782",
+  "name": "Gene expression profiles in HMC3 cells after exposure to ketamine or its active metabolites: 2R6R-HNK and 2S6S-HNK",
+  "taxon": "human",
+  "n": 16,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 15779,
+  "short": "GSE67306",
+  "name": "Effect of ibuprofen on hippocampal gene expression in APP-PS1 mice",
+  "taxon": "mouse",
+  "n": 19,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 15817,
+  "short": "GSE64174",
+  "name": "Expression Data for Cisplatin Treated Dorsal Root Ganglia from A/J and C57BL/6J Mice",
+  "taxon": "mouse",
+  "n": 47,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 15819,
+  "short": "GSE66988",
+  "name": "Retinoid X Receptor activation reverses the age-related deficiency in myelin debris phagocytosis and enhances remyelination",
+  "taxon": "human",
+  "n": 24,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 15839,
+  "short": "GSE99577",
+  "name": "Lipid signaling during neuronal degeneration in KA-treated mice",
+  "taxon": "mouse",
+  "n": 144,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 15844,
+  "short": "GSE114001",
+  "name": "Re-evaluating Microglia Expression Profiles Using RiboTag and Cell Isolation Strategies",
+  "taxon": "mouse",
+  "n": 67,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 15870,
+  "short": "GSE134203",
+  "name": "Genomic decoding of neuronal depolarization by stimulus-specific NPAS4 heterodimers, RNA sequencing",
+  "taxon": "rat",
+  "n": 8,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 15894,
+  "short": "GSE95791",
+  "name": "Inter-individual variation in genes governing human hippocampal progenitor differentiation is associated with hippocampal volume in adulthood",
+  "taxon": "human",
+  "n": 95,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 15935,
+  "short": "GSE133093",
+  "name": "Brainstem control of transcription after spinal cord injury (SCI)",
+  "taxon": "rat",
+  "n": 17,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 16025,
+  "short": "GSE5488",
+  "name": "Salt Induced Hypertensive Disease Results in Over Expression of Matricellular Genes in Cerebral Arteries",
+  "taxon": "rat",
+  "n": 6,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 16087,
+  "short": "GSE141253",
+  "name": "Development of a neural rosette formation assay (RoFA) to identify neurodevelopmental toxicants and to characterize their transcriptome disturbances",
+  "taxon": "human",
+  "n": 148,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 16229,
+  "short": "GSE79847",
+  "name": "Hyponutrition during pregnancy after insemination alters the progenies\u2019 behavior and DNA methylation of their brain",
+  "taxon": "mouse",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 16264,
+  "short": "GSE129241",
+  "name": "Directly Reprogrammed Human Neurons Identify a Pathogenic Mechanism of Valproic Acid at Early Developmental Stages",
+  "taxon": "human",
+  "n": 22,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 16391,
+  "short": "GSE145431",
+  "name": "Physiological and Transcriptomic Changes in the Hypothalamic-Neurohypophysial System after 24 H of Furosemide-Induced Sodium Depletion",
+  "taxon": "rat",
+  "n": 6,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 16462,
+  "short": "GSE136379",
+  "name": "Improved retinal organoid differentiation by modulating signaling pathways revealed by comparative transcriptome analyses with development in vivo",
+  "taxon": "mouse",
+  "n": 23,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 16495,
+  "short": "GSE118664",
+  "name": "Immunomodulation with minocycline rescues retinal degeneration in juvenile neuronal ceroid lipofuscinosis (jNCL) mice highly susceptible to light damage",
+  "taxon": "mouse",
+  "n": 10,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 16635,
+  "short": "GSE146155",
+  "name": "Fetal cortical transcriptomic changes after oxytocin induced aberrant uterine contractility",
+  "taxon": "rat",
+  "n": 10,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 16701,
+  "short": "GSE137641",
+  "name": "Ancestral folate promotes neuronal regeneration in serial generations of progeny [RNA-seq]",
+  "taxon": "rat",
+  "n": 6,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 16743,
+  "short": "GSE119290",
+  "name": "Expression-based drug screening of neural progenitor cells from individuals with schizophrenia [RNA-seq]",
+  "taxon": "human",
+  "n": 44,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 16763,
+  "short": "GSE115205",
+  "name": "Genome wide analysis of SAHA (vorinostat) treatment in human iPSC-derived neurons from Tau A152T patients and controls",
+  "taxon": "human",
+  "n": 36,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 16826,
+  "short": "GSE118670",
+  "name": "Gene expression microarray analysis on the medial prefrontal cortex and dentate gyrus of wild-type mice",
+  "taxon": "mouse",
+  "n": 44,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 17124,
+  "short": "GSE95714",
+  "name": "Glutamine supplementation suppresses herpes simplex virus reactivation II",
+  "taxon": "mouse",
+  "n": 18,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 17152,
+  "short": "GSE84150",
+  "name": "Induction of gene expression changes in primary human hepatocytes by valproic acid",
+  "taxon": "human",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 17176,
+  "short": "GSE133766",
+  "name": "LSD1 inhibition promotes epithelial differentiation through derepression of fate- determining transcription factors",
+  "taxon": "human",
+  "n": 26,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 17192,
+  "short": "GSE57816",
+  "name": "Exposure of rat to a variety of toxicants, thigh muscle assayed by Affymetrix microarray",
+  "taxon": "rat",
+  "n": 158,
+  "q": [
+   "antipsychotic",
+   "sulpiride"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 17286,
+  "short": "GSE150431",
+  "name": "Reduced Brd1 expression leads to reversible depression-like behaviors and gene-expression changes in female mice [amygdala]",
+  "taxon": "mouse",
+  "n": 48,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 17372,
+  "short": "GSE150264",
+  "name": "Reduced Brd1 expression leads to reversible depression-like behaviors and gene-expression changes in female mice [anterior cingulate cortex (aCC)]",
+  "taxon": "mouse",
+  "n": 36,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 17373,
+  "short": "GSE150028",
+  "name": "Reduced Brd1 expression leads to reversible depression-like behaviors and gene-expression changes in female mice [Striatum (CPu)]",
+  "taxon": "mouse",
+  "n": 31,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 17604,
+  "short": "GSE157797",
+  "name": "Transcriptional characterization of hippocampi from novel preclinical model of drug-resistant epilepsy",
+  "taxon": "mouse",
+  "n": 30,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 17663,
+  "short": "GSE158188",
+  "name": "Gene expression in the nucleus accumbens shell of adult rats of both sexes after chronic exposure to delta9-tetrahydrocannabinol during adolescence",
+  "taxon": "rat",
+  "n": 16,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 17764,
+  "short": "GSE161954",
+  "name": "High (5X) 5-methyltetrahydrofolate (MTHF) vs folic acid (FA) pregnancy diets on  hypothalamic gene expression of Wistar rat dams upon birth.",
+  "taxon": "rat",
+  "n": 10,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 17780,
+  "short": "GSE161187",
+  "name": "Combination treatment with metformin and tacrolimus improves systemic immune cellular homeostasis by modulating Treg and Th17 imbalance",
+  "taxon": "mouse",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 17995,
+  "short": "GSE163415",
+  "name": "Transcriptomic Analysis of mouse brain after traumatic brain injury reveals that the angiotensin receptor blocker candesartan acts through novel pathways",
+  "taxon": "mouse",
+  "n": 96,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 18058,
+  "short": "GSE165759",
+  "name": "High-frequency head impacts cause chronic synaptic adaptations and long-term cognitive impairment [Memantine study]",
+  "taxon": "mouse",
+  "n": 40,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 18398,
+  "short": "GSE84185",
+  "name": "Transcription profiling of blood, dentate gyrus and anterior cingulate cortex in mice exposed Unpredicatble Chronic Mild Stress and treated with fluoxetine",
+  "taxon": "mouse",
+  "n": 32,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 18429,
+  "short": "GSE73798",
+  "name": "Molecular profile of ketamine in comparison to memantine and phencyclidyne and other psychotropic drugs [mouse hippocampus]",
+  "taxon": "mouse",
+  "n": 60,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 18551,
+  "short": "GSE67796",
+  "name": "Expression data from liver, PFC and amygdala of mice treated with PPAR agonists",
+  "taxon": "mouse",
+  "n": 112,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 18716,
+  "short": "GSE59895.2",
+  "name": "Exposure of rat to a variety of toxicants, brain assayed by CodeLink microarray - GPL5426",
+  "taxon": "rat",
+  "n": 46,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 18825,
+  "short": "GSE83386",
+  "name": "Gene expression of Lymphoblastoid Cell Lines (LCLs) from Depressed Patients after in-vitro treatment with fluoxetine",
+  "taxon": "human",
+  "n": 20,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 18901,
+  "short": "GSE47668",
+  "name": "Genome-wide analysis of parental wild-type and derived doxorubicin resistant SK-N-SH neuroblastoma cell lines as well as those co-treated with the histone deacetylase inhibitor SAHA",
+  "taxon": "human",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 19142,
+  "short": "GSE166942",
+  "name": "YAP and TAZ are transcriptional co-activators of AP-1 proteins and STAT3 during breast cellular transformation (RNA-seq)",
+  "taxon": "human",
+  "n": 36,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 19164,
+  "short": "GSE166297",
+  "name": "Effects of five developmental neurotoxicants on neuronal differentiation of human embryonic stem cell derived neural progenitors",
+  "taxon": "human",
+  "n": 96,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 19236,
+  "short": "GSE172109",
+  "name": "Experience modulates the effects of histone deacetylase inhibitors on gene and protein expression in the hippocampus: Impaired plasticity in aging",
+  "taxon": "rat",
+  "n": 84,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 19382,
+  "short": "GSE179347.1",
+  "name": "An integrated approach to identify environmental modulators of genetic risk factors for complex traits - GPL20301",
+  "taxon": "human",
+  "n": 83,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 19383,
+  "short": "GSE179347.2",
+  "name": "An integrated approach to identify environmental modulators of genetic risk factors for complex traits - GPL24676",
+  "taxon": "human",
+  "n": 155,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 19473,
+  "short": "GSE165660.2",
+  "name": "RNA expression profile in animal models of neurodevelopmental disorders treated with TAK-418 - Rattus norvegicus",
+  "taxon": "rat",
+  "n": 18,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 19493,
+  "short": "GSE63935",
+  "name": "Human pluripotent stem cell-derived neural constructs for predictive neurotoxicity screening",
+  "taxon": "human",
+  "n": 303,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 19508,
+  "short": "GSE78853",
+  "name": "Tricyclic Antidepressants Induce Inactivation of Hepatic Stellate Cell (HSC) Myofibroblasts",
+  "taxon": "human",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 19540,
+  "short": "GSE40969",
+  "name": "Molecular profiling of activated neurons by phosphorylated ribosome capture [RNA-Seq]",
+  "taxon": "mouse",
+  "n": 4,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 19624,
+  "short": "GSE6509",
+  "name": "Gene Profile of RU486 effect on LPS induced gene expression in CNS.",
+  "taxon": "mouse",
+  "n": 37,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 20042,
+  "short": "GSE84876",
+  "name": "Expression data from quadriceps of utrn+/-;mdx mice treated with spironolactone plus lisinopril, eplerenone plus lisinopril or prednisolone compared to untreated",
+  "taxon": "mouse",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 20148,
+  "short": "GSE152552",
+  "name": "Inhibition of vascular growth by modulation of the AEA/FAAH axis",
+  "taxon": "human",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 20298,
+  "short": "GSE185301",
+  "name": "Next Generation Sequencing facilitates quantitative analysis  of spinal cord tissue to explore the mechanisms of hyperbaric oxygen treatment  alleviating the spinal cord inury",
+  "taxon": "mouse",
+  "n": 9,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 20304,
+  "short": "GSE171931",
+  "name": "Transcriptome analysis of memantine-treated Shank2 wild-type and knock-out mice",
+  "taxon": "mouse",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 20361,
+  "short": "GSE184751",
+  "name": "Multiple regression analysis of a comprehensive transcriptomic data assembly elucidates mechanically- and biochemically-driven responses to focused ultrasound blood-brain barrier disruption - additional non-FUS controls",
+  "taxon": "mouse",
+  "n": 75,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 20394,
+  "short": "GSE184261",
+  "name": "Hepatic thyroid hormone signalling modulates glucose homeostasis through the regulation of GLP-1 production via bile acid-mediated FXR antagonism [RNA-seq]",
+  "taxon": "mouse",
+  "n": 6,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 20406,
+  "short": "GSE153953",
+  "name": "Metformin Ingestion Rejuvenates Myoblasts from Older Adult Donors",
+  "taxon": "human",
+  "n": 24,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 20440,
+  "short": "GSE183165",
+  "name": "Genome expression profile for CD3+ T cells treated by nimodipine in EAU model",
+  "taxon": "mouse",
+  "n": 8,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 20454,
+  "short": "GSE167462",
+  "name": "Metformin and leucine combination increase satellite cell abundance and extracellular matrix remodeling during disuse and recovery in aged mice",
+  "taxon": "mouse",
+  "n": 52,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 20481,
+  "short": "GSE166322",
+  "name": "Epigenetic and transcriptomic profiling of neural stem cells after midazolam exposure",
+  "taxon": "mouse",
+  "n": 21,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 21028,
+  "short": "GSE187006",
+  "name": "Genome-wide gene expression prolifing post-valproic acid exposure in human forebrain organoids",
+  "taxon": "human",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 21043,
+  "short": "GSE179930",
+  "name": "Maternal cannabis use is associated with suppression of immune gene networks in placenta and increased anxiety phenotypes in offspring",
+  "taxon": "human",
+  "n": 131,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 21241,
+  "short": "GSE190689",
+  "name": "Reduced expression of mitochondrial complex I subunit Ndufs2 does not impact healthspan in mice",
+  "taxon": "mouse",
+  "n": 130,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 21250,
+  "short": "GSE190207",
+  "name": "Cx3Cr1-Cre induction leads to microglial activation and IFN-1 signaling caused by DNA-damage in early postnatal brain",
+  "taxon": "mouse",
+  "n": 4,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 21253,
+  "short": "GSE189821",
+  "name": "Chronic adolescent exposure to \u0394-9-tetrahydrocannabinol in mice leads to long-term changes in gene expression networks in the brain",
+  "taxon": "mouse",
+  "n": 119,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 21297,
+  "short": "GSE188845",
+  "name": "Impact of fluoxetine treatment and folic acid supplementation on the mammary gland transcriptome during peak lactation",
+  "taxon": "mouse",
+  "n": 31,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 23290,
+  "short": "GSE174745.2",
+  "name": "Split part 2 of: SARS-CoV-2 Infection Causes Dopaminergic Neuron Senescence [collection of material = Experiment 1 ]",
+  "taxon": "human",
+  "n": 18,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 23342,
+  "short": "GSE163556",
+  "name": "Next Generation Sequencing Facilities Quantitative analysis of hiPSC derived neural stem cells, early neural progenitors, neural progenitors and neural progenitors after exposure to Idebenone and Bezafibrate Transcriptomes",
+  "taxon": "human",
+  "n": 18,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 23348,
+  "short": "GSE172478",
+  "name": "Transcriptomic analysis of corticosteroids-treated hiPSC-derived RPE cells",
+  "taxon": "human",
+  "n": 18,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 23424,
+  "short": "GSE112108",
+  "name": "Does early treatment of PKU patients with sapropterin dihydrochloride affect brain development?",
+  "taxon": "rat",
+  "n": 23,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 23435,
+  "short": "GSE153836",
+  "name": "Effects of fluoxetine and venlafaxine in the mouse neural embryonic stem cell test",
+  "taxon": "mouse",
+  "n": 49,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 23488,
+  "short": "GSE159441",
+  "name": "Epigenetic gene-expression links heart failure to memory impairment [rnaseq_after_saha]",
+  "taxon": "mouse",
+  "n": 28,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 23548,
+  "short": "GSE90755",
+  "name": "Transcriptome profiling of wildtype C57BL/6 mouse with metformin treatment",
+  "taxon": "mouse",
+  "n": 60,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 23566,
+  "short": "GSE152171",
+  "name": "Transcriptomic Response of Brain Tissue to Focused Ultrasound-Mediated Blood-Brain Barrier Disruption Depends Strongly on Anesthesia - Bulk RNA-seq",
+  "taxon": "mouse",
+  "n": 21,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 23597,
+  "short": "GSE146358",
+  "name": "The Dopamine Receptor Antagonist TFP Prevents Phenotype Conversion and Improves Survival in Mouse Models of Glioblastoma",
+  "taxon": "human",
+  "n": 24,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 23622,
+  "short": "GSE159656",
+  "name": "Mexican Ganoderma lucidum extracts decrease lipogenesis modulating transcriptional metabolic networks and gut microbiota in C57BL/6 mice fed with a high-cholesterol diet from early Drosophila embryo",
+  "taxon": "mouse",
+  "n": 45,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 23652,
+  "short": "GSE126786",
+  "name": "Human pluripotent stem cell-derived 2D neural tissue samples for predictive neurotoxicity screening",
+  "taxon": "human",
+  "n": 414,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 23682,
+  "short": "GSE149980",
+  "name": "Gene expression of Lymphoblastoid Cell Lines\u2013LCLs from Depressed Patients after in-vitro treatment with citalopram\u2013CTP",
+  "taxon": "human",
+  "n": 68,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 23691,
+  "short": "GSE94521",
+  "name": "Identification of transcriptome signatures and biomarkers specific for potential developmental toxicants inhibiting human neural crest cell migration",
+  "taxon": "human",
+  "n": 60,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 23710,
+  "short": "GSE143272",
+  "name": "Peripheral blood expression profiles of patients with epilepsy receiving and not receiving antiepileptic drug monotherapy and their differential response to the treatment.",
+  "taxon": "human",
+  "n": 142,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 23847,
+  "short": "GSE135752",
+  "name": "Tamoxifen induction of Cre recombinase does not cause long lasting or sexually divergent responses in the CNS epigenome or transcriptome: implications for the design of aging studies (RNA-Seq).",
+  "taxon": "mouse",
+  "n": 45,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 23865,
+  "short": "GSE106669.1",
+  "name": "Repression of Human and Mouse Brain Inflammaging Transcriptome by Broad Gene Body Histone Hyperacetylation (RNA-seq) - Mus musculus",
+  "taxon": "mouse",
+  "n": 34,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 23975,
+  "short": "GSE195617",
+  "name": "Neuronal and cardiac toxicity of pharmacological compounds identified through transcriptomic analysis of human pluripotent stem cell-derived embryoid bodies",
+  "taxon": "human",
+  "n": 5,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 24030,
+  "short": "GSE190218",
+  "name": "Roux-en-Y gastric bypass and caloric restriction but not gut hormone-based treatments profoundly impact the hypothalamic transcriptome in obese rats",
+  "taxon": "rat",
+  "n": 65,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 24033,
+  "short": "GSE196500",
+  "name": "Gene expression data from the hippocampus of rats with prenatal valproic acid exposure",
+  "taxon": "rat",
+  "n": 9,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 24233,
+  "short": "GSE171566",
+  "name": "From cohorts to molecules: adverse impacts of endocrine disrupting mixtures. Transcriptomics Analysis",
+  "taxon": "human",
+  "n": 171,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 24339,
+  "short": "GSE161507",
+  "name": "Expression data from adult male mouse hypothalamus",
+  "taxon": "mouse",
+  "n": 9,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 24344,
+  "short": "GSE169459.2",
+  "name": "Molecular regulation of melatonin biosynthesis pathway in unipolar and bipolar depression - Homo sapiens",
+  "taxon": "human",
+  "n": 8,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 24393,
+  "short": "GSE139438",
+  "name": "Microarray Analysis of Striatal Tissue derived RNA isolated from Chronic Levodopa (L-DOPA) treated Parkinsonian and Dyskinetic (LID) Rats as compared to Parkinsonian Disease (PD) Control Rats",
+  "taxon": "rat",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 24424,
+  "short": "GSE64807",
+  "name": "Gene Expressoin Profile in the Hypothalamus of Male Bgn_KO and Bgn_KO Mice fed with DHA at 13 Weeks Old",
+  "taxon": "mouse",
+  "n": 7,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 24637,
+  "short": "GSE162092",
+  "name": "Combinatorial treatment recovers altered gene expression in cortex of CD animals",
+  "taxon": "mouse",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 24733,
+  "short": "GSE138802",
+  "name": "Mesocorticolimbic circuit mechanisms underlying the effects of ketamine on dopamine: a translational imaging study",
+  "taxon": "mouse",
+  "n": 6,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 24761,
+  "short": "GSE157676",
+  "name": "Human iNSC-derived brain organoid model of lysosomal storage disorder in Niemann-Pick disease type C",
+  "taxon": "human",
+  "n": 9,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 24809,
+  "short": "GSE133463",
+  "name": "Transcriptional effects of YAP/TAZ depletion during oncogene-mediated transformation in mouse astrocyte",
+  "taxon": "mouse",
+  "n": 8,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 24895,
+  "short": "GSE94636",
+  "name": "Effects of FTY720 on B cells in experimental autoimmune encephalomyelitis (EAE)",
+  "taxon": "mouse",
+  "n": 6,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 24923,
+  "short": "GSE205325",
+  "name": "Modulation of behavioral and hippocampal transcriptomic responses in rat prolonged chronic unpredictable stress model by fluoxetine, eicosapentaenoic acid and lipopolysaccharide",
+  "taxon": "rat",
+  "n": 21,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 24937,
+  "short": "GSE165493",
+  "name": "Effects of Minocycline and EE in CUMS as a MDD model: transcriptomic profiles and synaptic plasticity of microglia",
+  "taxon": "mouse",
+  "n": 27,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 24938,
+  "short": "GSE159487",
+  "name": "Deficient LEF1 expression is associated with lithium resistance and hyperexcitability in neurons derived from bipolar disorder patients",
+  "taxon": "human",
+  "n": 150,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 24976,
+  "short": "GSE99114",
+  "name": "RNA-seq for understanding astrocyte S1P1 signaling",
+  "taxon": "mouse",
+  "n": 10,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 24983,
+  "short": "GSE175680",
+  "name": "Effects of VPA in P19KO embryos",
+  "taxon": "mouse",
+  "n": 16,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 24995,
+  "short": "GSE198756",
+  "name": "Integrative genomics reveals pathogenic mediator of valproate-induced neurodevelopmental outcomes.",
+  "taxon": "rat",
+  "n": 30,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 24996,
+  "short": "GSE202172",
+  "name": "Translatome profiling of cortical layer5a neurons using S100a10 bacTRAP mice",
+  "taxon": "mouse",
+  "n": 16,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 25070,
+  "short": "GSE197966",
+  "name": "Transcriptional effects of bipolar disorder drugs on NT2-N cells",
+  "taxon": "human",
+  "n": 24,
+  "q": [
+   "antipsychotic",
+   "quetiapine"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 25101,
+  "short": "GSE191126",
+  "name": "Histone deacetylase inhibitors impair glioblastoma cell motility and proliferation",
+  "taxon": "human",
+  "n": 24,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 25150,
+  "short": "GSE198437",
+  "name": "Hypothalamic Microglia Activation is Associated with High Fat Diet-Induced Obesity and Metabolic Dysfunction in Mice",
+  "taxon": "mouse",
+  "n": 9,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 25173,
+  "short": "GSE199231",
+  "name": "Effect of disturbance of vagal- or COX- dependent route of neuroimmune communication on the hypotalamic transcriptome",
+  "taxon": "rat",
+  "n": 56,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 25176,
+  "short": "GSE193355",
+  "name": "Maternal folic acid over consumption in mice leads to sex-specific transcriptional alterations in cerebral cortex in offspring",
+  "taxon": "mouse",
+  "n": 16,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 25177,
+  "short": "GSE193352",
+  "name": "Maternal folic acid mild over consumption in mice leads to sex-specific transcriptional alterations in E17.5 embryonic cerebrum",
+  "taxon": "mouse",
+  "n": 16,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 25620,
+  "short": "GSE101753",
+  "name": "Differential effects of FTY720 on the B cell compartment in a mouse model of multiple sclerosis",
+  "taxon": "mouse",
+  "n": 9,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 25656,
+  "short": "GSE77569",
+  "name": "RNA-sequencing reveals transcriptional up-regulation of Trem2 in response to bexarotene treatment",
+  "taxon": "mouse",
+  "n": 8,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 25796,
+  "short": "GSE209859",
+  "name": "Acute and long-term effects of psilocybin on energy balance and feeding behavior in mice",
+  "taxon": "mouse",
+  "n": 64,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 25807,
+  "short": "GSE210976",
+  "name": "Target genes of thyroid hormone (TH) in white adipose tissue (WAT) and striatum and their role during metabolic stressors",
+  "taxon": "mouse",
+  "n": 22,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 25853,
+  "short": "GSE205801",
+  "name": "Thyroid hormone-mediated histone modificaiton protects primary mouse cortical neurons from the toxic effects of hypoxic injury.",
+  "taxon": "mouse",
+  "n": 9,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 25869,
+  "short": "GSE203343",
+  "name": "Prefrontal cortex transcriptome of Arid1b heterozygote mutantation mice and drug treated-mice age of postnatal day 120",
+  "taxon": "mouse",
+  "n": 16,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 25872,
+  "short": "GSE189653",
+  "name": "Brain transcriptome analysis of Arid1b heterozygote mutation and long-lasting effects of early chronic fluoxetine treatment for mutant mice [RNA-Seq]",
+  "taxon": "mouse",
+  "n": 30,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 25892,
+  "short": "GSE175894",
+  "name": "Transcriptome analysis of the hippocampus in late postnatal mice after repeated ketamine anesthesia",
+  "taxon": "mouse",
+  "n": 8,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 25974,
+  "short": "GSE205373",
+  "name": "Quantitative analysis of hippocampal transcriptomes of na\u00efve and post-status epilepticus (SE) mouse with or without levetiracetam (LEV).",
+  "taxon": "mouse",
+  "n": 10,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 25976,
+  "short": "GSE167762",
+  "name": "Counteracting chromatin effects of a splicing-correcting antisense oligonucleotide improves its therapeutic efficacy in spinal muscular atrophy",
+  "taxon": "human",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 26391,
+  "short": "GSE214885",
+  "name": "KW-2449 and VPA exert therapeutic effects on human neurons and cerebral organoids derived from MECP2-null hESCs",
+  "taxon": "human",
+  "n": 14,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 26421,
+  "short": "GSE156761",
+  "name": "Identification of Drug Candidates Rescuing SARS-CoV-2 Infection Induced Dopaminergic Neuron Senescence",
+  "taxon": "human",
+  "n": 18,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 26442,
+  "short": "GSE213734",
+  "name": "Frequent low-dose THC in adolescence disrupts microglia homeostasis and disables response to microbial infection",
+  "taxon": "mouse",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 26769,
+  "short": "GSE217430",
+  "name": "Effect of DHA in hippocamapal gene expression of wild type and Alzheimer\u00b4s disease mice",
+  "taxon": "mouse",
+  "n": 15,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 26805,
+  "short": "GSE222509",
+  "name": "Dysregulation of the chromatin environment leads to differential alternative splicing as a mechanism of disease in a human model of autism spectrum disorder",
+  "taxon": "human",
+  "n": 6,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 26831,
+  "short": "GSE211982",
+  "name": "Paternal exposure to methylphenidate induces ADHD-like behavioral phenotypes and altered gene expressions in mouse offspring.",
+  "taxon": "mouse",
+  "n": 6,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 26901,
+  "short": "GSE156472",
+  "name": "Transcriptomic profiling of human senescent cells in the setting of curcumin intervention",
+  "taxon": "human",
+  "n": 9,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 27078,
+  "short": "GSE217736",
+  "name": "Acute effects of liraglutides on gene expression in the hearts of mice with experimental myocardial infarction",
+  "taxon": "mouse",
+  "n": 18,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 27158,
+  "short": "GSE190668",
+  "name": "Simultaneous perturbation of multiple metabolic pathways by non-essential amino acid restriction is a potent cancer radio-sensitisation strategy",
+  "taxon": "mouse",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 27160,
+  "short": "GSE151272",
+  "name": "Polysome profiling and RNA-seq of adult mouse neural stem cells (NSCs) treated with 1.5uM, 10uM and 80uM folic acid for 4 days",
+  "taxon": "mouse",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 27194,
+  "short": "GSE192881",
+  "name": "Direct reprogramming of human fetal retinal pigment epithelial cells into photoreceptor-like cells [RNA-seq]",
+  "taxon": "human",
+  "n": 17,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 27198,
+  "short": "GSE216327",
+  "name": "Effect of high-fat diet (HFD) and icosapent ethyl on the transcriptome of the adrenal cortex",
+  "taxon": "mouse",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 27201,
+  "short": "GSE201943",
+  "name": "The genomic response of human granulosa cells (KGN) to melatonin and specific agonists/antagonists to the melatonin receptors",
+  "taxon": "human",
+  "n": 7,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 27637,
+  "short": "GSE231200",
+  "name": "Metformin restrains ZIKV replication and alleviates virus-induced inflammatory responses in microglia",
+  "taxon": "human",
+  "n": 18,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 27638,
+  "short": "GSE230679",
+  "name": "Psychedelics Reopen the Social Reward Learning Critical Period",
+  "taxon": "mouse",
+  "n": 27,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 27669,
+  "short": "GSE134901.2",
+  "name": "Nutrient regulation of the islet epigenome controls adaptive insulin secretion - Homo sapiens",
+  "taxon": "human",
+  "n": 10,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 27690,
+  "short": "GSE227394",
+  "name": "GATA3 induces the pathogenicity of Th17 cells via regulation of GM-CSF expression",
+  "taxon": "mouse",
+  "n": 8,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 27976,
+  "short": "GSE197703",
+  "name": "Thyroid hormone-regulated chromatin and transcriptional sensitivity of the pituitary gland",
+  "taxon": "mouse",
+  "n": 18,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 28023,
+  "short": "GSE228913",
+  "name": "Transcriptomic changes in the medial prefrontal cortex of juvenile rat offspring after induced birth with oxytocin",
+  "taxon": "rat",
+  "n": 24,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 28025,
+  "short": "GSE224715",
+  "name": "High-throughput Drug Screening Identifies Fluoxetine as a Potential Therapeutic Agent for Neuroendocrine Prostate Cancer",
+  "taxon": "human",
+  "n": 4,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 28065,
+  "short": "GSE221939",
+  "name": "Impact of the Voltage-Gated Calcium Channel Antagonist Nimodipinedipine on the Development of Oligodendrocyte Precursor Cells",
+  "taxon": "mouse",
+  "n": 8,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 28223,
+  "short": "GSE217428",
+  "name": "Targeting Glutaminolysis Shows Efficacy in Both Prednisolone-Sensitive and in Metabolically Rewired Prednisolone-Resistant B-Cell Childhood Acute Lymphoblastic Leukaemia Cells",
+  "taxon": "human",
+  "n": 6,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 28321,
+  "short": "GSE218540",
+  "name": "Induction and Reversal of beta-cell dysfunction",
+  "taxon": "rat",
+  "n": 59,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 28604,
+  "short": "GSE9412",
+  "name": "Transcriptional regulation of aldo-keto reductase 1C1 in human colon cancer cells resistant to methotrexate",
+  "taxon": "human",
+  "n": 6,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 28841,
+  "short": "GSE44244",
+  "name": "PAX5 overexpression is not enough to reestablish the mature B-cell phenotype in classical Hodgkin lymphoma",
+  "taxon": "human",
+  "n": 18,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 29019,
+  "short": "GSE68803",
+  "name": "FOXO1 regulates a subset of thyroid hormone target genes",
+  "taxon": "mouse",
+  "n": 9,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 29175,
+  "short": "GSE20513",
+  "name": "Expression data from (bezafibrate treated-wild type, Clock mutant, and PPARalpha-null) mouse liver",
+  "taxon": "mouse",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 29690,
+  "short": "GSE95529",
+  "name": "ESR1 mutations affect anti-proliferative responses to tamoxifen through enhanced cross-talk with IGF signaling",
+  "taxon": "human",
+  "n": 23,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 30185,
+  "short": "GSE64536",
+  "name": "STAT3 knockdown during transformation",
+  "taxon": "human",
+  "n": 23,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 30192,
+  "short": "GSE55708",
+  "name": "Reinforced STAT3 activity sustains self-renewal of human embryonic stem cells in a naive-like state",
+  "taxon": "human",
+  "n": 33,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 30519,
+  "short": "GSE74999",
+  "name": "HDAC inhibitors cause site-specific chromatin remodeling at PU.1-bound enhancers in K562 cells",
+  "taxon": "human",
+  "n": 26,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 31497,
+  "short": "GSE241054",
+  "name": "Breast Cancer Therapies Reduce Risk of Alzheimer\u2019s Disease and Promote Estrogenic Pathways and Action in Brain",
+  "taxon": "rat",
+  "n": 35,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 31580,
+  "short": "GSE247159",
+  "name": "Age-dependent effects of metformin on human oligodendrocyte lineage cell ensheathment capacity.",
+  "taxon": "human",
+  "n": 29,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 31660,
+  "short": "GSE243421",
+  "name": "Analysis of the mechanism of curcumin against osteoarthritis using transcriptomics",
+  "taxon": "human",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 31719,
+  "short": "GSE229905",
+  "name": "Ribosomal dysregulation: A conserved pathophysiological mechanism in human depression and mouse chronic stress",
+  "taxon": "mouse",
+  "n": 36,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 31744,
+  "short": "GSE243886",
+  "name": "Integrating network pharmacology, transcriptomics to reveal neuroprotective of curcumin activate PI3K / AKT pathway in Parkinson\u2019s disease",
+  "taxon": "mouse",
+  "n": 9,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 31796,
+  "short": "GSE242892",
+  "name": "Microglial cannabinoid receptor type 1 mediates social memory deficits  produced by adolescent THC exposure and 16p11.2 duplication",
+  "taxon": "mouse",
+  "n": 18,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 31955,
+  "short": "GSE229618",
+  "name": "Administration of tamoxifen regulates changes in gene expression during the acute phase of traumatic spinal cord injury",
+  "taxon": "rat",
+  "n": 22,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 32066,
+  "short": "GSE241903",
+  "name": "Rapamycin mitigates Valproic Acid-induced teratogenicity in human and animal models by suppressing AP-1-mediated senescence",
+  "taxon": "human",
+  "n": 9,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 32078,
+  "short": "GSE241464",
+  "name": "Expression of expanded GGC repeats within NOTCH2NLC causes cardiac dysfunction in mouse models",
+  "taxon": "mouse",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 32083,
+  "short": "GSE234798",
+  "name": "The Atypical Antidepressant Tianeptine Confers Neuroprotection against Oxygen-Glucose Deprivation",
+  "taxon": "mouse",
+  "n": 16,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 32169,
+  "short": "GSE241942",
+  "name": "RNA-seq analysis of CAMA1 breast cancer cells after treatment with estradiol or antiestrogens in estradiol-depleted media",
+  "taxon": "human",
+  "n": 21,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 32170,
+  "short": "GSE219129",
+  "name": "Brain hypothyroidism leads to immune tolerance in microglia in Alzheimer's disease [RNA-seq]",
+  "taxon": "mouse",
+  "n": 8,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 32192,
+  "short": "GSE157049",
+  "name": "RNA-seq of metformin treatment in liver in WT, Raptor Ser-Ala mutant, Tsc2-null, Raptor mutant;Tsc2-null, and Ampk-null",
+  "taxon": "mouse",
+  "n": 29,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 32193,
+  "short": "GSE157048",
+  "name": "RNA-seq of metformin treatment in primary murine hepatocytes in WT, Raptor Ser-Ala mutant, Tsc2-null, Raptor mutant;Tsc2-null, and Ampk-null cells",
+  "taxon": "mouse",
+  "n": 65,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 32341,
+  "short": "GSE237896",
+  "name": "Tianeptine promotes lasting antiallodynic effects in a mouse model of neuropathic pain",
+  "taxon": "mouse",
+  "n": 30,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 32362,
+  "short": "GSE232218",
+  "name": "A Shared Pathogenic Mechanism for Valproic Acid and SHROOM3 Knockout in a Brain Organoid Model of Neural Tube Defects",
+  "taxon": "human",
+  "n": 15,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 32380,
+  "short": "GSE224984",
+  "name": "Metabolic responses of normal rat kidneys to a high salt intake",
+  "taxon": "rat",
+  "n": 30,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 32404,
+  "short": "GSE236684",
+  "name": "Profiling transcriptomic responses of human stem cell-derived medium spiny neuron-like cells to exogenous phasic and tonic neurotransmitters",
+  "taxon": "human",
+  "n": 123,
+  "q": [
+   "antipsychotic",
+   "sulpiride"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 32408,
+  "short": "GSE190814",
+  "name": "The antidepressant imipramine inhibits breast cancer growth by targeting estrogen receptor signaling and DNA repair events",
+  "taxon": "human",
+  "n": 10,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 32417,
+  "short": "GSE235921",
+  "name": "Transient peripheral blood transcriptome response to ketamine treatment  in children with ADNP syndrome",
+  "taxon": "human",
+  "n": 54,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 32924,
+  "short": "GSE244095.2",
+  "name": "Antiepileptic medication induces homeostatic synaptic plasticity in pyramidal neurons of the adult human neocortex - Homo sapiens",
+  "taxon": "human",
+  "n": 5,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 32925,
+  "short": "GSE244095.1",
+  "name": "Antiepileptic medication induces homeostatic synaptic plasticity in pyramidal neurons of the adult human neocortex - Mus musculus",
+  "taxon": "mouse",
+  "n": 15,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 32969,
+  "short": "GSE216102",
+  "name": "Aberrant histone H3 serotonylation dynamics in dorsal raphe nucleus contribute to maladaptive stress-induced gene expression programs and behavior [RNA-seq]",
+  "taxon": "mouse",
+  "n": 92,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33080,
+  "short": "GSE132909",
+  "name": "Senescence rather than apoptosis of alveolar progenitor cells drives pulmonary fibrosis (mouse_bulk RNAseq)",
+  "taxon": "mouse",
+  "n": 16,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33082,
+  "short": "GSE230638",
+  "name": "Impaired Branched-Chain Amino Acid Catabolism is Associated with Chemotherapy-Induced Heart Failure and Rescued by Metformin",
+  "taxon": "human",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33091,
+  "short": "GSE235587",
+  "name": "To investigate the effects of NRF2 inhibitors (pyrimethamine and mitoxantrone) on mRNA expression in a human esophageal squamous cell carcinoma cell line (KYSE70 cells)",
+  "taxon": "human",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33093,
+  "short": "GSE235584",
+  "name": "To investigate the effects of NRF2 inhibitors (pyrimethamine) on mRNA expression in mouse esophageal epithelium.",
+  "taxon": "mouse",
+  "n": 11,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33094,
+  "short": "GSE144353",
+  "name": "Untargeted transcriptomic profiling of activated primary human CD4+ T cells treated with metformin and 2-deoxyglucose",
+  "taxon": "human",
+  "n": 23,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33112,
+  "short": "GSE245006",
+  "name": "Subtype-selective prenylated isoflavonoids disrupt regulatory drivers of MYCN-amplified cancers",
+  "taxon": "human",
+  "n": 519,
+  "q": [
+   "antipsychotic",
+   "fluphenazine"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33123,
+  "short": "GSE172022",
+  "name": "Bulk RNAseq of  primary CD34+ HSPCs in Myeloproliferative neoplasms patients receiving tamoxifen",
+  "taxon": "human",
+  "n": 27,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33124,
+  "short": "GSE131276",
+  "name": "Preclinical Model of ER-positive breast cancer treated with thyroid hormone with or without tamoxifen",
+  "taxon": "human",
+  "n": 24,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33131,
+  "short": "GSE144990",
+  "name": "High throughput phenotypic screen and transcriptional analysis identify new compounds, targets and pathways for macrophage reprogramming II",
+  "taxon": "human",
+  "n": 76,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33132,
+  "short": "GSE144989",
+  "name": "High throughput phenotypic screen and transcriptional analysis identify new compounds, targets and pathways for macrophage reprogramming I",
+  "taxon": "human",
+  "n": 11,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33159,
+  "short": "GSE229658",
+  "name": "Redox state and altered pyruvate metabolism contribute to a dose-dependent metformin-induced lactate production of human myotubes",
+  "taxon": "human",
+  "n": 60,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33201,
+  "short": "GSE210562",
+  "name": "The NAMPT inhibitor FK866 increases metformin sensitivity in pancreatic cancer cells",
+  "taxon": "human",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33211,
+  "short": "GSE146982",
+  "name": "GPD1 enhances the anti-cancer effects of metformin by synergistically increasing total cellular glycerol-3-phosphate",
+  "taxon": "human",
+  "n": 24,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33230,
+  "short": "GSE115384",
+  "name": "RNA-seq CELSR2 knockdown vs NTC",
+  "taxon": "human",
+  "n": 24,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33316,
+  "short": "GSE128911",
+  "name": "RNA-seq of breast cancer cell lines post ligand treatment II",
+  "taxon": "human",
+  "n": 38,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33328,
+  "short": "GSE219154",
+  "name": "Distinct Transcriptomic and Metabolomic Profiles Characterize NSAID-Induced Urticaria/Angioedema Patients Undergoing Aspirin Desensitization",
+  "taxon": "human",
+  "n": 30,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33339,
+  "short": "GSE217898",
+  "name": "A transcriptomic atlas of drug-induced endothelial dysfunction in human endothelial cells",
+  "taxon": "human",
+  "n": 72,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33344,
+  "short": "GSE102677",
+  "name": "Metformin alters human host responses to Mycobacterium tuberculosis in-vitro and in healthy human subjects [PBMC RNA-Seq]",
+  "taxon": "human",
+  "n": 44,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33345,
+  "short": "GSE102633",
+  "name": "Metformin alters human host responses to Mycobacterium tuberculosis in-vitro and in healthy human subjects [Ex vivo Blood RNA-Seq]",
+  "taxon": "human",
+  "n": 22,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33350,
+  "short": "GSE112883",
+  "name": "Combined Targeting of Estrogen Receptor alpha and XPO1 prevent Akt activation, remodel metabolic pathways and induce autophagy to overcome tamoxifen resistance",
+  "taxon": "human",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33353,
+  "short": "GSE217423",
+  "name": "Transcriptomic profiling of drug-treated human induced pluripotent stem cells (iPSCs) [DGE-GEO-Depot]",
+  "taxon": "human",
+  "n": 344,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33364,
+  "short": "GSE108787",
+  "name": "Temporal dynamic reorganization of 3D chromatin in hormone-induced breast cancer and endocrine resistance",
+  "taxon": "human",
+  "n": 6,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33365,
+  "short": "GSE120596",
+  "name": "Variability in the Analgesic Response to Ibuprofen Following Third Molar Extraction is Associated with Differences in Activation of the Cyclooxygenase Pathway",
+  "taxon": "human",
+  "n": 77,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33401,
+  "short": "GSE77522",
+  "name": "Metformin reverses gene expression signautres in hyperglycaemics endothelial cells",
+  "taxon": "human",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33442,
+  "short": "GSE104872",
+  "name": "mRNA-seq in MCF7 cells in response to 4-hydroxytamoxifen (OHT)",
+  "taxon": "human",
+  "n": 24,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33446,
+  "short": "GSE120756",
+  "name": "TET2 coactivates gene expression through demethylation of enhancers",
+  "taxon": "human",
+  "n": 32,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33449,
+  "short": "GSE152360",
+  "name": "Chromatin Accessibility differentiates Invasive Lobular from Invasive Ductal Breast cancer and Dictates Response to Endocrine Treatment",
+  "taxon": "human",
+  "n": 89,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33457,
+  "short": "GSE111151",
+  "name": "RNA-sequencing of tamoxifen-resistant and -sensitive breast cancer cell lines.",
+  "taxon": "human",
+  "n": 11,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33481,
+  "short": "GSE115609",
+  "name": "Transcriptional profiling of MCF7 cells treated with H3B05942, E2, or standard of care compounds",
+  "taxon": "human",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33483,
+  "short": "GSE115608",
+  "name": "Transcriptional profiling of Ishikawa cells treated with H3B-5942, E2, or standard of care compounds",
+  "taxon": "human",
+  "n": 26,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33484,
+  "short": "GSE208245",
+  "name": "Effect of imeglimin on mitochondrial function, AMPK activity and gene expression in hepatocytes",
+  "taxon": "human",
+  "n": 18,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33516,
+  "short": "GSE96760",
+  "name": "H-STS NET cell line perturbed with small molecule compounds",
+  "taxon": "human",
+  "n": 573,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33527,
+  "short": "GSE80619",
+  "name": "T47D xenografts treated with various combinations of ER- and PR-targeting therapies",
+  "taxon": "human",
+  "n": 17,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33530,
+  "short": "GSE107590",
+  "name": "Hyperactive mTOR and MNK1 phosphorylation of eIF4E confer tamoxifen resistance and estrogen independence through selective mRNA translation reprogramming",
+  "taxon": "human",
+  "n": 18,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33538,
+  "short": "GSE103242",
+  "name": "The transcriptome effect of overexpressing EZH2 in MCF7",
+  "taxon": "human",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33541,
+  "short": "GSE106681",
+  "name": "GRHL2 is a key lineage determining factor which collaborates with FOXA1 to establish a targetable collateral pathway in the setting of endocrine therapy-resistant breast cancer (RNA-Seq data set 1)",
+  "taxon": "human",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33545,
+  "short": "GSE89672",
+  "name": "Inhibition of H3K4 demethylation induces autophagy in cancer cell lines",
+  "taxon": "human",
+  "n": 14,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33554,
+  "short": "GSE97165",
+  "name": "RNAseq study of synovial biopsies after triple DMARD treatment",
+  "taxon": "human",
+  "n": 38,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33566,
+  "short": "GSE100327",
+  "name": "RNA-sequencing profiles of five different pancreas cancer cell lines that were engineered to express a form of the basic helix-loop-helix transcription factor, E47, that localizes to the nucleus in response to tamoxifen.",
+  "taxon": "human",
+  "n": 30,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33606,
+  "short": "GSE86538",
+  "name": "ChIP-seq of ER and RUNX2 in MCF7 breast cancer cell lines",
+  "taxon": "human",
+  "n": 10,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33609,
+  "short": "GSE178303",
+  "name": "Gene expression regulation in MCF7 cells by H3B-6545, H3B-9709, Fulvestrant and Tamoxifen",
+  "taxon": "human",
+  "n": 15,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33615,
+  "short": "GSE95297",
+  "name": "Dynamics of HIV Latency and Reactivation in a Primary CD4+ T Cell Model",
+  "taxon": "human",
+  "n": 34,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33629,
+  "short": "GSE75329",
+  "name": "Gene expression profiling of parental and TAMR MCF7 cells after knock-down of ER or FOXA1 or overexpresion of FOXA1",
+  "taxon": "human",
+  "n": 11,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33642,
+  "short": "GSE78199",
+  "name": "BASP1 modifies the Tamoxifen response",
+  "taxon": "human",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33663,
+  "short": "GSE185624",
+  "name": "RNASeq analysis of human Cal33 xenografts in nu/nu mice upon radiotherapy +/- metformin treatment",
+  "taxon": "human",
+  "n": 24,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33676,
+  "short": "GSE71446",
+  "name": "Genome-wide Analysis of Human Constitutive Androstane Receptor (CAR) Transcriptome in Wild-type and CAR-knockout HepaRG cells",
+  "taxon": "human",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33718,
+  "short": "GSE164529",
+  "name": "Development and characterization of a novel endoxifen-resistant breast cancer cell line highlights numerous differences from tamoxifen-resistant models.",
+  "taxon": "human",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33719,
+  "short": "GSE141696",
+  "name": "Therapeutic modulation of nemo-like kinase in primary and acquired endocrine-resistant breast cancer",
+  "taxon": "human",
+  "n": 11,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33728,
+  "short": "GSE144378",
+  "name": "The 3D Genomic Landscape of Differential Response to EGFR/HER2 Inhibition in Endocrine-Resistant Breast Cancer [RNA-seq]",
+  "taxon": "human",
+  "n": 18,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33744,
+  "short": "GSE157585",
+  "name": "Metformin Alters Skeletal Muscle Transcriptome Adaptations to Resistance Training in Older Adults",
+  "taxon": "human",
+  "n": 136,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33841,
+  "short": "GSE157050",
+  "name": "Ribosome profiling of  metformin treatment in primary murine hepatocytes in WT, Raptor Ser-Ala mutant, Tsc2-null, Raptor mutant;Tsc2-null, and Ampk-null cells",
+  "taxon": "mouse",
+  "n": 66,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33985,
+  "short": "GSE124189.1",
+  "name": "Split part 1 of: The mevalonate pathway is required for pyrimidine synthesis and survival of p53-deficient colon cancer cells in metabolically compromised environments [collection of material = Experiment 1]",
+  "taxon": "human",
+  "n": 24,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 34104,
+  "short": "GSE67295.1",
+  "name": "Split part 1 of: Inflammatory cytokines activate unliganded estrogen receptor and alter the sensitivity of breast cancer cells to tamoxifen [collection of material = RNA-seq assay]",
+  "taxon": "human",
+  "n": 26,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 34133,
+  "short": "GSE233924",
+  "name": "Identification of cardiac developmental toxicants in differentiated human induced pluripotent stem cells [Toxicants]",
+  "taxon": "human",
+  "n": 57,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 34145,
+  "short": "GSE185542.1",
+  "name": "Inhibiting L-type calcium channel promotes cardiomyocyte proliferation through activating canonical Wnt signaling pathway - Rattus norvegicus",
+  "taxon": "rat",
+  "n": 6,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 34146,
+  "short": "GSE185542.2",
+  "name": "Inhibiting L-type calcium channel promotes cardiomyocyte proliferation through activating canonical Wnt signaling pathway - Homo sapiens",
+  "taxon": "human",
+  "n": 6,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 34187,
+  "short": "GSE153127",
+  "name": "Purinergic antiplatelet-treated colon cancer cells induce SERPINE1 and MAPK-MMP1 signaling pathways associated with metastasis.",
+  "taxon": "human",
+  "n": 24,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 34230,
+  "short": "GSE118859",
+  "name": "SOX2 epidermal overexpression promotes cutaneous wound healing via activation of EGFR/MEK/ERK signaling mediated by EGFR ligands",
+  "taxon": "mouse",
+  "n": 15,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 34257,
+  "short": "GSE169219",
+  "name": "Genome wide analysis of gene expression in SK-N-BE(2)-C cells after treatment with vorinostat (SAHA)",
+  "taxon": "human",
+  "n": 11,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 34260,
+  "short": "GSE149228",
+  "name": "Comparison of the hepatic effects of phenobarbital in chimeric mice containing either rat or human hepatocytes with humanized constitutive androstane receptor (CAR) and pregnane X receptor (PXR) mice (hCAR/hPXR mice) [chimeric humanized liver experiments]",
+  "taxon": "human",
+  "n": 14,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 34311,
+  "short": "GSE143998",
+  "name": "Whole transcript analysis of amyloid beta 42 (A\u03b242)-induced SH-SY5Y cells in control and treated groups",
+  "taxon": "human",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 34321,
+  "short": "GSE59713",
+  "name": "Curcumin Effectively Depletes Hepatic Cancer Stem-Like Cells",
+  "taxon": "human",
+  "n": 30,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 34344,
+  "short": "GSE146911",
+  "name": "Antitumor Activity of Z-endoxifen in Aromatase Inhibitor-Sensitive and Resistant Estrogen Receptor-Positive Breast Cancer",
+  "taxon": "human",
+  "n": 11,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 34348,
+  "short": "GSE55348",
+  "name": "Gene expression profiling of primary HER2-positive breast cancers treated with adjuvant trastuzumab",
+  "taxon": "human",
+  "n": 53,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 34355,
+  "short": "GSE128387",
+  "name": "Expression data from children and adolescents treated with Fluoxetine",
+  "taxon": "human",
+  "n": 32,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 34363,
+  "short": "GSE69049",
+  "name": "Transferring genomics to the clinic: distinguishing Burkitt and Diffuse large B-cell lymphoma (v3)",
+  "taxon": "human",
+  "n": 93,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 34382,
+  "short": "GSE71127",
+  "name": "A transcriptome-based classifier to identify developmental toxicants by stem cell testing: design, validation, and optimization for histone deacetylase inhibitors",
+  "taxon": "human",
+  "n": 85,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 34387,
+  "short": "GSE132747",
+  "name": "Gene Expression data human HSCs with 2-LSD1 inhibitors",
+  "taxon": "human",
+  "n": 16,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 34392,
+  "short": "GSE119446",
+  "name": "Effect of metformin on 24 hour culture of SLE CD4 T cells and Healthy Control CD4 T cells",
+  "taxon": "human",
+  "n": 20,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 34397,
+  "short": "GSE67297",
+  "name": "Cold acclimation improves insulin sensitivity in patients with type 2 diabetes mellitus.",
+  "taxon": "human",
+  "n": 14,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 34422,
+  "short": "GSE59671",
+  "name": "Celecoxib, rofecoxib treated human smooth muscle cells microarray timecourse",
+  "taxon": "human",
+  "n": 52,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 34434,
+  "short": "GSE67342",
+  "name": "Expression data of LoVo cells treated by 10mM metformin for eigher 8 or 24h",
+  "taxon": "human",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 34460,
+  "short": "GSE95298",
+  "name": "Patient- and Cell Type-Specific Heterogeneity of Metformin Response.",
+  "taxon": "human",
+  "n": 58,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 34472,
+  "short": "GSE42664",
+  "name": "ECOG 5998, trial of immunosupressives for the treatment of Large Granular Lymphocyte Leukemia",
+  "taxon": "human",
+  "n": 45,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 34484,
+  "short": "GSE46263",
+  "name": "Studies on mature endothelial cells; exploring  mechanisms for improvement of cardiovascular diseases",
+  "taxon": "human",
+  "n": 66,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 34485,
+  "short": "GSE109021",
+  "name": "Identification of Androgen Receptor Modulators in a Prostate Cancer Cell Line Microarray Compendium",
+  "taxon": "human",
+  "n": 96,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 34486,
+  "short": "GSE51803",
+  "name": "Genome-wide analysis of gene expression in M. bovis BCG infected THP-1 cells subjected to Metformin treatement",
+  "taxon": "human",
+  "n": 24,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 34487,
+  "short": "GSE93099",
+  "name": "MO-OH-Nap and SAHA induce distinct patterns of gene expression in the multiple myeloma cell line U266.",
+  "taxon": "human",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 34504,
+  "short": "GSE78188",
+  "name": "Gene expression profiling of CUTLL cell lines upon 17 drug treatments",
+  "taxon": "human",
+  "n": 54,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 34513,
+  "short": "GSE60154",
+  "name": "Toxicology study on KhES-3 cells.",
+  "taxon": "human",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 34521,
+  "short": "GSE97346",
+  "name": "Gene expression of AML cell lines (HL60, KG1a, MOLM14 and U937) untreated or treated with metformin",
+  "taxon": "human",
+  "n": 24,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 34544,
+  "short": "GSE54254",
+  "name": "Expression data from human hepatocellular carcinoma cell line HepG2",
+  "taxon": "human",
+  "n": 96,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 34548,
+  "short": "GSE72919",
+  "name": "Time-course expression data from HEK293\u2206RAF1:ER cells stimulated with 4OHT, U0126, CYHX, ActD, EGF, FGF, or IGF",
+  "taxon": "human",
+  "n": 41,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 34551,
+  "short": "GSE80077",
+  "name": "Preoperative short-term hormone therapy for hormone receptor positive breast cancer",
+  "taxon": "human",
+  "n": 60,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 34555,
+  "short": "GSE85871",
+  "name": "Gene expression profiles of MCF7 cells treated with traditional Chinese medicine components",
+  "taxon": "human",
+  "n": 212,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 34562,
+  "short": "GSE82293",
+  "name": "Acriflavine inhibits the epithelial-to-mesenchymal transition in vitro in liver and pancreatic cancer cells (part of study with TGF-b1 stimulation)",
+  "taxon": "human",
+  "n": 17,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 34582,
+  "short": "GSE85180",
+  "name": "Exploring chronic drug effects on microengineered human liver cultures using global gene expression profiling",
+  "taxon": "human",
+  "n": 21,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 34587,
+  "short": "GSE39136",
+  "name": "Expression data from U2OS ER-E2F1 cells after FOXO knockdown and E2F1 activation",
+  "taxon": "human",
+  "n": 14,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 34609,
+  "short": "GSE33366",
+  "name": "Expression data from MCF7 tumor xenografts treated with either single agent BMS754807, or Tamoxifen or Letrozole alone; or Tamoxifen or Letrozole in combination with BMS754807 for 28 days",
+  "taxon": "human",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 34645,
+  "short": "GSE81307",
+  "name": "U937 treated with decitabine, panobinostat and valproic acid [Affymetrix]",
+  "taxon": "human",
+  "n": 18,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 34656,
+  "short": "GSE62813",
+  "name": "Long-term Exposure to Sorafenib of Liver Cancer Cells Induces Resistance with Epithelial-to-Mesenchymal Transition, Increased Invasion and Risk of Rebound Growth",
+  "taxon": "human",
+  "n": 13,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 34667,
+  "short": "GSE46262",
+  "name": "Studies on progenitor endothelial cells; exploring mechanisms for improvement of cardiovascular diseases",
+  "taxon": "human",
+  "n": 20,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 34668,
+  "short": "GSE982",
+  "name": "Gene Expression-Based High Throughput Screening: HL-60 Cell Treatment with Candidate Compounds",
+  "taxon": "human",
+  "n": 75,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 34728,
+  "short": "GSE213380",
+  "name": "Acamprosate, Craving and Alcohol Use Disorder: the Role of Inflammation",
+  "taxon": "human",
+  "n": 48,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 34732,
+  "short": "GSE261833",
+  "name": "Role of hypothalamic microglial activation on ventricular arrhythmias in stress cardiomyopathy",
+  "taxon": "rat",
+  "n": 15,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 34890,
+  "short": "GSE105786",
+  "name": "MTHFD1 links folate metabolism to BRD4-mediated transcriptional regulation",
+  "taxon": "human",
+  "n": 93,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 34944,
+  "short": "GSE247577",
+  "name": "Early life phenobarbital exposure dysregulates the hippocampal transcriptome",
+  "taxon": "rat",
+  "n": 42,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 34948,
+  "short": "GSE255582",
+  "name": "Effects of potassium supplementation and depletion in the development of salt-sensitive hypertension in male and female rats",
+  "taxon": "rat",
+  "n": 35,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 35014,
+  "short": "GSE249964",
+  "name": "RNA sequencing of cortical neurons from Kat6b deficient mouse foetuses",
+  "taxon": "mouse",
+  "n": 47,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 35071,
+  "short": "GSE233289",
+  "name": "RNA-seq analysis of peripheral nerve in Mtmr2 null model of CMT4B1.",
+  "taxon": "mouse",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 35088,
+  "short": "GSE233647",
+  "name": "Identificatinon of differentially expressed genes in Docetaxel-resistant cell lines PC3 and DU145 after combination treatment with RU486 and docetaxel",
+  "taxon": "human",
+  "n": 24,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 35125,
+  "short": "GSE222593",
+  "name": "Uncovering the role admixture in health disparities: Association of hepatocyte gene expression and DNA methylation to African Ancestry in African-Americans [RNA-seq]",
+  "taxon": "human",
+  "n": 355,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 35133,
+  "short": "GSE97460",
+  "name": "PLATE-Seq for Genome-Wide Regulatory Network Analysis of High-Throughput Screens",
+  "taxon": "human",
+  "n": 688,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 35155,
+  "short": "GSE216079",
+  "name": "Chemotherapy selected 4T1 cells",
+  "taxon": "mouse",
+  "n": 6,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 35189,
+  "short": "GSE134588",
+  "name": "Maternal folic acid overconsumption in mice leads to sex-specific transcriptional alterations in cerebral cortex in offspring",
+  "taxon": "mouse",
+  "n": 14,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 35227,
+  "short": "GSE224974",
+  "name": "Thyroid Hormones Promotes Terminal Differentiation of Medulloblastoma Tumor Cells",
+  "taxon": "mouse",
+  "n": 6,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 35360,
+  "short": "GSE241528",
+  "name": "Photothrombotic Cerebral Stroke as a Model of Post-Stroke Seizures/Epilepsy in aged mice",
+  "taxon": "mouse",
+  "n": 11,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 35361,
+  "short": "GSE241525",
+  "name": "Levetiracetam normalized E/I imbalance in the hippocampus after cortical stroke in aged mice",
+  "taxon": "mouse",
+  "n": 11,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 35454,
+  "short": "GSE248859",
+  "name": "Disrupted extracellular matrix and cell cycle genes in autism-associated Shank3 deficiency can be rescued with Lithium",
+  "taxon": "mouse",
+  "n": 16,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 36083,
+  "short": "GSE159620",
+  "name": "HDAC inhibitors result in widespread alteration of the histone acetylation landscape and BRD4 targeting to gene bodies\u00a0",
+  "taxon": "human",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 36254,
+  "short": "GSE237149",
+  "name": "Excess folic acid supplementation increases adiposity and impacts insulin sensitivity in female mice during pregnancy and has sex-specific effects on fetal offspring",
+  "taxon": "mouse",
+  "n": 40,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 36255,
+  "short": "GSE207710",
+  "name": "Transcriptome analysis of the kidney of socially stressed male C57 BL/6 mice",
+  "taxon": "mouse",
+  "n": 18,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 36259,
+  "short": "GSE240206",
+  "name": "Metformin Targets Intestinal Immune System Signaling Pathways in High-Fat Diet-Induced Type 2 Diabetes Mouse Model",
+  "taxon": "mouse",
+  "n": 24,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 36266,
+  "short": "GSE168525",
+  "name": "Effects of dietary folic acid levles on colitis-associated tumorigenesis.",
+  "taxon": "mouse",
+  "n": 18,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 36270,
+  "short": "GSE221941",
+  "name": "Cellular Senescence and Disrupted Proteostasis induced by Myotube Atrophy are Prevented with Low Dose Metformin and Leucine Cocktail",
+  "taxon": "mouse",
+  "n": 30,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 36278,
+  "short": "GSE226911",
+  "name": "FALCON systematically interrogates free fatty acid biology and identifies a novel mediator of lipotoxicity",
+  "taxon": "mouse",
+  "n": 500,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 36297,
+  "short": "GSE215225",
+  "name": "NASH treatment study (Ldlr-/- mice on Western diet treated with/without omega-3 fatty acids)",
+  "taxon": "mouse",
+  "n": 24,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 36305,
+  "short": "GSE200106",
+  "name": "SAHA, VPA and JQ1 treatment in ISOS-1",
+  "taxon": "mouse",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 36312,
+  "short": "GSE193062",
+  "name": "RNA seq analysis of calcium channel blocker, nifedipine in combination with metformin, MCC950 and anakinra treated Tet2-/- + Boy/J (1:1 ratio, mixed BM cells) transplanted Ob/Ob recipient mice",
+  "taxon": "mouse",
+  "n": 21,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 36313,
+  "short": "GSE169691",
+  "name": "Effects of the HDACi SAHA on IgH transcription in B-cell splenocytes and effect of deletion of two cis-transcriptional enhancer on IgH transcription in femoral B-cells.",
+  "taxon": "mouse",
+  "n": 10,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 36314,
+  "short": "GSE169690",
+  "name": "HDAC inhibitors and IgH locus transcription. Mini 3'RR and IgH locus transcription",
+  "taxon": "mouse",
+  "n": 10,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 36319,
+  "short": "GSE165122",
+  "name": "The effect on the transcriptome by inhibition of mitochondrial function by metformin in intestinal cells",
+  "taxon": "mouse",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 36324,
+  "short": "GSE153732",
+  "name": "RNA-seq analysis of mammary tissue reveals persistent changes in gene expression profiles dependent upon the level of folic acid intake in C56BL/6 mice.",
+  "taxon": "mouse",
+  "n": 10,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 36326,
+  "short": "GSE137177",
+  "name": "Adverse effect of folic acid supplementation on cilia",
+  "taxon": "mouse",
+  "n": 16,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 36347,
+  "short": "GSE92488",
+  "name": "Systems analysis of hepatic insulin resistance identifies RGS4 as a key mediator of metabolic adaptation",
+  "taxon": "mouse",
+  "n": 45,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 36351,
+  "short": "GSE98731",
+  "name": "Metformin reduces air pollution-induced thrombosis",
+  "taxon": "mouse",
+  "n": 13,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 36362,
+  "short": "GSE103440",
+  "name": "Demodifying RNA for Transcriptomic Analyses of Archival Formalin-Fixed Paraffin-Embedded Samples",
+  "taxon": "mouse",
+  "n": 96,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 36364,
+  "short": "GSE98133",
+  "name": "Determination of Lsd1 function in C2C12 myoblast cells by global transcriptome analysis",
+  "taxon": "mouse",
+  "n": 15,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 36374,
+  "short": "GSE65267",
+  "name": "Next Generation Sequencing identifies Cdh11 and Mrc1 as novel translational biomarkers of kidney fibrosis",
+  "taxon": "mouse",
+  "n": 18,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 36404,
+  "short": "GSE142088",
+  "name": "mRNA expression profiles (transcriptome) of murine macrophages (cell line: RAW264.7)",
+  "taxon": "mouse",
+  "n": 18,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 36406,
+  "short": "GSE162446",
+  "name": "Short telomeres trigger epithelial to mesenchymal transition programmes and sensitize to folic acid-induced kidney fibrosis in mice  [folic acid]",
+  "taxon": "mouse",
+  "n": 15,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 36408,
+  "short": "GSE134397",
+  "name": "The Aging Microenvironment Drives Alveolar Macrophage Changes in Aging  [RNA-Seq]",
+  "taxon": "mouse",
+  "n": 273,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 36409,
+  "short": "GSE140715",
+  "name": "Metformin improves cognition of aged mice by promoting cerebral angiogenesis and neurogenesis [blood]",
+  "taxon": "mouse",
+  "n": 10,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 36417,
+  "short": "GSE137840",
+  "name": "Liver high-throughput sequencing of high-fat C57BL/6J wild-type mice",
+  "taxon": "mouse",
+  "n": 16,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 36425,
+  "short": "GSE109329",
+  "name": "Transcriptome sequencing elucidates gene modules in microglia",
+  "taxon": "mouse",
+  "n": 816,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 36426,
+  "short": "GSE101818",
+  "name": "Transcriptomes of normal liver and spontaneous hepatocellular carcinoma in C3HeB/FeJ male mice",
+  "taxon": "mouse",
+  "n": 14,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 36483,
+  "short": "GSE194289.1",
+  "name": "Split part 1 of: Integrative multi-omics landscape of fluoxetine action across 27 brain regions [bulk RNA-seq] [collection of material = has data]",
+  "taxon": "rat",
+  "n": 204,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 36518,
+  "short": "GSE10238",
+  "name": "Complement activation in the peripheral nervous system following the spinal nerve ligation model of neuropathic pain",
+  "taxon": "rat",
+  "n": 52,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 36540,
+  "short": "GSE103570",
+  "name": "Expression data from acutely damaged stomachs",
+  "taxon": "mouse",
+  "n": 11,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 36548,
+  "short": "GSE154268",
+  "name": "Both Tamoxifen and Estradiol accelerate endothelial healing by targeting different sub-functions of ERa and distinct cell types in the arterial wall",
+  "taxon": "mouse",
+  "n": 24,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 36552,
+  "short": "GSE140836",
+  "name": "Tamoxifen induces cleft palate in mice",
+  "taxon": "mouse",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 36561,
+  "short": "GSE160083",
+  "name": "Tamoxifen treatment as a therapeutic approach in a murine model of X-linked myotubular myopathy (Mtm1-/y)",
+  "taxon": "mouse",
+  "n": 15,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 36565,
+  "short": "GSE92891",
+  "name": "Impact of control interventions on lung gene expression in post-natal lung development",
+  "taxon": "mouse",
+  "n": 32,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 36686,
+  "short": "GSE66244.2",
+  "name": "Identification of expresion patterns after treatment with GC/RA and combination with AZA/SAHA in MYC amplified and BRG1 mutant lung cancer cell lines - GPL17077",
+  "taxon": "human",
+  "n": 64,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 36760,
+  "short": "GSE43809",
+  "name": "Molecular and cellular alterations associated with long-term murine mammary cancer prevention following short-term tamoxifen chemoprevention indicate luminal progenitor cells as targets",
+  "taxon": "mouse",
+  "n": 20,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 37440,
+  "short": "GSE171053",
+  "name": "Gene expression data of serially sorted primary AML patient blasts prior and after treatment with the DNMT inhibitor decitabine (DAC)",
+  "taxon": "human",
+  "n": 133,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 37469,
+  "short": "GSE187001",
+  "name": "Classification of developmental toxicants in a human iPSC transcriptomics-based test",
+  "taxon": "human",
+  "n": 213,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 37487,
+  "short": "GSE176440",
+  "name": "Gene expression profiles of CD4+ T cells before and after methotrexate treatment in rheumatoid arthritis patients [Microarray]",
+  "taxon": "human",
+  "n": 56,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 37569,
+  "short": "GSE234340",
+  "name": "The influence on Muc2 positive cells and Gli1 positive cells after the knockout of Smad4 or Alk3 in Gli1 positive cell and the effect of IL1 or IL17 on colonic organoids",
+  "taxon": "mouse",
+  "n": 42,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 37790,
+  "short": "GSE271293",
+  "name": "Transcriptomic analysis unveils bona fide molecular signatures of microglia under conditions of homeostasis and viral encephalitis",
+  "taxon": "mouse",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 37791,
+  "short": "GSE214968",
+  "name": "Effect of Vortioxetine treatment on gene expression of LN-229 glioblastoma cells over time",
+  "taxon": "human",
+  "n": 18,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 37819,
+  "short": "GSE242103",
+  "name": "Cationic amphiphilic drug induced phospholipidosis and lysosomal dysgenesis during in vitro adipogenesis",
+  "taxon": "human",
+  "n": 25,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 37821,
+  "short": "GSE235175",
+  "name": "gene expression analysis of the rat prefrontal cortex following psilocybin or ketanserin administration",
+  "taxon": "rat",
+  "n": 28,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 37822,
+  "short": "GSE245619",
+  "name": "Untangling the Dynamics of Lysine Acetylation and Phosphorylation in Adipogenesis in the Established Human and Mouse Adipocyte Cell Lines SGBS and 3T3L1",
+  "taxon": "human",
+  "n": 28,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 37906,
+  "short": "GSE262300",
+  "name": "Gene expression profiling of endothelial-mesenchymal transition in cerebral arteriovenous malformation",
+  "taxon": "mouse",
+  "n": 4,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 37965,
+  "short": "GSE269606",
+  "name": "ASCT2 is a major contributor to serine uptake in cancer cells",
+  "taxon": "human",
+  "n": 6,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 38133,
+  "short": "GSE249891",
+  "name": "RNA seq in IPSCs derived dopaminergic neurons comparison of SNORD116MD versus control",
+  "taxon": "human",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 38175,
+  "short": "GSE248513",
+  "name": "Combining anti-PD1 and vorinostat improves anti-tumor treatment in IDH-mutant brain tumors",
+  "taxon": "mouse",
+  "n": 15,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 38202,
+  "short": "GSE221612",
+  "name": "MARS-seq on SU-DIPG13 cells treated Sulfopin/Vorinostat/Sulfopin+Vorinostat or DMSO",
+  "taxon": "human",
+  "n": 17,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 38213,
+  "short": "GSE270465",
+  "name": "Rexinoids Induce Differential Gene Expression in Human Glioblastoma Cells",
+  "taxon": "human",
+  "n": 18,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 38224,
+  "short": "GSE235969",
+  "name": "Hippocampal differential expression underlying the neuroprotective effect of delta-9-tetrahydrocannabinol (THC) microdose on old mice",
+  "taxon": "mouse",
+  "n": 20,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 38285,
+  "short": "GSE273695",
+  "name": "A hidden mark of a troubled past: neuroimaging and transcriptomic analyses reveal interactive effects of maternal immune activation and adolescent THC exposure in the absence of overt behavioural disruptions",
+  "taxon": "rat",
+  "n": 48,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 38339,
+  "short": "GSE214970",
+  "name": "Amino acids fuel FLS activation and arthritis by regulating chemokine expression and leukocyte migration",
+  "taxon": "human",
+  "n": 95,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 38359,
+  "short": "GSE222756",
+  "name": "Shared and unique transcriptomic signatures of antidepressant and probiotics action in the mammalian brain",
+  "taxon": "rat",
+  "n": 300,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 39118,
+  "short": "GSE191016",
+  "name": "Planar cell polarity proteins mediate ketamine-induced restoration of glutamatergic synapses in prefrontal cortical neurons in a mouse model for chronic stress",
+  "taxon": "mouse",
+  "n": 10,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 39859,
+  "short": "GSE250194",
+  "name": "Molecular subtypes are associated with clinical benefit in cisplatin-treated metastatic urothelial cancer patients",
+  "taxon": "human",
+  "n": 20,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 39866,
+  "short": "GSE275787",
+  "name": "Prenatal exposure to valproic acid induces sex specific alterations in cortical and hippocampal neuronal structure and function in rats",
+  "taxon": "rat",
+  "n": 20,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 39917,
+  "short": "GSE280976",
+  "name": "Comparative evaluation of the biological characteristics of a novel retinoid X receptor agonist and bexarotene",
+  "taxon": "mouse",
+  "n": 5,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 39983,
+  "short": "GSE279704",
+  "name": "Bruton\u2019s tyrosine kinase inhibitor leads to bidirectional transcript regulation of Nurr1: A new key to Parkinson\u2019s disease",
+  "taxon": "mouse",
+  "n": 15,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 40016,
+  "short": "GSE279115",
+  "name": "Co-treatment with melatonin and ortho-topolin riboside exhibits anti-proliferation activity in radioresistant MDA-MB-231 cells by altering metabolic and transcriptomic profiles",
+  "taxon": "human",
+  "n": 6,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 40079,
+  "short": "GSE185644",
+  "name": "Upregulation of SNAP25 by HDAC inhibition ameliorates NPC disease phenotypes via autophagy induction",
+  "taxon": "human",
+  "n": 4,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 40116,
+  "short": "GSE268987",
+  "name": "Environmental fluoxetine promotes skin cell proliferation and wound healing",
+  "taxon": "human",
+  "n": 16,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 40145,
+  "short": "GSE276338",
+  "name": "Epigenetic evidence of an Ac/Dc axis by VPA and SAHA",
+  "taxon": "human",
+  "n": 9,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 40198,
+  "short": "GSE273401",
+  "name": "Valproic acid targets IDH1 mutants through alteration of lipid metabolism [2020]",
+  "taxon": "human",
+  "n": 18,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 40219,
+  "short": "GSE249609",
+  "name": "Transcriptome data of bone marrow long-term hematopoietic stem cells (LT-HSCs) from mice with or without 3-month serine/glycine-free diet (SGFD) treatment.",
+  "taxon": "mouse",
+  "n": 6,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 40221,
+  "short": "GSE247185",
+  "name": "Impact of immune repertoire in Muscle \u2013 Invasive Bladder Cancer (MIBC) on predicting response and survival after neoadjuvant cisplatin-based chemotherapy (NAC)",
+  "taxon": "human",
+  "n": 13,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 40404,
+  "short": "GSE275393",
+  "name": "The DNA demethylase TET1 modifies the impact of maternal folic acid status on embryonic brain development",
+  "taxon": "mouse",
+  "n": 40,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 40408,
+  "short": "GSE187427",
+  "name": "RNA-seq analysis for MDA-MB-468 cells treated with SAHA and sonidedgib",
+  "taxon": "human",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 40497,
+  "short": "GSE241234",
+  "name": "Chronic subanesthetic ketamine induces schizophrenic-like social deficits and alters translatome in the lateral septum",
+  "taxon": "mouse",
+  "n": 4,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 43060,
+  "short": "GSE271421",
+  "name": "Thyroid hormone remodels cortex to coordinate body-wide metabolism and exploration",
+  "taxon": "mouse",
+  "n": 49,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 44588,
+  "short": "GSE269544",
+  "name": "Multi-omics Analysis Revealing the Impact of Excessive Maternal Folate Supplementation on Offspring Brain Development [single nuclei multiome]",
+  "taxon": "mouse",
+  "n": 4,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 50274,
+  "short": "GSE283880",
+  "name": "Sox15 is a novel retinal developmental gene that promotes cone photoreceptor differentiation through inhibition of alternative rod photoreceptor fates",
+  "taxon": "mouse",
+  "n": 33,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 50284,
+  "short": "GSE283578",
+  "name": "Apolipoprotein C3 Involved in Diabetic Retinopathy by Promoting Retinal Angiogenesis via Activation of the MYC Pathway",
+  "taxon": "human",
+  "n": 4,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 50382,
+  "short": "GSE268106",
+  "name": "Effect of D-serine on gene expression in Neuro2a cells",
+  "taxon": "mouse",
+  "n": 6,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 50398,
+  "short": "GSE233904",
+  "name": "Effects of oxytocin on the hair growth ability of dermal papilla cells",
+  "taxon": "human",
+  "n": 4,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 50470,
+  "short": "GSE260872",
+  "name": "Identify the interplay between N6-methyladenine and gene regulation under hypoxia by randomized empirical model (RNA-seq)",
+  "taxon": "human",
+  "n": 6,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 50475,
+  "short": "GSE286904",
+  "name": "Persistent large-scale changes in alternative splicing in prefrontal cortical neuron types following psychedelic exposure",
+  "taxon": "mouse",
+  "n": 118,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 50534,
+  "short": "GSE272685",
+  "name": "Inhaled Xenon modulates microglia and ameliorates disease in mouse models of amyloidosis and tauopathy [Xenon PD in MGnD paradigm]",
+  "taxon": "mouse",
+  "n": 16,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 50540,
+  "short": "GSE286105",
+  "name": "Regulation of Mammalian Cellular Metabolism by Endogenous Cyanide Production [Glycine_RNA-Seq]",
+  "taxon": "human",
+  "n": 6,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 50566,
+  "short": "GSE273575",
+  "name": "Inhaled Xenon modulates microglia and ameliorates disease in mouse models of amyloidosis and tauopathy [Xenon-iMGL in vitro]",
+  "taxon": "human",
+  "n": 6,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 50570,
+  "short": "GSE269157",
+  "name": "Inhaled Xenon modulates microglia and ameliorates disease in mouse models of amyloidosis and tauopathy [Xenon in APPPS1 - Mice]",
+  "taxon": "mouse",
+  "n": 10,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 50571,
+  "short": "GSE269481",
+  "name": "Inhaled Xenon modulates microglia and ameliorates disease in mouse models of amyloidosis and tauopathy [Xenon in IPSMG H5xFAD]",
+  "taxon": "human",
+  "n": 10,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 50593,
+  "short": "GSE252778",
+  "name": "Neuroinflammation underlies the development of social stress induced cognitive deficit in sickle cell disease.",
+  "taxon": "mouse",
+  "n": 135,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 50596,
+  "short": "GSE272686",
+  "name": "Inhaled Xenon modulates microglia and ameliorates disease in mouse models of amyloidosis and tauopathy [Xenon in IFNy blocker - mice]",
+  "taxon": "mouse",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 50598,
+  "short": "GSE272801",
+  "name": "Inhaled Xenon modulates microglia and ameliorates disease in mouse models of amyloidosis and tauopathy [Xenon PK in APP.PS1 Tcells - mice]",
+  "taxon": "mouse",
+  "n": 16,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 50599,
+  "short": "GSE272814",
+  "name": "Inhaled Xenon modulates microglia and ameliorates disease in mouse models of amyloidosis and tauopathy [Xenon PK in APP.PS1 microglia -mice]",
+  "taxon": "mouse",
+  "n": 16,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 50601,
+  "short": "GSE272910",
+  "name": "Inhaled Xenon modulates microglia and ameliorates disease in mouse models of amyloidosis and tauopathy [Xenon in Microglia in vitro - Mice]",
+  "taxon": "mouse",
+  "n": 13,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 50625,
+  "short": "GSE271423",
+  "name": "Inhaled Xenon modulates microglia and ameliorates disease in mouse models of amyloidosis and tauopathy [5xFAD-MITRG Astrocytes 6M]",
+  "taxon": "mouse",
+  "n": 10,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 50626,
+  "short": "GSE271471",
+  "name": "Inhaled Xenon modulates microglia and ameliorates disease in mouse models of amyloidosis and tauopathy [Xenon in IFNgr1 cKO]",
+  "taxon": "mouse",
+  "n": 16,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 50627,
+  "short": "GSE271472",
+  "name": "Inhaled Xenon modulates microglia and ameliorates disease in mouse models of amyloidosis and tauopathy [5xFAD-MITRG-iMGL 6M]",
+  "taxon": "mouse",
+  "n": 10,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 50637,
+  "short": "GSE284676",
+  "name": "Enterococcus faecium activates BMP/SMAD-mediated osteoblastogenesis and Wnt mediated neurogenesis while inhibiting PD",
+  "taxon": "mouse",
+  "n": 15,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 50654,
+  "short": "GSE275386",
+  "name": "Inhaled Xenon modulates microglia and ameliorates disease in mouse models of amyloidosis and tauopathy [Tau]",
+  "taxon": "mouse",
+  "n": 29,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 50665,
+  "short": "GSE254705",
+  "name": "CXCL12 produced from Foxl1high mesenchymal cells modulates epithelial cell metabolism and prevents intestinal neoplasia (RNA-Seq)",
+  "taxon": "mouse",
+  "n": 8,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 50699,
+  "short": "GSE253654",
+  "name": "Transcriptome of E17 embryo with mutation in ADCK2 and rescue of muscle alteration by prenatal CoQ10 treatment.",
+  "taxon": "mouse",
+  "n": 24,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 57593,
+  "short": "GSE299974",
+  "name": "Serotonin through serotonylation impact on gene expresion on human purified trophoblast after 48h in culture",
+  "taxon": "human",
+  "n": 18,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 57755,
+  "short": "GSE296034",
+  "name": "Vagal neuroimmune axis modulates heart failure by limiting monocyte-derived inflammatory CCRL2 macrophage",
+  "taxon": "mouse",
+  "n": 15,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 57789,
+  "short": "GSE272331",
+  "name": "Sexually dimorphic effects of ADNP mutation and Davunotide treatment on mice hippocampal transcriptome",
+  "taxon": "mouse",
+  "n": 25,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 57808,
+  "short": "GSE296651",
+  "name": "Modulation of inflammatory responses in mouse models of pericyte-depletion retinopathy",
+  "taxon": "mouse",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 57863,
+  "short": "GSE292774",
+  "name": "Comparing the Effects of Taurine and 3-Sulfopropanoic Acid, a Metabolite of Tramiprosate, on ApoE4 Pathological Aggregation: Implications for Alzheimer's Disease",
+  "taxon": "human",
+  "n": 18,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 57909,
+  "short": "GSE201985",
+  "name": "RNA-seq study of curcumin transforming phenotype of PRV-infected BV2 cells",
+  "taxon": "mouse",
+  "n": 9,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 57923,
+  "short": "GSE295447",
+  "name": "On target: Transcriptomic analysis of 12 human iPSC-derived cell phenotypes shows precision in an extensive pharmacological investigation [set 2]",
+  "taxon": "human",
+  "n": 840,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 57924,
+  "short": "GSE295444",
+  "name": "On target: Transcriptomic analysis of 12 human iPSC-derived cell phenotypes shows precision in an extensive pharmacological investigation [set 1]",
+  "taxon": "human",
+  "n": 840,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 57960,
+  "short": "GSE295017",
+  "name": "MSCs-encapsulated porous microparticle eye drops for autoimmune dry eye disease treatment",
+  "taxon": "human",
+  "n": 9,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 57969,
+  "short": "GSE289753",
+  "name": "A Novel Combination Therapy with Uridine and Praziquantel effectively Alleviates Schistosomiasis-induced Hepatic Fibrosis through Promoting Adipogenic Differentiation",
+  "taxon": "human",
+  "n": 9,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 58065,
+  "short": "GSE262517",
+  "name": "Methotrexate affects brain development by regulating serum-glucocorticoid inducible protein kinase 3 (SGK3) signal pathway in brain organoids.",
+  "taxon": "human",
+  "n": 15,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 58077,
+  "short": "GSE285605",
+  "name": "Effect of psilocybin on visual cortex",
+  "taxon": "mouse",
+  "n": 24,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 65443,
+  "short": "GSE245201",
+  "name": "Transcriptional Reprogramming of Brain Cells Under Anesthesia in wt and Alzheimer's Disease mouse model",
+  "taxon": "mouse",
+  "n": 20,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 70670,
+  "short": "GSE62612.1",
+  "name": "Split part 1 of: Microarray analyses of the effects of prenatal metformin exposure on the gene expression profile of liver, brain and subcutaneous adipose tissue of neonatal mice [collection of material = experiment 1]",
+  "taxon": "mouse",
+  "n": 18,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 70671,
+  "short": "GSE62612.2",
+  "name": "Split part 2 of: Microarray analyses of the effects of prenatal metformin exposure on the gene expression profile of liver, brain and subcutaneous adipose tissue of neonatal mice [collection of material = experiment 2]",
+  "taxon": "mouse",
+  "n": 23,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 85374,
+  "short": "GSE309506",
+  "name": "Pharmacological rescue of motor neuron health by riluzole in patient-derived motor neurons",
+  "taxon": "human",
+  "n": 18,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 85381,
+  "short": "GSE280972",
+  "name": "Fluoxetine promotes recovery from noise-induced Hippocampus  degeneration",
+  "taxon": "rat",
+  "n": 8,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 85424,
+  "short": "GSE261726",
+  "name": "Deletion of the X chromosome gene Kdm6a in microglia is protective in the multiple sclerosis model, female and male II",
+  "taxon": "mouse",
+  "n": 18,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 85509,
+  "short": "GSE290452",
+  "name": "Lithium partially rescues gene expression and enhancer activity from heterozygous knockout of AKAP11 while inducing novel differential changes [RNA-Seq]",
+  "taxon": "human",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 85519,
+  "short": "GSE308876",
+  "name": "Dorsal Root Ganglion-Mediated Modulation of Neuroinflammation and Neurovasodilation in Rosacea by Gabapentin",
+  "taxon": "mouse",
+  "n": 24,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 85571,
+  "short": "GSE287142",
+  "name": "Retinoid X Receptor as a Mediator of Post Stroke Recovery by Reversing Age-Associated Phenotypes of Microglia/Hematogenous Macrophages",
+  "taxon": "mouse",
+  "n": 18,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 85608,
+  "short": "GSE213395",
+  "name": "\u03b1-Hemihydmus musculuse calcium sulfate/ n-hydroxyapatite combined with metformin promotes osteogenesis in vitro and in vivo",
+  "taxon": "mouse",
+  "n": 6,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 85675,
+  "short": "GSE292294",
+  "name": "Effects of methylphenidate ingestion in male mice on the brains of their grandchildren.",
+  "taxon": "mouse",
+  "n": 6,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 85734,
+  "short": "GSE302656",
+  "name": "Glucagon-like peptide-1 receptor agonism is associated with improved lung cancer outcomes and tumor growth control",
+  "taxon": "mouse",
+  "n": 10,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 91184,
+  "short": "GSE324755",
+  "name": "Effects of liraglutide on skeletal muscle transcriptome in diet-induced obese C57BL/6 mice",
+  "taxon": "mouse",
+  "n": 8,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 91529,
+  "short": "GSE293282",
+  "name": "Targeting Notch signaling to restore neural development and behavior in mouse models of ASD [RNAseq_embryo_hanno]",
+  "taxon": "mouse",
+  "n": 9,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 16121,
+  "short": "GSE34331",
+  "name": "A chemical genetic approach identifies piperazine antipsychotics as promoters of CNS neurite growth on inhibitory substrates.",
+  "taxon": "human",
+  "n": 6,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 12503,
+  "short": "GSE58933",
+  "name": "Hyper-excitability of Neurons generated from Patients with Bipolar Disorder",
+  "taxon": "human",
+  "n": 18,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 9418,
+  "short": "GSE70576",
+  "name": "EAG2 potassium channel with evolutionarily conserved function as a brain tumor target",
+  "taxon": "human",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 10879,
+  "short": "GSE93987",
+  "name": "Distinctive transcriptome alterations of prefrontal pyramidal neurons in schizophrenia and schizoaffective disorder",
+  "taxon": "human",
+  "n": 208,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 6583,
+  "short": "GSE46449",
+  "name": "Expression data from Patients with Bipolar (BP) Disorder and Matched Control Subjects",
+  "taxon": "human",
+  "n": 88,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 8487,
+  "short": "GSE40102",
+  "name": "Comparing Control and Schizophrenic hiPSC-derived NPCs",
+  "taxon": "human",
+  "n": 24,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 30226,
+  "short": "GSE162429",
+  "name": "STAT3 enhances sensitivity of glioblastoma to drug-induced autophagy-dependent lysosomal cell death",
+  "taxon": "human",
+  "n": 9,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 13153,
+  "short": "GSE93678",
+  "name": "A Novel Alzheimer's Disease Drug Candidate Targeting Inflammation and Fatty Acid Metabolism",
+  "taxon": "mouse",
+  "n": 13,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 13386,
+  "short": "GSE97198",
+  "name": "RNA expression across 6 strains of mice in relation to prepulse inhibition testing, as described in: Pdxdc1 (pyridoxal-dependent decarboxylase domain containing 1) modulates pre-pulse inhibition of acoustic startle in the mouse",
+  "taxon": "mouse",
+  "n": 54,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 6075,
+  "short": "GSE40377",
+  "name": "Microarray profiling of WT or PDE10A KO mice treated with vehicle or a PDE10 inhibitor",
+  "taxon": "mouse",
+  "n": 42,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 35592,
+  "short": "GSE261716",
+  "name": "On the way to elucidate the effects of cannabidiol (CBD) on living organisms - assessment of changes in the global transcription profile of liver in mouse model",
+  "taxon": "mouse",
+  "n": 48,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 50438,
+  "short": "GSE275998",
+  "name": "On the way to elucidate the effects of cannabidiol (CBD) on living organisms - assessment of changes in the global transcription profile of kidney in a mouse model",
+  "taxon": "mouse",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33967,
+  "short": "GSE4031.2",
+  "name": "Split part 2 of: colan-affy-rat-89421 [collection of material = Experiment 2]",
+  "taxon": "rat",
+  "n": 20,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33968,
+  "short": "GSE4031.3",
+  "name": "Split part 3 of: colan-affy-rat-89421 [collection of material = Experiment 1]",
+  "taxon": "rat",
+  "n": 22,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 8359,
+  "short": "GSE53987",
+  "name": "Microarray profiling of PFC, HPC and STR from subjects with schizophrenia, bipolar, MDD or control",
+  "taxon": "human",
+  "n": 205,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 32176,
+  "short": "GSE218551",
+  "name": "Brain region-specific changes in neurons and glia and dysregulation of dopamine signaling in Grin2a mutant mice [bulk RNA-Seq]",
+  "taxon": "mouse",
+  "n": 508,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 41053,
+  "short": "GSE218572.1",
+  "name": "Split part 1 of: Brain region-specific changes in neurons and glia and dysregulation of dopamine signaling in Grin2a mutant mice [snRNA-seq] [organism part = prefrontal cortex]",
+  "taxon": "mouse",
+  "n": 23,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 41054,
+  "short": "GSE218572.2",
+  "name": "Split part 2 of: Brain region-specific changes in neurons and glia and dysregulation of dopamine signaling in Grin2a mutant mice [snRNA-seq] [organism part = Ammon's horn]",
+  "taxon": "mouse",
+  "n": 25,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 41055,
+  "short": "GSE218572.3",
+  "name": "Split part 3 of: Brain region-specific changes in neurons and glia and dysregulation of dopamine signaling in Grin2a mutant mice [snRNA-seq] [organism part = striatum]",
+  "taxon": "mouse",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 41056,
+  "short": "GSE218572.4",
+  "name": "Split part 4 of: Brain region-specific changes in neurons and glia and dysregulation of dopamine signaling in Grin2a mutant mice [snRNA-seq] [organism part = dorsal plus ventral thalamus]",
+  "taxon": "mouse",
+  "n": 11,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 41057,
+  "short": "GSE218572.5",
+  "name": "Split part 5 of: Brain region-specific changes in neurons and glia and dysregulation of dopamine signaling in Grin2a mutant mice [snRNA-seq] [organism part = somatosensory cortex]",
+  "taxon": "mouse",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 15032,
+  "short": "GSE125805",
+  "name": "Pilot transcriptome analysis of human iPSC-derived healthy control vs. schizophrenia cortical interneurons",
+  "taxon": "human",
+  "n": 18,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 15101,
+  "short": "GSE125999",
+  "name": "Genome-wide transcriptional analysis of human iPSC-derived healthy control vs. schizophrenia cortical interneurons.",
+  "taxon": "human",
+  "n": 60,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 18824,
+  "short": "GSE82237",
+  "name": "The DPYSL2 gene connects mTOR and schizophrenia",
+  "taxon": "human",
+  "n": 12,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 24001,
+  "short": "GSE193829",
+  "name": "Next Generation Sequencing of Saline and Methamphetamine-treated Mouse Hippocampus Transcriptomes",
+  "taxon": "mouse",
+  "n": 6,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 6608,
+  "short": "GSE27383",
+  "name": "Marked Reduction of AKT1 Expression and Deregulation of AKT1-associated Pathways in Peripheral Blood Mononuclear Cells of Schizophrenia Patients",
+  "taxon": "human",
+  "n": 72,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 31661,
+  "short": "GSE243356",
+  "name": "Integrative transcriptome- and DNA methylation analysis of brain tissue from the temporal pole in suicide decedents and their controls (RNA-Seq)",
+  "taxon": "human",
+  "n": 61,
+  "q": [
+   "antipsychotic"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 20314,
+  "short": "GSE174409",
+  "name": "Transcriptional alterations in dorsolateral prefrontal cortex and nucleus accumbens implicate neuroinflammation and synaptic remodeling in opioid use disorder",
+  "taxon": "human",
+  "n": 80,
+  "q": [
+   "quetiapine"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 33465,
+  "short": "GSE117769",
+  "name": "White blood cells from rheumatoid arthritis patients and matched healthy donors",
+  "taxon": "human",
+  "n": 120,
+  "q": [
+   "quetiapine"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 15201,
+  "short": "GSE110256",
+  "name": "Transcriptomic RNAseq drug screen in cerebrocortical cultures; towards novel neurogenetic disease therapies.",
+  "taxon": "mouse",
+  "n": 227,
+  "q": [
+   "ziprasidone"
+  ],
+  "troubled": false
+ },
+ {
+  "id": 27915,
+  "short": "GSE189744",
+  "name": "Gene expression analysis of mouse brain.",
+  "taxon": "mouse",
+  "n": 36,
+  "q": [
+   "sulpiride"
+  ],
+  "troubled": false
+ }
+]

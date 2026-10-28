@@ -1,0 +1,15 @@
+# claim: 209 recurrent genes (study_brain; 376 with SZ sign) scored against Li 2007 agonal-stress gene lists; null = 10000 expression-decile-matched sets, seed 20261012
+# script: analyses/li2007_agonal_2026-10-12/score_li2007_209.py
+# source: li2007_agonal_genes.tsv sha256 35834e7ab8b93af342450a00401455b591fed8f14fd49c83f4b3c46d352250e1
+# source: recurrent_sets.tsv sha256 3c42f67cdd7acb751592af24bae4c2c1a917bc5a880b8fe74d2d14cd8ef85403; recurrence_genes.tsv sha256 dda5eb621c155963ef712788758e31b4cb169773fc7198fa4116cc89f4244195; axis_pritzker_agonal_GPL17027.tsv.gz sha256 1423d5dae86168f2de7e8b23ae671603001f18b6079a97f79fd0c94ded37e570; combined_controls_pH.tsv sha256 da2fc515de6286b23da791d241632669848d3afb258ce1ea4f39bad6efcb1484
+# Li symbol mapping to HGNC: {'approved': 1534, 'alias_or_previous': 319, 'unmapped': 31}; 1816 genes with a value
+# run: 2026-10-17
+# sign agreement of Li t with Pritzker agonal t over 1756 shared genes: 0.912
+comparison	n_genes	spearman_rho	p
+Li t vs control pH Z (pH-direction: expect negative), all Li genes	1720	-0.822	0.0
+Li t vs Pritzker agonal t (expect positive), all Li genes	1756	0.804	0.0
+Li t vs control pH Z, 209 genes	131	-0.812	6.222158325209533e-32
+Li t vs Pritzker agonal t, 209 genes	127	0.758	5.456826235492685e-25
+control pH Z vs Pritzker agonal t (expect negative), all genes	10618	-0.704	0.0
+SZ-sign-aligned: sign x Li t vs sign x (-control pH Z), 209 genes	131	0.472	1.217826172411299e-08
+SZ-sign-aligned: sign x Li t vs sign x Pritzker t, 209 genes	127	0.272	0.0019947243032328774

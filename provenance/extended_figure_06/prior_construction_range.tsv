@@ -1,0 +1,21 @@
+# claim: robustness of the postmortem-brain share of the 209 genes across constructions of the DE prior, under the calibrated per-contrast rule (hit = z of the 209 above the 97.5th percentile of the contrast's own 200 comparison sets matched on that construction's prior deciles, and AUROC above 0.5); 277 picked postmortem-brain contrasts, one per experiment
+# script: analyses/gemma_scan_null_calibration/calibrated_panels/prior_construction_calibrated.py (remote; prior_construction_universe.py, prior_construction_redraw_noise.py) then build_prior_construction_range.py
+# input sha256 (first 12): raw f2f8e264ddce; redraw_noise 9c5f7f1317e4; per_contrast_hits.npz 70f5d3c6f3a1; key_comparison.tsv 9a85b2902f8f; scan209_contrasts.tsv 805be3af40f9
+# date: 2026-10-12
+# range across the five constructions of the legend (leave-one-out, whole family left out, brain-only variants): calibrated 36.1% to 39.4%; as scored 37.2% to 47.3%
+# range across those five plus the two size-matched constructions: calibrated 36.1% to 44.2%; as scored 37.2% to 50.4%
+# headline (project static prior, original 200 sets): 100 of 277 = 36.1%; 40 re-draws of the 200 comparison sets alone give 36.5% (2.5th to 97.5th percentile 35.0% to 37.9%, k 97 to 109)
+# share = k / n; wilson95 = Wilson 95% interval with n contrasts as the unit; for the size-matched rows share = mean over 100 priors of the per-prior share, k = share x n, draw_share_p2_5/p97_5 = percentiles of the per-prior share (columns draws, draw_share_*)
+# comparison_set_rate = mean over the 200 sets of the set's own hit rate among the counted contrasts (each set against the other 199); as_scored_share = share under the as-scored rule (P < 0.05 and AUROC > 0.5) for the same construction (key_comparison.tsv; project prior from scan209_contrasts.tsv)
+# comparison sets: 200 per construction (per prior for the size-matched rows), decile profile of the 209 under that construction's full-pool prior, universe = GTEx-expressed genes of build_sets.py (12,841 with a prior row, minus the 209); leave-out constructions score the 209 and the sets with the experiment (or family) removed from the prior, sets matched on the full-pool prior
+# the whole-family rows give the same hit call as their leave-one-out rows for every contrast; the brain-only rows have the same k as the headline (100) with 26 contrasts differing (13 gained, 13 lost)
+construction	k	n	share	wilson95_lo	wilson95_hi	comparison_set_rate	as_scored_share	draws	draw_share_p2_5	draw_share_p97_5	description
+project static prior, original comparison sets	100	277	0.36101	0.30671	0.41912	0.029639	0.44404	1	0.36101	0.36101	validation: project prior deciles, the 200 sets of sets_indep.tsv (default calibrated construction)
+project static prior, re-drawn comparison sets	105	277	0.37906	0.32395	0.43748	0.029549	0.44404	1	0.37906	0.37906	project prior deciles, 200 sets re-drawn by this script
+all-experiment prior, leave-one-out	109	277	0.3935	0.33781	0.45211	0.029513	0.47292	1	0.3935	0.3935	prior from the 8,712-experiment pool; each scored experiment scored with itself left out; sets matched on the full-pool deciles
+all-experiment prior, whole family left out	109	277	0.3935	0.33781	0.45211	0.029513	0.47292	1	0.3935	0.3935	as above with the experiment and its GEO-series / bank-cue family left out
+brain-only prior (k=351), leave-one-out	100	277	0.36101	0.30671	0.41912	0.029206	0.38267	1	0.36101	0.36101	prior from the 351 brain experiments of the pool; leave-one-out
+brain-only prior, no leave-out (self included)	100	277	0.36101	0.30671	0.41912	0.02917	0.37184	1	0.36101	0.36101	brain-only prior, scored experiment included
+brain-only prior, whole family left out	100	277	0.36101	0.30671	0.41912	0.029206	0.38267	1	0.36101	0.36101	brain-only prior, family left out
+size-matched all-tissue prior (k=351), leave-one-out	120.8	277	0.43603	0.3789	0.49491	0.029487	0.49704	100	0.41516	0.45848	100 random priors of 351 experiments from the pool; sets re-drawn per prior; mean over draws
+size-matched non-brain prior (k=351), leave-one-out	122.3	277	0.44162	0.38434	0.50051	0.029487	0.50415	100	0.41877	0.45848	100 random priors of 351 non-brain experiments; sets re-drawn per prior; mean over draws

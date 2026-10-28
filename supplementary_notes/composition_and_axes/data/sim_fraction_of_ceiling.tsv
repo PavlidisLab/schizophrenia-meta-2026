@@ -1,0 +1,9 @@
+# NEW analysis, composition-only simulation of the bulk pH and agonal axes; run 2026-10-18 on the remote environment; seed 20261018 (SeedSequence [seed, config_id, rep]); 200 reps per config
+# scripts: scripts/prep.py, scripts/sim.py, scripts/summarise.py; inputs sha256(16): axis_v2_controls.tsv.gz 2c72a9b279a24408; hardy_t_by_region.tsv.gz 54f989c55753d2af; recurrent_sets.tsv 3c42f67cdd7acb75; nsw_donor_covariates_used.tsv b93562e2ec0611e8; PsychAD HBCC counts_class.npz 7f67c4f5815f121c; MSSM counts_class.npz 87eae83183616622; NSW pb_cols.tsv 5b0bbf003ad02291; donors_used.tsv 2ccef28914e973ff
+# sign: pH axis z_stouffer positive = higher expression at higher pH; simulated t = OLS t of log2CPM on pH (positive = higher at higher pH); agonal = GTEx Hardy slow-minus-fast-death t (positive = higher in slow death), mean of BA9, BA24, Cortex
+# headline = N=200, scale 1, pH axis, all genes; fraction = rho / sqrt(reliability); interval endpoints divided by the same constant (reliability uncertainty not propagated)
+profile	rna	rho_mean	rho_lo	rho_hi	frac_of_ceiling_between	frac_lo_between	frac_hi_between	frac_of_ceiling_halves	frac_lo_halves	frac_hi_halves
+HBCC	1	0.14567	-0.090585	0.28884	0.17199	-0.10695	0.34102	0.16671	-0.10367	0.33057
+HBCC	0	0.18751	-0.0081595	0.33469	0.22139	-0.0096334	0.39515	0.2146	-0.0093381	0.38303
+MSSM	1	0.1828	-0.10257	0.32938	0.21583	-0.1211	0.38888	0.20921	-0.11739	0.37696
+MSSM	0	0.19619	-0.02205	0.33708	0.23163	-0.026034	0.39798	0.22453	-0.025236	0.38578

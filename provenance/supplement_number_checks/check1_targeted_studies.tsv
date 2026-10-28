@@ -1,0 +1,13 @@
+# check1_targeted_studies.py (supplement_number_checks); lineage_overlay.json 977af3f9c6d4; regen h4_papers.tsv 37b4fa24c12b; delivered h4_papers.tsv c5b97de36980
+quantity	value
+corpus studies (nodes)	665
+corpus studies with a PMID	661
+h4_papers delivered (provenance file)	1506
+h4_papers regenerated (+47 additions)	1553
+lineage category-2 nodes (one-gene studies and panels moved out of the corpus before 2026-10-19)	63
+category-2 nodes not in h4_papers (regenerated)	27
+delivered h4_papers papers that are category-2 nodes (funnel E2 note: 35)	36
+targeted set = h4 (1,553) union category 2	1580
+the 4 panels of EL07.06 (category 1m) inside that set	4
+overlap of the targeted set with the 665 corpus (PMID match)	19
+total = targeted + 665 - overlap	2226

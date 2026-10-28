@@ -1,0 +1,13 @@
+# run 2026-10-23: schizophrenia-related experiments excluded from every group before counting (the 114 picks flagged in_sz_corpus or held_out in scan176_contrasts.tsv; for the all-contrasts rows the 116 experiments flagged in either scan176_contrasts.tsv or all_contrasts_scored_public.tsv)
+# script: g3_ra.py (= build_panels_g3.py plus the exclusion; one run per pH axis version, v2 primary and v1 in the *_axis_v1 columns); rho_picked.tsv sha256 83d2f37ab1b7; bootstrap 2,000 resamples of experiments, seed 20261010, one stream in the order of the script (n changes the stream)
+panel	group	axis	median_abs_rho	boot95_lo	boot95_hi	n_experiments	median_abs_rho_axis_v1	boot95_lo_axis_v1	boot95_hi_axis_v1
+b	Postmortem brain	pH axis	0.17286	0.14128	0.20599	244	0.16774	0.14178	0.19255
+b	Postmortem brain	GTEx axis	0.17764	0.14812	0.20199	244			
+b	Other brain	pH axis	0.10071	0.073851	0.14364	104	0.094774	0.075328	0.13027
+b	Other brain	GTEx axis	0.12809	0.094807	0.18047	104			
+b	Other tissues	pH axis	0.071228	0.068234	0.074245	3140	0.049378	0.046638	0.051574
+b	Other tissues	GTEx axis	0.064903	0.062177	0.068072	3140			
+b	Cell lines / in vitro	pH axis	0.063725	0.061203	0.065882	4332	0.045795	0.044314	0.047349
+b	Cell lines / in vitro	GTEx axis	0.062115	0.059838	0.064125	4332			
+b	Blood	pH axis	0.0837	0.076065	0.087895	767	0.04587	0.041759	0.049616
+b	Blood	GTEx axis	0.062978	0.057625	0.07004	767			

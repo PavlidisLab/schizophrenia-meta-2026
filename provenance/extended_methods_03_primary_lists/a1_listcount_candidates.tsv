@@ -1,0 +1,33 @@
+# script: A/scripts/a1_listcount_candidates.py; date 2026-10-19; seed none
+# input lineage_srep: schizophrenia-transcriptome-replication/corpus/lineage.json sha256 a96d5f4b4e18f75f
+# input lineage_repl: schizophrenia-transcriptome-replication/corpus/lineage.json sha256 d21252ed845ea5d0
+# input summary: schizophrenia-transcriptome-replication/analyses/summary.tsv sha256 d189eb75c6876681
+# input nodes80: schizophrenia-transcriptome-reproducibility-manuscript/figures/data/fig01/fig01_c_lineage_nodes_80.tsv sha256 e9c5abd2d67f51d7
+# base: all 642 nodes / 509 corpus nodes as stated per row; not a core-80 quantity
+source	population	list_status	role	stated	match
+lineage_srep	all642	extracted+gemma+reproduced	any	464	405
+lineage_srep	all642	extracted+gemma+reproduced	first_look	439	382
+lineage_srep	all642	extracted(published)	any	449	403
+lineage_srep	all642	extracted(published)	first_look	424	380
+lineage_srep	corpus509	extracted+gemma+reproduced	any	431	377
+lineage_srep	corpus509	extracted+gemma+reproduced	first_look	407	354
+lineage_srep	corpus509	extracted(published)	any	416	375
+lineage_srep	corpus509	extracted(published)	first_look	392	352
+lineage_srep	noncorpus	extracted+gemma+reproduced	any	33	28
+lineage_srep	noncorpus	extracted+gemma+reproduced	first_look	32	28
+lineage_srep	noncorpus	extracted(published)	any	33	28
+lineage_srep	noncorpus	extracted(published)	first_look	32	28
+lineage_repl	all642	extracted+gemma+reproduced	any	463	404
+lineage_repl	all642	extracted+gemma+reproduced	first_look	438	381
+lineage_repl	all642	extracted(published)	any	448	402
+lineage_repl	all642	extracted(published)	first_look	423	379
+lineage_repl	corpus509	extracted+gemma+reproduced	any	430	376
+lineage_repl	corpus509	extracted+gemma+reproduced	first_look	406	353
+lineage_repl	corpus509	extracted(published)	any	415	374
+lineage_repl	corpus509	extracted(published)	first_look	391	351
+lineage_repl	noncorpus	extracted+gemma+reproduced	any	33	28
+lineage_repl	noncorpus	extracted+gemma+reproduced	first_look	32	28
+lineage_repl	noncorpus	extracted(published)	any	33	28
+lineage_repl	noncorpus	extracted(published)	first_look	32	28
+summary.tsv	all extracted rows	extracted	any	464	405
+summary.tsv	all extracted rows	extracted	first_look	439	382

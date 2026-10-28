@@ -1,0 +1,8 @@
+# check6_ph_people.py; per_cohort_80.tsv 327e49bda715; fig07_a1_ph_difference.tsv aba5f1ed6fcc; fig07_a1_ph_per_person.tsv fcd68a2e1de6
+count	n_cases	n_controls	case minus control pH (95% interval)	source	n_total
+people with pH linked to the 80 studies (set A; Note 6 pooled)	401	408	-0.055 (-0.191 to 0.081)	per_cohort_80.tsv pooled row, A_*	809
+  of them in the 14 datasets with expression data (expr14)	150	146	-0.144 (-0.251 to -0.035)	per_cohort_80.tsv pooled row, expr14_*	296
+  of them not in those datasets (other)	251	262	0.070 (-0.112 to 0.258)	per_cohort_80.tsv pooled row, other_*	513
+samples with pH in the 14 dataset-regions (a person can be in 2 or 3 regions)	382	432		fig07_a1_ph_difference.tsv, in_14_dataset_regions = yes	814
+person rows in the per-person table of the 14 dataset-regions	382	432		fig07_a1_ph_per_person.tsv	814
+ten datasets of the pH-in-controls analysis, each person once (Fig. 3b, Extended Methods 7)	237	279		Figures_ph.md; manuscript_ph.md Methods (279 controls, 237 cases; 516 people)	516

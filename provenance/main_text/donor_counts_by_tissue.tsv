@@ -1,0 +1,67 @@
+# script: analyses/gtex_death_speed_all_tissues/gtex_death_speed_all_tissues.py
+# date: 2026-10-11
+# source gtex_tpm: GTEx_Analysis_2017-06-05_v8_RNASeQCv1.1.9_gene_tpm.gct.gz sha256 ec783825ebebb8ba8525b73cb7ff9577162bc0d2e8a7fdc408283b7639c306fb
+# source gtex_sample_attributes: GTEx_Analysis_v8_Annotations_SampleAttributesDS.txt sha256 74f6ab4c34ed2648d708a0ae6e6dff324f6c86ea723ae7d1c37d76f5221148f0
+# source gtex_subject_phenotypes: GTEx_Analysis_v8_Annotations_SubjectPhenotypesDS.txt sha256 821bdaff39e7a9a1d166919b3c786724c2b79c2861aeb936a2537a0f59b066f7
+# source GSE153669_RAW.tar: GSE153669_RAW.tar sha256 cf6f11a4099f6dff0b781475aaa88b3ea38d1e15fd09de08a6be618a2a810c0a
+# source pH: analyses/ph_and_confound_analyses/results/combined_controls_pH.tsv sha256 74fdf88878baf5b630c9ee7d5359a58f0bbbb765607ef1bc08f3bcc5071c7cb4
+# source rec: analyses/recurrence_genes.tsv sha256 4f263bf471b8de2efe41022c12e9f328bf93c0503412af6d129ba8a3444f4d60
+# source act: analyses/ph_sensitivity_gene_features_2026-10-09/results_laptop/activity_pH_mean.tsv sha256 7a3be2e0d3a90972b06646c9bf0c83194010ca8d9c0b6a806af704f7f0a7959b
+# source hardy: analyses/gtex_ischemic_time/hardy_t_by_region.tsv.gz sha256 54f989c55753d2af4fa9f6b9b1e1fbfdce53b476d623c93d9f407d4fd57a18e4
+# parameters: min per group 10; permutations 10000; seed 20261010; covariates ischemic time (h), age band midpoint, sex; gene filter median TPM >= 1 within tissue
+# samples (one per donor per tissue; RNA-seq samples with an ischemic time) per Hardy category; DTHHRDY from SubjectPhenotypesDS
+tissue	SMTS	n_samples	n_hardy_0	n_hardy_1	n_hardy_2	n_hardy_3	n_hardy_4	n_hardy_missing	run_4v2	skip_reason_4v2	run_0v2	skip_reason_0v2
+Adipose - Subcutaneous	Adipose Tissue	663	352	21	176	32	70	12	True		True	
+Adipose - Visceral (Omentum)	Adipose Tissue	541	314	16	136	25	50	0	True		True	
+Adrenal Gland	Adrenal Gland	258	195	9	43	4	7	0	False	fewer than 10 samples in Hardy 4	True	
+Artery - Aorta	Blood Vessel	432	267	19	87	20	38	1	True		True	
+Artery - Coronary	Blood Vessel	240	157	10	44	9	20	0	True		True	
+Artery - Tibial	Blood Vessel	663	369	28	160	32	62	12	True		True	
+Bladder	Bladder	21	14	1	3	1	2	0	False	fewer than 10 samples in Hardy 4	False	fewer than 10 samples in Hardy 2
+Brain - Amygdala	Brain	152	6	11	79	14	42	0	True		False	fewer than 10 samples in Hardy 0
+Brain - Anterior cingulate cortex (BA24)	Brain	176	6	13	95	15	47	0	True		False	fewer than 10 samples in Hardy 0
+Brain - Caudate (basal ganglia)	Brain	246	10	14	139	18	65	0	True		True	
+Brain - Cerebellar Hemisphere	Brain	215	10	17	126	14	48	0	True		True	
+Brain - Cerebellum	Brain	241	11	19	140	16	55	0	True		True	
+Brain - Cortex	Brain	255	16	18	139	20	62	0	True		True	
+Brain - Frontal Cortex (BA9)	Brain	209	11	9	115	18	56	0	True		True	
+Brain - Hippocampus	Brain	197	9	13	111	16	48	0	True		False	fewer than 10 samples in Hardy 0
+Brain - Hypothalamus	Brain	202	7	14	107	15	59	0	True		False	fewer than 10 samples in Hardy 0
+Brain - Nucleus accumbens (basal ganglia)	Brain	246	12	14	135	20	65	0	True		True	
+Brain - Putamen (basal ganglia)	Brain	205	8	12	124	13	48	0	True		False	fewer than 10 samples in Hardy 0
+Brain - Spinal cord (cervical c-1)	Brain	159	7	11	89	10	42	0	True		False	fewer than 10 samples in Hardy 0
+Brain - Substantia nigra	Brain	139	4	6	76	10	43	0	True		False	fewer than 10 samples in Hardy 0
+Breast - Mammary Tissue	Breast	459	261	21	104	26	47	0	True		True	
+Cells - Cultured fibroblasts	Skin	487	267	24	114	24	45	13	True		True	
+Cells - EBV-transformed lymphocytes	Blood	174	122	3	26	6	8	9	False	fewer than 10 samples in Hardy 4	True	
+Cervix - Ectocervix	Cervix Uteri	9	6	0	1	0	1	1	False	fewer than 10 samples in Hardy 4	False	fewer than 10 samples in Hardy 0
+Cervix - Endocervix	Cervix Uteri	10	8	0	0	0	0	2	False	fewer than 10 samples in Hardy 4	False	fewer than 10 samples in Hardy 0
+Colon - Sigmoid	Colon	373	236	9	73	16	39	0	True		True	
+Colon - Transverse	Colon	406	316	4	47	14	24	1	True		True	
+Esophagus - Gastroesophageal Junction	Esophagus	375	253	12	77	9	24	0	True		True	
+Esophagus - Mucosa	Esophagus	555	366	18	98	22	49	2	True		True	
+Esophagus - Muscularis	Esophagus	515	364	15	83	16	36	1	True		True	
+Fallopian Tube	Fallopian Tube	9	8	0	0	0	0	1	False	fewer than 10 samples in Hardy 4	False	fewer than 10 samples in Hardy 0
+Heart - Atrial Appendage	Heart	429	203	17	131	26	52	0	True		True	
+Heart - Left Ventricle	Heart	432	246	20	103	24	38	1	True		True	
+Kidney - Cortex	Kidney	85	24	3	36	6	16	0	True		True	
+Kidney - Medulla	Kidney	4	1	1	2	0	0	0	False	fewer than 10 samples in Hardy 4	False	fewer than 10 samples in Hardy 0
+Liver	Liver	226	86	13	93	15	18	1	True		True	
+Lung	Lung	578	299	26	156	31	64	2	True		True	
+Minor Salivary Gland	Salivary Gland	162	106	5	33	8	10	0	True		True	
+Muscle - Skeletal	Muscle	803	424	31	203	46	87	12	True		True	
+Nerve - Tibial	Nerve	619	327	28	157	32	66	9	True		True	
+Ovary	Ovary	180	119	7	27	7	18	2	True		True	
+Pancreas	Pancreas	328	275	3	28	7	15	0	True		True	
+Pituitary	Pituitary	283	13	21	159	27	63	0	True		True	
+Prostate	Prostate	245	149	13	54	13	16	0	True		True	
+Skin - Not Sun Exposed (Suprapubic)	Skin	604	314	22	161	32	75	0	True		True	
+Skin - Sun Exposed (Lower leg)	Skin	701	352	28	192	39	81	9	True		True	
+Small Intestine - Terminal Ileum	Small Intestine	187	174	2	7	1	3	0	False	fewer than 10 samples in Hardy 4	False	fewer than 10 samples in Hardy 2
+Spleen	Spleen	241	218	2	8	3	9	1	False	fewer than 10 samples in Hardy 4	False	fewer than 10 samples in Hardy 2
+Stomach	Stomach	359	301	3	35	5	14	1	True		True	
+Testis	Testis	361	201	19	110	15	16	0	True		True	
+Thyroid	Thyroid	653	358	24	172	32	65	2	True		True	
+Uterus	Uterus	142	101	7	17	5	11	1	True		True	
+Vagina	Vagina	156	109	6	19	1	19	2	True		True	
+Whole Blood	Blood	746	407	29	187	35	75	13	True		True	

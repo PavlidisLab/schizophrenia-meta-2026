@@ -1,0 +1,17 @@
+# copied 2026-10-21 as the source table of a hidden comment in supplement.md line 201 (cause and manner of death); original location: <analysis repo> (analyses/clinical_reruns_209_2026-10-11 (383-gene run, manner_of_death_R419/s383/c16_manner_meta.tsv))
+# script: analyses/clinical_reruns_209_2026-10-11/c16_manner_ph_score.R
+# run: 2026-10-11
+# input: analyses/confounds/ph_adjustment_2026-10-01/results/extra_covariates.tsv sha256 761e34bc5f03
+# input: analyses/confounds/recurrent_sets.tsv sha256 3c42f67cdd7a
+# input: analyses/libd_brainseq/analysis/data/libd_DLPFC.rds sha256 2009d558fe22
+# input: analyses/libd_brainseq/analysis/data/libd_HIPPO.rds sha256 edfc4c65ef42
+# input: analyses/fairness_sample_level/scripts/common.R sha256 c53281c85061
+# input: analyses/controls_age_sex/data/datasets.tsv sha256 d833a7161a7e
+# score: mean over 209 study_brain genes (mixed dropped) of SZ-direction sign x within-unit gene z; expression log2 (LIBD TMM logCPM)
+# DerSimonian-Laird pooled exposure effect (control-SD units) over independent units GSE92538_GPL570, GSE208338, GSE202537_caudate, LIBD_DLPFC (one per donor cluster); these are not the same donors as one another by cluster assignment
+exposure	group	units	k	re	lo	hi	p	I2
+suicide	SZ only	GSE92538_GPL570,GSE208338,GSE202537_caudate,LIBD_DLPFC	4	-0.4108	-0.8613	0.03966	0.07386	13.46
+suicide	all, dx in model	GSE92538_GPL570,GSE208338,GSE202537_caudate,LIBD_DLPFC	4	-0.4597	-0.788	-0.1314	0.006064	0
+nonnatural	SZ only	GSE208338,GSE202537_caudate,LIBD_DLPFC	3	-0.01546	-0.3789	0.3479	0.9336	0
+nonnatural	controls only	GSE208338,GSE202537_caudate,LIBD_DLPFC	3	0.1501	-0.1605	0.4607	0.3437	0
+nonnatural	all, dx in model	GSE208338,GSE202537_caudate,LIBD_DLPFC	3	0.06862	-0.1601	0.2974	0.5566	0

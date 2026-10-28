@@ -1,0 +1,4 @@
+# computed 2026-10-21 for a hidden comment in supplement.md (Note 5): share of donors with a slow death (respiratory infection, cancer, other chronic illness) among donors with a brain pH and a cause-of-death class, three collections (Arion 2017, Gilabert-Juan 2015, Ishiguro 2010); from the published supplement donor tables of those papers (analyses/pooled_ph_and_cause_of_death/donors.tsv in the analysis repo, not copied: donor-level)
+diagnosis_class	n_slow	n_donors	share_slow
+SZ	29	60	0.483
+control	17	42	0.405

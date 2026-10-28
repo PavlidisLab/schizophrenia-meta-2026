@@ -1,0 +1,180 @@
+# script: scripts/ieg_across_contrasts.py (NEW analysis), run 2026-10-18; seeds: numpy default_rng([20261018, contrast index, set index, variant]); 10000 matched draws per combination; no model calls
+# gene sets: S7 = DUSP1,EGR1,FOS,GADD45G,MAFF,NR4A1,PPP1R15A (rPRG x 383 of core-80 base); Tyssowski 2018 Table S6 mapped by symbol; mapping (mouse symbols, mapped, distinct human): {"rPRG": [19, 19, 19], "dPRG": [116, 113, 113], "SRG": [38, 35, 35]}
+# sign convention: positive effect = higher in the later / dead / slow-death / postmortem / warmer / case condition; Dachet effect = log2FC; null 95% range = 2.5 to 97.5 percentile of the null set means
+# inputs sha256 (first 12): yaqubi_contrast_effects a1eda8a59dd6; yaqubi_contrast_definitions 4884b4997c06; dachet_GSE153669_RAW.tar cf6f11a4099f; liharska_ST1 d8a4171a6329; collado_torres_TableS4 5024842c8776; gtex_hardy_t_by_region 54f989c55753; gtex_slow_vs_fast_t_by_tissue a41c086d6312; gtex_donor_counts 6649462e1a9f; pritzker_agonal_axis 1423d5dae861; b_independent_set d5ab1b021aff; b_de/GSE208338 b6c411771878; b_de/GSE35977 8ac832840da9; b_de/GSE35974 982b4c022e8b; b_de/GSE202537_caudate 716e84d64b5c; b_de/GSE202537_putamen c1c8fc87a14a; b_de/GSE202537_NAc f6ba6e8d48a8; b_de/GSE21138 c16906ca6c41; b_de/GSE17612 8e0d0982fad2; b_de/GSE80655_AnCg 535840d0a806; b_de/GSE80655_DLPFC 5612feb5f6d5; b_de/GSE80655_nAcc c06eb4f87dbf; b_de/GSE92538_GPL570 266699ec6564; b_de/GSE21935 b85add032607; b_de/GSE53987_striatum 4b24c595617c; b_de/GSE53987_BA46 18b414676873; b_de/GSE53987_hippocampus f468299733b7; b_de/GSE224683 b7dd554241bb; b_de/GSE92538_GPL96 4ffae85695d3; b_de/GSE138082_CA1 a7c9e5f71715; b_de/GSE138082_DG 92746fc651d3; b_de/GSE138082_CA3 717401342be7; b_de/GSE26927_temporal 3d7ff59e1393; sc_cross_long 4b428a2a9d7d; rec dda5eb621c15; sets 3c42f67cdd7a; prior 68272e907b72; ph 74fdf88878ba; tyssowski 88ea6e7eb824; hgnc 69bb5722d5a4; halflife 4b3b3a8733f5; n15 12db3cf7165d
+# half-life: Agarwal and Kelley 2022 human PC1 (lower = shorter-lived); percentile = percent of the 13920 genome-wide genes with a lower PC1 (N15 convention)
+set	gene	class_membership	in_383	halflife_PC1	halflife_pct_genomewide
+rPRG (Tyssowski, all mapped)	AMIGO3	rPRG	False	-2.0067	33.132
+rPRG (Tyssowski, all mapped)	ARC	rPRG	False	-10.701	1.4368
+rPRG (Tyssowski, all mapped)	BTG2	rPRG	False	-11.234	0.97701
+rPRG (Tyssowski, all mapped)	DUSP1	rPRG	True	-16.282	0.021552
+rPRG (Tyssowski, all mapped)	DUSP5	rPRG	False	-11.782	0.68966
+rPRG (Tyssowski, all mapped)	EGR1	rPRG	True	-9.6912	2.4856
+rPRG (Tyssowski, all mapped)	EGR2	rPRG	False	-12.669	0.4023
+rPRG (Tyssowski, all mapped)	EGR3	rPRG	False	-10.757	1.3793
+rPRG (Tyssowski, all mapped)	EGR4	rPRG	False	0.23602	51.458
+rPRG (Tyssowski, all mapped)	FOS	rPRG	True	-13.053	0.28017
+rPRG (Tyssowski, all mapped)	FOSB	rPRG	False	-1.2242	39.239
+rPRG (Tyssowski, all mapped)	GADD45G	rPRG	True	-13.694	0.19397
+rPRG (Tyssowski, all mapped)	IER2	rPRG	False	-10.646	1.4871
+rPRG (Tyssowski, all mapped)	JUNB	rPRG	False	-12.547	0.43103
+rPRG (Tyssowski, all mapped)	KLF4	rPRG	False	-9.6606	2.5359
+rPRG (Tyssowski, all mapped)	MAFF	rPRG	True	-4.8005	15.704
+rPRG (Tyssowski, all mapped)	NPAS4	rPRG	False		
+rPRG (Tyssowski, all mapped)	NR4A1	rPRG	True	-5.7481	11.681
+rPRG (Tyssowski, all mapped)	PPP1R15A	rPRG	True	-7.8447	5.704
+dPRG (Tyssowski)	ACSL4	dPRG	False	2.8636	72.586
+dPRG (Tyssowski)	ADCYAP1	dPRG	False		
+dPRG (Tyssowski)	ADM	dPRG	True	-14.299	0.12213
+dPRG (Tyssowski)	ALPK1	dPRG	False	-1.5393	36.537
+dPRG (Tyssowski)	AREG	dPRG	False		
+dPRG (Tyssowski)	ATF3	dPRG	False	-6.9945	7.7083
+dPRG (Tyssowski)	ATP10D	dPRG	False	1.8229	65.158
+dPRG (Tyssowski)	BAZ1A	dPRG	False	-3.5049	22.73
+dPRG (Tyssowski)	BDNF	dPRG	True	-10.752	1.4009
+dPRG (Tyssowski)	BRINP1	dPRG	False		
+dPRG (Tyssowski)	C2CD4B	dPRG	False		
+dPRG (Tyssowski)	CARTPT	dPRG	True		
+dPRG (Tyssowski)	CCDC184	dPRG	False		
+dPRG (Tyssowski)	CDKN1A	dPRG	True	-4.8756	15.453
+dPRG (Tyssowski)	CFAP43	dPRG	False		
+dPRG (Tyssowski)	CHML	dPRG	False	-0.10698	48.448
+dPRG (Tyssowski)	CHRM2	dPRG	False		
+dPRG (Tyssowski)	CHST8	dPRG	False	-2.6891	28.24
+dPRG (Tyssowski)	COL10A1	dPRG	False		
+dPRG (Tyssowski)	COQ10B	dPRG	False	-5.5987	12.32
+dPRG (Tyssowski)	CORT	dPRG	False		
+dPRG (Tyssowski)	CREM	dPRG	False	1.2554	60.295
+dPRG (Tyssowski)	CRHBP	dPRG	True		
+dPRG (Tyssowski)	CSRNP1	dPRG	False	-13.874	0.17241
+dPRG (Tyssowski)	CYSTM1	dPRG	False	7.8514	94.82
+dPRG (Tyssowski)	DMXL1	dPRG	False	-0.70147	43.534
+dPRG (Tyssowski)	DUSP14	dPRG	False	-5.7767	11.552
+dPRG (Tyssowski)	DUSP4	dPRG	False	-7.7125	5.9842
+dPRG (Tyssowski)	ELL2	dPRG	False	-2.5163	29.411
+dPRG (Tyssowski)	EPRS1	dPRG	False	5.6513	87.974
+dPRG (Tyssowski)	ERRFI1	dPRG	False	-8.395	4.454
+dPRG (Tyssowski)	FBXO33	dPRG	False	-6.3543	9.5977
+dPRG (Tyssowski)	FNDC9	dPRG	False		
+dPRG (Tyssowski)	FOSL2	dPRG	False	-7.4452	6.6236
+dPRG (Tyssowski)	GCH1	dPRG	False	-1.1621	39.727
+dPRG (Tyssowski)	GEM	dPRG	False	-8.5534	4.1739
+dPRG (Tyssowski)	GMEB2	dPRG	False	-6.3284	9.6983
+dPRG (Tyssowski)	GPR22	dPRG	False		
+dPRG (Tyssowski)	GPR26	dPRG	False		
+dPRG (Tyssowski)	GPRC5A	dPRG	False	-3.8979	20.388
+dPRG (Tyssowski)	HCRTR2	dPRG	False		
+dPRG (Tyssowski)	HERPUD1	dPRG	False	-6.9163	7.967
+dPRG (Tyssowski)	HSD17B12	dPRG	False	6.0153	89.411
+dPRG (Tyssowski)	HYCC2	dPRG	False		
+dPRG (Tyssowski)	KCNF1	dPRG	True		
+dPRG (Tyssowski)	KCNJ3	dPRG	False		
+dPRG (Tyssowski)	KCNS2	dPRG	False		
+dPRG (Tyssowski)	KITLG	dPRG	False	-3.2569	24.274
+dPRG (Tyssowski)	KLF14	dPRG	False	-4.3536	17.902
+dPRG (Tyssowski)	LIPG	dPRG	False	-3.5949	22.098
+dPRG (Tyssowski)	MAML3	dPRG	False	-9.7056	2.4713
+dPRG (Tyssowski)	MBNL2	dPRG	False	-3.4779	22.888
+dPRG (Tyssowski)	MCTP2	dPRG	False	-1.4578	37.249
+dPRG (Tyssowski)	MLF1	dPRG	False	3.4157	76.236
+dPRG (Tyssowski)	MPP7	dPRG	False	1.0156	58.19
+dPRG (Tyssowski)	MSANTD1	dPRG	False		
+dPRG (Tyssowski)	MTHFD2	dPRG	False	1.6895	64.095
+dPRG (Tyssowski)	NAP1L5	dPRG	True	-0.74649	43.125
+dPRG (Tyssowski)	NEFL	dPRG	True	0.14986	50.797
+dPRG (Tyssowski)	NOP53	dPRG	False	4.0485	80.072
+dPRG (Tyssowski)	NPBWR1	dPRG	False		
+dPRG (Tyssowski)	NPPC	dPRG	False		
+dPRG (Tyssowski)	NR4A2	dPRG	True	-7.889	5.6178
+dPRG (Tyssowski)	NR4A3	dPRG	True	-8.2053	4.9066
+dPRG (Tyssowski)	NRN1	dPRG	True	0.70959	55.869
+dPRG (Tyssowski)	OSGIN2	dPRG	False	-5.604	12.284
+dPRG (Tyssowski)	PAM	dPRG	False	5.5173	87.471
+dPRG (Tyssowski)	PARD6A	dPRG	False	1.3416	61.085
+dPRG (Tyssowski)	PAX1	dPRG	False		
+dPRG (Tyssowski)	PCDH20	dPRG	False		
+dPRG (Tyssowski)	PCDH8	dPRG	False		
+dPRG (Tyssowski)	PCSK1	dPRG	True		
+dPRG (Tyssowski)	PEG10	dPRG	False	6.062	89.583
+dPRG (Tyssowski)	PER1	dPRG	False	-4.1285	19.023
+dPRG (Tyssowski)	PER2	dPRG	False	-6.9873	7.7371
+dPRG (Tyssowski)	PGAP1	dPRG	False	-0.28532	46.889
+dPRG (Tyssowski)	PLAGL1	dPRG	False	1.28	60.539
+dPRG (Tyssowski)	POPDC1	dPRG	False		
+dPRG (Tyssowski)	POPDC3	dPRG	False	0.086799	50.151
+dPRG (Tyssowski)	POU3F1	dPRG	False		
+dPRG (Tyssowski)	PROK2	dPRG	False	-3.3182	23.944
+dPRG (Tyssowski)	PTGER4	dPRG	False	-10.503	1.6451
+dPRG (Tyssowski)	PTGS2	dPRG	False	-6.6034	8.8003
+dPRG (Tyssowski)	RASGRP1	dPRG	False	-2.939	26.408
+dPRG (Tyssowski)	REL	dPRG	False	-7.9665	5.4095
+dPRG (Tyssowski)	REM2	dPRG	False		
+dPRG (Tyssowski)	RGS2	dPRG	False	-10.449	1.717
+dPRG (Tyssowski)	RGS4	dPRG	True	-9.0233	3.4195
+dPRG (Tyssowski)	RHEB	dPRG	False	2.4399	69.864
+dPRG (Tyssowski)	RNF128	dPRG	False	1.0104	58.154
+dPRG (Tyssowski)	SCG2	dPRG	True		
+dPRG (Tyssowski)	SERTAD1	dPRG	False	-9.4807	2.7227
+dPRG (Tyssowski)	SIK1	dPRG	False	-12.609	0.41667
+dPRG (Tyssowski)	SLC2A3	dPRG	False	-4.2947	18.175
+dPRG (Tyssowski)	SLC40A1	dPRG	False	-5.0462	14.749
+dPRG (Tyssowski)	SLC6A17	dPRG	False	-2.3695	30.388
+dPRG (Tyssowski)	SLC7A1	dPRG	False	-1.1792	39.562
+dPRG (Tyssowski)	SPTY2D1	dPRG	False	-5.6152	12.249
+dPRG (Tyssowski)	SSTR2	dPRG	False	-3.9645	20.022
+dPRG (Tyssowski)	STARD4	dPRG	False	-0.61348	44.253
+dPRG (Tyssowski)	STK40	dPRG	False	-0.18365	47.78
+dPRG (Tyssowski)	SULT2B1	dPRG	False	2.139	67.457
+dPRG (Tyssowski)	SV2C	dPRG	True		
+dPRG (Tyssowski)	TAC1	dPRG	False		
+dPRG (Tyssowski)	TACR3	dPRG	False		
+dPRG (Tyssowski)	TAMALIN	dPRG	False		
+dPRG (Tyssowski)	TBC1D8B	dPRG	False	3.0245	73.7
+dPRG (Tyssowski)	TEC	dPRG	False	-8.357	4.5546
+dPRG (Tyssowski)	TENT5A	dPRG	False	-10.738	1.408
+dPRG (Tyssowski)	TIPARP	dPRG	False	-14.11	0.13649
+dPRG (Tyssowski)	TNN	dPRG	False		
+dPRG (Tyssowski)	WDR90	dPRG	False	2.7027	71.566
+dPRG (Tyssowski)	ZDBF2	dPRG	False	-3.9723	19.928
+SRG (Tyssowski)	ACAN	SRG	False		
+SRG (Tyssowski)	BMP3	SRG	False	-4.883	15.409
+SRG (Tyssowski)	CD109	SRG	False	5.3038	86.386
+SRG (Tyssowski)	CHAC1	SRG	False	-10.963	1.2141
+SRG (Tyssowski)	DENND2C	SRG	False	-3.5416	22.5
+SRG (Tyssowski)	FEZF2	SRG	False	-8.1398	5.0144
+SRG (Tyssowski)	GPER1	SRG	False		
+SRG (Tyssowski)	GPR3	SRG	False	-4.6608	16.307
+SRG (Tyssowski)	GPR63	SRG	False	-5.199	14.152
+SRG (Tyssowski)	HDAC9	SRG	False	-3.2589	24.26
+SRG (Tyssowski)	HSPB3	SRG	False		
+SRG (Tyssowski)	HUNK	SRG	False	-7.2932	6.9612
+SRG (Tyssowski)	KCNA1	SRG	True		
+SRG (Tyssowski)	KCNA4	SRG	False	3.3232	75.668
+SRG (Tyssowski)	KCNH8	SRG	False		
+SRG (Tyssowski)	KCNJ4	SRG	False	2.9369	73.082
+SRG (Tyssowski)	KLHL4	SRG	False	2.3455	69.03
+SRG (Tyssowski)	MEOX1	SRG	False		
+SRG (Tyssowski)	MFAP3L	SRG	False	-5.3933	13.29
+SRG (Tyssowski)	NPTX2	SRG	True	0.27349	51.81
+SRG (Tyssowski)	OMG	SRG	False		
+SRG (Tyssowski)	PALMD	SRG	False	-5.2481	13.951
+SRG (Tyssowski)	PNOC	SRG	False	3.5578	77.155
+SRG (Tyssowski)	PTHLH	SRG	False	-6.1079	10.402
+SRG (Tyssowski)	SEMA3E	SRG	False	-0.42433	45.69
+SRG (Tyssowski)	SERPINB2	SRG	False		
+SRG (Tyssowski)	SLITRK4	SRG	False	-2.0328	32.917
+SRG (Tyssowski)	SOSTDC1	SRG	False	-5.7924	11.458
+SRG (Tyssowski)	SOWAHB	SRG	False		
+SRG (Tyssowski)	SPRED3	SRG	False	-6.327	9.7198
+SRG (Tyssowski)	STAC	SRG	False	4.6476	83.276
+SRG (Tyssowski)	STC1	SRG	False	-0.92473	41.588
+SRG (Tyssowski)	STC2	SRG	False	-3.8422	20.761
+SRG (Tyssowski)	TLL1	SRG	False	-0.75044	43.089
+SRG (Tyssowski)	TRIP10	SRG	False	-1.0809	40.388
+S7 (rPRG in the 383)	DUSP1	rPRG	True	-16.282	0.021552
+S7 (rPRG in the 383)	EGR1	rPRG	True	-9.6912	2.4856
+S7 (rPRG in the 383)	FOS	rPRG	True	-13.053	0.28017
+S7 (rPRG in the 383)	GADD45G	rPRG	True	-13.694	0.19397
+S7 (rPRG in the 383)	MAFF	rPRG	True	-4.8005	15.704
+S7 (rPRG in the 383)	NR4A1	rPRG	True	-5.7481	11.681
+S7 (rPRG in the 383)	PPP1R15A	rPRG	True	-7.8447	5.704

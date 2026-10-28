@@ -1,0 +1,11 @@
+# figure: fig09 panel d  (81 base: studies of the 81 base, with full tables from published, our reproduction, Gemma, and the donor-level derived-tier fits of Arion 2017 and Abdolmaleky 2019)
+# script: sample_level_81_2026-10-15/code/assemble_d.py (panel logic of analyses/figure_exports/export_fig08_fig09_fig10.py fig9_d); run 2026-10-15
+# input: effect_sizes_d81x/effects_by_study.tsv sha256 440de656f98d
+# input: effect_sizes_d81x/data/by_group.tsv sha256 816498d192d6
+# input: effect_sizes_d81x/summary_by_type.tsv sha256 b352262919b7
+# study set: studies of the 81 base only (old_to_new.tsv, 81 PMIDs); headline = one per donor cluster among them; Arion 2017 (GSE87610, 17 SZ / 19 control donors, layers 3 and 5) and Abdolmaleky 2019 (GSE120340, 10 / 10) added from derived_lists_2026-10-14/work/stage2
+# medians and bootstrap 95% CI by type over headline studies, one per donor set (build_figures.py, seed 20260924, 10000 resamples)
+type	n_studies_C	median_C_sd	C_sd_ci_lo	C_sd_ci_hi	median_C_sd_top_group	median_C_mean_abs_pm	median_C_frac_lfsr05	n_studies_A	median_A_abs	n_studies_B	median_B_median	median_B_p90	median_N_C
+bulk brain microarray	13	0.03559	0.01832	0.05823		0.01663	0.001005	21	0.4327	13	0.0656	0.2044	42.0
+bulk brain RNA-seq	10	0.05079	0.02765	0.06718		0.01138	0.001337	28	0.3805	11	0.0937	0.4036	58.0
+single-nucleus brain	3	0.02132	0.01304	0.07049	0.1696	0.004488	0.0	3	0.529	3	0.05604	0.1616	87.0

@@ -1,0 +1,20 @@
+# aggregate.py (module_retest); per_dataset_module.tsv sha256 521f0e0fc9ef; modules_index.tsv 30ce9eb66e48; dataset_lineage.tsv 851bc7f16234
+# est/lo/hi/p: one bulk dataset per cohort cluster independent of the module's discovery lineage, DL random effects with HKSJ interval; *_allbulk: all independent bulk datasets, fixed effect inside cluster; effect = SZ minus control in SD of the direction-signed module score
+# across modules: unit = paper (Gandal 2018, Kang and Oldham 2026 one unit each); mean_effect_over_units = mean of the units' mean module effects, t interval on units - 1 df; share_* = fraction of modules with a pooled effect in the paper's direction, paper-cluster bootstrap interval
+model	lineage_named_only	min_clusters	n_modules	n_units	mean_effect_over_units	lo	hi	p_units_t	module_share_matching	share_lo	share_hi	units_majority_matching	units_with_majority	sign_test_p_units	modules_interval_excludes_0_matching	modules_interval_excludes_0_opposite
+m0	yes	1	154	17	0.0789	0.0068	0.151	0.0338	0.6169	0.5468	0.764	11	15	0.1185	8	1
+m0	yes	2	154	17	0.0789	0.0068	0.151	0.0338	0.6169	0.5442	0.7619	11	15	0.1185	8	1
+m0	all	1	196	21	0.0784	0.0133	0.1436	0.0207	0.6429	0.5648	0.758	14	19	0.0636	11	1
+m0	all	2	196	21	0.0784	0.0133	0.1436	0.0207	0.6429	0.5639	0.758	14	19	0.0636	11	1
+m1	yes	1	154	17	0.0851	0.0093	0.1609	0.03	0.6364	0.5621	0.7671	11	15	0.1185	13	1
+m1	yes	2	154	17	0.0851	0.0093	0.1609	0.03	0.6364	0.5631	0.7683	11	15	0.1185	13	1
+m1	all	1	196	21	0.0867	0.0195	0.1539	0.014	0.6633	0.5888	0.7713	14	19	0.0636	15	1
+m1	all	2	196	21	0.0867	0.0195	0.1539	0.014	0.6633	0.589	0.7703	14	19	0.0636	15	1
+m2	yes	1	154	17	0.0519	-0.0175	0.1212	0.1324	0.4545	0.3283	0.7109	9	13	0.2668	4	1
+m2	yes	2	154	17	0.0519	-0.0175	0.1212	0.1324	0.4545	0.3281	0.71	9	13	0.2668	4	1
+m2	all	1	196	21	0.0632	-0.0036	0.1301	0.0623	0.5102	0.3534	0.7197	11	17	0.3323	6	2
+m2	all	2	196	21	0.0632	-0.0036	0.1301	0.0623	0.5102	0.3562	0.72	11	17	0.3323	6	2
+m3	yes	1	154	17	0.0246	-0.0126	0.0617	0.18	0.5325	0.3861	0.6933	10	14	0.1796	9	10
+m3	yes	2	154	17	0.0246	-0.0126	0.0617	0.18	0.5325	0.383	0.6947	10	14	0.1796	9	10
+m3	all	1	196	21	0.025	-0.0092	0.0591	0.1426	0.5255	0.4109	0.6349	12	18	0.2379	14	12
+m3	all	2	196	21	0.025	-0.0092	0.0591	0.1426	0.5255	0.4068	0.6322	12	18	0.2379	14	12

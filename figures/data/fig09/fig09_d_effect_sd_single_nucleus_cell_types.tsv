@@ -1,0 +1,91 @@
+# figure: fig09 panel d  (81 base: studies of the 81 base, with full tables from published, our reproduction, Gemma, and the donor-level derived-tier fits of Arion 2017 and Abdolmaleky 2019)
+# script: sample_level_81_2026-10-15/code/assemble_d.py (panel logic of analyses/figure_exports/export_fig08_fig09_fig10.py fig9_d); run 2026-10-15
+# input: effect_sizes_d81x/effects_by_study.tsv sha256 440de656f98d
+# input: effect_sizes_d81x/data/by_group.tsv sha256 816498d192d6
+# input: effect_sizes_d81x/summary_by_type.tsv sha256 b352262919b7
+# study set: studies of the 81 base only (old_to_new.tsv, 81 PMIDs); headline = one per donor cluster among them; Arion 2017 (GSE87610, 17 SZ / 19 control donors, layers 3 and 5) and Abdolmaleky 2019 (GSE120340, 10 / 10) added from derived_lists_2026-10-14/work/stage2
+# per cell type SD of true effects (ashr sd_g) for the headline single-nucleus brain studies
+study	label	type	N	cell_type	n_genes_C	sd_g	pi0	mean_abs_pm	frac_lfsr05	lik
+36223459__published	Batiuk 2022	single-nucleus brain	23.0	ID2_LAMP5_CRH	12350	0.085402	0.341803	0.022235	0.000972	normal
+36223459__published	Batiuk 2022	single-nucleus brain	23.0	ID2_LAMP5_NMBR	11686	0.0	1.0	0.0	0.0	normal
+36223459__published	Batiuk 2022	single-nucleus brain	23.0	ID2_LAMP5_NOS1	13071	0.066602	0.65343	0.01247	7.7e-05	normal
+36223459__published	Batiuk 2022	single-nucleus brain	23.0	ID2_NCKAP5	11130	0.041339	0.917342	0.004834	0.0	normal
+36223459__published	Batiuk 2022	single-nucleus brain	23.0	ID2_PAX6	12963	0.059547	0.425829	0.013231	0.000154	normal
+36223459__published	Batiuk 2022	single-nucleus brain	23.0	L2_3_CUX2_FREM3_SV2C	15417	0.067382	0.430284	0.012053	6.5e-05	normal
+36223459__published	Batiuk 2022	single-nucleus brain	23.0	L2_3_CUX2_FREM3_UNC5D	15231	0.071584	0.367769	0.015497	6.6e-05	normal
+36223459__published	Batiuk 2022	single-nucleus brain	23.0	L2_CUX2_LAMP5_MARCH1	14392	0.084403	0.205614	0.025708	0.001668	normal
+36223459__published	Batiuk 2022	single-nucleus brain	23.0	L2_CUX2_LAMP5_PDGFD	12821	0.11209	0.257294	0.041351	0.005226	normal
+36223459__published	Batiuk 2022	single-nucleus brain	23.0	L3_CUX2_PRSS12	14927	0.098447	0.251071	0.032772	0.001206	normal
+36223459__published	Batiuk 2022	single-nucleus brain	23.0	L4_5_FEZF2_LRRK1	14469	0.085994	0.157655	0.029884	0.003179	normal
+36223459__published	Batiuk 2022	single-nucleus brain	23.0	L4_RORB_SCHLAP1_ARHGAP15	14446	0.095194	0.223216	0.029753	0.001454	normal
+36223459__published	Batiuk 2022	single-nucleus brain	23.0	L4_RORB_SCHLAP1_MET	13230	0.169625	0.071093	0.085191	0.055707	normal
+36223459__published	Batiuk 2022	single-nucleus brain	23.0	L4_RORB_SCHLAP1_MME	13871	0.113146	0.144056	0.044858	0.010598	normal
+36223459__published	Batiuk 2022	single-nucleus brain	23.0	L5_6_FEZF2_TLE4_ABO	14037	0.037065	0.634105	0.005457	0.0	normal
+36223459__published	Batiuk 2022	single-nucleus brain	23.0	L5_6_FEZF2_TLE4_HTR2C	13709	0.079639	0.412502	0.0204	7.3e-05	normal
+36223459__published	Batiuk 2022	single-nucleus brain	23.0	L5_6_FEZF2_TLE4_SCUBE1	14563	0.0	1.0	0.0	0.0	normal
+36223459__published	Batiuk 2022	single-nucleus brain	23.0	L5_6_THEMIS_NTNG2	14669	0.0	1.0	0.0	0.0	normal
+36223459__published	Batiuk 2022	single-nucleus brain	23.0	L5_6_THEMIS_SEMA3A	15054	0.081587	0.341757	0.016176	0.000199	normal
+36223459__published	Batiuk 2022	single-nucleus brain	23.0	L5_FEZF2_ADRA1A	16238	0.0	1.0	0.0	0.0	normal
+36223459__published	Batiuk 2022	single-nucleus brain	23.0	PVALB_CRH	12773	0.097671	0.622161	0.021527	0.000235	normal
+36223459__published	Batiuk 2022	single-nucleus brain	23.0	PVALB_MEPE	13400	0.095659	0.256094	0.03266	0.002612	normal
+36223459__published	Batiuk 2022	single-nucleus brain	23.0	PVALB_SST	12625	0.094431	0.331412	0.024768	0.001267	normal
+36223459__published	Batiuk 2022	single-nucleus brain	23.0	SST_CALB1	10770	0.029257	0.944638	0.002533	0.0	normal
+36223459__published	Batiuk 2022	single-nucleus brain	23.0	SST_NOS1	11051	0.019391	0.986811	0.000452	0.0	normal
+36223459__published	Batiuk 2022	single-nucleus brain	23.0	SST_NPY	13135	0.048145	0.997119	0.001697	0.0	normal
+36223459__published	Batiuk 2022	single-nucleus brain	23.0	SST_STK32A	10799	0.0	1.0	0.0	0.0	normal
+36223459__published	Batiuk 2022	single-nucleus brain	23.0	SST_TAC3	12126	0.074703	0.609838	0.012824	0.000165	normal
+36223459__published	Batiuk 2022	single-nucleus brain	23.0	SST_TH	13576	0.0	1.0	0.0	0.0	normal
+36223459__published	Batiuk 2022	single-nucleus brain	23.0	VIP_ABI3BP	12234	0.003017	0.999996	5e-06	0.0	normal
+36223459__published	Batiuk 2022	single-nucleus brain	23.0	VIP_CRH	12371	0.012413	0.986343	0.000497	0.0	normal
+36223459__published	Batiuk 2022	single-nucleus brain	23.0	VIP_RELN	11952	0.07049	0.516004	0.018263	0.000251	normal
+36223459__published	Batiuk 2022	single-nucleus brain	23.0	VIP_SEMA3C	12408	0.08301	0.575998	0.019321	0.000403	normal
+36223459__published	Batiuk 2022	single-nucleus brain	23.0	VIP_SSTR1	13353	0.08887	0.257014	0.027395	0.000674	normal
+36223459__published	Batiuk 2022	single-nucleus brain	23.0	VIP_TYR	11784	0.068537	0.606856	0.013965	0.00017	normal
+39227716__published	Frohlich 2024	single-nucleus brain	87.0	Astro_FB	5035	0.0	1.0	0.0	0.0	normal
+39227716__published	Frohlich 2024	single-nucleus brain	87.0	Astro_PP	10434	0.013037	0.89861	0.001269	0.0	normal
+39227716__published	Frohlich 2024	single-nucleus brain	87.0	Endothelial	2716	0.0	1.0	0.0	0.0	normal
+39227716__published	Frohlich 2024	single-nucleus brain	87.0	Exc_L2-3	18044	0.043819	0.317295	0.014855	0.004378	normal
+39227716__published	Frohlich 2024	single-nucleus brain	87.0	Exc_L3-5	8799	0.005508	0.996884	0.000189	0.0	normal
+39227716__published	Frohlich 2024	single-nucleus brain	87.0	Exc_L4-6_1	12959	0.046999	0.530162	0.015179	0.005016	normal
+39227716__published	Frohlich 2024	single-nucleus brain	87.0	Exc_L4-6_2	12356	0.032797	0.662407	0.008363	0.001133	normal
+39227716__published	Frohlich 2024	single-nucleus brain	87.0	Exc_L4-6_3	9923	0.042057	0.533398	0.013102	0.000705	normal
+39227716__published	Frohlich 2024	single-nucleus brain	87.0	Exc_L5-6_1	6647	0.042831	0.442857	0.014118	0.00015	normal
+39227716__published	Frohlich 2024	single-nucleus brain	87.0	Exc_L5-6_2	1919	0.0	1.0	0.0	0.0	normal
+39227716__published	Frohlich 2024	single-nucleus brain	87.0	Exc_L5-6_HTR2C	4634	0.02013	0.968242	0.002199	0.0	normal
+39227716__published	Frohlich 2024	single-nucleus brain	87.0	In_LAMP5_1	7491	0.009241	0.979826	0.000669	0.0	normal
+39227716__published	Frohlich 2024	single-nucleus brain	87.0	In_LAMP5_2	5312	0.013275	0.993111	0.000772	0.0	normal
+39227716__published	Frohlich 2024	single-nucleus brain	87.0	In_PVALB_Ba	11885	0.010031	0.968725	0.000861	0.0	normal
+39227716__published	Frohlich 2024	single-nucleus brain	87.0	In_PVALB_Ch	5082	0.007188	0.997957	0.000227	0.0	normal
+39227716__published	Frohlich 2024	single-nucleus brain	87.0	In_RELN	10454	0.0	1.0	0.0	0.0	normal
+39227716__published	Frohlich 2024	single-nucleus brain	87.0	In_SST	10722	0.0	1.0	0.0	0.0	normal
+39227716__published	Frohlich 2024	single-nucleus brain	87.0	In_VIP	12419	0.014479	0.914372	0.002025	0.0	normal
+39227716__published	Frohlich 2024	single-nucleus brain	87.0	Microglia	5257	0.009952	0.97843	0.000623	0.0	normal
+39227716__published	Frohlich 2024	single-nucleus brain	87.0	OPC	9512	0.037537	0.442172	0.012507	0.000526	normal
+39227716__published	Frohlich 2024	single-nucleus brain	87.0	Oligodendrocyte	8925	0.036845	0.707737	0.010355	0.000336	normal
+42778699__published	Lee 2026 (PsychAD)	single-nucleus brain	439.0	Adaptive	1623	0.0	1.0	0.0	0.0	normal
+42778699__published	Lee 2026 (PsychAD)	single-nucleus brain	439.0	Astro	13505	0.022045	0.620127	0.005999	0.000148	normal
+42778699__published	Lee 2026 (PsychAD)	single-nucleus brain	439.0	EN_L2_3_IT	15228	0.011084	0.666919	0.001919	0.0	normal
+42778699__published	Lee 2026 (PsychAD)	single-nucleus brain	439.0	EN_L3_5_IT_1	11588	0.0	1.0	0.0	0.0	normal
+42778699__published	Lee 2026 (PsychAD)	single-nucleus brain	439.0	EN_L3_5_IT_2	13235	0.01117	0.837966	0.001738	0.0	normal
+42778699__published	Lee 2026 (PsychAD)	single-nucleus brain	439.0	EN_L3_5_IT_3	13530	0.023189	0.709717	0.003746	0.000296	normal
+42778699__published	Lee 2026 (PsychAD)	single-nucleus brain	439.0	EN_L5_6_NP	10645	0.0	1.0	0.0	0.0	normal
+42778699__published	Lee 2026 (PsychAD)	single-nucleus brain	439.0	EN_L5_ET	5957	0.190865	0.983821	0.00937	0.000168	normal
+42778699__published	Lee 2026 (PsychAD)	single-nucleus brain	439.0	EN_L6B	10663	0.025338	0.524448	0.006125	0.0	normal
+42778699__published	Lee 2026 (PsychAD)	single-nucleus brain	439.0	EN_L6_CT	10633	0.023626	0.622285	0.005923	0.0	normal
+42778699__published	Lee 2026 (PsychAD)	single-nucleus brain	439.0	EN_L6_IT_1	11891	0.021835	0.490403	0.004931	8.4e-05	normal
+42778699__published	Lee 2026 (PsychAD)	single-nucleus brain	439.0	EN_L6_IT_2	9870	0.021318	0.676919	0.004184	0.0	normal
+42778699__published	Lee 2026 (PsychAD)	single-nucleus brain	439.0	Endo	7755	0.100372	0.42734	0.040611	0.011476	normal
+42778699__published	Lee 2026 (PsychAD)	single-nucleus brain	439.0	IN_ADARB2	11757	0.025478	0.344749	0.007347	0.001276	normal
+42778699__published	Lee 2026 (PsychAD)	single-nucleus brain	439.0	IN_LAMP5_LHX6	9574	0.00735	0.989768	0.000325	0.000104	normal
+42778699__published	Lee 2026 (PsychAD)	single-nucleus brain	439.0	IN_LAMP5_RELN	11133	0.01074	0.864353	0.001366	0.0	normal
+42778699__published	Lee 2026 (PsychAD)	single-nucleus brain	439.0	IN_PVALB	13335	0.018848	0.395483	0.005015	7.5e-05	normal
+42778699__published	Lee 2026 (PsychAD)	single-nucleus brain	439.0	IN_PVALB_CHC	9700	0.026215	0.55254	0.004488	0.000103	normal
+42778699__published	Lee 2026 (PsychAD)	single-nucleus brain	439.0	IN_SST	13112	0.011168	0.829877	0.001544	0.0	normal
+42778699__published	Lee 2026 (PsychAD)	single-nucleus brain	439.0	IN_VIP	13422	0.018635	0.391726	0.005334	0.000298	normal
+42778699__published	Lee 2026 (PsychAD)	single-nucleus brain	439.0	Micro	10388	0.028983	0.663888	0.008085	0.000481	normal
+42778699__published	Lee 2026 (PsychAD)	single-nucleus brain	439.0	OPC	12592	0.014506	0.758942	0.002931	0.0	normal
+42778699__published	Lee 2026 (PsychAD)	single-nucleus brain	439.0	Oligo	14139	0.015553	0.570505	0.003712	0.000141	normal
+42778699__published	Lee 2026 (PsychAD)	single-nucleus brain	439.0	PC	5696	0.038167	0.876562	0.006166	0.0	normal
+42778699__published	Lee 2026 (PsychAD)	single-nucleus brain	439.0	PVM	2678	0.051036	0.665951	0.013235	0.0	normal
+42778699__published	Lee 2026 (PsychAD)	single-nucleus brain	439.0	SMC	1767	0.159541	0.534482	0.062077	0.002264	normal
+42778699__published	Lee 2026 (PsychAD)	single-nucleus brain	439.0	VLMC	4615	0.014782	0.99973	0.000193	0.0	normal

@@ -1,0 +1,1430 @@
+# figure: fig03 panel b
+# script: analyses/figure_exports/export_fig03_fig05.py, run 2026-10-08
+# population: core-80 base for this panel: published different-cohort pairs among the 72 primary brain lists (h1_pairs.tsv, scenario 'published, brain', cohort different; 80 studies, 72 contributing lists; Shao 2008 PMID 18191109 out); the split-half and cross-dataset comparison values come from the sample-level datasets (16 datasets of split_halves) fixed by the analysis, not drawn from the recurrence base
+# input: analyses/split_halves/results/published_pairs.tsv sha256 8befee318020
+# input: analyses/split_halves/results/published_summary.tsv sha256 ec372cbc194b
+# published different-cohort pairs (h1_pairs.tsv scenario 'published, brain', cohort different; 1,779 pairs), n_matched = min(N_a, N_b) / 2 at the nearest split-half level; libd_percentile = percentile of the published value among each dataset's split-half repeats at that level (median over datasets that reach it; the 16 datasets of split_halves include 11 Gemma ones, not LIBD only); cross_percentile = among pooled different-cohort pair repeats; rows only where the metric exists. top_n_fold: top 20 / 50 / 100 chosen by the pair, metric column names n
+pair_id	label_a	label_b	N_a	N_b	n_matched	level	n_datasets	metric	value	libd_percentile	libd_percentile_min	libd_percentile_max	cross_percentile	metric_group
+11296301_15334603	Hakak 2001	Aston 2004	24	26	12.0	12	13	top20_fold	43.05	0.96			0.9907	top_n_fold
+11296301_16038679	Hakak 2001	Altar 2005	24	46	12.0	12	13	top35_fold	3.759	0.66			0.7862	top_n_fold
+11296301_18778695	Hakak 2001	Narayan 2008	24	55	12.0	12	13	top81_fold	2.71	0.69			0.7683	top_n_fold
+11296301_19834500	Hakak 2001	Chu 2009	24	23	11.5	12	13	top80_fold	3.704	0.7			0.9014	top_n_fold
+11296301_21091092	Hakak 2001	Schmitt 2011	24	20	10.0	10	16	top80_fold	0.8402	0.395			0.4653	top_n_fold
+11296301_21538462	Hakak 2001	Barnes 2011	24	42	12.0	12	13	top20_fold	0.0	0.9			0.9531	top_n_fold
+11296301_22558445	Hakak 2001	Wu 2012	24	18	9.0	8	16	top81_fold	3.135	0.67			0.8475	top_n_fold
+11296301_22869038	Hakak 2001	Fillman 2013	24	40	12.0	12	13	top81_fold	0.7839	0.39			0.4417	top_n_fold
+11296301_23147385	Hakak 2001	Chen 2013	24	91	12.0	12	13	top80_fold	7.686	0.89			0.9859	top_n_fold
+11296301_24169640	Hakak 2001	Hwang 2013	24	29	12.0	12	13	top62_fold	0.0	0.66			0.7862	top_n_fold
+11296301_24628518	Hakak 2001	Pietersen 2014 (PV neurons)	24	16	8.0	8	16	top81_fold	0.0	0.375			0.4858	top_n_fold
+11296301_24702465	Hakak 2001	Pietersen 2014	24	18	9.0	8	16	top81_fold	0.8773	0.375			0.4858	top_n_fold
+11296301_25113377	Hakak 2001	Zhao 2015	24	57	12.0	12	13	top37_fold	0.0	0.66			0.7862	top_n_fold
+11296301_26585218	Hakak 2001	Mauney 2015	24	18	9.0	8	16	top81_fold	0.8773	0.375			0.4858	top_n_fold
+11296301_27622934	Hakak 2001	Darby 2016	24	95	12.0	12	13	top5_fold	0.0	0.9			0.9531	top_n_fold
+11296301_27661005	Hakak 2001	Hu 2016	24	40	12.0	12	13	top81_fold	4.842	0.76			0.9283	top_n_fold
+11296301_27898074	Hakak 2001	Kim 2016	24	93	12.0	12	13	top21_fold	0.0	0.9			0.9531	top_n_fold
+11296301_28123834	Hakak 2001	Mladinov 2016	24	12	6.0	5	16	top12_fold	0.0	0.895			0.9529	top_n_fold
+11296301_27940260	Hakak 2001	Voisey 2017	24	45	12.0	12	13	top81_fold	3.135	0.69			0.8224	top_n_fold
+11296301_28754123	Hakak 2001	Ramaker 2017	24	48	12.0	12	13	top21_fold	13.22	0.9			0.9531	top_n_fold
+11296301_27801890	Hakak 2001	Scarr 2018	24	45	12.0	12	13	top46_fold	0.0	0.66			0.7862	top_n_fold
+11296301_29463818	Hakak 2001	Scarr 2018	24	30	12.0	12	13	top60_fold	0.0	0.66			0.7862	top_n_fold
+11296301_32006661	Hakak 2001	Santarelli 2019	24	74	12.0	12	13	top80_fold	4.373	0.76			0.9093	top_n_fold
+11296301_32566292	Hakak 2001	Bakshi 2020	24	22	11.0	10	16	top81_fold	7.226	0.915			0.9867	top_n_fold
+11296301_33184259	Hakak 2001	Maas 2020	24	8	4.0	5	16	top54_fold	1.458	0.635			0.7909	top_n_fold
+11296301_32152472	Hakak 2001	Perez 2021	24	26	12.0	12	13	top81_fold	1.568	0.39			0.5403	top_n_fold
+11296301_34059796	Hakak 2001	Weissleder 2021	24	39	12.0	12	13	top81_fold	3.135	0.69			0.8224	top_n_fold
+11296301_34440415	Hakak 2001	Lindholm Carlström 2021	24	112	12.0	12	13	top36_fold	0.0	0.66			0.7862	top_n_fold
+11296301_32513544	Hakak 2001	Zeppillo 2022	24	20	10.0	10	16	top81_fold	5.487	0.885			0.9727	top_n_fold
+11296301_36192459	Hakak 2001	Puvogel 2022	24	29	12.0	12	13	top5_fold	0.0	0.9			0.9531	top_n_fold
+11296301_36223459	Hakak 2001	Batiuk 2022	24	23	11.5	12	13	top42_fold	0.0	0.66			0.7862	top_n_fold
+11296301_37498306	Hakak 2001	Arihisa 2023	24	15	7.5	8	16	top50_fold	0.0	0.7			0.8042	top_n_fold
+11296301_38448582	Hakak 2001	Ling 2024	24	180	12.0	12	13	top65_fold	7.272	0.77			0.95	top_n_fold
+11296301_38648100	Hakak 2001	Zhu 2024	24	58	12.0	12	13	top81_fold	0.5831	0.39			0.4417	top_n_fold
+11296301_39227716	Hakak 2001	Frohlich 2024 (own list)	24	87	12.0	12	13	top81_fold	1.561	0.39			0.5403	top_n_fold
+11296301_39397771	Hakak 2001	Alsema 2025	24	28	12.0	12	13	top28_fold	0.0	0.9			0.9531	top_n_fold
+11296301_41210297	Hakak 2001	Mas 2025	24	32	12.0	12	13	top2_fold	0.0	0.9			0.9531	top_n_fold
+11296301_39526318	Hakak 2001	Zhang 2026	24	30	12.0	12	13	top81_fold	0.0	0.39			0.4417	top_n_fold
+11296301_42461238	Hakak 2001	Dean 2026	24	211	12.0	12	13	top24_fold	9.073	0.9			0.9531	top_n_fold
+15334603_18771015	Aston 2004	Garbett 2008	26	18	9.0	8	16	top9_fold	117.8	1.0			0.9998	top_n_fold
+15334603_18778695	Aston 2004	Narayan 2008	26	55	13.0	12	13	top31_fold	0.0	0.9			0.9531	top_n_fold
+15334603_20034564	Aston 2004	Arion 2010	26	16	8.0	8	16	top31_fold	9.95	0.92			0.9605	top_n_fold
+15334603_21091092	Aston 2004	Schmitt 2011	26	20	10.0	10	16	top31_fold	0.0	0.935			0.9598	top_n_fold
+15334603_21538462	Aston 2004	Barnes 2011	26	42	13.0	12	13	top31_fold	0.0	0.9			0.9531	top_n_fold
+15334603_22558445	Aston 2004	Wu 2012	26	18	9.0	8	16	top31_fold	8.883	0.92			0.9605	top_n_fold
+15334603_22869038	Aston 2004	Fillman 2013	26	40	13.0	12	13	top31_fold	8.883	0.9			0.9531	top_n_fold
+15334603_24628518	Aston 2004	Pietersen 2014 (PV neurons)	26	16	8.0	8	16	top31_fold	0.0	0.92			0.9605	top_n_fold
+15334603_24702465	Aston 2004	Pietersen 2014	26	18	9.0	8	16	top31_fold	0.0	0.92			0.9605	top_n_fold
+15334603_26585218	Aston 2004	Mauney 2015	26	18	9.0	8	16	top31_fold	19.35	0.92			0.9605	top_n_fold
+15334603_27668389	Aston 2004	Fromer 2016	26	537	13.0	12	13	top31_fold	0.0	0.9			0.9531	top_n_fold
+15334603_28123834	Aston 2004	Mladinov 2016	26	12	6.0	5	16	top21_fold	0.0	0.895			0.9529	top_n_fold
+15334603_27940260	Aston 2004	Voisey 2017	26	45	13.0	12	13	top31_fold	8.883	0.9			0.9531	top_n_fold
+15334603_28754123	Aston 2004	Ramaker 2017	26	48	13.0	12	13	top31_fold	0.0	0.9			0.9531	top_n_fold
+15334603_27801890	Aston 2004	Scarr 2018	26	45	13.0	12	13	top31_fold	0.0	0.9			0.9531	top_n_fold
+15334603_29463818	Aston 2004	Scarr 2018	26	30	13.0	12	13	top31_fold	0.0	0.9			0.9531	top_n_fold
+15334603_30050107	Aston 2004	Jaffe 2018	26	351	13.0	12	13	top30_fold	8.936	0.9			0.9531	top_n_fold
+15334603_31123247	Aston 2004	Lanz 2019	26	38	13.0	12	13	top31_fold	0.0	0.9			0.9531	top_n_fold
+15334603_31174959	Aston 2004	Collado-Torres 2019	26	447	13.0	12	13	top31_fold	0.0	0.9			0.9531	top_n_fold
+15334603_32006661	Aston 2004	Santarelli 2019	26	74	13.0	12	13	top31_fold	0.0	0.9			0.9531	top_n_fold
+15334603_32203495	Aston 2004	Jaffe 2020	26	168	13.0	12	13	top11_fold	0.0	0.9			0.9531	top_n_fold
+15334603_33184259	Aston 2004	Maas 2020	26	8	4.0	5	16	top31_fold	0.0	0.895			0.9529	top_n_fold
+15334603_32152472	Aston 2004	Perez 2021	26	26	13.0	12	13	top31_fold	0.0	0.9			0.9531	top_n_fold
+15334603_33558674	Aston 2004	Akula 2021	26	99	13.0	12	13	top12_fold	0.0	0.9			0.9531	top_n_fold
+15334603_34272489	Aston 2004	Wu 2021	26	24	12.0	12	13	top31_fold	0.0	0.9			0.9531	top_n_fold
+15334603_34440415	Aston 2004	Lindholm Carlström 2021	26	112	13.0	12	13	top30_fold	9.043	0.9			0.9531	top_n_fold
+15334603_32513544	Aston 2004	Zeppillo 2022	26	20	10.0	10	16	top31_fold	8.883	0.935			0.9598	top_n_fold
+15334603_36223459	Aston 2004	Batiuk 2022	26	23	11.5	12	13	top31_fold	0.0	0.9			0.9531	top_n_fold
+15334603_36319771	Aston 2004	Benjamin 2022	26	393	13.0	12	13	top29_fold	0.0	0.9			0.9531	top_n_fold
+15334603_36302706	Aston 2004	Ketchesin 2023 (own list)	26	72	13.0	12	13	top31_fold	0.0	0.9			0.9531	top_n_fold
+15334603_36932057	Aston 2004	Schulmann 2023	26	201	13.0	12	13	top31_fold	0.0	0.9			0.9531	top_n_fold
+15334603_37498306	Aston 2004	Arihisa 2023	26	15	7.5	8	16	top31_fold	0.0	0.92			0.9605	top_n_fold
+15334603_38448582	Aston 2004	Ling 2024	26	180	13.0	12	13	top31_fold	0.0	0.9			0.9531	top_n_fold
+15334603_38648100	Aston 2004	Zhu 2024	26	58	13.0	12	13	top26_fold	0.0	0.9			0.9531	top_n_fold
+15334603_39227716	Aston 2004	Frohlich 2024 (own list)	26	87	13.0	12	13	top31_fold	0.0	0.9			0.9531	top_n_fold
+15334603_39237723	Aston 2004	Arbabi 2025	26	38	13.0	12	13	top31_fold	0.0	0.9			0.9531	top_n_fold
+15334603_41174894	Aston 2004	Yalcinbas 2025	26	68	13.0	12	13	top30_fold	9.014	0.9			0.9531	top_n_fold
+15334603_41210297	Aston 2004	Mas 2025	26	32	13.0	12	13	top2_fold	0.0	0.9			0.9531	top_n_fold
+15334603_41757081	Aston 2004	Kwon 2026	26	63	13.0	12	13	top31_fold	7.208	0.9			0.9531	top_n_fold
+15334603_41942462	Aston 2004	Singh 2026	26	80	13.0	12	13	top31_fold	0.0	0.9			0.9531	top_n_fold
+15334603_42461238	Aston 2004	Dean 2026	26	211	13.0	12	13	top29_fold	0.0	0.9			0.9531	top_n_fold
+16038679_18771015	Altar 2005	Garbett 2008	46	18	9.0	8	16	top9_fold	0.0	0.92			0.9605	top_n_fold
+16038679_18778695	Altar 2005	Narayan 2008	46	55	23.0	25	6	top43_fold	0.0	0.54			0.618	top_n_fold
+16038679_20034564	Altar 2005	Arion 2010	46	16	8.0	8	16	top43_fold	0.0	0.7			0.8042	top_n_fold
+16038679_21091092	Altar 2005	Schmitt 2011	46	20	10.0	10	16	top42_fold	0.0	0.705			0.7969	top_n_fold
+16038679_21538462	Altar 2005	Barnes 2011	46	42	21.0	20	7	top27_fold	0.0	0.89			0.895	top_n_fold
+16038679_22558445	Altar 2005	Wu 2012	46	18	9.0	8	16	top43_fold	0.0	0.7			0.8042	top_n_fold
+16038679_22869038	Altar 2005	Fillman 2013	46	40	20.0	20	7	top43_fold	0.0	0.61			0.695	top_n_fold
+16038679_24628518	Altar 2005	Pietersen 2014 (PV neurons)	46	16	8.0	8	16	top43_fold	0.0	0.7			0.8042	top_n_fold
+16038679_24702465	Altar 2005	Pietersen 2014	46	18	9.0	8	16	top43_fold	0.0	0.7			0.8042	top_n_fold
+16038679_26585218	Altar 2005	Mauney 2015	46	18	9.0	8	16	top43_fold	0.0	0.7			0.8042	top_n_fold
+16038679_27668389	Altar 2005	Fromer 2016	46	537	23.0	25	6	top43_fold	0.0	0.54			0.618	top_n_fold
+16038679_28123834	Altar 2005	Mladinov 2016	46	12	6.0	5	16	top17_fold	0.0	0.895			0.9529	top_n_fold
+16038679_27940260	Altar 2005	Voisey 2017	46	45	22.5	20	7	top43_fold	0.0	0.61			0.695	top_n_fold
+16038679_28754123	Altar 2005	Ramaker 2017	46	48	23.0	25	6	top36_fold	0.0	0.54			0.618	top_n_fold
+16038679_27801890	Altar 2005	Scarr 2018	46	45	22.5	20	7	top43_fold	0.0	0.61			0.695	top_n_fold
+16038679_29463818	Altar 2005	Scarr 2018	46	30	15.0	15	8	top43_fold	0.0	0.655			0.725	top_n_fold
+16038679_30050107	Altar 2005	Jaffe 2018	46	351	23.0	25	6	top42_fold	0.0	0.54			0.618	top_n_fold
+16038679_31123247	Altar 2005	Lanz 2019	46	38	19.0	20	7	top43_fold	9.042	0.86			0.9167	top_n_fold
+16038679_31174959	Altar 2005	Collado-Torres 2019	46	447	23.0	25	6	top43_fold	0.0	0.54			0.618	top_n_fold
+16038679_32006661	Altar 2005	Santarelli 2019	46	74	23.0	25	6	top42_fold	0.0	0.54			0.618	top_n_fold
+16038679_32203495	Altar 2005	Jaffe 2020	46	168	23.0	25	6	top12_fold	0.0	0.92			0.884	top_n_fold
+16038679_33184259	Altar 2005	Maas 2020	46	8	4.0	5	16	top39_fold	0.0	0.635			0.7909	top_n_fold
+16038679_32152472	Altar 2005	Perez 2021	46	26	13.0	12	13	top43_fold	0.0	0.66			0.7862	top_n_fold
+16038679_33558674	Altar 2005	Akula 2021	46	99	23.0	25	6	top12_fold	0.0	0.92			0.884	top_n_fold
+16038679_34272489	Altar 2005	Wu 2021	46	24	12.0	12	13	top43_fold	0.0	0.66			0.7862	top_n_fold
+16038679_34440415	Altar 2005	Lindholm Carlström 2021	46	112	23.0	25	6	top40_fold	0.0	0.54			0.618	top_n_fold
+16038679_32513544	Altar 2005	Zeppillo 2022	46	20	10.0	10	16	top43_fold	0.0	0.705			0.7969	top_n_fold
+16038679_36223459	Altar 2005	Batiuk 2022	46	23	11.5	12	13	top42_fold	4.431	0.66			0.7862	top_n_fold
+16038679_36319771	Altar 2005	Benjamin 2022	46	393	23.0	25	6	top42_fold	0.0	0.54			0.618	top_n_fold
+16038679_36302706	Altar 2005	Ketchesin 2023 (own list)	46	72	23.0	25	6	top43_fold	0.0	0.54			0.618	top_n_fold
+16038679_36932057	Altar 2005	Schulmann 2023	46	201	23.0	25	6	top43_fold	0.0	0.54			0.618	top_n_fold
+16038679_37498306	Altar 2005	Arihisa 2023	46	15	7.5	8	16	top43_fold	0.0	0.7			0.8042	top_n_fold
+16038679_38448582	Altar 2005	Ling 2024	46	180	23.0	25	6	top42_fold	0.0	0.54			0.618	top_n_fold
+16038679_38648100	Altar 2005	Zhu 2024	46	58	23.0	25	6	top40_fold	0.0	0.54			0.618	top_n_fold
+16038679_39227716	Altar 2005	Frohlich 2024 (own list)	46	87	23.0	25	6	top42_fold	0.0	0.54			0.618	top_n_fold
+16038679_39237723	Altar 2005	Arbabi 2025	46	38	19.0	20	7	top42_fold	4.432	0.61			0.695	top_n_fold
+16038679_41174894	Altar 2005	Yalcinbas 2025	46	68	23.0	25	6	top41_fold	0.0	0.54			0.618	top_n_fold
+16038679_41210297	Altar 2005	Mas 2025	46	32	16.0	15	8	top2_fold	0.0	0.91			0.94	top_n_fold
+16038679_41757081	Altar 2005	Kwon 2026	46	63	23.0	25	6	top40_fold	0.0	0.54			0.618	top_n_fold
+16038679_41942462	Altar 2005	Singh 2026	46	80	23.0	25	6	top43_fold	0.0	0.54			0.618	top_n_fold
+16038679_42461238	Altar 2005	Dean 2026	46	211	23.0	25	6	top26_fold	0.0	0.92			0.884	top_n_fold
+18771015_18778695	Garbett 2008	Narayan 2008	18	55	9.0	8	16	top13_fold	0.0	0.92			0.9605	top_n_fold
+18771015_19834500	Garbett 2008	Chu 2009	18	23	9.0	8	16	top13_fold	0.0	0.92			0.9605	top_n_fold
+18771015_21091092	Garbett 2008	Schmitt 2011	18	20	9.0	8	16	top13_fold	0.0	0.92			0.9605	top_n_fold
+18771015_21538462	Garbett 2008	Barnes 2011	18	42	9.0	8	16	top13_fold	0.0	0.92			0.9605	top_n_fold
+18771015_22558445	Garbett 2008	Wu 2012	18	18	9.0	8	16	top13_fold	0.0	0.92			0.9605	top_n_fold
+18771015_22869038	Garbett 2008	Fillman 2013	18	40	9.0	8	16	top13_fold	0.0	0.92			0.9605	top_n_fold
+18771015_23147385	Garbett 2008	Chen 2013	18	91	9.0	8	16	top13_fold	0.0	0.92			0.9605	top_n_fold
+18771015_24169640	Garbett 2008	Hwang 2013	18	29	9.0	8	16	top13_fold	0.0	0.92			0.9605	top_n_fold
+18771015_24628518	Garbett 2008	Pietersen 2014 (PV neurons)	18	16	8.0	8	16	top13_fold	0.0	0.92			0.9605	top_n_fold
+18771015_24702465	Garbett 2008	Pietersen 2014	18	18	9.0	8	16	top13_fold	0.0	0.92			0.9605	top_n_fold
+18771015_25113377	Garbett 2008	Zhao 2015	18	57	9.0	8	16	top13_fold	0.0	0.92			0.9605	top_n_fold
+18771015_26585218	Garbett 2008	Mauney 2015	18	18	9.0	8	16	top13_fold	0.0	0.92			0.9605	top_n_fold
+18771015_27622934	Garbett 2008	Darby 2016	18	95	9.0	8	16	top8_fold	0.0	0.92			0.9605	top_n_fold
+18771015_27661005	Garbett 2008	Hu 2016	18	40	9.0	8	16	top13_fold	0.0	0.92			0.9605	top_n_fold
+18771015_27898074	Garbett 2008	Kim 2016	18	93	9.0	8	16	top13_fold	0.0	0.92			0.9605	top_n_fold
+18771015_28123834	Garbett 2008	Mladinov 2016	18	12	6.0	5	16	top13_fold	0.0	0.895			0.9529	top_n_fold
+18771015_27940260	Garbett 2008	Voisey 2017	18	45	9.0	8	16	top13_fold	0.0	0.92			0.9605	top_n_fold
+18771015_28754123	Garbett 2008	Ramaker 2017	18	48	9.0	8	16	top13_fold	0.0	0.92			0.9605	top_n_fold
+18771015_27801890	Garbett 2008	Scarr 2018	18	45	9.0	8	16	top13_fold	0.0	0.92			0.9605	top_n_fold
+18771015_29463818	Garbett 2008	Scarr 2018	18	30	9.0	8	16	top13_fold	0.0	0.92			0.9605	top_n_fold
+18771015_32006661	Garbett 2008	Santarelli 2019	18	74	9.0	8	16	top13_fold	0.0	0.92			0.9605	top_n_fold
+18771015_32566292	Garbett 2008	Bakshi 2020	18	22	9.0	8	16	top13_fold	0.0	0.92			0.9605	top_n_fold
+18771015_33184259	Garbett 2008	Maas 2020	18	8	4.0	5	16	top13_fold	0.0	0.895			0.9529	top_n_fold
+18771015_32152472	Garbett 2008	Perez 2021	18	26	9.0	8	16	top13_fold	0.0	0.92			0.9605	top_n_fold
+18771015_34059796	Garbett 2008	Weissleder 2021	18	39	9.0	8	16	top13_fold	0.0	0.92			0.9605	top_n_fold
+18771015_34440415	Garbett 2008	Lindholm Carlström 2021	18	112	9.0	8	16	top13_fold	0.0	0.92			0.9605	top_n_fold
+18771015_32513544	Garbett 2008	Zeppillo 2022	18	20	9.0	8	16	top13_fold	0.0	0.92			0.9605	top_n_fold
+18771015_36192459	Garbett 2008	Puvogel 2022	18	29	9.0	8	16	top12_fold	0.0	0.92			0.9605	top_n_fold
+18771015_36223459	Garbett 2008	Batiuk 2022	18	23	9.0	8	16	top13_fold	0.0	0.92			0.9605	top_n_fold
+18771015_37498306	Garbett 2008	Arihisa 2023	18	15	7.5	8	16	top13_fold	0.0	0.92			0.9605	top_n_fold
+18771015_38448582	Garbett 2008	Ling 2024	18	180	9.0	8	16	top13_fold	0.0	0.92			0.9605	top_n_fold
+18771015_38648100	Garbett 2008	Zhu 2024	18	58	9.0	8	16	top12_fold	0.0	0.92			0.9605	top_n_fold
+18771015_39227716	Garbett 2008	Frohlich 2024 (own list)	18	87	9.0	8	16	top13_fold	0.0	0.92			0.9605	top_n_fold
+18771015_39397771	Garbett 2008	Alsema 2025	18	28	9.0	8	16	top13_fold	0.0	0.92			0.9605	top_n_fold
+18771015_41210297	Garbett 2008	Mas 2025	18	32	9.0	8	16	top4_fold	0.0	0.92			0.9605	top_n_fold
+18771015_39526318	Garbett 2008	Zhang 2026	18	30	9.0	8	16	top13_fold	0.0	0.92			0.9605	top_n_fold
+18771015_42461238	Garbett 2008	Dean 2026	18	211	9.0	8	16	top13_fold	0.0	0.92			0.9605	top_n_fold
+18778695_19834500	Narayan 2008	Chu 2009	55	23	11.5	12	13	top100_fold	4.277	0.76			0.9041	top_n_fold
+18778695_20034564	Narayan 2008	Arion 2010	55	16	8.0	8	16	top100_fold	12.83	0.99			0.9987	top_n_fold
+18778695_21091092	Narayan 2008	Schmitt 2011	55	20	10.0	10	16	top100_fold	0.0	0.395			0.4653	top_n_fold
+18778695_21538462	Narayan 2008	Barnes 2011	55	42	21.0	20	7	spearman_rho_log2fc	0.0449	0.26	0.0	0.41	0.365	spearman_rho_log2fc
+18778695_21538462	Narayan 2008	Barnes 2011	55	42	21.0	20	7	top51_fold	0.0	0.61			0.695	top_n_fold
+18778695_23147385	Narayan 2008	Chen 2013	55	91	27.5	25	6	spearman_rho_log2fc	0.2022	0.38	0.33	0.64	0.738	spearman_rho_log2fc
+18778695_23147385	Narayan 2008	Chen 2013	55	91	27.5	25	6	top100_fold	0.0	0.235			0.212	top_n_fold
+18778695_24169640	Narayan 2008	Hwang 2013	55	29	14.5	15	8	top100_fold	1.8	0.395			0.68	top_n_fold
+18778695_24628518	Narayan 2008	Pietersen 2014 (PV neurons)	55	16	8.0	8	16	top100_fold	6.1	0.91			0.978	top_n_fold
+18778695_24702465	Narayan 2008	Pietersen 2014	55	18	9.0	8	16	spearman_rho_log2fc	-0.00506	0.28	0.02	0.49	0.3547	spearman_rho_log2fc
+18778695_24702465	Narayan 2008	Pietersen 2014	55	18	9.0	8	16	top100_fold	4.066	0.825			0.9213	top_n_fold
+18778695_25113377	Narayan 2008	Zhao 2015	55	57	27.5	25	6	top100_fold	3.6	0.575			0.68	top_n_fold
+18778695_25560755	Narayan 2008	Arion 2015	55	72	27.5	25	6	spearman_rho_log2fc	0.2383	0.445	0.4	0.77	0.796	spearman_rho_log2fc
+18778695_26585218	Narayan 2008	Mauney 2015	55	18	9.0	8	16	top100_fold	2.033	0.6			0.7618	top_n_fold
+18778695_27622934	Narayan 2008	Darby 2016	55	95	27.5	25	6	top8_fold	0.0	0.92			0.884	top_n_fold
+18778695_27661005	Narayan 2008	Hu 2016	55	40	20.0	20	7	spearman_rho_log2fc	0.2378	0.61	0.05	0.79	0.8333	spearman_rho_log2fc
+18778695_27661005	Narayan 2008	Hu 2016	55	40	20.0	20	7	top100_fold	0.0	0.26			0.33	top_n_fold
+18778695_27668389	Narayan 2008	Fromer 2016	55	537	27.5	25	6	top100_fold	0.0	0.235			0.212	top_n_fold
+18778695_27898074	Narayan 2008	Kim 2016	55	93	27.5	25	6	top47_fold	8.148	0.805			0.876	top_n_fold
+18778695_28123834	Narayan 2008	Mladinov 2016	55	12	6.0	5	16	top22_fold	0.0	0.895			0.9529	top_n_fold
+18778695_27940260	Narayan 2008	Voisey 2017	55	45	22.5	20	7	top100_fold	0.0	0.26			0.33	top_n_fold
+18778695_28754123	Narayan 2008	Ramaker 2017	55	48	24.0	25	6	spearman_rho_log2fc	0.3603	0.795	0.63	0.98	0.936	spearman_rho_log2fc
+18778695_28754123	Narayan 2008	Ramaker 2017	55	48	24.0	25	6	top88_fold	2.701	0.455			0.5	top_n_fold
+18778695_30050107	Narayan 2008	Jaffe 2018	55	351	27.5	25	6	spearman_rho_log2fc	0.1462	0.305	0.24	0.45	0.612	spearman_rho_log2fc
+18778695_30050107	Narayan 2008	Jaffe 2018	55	351	27.5	25	6	top100_fold	1.646	0.325			0.5	top_n_fold
+18778695_31123247	Narayan 2008	Lanz 2019	55	38	19.0	20	7	spearman_rho_log2fc	0.4286	0.89	0.67	0.99	0.99	spearman_rho_log2fc
+18778695_31123247	Narayan 2008	Lanz 2019	55	38	19.0	20	7	top100_fold	2.138	0.57			0.6267	top_n_fold
+18778695_31174959	Narayan 2008	Collado-Torres 2019	55	447	27.5	25	6	top100_fold	0.0	0.235			0.212	top_n_fold
+18778695_32203495	Narayan 2008	Jaffe 2020	55	168	27.5	25	6	spearman_rho_log2fc	0.16	0.325	0.25	0.49	0.634	spearman_rho_log2fc
+18778695_32203495	Narayan 2008	Jaffe 2020	55	168	27.5	25	6	top22_fold	0.0	0.92			0.884	top_n_fold
+18778695_32566292	Narayan 2008	Bakshi 2020	55	22	11.0	10	16	top100_fold	0.0	0.395			0.4653	top_n_fold
+18778695_33184259	Narayan 2008	Maas 2020	55	8	4.0	5	16	spearman_rho_log2fc	0.4693	0.99	0.9	1.0	0.9978	spearman_rho_log2fc
+18778695_33184259	Narayan 2008	Maas 2020	55	8	4.0	5	16	top100_fold	0.0	0.315			0.4674	top_n_fold
+18778695_32152472	Narayan 2008	Perez 2021	55	26	13.0	12	13	spearman_rho_log2fc	-0.2213	0.01	0.0	0.22	0.02241	spearman_rho_log2fc
+18778695_32152472	Narayan 2008	Perez 2021	55	26	13.0	12	13	top100_fold	1.8	0.39			0.739	top_n_fold
+18778695_33558674	Narayan 2008	Akula 2021	55	99	27.5	25	6	top21_fold	0.0	0.92			0.884	top_n_fold
+18778695_34059796	Narayan 2008	Weissleder 2021	55	39	19.5	20	7	top100_fold	1.8	0.34			0.6267	top_n_fold
+18778695_34272489	Narayan 2008	Wu 2021	55	24	12.0	12	13	top100_fold	1.896	0.39			0.739	top_n_fold
+18778695_34440415	Narayan 2008	Lindholm Carlström 2021	55	112	27.5	25	6	spearman_rho_log2fc	0.3059	0.635	0.54	0.86	0.888	spearman_rho_log2fc
+18778695_34440415	Narayan 2008	Lindholm Carlström 2021	55	112	27.5	25	6	top63_fold	0.0	0.54			0.618	top_n_fold
+18778695_32513544	Narayan 2008	Zeppillo 2022	55	20	10.0	10	16	top100_fold	1.8	0.455			0.7573	top_n_fold
+18778695_36192459	Narayan 2008	Puvogel 2022	55	29	14.5	15	8	top13_fold	0.0	0.91			0.94	top_n_fold
+18778695_36223459	Narayan 2008	Batiuk 2022	55	23	11.5	12	13	top100_fold	1.833	0.39			0.739	top_n_fold
+18778695_36319771	Narayan 2008	Benjamin 2022	55	393	27.5	25	6	spearman_rho_log2fc	-0.04892	0.09	0.04	0.18	0.164	spearman_rho_log2fc
+18778695_36319771	Narayan 2008	Benjamin 2022	55	393	27.5	25	6	top100_fold	1.659	0.325			0.5	top_n_fold
+18778695_36302706	Narayan 2008	Ketchesin 2023 (own list)	55	72	27.5	25	6	spearman_rho_log2fc	0.1541	0.31	0.25	0.49	0.624	spearman_rho_log2fc
+18778695_36302706	Narayan 2008	Ketchesin 2023 (own list)	55	72	27.5	25	6	top100_fold	0.0	0.235			0.212	top_n_fold
+18778695_36932057	Narayan 2008	Schulmann 2023	55	201	27.5	25	6	spearman_rho_log2fc	0.4524	0.93	0.81	1.0	0.986	spearman_rho_log2fc
+18778695_36932057	Narayan 2008	Schulmann 2023	55	201	27.5	25	6	top100_fold	0.0	0.235			0.212	top_n_fold
+18778695_37498306	Narayan 2008	Arihisa 2023	55	15	7.5	8	16	top100_fold	3.6	0.765			0.9213	top_n_fold
+18778695_38448582	Narayan 2008	Ling 2024	55	180	27.5	25	6	top100_fold	3.666	0.575			0.68	top_n_fold
+18778695_38648100	Narayan 2008	Zhu 2024	55	58	27.5	25	6	top100_fold	0.0	0.235			0.212	top_n_fold
+18778695_39237723	Narayan 2008	Arbabi 2025	55	38	19.0	20	7	top100_fold	0.0	0.26			0.33	top_n_fold
+18778695_39397771	Narayan 2008	Alsema 2025	55	28	14.0	15	8	top100_fold	3.666	0.71			0.835	top_n_fold
+18778695_41174894	Narayan 2008	Yalcinbas 2025	55	68	27.5	25	6	spearman_rho_log2fc	-0.03672	0.105	0.04	0.18	0.184	spearman_rho_log2fc
+18778695_41174894	Narayan 2008	Yalcinbas 2025	55	68	27.5	25	6	top100_fold	0.0	0.235			0.212	top_n_fold
+18778695_41210297	Narayan 2008	Mas 2025	55	32	16.0	15	8	top4_fold	0.0	0.91			0.94	top_n_fold
+18778695_39526318	Narayan 2008	Zhang 2026	55	30	15.0	15	8	spearman_rho_log2fc	0.1312	0.47	0.03	0.55	0.655	spearman_rho_log2fc
+18778695_39526318	Narayan 2008	Zhang 2026	55	30	15.0	15	8	top100_fold	2.905	0.635			0.7733	top_n_fold
+18778695_41757081	Narayan 2008	Kwon 2026	55	63	27.5	25	6	top100_fold	0.0	0.235			0.212	top_n_fold
+18778695_41942462	Narayan 2008	Singh 2026	55	80	27.5	25	6	spearman_rho_log2fc	0.1235	0.27	0.21	0.43	0.556	spearman_rho_log2fc
+18778695_41942462	Narayan 2008	Singh 2026	55	80	27.5	25	6	top100_fold	5.419	0.725			0.832	top_n_fold
+19834500_20034564	Chu 2009	Arion 2010	23	16	8.0	8	16	top100_fold	4.277	0.825			0.9225	top_n_fold
+19834500_21091092	Chu 2009	Schmitt 2011	23	20	10.0	10	16	top100_fold	0.0	0.395			0.4653	top_n_fold
+19834500_21538462	Chu 2009	Barnes 2011	23	42	11.5	12	13	top51_fold	0.0	0.66			0.7862	top_n_fold
+19834500_22558445	Chu 2009	Wu 2012	23	18	9.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+19834500_22869038	Chu 2009	Fillman 2013	23	40	11.5	12	13	top100_fold	0.0	0.39			0.4417	top_n_fold
+19834500_24628518	Chu 2009	Pietersen 2014 (PV neurons)	23	16	8.0	8	16	top100_fold	2.033	0.6			0.7618	top_n_fold
+19834500_24702465	Chu 2009	Pietersen 2014	23	18	9.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+19834500_26585218	Chu 2009	Mauney 2015	23	18	9.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+19834500_27668389	Chu 2009	Fromer 2016	23	537	11.5	12	13	top100_fold	3.6	0.7			0.9014	top_n_fold
+19834500_28123834	Chu 2009	Mladinov 2016	23	12	6.0	5	16	top22_fold	0.0	0.895			0.9529	top_n_fold
+19834500_27940260	Chu 2009	Voisey 2017	23	45	11.5	12	13	top100_fold	0.0	0.39			0.4417	top_n_fold
+19834500_28754123	Chu 2009	Ramaker 2017	23	48	11.5	12	13	top88_fold	0.0	0.39			0.4417	top_n_fold
+19834500_27801890	Chu 2009	Scarr 2018	23	45	11.5	12	13	top93_fold	2.278	0.52			0.739	top_n_fold
+19834500_29463818	Chu 2009	Scarr 2018	23	30	11.5	12	13	top94_fold	2.23	0.52			0.739	top_n_fold
+19834500_30050107	Chu 2009	Jaffe 2018	23	351	11.5	12	13	top100_fold	0.0	0.39			0.4417	top_n_fold
+19834500_31123247	Chu 2009	Lanz 2019	23	38	11.5	12	13	top100_fold	4.277	0.76			0.9041	top_n_fold
+19834500_31174959	Chu 2009	Collado-Torres 2019	23	447	11.5	12	13	top100_fold	1.8	0.39			0.739	top_n_fold
+19834500_32006661	Chu 2009	Santarelli 2019	23	74	11.5	12	13	top100_fold	0.0	0.39			0.4417	top_n_fold
+19834500_32203495	Chu 2009	Jaffe 2020	23	168	11.5	12	13	top22_fold	0.0	0.9			0.9531	top_n_fold
+19834500_33184259	Chu 2009	Maas 2020	23	8	4.0	5	16	top100_fold	0.0	0.315			0.4674	top_n_fold
+19834500_32152472	Chu 2009	Perez 2021	23	26	11.5	12	13	top100_fold	3.6	0.7			0.9014	top_n_fold
+19834500_33558674	Chu 2009	Akula 2021	23	99	11.5	12	13	top21_fold	0.0	0.9			0.9531	top_n_fold
+19834500_34272489	Chu 2009	Wu 2021	23	24	11.5	12	13	top100_fold	0.0	0.39			0.4417	top_n_fold
+19834500_34440415	Chu 2009	Lindholm Carlström 2021	23	112	11.5	12	13	top63_fold	0.0	0.66			0.7862	top_n_fold
+19834500_32513544	Chu 2009	Zeppillo 2022	23	20	10.0	10	16	top100_fold	0.0	0.395			0.4653	top_n_fold
+19834500_36223459	Chu 2009	Batiuk 2022	23	23	11.5	12	13	top100_fold	1.833	0.39			0.739	top_n_fold
+19834500_36319771	Chu 2009	Benjamin 2022	23	393	11.5	12	13	top100_fold	1.659	0.39			0.6814	top_n_fold
+19834500_36302706	Chu 2009	Ketchesin 2023 (own list)	23	72	11.5	12	13	top100_fold	0.0	0.39			0.4417	top_n_fold
+19834500_36932057	Chu 2009	Schulmann 2023	23	201	11.5	12	13	top100_fold	0.0	0.39			0.4417	top_n_fold
+19834500_37498306	Chu 2009	Arihisa 2023	23	15	7.5	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+19834500_38448582	Chu 2009	Ling 2024	23	180	11.5	12	13	top100_fold	3.666	0.7			0.9014	top_n_fold
+19834500_38648100	Chu 2009	Zhu 2024	23	58	11.5	12	13	top100_fold	1.309	0.39			0.4417	top_n_fold
+19834500_39227716	Chu 2009	Frohlich 2024 (own list)	23	87	11.5	12	13	top100_fold	0.0	0.39			0.4417	top_n_fold
+19834500_39237723	Chu 2009	Arbabi 2025	23	38	11.5	12	13	top100_fold	1.833	0.39			0.739	top_n_fold
+19834500_41174894	Chu 2009	Yalcinbas 2025	23	68	11.5	12	13	top100_fold	0.0	0.39			0.4417	top_n_fold
+19834500_41210297	Chu 2009	Mas 2025	23	32	11.5	12	13	top4_fold	0.0	0.9			0.9531	top_n_fold
+19834500_41757081	Chu 2009	Kwon 2026	23	63	11.5	12	13	top100_fold	2.641	0.69			0.7683	top_n_fold
+19834500_41942462	Chu 2009	Singh 2026	23	80	11.5	12	13	top100_fold	0.0	0.39			0.4417	top_n_fold
+19834500_42461238	Chu 2009	Dean 2026	23	211	11.5	12	13	top46_fold	0.0	0.66			0.7862	top_n_fold
+20034564_21091092	Arion 2010	Schmitt 2011	16	20	8.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+20034564_21538462	Arion 2010	Barnes 2011	16	42	8.0	8	16	top51_fold	16.44	0.98			0.9929	top_n_fold
+20034564_22558445	Arion 2010	Wu 2012	16	18	8.0	8	16	top100_fold	1.8	0.515			0.7618	top_n_fold
+20034564_22869038	Arion 2010	Fillman 2013	16	40	8.0	8	16	top100_fold	1.8	0.515			0.7618	top_n_fold
+20034564_23147385	Arion 2010	Chen 2013	16	91	8.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+20034564_24169640	Arion 2010	Hwang 2013	16	29	8.0	8	16	top100_fold	3.6	0.765			0.9213	top_n_fold
+20034564_24628518	Arion 2010	Pietersen 2014 (PV neurons)	16	16	8.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+20034564_24702465	Arion 2010	Pietersen 2014	16	18	8.0	8	16	top100_fold	2.033	0.6			0.7618	top_n_fold
+20034564_25113377	Arion 2010	Zhao 2015	16	57	8.0	8	16	top100_fold	1.8	0.515			0.7618	top_n_fold
+20034564_26585218	Arion 2010	Mauney 2015	16	18	8.0	8	16	top100_fold	2.033	0.6			0.7618	top_n_fold
+20034564_27622934	Arion 2010	Darby 2016	16	95	8.0	8	16	top8_fold	0.0	0.92			0.9605	top_n_fold
+20034564_27661005	Arion 2010	Hu 2016	16	40	8.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+20034564_27898074	Arion 2010	Kim 2016	16	93	8.0	8	16	top47_fold	0.0	0.7			0.8042	top_n_fold
+20034564_28123834	Arion 2010	Mladinov 2016	16	12	6.0	5	16	top22_fold	0.0	0.895			0.9529	top_n_fold
+20034564_27940260	Arion 2010	Voisey 2017	16	45	8.0	8	16	top100_fold	1.8	0.515			0.7618	top_n_fold
+20034564_28754123	Arion 2010	Ramaker 2017	16	48	8.0	8	16	top88_fold	0.0	0.375			0.4858	top_n_fold
+20034564_27801890	Arion 2010	Scarr 2018	16	45	8.0	8	16	top93_fold	0.0	0.375			0.4858	top_n_fold
+20034564_29463818	Arion 2010	Scarr 2018	16	30	8.0	8	16	top94_fold	2.23	0.6			0.7618	top_n_fold
+20034564_32006661	Arion 2010	Santarelli 2019	16	74	8.0	8	16	top100_fold	1.79	0.515			0.7575	top_n_fold
+20034564_32566292	Arion 2010	Bakshi 2020	16	22	8.0	8	16	top100_fold	6.415	0.91			0.9798	top_n_fold
+20034564_33184259	Arion 2010	Maas 2020	16	8	4.0	5	16	top100_fold	0.0	0.315			0.4674	top_n_fold
+20034564_32152472	Arion 2010	Perez 2021	16	26	8.0	8	16	top100_fold	1.8	0.515			0.7618	top_n_fold
+20034564_34059796	Arion 2010	Weissleder 2021	16	39	8.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+20034564_34440415	Arion 2010	Lindholm Carlström 2021	16	112	8.0	8	16	top63_fold	0.0	0.7			0.8042	top_n_fold
+20034564_32513544	Arion 2010	Zeppillo 2022	16	20	8.0	8	16	top100_fold	7.2	0.92			0.9876	top_n_fold
+20034564_36192459	Arion 2010	Puvogel 2022	16	29	8.0	8	16	top13_fold	0.0	0.92			0.9605	top_n_fold
+20034564_36223459	Arion 2010	Batiuk 2022	16	23	8.0	8	16	top100_fold	3.666	0.765			0.9213	top_n_fold
+20034564_37498306	Arion 2010	Arihisa 2023	16	15	7.5	8	16	top100_fold	9.0	0.965			0.9953	top_n_fold
+20034564_38448582	Arion 2010	Ling 2024	16	180	8.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+20034564_38648100	Arion 2010	Zhu 2024	16	58	8.0	8	16	top100_fold	1.309	0.375			0.4858	top_n_fold
+20034564_39227716	Arion 2010	Frohlich 2024 (own list)	16	87	8.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+20034564_39397771	Arion 2010	Alsema 2025	16	28	8.0	8	16	top100_fold	3.666	0.765			0.9213	top_n_fold
+20034564_41210297	Arion 2010	Mas 2025	16	32	8.0	8	16	top4_fold	0.0	0.92			0.9605	top_n_fold
+20034564_39526318	Arion 2010	Zhang 2026	16	30	8.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+20034564_42461238	Arion 2010	Dean 2026	16	211	8.0	8	16	top46_fold	0.0	0.7			0.8042	top_n_fold
+21091092_21538462	Schmitt 2011	Barnes 2011	20	42	10.0	10	16	top45_fold	0.0	0.705			0.7969	top_n_fold
+21091092_22558445	Schmitt 2011	Wu 2012	20	18	9.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+21091092_22869038	Schmitt 2011	Fillman 2013	20	40	10.0	10	16	top100_fold	0.0	0.395			0.4653	top_n_fold
+21091092_23147385	Schmitt 2011	Chen 2013	20	91	10.0	10	16	top100_fold	0.0	0.395			0.4653	top_n_fold
+21091092_24169640	Schmitt 2011	Hwang 2013	20	29	10.0	10	16	top100_fold	1.495	0.395			0.5273	top_n_fold
+21091092_24628518	Schmitt 2011	Pietersen 2014 (PV neurons)	20	16	8.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+21091092_24702465	Schmitt 2011	Pietersen 2014	20	18	9.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+21091092_25113377	Schmitt 2011	Zhao 2015	20	57	10.0	10	16	top93_fold	0.0	0.395			0.4653	top_n_fold
+21091092_26585218	Schmitt 2011	Mauney 2015	20	18	9.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+21091092_27622934	Schmitt 2011	Darby 2016	20	95	10.0	10	16	top7_fold	0.0	0.935			0.9598	top_n_fold
+21091092_27661005	Schmitt 2011	Hu 2016	20	40	10.0	10	16	top100_fold	1.584	0.395			0.5485	top_n_fold
+21091092_27668389	Schmitt 2011	Fromer 2016	20	537	10.0	10	16	top100_fold	0.0	0.395			0.4653	top_n_fold
+21091092_27898074	Schmitt 2011	Kim 2016	20	93	10.0	10	16	top43_fold	8.085	0.885			0.9518	top_n_fold
+21091092_28123834	Schmitt 2011	Mladinov 2016	20	12	6.0	5	16	top18_fold	0.0	0.895			0.9529	top_n_fold
+21091092_27940260	Schmitt 2011	Voisey 2017	20	45	10.0	10	16	top100_fold	0.0	0.395			0.4653	top_n_fold
+21091092_28754123	Schmitt 2011	Ramaker 2017	20	48	10.0	10	16	top71_fold	0.0	0.395			0.4653	top_n_fold
+21091092_27801890	Schmitt 2011	Scarr 2018	20	45	10.0	10	16	top90_fold	2.112	0.605			0.7573	top_n_fold
+21091092_29463818	Schmitt 2011	Scarr 2018	20	30	10.0	10	16	top93_fold	0.0	0.395			0.4653	top_n_fold
+21091092_30050107	Schmitt 2011	Jaffe 2018	20	351	10.0	10	16	top100_fold	0.0	0.395			0.4653	top_n_fold
+21091092_31123247	Schmitt 2011	Lanz 2019	20	38	10.0	10	16	top100_fold	0.0	0.395			0.4653	top_n_fold
+21091092_31174959	Schmitt 2011	Collado-Torres 2019	20	447	10.0	10	16	top100_fold	2.99	0.71			0.8353	top_n_fold
+21091092_32006661	Schmitt 2011	Santarelli 2019	20	74	10.0	10	16	top100_fold	1.696	0.44			0.6778	top_n_fold
+21091092_32203495	Schmitt 2011	Jaffe 2020	20	168	10.0	10	16	top20_fold	0.0	0.935			0.9598	top_n_fold
+21091092_32566292	Schmitt 2011	Bakshi 2020	20	22	10.0	10	16	top100_fold	0.0	0.395			0.4653	top_n_fold
+21091092_33184259	Schmitt 2011	Maas 2020	20	8	4.0	5	16	top100_fold	0.0	0.315			0.4674	top_n_fold
+21091092_32152472	Schmitt 2011	Perez 2021	20	26	10.0	10	16	top100_fold	2.99	0.71			0.8353	top_n_fold
+21091092_33558674	Schmitt 2011	Akula 2021	20	99	10.0	10	16	top21_fold	0.0	0.935			0.9598	top_n_fold
+21091092_34059796	Schmitt 2011	Weissleder 2021	20	39	10.0	10	16	top100_fold	0.0	0.395			0.4653	top_n_fold
+21091092_34272489	Schmitt 2011	Wu 2021	20	24	10.0	10	16	top100_fold	1.715	0.44			0.7455	top_n_fold
+21091092_34440415	Schmitt 2011	Lindholm Carlström 2021	20	112	10.0	10	16	top60_fold	0.0	0.705			0.7969	top_n_fold
+21091092_32513544	Schmitt 2011	Zeppillo 2022	20	20	10.0	10	16	top100_fold	0.0	0.395			0.4653	top_n_fold
+21091092_36192459	Schmitt 2011	Puvogel 2022	20	29	10.0	10	16	top12_fold	0.0	0.935			0.9598	top_n_fold
+21091092_36223459	Schmitt 2011	Batiuk 2022	20	23	10.0	10	16	top100_fold	1.522	0.395			0.5273	top_n_fold
+21091092_36319771	Schmitt 2011	Benjamin 2022	20	393	10.0	10	16	top100_fold	1.414	0.395			0.4724	top_n_fold
+21091092_36302706	Schmitt 2011	Ketchesin 2023 (own list)	20	72	10.0	10	16	top100_fold	1.694	0.44			0.6778	top_n_fold
+21091092_36932057	Schmitt 2011	Schulmann 2023	20	201	10.0	10	16	top100_fold	0.0	0.395			0.4653	top_n_fold
+21091092_37498306	Schmitt 2011	Arihisa 2023	20	15	7.5	8	16	top80_fold	0.0	0.375			0.4858	top_n_fold
+21091092_38448582	Schmitt 2011	Ling 2024	20	180	10.0	10	16	top100_fold	0.0	0.395			0.4653	top_n_fold
+21091092_38648100	Schmitt 2011	Zhu 2024	20	58	10.0	10	16	top100_fold	1.148	0.395			0.4653	top_n_fold
+21091092_39227716	Schmitt 2011	Frohlich 2024 (own list)	20	87	10.0	10	16	top100_fold	0.0	0.395			0.4653	top_n_fold
+21091092_39237723	Schmitt 2011	Arbabi 2025	20	38	10.0	10	16	top100_fold	0.0	0.395			0.4653	top_n_fold
+21091092_39397771	Schmitt 2011	Alsema 2025	20	28	10.0	10	16	top91_fold	1.838	0.455			0.7573	top_n_fold
+21091092_41174894	Schmitt 2011	Yalcinbas 2025	20	68	10.0	10	16	top100_fold	1.424	0.395			0.4724	top_n_fold
+21091092_41210297	Schmitt 2011	Mas 2025	20	32	10.0	10	16	top3_fold	0.0	0.935			0.9598	top_n_fold
+21091092_39526318	Schmitt 2011	Zhang 2026	20	30	10.0	10	16	top100_fold	3.829	0.755			0.924	top_n_fold
+21091092_41757081	Schmitt 2011	Kwon 2026	20	63	10.0	10	16	top100_fold	1.186	0.395			0.4653	top_n_fold
+21091092_41942462	Schmitt 2011	Singh 2026	20	80	10.0	10	16	top100_fold	0.0	0.395			0.4653	top_n_fold
+21091092_42461238	Schmitt 2011	Dean 2026	20	211	10.0	10	16	top46_fold	0.0	0.705			0.7969	top_n_fold
+21538462_22558445	Barnes 2011	Wu 2012	42	18	9.0	8	16	top50_fold	0.0	0.7			0.8042	top_n_fold
+21538462_22869038	Barnes 2011	Fillman 2013	42	40	20.0	20	7	top50_fold	0.0	0.61			0.695	top_n_fold
+21538462_23147385	Barnes 2011	Chen 2013	42	91	21.0	20	7	spearman_rho_log2fc	-0.02849	0.2	0.0	0.24	0.19	spearman_rho_log2fc
+21538462_23147385	Barnes 2011	Chen 2013	42	91	21.0	20	7	top45_fold	0.0	0.61			0.695	top_n_fold
+21538462_24169640	Barnes 2011	Hwang 2013	42	29	14.5	15	8	top50_fold	0.0	0.655			0.725	top_n_fold
+21538462_24628518	Barnes 2011	Pietersen 2014 (PV neurons)	42	16	8.0	8	16	top51_fold	0.0	0.7			0.8042	top_n_fold
+21538462_24702465	Barnes 2011	Pietersen 2014	42	18	9.0	8	16	spearman_rho_log2fc	0.03493	0.34	0.04	0.59	0.4711	spearman_rho_log2fc
+21538462_24702465	Barnes 2011	Pietersen 2014	42	18	9.0	8	16	top51_fold	0.0	0.7			0.8042	top_n_fold
+21538462_25113377	Barnes 2011	Zhao 2015	42	57	21.0	20	7	top50_fold	0.0	0.61			0.695	top_n_fold
+21538462_25560755	Barnes 2011	Arion 2015	42	72	21.0	20	7	spearman_rho_log2fc	0.08563	0.31	0.0	0.54	0.4933	spearman_rho_log2fc
+21538462_26585218	Barnes 2011	Mauney 2015	42	18	9.0	8	16	top51_fold	0.0	0.7			0.8042	top_n_fold
+21538462_27622934	Barnes 2011	Darby 2016	42	95	21.0	20	7	top8_fold	0.0	0.89			0.895	top_n_fold
+21538462_27661005	Barnes 2011	Hu 2016	42	40	20.0	20	7	spearman_rho_log2fc	0.1782	0.48	0.0	0.69	0.725	spearman_rho_log2fc
+21538462_27661005	Barnes 2011	Hu 2016	42	40	20.0	20	7	top47_fold	0.0	0.61			0.695	top_n_fold
+21538462_27668389	Barnes 2011	Fromer 2016	42	537	21.0	20	7	top50_fold	0.0	0.61			0.695	top_n_fold
+21538462_27898074	Barnes 2011	Kim 2016	42	93	21.0	20	7	top47_fold	8.148	0.86			0.9167	top_n_fold
+21538462_28123834	Barnes 2011	Mladinov 2016	42	12	6.0	5	16	top22_fold	40.71	0.92			0.9751	top_n_fold
+21538462_27940260	Barnes 2011	Voisey 2017	42	45	21.0	20	7	top50_fold	7.2	0.71			0.9167	top_n_fold
+21538462_28754123	Barnes 2011	Ramaker 2017	42	48	21.0	20	7	spearman_rho_log2fc	0.06587	0.3	0.0	0.49	0.4233	spearman_rho_log2fc
+21538462_28754123	Barnes 2011	Ramaker 2017	42	48	21.0	20	7	top51_fold	0.0	0.61			0.695	top_n_fold
+21538462_27801890	Barnes 2011	Scarr 2018	42	45	21.0	20	7	top50_fold	0.0	0.61			0.695	top_n_fold
+21538462_29463818	Barnes 2011	Scarr 2018	42	30	15.0	15	8	top50_fold	0.0	0.655			0.725	top_n_fold
+21538462_30050107	Barnes 2011	Jaffe 2018	42	351	21.0	20	7	spearman_rho_log2fc	0.07809	0.3	0.0	0.53	0.4583	spearman_rho_log2fc
+21538462_30050107	Barnes 2011	Jaffe 2018	42	351	21.0	20	7	top47_fold	0.0	0.61			0.695	top_n_fold
+21538462_31123247	Barnes 2011	Lanz 2019	42	38	19.0	20	7	spearman_rho_log2fc	0.06739	0.3	0.0	0.51	0.4333	spearman_rho_log2fc
+21538462_31123247	Barnes 2011	Lanz 2019	42	38	19.0	20	7	top51_fold	8.221	0.86			0.9167	top_n_fold
+21538462_31174959	Barnes 2011	Collado-Torres 2019	42	447	21.0	20	7	top50_fold	0.0	0.61			0.695	top_n_fold
+21538462_32006661	Barnes 2011	Santarelli 2019	42	74	21.0	20	7	top49_fold	7.456	0.71			0.9167	top_n_fold
+21538462_32203495	Barnes 2011	Jaffe 2020	42	168	21.0	20	7	spearman_rho_log2fc	0.07927	0.3	0.0	0.53	0.4667	spearman_rho_log2fc
+21538462_32203495	Barnes 2011	Jaffe 2020	42	168	21.0	20	7	top22_fold	0.0	0.89			0.895	top_n_fold
+21538462_32566292	Barnes 2011	Bakshi 2020	42	22	11.0	10	16	top51_fold	0.0	0.705			0.7969	top_n_fold
+21538462_33184259	Barnes 2011	Maas 2020	42	8	4.0	5	16	spearman_rho_log2fc	-0.07395	0.2526	0.05	0.48	0.2044	spearman_rho_log2fc
+21538462_33184259	Barnes 2011	Maas 2020	42	8	4.0	5	16	top44_fold	0.0	0.635			0.7909	top_n_fold
+21538462_32152472	Barnes 2011	Perez 2021	42	26	13.0	12	13	spearman_rho_log2fc	0.1282	0.4	0.0	0.63	0.7021	spearman_rho_log2fc
+21538462_32152472	Barnes 2011	Perez 2021	42	26	13.0	12	13	top50_fold	0.0	0.66			0.7862	top_n_fold
+21538462_33558674	Barnes 2011	Akula 2021	42	99	21.0	20	7	top21_fold	0.0	0.89			0.895	top_n_fold
+21538462_34059796	Barnes 2011	Weissleder 2021	42	39	19.5	20	7	top50_fold	21.6	0.97			0.9817	top_n_fold
+21538462_34272489	Barnes 2011	Wu 2021	42	24	12.0	12	13	top47_fold	0.0	0.66			0.7862	top_n_fold
+21538462_34440415	Barnes 2011	Lindholm Carlström 2021	42	112	21.0	20	7	spearman_rho_log2fc	0.1269	0.38	0.0	0.61	0.6183	spearman_rho_log2fc
+21538462_34440415	Barnes 2011	Lindholm Carlström 2021	42	112	21.0	20	7	top49_fold	6.986	0.71			0.9167	top_n_fold
+21538462_32513544	Barnes 2011	Zeppillo 2022	42	20	10.0	10	16	top50_fold	0.0	0.705			0.7969	top_n_fold
+21538462_36192459	Barnes 2011	Puvogel 2022	42	29	14.5	15	8	top13_fold	0.0	0.91			0.94	top_n_fold
+21538462_36223459	Barnes 2011	Batiuk 2022	42	23	11.5	12	13	top49_fold	15.27	0.93			0.9907	top_n_fold
+21538462_36319771	Barnes 2011	Benjamin 2022	42	393	21.0	20	7	spearman_rho_log2fc	0.2216	0.57	0.02	0.78	0.8083	spearman_rho_log2fc
+21538462_36319771	Barnes 2011	Benjamin 2022	42	393	21.0	20	7	top50_fold	0.0	0.61			0.695	top_n_fold
+21538462_36302706	Barnes 2011	Ketchesin 2023 (own list)	42	72	21.0	20	7	spearman_rho_log2fc	0.1228	0.37	0.0	0.6	0.6067	spearman_rho_log2fc
+21538462_36302706	Barnes 2011	Ketchesin 2023 (own list)	42	72	21.0	20	7	top51_fold	0.0	0.61			0.695	top_n_fold
+21538462_36932057	Barnes 2011	Schulmann 2023	42	201	21.0	20	7	spearman_rho_log2fc	-0.06182	0.15	0.0	0.23	0.14	spearman_rho_log2fc
+21538462_36932057	Barnes 2011	Schulmann 2023	42	201	21.0	20	7	top50_fold	7.2	0.71			0.9167	top_n_fold
+21538462_37498306	Barnes 2011	Arihisa 2023	42	15	7.5	8	16	top50_fold	7.2	0.805			0.9511	top_n_fold
+21538462_38448582	Barnes 2011	Ling 2024	42	180	21.0	20	7	top49_fold	0.0	0.61			0.695	top_n_fold
+21538462_38648100	Barnes 2011	Zhu 2024	42	58	21.0	20	7	top45_fold	6.466	0.61			0.9167	top_n_fold
+21538462_39227716	Barnes 2011	Frohlich 2024 (own list)	42	87	21.0	20	7	top49_fold	0.0	0.61			0.695	top_n_fold
+21538462_39237723	Barnes 2011	Arbabi 2025	42	38	19.0	20	7	top49_fold	0.0	0.61			0.695	top_n_fold
+21538462_39397771	Barnes 2011	Alsema 2025	42	28	14.0	15	8	top49_fold	0.0	0.655			0.725	top_n_fold
+21538462_41174894	Barnes 2011	Yalcinbas 2025	42	68	21.0	20	7	spearman_rho_log2fc	0.009564	0.21	0.0	0.32	0.2833	spearman_rho_log2fc
+21538462_41174894	Barnes 2011	Yalcinbas 2025	42	68	21.0	20	7	top50_fold	0.0	0.61			0.695	top_n_fold
+21538462_41210297	Barnes 2011	Mas 2025	42	32	16.0	15	8	top4_fold	0.0	0.91			0.94	top_n_fold
+21538462_39526318	Barnes 2011	Zhang 2026	42	30	15.0	15	8	spearman_rho_log2fc	0.07192	0.34	0.01	0.46	0.515	spearman_rho_log2fc
+21538462_39526318	Barnes 2011	Zhang 2026	42	30	15.0	15	8	top46_fold	0.0	0.655			0.725	top_n_fold
+21538462_41757081	Barnes 2011	Kwon 2026	42	63	21.0	20	7	top46_fold	0.0	0.61			0.695	top_n_fold
+21538462_41942462	Barnes 2011	Singh 2026	42	80	21.0	20	7	spearman_rho_log2fc	0.0121	0.21	0.0	0.33	0.29	spearman_rho_log2fc
+21538462_41942462	Barnes 2011	Singh 2026	42	80	21.0	20	7	top50_fold	0.0	0.61			0.695	top_n_fold
+21538462_42461238	Barnes 2011	Dean 2026	42	211	21.0	20	7	spearman_rho_log2fc	0.07462	0.3	0.0	0.52	0.4467	spearman_rho_log2fc
+21538462_42461238	Barnes 2011	Dean 2026	42	211	21.0	20	7	top43_fold	0.0	0.61			0.695	top_n_fold
+22558445_23147385	Wu 2012	Chen 2013	18	91	9.0	8	16	top100_fold	1.53	0.375			0.5493	top_n_fold
+22558445_24169640	Wu 2012	Hwang 2013	18	29	9.0	8	16	top100_fold	5.027	0.85			0.9649	top_n_fold
+22558445_24628518	Wu 2012	Pietersen 2014 (PV neurons)	18	16	8.0	8	16	top100_fold	3.538	0.765			0.9164	top_n_fold
+22558445_24702465	Wu 2012	Pietersen 2014	18	18	9.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+22558445_25113377	Wu 2012	Zhao 2015	18	57	9.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+22558445_26585218	Wu 2012	Mauney 2015	18	18	9.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+22558445_27622934	Wu 2012	Darby 2016	18	95	9.0	8	16	top9_fold	0.0	0.92			0.9605	top_n_fold
+22558445_27661005	Wu 2012	Hu 2016	18	40	9.0	8	16	top100_fold	3.236	0.68			0.8598	top_n_fold
+22558445_27668389	Wu 2012	Fromer 2016	18	537	9.0	8	16	top100_fold	2.514	0.6			0.8096	top_n_fold
+22558445_27898074	Wu 2012	Kim 2016	18	93	9.0	8	16	top49_fold	0.0	0.7			0.8042	top_n_fold
+22558445_28123834	Wu 2012	Mladinov 2016	18	12	6.0	5	16	top21_fold	0.0	0.895			0.9529	top_n_fold
+22558445_27940260	Wu 2012	Voisey 2017	18	45	9.0	8	16	top100_fold	10.05	0.975			0.9969	top_n_fold
+22558445_28754123	Wu 2012	Ramaker 2017	18	48	9.0	8	16	top93_fold	0.0	0.375			0.4858	top_n_fold
+22558445_30050107	Wu 2012	Jaffe 2018	18	351	9.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+22558445_31123247	Wu 2012	Lanz 2019	18	38	9.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+22558445_31174959	Wu 2012	Collado-Torres 2019	18	447	9.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+22558445_32203495	Wu 2012	Jaffe 2020	18	168	9.0	8	16	top25_fold	0.0	0.92			0.9605	top_n_fold
+22558445_32566292	Wu 2012	Bakshi 2020	18	22	9.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+22558445_33184259	Wu 2012	Maas 2020	18	8	4.0	5	16	top100_fold	1.356	0.315			0.4674	top_n_fold
+22558445_32152472	Wu 2012	Perez 2021	18	26	9.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+22558445_33558674	Wu 2012	Akula 2021	18	99	9.0	8	16	top21_fold	0.0	0.92			0.9605	top_n_fold
+22558445_34059796	Wu 2012	Weissleder 2021	18	39	9.0	8	16	top100_fold	7.541	0.92			0.9911	top_n_fold
+22558445_34272489	Wu 2012	Wu 2021	18	24	9.0	8	16	top100_fold	1.738	0.515			0.7524	top_n_fold
+22558445_34440415	Wu 2012	Lindholm Carlström 2021	18	112	9.0	8	16	top65_fold	0.0	0.7			0.8042	top_n_fold
+22558445_32513544	Wu 2012	Zeppillo 2022	18	20	9.0	8	16	top100_fold	2.514	0.6			0.8096	top_n_fold
+22558445_36192459	Wu 2012	Puvogel 2022	18	29	9.0	8	16	top13_fold	0.0	0.92			0.9605	top_n_fold
+22558445_36223459	Wu 2012	Batiuk 2022	18	23	9.0	8	16	top100_fold	6.019	0.91			0.978	top_n_fold
+22558445_36319771	Wu 2012	Benjamin 2022	18	393	9.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+22558445_36302706	Wu 2012	Ketchesin 2023 (own list)	18	72	9.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+22558445_36932057	Wu 2012	Schulmann 2023	18	201	9.0	8	16	top100_fold	7.541	0.92			0.9911	top_n_fold
+22558445_37498306	Wu 2012	Arihisa 2023	18	15	7.5	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+22558445_38448582	Wu 2012	Ling 2024	18	180	9.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+22558445_38648100	Wu 2012	Zhu 2024	18	58	9.0	8	16	top100_fold	2.788	0.67			0.814	top_n_fold
+22558445_39237723	Wu 2012	Arbabi 2025	18	38	9.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+22558445_39397771	Wu 2012	Alsema 2025	18	28	9.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+22558445_41174894	Wu 2012	Yalcinbas 2025	18	68	9.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+22558445_41210297	Wu 2012	Mas 2025	18	32	9.0	8	16	top4_fold	0.0	0.92			0.9605	top_n_fold
+22558445_39526318	Wu 2012	Zhang 2026	18	30	9.0	8	16	top100_fold	1.516	0.375			0.5422	top_n_fold
+22558445_41757081	Wu 2012	Kwon 2026	18	63	9.0	8	16	top100_fold	6.766	0.92			0.9838	top_n_fold
+22558445_41942462	Wu 2012	Singh 2026	18	80	9.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+22869038_23147385	Fillman 2013	Chen 2013	40	91	20.0	20	7	top100_fold	0.0	0.26			0.33	top_n_fold
+22869038_24169640	Fillman 2013	Hwang 2013	40	29	14.5	15	8	top100_fold	7.541	0.87			0.96	top_n_fold
+22869038_24628518	Fillman 2013	Pietersen 2014 (PV neurons)	40	16	8.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+22869038_24702465	Fillman 2013	Pietersen 2014	40	18	9.0	8	16	top100_fold	1.769	0.515			0.7575	top_n_fold
+22869038_25113377	Fillman 2013	Zhao 2015	40	57	20.0	20	7	top100_fold	0.0	0.26			0.33	top_n_fold
+22869038_26585218	Fillman 2013	Mauney 2015	40	18	9.0	8	16	top100_fold	1.769	0.515			0.7575	top_n_fold
+22869038_27622934	Fillman 2013	Darby 2016	40	95	20.0	20	7	top9_fold	0.0	0.89			0.895	top_n_fold
+22869038_27661005	Fillman 2013	Hu 2016	40	40	20.0	20	7	top100_fold	0.0	0.26			0.33	top_n_fold
+22869038_27668389	Fillman 2013	Fromer 2016	40	537	20.0	20	7	top100_fold	2.514	0.57			0.6267	top_n_fold
+22869038_27898074	Fillman 2013	Kim 2016	40	93	20.0	20	7	top49_fold	10.47	0.86			0.9167	top_n_fold
+22869038_28123834	Fillman 2013	Mladinov 2016	40	12	6.0	5	16	top21_fold	0.0	0.895			0.9529	top_n_fold
+22869038_27940260	Fillman 2013	Voisey 2017	40	45	20.0	20	7	top100_fold	10.05	0.96			0.975	top_n_fold
+22869038_28754123	Fillman 2013	Ramaker 2017	40	48	20.0	20	7	top93_fold	0.0	0.26			0.33	top_n_fold
+22869038_30050107	Fillman 2013	Jaffe 2018	40	351	20.0	20	7	top100_fold	3.919	0.57			0.8	top_n_fold
+22869038_31123247	Fillman 2013	Lanz 2019	40	38	19.0	20	7	top100_fold	0.0	0.26			0.33	top_n_fold
+22869038_31174959	Fillman 2013	Collado-Torres 2019	40	447	20.0	20	7	top100_fold	2.514	0.57			0.6267	top_n_fold
+22869038_32203495	Fillman 2013	Jaffe 2020	40	168	20.0	20	7	top25_fold	0.0	0.89			0.895	top_n_fold
+22869038_32566292	Fillman 2013	Bakshi 2020	40	22	11.0	10	16	top100_fold	1.8	0.455			0.7573	top_n_fold
+22869038_33184259	Fillman 2013	Maas 2020	40	8	4.0	5	16	top100_fold	5.424	0.885			0.9596	top_n_fold
+22869038_32152472	Fillman 2013	Perez 2021	40	26	13.0	12	13	top100_fold	5.027	0.76			0.9514	top_n_fold
+22869038_33558674	Fillman 2013	Akula 2021	40	99	20.0	20	7	top21_fold	0.0	0.89			0.895	top_n_fold
+22869038_34059796	Fillman 2013	Weissleder 2021	40	39	19.5	20	7	top100_fold	22.62	0.99			0.9983	top_n_fold
+22869038_34272489	Fillman 2013	Wu 2021	40	24	12.0	12	13	top100_fold	0.0	0.39			0.4417	top_n_fold
+22869038_34440415	Fillman 2013	Lindholm Carlström 2021	40	112	20.0	20	7	top65_fold	22.12	0.97			0.9817	top_n_fold
+22869038_32513544	Fillman 2013	Zeppillo 2022	40	20	10.0	10	16	top100_fold	10.05	0.98			0.9964	top_n_fold
+22869038_36192459	Fillman 2013	Puvogel 2022	40	29	14.5	15	8	top13_fold	0.0	0.91			0.94	top_n_fold
+22869038_36223459	Fillman 2013	Batiuk 2022	40	23	11.5	12	13	top100_fold	2.006	0.52			0.739	top_n_fold
+22869038_36319771	Fillman 2013	Benjamin 2022	40	393	20.0	20	7	top100_fold	0.0	0.26			0.33	top_n_fold
+22869038_36302706	Fillman 2013	Ketchesin 2023 (own list)	40	72	20.0	20	7	top100_fold	6.073	0.84			0.9167	top_n_fold
+22869038_36932057	Fillman 2013	Schulmann 2023	40	201	20.0	20	7	top100_fold	5.027	0.75			0.8983	top_n_fold
+22869038_37498306	Fillman 2013	Arihisa 2023	40	15	7.5	8	16	top100_fold	2.514	0.6			0.8096	top_n_fold
+22869038_38448582	Fillman 2013	Ling 2024	40	180	20.0	20	7	top100_fold	0.0	0.26			0.33	top_n_fold
+22869038_38648100	Fillman 2013	Zhu 2024	40	58	20.0	20	7	top100_fold	2.788	0.57			0.66	top_n_fold
+22869038_39237723	Fillman 2013	Arbabi 2025	40	38	19.0	20	7	top100_fold	0.0	0.26			0.33	top_n_fold
+22869038_39397771	Fillman 2013	Alsema 2025	40	28	14.0	15	8	top100_fold	0.0	0.35			0.35	top_n_fold
+22869038_41174894	Fillman 2013	Yalcinbas 2025	40	68	20.0	20	7	top100_fold	3.897	0.57			0.8	top_n_fold
+22869038_41210297	Fillman 2013	Mas 2025	40	32	16.0	15	8	top4_fold	0.0	0.91			0.94	top_n_fold
+22869038_39526318	Fillman 2013	Zhang 2026	40	30	15.0	15	8	top100_fold	0.0	0.35			0.35	top_n_fold
+22869038_41757081	Fillman 2013	Kwon 2026	40	63	20.0	20	7	top100_fold	4.06	0.73			0.8	top_n_fold
+22869038_41942462	Fillman 2013	Singh 2026	40	80	20.0	20	7	top100_fold	0.0	0.26			0.33	top_n_fold
+23147385_24628518	Chen 2013	Pietersen 2014 (PV neurons)	91	16	8.0	8	16	top100_fold	1.6	0.375			0.6022	top_n_fold
+23147385_24702465	Chen 2013	Pietersen 2014	91	18	9.0	8	16	spearman_rho_log2fc	-0.005868	0.275	0.02	0.49	0.3522	spearman_rho_log2fc
+23147385_24702465	Chen 2013	Pietersen 2014	91	18	9.0	8	16	top100_fold	3.201	0.67			0.8598	top_n_fold
+23147385_25560755	Chen 2013	Arion 2015	91	72	36.0	30	5	spearman_rho_log2fc	0.09501	0.22	0.07	0.32	0.525	spearman_rho_log2fc
+23147385_26585218	Chen 2013	Mauney 2015	91	18	9.0	8	16	top100_fold	1.6	0.375			0.6022	top_n_fold
+23147385_27668389	Chen 2013	Fromer 2016	91	537	45.5	50	4	top100_fold	1.53	0.09				top_n_fold
+23147385_28123834	Chen 2013	Mladinov 2016	91	12	6.0	5	16	top20_fold	0.0	0.895			0.9529	top_n_fold
+23147385_27940260	Chen 2013	Voisey 2017	91	45	22.5	20	7	top100_fold	1.53	0.26			0.5367	top_n_fold
+23147385_28754123	Chen 2013	Ramaker 2017	91	48	24.0	25	6	spearman_rho_log2fc	0.2452	0.455	0.41	0.78	0.802	spearman_rho_log2fc
+23147385_28754123	Chen 2013	Ramaker 2017	91	48	24.0	25	6	top81_fold	2.569	0.455			0.5	top_n_fold
+23147385_27801890	Chen 2013	Scarr 2018	91	45	22.5	20	7	top88_fold	0.0	0.26			0.33	top_n_fold
+23147385_29463818	Chen 2013	Scarr 2018	91	30	15.0	15	8	top84_fold	0.0	0.35			0.35	top_n_fold
+23147385_30050107	Chen 2013	Jaffe 2018	91	351	45.5	50	4	spearman_rho_log2fc	0.144	0.115	0.05	0.25		spearman_rho_log2fc
+23147385_30050107	Chen 2013	Jaffe 2018	91	351	45.5	50	4	top100_fold	2.91	0.175				top_n_fold
+23147385_31123247	Chen 2013	Lanz 2019	91	38	19.0	20	7	spearman_rho_log2fc	0.1866	0.49	0.02	0.7	0.7483	spearman_rho_log2fc
+23147385_31123247	Chen 2013	Lanz 2019	91	38	19.0	20	7	top100_fold	6.45	0.84			0.9367	top_n_fold
+23147385_31174959	Chen 2013	Collado-Torres 2019	91	447	45.5	50	4	top100_fold	3.061	0.175				top_n_fold
+23147385_32006661	Chen 2013	Santarelli 2019	91	74	37.0	30	5	top100_fold	0.0	0.22			0.365	top_n_fold
+23147385_32203495	Chen 2013	Jaffe 2020	91	168	45.5	50	4	spearman_rho_log2fc	0.1568	0.115	0.05	0.29		spearman_rho_log2fc
+23147385_32203495	Chen 2013	Jaffe 2020	91	168	45.5	50	4	top20_fold	0.0	0.735				top_n_fold
+23147385_33184259	Chen 2013	Maas 2020	91	8	4.0	5	16	spearman_rho_log2fc	0.1772	0.74	0.44	0.87	0.874	spearman_rho_log2fc
+23147385_33184259	Chen 2013	Maas 2020	91	8	4.0	5	16	top100_fold	2.514	0.53			0.7851	top_n_fold
+23147385_32152472	Chen 2013	Perez 2021	91	26	13.0	12	13	spearman_rho_log2fc	-0.1435	0.04	0.0	0.27	0.06655	spearman_rho_log2fc
+23147385_32152472	Chen 2013	Perez 2021	91	26	13.0	12	13	top100_fold	0.0	0.39			0.4417	top_n_fold
+23147385_33558674	Chen 2013	Akula 2021	91	99	45.5	50	4	top17_fold	0.0	0.735				top_n_fold
+23147385_34272489	Chen 2013	Wu 2021	91	24	12.0	12	13	top100_fold	0.0	0.39			0.4417	top_n_fold
+23147385_34440415	Chen 2013	Lindholm Carlström 2021	91	112	45.5	50	4	spearman_rho_log2fc	0.07513	0.075	0.02	0.18		spearman_rho_log2fc
+23147385_34440415	Chen 2013	Lindholm Carlström 2021	91	112	45.5	50	4	top55_fold	0.0	0.325				top_n_fold
+23147385_32513544	Chen 2013	Zeppillo 2022	91	20	10.0	10	16	top100_fold	4.591	0.84			0.9349	top_n_fold
+23147385_36223459	Chen 2013	Batiuk 2022	91	23	11.5	12	13	top100_fold	1.531	0.39			0.5193	top_n_fold
+23147385_36319771	Chen 2013	Benjamin 2022	91	393	45.5	50	4	spearman_rho_log2fc	0.01923	0.055	0.01	0.12		spearman_rho_log2fc
+23147385_36319771	Chen 2013	Benjamin 2022	91	393	45.5	50	4	top100_fold	0.0	0.09				top_n_fold
+23147385_36302706	Chen 2013	Ketchesin 2023 (own list)	91	72	36.0	30	5	spearman_rho_log2fc	0.1954	0.36	0.24	0.59	0.76	spearman_rho_log2fc
+23147385_36302706	Chen 2013	Ketchesin 2023 (own list)	91	72	36.0	30	5	top100_fold	0.0	0.22			0.365	top_n_fold
+23147385_36932057	Chen 2013	Schulmann 2023	91	201	45.5	50	4	spearman_rho_log2fc	0.2154	0.16	0.07	0.42		spearman_rho_log2fc
+23147385_36932057	Chen 2013	Schulmann 2023	91	201	45.5	50	4	top100_fold	0.0	0.09				top_n_fold
+23147385_37498306	Chen 2013	Arihisa 2023	91	15	7.5	8	16	top82_fold	0.0	0.375			0.4858	top_n_fold
+23147385_38448582	Chen 2013	Ling 2024	91	180	45.5	50	4	top100_fold	3.061	0.175				top_n_fold
+23147385_38648100	Chen 2013	Zhu 2024	91	58	29.0	30	5	top100_fold	1.194	0.22			0.365	top_n_fold
+23147385_39227716	Chen 2013	Frohlich 2024 (own list)	91	87	43.5	50	4	top100_fold	1.531	0.09				top_n_fold
+23147385_39237723	Chen 2013	Arbabi 2025	91	38	19.0	20	7	top100_fold	3.062	0.57			0.7433	top_n_fold
+23147385_41174894	Chen 2013	Yalcinbas 2025	91	68	34.0	30	5	spearman_rho_log2fc	0.01328	0.14	0.0	0.27	0.35	spearman_rho_log2fc
+23147385_41174894	Chen 2013	Yalcinbas 2025	91	68	34.0	30	5	top100_fold	0.0	0.22			0.365	top_n_fold
+23147385_41210297	Chen 2013	Mas 2025	91	32	16.0	15	8	top3_fold	0.0	0.91			0.94	top_n_fold
+23147385_41757081	Chen 2013	Kwon 2026	91	63	31.5	30	5	top100_fold	2.433	0.39			0.65	top_n_fold
+23147385_41942462	Chen 2013	Singh 2026	91	80	40.0	30	5	spearman_rho_log2fc	0.02116	0.15	0.01	0.27	0.365	spearman_rho_log2fc
+23147385_41942462	Chen 2013	Singh 2026	91	80	40.0	30	5	top100_fold	6.197	0.67			0.925	top_n_fold
+23147385_42461238	Chen 2013	Dean 2026	91	211	45.5	50	4	spearman_rho_log2fc	0.08967	0.08	0.02	0.18		spearman_rho_log2fc
+23147385_42461238	Chen 2013	Dean 2026	91	211	45.5	50	4	top42_fold	0.0	0.325				top_n_fold
+24169640_24628518	Hwang 2013	Pietersen 2014 (PV neurons)	29	16	8.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+24169640_24702465	Hwang 2013	Pietersen 2014	29	18	9.0	8	16	top100_fold	1.769	0.515			0.7575	top_n_fold
+24169640_26585218	Hwang 2013	Mauney 2015	29	18	9.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+24169640_27668389	Hwang 2013	Fromer 2016	29	537	14.5	15	8	top100_fold	0.0	0.35			0.35	top_n_fold
+24169640_28123834	Hwang 2013	Mladinov 2016	29	12	6.0	5	16	top21_fold	0.0	0.895			0.9529	top_n_fold
+24169640_27940260	Hwang 2013	Voisey 2017	29	45	14.5	15	8	top100_fold	12.57	0.97			0.99	top_n_fold
+24169640_28754123	Hwang 2013	Ramaker 2017	29	48	14.5	15	8	top93_fold	0.0	0.35			0.35	top_n_fold
+24169640_27801890	Hwang 2013	Scarr 2018	29	45	14.5	15	8	top90_fold	0.0	0.35			0.35	top_n_fold
+24169640_29463818	Hwang 2013	Scarr 2018	29	30	14.5	15	8	top66_fold	4.171	0.655			0.725	top_n_fold
+24169640_30050107	Hwang 2013	Jaffe 2018	29	351	14.5	15	8	top100_fold	0.0	0.35			0.35	top_n_fold
+24169640_31123247	Hwang 2013	Lanz 2019	29	38	14.5	15	8	top100_fold	0.0	0.35			0.35	top_n_fold
+24169640_31174959	Hwang 2013	Collado-Torres 2019	29	447	14.5	15	8	top100_fold	2.514	0.635			0.68	top_n_fold
+24169640_32006661	Hwang 2013	Santarelli 2019	29	74	14.5	15	8	top100_fold	0.0	0.35			0.35	top_n_fold
+24169640_32203495	Hwang 2013	Jaffe 2020	29	168	14.5	15	8	top25_fold	0.0	0.91			0.94	top_n_fold
+24169640_33184259	Hwang 2013	Maas 2020	29	8	4.0	5	16	top100_fold	4.068	0.76			0.902	top_n_fold
+24169640_32152472	Hwang 2013	Perez 2021	29	26	13.0	12	13	top100_fold	0.0	0.39			0.4417	top_n_fold
+24169640_33558674	Hwang 2013	Akula 2021	29	99	14.5	15	8	top21_fold	114.0	1.0			1.0	top_n_fold
+24169640_34272489	Hwang 2013	Wu 2021	29	24	12.0	12	13	top100_fold	0.0	0.39			0.4417	top_n_fold
+24169640_34440415	Hwang 2013	Lindholm Carlström 2021	29	112	14.5	15	8	top65_fold	44.24	0.995			1.0	top_n_fold
+24169640_32513544	Hwang 2013	Zeppillo 2022	29	20	10.0	10	16	top100_fold	7.541	0.915			0.9896	top_n_fold
+24169640_36223459	Hwang 2013	Batiuk 2022	29	23	11.5	12	13	top100_fold	0.0	0.39			0.4417	top_n_fold
+24169640_36319771	Hwang 2013	Benjamin 2022	29	393	14.5	15	8	top100_fold	0.0	0.35			0.35	top_n_fold
+24169640_36302706	Hwang 2013	Ketchesin 2023 (own list)	29	72	14.5	15	8	top100_fold	4.048	0.79			0.835	top_n_fold
+24169640_36932057	Hwang 2013	Schulmann 2023	29	201	14.5	15	8	top100_fold	2.514	0.635			0.68	top_n_fold
+24169640_37498306	Hwang 2013	Arihisa 2023	29	15	7.5	8	16	top100_fold	25.14	1.0			0.9996	top_n_fold
+24169640_38448582	Hwang 2013	Ling 2024	29	180	14.5	15	8	top100_fold	0.0	0.35			0.35	top_n_fold
+24169640_38648100	Hwang 2013	Zhu 2024	29	58	14.5	15	8	top54_fold	9.562	0.855			0.93	top_n_fold
+24169640_39227716	Hwang 2013	Frohlich 2024 (own list)	29	87	14.5	15	8	top100_fold	0.0	0.35			0.35	top_n_fold
+24169640_39237723	Hwang 2013	Arbabi 2025	29	38	14.5	15	8	top100_fold	2.007	0.635			0.68	top_n_fold
+24169640_41174894	Hwang 2013	Yalcinbas 2025	29	68	14.5	15	8	top100_fold	11.69	0.95			0.9883	top_n_fold
+24169640_41210297	Hwang 2013	Mas 2025	29	32	14.5	15	8	top4_fold	0.0	0.91			0.94	top_n_fold
+24169640_41757081	Hwang 2013	Kwon 2026	29	63	14.5	15	8	top95_fold	1.499	0.35			0.5	top_n_fold
+24169640_41942462	Hwang 2013	Singh 2026	29	80	14.5	15	8	top100_fold	2.216	0.635			0.68	top_n_fold
+24169640_42461238	Hwang 2013	Dean 2026	29	211	14.5	15	8	top46_fold	14.09	0.895			0.9767	top_n_fold
+24628518_25113377	Pietersen 2014 (PV neurons)	Zhao 2015	16	57	8.0	8	16	top100_fold	1.769	0.515			0.7575	top_n_fold
+24628518_27622934	Pietersen 2014 (PV neurons)	Darby 2016	16	95	8.0	8	16	top9_fold	0.0	0.92			0.9605	top_n_fold
+24628518_27661005	Pietersen 2014 (PV neurons)	Hu 2016	16	40	8.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+24628518_27668389	Pietersen 2014 (PV neurons)	Fromer 2016	16	537	8.0	8	16	top100_fold	1.769	0.515			0.7575	top_n_fold
+24628518_27898074	Pietersen 2014 (PV neurons)	Kim 2016	16	93	8.0	8	16	top47_fold	0.0	0.7			0.8042	top_n_fold
+24628518_28123834	Pietersen 2014 (PV neurons)	Mladinov 2016	16	12	6.0	5	16	top22_fold	40.18	0.895			0.9751	top_n_fold
+24628518_27940260	Pietersen 2014 (PV neurons)	Voisey 2017	16	45	8.0	8	16	top100_fold	1.769	0.515			0.7575	top_n_fold
+24628518_28754123	Pietersen 2014 (PV neurons)	Ramaker 2017	16	48	8.0	8	16	top88_fold	0.0	0.375			0.4858	top_n_fold
+24628518_27801890	Pietersen 2014 (PV neurons)	Scarr 2018	16	45	8.0	8	16	top93_fold	2.249	0.6			0.7618	top_n_fold
+24628518_29463818	Pietersen 2014 (PV neurons)	Scarr 2018	16	30	8.0	8	16	top94_fold	0.0	0.375			0.4858	top_n_fold
+24628518_30050107	Pietersen 2014 (PV neurons)	Jaffe 2018	16	351	8.0	8	16	top100_fold	3.255	0.68			0.8598	top_n_fold
+24628518_31123247	Pietersen 2014 (PV neurons)	Lanz 2019	16	38	8.0	8	16	top100_fold	2.033	0.6			0.7618	top_n_fold
+24628518_31174959	Pietersen 2014 (PV neurons)	Collado-Torres 2019	16	447	8.0	8	16	top100_fold	1.769	0.515			0.7575	top_n_fold
+24628518_32006661	Pietersen 2014 (PV neurons)	Santarelli 2019	16	74	8.0	8	16	top100_fold	3.558	0.765			0.9164	top_n_fold
+24628518_32203495	Pietersen 2014 (PV neurons)	Jaffe 2020	16	168	8.0	8	16	top22_fold	0.0	0.92			0.9605	top_n_fold
+24628518_32566292	Pietersen 2014 (PV neurons)	Bakshi 2020	16	22	8.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+24628518_33184259	Pietersen 2014 (PV neurons)	Maas 2020	16	8	4.0	5	16	top100_fold	1.334	0.315			0.4674	top_n_fold
+24628518_32152472	Pietersen 2014 (PV neurons)	Perez 2021	16	26	8.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+24628518_33558674	Pietersen 2014 (PV neurons)	Akula 2021	16	99	8.0	8	16	top21_fold	0.0	0.92			0.9605	top_n_fold
+24628518_34059796	Pietersen 2014 (PV neurons)	Weissleder 2021	16	39	8.0	8	16	top100_fold	1.769	0.515			0.7575	top_n_fold
+24628518_34272489	Pietersen 2014 (PV neurons)	Wu 2021	16	24	8.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+24628518_32513544	Pietersen 2014 (PV neurons)	Zeppillo 2022	16	20	8.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+24628518_36192459	Pietersen 2014 (PV neurons)	Puvogel 2022	16	29	8.0	8	16	top12_fold	0.0	0.92			0.9605	top_n_fold
+24628518_36223459	Pietersen 2014 (PV neurons)	Batiuk 2022	16	23	8.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+24628518_36319771	Pietersen 2014 (PV neurons)	Benjamin 2022	16	393	8.0	8	16	top100_fold	1.639	0.375			0.6247	top_n_fold
+24628518_36302706	Pietersen 2014 (PV neurons)	Ketchesin 2023 (own list)	16	72	8.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+24628518_36932057	Pietersen 2014 (PV neurons)	Schulmann 2023	16	201	8.0	8	16	top100_fold	1.769	0.515			0.7575	top_n_fold
+24628518_37498306	Pietersen 2014 (PV neurons)	Arihisa 2023	16	15	7.5	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+24628518_38648100	Pietersen 2014 (PV neurons)	Zhu 2024	16	58	8.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+24628518_39227716	Pietersen 2014 (PV neurons)	Frohlich 2024 (own list)	16	87	8.0	8	16	top100_fold	3.593	0.765			0.9213	top_n_fold
+24628518_39237723	Pietersen 2014 (PV neurons)	Arbabi 2025	16	38	8.0	8	16	top100_fold	1.797	0.515			0.7618	top_n_fold
+24628518_39397771	Pietersen 2014 (PV neurons)	Alsema 2025	16	28	8.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+24628518_41174894	Pietersen 2014 (PV neurons)	Yalcinbas 2025	16	68	8.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+24628518_41210297	Pietersen 2014 (PV neurons)	Mas 2025	16	32	8.0	8	16	top4_fold	0.0	0.92			0.9605	top_n_fold
+24628518_39526318	Pietersen 2014 (PV neurons)	Zhang 2026	16	30	8.0	8	16	top100_fold	4.308	0.825			0.9245	top_n_fold
+24628518_41757081	Pietersen 2014 (PV neurons)	Kwon 2026	16	63	8.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+24628518_41942462	Pietersen 2014 (PV neurons)	Singh 2026	16	80	8.0	8	16	top100_fold	3.553	0.765			0.9164	top_n_fold
+24628518_42461238	Pietersen 2014 (PV neurons)	Dean 2026	16	211	8.0	8	16	top46_fold	0.0	0.7			0.8042	top_n_fold
+24702465_25113377	Pietersen 2014	Zhao 2015	18	57	9.0	8	16	top100_fold	1.769	0.515			0.7575	top_n_fold
+24702465_25560755	Pietersen 2014	Arion 2015	18	72	9.0	8	16	spearman_rho_log2fc	-0.0002372	0.285	0.02	0.49	0.3673	spearman_rho_log2fc
+24702465_27622934	Pietersen 2014	Darby 2016	18	95	9.0	8	16	top9_fold	0.0	0.92			0.9605	top_n_fold
+24702465_27661005	Pietersen 2014	Hu 2016	18	40	9.0	8	16	spearman_rho_log2fc	-0.0006812	0.285	0.02	0.49	0.3665	spearman_rho_log2fc
+24702465_27661005	Pietersen 2014	Hu 2016	18	40	9.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+24702465_27668389	Pietersen 2014	Fromer 2016	18	537	9.0	8	16	top100_fold	1.769	0.515			0.7575	top_n_fold
+24702465_27898074	Pietersen 2014	Kim 2016	18	93	9.0	8	16	top47_fold	0.0	0.7			0.8042	top_n_fold
+24702465_28123834	Pietersen 2014	Mladinov 2016	18	12	6.0	5	16	top22_fold	0.0	0.895			0.9529	top_n_fold
+24702465_27940260	Pietersen 2014	Voisey 2017	18	45	9.0	8	16	top100_fold	3.538	0.765			0.9164	top_n_fold
+24702465_28754123	Pietersen 2014	Ramaker 2017	18	48	9.0	8	16	spearman_rho_log2fc	0.0005979	0.285	0.02	0.49	0.3689	spearman_rho_log2fc
+24702465_28754123	Pietersen 2014	Ramaker 2017	18	48	9.0	8	16	top88_fold	2.609	0.67			0.8096	top_n_fold
+24702465_27801890	Pietersen 2014	Scarr 2018	18	45	9.0	8	16	top93_fold	0.0	0.375			0.4858	top_n_fold
+24702465_29463818	Pietersen 2014	Scarr 2018	18	30	9.0	8	16	top94_fold	2.201	0.6			0.7618	top_n_fold
+24702465_30050107	Pietersen 2014	Jaffe 2018	18	351	9.0	8	16	spearman_rho_log2fc	-0.02997	0.225	0.01	0.41	0.2884	spearman_rho_log2fc
+24702465_30050107	Pietersen 2014	Jaffe 2018	18	351	9.0	8	16	top100_fold	1.628	0.375			0.6022	top_n_fold
+24702465_31123247	Pietersen 2014	Lanz 2019	18	38	9.0	8	16	spearman_rho_log2fc	0.001355	0.285	0.02	0.49	0.3713	spearman_rho_log2fc
+24702465_31123247	Pietersen 2014	Lanz 2019	18	38	9.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+24702465_31174959	Pietersen 2014	Collado-Torres 2019	18	447	9.0	8	16	top100_fold	1.769	0.515			0.7575	top_n_fold
+24702465_32006661	Pietersen 2014	Santarelli 2019	18	74	9.0	8	16	top100_fold	1.779	0.515			0.7575	top_n_fold
+24702465_32203495	Pietersen 2014	Jaffe 2020	18	168	9.0	8	16	spearman_rho_log2fc	0.01191	0.295	0.03	0.54	0.4005	spearman_rho_log2fc
+24702465_32203495	Pietersen 2014	Jaffe 2020	18	168	9.0	8	16	top22_fold	0.0	0.92			0.9605	top_n_fold
+24702465_32566292	Pietersen 2014	Bakshi 2020	18	22	9.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+24702465_33184259	Pietersen 2014	Maas 2020	18	8	4.0	5	16	spearman_rho_log2fc	-0.003579	0.355	0.12	0.57	0.393	spearman_rho_log2fc
+24702465_33184259	Pietersen 2014	Maas 2020	18	8	4.0	5	16	top100_fold	0.0	0.315			0.4674	top_n_fold
+24702465_32152472	Pietersen 2014	Perez 2021	18	26	9.0	8	16	spearman_rho_log2fc	0.03021	0.325	0.04	0.57	0.4569	spearman_rho_log2fc
+24702465_32152472	Pietersen 2014	Perez 2021	18	26	9.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+24702465_33558674	Pietersen 2014	Akula 2021	18	99	9.0	8	16	top21_fold	0.0	0.92			0.9605	top_n_fold
+24702465_34059796	Pietersen 2014	Weissleder 2021	18	39	9.0	8	16	top100_fold	1.769	0.515			0.7575	top_n_fold
+24702465_34272489	Pietersen 2014	Wu 2021	18	24	9.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+24702465_32513544	Pietersen 2014	Zeppillo 2022	18	20	9.0	8	16	top100_fold	1.769	0.515			0.7575	top_n_fold
+24702465_36192459	Pietersen 2014	Puvogel 2022	18	29	9.0	8	16	top12_fold	0.0	0.92			0.9605	top_n_fold
+24702465_36223459	Pietersen 2014	Batiuk 2022	18	23	9.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+24702465_36319771	Pietersen 2014	Benjamin 2022	18	393	9.0	8	16	spearman_rho_log2fc	-0.01652	0.25	0.02	0.46	0.3244	spearman_rho_log2fc
+24702465_36319771	Pietersen 2014	Benjamin 2022	18	393	9.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+24702465_36302706	Pietersen 2014	Ketchesin 2023 (own list)	18	72	9.0	8	16	spearman_rho_log2fc	-0.02828	0.225	0.01	0.41	0.2915	spearman_rho_log2fc
+24702465_36302706	Pietersen 2014	Ketchesin 2023 (own list)	18	72	9.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+24702465_36932057	Pietersen 2014	Schulmann 2023	18	201	9.0	8	16	spearman_rho_log2fc	0.02591	0.32	0.03	0.56	0.444	spearman_rho_log2fc
+24702465_36932057	Pietersen 2014	Schulmann 2023	18	201	9.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+24702465_37498306	Pietersen 2014	Arihisa 2023	18	15	7.5	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+24702465_38648100	Pietersen 2014	Zhu 2024	18	58	9.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+24702465_39227716	Pietersen 2014	Frohlich 2024 (own list)	18	87	9.0	8	16	top100_fold	1.796	0.515			0.7618	top_n_fold
+24702465_39237723	Pietersen 2014	Arbabi 2025	18	38	9.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+24702465_39397771	Pietersen 2014	Alsema 2025	18	28	9.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+24702465_41174894	Pietersen 2014	Yalcinbas 2025	18	68	9.0	8	16	spearman_rho_log2fc	-0.02928	0.225	0.01	0.41	0.2898	spearman_rho_log2fc
+24702465_41174894	Pietersen 2014	Yalcinbas 2025	18	68	9.0	8	16	top100_fold	4.934	0.835			0.9515	top_n_fold
+24702465_41210297	Pietersen 2014	Mas 2025	18	32	9.0	8	16	top4_fold	0.0	0.92			0.9605	top_n_fold
+24702465_39526318	Pietersen 2014	Zhang 2026	18	30	9.0	8	16	spearman_rho_log2fc	0.04632	0.365	0.04	0.6	0.5035	spearman_rho_log2fc
+24702465_39526318	Pietersen 2014	Zhang 2026	18	30	9.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+24702465_41757081	Pietersen 2014	Kwon 2026	18	63	9.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+24702465_41942462	Pietersen 2014	Singh 2026	18	80	9.0	8	16	spearman_rho_log2fc	-0.02497	0.23	0.01	0.42	0.2995	spearman_rho_log2fc
+24702465_41942462	Pietersen 2014	Singh 2026	18	80	9.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+24702465_42461238	Pietersen 2014	Dean 2026	18	211	9.0	8	16	spearman_rho_log2fc	-0.01539	0.255	0.02	0.47	0.3265	spearman_rho_log2fc
+24702465_42461238	Pietersen 2014	Dean 2026	18	211	9.0	8	16	top46_fold	0.0	0.7			0.8042	top_n_fold
+25113377_26585218	Zhao 2015	Mauney 2015	57	18	9.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+25113377_27668389	Zhao 2015	Fromer 2016	57	537	28.5	30	5	top100_fold	0.0	0.22			0.365	top_n_fold
+25113377_28123834	Zhao 2015	Mladinov 2016	57	12	6.0	5	16	top21_fold	0.0	0.895			0.9529	top_n_fold
+25113377_27940260	Zhao 2015	Voisey 2017	57	45	22.5	20	7	top100_fold	2.514	0.57			0.6267	top_n_fold
+25113377_28754123	Zhao 2015	Ramaker 2017	57	48	24.0	25	6	top93_fold	2.336	0.455			0.5	top_n_fold
+25113377_27801890	Zhao 2015	Scarr 2018	57	45	22.5	20	7	top90_fold	2.243	0.57			0.6267	top_n_fold
+25113377_29463818	Zhao 2015	Scarr 2018	57	30	15.0	15	8	top66_fold	0.0	0.655			0.725	top_n_fold
+25113377_30050107	Zhao 2015	Jaffe 2018	57	351	28.5	30	5	top99_fold	3.999	0.57			0.8	top_n_fold
+25113377_31123247	Zhao 2015	Lanz 2019	57	38	19.0	20	7	top100_fold	5.4	0.75			0.8983	top_n_fold
+25113377_31174959	Zhao 2015	Collado-Torres 2019	57	447	28.5	30	5	top100_fold	2.514	0.39			0.65	top_n_fold
+25113377_32006661	Zhao 2015	Santarelli 2019	57	74	28.5	30	5	top97_fold	0.0	0.22			0.365	top_n_fold
+25113377_32203495	Zhao 2015	Jaffe 2020	57	168	28.5	30	5	top25_fold	0.0	0.81			0.895	top_n_fold
+25113377_33184259	Zhao 2015	Maas 2020	57	8	4.0	5	16	top98_fold	2.824	0.62			0.7872	top_n_fold
+25113377_32152472	Zhao 2015	Perez 2021	57	26	13.0	12	13	top100_fold	0.0	0.39			0.4417	top_n_fold
+25113377_33558674	Zhao 2015	Akula 2021	57	99	28.5	30	5	top21_fold	0.0	0.81			0.895	top_n_fold
+25113377_34272489	Zhao 2015	Wu 2021	57	24	12.0	12	13	top100_fold	1.738	0.39			0.7317	top_n_fold
+25113377_34440415	Zhao 2015	Lindholm Carlström 2021	57	112	28.5	30	5	top65_fold	0.0	0.49			0.64	top_n_fold
+25113377_32513544	Zhao 2015	Zeppillo 2022	57	20	10.0	10	16	top100_fold	0.0	0.395			0.4653	top_n_fold
+25113377_36223459	Zhao 2015	Batiuk 2022	57	23	11.5	12	13	top100_fold	0.0	0.39			0.4417	top_n_fold
+25113377_36319771	Zhao 2015	Benjamin 2022	57	393	28.5	30	5	top100_fold	0.0	0.22			0.365	top_n_fold
+25113377_36302706	Zhao 2015	Ketchesin 2023 (own list)	57	72	28.5	30	5	top100_fold	0.0	0.22			0.365	top_n_fold
+25113377_36932057	Zhao 2015	Schulmann 2023	57	201	28.5	30	5	top100_fold	5.027	0.57			0.875	top_n_fold
+25113377_37498306	Zhao 2015	Arihisa 2023	57	15	7.5	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+25113377_38448582	Zhao 2015	Ling 2024	57	180	28.5	30	5	top100_fold	2.006	0.39			0.65	top_n_fold
+25113377_38648100	Zhao 2015	Zhu 2024	57	58	28.5	30	5	top96_fold	1.513	0.22			0.65	top_n_fold
+25113377_39227716	Zhao 2015	Frohlich 2024 (own list)	57	87	28.5	30	5	top100_fold	6.019	0.67			0.925	top_n_fold
+25113377_39237723	Zhao 2015	Arbabi 2025	57	38	19.0	20	7	top100_fold	2.007	0.57			0.6267	top_n_fold
+25113377_41174894	Zhao 2015	Yalcinbas 2025	57	68	28.5	30	5	top100_fold	1.949	0.24			0.65	top_n_fold
+25113377_41210297	Zhao 2015	Mas 2025	57	32	16.0	15	8	top4_fold	0.0	0.91			0.94	top_n_fold
+25113377_41757081	Zhao 2015	Kwon 2026	57	63	28.5	30	5	top97_fold	2.876	0.39			0.73	top_n_fold
+25113377_41942462	Zhao 2015	Singh 2026	57	80	28.5	30	5	top100_fold	4.431	0.57			0.875	top_n_fold
+25113377_42461238	Zhao 2015	Dean 2026	57	211	28.5	30	5	top46_fold	0.0	0.49			0.64	top_n_fold
+25560755_27661005	Arion 2015	Hu 2016	72	40	20.0	20	7	spearman_rho_log2fc	0.1277	0.38	0.0	0.61	0.6217	spearman_rho_log2fc
+25560755_28754123	Arion 2015	Ramaker 2017	72	48	24.0	25	6	spearman_rho_log2fc	0.1676	0.34	0.26	0.52	0.656	spearman_rho_log2fc
+25560755_33184259	Arion 2015	Maas 2020	72	8	4.0	5	16	spearman_rho_log2fc	0.131	0.6632	0.36	0.82	0.7851	spearman_rho_log2fc
+25560755_32152472	Arion 2015	Perez 2021	72	26	13.0	12	13	spearman_rho_log2fc	-0.1531	0.02	0.0	0.27	0.06103	spearman_rho_log2fc
+25560755_34440415	Arion 2015	Lindholm Carlström 2021	72	112	36.0	30	5	spearman_rho_log2fc	0.1149	0.28	0.12	0.36	0.585	spearman_rho_log2fc
+25560755_39526318	Arion 2015	Zhang 2026	72	30	15.0	15	8	spearman_rho_log2fc	0.1448	0.505	0.04	0.57	0.6833	spearman_rho_log2fc
+25560755_42461238	Arion 2015	Dean 2026	72	211	36.0	30	5	spearman_rho_log2fc	-0.04815	0.12	0.0	0.19	0.215	spearman_rho_log2fc
+26585218_27622934	Mauney 2015	Darby 2016	18	95	9.0	8	16	top9_fold	0.0	0.92			0.9605	top_n_fold
+26585218_27661005	Mauney 2015	Hu 2016	18	40	9.0	8	16	top100_fold	3.352	0.71			0.8867	top_n_fold
+26585218_27668389	Mauney 2015	Fromer 2016	18	537	9.0	8	16	top100_fold	1.769	0.515			0.7575	top_n_fold
+26585218_27898074	Mauney 2015	Kim 2016	18	93	9.0	8	16	top47_fold	0.0	0.7			0.8042	top_n_fold
+26585218_28123834	Mauney 2015	Mladinov 2016	18	12	6.0	5	16	top22_fold	0.0	0.895			0.9529	top_n_fold
+26585218_27940260	Mauney 2015	Voisey 2017	18	45	9.0	8	16	top100_fold	1.769	0.515			0.7575	top_n_fold
+26585218_28754123	Mauney 2015	Ramaker 2017	18	48	9.0	8	16	top88_fold	0.0	0.375			0.4858	top_n_fold
+26585218_27801890	Mauney 2015	Scarr 2018	18	45	9.0	8	16	top93_fold	0.0	0.375			0.4858	top_n_fold
+26585218_29463818	Mauney 2015	Scarr 2018	18	30	9.0	8	16	top94_fold	0.0	0.375			0.4858	top_n_fold
+26585218_30050107	Mauney 2015	Jaffe 2018	18	351	9.0	8	16	top100_fold	1.628	0.375			0.6022	top_n_fold
+26585218_31123247	Mauney 2015	Lanz 2019	18	38	9.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+26585218_31174959	Mauney 2015	Collado-Torres 2019	18	447	9.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+26585218_32006661	Mauney 2015	Santarelli 2019	18	74	9.0	8	16	top100_fold	3.558	0.765			0.9164	top_n_fold
+26585218_32203495	Mauney 2015	Jaffe 2020	18	168	9.0	8	16	top22_fold	0.0	0.92			0.9605	top_n_fold
+26585218_32566292	Mauney 2015	Bakshi 2020	18	22	9.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+26585218_33184259	Mauney 2015	Maas 2020	18	8	4.0	5	16	top100_fold	0.0	0.315			0.4674	top_n_fold
+26585218_32152472	Mauney 2015	Perez 2021	18	26	9.0	8	16	top100_fold	1.769	0.515			0.7575	top_n_fold
+26585218_33558674	Mauney 2015	Akula 2021	18	99	9.0	8	16	top21_fold	0.0	0.92			0.9605	top_n_fold
+26585218_34059796	Mauney 2015	Weissleder 2021	18	39	9.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+26585218_34272489	Mauney 2015	Wu 2021	18	24	9.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+26585218_32513544	Mauney 2015	Zeppillo 2022	18	20	9.0	8	16	top100_fold	1.769	0.515			0.7575	top_n_fold
+26585218_36192459	Mauney 2015	Puvogel 2022	18	29	9.0	8	16	top12_fold	0.0	0.92			0.9605	top_n_fold
+26585218_36223459	Mauney 2015	Batiuk 2022	18	23	9.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+26585218_36319771	Mauney 2015	Benjamin 2022	18	393	9.0	8	16	top100_fold	1.639	0.375			0.6247	top_n_fold
+26585218_36302706	Mauney 2015	Ketchesin 2023 (own list)	18	72	9.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+26585218_36932057	Mauney 2015	Schulmann 2023	18	201	9.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+26585218_37498306	Mauney 2015	Arihisa 2023	18	15	7.5	8	16	top100_fold	1.769	0.515			0.7575	top_n_fold
+26585218_38648100	Mauney 2015	Zhu 2024	18	58	9.0	8	16	top100_fold	1.295	0.375			0.4858	top_n_fold
+26585218_39227716	Mauney 2015	Frohlich 2024 (own list)	18	87	9.0	8	16	top100_fold	1.796	0.515			0.7618	top_n_fold
+26585218_39237723	Mauney 2015	Arbabi 2025	18	38	9.0	8	16	top100_fold	1.797	0.515			0.7618	top_n_fold
+26585218_39397771	Mauney 2015	Alsema 2025	18	28	9.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+26585218_41174894	Mauney 2015	Yalcinbas 2025	18	68	9.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+26585218_41210297	Mauney 2015	Mas 2025	18	32	9.0	8	16	top4_fold	0.0	0.92			0.9605	top_n_fold
+26585218_39526318	Mauney 2015	Zhang 2026	18	30	9.0	8	16	top100_fold	1.436	0.375			0.4978	top_n_fold
+26585218_41757081	Mauney 2015	Kwon 2026	18	63	9.0	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+26585218_41942462	Mauney 2015	Singh 2026	18	80	9.0	8	16	top100_fold	1.776	0.515			0.7575	top_n_fold
+26585218_42461238	Mauney 2015	Dean 2026	18	211	9.0	8	16	top46_fold	7.751	0.805			0.9511	top_n_fold
+27622934_27668389	Darby 2016	Fromer 2016	95	537	47.5	50	4	top9_fold	0.0	0.735				top_n_fold
+27622934_28123834	Darby 2016	Mladinov 2016	95	12	6.0	5	16	top9_fold	0.0	0.895			0.9529	top_n_fold
+27622934_27940260	Darby 2016	Voisey 2017	95	45	22.5	20	7	top9_fold	0.0	0.89			0.895	top_n_fold
+27622934_28754123	Darby 2016	Ramaker 2017	95	48	24.0	25	6	top9_fold	0.0	0.92			0.884	top_n_fold
+27622934_27801890	Darby 2016	Scarr 2018	95	45	22.5	20	7	top9_fold	0.0	0.89			0.895	top_n_fold
+27622934_29463818	Darby 2016	Scarr 2018	95	30	15.0	15	8	top9_fold	0.0	0.91			0.94	top_n_fold
+27622934_30050107	Darby 2016	Jaffe 2018	95	351	47.5	50	4	top9_fold	0.0	0.735				top_n_fold
+27622934_31123247	Darby 2016	Lanz 2019	95	38	19.0	20	7	top8_fold	0.0	0.89			0.895	top_n_fold
+27622934_31174959	Darby 2016	Collado-Torres 2019	95	447	47.5	50	4	top9_fold	0.0	0.735				top_n_fold
+27622934_32006661	Darby 2016	Santarelli 2019	95	74	37.0	30	5	top8_fold	0.0	0.81			0.895	top_n_fold
+27622934_32203495	Darby 2016	Jaffe 2020	95	168	47.5	50	4	top6_fold	0.0	0.735				top_n_fold
+27622934_33184259	Darby 2016	Maas 2020	95	8	4.0	5	16	top7_fold	0.0	0.895			0.9529	top_n_fold
+27622934_32152472	Darby 2016	Perez 2021	95	26	13.0	12	13	top9_fold	0.0	0.9			0.9531	top_n_fold
+27622934_33558674	Darby 2016	Akula 2021	95	99	47.5	50	4	top9_fold	310.3	1.0				top_n_fold
+27622934_34272489	Darby 2016	Wu 2021	95	24	12.0	12	13	top9_fold	214.6	1.0			1.0	top_n_fold
+27622934_34440415	Darby 2016	Lindholm Carlström 2021	95	112	47.5	50	4	top9_fold	0.0	0.735				top_n_fold
+27622934_32513544	Darby 2016	Zeppillo 2022	95	20	10.0	10	16	top9_fold	0.0	0.935			0.9598	top_n_fold
+27622934_36223459	Darby 2016	Batiuk 2022	95	23	11.5	12	13	top9_fold	0.0	0.9			0.9531	top_n_fold
+27622934_36319771	Darby 2016	Benjamin 2022	95	393	47.5	50	4	top9_fold	0.0	0.735				top_n_fold
+27622934_36302706	Darby 2016	Ketchesin 2023 (own list)	95	72	36.0	30	5	top9_fold	0.0	0.81			0.895	top_n_fold
+27622934_36932057	Darby 2016	Schulmann 2023	95	201	47.5	50	4	top9_fold	0.0	0.735				top_n_fold
+27622934_37498306	Darby 2016	Arihisa 2023	95	15	7.5	8	16	top9_fold	0.0	0.92			0.9605	top_n_fold
+27622934_38448582	Darby 2016	Ling 2024	95	180	47.5	50	4	top9_fold	0.0	0.735				top_n_fold
+27622934_38648100	Darby 2016	Zhu 2024	95	58	29.0	30	5	top7_fold	0.0	0.81			0.895	top_n_fold
+27622934_39227716	Darby 2016	Frohlich 2024 (own list)	95	87	43.5	50	4	top9_fold	0.0	0.735				top_n_fold
+27622934_39237723	Darby 2016	Arbabi 2025	95	38	19.0	20	7	top9_fold	0.0	0.89			0.895	top_n_fold
+27622934_41174894	Darby 2016	Yalcinbas 2025	95	68	34.0	30	5	top9_fold	0.0	0.81			0.895	top_n_fold
+27622934_41210297	Darby 2016	Mas 2025	95	32	16.0	15	8	top4_fold	0.0	0.91			0.94	top_n_fold
+27622934_41757081	Darby 2016	Kwon 2026	95	63	31.5	30	5	top7_fold	0.0	0.81			0.895	top_n_fold
+27622934_41942462	Darby 2016	Singh 2026	95	80	40.0	30	5	top9_fold	0.0	0.81			0.895	top_n_fold
+27622934_42461238	Darby 2016	Dean 2026	95	211	47.5	50	4	top7_fold	304.2	1.0				top_n_fold
+27661005_27668389	Hu 2016	Fromer 2016	40	537	20.0	20	7	top100_fold	0.0	0.26			0.33	top_n_fold
+27661005_28123834	Hu 2016	Mladinov 2016	40	12	6.0	5	16	top20_fold	0.0	0.895			0.9529	top_n_fold
+27661005_27940260	Hu 2016	Voisey 2017	40	45	20.0	20	7	top100_fold	3.236	0.57			0.8	top_n_fold
+27661005_28754123	Hu 2016	Ramaker 2017	40	48	20.0	20	7	spearman_rho_log2fc	0.3872	0.83	0.38	0.96	0.9667	spearman_rho_log2fc
+27661005_28754123	Hu 2016	Ramaker 2017	40	48	20.0	20	7	top84_fold	4.948	0.73			0.8983	top_n_fold
+27661005_27801890	Hu 2016	Scarr 2018	40	45	20.0	20	7	top88_fold	2.237	0.57			0.6267	top_n_fold
+27661005_29463818	Hu 2016	Scarr 2018	40	30	15.0	15	8	top78_fold	0.0	0.35			0.35	top_n_fold
+27661005_30050107	Hu 2016	Jaffe 2018	40	351	20.0	20	7	spearman_rho_log2fc	0.1647	0.45	0.0	0.68	0.7083	spearman_rho_log2fc
+27661005_30050107	Hu 2016	Jaffe 2018	40	351	20.0	20	7	top100_fold	0.0	0.26			0.33	top_n_fold
+27661005_31123247	Hu 2016	Lanz 2019	40	38	19.0	20	7	spearman_rho_log2fc	0.2925	0.71	0.1	0.87	0.895	spearman_rho_log2fc
+27661005_31123247	Hu 2016	Lanz 2019	40	38	19.0	20	7	top100_fold	0.0	0.26			0.33	top_n_fold
+27661005_31174959	Hu 2016	Collado-Torres 2019	40	447	20.0	20	7	top100_fold	4.854	0.73			0.8983	top_n_fold
+27661005_32006661	Hu 2016	Santarelli 2019	40	74	20.0	20	7	top100_fold	4.984	0.73			0.8983	top_n_fold
+27661005_32203495	Hu 2016	Jaffe 2020	40	168	20.0	20	7	spearman_rho_log2fc	0.1579	0.44	0.0	0.67	0.695	spearman_rho_log2fc
+27661005_32203495	Hu 2016	Jaffe 2020	40	168	20.0	20	7	top21_fold	0.0	0.89			0.895	top_n_fold
+27661005_33184259	Hu 2016	Maas 2020	40	8	4.0	5	16	spearman_rho_log2fc	0.1914	0.7538	0.48	0.89	0.8933	spearman_rho_log2fc
+27661005_33184259	Hu 2016	Maas 2020	40	8	4.0	5	16	top100_fold	8.053	0.94			0.9867	top_n_fold
+27661005_32152472	Hu 2016	Perez 2021	40	26	13.0	12	13	spearman_rho_log2fc	0.008873	0.21	0.0	0.46	0.3541	spearman_rho_log2fc
+27661005_32152472	Hu 2016	Perez 2021	40	26	13.0	12	13	top100_fold	3.236	0.69			0.8434	top_n_fold
+27661005_33558674	Hu 2016	Akula 2021	40	99	20.0	20	7	top21_fold	0.0	0.89			0.895	top_n_fold
+27661005_34272489	Hu 2016	Wu 2021	40	24	12.0	12	13	top100_fold	0.0	0.39			0.4417	top_n_fold
+27661005_34440415	Hu 2016	Lindholm Carlström 2021	40	112	20.0	20	7	spearman_rho_log2fc	0.3106	0.76	0.12	0.9	0.9183	spearman_rho_log2fc
+27661005_34440415	Hu 2016	Lindholm Carlström 2021	40	112	20.0	20	7	top61_fold	0.0	0.61			0.695	top_n_fold
+27661005_32513544	Hu 2016	Zeppillo 2022	40	20	10.0	10	16	top100_fold	0.0	0.395			0.4653	top_n_fold
+27661005_36223459	Hu 2016	Batiuk 2022	40	23	11.5	12	13	top100_fold	3.266	0.69			0.8476	top_n_fold
+27661005_36319771	Hu 2016	Benjamin 2022	40	393	20.0	20	7	spearman_rho_log2fc	0.194	0.5	0.02	0.72	0.76	spearman_rho_log2fc
+27661005_36319771	Hu 2016	Benjamin 2022	40	393	20.0	20	7	top100_fold	1.524	0.26			0.4833	top_n_fold
+27661005_36302706	Hu 2016	Ketchesin 2023 (own list)	40	72	20.0	20	7	spearman_rho_log2fc	0.2331	0.59	0.05	0.79	0.83	spearman_rho_log2fc
+27661005_36302706	Hu 2016	Ketchesin 2023 (own list)	40	72	20.0	20	7	top100_fold	1.745	0.34			0.6267	top_n_fold
+27661005_36932057	Hu 2016	Schulmann 2023	40	201	20.0	20	7	spearman_rho_log2fc	0.2568	0.63	0.07	0.8	0.86	spearman_rho_log2fc
+27661005_36932057	Hu 2016	Schulmann 2023	40	201	20.0	20	7	top100_fold	3.236	0.57			0.8	top_n_fold
+27661005_37498306	Hu 2016	Arihisa 2023	40	15	7.5	8	16	top88_fold	2.089	0.6			0.7618	top_n_fold
+27661005_38448582	Hu 2016	Ling 2024	40	180	20.0	20	7	top100_fold	3.266	0.57			0.8	top_n_fold
+27661005_38648100	Hu 2016	Zhu 2024	40	58	20.0	20	7	top100_fold	1.231	0.26			0.33	top_n_fold
+27661005_39227716	Hu 2016	Frohlich 2024 (own list)	40	87	20.0	20	7	top100_fold	3.266	0.57			0.8	top_n_fold
+27661005_39237723	Hu 2016	Arbabi 2025	40	38	19.0	20	7	top100_fold	3.266	0.57			0.8	top_n_fold
+27661005_41174894	Hu 2016	Yalcinbas 2025	40	68	20.0	20	7	spearman_rho_log2fc	0.1183	0.36	0.0	0.6	0.6	spearman_rho_log2fc
+27661005_41174894	Hu 2016	Yalcinbas 2025	40	68	20.0	20	7	top100_fold	0.0	0.26			0.33	top_n_fold
+27661005_41210297	Hu 2016	Mas 2025	40	32	16.0	15	8	top3_fold	0.0	0.91			0.94	top_n_fold
+27661005_41757081	Hu 2016	Kwon 2026	40	63	20.0	20	7	top100_fold	1.273	0.26			0.33	top_n_fold
+27661005_41942462	Hu 2016	Singh 2026	40	80	20.0	20	7	spearman_rho_log2fc	0.04563	0.26	0.0	0.41	0.365	spearman_rho_log2fc
+27661005_41942462	Hu 2016	Singh 2026	40	80	20.0	20	7	top100_fold	1.62	0.26			0.6267	top_n_fold
+27661005_42461238	Hu 2016	Dean 2026	40	211	20.0	20	7	spearman_rho_log2fc	0.2464	0.61	0.07	0.8	0.8467	spearman_rho_log2fc
+27661005_42461238	Hu 2016	Dean 2026	40	211	20.0	20	7	top45_fold	0.0	0.61			0.695	top_n_fold
+27668389_27898074	Fromer 2016	Kim 2016	537	93	46.5	50	4	top49_fold	0.0	0.325				top_n_fold
+27668389_28123834	Fromer 2016	Mladinov 2016	537	12	6.0	5	16	top21_fold	0.0	0.895			0.9529	top_n_fold
+27668389_27940260	Fromer 2016	Voisey 2017	537	45	22.5	20	7	top100_fold	0.0	0.26			0.33	top_n_fold
+27668389_28754123	Fromer 2016	Ramaker 2017	537	48	24.0	25	6	top93_fold	4.672	0.66			0.832	top_n_fold
+27668389_27801890	Fromer 2016	Scarr 2018	537	45	22.5	20	7	top90_fold	2.243	0.57			0.6267	top_n_fold
+27668389_29463818	Fromer 2016	Scarr 2018	537	30	15.0	15	8	top66_fold	0.0	0.655			0.725	top_n_fold
+27668389_32006661	Fromer 2016	Santarelli 2019	537	74	37.0	30	5	top100_fold	0.0	0.22			0.365	top_n_fold
+27668389_32566292	Fromer 2016	Bakshi 2020	537	22	11.0	10	16	top100_fold	1.8	0.455			0.7573	top_n_fold
+27668389_33184259	Fromer 2016	Maas 2020	537	8	4.0	5	16	top100_fold	2.712	0.62			0.7851	top_n_fold
+27668389_32152472	Fromer 2016	Perez 2021	537	26	13.0	12	13	top100_fold	7.541	0.86			0.9859	top_n_fold
+27668389_34059796	Fromer 2016	Weissleder 2021	537	39	19.5	20	7	top100_fold	5.027	0.75			0.8983	top_n_fold
+27668389_34440415	Fromer 2016	Lindholm Carlström 2021	537	112	56.0	50	4	top65_fold	0.0	0.325				top_n_fold
+27668389_32513544	Fromer 2016	Zeppillo 2022	537	20	10.0	10	16	top100_fold	0.0	0.395			0.4653	top_n_fold
+27668389_36192459	Fromer 2016	Puvogel 2022	537	29	14.5	15	8	top13_fold	0.0	0.91			0.94	top_n_fold
+27668389_36223459	Fromer 2016	Batiuk 2022	537	23	11.5	12	13	top100_fold	2.006	0.52			0.739	top_n_fold
+27668389_37498306	Fromer 2016	Arihisa 2023	537	15	7.5	8	16	top100_fold	2.514	0.6			0.8096	top_n_fold
+27668389_38448582	Fromer 2016	Ling 2024	537	180	90.0	75	3	top100_fold	6.019	0.09				top_n_fold
+27668389_38648100	Fromer 2016	Zhu 2024	537	58	29.0	30	5	top100_fold	1.394	0.22			0.525	top_n_fold
+27668389_39227716	Fromer 2016	Frohlich 2024 (own list)	537	87	43.5	50	4	top100_fold	6.019	0.42				top_n_fold
+27668389_39397771	Fromer 2016	Alsema 2025	537	28	14.0	15	8	top100_fold	2.006	0.635			0.68	top_n_fold
+27668389_41210297	Fromer 2016	Mas 2025	537	32	16.0	15	8	top4_fold	0.0	0.91			0.94	top_n_fold
+27668389_39526318	Fromer 2016	Zhang 2026	537	30	15.0	15	8	top100_fold	1.516	0.35			0.5	top_n_fold
+27668389_42461238	Fromer 2016	Dean 2026	537	211	105.5	75	3	top46_fold	0.0	0.07				top_n_fold
+27898074_28123834	Kim 2016	Mladinov 2016	93	12	6.0	5	16	top21_fold	0.0	0.895			0.9529	top_n_fold
+27898074_27940260	Kim 2016	Voisey 2017	93	45	22.5	20	7	top49_fold	20.94	0.97			0.9817	top_n_fold
+27898074_28754123	Kim 2016	Ramaker 2017	93	48	24.0	25	6	top49_fold	0.0	0.54			0.618	top_n_fold
+27898074_27801890	Kim 2016	Scarr 2018	93	45	22.5	20	7	top49_fold	7.568	0.71			0.9167	top_n_fold
+27898074_29463818	Kim 2016	Scarr 2018	93	30	15.0	15	8	top49_fold	7.568	0.73			0.93	top_n_fold
+27898074_30050107	Kim 2016	Jaffe 2018	93	351	46.5	50	4	top40_fold	0.0	0.325				top_n_fold
+27898074_31123247	Kim 2016	Lanz 2019	93	38	19.0	20	7	top47_fold	0.0	0.61			0.695	top_n_fold
+27898074_31174959	Kim 2016	Collado-Torres 2019	93	447	46.5	50	4	top49_fold	0.0	0.325				top_n_fold
+27898074_32006661	Kim 2016	Santarelli 2019	93	74	37.0	30	5	top46_fold	0.0	0.49			0.64	top_n_fold
+27898074_32203495	Kim 2016	Jaffe 2020	93	168	46.5	50	4	top21_fold	0.0	0.735				top_n_fold
+27898074_33184259	Kim 2016	Maas 2020	93	8	4.0	5	16	top25_fold	0.0	0.895			0.9529	top_n_fold
+27898074_32152472	Kim 2016	Perez 2021	93	26	13.0	12	13	top49_fold	0.0	0.66			0.7862	top_n_fold
+27898074_33558674	Kim 2016	Akula 2021	93	99	46.5	50	4	top21_fold	0.0	0.735				top_n_fold
+27898074_34272489	Kim 2016	Wu 2021	93	24	12.0	12	13	top47_fold	7.869	0.77			0.95	top_n_fold
+27898074_34440415	Kim 2016	Lindholm Carlström 2021	93	112	46.5	50	4	top45_fold	9.231	0.615				top_n_fold
+27898074_32513544	Kim 2016	Zeppillo 2022	93	20	10.0	10	16	top49_fold	0.0	0.705			0.7969	top_n_fold
+27898074_36223459	Kim 2016	Batiuk 2022	93	23	11.5	12	13	top46_fold	0.0	0.66			0.7862	top_n_fold
+27898074_36319771	Kim 2016	Benjamin 2022	93	393	46.5	50	4	top46_fold	0.0	0.325				top_n_fold
+27898074_36302706	Kim 2016	Ketchesin 2023 (own list)	93	72	36.0	30	5	top49_fold	8.431	0.77			0.89	top_n_fold
+27898074_36932057	Kim 2016	Schulmann 2023	93	201	46.5	50	4	top49_fold	10.47	0.615				top_n_fold
+27898074_37498306	Kim 2016	Arihisa 2023	93	15	7.5	8	16	top49_fold	0.0	0.7			0.8042	top_n_fold
+27898074_38448582	Kim 2016	Ling 2024	93	180	46.5	50	4	top46_fold	0.0	0.325				top_n_fold
+27898074_38648100	Kim 2016	Zhu 2024	93	58	29.0	30	5	top17_fold	0.0	0.81			0.895	top_n_fold
+27898074_39227716	Kim 2016	Frohlich 2024 (own list)	93	87	43.5	50	4	top46_fold	9.482	0.615				top_n_fold
+27898074_39237723	Kim 2016	Arbabi 2025	93	38	19.0	20	7	top46_fold	9.486	0.86			0.9167	top_n_fold
+27898074_41174894	Kim 2016	Yalcinbas 2025	93	68	34.0	30	5	top46_fold	0.0	0.49			0.64	top_n_fold
+27898074_41210297	Kim 2016	Mas 2025	93	32	16.0	15	8	top4_fold	0.0	0.91			0.94	top_n_fold
+27898074_41757081	Kim 2016	Kwon 2026	93	63	31.5	30	5	top24_fold	0.0	0.81			0.895	top_n_fold
+27898074_41942462	Kim 2016	Singh 2026	93	80	40.0	30	5	top46_fold	0.0	0.49			0.64	top_n_fold
+27898074_42461238	Kim 2016	Dean 2026	93	211	46.5	50	4	top43_fold	0.0	0.325				top_n_fold
+28123834_27940260	Mladinov 2016	Voisey 2017	12	45	6.0	5	16	top21_fold	0.0	0.895			0.9529	top_n_fold
+28123834_28754123	Mladinov 2016	Ramaker 2017	12	48	6.0	5	16	top21_fold	0.0	0.895			0.9529	top_n_fold
+28123834_27801890	Mladinov 2016	Scarr 2018	12	45	6.0	5	16	top22_fold	0.0	0.895			0.9529	top_n_fold
+28123834_29463818	Mladinov 2016	Scarr 2018	12	30	6.0	5	16	top22_fold	0.0	0.895			0.9529	top_n_fold
+28123834_30050107	Mladinov 2016	Jaffe 2018	12	351	6.0	5	16	top20_fold	0.0	0.895			0.9529	top_n_fold
+28123834_31123247	Mladinov 2016	Lanz 2019	12	38	6.0	5	16	top22_fold	0.0	0.895			0.9529	top_n_fold
+28123834_31174959	Mladinov 2016	Collado-Torres 2019	12	447	6.0	5	16	top21_fold	0.0	0.895			0.9529	top_n_fold
+28123834_32006661	Mladinov 2016	Santarelli 2019	12	74	6.0	5	16	top22_fold	0.0	0.895			0.9529	top_n_fold
+28123834_32203495	Mladinov 2016	Jaffe 2020	12	168	6.0	5	16	top18_fold	0.0	0.895			0.9529	top_n_fold
+28123834_32566292	Mladinov 2016	Bakshi 2020	12	22	6.0	5	16	top22_fold	0.0	0.895			0.9529	top_n_fold
+28123834_33184259	Mladinov 2016	Maas 2020	12	8	4.0	5	16	top20_fold	0.0	0.895			0.9529	top_n_fold
+28123834_32152472	Mladinov 2016	Perez 2021	12	26	6.0	5	16	top21_fold	0.0	0.895			0.9529	top_n_fold
+28123834_33558674	Mladinov 2016	Akula 2021	12	99	6.0	5	16	top21_fold	0.0	0.895			0.9529	top_n_fold
+28123834_34059796	Mladinov 2016	Weissleder 2021	12	39	6.0	5	16	top21_fold	0.0	0.895			0.9529	top_n_fold
+28123834_34272489	Mladinov 2016	Wu 2021	12	24	6.0	5	16	top20_fold	50.59	0.97			0.9935	top_n_fold
+28123834_34440415	Mladinov 2016	Lindholm Carlström 2021	12	112	6.0	5	16	top21_fold	0.0	0.895			0.9529	top_n_fold
+28123834_32513544	Mladinov 2016	Zeppillo 2022	12	20	6.0	5	16	top21_fold	0.0	0.895			0.9529	top_n_fold
+28123834_36192459	Mladinov 2016	Puvogel 2022	12	29	6.0	5	16	top13_fold	0.0	0.895			0.9529	top_n_fold
+28123834_36223459	Mladinov 2016	Batiuk 2022	12	23	6.0	5	16	top20_fold	0.0	0.895			0.9529	top_n_fold
+28123834_36319771	Mladinov 2016	Benjamin 2022	12	393	6.0	5	16	top21_fold	0.0	0.895			0.9529	top_n_fold
+28123834_36302706	Mladinov 2016	Ketchesin 2023 (own list)	12	72	6.0	5	16	top22_fold	0.0	0.895			0.9529	top_n_fold
+28123834_36932057	Mladinov 2016	Schulmann 2023	12	201	6.0	5	16	top21_fold	0.0	0.895			0.9529	top_n_fold
+28123834_37498306	Mladinov 2016	Arihisa 2023	12	15	6.0	5	16	top21_fold	41.2	0.92			0.9831	top_n_fold
+28123834_38448582	Mladinov 2016	Ling 2024	12	180	6.0	5	16	top20_fold	0.0	0.895			0.9529	top_n_fold
+28123834_38648100	Mladinov 2016	Zhu 2024	12	58	6.0	5	16	top19_fold	0.0	0.895			0.9529	top_n_fold
+28123834_39227716	Mladinov 2016	Frohlich 2024 (own list)	12	87	6.0	5	16	top20_fold	0.0	0.895			0.9529	top_n_fold
+28123834_39237723	Mladinov 2016	Arbabi 2025	12	38	6.0	5	16	top20_fold	0.0	0.895			0.9529	top_n_fold
+28123834_39397771	Mladinov 2016	Alsema 2025	12	28	6.0	5	16	top20_fold	0.0	0.895			0.9529	top_n_fold
+28123834_41174894	Mladinov 2016	Yalcinbas 2025	12	68	6.0	5	16	top21_fold	0.0	0.895			0.9529	top_n_fold
+28123834_41210297	Mladinov 2016	Mas 2025	12	32	6.0	5	16	top4_fold	0.0	0.895			0.9529	top_n_fold
+28123834_39526318	Mladinov 2016	Zhang 2026	12	30	6.0	5	16	top19_fold	0.0	0.895			0.9529	top_n_fold
+28123834_41757081	Mladinov 2016	Kwon 2026	12	63	6.0	5	16	top19_fold	0.0	0.895			0.9529	top_n_fold
+28123834_41942462	Mladinov 2016	Singh 2026	12	80	6.0	5	16	top20_fold	0.0	0.895			0.9529	top_n_fold
+28123834_42461238	Mladinov 2016	Dean 2026	12	211	6.0	5	16	top14_fold	0.0	0.895			0.9529	top_n_fold
+27940260_28754123	Voisey 2017	Ramaker 2017	45	48	22.5	20	7	top93_fold	4.672	0.73			0.8983	top_n_fold
+27940260_27801890	Voisey 2017	Scarr 2018	45	45	22.5	20	7	top90_fold	2.243	0.57			0.6267	top_n_fold
+27940260_29463818	Voisey 2017	Scarr 2018	45	30	15.0	15	8	top66_fold	0.0	0.655			0.725	top_n_fold
+27940260_30050107	Voisey 2017	Jaffe 2018	45	351	22.5	20	7	top100_fold	0.0	0.26			0.33	top_n_fold
+27940260_31123247	Voisey 2017	Lanz 2019	45	38	19.0	20	7	top100_fold	1.8	0.34			0.6267	top_n_fold
+27940260_31174959	Voisey 2017	Collado-Torres 2019	45	447	22.5	20	7	top100_fold	0.0	0.26			0.33	top_n_fold
+27940260_32006661	Voisey 2017	Santarelli 2019	45	74	22.5	20	7	top100_fold	0.0	0.26			0.33	top_n_fold
+27940260_32203495	Voisey 2017	Jaffe 2020	45	168	22.5	20	7	top25_fold	0.0	0.89			0.895	top_n_fold
+27940260_32566292	Voisey 2017	Bakshi 2020	45	22	11.0	10	16	top100_fold	5.4	0.885			0.9727	top_n_fold
+27940260_33184259	Voisey 2017	Maas 2020	45	8	4.0	5	16	top100_fold	8.137	0.94			0.9867	top_n_fold
+27940260_32152472	Voisey 2017	Perez 2021	45	26	13.0	12	13	top100_fold	0.0	0.39			0.4417	top_n_fold
+27940260_33558674	Voisey 2017	Akula 2021	45	99	22.5	20	7	top21_fold	0.0	0.89			0.895	top_n_fold
+27940260_34059796	Voisey 2017	Weissleder 2021	45	39	19.5	20	7	top100_fold	30.16	1.0			0.9983	top_n_fold
+27940260_34272489	Voisey 2017	Wu 2021	45	24	12.0	12	13	top100_fold	0.0	0.39			0.4417	top_n_fold
+27940260_34440415	Voisey 2017	Lindholm Carlström 2021	45	112	22.5	20	7	top65_fold	4.424	0.61			0.695	top_n_fold
+27940260_32513544	Voisey 2017	Zeppillo 2022	45	20	10.0	10	16	top100_fold	15.08	0.99			0.9989	top_n_fold
+27940260_36192459	Voisey 2017	Puvogel 2022	45	29	14.5	15	8	top13_fold	118.7	1.0			1.0	top_n_fold
+27940260_36223459	Voisey 2017	Batiuk 2022	45	23	11.5	12	13	top100_fold	2.006	0.52			0.739	top_n_fold
+27940260_36319771	Voisey 2017	Benjamin 2022	45	393	22.5	20	7	top100_fold	1.979	0.39			0.6267	top_n_fold
+27940260_36302706	Voisey 2017	Ketchesin 2023 (own list)	45	72	22.5	20	7	top100_fold	8.097	0.91			0.9583	top_n_fold
+27940260_36932057	Voisey 2017	Schulmann 2023	45	201	22.5	20	7	top100_fold	7.541	0.84			0.9483	top_n_fold
+27940260_37498306	Voisey 2017	Arihisa 2023	45	15	7.5	8	16	top100_fold	10.05	0.975			0.9969	top_n_fold
+27940260_38448582	Voisey 2017	Ling 2024	45	180	22.5	20	7	top100_fold	2.006	0.57			0.6267	top_n_fold
+27940260_38648100	Voisey 2017	Zhu 2024	45	58	22.5	20	7	top100_fold	4.182	0.73			0.8133	top_n_fold
+27940260_39227716	Voisey 2017	Frohlich 2024 (own list)	45	87	22.5	20	7	top100_fold	8.026	0.91			0.9583	top_n_fold
+27940260_39237723	Voisey 2017	Arbabi 2025	45	38	19.0	20	7	top100_fold	2.007	0.57			0.6267	top_n_fold
+27940260_39397771	Voisey 2017	Alsema 2025	45	28	14.0	15	8	top100_fold	2.006	0.635			0.68	top_n_fold
+27940260_41174894	Voisey 2017	Yalcinbas 2025	45	68	22.5	20	7	top100_fold	5.846	0.75			0.9167	top_n_fold
+27940260_41210297	Voisey 2017	Mas 2025	45	32	16.0	15	8	top4_fold	0.0	0.91			0.94	top_n_fold
+27940260_39526318	Voisey 2017	Zhang 2026	45	30	15.0	15	8	top100_fold	0.0	0.35			0.35	top_n_fold
+27940260_41757081	Voisey 2017	Kwon 2026	45	63	22.5	20	7	top100_fold	4.06	0.73			0.8	top_n_fold
+27940260_41942462	Voisey 2017	Singh 2026	45	80	22.5	20	7	top100_fold	4.431	0.73			0.855	top_n_fold
+27940260_42461238	Voisey 2017	Dean 2026	45	211	22.5	20	7	top46_fold	28.18	0.98			0.99	top_n_fold
+28754123_27801890	Ramaker 2017	Scarr 2018	48	45	22.5	20	7	top88_fold	2.753	0.57			0.6267	top_n_fold
+28754123_29463818	Ramaker 2017	Scarr 2018	48	30	15.0	15	8	top88_fold	0.0	0.35			0.35	top_n_fold
+28754123_30050107	Ramaker 2017	Jaffe 2018	48	351	24.0	25	6	spearman_rho_log2fc	0.2089	0.385	0.35	0.66	0.756	spearman_rho_log2fc
+28754123_30050107	Ramaker 2017	Jaffe 2018	48	351	24.0	25	6	top86_fold	0.0	0.235			0.212	top_n_fold
+28754123_31123247	Ramaker 2017	Lanz 2019	48	38	19.0	20	7	spearman_rho_log2fc	0.313	0.76	0.12	0.9	0.92	spearman_rho_log2fc
+28754123_31123247	Ramaker 2017	Lanz 2019	48	38	19.0	20	7	top88_fold	8.104	0.91			0.9583	top_n_fold
+28754123_31174959	Ramaker 2017	Collado-Torres 2019	48	447	24.0	25	6	top93_fold	0.0	0.235			0.212	top_n_fold
+28754123_32006661	Ramaker 2017	Santarelli 2019	48	74	24.0	25	6	top80_fold	5.955	0.725			0.868	top_n_fold
+28754123_32203495	Ramaker 2017	Jaffe 2020	48	168	24.0	25	6	spearman_rho_log2fc	0.1436	0.305	0.23	0.45	0.602	spearman_rho_log2fc
+28754123_32203495	Ramaker 2017	Jaffe 2020	48	168	24.0	25	6	top23_fold	0.0	0.92			0.884	top_n_fold
+28754123_32566292	Ramaker 2017	Bakshi 2020	48	22	11.0	10	16	top88_fold	5.403	0.885			0.9727	top_n_fold
+28754123_33184259	Ramaker 2017	Maas 2020	48	8	4.0	5	16	spearman_rho_log2fc	0.4161	0.97	0.87	1.0	0.9951	spearman_rho_log2fc
+28754123_33184259	Ramaker 2017	Maas 2020	48	8	4.0	5	16	top62_fold	0.0	0.635			0.7909	top_n_fold
+28754123_32152472	Ramaker 2017	Perez 2021	48	26	13.0	12	13	spearman_rho_log2fc	-0.1327	0.05	0.0	0.27	0.07621	spearman_rho_log2fc
+28754123_32152472	Ramaker 2017	Perez 2021	48	26	13.0	12	13	top93_fold	0.0	0.39			0.4417	top_n_fold
+28754123_33558674	Ramaker 2017	Akula 2021	48	99	24.0	25	6	top21_fold	0.0	0.92			0.884	top_n_fold
+28754123_34059796	Ramaker 2017	Weissleder 2021	48	39	19.5	20	7	top93_fold	4.672	0.73			0.8983	top_n_fold
+28754123_34272489	Ramaker 2017	Wu 2021	48	24	12.0	12	13	top84_fold	0.0	0.39			0.4417	top_n_fold
+28754123_34440415	Ramaker 2017	Lindholm Carlström 2021	48	112	24.0	25	6	spearman_rho_log2fc	0.3225	0.695	0.58	0.87	0.906	spearman_rho_log2fc
+28754123_34440415	Ramaker 2017	Lindholm Carlström 2021	48	112	24.0	25	6	top66_fold	0.0	0.54			0.618	top_n_fold
+28754123_36192459	Ramaker 2017	Puvogel 2022	48	29	14.5	15	8	top13_fold	0.0	0.91			0.94	top_n_fold
+28754123_36223459	Ramaker 2017	Batiuk 2022	48	23	11.5	12	13	top94_fold	0.0	0.39			0.4417	top_n_fold
+28754123_36319771	Ramaker 2017	Benjamin 2022	48	393	24.0	25	6	spearman_rho_log2fc	0.0575	0.2	0.16	0.32	0.376	spearman_rho_log2fc
+28754123_36319771	Ramaker 2017	Benjamin 2022	48	393	24.0	25	6	top85_fold	2.483	0.455			0.5	top_n_fold
+28754123_36302706	Ramaker 2017	Ketchesin 2023 (own list)	48	72	24.0	25	6	spearman_rho_log2fc	0.2601	0.51	0.45	0.78	0.824	spearman_rho_log2fc
+28754123_36302706	Ramaker 2017	Ketchesin 2023 (own list)	48	72	24.0	25	6	top97_fold	0.0	0.235			0.212	top_n_fold
+28754123_36932057	Ramaker 2017	Schulmann 2023	48	201	24.0	25	6	spearman_rho_log2fc	0.4447	0.91	0.79	1.0	0.986	spearman_rho_log2fc
+28754123_36932057	Ramaker 2017	Schulmann 2023	48	201	24.0	25	6	top93_fold	7.007	0.8			0.898	top_n_fold
+28754123_37498306	Ramaker 2017	Arihisa 2023	48	15	7.5	8	16	top93_fold	0.0	0.375			0.4858	top_n_fold
+28754123_38448582	Ramaker 2017	Ling 2024	48	180	24.0	25	6	top94_fold	2.361	0.455			0.5	top_n_fold
+28754123_38648100	Ramaker 2017	Zhu 2024	48	58	24.0	25	6	top65_fold	6.422	0.54			0.876	top_n_fold
+28754123_39227716	Ramaker 2017	Frohlich 2024 (own list)	48	87	24.0	25	6	top94_fold	2.36	0.455			0.5	top_n_fold
+28754123_39237723	Ramaker 2017	Arbabi 2025	48	38	19.0	20	7	top94_fold	4.722	0.73			0.8983	top_n_fold
+28754123_39397771	Ramaker 2017	Alsema 2025	48	28	14.0	15	8	top94_fold	2.36	0.635			0.68	top_n_fold
+28754123_41174894	Ramaker 2017	Yalcinbas 2025	48	68	24.0	25	6	spearman_rho_log2fc	0.08659	0.23	0.18	0.38	0.46	spearman_rho_log2fc
+28754123_41174894	Ramaker 2017	Yalcinbas 2025	48	68	24.0	25	6	top86_fold	0.0	0.235			0.212	top_n_fold
+28754123_41210297	Ramaker 2017	Mas 2025	48	32	16.0	15	8	top4_fold	0.0	0.91			0.94	top_n_fold
+28754123_39526318	Ramaker 2017	Zhang 2026	48	30	15.0	15	8	spearman_rho_log2fc	0.1	0.4	0.03	0.5	0.5883	spearman_rho_log2fc
+28754123_39526318	Ramaker 2017	Zhang 2026	48	30	15.0	15	8	top71_fold	0.0	0.35			0.35	top_n_fold
+28754123_41757081	Ramaker 2017	Kwon 2026	48	63	24.0	25	6	top63_fold	3.398	0.54			0.618	top_n_fold
+28754123_41942462	Ramaker 2017	Singh 2026	48	80	24.0	25	6	spearman_rho_log2fc	0.07963	0.225	0.17	0.35	0.436	spearman_rho_log2fc
+28754123_41942462	Ramaker 2017	Singh 2026	48	80	24.0	25	6	top93_fold	2.357	0.455			0.5	top_n_fold
+28754123_42461238	Ramaker 2017	Dean 2026	48	211	24.0	25	6	spearman_rho_log2fc	0.1897	0.365	0.3	0.62	0.71	spearman_rho_log2fc
+28754123_42461238	Ramaker 2017	Dean 2026	48	211	24.0	25	6	top46_fold	8.018	0.805			0.876	top_n_fold
+27801890_30050107	Scarr 2018	Jaffe 2018	45	351	22.5	20	7	top86_fold	0.0	0.26			0.33	top_n_fold
+27801890_31123247	Scarr 2018	Lanz 2019	45	38	19.0	20	7	top93_fold	0.0	0.26			0.33	top_n_fold
+27801890_31174959	Scarr 2018	Collado-Torres 2019	45	447	22.5	20	7	top90_fold	2.243	0.57			0.6267	top_n_fold
+27801890_32203495	Scarr 2018	Jaffe 2020	45	168	22.5	20	7	top22_fold	0.0	0.89			0.895	top_n_fold
+27801890_32566292	Scarr 2018	Bakshi 2020	45	22	11.0	10	16	top93_fold	2.278	0.605			0.7573	top_n_fold
+27801890_33184259	Scarr 2018	Maas 2020	45	8	4.0	5	16	top84_fold	13.38	0.985			0.9953	top_n_fold
+27801890_32152472	Scarr 2018	Perez 2021	45	26	13.0	12	13	top90_fold	0.0	0.39			0.4417	top_n_fold
+27801890_33558674	Scarr 2018	Akula 2021	45	99	22.5	20	7	top21_fold	0.0	0.89			0.895	top_n_fold
+27801890_34059796	Scarr 2018	Weissleder 2021	45	39	19.5	20	7	top90_fold	4.486	0.73			0.855	top_n_fold
+27801890_34272489	Scarr 2018	Wu 2021	45	24	12.0	12	13	top94_fold	2.29	0.52			0.739	top_n_fold
+27801890_34440415	Scarr 2018	Lindholm Carlström 2021	45	112	22.5	20	7	top63_fold	4.217	0.61			0.695	top_n_fold
+27801890_32513544	Scarr 2018	Zeppillo 2022	45	20	10.0	10	16	top90_fold	2.243	0.605			0.7573	top_n_fold
+27801890_36192459	Scarr 2018	Puvogel 2022	45	29	14.5	15	8	top13_fold	0.0	0.91			0.94	top_n_fold
+27801890_36223459	Scarr 2018	Batiuk 2022	45	23	11.5	12	13	top88_fold	0.0	0.39			0.4417	top_n_fold
+27801890_36319771	Scarr 2018	Benjamin 2022	45	393	22.5	20	7	top90_fold	0.0	0.26			0.33	top_n_fold
+27801890_36302706	Scarr 2018	Ketchesin 2023 (own list)	45	72	22.5	20	7	top96_fold	2.299	0.57			0.6267	top_n_fold
+27801890_36932057	Scarr 2018	Schulmann 2023	45	201	22.5	20	7	top90_fold	0.0	0.26			0.33	top_n_fold
+27801890_37498306	Scarr 2018	Arihisa 2023	45	15	7.5	8	16	top90_fold	2.243	0.6			0.7618	top_n_fold
+27801890_38448582	Scarr 2018	Ling 2024	45	180	22.5	20	7	top88_fold	9.361	0.91			0.97	top_n_fold
+27801890_38648100	Scarr 2018	Zhu 2024	45	58	22.5	20	7	top81_fold	1.971	0.39			0.6267	top_n_fold
+27801890_39237723	Scarr 2018	Arbabi 2025	45	38	19.0	20	7	top88_fold	0.0	0.26			0.33	top_n_fold
+27801890_39397771	Scarr 2018	Alsema 2025	45	28	14.0	15	8	top88_fold	0.0	0.35			0.35	top_n_fold
+27801890_41174894	Scarr 2018	Yalcinbas 2025	45	68	22.5	20	7	top90_fold	0.0	0.26			0.33	top_n_fold
+27801890_41210297	Scarr 2018	Mas 2025	45	32	16.0	15	8	top4_fold	0.0	0.91			0.94	top_n_fold
+27801890_39526318	Scarr 2018	Zhang 2026	45	30	15.0	15	8	top84_fold	0.0	0.35			0.35	top_n_fold
+27801890_41757081	Scarr 2018	Kwon 2026	45	63	22.5	20	7	top84_fold	0.0	0.26			0.33	top_n_fold
+27801890_41942462	Scarr 2018	Singh 2026	45	80	22.5	20	7	top91_fold	2.211	0.57			0.6267	top_n_fold
+29463818_30050107	Scarr 2018	Jaffe 2018	30	351	15.0	15	8	top60_fold	0.0	0.655			0.725	top_n_fold
+29463818_31123247	Scarr 2018	Lanz 2019	30	38	15.0	15	8	top94_fold	0.0	0.35			0.35	top_n_fold
+29463818_31174959	Scarr 2018	Collado-Torres 2019	30	447	15.0	15	8	top66_fold	0.0	0.655			0.725	top_n_fold
+29463818_32203495	Scarr 2018	Jaffe 2020	30	168	15.0	15	8	top22_fold	0.0	0.91			0.94	top_n_fold
+29463818_32566292	Scarr 2018	Bakshi 2020	30	22	11.0	10	16	top94_fold	2.23	0.605			0.7573	top_n_fold
+29463818_33184259	Scarr 2018	Maas 2020	30	8	4.0	5	16	top51_fold	0.0	0.635			0.7909	top_n_fold
+29463818_32152472	Scarr 2018	Perez 2021	30	26	13.0	12	13	top66_fold	4.171	0.66			0.7862	top_n_fold
+29463818_33558674	Scarr 2018	Akula 2021	30	99	15.0	15	8	top21_fold	0.0	0.91			0.94	top_n_fold
+29463818_34059796	Scarr 2018	Weissleder 2021	30	39	15.0	15	8	top66_fold	0.0	0.655			0.725	top_n_fold
+29463818_34272489	Scarr 2018	Wu 2021	30	24	12.0	12	13	top94_fold	0.0	0.39			0.4417	top_n_fold
+29463818_34440415	Scarr 2018	Lindholm Carlström 2021	30	112	15.0	15	8	top63_fold	0.0	0.655			0.725	top_n_fold
+29463818_32513544	Scarr 2018	Zeppillo 2022	30	20	10.0	10	16	top66_fold	0.0	0.705			0.7969	top_n_fold
+29463818_36192459	Scarr 2018	Puvogel 2022	30	29	14.5	15	8	top13_fold	0.0	0.91			0.94	top_n_fold
+29463818_36223459	Scarr 2018	Batiuk 2022	30	23	11.5	12	13	top71_fold	0.0	0.39			0.4417	top_n_fold
+29463818_36319771	Scarr 2018	Benjamin 2022	30	393	15.0	15	8	top59_fold	0.0	0.655			0.725	top_n_fold
+29463818_36302706	Scarr 2018	Ketchesin 2023 (own list)	30	72	15.0	15	8	top93_fold	2.45	0.635			0.68	top_n_fold
+29463818_36932057	Scarr 2018	Schulmann 2023	30	201	15.0	15	8	top66_fold	4.171	0.655			0.725	top_n_fold
+29463818_37498306	Scarr 2018	Arihisa 2023	30	15	7.5	8	16	top66_fold	4.171	0.7			0.8042	top_n_fold
+29463818_38448582	Scarr 2018	Ling 2024	30	180	15.0	15	8	top71_fold	0.0	0.35			0.35	top_n_fold
+29463818_38648100	Scarr 2018	Zhu 2024	30	58	15.0	15	8	top44_fold	0.0	0.655			0.725	top_n_fold
+29463818_39237723	Scarr 2018	Arbabi 2025	30	38	15.0	15	8	top71_fold	0.0	0.35			0.35	top_n_fold
+29463818_39397771	Scarr 2018	Alsema 2025	30	28	14.0	15	8	top71_fold	0.0	0.35			0.35	top_n_fold
+29463818_41174894	Scarr 2018	Yalcinbas 2025	30	68	15.0	15	8	top60_fold	4.645	0.655			0.725	top_n_fold
+29463818_41210297	Scarr 2018	Mas 2025	30	32	15.0	15	8	top4_fold	0.0	0.91			0.94	top_n_fold
+29463818_39526318	Scarr 2018	Zhang 2026	30	30	15.0	15	8	top51_fold	5.529	0.655			0.725	top_n_fold
+29463818_41757081	Scarr 2018	Kwon 2026	30	63	15.0	15	8	top43_fold	0.0	0.655			0.725	top_n_fold
+29463818_41942462	Scarr 2018	Singh 2026	30	80	15.0	15	8	top70_fold	0.0	0.655			0.725	top_n_fold
+30050107_32006661	Jaffe 2018	Santarelli 2019	351	74	37.0	30	5	top100_fold	3.023	0.39			0.8	top_n_fold
+30050107_32566292	Jaffe 2018	Bakshi 2020	351	22	11.0	10	16	top100_fold	4.939	0.845			0.9558	top_n_fold
+30050107_33184259	Jaffe 2018	Maas 2020	351	8	4.0	5	16	spearman_rho_log2fc	0.01937	0.395	0.16	0.59	0.463	spearman_rho_log2fc
+30050107_33184259	Jaffe 2018	Maas 2020	351	8	4.0	5	16	top100_fold	0.0	0.315			0.4674	top_n_fold
+30050107_32152472	Jaffe 2018	Perez 2021	351	26	13.0	12	13	spearman_rho_log2fc	-0.001066	0.19	0.0	0.43	0.3262	spearman_rho_log2fc
+30050107_32152472	Jaffe 2018	Perez 2021	351	26	13.0	12	13	top100_fold	1.96	0.39			0.739	top_n_fold
+30050107_34059796	Jaffe 2018	Weissleder 2021	351	39	19.5	20	7	top100_fold	1.96	0.39			0.6267	top_n_fold
+30050107_34440415	Jaffe 2018	Lindholm Carlström 2021	351	112	56.0	50	4	spearman_rho_log2fc	-0.05352	0.02	0.0	0.05		spearman_rho_log2fc
+30050107_34440415	Jaffe 2018	Lindholm Carlström 2021	351	112	56.0	50	4	top59_fold	0.0	0.325				top_n_fold
+30050107_32513544	Jaffe 2018	Zeppillo 2022	351	20	10.0	10	16	top100_fold	0.0	0.395			0.4653	top_n_fold
+30050107_36192459	Jaffe 2018	Puvogel 2022	351	29	14.5	15	8	top12_fold	0.0	0.91			0.94	top_n_fold
+30050107_36223459	Jaffe 2018	Batiuk 2022	351	23	11.5	12	13	top100_fold	0.0	0.39			0.4417	top_n_fold
+30050107_37498306	Jaffe 2018	Arihisa 2023	351	15	7.5	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+30050107_38448582	Jaffe 2018	Ling 2024	351	180	90.0	75	3	top100_fold	3.582	0.02				top_n_fold
+30050107_38648100	Jaffe 2018	Zhu 2024	351	58	29.0	30	5	top100_fold	2.7	0.39			0.65	top_n_fold
+30050107_39227716	Jaffe 2018	Frohlich 2024 (own list)	351	87	43.5	50	4	top100_fold	3.581	0.175				top_n_fold
+30050107_39397771	Jaffe 2018	Alsema 2025	351	28	14.0	15	8	top100_fold	7.163	0.87			0.96	top_n_fold
+30050107_41210297	Jaffe 2018	Mas 2025	351	32	16.0	15	8	top4_fold	0.0	0.91			0.94	top_n_fold
+30050107_39526318	Jaffe 2018	Zhang 2026	351	30	15.0	15	8	spearman_rho_log2fc	-0.1009	0.115	0.0	0.28	0.1383	spearman_rho_log2fc
+30050107_39526318	Jaffe 2018	Zhang 2026	351	30	15.0	15	8	top100_fold	1.488	0.35			0.5	top_n_fold
+30050107_42461238	Jaffe 2018	Dean 2026	351	211	105.5	75	3	spearman_rho_log2fc	0.1679	0.01	0.01	0.06		spearman_rho_log2fc
+30050107_42461238	Jaffe 2018	Dean 2026	351	211	105.5	75	3	top46_fold	0.0	0.07				top_n_fold
+31123247_32006661	Lanz 2019	Santarelli 2019	38	74	19.0	20	7	top100_fold	3.58	0.57			0.8	top_n_fold
+31123247_32566292	Lanz 2019	Bakshi 2020	38	22	11.0	10	16	top100_fold	4.277	0.84			0.9249	top_n_fold
+31123247_33184259	Lanz 2019	Maas 2020	38	8	4.0	5	16	spearman_rho_log2fc	0.3547	0.9396	0.85	0.99	0.9893	spearman_rho_log2fc
+31123247_33184259	Lanz 2019	Maas 2020	38	8	4.0	5	16	top100_fold	0.0	0.315			0.4674	top_n_fold
+31123247_32152472	Lanz 2019	Perez 2021	38	26	13.0	12	13	spearman_rho_log2fc	-0.08877	0.08	0.0	0.32	0.1317	spearman_rho_log2fc
+31123247_32152472	Lanz 2019	Perez 2021	38	26	13.0	12	13	top100_fold	1.8	0.39			0.739	top_n_fold
+31123247_34059796	Lanz 2019	Weissleder 2021	38	39	19.0	20	7	top100_fold	0.0	0.26			0.33	top_n_fold
+31123247_34440415	Lanz 2019	Lindholm Carlström 2021	38	112	19.0	20	7	spearman_rho_log2fc	0.3399	0.79	0.18	0.95	0.945	spearman_rho_log2fc
+31123247_34440415	Lanz 2019	Lindholm Carlström 2021	38	112	19.0	20	7	top63_fold	0.0	0.61			0.695	top_n_fold
+31123247_32513544	Lanz 2019	Zeppillo 2022	38	20	10.0	10	16	top100_fold	5.4	0.885			0.9727	top_n_fold
+31123247_36192459	Lanz 2019	Puvogel 2022	38	29	14.5	15	8	top13_fold	0.0	0.91			0.94	top_n_fold
+31123247_36223459	Lanz 2019	Batiuk 2022	38	23	11.5	12	13	top100_fold	0.0	0.39			0.4417	top_n_fold
+31123247_37498306	Lanz 2019	Arihisa 2023	38	15	7.5	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+31123247_38448582	Lanz 2019	Ling 2024	38	180	19.0	20	7	top100_fold	1.833	0.34			0.6267	top_n_fold
+31123247_38648100	Lanz 2019	Zhu 2024	38	58	19.0	20	7	top100_fold	0.0	0.26			0.33	top_n_fold
+31123247_39227716	Lanz 2019	Frohlich 2024 (own list)	38	87	19.0	20	7	top100_fold	1.833	0.34			0.6267	top_n_fold
+31123247_39397771	Lanz 2019	Alsema 2025	38	28	14.0	15	8	top100_fold	5.499	0.83			0.9167	top_n_fold
+31123247_41210297	Lanz 2019	Mas 2025	38	32	16.0	15	8	top4_fold	0.0	0.91			0.94	top_n_fold
+31123247_39526318	Lanz 2019	Zhang 2026	38	30	15.0	15	8	spearman_rho_log2fc	0.07392	0.345	0.01	0.46	0.5183	spearman_rho_log2fc
+31123247_39526318	Lanz 2019	Zhang 2026	38	30	15.0	15	8	top100_fold	0.0	0.35			0.35	top_n_fold
+31123247_42461238	Lanz 2019	Dean 2026	38	211	19.0	20	7	spearman_rho_log2fc	0.1942	0.5	0.02	0.72	0.76	spearman_rho_log2fc
+31123247_42461238	Lanz 2019	Dean 2026	38	211	19.0	20	7	top46_fold	7.77	0.71			0.9167	top_n_fold
+31174959_32006661	Collado-Torres 2019	Santarelli 2019	447	74	37.0	30	5	top100_fold	0.0	0.22			0.365	top_n_fold
+31174959_32566292	Collado-Torres 2019	Bakshi 2020	447	22	11.0	10	16	top100_fold	1.8	0.455			0.7573	top_n_fold
+31174959_33184259	Collado-Torres 2019	Maas 2020	447	8	4.0	5	16	top100_fold	2.712	0.62			0.7851	top_n_fold
+31174959_32152472	Collado-Torres 2019	Perez 2021	447	26	13.0	12	13	top100_fold	2.514	0.52			0.7683	top_n_fold
+31174959_34059796	Collado-Torres 2019	Weissleder 2021	447	39	19.5	20	7	top100_fold	0.0	0.26			0.33	top_n_fold
+31174959_34440415	Collado-Torres 2019	Lindholm Carlström 2021	447	112	56.0	50	4	top65_fold	0.0	0.325				top_n_fold
+31174959_32513544	Collado-Torres 2019	Zeppillo 2022	447	20	10.0	10	16	top100_fold	2.514	0.605			0.804	top_n_fold
+31174959_36192459	Collado-Torres 2019	Puvogel 2022	447	29	14.5	15	8	top13_fold	0.0	0.91			0.94	top_n_fold
+31174959_36223459	Collado-Torres 2019	Batiuk 2022	447	23	11.5	12	13	top100_fold	4.013	0.76			0.9014	top_n_fold
+31174959_37498306	Collado-Torres 2019	Arihisa 2023	447	15	7.5	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+31174959_38448582	Collado-Torres 2019	Ling 2024	447	180	90.0	75	3	top100_fold	2.006	0.02				top_n_fold
+31174959_38648100	Collado-Torres 2019	Zhu 2024	447	58	29.0	30	5	top100_fold	1.394	0.22			0.525	top_n_fold
+31174959_39227716	Collado-Torres 2019	Frohlich 2024 (own list)	447	87	43.5	50	4	top100_fold	0.0	0.09				top_n_fold
+31174959_39397771	Collado-Torres 2019	Alsema 2025	447	28	14.0	15	8	top100_fold	2.006	0.635			0.68	top_n_fold
+31174959_41210297	Collado-Torres 2019	Mas 2025	447	32	16.0	15	8	top4_fold	0.0	0.91			0.94	top_n_fold
+31174959_39526318	Collado-Torres 2019	Zhang 2026	447	30	15.0	15	8	top100_fold	0.0	0.35			0.35	top_n_fold
+31174959_42461238	Collado-Torres 2019	Dean 2026	447	211	105.5	75	3	top46_fold	7.044	0.07				top_n_fold
+32006661_32203495	Santarelli 2019	Jaffe 2020	74	168	37.0	30	5	top21_fold	0.0	0.81			0.895	top_n_fold
+32006661_32566292	Santarelli 2019	Bakshi 2020	74	22	11.0	10	16	top100_fold	1.79	0.455			0.7515	top_n_fold
+32006661_33184259	Santarelli 2019	Maas 2020	74	8	4.0	5	16	top100_fold	0.0	0.315			0.4674	top_n_fold
+32006661_32152472	Santarelli 2019	Perez 2021	74	26	13.0	12	13	top100_fold	0.0	0.39			0.4417	top_n_fold
+32006661_33558674	Santarelli 2019	Akula 2021	74	99	37.0	30	5	top21_fold	0.0	0.81			0.895	top_n_fold
+32006661_34059796	Santarelli 2019	Weissleder 2021	74	39	19.5	20	7	top100_fold	0.0	0.26			0.33	top_n_fold
+32006661_34272489	Santarelli 2019	Wu 2021	74	24	12.0	12	13	top100_fold	1.832	0.39			0.739	top_n_fold
+32006661_34440415	Santarelli 2019	Lindholm Carlström 2021	74	112	37.0	30	5	top62_fold	4.015	0.49			0.64	top_n_fold
+32006661_32513544	Santarelli 2019	Zeppillo 2022	74	20	10.0	10	16	top100_fold	1.626	0.42			0.588	top_n_fold
+32006661_36192459	Santarelli 2019	Puvogel 2022	74	29	14.5	15	8	top13_fold	0.0	0.91			0.94	top_n_fold
+32006661_36223459	Santarelli 2019	Batiuk 2022	74	23	11.5	12	13	top100_fold	0.0	0.39			0.4417	top_n_fold
+32006661_36319771	Santarelli 2019	Benjamin 2022	74	393	37.0	30	5	top100_fold	1.52	0.22			0.65	top_n_fold
+32006661_36302706	Santarelli 2019	Ketchesin 2023 (own list)	74	72	36.0	30	5	top100_fold	0.0	0.22			0.365	top_n_fold
+32006661_36932057	Santarelli 2019	Schulmann 2023	74	201	37.0	30	5	top100_fold	4.877	0.57			0.875	top_n_fold
+32006661_37498306	Santarelli 2019	Arihisa 2023	74	15	7.5	8	16	top92_fold	0.0	0.375			0.4858	top_n_fold
+32006661_38448582	Santarelli 2019	Ling 2024	74	180	37.0	30	5	top100_fold	4.984	0.57			0.875	top_n_fold
+32006661_38648100	Santarelli 2019	Zhu 2024	74	58	29.0	30	5	top100_fold	0.0	0.22			0.365	top_n_fold
+32006661_39237723	Santarelli 2019	Arbabi 2025	74	38	19.0	20	7	top100_fold	0.0	0.26			0.33	top_n_fold
+32006661_39397771	Santarelli 2019	Alsema 2025	74	28	14.0	15	8	top97_fold	1.766	0.395			0.68	top_n_fold
+32006661_41174894	Santarelli 2019	Yalcinbas 2025	74	68	34.0	30	5	top100_fold	0.0	0.22			0.365	top_n_fold
+32006661_41210297	Santarelli 2019	Mas 2025	74	32	16.0	15	8	top3_fold	0.0	0.91			0.94	top_n_fold
+32006661_39526318	Santarelli 2019	Zhang 2026	74	30	15.0	15	8	top100_fold	0.0	0.35			0.35	top_n_fold
+32006661_41757081	Santarelli 2019	Kwon 2026	74	63	31.5	30	5	top100_fold	4.984	0.57			0.875	top_n_fold
+32006661_41942462	Santarelli 2019	Singh 2026	74	80	37.0	30	5	top100_fold	0.0	0.22			0.365	top_n_fold
+32203495_32566292	Jaffe 2020	Bakshi 2020	168	22	11.0	10	16	top22_fold	0.0	0.935			0.9598	top_n_fold
+32203495_33184259	Jaffe 2020	Maas 2020	168	8	4.0	5	16	spearman_rho_log2fc	0.1046	0.6029	0.31	0.75	0.7249	spearman_rho_log2fc
+32203495_33184259	Jaffe 2020	Maas 2020	168	8	4.0	5	16	top18_fold	0.0	0.895			0.9529	top_n_fold
+32203495_32152472	Jaffe 2020	Perez 2021	168	26	13.0	12	13	spearman_rho_log2fc	-0.009623	0.18	0.0	0.4	0.3021	spearman_rho_log2fc
+32203495_32152472	Jaffe 2020	Perez 2021	168	26	13.0	12	13	top25_fold	0.0	0.9			0.9531	top_n_fold
+32203495_34059796	Jaffe 2020	Weissleder 2021	168	39	19.5	20	7	top25_fold	0.0	0.89			0.895	top_n_fold
+32203495_34440415	Jaffe 2020	Lindholm Carlström 2021	168	112	56.0	50	4	spearman_rho_log2fc	0.1353	0.105	0.05	0.24		spearman_rho_log2fc
+32203495_34440415	Jaffe 2020	Lindholm Carlström 2021	168	112	56.0	50	4	top21_fold	0.0	0.735				top_n_fold
+32203495_32513544	Jaffe 2020	Zeppillo 2022	168	20	10.0	10	16	top25_fold	0.0	0.935			0.9598	top_n_fold
+32203495_36192459	Jaffe 2020	Puvogel 2022	168	29	14.5	15	8	top11_fold	0.0	0.91			0.94	top_n_fold
+32203495_36223459	Jaffe 2020	Batiuk 2022	168	23	11.5	12	13	top22_fold	30.13	0.9			0.9531	top_n_fold
+32203495_37498306	Jaffe 2020	Arihisa 2023	168	15	7.5	8	16	top25_fold	0.0	0.92			0.9605	top_n_fold
+32203495_38448582	Jaffe 2020	Ling 2024	168	180	84.0	75	3	top22_fold	0.0	0.45				top_n_fold
+32203495_38648100	Jaffe 2020	Zhu 2024	168	58	29.0	30	5	top18_fold	0.0	0.81			0.895	top_n_fold
+32203495_39227716	Jaffe 2020	Frohlich 2024 (own list)	168	87	43.5	50	4	top22_fold	0.0	0.735				top_n_fold
+32203495_39397771	Jaffe 2020	Alsema 2025	168	28	14.0	15	8	top22_fold	0.0	0.91			0.94	top_n_fold
+32203495_41210297	Jaffe 2020	Mas 2025	168	32	16.0	15	8	top4_fold	0.0	0.91			0.94	top_n_fold
+32203495_39526318	Jaffe 2020	Zhang 2026	168	30	15.0	15	8	spearman_rho_log2fc	0.07049	0.34	0.01	0.45	0.5117	spearman_rho_log2fc
+32203495_39526318	Jaffe 2020	Zhang 2026	168	30	15.0	15	8	top21_fold	0.0	0.91			0.94	top_n_fold
+32203495_42461238	Jaffe 2020	Dean 2026	168	211	84.0	75	3	spearman_rho_log2fc	0.1235	0.01	0.01	0.04		spearman_rho_log2fc
+32203495_42461238	Jaffe 2020	Dean 2026	168	211	84.0	75	3	top19_fold	0.0	0.45				top_n_fold
+32566292_33184259	Bakshi 2020	Maas 2020	22	8	4.0	5	16	top100_fold	4.034	0.76			0.902	top_n_fold
+32566292_32152472	Bakshi 2020	Perez 2021	22	26	11.0	10	16	top100_fold	1.8	0.455			0.7573	top_n_fold
+32566292_33558674	Bakshi 2020	Akula 2021	22	99	11.0	10	16	top21_fold	0.0	0.935			0.9598	top_n_fold
+32566292_34272489	Bakshi 2020	Wu 2021	22	24	11.0	10	16	top100_fold	0.0	0.395			0.4653	top_n_fold
+32566292_34440415	Bakshi 2020	Lindholm Carlström 2021	22	112	11.0	10	16	top63_fold	0.0	0.705			0.7969	top_n_fold
+32566292_32513544	Bakshi 2020	Zeppillo 2022	22	20	10.0	10	16	top100_fold	5.4	0.885			0.9727	top_n_fold
+32566292_36223459	Bakshi 2020	Batiuk 2022	22	23	11.0	10	16	top100_fold	1.833	0.455			0.7573	top_n_fold
+32566292_36319771	Bakshi 2020	Benjamin 2022	22	393	11.0	10	16	top100_fold	0.0	0.395			0.4653	top_n_fold
+32566292_36302706	Bakshi 2020	Ketchesin 2023 (own list)	22	72	11.0	10	16	top100_fold	2.08	0.605			0.7573	top_n_fold
+32566292_36932057	Bakshi 2020	Schulmann 2023	22	201	11.0	10	16	top100_fold	0.0	0.395			0.4653	top_n_fold
+32566292_37498306	Bakshi 2020	Arihisa 2023	22	15	7.5	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+32566292_38448582	Bakshi 2020	Ling 2024	22	180	11.0	10	16	top100_fold	1.833	0.455			0.7573	top_n_fold
+32566292_38648100	Bakshi 2020	Zhu 2024	22	58	11.0	10	16	top100_fold	1.309	0.395			0.4653	top_n_fold
+32566292_39227716	Bakshi 2020	Frohlich 2024 (own list)	22	87	11.0	10	16	top100_fold	7.332	0.915			0.9873	top_n_fold
+32566292_39237723	Bakshi 2020	Arbabi 2025	22	38	11.0	10	16	top100_fold	0.0	0.395			0.4653	top_n_fold
+32566292_41174894	Bakshi 2020	Yalcinbas 2025	22	68	11.0	10	16	top100_fold	0.0	0.395			0.4653	top_n_fold
+32566292_41210297	Bakshi 2020	Mas 2025	22	32	11.0	10	16	top4_fold	0.0	0.935			0.9598	top_n_fold
+32566292_41757081	Bakshi 2020	Kwon 2026	22	63	11.0	10	16	top100_fold	1.321	0.395			0.4653	top_n_fold
+32566292_41942462	Bakshi 2020	Singh 2026	22	80	11.0	10	16	top100_fold	3.613	0.755			0.924	top_n_fold
+32566292_42461238	Bakshi 2020	Dean 2026	22	211	11.0	10	16	top46_fold	0.0	0.705			0.7969	top_n_fold
+33184259_32152472	Maas 2020	Perez 2021	8	26	4.0	5	16	spearman_rho_log2fc	-0.3059	0.03	0.0	0.23	0.01109	spearman_rho_log2fc
+33184259_32152472	Maas 2020	Perez 2021	8	26	4.0	5	16	top100_fold	1.356	0.315			0.4674	top_n_fold
+33184259_33558674	Maas 2020	Akula 2021	8	99	4.0	5	16	top10_fold	0.0	0.895			0.9529	top_n_fold
+33184259_34059796	Maas 2020	Weissleder 2021	8	39	4.0	5	16	top100_fold	12.2	0.98			0.9944	top_n_fold
+33184259_34272489	Maas 2020	Wu 2021	8	24	4.0	5	16	top100_fold	0.0	0.315			0.4674	top_n_fold
+33184259_34440415	Maas 2020	Lindholm Carlström 2021	8	112	4.0	5	16	spearman_rho_log2fc	0.4804	0.995	0.91	1.0	0.9987	spearman_rho_log2fc
+33184259_34440415	Maas 2020	Lindholm Carlström 2021	8	112	4.0	5	16	top46_fold	12.54	0.88			0.9762	top_n_fold
+33184259_32513544	Maas 2020	Zeppillo 2022	8	20	4.0	5	16	top100_fold	2.712	0.62			0.7851	top_n_fold
+33184259_36192459	Maas 2020	Puvogel 2022	8	29	4.0	5	16	top12_fold	0.0	0.895			0.9529	top_n_fold
+33184259_36223459	Maas 2020	Batiuk 2022	8	23	4.0	5	16	top100_fold	0.0	0.315			0.4674	top_n_fold
+33184259_36319771	Maas 2020	Benjamin 2022	8	393	4.0	5	16	spearman_rho_log2fc	-0.09712	0.22	0.04	0.44	0.1575	spearman_rho_log2fc
+33184259_36319771	Maas 2020	Benjamin 2022	8	393	4.0	5	16	top100_fold	0.0	0.315			0.4674	top_n_fold
+33184259_36302706	Maas 2020	Ketchesin 2023 (own list)	8	72	4.0	5	16	spearman_rho_log2fc	0.09258	0.5678	0.3	0.72	0.6905	spearman_rho_log2fc
+33184259_36302706	Maas 2020	Ketchesin 2023 (own list)	8	72	4.0	5	16	top100_fold	1.36	0.315			0.4674	top_n_fold
+33184259_36932057	Maas 2020	Schulmann 2023	8	201	4.0	5	16	spearman_rho_log2fc	0.5728	1.0	0.95	1.0	0.9996	spearman_rho_log2fc
+33184259_36932057	Maas 2020	Schulmann 2023	8	201	4.0	5	16	top100_fold	2.712	0.62			0.7851	top_n_fold
+33184259_37498306	Maas 2020	Arihisa 2023	8	15	4.0	5	16	top87_fold	8.958	0.965			0.9907	top_n_fold
+33184259_38448582	Maas 2020	Ling 2024	8	180	4.0	5	16	top100_fold	1.349	0.315			0.4674	top_n_fold
+33184259_38648100	Maas 2020	Zhu 2024	8	58	4.0	5	16	top76_fold	8.179	0.94			0.9869	top_n_fold
+33184259_39227716	Maas 2020	Frohlich 2024 (own list)	8	87	4.0	5	16	top100_fold	2.698	0.62			0.7851	top_n_fold
+33184259_39237723	Maas 2020	Arbabi 2025	8	38	4.0	5	16	top100_fold	0.0	0.315			0.4674	top_n_fold
+33184259_39397771	Maas 2020	Alsema 2025	8	28	4.0	5	16	top90_fold	0.0	0.315			0.4674	top_n_fold
+33184259_41174894	Maas 2020	Yalcinbas 2025	8	68	4.0	5	16	spearman_rho_log2fc	-0.04701	0.2995	0.07	0.51	0.2719	spearman_rho_log2fc
+33184259_41174894	Maas 2020	Yalcinbas 2025	8	68	4.0	5	16	top100_fold	0.0	0.315			0.4674	top_n_fold
+33184259_41210297	Maas 2020	Mas 2025	8	32	4.0	5	16	top3_fold	0.0	0.895			0.9529	top_n_fold
+33184259_39526318	Maas 2020	Zhang 2026	8	30	4.0	5	16	spearman_rho_log2fc	0.1484	0.6883	0.4	0.85	0.8265	spearman_rho_log2fc
+33184259_39526318	Maas 2020	Zhang 2026	8	30	4.0	5	16	top100_fold	0.0	0.315			0.4674	top_n_fold
+33184259_41757081	Maas 2020	Kwon 2026	8	63	4.0	5	16	top100_fold	3.752	0.76			0.902	top_n_fold
+33184259_41942462	Maas 2020	Singh 2026	8	80	4.0	5	16	spearman_rho_log2fc	0.2306	0.81	0.52	0.94	0.9313	spearman_rho_log2fc
+33184259_41942462	Maas 2020	Singh 2026	8	80	4.0	5	16	top100_fold	1.341	0.315			0.4674	top_n_fold
+33184259_42461238	Maas 2020	Dean 2026	8	211	4.0	5	16	spearman_rho_log2fc	0.1443	0.6833	0.39	0.85	0.8176	spearman_rho_log2fc
+33184259_42461238	Maas 2020	Dean 2026	8	211	4.0	5	16	top46_fold	0.0	0.635			0.7909	top_n_fold
+32152472_33558674	Perez 2021	Akula 2021	26	99	13.0	12	13	top21_fold	0.0	0.9			0.9531	top_n_fold
+32152472_34059796	Perez 2021	Weissleder 2021	26	39	13.0	12	13	top100_fold	2.514	0.52			0.7683	top_n_fold
+32152472_34272489	Perez 2021	Wu 2021	26	24	12.0	12	13	top100_fold	1.738	0.39			0.7317	top_n_fold
+32152472_34440415	Perez 2021	Lindholm Carlström 2021	26	112	13.0	12	13	spearman_rho_log2fc	-0.01555	0.17	0.0	0.39	0.2903	spearman_rho_log2fc
+32152472_34440415	Perez 2021	Lindholm Carlström 2021	26	112	13.0	12	13	top65_fold	0.0	0.66			0.7862	top_n_fold
+32152472_32513544	Perez 2021	Zeppillo 2022	26	20	10.0	10	16	top100_fold	0.0	0.395			0.4653	top_n_fold
+32152472_36192459	Perez 2021	Puvogel 2022	26	29	13.0	12	13	top13_fold	0.0	0.9			0.9531	top_n_fold
+32152472_36223459	Perez 2021	Batiuk 2022	26	23	11.5	12	13	top100_fold	0.0	0.39			0.4417	top_n_fold
+32152472_36319771	Perez 2021	Benjamin 2022	26	393	13.0	12	13	spearman_rho_log2fc	0.1253	0.39	0.0	0.62	0.6938	spearman_rho_log2fc
+32152472_36319771	Perez 2021	Benjamin 2022	26	393	13.0	12	13	top100_fold	0.0	0.39			0.4417	top_n_fold
+32152472_36302706	Perez 2021	Ketchesin 2023 (own list)	26	72	13.0	12	13	spearman_rho_log2fc	0.01691	0.24	0.0	0.46	0.3807	spearman_rho_log2fc
+32152472_36302706	Perez 2021	Ketchesin 2023 (own list)	26	72	13.0	12	13	top100_fold	0.0	0.39			0.4417	top_n_fold
+32152472_36932057	Perez 2021	Schulmann 2023	26	201	13.0	12	13	spearman_rho_log2fc	-0.2052	0.01	0.0	0.24	0.03034	spearman_rho_log2fc
+32152472_36932057	Perez 2021	Schulmann 2023	26	201	13.0	12	13	top100_fold	5.027	0.76			0.9514	top_n_fold
+32152472_37498306	Perez 2021	Arihisa 2023	26	15	7.5	8	16	top100_fold	2.514	0.6			0.8096	top_n_fold
+32152472_38448582	Perez 2021	Ling 2024	26	180	13.0	12	13	top100_fold	2.006	0.52			0.739	top_n_fold
+32152472_38648100	Perez 2021	Zhu 2024	26	58	13.0	12	13	top100_fold	5.576	0.84			0.9603	top_n_fold
+32152472_39227716	Perez 2021	Frohlich 2024 (own list)	26	87	13.0	12	13	top100_fold	2.006	0.52			0.739	top_n_fold
+32152472_39237723	Perez 2021	Arbabi 2025	26	38	13.0	12	13	top100_fold	0.0	0.39			0.4417	top_n_fold
+32152472_39397771	Perez 2021	Alsema 2025	26	28	13.0	12	13	top100_fold	2.006	0.52			0.739	top_n_fold
+32152472_41174894	Perez 2021	Yalcinbas 2025	26	68	13.0	12	13	spearman_rho_log2fc	0.1533	0.48	0.0	0.65	0.7662	spearman_rho_log2fc
+32152472_41174894	Perez 2021	Yalcinbas 2025	26	68	13.0	12	13	top100_fold	0.0	0.39			0.4417	top_n_fold
+32152472_41210297	Perez 2021	Mas 2025	26	32	13.0	12	13	top4_fold	0.0	0.9			0.9531	top_n_fold
+32152472_39526318	Perez 2021	Zhang 2026	26	30	13.0	12	13	spearman_rho_log2fc	-0.1178	0.05	0.0	0.29	0.09241	spearman_rho_log2fc
+32152472_39526318	Perez 2021	Zhang 2026	26	30	13.0	12	13	top100_fold	3.032	0.69			0.8055	top_n_fold
+32152472_41757081	Perez 2021	Kwon 2026	26	63	13.0	12	13	top100_fold	1.353	0.39			0.4417	top_n_fold
+32152472_41942462	Perez 2021	Singh 2026	26	80	13.0	12	13	spearman_rho_log2fc	-0.1009	0.07	0.0	0.32	0.1159	spearman_rho_log2fc
+32152472_41942462	Perez 2021	Singh 2026	26	80	13.0	12	13	top100_fold	0.0	0.39			0.4417	top_n_fold
+32152472_42461238	Perez 2021	Dean 2026	26	211	13.0	12	13	spearman_rho_log2fc	0.04855	0.3	0.0	0.49	0.4821	spearman_rho_log2fc
+32152472_42461238	Perez 2021	Dean 2026	26	211	13.0	12	13	top46_fold	0.0	0.66			0.7862	top_n_fold
+33558674_34059796	Akula 2021	Weissleder 2021	99	39	19.5	20	7	top21_fold	114.0	1.0			0.9983	top_n_fold
+33558674_34440415	Akula 2021	Lindholm Carlström 2021	99	112	49.5	50	4	top19_fold	51.78	0.925				top_n_fold
+33558674_32513544	Akula 2021	Zeppillo 2022	99	20	10.0	10	16	top21_fold	0.0	0.935			0.9598	top_n_fold
+33558674_36192459	Akula 2021	Puvogel 2022	99	29	14.5	15	8	top13_fold	0.0	0.91			0.94	top_n_fold
+33558674_36223459	Akula 2021	Batiuk 2022	99	23	11.5	12	13	top18_fold	0.0	0.9			0.9531	top_n_fold
+33558674_37498306	Akula 2021	Arihisa 2023	99	15	7.5	8	16	top21_fold	0.0	0.92			0.9605	top_n_fold
+33558674_38448582	Akula 2021	Ling 2024	99	180	49.5	50	4	top18_fold	61.93	0.925				top_n_fold
+33558674_38648100	Akula 2021	Zhu 2024	99	58	29.0	30	5	top7_fold	0.0	0.81			0.895	top_n_fold
+33558674_39227716	Akula 2021	Frohlich 2024 (own list)	99	87	43.5	50	4	top18_fold	0.0	0.735				top_n_fold
+33558674_39397771	Akula 2021	Alsema 2025	99	28	14.0	15	8	top18_fold	0.0	0.91			0.94	top_n_fold
+33558674_41210297	Akula 2021	Mas 2025	99	32	16.0	15	8	top4_fold	0.0	0.91			0.94	top_n_fold
+33558674_39526318	Akula 2021	Zhang 2026	99	30	15.0	15	8	top12_fold	0.0	0.91			0.94	top_n_fold
+33558674_42461238	Akula 2021	Dean 2026	99	211	49.5	50	4	top19_fold	41.29	0.735				top_n_fold
+34059796_34272489	Weissleder 2021	Wu 2021	39	24	12.0	12	13	top100_fold	0.0	0.39			0.4417	top_n_fold
+34059796_34440415	Weissleder 2021	Lindholm Carlström 2021	39	112	19.5	20	7	top65_fold	17.7	0.95			0.9717	top_n_fold
+34059796_32513544	Weissleder 2021	Zeppillo 2022	39	20	10.0	10	16	top100_fold	10.05	0.98			0.9964	top_n_fold
+34059796_36223459	Weissleder 2021	Batiuk 2022	39	23	11.5	12	13	top100_fold	0.0	0.39			0.4417	top_n_fold
+34059796_36319771	Weissleder 2021	Benjamin 2022	39	393	19.5	20	7	top100_fold	0.0	0.26			0.33	top_n_fold
+34059796_36302706	Weissleder 2021	Ketchesin 2023 (own list)	39	72	19.5	20	7	top100_fold	4.048	0.73			0.8	top_n_fold
+34059796_36932057	Weissleder 2021	Schulmann 2023	39	201	19.5	20	7	top100_fold	20.11	0.99			0.9967	top_n_fold
+34059796_37498306	Weissleder 2021	Arihisa 2023	39	15	7.5	8	16	top100_fold	17.6	1.0			0.9993	top_n_fold
+34059796_38448582	Weissleder 2021	Ling 2024	39	180	19.5	20	7	top100_fold	0.0	0.26			0.33	top_n_fold
+34059796_38648100	Weissleder 2021	Zhu 2024	39	58	19.5	20	7	top100_fold	8.365	0.91			0.9617	top_n_fold
+34059796_39227716	Weissleder 2021	Frohlich 2024 (own list)	39	87	19.5	20	7	top100_fold	4.013	0.73			0.8	top_n_fold
+34059796_39237723	Weissleder 2021	Arbabi 2025	39	38	19.0	20	7	top100_fold	4.015	0.73			0.8	top_n_fold
+34059796_41174894	Weissleder 2021	Yalcinbas 2025	39	68	19.5	20	7	top100_fold	5.846	0.75			0.9167	top_n_fold
+34059796_41210297	Weissleder 2021	Mas 2025	39	32	16.0	15	8	top4_fold	0.0	0.91			0.94	top_n_fold
+34059796_41757081	Weissleder 2021	Kwon 2026	39	63	19.5	20	7	top100_fold	6.766	0.84			0.9367	top_n_fold
+34059796_41942462	Weissleder 2021	Singh 2026	39	80	19.5	20	7	top100_fold	0.0	0.26			0.33	top_n_fold
+34059796_42461238	Weissleder 2021	Dean 2026	39	211	19.5	20	7	top46_fold	7.044	0.71			0.9167	top_n_fold
+34272489_34440415	Wu 2021	Lindholm Carlström 2021	24	112	12.0	12	13	top63_fold	0.0	0.66			0.7862	top_n_fold
+34272489_32513544	Wu 2021	Zeppillo 2022	24	20	10.0	10	16	top100_fold	1.738	0.455			0.7455	top_n_fold
+34272489_36192459	Wu 2021	Puvogel 2022	24	29	12.0	12	13	top13_fold	0.0	0.9			0.9531	top_n_fold
+34272489_36223459	Wu 2021	Batiuk 2022	24	23	11.5	12	13	top100_fold	0.0	0.39			0.4417	top_n_fold
+34272489_37498306	Wu 2021	Arihisa 2023	24	15	7.5	8	16	top97_fold	1.847	0.515			0.7618	top_n_fold
+34272489_38448582	Wu 2021	Ling 2024	24	180	12.0	12	13	top100_fold	1.727	0.39			0.7317	top_n_fold
+34272489_38648100	Wu 2021	Zhu 2024	24	58	12.0	12	13	top100_fold	1.259	0.39			0.4417	top_n_fold
+34272489_39227716	Wu 2021	Frohlich 2024 (own list)	24	87	12.0	12	13	top100_fold	0.0	0.39			0.4417	top_n_fold
+34272489_39397771	Wu 2021	Alsema 2025	24	28	12.0	12	13	top99_fold	1.762	0.39			0.7317	top_n_fold
+34272489_41210297	Wu 2021	Mas 2025	24	32	12.0	12	13	top4_fold	0.0	0.9			0.9531	top_n_fold
+34272489_39526318	Wu 2021	Zhang 2026	24	30	12.0	12	13	top100_fold	0.0	0.39			0.4417	top_n_fold
+34272489_42461238	Wu 2021	Dean 2026	24	211	12.0	12	13	top46_fold	0.0	0.66			0.7862	top_n_fold
+34440415_32513544	Lindholm Carlström 2021	Zeppillo 2022	112	20	10.0	10	16	top65_fold	17.7	0.98			0.9931	top_n_fold
+34440415_36192459	Lindholm Carlström 2021	Puvogel 2022	112	29	14.5	15	8	top13_fold	0.0	0.91			0.94	top_n_fold
+34440415_36223459	Lindholm Carlström 2021	Batiuk 2022	112	23	11.5	12	13	top58_fold	0.0	0.66			0.7862	top_n_fold
+34440415_36319771	Lindholm Carlström 2021	Benjamin 2022	112	393	56.0	50	4	spearman_rho_log2fc	0.04372	0.065	0.01	0.15		spearman_rho_log2fc
+34440415_36319771	Lindholm Carlström 2021	Benjamin 2022	112	393	56.0	50	4	top57_fold	0.0	0.325				top_n_fold
+34440415_36302706	Lindholm Carlström 2021	Ketchesin 2023 (own list)	112	72	36.0	30	5	spearman_rho_log2fc	0.211	0.37	0.28	0.63	0.8	spearman_rho_log2fc
+34440415_36302706	Lindholm Carlström 2021	Ketchesin 2023 (own list)	112	72	36.0	30	5	top66_fold	0.0	0.49			0.64	top_n_fold
+34440415_36932057	Lindholm Carlström 2021	Schulmann 2023	112	201	56.0	50	4	spearman_rho_log2fc	0.3821	0.465	0.39	0.94		spearman_rho_log2fc
+34440415_36932057	Lindholm Carlström 2021	Schulmann 2023	112	201	56.0	50	4	top65_fold	4.424	0.325				top_n_fold
+34440415_37498306	Lindholm Carlström 2021	Arihisa 2023	112	15	7.5	8	16	top65_fold	4.424	0.7			0.8042	top_n_fold
+34440415_38648100	Lindholm Carlström 2021	Zhu 2024	112	58	29.0	30	5	top18_fold	0.0	0.81			0.895	top_n_fold
+34440415_39227716	Lindholm Carlström 2021	Frohlich 2024 (own list)	112	87	43.5	50	4	top58_fold	0.0	0.325				top_n_fold
+34440415_39237723	Lindholm Carlström 2021	Arbabi 2025	112	38	19.0	20	7	top58_fold	0.0	0.61			0.695	top_n_fold
+34440415_39397771	Lindholm Carlström 2021	Alsema 2025	112	28	14.0	15	8	top58_fold	0.0	0.655			0.725	top_n_fold
+34440415_41174894	Lindholm Carlström 2021	Yalcinbas 2025	112	68	34.0	30	5	spearman_rho_log2fc	0.1496	0.33	0.14	0.47	0.635	spearman_rho_log2fc
+34440415_41174894	Lindholm Carlström 2021	Yalcinbas 2025	112	68	34.0	30	5	top57_fold	10.8	0.77			0.89	top_n_fold
+34440415_41210297	Lindholm Carlström 2021	Mas 2025	112	32	16.0	15	8	top4_fold	0.0	0.91			0.94	top_n_fold
+34440415_39526318	Lindholm Carlström 2021	Zhang 2026	112	30	15.0	15	8	spearman_rho_log2fc	0.1506	0.51	0.04	0.58	0.69	spearman_rho_log2fc
+34440415_39526318	Lindholm Carlström 2021	Zhang 2026	112	30	15.0	15	8	top48_fold	0.0	0.655			0.725	top_n_fold
+34440415_41757081	Lindholm Carlström 2021	Kwon 2026	112	63	31.5	30	5	top37_fold	0.0	0.49			0.64	top_n_fold
+34440415_41942462	Lindholm Carlström 2021	Singh 2026	112	80	40.0	30	5	spearman_rho_log2fc	0.1457	0.32	0.14	0.46	0.62	spearman_rho_log2fc
+34440415_41942462	Lindholm Carlström 2021	Singh 2026	112	80	40.0	30	5	top59_fold	0.0	0.49			0.64	top_n_fold
+34440415_42461238	Lindholm Carlström 2021	Dean 2026	112	211	56.0	50	4	spearman_rho_log2fc	0.1626	0.12	0.05	0.3		spearman_rho_log2fc
+34440415_42461238	Lindholm Carlström 2021	Dean 2026	112	211	56.0	50	4	top45_fold	7.085	0.325				top_n_fold
+32513544_36192459	Zeppillo 2022	Puvogel 2022	20	29	10.0	10	16	top13_fold	0.0	0.935			0.9598	top_n_fold
+32513544_36223459	Zeppillo 2022	Batiuk 2022	20	23	10.0	10	16	top100_fold	0.0	0.395			0.4653	top_n_fold
+32513544_36319771	Zeppillo 2022	Benjamin 2022	20	393	10.0	10	16	top100_fold	3.959	0.83			0.924	top_n_fold
+32513544_36302706	Zeppillo 2022	Ketchesin 2023 (own list)	20	72	10.0	10	16	top100_fold	2.024	0.605			0.7573	top_n_fold
+32513544_36932057	Zeppillo 2022	Schulmann 2023	20	201	10.0	10	16	top100_fold	7.541	0.915			0.9896	top_n_fold
+32513544_37498306	Zeppillo 2022	Arihisa 2023	20	15	7.5	8	16	top100_fold	2.514	0.6			0.8096	top_n_fold
+32513544_38448582	Zeppillo 2022	Ling 2024	20	180	10.0	10	16	top100_fold	12.04	0.985			0.998	top_n_fold
+32513544_38648100	Zeppillo 2022	Zhu 2024	20	58	10.0	10	16	top100_fold	1.394	0.395			0.4724	top_n_fold
+32513544_39227716	Zeppillo 2022	Frohlich 2024 (own list)	20	87	10.0	10	16	top100_fold	4.013	0.84			0.924	top_n_fold
+32513544_39237723	Zeppillo 2022	Arbabi 2025	20	38	10.0	10	16	top100_fold	4.015	0.84			0.924	top_n_fold
+32513544_39397771	Zeppillo 2022	Alsema 2025	20	28	10.0	10	16	top100_fold	2.006	0.605			0.7573	top_n_fold
+32513544_41174894	Zeppillo 2022	Yalcinbas 2025	20	68	10.0	10	16	top100_fold	1.949	0.505			0.7573	top_n_fold
+32513544_41210297	Zeppillo 2022	Mas 2025	20	32	10.0	10	16	top4_fold	0.0	0.935			0.9598	top_n_fold
+32513544_39526318	Zeppillo 2022	Zhang 2026	20	30	10.0	10	16	top100_fold	1.516	0.395			0.5273	top_n_fold
+32513544_41757081	Zeppillo 2022	Kwon 2026	20	63	10.0	10	16	top100_fold	6.766	0.915			0.9835	top_n_fold
+32513544_41942462	Zeppillo 2022	Singh 2026	20	80	10.0	10	16	top100_fold	0.0	0.395			0.4653	top_n_fold
+32513544_42461238	Zeppillo 2022	Dean 2026	20	211	10.0	10	16	top46_fold	7.044	0.77			0.9475	top_n_fold
+36192459_36223459	Puvogel 2022	Batiuk 2022	29	23	11.5	12	13	top13_fold	0.0	0.9			0.9531	top_n_fold
+36192459_36319771	Puvogel 2022	Benjamin 2022	29	393	14.5	15	8	top13_fold	0.0	0.91			0.94	top_n_fold
+36192459_36302706	Puvogel 2022	Ketchesin 2023 (own list)	29	72	14.5	15	8	top13_fold	0.0	0.91			0.94	top_n_fold
+36192459_36932057	Puvogel 2022	Schulmann 2023	29	201	14.5	15	8	top13_fold	0.0	0.91			0.94	top_n_fold
+36192459_37498306	Puvogel 2022	Arihisa 2023	29	15	7.5	8	16	top13_fold	0.0	0.92			0.9605	top_n_fold
+36192459_38448582	Puvogel 2022	Ling 2024	29	180	14.5	15	8	top13_fold	136.0	1.0			1.0	top_n_fold
+36192459_38648100	Puvogel 2022	Zhu 2024	29	58	14.5	15	8	top11_fold	0.0	0.91			0.94	top_n_fold
+36192459_39227716	Puvogel 2022	Frohlich 2024 (own list)	29	87	14.5	15	8	top13_fold	0.0	0.91			0.94	top_n_fold
+36192459_39237723	Puvogel 2022	Arbabi 2025	29	38	14.5	15	8	top13_fold	0.0	0.91			0.94	top_n_fold
+36192459_41174894	Puvogel 2022	Yalcinbas 2025	29	68	14.5	15	8	top13_fold	0.0	0.91			0.94	top_n_fold
+36192459_41210297	Puvogel 2022	Mas 2025	29	32	14.5	15	8	top4_fold	0.0	0.91			0.94	top_n_fold
+36192459_41757081	Puvogel 2022	Kwon 2026	29	63	14.5	15	8	top12_fold	0.0	0.91			0.94	top_n_fold
+36192459_41942462	Puvogel 2022	Singh 2026	29	80	14.5	15	8	top13_fold	0.0	0.91			0.94	top_n_fold
+36192459_42461238	Puvogel 2022	Dean 2026	29	211	14.5	15	8	top12_fold	0.0	0.91			0.94	top_n_fold
+36223459_36319771	Batiuk 2022	Benjamin 2022	23	393	11.5	12	13	top100_fold	1.784	0.39			0.7317	top_n_fold
+36223459_36302706	Batiuk 2022	Ketchesin 2023 (own list)	23	72	11.5	12	13	top100_fold	0.0	0.39			0.4417	top_n_fold
+36223459_36932057	Batiuk 2022	Schulmann 2023	23	201	11.5	12	13	top100_fold	0.0	0.39			0.4417	top_n_fold
+36223459_37498306	Batiuk 2022	Arihisa 2023	23	15	7.5	8	16	top99_fold	0.0	0.375			0.4858	top_n_fold
+36223459_38448582	Batiuk 2022	Ling 2024	23	180	11.5	12	13	top100_fold	0.0	0.39			0.4417	top_n_fold
+36223459_38648100	Batiuk 2022	Zhu 2024	23	58	11.5	12	13	top100_fold	2.758	0.69			0.7683	top_n_fold
+36223459_39227716	Batiuk 2022	Frohlich 2024 (own list)	23	87	11.5	12	13	top100_fold	2.298	0.52			0.739	top_n_fold
+36223459_39237723	Batiuk 2022	Arbabi 2025	23	38	11.5	12	13	top100_fold	0.0	0.39			0.4417	top_n_fold
+36223459_39397771	Batiuk 2022	Alsema 2025	23	28	11.5	12	13	top100_fold	0.0	0.39			0.4417	top_n_fold
+36223459_41174894	Batiuk 2022	Yalcinbas 2025	23	68	11.5	12	13	top100_fold	0.0	0.39			0.4417	top_n_fold
+36223459_41210297	Batiuk 2022	Mas 2025	23	32	11.5	12	13	top4_fold	0.0	0.9			0.9531	top_n_fold
+36223459_39526318	Batiuk 2022	Zhang 2026	23	30	11.5	12	13	top100_fold	0.0	0.39			0.4417	top_n_fold
+36223459_41757081	Batiuk 2022	Kwon 2026	23	63	11.5	12	13	top100_fold	1.354	0.39			0.4417	top_n_fold
+36223459_41942462	Batiuk 2022	Singh 2026	23	80	11.5	12	13	top100_fold	0.0	0.39			0.4417	top_n_fold
+36223459_42461238	Batiuk 2022	Dean 2026	23	211	11.5	12	13	top45_fold	0.0	0.66			0.7862	top_n_fold
+36319771_37498306	Benjamin 2022	Arihisa 2023	393	15	7.5	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+36319771_38448582	Benjamin 2022	Ling 2024	393	180	90.0	75	3	top100_fold	3.568	0.02				top_n_fold
+36319771_38648100	Benjamin 2022	Zhu 2024	393	58	29.0	30	5	top100_fold	0.0	0.22			0.365	top_n_fold
+36319771_39227716	Benjamin 2022	Frohlich 2024 (own list)	393	87	43.5	50	4	top100_fold	0.0	0.09				top_n_fold
+36319771_39397771	Benjamin 2022	Alsema 2025	393	28	14.0	15	8	top100_fold	0.0	0.35			0.35	top_n_fold
+36319771_41210297	Benjamin 2022	Mas 2025	393	32	16.0	15	8	top4_fold	0.0	0.91			0.94	top_n_fold
+36319771_39526318	Benjamin 2022	Zhang 2026	393	30	15.0	15	8	spearman_rho_log2fc	-0.0628	0.155	0.0	0.33	0.1833	spearman_rho_log2fc
+36319771_39526318	Benjamin 2022	Zhang 2026	393	30	15.0	15	8	top100_fold	0.0	0.35			0.35	top_n_fold
+36319771_42461238	Benjamin 2022	Dean 2026	393	211	105.5	75	3	spearman_rho_log2fc	0.1221	0.01	0.01	0.04		spearman_rho_log2fc
+36319771_42461238	Benjamin 2022	Dean 2026	393	211	105.5	75	3	top45_fold	0.0	0.07				top_n_fold
+36302706_37498306	Ketchesin 2023 (own list)	Arihisa 2023	72	15	7.5	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+36302706_38448582	Ketchesin 2023 (own list)	Ling 2024	72	180	36.0	30	5	top100_fold	4.175	0.57			0.83	top_n_fold
+36302706_38648100	Ketchesin 2023 (own list)	Zhu 2024	72	58	29.0	30	5	top100_fold	2.713	0.39			0.65	top_n_fold
+36302706_39227716	Ketchesin 2023 (own list)	Frohlich 2024 (own list)	72	87	36.0	30	5	top100_fold	2.087	0.39			0.65	top_n_fold
+36302706_39397771	Ketchesin 2023 (own list)	Alsema 2025	72	28	14.0	15	8	top100_fold	0.0	0.35			0.35	top_n_fold
+36302706_41210297	Ketchesin 2023 (own list)	Mas 2025	72	32	16.0	15	8	top4_fold	0.0	0.91			0.94	top_n_fold
+36302706_39526318	Ketchesin 2023 (own list)	Zhang 2026	72	30	15.0	15	8	spearman_rho_log2fc	-0.02641	0.21	0.0	0.38	0.2533	spearman_rho_log2fc
+36302706_39526318	Ketchesin 2023 (own list)	Zhang 2026	72	30	15.0	15	8	top100_fold	1.494	0.35			0.5	top_n_fold
+36302706_42461238	Ketchesin 2023 (own list)	Dean 2026	72	211	36.0	30	5	spearman_rho_log2fc	0.06081	0.21	0.03	0.29	0.45	spearman_rho_log2fc
+36302706_42461238	Ketchesin 2023 (own list)	Dean 2026	72	211	36.0	30	5	top46_fold	7.957	0.54			0.89	top_n_fold
+36932057_37498306	Schulmann 2023	Arihisa 2023	201	15	7.5	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+36932057_38448582	Schulmann 2023	Ling 2024	201	180	90.0	75	3	top100_fold	10.03	0.17				top_n_fold
+36932057_38648100	Schulmann 2023	Zhu 2024	201	58	29.0	30	5	top100_fold	2.788	0.39			0.73	top_n_fold
+36932057_39227716	Schulmann 2023	Frohlich 2024 (own list)	201	87	43.5	50	4	top100_fold	0.0	0.09				top_n_fold
+36932057_39397771	Schulmann 2023	Alsema 2025	201	28	14.0	15	8	top100_fold	4.013	0.79			0.835	top_n_fold
+36932057_41210297	Schulmann 2023	Mas 2025	201	32	16.0	15	8	top4_fold	0.0	0.91			0.94	top_n_fold
+36932057_39526318	Schulmann 2023	Zhang 2026	201	30	15.0	15	8	spearman_rho_log2fc	0.1078	0.415	0.03	0.51	0.6117	spearman_rho_log2fc
+36932057_39526318	Schulmann 2023	Zhang 2026	201	30	15.0	15	8	top100_fold	1.516	0.35			0.5	top_n_fold
+36932057_42461238	Schulmann 2023	Dean 2026	201	211	100.5	75	3	spearman_rho_log2fc	0.1814	0.02	0.01	0.07		spearman_rho_log2fc
+36932057_42461238	Schulmann 2023	Dean 2026	201	211	100.5	75	3	top46_fold	0.0	0.07				top_n_fold
+37498306_38448582	Arihisa 2023	Ling 2024	15	180	7.5	8	16	top99_fold	0.0	0.375			0.4858	top_n_fold
+37498306_38648100	Arihisa 2023	Zhu 2024	15	58	7.5	8	16	top68_fold	0.0	0.7			0.8042	top_n_fold
+37498306_39227716	Arihisa 2023	Frohlich 2024 (own list)	15	87	7.5	8	16	top99_fold	2.047	0.6			0.7618	top_n_fold
+37498306_39237723	Arihisa 2023	Arbabi 2025	15	38	7.5	8	16	top100_fold	8.029	0.955			0.992	top_n_fold
+37498306_39397771	Arihisa 2023	Alsema 2025	15	28	7.5	8	16	top99_fold	2.047	0.6			0.7618	top_n_fold
+37498306_41174894	Arihisa 2023	Yalcinbas 2025	15	68	7.5	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+37498306_41210297	Arihisa 2023	Mas 2025	15	32	7.5	8	16	top4_fold	0.0	0.92			0.9605	top_n_fold
+37498306_39526318	Arihisa 2023	Zhang 2026	15	30	7.5	8	16	top99_fold	1.547	0.375			0.5624	top_n_fold
+37498306_41757081	Arihisa 2023	Kwon 2026	15	63	7.5	8	16	top86_fold	9.148	0.965			0.9953	top_n_fold
+37498306_41942462	Arihisa 2023	Singh 2026	15	80	7.5	8	16	top100_fold	0.0	0.375			0.4858	top_n_fold
+37498306_42461238	Arihisa 2023	Dean 2026	15	211	7.5	8	16	top46_fold	7.044	0.805			0.9475	top_n_fold
+38448582_38648100	Ling 2024	Zhu 2024	180	58	29.0	30	5	top100_fold	4.137	0.57			0.8	top_n_fold
+38448582_39227716	Ling 2024	Frohlich 2024 (own list)	180	87	43.5	50	4	top100_fold	2.298	0.175				top_n_fold
+38448582_39237723	Ling 2024	Arbabi 2025	180	38	19.0	20	7	top100_fold	9.194	0.91			0.965	top_n_fold
+38448582_39397771	Ling 2024	Alsema 2025	180	28	14.0	15	8	top100_fold	11.49	0.94			0.985	top_n_fold
+38448582_41174894	Ling 2024	Yalcinbas 2025	180	68	34.0	30	5	top100_fold	0.0	0.22			0.365	top_n_fold
+38448582_41210297	Ling 2024	Mas 2025	180	32	16.0	15	8	top4_fold	0.0	0.91			0.94	top_n_fold
+38448582_39526318	Ling 2024	Zhang 2026	180	30	15.0	15	8	top100_fold	0.0	0.35			0.35	top_n_fold
+38448582_41757081	Ling 2024	Kwon 2026	180	63	31.5	30	5	top100_fold	0.0	0.22			0.365	top_n_fold
+38448582_41942462	Ling 2024	Singh 2026	180	80	40.0	30	5	top100_fold	0.0	0.22			0.365	top_n_fold
+38448582_42461238	Ling 2024	Dean 2026	180	211	90.0	75	3	top45_fold	0.0	0.07				top_n_fold
+38648100_39227716	Zhu 2024	Frohlich 2024 (own list)	58	87	29.0	30	5	top100_fold	4.137	0.57			0.8	top_n_fold
+38648100_39237723	Zhu 2024	Arbabi 2025	58	38	19.0	20	7	top100_fold	0.0	0.26			0.33	top_n_fold
+38648100_39397771	Zhu 2024	Alsema 2025	58	28	14.0	15	8	top100_fold	2.758	0.635			0.68	top_n_fold
+38648100_41174894	Zhu 2024	Yalcinbas 2025	58	68	29.0	30	5	top100_fold	0.0	0.22			0.365	top_n_fold
+38648100_41210297	Zhu 2024	Mas 2025	58	32	16.0	15	8	top4_fold	0.0	0.91			0.94	top_n_fold
+38648100_39526318	Zhu 2024	Zhang 2026	58	30	15.0	15	8	top100_fold	1.291	0.35			0.35	top_n_fold
+38648100_41757081	Zhu 2024	Kwon 2026	58	63	29.0	30	5	top100_fold	1.229	0.22			0.365	top_n_fold
+38648100_41942462	Zhu 2024	Singh 2026	58	80	29.0	30	5	top100_fold	0.0	0.22			0.365	top_n_fold
+38648100_42461238	Zhu 2024	Dean 2026	58	211	29.0	30	5	top42_fold	0.0	0.49			0.64	top_n_fold
+39227716_39237723	Frohlich 2024 (own list)	Arbabi 2025	87	38	19.0	20	7	top100_fold	0.0	0.26			0.33	top_n_fold
+39227716_39397771	Frohlich 2024 (own list)	Alsema 2025	87	28	14.0	15	8	top100_fold	2.298	0.635			0.68	top_n_fold
+39227716_41174894	Frohlich 2024 (own list)	Yalcinbas 2025	87	68	34.0	30	5	top100_fold	3.567	0.39			0.8	top_n_fold
+39227716_41210297	Frohlich 2024 (own list)	Mas 2025	87	32	16.0	15	8	top4_fold	0.0	0.91			0.94	top_n_fold
+39227716_39526318	Frohlich 2024 (own list)	Zhang 2026	87	30	15.0	15	8	top100_fold	0.0	0.35			0.35	top_n_fold
+39227716_41757081	Frohlich 2024 (own list)	Kwon 2026	87	63	31.5	30	5	top100_fold	4.062	0.57			0.8	top_n_fold
+39227716_41942462	Frohlich 2024 (own list)	Singh 2026	87	80	40.0	30	5	top100_fold	1.99	0.24			0.65	top_n_fold
+39237723_39397771	Arbabi 2025	Alsema 2025	38	28	14.0	15	8	top100_fold	11.49	0.94			0.985	top_n_fold
+39237723_41210297	Arbabi 2025	Mas 2025	38	32	16.0	15	8	top4_fold	0.0	0.91			0.94	top_n_fold
+39237723_39526318	Arbabi 2025	Zhang 2026	38	30	15.0	15	8	top100_fold	0.0	0.35			0.35	top_n_fold
+39237723_42461238	Arbabi 2025	Dean 2026	38	211	19.0	20	7	top45_fold	0.0	0.61			0.695	top_n_fold
+39397771_41174894	Alsema 2025	Yalcinbas 2025	28	68	14.0	15	8	top100_fold	0.0	0.35			0.35	top_n_fold
+39397771_41210297	Alsema 2025	Mas 2025	28	32	14.0	15	8	top4_fold	0.0	0.91			0.94	top_n_fold
+39397771_41757081	Alsema 2025	Kwon 2026	28	63	14.0	15	8	top94_fold	1.532	0.35			0.5717	top_n_fold
+39397771_41942462	Alsema 2025	Singh 2026	28	80	14.0	15	8	top100_fold	3.98	0.72			0.835	top_n_fold
+39397771_42461238	Alsema 2025	Dean 2026	28	211	14.0	15	8	top45_fold	0.0	0.655			0.725	top_n_fold
+41174894_41210297	Yalcinbas 2025	Mas 2025	68	32	16.0	15	8	top4_fold	0.0	0.91			0.94	top_n_fold
+41174894_39526318	Yalcinbas 2025	Zhang 2026	68	30	15.0	15	8	spearman_rho_log2fc	-0.06138	0.155	0.0	0.33	0.1867	spearman_rho_log2fc
+41174894_39526318	Yalcinbas 2025	Zhang 2026	68	30	15.0	15	8	top100_fold	1.498	0.35			0.5	top_n_fold
+41174894_42461238	Yalcinbas 2025	Dean 2026	68	211	34.0	30	5	spearman_rho_log2fc	0.06293	0.21	0.03	0.29	0.455	spearman_rho_log2fc
+41174894_42461238	Yalcinbas 2025	Dean 2026	68	211	34.0	30	5	top46_fold	0.0	0.49			0.64	top_n_fold
+41210297_39526318	Mas 2025	Zhang 2026	32	30	15.0	15	8	top4_fold	0.0	0.91			0.94	top_n_fold
+41210297_41757081	Mas 2025	Kwon 2026	32	63	16.0	15	8	top3_fold	0.0	0.91			0.94	top_n_fold
+41210297_41942462	Mas 2025	Singh 2026	32	80	16.0	15	8	top4_fold	0.0	0.91			0.94	top_n_fold
+41210297_42461238	Mas 2025	Dean 2026	32	211	16.0	15	8	top3_fold	0.0	0.91			0.94	top_n_fold
+39526318_41757081	Zhang 2026	Kwon 2026	30	63	15.0	15	8	top100_fold	0.0	0.35			0.35	top_n_fold
+39526318_41942462	Zhang 2026	Singh 2026	30	80	15.0	15	8	spearman_rho_log2fc	0.03595	0.305	0.0	0.41	0.4017	spearman_rho_log2fc
+39526318_41942462	Zhang 2026	Singh 2026	30	80	15.0	15	8	top100_fold	1.498	0.35			0.5	top_n_fold
+39526318_42461238	Zhang 2026	Dean 2026	30	211	15.0	15	8	spearman_rho_log2fc	-0.08412	0.13	0.0	0.29	0.1567	spearman_rho_log2fc
+39526318_42461238	Zhang 2026	Dean 2026	30	211	15.0	15	8	top45_fold	0.0	0.655			0.725	top_n_fold
+41757081_42461238	Kwon 2026	Dean 2026	63	211	31.5	30	5	top44_fold	6.073	0.49			0.89	top_n_fold
+41942462_42461238	Singh 2026	Dean 2026	80	211	40.0	30	5	spearman_rho_log2fc	0.009653	0.14	0.0	0.27	0.34	spearman_rho_log2fc
+41942462_42461238	Singh 2026	Dean 2026	80	211	40.0	30	5	top45_fold	0.0	0.49			0.64	top_n_fold

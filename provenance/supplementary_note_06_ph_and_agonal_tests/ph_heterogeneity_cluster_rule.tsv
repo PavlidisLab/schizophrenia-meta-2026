@@ -1,0 +1,4 @@
+# Heterogeneity of the cohort pH differences (Supplementary Note 5), computed from per_cohort_80.tsv (set A rows) by ph_heterogeneity_from_per_cohort.py
+grouping	n_cohorts	Q	df	I2	tau2	re_mean	re_lo	re_hi	pred_lo	pred_hi
+current	6	18.9565	5	0.7362	0.0057	-0.0802	-0.1524	-0.0080	-0.3138	0.1535
+previous grouping	7	35.3797	6	0.8304	0.0125	-0.0505	-0.1445	0.0436	-0.3627	0.2618

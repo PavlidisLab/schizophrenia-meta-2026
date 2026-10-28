@@ -1,0 +1,30 @@
+# figure: suppnote6_pathways_coexpression panel h
+# script: analyses/figure_exports/export_suppnote1.py, run 2026-10-18
+# population: core-80 base: 80 studies, 72 contributing lists (recurrence.py scenario 'published, brain', study tier); Shao 2008 PMID 18191109 out; panels h and i read the module tables and the pH and agonal axes only (no recurrent set, no list set)
+# input: analyses/coexpression_modules_2026-10-08/modules_axes_all.tsv sha256 a6d661d30bf3
+# signed score = for a module stated higher (+1) or lower (-1) in schizophrenia: sig_pH = -sign x mean control pH Z, sig_agonal = sign x mean GTEx agonal t; positive = module moves the way schizophrenia would if it were low pH / agonal
+# modules with a stated direction and linked to schizophrenia by their paper; modules from one paper share genes and donors, so counts are indicative
+# pH axis v2
+row_type	paper	n_modules	median_signed_pH	median_signed_agonal	modules_pH_side	modules_agonal_side
+paper	Balasubramanian 2022	3	-1.529	-2.336	0	0
+paper	Chen 2023	1	3.941	1.022	1	1
+paper	Doostparast Torshizi 2019	7	0.401	-0.541	5	3
+paper	Gandal 2018 (Science, cross-disorder)	13	0.838	1.087	7	10
+paper	Guan 2019	16	1.55	1.19	15	15
+paper	Kim 2016 (choroid plexus)	2	0.748	2.381	2	2
+paper	Kim 2016 (hippocampus)	6	0.612	0.973	3	6
+paper	Kim 2019	2	3.123	2.805	2	2
+paper	Lanz 2019	12	1.666	0.744	12	9
+paper	Lian 2024	1	4.405	2.581	1	1
+paper	Lin 2021	2	2.571	3.316	2	2
+paper	Liu 2021	3	-0.223	1.135	1	2
+paper	MacDonald 2020	3	1.895	0.616	3	3
+paper	Nersisyan 2026	6	0.905	2.37	4	6
+paper	Ruzicka 2024	3	-1.674	-0.639	1	1
+paper	Sadeghi 2022	9	2.387	1.351	9	8
+paper	Schulmann 2023	4	0.302	1.586	2	4
+paper	Smith 2026	8	-0.523	-0.14	4	4
+paper	Zhu 2017	2	1.445	0.16	2	1
+paper	Zhu 2019	3	3.954	0.592	3	3
+all direction-stated modules	20 papers	106	1.308	0.992	79	83
+papers on the pH / agonal side (sign test, two-sided)	pH 16 of 20, p 0.0118; agonal 16 of 20, p 0.0118					

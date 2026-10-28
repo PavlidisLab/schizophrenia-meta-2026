@@ -1,0 +1,12 @@
+# figure: manuscript_ph.md Results, 'The recurrent genes are enriched for the agonal state-associated pattern' (analogue of the pH rows, Fig. 3b / 3d)
+# script: agonal_enrichment.py, run 2026-10-22
+# input: figures/data/fig07/fig07_a2_a4_gene_scatter.tsv sha256 558f09cf777a (gene sets: in_ge10, in_176 = the 383; z_sz_raw = schizophrenia effect, age+sex, combined over the ten dataset-regions; sz_direction)
+# input: analyses/gtex_ischemia_2026-10-08/hardy_t_by_region.tsv.gz sha256 54f989c55753; donor_counts_by_tissue.tsv sha256 15924d380d3e; combined_controls_pH.tsv sha256 74fdf88878ba (expr_percentile for deciles)
+# axis: mean over BA9, BA24, Cortex of the t of slow death (Hardy 4) minus fast natural death (Hardy 2); positive = higher after slow death. Axis q: intersection-union p (largest regional two-sided p, 1 if signs differ), BH over all genes measured in the three regions (conservative; same as agonal_axis_per_gene_383.tsv).
+# axis genes: 15356 measured in all three regions; 11647 of them with an expression percentile (null pool)
+# (b) observed = set genes at axis q < 0.05 whose axis sign equals the schizophrenia direction (SZ-up genes higher after slow death, SZ-down lower); expected = mean over 10000 random sets matched gene by gene on expression decile, same SZ directions, seed 20261015; p = (1 + n_ge_observed)/(draws + 1). Genes without a direction cannot count as observed.
+set	n_set	n_measured_axis	observed_q05_in_slow_death_direction	expected_matched_mean	ratio	p	observed_q05_any_sign	n_up	n_down	n_no_direction	n_draws
+107 genes in 10 or more lists	107	104	38	3.28	11.6	0.0001	38	45	58	1	10000
+383 recurrent genes	383	354	93	11.99	7.75	0.0001	99	141	206	7	10000
+105 genes in 10 or more lists with a pH measure	105	104	38	3.29	11.54	0.0001	38	45	58	1	10000
+371 of the 383 with a pH measure	371	354	93	11.96	7.78	0.0001	99	141	206	7	10000

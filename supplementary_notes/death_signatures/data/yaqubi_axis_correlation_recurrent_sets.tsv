@@ -1,0 +1,143 @@
+# script: 02_axes_and_sets.py, run 2026-10-18; NEW analysis; seed 20261018; 10000 matched sets (axis correlations use the first 5000); 1000 bootstrap resamples over genes (300 for cell-type rows)
+# inputs: contrast_effects.tsv sha256 a1eda8a59dd6; axis_v2_controls.tsv.gz 2c72a9b279a2 (z_stouffer; positive = higher at higher pH); hardy_t_by_region.tsv.gz 54f989c55753 (mean of BA9, BA24, Cortex; positive = higher in slow death);
+# recurrence_genes.tsv dda5eb621c15; recurrent_sets.tsv 3c42f67cdd7a; specificity_HBCC.tsv.gz 84842a9e04b2; MOESM3_ESM.xlsx (Supplementary Data 1-7) 8ab60f6b237f
+# effect sign: processed or autopsy minus 0 h CTRL (positive = higher after processing); 't:' = own OLS t from released counts, 'relLFC:' = released whole-transcriptome log2FC (baseMean >= 10)
+# matched null: published-brain genes with a SZ sign outside the 383, strata = expression decile x DE-prior quintile (ad_383.py); genes are not independent, intervals over genes are descriptive
+# within the recurrent set; null = same statistic in matched gene sets
+gene_set	effect	axis	statistic	n_genes	value	boot95_low	boot95_high	null_mean	null_sd	null_q025	null_q975	diff_from_null_mean	z_vs_null	perm_p_two_sided
+383 recurrent (q_bh<0.1)	t:S_6h4C_vs_0h	pH axis v2	spearman	369	0.004	-0.103	0.11	0.027	0.051	-0.073	0.126	-0.022	-0.43	0.6641
+383 recurrent (q_bh<0.1)	t:S_6h4C_vs_0h	pH axis v2	pearson	369	0.076	-0.022	0.172	0.088	0.052	-0.014	0.189	-0.012	-0.23	0.8106
+383 recurrent (q_bh<0.1)	t:S_6h4C_vs_0h	agonal axis (GTEx slow-minus-fast)	spearman	362	-0.195	-0.292	-0.093	-0.246	0.049	-0.34	-0.149	0.05	1.04	0.3013
+383 recurrent (q_bh<0.1)	t:S_6h4C_vs_0h	agonal axis (GTEx slow-minus-fast)	pearson	362	-0.224	-0.321	-0.1	-0.259	0.049	-0.352	-0.161	0.035	0.72	0.4645
+383 recurrent (q_bh<0.1)	t:S_6h20C_vs_0h	pH axis v2	spearman	369	-0.126	-0.228	-0.024	-0.041	0.049	-0.135	0.053	-0.084	-1.73	0.0814
+383 recurrent (q_bh<0.1)	t:S_6h20C_vs_0h	pH axis v2	pearson	369	-0.127	-0.227	-0.024	-0.024	0.048	-0.116	0.068	-0.103	-2.15	0.0306
+383 recurrent (q_bh<0.1)	t:S_6h20C_vs_0h	agonal axis (GTEx slow-minus-fast)	spearman	362	0.043	-0.05	0.14	0.137	0.05	0.04	0.232	-0.094	-1.9	0.0556
+383 recurrent (q_bh<0.1)	t:S_6h20C_vs_0h	agonal axis (GTEx slow-minus-fast)	pearson	362	0.02	-0.072	0.106	0.114	0.048	0.019	0.206	-0.095	-1.98	0.0492
+383 recurrent (q_bh<0.1)	t:S_24h4C_vs_0h	pH axis v2	spearman	369	-0.136	-0.237	-0.031	-0.071	0.05	-0.167	0.025	-0.064	-1.28	0.2068
+383 recurrent (q_bh<0.1)	t:S_24h4C_vs_0h	pH axis v2	pearson	369	-0.109	-0.212	-0.006	-0.037	0.051	-0.136	0.06	-0.071	-1.4	0.168
+383 recurrent (q_bh<0.1)	t:S_24h4C_vs_0h	agonal axis (GTEx slow-minus-fast)	spearman	362	-0.051	-0.152	0.048	-0.028	0.051	-0.127	0.072	-0.023	-0.45	0.6527
+383 recurrent (q_bh<0.1)	t:S_24h4C_vs_0h	agonal axis (GTEx slow-minus-fast)	pearson	362	-0.065	-0.161	0.04	-0.042	0.05	-0.137	0.057	-0.023	-0.47	0.6425
+383 recurrent (q_bh<0.1)	t:S_24h20C_vs_0h	pH axis v2	spearman	369	-0.131	-0.233	-0.025	-0.064	0.049	-0.158	0.035	-0.067	-1.37	0.1778
+383 recurrent (q_bh<0.1)	t:S_24h20C_vs_0h	pH axis v2	pearson	369	-0.139	-0.239	-0.03	-0.05	0.049	-0.144	0.048	-0.089	-1.82	0.073
+383 recurrent (q_bh<0.1)	t:S_24h20C_vs_0h	agonal axis (GTEx slow-minus-fast)	spearman	362	0.075	-0.019	0.166	0.146	0.049	0.049	0.241	-0.071	-1.44	0.1462
+383 recurrent (q_bh<0.1)	t:S_24h20C_vs_0h	agonal axis (GTEx slow-minus-fast)	pearson	362	0.053	-0.035	0.134	0.118	0.048	0.024	0.213	-0.065	-1.37	0.1666
+383 recurrent (q_bh<0.1)	t:S_36h4C_vs_0h	pH axis v2	spearman	369	-0.183	-0.28	-0.084	-0.107	0.05	-0.201	-0.013	-0.075	-1.52	0.1272
+383 recurrent (q_bh<0.1)	t:S_36h4C_vs_0h	pH axis v2	pearson	369	-0.162	-0.263	-0.061	-0.078	0.05	-0.174	0.019	-0.084	-1.68	0.0908
+383 recurrent (q_bh<0.1)	t:S_36h4C_vs_0h	agonal axis (GTEx slow-minus-fast)	spearman	362	-0.023	-0.12	0.077	-0.003	0.051	-0.103	0.094	-0.019	-0.38	0.7065
+383 recurrent (q_bh<0.1)	t:S_36h4C_vs_0h	agonal axis (GTEx slow-minus-fast)	pearson	362	-0.031	-0.132	0.058	-0.018	0.05	-0.114	0.079	-0.013	-0.27	0.7902
+383 recurrent (q_bh<0.1)	t:S_36h20C_vs_0h	pH axis v2	spearman	369	-0.177	-0.279	-0.077	-0.098	0.049	-0.192	0.0	-0.08	-1.63	0.1076
+383 recurrent (q_bh<0.1)	t:S_36h20C_vs_0h	pH axis v2	pearson	369	-0.186	-0.279	-0.08	-0.083	0.049	-0.178	0.016	-0.103	-2.11	0.0366
+383 recurrent (q_bh<0.1)	t:S_36h20C_vs_0h	agonal axis (GTEx slow-minus-fast)	spearman	362	0.123	0.027	0.213	0.175	0.049	0.078	0.269	-0.053	-1.08	0.2783
+383 recurrent (q_bh<0.1)	t:S_36h20C_vs_0h	agonal axis (GTEx slow-minus-fast)	pearson	362	0.094	0.011	0.175	0.144	0.047	0.049	0.236	-0.05	-1.07	0.2759
+383 recurrent (q_bh<0.1)	t:S_20C_minus_4C_6h	pH axis v2	spearman	369	-0.201	-0.293	-0.105	-0.078	0.048	-0.17	0.017	-0.123	-2.58	0.0092
+383 recurrent (q_bh<0.1)	t:S_20C_minus_4C_6h	pH axis v2	pearson	369	-0.199	-0.287	-0.104	-0.074	0.047	-0.165	0.018	-0.125	-2.7	0.007
+383 recurrent (q_bh<0.1)	t:S_20C_minus_4C_6h	agonal axis (GTEx slow-minus-fast)	spearman	362	0.198	0.103	0.296	0.295	0.046	0.202	0.384	-0.097	-2.09	0.0374
+383 recurrent (q_bh<0.1)	t:S_20C_minus_4C_6h	agonal axis (GTEx slow-minus-fast)	pearson	362	0.16	0.069	0.248	0.269	0.045	0.179	0.355	-0.108	-2.43	0.0154
+383 recurrent (q_bh<0.1)	t:S_20C_minus_4C_24h	pH axis v2	spearman	369	-0.076	-0.178	0.029	-0.037	0.049	-0.13	0.059	-0.039	-0.8	0.4301
+383 recurrent (q_bh<0.1)	t:S_20C_minus_4C_24h	pH axis v2	pearson	369	-0.103	-0.212	0.005	-0.041	0.049	-0.135	0.055	-0.062	-1.27	0.2072
+383 recurrent (q_bh<0.1)	t:S_20C_minus_4C_24h	agonal axis (GTEx slow-minus-fast)	spearman	362	0.138	0.042	0.237	0.229	0.048	0.134	0.323	-0.091	-1.9	0.0602
+383 recurrent (q_bh<0.1)	t:S_20C_minus_4C_24h	agonal axis (GTEx slow-minus-fast)	pearson	362	0.128	0.039	0.22	0.2	0.048	0.104	0.293	-0.071	-1.5	0.1306
+383 recurrent (q_bh<0.1)	t:S_20C_minus_4C_36h	pH axis v2	spearman	369	-0.104	-0.198	0.002	-0.057	0.049	-0.151	0.038	-0.047	-0.97	0.3373
+383 recurrent (q_bh<0.1)	t:S_20C_minus_4C_36h	pH axis v2	pearson	369	-0.131	-0.224	-0.026	-0.058	0.048	-0.151	0.035	-0.072	-1.5	0.1338
+383 recurrent (q_bh<0.1)	t:S_20C_minus_4C_36h	agonal axis (GTEx slow-minus-fast)	spearman	362	0.183	0.083	0.278	0.261	0.047	0.168	0.354	-0.079	-1.67	0.0986
+383 recurrent (q_bh<0.1)	t:S_20C_minus_4C_36h	agonal axis (GTEx slow-minus-fast)	pearson	362	0.164	0.075	0.254	0.228	0.047	0.134	0.321	-0.064	-1.35	0.1774
+383 recurrent (q_bh<0.1)	t:S_20C_36h_minus_6h	pH axis v2	spearman	369	-0.178	-0.276	-0.067	-0.129	0.049	-0.222	-0.032	-0.048	-0.98	0.3315
+383 recurrent (q_bh<0.1)	t:S_20C_36h_minus_6h	pH axis v2	pearson	369	-0.196	-0.295	-0.095	-0.121	0.05	-0.217	-0.023	-0.075	-1.5	0.1356
+383 recurrent (q_bh<0.1)	t:S_20C_36h_minus_6h	agonal axis (GTEx slow-minus-fast)	spearman	362	0.154	0.061	0.245	0.173	0.049	0.078	0.267	-0.019	-0.39	0.6937
+383 recurrent (q_bh<0.1)	t:S_20C_36h_minus_6h	agonal axis (GTEx slow-minus-fast)	pearson	362	0.138	0.056	0.223	0.141	0.048	0.047	0.236	-0.003	-0.07	0.9378
+383 recurrent (q_bh<0.1)	t:S_4C_36h_minus_6h	pH axis v2	spearman	369	-0.276	-0.37	-0.178	-0.176	0.048	-0.269	-0.08	-0.1	-2.09	0.035
+383 recurrent (q_bh<0.1)	t:S_4C_36h_minus_6h	pH axis v2	pearson	369	-0.269	-0.353	-0.169	-0.156	0.048	-0.249	-0.063	-0.112	-2.35	0.018
+383 recurrent (q_bh<0.1)	t:S_4C_36h_minus_6h	agonal axis (GTEx slow-minus-fast)	spearman	362	0.109	0.009	0.2	0.145	0.049	0.048	0.24	-0.036	-0.74	0.4561
+383 recurrent (q_bh<0.1)	t:S_4C_36h_minus_6h	agonal axis (GTEx slow-minus-fast)	pearson	362	0.095	0.007	0.179	0.126	0.048	0.033	0.218	-0.031	-0.66	0.5087
+383 recurrent (q_bh<0.1)	t:A_LPMI_vs_CTRL	pH axis v2	spearman	371	-0.005	-0.089	0.088	0.066	0.046	-0.023	0.156	-0.07	-1.54	0.1252
+383 recurrent (q_bh<0.1)	t:A_LPMI_vs_CTRL	pH axis v2	pearson	371	-0.002	-0.081	0.078	0.06	0.044	-0.023	0.147	-0.063	-1.44	0.1498
+383 recurrent (q_bh<0.1)	t:A_LPMI_vs_CTRL	agonal axis (GTEx slow-minus-fast)	spearman	364	-0.134	-0.239	-0.034	-0.359	0.043	-0.441	-0.274	0.225	5.22	0.0002
+383 recurrent (q_bh<0.1)	t:A_LPMI_vs_CTRL	agonal axis (GTEx slow-minus-fast)	pearson	364	-0.068	-0.158	0.028	-0.313	0.041	-0.392	-0.232	0.245	5.95	0.0002
+383 recurrent (q_bh<0.1)	t:A_SPMI_vs_CTRL	pH axis v2	spearman	371	-0.089	-0.175	0.003	0.021	0.046	-0.067	0.111	-0.11	-2.41	0.0162
+383 recurrent (q_bh<0.1)	t:A_SPMI_vs_CTRL	pH axis v2	pearson	371	-0.08	-0.168	0.01	0.012	0.043	-0.071	0.099	-0.092	-2.12	0.0344
+383 recurrent (q_bh<0.1)	t:A_SPMI_vs_CTRL	agonal axis (GTEx slow-minus-fast)	spearman	364	0.019	-0.084	0.124	-0.296	0.045	-0.382	-0.206	0.315	6.95	0.0002
+383 recurrent (q_bh<0.1)	t:A_SPMI_vs_CTRL	agonal axis (GTEx slow-minus-fast)	pearson	364	0.09	0.003	0.18	-0.245	0.043	-0.326	-0.157	0.335	7.71	0.0002
+383 recurrent (q_bh<0.1)	relLFC:S_24h20C_vs_0h	pH axis v2	spearman	369	-0.218	-0.313	-0.123	-0.112	0.048	-0.205	-0.017	-0.106	-2.18	0.0272
+383 recurrent (q_bh<0.1)	relLFC:S_24h20C_vs_0h	pH axis v2	pearson	369	-0.246	-0.335	-0.153	-0.11	0.047	-0.2	-0.015	-0.136	-2.89	0.0028
+383 recurrent (q_bh<0.1)	relLFC:S_24h20C_vs_0h	agonal axis (GTEx slow-minus-fast)	spearman	362	0.277	0.185	0.373	0.308	0.048	0.212	0.401	-0.031	-0.64	0.5289
+383 recurrent (q_bh<0.1)	relLFC:S_24h20C_vs_0h	agonal axis (GTEx slow-minus-fast)	pearson	362	0.197	0.118	0.279	0.255	0.048	0.159	0.346	-0.058	-1.2	0.23
+383 recurrent (q_bh<0.1)	relLFC:S_36h20C_vs_0h	pH axis v2	spearman	369	-0.178	-0.275	-0.078	-0.094	0.048	-0.188	0.005	-0.084	-1.75	0.084
+383 recurrent (q_bh<0.1)	relLFC:S_36h20C_vs_0h	pH axis v2	pearson	369	-0.175	-0.262	-0.083	-0.08	0.048	-0.174	0.018	-0.095	-1.98	0.0526
+383 recurrent (q_bh<0.1)	relLFC:S_36h20C_vs_0h	agonal axis (GTEx slow-minus-fast)	spearman	362	0.079	-0.026	0.186	0.217	0.05	0.116	0.312	-0.138	-2.76	0.0064
+383 recurrent (q_bh<0.1)	relLFC:S_36h20C_vs_0h	agonal axis (GTEx slow-minus-fast)	pearson	362	0.004	-0.1	0.105	0.176	0.051	0.074	0.273	-0.172	-3.39	0.0006
+383 recurrent (q_bh<0.1)	relLFC:A_SPMI_vs_CTRL	pH axis v2	spearman	371	-0.107	-0.2	-0.011	0.044	0.046	-0.048	0.136	-0.151	-3.25	0.002
+383 recurrent (q_bh<0.1)	relLFC:A_SPMI_vs_CTRL	pH axis v2	pearson	371	-0.143	-0.229	-0.05	0.034	0.043	-0.052	0.119	-0.177	-4.08	0.0002
+383 recurrent (q_bh<0.1)	relLFC:A_SPMI_vs_CTRL	agonal axis (GTEx slow-minus-fast)	spearman	364	0.058	-0.05	0.165	-0.302	0.048	-0.394	-0.205	0.359	7.44	0.0002
+383 recurrent (q_bh<0.1)	relLFC:A_SPMI_vs_CTRL	agonal axis (GTEx slow-minus-fast)	pearson	364	0.187	0.076	0.283	-0.245	0.051	-0.342	-0.142	0.432	8.4	0.0002
+383 recurrent (q_bh<0.1)	relLFC:A_LPMI_vs_CTRL	pH axis v2	spearman	371	-0.093	-0.195	-0.002	0.068	0.047	-0.023	0.16	-0.161	-3.43	0.001
+383 recurrent (q_bh<0.1)	relLFC:A_LPMI_vs_CTRL	pH axis v2	pearson	371	-0.16	-0.246	-0.072	0.053	0.045	-0.035	0.14	-0.213	-4.72	0.0002
+383 recurrent (q_bh<0.1)	relLFC:A_LPMI_vs_CTRL	agonal axis (GTEx slow-minus-fast)	spearman	364	-0.017	-0.133	0.085	-0.346	0.048	-0.436	-0.253	0.328	6.9	0.0002
+383 recurrent (q_bh<0.1)	relLFC:A_LPMI_vs_CTRL	agonal axis (GTEx slow-minus-fast)	pearson	364	0.134	0.009	0.26	-0.293	0.053	-0.395	-0.185	0.427	8.04	0.0002
+107 in >=10 lists	t:S_6h4C_vs_0h	pH axis v2	spearman	104	0.113	-0.078	0.294	0.066	0.098	-0.131	0.256	0.047	0.48	0.6313
+107 in >=10 lists	t:S_6h4C_vs_0h	pH axis v2	pearson	104	0.158	-0.009	0.315	0.121	0.099	-0.083	0.306	0.036	0.37	0.7059
+107 in >=10 lists	t:S_6h4C_vs_0h	agonal axis (GTEx slow-minus-fast)	spearman	104	-0.149	-0.328	0.037	-0.263	0.095	-0.445	-0.074	0.114	1.2	0.235
+107 in >=10 lists	t:S_6h4C_vs_0h	agonal axis (GTEx slow-minus-fast)	pearson	104	-0.175	-0.353	0.023	-0.276	0.094	-0.452	-0.09	0.101	1.08	0.2905
+107 in >=10 lists	t:S_6h20C_vs_0h	pH axis v2	spearman	104	-0.038	-0.238	0.168	-0.026	0.096	-0.216	0.161	-0.012	-0.12	0.9016
+107 in >=10 lists	t:S_6h20C_vs_0h	pH axis v2	pearson	104	-0.001	-0.187	0.175	-0.011	0.094	-0.197	0.168	0.009	0.1	0.9244
+107 in >=10 lists	t:S_6h20C_vs_0h	agonal axis (GTEx slow-minus-fast)	spearman	104	0.039	-0.155	0.218	0.117	0.096	-0.075	0.305	-0.078	-0.81	0.4211
+107 in >=10 lists	t:S_6h20C_vs_0h	agonal axis (GTEx slow-minus-fast)	pearson	104	-0.009	-0.179	0.161	0.098	0.092	-0.084	0.275	-0.107	-1.16	0.2466
+107 in >=10 lists	t:S_24h4C_vs_0h	pH axis v2	spearman	104	-0.022	-0.219	0.164	-0.044	0.098	-0.237	0.146	0.022	0.22	0.8248
+107 in >=10 lists	t:S_24h4C_vs_0h	pH axis v2	pearson	104	0.003	-0.192	0.179	-0.014	0.1	-0.214	0.177	0.016	0.16	0.8744
+107 in >=10 lists	t:S_24h4C_vs_0h	agonal axis (GTEx slow-minus-fast)	spearman	104	-0.076	-0.272	0.117	-0.049	0.098	-0.239	0.141	-0.028	-0.28	0.7762
+107 in >=10 lists	t:S_24h4C_vs_0h	agonal axis (GTEx slow-minus-fast)	pearson	104	-0.085	-0.25	0.099	-0.06	0.096	-0.245	0.128	-0.025	-0.27	0.79
+107 in >=10 lists	t:S_24h20C_vs_0h	pH axis v2	spearman	104	-0.032	-0.239	0.162	-0.056	0.096	-0.242	0.124	0.024	0.25	0.7996
+107 in >=10 lists	t:S_24h20C_vs_0h	pH axis v2	pearson	104	-0.006	-0.216	0.182	-0.044	0.095	-0.229	0.138	0.037	0.39	0.6989
+107 in >=10 lists	t:S_24h20C_vs_0h	agonal axis (GTEx slow-minus-fast)	spearman	104	0.014	-0.152	0.19	0.128	0.095	-0.058	0.313	-0.114	-1.2	0.2334
+107 in >=10 lists	t:S_24h20C_vs_0h	agonal axis (GTEx slow-minus-fast)	pearson	104	-0.007	-0.183	0.161	0.103	0.092	-0.074	0.281	-0.111	-1.21	0.2302
+107 in >=10 lists	t:S_36h4C_vs_0h	pH axis v2	spearman	104	-0.081	-0.258	0.101	-0.081	0.097	-0.273	0.11	-0.0	-0.0	0.9994
+107 in >=10 lists	t:S_36h4C_vs_0h	pH axis v2	pearson	104	-0.072	-0.241	0.126	-0.056	0.098	-0.249	0.132	-0.016	-0.16	0.8702
+107 in >=10 lists	t:S_36h4C_vs_0h	agonal axis (GTEx slow-minus-fast)	spearman	104	-0.047	-0.23	0.131	-0.023	0.098	-0.213	0.167	-0.024	-0.25	0.7976
+107 in >=10 lists	t:S_36h4C_vs_0h	agonal axis (GTEx slow-minus-fast)	pearson	104	-0.043	-0.216	0.15	-0.034	0.095	-0.218	0.153	-0.008	-0.09	0.9312
+107 in >=10 lists	t:S_36h20C_vs_0h	pH axis v2	spearman	104	-0.081	-0.277	0.134	-0.09	0.096	-0.275	0.094	0.009	0.1	0.923
+107 in >=10 lists	t:S_36h20C_vs_0h	pH axis v2	pearson	104	-0.052	-0.26	0.146	-0.077	0.095	-0.259	0.104	0.025	0.26	0.792
+107 in >=10 lists	t:S_36h20C_vs_0h	agonal axis (GTEx slow-minus-fast)	spearman	104	0.06	-0.115	0.233	0.157	0.095	-0.028	0.341	-0.096	-1.02	0.3115
+107 in >=10 lists	t:S_36h20C_vs_0h	agonal axis (GTEx slow-minus-fast)	pearson	104	0.03	-0.122	0.19	0.129	0.091	-0.047	0.308	-0.099	-1.09	0.2715
+107 in >=10 lists	t:S_20C_minus_4C_6h	pH axis v2	spearman	104	-0.117	-0.314	0.092	-0.081	0.094	-0.262	0.107	-0.036	-0.38	0.7173
+107 in >=10 lists	t:S_20C_minus_4C_6h	pH axis v2	pearson	104	-0.113	-0.292	0.07	-0.077	0.092	-0.254	0.101	-0.036	-0.39	0.7085
+107 in >=10 lists	t:S_20C_minus_4C_6h	agonal axis (GTEx slow-minus-fast)	spearman	104	0.141	-0.042	0.316	0.283	0.091	0.105	0.459	-0.142	-1.57	0.121
+107 in >=10 lists	t:S_20C_minus_4C_6h	agonal axis (GTEx slow-minus-fast)	pearson	104	0.112	-0.061	0.28	0.262	0.087	0.093	0.427	-0.149	-1.73	0.086
+107 in >=10 lists	t:S_20C_minus_4C_24h	pH axis v2	spearman	104	0.004	-0.182	0.197	-0.045	0.096	-0.232	0.139	0.049	0.51	0.6109
+107 in >=10 lists	t:S_20C_minus_4C_24h	pH axis v2	pearson	104	-0.011	-0.212	0.197	-0.051	0.096	-0.241	0.135	0.04	0.42	0.6691
+107 in >=10 lists	t:S_20C_minus_4C_24h	agonal axis (GTEx slow-minus-fast)	spearman	104	0.077	-0.111	0.259	0.22	0.093	0.036	0.404	-0.142	-1.54	0.1282
+107 in >=10 lists	t:S_20C_minus_4C_24h	agonal axis (GTEx slow-minus-fast)	pearson	104	0.062	-0.129	0.231	0.192	0.091	0.012	0.373	-0.13	-1.43	0.1552
+107 in >=10 lists	t:S_20C_minus_4C_36h	pH axis v2	spearman	104	-0.003	-0.19	0.197	-0.065	0.095	-0.253	0.119	0.062	0.65	0.5201
+107 in >=10 lists	t:S_20C_minus_4C_36h	pH axis v2	pearson	104	-0.011	-0.204	0.203	-0.067	0.095	-0.255	0.115	0.057	0.6	0.5531
+107 in >=10 lists	t:S_20C_minus_4C_36h	agonal axis (GTEx slow-minus-fast)	spearman	104	0.105	-0.084	0.284	0.251	0.092	0.067	0.429	-0.146	-1.59	0.1176
+107 in >=10 lists	t:S_20C_minus_4C_36h	agonal axis (GTEx slow-minus-fast)	pearson	104	0.079	-0.093	0.26	0.22	0.09	0.041	0.398	-0.141	-1.56	0.1208
+107 in >=10 lists	t:S_20C_36h_minus_6h	pH axis v2	spearman	104	-0.091	-0.272	0.113	-0.128	0.096	-0.316	0.057	0.037	0.39	0.6949
+107 in >=10 lists	t:S_20C_36h_minus_6h	pH axis v2	pearson	104	-0.082	-0.264	0.119	-0.122	0.097	-0.313	0.065	0.04	0.41	0.6841
+107 in >=10 lists	t:S_20C_36h_minus_6h	agonal axis (GTEx slow-minus-fast)	spearman	104	0.07	-0.114	0.24	0.161	0.095	-0.025	0.349	-0.092	-0.96	0.3313
+107 in >=10 lists	t:S_20C_36h_minus_6h	agonal axis (GTEx slow-minus-fast)	pearson	104	0.056	-0.107	0.229	0.131	0.093	-0.051	0.32	-0.075	-0.8	0.4183
+107 in >=10 lists	t:S_4C_36h_minus_6h	pH axis v2	spearman	104	-0.186	-0.385	0.014	-0.164	0.096	-0.346	0.026	-0.022	-0.23	0.826
+107 in >=10 lists	t:S_4C_36h_minus_6h	pH axis v2	pearson	104	-0.209	-0.379	-0.023	-0.148	0.095	-0.33	0.036	-0.061	-0.65	0.5195
+107 in >=10 lists	t:S_4C_36h_minus_6h	agonal axis (GTEx slow-minus-fast)	spearman	104	0.035	-0.151	0.213	0.132	0.095	-0.058	0.32	-0.097	-1.02	0.3069
+107 in >=10 lists	t:S_4C_36h_minus_6h	agonal axis (GTEx slow-minus-fast)	pearson	104	0.058	-0.114	0.232	0.116	0.092	-0.068	0.298	-0.058	-0.63	0.5271
+107 in >=10 lists	t:A_LPMI_vs_CTRL	pH axis v2	spearman	105	-0.1	-0.278	0.092	0.082	0.09	-0.093	0.259	-0.182	-2.03	0.0422
+107 in >=10 lists	t:A_LPMI_vs_CTRL	pH axis v2	pearson	105	-0.11	-0.274	0.068	0.076	0.085	-0.09	0.245	-0.186	-2.19	0.029
+107 in >=10 lists	t:A_LPMI_vs_CTRL	agonal axis (GTEx slow-minus-fast)	spearman	105	-0.01	-0.216	0.18	-0.35	0.087	-0.512	-0.173	0.34	3.91	0.0006
+107 in >=10 lists	t:A_LPMI_vs_CTRL	agonal axis (GTEx slow-minus-fast)	pearson	105	0.046	-0.122	0.22	-0.308	0.082	-0.465	-0.144	0.354	4.32	0.0002
+107 in >=10 lists	t:A_SPMI_vs_CTRL	pH axis v2	spearman	105	-0.258	-0.409	-0.074	0.037	0.09	-0.14	0.218	-0.295	-3.29	0.0008
+107 in >=10 lists	t:A_SPMI_vs_CTRL	pH axis v2	pearson	105	-0.283	-0.423	-0.129	0.027	0.085	-0.14	0.2	-0.31	-3.66	0.0002
+107 in >=10 lists	t:A_SPMI_vs_CTRL	agonal axis (GTEx slow-minus-fast)	spearman	105	0.14	-0.064	0.335	-0.284	0.09	-0.456	-0.103	0.425	4.74	0.0002
+107 in >=10 lists	t:A_SPMI_vs_CTRL	agonal axis (GTEx slow-minus-fast)	pearson	105	0.211	0.031	0.368	-0.238	0.085	-0.402	-0.071	0.45	5.31	0.0002
+107 in >=10 lists	relLFC:S_24h20C_vs_0h	pH axis v2	spearman	104	-0.119	-0.287	0.078	-0.117	0.093	-0.298	0.07	-0.002	-0.03	0.9788
+107 in >=10 lists	relLFC:S_24h20C_vs_0h	pH axis v2	pearson	104	-0.159	-0.319	0.021	-0.117	0.092	-0.296	0.066	-0.042	-0.46	0.6461
+107 in >=10 lists	relLFC:S_24h20C_vs_0h	agonal axis (GTEx slow-minus-fast)	spearman	104	0.231	0.053	0.419	0.295	0.092	0.11	0.471	-0.064	-0.69	0.4871
+107 in >=10 lists	relLFC:S_24h20C_vs_0h	agonal axis (GTEx slow-minus-fast)	pearson	104	0.199	0.036	0.36	0.247	0.091	0.068	0.422	-0.048	-0.53	0.5883
+107 in >=10 lists	relLFC:S_36h20C_vs_0h	pH axis v2	spearman	104	-0.044	-0.243	0.147	-0.092	0.095	-0.276	0.093	0.047	0.49	0.6321
+107 in >=10 lists	relLFC:S_36h20C_vs_0h	pH axis v2	pearson	104	-0.031	-0.199	0.14	-0.079	0.094	-0.258	0.103	0.049	0.52	0.6113
+107 in >=10 lists	relLFC:S_36h20C_vs_0h	agonal axis (GTEx slow-minus-fast)	spearman	104	-0.048	-0.243	0.152	0.202	0.097	0.009	0.392	-0.25	-2.57	0.0084
+107 in >=10 lists	relLFC:S_36h20C_vs_0h	agonal axis (GTEx slow-minus-fast)	pearson	104	-0.104	-0.287	0.108	0.166	0.097	-0.027	0.353	-0.27	-2.79	0.005
+107 in >=10 lists	relLFC:A_SPMI_vs_CTRL	pH axis v2	spearman	105	-0.286	-0.456	-0.107	0.059	0.092	-0.12	0.242	-0.346	-3.77	0.0004
+107 in >=10 lists	relLFC:A_SPMI_vs_CTRL	pH axis v2	pearson	105	-0.328	-0.469	-0.164	0.048	0.084	-0.116	0.214	-0.376	-4.48	0.0004
+107 in >=10 lists	relLFC:A_SPMI_vs_CTRL	agonal axis (GTEx slow-minus-fast)	spearman	105	0.163	-0.047	0.34	-0.293	0.095	-0.475	-0.102	0.455	4.79	0.0002
+107 in >=10 lists	relLFC:A_SPMI_vs_CTRL	agonal axis (GTEx slow-minus-fast)	pearson	105	0.272	0.101	0.428	-0.245	0.097	-0.428	-0.043	0.517	5.34	0.0002
+107 in >=10 lists	relLFC:A_LPMI_vs_CTRL	pH axis v2	spearman	105	-0.232	-0.421	-0.025	0.08	0.092	-0.096	0.26	-0.312	-3.41	0.0006
+107 in >=10 lists	relLFC:A_LPMI_vs_CTRL	pH axis v2	pearson	105	-0.294	-0.451	-0.132	0.063	0.087	-0.104	0.231	-0.357	-4.11	0.0004
+107 in >=10 lists	relLFC:A_LPMI_vs_CTRL	agonal axis (GTEx slow-minus-fast)	spearman	105	0.129	-0.098	0.329	-0.334	0.094	-0.512	-0.144	0.463	4.92	0.0002
+107 in >=10 lists	relLFC:A_LPMI_vs_CTRL	agonal axis (GTEx slow-minus-fast)	pearson	105	0.221	0.022	0.407	-0.289	0.101	-0.478	-0.087	0.509	5.04	0.0002

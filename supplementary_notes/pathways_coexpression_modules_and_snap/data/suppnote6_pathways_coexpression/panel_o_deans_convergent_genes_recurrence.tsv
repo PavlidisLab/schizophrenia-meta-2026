@@ -1,0 +1,30 @@
+# figure: suppnote6_pathways_coexpression panel o
+# script: analyses/figure_exports/export_suppnote6_coexpression_extra.py, run 2026-10-16
+# input: ~/core80_work_2026-10-16/P11/deans/side-studies/deans-2026/results/recurrence_by_lane.tsv sha256 3a82efc72cc9
+# input: ~/core80_work_2026-10-16/P11/deans/side-studies/deans-2026/results/direction_agreement.tsv sha256 2237d42d183b
+# Deans et al. 2026 (Nat Commun) pooled-screen meta-analysed DEGs, 363 genes (sheet A1 of the authors' gene-list workbook), in lists from the project's iPSC-type (ipsc) and peripheral (periph) studies
+# observed = number of the tested convergent genes in at least k lists; expected under the uniform and DE-prior nulls of analyses/recurrence.py; side-studies/deans-2026/README.md, files dated 2026-10-03
+# direction agreement with Deans' direction over genes with a direction in these lists: 1073 same, 1331 opposite of 2404 (44.6%)
+# the authors sent corrected meta-analysis supplementary files in January 2026 (side_projects_inventory_2026-10-02.md); whether the workbook used here predates the correction is not checked
+lane	k_lists	n_lists	n_tested_genes	n_A1_tested	observed	expected_uniform	expected_deprior	n_A1_q_uniform_lt_0.1	n_A1_q_deprior_lt_0.1
+ipsc	1	106	35246	350	312	350.0	350.0	24	8
+ipsc	2	106	35246	350	238	322.3	309.8	24	8
+ipsc	3	106	35246	350	175	257.9	243.3	24	8
+ipsc	4	106	35246	350	127	169.4	173.3	23	8
+ipsc	5	106	35246	350	86	90.1	115.4	22	7
+ipsc	6	106	35246	350	62	39.1	72.8	22	7
+ipsc	7	106	35246	350	37	14.1	43.6	22	6
+periph	1	123	31702	350	290	350.0	350.0	12	24
+periph	2	123	31702	350	225	306.8	292.5	12	24
+periph	3	123	31702	350	151	215.2	205.2	12	24
+periph	4	123	31702	350	97	117.6	127.1	12	24
+periph	5	123	31702	350	65	50.6	72.6	12	24
+periph	6	123	31702	350	34	17.4	38.9	12	18
+periph	7	123	31702	350	16	4.9	19.5	12	9
+all	1	229	36194	350	341	350.0	350.0	27	22
+all	2	229	36194	350	324	344.2	336.9	27	22
+all	3	229	36194	350	294	328.1	308.2	27	22
+all	4	229	36194	350	253	294.2	265.8	27	22
+all	5	229	36194	350	204	240.1	217.9	27	22
+all	6	229	36194	350	165	174.7	172.2	27	22
+all	7	229	36194	350	120	112.3	133.0	26	21

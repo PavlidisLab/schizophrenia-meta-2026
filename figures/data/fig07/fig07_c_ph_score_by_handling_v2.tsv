@@ -1,0 +1,77 @@
+# figure: fig07 panel c (pH handling read from full text, 2026-10-09; exported 2026-10-13 with Chu 2009 in the handling table, adjusted covariate by hand reading)
+# script: analyses/figure_exports/export_fig07_handling_v2.py; signed_ph_score as in fig07_c_ph_score_by_adjustment.tsv sha256 70bb900b67cd; ph_call from analyses/ph_agonal_handling_64_2026-10-09/ph_agonal_handling_64.tsv sha256 79259dffe462
+# 72 primary brain studies; ph_handling_h2_old is the earlier h2 classification
+# axis: signed_ph_score / n_scored / scored_ge10 use the control pH z of pH axis v2 (primary; analyses/confounds/results/combined_controls_pH.tsv replaced by the v2 table, sha256 of the v2 table 2a680040e199 from inputs_ph_axis_v2/axis_v2_controls.tsv.gz sha256 2c72a9b279a2); the *_axis_v1 columns are the v1 fork
+study_id	label	ph_handling_h2_old	signed_ph_score	n_genes	n_scored	scored_ge10	ph_status_in_h2	pmid	ph_call	ph_basis	h2_cov_ph	axis_primary	signed_ph_score_axis_v1	n_scored_axis_v1	scored_ge10_axis_v1
+11296301	Hakak 2001	not_mentioned	-3.324	83	82	yes	not_mentioned	11296301	silent	keyword + h2 agree	not_mentioned	v2	-3.338	82	yes
+15018814	Kuromitsu 2001	not_mentioned	1.26	45	44	yes	not_mentioned	15018814	silent	keyword + h2 agree	not_mentioned	v2	1.063	44	yes
+15334603	Aston 2004	adjusted	0.808	32	29	yes	adjusted	15334603	adjusted covariate	keyword + h2 agree	adjusted	v2	0.179	28	yes
+16038679	Altar 2005	adjusted	1.84	45	44	yes	adjusted	16038679	matched	reviewed	adjusted	v2	1.655	43	yes
+16236523	Weidenhofer 2006	tested	-0.067	47	45	yes	sensitivity	16236523	sensitivity only	reviewed		v2	-0.093	45	yes
+17822540	Saetre 2007	reported	-0.71	136	130	yes	reported_only	17822540	reported only	reviewed		v2	-0.415	129	yes
+18445270	Bowden 2008	matched	0.596	66	59	yes	matched_or_compared	18445270	matched	reviewed		v2	1.081	60	yes
+18771015	Garbett 2008	not_mentioned	1.754	13	13	yes	not_mentioned	18771015	silent	keyword + h2 agree	not_mentioned	v2	0.931	13	yes
+18778695	Narayan 2008	tested	1.047	1506	1345	yes	sensitivity	18778695	sensitivity only	reviewed	sensitivity	v2	0.735	1350	yes
+18985160	Mudge 2008	adjusted	-0.34	196	159	yes	adjusted	18985160	adjusted covariate	reviewed	adjusted	v2	0.044	158	yes
+19255580	Maycox 2009	not_mentioned	1.18	2033	1938	yes	not_mentioned	19255580	silent	keyword + h2 agree	not_mentioned	v2	1.39	1931	yes
+19834500	Chu 2009	not_mentioned	2.498	254	248	yes	not_mentioned	19834500	adjusted covariate	reviewed	not_mentioned	v2	1.759	247	yes
+20034564	Arion 2010	matched	1.01	1090	1053	yes	matched_or_compared	20034564	matched	keyword + h2 agree	matched_or_compared	v2	0.374	1047	yes
+21091092	Schmitt 2011	matched	0.145	760	689	yes	matched_or_compared	21091092	matched	reviewed	matched_or_compared	v2	-0.12	688	yes
+21538462	Barnes 2011	reported	0.471	51	48	yes	reported_only	21538462	unread	unread	reported_only	v2	-0.003	48	yes
+22558445	Wu 2012	tested	0.849	768	593	yes	sensitivity	22558445	sensitivity only	reviewed	sensitivity	v2	0.798	581	yes
+22869038	Fillman 2013	adjusted	0.567	592	327	yes	adjusted	22869038	adjusted covariate	keyword + h2 agree	adjusted	v2	0.354	315	yes
+23147385	Chen 2013	adjusted	1.412	1378	1263	yes	adjusted	23147385	adjusted covariate	reviewed		v2	1.281	1257	yes
+24169640	Hwang 2013	tested	1.756	142	114	yes	sensitivity	24169640	matched	reviewed	sensitivity	v2	0.814	112	yes
+24594777	Kohen 2014	reported		16	0	no	reported_only	24594777	discussed as confound without adjustment	reviewed	reported_only	v2		0	no
+24628518	Pietersen 2014 (PV neurons)	reported	0.733	692	617	yes	reported_only	24628518	reported only	keyword + h2 agree	reported_only	v2	0.57	608	yes
+24702465	Pietersen 2014	matched	0.439	862	710	yes	matched_or_compared	24702465	matched	keyword + h2 agree	matched_or_compared	v2	0.408	701	yes
+24776767	Xiao 2014	reported	2.237	4041	3553	yes	reported_only	24776767	reported only	keyword + h2 agree	reported_only	v2	2.17	3521	yes
+25113377	Zhao 2015	adjusted		104	0	no	adjusted	25113377	adjusted covariate	keyword + h2 agree	adjusted	v2		0	no
+25560755	Arion 2015	adjusted	2.706	71	60	yes	adjusted	25560755	adjusted covariate	keyword + h2 agree	adjusted	v2	2.138	60	yes
+26585218	Mauney 2015	not_mentioned	0.103	447	376	yes	not_mentioned	26585218	silent	reviewed	not_mentioned	v2	0.257	375	yes
+27622934	Darby 2016	adjusted	2.907	10	7	no	adjusted	27622934	adjusted covariate	keyword + h2 agree	adjusted	v2	2.028	7	no
+27661005	Hu 2016	matched	3.192	965	896	yes	matched_or_compared	27661005	sensitivity only	reviewed		v2	3.044	893	yes
+27668389	Fromer 2016	not_mentioned	-0.456	669	603	yes	not_mentioned	27668389	adjusted covariate	reviewed	not_mentioned	v2	-0.118	594	yes
+27801890	Scarr 2018	matched	3.555	98	72	yes	matched_or_compared	27801890	matched	keyword + h2 agree	matched_or_compared	v2	3.464	72	yes
+27898074	Kim 2016	matched	0.932	56	40	yes	matched_or_compared	27898074	matched	keyword + h2 agree	matched_or_compared	v2	0.605	39	yes
+27940260	Voisey 2017	not_mentioned	1.818	1132	923	yes	not_mentioned	27940260	silent	keyword + h2 agree	not_mentioned	v2	1.659	922	yes
+28123834	Mladinov 2016	not_mentioned	-0.564	22	20	yes	not_mentioned	28123834	silent	keyword + h2 agree	not_mentioned	v2	-0.521	20	yes
+28754123	Ramaker 2017	adjusted	2.541	97	73	yes	adjusted	28754123	adjusted covariate	reviewed		v2	2.027	71	yes
+28809853	Chang 2017	not_mentioned	2.059	854	762	yes	not_mentioned	28809853	silent	keyword + h2 agree	not_mentioned	v2	1.614	757	yes
+29112193	Enwright 2018	tested	1.707	865	764	yes	sensitivity	29112193	matched	reviewed	sensitivity	v2	1.317	764	yes
+29463818	Scarr 2018	matched	0.513	94	83	yes	matched_or_compared	29463818	matched	reviewed	matched_or_compared	v2	-0.247	83	yes
+30050107	Jaffe 2018	not_mentioned	-0.318	761	613	yes	not_mentioned	30050107	silent	keyword + h2 agree	not_mentioned	v2	-0.041	605	yes
+31123247	Lanz 2019	adjusted	2.799	2016	1973	yes	adjusted	31123247	adjusted covariate	keyword + h2 agree	adjusted	v2	2.339	1967	yes
+31174959	Collado-Torres 2019	reported	0.807	275	226	yes	reported_only	31174959	discussed as confound without adjustment	reviewed	reported_only	v2	0.544	225	yes
+31288836	Mendizabal 2019	not_mentioned	-0.169	301	286	yes	not_mentioned	31288836	reported only	reviewed	not_mentioned	v2	0.112	285	yes
+32006661	Santarelli 2019	matched	-0.062	191	177	yes	matched_or_compared	32006661	matched	keyword + h2 agree	matched_or_compared	v2	0.092	177	yes
+32152472	Perez 2021	not_mentioned	0.127	266	235	yes	not_mentioned	32152472	silent	keyword + h2 agree	not_mentioned	v2	0.036	234	yes
+32203495	Jaffe 2020	reported	1.586	25	20	yes	reported_only	32203495	reported only	keyword + h2 agree	reported_only	v2	1.46	20	yes
+32513544	Zeppillo 2022	adjusted	1.903	328	288	yes	adjusted	32513544	adjusted covariate	keyword + h2 agree	adjusted	v2	1.293	288	yes
+32566292	Bakshi 2020	not_mentioned	2.594	473	456	yes	not_mentioned	32566292	silent	keyword + h2 agree	not_mentioned	v2	1.939	457	yes
+33184259	Maas 2020	not_mentioned	3.223	135	108	yes	not_mentioned	33184259	silent	reviewed	not_mentioned	v2	2.899	107	yes
+33558674	Akula 2021	not_mentioned	-0.415	22	16	yes	not_mentioned	33558674	considered as candidate covariate	reviewed	not_mentioned	v2	-0.447	16	yes
+34004381	Gebicke-Haerter 2021	matched	0.941	504	371	yes	matched_or_compared	34004381	matched	keyword + h2 agree	matched_or_compared	v2	0.932	365	yes
+34059796	Weissleder 2021	not_mentioned	0.316	1279	1099	yes	not_mentioned	34059796	adjusted covariate	reviewed	not_mentioned	v2	0.47	1090	yes
+34272489	Wu 2021	matched	-0.683	243	162	yes	matched_or_compared	34272489	matched	keyword + h2 agree	matched_or_compared	v2	-0.495	163	yes
+34440415	Lindholm Carlström 2021	reported	1.632	68	57	yes	reported_only	34440415	reported only	keyword + h2 agree	reported_only	v2	1.042	56	yes
+36192459	Puvogel 2022	matched	-0.045	13	11	yes	matched_or_compared	36192459	sensitivity only	reviewed		v2	-0.689	11	yes
+36223459	Batiuk 2022	not_mentioned	1.344	173	148	yes	not_mentioned	36223459	matched	reviewed	not_mentioned	v2	0.908	147	yes
+36302706	Ketchesin 2023 (own list)	not_mentioned	-0.457	608	466	yes	not_mentioned	36302706	silent	keyword + h2 agree	not_mentioned	v2	-0.35	457	yes
+36319771	Benjamin 2022	not_mentioned	-0.932	2566	2192	yes	not_mentioned	36319771	silent	keyword + h2 agree	not_mentioned	v2	-0.822	2173	yes
+36932057	Schulmann 2023	adjusted	0.261	2083	1775	yes	adjusted	36932057	adjusted covariate	keyword + h2 agree	adjusted	v2	0.429	1760	yes
+37498306	Arihisa 2023	not_mentioned	0.631	113	85	yes	not_mentioned	37498306	silent	keyword + h2 agree	not_mentioned	v2	0.065	85	yes
+38448582	Ling 2024	not_mentioned		189	0	no	not_mentioned	38448582	silent	keyword + h2 agree	not_mentioned	v2		0	no
+38648100	Zhu 2024	reported	1.079	1687	1554	yes	reported_only	38648100	reported only	reviewed		v2	1.065	1547	yes
+38781388	Ruzicka 2024	not_mentioned	0.389	2449	2145	yes	not_mentioned	38781388	silent	keyword + h2 agree	not_mentioned	v2	0.455	2139	yes
+39227716	Frohlich 2024 (own list)	adjusted	0.153	551	479	yes	adjusted	39227716	adjusted covariate	keyword + h2 agree	adjusted	v2	0.342	478	yes
+39237723	Arbabi 2025	not_mentioned	0.575	163	121	yes	not_mentioned	39237723	matched	reviewed		v2	0.347	120	yes
+39397771	Alsema 2025	reported	0.636	106	92	yes	reported_only	39397771	reported only	reviewed		v2	0.782	93	yes
+39526318	Zhang 2026	matched	0.899	2787	2430	yes	matched_or_compared	39526318	matched	unread	matched_or_compared	v2	0.266	2404	yes
+41174894	Yalcinbas 2025	not_mentioned	0.38	158	123	yes	not_mentioned	41174894	silent	keyword + h2 agree	not_mentioned	v2	0.177	120	yes
+41210297	Mas 2025	not_mentioned		4	0	no	not_mentioned	41210297	silent	keyword + h2 agree	not_mentioned	v2		0	no
+41567988	Mendez-Victoriano 2026	tested	1.265	203	151	yes	sensitivity	41567988	not covariate in primary; sensitivity with pH	reviewed	sensitivity	v2	0.858	144	yes
+41757081	Kwon 2026	not_mentioned	0.88	1010	894	yes	not_mentioned	41757081	silent	keyword + h2 agree	not_mentioned	v2	0.605	890	yes
+41942462	Singh 2026	not_mentioned	0.875	841	604	yes	not_mentioned	41942462	silent	keyword + h2 agree	not_mentioned	v2	0.764	595	yes
+42461238	Dean 2026	matched	2.83	46	43	yes	matched_or_compared	42461238	adjusted covariate	reviewed	matched_or_compared	v2	2.987	43	yes
+42778699	Lee 2026 (PsychAD)	not_mentioned	0.658	139	125	yes	not_mentioned	42778699	silent	keyword + h2 agree	not_mentioned	v2	0.438	124	yes

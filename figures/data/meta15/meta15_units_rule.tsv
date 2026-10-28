@@ -1,0 +1,23 @@
+# figure/claim: META15: which of the 15 units a rule from the unit definitions (h3_units / h3_inventory) would drop to give 13
+# script: meta15_recurrent.py (adapted from figure_data/mab_numbers_2026-10-12/task_c_meta_agreement.py; DE prior as in h3.py expected_deprior / recurrence.prior_probs)
+# sources (sha256): analyses/h3/h3_units.tsv f24716bad32d952f2dbe01710f9003a25b07191385e8c0622f6be3895b728c63; analyses/h3/h3_inventory.tsv 75bb8a75dc4705b71e4c6128ef7e30223bc572733ace22c2c4d671bd76e4e7f1; base78_2026-10-16/B80/out/recurrent_sets.tsv 3c42f67cdd7acb751592af24bae4c2c1a917bc5a880b8fe74d2d14cd8ef85403; set_gene_differences.tsv bee99ba028aec06b779826144b6f6293ebdbf9e321fa6da8aa709d717024eff4; base80_studies.tsv 09dc9e52c590a731f906881604d85132b058a9bddd445899ea766678f8a6187a; analyses/de_prior_lists/our_prior/1_global_our_prior.tsv 68272e907b728524aa9ea168ee5df661161de6b20ec4b992169c3317a455406a; data/reference/hgnc_complete_set.txt 69bb5722d5a42bb355580deb2c9f197ce3d7f7d13807173b9674a7db65e52191; base78_2026-10-16/B80/ws/analyses/primary_lists.json 44fb07b1d2e548ec72288aa56cdf755bd14123ed74c7543d5401492dab0198a8; base78_2026-10-16/B80/ws/analyses/universes.json 25a477fc64ae401637ce9b5f2ac7cc536b7acdd3c157737b47179bd6c5bb7cab; plus per-list files listed in sources_sha256.tsv
+# date: 2026-10-16
+# parameters: NPERM 5000, seed 20261016, base = 80 studies / 72 contributing lists; sets from core-80 recurrent_sets.tsv (383 study tier q<0.1; 107 in >=10 lists)
+# criteria columns are read from h3_units.tsv / h3_inventory.tsv; all 15 are cross-cohort, pool 2 or more cohorts, publish a list and are in_pairs = yes, so those criteria drop none
+# 2026-10-21: n_input_cohorts from the cluster-set h3_inventory.tsv
+unit	label	technology	n_input_datasets	n_input_cohorts	h3_list_role	list_genes	own_universe	ge4_cohorts	bulk_tissue	list_role_first_look	list_genes_ge10	peer_reviewed	dropped_in_variant_A	dropped_in_variant_B
+22954356	Pérez-Santiago 2012	microarray	6	5	first_look	131	yes	yes	yes	yes	yes	yes	no	no
+22212594	Mistry 2013	microarray	7	5	first_look	98	yes	yes	yes	yes	yes	yes	no	no
+26285829:brain	Bergon 2015	microarray	10	6	first_look	265	yes	yes	yes	yes	yes	yes	no	no
+27450777:brain	Hess 2016	microarray	9	6	first_look	92	yes	yes	yes	yes	yes	yes	no	no
+26818902	Qin 2016	microarray	6	5	first_look	607	yes	yes	yes	yes	yes	yes	no	no
+30545856	Gandal 2018 (RNA-seq)	rnaseq	2	2	first_look	4538	yes	no	yes	yes	yes	yes	yes	no
+29439242	Gandal 2018 (arrays)	microarray	5	5	first_look	2028	yes	yes	yes	yes	yes	yes	no	no
+35660966	Li 2022	microarray	10	7	first_look	36	no	yes	yes	yes	yes	yes	no	no
+36090817	Sadeghi 2022	rnaseq	9	7	first_look	75	yes	yes	yes	yes	yes	yes	no	no
+36462601	Bharadhwaj 2023	microarray	5	4	first_look	7	yes	yes	yes	yes	no	yes	no	no
+36424395	Chen 2023	microarray	5	5	first_look	220	yes	yes	yes	yes	yes	yes	no	no
+40727846	Priyanka 2025	rnaseq	4	4	first_look	605	yes	yes	yes	yes	yes	yes	no	no
+41422210	Rebouças 2025	microarray	4	5	first_look	531	yes	yes	yes	yes	yes	yes	no	no
+40796563	Nakatsuka 2025	snrnaseq	3	3	first_look	98	no	no	no	yes	yes	yes	yes	yes
+doi_10.64898_2026.09.18.752621	Endresz 2026 (bioRxiv)	snrnaseq	6	5	reanalysis	4032	no	yes	no	no	yes	no	no	yes

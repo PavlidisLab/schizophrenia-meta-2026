@@ -1,0 +1,36 @@
+{
+ "note": "copied 2026-10-21 as the source of a hidden comment in supplement.md (Extended Methods 3, tested-gene sets); original location: <analysis repo> (analyses/universes.json, key rnaseq_default; file paths of the sources shortened to names)",
+ "rnaseq_default": {
+  "n_genes": 25137,
+  "sources": [
+   {
+    "label": "Gandal 2018",
+    "n_genes": 21576
+   },
+   {
+    "label": "Xia 2024",
+    "n_genes": 21576
+   },
+   {
+    "label": "Clifton 2023",
+    "n_genes": 15405
+   },
+   {
+    "label": "Benjamin 2022",
+    "n_genes": 19795
+   },
+   {
+    "label": "Jaffe 2020",
+    "n_genes": 17813
+   },
+   {
+    "label": "Jin 2021",
+    "n_genes": 18498
+   },
+   {
+    "label": "Sadeghi 2022",
+    "n_genes": 17309
+   }
+  ]
+ }
+}

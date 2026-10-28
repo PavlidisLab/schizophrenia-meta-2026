@@ -1,0 +1,16 @@
+{
+ "script": "g1/export_supp_table1_375.py",
+ "run": "2026-10-15",
+ "inputs": {
+  "analyses/recurrence_genes.tsv": "a977bcf6ff7047875856e5e2b2ad60f9c4b93f6301c01c07183b099f79d70864",
+  "analyses/confounds/recurrent_sets.tsv": "f6fdba75ae7ced6e028c600d5e083829147d28895a3916d9528400b7a72a9678",
+  "analyses/confounds/results/combined_controls_pH.tsv": "ebab86afedd3ac37a695b5b899dd154968376bf93273516ea16d24a722d549e2",
+  "inputs_ph_axis_v2/axis_v2_controls.tsv.gz": "2c72a9b279a24408751bab2864892668b2336a619dd699f61acd76f101ec416a",
+  "figure_data/fig07/fig07_a2_a4_gene_scatter.tsv": "392071069df20b20a5deafcd5dfd03a24665b45c50bc18425cfa3b43eef70ca5"
+ },
+ "rows": {
+  "recurrent_genes": 375,
+  "analysis_set_genes": 375,
+  "named_candidates": 38
+ }
+}

@@ -1,0 +1,11 @@
+# aggregate_coherence.py (module_coherence); per_dataset_coherence.tsv sha256 1584de4df71e; modules_index.tsv 30ce9eb66e48
+# unit = paper; mean_excess_over_units with t interval over units; share_interval_above_0 = share of modules (>= 2 clusters) whose pooled interval is above 0, paper-cluster bootstrap interval
+variant	lineage_named_only	min_clusters	n_modules	n_units	mean_excess_over_units	lo	hi	median_module_excess	min_module_excess	modules_est_above_0	modules_interval_above_0	modules_interval_below_0	share_interval_above_0	share_lo	share_hi
+raw	yes	1	154	17	0.2432	0.1711	0.3154	0.2642	0.0003	154					
+raw	yes	2	154	17	0.2432	0.1711	0.3154	0.2642	0.0003	154	146.0	0.0	0.9481	0.8118	0.9949
+raw	all	1	196	21	0.2395	0.1718	0.3073	0.2352	0.0003	196					
+raw	all	2	196	21	0.2395	0.1718	0.3073	0.2352	0.0003	196	187.0	0.0	0.9541	0.8571	0.9919
+resid	yes	1	154	17	0.2394	0.1682	0.3106	0.2568	-0.0025	153					
+resid	yes	2	154	17	0.2394	0.1682	0.3106	0.2568	-0.0025	153	146.0	0.0	0.9481	0.8125	0.9948
+resid	all	1	196	21	0.2363	0.169	0.3035	0.2316	-0.0025	195					
+resid	all	2	196	21	0.2363	0.169	0.3035	0.2316	-0.0025	195	185.0	0.0	0.9439	0.848	0.9896

@@ -1,0 +1,12 @@
+# figure: supp_fig_medication panel h
+# script: analyses/figure_exports/export_supp_fig_medication.py, run 2026-10-09
+# input: analyses/confounds/results/medication_dose.tsv sha256 1d8b9acde8a0
+# GSE21138, chlorpromazine-equivalent dose within SZ cases (the one dataset with dose); the gene-list column of the source is omitted
+dataset	factor	set	n_sz	n_set_measured	genome_rate_p05	n_set_p05	expected_p05	fisher_p	n_p05_same_sign_as_sz	score_dose_follows_sz	sample_perm_p_dose_follows_sz
+GSE21138	cpz_mg (within SZ)	cohort_brain	26	22	0.0534	1	1.18	0.701	0	-0.318	0.676
+GSE21138	cpz_mg (within SZ)	study_brain	26	367	0.0534	15	19.6	0.888	3	-0.407	0.809
+GSE21138	cpz_mg (within SZ)	cohort_brainFDR	26	3	0.0534	1	0.16	0.152	0	-0.899	0.886
+GSE21138	cpz_mg (within SZ)	study_brainFDR	26	74	0.0534	3	3.95	0.763	0	-0.573	0.844
+GSE21138	cpz_mg (within SZ)	study_brain_ge10	26	105	0.0534	3	5.61	0.924	0	-0.569	0.837
+GSE21138	cpz_mg (within SZ)	study_brain_ge5	26	2318	0.0534	105	123.8	0.974	30	-0.215	0.743
+GSE21138	cpz_mg (within SZ)	study_brain_5plus	26	2318	0.0534	105	123.8	0.974	30	-0.215	0.714

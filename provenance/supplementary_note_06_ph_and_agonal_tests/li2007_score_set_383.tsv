@@ -1,0 +1,11 @@
+# claim: 209 recurrent genes (study_brain; 376 with SZ sign) scored against Li 2007 agonal-stress gene lists; null = 10000 expression-decile-matched sets, seed 20261012
+# script: analyses/li2007_agonal_2026-10-12/score_li2007_209.py
+# source: li2007_agonal_genes.tsv sha256 35834e7ab8b93af342450a00401455b591fed8f14fd49c83f4b3c46d352250e1
+# source: recurrent_sets.tsv sha256 3c42f67cdd7acb751592af24bae4c2c1a917bc5a880b8fe74d2d14cd8ef85403; recurrence_genes.tsv sha256 dda5eb621c155963ef712788758e31b4cb169773fc7198fa4116cc89f4244195; axis_pritzker_agonal_GPL17027.tsv.gz sha256 1423d5dae86168f2de7e8b23ae671603001f18b6079a97f79fd0c94ded37e570; combined_controls_pH.tsv sha256 da2fc515de6286b23da791d241632669848d3afb258ce1ea4f39bad6efcb1484
+# Li symbol mapping to HGNC: {'approved': 1534, 'alias_or_previous': 319, 'unmapped': 31}; 1816 genes with a value
+# run: 2026-10-17
+axis	n_genes	n_with_value	mean_score	concordant	discordant	null_mean	null_sd	z	p_one_sided
+project control pH Z (reference)	376	364	2.2391	300	64	1.1565	0.1145	9.46	0.0001
+Li 2007 agonal t (listed genes only)	376	132	6.6823	122	10	4.8593	0.6809	2.68	0.0018
+Li 2007 agonal t (genes outside the 2,000 listed = 0)	376	132	2.3459	122	254	0.8214	0.1451	10.51	0.0001
+Li 2007 agonal direction (+1/-1, listed genes only)	376	132	0.8485	122	10	0.6422	0.0938	2.2	0.0083

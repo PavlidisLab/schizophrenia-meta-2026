@@ -1,0 +1,11 @@
+# figure: fig08 panel f
+# script: analyses/redo_on_209_2026-10-11/3_ph_agonal_axes/export_fig08_209.py (copy of analyses/figure_exports/export_fig08_fig09_fig10.py: output folder, population text, results_516 in place of results_516, fig08 only), run 2026-10-11
+# input: analyses/hagihara_replication_2026-10-08/results/ph_effect_pooled.tsv sha256 9d493e833c6b
+# pooled over 11 studies with study fixed effects; row 1 and 2 use one row per study and subject
+model	n_sz	n_ctl	n_studies	coef_sz	se	p
+pooled A (one row per study and subject): study FE + age + sex	424	481	11	-0.12122764828983208	0.017207311724749232	3.707012060968465e-12
+pooled B: + PMI	424	481	11	-0.12400306198606187	0.017098344221342824	8.902087136812347e-13
+pooled A, naive (all 18 dataset rows, subjects repeated across regions; SE too small)	484	557	11	-0.11593422110433518	0.016524742482707792	4.160852395303925e-12
+pooled B without GSE17612 and GSE21935	374	439	9	-0.0942454215198132	0.018167513668965112	2.702015106529539e-07
+pooled B without GSE92538	402	409	10	-0.12735146929113197	0.017480578655324843	7.723546461819976e-13
+GSE92538 alone (model: age + sex + PMI)	22	72	1	-0.07417034018899069	0.07398364837703877	0.318808802028062

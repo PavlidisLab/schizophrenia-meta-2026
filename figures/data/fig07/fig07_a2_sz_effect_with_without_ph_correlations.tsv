@@ -1,0 +1,12 @@
+# claim: Extended Methods 8, 'Schizophrenia effect with and without pH' (same five donor-separate datasets with pH; schizophrenia effect with expression ~ diagnosis + age + sex, then with pH added on the same samples, Stouffer z; the comparison covers the genes in 10 or more lists that have a combined pH z); this table gives the Pearson correlations the paragraph says are reported
+# script: note12_ph_overlap_and_ph_adjustment_2026-10-19/build_ph_numbers.py (reads the delivered gene table; no model fits)
+# source: figure_data_core80_2026-10-17/fig07/fig07_a2_a4_gene_scatter.tsv sha256 0c7508208dc0 (columns z_ph_controls = combined control pH z over the donor-separate datasets, z_sz_raw = Stouffer z of the schizophrenia effect without pH, z_sz_ph_adjusted = with pH added; in_ge10 = gene in >= 10 lists)
+# rows: pearson_r with a Fisher-z 95% interval treating genes as independent (genes are not independent; the interval is a guide), p two-sided, spearman_rho for reference; x and y name the two columns correlated: (pH z, effect without pH), (pH z, effect with pH), (effect without pH, effect with pH)
+# run 2026-10-19
+set	x	y	n	pearson_r	ci95_lo	ci95_hi	p	spearman_rho
+genes in >= 10 lists with a combined pH z	z_ph_controls	z_sz_raw	105	-0.7887	-0.8517	-0.7034	1.6934233302537068e-23	-0.7051
+genes in >= 10 lists with a combined pH z	z_ph_controls	z_sz_ph_adjusted	105	-0.6162	-0.7225	-0.4814	2.6135918633722444e-12	-0.6068
+genes in >= 10 lists with a combined pH z	z_sz_raw	z_sz_ph_adjusted	105	0.9636	0.9468	0.9752	8.08847799649927e-61	0.9728
+the 383 recurrent genes with a combined pH z	z_ph_controls	z_sz_raw	371	-0.7624	-0.802	-0.7162	9.416846767712623e-72	-0.7153
+the 383 recurrent genes with a combined pH z	z_ph_controls	z_sz_ph_adjusted	371	-0.5482	-0.6157	-0.4728	1.704322140951847e-30	-0.5384
+the 383 recurrent genes with a combined pH z	z_sz_raw	z_sz_ph_adjusted	371	0.9501	0.9392	0.9592	7.61047987966751e-189	0.9548

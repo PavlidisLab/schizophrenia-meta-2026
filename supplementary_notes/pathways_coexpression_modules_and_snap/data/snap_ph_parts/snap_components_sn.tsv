@@ -1,0 +1,184 @@
+# snap_components.py sn (snap_up_down); arm_b_scores.tsv cddc7fbc9940; axis_v2_controls.tsv.gz 2c72a9b279a2; snap_weights.tsv b3f43daff942; agonal_axis.tsv 637c0b66cc8a
+# DIRECTIONS: SNAP-a = astrocyte part, SNAP-n = neuron part of Ling's LF4 loadings; lower SNAP = direction of schizophrenia and ageing. Estimated agonal score: HIGHER = more agonal. pH-axis score: HIGHER = higher-pH-like (gene weights z > 0 = higher at higher pH), so NEGATIVE correlation = part is HIGHER at LOW pH. Measured pH: higher = higher pH. SZ effect in SD of the score (negative = lower in schizophrenia).
+# pooling: single-nucleus = Fisher z weights n-3 with bootstrap within bank x diagnosis (correlations), inverse-variance fixed effect (SZ effect); bulk = equal-weight mean of cluster means, bootstrap over clusters (2,000)
+table	set	score	against	statistic	estimate	lo95	hi95	n	covariates	model	n_sz
+correlation	HBCC_main	SNAP total	estimated agonal score	spearman	-0.6258	-0.7344	-0.5051	150			
+correlation	HBCC_main	SNAP total	estimated agonal score	partial_spearman_age_sex_dx	-0.4303	-0.587	-0.2537	150			
+correlation	MSSM_main	SNAP total	estimated agonal score	spearman	-0.6457	-0.7052	-0.5713	384			
+correlation	MSSM_main	SNAP total	estimated agonal score	partial_spearman_age_sex_dx	-0.6134	-0.6771	-0.5351	384			
+correlation	NSW	SNAP total	estimated agonal score	spearman	-0.6675	-0.8183	-0.4741	76			
+correlation	NSW	SNAP total	estimated agonal score	partial_spearman_age_sex_dx	-0.6054	-0.7875	-0.3783	76			
+correlation	CMC	SNAP total	estimated agonal score	spearman	-0.5809	-0.6996	-0.4293	100			
+correlation	CMC	SNAP total	estimated agonal score	partial_spearman_age_sex_dx	-0.57	-0.6872	-0.4106	100			
+correlation	pooled HBCC_main+MSSM_main+NSW	SNAP total	estimated agonal score	spearman	-0.6436	-0.6926	-0.5878	610			
+correlation	pooled HBCC_main+MSSM_main+NSW	SNAP total	estimated agonal score	partial_spearman_age_sex_dx	-0.5721	-0.6314	-0.5078	610			
+correlation	HBCC_main	SNAP total	pH-axis score	spearman	0.0794	-0.0849	0.2325	150			
+correlation	HBCC_main	SNAP total	pH-axis score	partial_spearman_age_sex_dx	0.0347	-0.1264	0.2046	150			
+correlation	MSSM_main	SNAP total	pH-axis score	spearman	0.1717	0.0665	0.2792	384			
+correlation	MSSM_main	SNAP total	pH-axis score	partial_spearman_age_sex_dx	0.0999	-0.0027	0.2046	384			
+correlation	NSW	SNAP total	pH-axis score	spearman	0.137	-0.1045	0.3577	76			
+correlation	NSW	SNAP total	pH-axis score	partial_spearman_age_sex_dx	0.039	-0.1938	0.2646	76			
+correlation	CMC	SNAP total	pH-axis score	spearman	0.3103	0.1044	0.4962	100			
+correlation	CMC	SNAP total	pH-axis score	partial_spearman_age_sex_dx	0.2963	0.0974	0.4966	100			
+correlation	pooled HBCC_main+MSSM_main+NSW	SNAP total	pH-axis score	spearman	0.1451	0.0574	0.2263	610			
+correlation	pooled HBCC_main+MSSM_main+NSW	SNAP total	pH-axis score	partial_spearman_age_sex_dx	0.0767	-0.0066	0.1559	610			
+correlation	HBCC_main	SNAP-a	estimated agonal score	spearman	-0.182	-0.34	-0.0098	144			
+correlation	HBCC_main	SNAP-a	estimated agonal score	partial_spearman_age_sex_dx	-0.1593	-0.3361	0.0235	144			
+correlation	MSSM_main	SNAP-a	estimated agonal score	spearman	-0.3839	-0.47	-0.2936	377			
+correlation	MSSM_main	SNAP-a	estimated agonal score	partial_spearman_age_sex_dx	-0.3855	-0.4755	-0.2901	377			
+correlation	NSW	SNAP-a	estimated agonal score	spearman	0.0292	-0.1918	0.2471	76			
+correlation	NSW	SNAP-a	estimated agonal score	partial_spearman_age_sex_dx	0.026	-0.1941	0.2465	76			
+correlation	CMC	SNAP-a	estimated agonal score	spearman	-0.3791	-0.521	-0.2118	89			
+correlation	CMC	SNAP-a	estimated agonal score	partial_spearman_age_sex_dx	-0.3822	-0.53	-0.2085	89			
+correlation	pooled HBCC_main+MSSM_main+NSW	SNAP-a	estimated agonal score	spearman	-0.2894	-0.3705	-0.2091	597			
+correlation	pooled HBCC_main+MSSM_main+NSW	SNAP-a	estimated agonal score	partial_spearman_age_sex_dx	-0.2857	-0.3549	-0.2029	597			
+correlation	HBCC_main	SNAP-a	pH-axis score	spearman	-0.3659	-0.5039	-0.2108	144			
+correlation	HBCC_main	SNAP-a	pH-axis score	partial_spearman_age_sex_dx	-0.3801	-0.5175	-0.2232	144			
+correlation	MSSM_main	SNAP-a	pH-axis score	spearman	-0.3202	-0.4162	-0.2218	377			
+correlation	MSSM_main	SNAP-a	pH-axis score	partial_spearman_age_sex_dx	-0.3456	-0.4373	-0.2492	377			
+correlation	NSW	SNAP-a	pH-axis score	spearman	-0.6264	-0.7487	-0.4564	76			
+correlation	NSW	SNAP-a	pH-axis score	partial_spearman_age_sex_dx	-0.6462	-0.7609	-0.4805	76			
+correlation	CMC	SNAP-a	pH-axis score	spearman	-0.2481	-0.4506	-0.0464	89			
+correlation	CMC	SNAP-a	pH-axis score	partial_spearman_age_sex_dx	-0.2652	-0.485	-0.053	89			
+correlation	pooled HBCC_main+MSSM_main+NSW	SNAP-a	pH-axis score	spearman	-0.3751	-0.4452	-0.3036	597			
+correlation	pooled HBCC_main+MSSM_main+NSW	SNAP-a	pH-axis score	partial_spearman_age_sex_dx	-0.3975	-0.4692	-0.3292	597			
+correlation	HBCC_main	SNAP-n	estimated agonal score	spearman	-0.6629	-0.7581	-0.5435	148			
+correlation	HBCC_main	SNAP-n	estimated agonal score	partial_spearman_age_sex_dx	-0.4095	-0.5753	-0.2197	148			
+correlation	MSSM_main	SNAP-n	estimated agonal score	spearman	-0.6298	-0.7009	-0.5529	376			
+correlation	MSSM_main	SNAP-n	estimated agonal score	partial_spearman_age_sex_dx	-0.5906	-0.6661	-0.5121	376			
+correlation	NSW	SNAP-n	estimated agonal score	spearman	-0.7581	-0.8574	-0.6078	76			
+correlation	NSW	SNAP-n	estimated agonal score	partial_spearman_age_sex_dx	-0.6641	-0.8011	-0.4771	76			
+correlation	CMC	SNAP-n	estimated agonal score	spearman	-0.4616	-0.609	-0.2961	100			
+correlation	CMC	SNAP-n	estimated agonal score	partial_spearman_age_sex_dx	-0.4434	-0.5998	-0.2672	100			
+correlation	pooled HBCC_main+MSSM_main+NSW	SNAP-n	estimated agonal score	spearman	-0.6562	-0.7046	-0.6016	600			
+correlation	pooled HBCC_main+MSSM_main+NSW	SNAP-n	estimated agonal score	partial_spearman_age_sex_dx	-0.5607	-0.6228	-0.4905	600			
+correlation	HBCC_main	SNAP-n	pH-axis score	spearman	0.3135	0.1473	0.4539	148			
+correlation	HBCC_main	SNAP-n	pH-axis score	partial_spearman_age_sex_dx	0.3287	0.167	0.472	148			
+correlation	MSSM_main	SNAP-n	pH-axis score	spearman	0.366	0.2662	0.4668	376			
+correlation	MSSM_main	SNAP-n	pH-axis score	partial_spearman_age_sex_dx	0.2995	0.2019	0.4051	376			
+correlation	NSW	SNAP-n	pH-axis score	spearman	0.6023	0.4343	0.7396	76			
+correlation	NSW	SNAP-n	pH-axis score	partial_spearman_age_sex_dx	0.5503	0.3656	0.7072	76			
+correlation	CMC	SNAP-n	pH-axis score	spearman	0.4731	0.2738	0.6162	100			
+correlation	CMC	SNAP-n	pH-axis score	partial_spearman_age_sex_dx	0.4622	0.2553	0.6217	100			
+correlation	pooled HBCC_main+MSSM_main+NSW	SNAP-n	pH-axis score	spearman	0.3867	0.3163	0.4582	600			
+correlation	pooled HBCC_main+MSSM_main+NSW	SNAP-n	pH-axis score	partial_spearman_age_sex_dx	0.3409	0.262	0.4154	600			
+sz_effect	HBCC_main	SNAP total			-0.6364	-0.9527	-0.32	150	age+sex	base	56.0
+sz_effect	HBCC_main	SNAP total			-0.3711	-0.672	-0.0702	150	age+sex	+agonal	56.0
+sz_effect	HBCC_main	SNAP total			-0.6364	-0.9538	-0.3191	150	age+sex	+pH axis	56.0
+sz_effect	HBCC_main	SNAP total			-0.3713	-0.6733	-0.0693	150	age+sex	+agonal +pH axis	56.0
+sz_effect	MSSM_main	SNAP total			-0.0704	-0.2796	0.1388	384	age+sex	base	127.0
+sz_effect	MSSM_main	SNAP total			-0.0822	-0.2517	0.0872	384	age+sex	+agonal	127.0
+sz_effect	MSSM_main	SNAP total			-0.0792	-0.2889	0.1305	384	age+sex	+pH axis	127.0
+sz_effect	MSSM_main	SNAP total			-0.1015	-0.2695	0.0666	384	age+sex	+agonal +pH axis	127.0
+sz_effect	NSW	SNAP total			-0.3245	-0.7582	0.1091	76	age+sex	base	43.0
+sz_effect	NSW	SNAP total			0.0971	-0.228	0.4223	76	age+sex	+agonal	43.0
+sz_effect	NSW	SNAP total			-0.2897	-0.7249	0.1455	76	age+sex	+pH axis	43.0
+sz_effect	NSW	SNAP total			0.0965	-0.2315	0.4245	76	age+sex	+agonal +pH axis	43.0
+sz_effect	CMC	SNAP total			-0.1885	-0.5792	0.2023	100	age+sex	base	47.0
+sz_effect	CMC	SNAP total			-0.2004	-0.5353	0.1345	100	age+sex	+agonal	47.0
+sz_effect	CMC	SNAP total			-0.1682	-0.5402	0.2039	100	age+sex	+pH axis	47.0
+sz_effect	CMC	SNAP total			-0.1836	-0.5055	0.1383	100	age+sex	+agonal +pH axis	47.0
+sz_effect	pooled HBCC_main+MSSM_main+NSW (inverse variance)	SNAP total			-0.2553	-0.4162	-0.0945	610	age+sex	base	226.0
+sz_effect	pooled HBCC_main+MSSM_main+NSW (inverse variance)	SNAP total			-0.1088	-0.2423	0.0248	610	age+sex	+agonal	226.0
+sz_effect	pooled HBCC_main+MSSM_main+NSW (inverse variance)	SNAP total			-0.2554	-0.4167	-0.0942	610	age+sex	+pH axis	226.0
+sz_effect	pooled HBCC_main+MSSM_main+NSW (inverse variance)	SNAP total			-0.121	-0.2542	0.0121	610	age+sex	+agonal +pH axis	226.0
+sz_effect	HBCC_main	SNAP-a			-0.1404	-0.5089	0.2281	144	age+sex	base	51.0
+sz_effect	HBCC_main	SNAP-a			0.0301	-0.3447	0.405	144	age+sex	+agonal	51.0
+sz_effect	HBCC_main	SNAP-a			-0.1214	-0.4569	0.2141	144	age+sex	+pH axis	51.0
+sz_effect	HBCC_main	SNAP-a			0.0204	-0.3227	0.3635	144	age+sex	+agonal +pH axis	51.0
+sz_effect	MSSM_main	SNAP-a			-0.1508	-0.3673	0.0657	377	age+sex	base	122.0
+sz_effect	MSSM_main	SNAP-a			-0.169	-0.369	0.031	377	age+sex	+agonal	122.0
+sz_effect	MSSM_main	SNAP-a			-0.1085	-0.3118	0.0948	377	age+sex	+pH axis	122.0
+sz_effect	MSSM_main	SNAP-a			-0.1299	-0.319	0.0592	377	age+sex	+agonal +pH axis	122.0
+sz_effect	NSW	SNAP-a			0.055	-0.4104	0.5204	76	age+sex	base	43.0
+sz_effect	NSW	SNAP-a			0.105	-0.3862	0.5962	76	age+sex	+agonal	43.0
+sz_effect	NSW	SNAP-a			-0.1027	-0.4675	0.2622	76	age+sex	+pH axis	43.0
+sz_effect	NSW	SNAP-a			0.0324	-0.3349	0.3996	76	age+sex	+agonal +pH axis	43.0
+sz_effect	CMC	SNAP-a			-0.1274	-0.5541	0.2994	89	age+sex	base	41.0
+sz_effect	CMC	SNAP-a			-0.1335	-0.5375	0.2706	89	age+sex	+agonal	41.0
+sz_effect	CMC	SNAP-a			-0.1595	-0.5742	0.2553	89	age+sex	+pH axis	41.0
+sz_effect	CMC	SNAP-a			-0.1778	-0.5566	0.2011	89	age+sex	+agonal +pH axis	41.0
+sz_effect	pooled HBCC_main+MSSM_main+NSW (inverse variance)	SNAP-a			-0.1194	-0.2915	0.0528	597	age+sex	base	216.0
+sz_effect	pooled HBCC_main+MSSM_main+NSW (inverse variance)	SNAP-a			-0.0977	-0.2628	0.0674	597	age+sex	+agonal	216.0
+sz_effect	pooled HBCC_main+MSSM_main+NSW (inverse variance)	SNAP-a			-0.1102	-0.2661	0.0456	597	age+sex	+pH axis	216.0
+sz_effect	pooled HBCC_main+MSSM_main+NSW (inverse variance)	SNAP-a			-0.0726	-0.2226	0.0773	597	age+sex	+agonal +pH axis	216.0
+sz_effect	HBCC_main	SNAP-n			-0.7351	-1.0311	-0.4392	148	age+sex	base	55.0
+sz_effect	HBCC_main	SNAP-n			-0.5432	-0.8363	-0.25	148	age+sex	+agonal	55.0
+sz_effect	HBCC_main	SNAP-n			-0.7262	-1.0077	-0.4447	148	age+sex	+pH axis	55.0
+sz_effect	HBCC_main	SNAP-n			-0.5275	-0.803	-0.252	148	age+sex	+agonal +pH axis	55.0
+sz_effect	MSSM_main	SNAP-n			-0.023	-0.2333	0.1872	376	age+sex	base	124.0
+sz_effect	MSSM_main	SNAP-n			-0.0158	-0.19	0.1584	376	age+sex	+agonal	124.0
+sz_effect	MSSM_main	SNAP-n			-0.0546	-0.2597	0.1505	376	age+sex	+pH axis	124.0
+sz_effect	MSSM_main	SNAP-n			-0.0575	-0.2195	0.1044	376	age+sex	+agonal +pH axis	124.0
+sz_effect	NSW	SNAP-n			-0.4238	-0.8355	-0.012	76	age+sex	base	43.0
+sz_effect	NSW	SNAP-n			-0.0197	-0.3256	0.2862	76	age+sex	+agonal	43.0
+sz_effect	NSW	SNAP-n			-0.3051	-0.6568	0.0466	76	age+sex	+pH axis	43.0
+sz_effect	NSW	SNAP-n			0.0179	-0.238	0.2739	76	age+sex	+agonal +pH axis	43.0
+sz_effect	CMC	SNAP-n			-0.1637	-0.5543	0.2269	100	age+sex	base	47.0
+sz_effect	CMC	SNAP-n			-0.1733	-0.5299	0.1833	100	age+sex	+agonal	47.0
+sz_effect	CMC	SNAP-n			-0.135	-0.4847	0.2146	100	age+sex	+pH axis	47.0
+sz_effect	CMC	SNAP-n			-0.1465	-0.4683	0.1753	100	age+sex	+agonal +pH axis	47.0
+sz_effect	pooled HBCC_main+MSSM_main+NSW (inverse variance)	SNAP-n			-0.2877	-0.4448	-0.1305	600	age+sex	base	222.0
+sz_effect	pooled HBCC_main+MSSM_main+NSW (inverse variance)	SNAP-n			-0.1279	-0.2615	0.0057	600	age+sex	+agonal	222.0
+sz_effect	pooled HBCC_main+MSSM_main+NSW (inverse variance)	SNAP-n			-0.292	-0.4409	-0.1432	600	age+sex	+pH axis	222.0
+sz_effect	pooled HBCC_main+MSSM_main+NSW (inverse variance)	SNAP-n			-0.1331	-0.2547	-0.0114	600	age+sex	+agonal +pH axis	222.0
+sz_effect	HBCC_main	SNAP total			-0.5916	-0.9102	-0.273	150	age+sex+PMI+log nuclei (Arm B primary)	base	56.0
+sz_effect	HBCC_main	SNAP total			-0.3664	-0.6697	-0.0632	150	age+sex+PMI+log nuclei (Arm B primary)	+agonal	56.0
+sz_effect	HBCC_main	SNAP total			-0.5843	-0.9035	-0.2651	150	age+sex+PMI+log nuclei (Arm B primary)	+pH axis	56.0
+sz_effect	HBCC_main	SNAP total			-0.3648	-0.669	-0.0607	150	age+sex+PMI+log nuclei (Arm B primary)	+agonal +pH axis	56.0
+sz_effect	MSSM_main	SNAP total			-0.0651	-0.2778	0.1476	384	age+sex+PMI+log nuclei (Arm B primary)	base	127.0
+sz_effect	MSSM_main	SNAP total			-0.0837	-0.2562	0.0888	384	age+sex+PMI+log nuclei (Arm B primary)	+agonal	127.0
+sz_effect	MSSM_main	SNAP total			-0.0789	-0.2932	0.1355	384	age+sex+PMI+log nuclei (Arm B primary)	+pH axis	127.0
+sz_effect	MSSM_main	SNAP total			-0.1194	-0.2913	0.0524	384	age+sex+PMI+log nuclei (Arm B primary)	+agonal +pH axis	127.0
+sz_effect	NSW	SNAP total			-0.3338	-0.7743	0.1067	76	age+sex+PMI+log nuclei (Arm B primary)	base	43.0
+sz_effect	NSW	SNAP total			0.1325	-0.1975	0.4626	76	age+sex+PMI+log nuclei (Arm B primary)	+agonal	43.0
+sz_effect	NSW	SNAP total			-0.2857	-0.7282	0.1567	76	age+sex+PMI+log nuclei (Arm B primary)	+pH axis	43.0
+sz_effect	NSW	SNAP total			0.1332	-0.2001	0.4665	76	age+sex+PMI+log nuclei (Arm B primary)	+agonal +pH axis	43.0
+sz_effect	CMC	SNAP total			-0.2141	-0.6276	0.1993	100	age+sex+PMI+log nuclei (Arm B primary)	base	47.0
+sz_effect	CMC	SNAP total			-0.189	-0.5454	0.1675	100	age+sex+PMI+log nuclei (Arm B primary)	+agonal	47.0
+sz_effect	CMC	SNAP total			-0.236	-0.635	0.1629	100	age+sex+PMI+log nuclei (Arm B primary)	+pH axis	47.0
+sz_effect	CMC	SNAP total			-0.2072	-0.5544	0.14	100	age+sex+PMI+log nuclei (Arm B primary)	+agonal +pH axis	47.0
+sz_effect	pooled HBCC_main+MSSM_main+NSW (inverse variance)	SNAP total			-0.2435	-0.4066	-0.0804	610	age+sex+PMI+log nuclei (Arm B primary)	base	226.0
+sz_effect	pooled HBCC_main+MSSM_main+NSW (inverse variance)	SNAP total			-0.1034	-0.239	0.0322	610	age+sex+PMI+log nuclei (Arm B primary)	+agonal	226.0
+sz_effect	pooled HBCC_main+MSSM_main+NSW (inverse variance)	SNAP total			-0.244	-0.4081	-0.08	610	age+sex+PMI+log nuclei (Arm B primary)	+pH axis	226.0
+sz_effect	pooled HBCC_main+MSSM_main+NSW (inverse variance)	SNAP total			-0.1257	-0.2613	0.0099	610	age+sex+PMI+log nuclei (Arm B primary)	+agonal +pH axis	226.0
+sz_effect	HBCC_main	SNAP-a			-0.1247	-0.4951	0.2458	144	age+sex+PMI+log nuclei (Arm B primary)	base	51.0
+sz_effect	HBCC_main	SNAP-a			0.0293	-0.3474	0.4059	144	age+sex+PMI+log nuclei (Arm B primary)	+agonal	51.0
+sz_effect	HBCC_main	SNAP-a			-0.0812	-0.4121	0.2497	144	age+sex+PMI+log nuclei (Arm B primary)	+pH axis	51.0
+sz_effect	HBCC_main	SNAP-a			0.0291	-0.3103	0.3686	144	age+sex+PMI+log nuclei (Arm B primary)	+agonal +pH axis	51.0
+sz_effect	MSSM_main	SNAP-a			-0.1674	-0.3864	0.0516	377	age+sex+PMI+log nuclei (Arm B primary)	base	122.0
+sz_effect	MSSM_main	SNAP-a			-0.1879	-0.3897	0.0139	377	age+sex+PMI+log nuclei (Arm B primary)	+agonal	122.0
+sz_effect	MSSM_main	SNAP-a			-0.0817	-0.2886	0.1251	377	age+sex+PMI+log nuclei (Arm B primary)	+pH axis	122.0
+sz_effect	MSSM_main	SNAP-a			-0.1117	-0.3042	0.0808	377	age+sex+PMI+log nuclei (Arm B primary)	+agonal +pH axis	122.0
+sz_effect	NSW	SNAP-a			0.0794	-0.3811	0.5399	76	age+sex+PMI+log nuclei (Arm B primary)	base	43.0
+sz_effect	NSW	SNAP-a			0.1502	-0.3392	0.6397	76	age+sex+PMI+log nuclei (Arm B primary)	+agonal	43.0
+sz_effect	NSW	SNAP-a			-0.1006	-0.473	0.2719	76	age+sex+PMI+log nuclei (Arm B primary)	+pH axis	43.0
+sz_effect	NSW	SNAP-a			0.0584	-0.3158	0.4325	76	age+sex+PMI+log nuclei (Arm B primary)	+agonal +pH axis	43.0
+sz_effect	CMC	SNAP-a			-0.1561	-0.6182	0.306	89	age+sex+PMI+log nuclei (Arm B primary)	base	41.0
+sz_effect	CMC	SNAP-a			-0.1462	-0.5846	0.2922	89	age+sex+PMI+log nuclei (Arm B primary)	+agonal	41.0
+sz_effect	CMC	SNAP-a			-0.1715	-0.6163	0.2732	89	age+sex+PMI+log nuclei (Arm B primary)	+pH axis	41.0
+sz_effect	CMC	SNAP-a			-0.1638	-0.5696	0.242	89	age+sex+PMI+log nuclei (Arm B primary)	+agonal +pH axis	41.0
+sz_effect	pooled HBCC_main+MSSM_main+NSW (inverse variance)	SNAP-a			-0.1217	-0.295	0.0516	597	age+sex+PMI+log nuclei (Arm B primary)	base	216.0
+sz_effect	pooled HBCC_main+MSSM_main+NSW (inverse variance)	SNAP-a			-0.1045	-0.2707	0.0617	597	age+sex+PMI+log nuclei (Arm B primary)	+agonal	216.0
+sz_effect	pooled HBCC_main+MSSM_main+NSW (inverse variance)	SNAP-a			-0.0851	-0.2427	0.0724	597	age+sex+PMI+log nuclei (Arm B primary)	+pH axis	216.0
+sz_effect	pooled HBCC_main+MSSM_main+NSW (inverse variance)	SNAP-a			-0.054	-0.2058	0.0977	597	age+sex+PMI+log nuclei (Arm B primary)	+agonal +pH axis	216.0
+sz_effect	HBCC_main	SNAP-n			-0.6647	-0.9569	-0.3725	148	age+sex+PMI+log nuclei (Arm B primary)	base	55.0
+sz_effect	HBCC_main	SNAP-n			-0.5114	-0.802	-0.2207	148	age+sex+PMI+log nuclei (Arm B primary)	+agonal	55.0
+sz_effect	HBCC_main	SNAP-n			-0.6804	-0.9637	-0.397	148	age+sex+PMI+log nuclei (Arm B primary)	+pH axis	55.0
+sz_effect	HBCC_main	SNAP-n			-0.514	-0.7916	-0.2364	148	age+sex+PMI+log nuclei (Arm B primary)	+agonal +pH axis	55.0
+sz_effect	MSSM_main	SNAP-n			0.0409	-0.1681	0.2498	376	age+sex+PMI+log nuclei (Arm B primary)	base	124.0
+sz_effect	MSSM_main	SNAP-n			0.0434	-0.1293	0.2161	376	age+sex+PMI+log nuclei (Arm B primary)	+agonal	124.0
+sz_effect	MSSM_main	SNAP-n			-0.0033	-0.2099	0.2034	376	age+sex+PMI+log nuclei (Arm B primary)	+pH axis	124.0
+sz_effect	MSSM_main	SNAP-n			-0.0213	-0.1851	0.1425	376	age+sex+PMI+log nuclei (Arm B primary)	+agonal +pH axis	124.0
+sz_effect	NSW	SNAP-n			-0.4438	-0.8571	-0.0305	76	age+sex+PMI+log nuclei (Arm B primary)	base	43.0
+sz_effect	NSW	SNAP-n			-0.0011	-0.3069	0.3047	76	age+sex+PMI+log nuclei (Arm B primary)	+agonal	43.0
+sz_effect	NSW	SNAP-n			-0.3031	-0.6604	0.0541	76	age+sex+PMI+log nuclei (Arm B primary)	+pH axis	43.0
+sz_effect	NSW	SNAP-n			0.0462	-0.214	0.3064	76	age+sex+PMI+log nuclei (Arm B primary)	+agonal +pH axis	43.0
+sz_effect	CMC	SNAP-n			-0.1586	-0.5697	0.2524	100	age+sex+PMI+log nuclei (Arm B primary)	base	47.0
+sz_effect	CMC	SNAP-n			-0.1387	-0.5155	0.2382	100	age+sex+PMI+log nuclei (Arm B primary)	+agonal	47.0
+sz_effect	CMC	SNAP-n			-0.1906	-0.5666	0.1854	100	age+sex+PMI+log nuclei (Arm B primary)	+pH axis	47.0
+sz_effect	CMC	SNAP-n			-0.1693	-0.517	0.1784	100	age+sex+PMI+log nuclei (Arm B primary)	+agonal +pH axis	47.0
+sz_effect	pooled HBCC_main+MSSM_main+NSW (inverse variance)	SNAP-n			-0.2356	-0.3917	-0.0795	600	age+sex+PMI+log nuclei (Arm B primary)	base	222.0
+sz_effect	pooled HBCC_main+MSSM_main+NSW (inverse variance)	SNAP-n			-0.0827	-0.2153	0.0499	600	age+sex+PMI+log nuclei (Arm B primary)	+agonal	222.0
+sz_effect	pooled HBCC_main+MSSM_main+NSW (inverse variance)	SNAP-n			-0.2516	-0.4018	-0.1015	600	age+sex+PMI+log nuclei (Arm B primary)	+pH axis	222.0
+sz_effect	pooled HBCC_main+MSSM_main+NSW (inverse variance)	SNAP-n			-0.1042	-0.2273	0.0189	600	age+sex+PMI+log nuclei (Arm B primary)	+agonal +pH axis	222.0

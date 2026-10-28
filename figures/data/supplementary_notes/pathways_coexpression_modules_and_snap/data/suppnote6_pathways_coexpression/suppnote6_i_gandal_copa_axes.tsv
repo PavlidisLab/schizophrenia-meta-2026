@@ -1,0 +1,19 @@
+# figure: suppnote6_pathways_coexpression panel i
+# script: analyses/figure_exports/export_suppnote1.py, run 2026-10-18
+# population: core-80 base: 80 studies, 72 contributing lists (recurrence.py scenario 'published, brain', study tier); Shao 2008 PMID 18191109 out; panels h and i read the module tables and the pH and agonal axes only (no recurrent set, no list set)
+# input: analyses/coexpression_axes_2026-10-08/module_axes_summary.tsv sha256 84dc2cadf1b3
+# input: analyses/coexpression_axes_2026-10-08/gandal_modules_axes.tsv sha256 12dee9d7a851
+# input: analyses/coexpression_axes_2026-10-08/copa_modules_axes.tsv sha256 3edd71504214
+# Gandal 2018 Table S5: 34 modules, Spearman across modules of the module's disease t against its mean axis value; CoPA (Kang and Oldham 2026 Table S14): Mann-Whitney of module mean axis, lower versus higher in schizophrenia
+# pH axis v2
+set	comparison	axis	n_or_medians	rho	p
+Gandal modules	SCZ	mean_pH_Z	34	-0.066	0.709
+Gandal modules	SCZ	mean_agonal_t	34	0.363	0.0351
+Gandal modules	BD	mean_pH_Z	34	0.248	0.158
+Gandal modules	BD	mean_agonal_t	34	-0.059	0.738
+Gandal modules	ASD	mean_pH_Z	34	-0.364	0.0343
+Gandal modules	ASD	mean_agonal_t	34	0.536	0.00107
+CoPA modules	lower in SCZ (n=62) vs higher in SCZ (n=7)	mean_pH_Z	2.586 vs 1.806		0.387
+CoPA modules	lower in SCZ (n=62) vs higher in SCZ (n=7)	mean_agonal_t	-0.103 vs -0.714		0.438
+CoPA genes	direction (lower = -1) vs gene axis value	pH Z	35486	-0.079	
+CoPA genes	direction (lower = -1) vs gene axis value	agonal t	35125	0.008	

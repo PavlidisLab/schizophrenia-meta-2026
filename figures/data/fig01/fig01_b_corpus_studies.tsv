@@ -1,0 +1,681 @@
+# figure: fig01 panel b
+# script: regen/scripts/regen_fig01.py (logic of export_fig01_core80.py fig1_b) + regen/scripts/finalize_fig01.py, run 2026-10-19
+# input: regen/lineage_overlay.json = live corpus/lineage.json sha256 6d83238cd38a (800 nodes) with the 7 corpus_exclusions of 2026-10-12 put back as category 2 and Mauney 2015 (26585218) added, both as in <analysis repo>/corpus/lineage.json sha256 a96d5f4b4e18 (the live checkout lacks them)
+# rows with source label 'Added Oct 2026 (rescreen)': from the lineage; in_primary_population = no for these rows; technology_json / array_generation / in_h2_reporting_table are blank / no for these rows (no primary list, no h2 row)
+# input: corpus/lineage.json sha256 4f919a83fea3
+# input: analyses/technology.json sha256 81e4dd12be23
+# input: analyses/h2/h2_studies.tsv sha256 b895d8033c06
+# input: analyses/recurrence_units.tsv sha256 a877c86cff92
+# input: analyses/primary_lists.json sha256 44fb07b1d2e5
+# input: analyses/universes.json sha256 25a477fc64ae
+# one row per study node of corpus/lineage.json that carries a tech_tier (the corpus; 641 nodes in all, the rest are cited sources with no tech_tier); era_2016 old = year <= 2015, era_2020 old = year <= 2019 (the h2 splits)
+# bank = lineage 'lane' (cohort/bank row), bank_label its description, bank_multi = lineage 'banks' list for studies spanning banks; technology = lineage tech_tier; technology_json / array_generation = analyses/technology.json where the study has a primary list
+# n_total / n_cases / n_controls as in the lineage node (blank = not recorded there); in_primary_population = the study key is one of the 72 units of recurrence.scenario_selection('published, brain')
+# input (N fill): nfill/lineage_patched.json sha256 353dea4ad8f0 (live corpus/lineage.json sha256 d3e0813360c3 rebuilt in scratch with the N fill; coverage, title, year, label, authors of 62 older nodes restored from the previous lineage.json)
+# input (panel move): corpus/lineage.json sha256 71b465fa61c8 (Mauney repo working tree, branch mauney-integrated-2026-10-12, category 2 + corpus_exclusion set on 22008100, 23382797, 23542694, 35995342); 669 reference: HEAD fd038872 lineage.json sha256 353dea4ad8f0
+study_id	pmid	label	year	era_2016	era_2020	relation	modality	tissue	tissue_short	brain_class	bank	bank_label	bank_multi	technology	technology_json	array_generation	n_total	n_cases	n_controls	in_primary_population	in_h2_reporting_table	times_cited
+3987001	3987001	Harrington 1985	1985	old	old	primary	proteomics	other	Peripheral: CSF		periph	Blood, LCL, fibroblast, other		proteomics						no	no	25
+1372064	1372064	Perrett 1992	1992	old	old	primary	DE	brain	Brain: frontal cortex	neocortex	brain_other	Other brain samples		unknown			20			no	yes	5
+7766531	7766531	Mulcrone 1995	1995	old	old	primary		brain	Brain: frontal cortex	neocortex	brain_other	Other brain samples		other			13	8	5	no	no	
+8897462	8897462	Whatley 1996	1996	old	old	primary		brain	Brain: frontal cortex	neocortex	brain_other	Other brain samples		other						no	no	
+10208449	10208449	Edgar 1999	1999	old	old	primary	proteomics	brain	Brain: hippocampus	other region	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)		proteomics	proteomics		14	7	7	no	no	64
+10822341	10822341	Johnston-Wilson 2000	2000	old	old	primary	proteomics	brain	Brain: frontal cortex	neocortex	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		proteomics	proteomics		47	24	23	no	no	395
+11086983	11086983	Mirnics 2000	2000	old	old	primary	pathway	brain	Brain: DLPFC	neocortex	pitt	University of Pittsburgh Brain Tissue Donation Program (Conte Center, CCNMD)		array_early			12	6	6	no	no	643
+11296301	11296301	Hakak 2001	2001	old	old	primary	DE	brain	Brain: DLPFC	neocortex	mssm	Mount Sinai / JJ Peters VA Medical Center NIH Brain and Tissue Repository (MSSM)		array_early	microarray	early	24	12	12	yes	yes	910
+11343633	11343633	Johnston-Wilson 2001	2001	old	old	primary		brain	Brain: hippocampus	other region	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		other			5	1	4	no	no	
+15018814	15018814	Kuromitsu 2001	2001	old	old	primary	DE	brain	Brain: frontal pole	neocortex	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		array_early	microarray	early	46			yes	yes	61
+11326297	11326297	Mirnics 2001	2001	old	old	single-gene follow-up	DE	brain	Brain: DLPFC, visual cortex	neocortex	pitt	University of Pittsburgh Brain Tissue Donation Program (Conte Center, CCNMD)		array_early			12	6	6	no	no	319
+12090816	12090816	Hemby 2002	2002	old	old	primary	DE	brain	Brain: entorhinal, neurons	other region	brain_other	Other brain samples		array_early			8	4	4	no	yes	148
+11923437	11923437	Middleton 2002	2002	old	old	data reuse	pathway	brain	Brain: DLPFC	neocortex	pitt	University of Pittsburgh Brain Tissue Donation Program (Conte Center, CCNMD)		array_early			20	10	10	no	no	330
+12462404	12462404	Pongrac 2002	2002	old	old	data reuse		brain	Brain: DLPFC	neocortex	pitt	University of Pittsburgh Brain Tissue Donation Program (Conte Center, CCNMD)		array_early						no	no	
+12872291	12872291	Chung 2003	2003	old	old	primary	DE	brain	Brain: hippocampus	other region	brain_other	Other brain samples		array_early			4	2	2	no	yes	46
+13678875	13678875	Tkachev 2003	2003	old	old	primary	DE	brain	Brain: DLPFC	neocortex	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		array_early			30	15	15	no	yes	729
+15334603	15334603	Aston 2004	2004	old	old	primary	DE	brain	Brain: temporal cortex	neocortex	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		array_early	microarray	early	26	12	14	yes	yes	211
+14743183	14743183	Iwamoto 2004	2004	old	old	primary	DE	brain	Brain: PFC	neocortex	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		array_early	microarray	early	28	13	15	no	yes	275
+14993118	14993118	Konradi 2004	2004	old	old	primary	DE	brain	Brain: hippocampus	other region	harvard	Harvard Brain Tissue Resource Center (HBTRC), McLean Hospital		array_early			18	8	10	no	yes	371
+15098003	15098003	Prabakaran 2004	2004	old	old	primary	DE	brain	Brain: DLPFC	neocortex	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		array_early			92	48	44	no	yes	797
+15542704	15542704	Sugai 2004	2004	old	old	primary	pathway	brain	Brain: PFC	neocortex	brain_other	Other brain samples		array_early			12	6	6	no	no	86
+16038679	16038679	Altar 2005	2005	old	old	primary	DE	brain	Brain: hippocampus, neurons	other region	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		array_early	microarray	early	46	22	24	yes	yes	251
+16223876	16223876	Glatt 2005	2005	old	old	primary	DE	mixed	Brain + periphery: DLPFC		harvard	Harvard Brain Tissue Resource Center (HBTRC), McLean Hospital		array_early	microarray	early	46	19	27	no	no	248
+15563509	15563509	Iwamoto 2005	2005	old	old	primary	DE	brain	Brain: PFC	neocortex	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		array_early	microarray	early	69	35	34	no	yes	382
+15923110	15923110	Katsel 2005	2005	old	old	primary	DE	brain	Brain: hippocampus, striatum	neocortex and other	mssm	Mount Sinai / JJ Peters VA Medical Center NIH Brain and Tissue Repository (MSSM)		array_whole			39	21	18	no	yes	106
+16139990	16139990	Katsel 2005	2005	old	old	data reuse	pathway	brain	Brain: hippocampus, striatum	neocortex and other	mssm	Mount Sinai / JJ Peters VA Medical Center NIH Brain and Tissue Repository (MSSM)		array_whole			26	13	13	no	no	176
+15892139	15892139	Middleton 2005	2005	old	old	primary	DE	blood	Blood: leukocytes		periph	Blood, LCL, fibroblast, other		array_early	microarray	early	66	33	33	no	yes	79
+15726117	15726117	Middleton 2005	2005	old	old	data reuse	DE	brain	Brain: DLPFC	neocortex	pitt	University of Pittsburgh Brain Tissue Donation Program (Conte Center, CCNMD)		array_early			20	10	10	no	no	61
+15645418	15645418	Tsuang 2005	2005	old	old	primary	DE	blood	Blood: whole blood		periph	Blood, LCL, fibroblast, other		mixed			30	20	10	no	yes	164
+15920292	15920292	Zvara 2005	2005	old	old	primary	DE	blood	Blood: lymphocytes		periph	Blood, LCL, fibroblast, other		array_early	microarray	early	23	13	10	no	yes	56
+16637010	16637010	Beasley 2006	2006	old	old	primary	proteomics	brain	Brain: ACC	neocortex	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		proteomics	proteomics		30	15	15	no	no	240
+16288314	16288314	Benes 2006	2006	old	old	data reuse	DE	brain	Brain: hippocampus	other region	harvard	Harvard Brain Tissue Resource Center (HBTRC), McLean Hospital		array_early			18	8	10	no	no	143
+17027696	17027696	Benes 2006	2006	old	old	data reuse		brain	Brain: hippocampus	other region	brain_other	Other brain samples		array_early						no	no	
+16414245	16414245	Bowden 2006	2006	old	old	primary	DE	blood	Blood: lymphocytes		periph	Blood, LCL, fibroblast, other		array_early	microarray	early	28	14	14	no	yes	83
+16491132	16491132	Clark 2006	2006	old	old	primary	proteomics	brain	Brain: ACC	neocortex	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)		proteomics	proteomics		20	10	10	no	no	126
+17012699	17012699	Haroutunian 2006	2006	old	old	primary	DE	brain	Brain: hippocampus, striatum	neocortex and other	mssm	Mount Sinai / JJ Peters VA Medical Center NIH Brain and Tissue Repository (MSSM)		array_whole			30	16	14	no	no	73
+17090210	17090210	Huang 2006	2006	old	old	primary	proteomics	other	Peripheral: CSF		periph	Blood, LCL, fibroblast, other		proteomics	proteomics		134			no	no	133
+16406496	16406496	McCurdy 2006	2006	old	old	primary	DE	other	Peripheral: olfactory		periph	Blood, LCL, fibroblast, other		array_whole	microarray	whole	12	7	5	no	yes	100
+16624532	16624532	Mei 2006	2006	old	old	primary	proteomics	brain	Brain: DLPFC	neocortex	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		proteomics			69	34	35	no	no	16
+16843448	16843448	Mexal 2006	2006	old	old	primary		brain	Brain: hippocampus	other region	brain_other	Other brain samples		array_early			34	17	17	no	no	
+16549361	16549361	Novikova 2006	2006	old	old	primary	proteomics	brain	Brain: DLPFC	neocortex	harvard	Harvard Brain Tissue Resource Center (HBTRC), McLean Hospital		proteomics	proteomics				20	no	no	66
+16604350	16604350	Vawter 2006	2006	old	old	primary	DE	lcl	LCL: DLPFC		periph	Blood, LCL, fibroblast, other		array_early	microarray	early	10	5	5	no	yes	27
+16236523	16236523	Weidenhofer 2006	2006	old	old	primary	DE	brain	Brain: amygdala	other region	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)		array_whole	microarray	whole	14	7	7	yes	yes	49
+17553960	17553960	Benes 2007	2007	old	old	primary		brain	Brain: hippocampus	other region	harvard	Harvard Brain Tissue Resource Center (HBTRC), McLean Hospital		array_early			14	7	7	no	no	
+21136665	21136665	Clark 2007	2007	old	old	primary	proteomics	brain	Brain: ACC, white matter	neocortex and other	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)		proteomics	proteomics		20	10	10	no	no	31
+17668069	17668069	Craddock 2007	2007	old	old	primary	DE	blood	Blood		periph	Blood, LCL, fibroblast, other		array_whole			12	6	6	no	yes	76
+17464717	17464717	Dean 2007	2007	old	old	primary	DE	brain	Brain: DLPFC	neocortex	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)		other	other		20	10	10	no	yes	67
+17291370	17291370	Haroutunian 2007	2007	old	old	meta-analysis / combined	DE	brain	Brain: DLPFC, frontal pole, temporal cortex, entorhinal…	neocortex and other	meta	Meta-analyses and combined analyses		array_whole					13	no	no	71
+17997842	17997842	Kim 2007	2007	old	old	reanalysis of public data	no SZ vs control	brain	Brain: PFC	neocortex	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		array_early			56			no	no	90
+17203958	17203958	Prabakaran 2007	2007	old	old	primary		other	Peripheral		periph	Blood, LCL, fibroblast, other		proteomics			30	15	15	no	no	
+17822540	17822540	Saetre 2007	2007	old	old	primary	DE	brain	Brain: frontal cortex	neocortex	brain_other	Other brain samples	brain_other;harvard;stanley	array_early	microarray	early	110	55	55	yes	yes	220
+21136626	21136626	Sivagnanasundaram 2007	2007	old	old	primary	proteomics	brain	Brain	unclassified	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)		proteomics	proteomics		20	10	10	no	no	62
+19104056	19104056	Benes 2008	2008	old	old	primary		brain	Brain: hippocampus	other region	harvard	Harvard Brain Tissue Resource Center (HBTRC), McLean Hospital		array_early			14	7	7	no	no	
+18184693	18184693	Beveridge 2008	2008	old	old	primary	DE	brain	Brain: temporal cortex	neocortex	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)		array_noncoding	microarray	noncoding	14	7	7	no	yes	260
+18445270	18445270	Bowden 2008	2008	old	old	primary	DE	brain	Brain: temporal cortex	neocortex	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)		array_whole	microarray	whole	14	7	7	yes	yes	61
+18992145	18992145	Choi 2008	2008	old	old	meta-analysis / combined	DE	brain	Brain: DLPFC, frontal cortex	neocortex	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		mixed	microarray	mixed	163	81	82	no	no	42
+18771015	18771015	Garbett 2008	2008	old	old	primary	DE	brain	Brain: PFC	neocortex	pitt	University of Pittsburgh Brain Tissue Donation Program (Conte Center, CCNMD)		array_whole	microarray	whole	18	12	6	yes	yes	26
+19088852	19088852	Harris 2008	2008	old	old	primary	DE	brain	Brain: DLPFC, neurons	neocortex	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		array_whole	microarray	whole	24	12	12	no	yes	90
+18081029	18081029	Kakiuchi 2008	2008	old	old	primary	DE	lcl	LCL		periph	Blood, LCL, fibroblast, other		array_early	microarray	early	4	2	2	no	yes	23
+18322470	18322470	Katsel 2008	2008	old	old	primary	DE	brain	Brain: ACC	neocortex	mssm	Mount Sinai / JJ Peters VA Medical Center NIH Brain and Tissue Repository (MSSM)		array_whole			35	16	19	no	yes	77
+18681948	18681948	Khaitovich 2008	2008	old	old	meta-analysis / combined	pathway	brain	Brain: DLPFC	neocortex	meta	Meta-analyses and combined analyses		array_unstated						no	no	71
+18545665	18545665	Matigian 2008	2008	old	old	primary	DE	lcl	LCL: fibroblasts		periph	Blood, LCL, fibroblast, other		array_early			30	16	14	no	yes	38
+18985160	18985160	Mudge 2008	2008	old	old	primary	DE	brain	Brain: cerebellum	other region	brain_other	Other brain samples		rnaseq	rnaseq		20	14	6	yes	yes	102
+18778695	18778695	Narayan 2008	2008	old	old	primary	DE	brain	Brain: PFC	neocortex	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)		array_whole	microarray	whole	55	26	29	yes	yes	168
+17938637	17938637	Pennington 2008	2008	old	old	primary	proteomics	brain	Brain: DLPFC	neocortex	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		proteomics	proteomics		64	34	30	no	no	175
+19003868	19003868	Pennington 2008	2008	old	old	primary	proteomics	brain	Brain: insula	neocortex	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		proteomics	proteomics		25	12	13	no	no	57
+18191109	18191109	Shao 2008	2008	old	old	primary	DE	brain	Brain: DLPFC	neocortex	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		array_early	microarray	early	61	32	29	no	yes	153
+18504422	18504422	Smalla 2008	2008	old	old	primary	proteomics	brain	Brain: DLPFC	neocortex	brain_other	Other brain samples		proteomics	proteomics		25	10	15	no	no	42
+18992130	18992130	Struyf 2008	2008	old	old	reanalysis of public data	gene selection	brain	Brain: DLPFC, frontal cortex	neocortex	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		unknown			227	115	112	no	no	26
+18068248	18068248	Tochigi 2008	2008	old	old	data reuse		brain	Brain: frontal pole	neocortex	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		array_unstated			28	13	15	no	no	
+18226501	18226501	Yanagi 2008	2008	old	old	primary	DE	brain	Brain: PFC	neocortex	brain_other	Other brain samples		array_early	microarray	early	22	11	11	no	yes	29
+18268500	18268500	Behan 2009	2009	old	old	primary	proteomics	brain	Brain: DLPFC	neocortex	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		proteomics	proteomics		20	10	10	no	no	137
+19564623	19564623	Benes 2009	2009	old	old	data reuse		brain	Brain: hippocampus	other region	harvard	Harvard Brain Tissue Resource Center (HBTRC), McLean Hospital		array_early			14	7	7	no	no	
+19834500	19834500	Chu 2009	2009	old	old	primary	DE	brain	Brain: DLPFC, thalamus, neurons	neocortex and other	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		array_whole	microarray	whole	23	11	12	yes	yes	44
+19562803	19562803	English 2009	2009	old	old	primary	proteomics	brain	Brain: DLPFC, white matter	neocortex and other	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		proteomics	proteomics		70	35	35	no	no	125
+21532980	21532980	Glatt 2009	2009	old	old	primary	other statistic	blood	Blood: PBMC		periph	Blood, LCL, fibroblast, other		array_whole			21	13	8	no	no	38
+19358997	19358997	Kuzman 2009	2009	old	old	primary	DE	blood	Blood: whole blood		periph	Blood, LCL, fibroblast, other		array_whole	microarray	whole	64	32	32	no	yes	47
+19772658	19772658	Martin 2009	2009	old	old	primary	other statistic	lcl	LCL		periph	Blood, LCL, fibroblast, other		array_whole	microarray	whole	10	5	5	no	yes	20
+19034380	19034380	Martins-de-Souza 2009	2009	old	old	primary	proteomics	brain	Brain	neocortex	brain_other	Other brain samples		proteomics	proteomics		9	5	4	no	no	111
+19110265	19110265	Martins-de-Souza 2009	2009	old	old	primary	proteomics	brain	Brain: DLPFC	neocortex	brain_other	Other brain samples		proteomics	proteomics		16	9	7	no	no	145
+19165527	19165527	Martins-de-Souza 2009	2009	old	old	primary		brain	Brain: DLPFC	neocortex	brain_other	Other brain samples		proteomics			16	9	7	no	no	
+19405953	19405953	Martins-de-Souza 2009	2009	old	old	primary	proteomics	brain	Brain: temporal cortex	neocortex	brain_other	Other brain samples		proteomics	proteomics		15			no	no	110
+19255580	19255580	Maycox 2009	2009	old	old	primary	DE	brain	Brain: DLPFC, frontal pole	neocortex	brain_other	Other brain samples	brain_other;harvard	mixed	microarray	mixed	51	28	23	yes	yes	174
+19296286	19296286	Nesvaderani 2009	2009	old	old	primary	proteomics	brain	Brain: hippocampus	other region	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)		proteomics	proteomics		18	9	9	no	no	33
+19245676	19245676	Tang 2009	2009	old	old	reanalysis of public data	DE	brain	Brain: DLPFC	neocortex	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)		mixed	microarray	mixed	59	29	30	no	no	36
+20034564	20034564	Arion 2010	2010	old	old	primary	DE	brain	Brain: PFC	neocortex	pitt	University of Pittsburgh Brain Tissue Donation Program (Conte Center, CCNMD)		array_whole	microarray	whole	16	8	8	yes	yes	42
+19582768	19582768	Bousman 2010	2010	old	old	data reuse	DE	blood	Blood: PBMC		periph	Blood, LCL, fibroblast, other		array_whole	microarray	whole	21	13	8	no	yes	95
+20633309	20633309	Drexhage 2010	2010	old	old	primary		blood	Blood		periph	Blood, LCL, fibroblast, other		array_early			59	27	32	no	no	
+19011233	19011233	Ishiguro 2010	2010	old	old	single-gene follow-up	DE	brain	Brain: DLPFC	neocortex	brain_other	Other brain samples		array_whole			20	10	10	no	yes	20
+18762803	18762803	Kim 2010	2010	old	old	reanalysis of public data	no SZ vs control	brain	Brain: PFC, frontal cortex	neocortex	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		array_early			29	14	15	no	no	97
+20091422	20091422	Maccarrone 2010	2010	old	old	primary		brain	Brain: DLPFC	neocortex	brain_other	Other brain samples		proteomics						no	no	
+20446881	20446881	Martins-De-Souza 2010	2010	old	old	primary	proteomics	other	Peripheral: CSF		periph	Blood, LCL, fibroblast, other		proteomics	proteomics		10			no	no	42
+20381070	20381070	Martins-de-Souza 2010	2010	old	old	primary	proteomics	brain	Brain: ACC	neocortex	brain_other	Other brain samples		proteomics	proteomics		19	11	8	no	no	65
+20471030	20471030	Martins-de-Souza 2010	2010	old	old	primary	proteomics	brain	Brain: thalamus	other region	brain_other	Other brain samples		proteomics	proteomics		19	11	8	no	no	137
+20699480	20699480	Matigian 2010	2010	old	old	primary	DE	other	Peripheral: olfactory		periph	Blood, LCL, fibroblast, other		array_whole	microarray	whole	23			no	yes	152
+20083392	20083392	Takahashi 2010	2010	old	old	primary	DE	blood	Blood: whole blood		periph	Blood, LCL, fibroblast, other		array_whole	microarray	whole	101	52	49	no	yes	52
+20197298	20197298	Torkamani 2010	2010	old	old	meta-analysis / combined	coexpression	brain	Brain: DLPFC	neocortex	meta	Meta-analyses and combined analyses		mixed			101	47	54	no	no	111
+19916557	19916557	Wang 2010	2010	old	old	primary	pathway	other	Peripheral: fibroblasts		periph	Blood, LCL, fibroblast, other		array_whole			24	12	12	no	no	59
+21538462	21538462	Barnes 2011	2011	old	old	primary	DE	brain	Brain: frontal pole, temporal cortex	neocortex	brain_other	Other brain samples		array_whole	microarray	whole	42	23	19	yes	yes	78
+21490598	21490598	Brennand 2011	2011	old	old	primary	DE	ipsc	iPSC: neurons, astrocytes		ipsc	iPSC-derived cells and organoids		array_whole	microarray	whole	8	4	4	no	yes	1090
+20921955	20921955	Chan 2011	2011	old	old	primary	proteomics	brain	Brain: DLPFC	neocortex	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		proteomics	proteomics		30	20	10	no	no	62
+21451437	21451437	Evgrafov 2011	2011	old	old	primary	gene selection	other	Peripheral: olfactory, NPCs		periph	Blood, LCL, fibroblast, other		array_whole	microarray	whole	16			no	yes	18
+21536977	21536977	Föcking 2011	2011	old	old	primary	proteomics	brain	Brain: hippocampus	other region	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		proteomics	proteomics		40	20	20	no	no	82
+21922000	21922000	Gaiteri 2011	2011	old	old	meta-analysis / combined	coexpression	brain	Brain: DLPFC, frontal pole, temporal cortex, cerebellum	neocortex and other	meta	Meta-analyses and combined analyses		array_early						no	no	31
+21972136	21972136	Glatt 2011	2011	old	old	primary	DE	blood	Blood: PBMC		periph	Blood, LCL, fibroblast, other		array_whole			19	7	12	no	yes	47
+20585325	20585325	Herberth 2011	2011	old	old	primary	proteomics	blood	Blood: PBMC		periph	Blood, LCL, fibroblast, other		proteomics	proteomics		18			no	no	77
+20695885	20695885	Horesh 2011	2011	old	old	primary	DE	brain	Brain: frontal pole, temporal cortex, hippocampus, striatum	neocortex and other	mssm	Mount Sinai / JJ Peters VA Medical Center NIH Brain and Tissue Repository (MSSM)		array_whole	microarray	whole	50	28	22	no	no	42
+21738743	21738743	Lai 2011	2011	old	old	primary	DE	blood	Blood: PBMC, leukocytes		periph	Blood, LCL, fibroblast, other		array_noncoding	microarray	noncoding	60	30	30	no	yes	185
+22373040	22373040	Lee 2011	2011	old	old	reanalysis of public data	DE	brain	Brain: frontal pole	neocortex	brain_other	Other brain samples		array_early	microarray	early	27	13	14	no	no	46
+21431547	21431547	Radu 2011	2011	old	old	data reuse		brain	Brain: temporal cortex	neocortex	mssm	Mount Sinai / JJ Peters VA Medical Center NIH Brain and Tissue Repository (MSSM)		array_unstated						no	no	
+21111402	21111402	Santarelli 2011	2011	old	old	primary	DE	brain	Brain: DLPFC	neocortex	brain_other	Other brain samples		array_noncoding	microarray	noncoding	74	37	37	no	yes	221
+21091092	21091092	Schmitt 2011	2011	old	old	primary	DE	brain	Brain: temporal cortex	neocortex	brain_other	Other brain samples		array_whole	microarray	whole	20	10	10	yes	yes	55
+22545112	22545112	Catts 2012	2012	old	old	meta-analysis / combined	pathway	brain	Brain: DLPFC, OFC, cerebellum	neocortex and other	meta	Meta-analyses and combined analyses		array_unstated						no	no	39
+23062752	23062752	Cohen 2012	2012	old	old	primary	other statistic	brain	Brain: frontal pole, striatum	neocortex and other	harvard	Harvard Brain Tissue Resource Center (HBTRC), McLean Hospital		array_whole			8	4	4	no	no	28
+22936973	22936973	Gandal 2012	2012	old	old	reanalysis of public data	cell composition	brain	Brain: DLPFC	neocortex	brain_other	Other brain samples		array_unstated						no	no	60
+21727898	21727898	Gardiner 2012	2012	old	old	primary	DE	blood	Blood: PBMC		periph	Blood, LCL, fibroblast, other		array_noncoding	microarray	noncoding	188	112	76	no	yes	198
+22832957	22832957	Kim 2012	2012	old	old	data reuse		brain	Brain: frontal cortex, temporal cortex, hippocampus, thalamus…	neocortex and other	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		array_early			70	35	35	no	no	
+23984221	23984221	Lakhan 2012	2012	old	old	primary		brain	Brain: frontal pole	neocortex	brain_other	Other brain samples		proteomics			70	35	35	no	no	
+22503327	22503327	Lee 2012	2012	old	old	primary	DE	blood	Blood: whole blood		periph	Blood, LCL, fibroblast, other		array_whole	microarray	whole	52	26	26	no	yes	16
+22633013	22633013	Maschietto 2012	2012	old	old	primary		blood	Blood		periph	Blood, LCL, fibroblast, other		array_early			38	28	10	no	no	
+22315408	22315408	Miller 2012	2012	old	old	primary	DE	brain	Brain: DLPFC	neocortex	brain_other	Other brain samples		array_noncoding	microarray	noncoding	69	35	34	no	yes	257
+22954356	22954356	Pérez-Santiago 2012	2012	old	old	meta-analysis / combined	DE	brain	Brain: DLPFC	neocortex	meta	Meta-analyses and combined analyses		array_early	microarray	early	225	107	118	no	no	63
+22161352	22161352	Qian 2012	2012	old	old	meta-analysis / combined	DE	brain	Brain: DLPFC	neocortex	meta	Meta-analyses and combined analyses		array_early	microarray	early	91	46	45	no	no	4
+22868662	22868662	Roussos 2012	2012	old	old	primary	gene selection	brain	Brain: DLPFC, temporal cortex	neocortex	mssm	Mount Sinai / JJ Peters VA Medical Center NIH Brain and Tissue Repository (MSSM)		array_whole			40			no	no	87
+22441714	22441714	Schmitt 2012	2012	old	old	primary	DE	brain	Brain: temporal cortex	neocortex	brain_other	Other brain samples		array_whole	microarray	whole	20	10	10	no	no	30
+22397921	22397921	Tang 2012	2012	old	old	single-gene follow-up	DE	brain	Brain: DLPFC	neocortex	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)		array_whole	microarray	whole	59	29	30	no	no	36
+22558445	22558445	Wu 2012	2012	old	old	primary	DE	brain	Brain: temporal cortex	neocortex	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)		rnaseq	rnaseq		18	9	9	yes	yes	85
+23282246	23282246	Xu 2012	2012	old	old	primary	DE	blood	Blood: lymphocytes		periph	Blood, LCL, fibroblast, other		rnaseq	rnaseq		6	3	3	no	yes	59
+22761806	22761806	de Jong 2012	2012	old	old	primary	DE	blood	Blood: whole blood		periph	Blood, LCL, fibroblast, other		array_whole	microarray	whole	202	106	96	no	yes	121
+22433715	22433715	de Jong 2012	2012	old	old	reanalysis of public data	DE	blood	Blood: whole blood		periph	Blood, LCL, fibroblast, other		array_whole			202	106	96	no	yes	52
+22393424	22393424	van Beveren 2012	2012	old	old	primary	DE	blood	Blood: PBMC		periph	Blood, LCL, fibroblast, other		array_whole	microarray	whole	70	41	29	no	yes	59
+23147385	23147385	Chen 2013	2013	old	old	reanalysis of public data	DE	brain	Brain: PFC, parietal, cerebellum	neocortex and other	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		array_whole	microarray	whole	91	45	46	yes	yes	137
+22869038	22869038	Fillman 2013	2013	old	old	primary	DE	brain	Brain: DLPFC	neocortex	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)		rnaseq	rnaseq		40	20	20	yes	yes	489
+23218666	23218666	Gardiner 2013	2013	old	old	primary	DE	blood	Blood: PBMC		periph	Blood, LCL, fibroblast, other		array_whole	microarray	whole	194	114	80	no	yes	89
+24169640	24169640	Hwang 2013	2013	old	old	primary	DE	brain	Brain: hippocampus	other region	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		rnaseq	rnaseq		29	14	15	yes	yes	163
+22925834	22925834	Kano 2013	2013	old	old	primary		other	Peripheral: olfactory		periph	Blood, LCL, fibroblast, other		array_unstated			8	4	4	no	no	
+22248022	22248022	Krishnamurthy 2013	2013	old	old	primary	proteomics	brain	Brain	unclassified	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		proteomics	proteomics		29	14	15	no	no	31
+23442539	23442539	Kumarasinghe 2013	2013	old	old	primary	DE	blood	Blood: PBMC		periph	Blood, LCL, fibroblast, other		array_whole	microarray	whole	21	10	11	no	yes	61
+23554570	23554570	Logotheti 2013	2013	old	old	meta-analysis / combined	DE	brain	Brain: DLPFC, frontal pole, temporal cortex	neocortex	meta	Meta-analyses and combined analyses		mixed	microarray	mixed	137	69	68	no	no	18
+22212594	22212594	Mistry 2013	2013	old	old	meta-analysis / combined	DE	brain	Brain: DLPFC, frontal pole	neocortex	meta	Meta-analyses and combined analyses		mixed	microarray	mixed	306	153	153	no	no	80
+24070017	24070017	Mistry 2013	2013	old	old	meta-analysis / combined	coexpression	brain	Brain: DLPFC, frontal pole	neocortex	meta	Meta-analyses and combined analyses		mixed			306	153	153	no	no	49
+23132271	23132271	Roussos 2013	2013	old	old	data reuse		brain	Brain: DLPFC, temporal cortex, visual cortex	neocortex	mssm	Mount Sinai / JJ Peters VA Medical Center NIH Brain and Tissue Repository (MSSM)		array_whole			46	22	24	no	no	
+23164819	23164819	Sainz 2013	2013	old	old	primary	DE	blood	Blood		periph	Blood, LCL, fibroblast, other		rnaseq	rnaseq		76	36	40	no	yes	52
+23904455	23904455	Sanders 2013	2013	old	old	primary	DE	lcl	LCL		periph	Blood, LCL, fibroblast, other		array_whole	microarray	whole	714	268	446	no	yes	69
+23942359	23942359	Wesseling 2013	2013	old	old	primary		brain	Brain: DLPFC	neocortex	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		proteomics			20	10	10	no	no	
+25243493	25243493	Chen 2014	2014	old	old	meta-analysis / combined	DE	brain	Brain: DLPFC, cerebellum	neocortex and other	meta	Meta-analyses and combined analyses		mixed			82	39	43	no	no	80
+25522406	25522406	Crespo-Facorro 2014	2014	old	old	data reuse	no SZ vs control	blood	Blood		periph	Blood, LCL, fibroblast, other		rnaseq					0	no	no	35
+24928144	24928144	Filiou 2014	2014	old	old	reanalysis of public data	other statistic	brain	Brain: DLPFC	neocortex	brain_other	Other brain samples		mixed			59	30	29	no	no	50
+25609598	25609598	Gottschalk 2014	2014	old	old	primary		brain	Brain: frontal pole	neocortex	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		proteomics			46	23	23	no	no	
+24886351	24886351	Hagihara 2014	2014	old	old	meta-analysis / combined	DE	brain	Brain: DLPFC, frontal pole, temporal cortex	neocortex	meta	Meta-analyses and combined analyses		mixed			207	107	100	no	no	47
+25522158	25522158	Huang 2014	2014	old	old	reanalysis of public data	DE	brain	Brain: temporal cortex	neocortex	brain_other	Other brain samples		rnaseq	rnaseq		18	9	9	no	no	27
+24586201	24586201	Ibáñez 2014	2014	old	old	meta-analysis / combined		brain	Brain	unclassified	meta	Meta-analyses and combined analyses		mixed						no	no	
+24594777	24594777	Kohen 2014	2014	old	old	primary	DE	brain	Brain: hippocampus	other region	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		rnaseq	rnaseq		46	17	29	yes	yes	61
+23958956	23958956	Luo 2014	2014	old	old	meta-analysis / combined	not expression	unknown	Not stated: frontal pole		periph	Blood, LCL, fibroblast, other		unknown						no	no	
+24507884	24507884	Oldmeadow 2014	2014	old	old	primary	other statistic	mixed	Brain + periphery: DLPFC, lymphocytes		aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)		array_whole	microarray	whole	196	116	80	no	yes	33
+24702465	24702465	Pietersen 2014	2014	old	old	primary	DE	brain	Brain: temporal cortex, neurons	neocortex	harvard	Harvard Brain Tissue Resource Center (HBTRC), McLean Hospital		array_whole	microarray	whole	18	9	9	yes	yes	75
+24628518	24628518	Pietersen 2014	2014	old	old	primary	DE	brain	Brain: temporal cortex, neurons	neocortex	harvard	Harvard Brain Tissue Resource Center (HBTRC), McLean Hospital		array_whole	microarray	whole	16	8	8	yes	yes	57
+24287731	24287731	Sellmann 2014	2014	old	old	primary	DE	brain	Brain: temporal cortex	neocortex	brain_other	Other brain samples		array_whole	microarray	whole	20	10	10	no	no	16
+24475125	24475125	Smalheiser 2014	2014	old	old	primary	DE	brain	Brain: frontal pole	neocortex	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		other	other		40			no	yes	161
+24504531	24504531	Steiner 2014	2014	old	old	primary		brain	Brain	unclassified	brain_other	Other brain samples		proteomics			16	9	7	no	no	
+24776767	24776767	Xiao 2014	2014	old	old	primary	DE	brain	Brain: DLPFC	neocortex	brain_other	Other brain samples		rnaseq	rnaseq		11			yes	yes	64
+25560755	25560755	Arion 2015	2015	old	old	primary	DE	brain	Brain: DLPFC, neurons	neocortex	pitt	University of Pittsburgh Brain Tissue Donation Program (Conte Center, CCNMD)		array_whole	microarray	whole	72	36	36	yes	yes	157
+26285829	26285829	Bergon 2015	2015	old	old	meta-analysis / combined	DE	mixed	Brain + periphery: DLPFC, temporal cortex, hippocampus, thalamus…		meta	Meta-analyses and combined analyses		mixed	microarray	mixed	1019	503	516	no	no	55
+24686136	24686136	Brennand 2015	2015	old	old	primary	DE	ipsc	iPSC: NPCs		ipsc	iPSC-derived cells and organoids		array_whole	microarray	whole	8	4	4	no	yes	338
+25658856	25658856	Cattane 2015	2015	old	old	primary	DE	other	Peripheral: fibroblasts		periph	Blood, LCL, fibroblast, other		array_whole	microarray	whole	40	20	20	no	yes	57
+26043779	26043779	Cha 2015	2015	old	old	reanalysis of public data		brain	Brain: entorhinal	other region	brain_other	Other brain samples		array_whole						no	no	
+25793610	25793610	Chen 2015	2015	old	old	meta-analysis / combined	not expression	brain	Brain: DLPFC, frontal pole, temporal cortex	neocortex	meta	Meta-analyses and combined analyses		mixed			390	195	195	no	no	1
+26022996	26022996	Duan 2015	2015	old	old	primary		lcl	LCL		periph	Blood, LCL, fibroblast, other		rnaseq			1347	634	713	no	no	
+25119539	25119539	Durrenberger 2015	2015	old	old	primary	DE	brain	Brain: temporal cortex	neocortex	brain_other	Other brain samples		array_whole	microarray	whole	20	10	10	no	no	109
+26485547	26485547	English 2015	2015	old	old	primary	gene selection	other	Peripheral: olfactory		periph	Blood, LCL, fibroblast, other		proteomics	proteomics		18			no	no	82
+25665552	25665552	Fan 2015	2015	old	old	primary	DE	blood	Blood: PBMC		periph	Blood, LCL, fibroblast, other		array_noncoding	microarray	noncoding	89			no	yes	36
+25048004	25048004	Föcking 2015	2015	old	old	primary	proteomics	brain	Brain: ACC	neocortex	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		proteomics	proteomics		40	20	20	no	no	138
+26243375	26243375	Gilabert-Juan 2015	2015	old	old	primary	pathway	brain	Brain: DLPFC	neocortex	brain_other	Other brain samples		array_whole				6		no	no	34
+25702973	25702973	Hertzberg 2015	2015	old	old	data reuse		brain	Brain: DLPFC, hippocampus, striatum	neocortex and other	mssm	Mount Sinai / JJ Peters VA Medical Center NIH Brain and Tissue Repository (MSSM)		array_early			50	28	22	no	no	
+25981335	25981335	Maschietto 2015	2015	old	old	data reuse	DE	mixed	Brain + periphery: frontal cortex, fibroblasts, NPCs		stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		array_whole	microarray	whole	59	29	30	no	yes	40
+25967042	25967042	Ren 2015	2015	old	old	primary	coexpression	blood	Blood		periph	Blood, LCL, fibroblast, other		array_noncoding			37	19	18	no	no	40
+26232077	26232077	Saia-Cereda 2015	2015	old	old	primary	proteomics	brain	Brain	unclassified	brain_other	Other brain samples		proteomics	proteomics		16			no	no	57
+25459892	25459892	Schmidt 2015	2015	old	old	reanalysis of public data	DE	brain	Brain: frontal pole	neocortex	brain_other	Other brain samples		array_early			28	13	15	no	no	26
+25728835	25728835	Schubert 2015	2015	old	old	primary	proteomics	brain	Brain: hippocampus	other region	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		proteomics	proteomics		17	10	7	no	no	70
+26696568	26696568	Simões 2015	2015	old	old	meta-analysis / combined	coexpression	brain	Brain	unclassified	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		array_unstated			186	89	97	no	no	9
+26484249	26484249	Sun 2015	2015	old	old	primary		blood	Blood		periph	Blood, LCL, fibroblast, other		array_noncoding			30	18	12	no	no	
+25708228	25708228	Topol 2015	2015	old	old	primary	DE	ipsc	iPSC: NPCs		ipsc	iPSC-derived cells and organoids		rnaseq			10	4	6	no	yes	69
+26485546	26485546	Topol 2015	2015	old	old	primary	proteomics	ipsc	iPSC: NPCs		ipsc	iPSC-derived cells and organoids		proteomics			10	4	6	no	no	47
+26183697	26183697	Wei 2015	2015	old	old	primary	DE	blood	Blood: plasma/serum		periph	Blood, LCL, fibroblast, other		other	other		351	164	187	no	yes	79
+25985888	25985888	Yu 2015	2015	old	old	primary	DE	blood	Blood: PBMC		periph	Blood, LCL, fibroblast, other		array_noncoding	microarray	noncoding	235	105	130	no	yes	60
+25429046	25429046	Zhang 2015	2015	old	old	data reuse	DE	blood	Blood: PBMC		periph	Blood, LCL, fibroblast, other		array_noncoding	microarray	not stated	30	15	15	no	yes	32
+26657146	26657146	Zhang 2015	2015	old	old	reanalysis of public data	other statistic	blood	Blood: PBMC		periph	Blood, LCL, fibroblast, other		array_noncoding			60	33	27	no	no	18
+25113377	25113377	Zhao 2015	2015	old	old	primary	DE	brain	Brain: ACC, hippocampus	neocortex and other	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		rnaseq	rnaseq		57	31	26	yes	yes	123
+26462620	26462620	Zhao 2015	2015	old	old	reanalysis of public data		brain	Brain: DLPFC	neocortex	brain_other	Other brain samples		rnaseq			11	5	6	no	no	
+25487697	25487697	de Baumont 2015	2015	old	old	reanalysis of public data	DE	brain	Brain: frontal cortex	neocortex	brain_other	Other brain samples		array_whole	microarray	whole	59	29	30	no	yes	64
+25424713	25424713	van Eijk 2015	2015	old	old	meta-analysis / combined	DE	blood	Blood: whole blood		periph	Blood, LCL, fibroblast, other		array_whole			240	120	120	no	no	47
+27650396	27650396	Chen 2016	2016	new	old	primary	DE	blood	Blood: PBMC		periph	Blood, LCL, fibroblast, other		array_noncoding	microarray	noncoding	6	3	3	no	yes	37
+27512922	27512922	Chen 2016	2016	new	old	primary		blood	Blood		periph	Blood, LCL, fibroblast, other		array_noncoding			6	3	3	no	no	
+27992436	27992436	Corley 2016	2016	new	old	primary		brain	Brain: DLPFC	neocortex	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)		rnaseq			38	19	19	no	no	31
+27335180	27335180	Cox 2016	2016	new	old	data reuse		brain	Brain: frontal pole	neocortex	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		proteomics			46	23	23	no	no	
+27622934	27622934	Darby 2016	2016	new	old	primary	DE	brain	Brain: OFC, hippocampus	neocortex and other	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		rnaseq	rnaseq		95			yes	yes	61
+27219343	27219343	Ellis 2016	2016	new	old	reanalysis of public data	DE	brain	Brain: ACC	neocortex	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		rnaseq	rnaseq		57	31	26	no	no	37
+27668389	27668389	Fromer 2016	2016	new	old	primary	DE	brain	Brain: DLPFC	neocortex	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)		rnaseq	rnaseq		537	258	279	yes	yes	993
+27450777	27450777	Hess 2016	2016	new	old	meta-analysis / combined	DE	mixed	Brain + periphery: PFC		meta	Meta-analyses and combined analyses		mixed	microarray	mixed	893	453	440	no	no	80
+27727244	27727244	Horiuchi 2016	2016	new	old	primary	DE	other	Peripheral: olfactory, neurons		periph	Blood, LCL, fibroblast, other		array_whole	microarray	whole	31	16	15	no	yes	30
+27661005	27661005	Hu 2016	2016	new	old	primary	DE	brain	Brain: DLPFC, ACC, OFC, frontal cortex	neocortex	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		rnaseq	rnaseq		40	22	18	yes	yes	39
+26872421	26872421	Karpiński 2016	2016	new	old	reanalysis of public data		blood	Blood		periph	Blood, LCL, fibroblast, other		array_whole			417	199	218	no	no	
+26077692	26077692	Kim 2016	2016	new	old	meta-analysis / combined	coexpression	brain	Brain: hippocampus	other region	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		rnaseq			30	15	15	no	no	55
+27898074	27898074	Kim 2016	2016	new	old	primary	DE	brain	Brain: choroid plexus	other region	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		rnaseq	rnaseq		93	48	45	yes	yes	61
+26890750	26890750	Li 2016	2016	new	old	data reuse		brain	Brain: parietal, hippocampus	neocortex and other	brain_other	Other brain samples		mixed			478	243	235	no	no	
+28123834	28123834	Mladinov 2016	2016	new	old	primary	DE	brain	Brain: DLPFC	neocortex	brain_other	Other brain samples		array_whole	microarray	whole	12			yes	yes	17
+27236410	27236410	Pinacho 2016	2016	new	old	primary	proteomics	brain	Brain: DLPFC	neocortex	brain_other	Other brain samples		proteomics	proteomics		8	4	4	no	no	28
+26818902	26818902	Qin 2016	2016	new	old	meta-analysis / combined	DE	brain	Brain: DLPFC	neocortex	meta	Meta-analyses and combined analyses		array_whole	microarray	whole	246	122	124	no	no	31
+27732689	27732689	Roussos 2016	2016	new	old	primary	DE	ipsc	iPSC: neurons		ipsc	iPSC-derived cells and organoids		rnaseq	rnaseq		8	4	4	no	yes	41
+27094720	27094720	Saia-Cereda 2016	2016	new	old	primary		brain	Brain	unclassified	brain_other	Other brain samples		proteomics			10	5	5	no	no	
+27117414	27117414	Topol 2016	2016	new	old	data reuse	DE	ipsc	iPSC: neurons, NPCs		ipsc	iPSC-derived cells and organoids		rnaseq	rnaseq		10	4	6	no	yes	98
+26697997	26697997	Wu 2016	2016	new	old	primary	DE	blood	Blood: PBMC		periph	Blood, LCL, fibroblast, other		array_whole	microarray	whole	96	47	49	no	yes	31
+10.1038/srep16767	26733343	Xu 2016	2016	new	old	primary	DE	blood	Blood: PBMC		periph	Blood, LCL, fibroblast, other		array_whole	microarray	whole	30	18	12	no	yes	28
+26609121	26609121	Xu 2016	2016	new	old	meta-analysis / combined	coexpression	mixed	Brain + periphery: parietal		meta	Meta-analyses and combined analyses		mixed			333	175	158	no	no	39
+26710095	26710095	Zheutlin 2016	2016	new	old	primary	gene selection	blood	Blood: PBMC		periph	Blood, LCL, fibroblast, other		array_whole	microarray	whole	245			no	yes	14
+28476208	28476208	Arion 2017	2017	new	old	primary	DE	brain	Brain: DLPFC	neocortex	pitt	University of Pittsburgh Brain Tissue Donation Program (Conte Center, CCNMD)		array_whole	microarray	whole	36	17	19	no	yes	81
+28809853	28809853	Chang 2017	2017	new	old	primary	DE	brain	Brain: amygdala	other region	libd	Lieber Institute for Brain Development (LIBD), BrainSeq Consortium, NIMH Clinical Brain Disorders Branch (CBDB)		rnaseq	rnaseq		46	22	24	yes	yes	57
+28822801	28822801	Gassó 2017	2017	new	old	primary	DE	other	Peripheral: fibroblasts		periph	Blood, LCL, fibroblast, other		array_whole	microarray	whole	14	8	6	no	yes	14
+28214564	28214564	Hirayama-Kurogi 2017	2017	new	old	primary	proteomics	mixed	Brain + periphery: frontal pole, plasma/serum		brain_other	Other brain samples		proteomics	proteomics		20			no	no	41
+10.1038/s41467-017-02330-5	29263384	Hoffman 2017	2017	new	old	primary	DE	ipsc	iPSC: neurons, NPCs		ipsc	iPSC-derived cells and organoids		rnaseq	rnaseq		19	10	9	no	yes	151
+28634288	28634288	Jaffe 2017	2017	new	old	reanalysis of public data	DE	mixed	Brain + periphery: DLPFC, PBMC		libd	Lieber Institute for Brain Development (LIBD), BrainSeq Consortium, NIMH Clinical Brain Disorders Branch (CBDB)		rnaseq			351	155	196	no	no	104
+28732597	28732597	Manchia 2017	2017	new	old	meta-analysis / combined		brain	Brain: neurons	unclassified	meta	Meta-analyses and combined analyses		mixed						no	no	
+28094170	28094170	Narla 2017	2017	new	old	primary	DE	ipsc	iPSC: neurons		ipsc	iPSC-derived cells and organoids		rnaseq	rnaseq		8	4	4	no	yes	46
+27916288	27916288	Ragan 2017	2017	new	old	primary	gene selection	brain	Brain: ACC	neocortex	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)		rnaseq	rnaseq		44			no	yes	23
+28754123	28754123	Ramaker 2017	2017	new	old	primary	DE	brain	Brain: DLPFC, striatum	neocortex and other	pritzker	Pritzker Neuropsychiatric Disorders Research Consortium, UC Irvine Brain Donor Program		rnaseq	rnaseq		48	24	24	yes	yes	185
+27377417	27377417	Saia-Cereda 2017	2017	new	old	meta-analysis / combined		brain	Brain: DLPFC, ACC, hippocampus, thalamus	neocortex and other	meta	Meta-analyses and combined analyses		proteomics						no	no	
+28879200	28879200	Saia-Cereda 2017	2017	new	old	primary		brain	Brain	unclassified	brain_other	Other brain samples		proteomics						no	no	
+28418402	28418402	Sanders 2017	2017	new	old	primary	DE	lcl	LCL		periph	Blood, LCL, fibroblast, other		rnaseq	rnaseq		1189	529	660	no	yes	51
+28560252	28560252	Vitale 2017	2017	new	old	primary		ipsc	iPSC		ipsc	iPSC-derived cells and organoids		array_unstated			8	4	4	no	no	
+27940260	27940260	Voisey 2017	2017	new	old	primary	DE	brain	Brain: DLPFC, frontal pole, frontal cortex	neocortex	brain_other	Other brain samples		rnaseq	rnaseq		45			yes	yes	7
+28736215	28736215	Windrem 2017	2017	new	old	primary	DE	ipsc	iPSC		ipsc	iPSC-derived cells and organoids		rnaseq	rnaseq		7	4	3	no	yes	217
+28280741	28280741	Zhang 2017	2017	new	old	meta-analysis / combined	gene selection	blood	Blood: whole blood		meta	Meta-analyses and combined analyses		mixed			290	152	138	no	no	7
+29081874	29081874	Zhu 2017	2017	new	old	reanalysis of public data	coexpression	brain	Brain: DLPFC	neocortex	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)		rnaseq			537	258	279	no	no	19
+28485405	28485405	Birnbaum 2018	2018	new	old	data reuse	DE	brain	Brain: DLPFC, hippocampus	neocortex and other	libd	Lieber Institute for Brain Development (LIBD), BrainSeq Consortium, NIMH Clinical Brain Disorders Branch (CBDB)		rnaseq	rnaseq		340	144	196	no	no	58
+30545964	30545964	Chen 2018	2018	new	old	primary	coexpression	brain	Brain: PFC, frontal cortex, parietal	neocortex	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		mixed			320	95	225	no	no	87
+30115913	30115913	Duan 2018	2018	new	old	primary	DE	lcl	LCL		periph	Blood, LCL, fibroblast, other		rnaseq	rnaseq		1204	514	690	no	yes	16
+29112193	29112193	Enwright Iii 2018	2018	new	old	primary	DE	brain	Brain: DLPFC, neurons	neocortex	pitt	University of Pittsburgh Brain Tissue Donation Program (Conte Center, CCNMD)		array_whole	microarray	whole	72	36	36	yes	yes	99
+28641886	28641886	Fries 2018	2018	new	old	primary	DE	blood	Blood: PBMC		periph	Blood, LCL, fibroblast, other		array_whole	microarray	whole	72	52	20	no	yes	11
+30545856	30545856	Gandal 2018	2018	new	old	meta-analysis / combined	DE	brain	Brain: temporal cortex	neocortex	meta	Meta-analyses and combined analyses		rnaseq	rnaseq					no	no	1088
+29439242	29439242	Gandal 2018	2018	new	old	meta-analysis / combined	DE	brain	Brain: DLPFC, frontal cortex	neocortex	meta	Meta-analyses and combined analyses		mixed	microarray	mixed		159		no	no	745
+30053206	30053206	Guffanti 2018	2018	new	old	primary	gene selection	brain	Brain: DLPFC	neocortex	brain_other	Other brain samples		rnaseq	rnaseq		19			no	yes	37
+30046039	30046039	Gulyás-Kovács 2018	2018	new	old	reanalysis of public data		brain	Brain: DLPFC	neocortex	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)		rnaseq			525	258	267	no	no	
+30016334	30016334	Hagenauer 2018	2018	new	old	primary	DE	brain	Brain: DLPFC	neocortex	pritzker	Pritzker Neuropsychiatric Disorders Research Consortium, UC Irvine Brain Donor Program		mixed	microarray	mixed	93	22	71	no	no	71
+29942251	29942251	Igolkina 2018	2018	new	old	reanalysis of public data		other	Peripheral		periph	Blood, LCL, fibroblast, other		rnaseq			255	144	111	no	no	20
+30050107	30050107	Jaffe 2018	2018	new	old	primary	DE	brain	Brain: DLPFC	neocortex	libd	Lieber Institute for Brain Development (LIBD), BrainSeq Consortium, NIMH Clinical Brain Disorders Branch (CBDB)		rnaseq	rnaseq		351	155	196	yes	yes	346
+30546022	30546022	Kos 2018	2018	new	old	data reuse		lcl	LCL		periph	Blood, LCL, fibroblast, other		rnaseq			1204	514	690	no	no	
+29391398	29391398	Liu 2018	2018	new	old	primary	DE	brain	Brain: DLPFC, amygdala	neocortex and other	libd	Lieber Institute for Brain Development (LIBD), BrainSeq Consortium, NIMH Clinical Brain Disorders Branch (CBDB)		rnaseq	rnaseq		46	22	24	no	yes	58
+29684772	29684772	Ma 2018	2018	new	old	primary		blood	Blood		periph	Blood, LCL, fibroblast, other		rnaseq			20	10	10	no	no	
+27801890	27801890	Scarr 2018	2018	new	old	primary	DE	brain	Brain: DLPFC	neocortex	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)		array_whole	microarray	whole	45	30	15	yes	yes	55
+29463818	29463818	Scarr 2018	2018	new	old	primary	DE	brain	Brain: DLPFC, frontal pole	neocortex	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)		array_whole	microarray	whole	30	15	15	yes	yes	32
+30077719	30077719	Tian 2018	2018	new	old	primary	DE	brain	Brain: amygdala	other region	libd	Lieber Institute for Brain Development (LIBD), BrainSeq Consortium, NIMH Clinical Brain Disorders Branch (CBDB)		rnaseq	rnaseq		45	21	24	no	no	37
+30177255	30177255	Toker 2018	2018	new	old	meta-analysis / combined	cell composition	brain	Brain	unclassified	meta	Meta-analyses and combined analyses		mixed			673	341	332	no	no	102
+29888231	29888231	Vawter 2018	2018	new	old	primary	DE	blood	Blood: whole blood		periph	Blood, LCL, fibroblast, other		array_whole			90			no	yes	7
+30587991	30587991	Xu 2018	2018	new	old	reanalysis of public data		mixed	Brain + periphery: PFC, PBMC		brain_other	Other brain samples		array_whole			12	6	6	no	no	
+29665782	29665782	de Sena Cortabitarte 2018	2018	new	old	reanalysis of public data	DE	brain	Brain: DLPFC	neocortex	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)		rnaseq			537	258	279	no	no	19
+30468562	30468562	Abdolmaleky 2019	2019	new	old	primary	pathway	brain	Brain: DLPFC	neocortex	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		array_whole	microarray	whole	20	10	10	no	yes	32
+31204709	31204709	Anirudh Chellappa 2019	2019	new	old	meta-analysis / combined		brain	Brain: PFC, hippocampus, striatum	neocortex and other	pitt	University of Pittsburgh Brain Tissue Donation Program (Conte Center, CCNMD)		array_whole						no	no	
+31073119	31073119	Bowen 2019	2019	new	old	reanalysis of public data	DE	brain	Brain: DLPFC	neocortex	pitt	University of Pittsburgh Brain Tissue Donation Program (Conte Center, CCNMD)		array_whole	microarray	whole	690	259	431	no	no	37
+31455887	31455887	Breen 2019	2019	new	old	reanalysis of public data		brain	Brain: DLPFC, ACC	neocortex	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)		rnaseq			540	254	286	no	no	
+31174959	31174959	Collado-Torres 2019	2019	new	old	primary	DE	brain	Brain: DLPFC, hippocampus	neocortex and other	libd	Lieber Institute for Brain Development (LIBD), BrainSeq Consortium, NIMH Clinical Brain Disorders Branch (CBDB)		rnaseq	rnaseq		447	177	270	yes	yes	222
+31535015	31535015	Doostparast Torshizi 2019	2019	new	old	reanalysis of public data	DE	mixed	Brain + periphery: DLPFC, olfactory, NPCs		cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)		rnaseq	rnaseq		3	1	2	no	no	68
+30770930	30770930	Du 2019	2019	new	old	primary	DE	blood	Blood: plasma/serum		periph	Blood, LCL, fibroblast, other		rnaseq	rnaseq		46			no	yes	138
+30645614	30645614	Feltrin 2019	2019	new	old	meta-analysis / combined	coexpression	brain	Brain: DLPFC	neocortex	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		array_early			69	35	34	no	no	19
+30870714	30870714	Geaghan 2019	2019	new	old	primary	DE	blood	Blood: PBMC		periph	Blood, LCL, fibroblast, other		rnaseq	rnaseq		51	36	15	no	yes	18
+31078689	31078689	Gilabert-Juan 2019	2019	new	old	primary	coexpression	mixed	Brain + periphery: PFC		stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		mixed			223	154	69	no	no	7
+30203456	30203456	Godini 2019	2019	new	old	reanalysis of public data	DE	brain	Brain	unclassified	brain_other	Other brain samples		array_whole			20	10	10	no	no	9
+30347265	30347265	González-Peñas 2019	2019	new	old	data reuse		brain	Brain	neocortex	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		rnaseq			57	31	26	no	no	
+31127088	31127088	Guan 2019	2019	new	old	data reuse	pathway	brain	Brain: ACC	neocortex	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		rnaseq					83	no	no	74
+31632033	31632033	Gupta 2019	2019	new	old	primary		other	Peripheral: CSF		periph	Blood, LCL, fibroblast, other		proteomics			22	7	15	no	no	
+29740122	29740122	Hauberg 2019	2019	new	old	reanalysis of public data	DE	brain	Brain: DLPFC	neocortex	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)		rnaseq	rnaseq		537	258	279	no	no	43
+31551426	31551426	Hoffman 2019	2019	new	old	primary	not expression	brain	Brain: DLPFC	neocortex	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)		rnaseq			854	353	501	no	no	222
+31431609	31431609	Hu 2019	2019	new	old	primary	DE	brain	Brain: DLPFC	neocortex	libd	Lieber Institute for Brain Development (LIBD), BrainSeq Consortium, NIMH Clinical Brain Disorders Branch (CBDB)		rnaseq	rnaseq		136	34	102	no	yes	40
+30967896	30967896	Huang 2019	2019	new	old	meta-analysis / combined	DE	mixed	Brain + periphery: DLPFC, fibroblasts		meta	Meta-analyses and combined analyses		mixed			40	20	20	no	no	13
+31540999	31540999	Ishii 2019	2019	new	old	primary	DE	ipsc	iPSC: neurons		ipsc	iPSC-derived cells and organoids		array_whole	microarray	whole	3	1	2	no	yes	59
+31126188	31126188	Jiang 2019	2019	new	old	primary		blood	Blood		periph	Blood, LCL, fibroblast, other		proteomics						no	no	
+30224231	30224231	Kim 2019	2019	new	old	reanalysis of public data	coexpression	brain	Brain: frontal cortex	neocortex	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		mixed			113	62	51	no	no	8
+31920755	31920755	Kumar 2019	2019	new	old	reanalysis of public data	DE	brain	Brain: DLPFC, hippocampus, striatum	neocortex and other	brain_other	Other brain samples		array_whole	microarray	whole				no	no	8
+31123247	31123247	Lanz 2019	2019	new	old	primary	DE	brain	Brain: DLPFC, hippocampus, striatum	neocortex and other	pitt	University of Pittsburgh Brain Tissue Donation Program (Conte Center, CCNMD)		array_whole	microarray	whole	38	19	19	yes	yes	164
+31113746	31113746	Leirer 2019	2019	new	old	primary	DE	blood	Blood: whole blood		periph	Blood, LCL, fibroblast, other		array_whole	microarray	whole	217	68	149	no	yes	39
+30605476	30605476	Li 2019	2019	new	old	data reuse		brain	Brain: ACC, OFC, frontal cortex, hippocampus	neocortex and other	brain_other	Other brain samples		rnaseq						no	no	
+31242417	31242417	Liu 2019	2019	new	old	single-gene follow-up	DE	ipsc	iPSC		ipsc	iPSC-derived cells and organoids		rnaseq	rnaseq				3	no	no	34
+31618642	31618642	Lobentanzer 2019	2019	new	old	meta-analysis / combined	pathway	brain	Brain: DLPFC	neocortex	meta	Meta-analyses and combined analyses		mixed				139		no	no	44
+30786269	30786269	Mahmoudi 2019	2019	new	old	primary	DE	brain	Brain: DLPFC	neocortex	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)		rnaseq	rnaseq		35	17	18	no	yes	66
+31288836	31288836	Mendizabal 2019	2019	new	old	primary	DE	brain	Brain: DLPFC, neurons, oligodendrocytes	neocortex	brain_other	Other brain samples	brain_other;harvard	rnaseq	rnaseq		50	23	27	yes	yes	95
+30675529	30675529	Murano 2019	2019	new	old	meta-analysis / combined	cell composition	brain	Brain: PFC, neurons	neocortex	meta	Meta-analyses and combined analyses		array_whole						no	no	21
+31055969	31055969	Nucifora 2019	2019	new	old	primary	proteomics	brain	Brain: DLPFC, frontal pole, temporal cortex	neocortex	pitt	University of Pittsburgh Brain Tissue Donation Program (Conte Center, CCNMD)		proteomics	proteomics		38	19	19	no	no	43
+31053723	31053723	Pai 2019	2019	new	old	primary	DE	brain	Brain: PFC	neocortex	brain_other	Other brain samples	brain_other;harvard;pitt	rnaseq	rnaseq		34	17	17	no	yes	63
+30576541	30576541	Piras 2019	2019	new	old	meta-analysis / combined	DE	other	Peripheral: fibroblasts		meta	Meta-analyses and combined analyses		array_whole	microarray	whole	128	71	57	no	no	24
+30976116	30976116	Sabunciyan 2019	2019	new	old	meta-analysis / combined	DE	brain	Brain: DLPFC	neocortex	meta	Meta-analyses and combined analyses		rnaseq	rnaseq		610	306	304	no	no	19
+32006661	32006661	Santarelli 2019	2019	new	old	primary	DE	brain	Brain: DLPFC	neocortex	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)		array_whole	microarray	whole	74			yes	yes	25
+30718903	30718903	Sellgren 2019	2019	new	old	primary	not expression	ipsc	iPSC: monocytes, fibroblasts, microglia		ipsc	iPSC-derived cells and organoids		array_whole			32			no	no	666
+31399567	31399567	Seney 2019	2019	new	old	reanalysis of public data	DE	brain	Brain: DLPFC	neocortex	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)		rnaseq	rnaseq		92	46	46	no	no	96
+30664768	30664768	Shao 2019	2019	new	old	primary	DE	ipsc	iPSC: neurons		ipsc	iPSC-derived cells and organoids		rnaseq	rnaseq		8	4	4	no	yes	92
+30442475	30442475	Smith 2019	2019	new	old	meta-analysis / combined	pathway	brain	Brain: PFC, temporal cortex, parietal	neocortex	meta	Meta-analyses and combined analyses		array_unstated						no	no	16
+31477693	31477693	Tiihonen 2019	2019	new	old	primary	DE	ipsc	iPSC: neurons		ipsc	iPSC-derived cells and organoids		rnaseq			16	5	11	no	yes	49
+31481672	31481672	Xie 2019	2019	new	old	reanalysis of public data		brain	Brain: PFC, parietal	neocortex	brain_other	Other brain samples		mixed						no	no	
+31350824	31350824	Yang 2019	2019	new	old	meta-analysis / combined	gene selection	brain	Brain: DLPFC, frontal pole	neocortex	meta	Meta-analyses and combined analyses		array_whole			397	195	202	no	no	30
+30781971	30781971	Yao 2019	2019	new	old	primary	DE	blood	Blood: PBMC		periph	Blood, LCL, fibroblast, other		array_noncoding	microarray	noncoding	18	9	9	no	yes	28
+31011151	31011151	Yoshimi 2019	2019	new	old	primary	proteomics	lcl	LCL		periph	Blood, LCL, fibroblast, other		proteomics	proteomics		60			no	no	7
+30670680	30670680	Zhu 2019	2019	new	old	meta-analysis / combined	coexpression	brain	Brain: DLPFC, frontal pole	neocortex	meta	Meta-analyses and combined analyses		mixed						no	no	12
+32109548	32109548	Akkouh 2020	2020	new	new	primary	DE	ipsc	iPSC: astrocytes		ipsc	iPSC-derived cells and organoids		rnaseq	rnaseq		6			no	yes	52
+10.1155/2020/5176834	32566292	Bakshi 2020	2020	new	new	primary	DE	brain	Brain: thalamus, neurons	other region	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		array_whole	microarray	whole	22	11	11	yes	yes	4
+31728928	31728928	Bristot 2020	2020	new	new	reanalysis of public data	gene selection	brain	Brain: DLPFC	neocortex	brain_other	Other brain samples		mixed						no	no	7
+31695175	31695175	Chagnon 2020	2020	new	new	primary	DE	lcl	LCL: lymphocytes		periph	Blood, LCL, fibroblast, other		array_whole			143			no	yes	3
+32232389	32232389	Chen 2020	2020	new	new	meta-analysis / combined	coexpression	mixed	Brain + periphery		meta	Meta-analyses and combined analyses		array_unstated						no	no	7
+32392557	32392557	Coppens 2020	2020	new	new	primary		blood	Blood: PBMC		periph	Blood, LCL, fibroblast, other		proteomics			10	4	6	no	no	
+31959813	31959813	Etemadikhah 2020	2020	new	new	primary	DE	other	Peripheral: fibroblasts		periph	Blood, LCL, fibroblast, other		rnaseq	rnaseq		16	9	7	no	yes	23
+32143829	32143829	Evgrafov 2020	2020	new	new	primary	DE	ipsc	iPSC: olfactory, NPCs		periph	Blood, LCL, fibroblast, other		rnaseq			255	144	111	no	yes	32
+32376074	32376074	Frajman 2020	2020	new	new	meta-analysis / combined	DE	brain	Brain: temporal cortex	neocortex	meta	Meta-analyses and combined analyses		mixed			62	33	29	no	no	15
+33115248	33115248	Glausier 2020	2020	new	new	reanalysis of public data	DE	brain	Brain: DLPFC	neocortex	pitt	University of Pittsburgh Brain Tissue Donation Program (Conte Center, CCNMD)		mixed			139	57	82	no	no	45
+33246498	33246498	Hathy 2020	2020	new	new	primary	gene selection	ipsc	iPSC: NPCs		ipsc	iPSC-derived cells and organoids		rnaseq	rnaseq		3			no	yes	24
+31391148	31391148	Hess 2020	2020	new	new	meta-analysis / combined	no SZ vs control	blood	Blood: whole blood, monocytes, leukocytes		meta	Meta-analyses and combined analyses		mixed			499	258	241	no	no	26
+32245959	32245959	Huang 2020	2020	new	new	reanalysis of public data	other statistic	brain	Brain: DLPFC	neocortex	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)		rnaseq			426	212	214	no	no	27
+32203495	32203495	Jaffe 2020	2020	new	new	primary	DE	brain	Brain: hippocampus	other region	libd	Lieber Institute for Brain Development (LIBD), BrainSeq Consortium, NIMH Clinical Brain Disorders Branch (CBDB)		rnaseq	rnaseq		168	75	93	yes	yes	104
+32631700	32631700	Karpiński 2020	2020	new	new	reanalysis of public data		brain	Brain: DLPFC, ACC, temporal cortex, parietal…	neocortex and other	brain_other	Other brain samples		mixed						no	no	
+10.1001/jamapsychiatry.2020.0196	32186681	Kathuria 2020	2020	new	new	primary	DE	ipsc	iPSC: organoids		ipsc	iPSC-derived cells and organoids		rnaseq	rnaseq		16	8	8	no	yes	139
+33184259	33184259	Maas 2020	2020	new	new	primary	DE	brain	Brain: DLPFC	neocortex	brain_other	Other brain samples		rnaseq	rnaseq		8			yes	yes	23
+32980779	32980779	Moolamalla 2020	2020	new	new	reanalysis of public data		brain	Brain: ACC, PFC, parietal	neocortex	brain_other	Other brain samples		mixed						no	no	
+33143549	33143549	Naujock 2020	2020	new	new	primary	DE	ipsc	iPSC: neurons		ipsc	iPSC-derived cells and organoids		rnaseq						no	yes	19
+31019265	31019265	Ni 2020	2020	new	new	primary	DE	ipsc	iPSC: fibroblasts, neurons		ipsc	iPSC-derived cells and organoids		rnaseq	rnaseq		30	15	15	no	yes	70
+32712449	32712449	Ohayon 2020	2020	new	new	meta-analysis / combined	DE	brain	Brain: PFC	neocortex	meta	Meta-analyses and combined analyses		mixed			79	41	38	no	no	26
+32798663	32798663	Ormel 2020	2020	new	new	primary		other	Peripheral: monocytes		periph	Blood, LCL, fibroblast, other		rnaseq			40	20	20	no	no	
+31855458	31855458	Pala 2020	2020	new	new	reanalysis of public data	gene selection	blood	Blood		periph	Blood, LCL, fibroblast, other		array_noncoding			30	15	15	no	no	9
+31797637	31797637	Pershad 2020	2020	new	new	reanalysis of public data		mixed	Brain + periphery		periph	Blood, LCL, fibroblast, other		mixed			452	145	307	no	no	
+32260267	32260267	Petralia 2020	2020	new	new	meta-analysis / combined	DE	mixed	Brain + periphery: DLPFC, PBMC		meta	Meta-analyses and combined analyses		mixed			162	80	82	no	no	17
+31425724	31425724	Qi 2020	2020	new	new	reanalysis of public data		brain	Brain: DLPFC, hippocampus	neocortex and other	brain_other	Other brain samples		array_whole						no	no	
+30478419	30478419	Radulescu 2020	2020	new	new	data reuse	coexpression	brain	Brain: DLPFC	neocortex	libd	Lieber Institute for Brain Development (LIBD), BrainSeq Consortium, NIMH Clinical Brain Disorders Branch (CBDB)		rnaseq			164	74	90	no	no	99
+30532020	30532020	Reay 2020	2020	new	new	data reuse		mixed	Brain + periphery: DLPFC		cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)		rnaseq						no	no	
+sc:10.1101/2020.07.29.227355		Reiner 2020 (bioRxiv)	2020	new	new	single-cell / single-nucleus	DE	brain	Brain: DLPFC	neocortex	brain_other	Other brain samples	brain_other;aus	single_cell			30	14	16	no	no	3
+32389842	32389842	Reis-de-Oliveira 2020	2020	new	new	primary		brain	Brain: striatum, cerebellum	neocortex and other	brain_other	Other brain samples		proteomics						no	no	
+32827700	32827700	Rey 2020	2020	new	new	meta-analysis / combined	DE	mixed	Brain + periphery: DLPFC, frontal pole, temporal cortex, parietal…		meta	Meta-analyses and combined analyses		array_whole			378	196	182	no	no	32
+33149139	33149139	Rey 2020	2020	new	new	meta-analysis / combined	DE	mixed	Brain + periphery: DLPFC, frontal pole, temporal cortex, parietal…		meta	Meta-analyses and combined analyses		array_whole						no	no	17
+38377413	38377413	Sahu 2020	2020	new	new	reanalysis of public data	DE	brain	Brain: ACC	neocortex	brain_other	Other brain samples		rnaseq	rnaseq		48	24	24	no	no	14
+sc:32764691	32764691	Sawada 2020	2020	new	new	single-cell / single-nucleus	DE	ipsc	iPSC: organoids		ipsc	iPSC-derived cells and organoids		single_cell			2	1	1	no	yes	103
+31811028	31811028	Torretta 2020	2020	new	new	reanalysis of public data	DE	brain	Brain: DLPFC	neocortex	libd	Lieber Institute for Brain Development (LIBD), BrainSeq Consortium, NIMH Clinical Brain Disorders Branch (CBDB)		rnaseq			351	155	196	no	no	23
+32545830	32545830	Torrico 2020	2020	new	new	meta-analysis / combined	DE	brain	Brain	unclassified	meta	Meta-analyses and combined analyses		mixed						no	no	18
+31563948	31563948	Vawter 2020	2020	new	new	meta-analysis / combined	DE	brain	Brain: DLPFC	neocortex	meta	Meta-analyses and combined analyses		rnaseq			901	357	544	no	no	19
+32639965	32639965	Vidal-Domènech 2020	2020	new	new	primary	proteomics	brain	Brain: cerebellum	other region	brain_other	Other brain samples		proteomics	proteomics		8	4	4	no	no	17
+31157371	31157371	Yang 2020	2020	new	new	meta-analysis / combined	gene selection	brain	Brain: DLPFC, frontal pole	neocortex	meta	Meta-analyses and combined analyses		mixed	microarray	mixed	338	166	172	no	no	180
+33087039	33087039	Yazdani 2020	2020	new	new	reanalysis of public data	gene selection	brain	Brain: DLPFC	neocortex	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)		rnaseq			415	209	206	no	no	23
+33000265	33000265	You 2020	2020	new	new	primary	DE	blood	Blood: PBMC		periph	Blood, LCL, fibroblast, other		rnaseq	rnaseq		6			no	yes	18
+32038049	32038049	Zhang 2020	2020	new	new	primary	DE	blood	Blood: leukocytes		periph	Blood, LCL, fibroblast, other		rnaseq	rnaseq		100			no	yes	28
+31988434	31988434	Zimmerman 2020	2020	new	new	primary	DE	brain	Brain: OFC, frontal cortex	neocortex	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		array_unstated	microarray	not stated	68			no	yes	150
+33571628	33571628	Akkouh 2021	2021	new	new	primary	DE	ipsc	iPSC: astrocytes		ipsc	iPSC-derived cells and organoids		rnaseq	rnaseq		6			no	yes	28
+10.1038/s41386-020-00949-5	33558674	Akula 2021	2021	new	new	primary	DE	brain	Brain: sgACC	neocortex	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)		rnaseq	rnaseq		99	44	55	yes	yes	43
+33508383	33508383	Alhassen 2021	2021	new	new	meta-analysis / combined	DE	brain	Brain: PFC	neocortex	meta	Meta-analyses and combined analyses		rnaseq			1495	559	936	no	no	50
+33668817	33668817	Barrera-Conde 2021	2021	new	new	primary		other	Peripheral: olfactory		periph	Blood, LCL, fibroblast, other		proteomics			20	10	10	no	no	
+33442739	33442739	Enwright 2021	2021	new	new	reanalysis of public data	DE	brain	Brain: DLPFC, ACC	neocortex	pitt	University of Pittsburgh Brain Tissue Donation Program (Conte Center, CCNMD)		rnaseq			139	57	82	no	no	24
+33585819	33585819	Gatta 2021	2021	new	new	primary	DE	mixed	Brain + periphery: frontal pole, lymphocytes		periph	Blood, LCL, fibroblast, other		rnaseq	rnaseq		37	19	18	no	yes	14
+34004381	34004381	Gebicke-Haerter 2021	2021	new	new	primary	DE	brain	Brain: ACC	neocortex	brain_other	Other brain samples		array_whole	microarray	whole	20			yes	yes	9
+33141894	33141894	Hertzberg 2021	2021	new	new	primary		brain	Brain: temporal cortex	neocortex	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		rnaseq			29	14	15	no	no	
+33673722	33673722	Hertzberg 2021	2021	new	new	meta-analysis / combined	DE	mixed	Brain + periphery: cerebellum		meta	Meta-analyses and combined analyses		mixed			147	69	78	no	no	4
+34957416	34957416	Jin 2021	2021	new	new	reanalysis of public data	DE	brain	Brain: DLPFC	neocortex	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)		rnaseq	rnaseq		527	250	277	no	no	19
+33958802	33958802	Kim 2021	2021	new	new	meta-analysis / combined	coexpression	brain	Brain: frontal cortex	neocortex	meta	Meta-analyses and combined analyses		rnaseq			1426	531	895	no	no	63
+33708146	33708146	Li 2021	2021	new	new	meta-analysis / combined	DE	blood	Blood: whole blood		meta	Meta-analyses and combined analyses		mixed			202	106	96	no	no	17
+32632206	32632206	Lin 2021	2021	new	new	meta-analysis / combined	other statistic	brain	Brain: frontal cortex	neocortex	meta	Meta-analyses and combined analyses		mixed			592	257	335	no	no	46
+33079616	33079616	Lin 2021	2021	new	new	reanalysis of public data	coexpression	brain	Brain: DLPFC	neocortex	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)		array_whole			419	178	241	no	no	11
+34440415	34440415	Lindholm Carlström 2021	2021	new	new	primary	DE	brain	Brain: DLPFC, OFC	neocortex	harvard	Harvard Brain Tissue Resource Center (HBTRC), McLean Hospital		rnaseq	rnaseq		112	68	44	yes	yes	18
+33805976	33805976	Liu 2021	2021	new	new	reanalysis of public data	DE	brain	Brain: DLPFC	neocortex	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)		rnaseq	rnaseq		254	120	134	no	no	7
+33782720	33782720	Mahmoudi 2021	2021	new	new	primary	DE	blood	Blood: PBMC		periph	Blood, LCL, fibroblast, other		rnaseq	rnaseq		59			no	yes	32
+32602824	32602824	Martins-de-Souza 2021	2021	new	new	primary		brain	Brain: DLPFC	neocortex	brain_other	Other brain samples		proteomics			20	12	8	no	no	
+34054608	34054608	Melbourne 2021	2021	new	new	primary	DE	blood	Blood: monocytes		periph	Blood, LCL, fibroblast, other		rnaseq			28	14	14	no	yes	6
+34831190	34831190	Monfared 2021	2021	new	new	reanalysis of public data	DE	brain	Brain: PFC	neocortex	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)		rnaseq			1495	559	936	no	no	23
+33723208	33723208	Moni 2021	2021	new	new	reanalysis of public data		blood	Blood		periph	Blood, LCL, fibroblast, other		array_whole			71	43	28	no	no	
+32015466	32015466	Ni 2021	2021	new	new	primary	DE	blood	Blood		periph	Blood, LCL, fibroblast, other		rnaseq	rnaseq		32			no	yes	46
+33070392	33070392	Pantazopoulos 2021	2021	new	new	data reuse		brain	Brain: ACC, hippocampus, amygdala	neocortex and other	mssm	Mount Sinai / JJ Peters VA Medical Center NIH Brain and Tissue Repository (MSSM)		array_whole			50	28	22	no	no	
+33677214	33677214	Park 2021	2021	new	new	primary	DE	ipsc	iPSC: neurons		ipsc	iPSC-derived cells and organoids		rnaseq	rnaseq		10	5	5	no	yes	9
+33910328	33910328	Peng 2021	2021	new	new	primary	coexpression	blood	Blood: whole blood		periph	Blood, LCL, fibroblast, other		rnaseq			16			no	no	5
+32152472	32152472	Perez 2021	2021	new	new	primary	DE	brain	Brain: hippocampus	other region	brain_other	Other brain samples		rnaseq	rnaseq		26	13	13	yes	yes	34
+34439592	34439592	Petralia 2021	2021	new	new	reanalysis of public data	DE	brain	Brain: DLPFC, hippocampus, striatum	neocortex and other	mssm	Mount Sinai / JJ Peters VA Medical Center NIH Brain and Tissue Repository (MSSM)		array_whole			34	15	19	no	no	6
+33562405	33562405	Rahman 2021	2021	new	new	meta-analysis / combined	DE	blood	Blood: PBMC		meta	Meta-analyses and combined analyses		mixed	microarray	mixed	93	56	37	no	no	18
+34969953	34969953	Sabaie 2021	2021	new	new	reanalysis of public data	DE	other	Peripheral: olfactory		periph	Blood, LCL, fibroblast, other		array_whole	microarray	whole	36	19	17	no	no	19
+34952924	34952924	Sabaie 2021	2021	new	new	meta-analysis / combined	DE	mixed	Brain + periphery: DLPFC, hippocampus, striatum		meta	Meta-analyses and combined analyses		array_whole	microarray	whole				no	no	28
+33623108	33623108	Smail 2021	2021	new	new	reanalysis of public data		brain	Brain: DLPFC, neurons	neocortex	brain_other	Other brain samples		mixed						no	no	
+34630179	34630179	Song 2021	2021	new	new	primary	DE	blood	Blood: PBMC		periph	Blood, LCL, fibroblast, other		rnaseq	rnaseq		30	10	20	no	yes	23
+33288841	33288841	Stertz 2021	2021	new	new	primary	DE	ipsc	iPSC: neurons, NPCs		ipsc	iPSC-derived cells and organoids		rnaseq	rnaseq		13	7	6	no	yes	37
+34716291	34716291	Szabo 2021	2021	new	new	primary	DE	ipsc	iPSC: astrocytes		ipsc	iPSC-derived cells and organoids		rnaseq	rnaseq		10			no	yes	32
+33173197	33173197	Takayanagi 2021	2021	new	new	data reuse		other	Peripheral: olfactory, neurons		periph	Blood, LCL, fibroblast, other		rnaseq			30	15	15	no	no	
+32542700	32542700	Tan 2021	2021	new	new	primary	DE	blood	Blood: plasma/serum		periph	Blood, LCL, fibroblast, other		rnaseq	rnaseq		10	5	5	no	yes	39
+34010744	34010744	Tiihonen 2021	2021	new	new	reanalysis of public data	DE	ipsc	iPSC: neurons		ipsc	iPSC-derived cells and organoids		rnaseq	rnaseq		32	16	16	no	yes	22
+34576238	34576238	Vera-Montecinos 2021	2021	new	new	primary	proteomics	brain	Brain: cerebellum	other region	brain_other	Other brain samples		proteomics	proteomics		26			no	no	10
+34059796	34059796	Weissleder 2021	2021	new	new	primary	DE	brain	Brain: SEZ	other region	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		rnaseq	rnaseq		39	19	20	yes	yes	46
+34272489	34272489	Wu 2021	2021	new	new	primary	DE	brain	Brain: ACC, neurons	neocortex	mssm	Mount Sinai / JJ Peters VA Medical Center NIH Brain and Tissue Repository (MSSM)		array_whole	microarray	whole	24	12	12	yes	yes	20
+33946654	33946654	Yu 2021	2021	new	new	meta-analysis / combined	coexpression	brain	Brain: DLPFC, ACC, frontal pole, hippocampus	neocortex and other	meta	Meta-analyses and combined analyses		mixed						no	no	7
+33751207	33751207	Zuccoli 2021	2021	new	new	primary		brain	Brain: hippocampus	other region	brain_other	Other brain samples		proteomics			20	12	8	no	no	
+34357384	34357384	Akkouh 2022	2022	new	new	primary	DE	ipsc	iPSC: astrocytes		ipsc	iPSC-derived cells and organoids		rnaseq	rnaseq		7			no	yes	29
+35354897	35354897	Alnafisah 2022	2022	new	new	primary	proteomics	brain	Brain: DLPFC	neocortex	brain_other	Other brain samples		proteomics	proteomics		20	10	10	no	no	9
+36114277	36114277	Alver 2022	2022	new	new	reanalysis of public data		brain	Brain: DLPFC	neocortex	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)		rnaseq			272	98	174	no	no	
+32197935	32197935	Asah 2022	2022	new	new	reanalysis of public data	DE	brain	Brain: DLPFC, ACC, neurons	neocortex	brain_other	Other brain samples		rnaseq			40	21	19	no	no	2
+36385761	36385761	Balasubramanian 2022	2022	new	new	meta-analysis / combined	coexpression	mixed	Brain + periphery: DLPFC, ACC, striatum, lymphocytes		meta	Meta-analyses and combined analyses		rnaseq						no	no	6
+sc:36223459	36223459	Batiuk 2022	2022	new	new	single-cell / single-nucleus	DE	brain	Brain: DLPFC, neurons	neocortex	brain_other	Other brain samples		single_cell	single_cell		23	9	14	yes	yes	124
+36319771	36319771	Benjamin 2022	2022	new	new	primary	DE	brain	Brain: striatum	other region	libd	Lieber Institute for Brain Development (LIBD), BrainSeq Consortium, NIMH Clinical Brain Disorders Branch (CBDB)		rnaseq	rnaseq		393	154	239	yes	yes	69
+36232882	36232882	Cai 2022	2022	new	new	data reuse		brain	Brain: DLPFC, ACC	neocortex	libd	Lieber Institute for Brain Development (LIBD), BrainSeq Consortium, NIMH Clinical Brain Disorders Branch (CBDB)		rnaseq						no	no	
+35898501	35898501	Chen 2022	2022	new	new	primary	gene selection	blood	Blood: whole blood		periph	Blood, LCL, fibroblast, other		rnaseq	rnaseq		239			no	yes	11
+36125368	36125368	Chen 2022	2022	new	new	reanalysis of public data	DE	brain	Brain: neurons	unclassified	brain_other	Other brain samples		rnaseq	rnaseq		31	14	17	no	no	0
+35885983	35885983	Childers 2022	2022	new	new	meta-analysis / combined	DE	brain	Brain: DLPFC	neocortex	meta	Meta-analyses and combined analyses		mixed						no	no	17
+34811713	34811713	Davarinejad 2022	2022	new	new	meta-analysis / combined		brain	Brain: DLPFC	neocortex	meta	Meta-analyses and combined analyses		mixed						no	no	
+35983039	35983039	Du 2022	2022	new	new	meta-analysis / combined	DE	brain	Brain: PFC, hippocampus, striatum	neocortex and other	meta	Meta-analyses and combined analyses		array_whole	microarray	whole	38	19	19	no	no	10
+34937870	34937870	Erady 2022	2022	new	new	data reuse		brain	Brain: DLPFC	neocortex	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		rnaseq			1159	428	731	no	no	
+35459277	35459277	Farrelly 2022	2022	new	new	primary	DE	ipsc	iPSC: neurons		ipsc	iPSC-derived cells and organoids		rnaseq	rnaseq		7	3	4	no	yes	34
+35741729	35741729	Feng 2022	2022	new	new	reanalysis of public data		mixed	Brain + periphery: PFC, hippocampus, striatum, monocytes		brain_other	Other brain samples		array_whole						no	no	
+sc:34728799	34728799	Gao 2022	2022	new	new	single-cell / single-nucleus	cell composition	blood	Blood: PBMC		periph	Blood, LCL, fibroblast, other		single_cell			6	3	3	no	no	13
+35232977	35232977	Guo 2022	2022	new	new	primary		blood	Blood		periph	Blood, LCL, fibroblast, other		rnaseq			99	51	48	no	no	
+37861850	37861850	Hemmings 2022	2022	new	new	primary	DE	blood	Blood: whole blood		periph	Blood, LCL, fibroblast, other		rnaseq	rnaseq		34	16	18	no	yes	8
+34154796	34154796	Hoffman 2022	2022	new	new	reanalysis of public data	DE	brain	Brain: DLPFC	neocortex	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)		rnaseq			778	341	437	no	no	63
+35273151	35273151	Jaaro-Peled 2022	2022	new	new	reanalysis of public data		other	Peripheral: olfactory		periph	Blood, LCL, fibroblast, other		array_whole			36	18	18	no	no	
+35339428	35339428	Khan 2022	2022	new	new	meta-analysis / combined	gene selection	brain	Brain: temporal cortex, neurons	neocortex	meta	Meta-analyses and combined analyses		mixed	mixed		34	17	17	no	no	7
+36162734	36162734	Kondo 2022	2022	new	new	reanalysis of public data	DE	brain	Brain: ACC	neocortex	libd	Lieber Institute for Brain Development (LIBD), BrainSeq Consortium, NIMH Clinical Brain Disorders Branch (CBDB)		rnaseq	rnaseq		39	14	25	no	no	8
+34936134	34936134	Koskuvi 2022	2022	new	new	primary	DE	ipsc	iPSC: astrocytes		ipsc	iPSC-derived cells and organoids		rnaseq	rnaseq		15	5	10	no	yes	31
+36233204	36233204	Kozlova 2022	2022	new	new	reanalysis of public data	DE	brain	Brain: DLPFC	neocortex	brain_other	Other brain samples		rnaseq			62	26	36	no	no	5
+35016150	35016150	Li 2022	2022	new	new	primary	DE	blood	Blood		periph	Blood, LCL, fibroblast, other		rnaseq			30	15	15	no	yes	13
+35660966	35660966	Li 2022	2022	new	new	meta-analysis / combined	DE	brain	Brain	unclassified	meta	Meta-analyses and combined analyses		mixed	mixed					no	no	44
+35543802	35543802	Liao 2022	2022	new	new	primary	DE	blood	Blood		periph	Blood, LCL, fibroblast, other		rnaseq			6	3	3	no	yes	19
+35701597	35701597	Liu 2022	2022	new	new	data reuse	DE	ipsc	iPSC: neurons		ipsc	iPSC-derived cells and organoids		rnaseq	rnaseq		9	5	4	no	yes	15
+35386517	35386517	Liu 2022	2022	new	new	reanalysis of public data	gene selection	brain	Brain: DLPFC, amygdala	neocortex and other	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)		rnaseq			300	142	158	no	no	13
+36451159	36451159	Nascimento 2022	2022	new	new	primary	proteomics	ipsc	iPSC: neurons, NPCs, organoids		ipsc	iPSC-derived cells and organoids		proteomics	proteomics		6			no	no	27
+sc:34789849	34789849	Notaras 2022	2022	new	new	single-cell / single-nucleus	DE	ipsc	iPSC: organoids		ipsc	iPSC-derived cells and organoids		single_cell			7	3	4	no	yes	143
+34979163	34979163	Okamoto 2022	2022	new	new	meta-analysis / combined		brain	Brain: neurons	unclassified	meta	Meta-analyses and combined analyses		mixed						no	no	
+35301253	35301253	Pan 2022	2022	new	new	primary	DE	blood	Blood: whole blood		periph	Blood, LCL, fibroblast, other		rnaseq	rnaseq		119			no	yes	23
+35236959	35236959	Perzel Mandell 2022	2022	new	new	reanalysis of public data		brain	Brain: DLPFC, striatum	neocortex and other	libd	Lieber Institute for Brain Development (LIBD), BrainSeq Consortium, NIMH Clinical Brain Disorders Branch (CBDB)		rnaseq			380	147	233	no	no	
+10.1038/s41380-022-01796-0	36192459	Puvogel 2022	2022	new	new	primary	DE	brain	Brain: midbrain, neurons	other region	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		single_cell	single_cell		29	15	14	yes	yes	36
+34954633	34954633	Qi 2022	2022	new	new	reanalysis of public data	gene selection	brain	Brain: DLPFC	neocortex	brain_other	Other brain samples		array_whole			479	201	278	no	no	4
+33712885	33712885	Rodrigues-Amorim 2022	2022	new	new	primary		brain	Brain: PFC	neocortex	brain_other	Other brain samples		proteomics			141	71	70	no	no	
+36405929	36405929	Sabaie 2022	2022	new	new	reanalysis of public data	DE	brain	Brain: frontal pole	neocortex	brain_other	Other brain samples		array_whole	microarray	whole	51	28	23	no	no	8
+36090817	36090817	Sadeghi 2022	2022	new	new	meta-analysis / combined	DE	brain	Brain: DLPFC, ACC, temporal cortex, amygdala…	neocortex and other	meta	Meta-analyses and combined analyses		rnaseq	rnaseq		1707	535	1172	no	no	35
+35886854	35886854	Truong 2022	2022	new	new	data reuse		brain	Brain: DLPFC, neurons	neocortex	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)		rnaseq			537	258	279	no	no	
+34863699	34863699	Wang 2022	2022	new	new	reanalysis of public data		blood	Blood		periph	Blood, LCL, fibroblast, other		array_noncoding			30	18	12	no	no	
+35361701	35361701	Wang 2022	2022	new	new	primary		blood	Blood		periph	Blood, LCL, fibroblast, other		proteomics			68	34	34	no	no	
+35855328	35855328	Wang 2022	2022	new	new	reanalysis of public data	DE	ipsc	iPSC: plasma/serum, neurons		ipsc	iPSC-derived cells and organoids		rnaseq	rnaseq		56	28	28	no	no	12
+35185890	35185890	Xia 2022	2022	new	new	reanalysis of public data		blood	Blood		periph	Blood, LCL, fibroblast, other		array_noncoding						no	no	
+35716513	35716513	Xie 2022	2022	new	new	reanalysis of public data		blood	Blood		periph	Blood, LCL, fibroblast, other		mixed						no	no	
+35981456	35981456	Yang 2022	2022	new	new	meta-analysis / combined	gene selection	brain	Brain: DLPFC, frontal cortex, neurons	neocortex	meta	Meta-analyses and combined analyses		mixed			269	120	149	no	no	15
+36187923	36187923	Yang 2022	2022	new	new	meta-analysis / combined	gene selection	mixed	Brain + periphery: DLPFC, whole blood		meta	Meta-analyses and combined analyses		mixed			175	67	108	no	no	20
+32513544	32513544	Zeppillo 2022	2022	new	new	primary	DE	brain	Brain: DLPFC	neocortex	pritzker	Pritzker Neuropsychiatric Disorders Research Consortium, UC Irvine Brain Donor Program		rnaseq	rnaseq		20	10	10	yes	yes	29
+35597180	35597180	Zhang 2022	2022	new	new	reanalysis of public data		mixed	Brain + periphery: PFC, hippocampus, striatum		brain_other	Other brain samples		array_whole			34	15	19	no	no	
+36313022	36313022	Zhang 2022	2022	new	new	reanalysis of public data		brain	Brain: PFC	neocortex	brain_other	Other brain samples		array_whole			93	45	48	no	no	
+37498306	37498306	Arihisa 2023	2023	new	new	primary	DE	brain	Brain: frontal pole	neocortex	brain_other	Other brain samples		rnaseq	rnaseq		15			yes	yes	5
+38019909	38019909	Barnett 2023	2023	new	new	primary		blood	Blood		periph	Blood, LCL, fibroblast, other		rnaseq			477	221	256	no	no	
+37158323	37158323	Bartal 2023	2023	new	new	meta-analysis / combined	DE	mixed	Brain + periphery: frontal pole, temporal cortex, parietal, striatum…		meta	Meta-analyses and combined analyses		mixed			423	211	212	no	no	6
+36462601	36462601	Bharadhwaj 2023	2023	new	new	meta-analysis / combined	DE	brain	Brain: PFC, temporal cortex	neocortex	meta	Meta-analyses and combined analyses		mixed	microarray	mixed				no	no	8
+37611908	37611908	Bloch Priel 2023	2023	new	new	meta-analysis / combined	DE	mixed	Brain + periphery: hippocampus, striatum, cerebellum		meta	Meta-analyses and combined analyses		mixed			316	149	167	no	no	6
+37117634	37117634	Breitmeyer 2023	2023	new	new	primary	DE	ipsc	iPSC: microglia		ipsc	iPSC-derived cells and organoids		rnaseq	rnaseq		6	4	2	no	yes	27
+36424395	36424395	Chen 2023	2023	new	new	meta-analysis / combined	DE	brain	Brain: DLPFC, frontal cortex	neocortex	meta	Meta-analyses and combined analyses		mixed	mixed			474		no	no	52
+37027465	37027465	Choudhury 2023	2023	new	new	reanalysis of public data		brain	Brain: DLPFC, frontal cortex	neocortex	brain_other	Other brain samples		rnaseq						no	no	
+36652379	36652379	Clifton 2023	2023	new	new	reanalysis of public data	DE	brain	Brain: DLPFC	neocortex	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)		rnaseq	rnaseq		1365	563	802	no	no	10
+36993743	36993743	Dai 2023	2023	new	new	reanalysis of public data		brain	Brain	unclassified	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)		rnaseq			525	246	279	no	no	
+37605121	37605121	Du 2023	2023	new	new	primary	DE	blood	Blood: plasma/serum		periph	Blood, LCL, fibroblast, other		rnaseq	rnaseq		20	10	10	no	yes	19
+38092734	38092734	Fiorito 2023	2023	new	new	meta-analysis / combined	DE	mixed	Brain + periphery: DLPFC, frontal cortex, temporal cortex, parietal…		meta	Meta-analyses and combined analyses		array_whole			503	266	237	no	no	7
+37443194	37443194	Grieco 2023	2023	new	new	data reuse	DE	brain	Brain: temporal cortex, hippocampus	neocortex and other	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)		rnaseq						no	no	
+37200901	37200901	Hagihara 2023	2023	new	new	meta-analysis / combined	pathway	brain	Brain: hippocampus	other region	meta	Meta-analyses and combined analyses		mixed			111	58	53	no	no	17
+37507766	37507766	Kathuria 2023	2023	new	new	primary	DE	ipsc	iPSC: neurons		ipsc	iPSC-derived cells and organoids		rnaseq	rnaseq		14			no	yes	17
+36640659	36640659	Katz Shroitman 2023	2023	new	new	meta-analysis / combined	DE	brain	Brain: frontal pole, temporal cortex, cerebellum	neocortex and other	meta	Meta-analyses and combined analyses		mixed			294	145	149	no	no	16
+36302706	36302706	Ketchesin 2023	2023	new	new	primary	DE	brain	Brain: striatum	other region	pitt	University of Pittsburgh Brain Tissue Donation Program (Conte Center, CCNMD)		rnaseq	rnaseq		72	36	36	yes	yes	26
+37076706	37076706	Khan 2023	2023	new	new	primary	proteomics	brain	Brain: PFC, hippocampus, midbrain	neocortex and other	brain_other	Other brain samples		proteomics	proteomics		14			no	no	4
+37149105	37149105	Kübler 2023	2023	new	new	primary	DE	blood	Blood: monocytes		periph	Blood, LCL, fibroblast, other		rnaseq	rnaseq		37	20	17	no	yes	10
+36913932	36913932	Li 2023	2023	new	new	reanalysis of public data		brain	Brain	unclassified	brain_other	Other brain samples		array_whole			51	28	23	no	no	
+37552420	37552420	Lian 2023	2023	new	new	reanalysis of public data		blood	Blood		periph	Blood, LCL, fibroblast, other		mixed			202	106	96	no	no	
+37100927	37100927	Liao 2023	2023	new	new	meta-analysis / combined	DE	blood	Blood: PBMC		periph	Blood, LCL, fibroblast, other		array_noncoding			30	18	12	no	no	3
+37383091	37383091	Ma 2023	2023	new	new	meta-analysis / combined	DE	blood	Blood: PBMC, whole blood		meta	Meta-analyses and combined analyses		mixed			102	61	41	no	no	4
+sc:36729133	36729133	Matosin 2023	2023	new	new	single-cell / single-nucleus	DE	brain	Brain: DLPFC, OFC, frontal cortex	neocortex	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)	aus;libd;stanley	single_cell			69	36	33	no	yes	54
+37413782	37413782	Mekiten 2023	2023	new	new	meta-analysis / combined	DE	brain	Brain: ACC, frontal pole, temporal cortex, parietal…	neocortex and other	meta	Meta-analyses and combined analyses		mixed			511	253	258	no	no	8
+37142572	37142572	Miyahara 2023	2023	new	new	primary	coexpression	brain	Brain: PFC	neocortex	brain_other	Other brain samples		rnaseq			46	25	21	no	no	14
+37520228	37520228	Miyahara 2023	2023	new	new	primary	no SZ vs control	brain	Brain: visual cortex	neocortex	brain_other	Other brain samples		array_whole			13	13		no	no	9
+37398070	37398070	Mäki-Marttunen 2023	2023	new	new	data reuse		brain	Brain: ACC, PFC	neocortex	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)		rnaseq						no	no	
+36379214	36379214	Namkung 2023	2023	new	new	primary	DE	mixed	Brain + periphery: DLPFC, olfactory, neurons		stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		array_whole	microarray	whole	11	5	6	no	yes	38
+38239571	38239571	Nguyen 2023	2023	new	new	primary	DE	brain	Brain	unclassified	brain_other	Other brain samples		rnaseq	rnaseq		8			no	yes	0
+36958377	36958377	Ollà 2023	2023	new	new	data reuse		brain	Brain	neocortex	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)		rnaseq			170	95	75	no	no	
+37143779	37143779	Sano 2023	2023	new	new	data reuse		brain	Brain: frontal pole	neocortex	brain_other	Other brain samples		mixed			6	3	3	no	no	
+36932057	36932057	Schulmann 2023	2023	new	new	reanalysis of public data	DE	brain	Brain: DLPFC, cerebellum	neocortex and other	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)		rnaseq	rnaseq		201	88	113	yes	yes	20
+36693045	36693045	Scott 2023	2023	new	new	reanalysis of public data	other statistic	brain	Brain: DLPFC	neocortex	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)		rnaseq			92	46	46	no	no	20
+sc:37355690	37355690	Sebastian 2023	2023	new	new	single-cell / single-nucleus	DE	ipsc	iPSC: organoids		ipsc	iPSC-derived cells and organoids		single_cell			8	4	4	no	yes	63
+36717018	36717018	Segev 2023	2023	new	new	meta-analysis / combined	DE	mixed	Brain + periphery: frontal pole, temporal cortex, striatum, cerebellum…		meta	Meta-analyses and combined analyses		mixed			368	179	189	no	no	4
+37005977	37005977	Shamir 2023	2023	new	new	meta-analysis / combined	DE	brain	Brain: ACC, frontal pole, temporal cortex, parietal…	neocortex and other	meta	Meta-analyses and combined analyses		mixed			511	253	258	no	no	4
+36182530	36182530	Sheikh 2023	2023	new	new	data reuse	DE	mixed	Brain + periphery: DLPFC, whole blood, leukocytes		cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)		other			1030			no	no	43
+37674553	37674553	Shishido 2023	2023	new	new	primary	no SZ vs control	brain	Brain: PFC	neocortex	brain_other	Other brain samples		rnaseq			46	25	21	no	no	7
+36443250	36443250	Shriebman 2023	2023	new	new	meta-analysis / combined	DE	brain	Brain: DLPFC, frontal pole	neocortex	meta	Meta-analyses and combined analyses		mixed			79	41	38	no	no	2
+37301236	37301236	Teng 2023	2023	new	new	reanalysis of public data		brain	Brain	unclassified	brain_other	Other brain samples		mixed						no	no	
+37147304	37147304	Torsvik 2023	2023	new	new	primary	DE	blood	Blood: whole blood		periph	Blood, LCL, fibroblast, other		array_whole	microarray	whole	518	329	189	no	yes	23
+sc:37895019	37895019	Tung 2023	2023	new	new	single-cell / single-nucleus	no SZ vs control	other	Peripheral: olfactory		periph	Blood, LCL, fibroblast, other		single_cell			4	2	2	no	no	7
+37033658	37033658	Vera-Montecinos 2023	2023	new	new	primary		brain	Brain: DLPFC	neocortex	brain_other	Other brain samples		proteomics			40	20	20	no	no	
+36410410	36410410	Wang 2023	2023	new	new	reanalysis of public data		blood	Blood		periph	Blood, LCL, fibroblast, other		array_noncoding			30	18	12	no	no	
+36977612	36977612	Wolf 2023	2023	new	new	meta-analysis / combined	DE	mixed	Brain + periphery: frontal pole, temporal cortex, parietal, striatum…		meta	Meta-analyses and combined analyses		mixed			423	211	212	no	no	6
+37376599	37376599	Xue 2023	2023	new	new	reanalysis of public data		mixed	Brain + periphery: DLPFC, plasma/serum		brain_other	Other brain samples		mixed			75	39	36	no	no	
+37771931	37771931	Yan 2023	2023	new	new	primary		blood	Blood		periph	Blood, LCL, fibroblast, other		rnaseq			142	74	68	no	no	
+37267675	37267675	Yang 2023	2023	new	new	primary	DE	blood	Blood: leukocytes		periph	Blood, LCL, fibroblast, other		rnaseq	rnaseq		100	50	50	no	yes	9
+36414910	36414910	Yu 2023	2023	new	new	reanalysis of public data		brain	Brain: DLPFC	neocortex	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)		rnaseq			520	253	267	no	no	
+37841288	37841288	Zhu 2023	2023	new	new	reanalysis of public data		blood	Blood		periph	Blood, LCL, fibroblast, other		mixed			309	158	151	no	no	
+37106120	37106120	van den Oord 2023	2023	new	new	primary		brain	Brain: frontal pole	neocortex	brain_other	Other brain samples		rnaseq			596	304	292	no	no	
+10.1016/j.biopsych.2023.08.017	37661009	Akkouh 2024	2024	new	new	primary	DE	ipsc	iPSC		ipsc	iPSC-derived cells and organoids		rnaseq	rnaseq		28	14	14	no	yes	11
+38368435	38368435	Arakelyan 2024	2024	new	new	meta-analysis / combined	coexpression	brain	Brain: PFC	neocortex	meta	Meta-analyses and combined analyses		mixed			398	145	253	no	no	7
+38395959	38395959	Aranda 2024	2024	new	new	reanalysis of public data	DE	brain	Brain: DLPFC	neocortex	brain_other	Other brain samples		rnaseq			1499	563	936	no	no	5
+38730231	38730231	Benjamin 2024	2024	new	new	reanalysis of public data	DE	brain	Brain: DLPFC, hippocampus, striatum	neocortex and other	libd	Lieber Institute for Brain Development (LIBD), BrainSeq Consortium, NIMH Clinical Brain Disorders Branch (CBDB)		rnaseq	rnaseq					no	no	21
+38843579	38843579	Bharadwaj 2024	2024	new	new	reanalysis of public data	DE	brain	Brain: striatum	other region	brain_other	Other brain samples		rnaseq	rnaseq		64	28	36	no	no	3
+38790238	38790238	Burrack 2024	2024	new	new	meta-analysis / combined	DE	mixed	Brain + periphery: DLPFC, ACC, frontal pole, temporal cortex…		meta	Meta-analyses and combined analyses		mixed			437	219	218	no	no	6
+39068467	39068467	Carceller 2024	2024	new	new	meta-analysis / combined	no SZ vs control	brain	Brain: PFC, hippocampus, amygdala, striatum	neocortex and other	meta	Meta-analyses and combined analyses		rnaseq			252	121	131	no	no	5
+39727940	39727940	Castro-Martínez 2024	2024	new	new	meta-analysis / combined	DE	mixed	Brain + periphery: fibroblasts		meta	Meta-analyses and combined analyses		mixed	microarray	mixed	31	14	17	no	no	3
+38512459	38512459	Chen 2024	2024	new	new	reanalysis of public data		brain	Brain	unclassified	brain_other	Other brain samples		mixed						no	no	
+38702611	38702611	Chen 2024	2024	new	new	primary		blood	Blood: PBMC		periph	Blood, LCL, fibroblast, other		array_unstated			37	19	18	no	no	
+10.1038/s44220-024-00306-1		Cui 2024	2024	new	new	primary	DE	blood	Blood		periph	Blood, LCL, fibroblast, other		rnaseq			103	43	60	no	no	
+39665607	39665607	Dai 2024	2024	new	new	reanalysis of public data	DE	brain	Brain: DLPFC, ACC, striatum	neocortex and other	brain_other	Other brain samples		rnaseq						no	no	2
+38145985	38145985	Dong 2024	2024	new	new	reanalysis of public data	DE	brain	Brain: DLPFC, ACC	neocortex	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)		rnaseq	rnaseq		774	332	442	no	no	7
+39609319	39609319	Dor 2024	2024	new	new	meta-analysis / combined	DE	blood	Blood: whole blood		meta	Meta-analyses and combined analyses		array_whole			202	106	96	no	no	6
+sc:38781369	38781369	Emani 2024	2024	new	new	single-cell / single-nucleus	DE	brain	Brain: PFC	neocortex	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)	cmc;harvard	single_cell			48	24	24	no	yes	188
+38508189	38508189	Erdogdu 2024	2024	new	new	reanalysis of public data	other statistic	brain	Brain: DLPFC	neocortex	libd	Lieber Institute for Brain Development (LIBD), BrainSeq Consortium, NIMH Clinical Brain Disorders Branch (CBDB)		rnaseq			354	146	208	no	no	7
+sc:39227716	39227716	Fröhlich 2024	2024	new	new	single-cell / single-nucleus	DE	brain	Brain: OFC, frontal cortex	neocortex	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)		single_cell	single_cell		87	54	33	yes	yes	53
+39372772	39372772	Guo 2024	2024	new	new	primary	DE	ipsc	iPSC: neurons		ipsc	iPSC-derived cells and organoids		rnaseq	rnaseq		6			no	yes	1
+39307399	39307399	Heider 2024	2024	new	new	primary	DE	ipsc	iPSC: neurons		ipsc	iPSC-derived cells and organoids		rnaseq	rnaseq		7	4	3	no	yes	6
+39028640	39028640	Huynh 2024	2024	new	new	primary	DE	ipsc	iPSC: astrocytes		ipsc	iPSC-derived cells and organoids		rnaseq	rnaseq		8	4	4	no	yes	7
+38528182	38528182	Kaurani 2024	2024	new	new	primary	DE	mixed	Brain + periphery: PFC, whole blood		harvard	Harvard Brain Tissue Resource Center (HBTRC), McLean Hospital		rnaseq	rnaseq		603			no	yes	15
+39702523	39702523	Li 2024	2024	new	new	primary	DE	blood	Blood: plasma/serum		periph	Blood, LCL, fibroblast, other		rnaseq			20	10	10	no	yes	2
+38390236	38390236	Lian 2024	2024	new	new	meta-analysis / combined	gene selection	mixed	Brain + periphery: PFC		meta	Meta-analyses and combined analyses		array_whole			34	15	19	no	no	19
+sc:38448582	38448582	Ling 2024	2024	new	new	single-cell / single-nucleus	other statistic	brain	Brain: DLPFC	neocortex	harvard	Harvard Brain Tissue Resource Center (HBTRC), McLean Hospital		single_cell	single_cell		180	87	93	yes	yes	150
+39182310	39182310	Liu 2024	2024	new	new	reanalysis of public data		brain	Brain: hippocampus	other region	brain_other	Other brain samples		rnaseq			26	13	13	no	no	
+38255234	38255234	Lorca 2024	2024	new	new	primary	proteomics	brain	Brain: DLPFC, hippocampus, striatum, plasma/serum	neocortex and other	brain_other	Other brain samples		proteomics			30	15	15	no	no	10
+38361412	38361412	Luo 2024	2024	new	new	reanalysis of public data		brain	Brain	unclassified	brain_other	Other brain samples		rnaseq			48	24	24	no	no	
+37454787	37454787	Ma 2024	2024	new	new	primary	DE	ipsc	iPSC: neurons		ipsc	iPSC-derived cells and organoids		rnaseq			11			no	yes	21
+38493364	38493364	Michaelovsky 2024	2024	new	new	primary	DE	lcl	LCL		periph	Blood, LCL, fibroblast, other		rnaseq	rnaseq		13			no	yes	3
+39214422	39214422	Nie 2024	2024	new	new	reanalysis of public data		brain	Brain: PFC	neocortex	brain_other	Other brain samples		mixed			69	35	34	no	no	
+38260577	38260577	Raabe 2024	2024	new	new	primary	DE	ipsc	iPSC: neurons		ipsc	iPSC-derived cells and organoids		rnaseq	rnaseq		68	34	34	no	yes	2
+sc:38781388	38781388	Ruzicka 2024	2024	new	new	single-cell / single-nucleus	DE	brain	Brain: DLPFC, frontal pole	neocortex	mssm	Mount Sinai / JJ Peters VA Medical Center NIH Brain and Tissue Repository (MSSM)	mssm;harvard	single_cell	single_cell		135	60	75	yes	yes	152
+39218299	39218299	Santa 2024	2024	new	new	primary		blood	Blood: PBMC		periph	Blood, LCL, fibroblast, other		proteomics			12	6	6	no	no	
+sc:37915216	37915216	Sawada 2024	2024	new	new	single-cell / single-nucleus	DE	ipsc	iPSC: fibroblasts, organoids		ipsc	iPSC-derived cells and organoids		single_cell			7	3	4	no	yes	15
+40162448	40162448	Sharma 2024	2024	new	new	meta-analysis / combined	DE	brain	Brain: frontal pole	neocortex	meta	Meta-analyses and combined analyses		mixed			28	13	15	no	no	1
+39624491	39624491	Simmons 2024	2024	new	new	reanalysis of public data	no SZ vs control	brain	Brain: DLPFC	neocortex	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)		rnaseq			781	322	459	no	no	0
+38684795	38684795	Spathopoulou 2024	2024	new	new	primary	DE	ipsc	iPSC: neurons		ipsc	iPSC-derived cells and organoids		rnaseq	rnaseq		4			no	yes	8
+38688917	38688917	Sportelli 2024	2024	new	new	reanalysis of public data	coexpression	brain	Brain: DLPFC, hippocampus, striatum	neocortex and other	libd	Lieber Institute for Brain Development (LIBD), BrainSeq Consortium, NIMH Clinical Brain Disorders Branch (CBDB)		rnaseq			229	84	145	no	no	13
+sc:38263175	38263175	Stankovic 2024	2024	new	new	single-cell / single-nucleus	DE	ipsc	iPSC: organoids		ipsc	iPSC-derived cells and organoids		single_cell			6	3	3	no	yes	32
+38704507	38704507	Stern 2024	2024	new	new	primary	DE	ipsc	iPSC: hippocampus, neurons		ipsc	iPSC-derived cells and organoids		rnaseq	rnaseq		8	2	6	no	yes	22
+38292473	38292473	Sun 2024	2024	new	new	primary		blood	Blood		periph	Blood, LCL, fibroblast, other		rnaseq						no	no	
+38461955	38461955	Sæther 2024	2024	new	new	meta-analysis / combined	DE	mixed	Brain + periphery: DLPFC, whole blood		cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)		mixed			620	311	309	no	no	18
+38321095	38321095	Truong 2024	2024	new	new	reanalysis of public data	coexpression	brain	Brain: DLPFC	neocortex	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)		rnaseq			532	253	279	no	no	14
+38842000	38842000	Usta Saglam 2024	2024	new	new	primary	DE	blood	Blood: plasma/serum		periph	Blood, LCL, fibroblast, other		array_noncoding			76			no	yes	0
+38716091	38716091	Wagh 2024	2024	new	new	primary	gene selection	blood	Blood: PBMC		periph	Blood, LCL, fibroblast, other		rnaseq			20			no	no	2
+38441120	38441120	Wang 2024	2024	new	new	primary		blood	Blood: whole blood		periph	Blood, LCL, fibroblast, other		rnaseq			16	8	8	no	no	
+38807376	38807376	Wang 2024	2024	new	new	reanalysis of public data		brain	Brain	unclassified	brain_other	Other brain samples		rnaseq			1242	428	814	no	no	
+38988837	38988837	Wang 2024	2024	new	new	primary	DE	blood	Blood: leukocytes		periph	Blood, LCL, fibroblast, other		rnaseq	rnaseq		29	9	20	no	yes	5
+39019913	39019913	Wang 2024	2024	new	new	reanalysis of public data		brain	Brain: DLPFC	neocortex	brain_other	Other brain samples		array_whole			362	192	170	no	no	
+38799488	38799488	Wei 2024	2024	new	new	primary		blood	Blood		periph	Blood, LCL, fibroblast, other		array_noncoding						no	no	
+38863043	38863043	Wu 2024	2024	new	new	meta-analysis / combined	no SZ vs control	brain	Brain: PFC	neocortex	meta	Meta-analyses and combined analyses		array_whole			152	81	71	no	no	7
+38781321	38781321	Xia 2024	2024	new	new	reanalysis of public data	DE	brain	Brain: DLPFC	neocortex	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)		rnaseq	rnaseq		1825	593	1232	no	no	27
+38670447	38670447	Yan 2024	2024	new	new	meta-analysis / combined		blood	Blood		meta	Meta-analyses and combined analyses		array_whole			115	79	36	no	no	
+38321120	38321120	Yang 2024	2024	new	new	primary		other	Peripheral: olfactory, neurons		periph	Blood, LCL, fibroblast, other		rnaseq			103	44	59	no	no	
+sc:39355378	39355378	Yang 2024	2024	new	new	single-cell / single-nucleus	DE	mixed	Brain + periphery: organoids		ipsc	iPSC-derived cells and organoids		mixed			239	121	118	no	yes	7
+37993327	37993327	Yu 2024	2024	new	new	reanalysis of public data	DE	blood	Blood		periph	Blood, LCL, fibroblast, other		mixed			734	496	238	no	no	13
+37690733	37690733	Zhang 2024	2024	new	new	reanalysis of public data		mixed	Brain + periphery: PFC, plasma/serum		brain_other	Other brain samples		array_whole			83	47	36	no	no	
+38573526	38573526	Zhang 2024	2024	new	new	data reuse		mixed	Brain + periphery		brain_other	Other brain samples		array_whole						no	no	
+38648100	38648100	Zhu 2024	2024	new	new	primary	DE	brain	Brain: DLPFC, frontal cortex	neocortex	brain_other	Other brain samples		rnaseq	rnaseq		58	29	29	yes	yes	9
+39397771	39397771	Alsema 2025	2025	new	new	primary	DE	brain	Brain: midbrain	other region	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		rnaseq	rnaseq		28			yes	yes	5
+39237723	39237723	Arbabi 2025	2025	new	new	primary	DE	brain	Brain: sgACC, neurons	neocortex	pitt	University of Pittsburgh Brain Tissue Donation Program (Conte Center, CCNMD)		rnaseq	rnaseq		38	19	19	yes	yes	9
+sc:40162239	40162239	Bast 2025	2025	new	new	single-cell / single-nucleus	cell composition	brain	Brain: PFC	neocortex	brain_other	Other brain samples		single_cell			85	43	42	no	no	10
+sc:40819083	40819083	Chang 2025	2025	new	new	single-cell / single-nucleus	DE	ipsc	iPSC: oligodendrocytes		ipsc	iPSC-derived cells and organoids		rnaseq			15	8	7	no	yes	3
+40770299	40770299	Dong 2025	2025	new	new	primary	DE	blood	Blood: plasma/serum		periph	Blood, LCL, fibroblast, other		rnaseq	rnaseq		20	10	10	no	yes	3
+40634861	40634861	Du 2025	2025	new	new	primary	DE	blood	Blood: plasma/serum		periph	Blood, LCL, fibroblast, other		rnaseq			20	10	10	no	yes	5
+sc:40480991	40480991	Fullard 2025	2025	new	new	single-cell / single-nucleus	not expression	brain	Brain: DLPFC	neocortex	mssm	Mount Sinai / JJ Peters VA Medical Center NIH Brain and Tissue Repository (MSSM)	mssm;cmc	single_cell						no	no	13
+sc:40053590	40053590	Gerstner 2025	2025	new	new	single-cell / single-nucleus	DE	brain	Brain: OFC, frontal cortex	neocortex	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)		single_cell			87	54	33	no	yes	20
+40972584	40972584	Gupta 2025	2025	new	new	data reuse		brain	Brain: PFC	neocortex	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)		single_cell						no	no	
+40078531	40078531	Hu 2025	2025	new	new	reanalysis of public data		blood	Blood		periph	Blood, LCL, fibroblast, other		array_noncoding			30	18	12	no	no	
+40530435	40530435	Huang 2025	2025	new	new	reanalysis of public data		brain	Brain	unclassified	brain_other	Other brain samples		array_whole			59	29	30	no	no	
+40749305	40749305	Ji 2025	2025	new	new	primary		blood	Blood		periph	Blood, LCL, fibroblast, other		rnaseq			103	43	60	no	no	
+40311511	40311511	Jia 2025	2025	new	new	primary	DE	ipsc	iPSC		ipsc	iPSC-derived cells and organoids		rnaseq	rnaseq		10			no	yes	5
+41279545	41279545	Jiang 2025	2025	new	new	reanalysis of public data		brain	Brain: PFC	neocortex	mssm	Mount Sinai / JJ Peters VA Medical Center NIH Brain and Tissue Repository (MSSM)		single_cell						no	no	
+40267851	40267851	Knowles 2025	2025	new	new	primary	DE	blood	Blood: whole blood		periph	Blood, LCL, fibroblast, other		rnaseq	rnaseq		343	126	217	no	yes	2
+39974493	39974493	Li 2025	2025	new	new	primary	DE	blood	Blood: PBMC		periph	Blood, LCL, fibroblast, other		rnaseq			6	6		no	yes	0
+41573035	41573035	Li 2025	2025	new	new	primary		blood	Blood		periph	Blood, LCL, fibroblast, other		proteomics			89	46	43	no	no	
+41151350	41151350	Lian 2025	2025	new	new	reanalysis of public data		blood	Blood		periph	Blood, LCL, fibroblast, other		array_whole			239	121	118	no	no	
+40209528	40209528	Liu 2025	2025	new	new	reanalysis of public data		blood	Blood		periph	Blood, LCL, fibroblast, other		array_whole						no	no	
+40665444	40665444	Long 2025	2025	new	new	primary	DE	blood	Blood: PBMC		periph	Blood, LCL, fibroblast, other		rnaseq			10	5	5	no	yes	1
+40794250	40794250	Long 2025	2025	new	new	primary		blood	Blood		periph	Blood, LCL, fibroblast, other		rnaseq			10	5	5	no	no	
+41356282	41356282	Ma 2025	2025	new	new	reanalysis of public data		blood	Blood		periph	Blood, LCL, fibroblast, other		array_whole			72	43	29	no	no	
+41210297	41210297	Mas 2025	2025	new	new	primary	DE	brain	Brain: DLPFC	neocortex	brain_other	Other brain samples		rnaseq	rnaseq		32	16	16	yes	yes	1
+40878446	40878446	Muralidharan 2025	2025	new	new	reanalysis of public data	other statistic	brain	Brain: PFC	neocortex	brain_other	Other brain samples		single_cell						no	no	
+40796563	40796563	Nakatsuka 2025	2025	new	new	meta-analysis / combined	DE	brain	Brain: PFC	neocortex	meta	Meta-analyses and combined analyses		mixed	mixed		354	171	183	no	no	3
+39564883	39564883	Ni 2025	2025	new	new	primary	gene selection	blood	Blood: whole blood		periph	Blood, LCL, fibroblast, other		rnaseq			132			no	no	7
+40945317	40945317	Oraki Kohshour 2025	2025	new	new	primary	proteomics	blood	Blood: plasma/serum		periph	Blood, LCL, fibroblast, other		proteomics	proteomics		150			no	no	1
+40927413	40927413	Osetrova 2025	2025	new	new	primary		brain	Brain	unclassified	brain_other	Other brain samples		rnaseq			8	4	4	no	no	
+40015618	40015618	Pan 2025	2025	new	new	primary	DE	blood	Blood: leukocytes		periph	Blood, LCL, fibroblast, other		rnaseq	rnaseq		177	83	94	no	yes	7
+40473621	40473621	Perez 2025	2025	new	new	data reuse	DE	brain	Brain: striatum	other region	pitt	University of Pittsburgh Brain Tissue Donation Program (Conte Center, CCNMD)		rnaseq	rnaseq		95	36	59	no	no	5
+40387450	40387450	Pirim 2025	2025	new	new	reanalysis of public data		blood	Blood		periph	Blood, LCL, fibroblast, other		mixed						no	no	
+40727846	40727846	Priyanka 2025	2025	new	new	meta-analysis / combined	DE	brain	Brain: DLPFC, ACC, OFC, frontal cortex…	neocortex and other	meta	Meta-analyses and combined analyses		rnaseq	rnaseq			172		no	no	6
+41173822	41173822	Prohens 2025	2025	new	new	primary	no SZ vs control	brain	Brain: DLPFC	neocortex	brain_other	Other brain samples		array_whole			25	25		no	no	0
+41422210	41422210	Rebouças 2025	2025	new	new	meta-analysis / combined	DE	mixed	Brain + periphery: PBMC, whole blood, lymphocytes, leukocytes…		meta	Meta-analyses and combined analyses		mixed	mixed		226	102	124	no	no	0
+41422157	41422157	Sawada 2025	2025	new	new	reanalysis of public data	no SZ vs control	brain	Brain: DLPFC	neocortex	libd	Lieber Institute for Brain Development (LIBD), BrainSeq Consortium, NIMH Clinical Brain Disorders Branch (CBDB)		rnaseq						no	no	4
+41298505	41298505	Shen 2025	2025	new	new	data reuse		brain	Brain: organoids	unclassified	brain_other	Other brain samples		single_cell						no	no	
+40259965	40259965	Shokrgozar 2025	2025	new	new	reanalysis of public data	gene selection	brain	Brain: DLPFC	neocortex	brain_other	Other brain samples		mixed			146	27	119	no	no	3
+40263528	40263528	Solomon 2025	2025	new	new	primary	DE	blood	Blood: PBMC, whole blood		periph	Blood, LCL, fibroblast, other		rnaseq			899			no	yes	3
+40578226	40578226	Sun 2025	2025	new	new	primary		blood	Blood		periph	Blood, LCL, fibroblast, other		proteomics			20	10	10	no	no	
+39617069	39617069	Szabo 2025	2025	new	new	primary	DE	ipsc	iPSC: astrocytes		ipsc	iPSC-derived cells and organoids		rnaseq	rnaseq		10			no	yes	15
+40332239	40332239	Vera-Montecinos 2025	2025	new	new	reanalysis of public data		brain	Brain: cerebellum	other region	brain_other	Other brain samples		proteomics			26	12	14	no	no	
+39243324	39243324	Weng 2025	2025	new	new	reanalysis of public data		brain	Brain: PFC	neocortex	brain_other	Other brain samples		mixed			537	262	275	no	no	
+40253403	40253403	Worf 2025	2025	new	new	data reuse	DE	brain	Brain: DLPFC	neocortex	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)		array_whole	microarray	whole	130	68	62	no	no	4
+41125054	41125054	Xavier 2025	2025	new	new	primary	DE	blood	Blood: plasma/serum		periph	Blood, LCL, fibroblast, other		rnaseq	rnaseq		24	12	12	no	yes	1
+40242178	40242178	Xie 2025	2025	new	new	meta-analysis / combined	DE	blood	Blood: PBMC, whole blood		meta	Meta-analyses and combined analyses		array_whole			202	106	96	no	no	1
+41174894	41174894	Yalcinbas 2025	2025	new	new	primary	DE	brain	Brain: thalamus, habenula	other region	libd	Lieber Institute for Brain Development (LIBD), BrainSeq Consortium, NIMH Clinical Brain Disorders Branch (CBDB)		rnaseq	rnaseq		68	35	33	yes	yes	10
+40717780	40717780	Yan 2025	2025	new	new	reanalysis of public data		brain	Brain: DLPFC, ACC, striatum	neocortex and other	pritzker	Pritzker Neuropsychiatric Disorders Research Consortium, UC Irvine Brain Donor Program		rnaseq			141	71	70	no	no	
+41398832	41398832	You 2025	2025	new	new	meta-analysis / combined	DE	mixed	Brain + periphery: DLPFC, olfactory, neurons		meta	Meta-analyses and combined analyses		array_whole			105	53	52	no	no	0
+39972407	39972407	Zhang 2025	2025	new	new	meta-analysis / combined	DE	blood	Blood: PBMC, whole blood		meta	Meta-analyses and combined analyses		array_whole	microarray	whole	311	164	147	no	no	4
+41251871	41251871	Zhang 2025	2025	new	new	reanalysis of public data		blood	Blood		periph	Blood, LCL, fibroblast, other		array_whole			37	15	22	no	no	
+10.1038/s41398-025-03692-x	41271614	Zhao 2025	2025	new	new	data reuse	DE	blood	Blood: whole blood		periph	Blood, LCL, fibroblast, other		rnaseq			103	43	60	no	no	1
+40076849	40076849	Zhou 2025	2025	new	new	reanalysis of public data	DE	brain	Brain: PFC	neocortex	harvard	Harvard Brain Tissue Resource Center (HBTRC), McLean Hospital		single_cell			48	24	24	no	no	2
+41199749	41199749	Zhou 2025	2025	new	new	reanalysis of public data		brain	Brain: DLPFC	neocortex	brain_other	Other brain samples		array_whole			137	65	72	no	no	
+40021790	40021790	Zhu 2025	2025	new	new	reanalysis of public data		brain	Brain: PFC	neocortex	brain_other	Other brain samples		array_whole			30	15	15	no	no	
+40214957	40214957	Zhu 2025	2025	new	new	meta-analysis / combined	gene selection	blood	Blood: PBMC, whole blood		meta	Meta-analyses and combined analyses		mixed			232	124	108	no	no	3
+42353172	42353172	Abdolmaleky 2026	2026	new	new	data reuse		ipsc	iPSC		ipsc	iPSC-derived cells and organoids		array_unstated			70	35	35	no	no	
+42117812	42117812	Avila 2026	2026	new	new	meta-analysis / combined	gene selection	blood	Blood: whole blood		periph	Blood, LCL, fibroblast, other		rnaseq						no	no	0
+42380610	42380610	Bach 2026	2026	new	new	reanalysis of public data	DE	brain	Brain: DLPFC	neocortex	libd	Lieber Institute for Brain Development (LIBD), BrainSeq Consortium, NIMH Clinical Brain Disorders Branch (CBDB)		rnaseq			378	159	219	no	no	0
+41984900	41984900	Bampos 2026	2026	new	new	reanalysis of public data	coexpression	brain	Brain: DLPFC, hippocampus	neocortex and other	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)		rnaseq			414	153	261	no	no	0
+42416198	42416198	Baumel 2026	2026	new	new	meta-analysis / combined	DE	brain	Brain: ACC, frontal pole, temporal cortex, parietal…	neocortex and other	meta	Meta-analyses and combined analyses		mixed			295	151	144	no	no	0
+41788806	41788806	Bejaoui 2026	2026	new	new	primary	DE	blood	Blood: whole blood		periph	Blood, LCL, fibroblast, other		rnaseq	rnaseq		113	21	92	no	yes	0
+42190661	42190661	Bizzotto 2026	2026	new	new	primary		brain	Brain: temporal cortex, hippocampus, microglia	neocortex and other	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		rnaseq			69	34	35	no	no	
+41757030	41757030	Borcuk 2026	2026	new	new	primary	coexpression	brain	Brain: DLPFC, hippocampus	neocortex and other	libd	Lieber Institute for Brain Development (LIBD), BrainSeq Consortium, NIMH Clinical Brain Disorders Branch (CBDB)		rnaseq			20	10	10	no	no	0
+42276261	42276261	Boughanmi 2026	2026	new	new	meta-analysis / combined	DE	mixed	Brain + periphery: DLPFC, ACC, frontal pole, temporal cortex…		meta	Meta-analyses and combined analyses		mixed			1155	532	623	no	no	0
+10.64898/2026.08.14.744920		Casas 2026	2026	new	new	primary	DE	ipsc	iPSC: DLPFC		ipsc	iPSC-derived cells and organoids		rnaseq			7			no	no	0
+42385890	42385890	Casas 2026	2026	new	new	primary	DE	ipsc	iPSC: neurons		ipsc	iPSC-derived cells and organoids		rnaseq			4			no	yes	0
+41890025	41890025	Catalano 2026	2026	new	new	reanalysis of public data		brain	Brain: PFC	neocortex	brain_other	Other brain samples		rnaseq			7	4	3	no	no	
+41748837	41748837	Chakraborty 2026	2026	new	new	reanalysis of public data	DE	brain	Brain: DLPFC, ACC, striatum	neocortex and other	brain_other	Other brain samples		rnaseq	rnaseq		141	71	70	no	no	0
+41392096	41392096	Dang 2026	2026	new	new	data reuse		brain	Brain: DLPFC	neocortex	libd	Lieber Institute for Brain Development (LIBD), BrainSeq Consortium, NIMH Clinical Brain Disorders Branch (CBDB)		rnaseq			453	153	300	no	no	
+42461238	42461238	Dean 2026	2026	new	new	primary	DE	brain	Brain: DLPFC	neocortex	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)		array_whole	microarray	whole	211			yes	yes	0
+42364336	42364336	Dey 2026	2026	new	new	meta-analysis / combined	DE	mixed	Brain + periphery: DLPFC, frontal pole, temporal cortex		meta	Meta-analyses and combined analyses		mixed			206	106	100	no	no	0
+sc:10.64898/2026.09.18.752621		Endresz 2026 (bioRxiv)	2026	new	new	single-cell / single-nucleus	DE	brain	Brain: PFC	neocortex	meta	Meta-analyses and combined analyses		single_cell			469	171	298	no	no	0
+42185248	42185248	Galán-Ganga 2026	2026	new	new	primary		brain	Brain: hippocampus	other region	brain_other	Other brain samples		rnaseq						no	no	
+sc:41863598	41863598	Gerstner 2026	2026	new	new	single-cell / single-nucleus	no SZ vs control	brain	Brain: OFC, frontal cortex	neocortex	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)		single_cell			71	36	35	no	no	0
+40990808	40990808	Glausier 2026	2026	new	new	reanalysis of public data	pathway	brain	Brain: DLPFC, ACC	neocortex	pitt	University of Pittsburgh Brain Tissue Donation Program (Conte Center, CCNMD)		rnaseq			139	57	82	no	no	1
+41168987	41168987	Gong 2026	2026	new	new	primary		blood	Blood		periph	Blood, LCL, fibroblast, other		rnaseq			12	6	6	no	no	
+41388144	41388144	Hartmann 2026	2026	new	new	primary	DE	ipsc	iPSC: neurons		ipsc	iPSC-derived cells and organoids		rnaseq	rnaseq		7			no	yes	1
+41903140	41903140	Hirose 2026	2026	new	new	reanalysis of public data		ipsc	iPSC: DLPFC, midbrain		ipsc	iPSC-derived cells and organoids		single_cell			23	9	14	no	no	
+42244540	42244540	Jajoo 2026	2026	new	new	reanalysis of public data		brain	Brain: DLPFC	neocortex	libd	Lieber Institute for Brain Development (LIBD), BrainSeq Consortium, NIMH Clinical Brain Disorders Branch (CBDB)		rnaseq			883	365	518	no	no	
+42736350	42736350	Ji 2026	2026	new	new	primary	coexpression	blood	Blood: whole blood		periph	Blood, LCL, fibroblast, other		rnaseq			173			no	no	0
+42800954	42800954	Kang 2026	2026	new	new	reanalysis of public data	coexpression	brain	Brain: DLPFC	neocortex	libd	Lieber Institute for Brain Development (LIBD), BrainSeq Consortium, NIMH Clinical Brain Disorders Branch (CBDB)		single_cell						no	no	
+41159096	41159096	Kiss 2026	2026	new	new	meta-analysis / combined	cell composition	brain	Brain	neocortex	meta	Meta-analyses and combined analyses		mixed			1408	672	736	no	no	3
+41611717	41611717	Koopmans 2026	2026	new	new	primary	proteomics	brain	Brain: PFC	neocortex	brain_other	Other brain samples		proteomics	proteomics		96	47	49	no	no	9
+41757081	41757081	Kwon 2026	2026	new	new	primary	DE	brain	Brain: DLPFC	neocortex	libd	Lieber Institute for Brain Development (LIBD), BrainSeq Consortium, NIMH Clinical Brain Disorders Branch (CBDB)		other	other		63	32	31	yes	yes	1
+sc:42778699	42778699	Lee 2026	2026	new	new	single-cell / single-nucleus	DE	brain	Brain: DLPFC	neocortex	mssm	Mount Sinai / JJ Peters VA Medical Center NIH Brain and Tissue Repository (MSSM)	mssm;cmc	single_cell	single_cell		439	120	319	yes	yes	0
+41876515	41876515	Li 2026	2026	new	new	meta-analysis / combined	DE	blood	Blood		meta	Meta-analyses and combined analyses		mixed				214		no	no	1
+42133007	42133007	Li 2026	2026	new	new	meta-analysis / combined	pathway	brain	Brain: DLPFC, frontal pole, temporal cortex	neocortex	meta	Meta-analyses and combined analyses		array_whole						no	no	0
+42034251	42034251	Liu 2026	2026	new	new	primary	DE	blood	Blood: whole blood		periph	Blood, LCL, fibroblast, other		rnaseq	rnaseq		103			no	yes	0
+41691208	41691208	Lu 2026	2026	new	new	primary	DE	blood	Blood		periph	Blood, LCL, fibroblast, other		rnaseq	rnaseq		12			no	yes	0
+41713307	41713307	Lv 2026	2026	new	new	primary	DE	blood	Blood: PBMC		periph	Blood, LCL, fibroblast, other		rnaseq			100			no	yes	0
+10.1016/j.bpsgos.2025.100650	41567988	Mendez-Victoriano 2026	2026	new	new	primary	DE	brain	Brain: midbrain	other region	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	stanley;aus	rnaseq	rnaseq		60	40	20	yes	yes	0
+41951663	41951663	Miyahara 2026	2026	new	new	primary		brain	Brain: PFC	neocortex	brain_other	Other brain samples		rnaseq			44	23	21	no	no	
+42448418	42448418	Mohan 2026	2026	new	new	reanalysis of public data		brain	Brain	unclassified	brain_other	Other brain samples		rnaseq			46	23	23	no	no	
+41639050	41639050	Nersisyan 2026	2026	new	new	primary	DE	brain	Brain: DLPFC	neocortex	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)		rnaseq	rnaseq		170			no	yes	3
+42128883	42128883	Niu 2026	2026	new	new	data reuse		brain	Brain: DLPFC, organoids	neocortex	brain_other	Other brain samples		single_cell						no	no	
+42463512	42463512	Radulescu 2026	2026	new	new	meta-analysis / combined	DE	brain	Brain: DLPFC, hippocampus, striatum	neocortex and other	meta	Meta-analyses and combined analyses		rnaseq	rnaseq		297	115	182	no	no	0
+41506462	41506462	Sadis 2026	2026	new	new	meta-analysis / combined	not expression	brain	Brain	unclassified	meta	Meta-analyses and combined analyses		mixed						no	no	1
+41788138	41788138	Singer 2026	2026	new	new	meta-analysis / combined	DE	mixed	Brain + periphery: ACC, frontal pole, temporal cortex, parietal…		meta	Meta-analyses and combined analyses		mixed			295	151	144	no	no	2
+41942462	41942462	Singh 2026	2026	new	new	primary	DE	brain	Brain: midbrain, neurons	other region	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)		rnaseq	rnaseq		80			yes	yes	0
+41714609	41714609	Smith 2026	2026	new	new	reanalysis of public data	DE	brain	Brain: sgACC	neocortex	brain_other	Other brain samples		rnaseq	rnaseq		99	44	55	no	no	0
+41754588	41754588	Su 2026	2026	new	new	reanalysis of public data		brain	Brain: PFC, hippocampus, striatum	neocortex and other	brain_other	Other brain samples		array_whole			88	44	44	no	no	
+41559842	41559842	Sánchez Milán 2026	2026	new	new	primary		mixed	Brain + periphery: DLPFC, plasma/serum		brain_other	Other brain samples		proteomics						no	no	
+41443001	41443001	Tengfei 2026	2026	new	new	meta-analysis / combined	DE	mixed	Brain + periphery: hippocampus		meta	Meta-analyses and combined analyses		array_whole	microarray	whole				no	no	1
+42623758	42623758	Tengfei 2026	2026	new	new	meta-analysis / combined	DE	mixed	Brain + periphery		meta	Meta-analyses and combined analyses		array_whole	microarray	whole	478	245	233	no	no	0
+42748139	42748139	Testa 2026	2026	new	new	primary	proteomics	brain	Brain: ACC	neocortex	pitt	University of Pittsburgh Brain Tissue Donation Program (Conte Center, CCNMD)		proteomics	proteomics		103	53	50	no	no	0
+42033308	42033308	Torsvik 2026	2026	new	new	primary	DE	blood	Blood: whole blood		periph	Blood, LCL, fibroblast, other		rnaseq	rnaseq		136	100	36	no	yes	0
+40858782	40858782	Unzueta-Larrinaga 2026	2026	new	new	primary		brain	Brain: DLPFC	neocortex	brain_other	Other brain samples		rnaseq			20	10	10	no	no	
+41988836	41988836	Wu 2026	2026	new	new	primary	DE	blood	Blood: leukocytes		periph	Blood, LCL, fibroblast, other		rnaseq	rnaseq		100			no	yes	0
+42693176	42693176	Wu 2026	2026	new	new	reanalysis of public data	DE	brain	Brain: frontal cortex	neocortex	brain_other	Other brain samples		single_cell	single_cell		201	31	170	no	no	1
+42166031	42166031	Xu 2026	2026	new	new	reanalysis of public data		mixed	Brain + periphery		periph	Blood, LCL, fibroblast, other		mixed						no	no	
+42532444	42532444	Yan 2026	2026	new	new	data reuse		blood	Blood		periph	Blood, LCL, fibroblast, other		rnaseq			142	74	68	no	no	
+41276612	41276612	Ye 2026	2026	new	new	reanalysis of public data		brain	Brain: DLPFC	neocortex	libd	Lieber Institute for Brain Development (LIBD), BrainSeq Consortium, NIMH Clinical Brain Disorders Branch (CBDB)		rnaseq			456	161	295	no	no	
+41937202	41937202	Yonemaru 2026	2026	new	new	reanalysis of public data		brain	Brain: hippocampus	other region	brain_other	Other brain samples		rnaseq			77	38	39	no	no	
+40947439	40947439	Yu 2026	2026	new	new	primary	DE	ipsc	iPSC: organoids		ipsc	iPSC-derived cells and organoids		rnaseq	rnaseq		13			no	yes	3
+39526318	39526318	Zhang 2026	2026	new	new	primary	DE	brain	Brain: amygdala	other region	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium		rnaseq	rnaseq		30	15	15	yes	yes	9
+41399369	41399369	Zhang 2026	2026	new	new	reanalysis of public data		brain	Brain	unclassified	brain_other	Other brain samples		array_whole						no	no	
+42094829	42094829	Zhao 2026	2026	new	new	meta-analysis / combined	gene selection	brain	Brain: DLPFC, neurons	neocortex	meta	Meta-analyses and combined analyses		mixed			23	9	14	no	no	0
+26585218	26585218	Mauney 2015	2015	old	old	primary	DE	brain	Brain: DLPFC, white matter, oligodendrocytes	neocortex and other	harvard	Harvard Brain Tissue Resource Center (HBTRC), McLean Hospital		array_whole	microarray	whole	18	9	9	yes	yes	79

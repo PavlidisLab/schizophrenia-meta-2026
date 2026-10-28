@@ -1,0 +1,13 @@
+# claim: Extended Fig. 11 panels a and c under the calibrated per-contrast rule (the 383 genes (study tier q < 0.1); hit = z of the set above the 97.5th percentile of the contrast's own null of 200 decile-matched comparison sets, and AUROC above 0.5)
+# script: gemma_scans_375_2026-10-15/scripts/build_panels.py (build_sets_375.py, score375.py; arithmetic of calibrated_panels/score_grouped.py and build_calibrated_panels.py)
+# source: scored shards out/full: 33713 contrasts; sets_scoring.tsv d85e00b4875f; scan176_contrasts.tsv 1c71150f2205; all_contrasts_scored_public.tsv ff71aa122135; coi_scored.tsv c5a92fa053c1; flagged_candidates_classified.tsv 8eb7717b77e7
+# date: 2026-10-17
+# comparison_set_rate = mean over the 200 comparison sets of the set's own hit rate in the group (each set against the other 199 sets of the contrast); _lo, _hi = 2.5th and 97.5th percentile of the per-set rates
+# k, n = contrasts that are hits, contrasts counted (contrasts with no z for the set or a comparison set are not counted)
+panel	group	k	n	share	wilson95_lo	wilson95_hi	comparison_set_rate	comparison_set_rate_lo	comparison_set_rate_hi
+c	SZ corpus (picked)	17	65	0.26154	0.17018	0.37951	0.029538	0	0.076923
+c	SZ-annotated held out	13	49	0.26531	0.16211	0.40262	0.029184	0	0.081633
+c	All other experiments	1139	8587	0.13264	0.12563	0.13998	0.029257	0.016062	0.054684
+c	Design flagged by regex (picked)	12	113	0.10619	0.061798	0.17649	0.029558	0	0.079867
+c	Hypoxia / ischemia / pH contrast scored	8	69	0.11594	0.059935	0.21246	0.029348	0	0.10181
+c	Ischemia as disease state (stroke, MI)	6	24	0.25	0.11999	0.44899	0.029792	0	0.125

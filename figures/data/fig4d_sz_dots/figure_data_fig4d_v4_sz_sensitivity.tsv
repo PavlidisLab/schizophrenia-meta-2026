@@ -1,0 +1,14 @@
+# figure: Fig. 4d v4 (individual schizophrenia dots)
+# script: build_fig4d_v4.py (this folder), run 2026-10-19; scoring: scripts/score_sz_units_remote.py on the remote environment (seed 20261019, 10,000 matched sets per set), loso runs: scripts/run_loso_remote.sh; bootstrap 10000 resamples of dots within column, seed 20261019 (non-SZ columns: v2 stream; SZ columns seed 20261020)
+# inputs: panel_c_per_study.tsv sha256 66e4589accfc; per_contrast_classes.tsv sha256 434e5e1eeab2; class_selection.tsv sha256 beaadda12e28; sz_units_scored.tsv sha256 05e4acea3531; sz_units_fullgenome_validation.tsv sha256 0eb0feb138ec; sets_summary.tsv sha256 ef1a3d52e9a7; tables_bulk_pairs_all_rules.tsv (stored subject relations) sha256 bd2a166457bd
+# base statement: core-80 base (80 studies, 72 lists), 383 recurrent genes (q_bh<0.1), pH axis v2 (schizophrenia dots: leave-collection-out), GTEx agonal axis; effect = Spearman rho of the contrast's signed z (schizophrenia dots: t at age+sex level) with the axis minus the mean rho of its own matched null (expression decile x DE prior)
+# schizophrenia dots: 26 bulk datasets of the base (sample_level base) merged into donor groups by the stored relation table (proven overlap only); SZ = set rebuilt without each dataset's own study (leave-one-study-out); the plain-383 version is in figure_data_fig4d_v4_sz_sensitivity.tsv and _sz_units.tsv, not plotted; a group's value is the median over its member datasets
+# non-SZ selection: independent contrasts, pool DE fraction <= 0.183; one contrast per cohort group; series/cohort already shown dropped
+# one row per dot; shared banks that Gemma metadata does not record can still overlap between non-schizophrenia contrasts
+grouping	set	n	median_pH	boot_lo_pH	boot_hi_pH	share_gt0_pH	share_gt_band_pH	median_agonal	boot_lo_agonal	boot_hi_agonal	share_gt0_agonal	share_gt_band_agonal
+proven-overlap donor groups (primary)	leave_study_out	13	0.19051	0.14612	0.2265	0.84615	0.84615	0.24201	0.20721	0.28899	0.84615	0.84615
+proven-overlap donor groups (primary)	plain383	13	0.1916	0.15686	0.22741	0.84615	0.84615	0.24093	0.20398	0.27867	0.84615	0.84615
+units, no grouping	leave_study_out	26	0.2085	0.14553	0.25362	0.88462	0.88462	0.24836	0.222	0.29035	0.88462	0.88462
+units, no grouping	plain383	26	0.2095	0.14876	0.25214	0.88462	0.88462	0.23878	0.22436	0.2943	0.88462	0.88462
+strict groups (proven + same collection / bank not stated)	leave_study_out	3	0.18138	0.16033	0.24556	1.0	1.0	0.23969	0.22774	0.27256	1.0	1.0
+strict groups (proven + same collection / bank not stated)	plain383	3	0.16721	0.16578	0.24045	1.0	1.0	0.22817	0.22168	0.26933	1.0	1.0

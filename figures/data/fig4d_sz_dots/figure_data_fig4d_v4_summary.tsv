@@ -1,0 +1,22 @@
+# figure: Fig. 4d v4 (drop GSE122377 and GSE186334)
+# script: build_fig4d_v4.py (this folder), run 2026-10-19; scoring: scripts/score_sz_units_remote.py on the remote environment (seed 20261019, 10,000 matched sets per set), loso runs: scripts/run_loso_remote.sh; bootstrap 10000 resamples of dots within column, seed 20261019 (non-SZ columns: v2 stream; SZ columns seed 20261020)
+# inputs: panel_c_per_study.tsv sha256 66e4589accfc; per_contrast_classes.tsv sha256 434e5e1eeab2; class_selection.tsv sha256 beaadda12e28; sz_units_scored.tsv sha256 05e4acea3531; sz_units_fullgenome_validation.tsv sha256 0eb0feb138ec; sets_summary.tsv sha256 ef1a3d52e9a7; tables_bulk_pairs_all_rules.tsv (stored subject relations) sha256 bd2a166457bd
+# base statement: core-80 base (80 studies, 72 lists), 383 recurrent genes (q_bh<0.1), pH axis v2 (schizophrenia dots: leave-collection-out), GTEx agonal axis; effect = Spearman rho of the contrast's signed z (schizophrenia dots: t at age+sex level) with the axis minus the mean rho of its own matched null (expression decile x DE prior)
+# schizophrenia dots: 26 bulk datasets of the base (sample_level base) merged into donor groups by the stored relation table (proven overlap only); SZ = set rebuilt without each dataset's own study (leave-one-study-out); the plain-383 version is in figure_data_fig4d_v4_sz_sensitivity.tsv and _sz_units.tsv, not plotted; a group's value is the median over its member datasets
+# non-SZ selection: independent contrasts, pool DE fraction <= 0.183; one contrast per cohort group; series/cohort already shown dropped
+# one row per dot; shared banks that Gemma metadata does not record can still overlap between non-schizophrenia contrasts
+# variant script: scripts/make_variants.py (this folder), run 2026-10-20; non-SZ bootstrap seed 20261019 (stream consumed class by class in alphabetical order, as in build_fig4d_v4.py), SZ seed 20261020; 10000 resamples
+# variant inputs sha256 (first 12): figure_data_fig4d_v4.tsv 1b2883db1125; figure_data_fig4d_v4_summary.tsv 0e9968f03083; build_fig4d_v4.py 7ade20c550bf; decisions.tsv (this folder)
+# 2026-10-21: row OTHER (31 dots, OTH and POOL together); OTHER bootstrap: default_rng(20261023), 10,000 resamples of dots within the class, pH then agonal
+# run 2026-10-23: 12 non-parenchyma contrasts excluded (GSE114918, GSE121519, GSE150118, GSE159260, GSE169755, GSE175797, GSE251939, GSE260815, GSE272142, GSE6551, GSE83670, GSE99349); tissue calls in nonparenchyma.tsv; script scripts/rebuild.py; inputs figure_data_fig4d_v4.tsv 4aecbc4c3c9c figure_data_fig4d_v4_summary.tsv 6254077488b6 variantA 493e55dc2fff
+# bootstrap for the other classes: stream default_rng(20261019) consumed class by class (AD, ASD, BD, MDD, MS, OTH, PD, POOL, SUD) as in build_fig4d_v4.py; OTHER default_rng(20261023)
+class_shown	label	n	median_pH	boot_lo_pH	boot_hi_pH	share_gt0_pH	share_gt_band_pH	median_agonal	boot_lo_agonal	boot_hi_agonal	share_gt0_agonal	share_gt_band_agonal
+SZ	Schizophrenia (own studies, set rebuilt without the study)	13	0.19051	0.14612	0.2265	0.84615	0.84615	0.24201	0.20721	0.28899	0.84615	0.84615
+SUD	Substance use	6	0.2035	0.088	0.2325	1.0	0.83333	0.27	0.0605	0.3675	0.83333	0.83333
+MS	Multiple sclerosis	5	0.173	0.035	0.201	1.0	0.8	0.177	-0.018	0.316	0.8	0.8
+BD	Bipolar disorder	7	0.1305	-0.0929	0.2279	0.71429	0.57143	0.1772	-0.1816	0.2351	0.71429	0.57143
+AD	Alzheimer disease	23	0.1019	0.0857	0.1435	0.91304	0.69565	0.0848	0.0451	0.1124	0.86957	0.52174
+ASD	Autism	7	0.0896	-0.0018	0.2088	0.71429	0.57143	0.0731	0.0432	0.1886	0.85714	0.42857
+MDD	Major depression	24	0.06035	-0.0273	0.1258	0.625	0.33333	0.0663	0.0193	0.0991	0.75	0.29167
+PD	Parkinson disease	15	0.093	0.043	0.175	0.8	0.53333	0.029	-0.009	0.086	0.66667	0.26667
+OTHER	Other conditions (miscellaneous conditions; ALS/FTD, Huntington, glioma)	23	0.173	0.136	0.207	0.91304	0.78261	0.17	0.099	0.191	0.95652	0.69565

@@ -1,0 +1,14 @@
+# figure: fig02 panel c
+# script: analyses/figure_exports/export_fig02_fig07.py, run 2026-10-21
+# population: 72 primary brain studies (recurrence.py scenario 'published, brain', study tier); n_k = |M_k| (RECURRENCE_NK=membership); analysis set = the 383 study-tier genes of analyses/confounds/recurrent_sets.tsv (set study_brain; the in-place recurrence_genes.tsv gives 383 at q < 0.1); recurrence.tsv sha256 f825429faf1d; corpus/lineage.json sha256 4f919a83fea3
+# input: analyses/h1_summary.tsv sha256 268f37eb403c
+# era_split 2015 = old <= 2015 / new >= 2016; null_median_fold_lo/hi = interval of the era-label permutation null; all cohorts
+era_split	pair_type	n_pairs	n_studies	median_fold	null_median_fold	null_median_fold_lo	null_median_fold_hi	pooled_fold	n_pairs_overlap0	pooled_top_fold	median_concordance	n_concordance
+2015	old-old	325	26	1.267	0.8894	0.8209	0.9495	1.389	74	1.784	0.6422	133
+2015	new-new	1035	46	1.247	0.9121	0.8825	0.9383	1.387	206	2.579	0.6871	494
+2015	old-new	1196	72	1.158	0.9079	0.8789	0.9394	1.4	286	1.863	0.6667	522
+2015	all	2556	72	1.201	0.9085	0.89	0.929	1.393	566	2.187	0.6667	1149
+2020	old-old	990	45	1.257	0.8929	0.8516	0.9253	1.567	229	1.979	0.7004	421
+2020	new-new	351	27	1.217	0.9256	0.8854	0.9696	1.313	66	2.876	0.6471	175
+2020	old-new	1215	72	1.162	0.9151	0.8869	0.9424	1.319	271	2.072	0.6667	553
+2020	all	2556	72	1.201	0.9084	0.8888	0.9275	1.393	566	2.187	0.6667	1149

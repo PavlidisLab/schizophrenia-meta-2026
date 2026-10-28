@@ -1,0 +1,30 @@
+# built by scripts/build_covariates.py; lanes from ../corpus/lineage.json sha256 606343fbca0d; n_* = SZ and control samples with age and sex (not Gemma outliers), before Gemma's missing-value filter and subject averaging
+dataset	gse	gemma_id	expr	samples_json	cov	region	compartment	cluster	source	n_sz	n_ctl	n_M	n_F
+GSE21138	GSE21138	1880	../confounds/data/gemma/1880_processed.tsv.gz	../confounds/data/gemma/1880_samples.json	../confounds/data/covariates/GSE21138.tsv		bulk	aus	confounds	30	29	48	11
+GSE35977	GSE35977	5949	../confounds/data/gemma/5949_processed.tsv.gz	../confounds/data/gemma/5949_samples.json	../confounds/data/covariates/GSE35977.tsv		bulk	stanley	confounds	51	50	72	29
+GSE35974	GSE35974	5939	../confounds/data/gemma/5939_processed.tsv.gz	../confounds/data/gemma/5939_samples.json	../confounds/data/covariates/GSE35974.tsv		bulk	stanley	confounds	44	50	63	31
+GSE53987_BA46	GSE53987	8359	../confounds/data/gemma/8359_processed.tsv.gz	../confounds/data/gemma/8359_samples.json	../confounds/data/covariates/GSE53987.tsv	Pre-frontal cortex (BA46)	bulk	cmc+mssm+pitt+libd	confounds	15	19	17	17
+GSE53987_hippocampus	GSE53987	8359	../confounds/data/gemma/8359_processed.tsv.gz	../confounds/data/gemma/8359_samples.json	../confounds/data/covariates/GSE53987.tsv	hippocampus	bulk	cmc+mssm+pitt+libd	confounds	15	18	18	15
+GSE53987_striatum	GSE53987	8359	../confounds/data/gemma/8359_processed.tsv.gz	../confounds/data/gemma/8359_samples.json	../confounds/data/covariates/GSE53987.tsv	Associative striatum	bulk	cmc+mssm+pitt+libd	confounds	18	18	20	16
+GSE17612	GSE17612	1381	../confounds/data/gemma/1381_processed.tsv.gz	../confounds/data/gemma/1381_samples.json	../confounds/data/covariates/GSE17612.tsv		bulk	GSE17612+GSE21935	confounds	28	22	30	20
+GSE21935	GSE21935	4150	../confounds/data/gemma/4150_processed.tsv.gz	../confounds/data/gemma/4150_samples.json	../confounds/data/covariates/GSE21935.tsv		bulk	GSE17612+GSE21935	confounds	23	19	23	19
+GSE92538_GPL570	GSE92538	18742	../confounds/data/gemma/18742_processed.tsv.gz	../confounds/data/gemma/18742_samples.json	../confounds/data/covariates/GSE92538_GPL10526.tsv		bulk	pritzker	confounds	31	56	74	13
+GSE92538_GPL96	GSE92538	18741	../confounds/data/gemma/18741_processed.tsv.gz	../confounds/data/gemma/18741_samples.json	../confounds/data/covariates/GSE92538_GPL17027.tsv		bulk	pritzker	confounds	27	119	98	48
+GSE80655_DLPFC	GSE80655	13014	../confounds/data/gemma/13014_processed.tsv.gz	../confounds/data/gemma/13014_samples.json	../confounds/data/covariates/GSE80655.tsv	DLPFC	bulk	pritzker	confounds	24	24	42	6
+GSE80655_AnCg	GSE80655	13014	../confounds/data/gemma/13014_processed.tsv.gz	../confounds/data/gemma/13014_samples.json	../confounds/data/covariates/GSE80655.tsv	AnCg	bulk	pritzker	confounds	24	24	42	6
+GSE80655_nAcc	GSE80655	13014	../confounds/data/gemma/13014_processed.tsv.gz	../confounds/data/gemma/13014_samples.json	../confounds/data/covariates/GSE80655.tsv	nAcc	bulk	pritzker	confounds	23	22	40	5
+GSE208338	GSE208338	26880	../confounds/data/gemma/26880_processed.tsv.gz	../confounds/data/gemma/26880_samples.json	../confounds/data/covariates/GSE208338.tsv		bulk	aus	confounds	68	62	103	27
+GSE202537_NAc	GSE202537	25749	data/gemma/25749_processed.tsv.gz	data/gemma/25749_samples.json	data/covariates/25749.tsv	nucleus accumbens	bulk	cmc+mssm+pitt+libd	gemma samples	28	35	44	19
+GSE202537_caudate	GSE202537	25749	data/gemma/25749_processed.tsv.gz	data/gemma/25749_samples.json	data/covariates/25749.tsv	caudate nucleus	bulk	cmc+mssm+pitt+libd	gemma samples	28	36	45	19
+GSE202537_putamen	GSE202537	25749	data/gemma/25749_processed.tsv.gz	data/gemma/25749_samples.json	data/covariates/25749.tsv	putamen	bulk	cmc+mssm+pitt+libd	gemma samples	28	36	45	19
+GSE224683	GSE224683	28105	data/gemma/28105_processed.tsv.gz	data/gemma/28105_samples.json	data/covariates/28105.tsv		bulk	cmc+mssm+pitt+libd	gemma samples	15	15	25	5
+GSE26927_temporal	GSE26927	2684	data/gemma/2684_processed.tsv.gz	data/gemma/2684_samples.json	data/covariates/2684.tsv	left temporal lobe	bulk	GSE26927	gemma samples	10	10	12	8
+GSE138082_CA1	GSE138082	23579	data/gemma/23579_processed.tsv.gz	data/gemma/23579_samples.json	data/covariates/23579.tsv	CA1 field of hippocampus	bulk	GSE138082	gemma samples	13	13	19	7
+GSE138082_CA3	GSE138082	23579	data/gemma/23579_processed.tsv.gz	data/gemma/23579_samples.json	data/covariates/23579.tsv	CA3 field of hippocampus	bulk	GSE138082	gemma samples	13	12	18	7
+GSE138082_DG	GSE138082	23579	data/gemma/23579_processed.tsv.gz	data/gemma/23579_samples.json	data/covariates/23579.tsv	dentate gyrus of hippocampal formation	bulk	GSE138082	gemma samples	13	13	20	6
+GSE37981	GSE37981	6488	data/gemma/6488_processed.tsv.gz	data/gemma/6488_samples.json	data/covariates/6488.tsv		LCM pyramidal neurons	harvard	gemma samples	8	8	8	8
+GSE12679_neuron	GSE12679	946	data/gemma/946_processed.tsv.gz	data/gemma/946_samples.json	data/covariates/946.tsv	neuron	LCM neurons	stanley	gemma samples	5	6	7	4
+GSE12679_endothelial	GSE12679	946	data/gemma/946_processed.tsv.gz	data/gemma/946_samples.json	data/covariates/946.tsv	cerebral cortex endothelial cell	LCM endothelial cells	stanley	gemma samples	11	5	12	4
+GSE112523	GSE112523	16773	data/gemma/16773_processed.tsv.gz	data/gemma/16773_samples.json	data/covariates/16773.tsv		sorted NeuN+ nuclei	harvard	gemma samples	7	17	20	4
+GSE107638_NeuN	GSE107638	15479	data/gemma/15479_processed.tsv.gz	data/gemma/15479_samples.json	data/covariates/15479.tsv	RBFOX3 [human] RNA binding fox-1 homolog 3  RBFOX3-positive cell	sorted NeuN+ nuclei	cmc+mssm+pitt+libd|harvard	gemma samples	23	27	29	21
+GSE107638_OLIG2	GSE107638	15479	data/gemma/15479_processed.tsv.gz	data/gemma/15479_samples.json	data/covariates/15479.tsv	OLIG2 [human] oligodendrocyte transcription factor 2  OLIG2-positive cell	sorted OLIG2+ nuclei	cmc+mssm+pitt+libd|harvard	gemma samples	17	22	22	17

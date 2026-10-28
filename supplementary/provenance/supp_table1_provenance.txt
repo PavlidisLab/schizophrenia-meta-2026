@@ -1,0 +1,9 @@
+# figure: supplementary gene table
+# script: notes_tables_v2_2026-10-15/g1/export_supp_table1_375.py (edit of analyses/mauney_integrated_2026-10-12/export_supp_table1_integrated.py), run 2026-10-15
+# input: analyses/recurrence_genes.tsv sha256 a977bcf6ff70 (remote environment repo, final run; scenario 'published, brain', 81-study base, 74 lists contributing)
+# input: analyses/confounds/recurrent_sets.tsv sha256 f6fdba75ae7c (set study_brain: 375 genes at q_bh < 0.1)
+# input: analyses/confounds/results/combined_controls_pH.tsv sha256 ebab86afedd3 (pH axis v1: control-only association, Stouffer Z over five collections; column ph_z_controls_axis_v1)
+# input: inputs_ph_axis_v2/axis_v2_controls.tsv.gz sha256 2c72a9b279a2 (pH axis v2, controls, column z_stouffer over 10 datasets, genes in at least 8; column ph_z_controls)
+# input: figure_data/fig07/fig07_a2_a4_gene_scatter.tsv sha256 392071069df2 (refreeze_375_runs N13 rebuild from recurrent_genes_pH.tsv; SZ z raw and after pH adjustment, five v1 datasets, 5+ list set only)
+# rows: the 375 genes with q_uniform < 0.1 (= the 375 of recurrent_sets.tsv set study_brain); q columns are BH within the scenario
+# q_cluster_bh: BH q of the cohort-tier Poisson-binomial, uniform null, same BH family as q_uniform; n_clusters_observed = clusters with a member list naming the gene

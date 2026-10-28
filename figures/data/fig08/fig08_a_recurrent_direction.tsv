@@ -1,0 +1,13 @@
+# figure: fig08 panel a (text)
+# script: core80_work_2026-10-16/P11/fig08a/fig08a_core80.py (logic of fd375p/work/f_fig08a.py; recurrence_genes.tsv input swapped)
+# population: published brain studies of the core-80 base (recurrence.py scenario published, brain, study tier, 72 lists); study tier at q_bh < 0.1; recurrence_genes.tsv sha256 dda5eb621c15
+# input: base78_2026-10-16/B80/out/recurrence_genes.tsv sha256 dda5eb621c15
+# input: figure_data_375_2026-10-15/fig08/fig08_a_dachet_gene_scatter.tsv (column change_24h; Dachet GSE153669 log2 change 0 to 24 h, set-independent) sha256 9b04bb7f57c0
+# share of recurrent genes whose SZ direction equals their direction in the dying tissue at 24 h (genes with a Dachet measurement and up != down); expected = from the share of genes rising at 24 h (0.497)
+# 2026-10-21: rows "cohort tier (q < 0.1)" and "3+ cohort clusters" with RECURRENCE_MULTIBANK=sets (cluster_sets_2026-10-21/out_sets/recurrence_genes.tsv)
+set	genes	same_direction	share	expected	p_binomial
+cohort tier (q < 0.1)	133	85	0.639	0.5	0.0013
+study tier (q < 0.1)	365	235	0.644	0.5	4.26e-08
+3+ cohort clusters	5192	3136	0.604	0.5	7.35e-51
+5+ lists	2229	1361	0.611	0.5	1.6e-25
+10+ lists	103	68	0.66	0.5	0.00149

@@ -1,0 +1,358 @@
+# figure: fig01 panel b (core 80 base)
+# script: analyses/subject_relations/distinct_subjects.py, run on the S81 run folder with the Shao 2008 'published, brain' unit removed from recurrence_units.tsv (L01, P3, 2026-10-17); exporter step of analyses/figure_exports/export_fig01_fig11.py (fig1_b, FIGURE_DATA_OUT redirected to a private folder) copies the 13 columns unchanged (fig01_b_distinct_subjects_80_raw.tsv); tier and list_flag columns added by add_tier_flag.py
+# input: L01/distinct_subjects/distinct_subjects_80.tsv sha256 98a65efcefee; base80.tsv (build_core80.py output, Table 4 minus Shao 2008: 70 authors + 10 derived)
+# population: the core 80 base studies as published-brain units (72 contribute a gene list; the 7 derived-list studies with no gene at FDR < 0.05 are added as modelled rows in the pipeline input, as in the 81 run; Pai 2019 is in the base with an empty list); counts are the lineage n (all diagnoses of the contrast), not the recorded SZ + control of base80.tsv
+# tier = authors | derived | authors+derived over the members of the row (a member that is not a base study by exact name, e.g. 'Scarr 2018' or any study outside the base, makes the row authors+derived, as in the 81 file); list_flag = 'no list: <names>' for members among the 8 studies with no list (Maschietto 2015, de Baumont 2015, Arion 2017, Harris 2008, Abdolmaleky 2019, Iwamoto 2004, Iwamoto 2005, and Pai 2019, whose derived list at FDR 5% is empty); rows are cluster / total rows, per-study sizes are in fig01_b_distinct_subjects_80_by_study.tsv
+# Shao 2008 (18191109) in list set: no (its unit is removed from the input)
+# tier: computed 2026-10-18 with the D30 tiers of base80_studies.tsv by the stored rule (members' tiers; a member that is not a base study by exact name makes the row authors+derived)
+# 2026-10-21: SZ and CTRL rows from the authors' recorded counts (SZ and control counts recorded for all 80 studies). SZ + control: naive 5,897, lower 1,798, upper 4,342 (sums of the SZ and CTRL rows).
+set	level	cluster	measure	n_studies	naive	lower	upper	same_data_collapsed	capacity_collapsed	overlap_collapsed	overlaps	members	tier	list_flag
+published brain	cluster	aus	all	10	588	211	588	0	0	0		Weidenhofer 2006 (14); Bowden 2008 (14); Narayan 2008 (55); Wu 2012 (18); Fillman 2013 (40); Scarr 2018 (45); Scarr 2018 (30); Santarelli 2019 (74); Frohlich 2024 (87); Dean 2026 (211)	authors+derived	
+published brain	cluster	brain_other:18985160	all	1	20	20	20	0	0	0		Mudge 2008 (20)	authors	
+published brain	cluster	brain_other:21091092	all	1	20	20	20	0	0	0		Schmitt 2011 (20)	authors	
+published brain	cluster	brain_other:21538462	all	1	42	42	42	0	0	0		Barnes 2011 (42)	authors	
+published brain	cluster	brain_other:24776767	all	1	11	11	11	0	0	0		Xiao 2014 (11)	authors	
+published brain	cluster	brain_other:27940260	all	1	45	45	45	0	0	0		Voisey 2017 (45)	authors	
+published brain	cluster	brain_other:28123834	all	1	12	12	12	0	0	0		Mladinov 2016 (12)	authors	
+published brain	cluster	brain_other:32152472	all	1	26	26	26	0	0	0		Perez 2021 (26)	authors	
+published brain	cluster	brain_other:33184259	all	1	8	8	8	0	0	0		Maas 2020 (8)	authors	
+published brain	cluster	brain_other:34004381	all	1	20	20	20	0	0	0		Gebicke-Haerter 2021 (20)	authors	
+published brain	cluster	brain_other:36223459	all	1	23	23	23	0	0	0		Batiuk 2022 (23)	authors	
+published brain	cluster	brain_other:37498306	all	1	15	15	15	0	0	0		Arihisa 2023 (15)	authors	
+published brain	cluster	brain_other:38648100	all	1	58	58	58	0	0	0		Zhu 2024 (58)	authors	
+published brain	cluster	brain_other:41210297	all	1	32	32	32	0	0	0		Mas 2025 (32)	authors	
+published brain	cluster	cmc+mssm+pitt+libd	all	21	2863	1036	2222	0	0	641.3	25560755~29112193 72.0; 25560755~27668389 64.0; 27668389~36302706 40.0; 33558674~box:libd 39.8; 39237723~28476208 36.0; 27668389~39237723 35.0; 18771015~25560755 16.0; 20034564~27668389 13.0; 31123247~36302706 11.5; 31174959~36319771 314.0	Hakak 2001 (24); Garbett 2008 (18); Arion 2010 (16); Arion 2015 (72); Fromer 2016 (537); Chang 2017 (46); Enwright 2018 (72); Jaffe 2018 (351); Lanz 2019 (38); Collado-Torres 2019 (447); Jaffe 2020 (168); Akula 2021 (99); Wu 2021 (24); Ketchesin 2023 (72); Benjamin 2022 (393); Schulmann 2023 (201); Arbabi 2025 (38); Yalcinbas 2025 (68); Kwon 2026 (63); Singh 2026 (80); Arion 2017 (36)	authors+derived	no list: Arion 2017
+published brain	cluster	harvard	all	5	344	180	328	0	0	16.0	24628518~24702465 12.1; 24702465~38448582 3.9	Pietersen 2014 (PV neurons) (16); Pietersen 2014 (18); Mauney 2015 (18); Lindholm Carlström 2021 (112); Ling 2024 (180)	authors	
+published brain	cluster	pritzker	all	2	68	48	68	0	0	0		Ramaker 2017 (48); Zeppillo 2022 (20)	authors+derived	
+published brain	cluster	stanley	all	22	999	99	138	0	861	0		Kuromitsu 2001 (46); Aston 2004 (26); Altar 2005 (46); Chu 2009 (23); Chen 2013 (91); Hwang 2013 (29); Kohen 2014 (46); Zhao 2015 (57); Darby 2016 (95); Hu 2016 (40); Kim 2016 (93); Bakshi 2020 (22); Weissleder 2021 (39); Puvogel 2022 (29); Alsema 2025 (28); Zhang 2026 (30); Maschietto 2015 (59); de Baumont 2015 (59); Harris 2008 (24); Abdolmaleky 2019 (20); Iwamoto 2004 (28); Iwamoto 2005 (69)	authors+derived	no list: Maschietto 2015; de Baumont 2015; Harris 2008; Abdolmaleky 2019; Iwamoto 2004; Iwamoto 2005
+published brain	cluster	multi-bank (no cluster)	all	7	879	0	879	0	0	0		Saetre 2007 (110); Maycox 2009 (51); Pai 2019 (34); Mendizabal 2019 (50); Ruzicka 2024 (135); Mendez-Victoriano 2026 (60); Lee 2026 (PsychAD) (439)	authors+derived	no list: Pai 2019
+published brain	total	all	all	80	6073	1858	4401	0	861	810.7	cross-cluster 153.4; merged for the lower end: cmc+mssm+pitt+libd+pritzker	22 clusters; the 7 studies that span several banks are in the multi-bank row here and count in each of their clusters	authors+derived	
+published brain	cluster	aus	SZ	10	268.0	81.0	268	0.0	0	0		Weidenhofer 2006 (7.0); Bowden 2008 (7.0); Narayan 2008 (26.0); Wu 2012 (9.0); Fillman 2013 (20.0); Scarr 2018 (30.0); Scarr 2018 (15.0); Santarelli 2019 (37.0); Frohlich 2024 (36.0); Dean 2026 (81.0)	authors+derived	
+published brain	cluster	brain_other:18985160	SZ	1	14.0	14.0	14	0.0	0	0		Mudge 2008 (14.0)	authors	
+published brain	cluster	brain_other:21091092	SZ	1	10.0	10.0	10	0.0	0	0		Schmitt 2011 (10.0)	authors	
+published brain	cluster	brain_other:21538462	SZ	1	23.0	23.0	23	0.0	0	0		Barnes 2011 (23.0)	authors	
+published brain	cluster	brain_other:32152472	SZ	1	13.0	13.0	13	0.0	0	0		Perez 2021 (13.0)	authors	
+published brain	cluster	brain_other:36223459	SZ	1	9.0	9.0	9	0.0	0	0		Batiuk 2022 (9.0)	authors	
+published brain	cluster	brain_other:38648100	SZ	1	29.0	29.0	29	0.0	0	0		Zhu 2024 (29.0)	authors	
+published brain	cluster	brain_other:41210297	SZ	1	16.0	16.0	16	0.0	0	0		Mas 2025 (16.0)	authors	
+published brain	cluster	cmc+mssm+pitt+libd	SZ	21	1261.0	454.0	976	0.0	0	284.6	25560755~29112193 36.0; 25560755~27668389 32.0; 27668389~36302706 18.0; 39237723~28476208 17.0; 27668389~39237723 16.0; 33558674~box:libd 13.6; 18771015~25560755 10.0; 20034564~25560755 7.0; 31174959~36319771 135.0	Hakak 2001 (12.0); Garbett 2008 (12.0); Arion 2010 (8.0); Arion 2015 (36.0); Fromer 2016 (258.0); Chang 2017 (22.0); Enwright 2018 (36.0); Jaffe 2018 (155.0); Lanz 2019 (19.0); Collado-Torres 2019 (177.0); Jaffe 2020 (75.0); Akula 2021 (44.0); Wu 2021 (12.0); Ketchesin 2023 (28.0); Benjamin 2022 (154.0); Schulmann 2023 (88.0); Arbabi 2025 (19.0); Yalcinbas 2025 (35.0); Kwon 2026 (32.0); Singh 2026 (22.0); Arion 2017 (17.0)	authors+derived	no list: Arion 2017
+published brain	cluster	harvard	SZ	5	181.0	87.0	173	0.0	0	8.4	24628518~24702465 6.0; 24702465~38448582 2.3	Pietersen 2014 (PV neurons) (8.0); Pietersen 2014 (9.0); Mauney 2015 (9.0); Lindholm Carlström 2021 (68.0); Ling 2024 (87.0)	authors	
+published brain	cluster	pritzker	SZ	2	34.0	24.0	34	0.0	0	0		Ramaker 2017 (24.0); Zeppillo 2022 (10.0)	authors+derived	
+published brain	cluster	stanley	SZ	22	467.0	50	69	0.0	398.0	0		Kuromitsu 2001 (8.0); Aston 2004 (12.0); Altar 2005 (22.0); Chu 2009 (11.0); Chen 2013 (45.0); Hwang 2013 (14.0); Kohen 2014 (17.0); Zhao 2015 (31.0); Darby 2016 (35.0); Hu 2016 (22.0); Kim 2016 (48.0); Bakshi 2020 (11.0); Weissleder 2021 (19.0); Puvogel 2022 (15.0); Alsema 2025 (14.0); Zhang 2026 (15.0); Maschietto 2015 (29.0); de Baumont 2015 (29.0); Harris 2008 (12.0); Abdolmaleky 2019 (10.0); Iwamoto 2004 (13.0); Iwamoto 2005 (35.0)	authors+derived	no list: Maschietto 2015; de Baumont 2015; Harris 2008; Abdolmaleky 2019; Iwamoto 2004; Iwamoto 2005
+published brain	cluster	multi-bank (no cluster)	SZ	7	343.0	0	343	0.0	0	0		Saetre 2007 (55.0); Maycox 2009 (28.0); Pai 2019 (17.0); Mendizabal 2019 (23.0); Ruzicka 2024 (60.0); Mendez-Victoriano 2026 (40.0); Lee 2026 (PsychAD) (120.0)	authors+derived	no list: Pai 2019
+published brain	total	all	SZ	80	2725.0	843.0	2004	0.0	398.0	323.1	cross-cluster 30.2; merged for the lower end: cmc+mssm+pitt+libd+pritzker	22 clusters; the 7 studies that span several banks are in the multi-bank row here and count in each of their clusters	authors+derived	
+published brain	cluster	aus	CTRL	10	242.0	70.0	242	0.0	0	0		Weidenhofer 2006 (7.0); Bowden 2008 (7.0); Narayan 2008 (29.0); Wu 2012 (9.0); Fillman 2013 (20.0); Scarr 2018 (15.0); Scarr 2018 (15.0); Santarelli 2019 (37.0); Frohlich 2024 (33.0); Dean 2026 (70.0)	authors+derived	
+published brain	cluster	brain_other:18985160	CTRL	1	6.0	6.0	6	0.0	0	0		Mudge 2008 (6.0)	authors	
+published brain	cluster	brain_other:21091092	CTRL	1	10.0	10.0	10	0.0	0	0		Schmitt 2011 (10.0)	authors	
+published brain	cluster	brain_other:21538462	CTRL	1	19.0	19.0	19	0.0	0	0		Barnes 2011 (19.0)	authors	
+published brain	cluster	brain_other:32152472	CTRL	1	13.0	13.0	13	0.0	0	0		Perez 2021 (13.0)	authors	
+published brain	cluster	brain_other:36223459	CTRL	1	14.0	14.0	14	0.0	0	0		Batiuk 2022 (14.0)	authors	
+published brain	cluster	brain_other:38648100	CTRL	1	29.0	29.0	29	0.0	0	0		Zhu 2024 (29.0)	authors	
+published brain	cluster	brain_other:41210297	CTRL	1	16.0	16.0	16	0.0	0	0		Mas 2025 (16.0)	authors	
+published brain	cluster	cmc+mssm+pitt+libd	CTRL	21	1562.0	582.0	1217	0.0	0	345.2	25560755~29112193 36.0; 25560755~27668389 32.0; 33558674~box:libd 26.2; 27668389~36302706 22.0; 27668389~39237723 19.0; 27668389~28476208 19.0; 18771015~25560755 6.0; 20034564~27668389 6.0; 31174959~36319771 179.0	Hakak 2001 (12.0); Garbett 2008 (6.0); Arion 2010 (8.0); Arion 2015 (36.0); Fromer 2016 (279.0); Chang 2017 (24.0); Enwright 2018 (36.0); Jaffe 2018 (196.0); Lanz 2019 (19.0); Collado-Torres 2019 (270.0); Jaffe 2020 (93.0); Akula 2021 (55.0); Wu 2021 (12.0); Ketchesin 2023 (36.0); Benjamin 2022 (239.0); Schulmann 2023 (113.0); Arbabi 2025 (19.0); Yalcinbas 2025 (33.0); Kwon 2026 (31.0); Singh 2026 (26.0); Arion 2017 (19.0)	authors+derived	no list: Arion 2017
+published brain	cluster	harvard	CTRL	5	163.0	93.0	155	0.0	0	7.6	24628518~24702465 6.0; 24702465~38448582 1.6	Pietersen 2014 (PV neurons) (8.0); Pietersen 2014 (9.0); Mauney 2015 (9.0); Lindholm Carlström 2021 (44.0); Ling 2024 (93.0)	authors	
+published brain	cluster	pritzker	CTRL	2	34.0	24.0	34	0.0	0	0		Ramaker 2017 (24.0); Zeppillo 2022 (10.0)	authors+derived	
+published brain	cluster	stanley	CTRL	22	474.0	49.0	69	0.0	405.0	0		Kuromitsu 2001 (8.0); Aston 2004 (14.0); Altar 2005 (24.0); Chu 2009 (12.0); Chen 2013 (46.0); Hwang 2013 (15.0); Kohen 2014 (29.0); Zhao 2015 (26.0); Darby 2016 (32.0); Hu 2016 (18.0); Kim 2016 (45.0); Bakshi 2020 (11.0); Weissleder 2021 (20.0); Puvogel 2022 (14.0); Alsema 2025 (14.0); Zhang 2026 (15.0); Maschietto 2015 (30.0); de Baumont 2015 (30.0); Harris 2008 (12.0); Abdolmaleky 2019 (10.0); Iwamoto 2004 (15.0); Iwamoto 2005 (34.0)	authors+derived	no list: Maschietto 2015; de Baumont 2015; Harris 2008; Abdolmaleky 2019; Iwamoto 2004; Iwamoto 2005
+published brain	cluster	multi-bank (no cluster)	CTRL	7	536.0	0	536	0.0	0	0		Saetre 2007 (55.0); Maycox 2009 (23.0); Pai 2019 (17.0); Mendizabal 2019 (27.0); Ruzicka 2024 (75.0); Mendez-Victoriano 2026 (20.0); Lee 2026 (PsychAD) (319.0)	authors+derived	no list: Pai 2019
+published brain	total	all	CTRL	80	3172.0	955.0	2338	0.0	405.0	429.4	cross-cluster 76.5; merged for the lower end: cmc+mssm+pitt+libd+pritzker	22 clusters; the 7 studies that span several banks are in the multi-bank row here and count in each of their clusters	authors+derived	
+first-look	cluster	aus	all	17	923	211	868	55	0	0		Santarelli 2019 (74); Dean 2007 (20); Beveridge 2008 (14); Fröhlich 2024 (87); Bowden 2008 (14); Dean 2026 (211); Narayan 2008 + Tang 2011 (66); Wu 2012 (18); Fillman 2013 (40); Scarr 2018 (45); Ragan 2017 (44); Weidenhofer 2006 (14); Scarr 2018 (30); Mahmoudi 2019 (35); Matosin 2023 (69); Gerstner 2025 (87)	authors+derived	
+first-look	cluster	aus [other]	all	1	196	196	196	0	0	0		Oldmeadow 2014 (196)	authors+derived	
+first-look	cluster	cmc+mssm+pitt+libd	all	27	3337	1036	2650	46	0	641.3	25560755~29112193 72.0; 25560755~27668389 64.0; 36302706~27668389 40.0; 33558674~box:libd 39.8; 39237723~28476208 36.0; 39237723~27668389 35.0; 18771015~25560755 16.0; 20034564~27668389 13.0; 31123247~36302706 11.5; 31174959~36319771 314.0	Hakak 2001 (24); Lanz 2019 (38); Collado-Torres 2019 (447); Hu 2019 (136); Jaffe 2020 (168); Akula 2021 (99); Wu 2021 (24); Ketchesin 2023 (72); Benjamin 2022 (393); Schulmann 2023 (201); Arbabi 2025 (38); Yalcinbas 2025 (68); Nersisyan 2026 (170); Kwon 2026 (63); Singh 2026 (80); Garbett 2008 (18); Arion 2010 (16); Arion 2015 (72); Fromer 2016 (537); Arion 2017 (36); Chang 2017 + Liu 2018 (46); Enwright Iii 2018 (72); Jaffe 2018 (351); Katsel 2005 (39); Katsel 2008 (35); Emani 2024 (48)	authors+derived	no list: Arion 2017
+first-look	cluster	harvard	all	7	965	603	949	0	0	16.0	24628518~24702465 12.1; 24702465~38448582 3.9	Lindholm Carlström 2021 (112); Ling 2024 (180); Kaurani 2024 (603); Pietersen 2014 (16); Pietersen 2014 (18); Mauney 2015 (18); Konradi 2004 (18)	authors+derived	
+first-look	cluster	ipsc [ipsc]	all	47	531	68	514	17	0	0		Ishii 2019 (3); Akkouh 2020 (6); Kathuria 2020 (16); Hathy 2020 (3); Stertz 2021 (13); Akkouh 2021 (6); Tiihonen 2021 (32); Akkouh 2022 (7); Szabo 2021 (10); Koskuvi 2022 (15); Farrelly 2022 (7); Breitmeyer 2023 (6); Kathuria 2023 (14); Akkouh 2024 (28); Raabe 2024 (68); Spathopoulou 2024 (4); Stern 2024 (8); Huynh 2024 (8); Heider 2024 (7); Guo 2024 (6); Szabo 2025 (10); Jia 2025 (10); Yu 2026 (13); Hartmann 2026 (7); Casas 2026 (7); Brennand 2011 (8); Brennand 2015 (8); Topol 2016 (10); Roussos 2016 (8); Narla 2017 (8); Windrem 2017 (7); Hoffman 2017 (19); Shao 2019 + Park 2021 + Liu 2022 (10); Ni 2020 (30); Topol 2015 (10); Tiihonen 2019 (16); Sawada 2020 (2); Notaras 2022 (7); Sebastian 2023 (8); Ma 2024 (11); Sawada 2024 (7); Stankovic 2024 (6); Rao 2025 (6); Chang 2025 (15); Casas 2026 (4)	authors+derived	
+first-look	cluster	ipsc [mixed]	all	1	239	239	239	0	0	0		Yang 2024 (239)	authors+derived	
+first-look	cluster	own:g10	all	1	28	28	28	0	0	0		Bowden 2006 (28)	authors+derived	
+first-look	cluster	own:g101	all	1	217	217	217	0	0	0		Leirer 2019 (217)	authors+derived	
+first-look	cluster	own:g107	all	1	16	16	16	0	0	0		Etemadikhah 2020 (16)	authors+derived	
+first-look	cluster	own:g11	all	1	10	10	10	0	0	0		Vawter 2006 (10)	authors+derived	
+first-look	cluster	own:g110	all	1	32	32	32	0	0	0		Ni 2021 (32)	authors+derived	
+first-look	cluster	own:g111	all	1	100	100	100	0	0	0		Zhang 2020 (100)	authors+derived	
+first-look	cluster	own:g113	all	1	26	26	26	0	0	0		Perez 2021 (26)	authors	
+first-look	cluster	own:g117	all	1	10	10	10	0	0	0		Tan 2021 (10)	authors+derived	
+first-look	cluster	own:g119	all	1	6	6	6	0	0	0		You 2020 (6)	authors+derived	
+first-look	cluster	own:g120	all	1	8	8	8	0	0	0		Maas 2020 (8)	authors	
+first-look	cluster	own:g125	all	1	37	37	37	0	0	0		Gatta 2021 (37)	authors+derived	
+first-look	cluster	own:g126	all	1	59	59	59	0	0	0		Mahmoudi 2021 (59)	authors+derived	
+first-look	cluster	own:g127	all	1	20	20	20	0	0	0		Gebicke-Haerter 2021 (20)	authors	
+first-look	cluster	own:g133	all	1	30	30	30	0	0	0		Song 2021 (30)	authors+derived	
+first-look	cluster	own:g136	all	1	119	119	119	0	0	0		Pan 2022 (119)	authors+derived	
+first-look	cluster	own:g138	all	1	239	239	239	0	0	0		Chen 2022 (239)	authors+derived	
+first-look	cluster	own:g14	all	1	4	4	4	0	0	0		Kakiuchi 2008 (4)	authors+derived	
+first-look	cluster	own:g140	all	1	23	23	23	0	0	0		Batiuk 2022 (23)	authors	
+first-look	cluster	own:g146	all	1	518	518	518	0	0	0		Torsvik 2023 (518)	authors+derived	
+first-look	cluster	own:g147	all	1	37	37	37	0	0	0		Kübler 2023 (37)	authors+derived	
+first-look	cluster	own:g148	all	1	100	100	100	0	0	0		Yang 2023 (100)	authors+derived	
+first-look	cluster	own:g149	all	1	15	15	15	0	0	0		Arihisa 2023 (15)	authors	
+first-look	cluster	own:g151	all	1	20	20	20	0	0	0		Du 2023 (20)	authors+derived	
+first-look	cluster	own:g153	all	1	34	34	34	0	0	0		Hemmings 2022 (34)	authors+derived	
+first-look	cluster	own:g154	all	1	8	8	8	0	0	0		Nguyen 2023 (8)	authors+derived	
+first-look	cluster	own:g157	all	1	13	13	13	0	0	0		Michaelovsky 2024 (13)	authors+derived	
+first-look	cluster	own:g159	all	1	58	58	58	0	0	0		Zhu 2024 (58)	authors	
+first-look	cluster	own:g163	all	1	29	29	29	0	0	0		Wang 2024 (29)	authors+derived	
+first-look	cluster	own:g17	all	1	22	22	22	0	0	0		Yanagi 2008 (22)	authors+derived	
+first-look	cluster	own:g172	all	1	177	177	177	0	0	0		Pan 2025 (177)	authors+derived	
+first-look	cluster	own:g173	all	1	343	343	343	0	0	0		Knowles 2025 (343)	authors+derived	
+first-look	cluster	own:g175	all	1	20	20	20	0	0	0		Dong 2025 (20)	authors+derived	
+first-look	cluster	own:g177	all	1	24	24	24	0	0	0		Xavier 2025 (24)	authors+derived	
+first-look	cluster	own:g179	all	1	32	32	32	0	0	0		Mas 2025 (32)	authors	
+first-look	cluster	own:g183	all	1	12	12	12	0	0	0		Lu 2026 (12)	authors+derived	
+first-look	cluster	own:g185	all	1	113	113	113	0	0	0		Bejaoui 2026 (113)	authors+derived	
+first-look	cluster	own:g187	all	1	100	100	100	0	0	0		Wu 2026 (100)	authors+derived	
+first-look	cluster	own:g188	all	1	136	136	136	0	0	0		Torsvik 2026 (136)	authors+derived	
+first-look	cluster	own:g189	all	1	103	103	103	0	0	0		Liu 2026 (103)	authors+derived	
+first-look	cluster	own:g192	all	1	103	103	103	0	0	0		Cui 2024 (103)	authors+derived	
+first-look	cluster	own:g21	all	1	20	20	20	0	0	0		Mudge 2008 (20)	authors	
+first-look	cluster	own:g24	all	1	64	64	64	0	0	0		Kuzman 2009 (64)	authors+derived	
+first-look	cluster	own:g25	all	1	21	21	21	0	0	0		Bousman 2010 (21)	authors+derived	
+first-look	cluster	own:g26	all	1	10	10	10	0	0	0		Martin 2009 (10)	authors+derived	
+first-look	cluster	own:g29	all	1	101	101	101	0	0	0		Takahashi 2010 (101)	authors+derived	
+first-look	cluster	own:g30	all	1	23	23	23	0	0	0		Matigian 2010 (23)	authors+derived	
+first-look	cluster	own:g31	all	1	20	20	20	0	0	0		Schmitt 2011 (20)	authors	
+first-look	cluster	own:g32	all	1	74	74	74	0	0	0		Santarelli 2011 (74)	authors+derived	
+first-look	cluster	own:g33	all	1	16	16	16	0	0	0		Evgrafov 2011 (16)	authors+derived	
+first-look	cluster	own:g35	all	1	42	42	42	0	0	0		Barnes 2011 (42)	authors	
+first-look	cluster	own:g36	all	2	382	194	194	188	0	0		Gardiner 2012 + Gardiner 2013 (194)	authors+derived	
+first-look	cluster	own:g37	all	1	60	60	60	0	0	0		Lai 2011 (60)	authors+derived	
+first-look	cluster	own:g38	all	1	69	69	69	0	0	0		Miller 2012 (69)	authors+derived	
+first-look	cluster	own:g39	all	1	70	70	70	0	0	0		van Beveren 2012 (70)	authors+derived	
+first-look	cluster	own:g40	all	1	52	52	52	0	0	0		Lee 2012 (52)	authors+derived	
+first-look	cluster	own:g42	all	1	202	202	202	0	0	0		de Jong 2012 (202)	authors+derived	
+first-look	cluster	own:g45	all	1	76	76	76	0	0	0		Sainz 2013 (76)	authors+derived	
+first-look	cluster	own:g46	all	1	6	6	6	0	0	0		Xu 2012 (6)	authors+derived	
+first-look	cluster	own:g47	all	1	21	21	21	0	0	0		Kumarasinghe 2013 (21)	authors+derived	
+first-look	cluster	own:g48	all	1	714	714	714	0	0	0		Sanders 2013 (714)	authors+derived	
+first-look	cluster	own:g5	all	1	66	66	66	0	0	0		Middleton 2005 (66)	authors+derived	
+first-look	cluster	own:g56	all	1	11	11	11	0	0	0		Xiao 2014 (11)	authors	
+first-look	cluster	own:g58	all	2	60	30	30	30	0	0		Zhang 2015 + Xu 2016 (30)	authors+derived	
+first-look	cluster	own:g59	all	2	118	59	59	59	0	0		de Baumont 2015 + Maschietto 2015 (59)	authors+derived	
+first-look	cluster	own:g6	all	1	23	23	23	0	0	0		Zvara 2005 (23)	authors+derived	
+first-look	cluster	own:g61	all	1	40	40	40	0	0	0		Cattane 2015 (40)	authors+derived	
+first-look	cluster	own:g62	all	1	89	89	89	0	0	0		Fan 2015 (89)	authors+derived	
+first-look	cluster	own:g63	all	1	235	235	235	0	0	0		Yu 2015 (235)	authors+derived	
+first-look	cluster	own:g64	all	1	351	351	351	0	0	0		Wei 2015 (351)	authors+derived	
+first-look	cluster	own:g66	all	1	96	96	96	0	0	0		Wu 2016 (96)	authors+derived	
+first-look	cluster	own:g67	all	1	245	245	245	0	0	0		Zheutlin 2016 (245)	authors+derived	
+first-look	cluster	own:g70	all	1	6	6	6	0	0	0		Chen 2016 (6)	authors+derived	
+first-look	cluster	own:g73	all	1	31	31	31	0	0	0		Horiuchi 2016 (31)	authors+derived	
+first-look	cluster	own:g78	all	1	45	45	45	0	0	0		Voisey 2017 (45)	authors	
+first-look	cluster	own:g80	all	1	12	12	12	0	0	0		Mladinov 2016 (12)	authors	
+first-look	cluster	own:g81	all	2	2393	1204	1204	1189	0	0		Sanders 2017 + Duan 2018 (1204)	authors+derived	
+first-look	cluster	own:g83	all	1	72	72	72	0	0	0		Fries 2018 (72)	authors+derived	
+first-look	cluster	own:g87	all	1	14	14	14	0	0	0		Gassó 2017 (14)	authors+derived	
+first-look	cluster	own:g9	all	1	12	12	12	0	0	0		McCurdy 2006 (12)	authors+derived	
+first-look	cluster	own:g92	all	1	19	19	19	0	0	0		Guffanti 2018 (19)	authors+derived	
+first-look	cluster	own:g95	all	1	46	46	46	0	0	0		Du 2019 (46)	authors+derived	
+first-look	cluster	own:g96	all	1	18	18	18	0	0	0		Yao 2019 (18)	authors+derived	
+first-look	cluster	own:g98	all	1	51	51	51	0	0	0		Geaghan 2019 (51)	authors+derived	
+first-look	cluster	own:single:12090816	all	1	8	8	8	0	0	0		Hemby 2002 (8)	authors+derived	
+first-look	cluster	own:single:12872291	all	1	4	4	4	0	0	0		Chung 2003 (4)	authors+derived	
+first-look	cluster	own:single:1372064	all	1	20	20	20	0	0	0		Perrett 1992 (20)	authors+derived	
+first-look	cluster	own:single:15645418	all	1	30	30	30	0	0	0		Tsuang 2005 (30)	authors+derived	
+first-look	cluster	own:single:17668069	all	1	12	12	12	0	0	0		Craddock 2007 (12)	authors+derived	
+first-look	cluster	own:single:18545665	all	1	30	30	30	0	0	0		Matigian 2008 (30)	authors+derived	
+first-look	cluster	own:single:19011233	all	1	20	20	20	0	0	0		Ishiguro 2010 (20)	authors+derived	
+first-look	cluster	own:single:21972136	all	1	19	19	19	0	0	0		Glatt 2011 (19)	authors+derived	
+first-look	cluster	own:single:22433715	all	1	202	202	202	0	0	0		de Jong 2012 (202)	authors+derived	
+first-look	cluster	own:single:29888231	all	1	90	90	90	0	0	0		Vawter 2018 (90)	authors+derived	
+first-look	cluster	own:single:31695175	all	1	143	143	143	0	0	0		Chagnon 2020 (143)	authors+derived	
+first-look	cluster	own:single:32143829	all	1	255	255	255	0	0	0		Evgrafov 2020 (255)	authors+derived	
+first-look	cluster	own:single:34054608	all	1	28	28	28	0	0	0		Melbourne 2021 (28)	authors+derived	
+first-look	cluster	own:single:35016150	all	1	30	30	30	0	0	0		Li 2022 (30)	authors+derived	
+first-look	cluster	own:single:35543802	all	1	6	6	6	0	0	0		Liao 2022 (6)	authors+derived	
+first-look	cluster	own:single:38842000	all	1	76	76	76	0	0	0		Usta Saglam 2024 (76)	authors+derived	
+first-look	cluster	own:single:39702523	all	1	20	20	20	0	0	0		Li 2024 (20)	authors+derived	
+first-look	cluster	own:single:39974493	all	1	6	6	6	0	0	0		Li 2025 (6)	authors+derived	
+first-look	cluster	own:single:40263528	all	1	899	899	899	0	0	0		Solomon 2025 (899)	authors+derived	
+first-look	cluster	own:single:40634861	all	1	20	20	20	0	0	0		Du 2025 (20)	authors+derived	
+first-look	cluster	own:single:40665444	all	1	10	10	10	0	0	0		Long 2025 (10)	authors+derived	
+first-look	cluster	own:single:41713307	all	1	100	100	100	0	0	0		Lv 2026 (100)	authors+derived	
+first-look	cluster	pritzker	all	2	68	48	68	0	0	0		Zeppillo 2022 (20); Ramaker 2017 (48)	authors+derived	
+first-look	cluster	stanley	all	25	1172	99	138	0	1034	0		Iwamoto 2004 (28); Zimmerman 2020 (68); Bakshi 2020 (22); Weissleder 2021 (39); Puvogel 2022 (29); Shao 2008 (61); Alsema 2025 (28); Zhang 2026 (30); Kuromitsu 2001 (46); Harris 2008 (24); Chu 2009 (23); Aston 2004 (26); Iwamoto 2005 (69); Chen 2013 (91); Hwang 2013 (29); Smalheiser 2014 (40); Kohen 2014 (46); Zhao 2015 (57); Darby 2016 (95); Altar 2005 (46); Hu 2016 (40); Kim 2016 (93); Abdolmaleky 2019 (20); Tkachev 2003 (30); Prabakaran 2004 (92)	authors+derived	no list: Iwamoto 2004; Harris 2008; Iwamoto 2005; Abdolmaleky 2019
+first-look	cluster	stanley [other]	all	1	11	11	11	0	0	0		Namkung 2023 (11)	authors+derived	
+first-look	cluster	multi-bank (no cluster)	all	7	879	0	879	0	0	0		Pai 2019 (34); Mendizabal 2019 (50); Saetre 2007 (110); Ruzicka 2024 (135); Mendez-Victoriano 2026 (60); Lee 2026 (439); Maycox 2009 (51)	authors+derived	no list: Pai 2019
+first-look	total	all	all	244	19446	11519	15871	1584	1034	956.7	cross-cluster 299.4; merged for the lower end: cmc+mssm+pitt+libd+harvard+pritzker	114 clusters + 7 multi-bank	authors+derived	
+first-look	cluster	aus	SZ	14	288	36	262	26	0	0		Dean 2007 (10); Beveridge 2008 (7); Fröhlich 2024 (36); Bowden 2008 (7); Narayan 2008 + Tang 2011 (32); Wu 2012 (9); Fillman 2013 (20); Scarr 2018 (30); Weidenhofer 2006 (7); Scarr 2018 (15); Mahmoudi 2019 (17); Matosin 2023 (36); Gerstner 2025 (36)	authors+derived	
+first-look	cluster	aus [other]	SZ	1	116	116	116	0	0	0		Oldmeadow 2014 (116)	authors+derived	
+first-look	cluster	cmc+mssm+pitt+libd	SZ	25	1356	454	1049	22	0	284.6	25560755~29112193 36.0; 25560755~27668389 32.0; 36302706~27668389 18.0; 39237723~28476208 17.0; 39237723~27668389 16.0; 33558674~box:libd 13.6; 18771015~25560755 10.0; 20034564~25560755 7.0; 31174959~36319771 135.0	Hakak 2001 (12); Lanz 2019 (19); Collado-Torres 2019 (177); Hu 2019 (34); Jaffe 2020 (75); Akula 2021 (44); Wu 2021 (12); Ketchesin 2023 (28); Benjamin 2022 (154); Schulmann 2023 (88); Arbabi 2025 (19); Yalcinbas 2025 (35); Kwon 2026 (32); Garbett 2008 (12); Arion 2010 (8); Arion 2015 (36); Fromer 2016 (258); Arion 2017 (17); Chang 2017 + Liu 2018 (22); Enwright Iii 2018 (36); Jaffe 2018 (155); Katsel 2005 (21); Katsel 2008 (16); Emani 2024 (24)	authors+derived	no list: Arion 2017
+first-look	cluster	harvard	SZ	6	189	87	181	0	0	8.4	24628518~24702465 6.0; 24702465~38448582 2.3	Lindholm Carlström 2021 (68); Ling 2024 (87); Pietersen 2014 (8); Pietersen 2014 (9); Mauney 2015 (9); Konradi 2004 (8)	authors+derived	
+first-look	cluster	ipsc [ipsc]	SZ	32	199	34	190	9	0	0		Ishii 2019 (1); Kathuria 2020 (8); Stertz 2021 (7); Tiihonen 2021 (16); Koskuvi 2022 (5); Farrelly 2022 (3); Breitmeyer 2023 (4); Akkouh 2024 (14); Raabe 2024 (34); Stern 2024 (2); Huynh 2024 (4); Heider 2024 (4); Brennand 2011 (4); Brennand 2015 (4); Topol 2016 (4); Roussos 2016 (4); Narla 2017 (4); Windrem 2017 (4); Hoffman 2017 (10); Shao 2019 + Park 2021 + Liu 2022 (5); Ni 2020 (15); Topol 2015 (4); Tiihonen 2019 (5); Sawada 2020 (1); Notaras 2022 (3); Sebastian 2023 (4); Sawada 2024 (3); Stankovic 2024 (3); Rao 2025 (3); Chang 2025 (8)	authors+derived	
+first-look	cluster	ipsc [mixed]	SZ	1	121	121	121	0	0	0		Yang 2024 (121)	authors+derived	
+first-look	cluster	own:g10	SZ	1	14	14	14	0	0	0		Bowden 2006 (14)	authors+derived	
+first-look	cluster	own:g101	SZ	1	68	68	68	0	0	0		Leirer 2019 (68)	authors+derived	
+first-look	cluster	own:g107	SZ	1	9	9	9	0	0	0		Etemadikhah 2020 (9)	authors+derived	
+first-look	cluster	own:g11	SZ	1	5	5	5	0	0	0		Vawter 2006 (5)	authors+derived	
+first-look	cluster	own:g113	SZ	1	13	13	13	0	0	0		Perez 2021 (13)	authors	
+first-look	cluster	own:g117	SZ	1	5	5	5	0	0	0		Tan 2021 (5)	authors+derived	
+first-look	cluster	own:g125	SZ	1	19	19	19	0	0	0		Gatta 2021 (19)	authors+derived	
+first-look	cluster	own:g133	SZ	1	10	10	10	0	0	0		Song 2021 (10)	authors+derived	
+first-look	cluster	own:g14	SZ	1	2	2	2	0	0	0		Kakiuchi 2008 (2)	authors+derived	
+first-look	cluster	own:g140	SZ	1	9	9	9	0	0	0		Batiuk 2022 (9)	authors	
+first-look	cluster	own:g146	SZ	1	329	329	329	0	0	0		Torsvik 2023 (329)	authors+derived	
+first-look	cluster	own:g147	SZ	1	20	20	20	0	0	0		Kübler 2023 (20)	authors+derived	
+first-look	cluster	own:g148	SZ	1	50	50	50	0	0	0		Yang 2023 (50)	authors+derived	
+first-look	cluster	own:g151	SZ	1	10	10	10	0	0	0		Du 2023 (10)	authors+derived	
+first-look	cluster	own:g153	SZ	1	16	16	16	0	0	0		Hemmings 2022 (16)	authors+derived	
+first-look	cluster	own:g159	SZ	1	29	29	29	0	0	0		Zhu 2024 (29)	authors	
+first-look	cluster	own:g163	SZ	1	9	9	9	0	0	0		Wang 2024 (9)	authors+derived	
+first-look	cluster	own:g17	SZ	1	11	11	11	0	0	0		Yanagi 2008 (11)	authors+derived	
+first-look	cluster	own:g172	SZ	1	83	83	83	0	0	0		Pan 2025 (83)	authors+derived	
+first-look	cluster	own:g173	SZ	1	59	59	59	0	0	0		Knowles 2025 (59)	authors+derived	
+first-look	cluster	own:g175	SZ	1	10	10	10	0	0	0		Dong 2025 (10)	authors+derived	
+first-look	cluster	own:g177	SZ	1	12	12	12	0	0	0		Xavier 2025 (12)	authors+derived	
+first-look	cluster	own:g179	SZ	1	16	16	16	0	0	0		Mas 2025 (16)	authors	
+first-look	cluster	own:g185	SZ	1	21	21	21	0	0	0		Bejaoui 2026 (21)	authors+derived	
+first-look	cluster	own:g188	SZ	1	100	100	100	0	0	0		Torsvik 2026 (100)	authors+derived	
+first-look	cluster	own:g192	SZ	1	43	43	43	0	0	0		Cui 2024 (43)	authors+derived	
+first-look	cluster	own:g21	SZ	1	14	14	14	0	0	0		Mudge 2008 (14)	authors	
+first-look	cluster	own:g24	SZ	1	32	32	32	0	0	0		Kuzman 2009 (32)	authors+derived	
+first-look	cluster	own:g25	SZ	1	13	13	13	0	0	0		Bousman 2010 (13)	authors+derived	
+first-look	cluster	own:g26	SZ	1	5	5	5	0	0	0		Martin 2009 (5)	authors+derived	
+first-look	cluster	own:g29	SZ	1	52	52	52	0	0	0		Takahashi 2010 (52)	authors+derived	
+first-look	cluster	own:g31	SZ	1	10	10	10	0	0	0		Schmitt 2011 (10)	authors	
+first-look	cluster	own:g32	SZ	1	37	37	37	0	0	0		Santarelli 2011 (37)	authors+derived	
+first-look	cluster	own:g35	SZ	1	23	23	23	0	0	0		Barnes 2011 (23)	authors	
+first-look	cluster	own:g36	SZ	2	226	114	114	112	0	0		Gardiner 2012 + Gardiner 2013 (114)	authors+derived	
+first-look	cluster	own:g37	SZ	1	30	30	30	0	0	0		Lai 2011 (30)	authors+derived	
+first-look	cluster	own:g38	SZ	1	35	35	35	0	0	0		Miller 2012 (35)	authors+derived	
+first-look	cluster	own:g39	SZ	1	41	41	41	0	0	0		van Beveren 2012 (41)	authors+derived	
+first-look	cluster	own:g40	SZ	1	16	16	16	0	0	0		Lee 2012 (16)	authors+derived	
+first-look	cluster	own:g42	SZ	1	106	106	106	0	0	0		de Jong 2012 (106)	authors+derived	
+first-look	cluster	own:g45	SZ	1	6	6	6	0	0	0		Sainz 2013 (6)	authors+derived	
+first-look	cluster	own:g46	SZ	1	3	3	3	0	0	0		Xu 2012 (3)	authors+derived	
+first-look	cluster	own:g47	SZ	1	10	10	10	0	0	0		Kumarasinghe 2013 (10)	authors+derived	
+first-look	cluster	own:g48	SZ	1	268	268	268	0	0	0		Sanders 2013 (268)	authors+derived	
+first-look	cluster	own:g5	SZ	1	33	33	33	0	0	0		Middleton 2005 (33)	authors+derived	
+first-look	cluster	own:g58	SZ	2	33	18	18	15	0	0		Zhang 2015 + Xu 2016 (18)	authors+derived	
+first-look	cluster	own:g59	SZ	2	58	29	29	29	0	0		de Baumont 2015 + Maschietto 2015 (29)	authors+derived	
+first-look	cluster	own:g6	SZ	1	13	13	13	0	0	0		Zvara 2005 (13)	authors+derived	
+first-look	cluster	own:g61	SZ	1	20	20	20	0	0	0		Cattane 2015 (20)	authors+derived	
+first-look	cluster	own:g63	SZ	1	105	105	105	0	0	0		Yu 2015 (105)	authors+derived	
+first-look	cluster	own:g64	SZ	1	164	164	164	0	0	0		Wei 2015 (164)	authors+derived	
+first-look	cluster	own:g66	SZ	1	47	47	47	0	0	0		Wu 2016 (47)	authors+derived	
+first-look	cluster	own:g70	SZ	1	3	3	3	0	0	0		Chen 2016 (3)	authors+derived	
+first-look	cluster	own:g73	SZ	1	16	16	16	0	0	0		Horiuchi 2016 (16)	authors+derived	
+first-look	cluster	own:g81	SZ	2	1043	529	529	514	0	0		Sanders 2017 + Duan 2018 (529)	authors+derived	
+first-look	cluster	own:g83	SZ	1	52	52	52	0	0	0		Fries 2018 (52)	authors+derived	
+first-look	cluster	own:g87	SZ	1	8	8	8	0	0	0		Gassó 2017 (8)	authors+derived	
+first-look	cluster	own:g9	SZ	1	7	7	7	0	0	0		McCurdy 2006 (7)	authors+derived	
+first-look	cluster	own:g96	SZ	1	9	9	9	0	0	0		Yao 2019 (9)	authors+derived	
+first-look	cluster	own:g98	SZ	1	36	36	36	0	0	0		Geaghan 2019 (36)	authors+derived	
+first-look	cluster	own:single:12090816	SZ	1	4	4	4	0	0	0		Hemby 2002 (4)	authors+derived	
+first-look	cluster	own:single:12872291	SZ	1	2	2	2	0	0	0		Chung 2003 (2)	authors+derived	
+first-look	cluster	own:single:15645418	SZ	1	20	20	20	0	0	0		Tsuang 2005 (20)	authors+derived	
+first-look	cluster	own:single:17668069	SZ	1	6	6	6	0	0	0		Craddock 2007 (6)	authors+derived	
+first-look	cluster	own:single:18545665	SZ	1	16	16	16	0	0	0		Matigian 2008 (16)	authors+derived	
+first-look	cluster	own:single:19011233	SZ	1	10	10	10	0	0	0		Ishiguro 2010 (10)	authors+derived	
+first-look	cluster	own:single:21972136	SZ	1	7	7	7	0	0	0		Glatt 2011 (7)	authors+derived	
+first-look	cluster	own:single:22433715	SZ	1	106	106	106	0	0	0		de Jong 2012 (106)	authors+derived	
+first-look	cluster	own:single:32143829	SZ	1	144	144	144	0	0	0		Evgrafov 2020 (144)	authors+derived	
+first-look	cluster	own:single:34054608	SZ	1	14	14	14	0	0	0		Melbourne 2021 (14)	authors+derived	
+first-look	cluster	own:single:35016150	SZ	1	15	15	15	0	0	0		Li 2022 (15)	authors+derived	
+first-look	cluster	own:single:35543802	SZ	1	3	3	3	0	0	0		Liao 2022 (3)	authors+derived	
+first-look	cluster	own:single:39702523	SZ	1	10	10	10	0	0	0		Li 2024 (10)	authors+derived	
+first-look	cluster	own:single:39974493	SZ	1	6	6	6	0	0	0		Li 2025 (6)	authors+derived	
+first-look	cluster	own:single:40634861	SZ	1	10	10	10	0	0	0		Du 2025 (10)	authors+derived	
+first-look	cluster	own:single:40665444	SZ	1	5	5	5	0	0	0		Long 2025 (5)	authors+derived	
+first-look	cluster	pritzker	SZ	2	34	24	34	0	0	0		Zeppillo 2022 (10); Ramaker 2017 (24)	authors+derived	
+first-look	cluster	stanley	SZ	20	447	50	69	0	378	0		Iwamoto 2004 (13); Bakshi 2020 (11); Weissleder 2021 (19); Puvogel 2022 (15); Shao 2008 (32); Zhang 2026 (15); Harris 2008 (12); Chu 2009 (11); Aston 2004 (12); Iwamoto 2005 (35); Chen 2013 (45); Hwang 2013 (14); Kohen 2014 (17); Zhao 2015 (31); Altar 2005 (22); Hu 2016 (22); Kim 2016 (48); Abdolmaleky 2019 (10); Tkachev 2003 (15); Prabakaran 2004 (48)	authors+derived	no list: Iwamoto 2004; Harris 2008; Iwamoto 2005; Abdolmaleky 2019
+first-look	cluster	stanley [other]	SZ	1	5	5	5	0	0	0		Namkung 2023 (5)	authors+derived	
+first-look	cluster	multi-bank (no cluster)	SZ	7	333	0	333	0	0	0		Pai 2019 (7); Mendizabal 2019 (23); Saetre 2007 (55); Ruzicka 2024 (60); Mendez-Victoriano 2026 (40); Lee 2026 (120); Maycox 2009 (28)	authors+derived	no list: Pai 2019
+first-look	total	all	SZ	189	7012	4070	5535	727	378	371.5	cross-cluster 78.6; merged for the lower end: cmc+mssm+pitt+libd+harvard+pritzker	85 clusters + 7 multi-bank	authors+derived	
+first-look	cluster	aus	CTRL	14	270	34	241	29	0	0		Dean 2007 (10); Beveridge 2008 (7); Fröhlich 2024 (33); Bowden 2008 (7); Narayan 2008 + Tang 2011 (34); Wu 2012 (9); Fillman 2013 (20); Scarr 2018 (15); Weidenhofer 2006 (7); Scarr 2018 (15); Mahmoudi 2019 (18); Matosin 2023 (33); Gerstner 2025 (33)	authors+derived	
+first-look	cluster	aus [other]	CTRL	1	80	80	80	0	0	0		Oldmeadow 2014 (80)	authors+derived	
+first-look	cluster	cmc+mssm+pitt+libd	CTRL	25	1723	582	1354	24	0	345.2	25560755~29112193 36.0; 25560755~27668389 32.0; 33558674~box:libd 26.2; 36302706~27668389 22.0; 39237723~27668389 19.0; 39237723~28476208 19.0; 18771015~25560755 6.0; 20034564~27668389 6.0; 31174959~36319771 179.0	Hakak 2001 (12); Lanz 2019 (19); Collado-Torres 2019 (270); Hu 2019 (102); Jaffe 2020 (93); Akula 2021 (55); Wu 2021 (12); Ketchesin 2023 (36); Benjamin 2022 (239); Schulmann 2023 (113); Arbabi 2025 (19); Yalcinbas 2025 (33); Kwon 2026 (31); Garbett 2008 (6); Arion 2010 (8); Arion 2015 (36); Fromer 2016 (279); Arion 2017 (19); Chang 2017 + Liu 2018 (24); Enwright Iii 2018 (36); Jaffe 2018 (196); Katsel 2005 (18); Katsel 2008 (19); Emani 2024 (24)	authors+derived	no list: Arion 2017
+first-look	cluster	harvard	CTRL	6	173	93	165	0	0	7.6	24628518~24702465 6.0; 24702465~38448582 1.6	Lindholm Carlström 2021 (44); Ling 2024 (93); Pietersen 2014 (8); Pietersen 2014 (9); Mauney 2015 (9); Konradi 2004 (10)	authors+derived	
+first-look	cluster	ipsc [ipsc]	CTRL	32	214	34	206	8	0	0		Ishii 2019 (2); Kathuria 2020 (8); Stertz 2021 (6); Tiihonen 2021 (16); Koskuvi 2022 (10); Farrelly 2022 (4); Breitmeyer 2023 (2); Akkouh 2024 (14); Raabe 2024 (34); Stern 2024 (6); Huynh 2024 (4); Heider 2024 (3); Brennand 2011 (4); Brennand 2015 (4); Topol 2016 (6); Roussos 2016 (4); Narla 2017 (4); Windrem 2017 (3); Hoffman 2017 (9); Shao 2019 + Park 2021 + Liu 2022 (5); Ni 2020 (15); Topol 2015 (6); Tiihonen 2019 (11); Sawada 2020 (1); Notaras 2022 (4); Sebastian 2023 (4); Sawada 2024 (4); Stankovic 2024 (3); Rao 2025 (3); Chang 2025 (7)	authors+derived	
+first-look	cluster	ipsc [mixed]	CTRL	1	118	118	118	0	0	0		Yang 2024 (118)	authors+derived	
+first-look	cluster	own:g10	CTRL	1	14	14	14	0	0	0		Bowden 2006 (14)	authors+derived	
+first-look	cluster	own:g101	CTRL	1	149	149	149	0	0	0		Leirer 2019 (149)	authors+derived	
+first-look	cluster	own:g107	CTRL	1	7	7	7	0	0	0		Etemadikhah 2020 (7)	authors+derived	
+first-look	cluster	own:g11	CTRL	1	5	5	5	0	0	0		Vawter 2006 (5)	authors+derived	
+first-look	cluster	own:g113	CTRL	1	13	13	13	0	0	0		Perez 2021 (13)	authors	
+first-look	cluster	own:g117	CTRL	1	5	5	5	0	0	0		Tan 2021 (5)	authors+derived	
+first-look	cluster	own:g125	CTRL	1	18	18	18	0	0	0		Gatta 2021 (18)	authors+derived	
+first-look	cluster	own:g133	CTRL	1	20	20	20	0	0	0		Song 2021 (20)	authors+derived	
+first-look	cluster	own:g14	CTRL	1	2	2	2	0	0	0		Kakiuchi 2008 (2)	authors+derived	
+first-look	cluster	own:g140	CTRL	1	14	14	14	0	0	0		Batiuk 2022 (14)	authors	
+first-look	cluster	own:g146	CTRL	1	189	189	189	0	0	0		Torsvik 2023 (189)	authors+derived	
+first-look	cluster	own:g147	CTRL	1	17	17	17	0	0	0		Kübler 2023 (17)	authors+derived	
+first-look	cluster	own:g148	CTRL	1	50	50	50	0	0	0		Yang 2023 (50)	authors+derived	
+first-look	cluster	own:g151	CTRL	1	10	10	10	0	0	0		Du 2023 (10)	authors+derived	
+first-look	cluster	own:g153	CTRL	1	18	18	18	0	0	0		Hemmings 2022 (18)	authors+derived	
+first-look	cluster	own:g159	CTRL	1	29	29	29	0	0	0		Zhu 2024 (29)	authors	
+first-look	cluster	own:g163	CTRL	1	20	20	20	0	0	0		Wang 2024 (20)	authors+derived	
+first-look	cluster	own:g17	CTRL	1	11	11	11	0	0	0		Yanagi 2008 (11)	authors+derived	
+first-look	cluster	own:g172	CTRL	1	94	94	94	0	0	0		Pan 2025 (94)	authors+derived	
+first-look	cluster	own:g173	CTRL	1	217	217	217	0	0	0		Knowles 2025 (217)	authors+derived	
+first-look	cluster	own:g175	CTRL	1	10	10	10	0	0	0		Dong 2025 (10)	authors+derived	
+first-look	cluster	own:g177	CTRL	1	12	12	12	0	0	0		Xavier 2025 (12)	authors+derived	
+first-look	cluster	own:g179	CTRL	1	16	16	16	0	0	0		Mas 2025 (16)	authors	
+first-look	cluster	own:g185	CTRL	1	92	92	92	0	0	0		Bejaoui 2026 (92)	authors+derived	
+first-look	cluster	own:g188	CTRL	1	36	36	36	0	0	0		Torsvik 2026 (36)	authors+derived	
+first-look	cluster	own:g192	CTRL	1	60	60	60	0	0	0		Cui 2024 (60)	authors+derived	
+first-look	cluster	own:g21	CTRL	1	6	6	6	0	0	0		Mudge 2008 (6)	authors	
+first-look	cluster	own:g24	CTRL	1	32	32	32	0	0	0		Kuzman 2009 (32)	authors+derived	
+first-look	cluster	own:g25	CTRL	1	8	8	8	0	0	0		Bousman 2010 (8)	authors+derived	
+first-look	cluster	own:g26	CTRL	1	5	5	5	0	0	0		Martin 2009 (5)	authors+derived	
+first-look	cluster	own:g29	CTRL	1	49	49	49	0	0	0		Takahashi 2010 (49)	authors+derived	
+first-look	cluster	own:g31	CTRL	1	10	10	10	0	0	0		Schmitt 2011 (10)	authors	
+first-look	cluster	own:g32	CTRL	1	37	37	37	0	0	0		Santarelli 2011 (37)	authors+derived	
+first-look	cluster	own:g35	CTRL	1	19	19	19	0	0	0		Barnes 2011 (19)	authors	
+first-look	cluster	own:g36	CTRL	2	156	80	80	76	0	0		Gardiner 2012 + Gardiner 2013 (80)	authors+derived	
+first-look	cluster	own:g37	CTRL	1	30	30	30	0	0	0		Lai 2011 (30)	authors+derived	
+first-look	cluster	own:g38	CTRL	1	34	34	34	0	0	0		Miller 2012 (34)	authors+derived	
+first-look	cluster	own:g39	CTRL	1	29	29	29	0	0	0		van Beveren 2012 (29)	authors+derived	
+first-look	cluster	own:g40	CTRL	1	26	26	26	0	0	0		Lee 2012 (26)	authors+derived	
+first-look	cluster	own:g42	CTRL	1	96	96	96	0	0	0		de Jong 2012 (96)	authors+derived	
+first-look	cluster	own:g45	CTRL	1	40	40	40	0	0	0		Sainz 2013 (40)	authors+derived	
+first-look	cluster	own:g46	CTRL	1	3	3	3	0	0	0		Xu 2012 (3)	authors+derived	
+first-look	cluster	own:g47	CTRL	1	11	11	11	0	0	0		Kumarasinghe 2013 (11)	authors+derived	
+first-look	cluster	own:g48	CTRL	1	446	446	446	0	0	0		Sanders 2013 (446)	authors+derived	
+first-look	cluster	own:g5	CTRL	1	33	33	33	0	0	0		Middleton 2005 (33)	authors+derived	
+first-look	cluster	own:g58	CTRL	2	27	15	15	12	0	0		Zhang 2015 + Xu 2016 (15)	authors+derived	
+first-look	cluster	own:g59	CTRL	2	60	30	30	30	0	0		de Baumont 2015 + Maschietto 2015 (30)	authors+derived	
+first-look	cluster	own:g6	CTRL	1	10	10	10	0	0	0		Zvara 2005 (10)	authors+derived	
+first-look	cluster	own:g61	CTRL	1	20	20	20	0	0	0		Cattane 2015 (20)	authors+derived	
+first-look	cluster	own:g63	CTRL	1	130	130	130	0	0	0		Yu 2015 (130)	authors+derived	
+first-look	cluster	own:g64	CTRL	1	187	187	187	0	0	0		Wei 2015 (187)	authors+derived	
+first-look	cluster	own:g66	CTRL	1	49	49	49	0	0	0		Wu 2016 (49)	authors+derived	
+first-look	cluster	own:g70	CTRL	1	3	3	3	0	0	0		Chen 2016 (3)	authors+derived	
+first-look	cluster	own:g73	CTRL	1	15	15	15	0	0	0		Horiuchi 2016 (15)	authors+derived	
+first-look	cluster	own:g81	CTRL	2	1350	690	690	660	0	0		Sanders 2017 + Duan 2018 (690)	authors+derived	
+first-look	cluster	own:g83	CTRL	1	20	20	20	0	0	0		Fries 2018 (20)	authors+derived	
+first-look	cluster	own:g87	CTRL	1	6	6	6	0	0	0		Gassó 2017 (6)	authors+derived	
+first-look	cluster	own:g9	CTRL	1	5	5	5	0	0	0		McCurdy 2006 (5)	authors+derived	
+first-look	cluster	own:g96	CTRL	1	9	9	9	0	0	0		Yao 2019 (9)	authors+derived	
+first-look	cluster	own:g98	CTRL	1	15	15	15	0	0	0		Geaghan 2019 (15)	authors+derived	
+first-look	cluster	own:single:12090816	CTRL	1	4	4	4	0	0	0		Hemby 2002 (4)	authors+derived	
+first-look	cluster	own:single:12872291	CTRL	1	2	2	2	0	0	0		Chung 2003 (2)	authors+derived	
+first-look	cluster	own:single:15645418	CTRL	1	10	10	10	0	0	0		Tsuang 2005 (10)	authors+derived	
+first-look	cluster	own:single:17668069	CTRL	1	6	6	6	0	0	0		Craddock 2007 (6)	authors+derived	
+first-look	cluster	own:single:18545665	CTRL	1	14	14	14	0	0	0		Matigian 2008 (14)	authors+derived	
+first-look	cluster	own:single:19011233	CTRL	1	10	10	10	0	0	0		Ishiguro 2010 (10)	authors+derived	
+first-look	cluster	own:single:21972136	CTRL	1	12	12	12	0	0	0		Glatt 2011 (12)	authors+derived	
+first-look	cluster	own:single:22433715	CTRL	1	96	96	96	0	0	0		de Jong 2012 (96)	authors+derived	
+first-look	cluster	own:single:32143829	CTRL	1	111	111	111	0	0	0		Evgrafov 2020 (111)	authors+derived	
+first-look	cluster	own:single:34054608	CTRL	1	14	14	14	0	0	0		Melbourne 2021 (14)	authors+derived	
+first-look	cluster	own:single:35016150	CTRL	1	15	15	15	0	0	0		Li 2022 (15)	authors+derived	
+first-look	cluster	own:single:35543802	CTRL	1	3	3	3	0	0	0		Liao 2022 (3)	authors+derived	
+first-look	cluster	own:single:39702523	CTRL	1	10	10	10	0	0	0		Li 2024 (10)	authors+derived	
+first-look	cluster	own:single:40634861	CTRL	1	10	10	10	0	0	0		Du 2025 (10)	authors+derived	
+first-look	cluster	own:single:40665444	CTRL	1	5	5	5	0	0	0		Long 2025 (5)	authors+derived	
+first-look	cluster	pritzker	CTRL	2	34	24	34	0	0	0		Zeppillo 2022 (10); Ramaker 2017 (24)	authors+derived	
+first-look	cluster	stanley	CTRL	20	448	49	69	0	379	0		Iwamoto 2004 (15); Bakshi 2020 (11); Weissleder 2021 (20); Puvogel 2022 (14); Shao 2008 (29); Zhang 2026 (15); Harris 2008 (12); Chu 2009 (12); Aston 2004 (14); Iwamoto 2005 (34); Chen 2013 (46); Hwang 2013 (15); Kohen 2014 (29); Zhao 2015 (26); Altar 2005 (24); Hu 2016 (18); Kim 2016 (45); Abdolmaleky 2019 (10); Tkachev 2003 (15); Prabakaran 2004 (44)	authors+derived	no list: Iwamoto 2004; Harris 2008; Iwamoto 2005; Abdolmaleky 2019
+first-look	cluster	stanley [other]	CTRL	1	6	6	6	0	0	0		Namkung 2023 (6)	authors+derived	
+first-look	cluster	multi-bank (no cluster)	CTRL	7	536	0	536	0	0	0		Pai 2019 (17); Mendizabal 2019 (27); Saetre 2007 (55); Ruzicka 2024 (75); Mendez-Victoriano 2026 (20); Lee 2026 (319); Maycox 2009 (23)	authors+derived	no list: Pai 2019
+first-look	total	all	CTRL	188	8028	4551	6331	839	379	479.3	cross-cluster 126.5; merged for the lower end: cmc+mssm+pitt+libd+harvard+pritzker	84 clusters + 7 multi-bank	authors+derived	
+published brain	cluster	brain_other:24776767	SZ	1	5.0	5.0	5	0.0	0	0		Xiao 2014 (5.0)		
+published brain	cluster	brain_other:27940260	SZ	1	22.0	22.0	22	0.0	0	0		Voisey 2017 (22.0)		
+published brain	cluster	brain_other:28123834	SZ	1	6.0	6.0	6	0.0	0	0		Mladinov 2016 (6.0)		
+published brain	cluster	brain_other:33184259	SZ	1	4.0	4.0	4	0.0	0	0		Maas 2020 (4.0)		
+published brain	cluster	brain_other:34004381	SZ	1	10.0	10.0	10	0.0	0	0		Gebicke-Haerter 2021 (10.0)		
+published brain	cluster	brain_other:37498306	SZ	1	10.0	10.0	10	0.0	0	0		Arihisa 2023 (10.0)		
+published brain	cluster	brain_other:24776767	CTRL	1	6.0	6.0	6	0.0	0	0		Xiao 2014 (6.0)		
+published brain	cluster	brain_other:27940260	CTRL	1	23.0	23.0	23	0.0	0	0		Voisey 2017 (23.0)		
+published brain	cluster	brain_other:28123834	CTRL	1	6.0	6.0	6	0.0	0	0		Mladinov 2016 (6.0)		
+published brain	cluster	brain_other:33184259	CTRL	1	4.0	4.0	4	0.0	0	0		Maas 2020 (4.0)		
+published brain	cluster	brain_other:34004381	CTRL	1	10.0	10.0	10	0.0	0	0		Gebicke-Haerter 2021 (10.0)		
+published brain	cluster	brain_other:37498306	CTRL	1	5.0	5.0	5	0.0	0	0		Arihisa 2023 (5.0)		

@@ -1,0 +1,25 @@
+# claim: Supplementary Note 12, 'pH ranges overlap heavily between cases and controls (90% of cases fall within the pH range of the controls in the same dataset)'; the figure is the per-dataset-region pH distribution of the pH panel (fig07 a1, Fig. 4a in the manuscript numbering), not Fig. 3a
+# script: note12_ph_overlap_and_ph_adjustment_2026-10-19/build_ph_numbers.py copies the per-region table made by analyses/supplement_number_tasks/taskE_ph_overlap.py (run 2026-10-12) and adds a pooled row
+# source: analyses/supplement_number_tasks/taskE_ph_overlap_per_region.tsv sha256 dc84e95baef4; taskE_ph_overlap.py sha256 a863fbf758c5; the original header follows
+# pooled row = counts summed over the 14 dataset-regions (GSE208338 shares donors with GSE21138, so the pooled counts are not donor-independent); a case is 'within' if its pH lies inside [min, max] of the controls of the same dataset-region, inclusive; n_case_in_control_iqr uses the control quartiles
+# figure/claim: Fig 4a: case vs control postmortem pH distribution, per dataset-region
+# script: analyses/supplement_number_tasks/taskE_ph_overlap.py
+# source (sha256 first 12): analyses/ph_and_confound_analyses/data/covariates/GSE21138.tsv 451590bceb07; analyses/ph_and_confound_analyses/data/gemma/1880_processed.tsv.gz 4308a7fa69d4; analyses/ph_and_confound_analyses/data/covariates/GSE35977.tsv 5f6592ae8cf9; analyses/ph_and_confound_analyses/data/gemma/5949_processed.tsv.gz afae7e7eea96; analyses/ph_and_confound_analyses/data/covariates/GSE35974.tsv 3917ad394924; analyses/ph_and_confound_analyses/data/gemma/5939_processed.tsv.gz 1fbe9d64242a; analyses/ph_and_confound_analyses/data/covariates/GSE53987.tsv da0e8af3064f; analyses/ph_and_confound_analyses/data/gemma/8359_processed.tsv.gz ebe534ba8bc4; analyses/ph_and_confound_analyses/data/covariates/GSE17612.tsv 9af0f076c20b; analyses/ph_and_confound_analyses/data/gemma/1381_processed.tsv.gz ad31c75edf65; analyses/ph_and_confound_analyses/data/covariates/GSE21935.tsv 78174a63e5d6; analyses/ph_and_confound_analyses/data/gemma/4150_processed.tsv.gz 0e8bd37ac333; analyses/ph_and_confound_analyses/data/covariates/GSE92538_GPL10526.tsv 110e6b86101e; analyses/ph_and_confound_analyses/data/gemma/18742_processed.tsv.gz 0dcdbea82dc5; analyses/ph_and_confound_analyses/data/covariates/GSE92538_GPL17027.tsv 56540f581167; analyses/ph_and_confound_analyses/data/gemma/18741_processed.tsv.gz 1d573714ddd3; analyses/ph_and_confound_analyses/data/covariates/GSE80655.tsv 93cd2ee3ede0; analyses/ph_and_confound_analyses/data/gemma/13014_processed.tsv.gz c08b1691ea56; analyses/ph_and_confound_analyses/data/covariates/GSE208338.tsv 3b5e76afcb74; analyses/ph_and_confound_analyses/data/gemma/26880_processed.tsv.gz c871ff292c8a; analyses/ph_and_confound_analyses/results/group_differences.tsv eebec7999878
+# date: 2026-10-12
+# quartiles: numpy linear interpolation; "within" is inclusive of the bounds; 14 dataset-regions = the 14 in Fig 4a (fig07 a1, in_14_dataset_regions = yes); GSE208338 shares donors with GSE21138 so pooled counts are not donor-independent
+dataset_region	study	n_case	case_min	case_q1	case_median	case_q3	case_max	n_control	control_min	control_q1	control_median	control_q3	control_max	n_case_in_control_range	share_case_in_control_range	n_case_in_control_iqr	share_case_in_control_iqr	n_case_below_control_min	n_case_above_control_max	n_case_below_control_q1
+GSE21138	GSE21138	28	5.6	6.1075	6.275	6.4	6.64	29	5.82	6.21	6.38	6.43	6.56	25	0.892857	12	0.428571	1.0	2.0	10.0
+GSE35977	GSE35977	51	5.8	6.195	6.42	6.6	6.93	50	5.8	6.3	6.57	6.7175	7.03	51	1.0	24	0.470588	0.0	0.0	21.0
+GSE35974	GSE35974	44	5.8	6.2	6.49	6.6	6.93	49	5.8	6.2	6.5	6.7	7.03	44	1.0	31	0.704545	0.0	0.0	8.0
+GSE53987_BA46	GSE53987	15	5.97	6.225	6.58	6.705	7.3	19	6.1	6.5	6.6	6.75	7.1	11	0.733333	5	0.333333	2.0	2.0	7.0
+GSE53987_hippocampus	GSE53987	15	5.97	6.21	6.35	6.62	7.14	18	6.1	6.5	6.6	6.775	7.1	12	0.8	6	0.4	2.0	1.0	8.0
+GSE53987_striatum	GSE53987	18	5.97	6.205	6.31	6.6675	7.3	18	6.1	6.5	6.6	6.775	7.1	14	0.777778	5	0.277778	2.0	2.0	10.0
+GSE17612	GSE17612	27	5.7	6.0	6.1	6.3	6.6	23	5.7	6.3	6.5	6.7	6.9	27	1.0	9	0.333333	0.0	0.0	18.0
+GSE21935	GSE21935	23	5.7	6.05	6.2	6.3	6.5	19	5.7	6.3	6.5	6.7	6.9	23	1.0	8	0.347826	0.0	0.0	15.0
+GSE92538_GPL570	GSE92538	17	6.42	6.59	6.81	7.02	7.21	31	6.4	6.605	6.88	7.115	7.25	17	1.0	10	0.588235	0.0	0.0	5.0
+GSE92538_GPL96	GSE92538	9	6.24	6.38	6.81	6.93	7.21	45	6.06	6.61	6.8	6.97	7.51	9	1.0	3	0.333333	0.0	0.0	4.0
+GSE80655_DLPFC	GSE80655	22	6.55	6.685	6.82	6.9525	7.21	23	6.68	6.85	6.94	7.02	7.1	15	0.681818	6	0.272727	5.0	2.0	12.0
+GSE80655_AnCg	GSE80655	23	6.55	6.69	6.82	6.945	7.21	24	6.68	6.8525	6.92	7.02	7.1	16	0.695652	6	0.26087	5.0	2.0	13.0
+GSE80655_nAcc	GSE80655	22	6.55	6.685	6.815	6.9525	7.21	22	6.68	6.8625	6.92	7.0175	7.1	15	0.681818	5	0.227273	5.0	2.0	12.0
+GSE208338	GSE208338	68	5.8	6.185	6.37	6.46	6.79	62	5.86	6.235	6.4	6.47	6.78	64	0.941176	30	0.441176	3.0	1.0	23.0
+all 14 dataset-regions pooled (counts summed)	9 studies	382						432						343	0.8979057591623036	160	0.418848167539267			

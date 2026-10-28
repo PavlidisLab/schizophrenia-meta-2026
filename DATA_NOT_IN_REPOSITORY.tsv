@@ -1,0 +1,16 @@
+# Files cited in the hidden source comments that are not in this repository, each marked there as not in the repository. Paths are those of the analysis repository or its delivery folders. Where the source is public or a publication supplement, obtain it from the provider listed in DATA_NEEDED.tsv; extracted values the manuscript uses are in provenance/ and figures/data/.
+file	where_it_came_from	bytes	reason	note
+corpus/lineage.json	analysis repository	5415437	too large	lineage graph of the corpus; the edge table used by Fig. 1b is in figures/data/fig01
+analyses/de_prior_and_recurrence_lists/our_prior/3_blood_our_prior.tsv	analysis repository	4043836	too large	blood DE prior from 784 Gemma blood contrasts
+rerun_on_80_studies/M08/sets_all.tsv	analysis delivery	4201981	too large	gene sets of the recurrence runs
+rerun_on_80_studies/L03/h1_pairs.tsv	analysis delivery	2443746	too large	pair table of the meta-analysis agreement analysis
+analyses/antipsychotic_medication_analyses/results/contrasts_long.tsv.gz	analysis repository	11642234	too large	per-contrast table of the antipsychotic analyses
+cell_composition_and_ph/input/nsw_donor_covariates_used.tsv	analysis delivery	7352	individual-level donor data	NSW donor covariates; request from the data provider (see DATA_NEEDED.tsv)
+data/raw/28776581/supplement/npp2017167x2.xlsx	publication supplement	808948	not redistributable	supplementary file of the cited paper
+data/raw/tyssowski2018/NIHMS958209-supplement-2.xlsx	publication supplement	5571256	not redistributable	supplementary file of the cited paper
+data/raw/tyssowski2018/NIHMS958209-supplement-6.xlsx	publication supplement	63439	not redistributable	supplementary file of the cited paper
+data/raw/tyssowski2018/NIHMS958209-supplement-3 to 8.xlsx	publication supplement	290263 to 10238229	not redistributable	supplementary files of the cited paper (range)
+data/raw/27668389/publisher/41593_2016_BFnn4399_MOESM35_ESM.pdf	publication supplement	3580840	not redistributable	supplementary file of the cited paper
+data/raw/38781388/derived/DataS4_stacked.tsv.gz	derived from a publication supplement	37717556	not redistributable	table derived from a supplementary file of the cited paper
+data/raw/42778699/derived/SuppTable4_SCZ.tsv.gz	derived from a publication supplement	4289792	not redistributable	table derived from a supplementary file of the cited paper
+GTEx_Analysis_v10_Annotations_SubjectPhenotypesDD.xlsx	GTEx portal		public file, not retained	GTEx v10 subject phenotype data dictionary

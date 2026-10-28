@@ -1,0 +1,17 @@
+# script: analyses/de_prior_stability_2026-10-12/summarize.py, run 2026-10-12
+# source: out/bootstrap_draws.tsv sha256 a86e41864adc; out/bootstrap_genes.tsv sha256 7df8a12145dc; median and 2.5-97.5% over draws (or genes where stated)
+quantity	median	lo	hi	mean
+rho_pair_count	0.84548	0.74012	0.91282	0.84074
+rho_full_count	0.91904	0.86272	0.9553	0.91665
+auroc_count	0.9006	0.87562	0.91801	0.89961
+rho_pair_freq	0.74766	0.60489	0.85803	0.74394
+rho_full_freq	0.85645	0.7666	0.91938	0.85268
+auroc_freq	0.85946	0.81965	0.88834	0.85771
+n_contrasts_distinct	154	145	162	153.42
+boot_sd_freq, all universe genes (median; 2.5-97.5% over genes)	0.01143	0	0.031926	0.012094
+boot_var_freq, genes with full frequency in the 45-55th percentile (0.0217 to 0.0263; n=2884); median, IQR-free 2.5-97.5% over genes	0.00011707	9.0007e-05	0.00059905	0.00016982
+boot_sd_freq, same band	0.01082	0.0094872	0.024476	0.012462
+binomial p(1-p)/n_tested, same band (reference, contrasts independent)	0.0001172	9.3264e-05	0.00058037	0.00016903
+median full frequency, universe genes	0.024193	0	0.074074	0.026596
+boot_sd_freq / freq (CV), band	0.44595	0.39138	1.0073	0.51786
+genes with a draw in which they were untested (frequency undefined)	1227			

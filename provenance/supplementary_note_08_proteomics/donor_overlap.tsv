@@ -1,0 +1,22 @@
+# built 2026-10-14 by scripts/analyze_extra.py; case numbers: MacDonald 2020 Table S1 ('HU' column), compared with analyses/donor_overlap/pitt_crosswalk.tsv (exact identifier rows; sha256 44afa9d5d4ac)
+# other proteomic studies: no per-subject table on disk, so donor overlap is not measured; see report.md for what each paper states
+proteomic_study	donors_listed	transcriptome_study	study_donors	donors_in_both	basis
+MacDonald 2020 (LC-SRM, auditory cortex; Table S1, 48 pairs)	96	any Pittsburgh study with printed case numbers	195	90	exact case-number (HU number) match, data/raw/31642882/preprint/table_s1_subjects_gsheet_1HEHXGVT9y10GdcmckSbDwU9OttfC_DPuc7SXiEC91PI.xlsx
+MacDonald 2020	96	Glausier 2020	151	87	exact case-number match
+MacDonald 2020	96	Enwright 2021	144	83	exact case-number match
+MacDonald 2020	96	Fromer 2016 / CommonMind Pittsburgh DLPFC arm	141	80	exact case-number match
+MacDonald 2020	96	Arion 2015	72	52	exact case-number match
+MacDonald 2020	96	Enwright 2018	72	52	exact case-number match
+MacDonald 2020	96	Perez 2025	95	41	exact case-number match
+MacDonald 2020	96	Ketchesin 2023	72	35	exact case-number match
+MacDonald 2020	96	Arion 2017	38	23	exact case-number match
+MacDonald 2020	96	Arbabi 2025	38	23	exact case-number match
+MacDonald 2020	96	Hashimoto 2008	28	20	exact case-number match
+MacDonald 2020	96	Arion 2007	28	20	exact case-number match
+MacDonald 2020	96	Hashimoto 2003	30	18	exact case-number match
+MacDonald 2020	96	Garbett 2008	18	12	exact case-number match
+MacDonald 2020	96	Middleton 2002	20	10	exact case-number match
+MacDonald 2020	96	Middleton 2005	21	10	exact case-number match
+MacDonald 2020	96	Arion 2010	16	10	exact case-number match
+MacDonald 2020	96	Mirnics 2000	12	4	exact case-number match
+MacDonald 2020	96	Mirnics 2001	10	3	exact case-number match

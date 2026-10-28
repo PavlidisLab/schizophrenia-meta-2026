@@ -1,0 +1,24 @@
+# figure: fig08 panel b (right)
+# script: fdv2_2026-10-15/work/f08b_build.py running analyses/figure_exports/export_fig08_fig09_fig10.py fig8_b unchanged on decomposition outputs of axes_pritzker_agonal_2026-10-09/decomposition_axes.py, single_axis_same_genes.py and claims_vs_ph_axis_2026-10-08/decomposition.py (copies; only the pH-axis function edited), run 2026-10-15
+# input: work/b_v2/claims/pairs_two_axes.tsv sha256 dacaa19334d7
+# median over donor-separate pairs of the Spearman rho of the two datasets' SZ t, raw and after the rank-residual projection of the axis out of both profiles; L0 unadjusted DE, L4 all measured covariates
+# computed here as medians of pairs_two_axes.tsv (310 lines = 308 pairs; 192 both-bulk)
+# axis: unsuffixed values = pH axis v2 (primary; inputs_ph_axis_v2/axis_v2_controls.tsv.gz sha256 2c72a9b279a2; leave-collection-out construction of the decomposition scripts with the v2 axis from the stored per-dataset limma fits, scripts v2axis.py); columns ending _axis_v1 = v1 fork (five-collection control pH axis)
+# 2026-10-21: pair classes by the cluster rule: 11 pairs that are not proven subject-separate (GSE112523 with 8 datasets; GSE17612 with GSE37981, GSE107638_NeuN and GSE107638_OLIG2) are not in the all-pairs classes (297 pairs; NOPRITZ 184, NOPRITZ2 171, NODAI 86); both-bulk classes 192 pairs (NOPRITZ 109)
+axis_version	pair_class	level	axis_removed	n_pairs	median_rho	median_rho_axis_v1
+GTEx Hardy agonal axis + control pH axis (claims_vs_ph_axis_2026-10-08, laptop)	both-bulk donor-separate	L0	none (raw)	192	0.1185	0.11885
+GTEx Hardy agonal axis + control pH axis (claims_vs_ph_axis_2026-10-08, laptop)	all donor-separate	L0	none (raw)	297	0.049	0.0475
+GTEx Hardy agonal axis + control pH axis (claims_vs_ph_axis_2026-10-08, laptop)	both-bulk donor-separate	L0	pH axis removed	192	0.1009	0.1043
+GTEx Hardy agonal axis + control pH axis (claims_vs_ph_axis_2026-10-08, laptop)	all donor-separate	L0	pH axis removed	297	0.0524	0.0568
+GTEx Hardy agonal axis + control pH axis (claims_vs_ph_axis_2026-10-08, laptop)	both-bulk donor-separate	L0	GTEx agonal axis removed	192	0.06835	0.07164999999999999
+GTEx Hardy agonal axis + control pH axis (claims_vs_ph_axis_2026-10-08, laptop)	all donor-separate	L0	GTEx agonal axis removed	297	0.0305	0.0304
+GTEx Hardy agonal axis + control pH axis (claims_vs_ph_axis_2026-10-08, laptop)	both-bulk donor-separate	L0	pH and GTEx agonal removed	192	0.06935	0.0759
+GTEx Hardy agonal axis + control pH axis (claims_vs_ph_axis_2026-10-08, laptop)	all donor-separate	L0	pH and GTEx agonal removed	297	0.031	0.0441
+GTEx Hardy agonal axis + control pH axis (claims_vs_ph_axis_2026-10-08, laptop)	both-bulk donor-separate	L4	none (raw)	192	0.06965	0.0755
+GTEx Hardy agonal axis + control pH axis (claims_vs_ph_axis_2026-10-08, laptop)	all donor-separate	L4	none (raw)	297	0.0273	0.0263
+GTEx Hardy agonal axis + control pH axis (claims_vs_ph_axis_2026-10-08, laptop)	both-bulk donor-separate	L4	pH axis removed	192	0.0687	0.07644999999999999
+GTEx Hardy agonal axis + control pH axis (claims_vs_ph_axis_2026-10-08, laptop)	all donor-separate	L4	pH axis removed	297	0.0334	0.0428
+GTEx Hardy agonal axis + control pH axis (claims_vs_ph_axis_2026-10-08, laptop)	both-bulk donor-separate	L4	GTEx agonal axis removed	192	0.04745	0.04775
+GTEx Hardy agonal axis + control pH axis (claims_vs_ph_axis_2026-10-08, laptop)	all donor-separate	L4	GTEx agonal axis removed	297	0.022	0.0226
+GTEx Hardy agonal axis + control pH axis (claims_vs_ph_axis_2026-10-08, laptop)	both-bulk donor-separate	L4	pH and GTEx agonal removed	192	0.0473	0.048549999999999996
+GTEx Hardy agonal axis + control pH axis (claims_vs_ph_axis_2026-10-08, laptop)	all donor-separate	L4	pH and GTEx agonal removed	297	0.0255	0.0307

@@ -1,0 +1,48 @@
+# script: analyses/manuscript_checks_2026-10-12/q6_pH_RIN_steps_summary.py, run 2026-10-13; seed 20261013; 2,000 bootstrap resamples
+# input: analyses/manuscript_checks_2026-10-12/b_series_pH_RIN_steps/b_pairs.tsv sha256 a131b7db0727 (analyses/fairness_sample_level/scripts/b_covariate_series.R with SERIES_LEVELS=L0,L1,L2,L2p,L2r,L3,L4); analyses/fairness_sample_level/results/b_pairs.tsv sha256 d46785a711fe
+# shared levels L0,L1,L2,L3,L4 against the existing results/b_pairs.tsv: 1890 rows compared; maximum absolute difference rho_t 0, rho_logfc 0, n_common 0
+# 192 pairs = subject-separate pairs of two bulk datasets (Fig. 3d); pair bootstrap resamples pairs, dataset bootstrap redraws datasets with replacement and weights a pair by the product of its two datasets' counts (the wider interval); population: the 28 datasets with sample-level data
+table	pair_set	level	description	n_pairs	n_datasets	median_rho_t	ci95_pair_bootstrap_lo	ci95_pair_bootstrap_hi	ci95_dataset_bootstrap_lo	ci95_dataset_bootstrap_hi	contrast	median_of_differences	share_pairs_lower
+medians	existing_192_missing_step_falls_back_to_L2	L0	no covariates	192	22	0.090183	0.063702	0.11822	0.0092526	0.18843	NA	NA	NA
+medians	existing_192_missing_step_falls_back_to_L2	L1	age + sex	192	22	0.10106	0.077596	0.11499	0.0074159	0.1901	NA	NA	NA
+medians	existing_192_missing_step_falls_back_to_L2	L2	age + sex + PMI	192	22	0.11421	0.083473	0.14196	0.023654	0.1942	NA	NA	NA
+medians	existing_192_missing_step_falls_back_to_L2	L2p	age + sex + PMI + pH (datasets that record pH)	192	22	0.055365	0.021901	0.090726	-0.026288	0.14025	NA	NA	NA
+medians	existing_192_missing_step_falls_back_to_L2	L2r	age + sex + PMI + RIN (datasets that record RIN)	192	22	0.11412	0.086692	0.14182	0.029093	0.19689	NA	NA	NA
+medians	existing_192_missing_step_falls_back_to_L2	L3	age + sex + PMI + pH, RIN, agonal factor (where recorded)	192	22	0.057006	0.015376	0.095334	-0.0049191	0.14497	NA	NA	NA
+medians	existing_192_missing_step_falls_back_to_L2	L4	L3 + medication (GSE21138, GSE138082 only)	192	22	0.057558	0.021195	0.092007	-0.013873	0.14011	NA	NA	NA
+medians	pH_recorded_in_both	L0	no covariates	117	18	0.16802	0.12939	0.19889	0.080411	0.23278	NA	NA	NA
+medians	pH_recorded_in_both	L1	age + sex	117	18	0.14973	0.11444	0.1907	0.088303	0.25264	NA	NA	NA
+medians	pH_recorded_in_both	L2	age + sex + PMI	117	18	0.17749	0.14952	0.19689	0.097946	0.25258	NA	NA	NA
+medians	pH_recorded_in_both	L2p	age + sex + PMI + pH (datasets that record pH)	117	18	0.10085	0.067909	0.15231	0.011384	0.20684	NA	NA	NA
+medians	pH_recorded_in_both	L3	age + sex + PMI + pH, RIN, agonal factor (where recorded)	117	18	0.11053	0.05652	0.14011	0.0047439	0.18648	NA	NA	NA
+medians	pH_recorded_in_both	L4	L3 + medication (GSE21138, GSE138082 only)	117	18	0.096038	0.05652	0.12869	0.006071	0.17706	NA	NA	NA
+medians	RIN_recorded_in_both	L0	no covariates	27	10	0.0392	-0.026836	0.091712	-0.17413	0.10069	NA	NA	NA
+medians	RIN_recorded_in_both	L1	age + sex	27	10	0.051172	-0.025717	0.111	-0.15419	0.11452	NA	NA	NA
+medians	RIN_recorded_in_both	L2	age + sex + PMI	27	10	0.053561	-0.012074	0.12638	-0.14138	0.14264	NA	NA	NA
+medians	RIN_recorded_in_both	L2r	age + sex + PMI + RIN (datasets that record RIN)	27	10	0.066132	-0.041961	0.11566	-0.059834	0.17851	NA	NA	NA
+medians	RIN_recorded_in_both	L3	age + sex + PMI + pH, RIN, agonal factor (where recorded)	27	10	0.080588	-0.024417	0.11875	-0.062654	0.18648	NA	NA	NA
+medians	RIN_recorded_in_both	L4	L3 + medication (GSE21138, GSE138082 only)	27	10	0.080588	-0.054681	0.11086	-0.072136	0.16819	NA	NA	NA
+medians	pH_and_RIN_recorded_in_both	L0	no covariates	6	7	0.072642	0.047103	0.18146	0.0392	0.13498	NA	NA	NA
+medians	pH_and_RIN_recorded_in_both	L1	age + sex	6	7	0.077291	0.053766	0.19635	0.051172	0.14425	NA	NA	NA
+medians	pH_and_RIN_recorded_in_both	L2	age + sex + PMI	6	7	0.078164	0.042049	0.20173	0.030538	0.15063	NA	NA	NA
+medians	pH_and_RIN_recorded_in_both	L2p	age + sex + PMI + pH (datasets that record pH)	6	7	0.09936	0.074571	0.18987	0.054093	0.13826	NA	NA	NA
+medians	pH_and_RIN_recorded_in_both	L2r	age + sex + PMI + RIN (datasets that record RIN)	6	7	0.13311	0.06282	0.26077	0.059507	0.24014	NA	NA	NA
+medians	pH_and_RIN_recorded_in_both	L3	age + sex + PMI + pH, RIN, agonal factor (where recorded)	6	7	0.13508	0.061528	0.25927	0.042467	0.25881	NA	NA	NA
+medians	pH_and_RIN_recorded_in_both	L4	L3 + medication (GSE21138, GSE138082 only)	6	7	0.13508	0.061528	0.25927	0.042467	0.25881	NA	NA	NA
+paired_change_from_L2	existing_192_missing_step_falls_back_to_L2	NA	NA	192	22	NA	-0.010267	0	-0.036668	0	L2p minus L2	-0.0014725	0.50521
+paired_change_from_L2	existing_192_missing_step_falls_back_to_L2	NA	NA	192	22	NA	0	0	0	0	L2r minus L2	0	0.052083
+paired_change_from_L2	existing_192_missing_step_falls_back_to_L2	NA	NA	192	22	NA	-0.04829	-0.017661	-0.082955	-0.0013362	L3 minus L2	-0.027563	0.65625
+paired_change_from_L2	existing_192_missing_step_falls_back_to_L2	NA	NA	192	22	NA	-0.055048	-0.017694	-0.097206	0.004185	L4 minus L2	-0.031272	0.65625
+paired_change_from_L2	pH_recorded_in_both	NA	NA	117	18	NA	-0.049943	-0.018353	-0.12033	-0.011338	L2p minus L2	-0.033476	0.82906
+paired_change_from_L2	pH_recorded_in_both	NA	NA	117	18	NA	-0.083913	-0.048932	-0.124	-0.022952	L3 minus L2	-0.063191	0.82906
+paired_change_from_L2	pH_recorded_in_both	NA	NA	117	18	NA	-0.10215	-0.054213	-0.14055	-0.02403	L4 minus L2	-0.082955	0.82051
+paired_change_from_L2	RIN_recorded_in_both	NA	NA	27	10	NA	-0.04065	0.077589	-0.071826	0.10079	L2r minus L2	0.028572	0.37037
+paired_change_from_L2	RIN_recorded_in_both	NA	NA	27	10	NA	-0.027523	0.093958	-0.082513	0.11696	L3 minus L2	0.0098048	0.40741
+paired_change_from_L2	RIN_recorded_in_both	NA	NA	27	10	NA	-0.035138	0.070267	-0.082422	0.11045	L4 minus L2	0.014115	0.37037
+paired_change_from_L2	pH_and_RIN_recorded_in_both	NA	NA	6	7	NA	-0.011854	0.034976	-0.01237	0.030978	L2p minus L2	0.018742	0.33333
+paired_change_from_L2	pH_and_RIN_recorded_in_both	NA	NA	6	7	NA	-0.038852	0.14153	-0.09112	0.096473	L2r minus L2	0.032083	0.16667
+paired_change_from_L2	pH_and_RIN_recorded_in_both	NA	NA	6	7	NA	-0.050631	0.15485	-0.10816	0.10444	L3 minus L2	0.029715	0.16667
+paired_change_from_L2	pH_and_RIN_recorded_in_both	NA	NA	6	7	NA	-0.050631	0.15485	-0.10816	0.10444	L4 minus L2	0.029715	0.16667
+paired_change_from_L2	pH_and_RIN_recorded_in_both	NA	NA	6	7	NA	-0.043047	0.10996	-0.07875	0.079749	L2r minus L2p	0.025975	0.33333
+paired_change_from_L2	pH_and_RIN_recorded_in_both	NA	NA	6	7	NA	-0.053585	0.12329	-0.09579	0.087719	L3 minus L2p	0.022366	0.33333
+paired_change_from_L2	pH_and_RIN_recorded_in_both	NA	NA	6	7	NA	-0.019357	0.016564	-0.021674	0.014456	L3 minus L2r	0.001967	0.5

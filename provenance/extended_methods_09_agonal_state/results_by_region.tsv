@@ -1,0 +1,27 @@
+region	samples	genes	statistic	rho_pH Z	n_pH Z	rho_PMI Z	n_PMI Z	rho_Dachet 24 h change	n_Dachet 24 h change
+Brain - Amygdala	152	15122	ischemic time	0.128	11555	0.113	11555	-0.228	12535
+Brain - Amygdala	152	15122	slow vs fast natural death	-0.23	11555	-0.281	11555	0.396	12535
+Brain - Anterior cingulate cortex (BA24)	176	15519	ischemic time	0.633	11704	0.447	11704	-0.638	12717
+Brain - Anterior cingulate cortex (BA24)	176	15519	slow vs fast natural death	-0.514	11704	-0.47	11704	0.58	12717
+Brain - Caudate (basal ganglia)	246	15761	ischemic time	0.188	11745	0.143	11745	-0.294	12789
+Brain - Caudate (basal ganglia)	246	15761	slow vs fast natural death	-0.474	11745	-0.379	11745	0.522	12789
+Brain - Cerebellar Hemisphere	215	17507	ischemic time	0.396	11688	0.237	11688	-0.168	12763
+Brain - Cerebellar Hemisphere	215	17507	slow vs fast natural death	-0.278	11688	-0.151	11688	0.141	12763
+Brain - Cerebellum	241	17919	ischemic time	0.442	11871	0.293	11871	-0.203	12937
+Brain - Cerebellum	241	17919	slow vs fast natural death	-0.262	11871	-0.28	11871	0.18	12937
+Brain - Cortex	255	16262	ischemic time	-0.16	11947	0.08	11947	0.017	12997
+Brain - Cortex	255	16262	slow vs fast natural death	-0.473	11947	-0.409	11947	0.452	12997
+Brain - Frontal Cortex (BA9)	209	16234	ischemic time	0.261	11938	0.201	11938	-0.275	13004
+Brain - Frontal Cortex (BA9)	209	16234	slow vs fast natural death	-0.566	11938	-0.446	11938	0.449	13004
+Brain - Hippocampus	197	15278	ischemic time	0.282	11601	0.378	11601	-0.558	12610
+Brain - Hippocampus	197	15278	slow vs fast natural death	-0.244	11601	-0.149	11601	0.189	12610
+Brain - Hypothalamus	202	16206	ischemic time	0.424	11967	0.088	11967	-0.131	13059
+Brain - Hypothalamus	202	16206	slow vs fast natural death	-0.198	11967	-0.168	11967	0.203	13059
+Brain - Nucleus accumbens (basal ganglia)	246	15958	ischemic time	0.306	11744	0.147	11744	-0.275	12798
+Brain - Nucleus accumbens (basal ganglia)	246	15958	slow vs fast natural death	-0.317	11744	-0.169	11744	0.301	12798
+Brain - Putamen (basal ganglia)	205	15023	ischemic time	0.124	11472	-0.057	11472	0.001	12436
+Brain - Putamen (basal ganglia)	205	15023	slow vs fast natural death	-0.203	11472	-0.111	11472	0.148	12436
+Brain - Spinal cord (cervical c-1)	159	16087	ischemic time	0.332	11723	0.199	11723	-0.355	12815
+Brain - Spinal cord (cervical c-1)	159	16087	slow vs fast natural death	-0.064	11723	0.051	11723	-0.024	12815
+Brain - Substantia nigra	139	15245	ischemic time	-0.169	11553	-0.046	11553	-0.093	12572
+Brain - Substantia nigra	139	15245	slow vs fast natural death	-0.385	11553	-0.342	11553	0.407	12572

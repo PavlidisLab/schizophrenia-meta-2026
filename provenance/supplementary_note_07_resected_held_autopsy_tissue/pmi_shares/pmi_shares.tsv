@@ -1,0 +1,6 @@
+# pmi_shares.py; heatmap_matrix.npz sha256 2c57cdb853a0; PMI in hours from the sample covariates (time to freezing as recorded by each dataset)
+set	datasets	samples	share_lt20	n_lt20	share_lt36	n_lt36	median_h	q25_h	q75_h	min_h	max_h
+all samples	44	3045	0.4683	1426	0.8532	2598	20.7	13.0	27.5	0.0	120.45
+controls only	43	1589	0.4292	682	0.8722	1386	21.2	15.0	26.0	0.0	120.45
+cases only	44	1456	0.511	744	0.8324	1212	19.03	9.1	28.8	1.0	101.3
+all samples, duplicate series kept (earlier version)	50	3638	0.4568	1662	0.851	3096	21.0	13.0	28.0	0.0	120.45

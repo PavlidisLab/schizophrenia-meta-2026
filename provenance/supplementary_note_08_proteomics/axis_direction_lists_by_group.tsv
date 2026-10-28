@@ -1,0 +1,256 @@
+# built 2026-10-14 by scripts/analyze_lists.py; axes: axis_gene_table.tsv (sha256 ae8c71ea1854); top_n = genes with the largest |axis value|; predicted SZ direction = the one the axis predicts (positive axis value = up); pH axis = the tool's pH axis, recomputed leaving out the collection that shares a bank with the group (Stanley, Pitt/Pittsburgh, NSW, Pritzker for the Irvine study) where one does; 'pH' rows without a match use all 5 collections
+# unit of test = donor group (units sharing a bank pooled; a gene's direction = majority over the group's units, ties dropped); null: shuffle the group's up/down labels among its own called genes (5000 shuffles, seed 20261014), so the group's balance of up and down and the set of proteins it reports are held fixed
+# the excess is concordant share minus expected share; its interval is a jackknife over donor groups (+/-1.96 se); one group is one bank, so groups are not independent of the RNA collections
+set	axis	top_n	group	units	genes_called	hits_in_top_n	concordant	share	expected_share
+all units (31 + 5 added)	pH_leaving_out_NSW	200	aus	Edgar 1999	1	1	0	0.0	0.0
+all units (31 + 5 added)	pH_leaving_out_NSW	500	aus	Edgar 1999	1	1	0	0.0	0.0
+all units (31 + 5 added)	agonal	200	aus	Edgar 1999	1	0	0		
+all units (31 + 5 added)	agonal	500	aus	Edgar 1999	1	0	0		
+all units (31 + 5 added)	pH	200	barcelona	Vera-Montecinos 2021	249	7	2	0.286	0.527
+all units (31 + 5 added)	pH	500	barcelona	Vera-Montecinos 2021	249	17	8	0.471	0.546
+all units (31 + 5 added)	agonal	200	barcelona	Vera-Montecinos 2021	249	0	0		
+all units (31 + 5 added)	agonal	500	barcelona	Vera-Montecinos 2021	249	3	0	0.0	0.435
+all units (31 + 5 added)	pH	200	harvard	Novikova 2006	21	1	0	0.0	0.0
+all units (31 + 5 added)	pH	500	harvard	Novikova 2006	21	2	1	0.5	0.5
+all units (31 + 5 added)	agonal	200	harvard	Novikova 2006	21	0	0		
+all units (31 + 5 added)	agonal	500	harvard	Novikova 2006	21	0	0		
+all units (31 + 5 added)	pH	200	mannheim	Martins-de-Souza 2009 (ATL);Martins-de-Souza 2009 (DLPFC);Martins-de-Souza 2009 (STG)	71	5	5	1.0	0.533
+all units (31 + 5 added)	pH	500	mannheim	Martins-de-Souza 2009 (ATL);Martins-de-Souza 2009 (DLPFC);Martins-de-Souza 2009 (STG)	71	7	6	0.857	0.556
+all units (31 + 5 added)	agonal	200	mannheim	Martins-de-Souza 2009 (ATL);Martins-de-Souza 2009 (DLPFC);Martins-de-Souza 2009 (STG)	71	0	0		
+all units (31 + 5 added)	agonal	500	mannheim	Martins-de-Souza 2009 (ATL);Martins-de-Souza 2009 (DLPFC);Martins-de-Souza 2009 (STG)	71	1	0	0.0	0.368
+all units (31 + 5 added)	pH	200	maryland	Alnafisah 2022	72	1	1	1.0	0.794
+all units (31 + 5 added)	pH	500	maryland	Alnafisah 2022	72	6	6	1.0	0.777
+all units (31 + 5 added)	agonal	200	maryland	Alnafisah 2022	72	0	0		
+all units (31 + 5 added)	agonal	500	maryland	Alnafisah 2022	72	0	0		
+all units (31 + 5 added)	pH_leaving_out_NSW	200	nsw	Clark 2006;Nesvaderani 2009;Sivagnanasundaram 2007;Clark 2007	82	4	0	0.0	0.415
+all units (31 + 5 added)	pH_leaving_out_NSW	500	nsw	Clark 2006;Nesvaderani 2009;Sivagnanasundaram 2007;Clark 2007	82	11	3	0.273	0.415
+all units (31 + 5 added)	agonal	200	nsw	Clark 2006;Nesvaderani 2009;Sivagnanasundaram 2007;Clark 2007	82	1	1	1.0	0.595
+all units (31 + 5 added)	agonal	500	nsw	Clark 2006;Nesvaderani 2009;Sivagnanasundaram 2007;Clark 2007	82	2	2	1.0	0.586
+all units (31 + 5 added)	pH_leaving_out_Pitt	200	pitt	MacDonald 2015;Nucifora 2019;MacDonald 2020;Testa 2026	669	40	31	0.775	0.463
+all units (31 + 5 added)	pH_leaving_out_Pitt	500	pitt	MacDonald 2015;Nucifora 2019;MacDonald 2020;Testa 2026	669	73	59	0.808	0.505
+all units (31 + 5 added)	agonal	200	pitt	MacDonald 2015;Nucifora 2019;MacDonald 2020;Testa 2026	669	19	18	0.947	0.419
+all units (31 + 5 added)	agonal	500	pitt	MacDonald 2015;Nucifora 2019;MacDonald 2020;Testa 2026	669	39	38	0.974	0.439
+all units (31 + 5 added)	pH	200	solo:18504422	Smalla 2008	38	1	0	0.0	0.172
+all units (31 + 5 added)	pH	500	solo:18504422	Smalla 2008	38	2	0	0.0	0.155
+all units (31 + 5 added)	agonal	200	solo:18504422	Smalla 2008	38	0	0		
+all units (31 + 5 added)	agonal	500	solo:18504422	Smalla 2008	38	1	0	0.0	0.841
+all units (31 + 5 added)	pH	200	solo:20381070	Martins-de-Souza 2010 (ACC)	30	1	0	0.0	0.229
+all units (31 + 5 added)	pH	500	solo:20381070	Martins-de-Souza 2010 (ACC)	30	5	1	0.2	0.337
+all units (31 + 5 added)	agonal	200	solo:20381070	Martins-de-Souza 2010 (ACC)	30	0	0		
+all units (31 + 5 added)	agonal	500	solo:20381070	Martins-de-Souza 2010 (ACC)	30	0	0		
+all units (31 + 5 added)	pH	200	solo:20471030	Martins-de-Souza 2010 (thalamus)	46	1	1	1.0	0.653
+all units (31 + 5 added)	pH	500	solo:20471030	Martins-de-Souza 2010 (thalamus)	46	1	1	1.0	0.645
+all units (31 + 5 added)	agonal	200	solo:20471030	Martins-de-Souza 2010 (thalamus)	46	1	1	1.0	0.661
+all units (31 + 5 added)	agonal	500	solo:20471030	Martins-de-Souza 2010 (thalamus)	46	1	1	1.0	0.658
+all units (31 + 5 added)	pH	200	solo:26232077	Saia-Cereda 2015	63	5	3	0.6	0.505
+all units (31 + 5 added)	pH	500	solo:26232077	Saia-Cereda 2015	63	6	4	0.667	0.518
+all units (31 + 5 added)	agonal	200	solo:26232077	Saia-Cereda 2015	63	1	1	1.0	0.454
+all units (31 + 5 added)	agonal	500	solo:26232077	Saia-Cereda 2015	63	2	2	1.0	0.442
+all units (31 + 5 added)	pH	200	solo:28214564	Hirayama-Kurogi 2017	224	10	2	0.2	0.461
+all units (31 + 5 added)	pH	500	solo:28214564	Hirayama-Kurogi 2017	224	33	15	0.455	0.527
+all units (31 + 5 added)	agonal	200	solo:28214564	Hirayama-Kurogi 2017	224	1	0	0.0	0.404
+all units (31 + 5 added)	agonal	500	solo:28214564	Hirayama-Kurogi 2017	224	2	0	0.0	0.412
+all units (31 + 5 added)	pH	200	solo:37076706	Khan 2023	39	2	1	0.5	0.541
+all units (31 + 5 added)	pH	500	solo:37076706	Khan 2023	39	6	2	0.333	0.527
+all units (31 + 5 added)	agonal	200	solo:37076706	Khan 2023	39	0	0		
+all units (31 + 5 added)	agonal	500	solo:37076706	Khan 2023	39	0	0		
+all units (31 + 5 added)	pH_leaving_out_Stanley	200	stanley	Johnston-Wilson 2000;Beasley 2006;Pennington 2008;Behan 2009;Pennington 2008 (insular cortex);English 2009;Chan 2011;Focking 2011;Krishnamurthy 2013;Focking 2015 (PSD);Schubert 2015	290	10	6	0.6	0.479
+all units (31 + 5 added)	pH_leaving_out_Stanley	500	stanley	Johnston-Wilson 2000;Beasley 2006;Pennington 2008;Behan 2009;Pennington 2008 (insular cortex);English 2009;Chan 2011;Focking 2011;Krishnamurthy 2013;Focking 2015 (PSD);Schubert 2015	290	25	16	0.64	0.501
+all units (31 + 5 added)	agonal	200	stanley	Johnston-Wilson 2000;Beasley 2006;Pennington 2008;Behan 2009;Pennington 2008 (insular cortex);English 2009;Chan 2011;Focking 2011;Krishnamurthy 2013;Focking 2015 (PSD);Schubert 2015	290	2	1	0.5	0.469
+all units (31 + 5 added)	agonal	500	stanley	Johnston-Wilson 2000;Beasley 2006;Pennington 2008;Behan 2009;Pennington 2008 (insular cortex);English 2009;Chan 2011;Focking 2011;Krishnamurthy 2013;Focking 2015 (PSD);Schubert 2015	290	3	2	0.667	0.471
+all units (31 + 5 added)	pH	200	stockmeier+dwork+nbb	Koopmans 2026	387	9	7	0.778	0.519
+all units (31 + 5 added)	pH	500	stockmeier+dwork+nbb	Koopmans 2026	387	23	16	0.696	0.581
+all units (31 + 5 added)	agonal	200	stockmeier+dwork+nbb	Koopmans 2026	387	3	2	0.667	0.439
+all units (31 + 5 added)	agonal	500	stockmeier+dwork+nbb	Koopmans 2026	387	6	4	0.667	0.502
+all units (31 + 5 added)	pH_leaving_out_Pritzker	200	uci	Zeppillo 2022	128	3	2	0.667	0.439
+all units (31 + 5 added)	pH_leaving_out_Pritzker	500	uci	Zeppillo 2022	128	7	5	0.714	0.489
+all units (31 + 5 added)	agonal	200	uci	Zeppillo 2022	128	0	0		
+all units (31 + 5 added)	agonal	500	uci	Zeppillo 2022	128	1	0	0.0	0.438
+all units (31 + 5 added)	pH	200	upv	Pinacho 2016;Vidal-Domenech 2020	203	5	0	0.0	0.503
+all units (31 + 5 added)	pH	500	upv	Pinacho 2016;Vidal-Domenech 2020	203	14	4	0.286	0.495
+all units (31 + 5 added)	agonal	200	upv	Pinacho 2016;Vidal-Domenech 2020	203	4	1	0.25	0.53
+all units (31 + 5 added)	agonal	500	upv	Pinacho 2016;Vidal-Domenech 2020	203	9	1	0.111	0.527
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	pH_leaving_out_NSW	200	aus	Edgar 1999	1	1	0	0.0	0.0
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	pH_leaving_out_NSW	500	aus	Edgar 1999	1	1	0	0.0	0.0
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	agonal	200	aus	Edgar 1999	1	0	0		
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	agonal	500	aus	Edgar 1999	1	0	0		
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	pH	200	harvard	Novikova 2006	21	1	0	0.0	0.0
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	pH	500	harvard	Novikova 2006	21	2	1	0.5	0.5
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	agonal	200	harvard	Novikova 2006	21	0	0		
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	agonal	500	harvard	Novikova 2006	21	0	0		
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	pH	200	mannheim	Martins-de-Souza 2009 (ATL);Martins-de-Souza 2009 (DLPFC)	54	3	3	1.0	0.559
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	pH	500	mannheim	Martins-de-Souza 2009 (ATL);Martins-de-Souza 2009 (DLPFC)	54	5	4	0.8	0.6
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	agonal	200	mannheim	Martins-de-Souza 2009 (ATL);Martins-de-Souza 2009 (DLPFC)	54	0	0		
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	agonal	500	mannheim	Martins-de-Souza 2009 (ATL);Martins-de-Souza 2009 (DLPFC)	54	1	0	0.0	0.338
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	pH	200	maryland	Alnafisah 2022	72	1	1	1.0	0.779
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	pH	500	maryland	Alnafisah 2022	72	6	6	1.0	0.777
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	agonal	200	maryland	Alnafisah 2022	72	0	0		
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	agonal	500	maryland	Alnafisah 2022	72	0	0		
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	pH_leaving_out_NSW	200	nsw	Clark 2006;Nesvaderani 2009;Sivagnanasundaram 2007;Clark 2007	82	4	0	0.0	0.409
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	pH_leaving_out_NSW	500	nsw	Clark 2006;Nesvaderani 2009;Sivagnanasundaram 2007;Clark 2007	82	11	3	0.273	0.414
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	agonal	200	nsw	Clark 2006;Nesvaderani 2009;Sivagnanasundaram 2007;Clark 2007	82	1	1	1.0	0.592
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	agonal	500	nsw	Clark 2006;Nesvaderani 2009;Sivagnanasundaram 2007;Clark 2007	82	2	2	1.0	0.588
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	pH_leaving_out_Pitt	200	pitt	MacDonald 2015;Nucifora 2019;MacDonald 2020;Testa 2026	669	40	31	0.775	0.464
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	pH_leaving_out_Pitt	500	pitt	MacDonald 2015;Nucifora 2019;MacDonald 2020;Testa 2026	669	73	59	0.808	0.505
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	agonal	200	pitt	MacDonald 2015;Nucifora 2019;MacDonald 2020;Testa 2026	669	19	18	0.947	0.416
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	agonal	500	pitt	MacDonald 2015;Nucifora 2019;MacDonald 2020;Testa 2026	669	39	38	0.974	0.438
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	pH	200	solo:18504422	Smalla 2008	38	1	0	0.0	0.165
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	pH	500	solo:18504422	Smalla 2008	38	2	0	0.0	0.161
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	agonal	200	solo:18504422	Smalla 2008	38	0	0		
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	agonal	500	solo:18504422	Smalla 2008	38	1	0	0.0	0.839
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	pH	200	solo:20381070	Martins-de-Souza 2010 (ACC)	30	1	0	0.0	0.234
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	pH	500	solo:20381070	Martins-de-Souza 2010 (ACC)	30	5	1	0.2	0.346
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	agonal	200	solo:20381070	Martins-de-Souza 2010 (ACC)	30	0	0		
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	agonal	500	solo:20381070	Martins-de-Souza 2010 (ACC)	30	0	0		
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	pH	200	solo:20471030	Martins-de-Souza 2010 (thalamus)	46	1	1	1.0	0.647
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	pH	500	solo:20471030	Martins-de-Souza 2010 (thalamus)	46	1	1	1.0	0.654
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	agonal	200	solo:20471030	Martins-de-Souza 2010 (thalamus)	46	1	1	1.0	0.644
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	agonal	500	solo:20471030	Martins-de-Souza 2010 (thalamus)	46	1	1	1.0	0.652
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	pH_leaving_out_Stanley	200	stanley	Johnston-Wilson 2000;Beasley 2006;Pennington 2008;Behan 2009;Pennington 2008 (insular cortex);English 2009;Chan 2011;Focking 2011;Krishnamurthy 2013;Focking 2015 (PSD);Schubert 2015	290	10	6	0.6	0.479
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	pH_leaving_out_Stanley	500	stanley	Johnston-Wilson 2000;Beasley 2006;Pennington 2008;Behan 2009;Pennington 2008 (insular cortex);English 2009;Chan 2011;Focking 2011;Krishnamurthy 2013;Focking 2015 (PSD);Schubert 2015	290	25	16	0.64	0.502
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	agonal	200	stanley	Johnston-Wilson 2000;Beasley 2006;Pennington 2008;Behan 2009;Pennington 2008 (insular cortex);English 2009;Chan 2011;Focking 2011;Krishnamurthy 2013;Focking 2015 (PSD);Schubert 2015	290	2	1	0.5	0.463
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	agonal	500	stanley	Johnston-Wilson 2000;Beasley 2006;Pennington 2008;Behan 2009;Pennington 2008 (insular cortex);English 2009;Chan 2011;Focking 2011;Krishnamurthy 2013;Focking 2015 (PSD);Schubert 2015	290	3	2	0.667	0.467
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	pH	200	stockmeier+dwork+nbb	Koopmans 2026	387	9	7	0.778	0.516
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	pH	500	stockmeier+dwork+nbb	Koopmans 2026	387	23	16	0.696	0.584
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	agonal	200	stockmeier+dwork+nbb	Koopmans 2026	387	3	2	0.667	0.446
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	agonal	500	stockmeier+dwork+nbb	Koopmans 2026	387	6	4	0.667	0.5
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	pH_leaving_out_Pritzker	200	uci	Zeppillo 2022	128	3	2	0.667	0.435
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	pH_leaving_out_Pritzker	500	uci	Zeppillo 2022	128	7	5	0.714	0.49
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	agonal	200	uci	Zeppillo 2022	128	0	0		
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	agonal	500	uci	Zeppillo 2022	128	1	0	0.0	0.447
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	pH	200	upv	Pinacho 2016;Vidal-Domenech 2020	203	5	0	0.0	0.507
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	pH	500	upv	Pinacho 2016;Vidal-Domenech 2020	203	14	4	0.286	0.495
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	agonal	200	upv	Pinacho 2016;Vidal-Domenech 2020	203	4	1	0.25	0.532
+the 31 units of the side study (13 donor groups, as Extended Fig. 4)	agonal	500	upv	Pinacho 2016;Vidal-Domenech 2020	203	9	1	0.111	0.526
+all units without the Pittsburgh group	pH_leaving_out_NSW	200	aus	Edgar 1999	1	1	0	0.0	0.0
+all units without the Pittsburgh group	pH_leaving_out_NSW	500	aus	Edgar 1999	1	1	0	0.0	0.0
+all units without the Pittsburgh group	agonal	200	aus	Edgar 1999	1	0	0		
+all units without the Pittsburgh group	agonal	500	aus	Edgar 1999	1	0	0		
+all units without the Pittsburgh group	pH	200	barcelona	Vera-Montecinos 2021	249	7	2	0.286	0.532
+all units without the Pittsburgh group	pH	500	barcelona	Vera-Montecinos 2021	249	17	8	0.471	0.543
+all units without the Pittsburgh group	agonal	200	barcelona	Vera-Montecinos 2021	249	0	0		
+all units without the Pittsburgh group	agonal	500	barcelona	Vera-Montecinos 2021	249	3	0	0.0	0.425
+all units without the Pittsburgh group	pH	200	harvard	Novikova 2006	21	1	0	0.0	0.0
+all units without the Pittsburgh group	pH	500	harvard	Novikova 2006	21	2	1	0.5	0.5
+all units without the Pittsburgh group	agonal	200	harvard	Novikova 2006	21	0	0		
+all units without the Pittsburgh group	agonal	500	harvard	Novikova 2006	21	0	0		
+all units without the Pittsburgh group	pH	200	mannheim	Martins-de-Souza 2009 (ATL);Martins-de-Souza 2009 (DLPFC);Martins-de-Souza 2009 (STG)	71	5	5	1.0	0.524
+all units without the Pittsburgh group	pH	500	mannheim	Martins-de-Souza 2009 (ATL);Martins-de-Souza 2009 (DLPFC);Martins-de-Souza 2009 (STG)	71	7	6	0.857	0.562
+all units without the Pittsburgh group	agonal	200	mannheim	Martins-de-Souza 2009 (ATL);Martins-de-Souza 2009 (DLPFC);Martins-de-Souza 2009 (STG)	71	0	0		
+all units without the Pittsburgh group	agonal	500	mannheim	Martins-de-Souza 2009 (ATL);Martins-de-Souza 2009 (DLPFC);Martins-de-Souza 2009 (STG)	71	1	0	0.0	0.373
+all units without the Pittsburgh group	pH	200	maryland	Alnafisah 2022	72	1	1	1.0	0.788
+all units without the Pittsburgh group	pH	500	maryland	Alnafisah 2022	72	6	6	1.0	0.776
+all units without the Pittsburgh group	agonal	200	maryland	Alnafisah 2022	72	0	0		
+all units without the Pittsburgh group	agonal	500	maryland	Alnafisah 2022	72	0	0		
+all units without the Pittsburgh group	pH_leaving_out_NSW	200	nsw	Clark 2006;Nesvaderani 2009;Sivagnanasundaram 2007;Clark 2007	82	4	0	0.0	0.414
+all units without the Pittsburgh group	pH_leaving_out_NSW	500	nsw	Clark 2006;Nesvaderani 2009;Sivagnanasundaram 2007;Clark 2007	82	11	3	0.273	0.415
+all units without the Pittsburgh group	agonal	200	nsw	Clark 2006;Nesvaderani 2009;Sivagnanasundaram 2007;Clark 2007	82	1	1	1.0	0.579
+all units without the Pittsburgh group	agonal	500	nsw	Clark 2006;Nesvaderani 2009;Sivagnanasundaram 2007;Clark 2007	82	2	2	1.0	0.589
+all units without the Pittsburgh group	pH	200	solo:18504422	Smalla 2008	38	1	0	0.0	0.16
+all units without the Pittsburgh group	pH	500	solo:18504422	Smalla 2008	38	2	0	0.0	0.157
+all units without the Pittsburgh group	agonal	200	solo:18504422	Smalla 2008	38	0	0		
+all units without the Pittsburgh group	agonal	500	solo:18504422	Smalla 2008	38	1	0	0.0	0.832
+all units without the Pittsburgh group	pH	200	solo:20381070	Martins-de-Souza 2010 (ACC)	30	1	0	0.0	0.24
+all units without the Pittsburgh group	pH	500	solo:20381070	Martins-de-Souza 2010 (ACC)	30	5	1	0.2	0.338
+all units without the Pittsburgh group	agonal	200	solo:20381070	Martins-de-Souza 2010 (ACC)	30	0	0		
+all units without the Pittsburgh group	agonal	500	solo:20381070	Martins-de-Souza 2010 (ACC)	30	0	0		
+all units without the Pittsburgh group	pH	200	solo:20471030	Martins-de-Souza 2010 (thalamus)	46	1	1	1.0	0.654
+all units without the Pittsburgh group	pH	500	solo:20471030	Martins-de-Souza 2010 (thalamus)	46	1	1	1.0	0.652
+all units without the Pittsburgh group	agonal	200	solo:20471030	Martins-de-Souza 2010 (thalamus)	46	1	1	1.0	0.65
+all units without the Pittsburgh group	agonal	500	solo:20471030	Martins-de-Souza 2010 (thalamus)	46	1	1	1.0	0.652
+all units without the Pittsburgh group	pH	200	solo:26232077	Saia-Cereda 2015	63	5	3	0.6	0.51
+all units without the Pittsburgh group	pH	500	solo:26232077	Saia-Cereda 2015	63	6	4	0.667	0.519
+all units without the Pittsburgh group	agonal	200	solo:26232077	Saia-Cereda 2015	63	1	1	1.0	0.447
+all units without the Pittsburgh group	agonal	500	solo:26232077	Saia-Cereda 2015	63	2	2	1.0	0.444
+all units without the Pittsburgh group	pH	200	solo:28214564	Hirayama-Kurogi 2017	224	10	2	0.2	0.463
+all units without the Pittsburgh group	pH	500	solo:28214564	Hirayama-Kurogi 2017	224	33	15	0.455	0.525
+all units without the Pittsburgh group	agonal	200	solo:28214564	Hirayama-Kurogi 2017	224	1	0	0.0	0.407
+all units without the Pittsburgh group	agonal	500	solo:28214564	Hirayama-Kurogi 2017	224	2	0	0.0	0.406
+all units without the Pittsburgh group	pH	200	solo:37076706	Khan 2023	39	2	1	0.5	0.539
+all units without the Pittsburgh group	pH	500	solo:37076706	Khan 2023	39	6	2	0.333	0.526
+all units without the Pittsburgh group	agonal	200	solo:37076706	Khan 2023	39	0	0		
+all units without the Pittsburgh group	agonal	500	solo:37076706	Khan 2023	39	0	0		
+all units without the Pittsburgh group	pH_leaving_out_Stanley	200	stanley	Johnston-Wilson 2000;Beasley 2006;Pennington 2008;Behan 2009;Pennington 2008 (insular cortex);English 2009;Chan 2011;Focking 2011;Krishnamurthy 2013;Focking 2015 (PSD);Schubert 2015	290	10	6	0.6	0.476
+all units without the Pittsburgh group	pH_leaving_out_Stanley	500	stanley	Johnston-Wilson 2000;Beasley 2006;Pennington 2008;Behan 2009;Pennington 2008 (insular cortex);English 2009;Chan 2011;Focking 2011;Krishnamurthy 2013;Focking 2015 (PSD);Schubert 2015	290	25	16	0.64	0.5
+all units without the Pittsburgh group	agonal	200	stanley	Johnston-Wilson 2000;Beasley 2006;Pennington 2008;Behan 2009;Pennington 2008 (insular cortex);English 2009;Chan 2011;Focking 2011;Krishnamurthy 2013;Focking 2015 (PSD);Schubert 2015	290	2	1	0.5	0.465
+all units without the Pittsburgh group	agonal	500	stanley	Johnston-Wilson 2000;Beasley 2006;Pennington 2008;Behan 2009;Pennington 2008 (insular cortex);English 2009;Chan 2011;Focking 2011;Krishnamurthy 2013;Focking 2015 (PSD);Schubert 2015	290	3	2	0.667	0.47
+all units without the Pittsburgh group	pH	200	stockmeier+dwork+nbb	Koopmans 2026	387	9	7	0.778	0.521
+all units without the Pittsburgh group	pH	500	stockmeier+dwork+nbb	Koopmans 2026	387	23	16	0.696	0.583
+all units without the Pittsburgh group	agonal	200	stockmeier+dwork+nbb	Koopmans 2026	387	3	2	0.667	0.442
+all units without the Pittsburgh group	agonal	500	stockmeier+dwork+nbb	Koopmans 2026	387	6	4	0.667	0.496
+all units without the Pittsburgh group	pH_leaving_out_Pritzker	200	uci	Zeppillo 2022	128	3	2	0.667	0.439
+all units without the Pittsburgh group	pH_leaving_out_Pritzker	500	uci	Zeppillo 2022	128	7	5	0.714	0.487
+all units without the Pittsburgh group	agonal	200	uci	Zeppillo 2022	128	0	0		
+all units without the Pittsburgh group	agonal	500	uci	Zeppillo 2022	128	1	0	0.0	0.437
+all units without the Pittsburgh group	pH	200	upv	Pinacho 2016;Vidal-Domenech 2020	203	5	0	0.0	0.513
+all units without the Pittsburgh group	pH	500	upv	Pinacho 2016;Vidal-Domenech 2020	203	14	4	0.286	0.496
+all units without the Pittsburgh group	agonal	200	upv	Pinacho 2016;Vidal-Domenech 2020	203	4	1	0.25	0.533
+all units without the Pittsburgh group	agonal	500	upv	Pinacho 2016;Vidal-Domenech 2020	203	9	1	0.111	0.529
+all units, Pittsburgh group without Testa 2026	pH_leaving_out_NSW	200	aus	Edgar 1999	1	1	0	0.0	0.0
+all units, Pittsburgh group without Testa 2026	pH_leaving_out_NSW	500	aus	Edgar 1999	1	1	0	0.0	0.0
+all units, Pittsburgh group without Testa 2026	agonal	200	aus	Edgar 1999	1	0	0		
+all units, Pittsburgh group without Testa 2026	agonal	500	aus	Edgar 1999	1	0	0		
+all units, Pittsburgh group without Testa 2026	pH	200	barcelona	Vera-Montecinos 2021	249	7	2	0.286	0.529
+all units, Pittsburgh group without Testa 2026	pH	500	barcelona	Vera-Montecinos 2021	249	17	8	0.471	0.546
+all units, Pittsburgh group without Testa 2026	agonal	200	barcelona	Vera-Montecinos 2021	249	0	0		
+all units, Pittsburgh group without Testa 2026	agonal	500	barcelona	Vera-Montecinos 2021	249	3	0	0.0	0.428
+all units, Pittsburgh group without Testa 2026	pH	200	harvard	Novikova 2006	21	1	0	0.0	0.0
+all units, Pittsburgh group without Testa 2026	pH	500	harvard	Novikova 2006	21	2	1	0.5	0.5
+all units, Pittsburgh group without Testa 2026	agonal	200	harvard	Novikova 2006	21	0	0		
+all units, Pittsburgh group without Testa 2026	agonal	500	harvard	Novikova 2006	21	0	0		
+all units, Pittsburgh group without Testa 2026	pH	200	mannheim	Martins-de-Souza 2009 (ATL);Martins-de-Souza 2009 (DLPFC);Martins-de-Souza 2009 (STG)	71	5	5	1.0	0.526
+all units, Pittsburgh group without Testa 2026	pH	500	mannheim	Martins-de-Souza 2009 (ATL);Martins-de-Souza 2009 (DLPFC);Martins-de-Souza 2009 (STG)	71	7	6	0.857	0.555
+all units, Pittsburgh group without Testa 2026	agonal	200	mannheim	Martins-de-Souza 2009 (ATL);Martins-de-Souza 2009 (DLPFC);Martins-de-Souza 2009 (STG)	71	0	0		
+all units, Pittsburgh group without Testa 2026	agonal	500	mannheim	Martins-de-Souza 2009 (ATL);Martins-de-Souza 2009 (DLPFC);Martins-de-Souza 2009 (STG)	71	1	0	0.0	0.362
+all units, Pittsburgh group without Testa 2026	pH	200	maryland	Alnafisah 2022	72	1	1	1.0	0.788
+all units, Pittsburgh group without Testa 2026	pH	500	maryland	Alnafisah 2022	72	6	6	1.0	0.777
+all units, Pittsburgh group without Testa 2026	agonal	200	maryland	Alnafisah 2022	72	0	0		
+all units, Pittsburgh group without Testa 2026	agonal	500	maryland	Alnafisah 2022	72	0	0		
+all units, Pittsburgh group without Testa 2026	pH_leaving_out_NSW	200	nsw	Clark 2006;Nesvaderani 2009;Sivagnanasundaram 2007;Clark 2007	82	4	0	0.0	0.41
+all units, Pittsburgh group without Testa 2026	pH_leaving_out_NSW	500	nsw	Clark 2006;Nesvaderani 2009;Sivagnanasundaram 2007;Clark 2007	82	11	3	0.273	0.418
+all units, Pittsburgh group without Testa 2026	agonal	200	nsw	Clark 2006;Nesvaderani 2009;Sivagnanasundaram 2007;Clark 2007	82	1	1	1.0	0.594
+all units, Pittsburgh group without Testa 2026	agonal	500	nsw	Clark 2006;Nesvaderani 2009;Sivagnanasundaram 2007;Clark 2007	82	2	2	1.0	0.585
+all units, Pittsburgh group without Testa 2026	pH_leaving_out_Pitt	200	pitt	MacDonald 2015;Nucifora 2019;MacDonald 2020	161	12	5	0.417	0.506
+all units, Pittsburgh group without Testa 2026	pH_leaving_out_Pitt	500	pitt	MacDonald 2015;Nucifora 2019;MacDonald 2020	161	21	11	0.524	0.516
+all units, Pittsburgh group without Testa 2026	agonal	200	pitt	MacDonald 2015;Nucifora 2019;MacDonald 2020	161	1	0	0.0	0.476
+all units, Pittsburgh group without Testa 2026	agonal	500	pitt	MacDonald 2015;Nucifora 2019;MacDonald 2020	161	1	0	0.0	0.481
+all units, Pittsburgh group without Testa 2026	pH	200	solo:18504422	Smalla 2008	38	1	0	0.0	0.159
+all units, Pittsburgh group without Testa 2026	pH	500	solo:18504422	Smalla 2008	38	2	0	0.0	0.159
+all units, Pittsburgh group without Testa 2026	agonal	200	solo:18504422	Smalla 2008	38	0	0		
+all units, Pittsburgh group without Testa 2026	agonal	500	solo:18504422	Smalla 2008	38	1	0	0.0	0.841
+all units, Pittsburgh group without Testa 2026	pH	200	solo:20381070	Martins-de-Souza 2010 (ACC)	30	1	0	0.0	0.233
+all units, Pittsburgh group without Testa 2026	pH	500	solo:20381070	Martins-de-Souza 2010 (ACC)	30	5	1	0.2	0.34
+all units, Pittsburgh group without Testa 2026	agonal	200	solo:20381070	Martins-de-Souza 2010 (ACC)	30	0	0		
+all units, Pittsburgh group without Testa 2026	agonal	500	solo:20381070	Martins-de-Souza 2010 (ACC)	30	0	0		
+all units, Pittsburgh group without Testa 2026	pH	200	solo:20471030	Martins-de-Souza 2010 (thalamus)	46	1	1	1.0	0.642
+all units, Pittsburgh group without Testa 2026	pH	500	solo:20471030	Martins-de-Souza 2010 (thalamus)	46	1	1	1.0	0.648
+all units, Pittsburgh group without Testa 2026	agonal	200	solo:20471030	Martins-de-Souza 2010 (thalamus)	46	1	1	1.0	0.656
+all units, Pittsburgh group without Testa 2026	agonal	500	solo:20471030	Martins-de-Souza 2010 (thalamus)	46	1	1	1.0	0.645
+all units, Pittsburgh group without Testa 2026	pH	200	solo:26232077	Saia-Cereda 2015	63	5	3	0.6	0.507
+all units, Pittsburgh group without Testa 2026	pH	500	solo:26232077	Saia-Cereda 2015	63	6	4	0.667	0.52
+all units, Pittsburgh group without Testa 2026	agonal	200	solo:26232077	Saia-Cereda 2015	63	1	1	1.0	0.441
+all units, Pittsburgh group without Testa 2026	agonal	500	solo:26232077	Saia-Cereda 2015	63	2	2	1.0	0.448
+all units, Pittsburgh group without Testa 2026	pH	200	solo:28214564	Hirayama-Kurogi 2017	224	10	2	0.2	0.465
+all units, Pittsburgh group without Testa 2026	pH	500	solo:28214564	Hirayama-Kurogi 2017	224	33	15	0.455	0.526
+all units, Pittsburgh group without Testa 2026	agonal	200	solo:28214564	Hirayama-Kurogi 2017	224	1	0	0.0	0.41
+all units, Pittsburgh group without Testa 2026	agonal	500	solo:28214564	Hirayama-Kurogi 2017	224	2	0	0.0	0.405
+all units, Pittsburgh group without Testa 2026	pH	200	solo:37076706	Khan 2023	39	2	1	0.5	0.538
+all units, Pittsburgh group without Testa 2026	pH	500	solo:37076706	Khan 2023	39	6	2	0.333	0.521
+all units, Pittsburgh group without Testa 2026	agonal	200	solo:37076706	Khan 2023	39	0	0		
+all units, Pittsburgh group without Testa 2026	agonal	500	solo:37076706	Khan 2023	39	0	0		
+all units, Pittsburgh group without Testa 2026	pH_leaving_out_Stanley	200	stanley	Johnston-Wilson 2000;Beasley 2006;Pennington 2008;Behan 2009;Pennington 2008 (insular cortex);English 2009;Chan 2011;Focking 2011;Krishnamurthy 2013;Focking 2015 (PSD);Schubert 2015	290	10	6	0.6	0.479
+all units, Pittsburgh group without Testa 2026	pH_leaving_out_Stanley	500	stanley	Johnston-Wilson 2000;Beasley 2006;Pennington 2008;Behan 2009;Pennington 2008 (insular cortex);English 2009;Chan 2011;Focking 2011;Krishnamurthy 2013;Focking 2015 (PSD);Schubert 2015	290	25	16	0.64	0.5
+all units, Pittsburgh group without Testa 2026	agonal	200	stanley	Johnston-Wilson 2000;Beasley 2006;Pennington 2008;Behan 2009;Pennington 2008 (insular cortex);English 2009;Chan 2011;Focking 2011;Krishnamurthy 2013;Focking 2015 (PSD);Schubert 2015	290	2	1	0.5	0.466
+all units, Pittsburgh group without Testa 2026	agonal	500	stanley	Johnston-Wilson 2000;Beasley 2006;Pennington 2008;Behan 2009;Pennington 2008 (insular cortex);English 2009;Chan 2011;Focking 2011;Krishnamurthy 2013;Focking 2015 (PSD);Schubert 2015	290	3	2	0.667	0.465
+all units, Pittsburgh group without Testa 2026	pH	200	stockmeier+dwork+nbb	Koopmans 2026	387	9	7	0.778	0.518
+all units, Pittsburgh group without Testa 2026	pH	500	stockmeier+dwork+nbb	Koopmans 2026	387	23	16	0.696	0.583
+all units, Pittsburgh group without Testa 2026	agonal	200	stockmeier+dwork+nbb	Koopmans 2026	387	3	2	0.667	0.438
+all units, Pittsburgh group without Testa 2026	agonal	500	stockmeier+dwork+nbb	Koopmans 2026	387	6	4	0.667	0.501
+all units, Pittsburgh group without Testa 2026	pH_leaving_out_Pritzker	200	uci	Zeppillo 2022	128	3	2	0.667	0.436
+all units, Pittsburgh group without Testa 2026	pH_leaving_out_Pritzker	500	uci	Zeppillo 2022	128	7	5	0.714	0.487
+all units, Pittsburgh group without Testa 2026	agonal	200	uci	Zeppillo 2022	128	0	0		
+all units, Pittsburgh group without Testa 2026	agonal	500	uci	Zeppillo 2022	128	1	0	0.0	0.433
+all units, Pittsburgh group without Testa 2026	pH	200	upv	Pinacho 2016;Vidal-Domenech 2020	203	5	0	0.0	0.508
+all units, Pittsburgh group without Testa 2026	pH	500	upv	Pinacho 2016;Vidal-Domenech 2020	203	14	4	0.286	0.495
+all units, Pittsburgh group without Testa 2026	agonal	200	upv	Pinacho 2016;Vidal-Domenech 2020	203	4	1	0.25	0.532
+all units, Pittsburgh group without Testa 2026	agonal	500	upv	Pinacho 2016;Vidal-Domenech 2020	203	9	1	0.111	0.527

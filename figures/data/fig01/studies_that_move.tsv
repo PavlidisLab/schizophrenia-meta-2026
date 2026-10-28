@@ -1,0 +1,85 @@
+# studies_that_move.tsv
+# script: agonal_cod_calls_2026-10-18/build_final.py; built 2026-10-18; definitions BRIEF.md; two blind readers per study (sonnet subagents, reader A forward, reader B reverse order), quotes verified verbatim against the named text file after whitespace normalisation (verify_quotes.py); texts copied to texts/
+# input: studies_manifest.tsv sha256 3bf811583bc8; reader files sha256 A1:6ad13d911ad0, A2:030c022ec9fb, A3:54a812eaf9d7, B1:85cc8e71174d, B2:8685ced55ed2, B3:60d1073cf55c
+# old = the single combined call cause_of_death_agonal of fig01_f_covariate_calls_80.tsv
+label	year	old_call_cause_of_death_agonal	call_a	call_b	moves
+Hakak 2001	2001	matched_or_compared	exclusion_rule	exclusion_rule	yes
+Altar 2005	2005	matched_or_compared	exclusion_rule	reported_only	yes
+Mudge 2008	2008	adjusted	not_mentioned	adjusted	yes
+Schmitt 2011	2011	reported_only	not_mentioned	reported_only	yes
+Fillman 2013	2013	reported_only	not_mentioned	not_mentioned	yes
+Pietersen 2014 (PV neurons)	2014	reported_only	not_mentioned	reported_only	yes
+Zhao 2015	2015	not_mentioned	not_mentioned	not_mentioned	
+Fromer 2016	2016	matched_or_compared	exclusion_rule	reported_only	yes
+Voisey 2017	2017	reported_only	not_mentioned	reported_only	yes
+Enwright 2018	2018	adjusted	not_mentioned	adjusted	yes
+Pai 2019	2019	reported_only	not_mentioned	reported_only	yes
+Mendizabal 2019	2019	reported_only	not_mentioned	reported_only	yes
+Jaffe 2020	2020	not_mentioned	not_mentioned	not_mentioned	
+Maas 2020	2020	not_mentioned	not_mentioned	not_mentioned	
+Weissleder 2021	2021	matched_or_compared	not_mentioned	matched_or_compared	yes
+Batiuk 2022	2022	matched_or_compared	not_mentioned	not_mentioned	yes
+Schulmann 2023	2023	not_mentioned	not_mentioned	not_mentioned	
+Ruzicka 2024	2024	not_mentioned	not_mentioned	not_mentioned	
+Yalcinbas 2025	2025	not_mentioned	not_mentioned	not_mentioned	
+Kwon 2026	2026	not_mentioned	not_mentioned	not_mentioned	
+Lee 2026 (PsychAD)	2026	not_mentioned	not_mentioned	not_mentioned	
+Saetre 2007	2007	sensitivity	reported_only	sensitivity	yes
+Weidenhofer 2006	2006	matched_or_compared	exclusion_rule	exclusion_rule	yes
+Alsema 2025	2025	reported_only	not_mentioned	not_mentioned	yes
+de Baumont 2015	2015	not_mentioned	not_mentioned	not_mentioned	
+Harris 2008	2008	not_mentioned	not_mentioned	not_mentioned	
+Iwamoto 2004	2004	not_mentioned	not_mentioned	reported_only	yes
+Kuromitsu 2001	2001	not_mentioned	not_mentioned	not_mentioned	
+Garbett 2008	2008	sensitivity	not_mentioned	sensitivity	yes
+Maycox 2009	2009	matched_or_compared	not_mentioned	matched_or_compared	yes
+Barnes 2011	2011	matched_or_compared	not_mentioned	matched_or_compared	yes
+Hwang 2013	2013	not_mentioned	not_mentioned	not_mentioned	
+Pietersen 2014	2014	reported_only	not_mentioned	reported_only	yes
+Arion 2015	2015	adjusted	reported_only	sensitivity	yes
+Scarr 2018	2018	reported_only	not_mentioned	matched_or_compared	yes
+Mladinov 2016	2016	reported_only	not_mentioned	reported_only	yes
+Scarr 2018	2018	reported_only	not_mentioned	reported_only	yes
+Lanz 2019	2019	adjusted	not_mentioned	adjusted	yes
+Santarelli 2019	2019	reported_only	not_mentioned	reported_only	yes
+Zeppillo 2022	2022	reported_only	reported_only	not_mentioned	yes
+Akula 2021	2021	sensitivity	not_mentioned	sensitivity	yes
+Wu 2021	2021	not_mentioned	not_mentioned	not_mentioned	
+Ketchesin 2023	2023	matched_or_compared	exclusion_rule	exclusion_rule	yes
+Arihisa 2023	2023	not_mentioned	not_mentioned	not_mentioned	
+Frohlich 2024	2024	not_mentioned	not_mentioned	not_mentioned	
+Mas 2025	2025	reported_only	not_mentioned	reported_only	yes
+Singh 2026	2026	not_mentioned	not_mentioned	not_mentioned	
+Mauney 2015	2015	not_mentioned	not_mentioned	not_mentioned	
+Zhu 2024	2024	reported_only	not_mentioned	exclusion_rule	yes
+Bowden 2008	2008	reported_only	not_mentioned	reported_only	yes
+Chen 2013	2013	not_mentioned	not_mentioned	not_mentioned	
+Ramaker 2017	2017	matched_or_compared	exclusion_rule	not_mentioned	yes
+Abdolmaleky 2019	2019	not_mentioned	not_mentioned	not_mentioned	
+Iwamoto 2005	2005	sensitivity	sensitivity	sensitivity	
+Aston 2004	2004	sensitivity	not_mentioned	sensitivity	yes
+Narayan 2008	2008	sensitivity	not_mentioned	sensitivity	yes
+Arion 2010	2010	reported_only	not_mentioned	reported_only	yes
+Wu 2012	2012	matched_or_compared	exclusion_rule	exclusion_rule	yes
+Kohen 2014	2014	not_mentioned	not_mentioned	not_mentioned	
+Xiao 2014	2014	reported_only	not_mentioned	reported_only	yes
+Darby 2016	2016	not_mentioned	not_mentioned	not_mentioned	
+Kim 2016	2016	reported_only	exclusion_rule	exclusion_rule	yes
+Chang 2017	2017	reported_only	not_mentioned	not_mentioned	yes
+Jaffe 2018	2018	matched_or_compared	not_mentioned	not_mentioned	yes
+Collado-Torres 2019	2019	not_mentioned	not_mentioned	not_mentioned	
+Perez 2021	2021	matched_or_compared	exclusion_rule	not_mentioned	yes
+Bakshi 2020	2020	not_mentioned	not_mentioned	not_mentioned	
+Gebicke-Haerter 2021	2021	reported_only	not_mentioned	reported_only	yes
+Lindholm Carlstrom 2021	2021	reported_only	not_mentioned	not_mentioned	yes
+Benjamin 2022	2022	not_mentioned	not_mentioned	not_mentioned	
+Ling 2024	2024	matched_or_compared	exclusion_rule	not_mentioned	yes
+Zhang 2026	2026	sensitivity	not_mentioned	reported_only	yes
+Mendez-Victoriano 2026	2026	reported_only	not_mentioned	matched_or_compared	yes
+Dean 2026	2026	matched_or_compared	not_mentioned	matched_or_compared	yes
+Chu 2009	2009	not_mentioned	not_mentioned	not_mentioned	
+Arbabi 2025	2025	matched_or_compared	not_mentioned	reported_only	yes
+Puvogel 2022	2022	reported_only	not_mentioned	reported_only	yes
+Maschietto 2015	2015	not_mentioned	not_mentioned	not_mentioned	
+Arion 2017	2017	adjusted	not_mentioned	adjusted	yes
+Hu 2016	2016	not_mentioned	not_mentioned	not_mentioned	

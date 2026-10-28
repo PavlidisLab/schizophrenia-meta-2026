@@ -1,0 +1,19 @@
+# figure: fig09 panel a  (81 base: datasets of the studies in the 81 base)
+# script: sample_level_81_2026-10-15/code/assemble_a.py (panel logic of analyses/figure_exports/export_fig08_fig09_fig10.py fig9_a); run 2026-10-15
+# input: single_cell/results/sc_cross_pairs.tsv sha256 c1ab1ef25978
+# median over the subject-separate Endresz cohort pairs, per Gemma cell class (14)
+class	n_pair_rows	median_rho_t
+L2/3-6 IT	19	0.0912
+LAMP5	19	0.078
+OPC	19	0.0629
+PAX6	19	0.0448
+PVALB	19	0.099
+SNCG	19	0.0506
+SST	19	0.0394
+VIP	19	0.0565
+astrocyte	19	0.0835
+chandelier	19	0.0599
+deep non-IT	19	0.0496
+microglia	19	0.1649
+oligodendrocyte	19	0.0817
+vascular	19	0.0237

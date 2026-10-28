@@ -1,0 +1,26 @@
+# figure: suppnote6_pathways_coexpression panel d
+# script: rerun_core80_2026-10-16/M09 (build_sets.py + ph_tests.R, seed A 20260930, 10,000 pH shuffles per dataset), table selection by core80_work_2026-10-16/P11/b/f6d/panel_d_core80.py (panel_d() of export_suppnote1.py), run 2026-10-17
+# population: recurrent rows: 383 study-tier genes at q < 0.1, 107 genes in 10 or more lists, 2,422 in 5 or more (base78_2026-10-16/B80/out/recurrent_sets.tsv sha256 3c42f67cdd7a); term-group rows: term groups of the 2026-10-03/04 analysis rebuilt in M09 on the core-80 base
+# input: rerun_core80_2026-10-16/M09/results_seedA_noextra_new/controls_sets_combined.tsv sha256 d8584f246614
+# analysis run 2026-10-03/04; limma in controls, expression ~ pH + age + sex; z signed positive when the genes move with low pH the way the lists say they move in schizophrenia
+# PRIMARY = GSE21138, GSE35977, GSE53987_BA46, GSE17612, GSE92538_GPL96; ALT = GSE208338, GSE35977, GSE202537_caudate, GSE17612, GSE80655_AnCg
+# '*_hits' = list genes (membership from primary_lists.json sha 516475518ece, before the 2026-10-07 restamp); '*_terms' = all annotated genes of the term group (current library)
+combination	set	n_datasets	n_positive	combined_perm_z	combined_p_one_sided	n_genes_combined	n_q05_confound_sign
+PRIMARY	recurrent_q10	5	4	4.415	5.05e-06	364	193
+PRIMARY	recurrent_ge10	5	4	4.01	3.04e-05	104	60
+PRIMARY	recurrent_ge5	5	4	4.615	1.97e-06	2234	922
+PRIMARY	oxphos_hits	5	4	4.362	6.44e-06	107	58
+PRIMARY	oxphos_terms	5	5	4.278	9.45e-06	166	67
+PRIMARY	myelin_hits	5	1	-1.251	0.895	54	11
+PRIMARY	myelin_terms	5	1	-2.408	0.992	102	15
+PRIMARY	microglia_hits	5	3	0.525	0.3	14	0
+PRIMARY	microglia_terms	5	2	-0.134	0.553	38	3
+ALT	recurrent_q10	5	5	6.388	8.4e-11		
+ALT	recurrent_ge10	5	5	6.226	2.39e-10		
+ALT	recurrent_ge5	5	5	6.252	2.03e-10		
+ALT	oxphos_hits	5	4	4.29	8.95e-06		
+ALT	oxphos_terms	5	4	3.707	0.000105		
+ALT	myelin_hits	5	3	-0.073	0.529		
+ALT	myelin_terms	5	1	-1.913	0.972		
+ALT	microglia_hits	5	2	1.287	0.099		
+ALT	microglia_terms	5	2	0.236	0.407		

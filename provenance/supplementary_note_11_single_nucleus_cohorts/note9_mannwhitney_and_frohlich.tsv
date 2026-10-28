@@ -1,0 +1,13 @@
+part	input	input_sha256_12	n_sn_pairs_11_30	n_bulk_pairs_11_30	median_sn	median_bulk	P_two_sided
+MW	core80 (new)	3a8b561aa245	8	169	0.163	0.147	0.914
+MW	pre-core80 (validation: stored 0.76)	ef7ec4be9832	8	153	0.163	0.136	0.757
+
+part	axis	input_sha256_12	gene_set	min_n_genes_over_classes	min_r_change	max_r_change	classes_interval_excludes_zero	n_classes
+Frohlich	axis_v1	3a307849c6f1	all_Z_genes	9765	0.119	0.253	6	7
+Frohlich	axis_v1	3a307849c6f1	study_brain_209	296	0.114	0.328	5	7
+Frohlich	axis_v1	3a307849c6f1	study_brain_5plus	1934	0.122	0.329	5	7
+Frohlich	axis_v1	3a307849c6f1	study_brain_ge10	83	0.137	0.347	7	7
+Frohlich	axis_v2	0fb901762cde	all_Z_genes	9823	0.118	0.218	6	7
+Frohlich	axis_v2	0fb901762cde	study_brain_209	296	0.087	0.318	5	7
+Frohlich	axis_v2	0fb901762cde	study_brain_5plus	1937	0.099	0.297	5	7
+Frohlich	axis_v2	0fb901762cde	study_brain_ge10	83	0.128	0.345	6	7

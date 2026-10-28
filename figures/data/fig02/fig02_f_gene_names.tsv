@@ -1,0 +1,389 @@
+# figure: Fig. 2c interactive version, hover card (gene full names)
+# script: fig2c_interactive_data_2026-10-19/build_hgnc_names_383.py, run 2026-10-19
+# input: data/reference/hgnc_complete_set.txt sha256 69bb5722d5a42bb355580deb2c9f197ce3d7f7d13807173b9674a7db65e52191; file modification date 2026-09-23 (the download date was not recorded in the file; the modification date is the date the file was written locally)
+# input: recurrence_on_80_studies/out/recurrence_genes.tsv sha256 dda5eb621c155963ef712788758e31b4cb169773fc7198fa4116cc89f4244195 (scenario 'published, brain', q_bh < 0.1 = 383 genes)
+# match: approved_symbol = exact HGNC approved symbol; previous_symbol / alias_symbol = the gene symbol is not currently approved and maps to the one gene named in hgnc_symbol_now; ambiguous = several candidates, none chosen; not_found = no HGNC record
+gene	match	hgnc_symbol_now	approved_name	hgnc_id	locus_type
+MT1X	approved_symbol	MT1X	metallothionein 1X	HGNC:7405	gene with protein product
+FKBP5	approved_symbol	FKBP5	FKBP prolyl isomerase 5	HGNC:3721	gene with protein product
+VGF	approved_symbol	VGF	VGF nerve growth factor inducible	HGNC:12684	gene with protein product
+SLC14A1	approved_symbol	SLC14A1	solute carrier family 14 member 1 (Kidd blood group)	HGNC:10918	gene with protein product
+HSPB1	approved_symbol	HSPB1	heat shock protein family B (small) member 1	HGNC:5246	gene with protein product
+SLCO4A1	approved_symbol	SLCO4A1	solute carrier organic anion transporter family member 4A1	HGNC:10953	gene with protein product
+SST	approved_symbol	SST	somatostatin	HGNC:11329	gene with protein product
+ETV5	approved_symbol	ETV5	ETS variant transcription factor 5	HGNC:3494	gene with protein product
+TXNIP	approved_symbol	TXNIP	thioredoxin interacting protein	HGNC:16952	gene with protein product
+OLFM1	approved_symbol	OLFM1	olfactomedin 1	HGNC:17187	gene with protein product
+MEG3	approved_symbol	MEG3	maternally expressed 3	HGNC:14575	RNA, long non-coding
+IFITM2	approved_symbol	IFITM2	interferon induced transmembrane protein 2	HGNC:5413	gene with protein product
+SERPINA3	approved_symbol	SERPINA3	serpin family A member 3	HGNC:16	gene with protein product
+BAG3	approved_symbol	BAG3	BAG cochaperone 3	HGNC:939	gene with protein product
+HIF3A	approved_symbol	HIF3A	hypoxia inducible factor 3 subunit alpha	HGNC:15825	gene with protein product
+ALDH1L1	approved_symbol	ALDH1L1	aldehyde dehydrogenase 1 family member L1	HGNC:3978	gene with protein product
+DDIT4	approved_symbol	DDIT4	DNA damage inducible transcript 4	HGNC:24944	gene with protein product
+CHI3L1	approved_symbol	CHI3L1	chitinase 3 like 1	HGNC:1932	gene with protein product
+RNASE1	approved_symbol	RNASE1	ribonuclease A family member 1, pancreatic	HGNC:10044	gene with protein product
+SYT1	approved_symbol	SYT1	synaptotagmin 1	HGNC:11509	gene with protein product
+PCSK1	approved_symbol	PCSK1	proprotein convertase subtilisin/kexin type 1	HGNC:8743	gene with protein product
+GADD45B	approved_symbol	GADD45B	growth arrest and DNA damage inducible beta	HGNC:4096	gene with protein product
+BDNF	approved_symbol	BDNF	brain derived neurotrophic factor	HGNC:1033	gene with protein product
+TASP1	approved_symbol	TASP1	taspase 1	HGNC:15859	gene with protein product
+DEPP1	approved_symbol	DEPP1	DEPP autophagy regulator 1	HGNC:23355	gene with protein product
+DCLK1	approved_symbol	DCLK1	doublecortin like kinase 1	HGNC:2700	gene with protein product
+RCAN2	approved_symbol	RCAN2	regulator of calcineurin 2	HGNC:3041	gene with protein product
+OLR1	approved_symbol	OLR1	oxidized low density lipoprotein receptor 1	HGNC:8133	gene with protein product
+BCL6	approved_symbol	BCL6	BCL6 transcription repressor	HGNC:1001	gene with protein product
+IFITM3	approved_symbol	IFITM3	interferon induced transmembrane protein 3	HGNC:5414	gene with protein product
+NR4A1	approved_symbol	NR4A1	nuclear receptor subfamily 4 group A member 1	HGNC:7980	gene with protein product
+EGR1	approved_symbol	EGR1	early growth response 1	HGNC:3238	gene with protein product
+GABRA1	approved_symbol	GABRA1	gamma-aminobutyric acid type A receptor subunit alpha1	HGNC:4075	gene with protein product
+KCNK1	approved_symbol	KCNK1	potassium two pore domain channel subfamily K member 1	HGNC:6272	gene with protein product
+NPTX2	approved_symbol	NPTX2	neuronal pentraxin 2	HGNC:7953	gene with protein product
+NREP	approved_symbol	NREP	neuronal regeneration related protein	HGNC:16834	gene with protein product
+NTRK2	approved_symbol	NTRK2	neurotrophic receptor tyrosine kinase 2	HGNC:8032	gene with protein product
+RGS4	approved_symbol	RGS4	regulator of G protein signaling 4	HGNC:10000	gene with protein product
+TLCD4	approved_symbol	TLCD4	TLC domain containing 4	HGNC:26477	gene with protein product
+OSMR	approved_symbol	OSMR	oncostatin M receptor	HGNC:8507	gene with protein product
+HBB	approved_symbol	HBB	hemoglobin subunit beta	HGNC:4827	gene with protein product
+CBLN4	approved_symbol	CBLN4	cerebellin 4 precursor	HGNC:16231	gene with protein product
+ARRDC3	approved_symbol	ARRDC3	arrestin domain containing 3	HGNC:29263	gene with protein product
+NCALD	approved_symbol	NCALD	neurocalcin delta	HGNC:7655	gene with protein product
+ANGPTL4	approved_symbol	ANGPTL4	angiopoietin like 4	HGNC:16039	gene with protein product
+RASD1	approved_symbol	RASD1	ras related dexamethasone induced 1	HGNC:15828	gene with protein product
+JMJD6	approved_symbol	JMJD6	jumonji domain containing 6, arginine demethylase and lysine hydroxylase	HGNC:19355	gene with protein product
+SLC6A15	approved_symbol	SLC6A15	solute carrier family 6 member 15	HGNC:13621	gene with protein product
+CERS6	approved_symbol	CERS6	ceramide synthase 6	HGNC:23826	gene with protein product
+CLDN11	approved_symbol	CLDN11	claudin 11	HGNC:8514	gene with protein product
+GLS	approved_symbol	GLS	glutaminase	HGNC:4331	gene with protein product
+CDKN1A	approved_symbol	CDKN1A	cyclin dependent kinase inhibitor 1A	HGNC:1784	gene with protein product
+IL4R	approved_symbol	IL4R	interleukin 4 receptor	HGNC:6015	gene with protein product
+TF	approved_symbol	TF	transferrin	HGNC:11740	gene with protein product
+CEBPD	approved_symbol	CEBPD	CCAAT enhancer binding protein delta	HGNC:1835	gene with protein product
+DUSP1	approved_symbol	DUSP1	dual specificity phosphatase 1	HGNC:3064	gene with protein product
+NEFH	approved_symbol	NEFH	neurofilament heavy chain	HGNC:7737	gene with protein product
+CA4	approved_symbol	CA4	carbonic anhydrase 4	HGNC:1375	gene with protein product
+CARTPT	approved_symbol	CARTPT	CART prepropeptide	HGNC:24323	gene with protein product
+NR4A2	approved_symbol	NR4A2	nuclear receptor subfamily 4 group A member 2	HGNC:7981	gene with protein product
+PAFAH1B1	approved_symbol	PAFAH1B1	platelet activating factor acetylhydrolase 1b regulatory subunit 1	HGNC:8574	gene with protein product
+ATP2B2	approved_symbol	ATP2B2	ATPase plasma membrane Ca2+ transporting 2	HGNC:815	gene with protein product
+GAD2	approved_symbol	GAD2	glutamate decarboxylase 2	HGNC:4093	gene with protein product
+SDC4	approved_symbol	SDC4	syndecan 4	HGNC:10661	gene with protein product
+S100A8	approved_symbol	S100A8	S100 calcium binding protein A8	HGNC:10498	gene with protein product
+IL33R	approved_symbol	IL33R	interleukin 33 receptor	HGNC:5998	gene with protein product
+MAFF	approved_symbol	MAFF	MAF bZIP transcription factor F	HGNC:6780	gene with protein product
+TGM2	approved_symbol	TGM2	transglutaminase 2	HGNC:11778	gene with protein product
+FBXO9	approved_symbol	FBXO9	F-box protein 9	HGNC:13588	gene with protein product
+SPOCK3	approved_symbol	SPOCK3	SPARC (osteonectin), cwcv and kazal like domains proteoglycan 3	HGNC:13565	gene with protein product
+COL24A1	approved_symbol	COL24A1	collagen type XXIV alpha 1 chain	HGNC:20821	gene with protein product
+KLF15	approved_symbol	KLF15	KLF transcription factor 15	HGNC:14536	gene with protein product
+PPP4R4	approved_symbol	PPP4R4	protein phosphatase 4 regulatory subunit 4	HGNC:23788	gene with protein product
+NAP1L5	approved_symbol	NAP1L5	nucleosome assembly protein 1 like 5	HGNC:19968	gene with protein product
+PELI2	approved_symbol	PELI2	pellino E3 ubiquitin protein ligase family member 2	HGNC:8828	gene with protein product
+RTN4	approved_symbol	RTN4	reticulon 4	HGNC:14085	gene with protein product
+ULK3	approved_symbol	ULK3	unc-51 like kinase 3	HGNC:19703	gene with protein product
+SLC25A40	approved_symbol	SLC25A40	solute carrier family 25 member 40	HGNC:29680	gene with protein product
+GALNT16	approved_symbol	GALNT16	polypeptide N-acetylgalactosaminyltransferase 16	HGNC:23233	gene with protein product
+MKNK2	approved_symbol	MKNK2	MAPK interacting serine/threonine kinase 2	HGNC:7111	gene with protein product
+TMEFF2	approved_symbol	TMEFF2	transmembrane protein with EGF like and two follistatin like domains 2	HGNC:11867	gene with protein product
+CRIM1	approved_symbol	CRIM1	cysteine rich transmembrane BMP regulator 1	HGNC:2359	gene with protein product
+FAM107A	approved_symbol	FAM107A	family with sequence similarity 107 member A	HGNC:30827	gene with protein product
+G3BP2	approved_symbol	G3BP2	G3BP stress granule assembly factor 2	HGNC:30291	gene with protein product
+MAP4K4	approved_symbol	MAP4K4	mitogen-activated protein kinase kinase kinase kinase 4	HGNC:6866	gene with protein product
+RHOBTB3	approved_symbol	RHOBTB3	Rho related BTB domain containing 3	HGNC:18757	gene with protein product
+SV2B	approved_symbol	SV2B	synaptic vesicle glycoprotein 2B	HGNC:16874	gene with protein product
+TIMP1	approved_symbol	TIMP1	TIMP metallopeptidase inhibitor 1	HGNC:11820	gene with protein product
+SLC11A1	approved_symbol	SLC11A1	solute carrier family 11 member 1	HGNC:10907	gene with protein product
+ATP6V1B2	approved_symbol	ATP6V1B2	ATPase H+ transporting V1 subunit B2	HGNC:854	gene with protein product
+NAMPT	approved_symbol	NAMPT	nicotinamide phosphoribosyltransferase	HGNC:30092	gene with protein product
+TUSC3	approved_symbol	TUSC3	tumor suppressor candidate 3	HGNC:30242	gene with protein product
+EGFR	approved_symbol	EGFR	epidermal growth factor receptor	HGNC:3236	gene with protein product
+RGS6	approved_symbol	RGS6	regulator of G protein signaling 6	HGNC:10002	gene with protein product
+SEMA3C	approved_symbol	SEMA3C	semaphorin 3C	HGNC:10725	gene with protein product
+SHC1	approved_symbol	SHC1	SHC adaptor protein 1	HGNC:10840	gene with protein product
+SLC7A2	approved_symbol	SLC7A2	solute carrier family 7 member 2	HGNC:11060	gene with protein product
+ALDH1A1	approved_symbol	ALDH1A1	aldehyde dehydrogenase 1 family member A1	HGNC:402	gene with protein product
+AMPH	approved_symbol	AMPH	amphiphysin	HGNC:471	gene with protein product
+ATP1B1	approved_symbol	ATP1B1	ATPase Na+/K+ transporting subunit beta 1	HGNC:804	gene with protein product
+ATP6V1A	approved_symbol	ATP6V1A	ATPase H+ transporting V1 subunit A	HGNC:851	gene with protein product
+CHGB	approved_symbol	CHGB	chromogranin B	HGNC:1930	gene with protein product
+ETV1	approved_symbol	ETV1	ETS variant transcription factor 1	HGNC:3490	gene with protein product
+GAP43	approved_symbol	GAP43	growth associated protein 43	HGNC:4140	gene with protein product
+KLC1	approved_symbol	KLC1	kinesin light chain 1	HGNC:6387	gene with protein product
+NNAT	approved_symbol	NNAT	neuronatin	HGNC:7860	gene with protein product
+PDE1A	approved_symbol	PDE1A	phosphodiesterase 1A	HGNC:8774	gene with protein product
+VSNL1	approved_symbol	VSNL1	visinin like 1	HGNC:12722	gene with protein product
+S100A9	approved_symbol	S100A9	S100 calcium binding protein A9	HGNC:10499	gene with protein product
+PECAM1	approved_symbol	PECAM1	platelet and endothelial cell adhesion molecule 1	HGNC:8823	gene with protein product
+NEUROD6	approved_symbol	NEUROD6	neuronal differentiation 6	HGNC:13804	gene with protein product
+RERGL	approved_symbol	RERGL	RERG like	HGNC:26213	gene with protein product
+SLC38A5	approved_symbol	SLC38A5	solute carrier family 38 member 5	HGNC:18070	gene with protein product
+WIPF3	approved_symbol	WIPF3	WAS/WASL interacting protein family member 3	HGNC:22004	gene with protein product
+CP	approved_symbol	CP	ceruloplasmin	HGNC:2295	gene with protein product
+TNFSF10	approved_symbol	TNFSF10	TNF superfamily member 10	HGNC:11925	gene with protein product
+HILPDA	approved_symbol	HILPDA	hypoxia inducible lipid droplet associated	HGNC:28859	gene with protein product
+IGFBP6	approved_symbol	IGFBP6	insulin like growth factor binding protein 6	HGNC:5475	gene with protein product
+OBSL1	approved_symbol	OBSL1	obscurin like cytoskeletal adaptor 1	HGNC:29092	gene with protein product
+APOL6	approved_symbol	APOL6	apolipoprotein L6	HGNC:14870	gene with protein product
+MAML2	approved_symbol	MAML2	mastermind like transcriptional coactivator 2	HGNC:16259	gene with protein product
+N4BP2	approved_symbol	N4BP2	NEDD4 binding protein 2	HGNC:29851	gene with protein product
+TMBIM1	approved_symbol	TMBIM1	transmembrane BAX inhibitor motif containing 1	HGNC:23410	gene with protein product
+ADAMTS9	approved_symbol	ADAMTS9	ADAM metallopeptidase with thrombospondin type 1 motif 9	HGNC:13202	gene with protein product
+FIGN	approved_symbol	FIGN	fidgetin, microtubule severing factor	HGNC:13285	gene with protein product
+CNKSR3	approved_symbol	CNKSR3	CNKSR family member 3	HGNC:23034	gene with protein product
+VWC2	approved_symbol	VWC2	von Willebrand factor C domain containing 2	HGNC:30200	gene with protein product
+ACAP3	approved_symbol	ACAP3	ArfGAP with coiled-coil, ankyrin repeat and PH domains 3	HGNC:16754	gene with protein product
+PGM2L1	approved_symbol	PGM2L1	phosphoglucomutase 2 like 1	HGNC:20898	gene with protein product
+RTN4R	approved_symbol	RTN4R	reticulon 4 receptor	HGNC:18601	gene with protein product
+GABARAPL1	approved_symbol	GABARAPL1	GABA type A receptor associated protein like 1	HGNC:4068	gene with protein product
+GADD45G	approved_symbol	GADD45G	growth arrest and DNA damage inducible gamma	HGNC:4097	gene with protein product
+SAMHD1	approved_symbol	SAMHD1	SAM and HD domain containing deoxynucleoside triphosphate triphosphohydrolase 1	HGNC:15925	gene with protein product
+GRAMD1C	approved_symbol	GRAMD1C	GRAM domain containing 1C	HGNC:25252	gene with protein product
+LBH	approved_symbol	LBH	LBH regulator of Wnt signaling pathway	HGNC:29532	gene with protein product
+ADAMTS2	approved_symbol	ADAMTS2	ADAM metallopeptidase with thrombospondin type 1 motif 2	HGNC:218	gene with protein product
+PPEF1	approved_symbol	PPEF1	protein phosphatase with EF-hand domain 1	HGNC:9243	gene with protein product
+GABRA4	approved_symbol	GABRA4	gamma-aminobutyric acid type A receptor subunit alpha4	HGNC:4078	gene with protein product
+CDK5R2	approved_symbol	CDK5R2	cyclin dependent kinase 5 regulatory subunit 2	HGNC:1776	gene with protein product
+DGKB	approved_symbol	DGKB	diacylglycerol kinase beta	HGNC:2850	gene with protein product
+CYRIB	approved_symbol	CYRIB	CYFIP related Rac1 interactor B	HGNC:25216	gene with protein product
+EXOC7	approved_symbol	EXOC7	exocyst complex component 7	HGNC:23214	gene with protein product
+NDFIP2	approved_symbol	NDFIP2	Nedd4 family interacting protein 2	HGNC:18537	gene with protein product
+NDRG3	approved_symbol	NDRG3	NDRG family member 3	HGNC:14462	gene with protein product
+STK17B	approved_symbol	STK17B	serine/threonine kinase 17b	HGNC:11396	gene with protein product
+BBX	approved_symbol	BBX	BBX high mobility group box domain containing	HGNC:14422	gene with protein product
+KCNA1	approved_symbol	KCNA1	potassium voltage-gated channel subfamily A member 1	HGNC:6218	gene with protein product
+MICAL2	approved_symbol	MICAL2	microtubule associated monooxygenase, calponin and LIM domain containing 2	HGNC:24693	gene with protein product
+NETO2	approved_symbol	NETO2	neuropilin and tolloid like 2	HGNC:14644	gene with protein product
+NRN1	approved_symbol	NRN1	neuritin 1	HGNC:17972	gene with protein product
+CD74	approved_symbol	CD74	CD74 molecule	HGNC:1697	gene with protein product
+ENSA	approved_symbol	ENSA	endosulfine alpha	HGNC:3360	gene with protein product
+MACF1	approved_symbol	MACF1	microtubule actin crosslinking factor 1	HGNC:13664	gene with protein product
+NRXN3	approved_symbol	NRXN3	neurexin 3	HGNC:8010	gene with protein product
+RYR3	approved_symbol	RYR3	ryanodine receptor 3	HGNC:10485	gene with protein product
+SLC25A12	approved_symbol	SLC25A12	solute carrier family 25 member 12	HGNC:10982	gene with protein product
+WSB1	approved_symbol	WSB1	WD repeat and SOCS box containing 1	HGNC:19221	gene with protein product
+MT1M	approved_symbol	MT1M	metallothionein 1M	HGNC:14296	gene with protein product
+ACTA2	approved_symbol	ACTA2	actin alpha 2, smooth muscle	HGNC:130	gene with protein product
+ATP1A3	approved_symbol	ATP1A3	ATPase Na+/K+ transporting subunit alpha 3	HGNC:801	gene with protein product
+CNR1	approved_symbol	CNR1	cannabinoid receptor 1	HGNC:2159	gene with protein product
+MT1E	approved_symbol	MT1E	metallothionein 1E	HGNC:7397	gene with protein product
+GABRA5	approved_symbol	GABRA5	gamma-aminobutyric acid type A receptor subunit alpha5	HGNC:4079	gene with protein product
+STMN2	approved_symbol	STMN2	stathmin 2	HGNC:10577	gene with protein product
+ZBTB16	approved_symbol	ZBTB16	zinc finger and BTB domain containing 16	HGNC:12930	gene with protein product
+MGST1	approved_symbol	MGST1	microsomal glutathione S-transferase 1	HGNC:7061	gene with protein product
+NELL1	approved_symbol	NELL1	neural EGFL like 1	HGNC:7750	gene with protein product
+CITED2	approved_symbol	CITED2	Cbp/p300 interacting transactivator with ED-rich tail 2	HGNC:1987	gene with protein product
+KLF10	approved_symbol	KLF10	KLF transcription factor 10	HGNC:11810	gene with protein product
+NR4A3	approved_symbol	NR4A3	nuclear receptor subfamily 4 group A member 3	HGNC:7982	gene with protein product
+GAD1	approved_symbol	GAD1	glutamate decarboxylase 1	HGNC:4092	gene with protein product
+NEFL	approved_symbol	NEFL	neurofilament light chain	HGNC:7739	gene with protein product
+CRYAB	approved_symbol	CRYAB	crystallin alpha B	HGNC:2389	gene with protein product
+APP	approved_symbol	APP	amyloid beta precursor protein	HGNC:620	gene with protein product
+AQP1	approved_symbol	AQP1	aquaporin 1 (Colton blood group)	HGNC:633	gene with protein product
+CCK	approved_symbol	CCK	cholecystokinin	HGNC:1569	gene with protein product
+COL16A1	approved_symbol	COL16A1	collagen type XVI alpha 1 chain	HGNC:2193	gene with protein product
+CORO1A	approved_symbol	CORO1A	coronin 1A	HGNC:2252	gene with protein product
+ELAVL4	approved_symbol	ELAVL4	ELAV like RNA binding protein 4	HGNC:3315	gene with protein product
+FEZ1	approved_symbol	FEZ1	fasciculation and elongation protein zeta 1	HGNC:3659	gene with protein product
+FGF12	approved_symbol	FGF12	fibroblast growth factor 12	HGNC:3668	gene with protein product
+GABRG2	approved_symbol	GABRG2	gamma-aminobutyric acid type A receptor subunit gamma2	HGNC:4087	gene with protein product
+HMGCS1	approved_symbol	HMGCS1	3-hydroxy-3-methylglutaryl-CoA synthase 1	HGNC:5007	gene with protein product
+IGFBP5	approved_symbol	IGFBP5	insulin like growth factor binding protein 5	HGNC:5474	gene with protein product
+LRRC8B	approved_symbol	LRRC8B	leucine rich repeat containing 8 VRAC subunit B	HGNC:30692	gene with protein product
+NELL2	approved_symbol	NELL2	neural EGFL like 2	HGNC:7751	gene with protein product
+NR3C1	approved_symbol	NR3C1	nuclear receptor subfamily 3 group C member 1	HGNC:7978	gene with protein product
+PBXIP1	approved_symbol	PBXIP1	PBX homeobox interacting protein 1	HGNC:21199	gene with protein product
+RIMS3	approved_symbol	RIMS3	regulating synaptic membrane exocytosis 3	HGNC:21292	gene with protein product
+RORA	approved_symbol	RORA	RAR related orphan receptor A	HGNC:10258	gene with protein product
+SCG2	approved_symbol	SCG2	secretogranin II	HGNC:10575	gene with protein product
+SCN1B	approved_symbol	SCN1B	sodium voltage-gated channel beta subunit 1	HGNC:10586	gene with protein product
+SNAP25	approved_symbol	SNAP25	synaptosome associated protein 25	HGNC:11132	gene with protein product
+SOX9	approved_symbol	SOX9	SRY-box transcription factor 9	HGNC:11204	gene with protein product
+VCAN	approved_symbol	VCAN	versican	HGNC:2464	gene with protein product
+CD163	approved_symbol	CD163	CD163 molecule	HGNC:1631	gene with protein product
+HBA2	approved_symbol	HBA2	hemoglobin subunit alpha 2	HGNC:4824	gene with protein product
+IFITM1	approved_symbol	IFITM1	interferon induced transmembrane protein 1	HGNC:5412	gene with protein product
+ACSL5	approved_symbol	ACSL5	acyl-CoA synthetase long chain family member 5	HGNC:16526	gene with protein product
+HBA1	approved_symbol	HBA1	hemoglobin subunit alpha 1	HGNC:4823	gene with protein product
+C1QL3	approved_symbol	C1QL3	complement C1q like 3	HGNC:19359	gene with protein product
+KCNE4	approved_symbol	KCNE4	potassium voltage-gated channel subfamily E regulatory subunit 4	HGNC:6244	gene with protein product
+MALAT1	approved_symbol	MALAT1	metastasis associated lung adenocarcinoma transcript 1	HGNC:29665	RNA, long non-coding
+FGF17	approved_symbol	FGF17	fibroblast growth factor 17	HGNC:3673	gene with protein product
+TUBB6	approved_symbol	TUBB6	tubulin beta 6 class V	HGNC:20776	gene with protein product
+SOCS3	approved_symbol	SOCS3	suppressor of cytokine signaling 3	HGNC:19391	gene with protein product
+SEMA3G	approved_symbol	SEMA3G	semaphorin 3G	HGNC:30400	gene with protein product
+EMP1	approved_symbol	EMP1	epithelial membrane protein 1	HGNC:3333	gene with protein product
+ZNF831	approved_symbol	ZNF831	zinc finger protein 831	HGNC:16167	gene with protein product
+SPR	approved_symbol	SPR	sepiapterin reductase	HGNC:11257	gene with protein product
+CRYBG3	approved_symbol	CRYBG3	crystallin beta-gamma domain containing 3	HGNC:34427	gene with protein product
+ADM	approved_symbol	ADM	adrenomedullin	HGNC:259	gene with protein product
+BCL3	approved_symbol	BCL3	BCL3 transcription coactivator	HGNC:998	gene with protein product
+NID1	approved_symbol	NID1	nidogen 1	HGNC:7821	gene with protein product
+CD44	approved_symbol	CD44	CD44 molecule (IN blood group)	HGNC:1681	gene with protein product
+SERPINH1	approved_symbol	SERPINH1	serpin family H member 1	HGNC:1546	gene with protein product
+VSIG4	approved_symbol	VSIG4	V-set and immunoglobulin domain containing 4	HGNC:17032	gene with protein product
+NR1D1	approved_symbol	NR1D1	nuclear receptor subfamily 1 group D member 1	HGNC:7962	gene with protein product
+ANP32B	approved_symbol	ANP32B	acidic nuclear phosphoprotein 32 family member B	HGNC:16677	gene with protein product
+CNDP1	approved_symbol	CNDP1	carnosine dipeptidase 1	HGNC:20675	gene with protein product
+KIF19	approved_symbol	KIF19	kinesin family member 19	HGNC:26735	gene with protein product
+PLD5	approved_symbol	PLD5	phospholipase D family member 5	HGNC:26879	gene with protein product
+ABLIM2	approved_symbol	ABLIM2	actin binding LIM protein family member 2	HGNC:19195	gene with protein product
+CNTNAP4	approved_symbol	CNTNAP4	contactin associated protein family member 4	HGNC:18747	gene with protein product
+SYNPR	approved_symbol	SYNPR	synaptoporin	HGNC:16507	gene with protein product
+TSLIG3B	approved_symbol	TSLIG3B	tRNA splicing ligase complex subunit 3B	HGNC:26773	gene with protein product
+GPC6	approved_symbol	GPC6	glypican 6	HGNC:4454	gene with protein product
+HMGCLL1	approved_symbol	HMGCLL1	3-hydroxy-3-methylglutaryl-CoA lyase like 1	HGNC:21359	gene with protein product
+PRMT8	approved_symbol	PRMT8	protein arginine methyltransferase 8	HGNC:5188	gene with protein product
+SV2C	approved_symbol	SV2C	synaptic vesicle glycoprotein 2C	HGNC:30670	gene with protein product
+RXFP1	approved_symbol	RXFP1	relaxin family peptide receptor 1	HGNC:19718	gene with protein product
+CREBRF	approved_symbol	CREBRF	CREB3 regulatory factor	HGNC:24050	gene with protein product
+FGD4	approved_symbol	FGD4	FYVE, RhoGEF and PH domain containing 4	HGNC:19125	gene with protein product
+MTURN	approved_symbol	MTURN	maturin, neural progenitor differentiation regulator homolog	HGNC:25457	gene with protein product
+PLXNA1	approved_symbol	PLXNA1	plexin A1	HGNC:9099	gene with protein product
+PPP1R14C	approved_symbol	PPP1R14C	protein phosphatase 1 regulatory inhibitor subunit 14C	HGNC:14952	gene with protein product
+RIMKLA	approved_symbol	RIMKLA	ribosomal modification protein rimK like family member A	HGNC:28725	gene with protein product
+RMDN2	approved_symbol	RMDN2	regulator of microtubule dynamics 2	HGNC:26567	gene with protein product
+SYT6	approved_symbol	SYT6	synaptotagmin 6	HGNC:18638	gene with protein product
+SLCO1C1	approved_symbol	SLCO1C1	solute carrier organic anion transporter family member 1C1	HGNC:13819	gene with protein product
+SPON2	approved_symbol	SPON2	spondin 2	HGNC:11253	gene with protein product
+MCTP1	approved_symbol	MCTP1	multiple C2 and transmembrane domain containing 1	HGNC:26183	gene with protein product
+ARK2N	approved_symbol	ARK2N	arkadia (RNF111) N-terminal like PKA signaling regulator 2N	HGNC:28172	gene with protein product
+LAPTM4B	approved_symbol	LAPTM4B	lysosomal protein transmembrane 4 beta	HGNC:13646	gene with protein product
+TAB2	approved_symbol	TAB2	TGF-beta activated kinase 1 (MAP3K7) binding protein 2	HGNC:17075	gene with protein product
+APBB1IP	approved_symbol	APBB1IP	amyloid beta precursor protein binding family B member 1 interacting protein	HGNC:17379	gene with protein product
+LPAR6	approved_symbol	LPAR6	lysophosphatidic acid receptor 6	HGNC:15520	gene with protein product
+BICDL1	approved_symbol	BICDL1	BICD family like cargo adaptor 1	HGNC:28095	gene with protein product
+ACTR2	approved_symbol	ACTR2	actin related protein 2	HGNC:169	gene with protein product
+C2CD2	approved_symbol	C2CD2	C2 calcium dependent domain containing 2	HGNC:1266	gene with protein product
+KCNIP4	approved_symbol	KCNIP4	potassium voltage-gated channel interacting protein 4	HGNC:30083	gene with protein product
+CHDH	approved_symbol	CHDH	choline dehydrogenase	HGNC:24288	gene with protein product
+FRS2	approved_symbol	FRS2	fibroblast growth factor receptor substrate 2	HGNC:16971	gene with protein product
+NTN4	approved_symbol	NTN4	netrin 4	HGNC:13658	gene with protein product
+SERTAD4	approved_symbol	SERTAD4	SERTA domain containing 4	HGNC:25236	gene with protein product
+TMEM38A	approved_symbol	TMEM38A	transmembrane protein 38A	HGNC:28462	gene with protein product
+ZNF395	approved_symbol	ZNF395	zinc finger protein 395	HGNC:18737	gene with protein product
+COL9A1	approved_symbol	COL9A1	collagen type IX alpha 1 chain	HGNC:2217	gene with protein product
+SYNDIG1	approved_symbol	SYNDIG1	synapse differentiation inducing 1	HGNC:15885	gene with protein product
+RASGRP3	approved_symbol	RASGRP3	RAS guanyl releasing protein 3	HGNC:14545	gene with protein product
+CHSY1	approved_symbol	CHSY1	chondroitin sulfate synthase 1	HGNC:17198	gene with protein product
+GULP1	approved_symbol	GULP1	GULP PTB domain containing engulfment adaptor 1	HGNC:18649	gene with protein product
+SMG6	approved_symbol	SMG6	SMG6 nonsense mediated mRNA decay factor	HGNC:17809	gene with protein product
+SLC39A10	approved_symbol	SLC39A10	solute carrier family 39 member 10	HGNC:20861	gene with protein product
+AHCYL1	approved_symbol	AHCYL1	adenosylhomocysteinase like 1	HGNC:344	gene with protein product
+B3GALNT1	approved_symbol	B3GALNT1	beta-1,3-N-acetylgalactosaminyltransferase 1 (Globoside blood group)	HGNC:918	gene with protein product
+DGKI	approved_symbol	DGKI	diacylglycerol kinase iota	HGNC:2855	gene with protein product
+APOLD1	approved_symbol	APOLD1	apolipoprotein L domain containing 1	HGNC:25268	gene with protein product
+DIRAS2	approved_symbol	DIRAS2	DIRAS family GTPase 2	HGNC:19323	gene with protein product
+EXOC6	approved_symbol	EXOC6	exocyst complex component 6	HGNC:23196	gene with protein product
+ITFG1	approved_symbol	ITFG1	integrin alpha FG-GAP repeat containing 1	HGNC:30697	gene with protein product
+PAQR6	approved_symbol	PAQR6	progestin and adipoQ receptor family member 6	HGNC:30132	gene with protein product
+STXBP6	approved_symbol	STXBP6	syntaxin binding protein 6	HGNC:19666	gene with protein product
+SYT13	approved_symbol	SYT13	synaptotagmin 13	HGNC:14962	gene with protein product
+CDC14B	approved_symbol	CDC14B	cell division cycle 14B	HGNC:1719	gene with protein product
+NDUFS4	approved_symbol	NDUFS4	NADH:ubiquinone oxidoreductase subunit S4	HGNC:7711	gene with protein product
+PPP1R15A	approved_symbol	PPP1R15A	protein phosphatase 1 regulatory subunit 15A	HGNC:14375	gene with protein product
+CYRIA	approved_symbol	CYRIA	CYFIP related Rac1 interactor A	HGNC:25373	gene with protein product
+GPRC5B	approved_symbol	GPRC5B	G protein-coupled receptor class C group 5 member B	HGNC:13308	gene with protein product
+PARM1	approved_symbol	PARM1	prostate androgen-regulated mucin-like protein 1	HGNC:24536	gene with protein product
+PLEKHB1	approved_symbol	PLEKHB1	pleckstrin homology domain containing B1	HGNC:19079	gene with protein product
+SSBP2	approved_symbol	SSBP2	single stranded DNA binding protein 2	HGNC:15831	gene with protein product
+TSPYL1	approved_symbol	TSPYL1	TSPY like 1	HGNC:12382	gene with protein product
+ANLN	approved_symbol	ANLN	anillin, actin binding protein	HGNC:14082	gene with protein product
+CA10	approved_symbol	CA10	carbonic anhydrase 10 (inactive)	HGNC:1369	gene with protein product
+FNDC4	approved_symbol	FNDC4	fibronectin type III domain containing 4	HGNC:20239	gene with protein product
+PRKAG2	approved_symbol	PRKAG2	protein kinase AMP-activated non-catalytic subunit gamma 2	HGNC:9386	gene with protein product
+TSPAN13	approved_symbol	TSPAN13	tetraspanin 13	HGNC:21643	gene with protein product
+ADAM23	approved_symbol	ADAM23	ADAM metallopeptidase domain 23	HGNC:202	gene with protein product
+AP1S2	approved_symbol	AP1S2	adaptor related protein complex 1 subunit sigma 2	HGNC:560	gene with protein product
+ARL4C	approved_symbol	ARL4C	ARF like GTPase 4C	HGNC:698	gene with protein product
+BCAS1	approved_symbol	BCAS1	brain enriched myelin associated protein 1	HGNC:974	gene with protein product
+BICD1	approved_symbol	BICD1	BICD cargo adaptor 1	HGNC:1049	gene with protein product
+FARP1	approved_symbol	FARP1	FERM, ARH/RhoGEF and pleckstrin domain protein 1	HGNC:3591	gene with protein product
+GABRD	approved_symbol	GABRD	gamma-aminobutyric acid type A receptor subunit delta	HGNC:4084	gene with protein product
+INSIG1	approved_symbol	INSIG1	insulin induced gene 1	HGNC:6083	gene with protein product
+KCNF1	approved_symbol	KCNF1	potassium voltage-gated channel modifier subfamily F member 1	HGNC:6246	gene with protein product
+KIF1C	approved_symbol	KIF1C	kinesin family member 1C	HGNC:6317	gene with protein product
+MBNL1	approved_symbol	MBNL1	muscleblind like splicing regulator 1	HGNC:6923	gene with protein product
+PREPL	approved_symbol	PREPL	prolyl endopeptidase like	HGNC:30228	gene with protein product
+PTPRE	approved_symbol	PTPRE	protein tyrosine phosphatase receptor type E	HGNC:9669	gene with protein product
+RAB40C	approved_symbol	RAB40C	RAB40C, member RAS oncogene family	HGNC:18285	gene with protein product
+RAB6B	approved_symbol	RAB6B	RAB6B, member RAS oncogene family	HGNC:14902	gene with protein product
+RPH3A	approved_symbol	RPH3A	rabphilin 3A	HGNC:17056	gene with protein product
+RPS6KA5	approved_symbol	RPS6KA5	ribosomal protein S6 kinase A5	HGNC:10434	gene with protein product
+SCD	approved_symbol	SCD	stearoyl-CoA desaturase	HGNC:10571	gene with protein product
+TNFRSF21	approved_symbol	TNFRSF21	TNF receptor superfamily member 21	HGNC:13469	gene with protein product
+MT2A	approved_symbol	MT2A	metallothionein 2A	HGNC:7406	gene with protein product
+NPY	approved_symbol	NPY	neuropeptide Y	HGNC:7955	gene with protein product
+PDIA6	approved_symbol	PDIA6	protein disulfide isomerase family A member 6	HGNC:30168	gene with protein product
+LST1	approved_symbol	LST1	leukocyte specific transcript 1	HGNC:14189	gene with protein product
+OXTR	approved_symbol	OXTR	oxytocin receptor	HGNC:8529	gene with protein product
+CRHBP	approved_symbol	CRHBP	corticotropin releasing hormone binding protein	HGNC:2356	gene with protein product
+PRKX	approved_symbol	PRKX	protein kinase cAMP-dependent X-linked catalytic subunit	HGNC:9441	gene with protein product
+CCN1	approved_symbol	CCN1	cellular communication network factor 1	HGNC:2654	gene with protein product
+COL4A2	approved_symbol	COL4A2	collagen type IV alpha 2 chain	HGNC:2203	gene with protein product
+FOS	approved_symbol	FOS	Fos proto-oncogene, AP-1 transcription factor subunit	HGNC:3796	gene with protein product
+GMPR	approved_symbol	GMPR	guanosine monophosphate reductase	HGNC:4376	gene with protein product
+JUN	approved_symbol	JUN	Jun proto-oncogene, AP-1 transcription factor subunit	HGNC:6204	gene with protein product
+THBS1	approved_symbol	THBS1	thrombospondin 1	HGNC:11785	gene with protein product
+CCNI	approved_symbol	CCNI	cyclin I	HGNC:1595	gene with protein product
+FGF13	approved_symbol	FGF13	fibroblast growth factor 13	HGNC:3670	gene with protein product
+TOMM20	approved_symbol	TOMM20	translocase of outer mitochondrial membrane 20	HGNC:20947	gene with protein product
+CCDC88A	approved_symbol	CCDC88A	coiled-coil and HOOK domain protein 88A	HGNC:25523	gene with protein product
+PVALB	approved_symbol	PVALB	parvalbumin	HGNC:9704	gene with protein product
+SLCO1A2	approved_symbol	SLCO1A2	solute carrier organic anion transporter family member 1A2	HGNC:10956	gene with protein product
+ACKR1	approved_symbol	ACKR1	atypical chemokine receptor 1 (Duffy blood group)	HGNC:4035	gene with protein product
+C1QB	approved_symbol	C1QB	complement C1q B chain	HGNC:1242	gene with protein product
+COL4A1	approved_symbol	COL4A1	collagen type IV alpha 1 chain	HGNC:2202	gene with protein product
+ENOSF1	approved_symbol	ENOSF1	enolase superfamily member 1	HGNC:30365	gene with protein product
+ENTREP1	approved_symbol	ENTREP1	endosomal transmembrane epsin interactor 1	HGNC:24820	gene with protein product
+FGF2	approved_symbol	FGF2	fibroblast growth factor 2	HGNC:3676	gene with protein product
+GPLD1	approved_symbol	GPLD1	glycosylphosphatidylinositol specific phospholipase D1	HGNC:4459	gene with protein product
+IGF1	approved_symbol	IGF1	insulin like growth factor 1	HGNC:5464	gene with protein product
+ITPKC	approved_symbol	ITPKC	inositol-trisphosphate 3-kinase C	HGNC:14897	gene with protein product
+LRBA	approved_symbol	LRBA	LPS responsive beige-like anchor protein	HGNC:1742	gene with protein product
+P4HA1	approved_symbol	P4HA1	prolyl 4-hydroxylase subunit alpha 1	HGNC:8546	gene with protein product
+PTPRR	approved_symbol	PTPRR	protein tyrosine phosphatase receptor type R	HGNC:9680	gene with protein product
+SERPING1	approved_symbol	SERPING1	serpin family G member 1	HGNC:1228	gene with protein product
+AGT	approved_symbol	AGT	angiotensinogen	HGNC:333	gene with protein product
+ATP1A1	approved_symbol	ATP1A1	ATPase Na+/K+ transporting subunit alpha 1	HGNC:799	gene with protein product
+CDK5	approved_symbol	CDK5	cyclin dependent kinase 5	HGNC:1774	gene with protein product
+ITGB8	approved_symbol	ITGB8	integrin subunit beta 8	HGNC:6163	gene with protein product
+MAP4	approved_symbol	MAP4	microtubule associated protein 4	HGNC:6862	gene with protein product
+PGK1	approved_symbol	PGK1	phosphoglycerate kinase 1	HGNC:8896	gene with protein product
+UBE2V2	approved_symbol	UBE2V2	ubiquitin conjugating enzyme E2 V2	HGNC:12495	gene with protein product
+EVI2A	approved_symbol	EVI2A	ecotropic viral integration site 2A	HGNC:3499	gene with protein product
+MAG	approved_symbol	MAG	myelin associated glycoprotein	HGNC:6783	gene with protein product
+ADAM11	approved_symbol	ADAM11	ADAM metallopeptidase domain 11	HGNC:189	gene with protein product
+AKAP12	approved_symbol	AKAP12	A-kinase anchoring protein 12	HGNC:370	gene with protein product
+AQP4	approved_symbol	AQP4	aquaporin 4	HGNC:637	gene with protein product
+ARL1	approved_symbol	ARL1	ARF like GTPase 1	HGNC:692	gene with protein product
+CADPS	approved_symbol	CADPS	calcium dependent secretion activator	HGNC:1426	gene with protein product
+CLU	approved_symbol	CLU	clusterin	HGNC:2095	gene with protein product
+CX3CL1	approved_symbol	CX3CL1	C-X3-C motif chemokine ligand 1	HGNC:10647	gene with protein product
+DST	approved_symbol	DST	dystonin	HGNC:1090	gene with protein product
+DTNA	approved_symbol	DTNA	dystrobrevin alpha	HGNC:3057	gene with protein product
+ERCC1	approved_symbol	ERCC1	ERCC excision repair 1, endonuclease non-catalytic subunit	HGNC:3433	gene with protein product
+GFAP	approved_symbol	GFAP	glial fibrillary acidic protein	HGNC:4235	gene with protein product
+GRIN2A	approved_symbol	GRIN2A	glutamate ionotropic receptor NMDA type subunit 2A	HGNC:4585	gene with protein product
+HTR2A	approved_symbol	HTR2A	5-hydroxytryptamine receptor 2A	HGNC:5293	gene with protein product
+INPP4A	approved_symbol	INPP4A	inositol polyphosphate-4-phosphatase type I A	HGNC:6074	gene with protein product
+KCNAB1	approved_symbol	KCNAB1	potassium voltage-gated channel subfamily A regulatory beta subunit 1	HGNC:6228	gene with protein product
+MAP7	approved_symbol	MAP7	microtubule associated protein 7	HGNC:6869	gene with protein product
+NDRG1	approved_symbol	NDRG1	N-myc downstream regulated 1	HGNC:7679	gene with protein product
+NF1	approved_symbol	NF1	neurofibromin 1	HGNC:7765	gene with protein product
+OXCT1	approved_symbol	OXCT1	3-oxoacid CoA-transferase 1	HGNC:8527	gene with protein product
+PCSK2	approved_symbol	PCSK2	proprotein convertase subtilisin/kexin type 2	HGNC:8744	gene with protein product
+PTPN11	approved_symbol	PTPN11	protein tyrosine phosphatase non-receptor type 11	HGNC:9644	gene with protein product
+PTPRG	approved_symbol	PTPRG	protein tyrosine phosphatase receptor type G	HGNC:9671	gene with protein product
+RASGRF1	approved_symbol	RASGRF1	Ras protein specific guanine nucleotide releasing factor 1	HGNC:9875	gene with protein product
+SCAMP1	approved_symbol	SCAMP1	secretory carrier membrane protein 1	HGNC:10563	gene with protein product
+SELENOP	approved_symbol	SELENOP	selenoprotein P	HGNC:10751	gene with protein product
+SERINC3	approved_symbol	SERINC3	serine incorporator 3	HGNC:11699	gene with protein product
+SLC12A2	approved_symbol	SLC12A2	solute carrier family 12 member 2	HGNC:10911	gene with protein product
+SQLE	approved_symbol	SQLE	squalene epoxidase	HGNC:11279	gene with protein product
+SYN2	approved_symbol	SYN2	synapsin II	HGNC:11495	gene with protein product
+SYP	approved_symbol	SYP	synaptophysin	HGNC:11506	gene with protein product
+TIMP2	approved_symbol	TIMP2	TIMP metallopeptidase inhibitor 2	HGNC:11821	gene with protein product
+UQCRFS1	approved_symbol	UQCRFS1	ubiquinol-cytochrome c reductase, Rieske iron-sulfur polypeptide 1	HGNC:12587	gene with protein product
+WNK1	approved_symbol	WNK1	WNK lysine deficient protein kinase 1	HGNC:14540	gene with protein product
+C10orf105	approved_symbol	C10orf105	chromosome 10 open reading frame 105	HGNC:20304	gene with protein product
+LGR6	approved_symbol	LGR6	leucine rich repeat containing G protein-coupled receptor 6	HGNC:19719	gene with protein product

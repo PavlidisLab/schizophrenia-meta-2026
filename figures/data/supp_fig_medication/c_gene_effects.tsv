@@ -1,0 +1,526 @@
+# figure: supp_fig_medication panel c
+# script: analyses/figure_exports/export_supp_fig_medication.py, run 2026-10-09
+# input: analyses/medication/results/gene_effects.tsv sha256 3f01804d61ff
+# mean drug z over the chronic units that measured the gene; both recurrent sets
+set	gene	sz_direction	chronic_units_measured	chronic_mean_z	chronic_units_up_p05	chronic_units_down_p05
+recurrent (study_brain, uniform q < 0.1)	MT1X	up	4	0.4368	1	0
+recurrent (study_brain, uniform q < 0.1)	FKBP5	up	15	0.6557	3	1
+recurrent (study_brain, uniform q < 0.1)	VGF	down	13	0.3248	1	1
+recurrent (study_brain, uniform q < 0.1)	SLC14A1	up	14	0.153	0	1
+recurrent (study_brain, uniform q < 0.1)	HSPB1	up	14	-0.4514	0	3
+recurrent (study_brain, uniform q < 0.1)	SLCO4A1	up	13	-0.4277	0	0
+recurrent (study_brain, uniform q < 0.1)	SST	down	15	0.2858	2	0
+recurrent (study_brain, uniform q < 0.1)	ETV5	down	14	-0.579	1	4
+recurrent (study_brain, uniform q < 0.1)	TXNIP	up	15	0.7465	5	1
+recurrent (study_brain, uniform q < 0.1)	OLFM1	down	15	-0.5659	0	4
+recurrent (study_brain, uniform q < 0.1)	MEG3	up	13	0.1404	1	1
+recurrent (study_brain, uniform q < 0.1)	IFITM2	up	14	0.6985	2	0
+recurrent (study_brain, uniform q < 0.1)	SERPINA3	up	14	1.442	5	1
+recurrent (study_brain, uniform q < 0.1)	BAG3	up	15	0.3796	2	0
+recurrent (study_brain, uniform q < 0.1)	HIF3A	up	15	0.3644	2	1
+recurrent (study_brain, uniform q < 0.1)	ALDH1L1	up	14	0.3187	0	0
+recurrent (study_brain, uniform q < 0.1)	DDIT4	up	15	0.343	2	0
+recurrent (study_brain, uniform q < 0.1)	CHI3L1	up	15	0.2584	2	0
+recurrent (study_brain, uniform q < 0.1)	RNASE1	down	10	0.3784	1	1
+recurrent (study_brain, uniform q < 0.1)	SYT1	down	14	-0.4113	0	3
+recurrent (study_brain, uniform q < 0.1)	PCSK1	down	15	0.4839	2	2
+recurrent (study_brain, uniform q < 0.1)	GADD45B	up	15	0.435	3	1
+recurrent (study_brain, uniform q < 0.1)	BDNF	down	15	-0.5309	1	3
+recurrent (study_brain, uniform q < 0.1)	TASP1	down	14	-0.2206	1	1
+recurrent (study_brain, uniform q < 0.1)	DEPP1	up	12	-0.1962	1	1
+recurrent (study_brain, uniform q < 0.1)	DCLK1	down	14	-0.5246	0	3
+recurrent (study_brain, uniform q < 0.1)	RCAN2	down	14	-0.1828	1	2
+recurrent (study_brain, uniform q < 0.1)	OLR1	down	11	-0.2877	0	0
+recurrent (study_brain, uniform q < 0.1)	BCL6	up	15	0.06411	3	0
+recurrent (study_brain, uniform q < 0.1)	IFITM3	up	11	0.2539	1	1
+recurrent (study_brain, uniform q < 0.1)	NR4A1	down	15	-0.2811	2	3
+recurrent (study_brain, uniform q < 0.1)	EGR1	down	15	-0.6949	3	5
+recurrent (study_brain, uniform q < 0.1)	GABRA1	down	15	-0.3836	0	2
+recurrent (study_brain, uniform q < 0.1)	KCNK1	down	15	-0.3534	0	2
+recurrent (study_brain, uniform q < 0.1)	NPTX2	down	12	0.2264	3	2
+recurrent (study_brain, uniform q < 0.1)	NREP	down	15	-0.3624	1	4
+recurrent (study_brain, uniform q < 0.1)	NTRK2	up	15	0.36	4	3
+recurrent (study_brain, uniform q < 0.1)	RGS4	down	15	-0.1676	3	2
+recurrent (study_brain, uniform q < 0.1)	TLCD4	up	12	-0.8518	0	0
+recurrent (study_brain, uniform q < 0.1)	OSMR	up	15	-0.5763	0	0
+recurrent (study_brain, uniform q < 0.1)	HBB	up	10	-0.3869	0	2
+recurrent (study_brain, uniform q < 0.1)	CBLN4	down	10	-0.1136	1	1
+recurrent (study_brain, uniform q < 0.1)	ARRDC3	up	13	0.2027	1	1
+recurrent (study_brain, uniform q < 0.1)	NCALD	down	14	-0.0504	0	1
+recurrent (study_brain, uniform q < 0.1)	ANGPTL4	up	15	0.173	1	0
+recurrent (study_brain, uniform q < 0.1)	RASD1	up	15	0.1131	0	0
+recurrent (study_brain, uniform q < 0.1)	JMJD6	up	15	-0.381	1	2
+recurrent (study_brain, uniform q < 0.1)	SLC6A15	down	15	0.1436	1	0
+recurrent (study_brain, uniform q < 0.1)	CERS6	down	13	-0.198	1	1
+recurrent (study_brain, uniform q < 0.1)	CLDN11	down	15	0.2333	1	1
+recurrent (study_brain, uniform q < 0.1)	GLS	down	13	-0.3768	1	2
+recurrent (study_brain, uniform q < 0.1)	CDKN1A	up	15	0.07449	3	2
+recurrent (study_brain, uniform q < 0.1)	IL4R	up	15	-0.005096	1	0
+recurrent (study_brain, uniform q < 0.1)	TF	down	14	0.1033	2	2
+recurrent (study_brain, uniform q < 0.1)	CEBPD	up	15	0.4313	1	0
+recurrent (study_brain, uniform q < 0.1)	DUSP1	down	15	-0.6235	0	1
+recurrent (study_brain, uniform q < 0.1)	NEFH	down	15	-0.5495	0	1
+recurrent (study_brain, uniform q < 0.1)	CA4	down	15	0.06814	2	1
+recurrent (study_brain, uniform q < 0.1)	CARTPT	up	14	1.097	3	0
+recurrent (study_brain, uniform q < 0.1)	NR4A2	down	15	0.4569	1	0
+recurrent (study_brain, uniform q < 0.1)	PAFAH1B1	down	15	-0.05994	1	1
+recurrent (study_brain, uniform q < 0.1)	ATP2B2	down	15	-1.325	0	4
+recurrent (study_brain, uniform q < 0.1)	GAD2	down	11	-0.2591	0	2
+recurrent (study_brain, uniform q < 0.1)	SDC4	up	15	0.6496	2	0
+recurrent (study_brain, uniform q < 0.1)	S100A8	up	12	0.6152	1	0
+recurrent (study_brain, uniform q < 0.1)	IL33R	up	13	-0.2283	1	0
+recurrent (study_brain, uniform q < 0.1)	MAFF	up	15	0.1218	1	0
+recurrent (study_brain, uniform q < 0.1)	TGM2	up	10	0.5284	1	0
+recurrent (study_brain, uniform q < 0.1)	FBXO9	down	15	-0.2382	0	1
+recurrent (study_brain, uniform q < 0.1)	SPOCK3	down	14	-0.2062	1	1
+recurrent (study_brain, uniform q < 0.1)	COL24A1	down	10	-0.185	0	0
+recurrent (study_brain, uniform q < 0.1)	KLF15	up	14	0.1328	2	1
+recurrent (study_brain, uniform q < 0.1)	PPP4R4	down	10	-0.1112	0	1
+recurrent (study_brain, uniform q < 0.1)	NAP1L5	down	14	0.2563	1	0
+recurrent (study_brain, uniform q < 0.1)	PELI2	up	14	0.2738	2	1
+recurrent (study_brain, uniform q < 0.1)	RTN4	down	15	-0.4547	1	2
+recurrent (study_brain, uniform q < 0.1)	ULK3	down	10	0.2191	1	1
+recurrent (study_brain, uniform q < 0.1)	SLC25A40	down	13	0.7234	3	0
+recurrent (study_brain, uniform q < 0.1)	GALNT16	up	14	0.3772	2	1
+recurrent (study_brain, uniform q < 0.1)	MKNK2	up	15	-0.2768	1	2
+recurrent (study_brain, uniform q < 0.1)	TMEFF2	down	12	0.08834	2	1
+recurrent (study_brain, uniform q < 0.1)	CRIM1	up	14	-0.03211	1	1
+recurrent (study_brain, uniform q < 0.1)	FAM107A	up	13	-0.1017	1	1
+recurrent (study_brain, uniform q < 0.1)	G3BP2	down	15	0.4559	3	0
+recurrent (study_brain, uniform q < 0.1)	MAP4K4	up	15	0.09816	0	1
+recurrent (study_brain, uniform q < 0.1)	RHOBTB3	up	13	0.3983	0	1
+recurrent (study_brain, uniform q < 0.1)	SV2B	down	13	-0.5157	0	2
+recurrent (study_brain, uniform q < 0.1)	TIMP1	up	15	0.3247	0	0
+recurrent (study_brain, uniform q < 0.1)	SLC11A1	up	12	0.1189	1	0
+recurrent (study_brain, uniform q < 0.1)	ATP6V1B2	down	15	0.05458	2	1
+recurrent (study_brain, uniform q < 0.1)	NAMPT	up	15	0.1507	1	1
+recurrent (study_brain, uniform q < 0.1)	TUSC3	down	14	0.1341	2	1
+recurrent (study_brain, uniform q < 0.1)	EGFR	up	15	-0.02292	1	1
+recurrent (study_brain, uniform q < 0.1)	RGS6	down	15	-0.6571	0	3
+recurrent (study_brain, uniform q < 0.1)	SEMA3C	down	15	0.1414	2	1
+recurrent (study_brain, uniform q < 0.1)	SHC1	up	15	0.638	3	0
+recurrent (study_brain, uniform q < 0.1)	SLC7A2	up	15	-0.3185	0	2
+recurrent (study_brain, uniform q < 0.1)	ALDH1A1	down	15	-0.1235	0	2
+recurrent (study_brain, uniform q < 0.1)	AMPH	down	14	-0.5244	0	1
+recurrent (study_brain, uniform q < 0.1)	ATP1B1	down	13	-0.4131	0	1
+recurrent (study_brain, uniform q < 0.1)	ATP6V1A	down	15	0.1283	0	0
+recurrent (study_brain, uniform q < 0.1)	CHGB	down	15	-0.000561	0	2
+recurrent (study_brain, uniform q < 0.1)	ETV1	down	15	-0.5018	0	3
+recurrent (study_brain, uniform q < 0.1)	GAP43	down	15	0.3711	1	0
+recurrent (study_brain, uniform q < 0.1)	KLC1	mixed	15	-0.2011	0	2
+recurrent (study_brain, uniform q < 0.1)	NNAT	down	15	1.531	5	0
+recurrent (study_brain, uniform q < 0.1)	PDE1A	down	15	0.2431	0	1
+recurrent (study_brain, uniform q < 0.1)	VSNL1	down	15	-0.2258	0	1
+recurrent (study_brain, uniform q < 0.1)	S100A9	up	14	-0.08684	0	0
+recurrent (study_brain, uniform q < 0.1)	PECAM1	up	14	0.05876	2	0
+recurrent (study_brain, uniform q < 0.1)	NEUROD6	down	15	0.1207	1	1
+recurrent (study_brain, uniform q < 0.1)	RERGL	down	3	0.1333	0	0
+recurrent (study_brain, uniform q < 0.1)	SLC38A5	down	14	0.08677	1	1
+recurrent (study_brain, uniform q < 0.1)	WIPF3	up	13	-0.0669	1	1
+recurrent (study_brain, uniform q < 0.1)	CP	up	15	0.7081	2	1
+recurrent (study_brain, uniform q < 0.1)	TNFSF10	down	12	-0.2901	2	3
+recurrent (study_brain, uniform q < 0.1)	HILPDA	up	14	0.2189	2	0
+recurrent (study_brain, uniform q < 0.1)	IGFBP6	down	15	0.02715	2	2
+recurrent (study_brain, uniform q < 0.1)	OBSL1	down	14	0.1453	2	1
+recurrent (study_brain, uniform q < 0.1)	APOL6	up	6	-0.4	0	0
+recurrent (study_brain, uniform q < 0.1)	MAML2	up	11	-0.02148	0	2
+recurrent (study_brain, uniform q < 0.1)	N4BP2	up	10	0.139	2	0
+recurrent (study_brain, uniform q < 0.1)	TMBIM1	up	15	0.2233	0	1
+recurrent (study_brain, uniform q < 0.1)	ADAMTS9	up	13	0.6842	3	0
+recurrent (study_brain, uniform q < 0.1)	FIGN	up	11	0.01493	0	1
+recurrent (study_brain, uniform q < 0.1)	CNKSR3	down	14	0.03338	1	1
+recurrent (study_brain, uniform q < 0.1)	VWC2	down	13	0.2727	1	1
+recurrent (study_brain, uniform q < 0.1)	ACAP3	down	13	-0.2903	1	1
+recurrent (study_brain, uniform q < 0.1)	PGM2L1	down	13	-0.8815	0	2
+recurrent (study_brain, uniform q < 0.1)	RTN4R	down	14	-0.3991	0	1
+recurrent (study_brain, uniform q < 0.1)	GABARAPL1	down	15	0.04875	1	0
+recurrent (study_brain, uniform q < 0.1)	GADD45G	up	15	-0.0138	1	2
+recurrent (study_brain, uniform q < 0.1)	SAMHD1	up	12	-0.07699	1	2
+recurrent (study_brain, uniform q < 0.1)	GRAMD1C	up	13	0.06891	0	1
+recurrent (study_brain, uniform q < 0.1)	LBH	down	14	0.2721	1	1
+recurrent (study_brain, uniform q < 0.1)	ADAMTS2	up	13	-0.242	0	1
+recurrent (study_brain, uniform q < 0.1)	PPEF1	down	7	0.1497	1	0
+recurrent (study_brain, uniform q < 0.1)	GABRA4	down	13	-0.583	1	2
+recurrent (study_brain, uniform q < 0.1)	CDK5R2	down	15	-0.4788	1	2
+recurrent (study_brain, uniform q < 0.1)	DGKB	down	13	-0.8331	0	1
+recurrent (study_brain, uniform q < 0.1)	CYRIB	down	15	0.1846	1	2
+recurrent (study_brain, uniform q < 0.1)	EXOC7	down	15	0.1705	0	0
+recurrent (study_brain, uniform q < 0.1)	NDFIP2	down	15	-0.03106	2	1
+recurrent (study_brain, uniform q < 0.1)	NDRG3	down	14	-0.07756	0	1
+recurrent (study_brain, uniform q < 0.1)	STK17B	up	14	0.03014	0	1
+recurrent (study_brain, uniform q < 0.1)	BBX	up	14	-0.587	1	3
+recurrent (study_brain, uniform q < 0.1)	KCNA1	down	15	-0.2234	1	2
+recurrent (study_brain, uniform q < 0.1)	MICAL2	down	14	0.1568	2	2
+recurrent (study_brain, uniform q < 0.1)	NETO2	down	13	-0.525	0	3
+recurrent (study_brain, uniform q < 0.1)	NRN1	down	13	-0.2794	0	1
+recurrent (study_brain, uniform q < 0.1)	CD74	down	14	0.1055	0	0
+recurrent (study_brain, uniform q < 0.1)	ENSA	down	15	0.3838	1	1
+recurrent (study_brain, uniform q < 0.1)	MACF1	up	14	-0.1475	1	2
+recurrent (study_brain, uniform q < 0.1)	NRXN3	down	13	-1.066	0	5
+recurrent (study_brain, uniform q < 0.1)	RYR3	up	12	-0.2879	0	3
+recurrent (study_brain, uniform q < 0.1)	SLC25A12	down	13	0.01958	0	0
+recurrent (study_brain, uniform q < 0.1)	WSB1	down	15	1.039	3	1
+recurrent (study_brain, uniform q < 0.1)	MT1M	up	15	0.3275	1	0
+recurrent (study_brain, uniform q < 0.1)	ACTA2	down	15	0.3579	1	0
+recurrent (study_brain, uniform q < 0.1)	ATP1A3	down	12	-0.4093	1	2
+recurrent (study_brain, uniform q < 0.1)	CNR1	down	15	-0.3785	1	2
+recurrent (study_brain, uniform q < 0.1)	MT1E	up	0	nan	0	0
+recurrent (study_brain, uniform q < 0.1)	GABRA5	up	13	0.5526	1	0
+recurrent (study_brain, uniform q < 0.1)	STMN2	down	15	-0.07831	2	1
+recurrent (study_brain, uniform q < 0.1)	ZBTB16	up	12	0.5623	1	1
+recurrent (study_brain, uniform q < 0.1)	MGST1	up	15	0.5959	2	0
+recurrent (study_brain, uniform q < 0.1)	NELL1	down	13	-0.5108	0	2
+recurrent (study_brain, uniform q < 0.1)	CITED2	down	15	-0.5755	0	3
+recurrent (study_brain, uniform q < 0.1)	KLF10	down	15	0.7629	2	0
+recurrent (study_brain, uniform q < 0.1)	NR4A3	down	14	-0.2899	2	4
+recurrent (study_brain, uniform q < 0.1)	GAD1	down	15	0.07841	0	0
+recurrent (study_brain, uniform q < 0.1)	NEFL	down	15	-0.8504	0	3
+recurrent (study_brain, uniform q < 0.1)	CRYAB	up	15	0.1503	1	1
+recurrent (study_brain, uniform q < 0.1)	APP	down	13	-0.205	0	2
+recurrent (study_brain, uniform q < 0.1)	AQP1	up	14	0.142	1	1
+recurrent (study_brain, uniform q < 0.1)	CCK	down	15	-0.1893	0	2
+recurrent (study_brain, uniform q < 0.1)	COL16A1	down	14	0.173	1	0
+recurrent (study_brain, uniform q < 0.1)	CORO1A	down	15	0.3198	2	1
+recurrent (study_brain, uniform q < 0.1)	ELAVL4	down	15	-0.2813	0	2
+recurrent (study_brain, uniform q < 0.1)	FEZ1	down	15	0.1494	0	0
+recurrent (study_brain, uniform q < 0.1)	FGF12	down	15	0.08569	2	1
+recurrent (study_brain, uniform q < 0.1)	GABRG2	down	15	-0.2279	1	2
+recurrent (study_brain, uniform q < 0.1)	HMGCS1	down	15	-0.04524	1	2
+recurrent (study_brain, uniform q < 0.1)	IGFBP5	up	15	0.5328	2	0
+recurrent (study_brain, uniform q < 0.1)	LRRC8B	down	13	-0.04738	0	0
+recurrent (study_brain, uniform q < 0.1)	NELL2	down	15	-0.5133	0	2
+recurrent (study_brain, uniform q < 0.1)	NR3C1	down	15	-0.1534	1	3
+recurrent (study_brain, uniform q < 0.1)	PBXIP1	up	14	0.6947	2	0
+recurrent (study_brain, uniform q < 0.1)	RIMS3	up	13	-0.7148	1	3
+recurrent (study_brain, uniform q < 0.1)	RORA	up	15	-0.5294	0	3
+recurrent (study_brain, uniform q < 0.1)	SCG2	down	14	0.05374	2	2
+recurrent (study_brain, uniform q < 0.1)	SCN1B	down	15	-0.3621	0	2
+recurrent (study_brain, uniform q < 0.1)	SNAP25	down	11	-0.241	0	1
+recurrent (study_brain, uniform q < 0.1)	SOX9	up	14	0.5067	1	1
+recurrent (study_brain, uniform q < 0.1)	VCAN	up	15	0.5586	3	1
+recurrent (study_brain, uniform q < 0.1)	CD163	up	14	0.08641	0	1
+recurrent (study_brain, uniform q < 0.1)	HBA2	up	4	1.099	1	0
+recurrent (study_brain, uniform q < 0.1)	IFITM1	up	15	0.1545	2	0
+recurrent (study_brain, uniform q < 0.1)	ACSL5	up	15	0.1481	0	1
+recurrent (study_brain, uniform q < 0.1)	HBA1	up	5	0.5736	2	1
+recurrent (study_brain, uniform q < 0.1)	C1QL3	up	14	-0.1859	1	1
+recurrent (study_brain, uniform q < 0.1)	KCNE4	up	11	-0.2349	0	0
+recurrent (study_brain, uniform q < 0.1)	MALAT1	up	8	-0.1709	1	2
+recurrent (study_brain, uniform q < 0.1)	FGF17	up	13	-0.4397	0	2
+recurrent (study_brain, uniform q < 0.1)	TUBB6	up	15	0.1942	2	0
+recurrent (study_brain, uniform q < 0.1)	SOCS3	up	15	-0.2797	1	2
+recurrent (study_brain, uniform q < 0.1)	SEMA3G	down	10	0.04625	1	0
+recurrent (study_brain, uniform q < 0.1)	EMP1	up	15	0.09352	1	2
+recurrent (study_brain, uniform q < 0.1)	ZNF831	up	7	-0.3955	1	1
+recurrent (study_brain, uniform q < 0.1)	SPR	up	15	0.3666	1	0
+recurrent (study_brain, uniform q < 0.1)	CRYBG3	up	11	-0.2332	1	1
+recurrent (study_brain, uniform q < 0.1)	ADM	up	14	0.06999	1	1
+recurrent (study_brain, uniform q < 0.1)	BCL3	up	14	-0.2989	0	0
+recurrent (study_brain, uniform q < 0.1)	NID1	up	15	0.242	0	0
+recurrent (study_brain, uniform q < 0.1)	CD44	up	15	0.2904	3	0
+recurrent (study_brain, uniform q < 0.1)	SERPINH1	up	15	0.1348	2	1
+recurrent (study_brain, uniform q < 0.1)	VSIG4	up	7	0.3176	0	0
+recurrent (study_brain, uniform q < 0.1)	NR1D1	up	15	0.187	4	4
+recurrent (study_brain, uniform q < 0.1)	ANP32B	up	15	0.4176	3	0
+recurrent (study_brain, uniform q < 0.1)	CNDP1	down	11	0.1519	0	1
+recurrent (study_brain, uniform q < 0.1)	KIF19	up	7	0.4079	1	1
+recurrent (study_brain, uniform q < 0.1)	PLD5	down	7	-0.6981	0	1
+recurrent (study_brain, uniform q < 0.1)	ABLIM2	down	13	-0.2208	1	2
+recurrent (study_brain, uniform q < 0.1)	CNTNAP4	down	11	-0.1914	1	1
+recurrent (study_brain, uniform q < 0.1)	SYNPR	up	14	0.1859	2	1
+recurrent (study_brain, uniform q < 0.1)	TSLIG3B	down	13	-0.1469	1	0
+recurrent (study_brain, uniform q < 0.1)	GPC6	up	14	0.05328	1	1
+recurrent (study_brain, uniform q < 0.1)	HMGCLL1	down	10	0.2204	0	0
+recurrent (study_brain, uniform q < 0.1)	PRMT8	down	13	-0.8547	0	1
+recurrent (study_brain, uniform q < 0.1)	SV2C	up	13	0.2135	1	0
+recurrent (study_brain, uniform q < 0.1)	RXFP1	down	10	0.1716	1	0
+recurrent (study_brain, uniform q < 0.1)	CREBRF	up	14	0.1126	2	2
+recurrent (study_brain, uniform q < 0.1)	FGD4	up	14	0.1592	1	2
+recurrent (study_brain, uniform q < 0.1)	MTURN	mixed	14	-0.04349	0	2
+recurrent (study_brain, uniform q < 0.1)	PLXNA1	down	12	0.4789	2	1
+recurrent (study_brain, uniform q < 0.1)	PPP1R14C	down	9	-0.1745	0	0
+recurrent (study_brain, uniform q < 0.1)	RIMKLA	down	10	-0.1697	0	2
+recurrent (study_brain, uniform q < 0.1)	RMDN2	down	13	0.5862	2	0
+recurrent (study_brain, uniform q < 0.1)	SYT6	down	15	0.2356	1	0
+recurrent (study_brain, uniform q < 0.1)	SLCO1C1	up	14	-0.921	0	4
+recurrent (study_brain, uniform q < 0.1)	SPON2	down	11	0.2501	1	0
+recurrent (study_brain, uniform q < 0.1)	MCTP1	down	10	-0.08891	1	0
+recurrent (study_brain, uniform q < 0.1)	ARK2N	up	13	-0.3975	0	0
+recurrent (study_brain, uniform q < 0.1)	LAPTM4B	down	15	0.2549	0	1
+recurrent (study_brain, uniform q < 0.1)	TAB2	up	15	-0.2266	0	1
+recurrent (study_brain, uniform q < 0.1)	APBB1IP	down	15	0.661	3	0
+recurrent (study_brain, uniform q < 0.1)	LPAR6	down	13	0.009305	1	0
+recurrent (study_brain, uniform q < 0.1)	BICDL1	down	14	-0.4336	0	1
+recurrent (study_brain, uniform q < 0.1)	ACTR2	down	15	-0.4119	2	3
+recurrent (study_brain, uniform q < 0.1)	C2CD2	up	15	-0.2705	0	0
+recurrent (study_brain, uniform q < 0.1)	KCNIP4	down	14	0.1186	1	0
+recurrent (study_brain, uniform q < 0.1)	CHDH	up	14	-0.3535	0	1
+recurrent (study_brain, uniform q < 0.1)	FRS2	up	13	0.09304	0	1
+recurrent (study_brain, uniform q < 0.1)	NTN4	down	11	-0.2085	1	2
+recurrent (study_brain, uniform q < 0.1)	SERTAD4	down	13	0.01058	0	0
+recurrent (study_brain, uniform q < 0.1)	TMEM38A	down	13	-0.05377	0	1
+recurrent (study_brain, uniform q < 0.1)	ZNF395	up	14	0.01343	0	1
+recurrent (study_brain, uniform q < 0.1)	COL9A1	mixed	14	0.01751	0	0
+recurrent (study_brain, uniform q < 0.1)	SYNDIG1	down	13	-0.506	0	1
+recurrent (study_brain, uniform q < 0.1)	RASGRP3	down	13	-0.5231	0	0
+recurrent (study_brain, uniform q < 0.1)	CHSY1	up	13	-0.4869	0	3
+recurrent (study_brain, uniform q < 0.1)	GULP1	down	13	-0.09331	1	1
+recurrent (study_brain, uniform q < 0.1)	SMG6	up	13	-0.1573	3	2
+recurrent (study_brain, uniform q < 0.1)	SLC39A10	down	13	-0.6611	0	0
+recurrent (study_brain, uniform q < 0.1)	AHCYL1	up	15	-0.07849	2	2
+recurrent (study_brain, uniform q < 0.1)	B3GALNT1	down	15	0.1905	1	0
+recurrent (study_brain, uniform q < 0.1)	DGKI	down	13	-0.6613	0	1
+recurrent (study_brain, uniform q < 0.1)	APOLD1	up	10	-0.4726	1	0
+recurrent (study_brain, uniform q < 0.1)	DIRAS2	down	10	-0.879	1	2
+recurrent (study_brain, uniform q < 0.1)	EXOC6	down	14	-0.32	1	1
+recurrent (study_brain, uniform q < 0.1)	ITFG1	down	15	0.3171	2	0
+recurrent (study_brain, uniform q < 0.1)	PAQR6	up	10	0.2799	0	1
+recurrent (study_brain, uniform q < 0.1)	STXBP6	down	11	-0.5954	0	1
+recurrent (study_brain, uniform q < 0.1)	SYT13	down	14	-0.3126	1	2
+recurrent (study_brain, uniform q < 0.1)	CDC14B	up	13	0.3538	0	0
+recurrent (study_brain, uniform q < 0.1)	NDUFS4	down	15	0.2679	1	0
+recurrent (study_brain, uniform q < 0.1)	PPP1R15A	up	15	-0.1409	0	0
+recurrent (study_brain, uniform q < 0.1)	CYRIA	down	13	-0.5742	0	4
+recurrent (study_brain, uniform q < 0.1)	GPRC5B	down	14	0.2453	1	0
+recurrent (study_brain, uniform q < 0.1)	PARM1	up	14	0.102	1	2
+recurrent (study_brain, uniform q < 0.1)	PLEKHB1	mixed	14	0.5044	0	0
+recurrent (study_brain, uniform q < 0.1)	SSBP2	up	15	0.1744	1	0
+recurrent (study_brain, uniform q < 0.1)	TSPYL1	down	15	-0.1751	0	0
+recurrent (study_brain, uniform q < 0.1)	ANLN	down	15	0.504	2	1
+recurrent (study_brain, uniform q < 0.1)	CA10	down	14	-0.4325	0	3
+recurrent (study_brain, uniform q < 0.1)	FNDC4	down	14	-0.03356	1	1
+recurrent (study_brain, uniform q < 0.1)	PRKAG2	down	14	0.2177	2	2
+recurrent (study_brain, uniform q < 0.1)	TSPAN13	down	15	-0.05879	1	1
+recurrent (study_brain, uniform q < 0.1)	ADAM23	down	15	-0.4423	1	1
+recurrent (study_brain, uniform q < 0.1)	AP1S2	down	14	0.1602	1	0
+recurrent (study_brain, uniform q < 0.1)	ARL4C	down	15	0.05123	1	0
+recurrent (study_brain, uniform q < 0.1)	BCAS1	up	13	0.3147	1	1
+recurrent (study_brain, uniform q < 0.1)	BICD1	up	11	-0.8343	0	2
+recurrent (study_brain, uniform q < 0.1)	FARP1	up	14	0.2126	0	2
+recurrent (study_brain, uniform q < 0.1)	GABRD	down	15	-0.06015	2	2
+recurrent (study_brain, uniform q < 0.1)	INSIG1	down	13	-0.006023	1	1
+recurrent (study_brain, uniform q < 0.1)	KCNF1	down	10	-0.4706	0	1
+recurrent (study_brain, uniform q < 0.1)	KIF1C	up	12	0.009786	1	1
+recurrent (study_brain, uniform q < 0.1)	MBNL1	up	15	-0.6071	0	1
+recurrent (study_brain, uniform q < 0.1)	PREPL	down	13	-0.259	0	1
+recurrent (study_brain, uniform q < 0.1)	PTPRE	down	15	-0.4638	1	0
+recurrent (study_brain, uniform q < 0.1)	RAB40C	down	14	-0.3488	1	3
+recurrent (study_brain, uniform q < 0.1)	RAB6B	down	14	-0.662	0	2
+recurrent (study_brain, uniform q < 0.1)	RPH3A	down	14	-0.682	0	2
+recurrent (study_brain, uniform q < 0.1)	RPS6KA5	up	13	0.02828	2	0
+recurrent (study_brain, uniform q < 0.1)	SCD	down	15	-0.1232	2	3
+recurrent (study_brain, uniform q < 0.1)	TNFRSF21	down	15	0.06549	2	2
+recurrent (study_brain, uniform q < 0.1)	MT2A	up	11	0.4587	2	1
+recurrent (study_brain, uniform q < 0.1)	NPY	down	15	-0.06224	1	0
+recurrent (study_brain, uniform q < 0.1)	PDIA6	down	15	0.01842	2	1
+recurrent (study_brain, uniform q < 0.1)	LST1	down	14	0.3227	1	0
+recurrent (study_brain, uniform q < 0.1)	OXTR	up	14	0.5359	1	0
+recurrent (study_brain, uniform q < 0.1)	CRHBP	down	13	-0.088	1	1
+recurrent (study_brain, uniform q < 0.1)	PRKX	up	14	-0.5744	1	3
+recurrent (study_brain, uniform q < 0.1)	CCN1	up	15	-0.7652	0	3
+recurrent (study_brain, uniform q < 0.1)	COL4A2	up	15	0.1691	0	1
+recurrent (study_brain, uniform q < 0.1)	FOS	down	12	-0.3199	0	2
+recurrent (study_brain, uniform q < 0.1)	GMPR	up	14	0.08812	1	1
+recurrent (study_brain, uniform q < 0.1)	JUN	mixed	15	-0.3857	1	1
+recurrent (study_brain, uniform q < 0.1)	THBS1	up	15	0.09765	2	1
+recurrent (study_brain, uniform q < 0.1)	CCNI	down	15	0.09344	0	2
+recurrent (study_brain, uniform q < 0.1)	FGF13	down	15	-0.2685	1	1
+recurrent (study_brain, uniform q < 0.1)	TOMM20	down	14	0.4465	2	1
+recurrent (study_brain, uniform q < 0.1)	CCDC88A	up	15	-0.2985	1	1
+recurrent (study_brain, uniform q < 0.1)	PVALB	down	15	-0.3963	0	1
+recurrent (study_brain, uniform q < 0.1)	SLCO1A2	down	14	0.4575	3	2
+recurrent (study_brain, uniform q < 0.1)	ACKR1	up	15	-0.3159	1	2
+recurrent (study_brain, uniform q < 0.1)	C1QB	up	15	0.6381	2	0
+recurrent (study_brain, uniform q < 0.1)	COL4A1	up	15	0.2024	1	1
+recurrent (study_brain, uniform q < 0.1)	ENOSF1	down	0	nan	0	0
+recurrent (study_brain, uniform q < 0.1)	ENTREP1	up	13	0.7377	2	0
+recurrent (study_brain, uniform q < 0.1)	FGF2	up	15	0.3599	3	1
+recurrent (study_brain, uniform q < 0.1)	GPLD1	down	15	0.6428	2	0
+recurrent (study_brain, uniform q < 0.1)	IGF1	down	15	0.2509	3	1
+recurrent (study_brain, uniform q < 0.1)	ITPKC	up	13	0.4053	0	1
+recurrent (study_brain, uniform q < 0.1)	LRBA	up	15	-0.4282	1	2
+recurrent (study_brain, uniform q < 0.1)	P4HA1	up	12	-1.075	0	5
+recurrent (study_brain, uniform q < 0.1)	PTPRR	down	15	-0.08571	1	1
+recurrent (study_brain, uniform q < 0.1)	SERPING1	up	15	0.7938	1	0
+recurrent (study_brain, uniform q < 0.1)	AGT	up	15	0.5608	2	0
+recurrent (study_brain, uniform q < 0.1)	ATP1A1	down	14	-0.07863	1	2
+recurrent (study_brain, uniform q < 0.1)	CDK5	down	15	0.3205	2	1
+recurrent (study_brain, uniform q < 0.1)	ITGB8	up	13	0.08974	1	1
+recurrent (study_brain, uniform q < 0.1)	MAP4	mixed	15	0.1029	0	1
+recurrent (study_brain, uniform q < 0.1)	PGK1	down	15	0.01007	1	1
+recurrent (study_brain, uniform q < 0.1)	UBE2V2	down	15	0.2201	1	2
+recurrent (study_brain, uniform q < 0.1)	EVI2A	down	13	0.02878	1	1
+recurrent (study_brain, uniform q < 0.1)	MAG	down	15	0.3343	0	1
+recurrent (study_brain, uniform q < 0.1)	ADAM11	down	12	-0.1061	0	2
+recurrent (study_brain, uniform q < 0.1)	AKAP12	up	15	0.03908	3	1
+recurrent (study_brain, uniform q < 0.1)	AQP4	up	15	0.5065	2	0
+recurrent (study_brain, uniform q < 0.1)	ARL1	down	10	0.09526	1	0
+recurrent (study_brain, uniform q < 0.1)	CADPS	down	15	-0.364	2	3
+recurrent (study_brain, uniform q < 0.1)	CLU	up	15	0.05561	0	1
+recurrent (study_brain, uniform q < 0.1)	CX3CL1	down	15	-0.4805	1	1
+recurrent (study_brain, uniform q < 0.1)	DST	up	13	-0.4122	0	3
+recurrent (study_brain, uniform q < 0.1)	DTNA	up	15	0.1025	0	2
+recurrent (study_brain, uniform q < 0.1)	ERCC1	down	15	-0.4181	0	1
+recurrent (study_brain, uniform q < 0.1)	GFAP	up	15	0.8356	3	0
+recurrent (study_brain, uniform q < 0.1)	GRIN2A	down	15	-0.8236	1	6
+recurrent (study_brain, uniform q < 0.1)	HTR2A	down	10	-0.7039	0	2
+recurrent (study_brain, uniform q < 0.1)	INPP4A	down	15	-0.5004	0	2
+recurrent (study_brain, uniform q < 0.1)	KCNAB1	down	15	-0.1508	0	1
+recurrent (study_brain, uniform q < 0.1)	MAP7	mixed	15	0.4681	3	1
+recurrent (study_brain, uniform q < 0.1)	NDRG1	up	15	0.5121	1	0
+recurrent (study_brain, uniform q < 0.1)	NF1	down	15	-0.05216	1	2
+recurrent (study_brain, uniform q < 0.1)	OXCT1	down	15	-0.1765	1	2
+recurrent (study_brain, uniform q < 0.1)	PCSK2	down	15	-0.2467	0	1
+recurrent (study_brain, uniform q < 0.1)	PTPN11	down	15	0.4543	1	1
+recurrent (study_brain, uniform q < 0.1)	PTPRG	down	15	0.2928	2	2
+recurrent (study_brain, uniform q < 0.1)	RASGRF1	down	15	-0.2266	2	2
+recurrent (study_brain, uniform q < 0.1)	SCAMP1	down	15	-0.6156	0	0
+recurrent (study_brain, uniform q < 0.1)	SELENOP	down	14	0.4504	3	1
+recurrent (study_brain, uniform q < 0.1)	SERINC3	down	15	0.02978	0	1
+recurrent (study_brain, uniform q < 0.1)	SLC12A2	down	15	0.2393	2	1
+recurrent (study_brain, uniform q < 0.1)	SQLE	down	15	0.5866	1	0
+recurrent (study_brain, uniform q < 0.1)	SYN2	down	15	0.2005	1	1
+recurrent (study_brain, uniform q < 0.1)	SYP	down	15	0.2144	0	1
+recurrent (study_brain, uniform q < 0.1)	TIMP2	up	15	0.5325	3	1
+recurrent (study_brain, uniform q < 0.1)	UQCRFS1	down	14	0.0343	1	1
+recurrent (study_brain, uniform q < 0.1)	WNK1	up	15	0.2291	1	2
+recurrent (study_brain, uniform q < 0.1)	C10orf105	up	6	-0.513	0	1
+recurrent (study_brain, uniform q < 0.1)	LGR6	down	14	-0.2512	1	0
+recurrent (expression-matched q < 0.1)	MT1X	up	4	0.4368	1	0
+recurrent (expression-matched q < 0.1)	FKBP5	up	15	0.6557	3	1
+recurrent (expression-matched q < 0.1)	VGF	down	13	0.3248	1	1
+recurrent (expression-matched q < 0.1)	SLC14A1	up	14	0.153	0	1
+recurrent (expression-matched q < 0.1)	HSPB1	up	14	-0.4514	0	3
+recurrent (expression-matched q < 0.1)	SLCO4A1	up	13	-0.4277	0	0
+recurrent (expression-matched q < 0.1)	SST	down	15	0.2858	2	0
+recurrent (expression-matched q < 0.1)	ETV5	down	14	-0.579	1	4
+recurrent (expression-matched q < 0.1)	TXNIP	up	15	0.7465	5	1
+recurrent (expression-matched q < 0.1)	OLFM1	down	15	-0.5659	0	4
+recurrent (expression-matched q < 0.1)	MEG3	up	13	0.1404	1	1
+recurrent (expression-matched q < 0.1)	IFITM2	up	14	0.6985	2	0
+recurrent (expression-matched q < 0.1)	SERPINA3	up	14	1.442	5	1
+recurrent (expression-matched q < 0.1)	BAG3	up	15	0.3796	2	0
+recurrent (expression-matched q < 0.1)	HIF3A	up	15	0.3644	2	1
+recurrent (expression-matched q < 0.1)	ALDH1L1	up	14	0.3187	0	0
+recurrent (expression-matched q < 0.1)	DDIT4	up	15	0.343	2	0
+recurrent (expression-matched q < 0.1)	CHI3L1	up	15	0.2584	2	0
+recurrent (expression-matched q < 0.1)	RNASE1	down	10	0.3784	1	1
+recurrent (expression-matched q < 0.1)	SYT1	down	14	-0.4113	0	3
+recurrent (expression-matched q < 0.1)	PCSK1	down	15	0.4839	2	2
+recurrent (expression-matched q < 0.1)	GADD45B	up	15	0.435	3	1
+recurrent (expression-matched q < 0.1)	BDNF	down	15	-0.5309	1	3
+recurrent (expression-matched q < 0.1)	TASP1	down	14	-0.2206	1	1
+recurrent (expression-matched q < 0.1)	DEPP1	up	12	-0.1962	1	1
+recurrent (expression-matched q < 0.1)	DCLK1	down	14	-0.5246	0	3
+recurrent (expression-matched q < 0.1)	RCAN2	down	14	-0.1828	1	2
+recurrent (expression-matched q < 0.1)	OLR1	down	11	-0.2877	0	0
+recurrent (expression-matched q < 0.1)	BCL6	up	15	0.06411	3	0
+recurrent (expression-matched q < 0.1)	IFITM3	up	11	0.2539	1	1
+recurrent (expression-matched q < 0.1)	NR4A1	down	15	-0.2811	2	3
+recurrent (expression-matched q < 0.1)	EGR1	down	15	-0.6949	3	5
+recurrent (expression-matched q < 0.1)	GABRA1	down	15	-0.3836	0	2
+recurrent (expression-matched q < 0.1)	KCNK1	down	15	-0.3534	0	2
+recurrent (expression-matched q < 0.1)	NPTX2	down	12	0.2264	3	2
+recurrent (expression-matched q < 0.1)	NREP	down	15	-0.3624	1	4
+recurrent (expression-matched q < 0.1)	NTRK2	up	15	0.36	4	3
+recurrent (expression-matched q < 0.1)	RGS4	down	15	-0.1676	3	2
+recurrent (expression-matched q < 0.1)	TLCD4	up	12	-0.8518	0	0
+recurrent (expression-matched q < 0.1)	OSMR	up	15	-0.5763	0	0
+recurrent (expression-matched q < 0.1)	HBB	up	10	-0.3869	0	2
+recurrent (expression-matched q < 0.1)	CBLN4	down	10	-0.1136	1	1
+recurrent (expression-matched q < 0.1)	ARRDC3	up	13	0.2027	1	1
+recurrent (expression-matched q < 0.1)	ANGPTL4	up	15	0.173	1	0
+recurrent (expression-matched q < 0.1)	RASD1	up	15	0.1131	0	0
+recurrent (expression-matched q < 0.1)	JMJD6	up	15	-0.381	1	2
+recurrent (expression-matched q < 0.1)	SLC6A15	down	15	0.1436	1	0
+recurrent (expression-matched q < 0.1)	CLDN11	down	15	0.2333	1	1
+recurrent (expression-matched q < 0.1)	CDKN1A	up	15	0.07449	3	2
+recurrent (expression-matched q < 0.1)	IL4R	up	15	-0.005096	1	0
+recurrent (expression-matched q < 0.1)	CEBPD	up	15	0.4313	1	0
+recurrent (expression-matched q < 0.1)	DUSP1	down	15	-0.6235	0	1
+recurrent (expression-matched q < 0.1)	NEFH	down	15	-0.5495	0	1
+recurrent (expression-matched q < 0.1)	CA4	down	15	0.06814	2	1
+recurrent (expression-matched q < 0.1)	CARTPT	up	14	1.097	3	0
+recurrent (expression-matched q < 0.1)	NR4A2	down	15	0.4569	1	0
+recurrent (expression-matched q < 0.1)	SDC4	up	15	0.6496	2	0
+recurrent (expression-matched q < 0.1)	S100A8	up	12	0.6152	1	0
+recurrent (expression-matched q < 0.1)	IL33R	up	13	-0.2283	1	0
+recurrent (expression-matched q < 0.1)	MAFF	up	15	0.1218	1	0
+recurrent (expression-matched q < 0.1)	TGM2	up	10	0.5284	1	0
+recurrent (expression-matched q < 0.1)	FBXO9	down	15	-0.2382	0	1
+recurrent (expression-matched q < 0.1)	COL24A1	down	10	-0.185	0	0
+recurrent (expression-matched q < 0.1)	KLF15	up	14	0.1328	2	1
+recurrent (expression-matched q < 0.1)	PELI2	up	14	0.2738	2	1
+recurrent (expression-matched q < 0.1)	ULK3	down	10	0.2191	1	1
+recurrent (expression-matched q < 0.1)	SLC25A40	down	13	0.7234	3	0
+recurrent (expression-matched q < 0.1)	GALNT16	up	14	0.3772	2	1
+recurrent (expression-matched q < 0.1)	MKNK2	up	15	-0.2768	1	2
+recurrent (expression-matched q < 0.1)	TIMP1	up	15	0.3247	0	0
+recurrent (expression-matched q < 0.1)	SLC11A1	up	12	0.1189	1	0
+recurrent (expression-matched q < 0.1)	RGS6	down	15	-0.6571	0	3
+recurrent (expression-matched q < 0.1)	SEMA3C	down	15	0.1414	2	1
+recurrent (expression-matched q < 0.1)	SHC1	up	15	0.638	3	0
+recurrent (expression-matched q < 0.1)	SLC7A2	up	15	-0.3185	0	2
+recurrent (expression-matched q < 0.1)	ALDH1A1	down	15	-0.1235	0	2
+recurrent (expression-matched q < 0.1)	NNAT	down	15	1.531	5	0
+recurrent (expression-matched q < 0.1)	S100A9	up	14	-0.08684	0	0
+recurrent (expression-matched q < 0.1)	PECAM1	up	14	0.05876	2	0
+recurrent (expression-matched q < 0.1)	RERGL	down	3	0.1333	0	0
+recurrent (expression-matched q < 0.1)	SLC38A5	down	14	0.08677	1	1
+recurrent (expression-matched q < 0.1)	CP	up	15	0.7081	2	1
+recurrent (expression-matched q < 0.1)	TNFSF10	down	12	-0.2901	2	3
+recurrent (expression-matched q < 0.1)	HILPDA	up	14	0.2189	2	0
+recurrent (expression-matched q < 0.1)	IGFBP6	down	15	0.02715	2	2
+recurrent (expression-matched q < 0.1)	APOL6	up	6	-0.4	0	0
+recurrent (expression-matched q < 0.1)	MAML2	up	11	-0.02148	0	2
+recurrent (expression-matched q < 0.1)	ADAMTS9	up	13	0.6842	3	0
+recurrent (expression-matched q < 0.1)	CNKSR3	down	14	0.03338	1	1
+recurrent (expression-matched q < 0.1)	RTN4R	down	14	-0.3991	0	1
+recurrent (expression-matched q < 0.1)	GADD45G	up	15	-0.0138	1	2
+recurrent (expression-matched q < 0.1)	LBH	down	14	0.2721	1	1
+recurrent (expression-matched q < 0.1)	ADAMTS2	up	13	-0.242	0	1
+recurrent (expression-matched q < 0.1)	PPEF1	down	7	0.1497	1	0
+recurrent (expression-matched q < 0.1)	CDK5R2	down	15	-0.4788	1	2
+recurrent (expression-matched q < 0.1)	STK17B	up	14	0.03014	0	1
+recurrent (expression-matched q < 0.1)	MT1M	up	15	0.3275	1	0
+recurrent (expression-matched q < 0.1)	ACTA2	down	15	0.3579	1	0
+recurrent (expression-matched q < 0.1)	KLF10	down	15	0.7629	2	0
+recurrent (expression-matched q < 0.1)	NR4A3	down	14	-0.2899	2	4
+recurrent (expression-matched q < 0.1)	CD163	up	14	0.08641	0	1
+recurrent (expression-matched q < 0.1)	ACSL5	up	15	0.1481	0	1
+recurrent (expression-matched q < 0.1)	HBA1	up	5	0.5736	2	1
+recurrent (expression-matched q < 0.1)	KCNE4	up	11	-0.2349	0	0
+recurrent (expression-matched q < 0.1)	FGF17	up	13	-0.4397	0	2
+recurrent (expression-matched q < 0.1)	TUBB6	up	15	0.1942	2	0
+recurrent (expression-matched q < 0.1)	SOCS3	up	15	-0.2797	1	2
+recurrent (expression-matched q < 0.1)	ADM	up	14	0.06999	1	1
+recurrent (expression-matched q < 0.1)	BCL3	up	14	-0.2989	0	0
+recurrent (expression-matched q < 0.1)	VSIG4	up	7	0.3176	0	0
+recurrent (expression-matched q < 0.1)	LST1	down	14	0.3227	1	0
+recurrent (expression-matched q < 0.1)	C10orf105	up	6	-0.513	0	1
+recurrent (expression-matched q < 0.1)	LGR6	down	14	-0.2512	1	0
+recurrent (expression-matched q < 0.1)	MT1A	up	0	nan	0	0
+recurrent (expression-matched q < 0.1)	PAPPA	down	11	0.1272	0	1
+recurrent (expression-matched q < 0.1)	MIR181B1	mixed	1	-4.192	0	1
+recurrent (expression-matched q < 0.1)	PTER	up	15	0.378	3	0
+recurrent (expression-matched q < 0.1)	CHI3L2	up	0	nan	0	0
+recurrent (expression-matched q < 0.1)	IL6	up	12	0.4077	0	0
+recurrent (expression-matched q < 0.1)	SEMA3F	up	15	-0.2309	1	2
+recurrent (expression-matched q < 0.1)	CA12	up	15	-0.1044	0	1
+recurrent (expression-matched q < 0.1)	MTRNR2L2	up	0	nan	0	0
+recurrent (expression-matched q < 0.1)	SFN	up	11	0.7502	0	0
+recurrent (expression-matched q < 0.1)	MPZL2	up	14	0.2388	1	0
+recurrent (expression-matched q < 0.1)	GPR4	up	13	0.007881	0	0
+recurrent (expression-matched q < 0.1)	LOX	up	14	-0.2664	0	1
+recurrent (expression-matched q < 0.1)	IL32	up	0	nan	0	0
+recurrent (expression-matched q < 0.1)	SPDYE3	mixed	0	nan	0	0
+recurrent (expression-matched q < 0.1)	GJA4	up	15	0.3021	0	0
+recurrent (expression-matched q < 0.1)	LRG1	up	14	0.728	2	0
+recurrent (expression-matched q < 0.1)	APOL4	up	1	-2.011	0	1
+recurrent (expression-matched q < 0.1)	PRF1	down	11	-0.171	0	0
+recurrent (expression-matched q < 0.1)	RPPH1	mixed	5	0.6528	1	0
+recurrent (expression-matched q < 0.1)	HAPLN4	down	13	-0.3167	0	0
+recurrent (expression-matched q < 0.1)	FCN3	up	0	nan	0	0
+recurrent (expression-matched q < 0.1)	MKI67	mixed	12	0.1356	1	0
+recurrent (expression-matched q < 0.1)	SLC8A1-AS1	up	0	nan	0	0
+recurrent (expression-matched q < 0.1)	NPIPB6	up	0	nan	0	0

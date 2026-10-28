@@ -1,0 +1,7 @@
+# NEW analysis, composition-only simulation of the bulk pH and agonal axes; run 2026-10-18 on the remote environment; seed 20261018 (SeedSequence [seed, config_id, rep]); 200 reps per config
+# scripts: scripts/prep.py, scripts/sim.py, scripts/summarise.py; inputs sha256(16): axis_v2_controls.tsv.gz 2c72a9b279a24408; hardy_t_by_region.tsv.gz 54f989c55753d2af; recurrent_sets.tsv 3c42f67cdd7acb75; nsw_donor_covariates_used.tsv b93562e2ec0611e8; PsychAD HBCC counts_class.npz 7f67c4f5815f121c; MSSM counts_class.npz 87eae83183616622; NSW pb_cols.tsv 5b0bbf003ad02291; donors_used.tsv 2ccef28914e973ff
+# sign: pH axis z_stouffer positive = higher expression at higher pH; simulated t = OLS t of log2CPM on pH (positive = higher at higher pH); agonal = GTEx Hardy slow-minus-fast-death t (positive = higher in slow death), mean of BA9, BA24, Cortex
+# source: ph_axis_v2_2026-10-14/reliability_summary.tsv row 'v2 bulk (primary assignment)' (sha256(16) 14a9a535bd57996a). Ceiling = sqrt(reliability) = the largest correlation a model that equalled the true axis could have with the observed axis (classical attenuation); applies to the pH axis over all genes; it is not available for the 383/107 subsets or the agonal axis
+basis	reliability	rel_lo	rel_hi	sqrt_reliability	sqrt_rel_lo	sqrt_rel_hi
+between-collection Spearman-Brown reliability (5 collections)	0.7174	0.5731	0.8185	0.84699	0.75703	0.90471
+split-half Spearman-Brown reliability (9 datasets)	0.7635	0.5731	0.8573	0.87378	0.75703	0.9259

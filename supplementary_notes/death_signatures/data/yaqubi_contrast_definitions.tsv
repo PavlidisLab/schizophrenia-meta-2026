@@ -1,0 +1,14 @@
+contrast	series	n_samples	resid_df	genes_tested	genes_mapped	definition	validation_vs_released_lfc_n	validation_pearson	validation_spearman
+S_6h4C_vs_0h	surgical, donor-paired	104	81	20353	17438	S_6h4C_vs_0h: OLS log2(norm+1) ~ donor + condition, donor fixed effects; est = condition difference (log2); min mean norm count 10.0			
+S_6h20C_vs_0h	surgical, donor-paired	104	81	20353	17438	S_6h20C_vs_0h: OLS log2(norm+1) ~ donor + condition, donor fixed effects; est = condition difference (log2); min mean norm count 10.0			
+S_24h4C_vs_0h	surgical, donor-paired	104	81	20353	17438	S_24h4C_vs_0h: OLS log2(norm+1) ~ donor + condition, donor fixed effects; est = condition difference (log2); min mean norm count 10.0			
+S_24h20C_vs_0h	surgical, donor-paired	104	81	20353	17438	S_24h20C_vs_0h: OLS log2(norm+1) ~ donor + condition, donor fixed effects; est = condition difference (log2); min mean norm count 10.0	17316.0	0.855	0.851
+S_36h4C_vs_0h	surgical, donor-paired	104	81	20353	17438	S_36h4C_vs_0h: OLS log2(norm+1) ~ donor + condition, donor fixed effects; est = condition difference (log2); min mean norm count 10.0			
+S_36h20C_vs_0h	surgical, donor-paired	104	81	20353	17438	S_36h20C_vs_0h: OLS log2(norm+1) ~ donor + condition, donor fixed effects; est = condition difference (log2); min mean norm count 10.0	17336.0	0.907	0.924
+S_20C_minus_4C_6h	surgical, donor-paired	104	81	20353	17438	S_20C_minus_4C_6h: OLS log2(norm+1) ~ donor + condition, donor fixed effects; est = condition difference (log2); min mean norm count 10.0			
+S_20C_minus_4C_24h	surgical, donor-paired	104	81	20353	17438	S_20C_minus_4C_24h: OLS log2(norm+1) ~ donor + condition, donor fixed effects; est = condition difference (log2); min mean norm count 10.0			
+S_20C_minus_4C_36h	surgical, donor-paired	104	81	20353	17438	S_20C_minus_4C_36h: OLS log2(norm+1) ~ donor + condition, donor fixed effects; est = condition difference (log2); min mean norm count 10.0			
+S_20C_36h_minus_6h	surgical, donor-paired	104	81	20353	17438	S_20C_36h_minus_6h: OLS log2(norm+1) ~ donor + condition, donor fixed effects; est = condition difference (log2); min mean norm count 10.0			
+S_4C_36h_minus_6h	surgical, donor-paired	104	81	20353	17438	S_4C_36h_minus_6h: OLS log2(norm+1) ~ donor + condition, donor fixed effects; est = condition difference (log2); min mean norm count 10.0			
+A_LPMI_vs_CTRL	autopsy long PMI (mean 36 h), UK banks, mid temporal gyrus, vs surgical CTRL	35	30	21072	17841	A_LPMI_vs_CTRL: OLS log2(norm+1) ~ group + age + sex + RIN (authors' DESeq2 design), est = autopsy minus CTRL (log2); groups n = 18 autopsy, 17 CTRL	17841.0	0.966	0.985
+A_SPMI_vs_CTRL	autopsy short PMI (mean 6 h), Netherlands Brain Bank, superior temporal gyrus, vs surgical CTRL	26	21	21423	18039	A_SPMI_vs_CTRL: OLS log2(norm+1) ~ group + age + sex + RIN (authors' DESeq2 design), est = autopsy minus CTRL (log2); groups n = 9 autopsy, 17 CTRL	18037.0	0.968	0.985

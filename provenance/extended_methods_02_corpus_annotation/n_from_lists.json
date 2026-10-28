@@ -1,0 +1,403 @@
+{
+ "generated": "2026-09-29",
+ "script": "fill_n.py",
+ "inputs": {
+  "lineage.json": "191390b25e55",
+  "primary_lists.json": "54e7fb0c8af7"
+ },
+ "note": "N = cases + controls as stated in the list's contrast; the contrast can describe one region or subgroup of the study.",
+ "studies": {
+  "14743183": {
+   "label": "Iwamoto 2004",
+   "cases": 13,
+   "controls": 15,
+   "n": 28,
+   "list": "14743183__scz_reproduced",
+   "quote": "SZ (13) vs control (15"
+  },
+  "16223876": {
+   "label": "Glatt 2005",
+   "cases": 19,
+   "controls": 27,
+   "n": 46,
+   "list": "16223876__si_table4_dlpfc",
+   "quote": "SZ (19) vs control (27"
+  },
+  "15920292": {
+   "label": "Zvara 2005",
+   "cases": 13,
+   "controls": 10,
+   "n": 23,
+   "list": "15920292__qpcr_confirmed",
+   "quote": "SZ (13) vs control (10"
+  },
+  "16549361": {
+   "label": "Novikova 2006",
+   "cases": 17,
+   "controls": 20,
+   "n": 37,
+   "list": "16549361__results_sz_down",
+   "quote": "SZ (17) vs control (20"
+  },
+  "18191109": {
+   "label": "Shao 2008",
+   "cases": 32,
+   "controls": 29,
+   "n": 61,
+   "list": "18191109__suppl_table3_shared",
+   "quote": "SZ (32) vs control (29"
+  },
+  "18992130": {
+   "label": "Struyf 2008",
+   "cases": 115,
+   "controls": 112,
+   "n": 227,
+   "list": "18992130__none",
+   "quote": "SZ (115) vs control (112"
+  },
+  "22315408": {
+   "label": "Miller 2012",
+   "cases": 35,
+   "controls": 34,
+   "n": 69,
+   "list": "22315408__table1_mirna",
+   "quote": "SZ (35) vs control (34"
+  },
+  "22161352": {
+   "label": "Qian 2012",
+   "cases": 46,
+   "controls": 45,
+   "n": 91,
+   "list": "22161352__none",
+   "quote": "SZ (46) vs control (45"
+  },
+  "25243493": {
+   "label": "Chen 2014",
+   "cases": 39,
+   "controls": 43,
+   "n": 82,
+   "list": "25243493__none",
+   "quote": "SZ (39) vs control (43"
+  },
+  "25175639": {
+   "label": "Pinacho 2014",
+   "cases": 14,
+   "controls": 11,
+   "n": 25,
+   "list": "25175639__none",
+   "quote": "SZ (14) vs control (11"
+  },
+  "26077692": {
+   "label": "Kim 2016",
+   "cases": 15,
+   "controls": 15,
+   "n": 30,
+   "list": "26077692__none",
+   "quote": "SZ (15) vs control (15"
+  },
+  "26818902": {
+   "label": "Qin 2016",
+   "cases": 122,
+   "controls": 124,
+   "n": 246,
+   "list": "26818902__table_s2",
+   "quote": "SZ (122) vs control (124"
+  },
+  "28280741": {
+   "label": "Zhang 2017",
+   "cases": 152,
+   "controls": 138,
+   "n": 290,
+   "list": "28280741__none",
+   "quote": "SZ (152) vs control (138"
+  },
+  "28641886": {
+   "label": "Fries 2018",
+   "cases": 52,
+   "controls": 20,
+   "n": 72,
+   "list": "28641886__pbmc",
+   "quote": "SZ (52) vs control (20"
+  },
+  "30203456": {
+   "label": "Godini 2019",
+   "cases": 10,
+   "controls": 10,
+   "n": 20,
+   "list": "30203456__none",
+   "quote": "SZ (10) vs control (10"
+  },
+  "30967896": {
+   "label": "Huang 2019",
+   "cases": 20,
+   "controls": 20,
+   "n": 40,
+   "list": "30967896__none",
+   "quote": "SZ (20) vs control (20"
+  },
+  "32245959": {
+   "label": "Huang 2020",
+   "cases": 212,
+   "controls": 214,
+   "n": 426,
+   "list": "32245959__none",
+   "quote": "SZ (212) vs control (214"
+  },
+  "32712449": {
+   "label": "Ohayon 2020",
+   "cases": 41,
+   "controls": 38,
+   "n": 79,
+   "list": "32712449__none",
+   "quote": "SZ (41) vs control (38"
+  },
+  "31855458": {
+   "label": "Pala 2020",
+   "cases": 15,
+   "controls": 15,
+   "n": 30,
+   "list": "31855458__none",
+   "quote": "SZ (15) vs control (15"
+  },
+  "32827700": {
+   "label": "Rey 2020",
+   "cases": 196,
+   "controls": 182,
+   "n": 378,
+   "list": "32827700__none",
+   "quote": "SZ (196) vs control (182"
+  },
+  "31563948": {
+   "label": "Vawter 2020",
+   "cases": 357,
+   "controls": 544,
+   "n": 901,
+   "list": "31563948__none",
+   "quote": "SZ (357) vs control (544"
+  },
+  "31157371": {
+   "label": "Yang 2020",
+   "cases": 166,
+   "controls": 172,
+   "n": 338,
+   "list": "31157371__signature_table_s2",
+   "quote": "SZ (166) vs control (172"
+  },
+  "33508383": {
+   "label": "Alhassen 2021",
+   "cases": 559,
+   "controls": 936,
+   "n": 1495,
+   "list": "33508383__none",
+   "quote": "SZ (559) vs control (936"
+  },
+  "33442739": {
+   "label": "Enwright 2021",
+   "cases": 57,
+   "controls": 82,
+   "n": 139,
+   "list": "33442739__dlpfc_top_degs",
+   "quote": "SZ (57) vs control (82"
+  },
+  "33673722": {
+   "label": "Hertzberg 2021",
+   "cases": 69,
+   "controls": 78,
+   "n": 147,
+   "list": "33673722__none",
+   "quote": "SZ (69) vs control (78"
+  },
+  "34957416": {
+   "label": "Jin 2021",
+   "cases": 250,
+   "controls": 277,
+   "n": 527,
+   "list": "34957416__deseq2_bulk",
+   "quote": "SZ (250) vs control (277"
+  },
+  "34439592": {
+   "label": "Petralia 2021",
+   "cases": 15,
+   "controls": 19,
+   "n": 34,
+   "list": "34439592__none",
+   "quote": "SZ (15) vs control (19"
+  },
+  "34954633": {
+   "label": "Qi 2022",
+   "cases": 201,
+   "controls": 278,
+   "n": 479,
+   "list": "34954633__none",
+   "quote": "SZ (201) vs control (278"
+  },
+  "36405929": {
+   "label": "Sabaie 2022",
+   "cases": 28,
+   "controls": 23,
+   "n": 51,
+   "list": "36405929__demrna",
+   "quote": "SZ (28) vs control (23"
+  },
+  "36652379": {
+   "label": "Clifton 2023",
+   "cases": 563,
+   "controls": 802,
+   "n": 1365,
+   "list": "36652379__st2_fdr05",
+   "quote": "SZ (563) vs control (802"
+  },
+  "38092734": {
+   "label": "Fiorito 2023",
+   "cases": 266,
+   "controls": 237,
+   "n": 503,
+   "list": "38092734__none",
+   "quote": "SZ (266) vs control (237"
+  },
+  "37031222": {
+   "label": "Medina 2023",
+   "cases": 22,
+   "controls": 26,
+   "n": 48,
+   "list": "37031222__qpcr_sz_fdr10",
+   "quote": "SZ (22) vs control (26"
+  },
+  "37005977": {
+   "label": "Shamir 2023",
+   "cases": 253,
+   "controls": 258,
+   "n": 511,
+   "list": "37005977__none",
+   "quote": "SZ (253) vs control (258"
+  },
+  "36977612": {
+   "label": "Wolf 2023",
+   "cases": 211,
+   "controls": 212,
+   "n": 423,
+   "list": "36977612__none",
+   "quote": "SZ (211) vs control (212"
+  },
+  "37267675": {
+   "label": "Yang 2023",
+   "cases": 50,
+   "controls": 50,
+   "n": 100,
+   "list": "37267675__mrna_table_s2",
+   "quote": "SZ (50) vs healthy controls (50"
+  },
+  "39727940": {
+   "label": "Castro-Martínez 2024",
+   "cases": 14,
+   "controls": 17,
+   "n": 31,
+   "list": "39727940__hpc_cash001",
+   "quote": "SZ (14) vs control (17"
+  },
+  "39609319": {
+   "label": "Dor 2024",
+   "cases": 106,
+   "controls": 96,
+   "n": 202,
+   "list": "39609319__none",
+   "quote": "SZ (106) vs control (96"
+  },
+  "38390236": {
+   "label": "Lian 2024",
+   "cases": 15,
+   "controls": 19,
+   "n": 34,
+   "list": "38390236__none",
+   "quote": "SZ (15) vs control (19"
+  },
+  "38321095": {
+   "label": "Truong 2024",
+   "cases": 253,
+   "controls": 279,
+   "n": 532,
+   "list": "38321095__none",
+   "quote": "SZ (253) vs control (279"
+  },
+  "40727846": {
+   "label": "Priyanka 2025",
+   "cases": 173,
+   "controls": 174,
+   "n": 347,
+   "list": "40727846__tableS3_scz",
+   "quote": "SZ (173) vs control (174"
+  },
+  "41422210": {
+   "label": "Rebouças 2025",
+   "cases": 102,
+   "controls": 124,
+   "n": 226,
+   "list": "41422210__suppl5_degs",
+   "quote": "SZ (102) vs control (124"
+  },
+  "40259965": {
+   "label": "Shokrgozar 2025",
+   "cases": 27,
+   "controls": 119,
+   "n": 146,
+   "list": "40259965__none",
+   "quote": "SZ (27) vs control (119"
+  },
+  "40242178": {
+   "label": "Xie 2025",
+   "cases": 106,
+   "controls": 96,
+   "n": 202,
+   "list": "40242178__none",
+   "quote": "SZ (106) vs control (96"
+  },
+  "40076849": {
+   "label": "Zhou 2025",
+   "cases": 24,
+   "controls": 24,
+   "n": 48,
+   "list": "40076849__none",
+   "quote": "SZ (24) vs control (24"
+  },
+  "41984900": {
+   "label": "Bampos 2026",
+   "cases": 153,
+   "controls": 261,
+   "n": 414,
+   "list": "41984900__none",
+   "quote": "SZ (153) vs control (261"
+  },
+  "42416198": {
+   "label": "Baumel 2026",
+   "cases": 151,
+   "controls": 144,
+   "n": 295,
+   "list": "42416198__none",
+   "quote": "SZ (151) vs control (144"
+  },
+  "41788138": {
+   "label": "Singer 2026",
+   "cases": 151,
+   "controls": 144,
+   "n": 295,
+   "list": "41788138__none",
+   "quote": "SZ (151) vs control (144"
+  },
+  "41714609": {
+   "label": "Smith 2026",
+   "cases": 44,
+   "controls": 55,
+   "n": 99,
+   "list": "41714609__tableS4_nominal",
+   "quote": "SZ (44) vs control (55"
+  },
+  "42623758": {
+   "label": "Tengfei 2026",
+   "cases": 245,
+   "controls": 233,
+   "n": 478,
+   "list": "42623758__text_top_genes",
+   "quote": "SZ (245) vs control (233"
+  }
+ }
+}

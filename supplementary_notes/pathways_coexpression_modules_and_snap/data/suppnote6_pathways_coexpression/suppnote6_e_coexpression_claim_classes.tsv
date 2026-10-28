@@ -1,0 +1,15 @@
+# figure: suppnote6_pathways_coexpression panel e
+# script: analyses/figure_exports/export_suppnote1.py, run 2026-10-16
+# population: core-80 base: 80 studies, 72 contributing lists (recurrence.py scenario 'published, brain', study tier); Shao 2008 PMID 18191109 out; panels e to i do not read a recurrent set or the list set
+# input: side-studies/coexpression/coexpression_inventory_meta.json sha256 1670615f2a35
+# input: side-studies/coexpression/coexpression_inventory.tsv sha256 285fccc97cf7
+# headline claims = postmortem brain; 140 claims from 80 papers; inventory built 2026-10-15T01:42:48; part A/B = seed search, part C = scope widening
+# claims_by_sz_retest_A_B, _C and n_claims_by_part read from the meta file
+sz_retest_class	claims_all	claims_part_AB	claims_part_C
+held, independent donors	9	8	1
+mixed or not held, independent	3	3	0
+held, partly shared donors	2	2	0
+structure only	37	23	14
+same donors or cohort split	18	12	6
+none offered	71	28	43
+total	140	76	64

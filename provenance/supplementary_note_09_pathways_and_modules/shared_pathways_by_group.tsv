@@ -1,0 +1,9 @@
+# script: f_misc_checks.py part 2
+# input: H01/a5b_terms.tsv sha256 57f7a6d33007; H01/a5b_agreement.tsv sha256 375400954cc2; M09/results_seedA_noextra_new/term_groups.tsv sha256 2bd0e027e6a5 (all under rerun_core80_2026-10-16)
+# validation: sum over terms of C(n_lists_top,2) = 710 equals shared_pathways_total observed 710 in a5b_agreement.tsv
+group	n_terms	shared_pathway_pairs	share_of_total	note
+all terms in >= 2 lists	187	710		
+oxphos	14	305	43.0%	
+myelin	3	40	5.6%	
+microglia	2	6	0.8%	
+oxphos + myelin	17	345	48.6%	share of excess over DE-prior null mean 265.6: 77.6% (assumes the null contributes about 0 for these terms: deprior_null_mean 0.01 to 0.03 lists per term)

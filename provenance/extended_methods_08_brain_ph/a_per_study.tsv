@@ -1,0 +1,85 @@
+# script: analyses/rna_quality_methods_2026-10-11/finalize_light_2026-10-13/a_hidden_factors/a_per_study.py (copy of rna_quality_methods_2026-10-11/a_per_study.py, output path only changed); run 2026-10-13; no model calls
+# input cov: analyses/covariate_handling_64_2026-10-10/covariate_handling_64.tsv sha256 47a802d2a2ad
+# input score: figure_data/fig07/fig07_c_ph_score_by_handling_v2.tsv sha256 45a22cfc5e93
+# input prim: analyses/primary_lists.json sha256 f6d209527c80
+# input units: analyses/recurrence_units.tsv sha256 a346ce802a39
+# input ctlph: analyses/confounds/results/combined_controls_pH.tsv sha256 ebab86afedd3
+# input hardy: analyses/gtex_ischemia_2026-10-08/hardy_t_by_region.tsv.gz sha256 54f989c55753
+# input sets: analyses/confounds/recurrent_sets.tsv sha256 f6fdba75ae7c
+# ph_score = mean over the study's primary-list genes with a direction and a control-pH Z of -(SZ sign) x Z_pH (as fig07 panel c; positive = list moves as low pH does); slow_death_score = mean of (SZ sign) x GTEx Hardy slow-death t (BA9, BA24, Cortex mean; positive = list moves as slow death does); scores need >= 10 scored genes
+# method_class from the verified quotes of covariate_handling_64.tsv (row hidden_factors), assigned by hand in a_per_study.py (METHOD); n_in_209 = list genes in the 209 study_brain recurrent set; same_direction = list direction equals the recurrent SZ direction
+pmid	label	hidden_factor_call	method_class	n_list_genes	ph_score	n_ph_scored	slow_death_score	n_slow_scored	n_in_209	n_209_same_direction	frac_209_same_direction
+11296301	Hakak 2001	not_mentioned	none stated	83	-3.338	82	-1.827	83	37	6	0.162
+15018814	Kuromitsu 2001	not_mentioned	none stated	45	1.063	44	1.255	42	11	10	0.909
+15334603	Aston 2004	not_mentioned	none stated	32	0.179	28	0.47	30	7	6	0.857
+16038679	Altar 2005	not_mentioned	none stated	45	1.655	43	0.105	42	5	3	0.6
+16236523	Weidenhofer 2006	not_mentioned	none stated	47	-0.093	45	0.03	41	9	6	0.667
+17822540	Saetre 2007	not_mentioned	none stated	136	-0.415	129	0.528	132	32	19	0.594
+18191109	Shao 2008	not_mentioned	none stated	77	2.967	71	3.425	72	14	14	1.0
+18445270	Bowden 2008	not_mentioned	none stated	66	1.081	60	0.881	60	5	5	1.0
+18771015	Garbett 2008	not_mentioned	none stated	13	0.931	13	-0.705	12	3	3	1.0
+18778695	Narayan 2008	not_mentioned	none stated	1506	0.735	1350	0.235	1134	112	98	0.875
+18985160	Mudge 2008	not_mentioned	none stated	196	0.044	158	0.687	150	8	3	0.375
+19255580	Maycox 2009	adjusted	PC1 covariate	2033	1.39	1931	1.534	1763	128	118	0.922
+19834500	Chu 2009	not_mentioned	none stated	254	1.759	247	-0.029	239	27	24	0.889
+20034564	Arion 2010	not_mentioned	none stated	1090	0.374	1047	-0.224	1026	118	110	0.932
+21091092	Schmitt 2011	not_mentioned	none stated	760	-0.12	688	-0.462	631	31	17	0.548
+21538462	Barnes 2011	adjusted	PC1 covariate	51	-0.003	48	0.91	40	3	3	1.0
+22558445	Wu 2012	not_mentioned	none stated	768	0.798	581	0.716	558	96	81	0.844
+22869038	Fillman 2013	not_mentioned	none stated	592	0.354	315	2.505	173	43	43	1.0
+23147385	Chen 2013	not_mentioned	none stated	1378	1.281	1257	1.092	1180	106	100	0.943
+24169640	Hwang 2013	not_mentioned	none stated	142	0.814	112	2.789	108	31	31	1.0
+24594777	Kohen 2014	not_mentioned	none stated	16		0		0	3	0	0.0
+24628518	Pietersen 2014 (PV neurons)	not_mentioned	none stated	692	0.57	608	0.426	572	39	31	0.795
+24702465	Pietersen 2014	not_mentioned	none stated	862	0.408	701	0.506	612	44	30	0.682
+24776767	Xiao 2014	not_mentioned	none stated	4041	2.17	3521	1.863	3549	303	284	0.937
+25113377	Zhao 2015	not_mentioned	none stated	104		0		0	8	0	0.0
+25560755	Arion 2015	not_mentioned	none stated	71	2.138	60	0.365	64	9	9	1.0
+26585218	Mauney 2015	not_mentioned	none stated	447	0.257	375	0.308	339	16	11	0.688
+27622934	Darby 2016	not_mentioned	none stated	10		7		7	5	5	1.0
+27661005	Hu 2016	not_mentioned	none stated	965	3.044	893	2.422	876	156	147	0.942
+27668389	Fromer 2016	not_mentioned	none stated	669	-0.118	594	1.209	586	35	31	0.886
+27801890	Scarr 2018	not_mentioned	none stated	98	3.464	72	2.147	72	11	8	0.727
+27898074	Kim 2016	adjusted	SVA	56	0.605	39	2.462	25	9	9	1.0
+27940260	Voisey 2017	adjusted	SVA	1132	1.659	922	-0.173	919	105	43	0.41
+28123834	Mladinov 2016	not_mentioned	none stated	22	-0.521	20	0.11	19	2	2	1.0
+28754123	Ramaker 2017	not_mentioned	none stated	97	2.027	71	2.552	61	11	10	0.909
+28809853	Chang 2017	not_mentioned	none stated	854	1.614	757	2.354	747	91	88	0.967
+29112193	Enwright 2018	not_mentioned	none stated	865	1.317	764	0.793	643	78	64	0.821
+29463818	Scarr 2018	not_mentioned	none stated	94	-0.247	83	-1.021	50	3	2	0.667
+30050107	Jaffe 2018	adjusted	qSVA	761	-0.041	605	0.78	612	56	44	0.786
+31053723	Pai 2019	unresolved	SVA run, none found	1		1		1	1	1	1.0
+31123247	Lanz 2019	not_mentioned	none stated	2016	2.339	1967	1.199	1857	223	218	0.978
+31174959	Collado-Torres 2019	adjusted	qSVA	275	0.544	225	0.465	216	43	43	1.0
+31288836	Mendizabal 2019	adjusted	SVs (method not named in quote)	301	0.112	285	0.428	282	15	9	0.6
+32006661	Santarelli 2019	not_mentioned	none stated	191	0.092	177	1.015	187	14	12	0.857
+32152472	Perez 2021	adjusted	SVA	266	0.036	234	0.378	223	15	9	0.6
+32203495	Jaffe 2020	adjusted	qSVA	25	1.46	20	1.131	18	0	0	
+32513544	Zeppillo 2022	adjusted	SVs (method not named in quote)	328	1.293	288	2.116	297	70	69	0.986
+32566292	Bakshi 2020	not_mentioned	none stated	473	1.939	457	0.218	436	55	49	0.891
+33184259	Maas 2020	not_mentioned	none stated	135	2.899	107	3.837	114	26	26	1.0
+33558674	Akula 2021	not_mentioned	none stated	22	-0.447	16		9	4	4	1.0
+34004381	Gebicke-Haerter 2021	not_mentioned	none stated	504	0.932	365	0.213	308	14	10	0.714
+34059796	Weissleder 2021	not_mentioned	none stated	1279	0.47	1090	1.898	1049	114	99	0.868
+34272489	Wu 2021	not_mentioned	none stated	243	-0.495	163	-0.249	148	6	2	0.333
+34440415	Lindholm Carlström 2021	not_mentioned	none stated	68	1.042	56	4.349	45	12	12	1.0
+36192459	Puvogel 2022	not_mentioned	none stated	13	-0.689	11	0.931	11	1	1	1.0
+36223459	Batiuk 2022	not_mentioned	none stated	173	0.908	147	0.015	147	10	5	0.5
+36302706	Ketchesin 2023	not_mentioned	none stated	812	-0.409	628	0.957	634	79	70	0.886
+36319771	Benjamin 2022	adjusted	qSVA	2566	-0.822	2173	-0.012	2123	137	73	0.533
+36932057	Schulmann 2023	not_mentioned	none stated	2083	0.429	1760	2.047	1745	145	140	0.966
+37498306	Arihisa 2023	not_mentioned	none stated	113	0.065	85	0.629	99	21	17	0.81
+38448582	Ling 2024	reported_only	PEER (reported, not applied to SZ t)	189		0		0	32	0	0.0
+38648100	Zhu 2024	not_mentioned	none stated	1687	1.065	1547	0.898	1557	101	93	0.921
+38781388	Ruzicka 2024	not_mentioned	none stated	2449	0.455	2139	0.517	2148	170	124	0.729
+39227716	Frohlich 2024	adjusted	PC1 covariate	154	0.219	119	0.777	116	9	7	0.778
+39237723	Arbabi 2025	not_mentioned	none stated	163	0.347	120	0.171	115	15	12	0.8
+39397771	Alsema 2025	not_mentioned	none stated	106	0.782	93	0.509	85	16	7	0.438
+39526318	Zhang 2026	not_mentioned	none stated	2787	0.266	2404	-0.165	2471	79	64	0.81
+41174894	Yalcinbas 2025	adjusted	qSVA	158	0.177	120	2.129	122	7	7	1.0
+41210297	Mas 2025	matched_or_compared	SVA run, none found	4		0		0	0	0	
+41567988	Mendez-Victoriano 2026	not_mentioned	none stated	203	0.858	144	4.032	104	38	36	0.947
+41757081	Kwon 2026	not_mentioned	none stated	1010	0.605	890	0.812	932	101	90	0.891
+41942462	Singh 2026	not_mentioned	none stated	841	0.764	595	0.629	539	43	30	0.698
+42461238	Dean 2026	not_mentioned	none stated	46	2.987	43	2.668	42	16	16	1.0
+42778699	Lee 2026 (PsychAD)	not_mentioned	none stated	139	0.438	124	0.721	123	15	14	0.933

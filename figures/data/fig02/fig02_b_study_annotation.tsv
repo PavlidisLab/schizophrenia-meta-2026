@@ -1,0 +1,83 @@
+# figure: fig02 panel b
+# script: analyses/figure_exports/export_fig02_fig07.py, run 2026-10-21
+# population: 72 primary brain studies (recurrence.py scenario 'published, brain', study tier); n_k = |M_k| (RECURRENCE_NK=membership); analysis set = the 383 study-tier genes of analyses/confounds/recurrent_sets.tsv (set study_brain; the in-place recurrence_genes.tsv gives 383 at q < 0.1); recurrence.tsv sha256 f825429faf1d; corpus/lineage.json sha256 4f919a83fea3
+# input: analyses/recurrence_units.tsv sha256 d0923a71d1c3
+# input: corpus/lineage.json sha256 4f919a83fea3
+# input: analyses/technology.json sha256 81e4dd12be23
+# input: analyses/universes.json sha256 25a477fc64ae
+# year: corpus/lineage.json node year (label year if the node is missing); technology: technology.json via recurrence_units; column_order: cohort cluster (named clusters first) then year, as in recurrence_gene_list_matrix.py
+# n_tested = n_k of the study's universe as recurrence.py uses it (universes.json, recurrence.load_lists; same value as tested_genes_per_study_516.tsv n_tested); n_tested_class from that file (measured_gene_set = gene set held; assumed_rnaseq = the 25,137-gene RNA-seq default assumed, not measured); n_list_genes = |list genes in the study's tested set| (the DE count on the same footing as n_tested); n_list_genes_all = all genes in the study's primary list(s)
+# studies without a tested set: 0
+study_id	label	cohort_cluster	cohort_clusters	year	technology	n_list_genes	column_order	n_tested	n_tested_class	n_list_genes_all
+16236523	Weidenhofer 2006	aus	aus	2006	microarray	27	1	4311	stated_in_paper	47
+18445270	Bowden 2008	aus	aus	2008	microarray	54	2	8737	stated_in_paper	66
+18778695	Narayan 2008	aus	aus	2008	microarray	1502	3	21383	measured_gene_set	1506
+22558445	Wu 2012	aus	aus	2012	rnaseq	708	4	25137	assumed_rnaseq	768
+22869038	Fillman 2013	aus	aus	2013	rnaseq	445	5	25137	assumed_rnaseq	592
+27801890	Scarr 2018	aus	aus	2018	microarray	98	6	22176	measured_gene_set	98
+29463818	Scarr 2018	aus	aus	2018	microarray	94	7	22176	measured_gene_set	94
+32006661	Santarelli 2019	aus	aus	2019	microarray	185	8	19282	measured_gene_set	191
+39227716	Frohlich 2024 (own list)	aus	aus	2024	single_cell	550	9	22985	measured_gene_set	551
+42461238	Dean 2026	aus	aus	2026	microarray	46	10	17052	measured_gene_set	46
+11296301	Hakak 2001	cmc+mssm+pitt+libd	cmc+mssm+pitt+libd	2001	microarray	81	11	5979	measured_gene_set	83
+18771015	Garbett 2008	cmc+mssm+pitt+libd	cmc+mssm+pitt+libd	2008	microarray	13	12	19375	measured_gene_set	13
+20034564	Arion 2010	cmc+mssm+pitt+libd	cmc+mssm+pitt+libd	2010	microarray	1087	13	21383	measured_gene_set	1090
+25560755	Arion 2015	cmc+mssm+pitt+libd	cmc+mssm+pitt+libd	2015	microarray	71	14	20623	measured_gene_set	71
+27668389	Fromer 2016	cmc+mssm+pitt+libd	cmc+mssm+pitt+libd	2016	rnaseq	669	15	25137	assumed_rnaseq	669
+28809853	Chang 2017	cmc+mssm+pitt+libd	cmc+mssm+pitt+libd	2017	rnaseq	836	16	25137	assumed_rnaseq	854
+29112193	Enwright 2018	cmc+mssm+pitt+libd	cmc+mssm+pitt+libd	2018	microarray	865	17	19716	measured_gene_set	865
+30050107	Jaffe 2018	cmc+mssm+pitt+libd	cmc+mssm+pitt+libd	2018	rnaseq	744	18	20234	assumed_rnaseq	761
+31123247	Lanz 2019	cmc+mssm+pitt+libd	cmc+mssm+pitt+libd	2019	microarray	2014	19	21383	measured_gene_set	2016
+31174959	Collado-Torres 2019	cmc+mssm+pitt+libd	cmc+mssm+pitt+libd	2019	rnaseq	274	20	25137	assumed_rnaseq	275
+32203495	Jaffe 2020	cmc+mssm+pitt+libd	cmc+mssm+pitt+libd	2020	rnaseq	25	21	17813	measured_gene_set	25
+33558674	Akula 2021	cmc+mssm+pitt+libd	cmc+mssm+pitt+libd	2021	rnaseq	21	22	25137	assumed_rnaseq	22
+34272489	Wu 2021	cmc+mssm+pitt+libd	cmc+mssm+pitt+libd	2021	microarray	215	23	20706	measured_gene_set	243
+36319771	Benjamin 2022	cmc+mssm+pitt+libd	cmc+mssm+pitt+libd	2022	rnaseq	2566	24	19795	measured_gene_set	2566
+36302706	Ketchesin 2023 (own list)	cmc+mssm+pitt+libd	cmc+mssm+pitt+libd	2023	rnaseq	608	25	25945	measured_gene_set	608
+36932057	Schulmann 2023	cmc+mssm+pitt+libd	cmc+mssm+pitt+libd	2023	rnaseq	2076	26	25137	assumed_rnaseq	2083
+38781388	Ruzicka 2024	cmc+mssm+pitt+libd	cmc+mssm+pitt+libd; harvard	2024	single_cell	2449	27	22986	measured_gene_set	2449
+39237723	Arbabi 2025	cmc+mssm+pitt+libd	cmc+mssm+pitt+libd	2025	rnaseq	163	28	22997	none	163
+41174894	Yalcinbas 2025	cmc+mssm+pitt+libd	cmc+mssm+pitt+libd	2025	rnaseq	158	29	19721	measured_gene_set	158
+41757081	Kwon 2026	cmc+mssm+pitt+libd	cmc+mssm+pitt+libd	2026	other	1010	30	13572	measured_gene_set	1010
+41942462	Singh 2026	cmc+mssm+pitt+libd	cmc+mssm+pitt+libd	2026	rnaseq	841	31	24826	measured_gene_set	841
+42778699	Lee 2026 (PsychAD)	cmc+mssm+pitt+libd	cmc+mssm+pitt+libd	2026	single_cell	139	32	22985	measured_gene_set	139
+19255580	Maycox 2009	harvard	brain_other:19255580; harvard	2009	microarray	2022	33	21383	measured_gene_set	2033
+24628518	Pietersen 2014 (PV neurons)	harvard	harvard	2014	microarray	688	34	20811	measured_gene_set	692
+24702465	Pietersen 2014	harvard	harvard	2014	microarray	862	35	20811	measured_gene_set	862
+26585218	Mauney 2015	harvard	harvard	2015	microarray	445	36	20811		447
+31288836	Mendizabal 2019	harvard	brain_other:31288836; harvard	2019	rnaseq	299	37	25137	assumed_rnaseq	301
+34440415	Lindholm Carlström 2021	harvard	harvard	2021	rnaseq	68	38	19085	measured_gene_set	68
+38448582	Ling 2024	harvard	harvard	2024	single_cell	189	39	22986	measured_gene_set	189
+28754123	Ramaker 2017	pritzker	pritzker	2017	rnaseq	97	40	26129	measured_gene_set	97
+32513544	Zeppillo 2022	pritzker	pritzker	2022	rnaseq	328	41	25137	assumed_rnaseq	328
+15018814	Kuromitsu 2001	stanley	stanley	2001	microarray	45	42	5979	measured_gene_set	45
+15334603	Aston 2004	stanley	stanley	2004	microarray	31	43	9614	measured_gene_set	32
+16038679	Altar 2005	stanley	stanley	2005	microarray	43	44	8482	measured_gene_set	45
+17822540	Saetre 2007	stanley	brain_other:17822540; harvard; stanley	2007	microarray	134	45	12762	none	136
+19834500	Chu 2009	stanley	stanley	2009	microarray	252	46	21383	none	254
+23147385	Chen 2013	stanley	stanley	2013	microarray	1378	47	17057	measured_gene_set	1378
+24169640	Hwang 2013	stanley	stanley	2013	rnaseq	133	48	25137	assumed_rnaseq	142
+24594777	Kohen 2014	stanley	stanley	2014	rnaseq	16	49	25137	assumed_rnaseq	16
+25113377	Zhao 2015	stanley	stanley	2015	rnaseq	102	50	25137	assumed_rnaseq	104
+27622934	Darby 2016	stanley	stanley	2016	rnaseq	9	51	25137	assumed_rnaseq	10
+27661005	Hu 2016	stanley	stanley	2016	rnaseq	965	52	17463	measured_gene_set	965
+27898074	Kim 2016	stanley	stanley	2016	rnaseq	49	53	25137	assumed_rnaseq	56
+32566292	Bakshi 2020	stanley	stanley	2020	microarray	473	54	21383	measured_gene_set	473
+34059796	Weissleder 2021	stanley	stanley	2021	rnaseq	1278	55	25137	assumed_rnaseq	1279
+36192459	Puvogel 2022	stanley	stanley	2022	single_cell	13	56	22985	none	13
+39397771	Alsema 2025	stanley	stanley	2025	rnaseq	106	57	22985	none	106
+39526318	Zhang 2026	stanley	stanley	2026	rnaseq	2787	58	15211	measured_gene_set	2787
+41567988	Mendez-Victoriano 2026	stanley	aus; stanley	2026	rnaseq	175	59	25137	assumed_rnaseq	203
+18985160	Mudge 2008	brain_other:18985160	brain_other:18985160	2008	rnaseq	176	60	25137	assumed_rnaseq	196
+21091092	Schmitt 2011	brain_other:21091092	brain_other:21091092	2011	microarray	725	61	17157	measured_gene_set	760
+21538462	Barnes 2011	brain_other:21538462	brain_other:21538462	2011	microarray	51	62	21383	measured_gene_set	51
+24776767	Xiao 2014	brain_other:24776767	brain_other:24776767	2014	rnaseq	4006	63	25137	assumed_rnaseq	4041
+28123834	Mladinov 2016	brain_other:28123834	brain_other:28123834	2016	microarray	22	64	22176	measured_gene_set	22
+27940260	Voisey 2017	brain_other:27940260	brain_other:27940260	2017	rnaseq	1118	65	25137	assumed_rnaseq	1132
+33184259	Maas 2020	brain_other:33184259	brain_other:33184259	2020	rnaseq	135	66	13603	measured_gene_set	135
+32152472	Perez 2021	brain_other:32152472	brain_other:32152472	2021	rnaseq	263	67	25137	assumed_rnaseq	266
+34004381	Gebicke-Haerter 2021	brain_other:34004381	brain_other:34004381	2021	microarray	453	68	17157	measured_gene_set	504
+36223459	Batiuk 2022	brain_other:36223459	brain_other:36223459	2022	single_cell	173	69	22985	measured_gene_set	173
+37498306	Arihisa 2023	brain_other:37498306	brain_other:37498306	2023	rnaseq	112	70	25137	assumed_rnaseq	113
+38648100	Zhu 2024	brain_other:38648100	brain_other:38648100	2024	rnaseq	1675	71	14028	none	1687
+41210297	Mas 2025	brain_other:41210297	brain_other:41210297	2025	rnaseq	4	72	25137	assumed_rnaseq	4

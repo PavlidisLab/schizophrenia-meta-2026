@@ -1,0 +1,59 @@
+# script: second_reference_seaad_2026-10-19/seaad_class_shares.py (class_means logic of analyses/interneuron_ph_2026-10-01/scripts/specificity.py), run 2026-10-19 on the remote environment
+# input: nserc_pilots_2026-10-14/seaad_sst_loss_check/data/SEAAD_MTG_RNAseq_final-nuclei.2026-06-22.h5ad, 32978570763 bytes, sha256 e06000cb8fc83ebad88a52a0a7c772747c38fa92c97debcfe4f59de7cea60c79 (layers/UMIs, raw UMI counts, 1178694 nuclei x 36601 genes; SEA-AD MTG RNAseq final-nuclei, release file dated 2026-06-22; Gabitto et al. 2024 Nat Neurosci doi 10.1038/s41593-024-01774-5; h5ad uns title: MTG: Seattle Alzheimer's Disease Atlas (SEA-AD); no version string recorded in the file beyond the file date)
+# script: second_reference_seaad_2026-10-19/seaad_class_shares.py, run 2026-10-19
+# comparisons: Spearman and Pearson over genes with values in both tables; frac_same_top_fine_class = fraction of genes whose largest fine-class spec is the same class in both; frac_agree_coarse_IN_ge_0_5 = fraction of genes on the same side of spec_coarse_IN >= 0.5
+# PsychAD reference: interneuron_specificity_383_v2.tsv (95 HBCC control donors; 372 genes in the filtered table, 3 computed without the CPM >= 1 filter, 8 absent)
+# class mapping (SEA-AD Subclass -> fine class): Astro=Astrocyte; EN=L2/3 IT,L4 IT,L5 IT,L5 ET,L5/6 NP,L6 IT,L6 IT Car3,L6 CT,L6b; IN_other=Sncg,Pax6; LAMP5=Lamp5,Lamp5 Lhx6; Micro=Immune; OPC=OPC; Oligo=Oligodendrocyte; PVALB=Pvalb,Chandelier; SST=Sst; VIP=Vip; Vascular=Endothelial,VLMC & Perivascular
+comparison	quantity	n_genes	spearman	pearson	frac_same_top_fine_class	frac_agree_coarse_IN_ge_0_5
+SEA-AD no-dementia vs PsychAD HBCC controls (all genes with values in both)	spec_coarse_IN	375	0.9629347374373861	0.958471613718927		
+SEA-AD no-dementia vs PsychAD HBCC controls (all genes with values in both)	spec_Astro	375	0.9552715249638651	0.9558343606997071		
+SEA-AD no-dementia vs PsychAD HBCC controls (all genes with values in both)	spec_EN	375	0.9533991736144923	0.9556703772528776		
+SEA-AD no-dementia vs PsychAD HBCC controls (all genes with values in both)	spec_IN_other	375	0.9106252549707587	0.8883830785901622		
+SEA-AD no-dementia vs PsychAD HBCC controls (all genes with values in both)	spec_LAMP5	375	0.943323232068117	0.9625302128161143		
+SEA-AD no-dementia vs PsychAD HBCC controls (all genes with values in both)	spec_Micro	375	0.900776948811994	0.9704889911093234		
+SEA-AD no-dementia vs PsychAD HBCC controls (all genes with values in both)	spec_OPC	375	0.9281581968639679	0.9517203840977213		
+SEA-AD no-dementia vs PsychAD HBCC controls (all genes with values in both)	spec_Oligo	375	0.9387225125697389	0.9495746009566626		
+SEA-AD no-dementia vs PsychAD HBCC controls (all genes with values in both)	spec_PVALB	375	0.9461824886068032	0.9680285070946645		
+SEA-AD no-dementia vs PsychAD HBCC controls (all genes with values in both)	spec_SST	375	0.9560127875790544	0.9061983083658377		
+SEA-AD no-dementia vs PsychAD HBCC controls (all genes with values in both)	spec_VIP	375	0.9568405221233923	0.9463564880457075		
+SEA-AD no-dementia vs PsychAD HBCC controls (all genes with values in both)	spec_Vascular	375	0.9468050373651761	0.9366199631751255		
+SEA-AD no-dementia vs PsychAD HBCC controls (all genes with values in both)	top_fine_class_and_coarse_IN_ge_0.5	375			0.7866666666666666	0.9893333333333333
+SEA-AD no-dementia vs PsychAD HBCC controls (PsychAD in_filtered_table only)	spec_coarse_IN	372	0.9629844994783762	0.9588792606101247		
+SEA-AD no-dementia vs PsychAD HBCC controls (PsychAD in_filtered_table only)	spec_Astro	372	0.9547137446808731	0.9560462236356295		
+SEA-AD no-dementia vs PsychAD HBCC controls (PsychAD in_filtered_table only)	spec_EN	372	0.953984341604737	0.9561081987997438		
+SEA-AD no-dementia vs PsychAD HBCC controls (PsychAD in_filtered_table only)	spec_IN_other	372	0.9096203272719973	0.8890251022358877		
+SEA-AD no-dementia vs PsychAD HBCC controls (PsychAD in_filtered_table only)	spec_LAMP5	372	0.9434081016869755	0.962563517869848		
+SEA-AD no-dementia vs PsychAD HBCC controls (PsychAD in_filtered_table only)	spec_Micro	372	0.9014074082881327	0.9704729589153458		
+SEA-AD no-dementia vs PsychAD HBCC controls (PsychAD in_filtered_table only)	spec_OPC	372	0.927138914218264	0.9533652288705939		
+SEA-AD no-dementia vs PsychAD HBCC controls (PsychAD in_filtered_table only)	spec_Oligo	372	0.9385194109310946	0.9505038278400135		
+SEA-AD no-dementia vs PsychAD HBCC controls (PsychAD in_filtered_table only)	spec_PVALB	372	0.9468486472323906	0.9682299795993458		
+SEA-AD no-dementia vs PsychAD HBCC controls (PsychAD in_filtered_table only)	spec_SST	372	0.956451087378119	0.9061624890164535		
+SEA-AD no-dementia vs PsychAD HBCC controls (PsychAD in_filtered_table only)	spec_VIP	372	0.9566806929229731	0.9459500619263276		
+SEA-AD no-dementia vs PsychAD HBCC controls (PsychAD in_filtered_table only)	spec_Vascular	372	0.9461482278233094	0.9363484470031407		
+SEA-AD no-dementia vs PsychAD HBCC controls (PsychAD in_filtered_table only)	top_fine_class_and_coarse_IN_ge_0.5	372			0.7849462365591398	0.989247311827957
+SEA-AD all donors vs SEA-AD no-dementia	spec_coarse_IN	383	0.9986535070332045	0.9988845829880109		
+SEA-AD all donors vs SEA-AD no-dementia	spec_Astro	383	0.9963584456549972	0.9970577627850672		
+SEA-AD all donors vs SEA-AD no-dementia	spec_EN	383	0.9979206679835415	0.9982745920971685		
+SEA-AD all donors vs SEA-AD no-dementia	spec_IN_other	383	0.9986515846923572	0.9989336402375798		
+SEA-AD all donors vs SEA-AD no-dementia	spec_LAMP5	383	0.9984550787390812	0.9991236633439259		
+SEA-AD all donors vs SEA-AD no-dementia	spec_Micro	383	0.995364168250106	0.9980797244312247		
+SEA-AD all donors vs SEA-AD no-dementia	spec_OPC	383	0.9969644102087406	0.9989619542761552		
+SEA-AD all donors vs SEA-AD no-dementia	spec_Oligo	383	0.997273266304868	0.9992530947749089		
+SEA-AD all donors vs SEA-AD no-dementia	spec_PVALB	383	0.9980238336090114	0.999176141620987		
+SEA-AD all donors vs SEA-AD no-dementia	spec_SST	383	0.9983546898281684	0.9983127939632443		
+SEA-AD all donors vs SEA-AD no-dementia	spec_VIP	383	0.9983798938526105	0.9930853938110289		
+SEA-AD all donors vs SEA-AD no-dementia	spec_Vascular	383	0.99756311258595	0.997883392485212		
+SEA-AD all donors vs SEA-AD no-dementia	top_fine_class_and_coarse_IN_ge_0.5	383			0.9399477806788512	1.0
+SEA-AD no-dementia with Sst Chodl added to SST vs primary	spec_coarse_IN	383	0.9970041385862509	0.9851795438592005		
+SEA-AD no-dementia with Sst Chodl added to SST vs primary	spec_Astro	383	0.9976948997307016	0.9999144173213517		
+SEA-AD no-dementia with Sst Chodl added to SST vs primary	spec_EN	383	0.9993053941738549	0.9997998356387338		
+SEA-AD no-dementia with Sst Chodl added to SST vs primary	spec_IN_other	383	0.9986962257186992	0.9995465488816195		
+SEA-AD no-dementia with Sst Chodl added to SST vs primary	spec_LAMP5	383	0.9982720291717361	0.9995644071678415		
+SEA-AD no-dementia with Sst Chodl added to SST vs primary	spec_Micro	383	0.9958541515727313	0.9997034189577733		
+SEA-AD no-dementia with Sst Chodl added to SST vs primary	spec_OPC	383	0.9975996370620481	0.999737432199881		
+SEA-AD no-dementia with Sst Chodl added to SST vs primary	spec_Oligo	383	0.9963345231911201	0.9997450653233145		
+SEA-AD no-dementia with Sst Chodl added to SST vs primary	spec_PVALB	383	0.998781235902834	0.9995366385459561		
+SEA-AD no-dementia with Sst Chodl added to SST vs primary	spec_SST	383	0.9988134885103823	0.9260706179021635		
+SEA-AD no-dementia with Sst Chodl added to SST vs primary	spec_VIP	383	0.9987592357798041	0.9992153040255245		
+SEA-AD no-dementia with Sst Chodl added to SST vs primary	spec_Vascular	383	0.9960626187579458	0.9987843735295971		
+SEA-AD no-dementia with Sst Chodl added to SST vs primary	top_fine_class_and_coarse_IN_ge_0.5	383			0.9947780678851175	0.9973890339425587

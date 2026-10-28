@@ -1,0 +1,15 @@
+# claim -> source file, location, sha256 (first 12) of the file; written 2026-10-18
+claim	file	field_or_lines	sha256_12
+PM samples come from three banks: HBTRC (PM1, N=104), NYBB Columbia (PM2, N=129), UMBEB (PM3, N=13); 246 before QC	/tmp/liharska.txt (medRxiv text of Zotero GWASBW3I)	lines 80-83, 1214-1223	e23067c78f77
+PM1 and PM3 acquired through NIH NeuroBioBank request #543; PM2 through NYBB request #1962	/tmp/liharska.txt	lines 1227-1239	e23067c78f77
+243 PM samples after QC from 243 donors, one sample per donor	/tmp/liharska.txt	lines 106-107; Fig 1C legend ~line 788	e23067c78f77
+Supplement MOESM8-14 hold gene-level tables only (no per-sample or per-donor rows)	Zotero/storage/*/41380_2025_3163_MOESM{8..14}_ESM.xlsx	sheet headers (logs/supplement_sheets.txt)	see file
+Sample-level data deposition promised only 'upon publication'; published data-availability statement not available locally	/tmp/liharska.txt	lines 2174-2176	e23067c78f77
+9 base studies name HBTRC (McLean) among their banks; 8 hold a list among the 72; Pai 2019 own list is empty	bank_evidence_80.tsv	column shares_PM_bank; contributes_list_among_72	8c31c5f379ed
+Mendizabal 2019 and Pai 2019 also name the University of Miami Brain Endowment Bank	bank_evidence_80.tsv	bank_evidence	8c31c5f379ed
+No base study names the New York Brain Bank at Columbia in the text checked (15 of 80 studies have <20 kB local text)	bank_evidence_80.tsv; logs/text_coverage.tsv	shares_PM_bank; max_text_bytes	5e3e88db1ddc
+Validation: leave-nothing-out run reproduces 296 of 374 (0.79; null 0.58)	concordance_leave_bank_out.tsv	run=full	17fa56bf9c73
+(a) Sign re-derived without the 9 bank studies: 293 of 375 = 0.78 (0.74 to 0.82); matched null 0.58 (0.54 to 0.63)	concordance_leave_bank_out.tsv	run=no_bank9,variant=SIGNREDERIVED	17fa56bf9c73
+(b) Set rebuilt without the 9 studies: 196 genes, 192 with sign, 161 concordant = 0.84 (0.79 to 0.89); null 0.60 (0.53 to 0.67)	concordance_leave_bank_out.tsv	run=no_bank9,variant=SETREBUILT	17fa56bf9c73
+One-study-out range of concordance: 0.785 to 0.820 across the 8 contributing studies, both variants	concordance_leave_bank_out.tsv	drop_* rows	17fa56bf9c73
+Donor-level fingerprint match not possible: no PM donor table (age, sex, PMI, ID) in the supplement	(see README)	-	-

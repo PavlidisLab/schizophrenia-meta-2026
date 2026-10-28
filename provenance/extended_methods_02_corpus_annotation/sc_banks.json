@@ -1,0 +1,346 @@
+{
+ "_about": "Lane (brain bank or collection) for each single-cell / single-nucleus study, 2026-09-25 (Paul: 'the single-cell studies have to go in the lane for their sources, or near them, and link up to the consortium nodes'). Keys are the sc node keys (PMID or DOI). lane: lineage lane key; banks: lane keys when subjects come from two or more lanes (tracker Decision: multi-bank studies contribute per-bank lists when separable, else study tier only); bank_names: banks as the paper names them; evidence: where read. edges: data re-use and subject links to consortium nodes (coll:*) or corpus studies, kinds per the tracker Vocabulary. Read by build_lineage.py; lane_overrides.json is applied after it.",
+ "studies": {
+  "10.1101/2020.07.29.227355": {
+   "lane": "brain_other",
+   "banks": [
+    "brain_other",
+    "aus"
+   ],
+   "bank_names": [
+    "Douglas-Bell Canada Brain Bank (McGill University)",
+    "Human Brain and Spinal Fluid Resource Center (UCLA)",
+    "New South Wales Brain Tissue Resource Center"
+   ],
+   "evidence": "Reiner 2020 bioRxiv, Online Methods, Brain Samples: 'obtained from the Douglas-Bell Canada Brain Bank at McGill University, the Human Brain and Spinal Fluid Resource Center at UCLA and the New South Wales Brain Tissue Resource Center'; subjects per bank not stated (Supplementary Table 1 has no bank column). Two of three banks have no lane of their own."
+  },
+  "32764691": {
+   "lane": "ipsc",
+   "bank_names": [
+    "iPSC lines from one monozygotic twin pair"
+   ],
+   "evidence": "gene-lists/manifests/batch9_sc.json: one monozygotic twin pair discordant for schizoaffective disorder, iPSC-derived cerebral organoids"
+  },
+  "36223459": {
+   "lane": "brain_other",
+   "bank_names": [
+    "Netherlands Brain Bank (NBB)",
+    "Newcastle Brain Bank",
+    "Human Brain Tissue Bank, Semmelweis University (HBTB)",
+    "Oxford Brain Bank (OBB)"
+   ],
+   "evidence": "gene-lists/manifests/batch9_sc.json (Supplementary Table 2): NBB 6 SZ / 5 control, Newcastle 2 / 1, HBTB 1 / 5, OBB 0 / 3; gene-lists/donor_overlap/donor_overlap_report.md; overlap_summary.tsv: none of these banks appears in any other donor table (subject-separate)"
+  },
+  "34728799": {
+   "lane": "periph",
+   "bank_names": [
+    "PBMC donors, 3 SZ and 3 controls"
+   ],
+   "evidence": "gene-lists/manifests/batch9_sc.json: PBMC scRNA-seq (3 SZ, 3 control)"
+  },
+  "34789849": {
+   "lane": "ipsc",
+   "bank_names": [
+    "NIMH iPSC lines (3 SZ, 3 control)"
+   ],
+   "evidence": "gene-lists/manifests/batch9_sc.json: 3 SZ, 3 control NIMH lines per Stankovic 2024 Supplementary Table 3; GEO GSE184878"
+  },
+  "36729133": {
+   "lane": "aus",
+   "banks": [
+    "aus",
+    "libd",
+    "stanley"
+   ],
+   "bank_names": [
+    "NSW Tissue Resource Centre (cohort 5, snRNA-seq, BA11)",
+    "Victorian Brain Bank at the Florey Institute (cohort 2)",
+    "Lieber Institute for Brain Development (cohort 1)",
+    "Stanley Neuropathology Consortium (cohort 4)",
+    "Neurobiobank at the Ludwig-Maximilians-University (cohort 3)",
+    "Douglas-Bell Canada Brain Bank (cohort 6, MDD only)"
+   ],
+   "evidence": "Matosin 2023, Table 1 (gene-lists/raw/36729133/fulltext/pmc_fulltext.txt): six cohorts; the single-nucleus data are cohort 5, 'NSW Tissue Resource Centre, AUS', 36 SZ and 33 controls. A one-gene (FKBP5) study."
+  },
+  "37355690": {
+   "lane": "ipsc",
+   "bank_names": [
+    "iPSC lines of 4 SZ donors with NRXN1 deletions and 4 controls"
+   ],
+   "evidence": "gene-lists/manifests/batch9_sc.json; GEO GSE228315"
+  },
+  "37895019": {
+   "lane": "periph",
+   "bank_names": [
+    "nasal turbinate cell lines and biopsies, 1 SZ and 1 control"
+   ],
+   "evidence": "gene-lists/manifests/batch9_sc.json; GEO GSE219165"
+  },
+  "38781369": {
+   "lane": "cmc",
+   "banks": [
+    "cmc",
+    "harvard"
+   ],
+   "bank_names": [
+    "CommonMind Consortium, Mount Sinai collection (CMC; donor IDs CMC_MSSM_*)",
+    "SZBDMulti-Seq cohort = Ruzicka 2024 McLean cohort (Harvard Brain Tissue Resource Center)",
+    "MultiomeBrain (bank not stated)"
+   ],
+   "evidence": "gene-lists/manifests/batch9_sc.json: SZ donors from CMC (47 SZ, 53 control), SZBDMulti-Seq (24 SZ, 24 BD, 24 control) and MultiomeBrain (6 SZ, 10 BD, 5 control); gene-lists/donor_overlap/donor_overlap_report.md; overlap_summary.tsv: brainSCOPE CMC IDs are CMC_MSSM_*; SZBDMulti-Seq is Ruzicka 2024's McLean cohort (48 of 48 by identifier)",
+   "paper_evidence": "Checked 2026-09-27 (not read by build_lineage.py): the paper names no brain bank for its CMC or SZBDMulti-seq cohorts; the supplement lists the studies pooled ('These studies include the CommonMind Consortium (CMC), UCLA-ASD, SZBDMulti-seq, MultiomeBrain, DevBrain, IsoHuB, PTSDBrainomics, and Lieber Institute for Brain Development (LIBD) studies', supplement section 1.2, p. 8) and 'the SZBDMulti-seq cohort, which comprises 24 healthy donors, 24 schizophrenia patients, and 24 bipolar patients' (supplement p. 43); raw data 'available at the PsychENCODE Knowledge portal (108)' = syn51111084 (Data and materials availability, author manuscript p. 17). Banks come from identifiers in its sample file (data S1, PEC2_sample_metadata.txt): CMC Individual_IDs are all CMC_MSSM_* (47 SZ, 53 control); SZBDMulti-Seq SZ and control IDs equal Ruzicka 2024's McLean IDs, 48 of 48."
+  },
+  "39227716": {
+   "lane": "aus",
+   "bank_names": [
+    "New South Wales Brain Tissue Resource Centre (Sydney)"
+   ],
+   "evidence": "gene-lists/manifests/batch9_sc.json (batch9b): orbitofrontal cortex, New South Wales Brain Tissue Resource Centre, 54 cases vs 33 controls"
+  },
+  "38448582": {
+   "lane": "harvard",
+   "bank_names": [
+    "Harvard Brain Tissue Resource Center (McLean)"
+   ],
+   "evidence": "gene-lists/manifests/batch9_sc.json: 191 donors from the Harvard Brain Tissue Resource Center (McLean); gene-lists/donor_overlap/donor_overlap_report.md; overlap_summary.tsv"
+  },
+  "38781388": {
+   "lane": "mssm",
+   "banks": [
+    "mssm",
+    "harvard"
+   ],
+   "bank_names": [
+    "Mount Sinai/JJ Peters VA NIH Brain and Tissue Repository (MSSM; 41 SZ, 51 control)",
+    "Harvard Brain Tissue Resource Center, McLean (24 SZ, 24 control)"
+   ],
+   "evidence": "gene-lists/manifests/batch9_sc.json (Data S1): McLean 24 SZ / 24 control, MSSM 41 SZ / 51 control; per-cohort DE then meta-analysis; lane is the larger cohort",
+   "paper_evidence": "Checked 2026-09-27 (not read by build_lineage.py): 'Postmortem human PFC tissue ... was obtained from two National Institute of Mental Health NeuroBioBank associated tissue repositories, the Harvard Brain Tissue Resource Center at McLean Hospital, and the Mount Sinai/JJ Peters VA Medical Center NIH Brain and Tissue Repository' and 'Brodmann Area specific PFC tissue (BA10 for McL, BA9, 10, or 46 for MSSM)' (supplementary Materials and Methods, Assembly of the tissue cohorts, p. 2); 'The McLean (McL) cohort included 24 individuals with schizophrenia and 24 healthy individuals ... The Mount Sinai School of Medicine (MSSM) cohort included 41 individuals with schizophrenia and 51 healthy controls' (main text p. 2). Data: 'see https://doi.org/10.7303/syn25922167' (Data and materials availability, p. 13). The paper does not say its MSSM donors are CommonMind donors; Data S1 MSSM IDs run CON25-75 and SZ25-65, not CMC_MSSM_*; overlap with brainSCOPE CMC is by fingerprint only (76 of 92)."
+  },
+  "37915216": {
+   "lane": "ipsc",
+   "bank_names": [
+    "iPSC lines from dural fibroblasts of LIBD brain donors (4 SZ, 4 control)"
+   ],
+   "evidence": "gene-lists/manifests/batch9_sc.json: 'from dural fibroblasts of LIBD brain donors ... The donors' postmortem caudate genotypes and RNA-seq are in BrainSeq (abstract)'"
+  },
+  "38263175": {
+   "lane": "ipsc",
+   "bank_names": [
+    "NIMH iPSC lines (3 SZ, 3 control)"
+   ],
+   "evidence": "gene-lists/manifests/batch9_sc.json: same scRNA-seq data as Notaras 2022 (GSE184878)"
+  },
+  "39355378": {
+   "lane": "periph",
+   "bank_names": [
+    "public blood microarrays GSE38484 + GSE38481; Notaras 2022 organoids"
+   ],
+   "evidence": "gene-lists/manifests/batch9_sc.json: peripheral blood microarrays GSE38484 + GSE38481 merged; the single-cell part reanalyses the Notaras 2022 organoids (GSE184878)"
+  },
+  "40162239": {
+   "lane": "brain_other",
+   "bank_names": [
+    "Netherlands Brain Bank",
+    "Craig A. Stockmeier collection (University of Mississippi Medical Center)",
+    "Macedonian/New York State Psychiatric Institute collection"
+   ],
+   "evidence": "gene-lists/manifests/batch9_sc.json: 43 SZ vs 42 control from these three collections"
+  },
+  "40819083": {
+   "lane": "ipsc",
+   "bank_names": [
+    "Munich MIMICSS cohort iPSC lines"
+   ],
+   "evidence": "gene-lists/manifests/batch9_sc.json"
+  },
+  "40480991": {
+   "lane": "mssm",
+   "banks": [
+    "mssm",
+    "cmc"
+   ],
+   "bank_names": [
+    "Mount Sinai NIH NeuroBioBank (MSSM)",
+    "NIMH Human Brain Collection Core (HBCC)",
+    "Rush Alzheimer's Disease Center (RADC)"
+   ],
+   "evidence": "gene-lists/manifests/batch9_sc.json: PsychAD resource (Scientific Data descriptor), 1,494 donors; banks as in Lee 2025 (PsychAD); HBCC is in the cmc lane"
+  },
+  "40053590": {
+   "lane": "aus",
+   "bank_names": [
+    "NSW Brain Tissue Resource Centre"
+   ],
+   "evidence": "gene-lists/manifests/batch9_sc.json: orbitofrontal cortex, NSW Brain Tissue Resource Centre"
+  },
+  "42778699": {
+   "lane": "mssm",
+   "banks": [
+    "mssm",
+    "cmc"
+   ],
+   "bank_names": [
+    "Mount Sinai NIH NeuroBioBank (MSSM; 88 SZ)",
+    "NIMH Human Brain Collection Core (HBCC; 32 SZ)",
+    "Rush (RADC; controls only)"
+   ],
+   "evidence": "gene-lists/manifests/batch9_sc.json: 120 SZ (88 MSSM, 32 HBCC) vs 319 controls (182 MSSM, 129 HBCC, 8 RADC), meta-analysed across brain banks; lane is the larger bank"
+  },
+  "40750773": {
+   "lane": "ipsc",
+   "bank_names": [
+    "iPSC lines, 22q11.2 deletion with SZ (3) and controls (3)"
+   ],
+   "evidence": "gene-lists/manifests/batch9_sc.json"
+  },
+  "10.64898/2026.09.18.752621": {
+   "lane": "meta",
+   "bank_names": [
+    "seven snRNA-seq datasets: Batiuk 2022, Ruzicka 2024 (McLean, MSSM), brainSCOPE MultiomeBrain, Frohlich 2024, HBCC and MSSM (Synapse syn60084804)"
+   ],
+   "evidence": "gene-lists/manifests/batch9_sc.json: meta-analysis of seven datasets (298 control, 171 SZ)"
+  },
+  "41863598": {
+   "lane": "aus",
+   "bank_names": [
+    "NSW Brain Tissue Resource Centre"
+   ],
+   "evidence": "gene-lists/manifests/batch9_sc.json: NSW Brain Tissue Resource Centre donors"
+  }
+ },
+ "edges": [
+  {
+   "from": "coll:cmc",
+   "to": "38781369",
+   "kind": "same collection",
+   "evidence": "Emani 2024 (brainSCOPE): its CMC cohort (47 SZ, 53 control) carries CommonMind Mount Sinai donor IDs (CMC_MSSM_*); gene-lists/donor_overlap/donor_overlap_report.md; overlap_summary.tsv"
+  },
+  {
+   "from": "coll:psychencode",
+   "to": "38781369",
+   "kind": "same collection",
+   "evidence": "Emani 2024 is the PsychENCODE brainSCOPE resource (manifest contrast: 'PsychENCODE brainSCOPE')"
+  },
+  {
+   "from": "38781388",
+   "to": "38781369",
+   "kind": "same subjects",
+   "evidence": "McLean: Emani's SZBDMulti-Seq cohort is Ruzicka 2024's McLean cohort, 48 of 48 by identifier. Mount Sinai: partial subject overlap, 76 of Ruzicka's 92 MSSM subjects match a brainSCOPE CMC subject by fingerprint (17.2 expected by chance). gene-lists/donor_overlap/donor_overlap_report.md; overlap_summary.tsv"
+  },
+  {
+   "from": "coll:cmc",
+   "to": "38781388",
+   "kind": "partial subject overlap",
+   "evidence": "Fingerprint: 76 of Ruzicka 2024's 92 Mount Sinai subjects match a brainSCOPE CMC (CMC_MSSM_*) subject (67 one-to-one; 17.2 expected by chance). gene-lists/donor_overlap/donor_overlap_report.md; overlap_summary.tsv"
+  },
+  {
+   "from": "coll:nimh_hbcc",
+   "to": "42778699",
+   "kind": "same collection",
+   "evidence": "PsychAD (Lee 2025): 32 SZ and 129 controls from the NIMH Human Brain Collection Core; overlap with CMC-HBCC not checkable (anonymized donor IDs; CMC metadata under controlled access)"
+  },
+  {
+   "from": "coll:cmc",
+   "to": "42778699",
+   "kind": "partial subject overlap",
+   "evidence": "Fingerprint: PsychAD Mount Sinai subjects match 45 of brainSCOPE's 100 CMC subjects (14 SZ, 31 controls; 19.3 expected by chance, 95th percentile 24). gene-lists/donor_overlap/donor_overlap_report.md; overlap_summary.tsv"
+  },
+  {
+   "from": "coll:libd_brainseq",
+   "to": "42778699",
+   "kind": "partial subject overlap",
+   "evidence": "Fingerprint: PsychAD HBCC vs LIBD BrainSeq DLPFC, partial subject overlap (103 of 379 LIBD and 235 PsychAD HBCC subjects; chance mean 24.3). gene-lists/subject_relations/subject_relations.tsv"
+  },
+  {
+   "from": "coll:nimh_hbcc",
+   "to": "40480991",
+   "kind": "same collection",
+   "evidence": "PsychAD resource (Fullard 2025): NIMH HBCC is one of its brain banks"
+  },
+  {
+   "from": "40480991",
+   "to": "42778699",
+   "kind": "same samples (reanalysis)",
+   "evidence": "gene-lists/manifests/batch9_sc.json: Fullard 2025 is the PsychAD snRNA-seq data descriptor; the SZ vs control DE on those data is in Lee 2025"
+  },
+  {
+   "from": "coll:libd_brainseq",
+   "to": "37915216",
+   "kind": "same subjects, different tissue",
+   "evidence": "gene-lists/manifests/batch9_sc.json: iPSC organoids from dural fibroblasts of LIBD brain donors; the donors' postmortem caudate RNA-seq is in BrainSeq (abstract)"
+  },
+  {
+   "from": "coll:libd_brainseq",
+   "to": "36729133",
+   "kind": "same collection",
+   "evidence": "Matosin 2023 Table 1, cohort 1: Lieber Institute for Brain Development, BA9 (bulk; the single-nucleus data are cohort 5, NSW)"
+  },
+  {
+   "from": "coll:stanley_neuropathology_consortium",
+   "to": "36729133",
+   "kind": "same collection",
+   "evidence": "Matosin 2023 Table 1, cohort 4: Stanley Neuropathology Consortium, BA24a, 15 per group (immunoblot)"
+  },
+  {
+   "from": "34789849",
+   "to": "38263175",
+   "kind": "same samples (reanalysis)",
+   "evidence": "gene-lists/manifests/batch9_sc.json: Stankovic 2024 uses the same scRNA-seq data as Notaras 2022 (GSE184878)"
+  },
+  {
+   "from": "34789849",
+   "to": "39355378",
+   "kind": "same samples (reanalysis)",
+   "evidence": "gene-lists/manifests/batch9_sc.json: Yang 2024's single-cell part reanalyses the Notaras 2022 organoids (GSE184878) for mitophagy scores"
+  },
+  {
+   "from": "39227716",
+   "to": "40053590",
+   "kind": "same dataset",
+   "evidence": "GEO links both papers to GSE254569 (NSW orbitofrontal cortex snRNA-seq)"
+  },
+  {
+   "from": "36223459",
+   "to": "10.64898/2026.09.18.752621",
+   "kind": "pooled study",
+   "evidence": "gene-lists/manifests/batch9_sc.json: Endresz 2026 pools Batiuk 2022 (Zenodo 10.5281/zenodo.6921620)"
+  },
+  {
+   "from": "38781388",
+   "to": "10.64898/2026.09.18.752621",
+   "kind": "pooled study",
+   "evidence": "gene-lists/manifests/batch9_sc.json: Endresz 2026 pools McLean and MSSM 1 (Ruzicka 2024, Synapse syn25946131)"
+  },
+  {
+   "from": "38781369",
+   "to": "10.64898/2026.09.18.752621",
+   "kind": "pooled study",
+   "evidence": "gene-lists/manifests/batch9_sc.json: Endresz 2026 pools Multiome (brainSCOPE MultiomeBrain, syn51111084)"
+  },
+  {
+   "from": "39227716",
+   "to": "10.64898/2026.09.18.752621",
+   "kind": "pooled study",
+   "evidence": "gene-lists/manifests/batch9_sc.json: Endresz 2026 pools Frohlich 2024 (GSE254569, OFC)"
+  },
+  {
+   "from": "36223459",
+   "to": "40796563",
+   "kind": "pooled study",
+   "evidence": "Nakatsuka 2025 reanalyzes the Batiuk, Ruzicka and Ling single-nucleus cohorts (gene-lists/donor_overlap/donor_overlap_report.md; lane_overrides.json, lineage review 2026-09-24)"
+  },
+  {
+   "from": "38781388",
+   "to": "40796563",
+   "kind": "pooled study",
+   "evidence": "Nakatsuka 2025 reanalyzes the Batiuk, Ruzicka and Ling single-nucleus cohorts (gene-lists/donor_overlap/donor_overlap_report.md; lane_overrides.json, lineage review 2026-09-24)"
+  },
+  {
+   "from": "38448582",
+   "to": "40796563",
+   "kind": "pooled study",
+   "evidence": "Nakatsuka 2025 reanalyzes the Batiuk, Ruzicka and Ling single-nucleus cohorts (gene-lists/donor_overlap/donor_overlap_report.md; lane_overrides.json, lineage review 2026-09-24)"
+  }
+ ]
+}

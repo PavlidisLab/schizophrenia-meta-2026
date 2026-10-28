@@ -1,0 +1,86 @@
+# figure: Note 10 (antipsychotic and other exposures) - recount of studies with a per-sample antipsychotic or duration record and public expression, on the core-80 base
+# script: core80_sweep_2026-10-18/G5 (join of antipsychotic_counts_2026-10-14/counts.tsv sha256 2c5b7d648929 with base80_studies.tsv and supplementary/supp_table4_data_included.tsv sha256 1cdc06fc8649); run 2026-10-18
+# population: the 80 studies of the core base. 68 were assessed on 2026-10-14 (counts.tsv; 3 further rows of counts.tsv are not in the 80: Shao 2008 and two studies outside Table 4). The 12 studies added to the base afterwards (Weidenhofer 2006, Bowden 2008, Iwamoto 2004, Iwamoto 2005, Maschietto 2015, de Baumont 2015, Hu 2016, Arion 2017, Abdolmaleky 2019, Puvogel 2022, Arbabi 2025, Alsema 2025) are classified here from the Table 4 text only; no record was opened and nothing was downloaded (assessed_before = no)
+# class: testable = per-sample antipsychotic or duration field for cases, public per-sample metadata and public expression (rule of counts.tsv); testable_via_SMRI_workbook = Chen 2013, the Stanley series GSE35977 (the one dataset in which the score was regressed on dose and duration; per-donor dose and duration from the SMRI workbook matched to arrays); testable_provisional = the same rule applied to Table 4 text without opening the record; the other classes cannot be tested from public data
+# cohort_status_table4: cohort cluster of Table 4 (stanley, cmc+mssm+pitt+libd, aus, harvard, pritzker = 5 named clusters; independent = 13 studies each its own cluster, so 18 clusters; multi-bank = 7 studies in no cluster)
+pmid	label	cohort_status_table4	class	assessed_before	record_level	antipsychotic_field	duration_of_illness_field	expression_matrix_call	how_established
+11296301	Hakak 2001	cmc+mssm+pitt+libd	group_level_only	yes	group	12 SZ on neuroleptics, 4 SZ off medication (group counts)	none	not found	Table 4 text only (record not opened)
+15018814	Kuromitsu 2001	stanley	no_record	yes	none	none recorded	none recorded	by request	Table 4 text only (record not opened)
+15334603	Aston 2004	stanley	no_record	yes	none	none recorded	none recorded	not available	Table 4 text only (record not opened)
+16038679	Altar 2005	stanley	record_per_sample_not_testable	yes	sample	lifetime antipsychotic dose (Supplement 1, mmc1.xls)	none	by request	Table 4 text only (record not opened)
+18771015	Garbett 2008	cmc+mssm+pitt+libd	no_record	yes	none	none recorded	none recorded	not available	Table 4 text only (record not opened)
+18778695	Narayan 2008	aus	testable	yes	sample	drug dose (chlorpromazine equivalents) [mg]; type of drug	stage of illness (short/intermediate/long, GEO); per-subject illness duration in Supplementary Table 3 (mmc3.xls)	public external	verified in local record
+18985160	Mudge 2008	independent	testable	yes	sample	Treatment: drug name per SZ sample (olanzapine, haloperidol, clozapine and 6 others; no dose)	none	public external	verified in local record
+19255580	Maycox 2009	multi-bank	no_record	yes	none	none recorded	none recorded	public external	verified in local record
+19834500	Chu 2009	stanley	no_record	yes	none	none recorded	none recorded	by request	Table 4 text only (record not opened)
+20034564	Arion 2010	cmc+mssm+pitt+libd	record_per_sample_not_testable	yes	article-only	antidepressant, benzodiazepine and antipsychotic use at time of death (main-text Table 1, 8 matched pairs)	none	not available	Table 4 text only (record not opened)
+21091092	Schmitt 2011	independent	testable	yes	sample	none	illness duration (in years) [GEO]	public external	verified in local record
+21538462	Barnes 2011	independent	no_record	yes	none	none recorded	none recorded	public external	verified in local record
+22558445	Wu 2012	aus	no_record	yes	none	none recorded	none recorded	public external	Table 4 text only (record not opened)
+22869038	Fillman 2013	aus	toxicology_only	yes	sample	post-mortem toxicology (Supplementary Table 1; toxicology, not treatment record)	none	not found	Table 4 text only (record not opened)
+24169640	Hwang 2013	stanley	group_level_only	yes	group	antipsychotic dose (group summary)	none	by request	Table 4 text only (record not opened)
+24594777	Kohen 2014	stanley	no_record	yes	none	none recorded	none recorded	public external	Table 4 text only (record not opened)
+24628518	Pietersen 2014 (PV neurons)	harvard	no_record	yes	none	none recorded	none recorded	public external	Table 4 text only (record not opened)
+24702465	Pietersen 2014	harvard	no_record	yes	none	none recorded	none recorded	public external	verified in local record
+24776767	Xiao 2014	independent	testable	yes	sample	psychiatric, antidepressant, benzodiazepine, neuroleptic and mood-stabilizer medication flags (Table S1, 22 subjects)	age at onset only (illness duration not recorded as such; derivable as age minus age at onset, not counted)	public external	Table 4 text only (record not opened)
+25113377	Zhao 2015	stanley	no_record	yes	none	none recorded	none recorded	by request	Table 4 text only (record not opened)
+25560755	Arion 2015	cmc+mssm+pitt+libd	testable	yes	sample	psychotropic medication at death (Supplemental Table 1, per the article)	none	public external	Table 4 text only (record not opened)
+26585218	Mauney 2015	harvard	no_record	yes	none	none recorded	none recorded	not found	Table 4 text only (record not opened)
+27622934	Darby 2016	stanley	no_record	yes	none	none recorded	none recorded	by request	Table 4 text only (record not opened)
+27668389	Fromer 2016	cmc+mssm+pitt+libd	no_record	yes	none	none recorded	none recorded	controlled	Table 4 text only (record not opened)
+27801890	Scarr 2018	aus	record_per_sample_not_testable	yes	article-only	antipsychotic use and final recorded dose (Supplementary Table 1, docx)	duration of illness (Supplementary Table 1, docx)	by request	Table 4 text only (record not opened)
+27898074	Kim 2016	stanley	group_level_only	yes	group	antipsychotic dose (group summary)	none	not found	Table 4 text only (record not opened)
+27940260	Voisey 2017	independent	no_record	yes	none	none recorded	none recorded	not found	Table 4 text only (record not opened)
+28123834	Mladinov 2016	independent	no_record	yes	none	none recorded	none recorded	not found	Table 4 text only (record not opened)
+28809853	Chang 2017	cmc+mssm+pitt+libd	no_record	yes	none	none recorded	none recorded	public external	Table 4 text only (record not opened)
+29112193	Enwright 2018	cmc+mssm+pitt+libd	no_record	yes	none	none recorded	none recorded	not found	Table 4 text only (record not opened)
+29463818	Scarr 2018	aus	record_per_sample_not_testable	yes	article-only	final recorded antipsychotic dose (main-text Table 1)	duration of illness (main-text Table 1)	by request	Table 4 text only (record not opened)
+30050107	Jaffe 2018	cmc+mssm+pitt+libd	unknown_not_itemized	yes	unknown	not itemized in Table 4	not itemized in Table 4	public external	Table 4 text only (record not opened)
+31123247	Lanz 2019	cmc+mssm+pitt+libd	no_record	yes	none	none recorded	none recorded	public external	verified in local record
+31174959	Collado-Torres 2019	cmc+mssm+pitt+libd	unknown_not_itemized	yes	unknown	not itemized in Table 4	not itemized in Table 4	public external	Table 4 text only (record not opened)
+31288836	Mendizabal 2019	multi-bank	no_record	yes	none	none recorded	none recorded	public external	verified in local record
+32006661	Santarelli 2019	aus	testable	yes	sample	antipsychotic dose (per pair, Supplementary Table S6)	duration of illness (per pair, Supplementary Table S6); age of onset	public external	Table 4 text only (record not opened)
+32152472	Perez 2021	independent	testable	yes	sample	drug ON/OFF [GEO]	none	public external	verified in local record
+32203495	Jaffe 2020	cmc+mssm+pitt+libd	testable	yes	sample	medications; chlorpromazine-equivalent doses (sample table of astellas_dg_hg38_rseGene_n263.rda)	none	public external	Table 4 text only (record not opened)
+32513544	Zeppillo 2022	pritzker	record_per_sample_not_testable	yes	sample	prescribed medications / drug use (Supplementary data 1, mmc2.xlsx; antipsychotic not itemized)	none	not found	Table 4 text only (record not opened)
+32566292	Bakshi 2020	stanley	no_record	yes	none	none recorded	none recorded	by request	Table 4 text only (record not opened)
+33184259	Maas 2020	independent	no_record	yes	none	none recorded	none recorded	public external	Table 4 text only (record not opened)
+33558674	Akula 2021	cmc+mssm+pitt+libd	no_record	yes	none	none recorded	none recorded	controlled	Table 4 text only (record not opened)
+34004381	Gebicke-Haerter 2021	independent	record_per_sample_not_testable	yes	article-only	chlorpromazine-equivalent last dose and last 10 years; medication (main-text Table 1)	duration of disease (main-text Table 1); age at onset	not found	Table 4 text only (record not opened)
+34059796	Weissleder 2021	stanley	record_per_sample_not_testable	yes	article-only	lifetime antipsychotic dose (Supplementary Table S4, docx)	duration of illness (Supplementary Table S4, docx)	not found	Table 4 text only (record not opened)
+34272489	Wu 2021	cmc+mssm+pitt+libd	testable	yes	sample	medication on/off/unknown [GEO]	none	public external	Table 4 text only (record not opened)
+34440415	Lindholm Carlström 2021	harvard	record_per_sample_not_testable	yes	sample	antipsychotic drugs (Table S1.xlsx)	age of onset only	controlled	Table 4 text only (record not opened)
+36223459	Batiuk 2022	independent	no_record	yes	none	none recorded	none recorded	public external	Table 4 text only (record not opened)
+36319771	Benjamin 2022	cmc+mssm+pitt+libd	testable	yes	sample	antipsychotic status at death and lifetime	none	public external	Table 4 text only (record not opened)
+36932057	Schulmann 2023	cmc+mssm+pitt+libd	no_record	yes	none	none recorded	none recorded	controlled	verified in local record
+37498306	Arihisa 2023	independent	record_per_sample_not_testable	yes	article-only	chlorpromazine equivalent (main-text Table 1)	duration of illness (main-text Table 1)	by request	Table 4 text only (record not opened)
+38448582	Ling 2024	harvard	no_record	yes	none	none recorded	none recorded	controlled	Table 4 text only (record not opened)
+38781388	Ruzicka 2024	multi-bank	record_per_sample_not_testable	yes	sample	antipsychotics typical, atypical, any (Data S1 xlsx)	none	controlled	Table 4 text only (record not opened)
+39526318	Zhang 2026	stanley	no_record	yes	none	none recorded	none recorded	by request	Table 4 text only (record not opened)
+41174894	Yalcinbas 2025	cmc+mssm+pitt+libd	unknown_not_itemized	yes	unknown	not itemized in Table 4	not itemized in Table 4	public external	Table 4 text only (record not opened)
+41210297	Mas 2025	independent	toxicology_only	yes	article-only	drugs in blood (Supplementary table 2, docx; toxicology)	none	by request	Table 4 text only (record not opened)
+41567988	Mendez-Victoriano 2026	multi-bank	group_level_only	yes	group	lifetime chlorpromazine equivalent dose (group summary)	duration of illness (group summary); age at onset	not found	Table 4 text only (record not opened)
+41757081	Kwon 2026	cmc+mssm+pitt+libd	no_record	yes	none	none recorded	none recorded	public external	Table 4 text only (record not opened)
+41942462	Singh 2026	cmc+mssm+pitt+libd	no_record	yes	none	none recorded	none recorded	public external	Table 4 text only (record not opened)
+42461238	Dean 2026	aus	no_record	yes	none	none recorded	none recorded	by request	Table 4 text only (record not opened)
+42778699	Lee 2026 (PsychAD)	multi-bank	no_record	yes	none	none recorded	none recorded	controlled	Table 4 text only (record not opened)
+17822540	Saetre 2007	multi-bank	record_per_sample_not_testable	yes	sample	antipsychotic treatment (SDRF, 284 rows; Supplementary Table 1 describes each subject)	clinical history (content not checked)	public external	Table 4 text only (record not opened)
+38648100	Zhu 2024	independent	toxicology_only	yes	article-only	"antipsychotics in blood, additional drugs in blood (elife-92393-supp1.doc and supp2.doc; toxicology); GEO ""treatment"" field (meaning not checked)"	none	public external	Table 4 text only (record not opened)
+16236523	Weidenhofer 2006	aus	record_per_sample_not_testable	no				not found	Table 4 text only (record not opened): per-pair antipsychotic (Table 1 of the article); expression not found
+18445270	Bowden 2008	aus	record_per_sample_not_testable	no				not found	Table 4 text only (record not opened): per-pair chlorpromazine equivalents and duration (Table 1 of the article); expression not found
+36192459	Puvogel 2022	stanley	record_per_sample_not_testable	no				by request	Table 4 text only (record not opened): lifetime antipsychotic dose per case (Supplementary Table 1); expression by request
+39237723	Arbabi 2025	cmc+mssm+pitt+libd	group_level_only	no				by request	Table 4 text only (record not opened): medication at death at group level (Table 1); data on request
+39397771	Alsema 2025	stanley	record_per_sample_not_testable	no				by request	Table 4 text only (record not opened): lifetime antipsychotic dose per donor (Table S1); expression by request
+23147385	Chen 2013	stanley	testable_via_SMRI_workbook	yes	sample (SMRI workbook, by donor; GEO rows matched to donors, 152 of 168 arrays for GSE35977)	lifetime antipsychotic dose, fluphenazine-equivalent mg (SMRI ArrayCollection.xlsx column LifetimeAntipsychotics; not in GEO)	DurationOfIllness, years (SMRI ArrayCollection.xlsx; not in GEO)	public external	local analysis, workbook not redistributable
+25981335	Maschietto 2015	stanley	no_record	no				public external	Table 4 text only (record not opened): age of onset only; no medication field
+25487697	de Baumont 2015	stanley	no_record	no				public external	Table 4 text only (record not opened): no medication field
+28754123	Ramaker 2017	pritzker	no_record	yes	none	none	none	public external	verified in local record
+28476208	Arion 2017	cmc+mssm+pitt+libd	testable_provisional	no				public external	Table 4 text only (record not opened): medication and tobacco use at death per subject (Supplementary Table S1); expression public (GSE87610); Table 4 text only; not antipsychotic-specific, as Arion 2015
+19088852	Harris 2008	stanley	no_record	yes	none	none	none	public external	verified in local record
+30468562	Abdolmaleky 2019	stanley	no_record	no				public external	Table 4 text only (record not opened): laterality only
+27661005	Hu 2016	stanley	no_record	no				public external	Table 4 text only (record not opened): no per-sample fields beyond diagnosis
+14743183	Iwamoto 2004	stanley	no_record	no				public external	Table 4 text only (record not opened): GEO fields diagnosis and region only; demographics on request
+15563509	Iwamoto 2005	stanley	record_in_article_table_expression_public_not_counted	no				public external	Table 4 text only (record not opened): per-subject medication printed in main-text Table 1 (102 rows); expression public (GEO); GEO records carry diagnosis and region only, so rows would have to be matched to arrays by hand
+31053723	Pai 2019 (own list)	multi-bank	no_record	yes	none	none recorded	none recorded	public external	verified in local record
+36302706	Ketchesin 2023 (own list)	cmc+mssm+pitt+libd	no_record	yes	none	none recorded	none recorded	public external	verified in local record
+39227716	Frohlich 2024 (own list)	aus	no_record	yes	none	none recorded	none recorded	public external	Table 4 text only (record not opened)

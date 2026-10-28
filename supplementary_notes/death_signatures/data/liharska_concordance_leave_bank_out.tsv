@@ -1,0 +1,24 @@
+# script: scripts/s2_recompute.py, run 2026-10-18; seed 20261018; 10,000 matched sets; bootstrap over genes 2,000 (percentile 95%)
+# inputs: runs/*/recurrence_genes.tsv (recurrence_fork.py sha 044e2c702342 on the private copy of B80/ws on the remote environment; include file = primary_pmids.txt minus the studies named; validation run 'full' equals B80/out/recurrence_genes.tsv, sha dda5eb621c15, on all data rows); Liharska ST1 data/liv_pm_de_ST1.tsv in liharska_living_vs_pm_2026-10-18 (sha d8a4171a6329)
+# concordant = sign(LIV-PM t) equals SZ sign (sign(up - down)); positive t = higher in postmortem. SIGNREDERIVED: original 383 genes, sign from remaining lists (genes with no remaining list or a tie dropped = n_set_genes - n_kept). SETREBUILT: genes with q_bh < 0.1 in the run.
+run	studies_removed	variant	n_set_genes	n_kept	n_concordant	frac	ci_lo	ci_hi	null_mean	null_lo	null_hi	frac_minus_null	pool_genes	strata_without_pool_gene
+full	none (validation)	SIGNREDERIVED	383	374	296	0.7914	0.7487	0.8316	0.5813	0.5321	0.6283	0.2101	11751	0
+full	none (validation)	SETREBUILT	383	374	296	0.7914	0.7487	0.8316	0.5813	0.5321	0.6283	0.2101	11751	0
+no_bank9	all nine bank-sharing studies	SIGNREDERIVED	383	375	293	0.7813	0.7387	0.824	0.5829	0.536	0.6293	0.1985	11223	0
+no_bank9	all nine bank-sharing studies	SETREBUILT	196	192	161	0.8385	0.7865	0.8906	0.5987	0.5312	0.6667	0.2398	11406	0
+drop_24702465	Pietersen 2014	SIGNREDERIVED	383	374	296	0.7914	0.7513	0.8316	0.5804	0.5321	0.6283	0.211	11701	0
+drop_24702465	Pietersen 2014	SETREBUILT	362	354	283	0.7994	0.7571	0.8418	0.5808	0.5311	0.6299	0.2186	11721	0
+drop_24628518	Pietersen 2014 (PV neurons)	SIGNREDERIVED	383	374	296	0.7914	0.7487	0.8316	0.5819	0.5348	0.6283	0.2095	11715	0
+drop_24628518	Pietersen 2014 (PV neurons)	SETREBUILT	365	356	280	0.7865	0.7416	0.8287	0.5827	0.5337	0.632	0.2038	11733	0
+drop_34440415	Lindholm Carlstrom 2021	SIGNREDERIVED	383	374	296	0.7914	0.7487	0.8316	0.5815	0.5348	0.6283	0.21	11746	0
+drop_34440415	Lindholm Carlstrom 2021	SETREBUILT	376	367	289	0.7875	0.7439	0.8283	0.5802	0.5341	0.6267	0.2073	11753	0
+drop_38448582	Ling 2024	SIGNREDERIVED	383	374	296	0.7914	0.7487	0.8316	0.5813	0.5321	0.6283	0.2101	11751	0
+drop_38448582	Ling 2024	SETREBUILT	375	366	292	0.7978	0.7541	0.8388	0.581	0.5328	0.6284	0.2169	11759	0
+drop_38781388	Ruzicka 2024	SIGNREDERIVED	383	373	293	0.7855	0.7453	0.8257	0.5839	0.5362	0.63	0.2016	11556	0
+drop_38781388	Ruzicka 2024	SETREBUILT	294	286	234	0.8182	0.7762	0.8636	0.5906	0.535	0.6434	0.2276	11643	0
+drop_31288836	Mendizabal 2019	SIGNREDERIVED	383	373	295	0.7909	0.748	0.8311	0.5807	0.5335	0.6273	0.2102	11726	0
+drop_31288836	Mendizabal 2019	SETREBUILT	376	367	291	0.7929	0.752	0.8338	0.5804	0.5313	0.6294	0.2125	11732	0
+drop_19255580	Maycox 2009	SIGNREDERIVED	383	373	294	0.7882	0.748	0.8258	0.5807	0.5335	0.6273	0.2075	11563	0
+drop_19255580	Maycox 2009	SETREBUILT	328	318	253	0.7956	0.7484	0.8396	0.5826	0.5314	0.6352	0.213	11618	0
+drop_17822540	Saetre 2007	SIGNREDERIVED	383	375	297	0.792	0.7519	0.832	0.5823	0.5333	0.6293	0.2097	11745	0
+drop_17822540	Saetre 2007	SETREBUILT	367	360	286	0.7944	0.7528	0.8361	0.5844	0.5361	0.6333	0.2101	11760	0

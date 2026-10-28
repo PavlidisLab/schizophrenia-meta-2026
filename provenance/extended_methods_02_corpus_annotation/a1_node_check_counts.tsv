@@ -1,0 +1,25 @@
+# script: A/scripts/a1_counts.py; date 2026-10-19; seed none
+# input: schizophrenia-transcriptome-replication/corpus/node_check_2026-09-27/checked_1.tsv sha256 5a7f7bf0884c
+# input: schizophrenia-transcriptome-replication/corpus/node_check_2026-09-27/checked_2.tsv sha256 000557e1311e
+# input: schizophrenia-transcriptome-replication/corpus/node_check_2026-09-27/checked_3.tsv sha256 0ade00250449
+# base: 509-study corpus (all but covariate readers); covariate readers: core-80
+quantity	value
+studies	441
+field_checks	2522
+rows_field_cases	441
+rows_field_controls	441
+rows_field_platform	442
+rows_field_tech_tier	441
+rows_field_tissue	441
+rows_field_year	316
+rows_with_quote	2372
+rows_without_quote	150
+no_quote_field_cases	1
+no_quote_field_controls	3
+no_quote_field_tech_tier	49
+no_quote_field_tissue	6
+no_quote_field_year	91
+verdict_incomplete	647
+verdict_ok	1525
+verdict_unclear	132
+verdict_wrong	218

@@ -1,0 +1,992 @@
+# script: scripts/ieg_across_contrasts.py (NEW analysis), run 2026-10-18; seeds: numpy default_rng([20261018, contrast index, set index, variant]); 10000 matched draws per combination; no model calls
+# gene sets: S7 = DUSP1,EGR1,FOS,GADD45G,MAFF,NR4A1,PPP1R15A (rPRG x 383 of core-80 base); Tyssowski 2018 Table S6 mapped by symbol; mapping (mouse symbols, mapped, distinct human): {"rPRG": [19, 19, 19], "dPRG": [116, 113, 113], "SRG": [38, 35, 35]}
+# sign convention: positive effect = higher in the later / dead / slow-death / postmortem / warmer / case condition; Dachet effect = log2FC; null 95% range = 2.5 to 97.5 percentile of the null set means
+# inputs sha256 (first 12): yaqubi_contrast_effects a1eda8a59dd6; yaqubi_contrast_definitions 4884b4997c06; dachet_GSE153669_RAW.tar cf6f11a4099f; liharska_ST1 d8a4171a6329; collado_torres_TableS4 5024842c8776; gtex_hardy_t_by_region 54f989c55753; gtex_slow_vs_fast_t_by_tissue a41c086d6312; gtex_donor_counts 6649462e1a9f; pritzker_agonal_axis 1423d5dae861; b_independent_set d5ab1b021aff; b_de/GSE208338 b6c411771878; b_de/GSE35977 8ac832840da9; b_de/GSE35974 982b4c022e8b; b_de/GSE202537_caudate 716e84d64b5c; b_de/GSE202537_putamen c1c8fc87a14a; b_de/GSE202537_NAc f6ba6e8d48a8; b_de/GSE21138 c16906ca6c41; b_de/GSE17612 8e0d0982fad2; b_de/GSE80655_AnCg 535840d0a806; b_de/GSE80655_DLPFC 5612feb5f6d5; b_de/GSE80655_nAcc c06eb4f87dbf; b_de/GSE92538_GPL570 266699ec6564; b_de/GSE21935 b85add032607; b_de/GSE53987_striatum 4b24c595617c; b_de/GSE53987_BA46 18b414676873; b_de/GSE53987_hippocampus f468299733b7; b_de/GSE224683 b7dd554241bb; b_de/GSE92538_GPL96 4ffae85695d3; b_de/GSE138082_CA1 a7c9e5f71715; b_de/GSE138082_DG 92746fc651d3; b_de/GSE138082_CA3 717401342be7; b_de/GSE26927_temporal 3d7ff59e1393; sc_cross_long 4b428a2a9d7d; rec dda5eb621c15; sets 3c42f67cdd7a; prior 68272e907b72; ph 74fdf88878ba; tyssowski 88ea6e7eb824; hgnc 69bb5722d5a4; halflife 4b3b3a8733f5; n15 12db3cf7165d
+contrast_group	contrast	gene	effect	stat_unit	P	direction	sz_direction	sz_lists_up	sz_lists_down	concordant_with_sz	P_below_0p05	halflife_pct
+Yaqubi surgical holds	Yaqubi: 6 h at 4 C vs frozen	DUSP1	-0.36984	t (OLS, own refit, not DESeq2)	0.71247	down	down	2	9	True	False	0.021552
+Yaqubi surgical holds	Yaqubi: 6 h at 4 C vs frozen	EGR1	0.27044	t (OLS, own refit, not DESeq2)	0.78751	up	down	1	11	False	False	2.4856
+Yaqubi surgical holds	Yaqubi: 6 h at 4 C vs frozen	FOS	-0.29747	t (OLS, own refit, not DESeq2)	0.76687	down	down	2	6	True	False	0.28017
+Yaqubi surgical holds	Yaqubi: 6 h at 4 C vs frozen	GADD45G	-1.091	t (OLS, own refit, not DESeq2)	0.27853	down	up	8	1	False	False	0.19397
+Yaqubi surgical holds	Yaqubi: 6 h at 4 C vs frozen	MAFF	-0.38309	t (OLS, own refit, not DESeq2)	0.70266	down	up	8	2	False	False	15.704
+Yaqubi surgical holds	Yaqubi: 6 h at 4 C vs frozen	NR4A1	1.468	t (OLS, own refit, not DESeq2)	0.14599	up	down	1	11	False	False	11.681
+Yaqubi surgical holds	Yaqubi: 6 h at 4 C vs frozen	PPP1R15A	2.1739	t (OLS, own refit, not DESeq2)	0.032632	up	up	6	2	True	True	5.704
+Yaqubi surgical holds	Yaqubi: 24 h at 4 C vs frozen	DUSP1	-1.3314	t (OLS, own refit, not DESeq2)	0.18679	down	down	2	9	True	False	0.021552
+Yaqubi surgical holds	Yaqubi: 24 h at 4 C vs frozen	EGR1	0.00133	t (OLS, own refit, not DESeq2)	0.99894	up	down	1	11	False	False	2.4856
+Yaqubi surgical holds	Yaqubi: 24 h at 4 C vs frozen	FOS	1.3292	t (OLS, own refit, not DESeq2)	0.18751	up	down	2	6	False	False	0.28017
+Yaqubi surgical holds	Yaqubi: 24 h at 4 C vs frozen	GADD45G	0.36775	t (OLS, own refit, not DESeq2)	0.71402	up	up	8	1	True	False	0.19397
+Yaqubi surgical holds	Yaqubi: 24 h at 4 C vs frozen	MAFF	1.5765	t (OLS, own refit, not DESeq2)	0.1188	up	up	8	2	True	False	15.704
+Yaqubi surgical holds	Yaqubi: 24 h at 4 C vs frozen	NR4A1	0.65027	t (OLS, own refit, not DESeq2)	0.51736	up	down	1	11	False	False	11.681
+Yaqubi surgical holds	Yaqubi: 24 h at 4 C vs frozen	PPP1R15A	6.5994	t (OLS, own refit, not DESeq2)	3.9557e-09	up	up	6	2	True	True	5.704
+Yaqubi surgical holds	Yaqubi: 36 h at 4 C vs frozen	DUSP1	-1.7899	t (OLS, own refit, not DESeq2)	0.077199	down	down	2	9	True	False	0.021552
+Yaqubi surgical holds	Yaqubi: 36 h at 4 C vs frozen	EGR1	-0.2496	t (OLS, own refit, not DESeq2)	0.80353	down	down	1	11	True	False	2.4856
+Yaqubi surgical holds	Yaqubi: 36 h at 4 C vs frozen	FOS	1.3	t (OLS, own refit, not DESeq2)	0.19727	up	down	2	6	False	False	0.28017
+Yaqubi surgical holds	Yaqubi: 36 h at 4 C vs frozen	GADD45G	-0.29975	t (OLS, own refit, not DESeq2)	0.76514	down	up	8	1	False	False	0.19397
+Yaqubi surgical holds	Yaqubi: 36 h at 4 C vs frozen	MAFF	2.5358	t (OLS, own refit, not DESeq2)	0.013142	up	up	8	2	True	True	15.704
+Yaqubi surgical holds	Yaqubi: 36 h at 4 C vs frozen	NR4A1	1.0567	t (OLS, own refit, not DESeq2)	0.2938	up	down	1	11	False	False	11.681
+Yaqubi surgical holds	Yaqubi: 36 h at 4 C vs frozen	PPP1R15A	7.5201	t (OLS, own refit, not DESeq2)	6.5761e-11	up	up	6	2	True	True	5.704
+Yaqubi surgical holds	Yaqubi: 6 h at 20 C vs frozen	DUSP1	-2.3357	t (OLS, own refit, not DESeq2)	0.021981	down	down	2	9	True	True	0.021552
+Yaqubi surgical holds	Yaqubi: 6 h at 20 C vs frozen	EGR1	-2.5851	t (OLS, own refit, not DESeq2)	0.011528	down	down	1	11	True	True	2.4856
+Yaqubi surgical holds	Yaqubi: 6 h at 20 C vs frozen	FOS	1.0511	t (OLS, own refit, not DESeq2)	0.29634	up	down	2	6	False	False	0.28017
+Yaqubi surgical holds	Yaqubi: 6 h at 20 C vs frozen	GADD45G	-1.5941	t (OLS, own refit, not DESeq2)	0.11481	down	up	8	1	False	False	0.19397
+Yaqubi surgical holds	Yaqubi: 6 h at 20 C vs frozen	MAFF	2.1676	t (OLS, own refit, not DESeq2)	0.033127	up	up	8	2	True	True	15.704
+Yaqubi surgical holds	Yaqubi: 6 h at 20 C vs frozen	NR4A1	-1.2392	t (OLS, own refit, not DESeq2)	0.21884	down	down	1	11	True	False	11.681
+Yaqubi surgical holds	Yaqubi: 6 h at 20 C vs frozen	PPP1R15A	6.4381	t (OLS, own refit, not DESeq2)	8.0042e-09	up	up	6	2	True	True	5.704
+Yaqubi surgical holds	Yaqubi: 24 h at 20 C vs frozen	DUSP1	-4.2398	t (OLS, own refit, not DESeq2)	5.8949e-05	down	down	2	9	True	True	0.021552
+Yaqubi surgical holds	Yaqubi: 24 h at 20 C vs frozen	EGR1	-3.4248	t (OLS, own refit, not DESeq2)	0.00096831	down	down	1	11	True	True	2.4856
+Yaqubi surgical holds	Yaqubi: 24 h at 20 C vs frozen	FOS	0.94629	t (OLS, own refit, not DESeq2)	0.34682	up	down	2	6	False	False	0.28017
+Yaqubi surgical holds	Yaqubi: 24 h at 20 C vs frozen	GADD45G	-3.0229	t (OLS, own refit, not DESeq2)	0.0033512	down	up	8	1	False	True	0.19397
+Yaqubi surgical holds	Yaqubi: 24 h at 20 C vs frozen	MAFF	6.5448	t (OLS, own refit, not DESeq2)	5.0245e-09	up	up	8	2	True	True	15.704
+Yaqubi surgical holds	Yaqubi: 24 h at 20 C vs frozen	NR4A1	-3.0259	t (OLS, own refit, not DESeq2)	0.0033223	down	down	1	11	True	True	11.681
+Yaqubi surgical holds	Yaqubi: 24 h at 20 C vs frozen	PPP1R15A	12.153	t (OLS, own refit, not DESeq2)	6.0622e-20	up	up	6	2	True	True	5.704
+Yaqubi surgical holds	Yaqubi: 36 h at 20 C vs frozen	DUSP1	-4.5999	t (OLS, own refit, not DESeq2)	1.5419e-05	down	down	2	9	True	True	0.021552
+Yaqubi surgical holds	Yaqubi: 36 h at 20 C vs frozen	EGR1	-4.3289	t (OLS, own refit, not DESeq2)	4.2523e-05	down	down	1	11	True	True	2.4856
+Yaqubi surgical holds	Yaqubi: 36 h at 20 C vs frozen	FOS	0.7876	t (OLS, own refit, not DESeq2)	0.43323	up	down	2	6	False	False	0.28017
+Yaqubi surgical holds	Yaqubi: 36 h at 20 C vs frozen	GADD45G	-2.3375	t (OLS, own refit, not DESeq2)	0.021882	down	up	8	1	False	True	0.19397
+Yaqubi surgical holds	Yaqubi: 36 h at 20 C vs frozen	MAFF	6.7699	t (OLS, own refit, not DESeq2)	1.8687e-09	up	up	8	2	True	True	15.704
+Yaqubi surgical holds	Yaqubi: 36 h at 20 C vs frozen	NR4A1	-3.9985	t (OLS, own refit, not DESeq2)	0.00013997	down	down	1	11	True	True	11.681
+Yaqubi surgical holds	Yaqubi: 36 h at 20 C vs frozen	PPP1R15A	13.394	t (OLS, own refit, not DESeq2)	3.0532e-22	up	up	6	2	True	True	5.704
+Yaqubi surgical holds	Yaqubi: 20 C minus 4 C, 6 h	DUSP1	-1.9264	t (OLS, own refit, not DESeq2)	0.057559	down	down	2	9	True	False	0.021552
+Yaqubi surgical holds	Yaqubi: 20 C minus 4 C, 6 h	EGR1	-2.783	t (OLS, own refit, not DESeq2)	0.0066991	down	down	1	11	True	True	2.4856
+Yaqubi surgical holds	Yaqubi: 20 C minus 4 C, 6 h	FOS	1.3111	t (OLS, own refit, not DESeq2)	0.19352	up	down	2	6	False	False	0.28017
+Yaqubi surgical holds	Yaqubi: 20 C minus 4 C, 6 h	GADD45G	-0.51178	t (OLS, own refit, not DESeq2)	0.6102	down	up	8	1	False	False	0.19397
+Yaqubi surgical holds	Yaqubi: 20 C minus 4 C, 6 h	MAFF	2.4833	t (OLS, own refit, not DESeq2)	0.015082	up	up	8	2	True	True	15.704
+Yaqubi surgical holds	Yaqubi: 20 C minus 4 C, 6 h	NR4A1	-2.6157	t (OLS, own refit, not DESeq2)	0.010618	down	down	1	11	True	True	11.681
+Yaqubi surgical holds	Yaqubi: 20 C minus 4 C, 6 h	PPP1R15A	4.2044	t (OLS, own refit, not DESeq2)	6.7027e-05	up	up	6	2	True	True	5.704
+Yaqubi surgical holds	Yaqubi: 20 C minus 4 C, 24 h	DUSP1	-2.6047	t (OLS, own refit, not DESeq2)	0.010937	down	down	2	9	True	True	0.021552
+Yaqubi surgical holds	Yaqubi: 20 C minus 4 C, 24 h	EGR1	-3.0687	t (OLS, own refit, not DESeq2)	0.0029243	down	down	1	11	True	True	2.4856
+Yaqubi surgical holds	Yaqubi: 20 C minus 4 C, 24 h	FOS	-0.34317	t (OLS, own refit, not DESeq2)	0.73236	down	down	2	6	True	False	0.28017
+Yaqubi surgical holds	Yaqubi: 20 C minus 4 C, 24 h	GADD45G	-3.037	t (OLS, own refit, not DESeq2)	0.0032141	down	up	8	1	False	True	0.19397
+Yaqubi surgical holds	Yaqubi: 20 C minus 4 C, 24 h	MAFF	4.4497	t (OLS, own refit, not DESeq2)	2.7163e-05	up	up	8	2	True	True	15.704
+Yaqubi surgical holds	Yaqubi: 20 C minus 4 C, 24 h	NR4A1	-3.2927	t (OLS, own refit, not DESeq2)	0.0014721	down	down	1	11	True	True	11.681
+Yaqubi surgical holds	Yaqubi: 20 C minus 4 C, 24 h	PPP1R15A	4.973	t (OLS, own refit, not DESeq2)	3.6273e-06	up	up	6	2	True	True	5.704
+Yaqubi surgical holds	Yaqubi: 20 C minus 4 C, 36 h	DUSP1	-2.8562	t (OLS, own refit, not DESeq2)	0.0054453	down	down	2	9	True	True	0.021552
+Yaqubi surgical holds	Yaqubi: 20 C minus 4 C, 36 h	EGR1	-3.942	t (OLS, own refit, not DESeq2)	0.00017067	down	down	1	11	True	True	2.4856
+Yaqubi surgical holds	Yaqubi: 20 C minus 4 C, 36 h	FOS	-0.37926	t (OLS, own refit, not DESeq2)	0.70549	down	down	2	6	True	False	0.28017
+Yaqubi surgical holds	Yaqubi: 20 C minus 4 C, 36 h	GADD45G	-1.9844	t (OLS, own refit, not DESeq2)	0.050601	down	up	8	1	False	False	0.19397
+Yaqubi surgical holds	Yaqubi: 20 C minus 4 C, 36 h	MAFF	4.2898	t (OLS, own refit, not DESeq2)	4.9103e-05	up	up	8	2	True	True	15.704
+Yaqubi surgical holds	Yaqubi: 20 C minus 4 C, 36 h	NR4A1	-4.766	t (OLS, own refit, not DESeq2)	8.1515e-06	down	down	1	11	True	True	11.681
+Yaqubi surgical holds	Yaqubi: 20 C minus 4 C, 36 h	PPP1R15A	6.2999	t (OLS, own refit, not DESeq2)	1.4583e-08	up	up	6	2	True	True	5.704
+Yaqubi autopsy	Yaqubi: autopsy short PMI vs frozen	DUSP1	0.32882	t (OLS, own refit, not DESeq2)	0.74555	up	down	2	9	False	False	0.021552
+Yaqubi autopsy	Yaqubi: autopsy short PMI vs frozen	EGR1	0.77909	t (OLS, own refit, not DESeq2)	0.44462	up	down	1	11	False	False	2.4856
+Yaqubi autopsy	Yaqubi: autopsy short PMI vs frozen	FOS	-0.24911	t (OLS, own refit, not DESeq2)	0.8057	down	down	2	6	True	False	0.28017
+Yaqubi autopsy	Yaqubi: autopsy short PMI vs frozen	GADD45G	-3.6239	t (OLS, own refit, not DESeq2)	0.0015909	down	up	8	1	False	True	0.19397
+Yaqubi autopsy	Yaqubi: autopsy short PMI vs frozen	MAFF	-0.32985	t (OLS, own refit, not DESeq2)	0.74478	down	up	8	2	False	False	15.704
+Yaqubi autopsy	Yaqubi: autopsy short PMI vs frozen	NR4A1	1.3608	t (OLS, own refit, not DESeq2)	0.188	up	down	1	11	False	False	11.681
+Yaqubi autopsy	Yaqubi: autopsy short PMI vs frozen	PPP1R15A	1.5319	t (OLS, own refit, not DESeq2)	0.14047	up	up	6	2	True	False	5.704
+Yaqubi autopsy	Yaqubi: autopsy long PMI vs frozen	DUSP1	2.9535	t (OLS, own refit, not DESeq2)	0.0060573	up	down	2	9	False	True	0.021552
+Yaqubi autopsy	Yaqubi: autopsy long PMI vs frozen	EGR1	1.9137	t (OLS, own refit, not DESeq2)	0.065244	up	down	1	11	False	False	2.4856
+Yaqubi autopsy	Yaqubi: autopsy long PMI vs frozen	FOS	1.7842	t (OLS, own refit, not DESeq2)	0.084501	up	down	2	6	False	False	0.28017
+Yaqubi autopsy	Yaqubi: autopsy long PMI vs frozen	GADD45G	-4.0456	t (OLS, own refit, not DESeq2)	0.00033685	down	up	8	1	False	True	0.19397
+Yaqubi autopsy	Yaqubi: autopsy long PMI vs frozen	MAFF	1.129	t (OLS, own refit, not DESeq2)	0.26784	up	up	8	2	True	False	15.704
+Yaqubi autopsy	Yaqubi: autopsy long PMI vs frozen	NR4A1	4.1916	t (OLS, own refit, not DESeq2)	0.00022499	up	down	1	11	False	True	11.681
+Yaqubi autopsy	Yaqubi: autopsy long PMI vs frozen	PPP1R15A	1.857	t (OLS, own refit, not DESeq2)	0.073157	up	up	6	2	True	False	5.704
+Dachet time course (1 patient)	Dachet: 1 h vs 0 h	DUSP1	1.2024	log2FC (log2(x+1); no t, no P)		up	down	2	9	False		0.021552
+Dachet time course (1 patient)	Dachet: 1 h vs 0 h	EGR1	0.92839	log2FC (log2(x+1); no t, no P)		up	down	1	11	False		2.4856
+Dachet time course (1 patient)	Dachet: 1 h vs 0 h	FOS	2.0183	log2FC (log2(x+1); no t, no P)		up	down	2	6	False		0.28017
+Dachet time course (1 patient)	Dachet: 1 h vs 0 h	GADD45G	0.028076	log2FC (log2(x+1); no t, no P)		up	up	8	1	True		0.19397
+Dachet time course (1 patient)	Dachet: 1 h vs 0 h	MAFF	0.13557	log2FC (log2(x+1); no t, no P)		up	up	8	2	True		15.704
+Dachet time course (1 patient)	Dachet: 1 h vs 0 h	NR4A1	1.22	log2FC (log2(x+1); no t, no P)		up	down	1	11	False		11.681
+Dachet time course (1 patient)	Dachet: 1 h vs 0 h	PPP1R15A	0.11927	log2FC (log2(x+1); no t, no P)		up	up	6	2	True		5.704
+Dachet time course (1 patient)	Dachet: 2 h vs 0 h	DUSP1	0.69875	log2FC (log2(x+1); no t, no P)		up	down	2	9	False		0.021552
+Dachet time course (1 patient)	Dachet: 2 h vs 0 h	EGR1	0.17156	log2FC (log2(x+1); no t, no P)		up	down	1	11	False		2.4856
+Dachet time course (1 patient)	Dachet: 2 h vs 0 h	FOS	1.396	log2FC (log2(x+1); no t, no P)		up	down	2	6	False		0.28017
+Dachet time course (1 patient)	Dachet: 2 h vs 0 h	GADD45G	0.21451	log2FC (log2(x+1); no t, no P)		up	up	8	1	True		0.19397
+Dachet time course (1 patient)	Dachet: 2 h vs 0 h	MAFF	-0.34445	log2FC (log2(x+1); no t, no P)		down	up	8	2	False		15.704
+Dachet time course (1 patient)	Dachet: 2 h vs 0 h	NR4A1	-0.059357	log2FC (log2(x+1); no t, no P)		down	down	1	11	True		11.681
+Dachet time course (1 patient)	Dachet: 2 h vs 0 h	PPP1R15A	0.15352	log2FC (log2(x+1); no t, no P)		up	up	6	2	True		5.704
+Dachet time course (1 patient)	Dachet: 4 h vs 0 h	DUSP1	0.62845	log2FC (log2(x+1); no t, no P)		up	down	2	9	False		0.021552
+Dachet time course (1 patient)	Dachet: 4 h vs 0 h	EGR1	0.52504	log2FC (log2(x+1); no t, no P)		up	down	1	11	False		2.4856
+Dachet time course (1 patient)	Dachet: 4 h vs 0 h	FOS	1.3506	log2FC (log2(x+1); no t, no P)		up	down	2	6	False		0.28017
+Dachet time course (1 patient)	Dachet: 4 h vs 0 h	GADD45G	-0.254	log2FC (log2(x+1); no t, no P)		down	up	8	1	False		0.19397
+Dachet time course (1 patient)	Dachet: 4 h vs 0 h	MAFF	0.41117	log2FC (log2(x+1); no t, no P)		up	up	8	2	True		15.704
+Dachet time course (1 patient)	Dachet: 4 h vs 0 h	NR4A1	0.44445	log2FC (log2(x+1); no t, no P)		up	down	1	11	False		11.681
+Dachet time course (1 patient)	Dachet: 4 h vs 0 h	PPP1R15A	0.15567	log2FC (log2(x+1); no t, no P)		up	up	6	2	True		5.704
+Dachet time course (1 patient)	Dachet: 8 h vs 0 h	DUSP1	1.2106	log2FC (log2(x+1); no t, no P)		up	down	2	9	False		0.021552
+Dachet time course (1 patient)	Dachet: 8 h vs 0 h	EGR1	0.67888	log2FC (log2(x+1); no t, no P)		up	down	1	11	False		2.4856
+Dachet time course (1 patient)	Dachet: 8 h vs 0 h	FOS	1.8777	log2FC (log2(x+1); no t, no P)		up	down	2	6	False		0.28017
+Dachet time course (1 patient)	Dachet: 8 h vs 0 h	GADD45G	-0.11519	log2FC (log2(x+1); no t, no P)		down	up	8	1	False		0.19397
+Dachet time course (1 patient)	Dachet: 8 h vs 0 h	MAFF	0.052254	log2FC (log2(x+1); no t, no P)		up	up	8	2	True		15.704
+Dachet time course (1 patient)	Dachet: 8 h vs 0 h	NR4A1	0.72931	log2FC (log2(x+1); no t, no P)		up	down	1	11	False		11.681
+Dachet time course (1 patient)	Dachet: 8 h vs 0 h	PPP1R15A	0.26867	log2FC (log2(x+1); no t, no P)		up	up	6	2	True		5.704
+Dachet time course (1 patient)	Dachet: 12 h vs 0 h	DUSP1	0.79745	log2FC (log2(x+1); no t, no P)		up	down	2	9	False		0.021552
+Dachet time course (1 patient)	Dachet: 12 h vs 0 h	EGR1	0.40879	log2FC (log2(x+1); no t, no P)		up	down	1	11	False		2.4856
+Dachet time course (1 patient)	Dachet: 12 h vs 0 h	FOS	1.8307	log2FC (log2(x+1); no t, no P)		up	down	2	6	False		0.28017
+Dachet time course (1 patient)	Dachet: 12 h vs 0 h	GADD45G	-0.16582	log2FC (log2(x+1); no t, no P)		down	up	8	1	False		0.19397
+Dachet time course (1 patient)	Dachet: 12 h vs 0 h	MAFF	0.23266	log2FC (log2(x+1); no t, no P)		up	up	8	2	True		15.704
+Dachet time course (1 patient)	Dachet: 12 h vs 0 h	NR4A1	0.33164	log2FC (log2(x+1); no t, no P)		up	down	1	11	False		11.681
+Dachet time course (1 patient)	Dachet: 12 h vs 0 h	PPP1R15A	0.23357	log2FC (log2(x+1); no t, no P)		up	up	6	2	True		5.704
+Dachet time course (1 patient)	Dachet: 24 h vs 0 h	DUSP1	0.96173	log2FC (log2(x+1); no t, no P)		up	down	2	9	False		0.021552
+Dachet time course (1 patient)	Dachet: 24 h vs 0 h	EGR1	-0.20264	log2FC (log2(x+1); no t, no P)		down	down	1	11	True		2.4856
+Dachet time course (1 patient)	Dachet: 24 h vs 0 h	FOS	1.7621	log2FC (log2(x+1); no t, no P)		up	down	2	6	False		0.28017
+Dachet time course (1 patient)	Dachet: 24 h vs 0 h	GADD45G	-0.53017	log2FC (log2(x+1); no t, no P)		down	up	8	1	False		0.19397
+Dachet time course (1 patient)	Dachet: 24 h vs 0 h	MAFF	0.021465	log2FC (log2(x+1); no t, no P)		up	up	8	2	True		15.704
+Dachet time course (1 patient)	Dachet: 24 h vs 0 h	NR4A1	-0.40227	log2FC (log2(x+1); no t, no P)		down	down	1	11	True		11.681
+Dachet time course (1 patient)	Dachet: 24 h vs 0 h	PPP1R15A	0.046989	log2FC (log2(x+1); no t, no P)		up	up	6	2	True		5.704
+Living vs postmortem	Liharska: living vs postmortem (original ST1)	DUSP1	25.908	t (moderated)	8.878e-93	up	down	2	9	False	True	0.021552
+Living vs postmortem	Liharska: living vs postmortem (original ST1)	EGR1	-8.3844	t (moderated)	5.3383e-16	down	down	1	11	True	True	2.4856
+Living vs postmortem	Liharska: living vs postmortem (original ST1)	FOS	22.764	t (moderated)	3.2781e-78	up	down	2	6	False	True	0.28017
+Living vs postmortem	Liharska: living vs postmortem (original ST1)	GADD45G	4.3734	t (moderated)	1.5217e-05	up	up	8	1	True	True	0.19397
+Living vs postmortem	Liharska: living vs postmortem (original ST1)	MAFF	15.537	t (moderated)	3.4561e-44	up	up	8	2	True	True	15.704
+Living vs postmortem	Liharska: living vs postmortem (original ST1)	NR4A1	3.9164	t (moderated)	0.00010357	up	down	1	11	False	True	11.681
+Living vs postmortem	Liharska: living vs postmortem (original ST1)	PPP1R15A	9.3773	t (moderated)	2.7498e-19	up	up	6	2	True	True	5.704
+Living vs postmortem	Liharska: living vs postmortem (Collado-Torres reproduction (original))	DUSP1	25.908	t (limma-voom)	8.878e-93	up	down	2	9	False	True	0.021552
+Living vs postmortem	Liharska: living vs postmortem (Collado-Torres reproduction (original))	EGR1	-8.3844	t (limma-voom)	5.3383e-16	down	down	1	11	True	True	2.4856
+Living vs postmortem	Liharska: living vs postmortem (Collado-Torres reproduction (original))	FOS	22.764	t (limma-voom)	3.2781e-78	up	down	2	6	False	True	0.28017
+Living vs postmortem	Liharska: living vs postmortem (Collado-Torres reproduction (original))	GADD45G	4.3734	t (limma-voom)	1.5217e-05	up	up	8	1	True	True	0.19397
+Living vs postmortem	Liharska: living vs postmortem (Collado-Torres reproduction (original))	MAFF	15.537	t (limma-voom)	3.4561e-44	up	up	8	2	True	True	15.704
+Living vs postmortem	Liharska: living vs postmortem (Collado-Torres reproduction (original))	NR4A1	3.9164	t (limma-voom)	0.00010357	up	down	1	11	False	True	11.681
+Living vs postmortem	Liharska: living vs postmortem (Collado-Torres reproduction (original))	PPP1R15A	9.3773	t (limma-voom)	2.7498e-19	up	up	6	2	True	True	5.704
+Living vs postmortem	Liharska: living vs postmortem (Collado-Torres without qSVA)	DUSP1	19.76	t (limma-voom)	8.5291e-65	up	down	2	9	False	True	0.021552
+Living vs postmortem	Liharska: living vs postmortem (Collado-Torres without qSVA)	EGR1	-9.5427	t (limma-voom)	5.9462e-20	down	down	1	11	True	True	2.4856
+Living vs postmortem	Liharska: living vs postmortem (Collado-Torres without qSVA)	FOS	16.137	t (limma-voom)	1.5384e-47	up	down	2	6	False	True	0.28017
+Living vs postmortem	Liharska: living vs postmortem (Collado-Torres without qSVA)	GADD45G	3.2093	t (limma-voom)	0.0014152	up	up	8	1	True	True	0.19397
+Living vs postmortem	Liharska: living vs postmortem (Collado-Torres without qSVA)	MAFF	15.398	t (limma-voom)	3.9191e-44	up	up	8	2	True	True	15.704
+Living vs postmortem	Liharska: living vs postmortem (Collado-Torres without qSVA)	NR4A1	-1.0918	t (limma-voom)	0.27544	down	down	1	11	True	False	11.681
+Living vs postmortem	Liharska: living vs postmortem (Collado-Torres without qSVA)	PPP1R15A	8.1065	t (limma-voom)	3.9709e-15	up	up	6	2	True	True	5.704
+Living vs postmortem	Liharska: living vs postmortem (Collado-Torres with qSVA)	DUSP1	9.1905	t (limma-voom)	1.1316e-18	up	down	2	9	False	True	0.021552
+Living vs postmortem	Liharska: living vs postmortem (Collado-Torres with qSVA)	EGR1	-5.7416	t (limma-voom)	1.652e-08	down	down	1	11	True	True	2.4856
+Living vs postmortem	Liharska: living vs postmortem (Collado-Torres with qSVA)	FOS	5.9191	t (limma-voom)	6.1121e-09	up	down	2	6	False	True	0.28017
+Living vs postmortem	Liharska: living vs postmortem (Collado-Torres with qSVA)	GADD45G	0.0075976	t (limma-voom)	0.99394	up	up	8	1	True	False	0.19397
+Living vs postmortem	Liharska: living vs postmortem (Collado-Torres with qSVA)	MAFF	1.9152	t (limma-voom)	0.056054	up	up	8	2	True	False	15.704
+Living vs postmortem	Liharska: living vs postmortem (Collado-Torres with qSVA)	NR4A1	1.3456	t (limma-voom)	0.17906	up	down	1	11	False	False	11.681
+Living vs postmortem	Liharska: living vs postmortem (Collado-Torres with qSVA)	PPP1R15A	-2.2711	t (limma-voom)	0.023578	down	up	6	2	False	True	5.704
+GTEx brain regions	GTEx slow vs fast death: Amygdala	DUSP1	-1.7029	t (OLS; ischemic time, age, sex)	0.091265	down	down	2	9	True	False	0.021552
+GTEx brain regions	GTEx slow vs fast death: Amygdala	EGR1	-4.3054	t (OLS; ischemic time, age, sex)	3.5028e-05	down	down	1	11	True	True	2.4856
+GTEx brain regions	GTEx slow vs fast death: Amygdala	FOS	-2.5638	t (OLS; ischemic time, age, sex)	0.011631	down	down	2	6	True	True	0.28017
+GTEx brain regions	GTEx slow vs fast death: Amygdala	GADD45G	1.7335	t (OLS; ischemic time, age, sex)	0.085664	up	up	8	1	True	False	0.19397
+GTEx brain regions	GTEx slow vs fast death: Amygdala	MAFF	2.5389	t (OLS; ischemic time, age, sex)	0.012444	up	up	8	2	True	True	15.704
+GTEx brain regions	GTEx slow vs fast death: Amygdala	NR4A1	-3.8771	t (OLS; ischemic time, age, sex)	0.00017571	down	down	1	11	True	True	11.681
+GTEx brain regions	GTEx slow vs fast death: Amygdala	PPP1R15A	-2.0657	t (OLS; ischemic time, age, sex)	0.041084	down	up	6	2	False	True	5.704
+GTEx brain regions	GTEx slow vs fast death: Anterior cingulate cortex (BA24)	DUSP1	-0.8805	t (OLS; ischemic time, age, sex)	0.38013	down	down	2	9	True	False	0.021552
+GTEx brain regions	GTEx slow vs fast death: Anterior cingulate cortex (BA24)	EGR1	-6.2713	t (OLS; ischemic time, age, sex)	4.3698e-09	down	down	1	11	True	True	2.4856
+GTEx brain regions	GTEx slow vs fast death: Anterior cingulate cortex (BA24)	FOS	-1.3974	t (OLS; ischemic time, age, sex)	0.16455	down	down	2	6	True	False	0.28017
+GTEx brain regions	GTEx slow vs fast death: Anterior cingulate cortex (BA24)	GADD45G	3.9539	t (OLS; ischemic time, age, sex)	0.00012272	up	up	8	1	True	True	0.19397
+GTEx brain regions	GTEx slow vs fast death: Anterior cingulate cortex (BA24)	MAFF	4.0435	t (OLS; ischemic time, age, sex)	8.7458e-05	up	up	8	2	True	True	15.704
+GTEx brain regions	GTEx slow vs fast death: Anterior cingulate cortex (BA24)	NR4A1	-5.1217	t (OLS; ischemic time, age, sex)	1.0069e-06	down	down	1	11	True	True	11.681
+GTEx brain regions	GTEx slow vs fast death: Anterior cingulate cortex (BA24)	PPP1R15A	-1.9135	t (OLS; ischemic time, age, sex)	0.05777	down	up	6	2	False	False	5.704
+GTEx brain regions	GTEx slow vs fast death: Caudate (basal ganglia)	DUSP1	-1.1746	t (OLS; ischemic time, age, sex)	0.24156	down	down	2	9	True	False	0.021552
+GTEx brain regions	GTEx slow vs fast death: Caudate (basal ganglia)	EGR1	-6.319	t (OLS; ischemic time, age, sex)	1.6915e-09	down	down	1	11	True	True	2.4856
+GTEx brain regions	GTEx slow vs fast death: Caudate (basal ganglia)	FOS	-1.1958	t (OLS; ischemic time, age, sex)	0.2332	down	down	2	6	True	False	0.28017
+GTEx brain regions	GTEx slow vs fast death: Caudate (basal ganglia)	GADD45G	3.8645	t (OLS; ischemic time, age, sex)	0.00015061	up	up	8	1	True	True	0.19397
+GTEx brain regions	GTEx slow vs fast death: Caudate (basal ganglia)	MAFF	5.6874	t (OLS; ischemic time, age, sex)	4.555e-08	up	up	8	2	True	True	15.704
+GTEx brain regions	GTEx slow vs fast death: Caudate (basal ganglia)	NR4A1	-5.3041	t (OLS; ischemic time, age, sex)	3.001e-07	down	down	1	11	True	True	11.681
+GTEx brain regions	GTEx slow vs fast death: Caudate (basal ganglia)	PPP1R15A	-1.4669	t (OLS; ischemic time, age, sex)	0.14398	down	up	6	2	False	False	5.704
+GTEx brain regions	GTEx slow vs fast death: Cerebellar Hemisphere	DUSP1	-3.1914	t (OLS; ischemic time, age, sex)	0.0016883	down	down	2	9	True	True	0.021552
+GTEx brain regions	GTEx slow vs fast death: Cerebellar Hemisphere	EGR1	-4.8274	t (OLS; ischemic time, age, sex)	3.0781e-06	down	down	1	11	True	True	2.4856
+GTEx brain regions	GTEx slow vs fast death: Cerebellar Hemisphere	FOS	-3.4544	t (OLS; ischemic time, age, sex)	0.00069725	down	down	2	6	True	True	0.28017
+GTEx brain regions	GTEx slow vs fast death: Cerebellar Hemisphere	GADD45G	-2.9979	t (OLS; ischemic time, age, sex)	0.0031288	down	up	8	1	False	True	0.19397
+GTEx brain regions	GTEx slow vs fast death: Cerebellar Hemisphere	MAFF	5.5395	t (OLS; ischemic time, age, sex)	1.1431e-07	up	up	8	2	True	True	15.704
+GTEx brain regions	GTEx slow vs fast death: Cerebellar Hemisphere	NR4A1	-6.4568	t (OLS; ischemic time, age, sex)	1.0911e-09	down	down	1	11	True	True	11.681
+GTEx brain regions	GTEx slow vs fast death: Cerebellar Hemisphere	PPP1R15A	-2.0845	t (OLS; ischemic time, age, sex)	0.038618	down	up	6	2	False	True	5.704
+GTEx brain regions	GTEx slow vs fast death: Cerebellum	DUSP1	-3.6627	t (OLS; ischemic time, age, sex)	0.00032352	down	down	2	9	True	True	0.021552
+GTEx brain regions	GTEx slow vs fast death: Cerebellum	EGR1	-6.0969	t (OLS; ischemic time, age, sex)	5.916e-09	down	down	1	11	True	True	2.4856
+GTEx brain regions	GTEx slow vs fast death: Cerebellum	FOS	-3.9181	t (OLS; ischemic time, age, sex)	0.00012443	down	down	2	6	True	True	0.28017
+GTEx brain regions	GTEx slow vs fast death: Cerebellum	GADD45G	-3.0055	t (OLS; ischemic time, age, sex)	0.0030094	down	up	8	1	False	True	0.19397
+GTEx brain regions	GTEx slow vs fast death: Cerebellum	MAFF	5.0643	t (OLS; ischemic time, age, sex)	9.658e-07	up	up	8	2	True	True	15.704
+GTEx brain regions	GTEx slow vs fast death: Cerebellum	NR4A1	-8.5288	t (OLS; ischemic time, age, sex)	4.5886e-15	down	down	1	11	True	True	11.681
+GTEx brain regions	GTEx slow vs fast death: Cerebellum	PPP1R15A	-3.2785	t (OLS; ischemic time, age, sex)	0.0012411	down	up	6	2	False	True	5.704
+GTEx brain regions	GTEx slow vs fast death: Cortex	DUSP1	-1.1609	t (OLS; ischemic time, age, sex)	0.24709	down	down	2	9	True	False	0.021552
+GTEx brain regions	GTEx slow vs fast death: Cortex	EGR1	-7.2329	t (OLS; ischemic time, age, sex)	1.0385e-11	down	down	1	11	True	True	2.4856
+GTEx brain regions	GTEx slow vs fast death: Cortex	FOS	-0.9673	t (OLS; ischemic time, age, sex)	0.33459	down	down	2	6	True	False	0.28017
+GTEx brain regions	GTEx slow vs fast death: Cortex	GADD45G	4.5319	t (OLS; ischemic time, age, sex)	1.0153e-05	up	up	8	1	True	True	0.19397
+GTEx brain regions	GTEx slow vs fast death: Cortex	MAFF	3.8092	t (OLS; ischemic time, age, sex)	0.00018649	up	up	8	2	True	True	15.704
+GTEx brain regions	GTEx slow vs fast death: Cortex	NR4A1	-5.9733	t (OLS; ischemic time, age, sex)	1.0768e-08	down	down	1	11	True	True	11.681
+GTEx brain regions	GTEx slow vs fast death: Cortex	PPP1R15A	-2.16	t (OLS; ischemic time, age, sex)	0.031987	down	up	6	2	False	True	5.704
+GTEx brain regions	GTEx slow vs fast death: Frontal Cortex (BA9)	DUSP1	-1.9679	t (OLS; ischemic time, age, sex)	0.050745	down	down	2	9	True	False	0.021552
+GTEx brain regions	GTEx slow vs fast death: Frontal Cortex (BA9)	EGR1	-9.0154	t (OLS; ischemic time, age, sex)	4.5959e-16	down	down	1	11	True	True	2.4856
+GTEx brain regions	GTEx slow vs fast death: Frontal Cortex (BA9)	FOS	-2.4372	t (OLS; ischemic time, age, sex)	0.015857	down	down	2	6	True	True	0.28017
+GTEx brain regions	GTEx slow vs fast death: Frontal Cortex (BA9)	GADD45G	4.0584	t (OLS; ischemic time, age, sex)	7.5932e-05	up	up	8	1	True	True	0.19397
+GTEx brain regions	GTEx slow vs fast death: Frontal Cortex (BA9)	MAFF	2.8643	t (OLS; ischemic time, age, sex)	0.0047194	up	up	8	2	True	True	15.704
+GTEx brain regions	GTEx slow vs fast death: Frontal Cortex (BA9)	NR4A1	-7.2735	t (OLS; ischemic time, age, sex)	1.3176e-11	down	down	1	11	True	True	11.681
+GTEx brain regions	GTEx slow vs fast death: Frontal Cortex (BA9)	PPP1R15A	-4.0111	t (OLS; ischemic time, age, sex)	9.1213e-05	down	up	6	2	False	True	5.704
+GTEx brain regions	GTEx slow vs fast death: Hippocampus	DUSP1	-1.2866	t (OLS; ischemic time, age, sex)	0.20016	down	down	2	9	True	False	0.021552
+GTEx brain regions	GTEx slow vs fast death: Hippocampus	EGR1	-5.2336	t (OLS; ischemic time, age, sex)	5.3615e-07	down	down	1	11	True	True	2.4856
+GTEx brain regions	GTEx slow vs fast death: Hippocampus	FOS	-1.6586	t (OLS; ischemic time, age, sex)	0.099232	down	down	2	6	True	False	0.28017
+GTEx brain regions	GTEx slow vs fast death: Hippocampus	GADD45G	1.4579	t (OLS; ischemic time, age, sex)	0.1469	up	up	8	1	True	False	0.19397
+GTEx brain regions	GTEx slow vs fast death: Hippocampus	MAFF	4.2905	t (OLS; ischemic time, age, sex)	3.1372e-05	up	up	8	2	True	True	15.704
+GTEx brain regions	GTEx slow vs fast death: Hippocampus	NR4A1	-4.4112	t (OLS; ischemic time, age, sex)	1.9219e-05	down	down	1	11	True	True	11.681
+GTEx brain regions	GTEx slow vs fast death: Hippocampus	PPP1R15A	-1.6382	t (OLS; ischemic time, age, sex)	0.10342	down	up	6	2	False	False	5.704
+GTEx brain regions	GTEx slow vs fast death: Hypothalamus	DUSP1	-1.7504	t (OLS; ischemic time, age, sex)	0.081954	down	down	2	9	True	False	0.021552
+GTEx brain regions	GTEx slow vs fast death: Hypothalamus	EGR1	-3.8559	t (OLS; ischemic time, age, sex)	0.00016637	down	down	1	11	True	True	2.4856
+GTEx brain regions	GTEx slow vs fast death: Hypothalamus	FOS	-2.0213	t (OLS; ischemic time, age, sex)	0.044905	down	down	2	6	True	True	0.28017
+GTEx brain regions	GTEx slow vs fast death: Hypothalamus	GADD45G	2.7433	t (OLS; ischemic time, age, sex)	0.0067723	up	up	8	1	True	True	0.19397
+GTEx brain regions	GTEx slow vs fast death: Hypothalamus	MAFF	3.1342	t (OLS; ischemic time, age, sex)	0.0020483	up	up	8	2	True	True	15.704
+GTEx brain regions	GTEx slow vs fast death: Hypothalamus	NR4A1	-3.7243	t (OLS; ischemic time, age, sex)	0.00027052	down	down	1	11	True	True	11.681
+GTEx brain regions	GTEx slow vs fast death: Hypothalamus	PPP1R15A	-0.8815	t (OLS; ischemic time, age, sex)	0.37936	down	up	6	2	False	False	5.704
+GTEx brain regions	GTEx slow vs fast death: Nucleus accumbens (basal ganglia)	DUSP1	-3.8572	t (OLS; ischemic time, age, sex)	0.00015576	down	down	2	9	True	True	0.021552
+GTEx brain regions	GTEx slow vs fast death: Nucleus accumbens (basal ganglia)	EGR1	-6.562	t (OLS; ischemic time, age, sex)	4.6739e-10	down	down	1	11	True	True	2.4856
+GTEx brain regions	GTEx slow vs fast death: Nucleus accumbens (basal ganglia)	FOS	-2.7392	t (OLS; ischemic time, age, sex)	0.0067299	down	down	2	6	True	True	0.28017
+GTEx brain regions	GTEx slow vs fast death: Nucleus accumbens (basal ganglia)	GADD45G	2.0057	t (OLS; ischemic time, age, sex)	0.04627	up	up	8	1	True	True	0.19397
+GTEx brain regions	GTEx slow vs fast death: Nucleus accumbens (basal ganglia)	MAFF	4.5929	t (OLS; ischemic time, age, sex)	7.8296e-06	up	up	8	2	True	True	15.704
+GTEx brain regions	GTEx slow vs fast death: Nucleus accumbens (basal ganglia)	NR4A1	-8.0756	t (OLS; ischemic time, age, sex)	6.8221e-14	down	down	1	11	True	True	11.681
+GTEx brain regions	GTEx slow vs fast death: Nucleus accumbens (basal ganglia)	PPP1R15A	-3.187	t (OLS; ischemic time, age, sex)	0.0016745	down	up	6	2	False	True	5.704
+GTEx brain regions	GTEx slow vs fast death: Putamen (basal ganglia)	DUSP1	-3.6979	t (OLS; ischemic time, age, sex)	0.00029461	down	down	2	9	True	True	0.021552
+GTEx brain regions	GTEx slow vs fast death: Putamen (basal ganglia)	EGR1	-5.1	t (OLS; ischemic time, age, sex)	9.1386e-07	down	down	1	11	True	True	2.4856
+GTEx brain regions	GTEx slow vs fast death: Putamen (basal ganglia)	FOS	-4.2767	t (OLS; ischemic time, age, sex)	3.1839e-05	down	down	2	6	True	True	0.28017
+GTEx brain regions	GTEx slow vs fast death: Putamen (basal ganglia)	GADD45G	4.5965	t (OLS; ischemic time, age, sex)	8.4403e-06	up	up	8	1	True	True	0.19397
+GTEx brain regions	GTEx slow vs fast death: Putamen (basal ganglia)	MAFF	3.8772	t (OLS; ischemic time, age, sex)	0.00015167	up	up	8	2	True	True	15.704
+GTEx brain regions	GTEx slow vs fast death: Putamen (basal ganglia)	NR4A1	-6.7097	t (OLS; ischemic time, age, sex)	2.8953e-10	down	down	1	11	True	True	11.681
+GTEx brain regions	GTEx slow vs fast death: Putamen (basal ganglia)	PPP1R15A	-2.42	t (OLS; ischemic time, age, sex)	0.016593	down	up	6	2	False	True	5.704
+GTEx brain regions	GTEx slow vs fast death: Spinal cord (cervical c-1)	DUSP1	1.2515	t (OLS; ischemic time, age, sex)	0.21307	up	down	2	9	False	False	0.021552
+GTEx brain regions	GTEx slow vs fast death: Spinal cord (cervical c-1)	EGR1	-3.1957	t (OLS; ischemic time, age, sex)	0.0017632	down	down	1	11	True	True	2.4856
+GTEx brain regions	GTEx slow vs fast death: Spinal cord (cervical c-1)	FOS	0.3274	t (OLS; ischemic time, age, sex)	0.74391	up	down	2	6	False	False	0.28017
+GTEx brain regions	GTEx slow vs fast death: Spinal cord (cervical c-1)	GADD45G	2.693	t (OLS; ischemic time, age, sex)	0.008045	up	up	8	1	True	True	0.19397
+GTEx brain regions	GTEx slow vs fast death: Spinal cord (cervical c-1)	MAFF	2.7657	t (OLS; ischemic time, age, sex)	0.0065346	up	up	8	2	True	True	15.704
+GTEx brain regions	GTEx slow vs fast death: Spinal cord (cervical c-1)	NR4A1	-2.2523	t (OLS; ischemic time, age, sex)	0.026034	down	down	1	11	True	True	11.681
+GTEx brain regions	GTEx slow vs fast death: Spinal cord (cervical c-1)	PPP1R15A	0.2416	t (OLS; ischemic time, age, sex)	0.80948	up	up	6	2	True	False	5.704
+GTEx brain regions	GTEx slow vs fast death: Substantia nigra	DUSP1	-3.3203	t (OLS; ischemic time, age, sex)	0.0012082	down	down	2	9	True	True	0.021552
+GTEx brain regions	GTEx slow vs fast death: Substantia nigra	EGR1	-5.3051	t (OLS; ischemic time, age, sex)	5.6001e-07	down	down	1	11	True	True	2.4856
+GTEx brain regions	GTEx slow vs fast death: Substantia nigra	FOS	-2.1715	t (OLS; ischemic time, age, sex)	0.031966	down	down	2	6	True	True	0.28017
+GTEx brain regions	GTEx slow vs fast death: Substantia nigra	GADD45G	2.3881	t (OLS; ischemic time, age, sex)	0.018579	up	up	8	1	True	True	0.19397
+GTEx brain regions	GTEx slow vs fast death: Substantia nigra	MAFF	2.5145	t (OLS; ischemic time, age, sex)	0.013315	up	up	8	2	True	True	15.704
+GTEx brain regions	GTEx slow vs fast death: Substantia nigra	NR4A1	-5.6479	t (OLS; ischemic time, age, sex)	1.2101e-07	down	down	1	11	True	True	11.681
+GTEx brain regions	GTEx slow vs fast death: Substantia nigra	PPP1R15A	-3.3564	t (OLS; ischemic time, age, sex)	0.0010735	down	up	6	2	False	True	5.704
+GTEx brain regions	GTEx slow vs fast death: cortical mean (Cortex, BA9, BA24)	DUSP1	-1.3364	t (mean of 3 regions)		down	down	2	9	True		0.021552
+GTEx brain regions	GTEx slow vs fast death: cortical mean (Cortex, BA9, BA24)	EGR1	-7.5065	t (mean of 3 regions)		down	down	1	11	True		2.4856
+GTEx brain regions	GTEx slow vs fast death: cortical mean (Cortex, BA9, BA24)	FOS	-1.6006	t (mean of 3 regions)		down	down	2	6	True		0.28017
+GTEx brain regions	GTEx slow vs fast death: cortical mean (Cortex, BA9, BA24)	GADD45G	4.1814	t (mean of 3 regions)		up	up	8	1	True		0.19397
+GTEx brain regions	GTEx slow vs fast death: cortical mean (Cortex, BA9, BA24)	MAFF	3.5723	t (mean of 3 regions)		up	up	8	2	True		15.704
+GTEx brain regions	GTEx slow vs fast death: cortical mean (Cortex, BA9, BA24)	NR4A1	-6.1228	t (mean of 3 regions)		down	down	1	11	True		11.681
+GTEx brain regions	GTEx slow vs fast death: cortical mean (Cortex, BA9, BA24)	PPP1R15A	-2.6949	t (mean of 3 regions)		down	up	6	2	False		5.704
+GTEx other tissues	GTEx slow vs fast death: Adipose - Subcutaneous	DUSP1	-1.6336	t (OLS; ischemic time, age, sex)	0.10365	down	down	2	9	True	False	0.021552
+GTEx other tissues	GTEx slow vs fast death: Adipose - Subcutaneous	EGR1	-2.6437	t (OLS; ischemic time, age, sex)	0.0087386	down	down	1	11	True	True	2.4856
+GTEx other tissues	GTEx slow vs fast death: Adipose - Subcutaneous	FOS	-3.1104	t (OLS; ischemic time, age, sex)	0.0020933	down	down	2	6	True	True	0.28017
+GTEx other tissues	GTEx slow vs fast death: Adipose - Subcutaneous	GADD45G	0.8296	t (OLS; ischemic time, age, sex)	0.40759	up	up	8	1	True	False	0.19397
+GTEx other tissues	GTEx slow vs fast death: Adipose - Subcutaneous	MAFF	5.0458	t (OLS; ischemic time, age, sex)	8.8963e-07	up	up	8	2	True	True	15.704
+GTEx other tissues	GTEx slow vs fast death: Adipose - Subcutaneous	NR4A1	-1.8067	t (OLS; ischemic time, age, sex)	0.072056	down	down	1	11	True	False	11.681
+GTEx other tissues	GTEx slow vs fast death: Adipose - Subcutaneous	PPP1R15A	2.0917	t (OLS; ischemic time, age, sex)	0.037512	up	up	6	2	True	True	5.704
+GTEx other tissues	GTEx slow vs fast death: Adipose - Visceral (Omentum)	DUSP1	-4.2358	t (OLS; ischemic time, age, sex)	3.6205e-05	down	down	2	9	True	True	0.021552
+GTEx other tissues	GTEx slow vs fast death: Adipose - Visceral (Omentum)	EGR1	-5.2758	t (OLS; ischemic time, age, sex)	3.7474e-07	down	down	1	11	True	True	2.4856
+GTEx other tissues	GTEx slow vs fast death: Adipose - Visceral (Omentum)	FOS	-3.5353	t (OLS; ischemic time, age, sex)	0.00051721	down	down	2	6	True	True	0.28017
+GTEx other tissues	GTEx slow vs fast death: Adipose - Visceral (Omentum)	GADD45G	2.0928	t (OLS; ischemic time, age, sex)	0.037761	up	up	8	1	True	True	0.19397
+GTEx other tissues	GTEx slow vs fast death: Adipose - Visceral (Omentum)	MAFF	0.9878	t (OLS; ischemic time, age, sex)	0.32457	up	up	8	2	True	False	15.704
+GTEx other tissues	GTEx slow vs fast death: Adipose - Visceral (Omentum)	NR4A1	-6.208	t (OLS; ischemic time, age, sex)	3.5715e-09	down	down	1	11	True	True	11.681
+GTEx other tissues	GTEx slow vs fast death: Adipose - Visceral (Omentum)	PPP1R15A	1.1988	t (OLS; ischemic time, age, sex)	0.23217	up	up	6	2	True	False	5.704
+GTEx other tissues	GTEx slow vs fast death: Artery - Aorta	DUSP1	-2.1048	t (OLS; ischemic time, age, sex)	0.037395	down	down	2	9	True	True	0.021552
+GTEx other tissues	GTEx slow vs fast death: Artery - Aorta	EGR1	-5.3141	t (OLS; ischemic time, age, sex)	5.0176e-07	down	down	1	11	True	True	2.4856
+GTEx other tissues	GTEx slow vs fast death: Artery - Aorta	FOS	-2.9804	t (OLS; ischemic time, age, sex)	0.0034858	down	down	2	6	True	True	0.28017
+GTEx other tissues	GTEx slow vs fast death: Artery - Aorta	GADD45G	5.1642	t (OLS; ischemic time, age, sex)	9.7144e-07	up	up	8	1	True	True	0.19397
+GTEx other tissues	GTEx slow vs fast death: Artery - Aorta	MAFF	1.1791	t (OLS; ischemic time, age, sex)	0.24069	up	up	8	2	True	False	15.704
+GTEx other tissues	GTEx slow vs fast death: Artery - Aorta	NR4A1	-7.043	t (OLS; ischemic time, age, sex)	1.2732e-10	down	down	1	11	True	True	11.681
+GTEx other tissues	GTEx slow vs fast death: Artery - Aorta	PPP1R15A	-0.0629	t (OLS; ischemic time, age, sex)	0.94995	down	up	6	2	False	False	5.704
+GTEx other tissues	GTEx slow vs fast death: Artery - Coronary	DUSP1	-1.9437	t (OLS; ischemic time, age, sex)	0.056706	down	down	2	9	True	False	0.021552
+GTEx other tissues	GTEx slow vs fast death: Artery - Coronary	EGR1	-4.7611	t (OLS; ischemic time, age, sex)	1.2902e-05	down	down	1	11	True	True	2.4856
+GTEx other tissues	GTEx slow vs fast death: Artery - Coronary	FOS	-2.7501	t (OLS; ischemic time, age, sex)	0.007897	down	down	2	6	True	True	0.28017
+GTEx other tissues	GTEx slow vs fast death: Artery - Coronary	GADD45G	1.7022	t (OLS; ischemic time, age, sex)	0.093982	up	up	8	1	True	False	0.19397
+GTEx other tissues	GTEx slow vs fast death: Artery - Coronary	MAFF	0.7689	t (OLS; ischemic time, age, sex)	0.44502	up	up	8	2	True	False	15.704
+GTEx other tissues	GTEx slow vs fast death: Artery - Coronary	NR4A1	-2.6252	t (OLS; ischemic time, age, sex)	0.011011	down	down	1	11	True	True	11.681
+GTEx other tissues	GTEx slow vs fast death: Artery - Coronary	PPP1R15A	-0.8374	t (OLS; ischemic time, age, sex)	0.40575	down	up	6	2	False	False	5.704
+GTEx other tissues	GTEx slow vs fast death: Artery - Tibial	DUSP1	-3.9327	t (OLS; ischemic time, age, sex)	0.00011302	down	down	2	9	True	True	0.021552
+GTEx other tissues	GTEx slow vs fast death: Artery - Tibial	EGR1	-6.5324	t (OLS; ischemic time, age, sex)	4.5342e-10	down	down	1	11	True	True	2.4856
+GTEx other tissues	GTEx slow vs fast death: Artery - Tibial	FOS	-3.3715	t (OLS; ischemic time, age, sex)	0.000885	down	down	2	6	True	True	0.28017
+GTEx other tissues	GTEx slow vs fast death: Artery - Tibial	GADD45G	3.718	t (OLS; ischemic time, age, sex)	0.00025563	up	up	8	1	True	True	0.19397
+GTEx other tissues	GTEx slow vs fast death: Artery - Tibial	MAFF	2.6946	t (OLS; ischemic time, age, sex)	0.0075989	up	up	8	2	True	True	15.704
+GTEx other tissues	GTEx slow vs fast death: Artery - Tibial	NR4A1	-3.2357	t (OLS; ischemic time, age, sex)	0.0014032	down	down	1	11	True	True	11.681
+GTEx other tissues	GTEx slow vs fast death: Artery - Tibial	PPP1R15A	2.8916	t (OLS; ischemic time, age, sex)	0.0042227	up	up	6	2	True	True	5.704
+GTEx other tissues	GTEx slow vs fast death: Breast - Mammary Tissue	DUSP1	-5.0473	t (OLS; ischemic time, age, sex)	1.3142e-06	down	down	2	9	True	True	0.021552
+GTEx other tissues	GTEx slow vs fast death: Breast - Mammary Tissue	EGR1	-4.9401	t (OLS; ischemic time, age, sex)	2.1114e-06	down	down	1	11	True	True	2.4856
+GTEx other tissues	GTEx slow vs fast death: Breast - Mammary Tissue	FOS	-5.8376	t (OLS; ischemic time, age, sex)	3.2956e-08	down	down	2	6	True	True	0.28017
+GTEx other tissues	GTEx slow vs fast death: Breast - Mammary Tissue	GADD45G	1.5448	t (OLS; ischemic time, age, sex)	0.12456	up	up	8	1	True	False	0.19397
+GTEx other tissues	GTEx slow vs fast death: Breast - Mammary Tissue	MAFF	1.256	t (OLS; ischemic time, age, sex)	0.21112	up	up	8	2	True	False	15.704
+GTEx other tissues	GTEx slow vs fast death: Breast - Mammary Tissue	NR4A1	-5.311	t (OLS; ischemic time, age, sex)	3.9842e-07	down	down	1	11	True	True	11.681
+GTEx other tissues	GTEx slow vs fast death: Breast - Mammary Tissue	PPP1R15A	-1.586	t (OLS; ischemic time, age, sex)	0.1149	down	up	6	2	False	False	5.704
+GTEx other tissues	GTEx slow vs fast death: Cells - Cultured fibroblasts	DUSP1	0.3407	t (OLS; ischemic time, age, sex)	0.73379	up	down	2	9	False	False	0.021552
+GTEx other tissues	GTEx slow vs fast death: Cells - Cultured fibroblasts	EGR1	0.8333	t (OLS; ischemic time, age, sex)	0.40597	up	down	1	11	False	False	2.4856
+GTEx other tissues	GTEx slow vs fast death: Cells - Cultured fibroblasts	FOS	0.8899	t (OLS; ischemic time, age, sex)	0.37491	up	down	2	6	False	False	0.28017
+GTEx other tissues	GTEx slow vs fast death: Cells - Cultured fibroblasts	GADD45G		t (OLS; ischemic time, age, sex)		not measured	up	8	1			0.19397
+GTEx other tissues	GTEx slow vs fast death: Cells - Cultured fibroblasts	MAFF	1.8506	t (OLS; ischemic time, age, sex)	0.066143	up	up	8	2	True	False	15.704
+GTEx other tissues	GTEx slow vs fast death: Cells - Cultured fibroblasts	NR4A1	0.7018	t (OLS; ischemic time, age, sex)	0.48386	up	down	1	11	False	False	11.681
+GTEx other tissues	GTEx slow vs fast death: Cells - Cultured fibroblasts	PPP1R15A	1.8735	t (OLS; ischemic time, age, sex)	0.062894	up	up	6	2	True	False	5.704
+GTEx other tissues	GTEx slow vs fast death: Colon - Sigmoid	DUSP1	2.6479	t (OLS; ischemic time, age, sex)	0.0093238	up	down	2	9	False	True	0.021552
+GTEx other tissues	GTEx slow vs fast death: Colon - Sigmoid	EGR1	0.2963	t (OLS; ischemic time, age, sex)	0.76758	up	down	1	11	False	False	2.4856
+GTEx other tissues	GTEx slow vs fast death: Colon - Sigmoid	FOS	3.3198	t (OLS; ischemic time, age, sex)	0.0012324	up	down	2	6	False	True	0.28017
+GTEx other tissues	GTEx slow vs fast death: Colon - Sigmoid	GADD45G	2.6666	t (OLS; ischemic time, age, sex)	0.0088516	up	up	8	1	True	True	0.19397
+GTEx other tissues	GTEx slow vs fast death: Colon - Sigmoid	MAFF	5.0032	t (OLS; ischemic time, age, sex)	2.2252e-06	up	up	8	2	True	True	15.704
+GTEx other tissues	GTEx slow vs fast death: Colon - Sigmoid	NR4A1	-0.1703	t (OLS; ischemic time, age, sex)	0.8651	down	down	1	11	True	False	11.681
+GTEx other tissues	GTEx slow vs fast death: Colon - Sigmoid	PPP1R15A	3.1087	t (OLS; ischemic time, age, sex)	0.0024078	up	up	6	2	True	True	5.704
+GTEx other tissues	GTEx slow vs fast death: Colon - Transverse	DUSP1	-1.7357	t (OLS; ischemic time, age, sex)	0.087284	down	down	2	9	True	False	0.021552
+GTEx other tissues	GTEx slow vs fast death: Colon - Transverse	EGR1	-2.5601	t (OLS; ischemic time, age, sex)	0.012761	down	down	1	11	True	True	2.4856
+GTEx other tissues	GTEx slow vs fast death: Colon - Transverse	FOS	-0.7679	t (OLS; ischemic time, age, sex)	0.44529	down	down	2	6	True	False	0.28017
+GTEx other tissues	GTEx slow vs fast death: Colon - Transverse	GADD45G	1.4251	t (OLS; ischemic time, age, sex)	0.15884	up	up	8	1	True	False	0.19397
+GTEx other tissues	GTEx slow vs fast death: Colon - Transverse	MAFF	1.8423	t (OLS; ischemic time, age, sex)	0.069924	up	up	8	2	True	False	15.704
+GTEx other tissues	GTEx slow vs fast death: Colon - Transverse	NR4A1	-3.0578	t (OLS; ischemic time, age, sex)	0.0032187	down	down	1	11	True	True	11.681
+GTEx other tissues	GTEx slow vs fast death: Colon - Transverse	PPP1R15A	0.3657	t (OLS; ischemic time, age, sex)	0.71576	up	up	6	2	True	False	5.704
+GTEx other tissues	GTEx slow vs fast death: Esophagus - Gastroesophageal Junction	DUSP1	-2.6163	t (OLS; ischemic time, age, sex)	0.010326	down	down	2	9	True	True	0.021552
+GTEx other tissues	GTEx slow vs fast death: Esophagus - Gastroesophageal Junction	EGR1	-4.3837	t (OLS; ischemic time, age, sex)	2.9851e-05	down	down	1	11	True	True	2.4856
+GTEx other tissues	GTEx slow vs fast death: Esophagus - Gastroesophageal Junction	FOS	-2.594	t (OLS; ischemic time, age, sex)	0.010972	down	down	2	6	True	True	0.28017
+GTEx other tissues	GTEx slow vs fast death: Esophagus - Gastroesophageal Junction	GADD45G	2.323	t (OLS; ischemic time, age, sex)	0.02229	up	up	8	1	True	True	0.19397
+GTEx other tissues	GTEx slow vs fast death: Esophagus - Gastroesophageal Junction	MAFF	0.2059	t (OLS; ischemic time, age, sex)	0.83731	up	up	8	2	True	False	15.704
+GTEx other tissues	GTEx slow vs fast death: Esophagus - Gastroesophageal Junction	NR4A1	-4.9248	t (OLS; ischemic time, age, sex)	3.5121e-06	down	down	1	11	True	True	11.681
+GTEx other tissues	GTEx slow vs fast death: Esophagus - Gastroesophageal Junction	PPP1R15A	-1.9112	t (OLS; ischemic time, age, sex)	0.058962	down	up	6	2	False	False	5.704
+GTEx other tissues	GTEx slow vs fast death: Esophagus - Mucosa	DUSP1	-5.039	t (OLS; ischemic time, age, sex)	1.4011e-06	down	down	2	9	True	True	0.021552
+GTEx other tissues	GTEx slow vs fast death: Esophagus - Mucosa	EGR1	-4.3035	t (OLS; ischemic time, age, sex)	3.113e-05	down	down	1	11	True	True	2.4856
+GTEx other tissues	GTEx slow vs fast death: Esophagus - Mucosa	FOS	-2.3333	t (OLS; ischemic time, age, sex)	0.021036	down	down	2	6	True	True	0.28017
+GTEx other tissues	GTEx slow vs fast death: Esophagus - Mucosa	GADD45G	2.7968	t (OLS; ischemic time, age, sex)	0.0058771	up	up	8	1	True	True	0.19397
+GTEx other tissues	GTEx slow vs fast death: Esophagus - Mucosa	MAFF	-2.7956	t (OLS; ischemic time, age, sex)	0.0058978	down	up	8	2	False	True	15.704
+GTEx other tissues	GTEx slow vs fast death: Esophagus - Mucosa	NR4A1	-6.1029	t (OLS; ischemic time, age, sex)	9.3984e-09	down	down	1	11	True	True	11.681
+GTEx other tissues	GTEx slow vs fast death: Esophagus - Mucosa	PPP1R15A	-3.2597	t (OLS; ischemic time, age, sex)	0.001396	down	up	6	2	False	True	5.704
+GTEx other tissues	GTEx slow vs fast death: Esophagus - Muscularis	DUSP1	-1.7382	t (OLS; ischemic time, age, sex)	0.084876	down	down	2	9	True	False	0.021552
+GTEx other tissues	GTEx slow vs fast death: Esophagus - Muscularis	EGR1	-2.841	t (OLS; ischemic time, age, sex)	0.0053285	down	down	1	11	True	True	2.4856
+GTEx other tissues	GTEx slow vs fast death: Esophagus - Muscularis	FOS	-1.1274	t (OLS; ischemic time, age, sex)	0.26194	down	down	2	6	True	False	0.28017
+GTEx other tissues	GTEx slow vs fast death: Esophagus - Muscularis	GADD45G	1.9833	t (OLS; ischemic time, age, sex)	0.049738	up	up	8	1	True	True	0.19397
+GTEx other tissues	GTEx slow vs fast death: Esophagus - Muscularis	MAFF	1.5783	t (OLS; ischemic time, age, sex)	0.11727	up	up	8	2	True	False	15.704
+GTEx other tissues	GTEx slow vs fast death: Esophagus - Muscularis	NR4A1	-3.6018	t (OLS; ischemic time, age, sex)	0.00046948	down	down	1	11	True	True	11.681
+GTEx other tissues	GTEx slow vs fast death: Esophagus - Muscularis	PPP1R15A	-0.7354	t (OLS; ischemic time, age, sex)	0.46361	down	up	6	2	False	False	5.704
+GTEx other tissues	GTEx slow vs fast death: Heart - Atrial Appendage	DUSP1	-4.6497	t (OLS; ischemic time, age, sex)	6.4576e-06	down	down	2	9	True	True	0.021552
+GTEx other tissues	GTEx slow vs fast death: Heart - Atrial Appendage	EGR1	-7.3025	t (OLS; ischemic time, age, sex)	9.0859e-12	down	down	1	11	True	True	2.4856
+GTEx other tissues	GTEx slow vs fast death: Heart - Atrial Appendage	FOS	-5.971	t (OLS; ischemic time, age, sex)	1.25e-08	down	down	2	6	True	True	0.28017
+GTEx other tissues	GTEx slow vs fast death: Heart - Atrial Appendage	GADD45G	1.7429	t (OLS; ischemic time, age, sex)	0.083078	up	up	8	1	True	False	0.19397
+GTEx other tissues	GTEx slow vs fast death: Heart - Atrial Appendage	MAFF	0.372	t (OLS; ischemic time, age, sex)	0.71034	up	up	8	2	True	False	15.704
+GTEx other tissues	GTEx slow vs fast death: Heart - Atrial Appendage	NR4A1	-6.0288	t (OLS; ischemic time, age, sex)	9.2976e-09	down	down	1	11	True	True	11.681
+GTEx other tissues	GTEx slow vs fast death: Heart - Atrial Appendage	PPP1R15A	-1.6089	t (OLS; ischemic time, age, sex)	0.10941	down	up	6	2	False	False	5.704
+GTEx other tissues	GTEx slow vs fast death: Heart - Left Ventricle	DUSP1	-1.9917	t (OLS; ischemic time, age, sex)	0.048407	down	down	2	9	True	True	0.021552
+GTEx other tissues	GTEx slow vs fast death: Heart - Left Ventricle	EGR1	-4.1789	t (OLS; ischemic time, age, sex)	5.2105e-05	down	down	1	11	True	True	2.4856
+GTEx other tissues	GTEx slow vs fast death: Heart - Left Ventricle	FOS	-3.5213	t (OLS; ischemic time, age, sex)	0.00058496	down	down	2	6	True	True	0.28017
+GTEx other tissues	GTEx slow vs fast death: Heart - Left Ventricle	GADD45G	-0.662	t (OLS; ischemic time, age, sex)	0.50909	down	up	8	1	False	False	0.19397
+GTEx other tissues	GTEx slow vs fast death: Heart - Left Ventricle	MAFF	1.1825	t (OLS; ischemic time, age, sex)	0.23907	up	up	8	2	True	False	15.704
+GTEx other tissues	GTEx slow vs fast death: Heart - Left Ventricle	NR4A1	-1.8242	t (OLS; ischemic time, age, sex)	0.070317	down	down	1	11	True	False	11.681
+GTEx other tissues	GTEx slow vs fast death: Heart - Left Ventricle	PPP1R15A	-3.3565	t (OLS; ischemic time, age, sex)	0.0010237	down	up	6	2	False	True	5.704
+GTEx other tissues	GTEx slow vs fast death: Kidney - Cortex	DUSP1	-0.7526	t (OLS; ischemic time, age, sex)	0.45544	down	down	2	9	True	False	0.021552
+GTEx other tissues	GTEx slow vs fast death: Kidney - Cortex	EGR1	-1.8941	t (OLS; ischemic time, age, sex)	0.064375	down	down	1	11	True	False	2.4856
+GTEx other tissues	GTEx slow vs fast death: Kidney - Cortex	FOS	-1.8331	t (OLS; ischemic time, age, sex)	0.073126	down	down	2	6	True	False	0.28017
+GTEx other tissues	GTEx slow vs fast death: Kidney - Cortex	GADD45G	2.1799	t (OLS; ischemic time, age, sex)	0.034308	up	up	8	1	True	True	0.19397
+GTEx other tissues	GTEx slow vs fast death: Kidney - Cortex	MAFF	1.1578	t (OLS; ischemic time, age, sex)	0.2528	up	up	8	2	True	False	15.704
+GTEx other tissues	GTEx slow vs fast death: Kidney - Cortex	NR4A1	-2.3818	t (OLS; ischemic time, age, sex)	0.021329	down	down	1	11	True	True	11.681
+GTEx other tissues	GTEx slow vs fast death: Kidney - Cortex	PPP1R15A	0.3415	t (OLS; ischemic time, age, sex)	0.73425	up	up	6	2	True	False	5.704
+GTEx other tissues	GTEx slow vs fast death: Liver	DUSP1	-0.4864	t (OLS; ischemic time, age, sex)	0.62769	down	down	2	9	True	False	0.021552
+GTEx other tissues	GTEx slow vs fast death: Liver	EGR1	-1.0564	t (OLS; ischemic time, age, sex)	0.29319	down	down	1	11	True	False	2.4856
+GTEx other tissues	GTEx slow vs fast death: Liver	FOS	-2.0164	t (OLS; ischemic time, age, sex)	0.046287	down	down	2	6	True	True	0.28017
+GTEx other tissues	GTEx slow vs fast death: Liver	GADD45G	-0.5096	t (OLS; ischemic time, age, sex)	0.61139	down	up	8	1	False	False	0.19397
+GTEx other tissues	GTEx slow vs fast death: Liver	MAFF	3.1226	t (OLS; ischemic time, age, sex)	0.0023112	up	up	8	2	True	True	15.704
+GTEx other tissues	GTEx slow vs fast death: Liver	NR4A1	-1.6929	t (OLS; ischemic time, age, sex)	0.093412	down	down	1	11	True	False	11.681
+GTEx other tissues	GTEx slow vs fast death: Liver	PPP1R15A	-0.9393	t (OLS; ischemic time, age, sex)	0.34971	down	up	6	2	False	False	5.704
+GTEx other tissues	GTEx slow vs fast death: Lung	DUSP1	-0.0939	t (OLS; ischemic time, age, sex)	0.92528	down	down	2	9	True	False	0.021552
+GTEx other tissues	GTEx slow vs fast death: Lung	EGR1	-0.4819	t (OLS; ischemic time, age, sex)	0.63037	down	down	1	11	True	False	2.4856
+GTEx other tissues	GTEx slow vs fast death: Lung	FOS	2.3645	t (OLS; ischemic time, age, sex)	0.018945	up	down	2	6	False	True	0.28017
+GTEx other tissues	GTEx slow vs fast death: Lung	GADD45G	3.281	t (OLS; ischemic time, age, sex)	0.0012068	up	up	8	1	True	True	0.19397
+GTEx other tissues	GTEx slow vs fast death: Lung	MAFF	-3.4836	t (OLS; ischemic time, age, sex)	0.00059933	down	up	8	2	False	True	15.704
+GTEx other tissues	GTEx slow vs fast death: Lung	NR4A1	-4.1912	t (OLS; ischemic time, age, sex)	4.053e-05	down	down	1	11	True	True	11.681
+GTEx other tissues	GTEx slow vs fast death: Lung	PPP1R15A	-0.0086	t (OLS; ischemic time, age, sex)	0.99315	down	up	6	2	False	False	5.704
+GTEx other tissues	GTEx slow vs fast death: Minor Salivary Gland	DUSP1	-0.5446	t (OLS; ischemic time, age, sex)	0.58921	down	down	2	9	True	False	0.021552
+GTEx other tissues	GTEx slow vs fast death: Minor Salivary Gland	EGR1	-1.1929	t (OLS; ischemic time, age, sex)	0.2403	down	down	1	11	True	False	2.4856
+GTEx other tissues	GTEx slow vs fast death: Minor Salivary Gland	FOS	-1.3133	t (OLS; ischemic time, age, sex)	0.19696	down	down	2	6	True	False	0.28017
+GTEx other tissues	GTEx slow vs fast death: Minor Salivary Gland	GADD45G	0.0572	t (OLS; ischemic time, age, sex)	0.95469	up	up	8	1	True	False	0.19397
+GTEx other tissues	GTEx slow vs fast death: Minor Salivary Gland	MAFF	2.2036	t (OLS; ischemic time, age, sex)	0.033685	up	up	8	2	True	True	15.704
+GTEx other tissues	GTEx slow vs fast death: Minor Salivary Gland	NR4A1	-2.2979	t (OLS; ischemic time, age, sex)	0.027164	down	down	1	11	True	True	11.681
+GTEx other tissues	GTEx slow vs fast death: Minor Salivary Gland	PPP1R15A	0.643	t (OLS; ischemic time, age, sex)	0.52409	up	up	6	2	True	False	5.704
+GTEx other tissues	GTEx slow vs fast death: Muscle - Skeletal	DUSP1	3.9821	t (OLS; ischemic time, age, sex)	8.6769e-05	up	down	2	9	False	True	0.021552
+GTEx other tissues	GTEx slow vs fast death: Muscle - Skeletal	EGR1	3.1781	t (OLS; ischemic time, age, sex)	0.0016455	up	down	1	11	False	True	2.4856
+GTEx other tissues	GTEx slow vs fast death: Muscle - Skeletal	FOS	1.3619	t (OLS; ischemic time, age, sex)	0.1743	up	down	2	6	False	False	0.28017
+GTEx other tissues	GTEx slow vs fast death: Muscle - Skeletal	GADD45G	5.264	t (OLS; ischemic time, age, sex)	2.7782e-07	up	up	8	1	True	True	0.19397
+GTEx other tissues	GTEx slow vs fast death: Muscle - Skeletal	MAFF	7.5605	t (OLS; ischemic time, age, sex)	5.5332e-13	up	up	8	2	True	True	15.704
+GTEx other tissues	GTEx slow vs fast death: Muscle - Skeletal	NR4A1	-3.6169	t (OLS; ischemic time, age, sex)	0.00035255	down	down	1	11	True	True	11.681
+GTEx other tissues	GTEx slow vs fast death: Muscle - Skeletal	PPP1R15A	11.436	t (OLS; ischemic time, age, sex)	3.5378e-25	up	up	6	2	True	True	5.704
+GTEx other tissues	GTEx slow vs fast death: Nerve - Tibial	DUSP1	-2.5666	t (OLS; ischemic time, age, sex)	0.01094	down	down	2	9	True	True	0.021552
+GTEx other tissues	GTEx slow vs fast death: Nerve - Tibial	EGR1	-3.3617	t (OLS; ischemic time, age, sex)	0.00091471	down	down	1	11	True	True	2.4856
+GTEx other tissues	GTEx slow vs fast death: Nerve - Tibial	FOS	-1.4478	t (OLS; ischemic time, age, sex)	0.14911	down	down	2	6	True	False	0.28017
+GTEx other tissues	GTEx slow vs fast death: Nerve - Tibial	GADD45G	0.219	t (OLS; ischemic time, age, sex)	0.82685	up	up	8	1	True	False	0.19397
+GTEx other tissues	GTEx slow vs fast death: Nerve - Tibial	MAFF	2.7683	t (OLS; ischemic time, age, sex)	0.0061199	up	up	8	2	True	True	15.704
+GTEx other tissues	GTEx slow vs fast death: Nerve - Tibial	NR4A1	-2.5602	t (OLS; ischemic time, age, sex)	0.011137	down	down	1	11	True	True	11.681
+GTEx other tissues	GTEx slow vs fast death: Nerve - Tibial	PPP1R15A	-1.0859	t (OLS; ischemic time, age, sex)	0.27872	down	up	6	2	False	False	5.704
+GTEx other tissues	GTEx slow vs fast death: Ovary	DUSP1	-2.8062	t (OLS; ischemic time, age, sex)	0.0077066	down	down	2	9	True	True	0.021552
+GTEx other tissues	GTEx slow vs fast death: Ovary	EGR1	-2.8003	t (OLS; ischemic time, age, sex)	0.007825	down	down	1	11	True	True	2.4856
+GTEx other tissues	GTEx slow vs fast death: Ovary	FOS	-3.2038	t (OLS; ischemic time, age, sex)	0.0026626	down	down	2	6	True	True	0.28017
+GTEx other tissues	GTEx slow vs fast death: Ovary	GADD45G	0.2511	t (OLS; ischemic time, age, sex)	0.80302	up	up	8	1	True	False	0.19397
+GTEx other tissues	GTEx slow vs fast death: Ovary	MAFF	1.1321	t (OLS; ischemic time, age, sex)	0.26433	up	up	8	2	True	False	15.704
+GTEx other tissues	GTEx slow vs fast death: Ovary	NR4A1	-3.2859	t (OLS; ischemic time, age, sex)	0.0021206	down	down	1	11	True	True	11.681
+GTEx other tissues	GTEx slow vs fast death: Ovary	PPP1R15A	1.6173	t (OLS; ischemic time, age, sex)	0.11367	up	up	6	2	True	False	5.704
+GTEx other tissues	GTEx slow vs fast death: Pancreas	DUSP1	3.1364	t (OLS; ischemic time, age, sex)	0.0032959	up	down	2	9	False	True	0.021552
+GTEx other tissues	GTEx slow vs fast death: Pancreas	EGR1	0.971	t (OLS; ischemic time, age, sex)	0.33769	up	down	1	11	False	False	2.4856
+GTEx other tissues	GTEx slow vs fast death: Pancreas	FOS	1.9527	t (OLS; ischemic time, age, sex)	0.05825	up	down	2	6	False	False	0.28017
+GTEx other tissues	GTEx slow vs fast death: Pancreas	GADD45G	4.4382	t (OLS; ischemic time, age, sex)	7.5421e-05	up	up	8	1	True	True	0.19397
+GTEx other tissues	GTEx slow vs fast death: Pancreas	MAFF	5.392	t (OLS; ischemic time, age, sex)	3.8805e-06	up	up	8	2	True	True	15.704
+GTEx other tissues	GTEx slow vs fast death: Pancreas	NR4A1	-1.8354	t (OLS; ischemic time, age, sex)	0.074282	down	down	1	11	True	False	11.681
+GTEx other tissues	GTEx slow vs fast death: Pancreas	PPP1R15A	1.1279	t (OLS; ischemic time, age, sex)	0.26643	up	up	6	2	True	False	5.704
+GTEx other tissues	GTEx slow vs fast death: Pituitary	DUSP1	-3.9579	t (OLS; ischemic time, age, sex)	0.00010246	down	down	2	9	True	True	0.021552
+GTEx other tissues	GTEx slow vs fast death: Pituitary	EGR1	-6.4953	t (OLS; ischemic time, age, sex)	5.5751e-10	down	down	1	11	True	True	2.4856
+GTEx other tissues	GTEx slow vs fast death: Pituitary	FOS	-5.2493	t (OLS; ischemic time, age, sex)	3.6297e-07	down	down	2	6	True	True	0.28017
+GTEx other tissues	GTEx slow vs fast death: Pituitary	GADD45G	3.4094	t (OLS; ischemic time, age, sex)	0.00077615	up	up	8	1	True	True	0.19397
+GTEx other tissues	GTEx slow vs fast death: Pituitary	MAFF	-1.7246	t (OLS; ischemic time, age, sex)	0.086024	down	up	8	2	False	False	15.704
+GTEx other tissues	GTEx slow vs fast death: Pituitary	NR4A1	-6.1352	t (OLS; ischemic time, age, sex)	3.9838e-09	down	down	1	11	True	True	11.681
+GTEx other tissues	GTEx slow vs fast death: Pituitary	PPP1R15A	-4.2653	t (OLS; ischemic time, age, sex)	2.9803e-05	down	up	6	2	False	True	5.704
+GTEx other tissues	GTEx slow vs fast death: Prostate	DUSP1	-0.555	t (OLS; ischemic time, age, sex)	0.5808	down	down	2	9	True	False	0.021552
+GTEx other tissues	GTEx slow vs fast death: Prostate	EGR1	-0.1697	t (OLS; ischemic time, age, sex)	0.86577	down	down	1	11	True	False	2.4856
+GTEx other tissues	GTEx slow vs fast death: Prostate	FOS	-0.7999	t (OLS; ischemic time, age, sex)	0.42668	down	down	2	6	True	False	0.28017
+GTEx other tissues	GTEx slow vs fast death: Prostate	GADD45G	-0.5549	t (OLS; ischemic time, age, sex)	0.58087	down	up	8	1	False	False	0.19397
+GTEx other tissues	GTEx slow vs fast death: Prostate	MAFF	2.299	t (OLS; ischemic time, age, sex)	0.024728	up	up	8	2	True	True	15.704
+GTEx other tissues	GTEx slow vs fast death: Prostate	NR4A1	-1.5696	t (OLS; ischemic time, age, sex)	0.12136	down	down	1	11	True	False	11.681
+GTEx other tissues	GTEx slow vs fast death: Prostate	PPP1R15A	2.5631	t (OLS; ischemic time, age, sex)	0.012698	up	up	6	2	True	True	5.704
+GTEx other tissues	GTEx slow vs fast death: Skin - Not Sun Exposed (Suprapubic)	DUSP1	0.7861	t (OLS; ischemic time, age, sex)	0.43261	up	down	2	9	False	False	0.021552
+GTEx other tissues	GTEx slow vs fast death: Skin - Not Sun Exposed (Suprapubic)	EGR1	2.3338	t (OLS; ischemic time, age, sex)	0.020465	up	down	1	11	False	True	2.4856
+GTEx other tissues	GTEx slow vs fast death: Skin - Not Sun Exposed (Suprapubic)	FOS	0.4738	t (OLS; ischemic time, age, sex)	0.63609	up	down	2	6	False	False	0.28017
+GTEx other tissues	GTEx slow vs fast death: Skin - Not Sun Exposed (Suprapubic)	GADD45G	1.4687	t (OLS; ischemic time, age, sex)	0.14327	up	up	8	1	True	False	0.19397
+GTEx other tissues	GTEx slow vs fast death: Skin - Not Sun Exposed (Suprapubic)	MAFF	8.5646	t (OLS; ischemic time, age, sex)	1.5493e-15	up	up	8	2	True	True	15.704
+GTEx other tissues	GTEx slow vs fast death: Skin - Not Sun Exposed (Suprapubic)	NR4A1	0.5756	t (OLS; ischemic time, age, sex)	0.56545	up	down	1	11	False	False	11.681
+GTEx other tissues	GTEx slow vs fast death: Skin - Not Sun Exposed (Suprapubic)	PPP1R15A	3.5976	t (OLS; ischemic time, age, sex)	0.00039282	up	up	6	2	True	True	5.704
+GTEx other tissues	GTEx slow vs fast death: Skin - Sun Exposed (Lower leg)	DUSP1	-2.4076	t (OLS; ischemic time, age, sex)	0.016734	down	down	2	9	True	True	0.021552
+GTEx other tissues	GTEx slow vs fast death: Skin - Sun Exposed (Lower leg)	EGR1	1.5046	t (OLS; ischemic time, age, sex)	0.1336	up	down	1	11	False	False	2.4856
+GTEx other tissues	GTEx slow vs fast death: Skin - Sun Exposed (Lower leg)	FOS	-1.8105	t (OLS; ischemic time, age, sex)	0.071338	down	down	2	6	True	False	0.28017
+GTEx other tissues	GTEx slow vs fast death: Skin - Sun Exposed (Lower leg)	GADD45G	3.4972	t (OLS; ischemic time, age, sex)	0.0005502	up	up	8	1	True	True	0.19397
+GTEx other tissues	GTEx slow vs fast death: Skin - Sun Exposed (Lower leg)	MAFF	8.335	t (OLS; ischemic time, age, sex)	4.0818e-15	up	up	8	2	True	True	15.704
+GTEx other tissues	GTEx slow vs fast death: Skin - Sun Exposed (Lower leg)	NR4A1	-1.2468	t (OLS; ischemic time, age, sex)	0.21356	down	down	1	11	True	False	11.681
+GTEx other tissues	GTEx slow vs fast death: Skin - Sun Exposed (Lower leg)	PPP1R15A	4.7154	t (OLS; ischemic time, age, sex)	3.8843e-06	up	up	6	2	True	True	5.704
+GTEx other tissues	GTEx slow vs fast death: Stomach	DUSP1	-1.3969	t (OLS; ischemic time, age, sex)	0.16945	down	down	2	9	True	False	0.021552
+GTEx other tissues	GTEx slow vs fast death: Stomach	EGR1	-3.0629	t (OLS; ischemic time, age, sex)	0.0037328	down	down	1	11	True	True	2.4856
+GTEx other tissues	GTEx slow vs fast death: Stomach	FOS	-2.5127	t (OLS; ischemic time, age, sex)	0.01572	down	down	2	6	True	True	0.28017
+GTEx other tissues	GTEx slow vs fast death: Stomach	GADD45G	0.3424	t (OLS; ischemic time, age, sex)	0.73368	up	up	8	1	True	False	0.19397
+GTEx other tissues	GTEx slow vs fast death: Stomach	MAFF	-0.872	t (OLS; ischemic time, age, sex)	0.38794	down	up	8	2	False	False	15.704
+GTEx other tissues	GTEx slow vs fast death: Stomach	NR4A1	-2.3014	t (OLS; ischemic time, age, sex)	0.026164	down	down	1	11	True	True	11.681
+GTEx other tissues	GTEx slow vs fast death: Stomach	PPP1R15A	-2.336	t (OLS; ischemic time, age, sex)	0.024112	down	up	6	2	False	True	5.704
+GTEx other tissues	GTEx slow vs fast death: Testis	DUSP1	-1.9116	t (OLS; ischemic time, age, sex)	0.058292	down	down	2	9	True	False	0.021552
+GTEx other tissues	GTEx slow vs fast death: Testis	EGR1	-1.4929	t (OLS; ischemic time, age, sex)	0.13807	down	down	1	11	True	False	2.4856
+GTEx other tissues	GTEx slow vs fast death: Testis	FOS	-1.989	t (OLS; ischemic time, age, sex)	0.048957	down	down	2	6	True	True	0.28017
+GTEx other tissues	GTEx slow vs fast death: Testis	GADD45G	0.052	t (OLS; ischemic time, age, sex)	0.95861	up	up	8	1	True	False	0.19397
+GTEx other tissues	GTEx slow vs fast death: Testis	MAFF	1.5201	t (OLS; ischemic time, age, sex)	0.13109	up	up	8	2	True	False	15.704
+GTEx other tissues	GTEx slow vs fast death: Testis	NR4A1	-1.7539	t (OLS; ischemic time, age, sex)	0.08198	down	down	1	11	True	False	11.681
+GTEx other tissues	GTEx slow vs fast death: Testis	PPP1R15A	0.6973	t (OLS; ischemic time, age, sex)	0.48695	up	up	6	2	True	False	5.704
+GTEx other tissues	GTEx slow vs fast death: Thyroid	DUSP1	-7.4777	t (OLS; ischemic time, age, sex)	1.5452e-12	down	down	2	9	True	True	0.021552
+GTEx other tissues	GTEx slow vs fast death: Thyroid	EGR1	-11.246	t (OLS; ischemic time, age, sex)	1.0496e-23	down	down	1	11	True	True	2.4856
+GTEx other tissues	GTEx slow vs fast death: Thyroid	FOS	-7.662	t (OLS; ischemic time, age, sex)	4.9541e-13	down	down	2	6	True	True	0.28017
+GTEx other tissues	GTEx slow vs fast death: Thyroid	GADD45G	4.5276	t (OLS; ischemic time, age, sex)	9.539e-06	up	up	8	1	True	True	0.19397
+GTEx other tissues	GTEx slow vs fast death: Thyroid	MAFF	-5.1981	t (OLS; ischemic time, age, sex)	4.4132e-07	down	up	8	2	False	True	15.704
+GTEx other tissues	GTEx slow vs fast death: Thyroid	NR4A1	-10.512	t (OLS; ischemic time, age, sex)	2.1751e-21	down	down	1	11	True	True	11.681
+GTEx other tissues	GTEx slow vs fast death: Thyroid	PPP1R15A	-4.0029	t (OLS; ischemic time, age, sex)	8.4228e-05	down	up	6	2	False	True	5.704
+GTEx other tissues	GTEx slow vs fast death: Uterus	DUSP1	-1.2208	t (OLS; ischemic time, age, sex)	0.23453	down	down	2	9	True	False	0.021552
+GTEx other tissues	GTEx slow vs fast death: Uterus	EGR1	-3.9324	t (OLS; ischemic time, age, sex)	0.00066528	down	down	1	11	True	True	2.4856
+GTEx other tissues	GTEx slow vs fast death: Uterus	FOS	-1.0506	t (OLS; ischemic time, age, sex)	0.30436	down	down	2	6	True	False	0.28017
+GTEx other tissues	GTEx slow vs fast death: Uterus	GADD45G	0.7516	t (OLS; ischemic time, age, sex)	0.45991	up	up	8	1	True	False	0.19397
+GTEx other tissues	GTEx slow vs fast death: Uterus	MAFF	-0.1076	t (OLS; ischemic time, age, sex)	0.91525	down	up	8	2	False	False	15.704
+GTEx other tissues	GTEx slow vs fast death: Uterus	NR4A1	-2.7938	t (OLS; ischemic time, age, sex)	0.010316	down	down	1	11	True	True	11.681
+GTEx other tissues	GTEx slow vs fast death: Uterus	PPP1R15A	-0.412	t (OLS; ischemic time, age, sex)	0.68415	down	up	6	2	False	False	5.704
+GTEx other tissues	GTEx slow vs fast death: Vagina	DUSP1	-0.9874	t (OLS; ischemic time, age, sex)	0.33063	down	down	2	9	True	False	0.021552
+GTEx other tissues	GTEx slow vs fast death: Vagina	EGR1	-2.8458	t (OLS; ischemic time, age, sex)	0.0075573	down	down	1	11	True	True	2.4856
+GTEx other tissues	GTEx slow vs fast death: Vagina	FOS	1.1785	t (OLS; ischemic time, age, sex)	0.24703	up	down	2	6	False	False	0.28017
+GTEx other tissues	GTEx slow vs fast death: Vagina	GADD45G	2.1393	t (OLS; ischemic time, age, sex)	0.039901	up	up	8	1	True	True	0.19397
+GTEx other tissues	GTEx slow vs fast death: Vagina	MAFF	-0.8171	t (OLS; ischemic time, age, sex)	0.41973	down	up	8	2	False	False	15.704
+GTEx other tissues	GTEx slow vs fast death: Vagina	NR4A1	-4.2492	t (OLS; ischemic time, age, sex)	0.00016499	down	down	1	11	True	True	11.681
+GTEx other tissues	GTEx slow vs fast death: Vagina	PPP1R15A	-1.3965	t (OLS; ischemic time, age, sex)	0.17189	down	up	6	2	False	False	5.704
+GTEx other tissues	GTEx slow vs fast death: Whole Blood	DUSP1	0.2072	t (OLS; ischemic time, age, sex)	0.83602	up	down	2	9	False	False	0.021552
+GTEx other tissues	GTEx slow vs fast death: Whole Blood	EGR1	-5.2246	t (OLS; ischemic time, age, sex)	3.6107e-07	down	down	1	11	True	True	2.4856
+GTEx other tissues	GTEx slow vs fast death: Whole Blood	FOS	-1.6066	t (OLS; ischemic time, age, sex)	0.10937	down	down	2	6	True	False	0.28017
+GTEx other tissues	GTEx slow vs fast death: Whole Blood	GADD45G	0.8958	t (OLS; ischemic time, age, sex)	0.3712	up	up	8	1	True	False	0.19397
+GTEx other tissues	GTEx slow vs fast death: Whole Blood	MAFF	-6.0712	t (OLS; ischemic time, age, sex)	4.5374e-09	down	up	8	2	False	True	15.704
+GTEx other tissues	GTEx slow vs fast death: Whole Blood	NR4A1	-11.568	t (OLS; ischemic time, age, sex)	3.4253e-25	down	down	1	11	True	True	11.681
+GTEx other tissues	GTEx slow vs fast death: Whole Blood	PPP1R15A	-2.9929	t (OLS; ischemic time, age, sex)	0.0030325	down	up	6	2	False	True	5.704
+Pritzker agonal score	Pritzker agonal factor (GSE92538, n 104)	DUSP1	-0.34451	t (OLS: dx + age + sex + PMI + agonal)	0.73122	down	down	2	9	True	False	0.021552
+Pritzker agonal score	Pritzker agonal factor (GSE92538, n 104)	EGR1	-1.8918	t (OLS: dx + age + sex + PMI + agonal)	0.06153	down	down	1	11	True	False	2.4856
+Pritzker agonal score	Pritzker agonal factor (GSE92538, n 104)	FOS	1.1944	t (OLS: dx + age + sex + PMI + agonal)	0.23528	up	down	2	6	False	False	0.28017
+Pritzker agonal score	Pritzker agonal factor (GSE92538, n 104)	GADD45G	2.1976	t (OLS: dx + age + sex + PMI + agonal)	0.03038	up	up	8	1	True	True	0.19397
+Pritzker agonal score	Pritzker agonal factor (GSE92538, n 104)	MAFF	4.491	t (OLS: dx + age + sex + PMI + agonal)	1.9746e-05	up	up	8	2	True	True	15.704
+Pritzker agonal score	Pritzker agonal factor (GSE92538, n 104)	NR4A1	-1.4091	t (OLS: dx + age + sex + PMI + agonal)	0.16203	down	down	1	11	True	False	11.681
+Pritzker agonal score	Pritzker agonal factor (GSE92538, n 104)	PPP1R15A	2.2162	t (OLS: dx + age + sex + PMI + agonal)	0.029041	up	up	6	2	True	True	5.704
+Pritzker agonal score	Pritzker agonal factor + pH (n 92)	DUSP1	-0.48228	t (OLS, with tissue pH)	0.63088	down	down	2	9	True	False	0.021552
+Pritzker agonal score	Pritzker agonal factor + pH (n 92)	EGR1	-1.8356	t (OLS, with tissue pH)	0.069996	down	down	1	11	True	False	2.4856
+Pritzker agonal score	Pritzker agonal factor + pH (n 92)	FOS	1.3543	t (OLS, with tissue pH)	0.17933	up	down	2	6	False	False	0.28017
+Pritzker agonal score	Pritzker agonal factor + pH (n 92)	GADD45G	2.22	t (OLS, with tissue pH)	0.029143	up	up	8	1	True	True	0.19397
+Pritzker agonal score	Pritzker agonal factor + pH (n 92)	MAFF	3.6937	t (OLS, with tissue pH)	0.00039476	up	up	8	2	True	True	15.704
+Pritzker agonal score	Pritzker agonal factor + pH (n 92)	NR4A1	-1.4276	t (OLS, with tissue pH)	0.15715	down	down	1	11	True	False	11.681
+Pritzker agonal score	Pritzker agonal factor + pH (n 92)	PPP1R15A	2.1067	t (OLS, with tissue pH)	0.038159	up	up	6	2	True	True	5.704
+SZ case-control comparator	SZ case-control: mean t over the 22 bulk datasets (L0, unadjusted)	DUSP1	-0.96076	mean t over datasets		down	down	2	9	True		0.021552
+SZ case-control comparator	SZ case-control: mean t over the 22 bulk datasets (L0, unadjusted)	EGR1	-1.1033	mean t over datasets		down	down	1	11	True		2.4856
+SZ case-control comparator	SZ case-control: mean t over the 22 bulk datasets (L0, unadjusted)	FOS	-0.95028	mean t over datasets		down	down	2	6	True		0.28017
+SZ case-control comparator	SZ case-control: mean t over the 22 bulk datasets (L0, unadjusted)	GADD45G	0.80341	mean t over datasets		up	up	8	1	True		0.19397
+SZ case-control comparator	SZ case-control: mean t over the 22 bulk datasets (L0, unadjusted)	MAFF	0.9799	mean t over datasets		up	up	8	2	True		15.704
+SZ case-control comparator	SZ case-control: mean t over the 22 bulk datasets (L0, unadjusted)	NR4A1	-1.094	mean t over datasets		down	down	1	11	True		11.681
+SZ case-control comparator	SZ case-control: mean t over the 22 bulk datasets (L0, unadjusted)	PPP1R15A	0.0085636	mean t over datasets		up	up	6	2	True		5.704
+SZ case-control comparator	SZ case-control: mean t over the 22 bulk datasets (L4, all measured covariates)	DUSP1	-1.0213	mean t over datasets		down	down	2	9	True		0.021552
+SZ case-control comparator	SZ case-control: mean t over the 22 bulk datasets (L4, all measured covariates)	EGR1	-1.2647	mean t over datasets		down	down	1	11	True		2.4856
+SZ case-control comparator	SZ case-control: mean t over the 22 bulk datasets (L4, all measured covariates)	FOS	-0.93425	mean t over datasets		down	down	2	6	True		0.28017
+SZ case-control comparator	SZ case-control: mean t over the 22 bulk datasets (L4, all measured covariates)	GADD45G	0.67144	mean t over datasets		up	up	8	1	True		0.19397
+SZ case-control comparator	SZ case-control: mean t over the 22 bulk datasets (L4, all measured covariates)	MAFF	0.8207	mean t over datasets		up	up	8	2	True		15.704
+SZ case-control comparator	SZ case-control: mean t over the 22 bulk datasets (L4, all measured covariates)	NR4A1	-1.262	mean t over datasets		down	down	1	11	True		11.681
+SZ case-control comparator	SZ case-control: mean t over the 22 bulk datasets (L4, all measured covariates)	PPP1R15A	-0.078339	mean t over datasets		down	up	6	2	False		5.704
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, L2/3-6 IT	DUSP1	-0.62331	mean t over the class's cell types		down	down	2	9	True		0.021552
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, L2/3-6 IT	EGR1	-0.49835	mean t over the class's cell types		down	down	1	11	True		2.4856
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, L2/3-6 IT	FOS	-0.77814	mean t over the class's cell types		down	down	2	6	True		0.28017
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, L2/3-6 IT	GADD45G	-0.76299	mean t over the class's cell types		down	up	8	1	False		0.19397
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, L2/3-6 IT	MAFF	0.056268	mean t over the class's cell types		up	up	8	2	True		15.704
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, L2/3-6 IT	NR4A1	-1.9957	mean t over the class's cell types		down	down	1	11	True		11.681
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, L2/3-6 IT	PPP1R15A	2.7644	mean t over the class's cell types		up	up	6	2	True		5.704
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, LAMP5	DUSP1	-1.2692	mean t over the class's cell types		down	down	2	9	True		0.021552
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, LAMP5	EGR1		mean t over the class's cell types		not measured	down	1	11			2.4856
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, LAMP5	FOS		mean t over the class's cell types		not measured	down	2	6			0.28017
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, LAMP5	GADD45G	2.0313	mean t over the class's cell types		up	up	8	1	True		0.19397
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, LAMP5	MAFF	-1.54	mean t over the class's cell types		down	up	8	2	False		15.704
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, LAMP5	NR4A1	-2.3258	mean t over the class's cell types		down	down	1	11	True		11.681
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, LAMP5	PPP1R15A	0.84149	mean t over the class's cell types		up	up	6	2	True		5.704
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, OPC	DUSP1		mean t over the class's cell types		not measured	down	2	9			0.021552
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, OPC	EGR1		mean t over the class's cell types		not measured	down	1	11			2.4856
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, OPC	FOS		mean t over the class's cell types		not measured	down	2	6			0.28017
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, OPC	GADD45G		mean t over the class's cell types		not measured	up	8	1			0.19397
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, OPC	MAFF		mean t over the class's cell types		not measured	up	8	2			15.704
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, OPC	NR4A1	-0.86463	mean t over the class's cell types		down	down	1	11	True		11.681
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, OPC	PPP1R15A		mean t over the class's cell types		not measured	up	6	2			5.704
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, PAX6	DUSP1		mean t over the class's cell types		not measured	down	2	9			0.021552
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, PAX6	EGR1		mean t over the class's cell types		not measured	down	1	11			2.4856
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, PAX6	FOS		mean t over the class's cell types		not measured	down	2	6			0.28017
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, PAX6	GADD45G		mean t over the class's cell types		not measured	up	8	1			0.19397
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, PAX6	MAFF		mean t over the class's cell types		not measured	up	8	2			15.704
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, PAX6	NR4A1		mean t over the class's cell types		not measured	down	1	11			11.681
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, PAX6	PPP1R15A		mean t over the class's cell types		not measured	up	6	2			5.704
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, PVALB	DUSP1	-0.80434	mean t over the class's cell types		down	down	2	9	True		0.021552
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, PVALB	EGR1	-0.35407	mean t over the class's cell types		down	down	1	11	True		2.4856
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, PVALB	FOS	-1.6155	mean t over the class's cell types		down	down	2	6	True		0.28017
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, PVALB	GADD45G	0.69141	mean t over the class's cell types		up	up	8	1	True		0.19397
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, PVALB	MAFF	-1.0133	mean t over the class's cell types		down	up	8	2	False		15.704
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, PVALB	NR4A1	-2.3898	mean t over the class's cell types		down	down	1	11	True		11.681
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, PVALB	PPP1R15A	2.1275	mean t over the class's cell types		up	up	6	2	True		5.704
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, SNCG	DUSP1		mean t over the class's cell types		not measured	down	2	9			0.021552
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, SNCG	EGR1		mean t over the class's cell types		not measured	down	1	11			2.4856
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, SNCG	FOS		mean t over the class's cell types		not measured	down	2	6			0.28017
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, SNCG	GADD45G		mean t over the class's cell types		not measured	up	8	1			0.19397
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, SNCG	MAFF		mean t over the class's cell types		not measured	up	8	2			15.704
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, SNCG	NR4A1	-1.6849	mean t over the class's cell types		down	down	1	11	True		11.681
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, SNCG	PPP1R15A		mean t over the class's cell types		not measured	up	6	2			5.704
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, SST	DUSP1	-1.0481	mean t over the class's cell types		down	down	2	9	True		0.021552
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, SST	EGR1	-0.1852	mean t over the class's cell types		down	down	1	11	True		2.4856
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, SST	FOS	-0.484	mean t over the class's cell types		down	down	2	6	True		0.28017
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, SST	GADD45G		mean t over the class's cell types		not measured	up	8	1			0.19397
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, SST	MAFF	-0.40357	mean t over the class's cell types		down	up	8	2	False		15.704
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, SST	NR4A1	-0.59202	mean t over the class's cell types		down	down	1	11	True		11.681
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, SST	PPP1R15A	1.7402	mean t over the class's cell types		up	up	6	2	True		5.704
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, VIP	DUSP1	-1.9425	mean t over the class's cell types		down	down	2	9	True		0.021552
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, VIP	EGR1	-0.55757	mean t over the class's cell types		down	down	1	11	True		2.4856
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, VIP	FOS	-1.1766	mean t over the class's cell types		down	down	2	6	True		0.28017
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, VIP	GADD45G	-0.06011	mean t over the class's cell types		down	up	8	1	False		0.19397
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, VIP	MAFF	0.52154	mean t over the class's cell types		up	up	8	2	True		15.704
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, VIP	NR4A1	-1.3237	mean t over the class's cell types		down	down	1	11	True		11.681
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, VIP	PPP1R15A	2.7701	mean t over the class's cell types		up	up	6	2	True		5.704
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, astrocyte	DUSP1	-1.7992	mean t over the class's cell types		down	down	2	9	True		0.021552
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, astrocyte	EGR1	-1.7399	mean t over the class's cell types		down	down	1	11	True		2.4856
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, astrocyte	FOS	-0.68867	mean t over the class's cell types		down	down	2	6	True		0.28017
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, astrocyte	GADD45G		mean t over the class's cell types		not measured	up	8	1			0.19397
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, astrocyte	MAFF		mean t over the class's cell types		not measured	up	8	2			15.704
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, astrocyte	NR4A1	-1.5161	mean t over the class's cell types		down	down	1	11	True		11.681
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, astrocyte	PPP1R15A		mean t over the class's cell types		not measured	up	6	2			5.704
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, chandelier	DUSP1	-0.42208	mean t over the class's cell types		down	down	2	9	True		0.021552
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, chandelier	EGR1		mean t over the class's cell types		not measured	down	1	11			2.4856
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, chandelier	FOS		mean t over the class's cell types		not measured	down	2	6			0.28017
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, chandelier	GADD45G	2.9833	mean t over the class's cell types		up	up	8	1	True		0.19397
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, chandelier	MAFF		mean t over the class's cell types		not measured	up	8	2			15.704
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, chandelier	NR4A1		mean t over the class's cell types		not measured	down	1	11			11.681
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, chandelier	PPP1R15A	2.3641	mean t over the class's cell types		up	up	6	2	True		5.704
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, deep non-IT	DUSP1		mean t over the class's cell types		not measured	down	2	9			0.021552
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, deep non-IT	EGR1	-0.3624	mean t over the class's cell types		down	down	1	11	True		2.4856
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, deep non-IT	FOS		mean t over the class's cell types		not measured	down	2	6			0.28017
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, deep non-IT	GADD45G		mean t over the class's cell types		not measured	up	8	1			0.19397
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, deep non-IT	MAFF		mean t over the class's cell types		not measured	up	8	2			15.704
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, deep non-IT	NR4A1	-1.8092	mean t over the class's cell types		down	down	1	11	True		11.681
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, deep non-IT	PPP1R15A		mean t over the class's cell types		not measured	up	6	2			5.704
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, microglia	DUSP1		mean t over the class's cell types		not measured	down	2	9			0.021552
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, microglia	EGR1		mean t over the class's cell types		not measured	down	1	11			2.4856
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, microglia	FOS		mean t over the class's cell types		not measured	down	2	6			0.28017
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, microglia	GADD45G		mean t over the class's cell types		not measured	up	8	1			0.19397
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, microglia	MAFF		mean t over the class's cell types		not measured	up	8	2			15.704
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, microglia	NR4A1		mean t over the class's cell types		not measured	down	1	11			11.681
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, microglia	PPP1R15A		mean t over the class's cell types		not measured	up	6	2			5.704
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, oligodendrocyte	DUSP1		mean t over the class's cell types		not measured	down	2	9			0.021552
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, oligodendrocyte	EGR1		mean t over the class's cell types		not measured	down	1	11			2.4856
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, oligodendrocyte	FOS		mean t over the class's cell types		not measured	down	2	6			0.28017
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, oligodendrocyte	GADD45G		mean t over the class's cell types		not measured	up	8	1			0.19397
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, oligodendrocyte	MAFF	0.56471	mean t over the class's cell types		up	up	8	2	True		15.704
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, oligodendrocyte	NR4A1		mean t over the class's cell types		not measured	down	1	11			11.681
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, oligodendrocyte	PPP1R15A		mean t over the class's cell types		not measured	up	6	2			5.704
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, vascular	DUSP1	-3.2437	mean t over the class's cell types		down	down	2	9	True		0.021552
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, vascular	EGR1		mean t over the class's cell types		not measured	down	1	11			2.4856
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, vascular	FOS	-3.6644	mean t over the class's cell types		down	down	2	6	True		0.28017
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, vascular	GADD45G		mean t over the class's cell types		not measured	up	8	1			0.19397
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, vascular	MAFF		mean t over the class's cell types		not measured	up	8	2			15.704
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, vascular	NR4A1	-2.9097	mean t over the class's cell types		down	down	1	11	True		11.681
+SZ single-nucleus comparator	SZ single nucleus: Endresz 2026 meta-analysis, vascular	PPP1R15A		mean t over the class's cell types		not measured	up	6	2			5.704
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), L2/3-6 IT	DUSP1	-0.4096	mean t over the class's cell types		down	down	2	9	True		0.021552
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), L2/3-6 IT	EGR1	-1.0806	mean t over the class's cell types		down	down	1	11	True		2.4856
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), L2/3-6 IT	FOS	-2.0453	mean t over the class's cell types		down	down	2	6	True		0.28017
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), L2/3-6 IT	GADD45G	-1.0275	mean t over the class's cell types		down	up	8	1	False		0.19397
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), L2/3-6 IT	MAFF	-0.23933	mean t over the class's cell types		down	up	8	2	False		15.704
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), L2/3-6 IT	NR4A1	-2.404	mean t over the class's cell types		down	down	1	11	True		11.681
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), L2/3-6 IT	PPP1R15A	1.0682	mean t over the class's cell types		up	up	6	2	True		5.704
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), LAMP5	DUSP1	-1.96	mean t over the class's cell types		down	down	2	9	True		0.021552
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), LAMP5	EGR1		mean t over the class's cell types		not measured	down	1	11			2.4856
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), LAMP5	FOS		mean t over the class's cell types		not measured	down	2	6			0.28017
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), LAMP5	GADD45G		mean t over the class's cell types		not measured	up	8	1			0.19397
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), LAMP5	MAFF	-3.263	mean t over the class's cell types		down	up	8	2	False		15.704
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), LAMP5	NR4A1	-2.381	mean t over the class's cell types		down	down	1	11	True		11.681
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), LAMP5	PPP1R15A		mean t over the class's cell types		not measured	up	6	2			5.704
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), OPC	DUSP1	2.408	mean t over the class's cell types		up	down	2	9	False		0.021552
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), OPC	EGR1	-1.615	mean t over the class's cell types		down	down	1	11	True		2.4856
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), OPC	FOS	1.269	mean t over the class's cell types		up	down	2	6	False		0.28017
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), OPC	GADD45G		mean t over the class's cell types		not measured	up	8	1			0.19397
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), OPC	MAFF	0.242	mean t over the class's cell types		up	up	8	2	True		15.704
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), OPC	NR4A1	0.917	mean t over the class's cell types		up	down	1	11	False		11.681
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), OPC	PPP1R15A		mean t over the class's cell types		not measured	up	6	2			5.704
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), PVALB	DUSP1	-0.346	mean t over the class's cell types		down	down	2	9	True		0.021552
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), PVALB	EGR1		mean t over the class's cell types		not measured	down	1	11			2.4856
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), PVALB	FOS	-0.48	mean t over the class's cell types		down	down	2	6	True		0.28017
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), PVALB	GADD45G	0.3	mean t over the class's cell types		up	up	8	1	True		0.19397
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), PVALB	MAFF	-1.004	mean t over the class's cell types		down	up	8	2	False		15.704
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), PVALB	NR4A1	-3.151	mean t over the class's cell types		down	down	1	11	True		11.681
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), PVALB	PPP1R15A	0.408	mean t over the class's cell types		up	up	6	2	True		5.704
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), SST	DUSP1	-0.502	mean t over the class's cell types		down	down	2	9	True		0.021552
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), SST	EGR1	-1.011	mean t over the class's cell types		down	down	1	11	True		2.4856
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), SST	FOS	-0.64	mean t over the class's cell types		down	down	2	6	True		0.28017
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), SST	GADD45G		mean t over the class's cell types		not measured	up	8	1			0.19397
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), SST	MAFF	-1.544	mean t over the class's cell types		down	up	8	2	False		15.704
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), SST	NR4A1	-1.727	mean t over the class's cell types		down	down	1	11	True		11.681
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), SST	PPP1R15A	-0.468	mean t over the class's cell types		down	up	6	2	False		5.704
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), VIP	DUSP1	-0.331	mean t over the class's cell types		down	down	2	9	True		0.021552
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), VIP	EGR1	-0.68	mean t over the class's cell types		down	down	1	11	True		2.4856
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), VIP	FOS	1.16	mean t over the class's cell types		up	down	2	6	False		0.28017
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), VIP	GADD45G	0.853	mean t over the class's cell types		up	up	8	1	True		0.19397
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), VIP	MAFF	-0.089	mean t over the class's cell types		down	up	8	2	False		15.704
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), VIP	NR4A1	-0.71	mean t over the class's cell types		down	down	1	11	True		11.681
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), VIP	PPP1R15A	1.843	mean t over the class's cell types		up	up	6	2	True		5.704
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), astrocyte	DUSP1	-1.375	mean t over the class's cell types		down	down	2	9	True		0.021552
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), astrocyte	EGR1	-0.422	mean t over the class's cell types		down	down	1	11	True		2.4856
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), astrocyte	FOS	-1.512	mean t over the class's cell types		down	down	2	6	True		0.28017
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), astrocyte	GADD45G	0.925	mean t over the class's cell types		up	up	8	1	True		0.19397
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), astrocyte	MAFF	1.822	mean t over the class's cell types		up	up	8	2	True		15.704
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), astrocyte	NR4A1	-1.645	mean t over the class's cell types		down	down	1	11	True		11.681
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), astrocyte	PPP1R15A	0.655	mean t over the class's cell types		up	up	6	2	True		5.704
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), chandelier	DUSP1	-0.746	mean t over the class's cell types		down	down	2	9	True		0.021552
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), chandelier	EGR1		mean t over the class's cell types		not measured	down	1	11			2.4856
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), chandelier	FOS		mean t over the class's cell types		not measured	down	2	6			0.28017
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), chandelier	GADD45G		mean t over the class's cell types		not measured	up	8	1			0.19397
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), chandelier	MAFF		mean t over the class's cell types		not measured	up	8	2			15.704
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), chandelier	NR4A1	-3.049	mean t over the class's cell types		down	down	1	11	True		11.681
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), chandelier	PPP1R15A		mean t over the class's cell types		not measured	up	6	2			5.704
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), deep non-IT	DUSP1		mean t over the class's cell types		not measured	down	2	9			0.021552
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), deep non-IT	EGR1	-1.1505	mean t over the class's cell types		down	down	1	11	True		2.4856
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), deep non-IT	FOS		mean t over the class's cell types		not measured	down	2	6			0.28017
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), deep non-IT	GADD45G		mean t over the class's cell types		not measured	up	8	1			0.19397
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), deep non-IT	MAFF		mean t over the class's cell types		not measured	up	8	2			15.704
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), deep non-IT	NR4A1	-1.787	mean t over the class's cell types		down	down	1	11	True		11.681
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), deep non-IT	PPP1R15A		mean t over the class's cell types		not measured	up	6	2			5.704
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), microglia	DUSP1	-0.895	mean t over the class's cell types		down	down	2	9	True		0.021552
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), microglia	EGR1	-0.716	mean t over the class's cell types		down	down	1	11	True		2.4856
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), microglia	FOS	-1.331	mean t over the class's cell types		down	down	2	6	True		0.28017
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), microglia	GADD45G		mean t over the class's cell types		not measured	up	8	1			0.19397
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), microglia	MAFF		mean t over the class's cell types		not measured	up	8	2			15.704
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), microglia	NR4A1		mean t over the class's cell types		not measured	down	1	11			11.681
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), microglia	PPP1R15A	1.823	mean t over the class's cell types		up	up	6	2	True		5.704
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), oligodendrocyte	DUSP1	-0.597	mean t over the class's cell types		down	down	2	9	True		0.021552
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), oligodendrocyte	EGR1	0.23	mean t over the class's cell types		up	down	1	11	False		2.4856
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), oligodendrocyte	FOS	0.787	mean t over the class's cell types		up	down	2	6	False		0.28017
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), oligodendrocyte	GADD45G	0.165	mean t over the class's cell types		up	up	8	1	True		0.19397
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), oligodendrocyte	MAFF	0.484	mean t over the class's cell types		up	up	8	2	True		15.704
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), oligodendrocyte	NR4A1	-0.445	mean t over the class's cell types		down	down	1	11	True		11.681
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), oligodendrocyte	PPP1R15A	-0.576	mean t over the class's cell types		down	up	6	2	False		5.704
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), vascular	DUSP1	-0.63775	mean t over the class's cell types		down	down	2	9	True		0.021552
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), vascular	EGR1	-2.56	mean t over the class's cell types		down	down	1	11	True		2.4856
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), vascular	FOS	-2.0247	mean t over the class's cell types		down	down	2	6	True		0.28017
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), vascular	GADD45G		mean t over the class's cell types		not measured	up	8	1			0.19397
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), vascular	MAFF	1.647	mean t over the class's cell types		up	up	8	2	True		15.704
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), vascular	NR4A1	-1.8563	mean t over the class's cell types		down	down	1	11	True		11.681
+SZ single-nucleus comparator	SZ single nucleus: PsychAD (Lee 2025), vascular	PPP1R15A	1.357	mean t over the class's cell types		up	up	6	2	True		5.704
+SZ per dataset (22 bulk)	SZ case-control GSE208338 (L0)	DUSP1	-0.71619	t		down	down	2	9	True		0.021552
+SZ per dataset (22 bulk)	SZ case-control GSE208338 (L0)	EGR1	-1.7611	t		down	down	1	11	True		2.4856
+SZ per dataset (22 bulk)	SZ case-control GSE208338 (L0)	FOS	0.49189	t		up	down	2	6	False		0.28017
+SZ per dataset (22 bulk)	SZ case-control GSE208338 (L0)	GADD45G	0.16818	t		up	up	8	1	True		0.19397
+SZ per dataset (22 bulk)	SZ case-control GSE208338 (L0)	MAFF	-0.47475	t		down	up	8	2	False		15.704
+SZ per dataset (22 bulk)	SZ case-control GSE208338 (L0)	NR4A1	-1.6964	t		down	down	1	11	True		11.681
+SZ per dataset (22 bulk)	SZ case-control GSE208338 (L0)	PPP1R15A	-0.029072	t		down	up	6	2	False		5.704
+SZ per dataset (22 bulk)	SZ case-control GSE35977 (L0)	DUSP1	-3.6717	t		down	down	2	9	True		0.021552
+SZ per dataset (22 bulk)	SZ case-control GSE35977 (L0)	EGR1	-2.3664	t		down	down	1	11	True		2.4856
+SZ per dataset (22 bulk)	SZ case-control GSE35977 (L0)	FOS	-2.6485	t		down	down	2	6	True		0.28017
+SZ per dataset (22 bulk)	SZ case-control GSE35977 (L0)	GADD45G	0.38715	t		up	up	8	1	True		0.19397
+SZ per dataset (22 bulk)	SZ case-control GSE35977 (L0)	MAFF	-1.032	t		down	up	8	2	False		15.704
+SZ per dataset (22 bulk)	SZ case-control GSE35977 (L0)	NR4A1	-2.6597	t		down	down	1	11	True		11.681
+SZ per dataset (22 bulk)	SZ case-control GSE35977 (L0)	PPP1R15A	-1.2151	t		down	up	6	2	False		5.704
+SZ per dataset (22 bulk)	SZ case-control GSE35974 (L0)	DUSP1	-3.4965	t		down	down	2	9	True		0.021552
+SZ per dataset (22 bulk)	SZ case-control GSE35974 (L0)	EGR1	-1.3891	t		down	down	1	11	True		2.4856
+SZ per dataset (22 bulk)	SZ case-control GSE35974 (L0)	FOS	-3.2054	t		down	down	2	6	True		0.28017
+SZ per dataset (22 bulk)	SZ case-control GSE35974 (L0)	GADD45G	-0.4005	t		down	up	8	1	False		0.19397
+SZ per dataset (22 bulk)	SZ case-control GSE35974 (L0)	MAFF	-0.25246	t		down	up	8	2	False		15.704
+SZ per dataset (22 bulk)	SZ case-control GSE35974 (L0)	NR4A1	-2.7508	t		down	down	1	11	True		11.681
+SZ per dataset (22 bulk)	SZ case-control GSE35974 (L0)	PPP1R15A	-1.1277	t		down	up	6	2	False		5.704
+SZ per dataset (22 bulk)	SZ case-control GSE202537_caudate (L0)	DUSP1	-1.0428	t		down	down	2	9	True		0.021552
+SZ per dataset (22 bulk)	SZ case-control GSE202537_caudate (L0)	EGR1	-0.77095	t		down	down	1	11	True		2.4856
+SZ per dataset (22 bulk)	SZ case-control GSE202537_caudate (L0)	FOS	-1.773	t		down	down	2	6	True		0.28017
+SZ per dataset (22 bulk)	SZ case-control GSE202537_caudate (L0)	GADD45G	4.1561	t		up	up	8	1	True		0.19397
+SZ per dataset (22 bulk)	SZ case-control GSE202537_caudate (L0)	MAFF	2.5184	t		up	up	8	2	True		15.704
+SZ per dataset (22 bulk)	SZ case-control GSE202537_caudate (L0)	NR4A1	-1.3752	t		down	down	1	11	True		11.681
+SZ per dataset (22 bulk)	SZ case-control GSE202537_caudate (L0)	PPP1R15A	-0.71168	t		down	up	6	2	False		5.704
+SZ per dataset (22 bulk)	SZ case-control GSE202537_putamen (L0)	DUSP1	-1.254	t		down	down	2	9	True		0.021552
+SZ per dataset (22 bulk)	SZ case-control GSE202537_putamen (L0)	EGR1	-1.2751	t		down	down	1	11	True		2.4856
+SZ per dataset (22 bulk)	SZ case-control GSE202537_putamen (L0)	FOS	-2.1287	t		down	down	2	6	True		0.28017
+SZ per dataset (22 bulk)	SZ case-control GSE202537_putamen (L0)	GADD45G	0.66753	t		up	up	8	1	True		0.19397
+SZ per dataset (22 bulk)	SZ case-control GSE202537_putamen (L0)	MAFF	1.7532	t		up	up	8	2	True		15.704
+SZ per dataset (22 bulk)	SZ case-control GSE202537_putamen (L0)	NR4A1	-1.5351	t		down	down	1	11	True		11.681
+SZ per dataset (22 bulk)	SZ case-control GSE202537_putamen (L0)	PPP1R15A	-0.79447	t		down	up	6	2	False		5.704
+SZ per dataset (22 bulk)	SZ case-control GSE202537_NAc (L0)	DUSP1	-1.071	t		down	down	2	9	True		0.021552
+SZ per dataset (22 bulk)	SZ case-control GSE202537_NAc (L0)	EGR1	-0.19127	t		down	down	1	11	True		2.4856
+SZ per dataset (22 bulk)	SZ case-control GSE202537_NAc (L0)	FOS	-1.35	t		down	down	2	6	True		0.28017
+SZ per dataset (22 bulk)	SZ case-control GSE202537_NAc (L0)	GADD45G	2.223	t		up	up	8	1	True		0.19397
+SZ per dataset (22 bulk)	SZ case-control GSE202537_NAc (L0)	MAFF	1.9883	t		up	up	8	2	True		15.704
+SZ per dataset (22 bulk)	SZ case-control GSE202537_NAc (L0)	NR4A1	-1.5476	t		down	down	1	11	True		11.681
+SZ per dataset (22 bulk)	SZ case-control GSE202537_NAc (L0)	PPP1R15A	-0.45932	t		down	up	6	2	False		5.704
+SZ per dataset (22 bulk)	SZ case-control GSE21138 (L0)	DUSP1	-0.023995	t		down	down	2	9	True		0.021552
+SZ per dataset (22 bulk)	SZ case-control GSE21138 (L0)	EGR1	-0.33798	t		down	down	1	11	True		2.4856
+SZ per dataset (22 bulk)	SZ case-control GSE21138 (L0)	FOS	0.72556	t		up	down	2	6	False		0.28017
+SZ per dataset (22 bulk)	SZ case-control GSE21138 (L0)	GADD45G	2.3496	t		up	up	8	1	True		0.19397
+SZ per dataset (22 bulk)	SZ case-control GSE21138 (L0)	MAFF	1.8668	t		up	up	8	2	True		15.704
+SZ per dataset (22 bulk)	SZ case-control GSE21138 (L0)	NR4A1	0.22837	t		up	down	1	11	False		11.681
+SZ per dataset (22 bulk)	SZ case-control GSE21138 (L0)	PPP1R15A	2.2327	t		up	up	6	2	True		5.704
+SZ per dataset (22 bulk)	SZ case-control GSE17612 (L0)	DUSP1	-2.2765	t		down	down	2	9	True		0.021552
+SZ per dataset (22 bulk)	SZ case-control GSE17612 (L0)	EGR1	-2.3927	t		down	down	1	11	True		2.4856
+SZ per dataset (22 bulk)	SZ case-control GSE17612 (L0)	FOS	-0.84327	t		down	down	2	6	True		0.28017
+SZ per dataset (22 bulk)	SZ case-control GSE17612 (L0)	GADD45G	-0.06251	t		down	up	8	1	False		0.19397
+SZ per dataset (22 bulk)	SZ case-control GSE17612 (L0)	MAFF	0.41845	t		up	up	8	2	True		15.704
+SZ per dataset (22 bulk)	SZ case-control GSE17612 (L0)	NR4A1	-3.2445	t		down	down	1	11	True		11.681
+SZ per dataset (22 bulk)	SZ case-control GSE17612 (L0)	PPP1R15A	-0.16973	t		down	up	6	2	False		5.704
+SZ per dataset (22 bulk)	SZ case-control GSE80655_AnCg (L0)	DUSP1	-0.11564	t		down	down	2	9	True		0.021552
+SZ per dataset (22 bulk)	SZ case-control GSE80655_AnCg (L0)	EGR1	-2.2626	t		down	down	1	11	True		2.4856
+SZ per dataset (22 bulk)	SZ case-control GSE80655_AnCg (L0)	FOS	-1.4239	t		down	down	2	6	True		0.28017
+SZ per dataset (22 bulk)	SZ case-control GSE80655_AnCg (L0)	GADD45G	1.6202	t		up	up	8	1	True		0.19397
+SZ per dataset (22 bulk)	SZ case-control GSE80655_AnCg (L0)	MAFF	0.24517	t		up	up	8	2	True		15.704
+SZ per dataset (22 bulk)	SZ case-control GSE80655_AnCg (L0)	NR4A1	-1.124	t		down	down	1	11	True		11.681
+SZ per dataset (22 bulk)	SZ case-control GSE80655_AnCg (L0)	PPP1R15A	-0.28486	t		down	up	6	2	False		5.704
+SZ per dataset (22 bulk)	SZ case-control GSE80655_DLPFC (L0)	DUSP1	0.10044	t		up	down	2	9	False		0.021552
+SZ per dataset (22 bulk)	SZ case-control GSE80655_DLPFC (L0)	EGR1	-2.4992	t		down	down	1	11	True		2.4856
+SZ per dataset (22 bulk)	SZ case-control GSE80655_DLPFC (L0)	FOS	-1.0835	t		down	down	2	6	True		0.28017
+SZ per dataset (22 bulk)	SZ case-control GSE80655_DLPFC (L0)	GADD45G	1.0187	t		up	up	8	1	True		0.19397
+SZ per dataset (22 bulk)	SZ case-control GSE80655_DLPFC (L0)	MAFF	-0.32337	t		down	up	8	2	False		15.704
+SZ per dataset (22 bulk)	SZ case-control GSE80655_DLPFC (L0)	NR4A1	-2.2755	t		down	down	1	11	True		11.681
+SZ per dataset (22 bulk)	SZ case-control GSE80655_DLPFC (L0)	PPP1R15A	-0.93585	t		down	up	6	2	False		5.704
+SZ per dataset (22 bulk)	SZ case-control GSE80655_nAcc (L0)	DUSP1	-1.0824	t		down	down	2	9	True		0.021552
+SZ per dataset (22 bulk)	SZ case-control GSE80655_nAcc (L0)	EGR1	-1.6409	t		down	down	1	11	True		2.4856
+SZ per dataset (22 bulk)	SZ case-control GSE80655_nAcc (L0)	FOS	-1.6002	t		down	down	2	6	True		0.28017
+SZ per dataset (22 bulk)	SZ case-control GSE80655_nAcc (L0)	GADD45G	-0.24232	t		down	up	8	1	False		0.19397
+SZ per dataset (22 bulk)	SZ case-control GSE80655_nAcc (L0)	MAFF	-0.17268	t		down	up	8	2	False		15.704
+SZ per dataset (22 bulk)	SZ case-control GSE80655_nAcc (L0)	NR4A1	-1.2381	t		down	down	1	11	True		11.681
+SZ per dataset (22 bulk)	SZ case-control GSE80655_nAcc (L0)	PPP1R15A	-0.82788	t		down	up	6	2	False		5.704
+SZ per dataset (22 bulk)	SZ case-control GSE92538_GPL570 (L0)	DUSP1	-2.705	t		down	down	2	9	True		0.021552
+SZ per dataset (22 bulk)	SZ case-control GSE92538_GPL570 (L0)	EGR1	-2.2498	t		down	down	1	11	True		2.4856
+SZ per dataset (22 bulk)	SZ case-control GSE92538_GPL570 (L0)	FOS	-3.0077	t		down	down	2	6	True		0.28017
+SZ per dataset (22 bulk)	SZ case-control GSE92538_GPL570 (L0)	GADD45G	0.55159	t		up	up	8	1	True		0.19397
+SZ per dataset (22 bulk)	SZ case-control GSE92538_GPL570 (L0)	MAFF	1.11	t		up	up	8	2	True		15.704
+SZ per dataset (22 bulk)	SZ case-control GSE92538_GPL570 (L0)	NR4A1	-1.0341	t		down	down	1	11	True		11.681
+SZ per dataset (22 bulk)	SZ case-control GSE92538_GPL570 (L0)	PPP1R15A	-0.49938	t		down	up	6	2	False		5.704
+SZ per dataset (22 bulk)	SZ case-control GSE21935 (L0)	DUSP1	0.51779	t		up	down	2	9	False		0.021552
+SZ per dataset (22 bulk)	SZ case-control GSE21935 (L0)	EGR1	-0.76475	t		down	down	1	11	True		2.4856
+SZ per dataset (22 bulk)	SZ case-control GSE21935 (L0)	FOS	0.86402	t		up	down	2	6	False		0.28017
+SZ per dataset (22 bulk)	SZ case-control GSE21935 (L0)	GADD45G	0.31829	t		up	up	8	1	True		0.19397
+SZ per dataset (22 bulk)	SZ case-control GSE21935 (L0)	MAFF	0.79724	t		up	up	8	2	True		15.704
+SZ per dataset (22 bulk)	SZ case-control GSE21935 (L0)	NR4A1	-1.2618	t		down	down	1	11	True		11.681
+SZ per dataset (22 bulk)	SZ case-control GSE21935 (L0)	PPP1R15A	0.54264	t		up	up	6	2	True		5.704
+SZ per dataset (22 bulk)	SZ case-control GSE53987_striatum (L0)	DUSP1	1.8514	t		up	down	2	9	False		0.021552
+SZ per dataset (22 bulk)	SZ case-control GSE53987_striatum (L0)	EGR1	0.43784	t		up	down	1	11	False		2.4856
+SZ per dataset (22 bulk)	SZ case-control GSE53987_striatum (L0)	FOS	0.68804	t		up	down	2	6	False		0.28017
+SZ per dataset (22 bulk)	SZ case-control GSE53987_striatum (L0)	GADD45G	2.124	t		up	up	8	1	True		0.19397
+SZ per dataset (22 bulk)	SZ case-control GSE53987_striatum (L0)	MAFF	3.0919	t		up	up	8	2	True		15.704
+SZ per dataset (22 bulk)	SZ case-control GSE53987_striatum (L0)	NR4A1	1.1433	t		up	down	1	11	False		11.681
+SZ per dataset (22 bulk)	SZ case-control GSE53987_striatum (L0)	PPP1R15A	3.292	t		up	up	6	2	True		5.704
+SZ per dataset (22 bulk)	SZ case-control GSE53987_BA46 (L0)	DUSP1	0.60282	t		up	down	2	9	False		0.021552
+SZ per dataset (22 bulk)	SZ case-control GSE53987_BA46 (L0)	EGR1	-2.381	t		down	down	1	11	True		2.4856
+SZ per dataset (22 bulk)	SZ case-control GSE53987_BA46 (L0)	FOS	0.81564	t		up	down	2	6	False		0.28017
+SZ per dataset (22 bulk)	SZ case-control GSE53987_BA46 (L0)	GADD45G	1.0092	t		up	up	8	1	True		0.19397
+SZ per dataset (22 bulk)	SZ case-control GSE53987_BA46 (L0)	MAFF	3.2411	t		up	up	8	2	True		15.704
+SZ per dataset (22 bulk)	SZ case-control GSE53987_BA46 (L0)	NR4A1	-1.1356	t		down	down	1	11	True		11.681
+SZ per dataset (22 bulk)	SZ case-control GSE53987_BA46 (L0)	PPP1R15A	1.9329	t		up	up	6	2	True		5.704
+SZ per dataset (22 bulk)	SZ case-control GSE53987_hippocampus (L0)	DUSP1	1.6929	t		up	down	2	9	False		0.021552
+SZ per dataset (22 bulk)	SZ case-control GSE53987_hippocampus (L0)	EGR1	-0.73977	t		down	down	1	11	True		2.4856
+SZ per dataset (22 bulk)	SZ case-control GSE53987_hippocampus (L0)	FOS	0.40935	t		up	down	2	6	False		0.28017
+SZ per dataset (22 bulk)	SZ case-control GSE53987_hippocampus (L0)	GADD45G	0.70662	t		up	up	8	1	True		0.19397
+SZ per dataset (22 bulk)	SZ case-control GSE53987_hippocampus (L0)	MAFF	4.1413	t		up	up	8	2	True		15.704
+SZ per dataset (22 bulk)	SZ case-control GSE53987_hippocampus (L0)	NR4A1	2.5382	t		up	down	1	11	False		11.681
+SZ per dataset (22 bulk)	SZ case-control GSE53987_hippocampus (L0)	PPP1R15A	1.6342	t		up	up	6	2	True		5.704
+SZ per dataset (22 bulk)	SZ case-control GSE224683 (L0)	DUSP1	0.74659	t		up	down	2	9	False		0.021552
+SZ per dataset (22 bulk)	SZ case-control GSE224683 (L0)	EGR1	0.11559	t		up	down	1	11	False		2.4856
+SZ per dataset (22 bulk)	SZ case-control GSE224683 (L0)	FOS	0.38415	t		up	down	2	6	False		0.28017
+SZ per dataset (22 bulk)	SZ case-control GSE224683 (L0)	GADD45G	0.055271	t		up	up	8	1	True		0.19397
+SZ per dataset (22 bulk)	SZ case-control GSE224683 (L0)	MAFF	1.1494	t		up	up	8	2	True		15.704
+SZ per dataset (22 bulk)	SZ case-control GSE224683 (L0)	NR4A1	-1.4035	t		down	down	1	11	True		11.681
+SZ per dataset (22 bulk)	SZ case-control GSE224683 (L0)	PPP1R15A	0.027092	t		up	up	6	2	True		5.704
+SZ per dataset (22 bulk)	SZ case-control GSE92538_GPL96 (L0)	DUSP1	-0.10333	t		down	down	2	9	True		0.021552
+SZ per dataset (22 bulk)	SZ case-control GSE92538_GPL96 (L0)	EGR1	0.23554	t		up	down	1	11	False		2.4856
+SZ per dataset (22 bulk)	SZ case-control GSE92538_GPL96 (L0)	FOS	0.36922	t		up	down	2	6	False		0.28017
+SZ per dataset (22 bulk)	SZ case-control GSE92538_GPL96 (L0)	GADD45G	0.24485	t		up	up	8	1	True		0.19397
+SZ per dataset (22 bulk)	SZ case-control GSE92538_GPL96 (L0)	MAFF	2.0109	t		up	up	8	2	True		15.704
+SZ per dataset (22 bulk)	SZ case-control GSE92538_GPL96 (L0)	NR4A1	0.11684	t		up	down	1	11	False		11.681
+SZ per dataset (22 bulk)	SZ case-control GSE92538_GPL96 (L0)	PPP1R15A	1.5201	t		up	up	6	2	True		5.704
+SZ per dataset (22 bulk)	SZ case-control GSE138082_CA1 (L0)	DUSP1	-2.0204	t		down	down	2	9	True		0.021552
+SZ per dataset (22 bulk)	SZ case-control GSE138082_CA1 (L0)	EGR1	-0.58356	t		down	down	1	11	True		2.4856
+SZ per dataset (22 bulk)	SZ case-control GSE138082_CA1 (L0)	FOS	-1.2451	t		down	down	2	6	True		0.28017
+SZ per dataset (22 bulk)	SZ case-control GSE138082_CA1 (L0)	GADD45G	-0.090701	t		down	up	8	1	False		0.19397
+SZ per dataset (22 bulk)	SZ case-control GSE138082_CA1 (L0)	MAFF	0.43966	t		up	up	8	2	True		15.704
+SZ per dataset (22 bulk)	SZ case-control GSE138082_CA1 (L0)	NR4A1	-1.3038	t		down	down	1	11	True		11.681
+SZ per dataset (22 bulk)	SZ case-control GSE138082_CA1 (L0)	PPP1R15A	-0.64249	t		down	up	6	2	False		5.704
+SZ per dataset (22 bulk)	SZ case-control GSE138082_DG (L0)	DUSP1	-2.6677	t		down	down	2	9	True		0.021552
+SZ per dataset (22 bulk)	SZ case-control GSE138082_DG (L0)	EGR1	-0.69666	t		down	down	1	11	True		2.4856
+SZ per dataset (22 bulk)	SZ case-control GSE138082_DG (L0)	FOS	-1.3857	t		down	down	2	6	True		0.28017
+SZ per dataset (22 bulk)	SZ case-control GSE138082_DG (L0)	GADD45G	-0.27055	t		down	up	8	1	False		0.19397
+SZ per dataset (22 bulk)	SZ case-control GSE138082_DG (L0)	MAFF	0.6916	t		up	up	8	2	True		15.704
+SZ per dataset (22 bulk)	SZ case-control GSE138082_DG (L0)	NR4A1	-1.5655	t		down	down	1	11	True		11.681
+SZ per dataset (22 bulk)	SZ case-control GSE138082_DG (L0)	PPP1R15A	-1.1194	t		down	up	6	2	False		5.704
+SZ per dataset (22 bulk)	SZ case-control GSE138082_CA3 (L0)	DUSP1	-1.5021	t		down	down	2	9	True		0.021552
+SZ per dataset (22 bulk)	SZ case-control GSE138082_CA3 (L0)	EGR1	-0.24551	t		down	down	1	11	True		2.4856
+SZ per dataset (22 bulk)	SZ case-control GSE138082_CA3 (L0)	FOS	-0.82015	t		down	down	2	6	True		0.28017
+SZ per dataset (22 bulk)	SZ case-control GSE138082_CA3 (L0)	GADD45G	0.52394	t		up	up	8	1	True		0.19397
+SZ per dataset (22 bulk)	SZ case-control GSE138082_CA3 (L0)	MAFF	0.79619	t		up	up	8	2	True		15.704
+SZ per dataset (22 bulk)	SZ case-control GSE138082_CA3 (L0)	NR4A1	-0.56349	t		down	down	1	11	True		11.681
+SZ per dataset (22 bulk)	SZ case-control GSE138082_CA3 (L0)	PPP1R15A	-0.1025	t		down	up	6	2	False		5.704
+SZ per dataset (22 bulk)	SZ case-control GSE26927_temporal (L0)	DUSP1	-2.8993	t		down	down	2	9	True		0.021552
+SZ per dataset (22 bulk)	SZ case-control GSE26927_temporal (L0)	EGR1	-0.51392	t		down	down	1	11	True		2.4856
+SZ per dataset (22 bulk)	SZ case-control GSE26927_temporal (L0)	FOS	-3.139	t		down	down	2	6	True		0.28017
+SZ per dataset (22 bulk)	SZ case-control GSE26927_temporal (L0)	GADD45G	0.61735	t		up	up	8	1	True		0.19397
+SZ per dataset (22 bulk)	SZ case-control GSE26927_temporal (L0)	MAFF	-2.4465	t		down	up	8	2	False		15.704
+SZ per dataset (22 bulk)	SZ case-control GSE26927_temporal (L0)	NR4A1	-0.38092	t		down	down	1	11	True		11.681
+SZ per dataset (22 bulk)	SZ case-control GSE26927_temporal (L0)	PPP1R15A	-2.0738	t		down	up	6	2	False		5.704
+SZ per dataset (22 bulk)	SZ case-control GSE208338 (L4)	DUSP1	-0.71545	t		down	down	2	9	True		0.021552
+SZ per dataset (22 bulk)	SZ case-control GSE208338 (L4)	EGR1	-1.6553	t		down	down	1	11	True		2.4856
+SZ per dataset (22 bulk)	SZ case-control GSE208338 (L4)	FOS	0.34127	t		up	down	2	6	False		0.28017
+SZ per dataset (22 bulk)	SZ case-control GSE208338 (L4)	GADD45G	0.055755	t		up	up	8	1	True		0.19397
+SZ per dataset (22 bulk)	SZ case-control GSE208338 (L4)	MAFF	0.064912	t		up	up	8	2	True		15.704
+SZ per dataset (22 bulk)	SZ case-control GSE208338 (L4)	NR4A1	-1.7261	t		down	down	1	11	True		11.681
+SZ per dataset (22 bulk)	SZ case-control GSE208338 (L4)	PPP1R15A	0.093121	t		up	up	6	2	True		5.704
+SZ per dataset (22 bulk)	SZ case-control GSE35977 (L4)	DUSP1	-3.8505	t		down	down	2	9	True		0.021552
+SZ per dataset (22 bulk)	SZ case-control GSE35977 (L4)	EGR1	-2.2149	t		down	down	1	11	True		2.4856
+SZ per dataset (22 bulk)	SZ case-control GSE35977 (L4)	FOS	-2.9992	t		down	down	2	6	True		0.28017
+SZ per dataset (22 bulk)	SZ case-control GSE35977 (L4)	GADD45G	-0.28377	t		down	up	8	1	False		0.19397
+SZ per dataset (22 bulk)	SZ case-control GSE35977 (L4)	MAFF	-1.2218	t		down	up	8	2	False		15.704
+SZ per dataset (22 bulk)	SZ case-control GSE35977 (L4)	NR4A1	-2.6788	t		down	down	1	11	True		11.681
+SZ per dataset (22 bulk)	SZ case-control GSE35977 (L4)	PPP1R15A	-1.3598	t		down	up	6	2	False		5.704
+SZ per dataset (22 bulk)	SZ case-control GSE35974 (L4)	DUSP1	-3.2845	t		down	down	2	9	True		0.021552
+SZ per dataset (22 bulk)	SZ case-control GSE35974 (L4)	EGR1	-0.99517	t		down	down	1	11	True		2.4856
+SZ per dataset (22 bulk)	SZ case-control GSE35974 (L4)	FOS	-2.9302	t		down	down	2	6	True		0.28017
+SZ per dataset (22 bulk)	SZ case-control GSE35974 (L4)	GADD45G	-0.86292	t		down	up	8	1	False		0.19397
+SZ per dataset (22 bulk)	SZ case-control GSE35974 (L4)	MAFF	0.12806	t		up	up	8	2	True		15.704
+SZ per dataset (22 bulk)	SZ case-control GSE35974 (L4)	NR4A1	-2.5377	t		down	down	1	11	True		11.681
+SZ per dataset (22 bulk)	SZ case-control GSE35974 (L4)	PPP1R15A	-0.89614	t		down	up	6	2	False		5.704
+SZ per dataset (22 bulk)	SZ case-control GSE202537_caudate (L4)	DUSP1	-0.78229	t		down	down	2	9	True		0.021552
+SZ per dataset (22 bulk)	SZ case-control GSE202537_caudate (L4)	EGR1	-0.5831	t		down	down	1	11	True		2.4856
+SZ per dataset (22 bulk)	SZ case-control GSE202537_caudate (L4)	FOS	-1.4876	t		down	down	2	6	True		0.28017
+SZ per dataset (22 bulk)	SZ case-control GSE202537_caudate (L4)	GADD45G	3.9135	t		up	up	8	1	True		0.19397
+SZ per dataset (22 bulk)	SZ case-control GSE202537_caudate (L4)	MAFF	2.4721	t		up	up	8	2	True		15.704
+SZ per dataset (22 bulk)	SZ case-control GSE202537_caudate (L4)	NR4A1	-0.97089	t		down	down	1	11	True		11.681
+SZ per dataset (22 bulk)	SZ case-control GSE202537_caudate (L4)	PPP1R15A	-0.62207	t		down	up	6	2	False		5.704
+SZ per dataset (22 bulk)	SZ case-control GSE202537_putamen (L4)	DUSP1	-1.3531	t		down	down	2	9	True		0.021552
+SZ per dataset (22 bulk)	SZ case-control GSE202537_putamen (L4)	EGR1	-2.0418	t		down	down	1	11	True		2.4856
+SZ per dataset (22 bulk)	SZ case-control GSE202537_putamen (L4)	FOS	-2.0572	t		down	down	2	6	True		0.28017
+SZ per dataset (22 bulk)	SZ case-control GSE202537_putamen (L4)	GADD45G	0.8956	t		up	up	8	1	True		0.19397
+SZ per dataset (22 bulk)	SZ case-control GSE202537_putamen (L4)	MAFF	1.3698	t		up	up	8	2	True		15.704
+SZ per dataset (22 bulk)	SZ case-control GSE202537_putamen (L4)	NR4A1	-1.5805	t		down	down	1	11	True		11.681
+SZ per dataset (22 bulk)	SZ case-control GSE202537_putamen (L4)	PPP1R15A	-1.2734	t		down	up	6	2	False		5.704
+SZ per dataset (22 bulk)	SZ case-control GSE202537_NAc (L4)	DUSP1	-1.0596	t		down	down	2	9	True		0.021552
+SZ per dataset (22 bulk)	SZ case-control GSE202537_NAc (L4)	EGR1	-0.42004	t		down	down	1	11	True		2.4856
+SZ per dataset (22 bulk)	SZ case-control GSE202537_NAc (L4)	FOS	-1.4237	t		down	down	2	6	True		0.28017
+SZ per dataset (22 bulk)	SZ case-control GSE202537_NAc (L4)	GADD45G	1.8301	t		up	up	8	1	True		0.19397
+SZ per dataset (22 bulk)	SZ case-control GSE202537_NAc (L4)	MAFF	1.5969	t		up	up	8	2	True		15.704
+SZ per dataset (22 bulk)	SZ case-control GSE202537_NAc (L4)	NR4A1	-1.5656	t		down	down	1	11	True		11.681
+SZ per dataset (22 bulk)	SZ case-control GSE202537_NAc (L4)	PPP1R15A	-0.62848	t		down	up	6	2	False		5.704
+SZ per dataset (22 bulk)	SZ case-control GSE21138 (L4)	DUSP1	-0.014142	t		down	down	2	9	True		0.021552
+SZ per dataset (22 bulk)	SZ case-control GSE21138 (L4)	EGR1	-0.4813	t		down	down	1	11	True		2.4856
+SZ per dataset (22 bulk)	SZ case-control GSE21138 (L4)	FOS	1.1015	t		up	down	2	6	False		0.28017
+SZ per dataset (22 bulk)	SZ case-control GSE21138 (L4)	GADD45G	2.0014	t		up	up	8	1	True		0.19397
+SZ per dataset (22 bulk)	SZ case-control GSE21138 (L4)	MAFF	0.79475	t		up	up	8	2	True		15.704
+SZ per dataset (22 bulk)	SZ case-control GSE21138 (L4)	NR4A1	-0.30866	t		down	down	1	11	True		11.681
+SZ per dataset (22 bulk)	SZ case-control GSE21138 (L4)	PPP1R15A	1.0725	t		up	up	6	2	True		5.704
+SZ per dataset (22 bulk)	SZ case-control GSE17612 (L4)	DUSP1	-2.228	t		down	down	2	9	True		0.021552
+SZ per dataset (22 bulk)	SZ case-control GSE17612 (L4)	EGR1	-1.4928	t		down	down	1	11	True		2.4856
+SZ per dataset (22 bulk)	SZ case-control GSE17612 (L4)	FOS	-0.55284	t		down	down	2	6	True		0.28017
+SZ per dataset (22 bulk)	SZ case-control GSE17612 (L4)	GADD45G	-1.5623	t		down	up	8	1	False		0.19397
+SZ per dataset (22 bulk)	SZ case-control GSE17612 (L4)	MAFF	-0.97104	t		down	up	8	2	False		15.704
+SZ per dataset (22 bulk)	SZ case-control GSE17612 (L4)	NR4A1	-2.4043	t		down	down	1	11	True		11.681
+SZ per dataset (22 bulk)	SZ case-control GSE17612 (L4)	PPP1R15A	-0.10867	t		down	up	6	2	False		5.704
+SZ per dataset (22 bulk)	SZ case-control GSE80655_AnCg (L4)	DUSP1	-1.4688	t		down	down	2	9	True		0.021552
+SZ per dataset (22 bulk)	SZ case-control GSE80655_AnCg (L4)	EGR1	-3.8092	t		down	down	1	11	True		2.4856
+SZ per dataset (22 bulk)	SZ case-control GSE80655_AnCg (L4)	FOS	-2.6788	t		down	down	2	6	True		0.28017
+SZ per dataset (22 bulk)	SZ case-control GSE80655_AnCg (L4)	GADD45G	1.1309	t		up	up	8	1	True		0.19397
+SZ per dataset (22 bulk)	SZ case-control GSE80655_AnCg (L4)	MAFF	-0.36304	t		down	up	8	2	False		15.704
+SZ per dataset (22 bulk)	SZ case-control GSE80655_AnCg (L4)	NR4A1	-2.691	t		down	down	1	11	True		11.681
+SZ per dataset (22 bulk)	SZ case-control GSE80655_AnCg (L4)	PPP1R15A	-0.86996	t		down	up	6	2	False		5.704
+SZ per dataset (22 bulk)	SZ case-control GSE80655_DLPFC (L4)	DUSP1	-0.68339	t		down	down	2	9	True		0.021552
+SZ per dataset (22 bulk)	SZ case-control GSE80655_DLPFC (L4)	EGR1	-3.0418	t		down	down	1	11	True		2.4856
+SZ per dataset (22 bulk)	SZ case-control GSE80655_DLPFC (L4)	FOS	-2.1341	t		down	down	2	6	True		0.28017
+SZ per dataset (22 bulk)	SZ case-control GSE80655_DLPFC (L4)	GADD45G	0.67037	t		up	up	8	1	True		0.19397
+SZ per dataset (22 bulk)	SZ case-control GSE80655_DLPFC (L4)	MAFF	-0.65624	t		down	up	8	2	False		15.704
+SZ per dataset (22 bulk)	SZ case-control GSE80655_DLPFC (L4)	NR4A1	-3.0994	t		down	down	1	11	True		11.681
+SZ per dataset (22 bulk)	SZ case-control GSE80655_DLPFC (L4)	PPP1R15A	-1.4175	t		down	up	6	2	False		5.704
+SZ per dataset (22 bulk)	SZ case-control GSE80655_nAcc (L4)	DUSP1	-1.8535	t		down	down	2	9	True		0.021552
+SZ per dataset (22 bulk)	SZ case-control GSE80655_nAcc (L4)	EGR1	-2.2318	t		down	down	1	11	True		2.4856
+SZ per dataset (22 bulk)	SZ case-control GSE80655_nAcc (L4)	FOS	-2.125	t		down	down	2	6	True		0.28017
+SZ per dataset (22 bulk)	SZ case-control GSE80655_nAcc (L4)	GADD45G	-0.71905	t		down	up	8	1	False		0.19397
+SZ per dataset (22 bulk)	SZ case-control GSE80655_nAcc (L4)	MAFF	-0.6578	t		down	up	8	2	False		15.704
+SZ per dataset (22 bulk)	SZ case-control GSE80655_nAcc (L4)	NR4A1	-2.3224	t		down	down	1	11	True		11.681
+SZ per dataset (22 bulk)	SZ case-control GSE80655_nAcc (L4)	PPP1R15A	-1.3509	t		down	up	6	2	False		5.704
+SZ per dataset (22 bulk)	SZ case-control GSE92538_GPL570 (L4)	DUSP1	-2.7532	t		down	down	2	9	True		0.021552
+SZ per dataset (22 bulk)	SZ case-control GSE92538_GPL570 (L4)	EGR1	-4.0674	t		down	down	1	11	True		2.4856
+SZ per dataset (22 bulk)	SZ case-control GSE92538_GPL570 (L4)	FOS	-3.402	t		down	down	2	6	True		0.28017
+SZ per dataset (22 bulk)	SZ case-control GSE92538_GPL570 (L4)	GADD45G	0.30699	t		up	up	8	1	True		0.19397
+SZ per dataset (22 bulk)	SZ case-control GSE92538_GPL570 (L4)	MAFF	0.49022	t		up	up	8	2	True		15.704
+SZ per dataset (22 bulk)	SZ case-control GSE92538_GPL570 (L4)	NR4A1	-2.5314	t		down	down	1	11	True		11.681
+SZ per dataset (22 bulk)	SZ case-control GSE92538_GPL570 (L4)	PPP1R15A	-1.0496	t		down	up	6	2	False		5.704
+SZ per dataset (22 bulk)	SZ case-control GSE21935 (L4)	DUSP1	0.17895	t		up	down	2	9	False		0.021552
+SZ per dataset (22 bulk)	SZ case-control GSE21935 (L4)	EGR1	-0.21189	t		down	down	1	11	True		2.4856
+SZ per dataset (22 bulk)	SZ case-control GSE21935 (L4)	FOS	0.20072	t		up	down	2	6	False		0.28017
+SZ per dataset (22 bulk)	SZ case-control GSE21935 (L4)	GADD45G	-1.1535	t		down	up	8	1	False		0.19397
+SZ per dataset (22 bulk)	SZ case-control GSE21935 (L4)	MAFF	-0.076008	t		down	up	8	2	False		15.704
+SZ per dataset (22 bulk)	SZ case-control GSE21935 (L4)	NR4A1	-0.38904	t		down	down	1	11	True		11.681
+SZ per dataset (22 bulk)	SZ case-control GSE21935 (L4)	PPP1R15A	0.09943	t		up	up	6	2	True		5.704
+SZ per dataset (22 bulk)	SZ case-control GSE53987_striatum (L4)	DUSP1	1.394	t		up	down	2	9	False		0.021552
+SZ per dataset (22 bulk)	SZ case-control GSE53987_striatum (L4)	EGR1	-0.5544	t		down	down	1	11	True		2.4856
+SZ per dataset (22 bulk)	SZ case-control GSE53987_striatum (L4)	FOS	0.47561	t		up	down	2	6	False		0.28017
+SZ per dataset (22 bulk)	SZ case-control GSE53987_striatum (L4)	GADD45G	1.7792	t		up	up	8	1	True		0.19397
+SZ per dataset (22 bulk)	SZ case-control GSE53987_striatum (L4)	MAFF	2.8425	t		up	up	8	2	True		15.704
+SZ per dataset (22 bulk)	SZ case-control GSE53987_striatum (L4)	NR4A1	0.42215	t		up	down	1	11	False		11.681
+SZ per dataset (22 bulk)	SZ case-control GSE53987_striatum (L4)	PPP1R15A	2.5609	t		up	up	6	2	True		5.704
+SZ per dataset (22 bulk)	SZ case-control GSE53987_BA46 (L4)	DUSP1	0.27368	t		up	down	2	9	False		0.021552
+SZ per dataset (22 bulk)	SZ case-control GSE53987_BA46 (L4)	EGR1	-2.5949	t		down	down	1	11	True		2.4856
+SZ per dataset (22 bulk)	SZ case-control GSE53987_BA46 (L4)	FOS	0.61527	t		up	down	2	6	False		0.28017
+SZ per dataset (22 bulk)	SZ case-control GSE53987_BA46 (L4)	GADD45G	0.71434	t		up	up	8	1	True		0.19397
+SZ per dataset (22 bulk)	SZ case-control GSE53987_BA46 (L4)	MAFF	2.8325	t		up	up	8	2	True		15.704
+SZ per dataset (22 bulk)	SZ case-control GSE53987_BA46 (L4)	NR4A1	-1.606	t		down	down	1	11	True		11.681
+SZ per dataset (22 bulk)	SZ case-control GSE53987_BA46 (L4)	PPP1R15A	1.5486	t		up	up	6	2	True		5.704
+SZ per dataset (22 bulk)	SZ case-control GSE53987_hippocampus (L4)	DUSP1	0.5204	t		up	down	2	9	False		0.021552
+SZ per dataset (22 bulk)	SZ case-control GSE53987_hippocampus (L4)	EGR1	-1.9266	t		down	down	1	11	True		2.4856
+SZ per dataset (22 bulk)	SZ case-control GSE53987_hippocampus (L4)	FOS	0.12528	t		up	down	2	6	False		0.28017
+SZ per dataset (22 bulk)	SZ case-control GSE53987_hippocampus (L4)	GADD45G	1.1097	t		up	up	8	1	True		0.19397
+SZ per dataset (22 bulk)	SZ case-control GSE53987_hippocampus (L4)	MAFF	2.9707	t		up	up	8	2	True		15.704
+SZ per dataset (22 bulk)	SZ case-control GSE53987_hippocampus (L4)	NR4A1	0.70186	t		up	down	1	11	False		11.681
+SZ per dataset (22 bulk)	SZ case-control GSE53987_hippocampus (L4)	PPP1R15A	0.42531	t		up	up	6	2	True		5.704
+SZ per dataset (22 bulk)	SZ case-control GSE224683 (L4)	DUSP1	-0.33939	t		down	down	2	9	True		0.021552
+SZ per dataset (22 bulk)	SZ case-control GSE224683 (L4)	EGR1	-1.3037	t		down	down	1	11	True		2.4856
+SZ per dataset (22 bulk)	SZ case-control GSE224683 (L4)	FOS	-0.23862	t		down	down	2	6	True		0.28017
+SZ per dataset (22 bulk)	SZ case-control GSE224683 (L4)	GADD45G	1.503	t		up	up	8	1	True		0.19397
+SZ per dataset (22 bulk)	SZ case-control GSE224683 (L4)	MAFF	1.3722	t		up	up	8	2	True		15.704
+SZ per dataset (22 bulk)	SZ case-control GSE224683 (L4)	NR4A1	-2.4945	t		down	down	1	11	True		11.681
+SZ per dataset (22 bulk)	SZ case-control GSE224683 (L4)	PPP1R15A	-0.038441	t		down	up	6	2	False		5.704
+SZ per dataset (22 bulk)	SZ case-control GSE92538_GPL96 (L4)	DUSP1	-0.35548	t		down	down	2	9	True		0.021552
+SZ per dataset (22 bulk)	SZ case-control GSE92538_GPL96 (L4)	EGR1	0.83012	t		up	down	1	11	False		2.4856
+SZ per dataset (22 bulk)	SZ case-control GSE92538_GPL96 (L4)	FOS	0.062028	t		up	down	2	6	False		0.28017
+SZ per dataset (22 bulk)	SZ case-control GSE92538_GPL96 (L4)	GADD45G	-0.24318	t		down	up	8	1	False		0.19397
+SZ per dataset (22 bulk)	SZ case-control GSE92538_GPL96 (L4)	MAFF	1.5866	t		up	up	8	2	True		15.704
+SZ per dataset (22 bulk)	SZ case-control GSE92538_GPL96 (L4)	NR4A1	0.12483	t		up	down	1	11	False		11.681
+SZ per dataset (22 bulk)	SZ case-control GSE92538_GPL96 (L4)	PPP1R15A	1.2236	t		up	up	6	2	True		5.704
+SZ per dataset (22 bulk)	SZ case-control GSE138082_CA1 (L4)	DUSP1	-0.49998	t		down	down	2	9	True		0.021552
+SZ per dataset (22 bulk)	SZ case-control GSE138082_CA1 (L4)	EGR1	0.0033925	t		up	down	1	11	False		2.4856
+SZ per dataset (22 bulk)	SZ case-control GSE138082_CA1 (L4)	FOS	0.37723	t		up	down	2	6	False		0.28017
+SZ per dataset (22 bulk)	SZ case-control GSE138082_CA1 (L4)	GADD45G	1.0871	t		up	up	8	1	True		0.19397
+SZ per dataset (22 bulk)	SZ case-control GSE138082_CA1 (L4)	MAFF	1.5315	t		up	up	8	2	True		15.704
+SZ per dataset (22 bulk)	SZ case-control GSE138082_CA1 (L4)	NR4A1	-0.34917	t		down	down	1	11	True		11.681
+SZ per dataset (22 bulk)	SZ case-control GSE138082_CA1 (L4)	PPP1R15A	0.60618	t		up	up	6	2	True		5.704
+SZ per dataset (22 bulk)	SZ case-control GSE138082_DG (L4)	DUSP1	-1.2408	t		down	down	2	9	True		0.021552
+SZ per dataset (22 bulk)	SZ case-control GSE138082_DG (L4)	EGR1	0.26875	t		up	down	1	11	False		2.4856
+SZ per dataset (22 bulk)	SZ case-control GSE138082_DG (L4)	FOS	-0.053331	t		down	down	2	6	True		0.28017
+SZ per dataset (22 bulk)	SZ case-control GSE138082_DG (L4)	GADD45G	0.83773	t		up	up	8	1	True		0.19397
+SZ per dataset (22 bulk)	SZ case-control GSE138082_DG (L4)	MAFF	1.377	t		up	up	8	2	True		15.704
+SZ per dataset (22 bulk)	SZ case-control GSE138082_DG (L4)	NR4A1	-0.36718	t		down	down	1	11	True		11.681
+SZ per dataset (22 bulk)	SZ case-control GSE138082_DG (L4)	PPP1R15A	-0.26544	t		down	up	6	2	False		5.704
+SZ per dataset (22 bulk)	SZ case-control GSE138082_CA3 (L4)	DUSP1	0.076357	t		up	down	2	9	False		0.021552
+SZ per dataset (22 bulk)	SZ case-control GSE138082_CA3 (L4)	EGR1	0.91408	t		up	down	1	11	False		2.4856
+SZ per dataset (22 bulk)	SZ case-control GSE138082_CA3 (L4)	FOS	1.1564	t		up	down	2	6	False		0.28017
+SZ per dataset (22 bulk)	SZ case-control GSE138082_CA3 (L4)	GADD45G	-0.10838	t		down	up	8	1	False		0.19397
+SZ per dataset (22 bulk)	SZ case-control GSE138082_CA3 (L4)	MAFF	2.7171	t		up	up	8	2	True		15.704
+SZ per dataset (22 bulk)	SZ case-control GSE138082_CA3 (L4)	NR4A1	0.92779	t		up	down	1	11	False		11.681
+SZ per dataset (22 bulk)	SZ case-control GSE138082_CA3 (L4)	PPP1R15A	2.1048	t		up	up	6	2	True		5.704
+SZ per dataset (22 bulk)	SZ case-control GSE26927_temporal (L4)	DUSP1	-2.4309	t		down	down	2	9	True		0.021552
+SZ per dataset (22 bulk)	SZ case-control GSE26927_temporal (L4)	EGR1	-0.21429	t		down	down	1	11	True		2.4856
+SZ per dataset (22 bulk)	SZ case-control GSE26927_temporal (L4)	FOS	-2.9263	t		down	down	2	6	True		0.28017
+SZ per dataset (22 bulk)	SZ case-control GSE26927_temporal (L4)	GADD45G	1.869	t		up	up	8	1	True		0.19397
+SZ per dataset (22 bulk)	SZ case-control GSE26927_temporal (L4)	MAFF	-2.1455	t		down	up	8	2	False		15.704
+SZ per dataset (22 bulk)	SZ case-control GSE26927_temporal (L4)	NR4A1	-0.31867	t		down	down	1	11	True		11.681
+SZ per dataset (22 bulk)	SZ case-control GSE26927_temporal (L4)	PPP1R15A	-1.5775	t		down	up	6	2	False		5.704

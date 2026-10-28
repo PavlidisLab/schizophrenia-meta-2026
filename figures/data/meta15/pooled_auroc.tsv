@@ -1,0 +1,17 @@
+# figure: Fig. 2b pooled row, AUROC of the 383 / 107 in the ranking by number of the 15 lists
+# script: meta15_pooled_auroc_2026-10-22/scripts/meta15_pooled_auroc.py (meta15_recurrent.py setup unchanged + new section), run 2026-10-22 on a remote machine; NPERM 5000, seed 20261016, same random calls in the same order as meta15_recurrent.py (the joint draws behind meta15_pooled_hits.tsv)
+# inputs (sha256 first 12): h3_units.tsv f24716bad32d; h3_inventory.tsv 75bb8a75dc47; recurrent_sets.tsv 3c42f67cdd7a; 1_global_our_prior.tsv 68272e907b72; hgnc_complete_set.txt 69bb5722d5a4; primary_lists.json 44fb07b1d2e5; universes.json 25a477fc64ae; meta15_input_datasets.tsv (91 slots, 42 datasets)
+# AUROC = P(a gene of the set outranks a gene of the rest of the ranked universe) + 0.5 P(tie); ranking = number of the lists that contain the gene (each list restricted to its own tested universe, fallback = core-80 brain union for units without one); null = joint random draws of the lists at their sizes (uniform: size fixed; DE prior: independent Bernoulli by DE-prior probability, as meta15_recurrent.py), P = (1+#sim>=obs)/(NPERM+1)
+variant	ranking_universe	universe_genes	set	set_genes_in_universe	auroc_observed	null_uniform_mean	null_uniform_lo95	null_uniform_hi95	P_ge_obs_uniform	null_deprior_mean	null_deprior_lo95	null_deprior_hi95	P_ge_obs_deprior
+all15	tested_by_at_least_one_list	34403	383	383	0.8696	0.5881	0.5625	0.6138	0.0002	0.7281	0.7057	0.7504	0.0002
+all15	tested_by_at_least_one_list	34403	107	107	0.9069	0.594	0.5455	0.6428	0.0002	0.761	0.7183	0.8018	0.0002
+all15	fallback_brain_union	34365	383	383	0.8695	0.588	0.5624	0.6137	0.0002	0.728	0.7057	0.7503	0.0002
+all15	fallback_brain_union	34365	107	107	0.9069	0.5939	0.5454	0.6427	0.0002	0.761	0.7182	0.8017	0.0002
+drop_A_13	tested_by_at_least_one_list	34403	383	383	0.8437	0.5645	0.5418	0.5886	0.0002	0.6817	0.6578	0.7055	0.0002
+drop_A_13	tested_by_at_least_one_list	34403	107	107	0.8937	0.5713	0.5254	0.6173	0.0002	0.712	0.6665	0.7561	0.0002
+drop_A_13	fallback_brain_union	34365	383	383	0.8437	0.5645	0.5417	0.5885	0.0002	0.6817	0.6577	0.7054	0.0002
+drop_A_13	fallback_brain_union	34365	107	107	0.8937	0.5712	0.5253	0.6173	0.0002	0.7119	0.6665	0.756	0.0002
+drop_B_13	tested_by_at_least_one_list	34403	383	383	0.8424	0.5961	0.5713	0.6208	0.0002	0.7053	0.6827	0.7277	0.0002
+drop_B_13	tested_by_at_least_one_list	34403	107	107	0.88	0.6024	0.5548	0.6488	0.0002	0.7372	0.6933	0.7791	0.0002
+drop_B_13	fallback_brain_union	34365	383	383	0.8424	0.596	0.5713	0.6207	0.0002	0.7053	0.6826	0.7276	0.0002
+drop_B_13	fallback_brain_union	34365	107	107	0.88	0.6023	0.5547	0.6488	0.0002	0.7372	0.6933	0.7791	0.0002

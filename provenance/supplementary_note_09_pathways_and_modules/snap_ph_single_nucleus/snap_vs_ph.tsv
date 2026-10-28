@@ -1,0 +1,111 @@
+# snap_vs_ph.py (snap_ph_single_nucleus); arm_b_scores.tsv sha256 cddc7fbc9940; sn_est_agonal.tsv d03cd36c353c; axis_v2_controls.tsv.gz 2c72a9b279a2; snap_weights.tsv b3f43daff942
+# partial Spearman / slope adjusted for age and sex (and diagnosis in group 'all'); slope = SNAP score (SD) per SD of the covariate; ph_axis_score: higher = higher-pH-like; estimated agonal: higher = more agonal; 2,000 donor bootstraps (stratified by diagnosis)
+set	group	snap	against	statistic	estimate	lo95	hi95	n	n_sz
+NSW	controls	SNAP total	measured pH	spearman_rho	-0.1423	-0.5724	0.3171	33	0
+NSW	controls	SNAP total	measured pH	partial_spearman	-0.3139	-0.5927	0.0055	33	0
+NSW	controls	SNAP total	measured pH	slope_SD_per_SD	0.0573	-0.4977	0.439	33	0
+NSW	controls	SNAP total	estimated agonal score	spearman_rho	-0.6691	-0.9031	-0.3278	33	0
+NSW	controls	SNAP total	estimated agonal score	partial_spearman	-0.6167	-0.8845	-0.2674	33	0
+NSW	controls	SNAP total	estimated agonal score	slope_SD_per_SD	-0.9172	-1.0186	-0.5745	33	0
+NSW	controls	SNAP total	pH-axis score	spearman_rho	0.0699	-0.3254	0.4413	33	0
+NSW	controls	SNAP total	pH-axis score	partial_spearman	-0.0024	-0.3871	0.3574	33	0
+NSW	controls	SNAP total	pH-axis score	slope_SD_per_SD	0.2396	-0.1057	0.4872	33	0
+NSW	controls	SNAP-a	measured pH	spearman_rho	-0.3802	-0.6628	-0.0192	33	0
+NSW	controls	SNAP-a	measured pH	partial_spearman	-0.5085	-0.7668	-0.1769	33	0
+NSW	controls	SNAP-a	measured pH	slope_SD_per_SD	-0.5901	-0.8563	-0.2196	33	0
+NSW	controls	SNAP-a	estimated agonal score	spearman_rho	0.0501	-0.2922	0.3877	33	0
+NSW	controls	SNAP-a	estimated agonal score	partial_spearman	0.1655	-0.1852	0.5042	33	0
+NSW	controls	SNAP-a	estimated agonal score	slope_SD_per_SD	0.0065	-0.3279	0.4583	33	0
+NSW	controls	SNAP-a	pH-axis score	spearman_rho	-0.6581	-0.8531	-0.3505	33	0
+NSW	controls	SNAP-a	pH-axis score	partial_spearman	-0.7339	-0.8735	-0.508	33	0
+NSW	controls	SNAP-a	pH-axis score	slope_SD_per_SD	-0.7608	-0.9323	-0.5627	33	0
+NSW	controls	SNAP-n	measured pH	spearman_rho	0.4792	0.086	0.7523	33	0
+NSW	controls	SNAP-n	measured pH	partial_spearman	0.3793	0.0007	0.6767	33	0
+NSW	controls	SNAP-n	measured pH	slope_SD_per_SD	0.4313	0.1485	0.6693	33	0
+NSW	controls	SNAP-n	estimated agonal score	spearman_rho	-0.5769	-0.7935	-0.2568	33	0
+NSW	controls	SNAP-n	estimated agonal score	partial_spearman	-0.4749	-0.7089	-0.1612	33	0
+NSW	controls	SNAP-n	estimated agonal score	slope_SD_per_SD	-0.8393	-1.0113	-0.5788	33	0
+NSW	controls	SNAP-n	pH-axis score	spearman_rho	0.745	0.5433	0.8589	33	0
+NSW	controls	SNAP-n	pH-axis score	partial_spearman	0.7484	0.5153	0.8754	33	0
+NSW	controls	SNAP-n	pH-axis score	slope_SD_per_SD	0.5924	0.4012	0.7679	33	0
+NSW	all	SNAP total	measured pH	spearman_rho	-0.0538	-0.322	0.2086	76	43
+NSW	all	SNAP total	measured pH	partial_spearman	-0.2241	-0.4686	0.0349	76	43
+NSW	all	SNAP total	measured pH	slope_SD_per_SD	-0.0332	-0.2894	0.2004	76	43
+NSW	all	SNAP total	estimated agonal score	spearman_rho	-0.6675	-0.8069	-0.4841	76	43
+NSW	all	SNAP total	estimated agonal score	partial_spearman	-0.6054	-0.7774	-0.3926	76	43
+NSW	all	SNAP total	estimated agonal score	slope_SD_per_SD	-0.7975	-0.9521	-0.6144	76	43
+NSW	all	SNAP total	pH-axis score	spearman_rho	0.137	-0.1007	0.3668	76	43
+NSW	all	SNAP total	pH-axis score	partial_spearman	0.039	-0.1992	0.2782	76	43
+NSW	all	SNAP total	pH-axis score	slope_SD_per_SD	0.1498	-0.0646	0.362	76	43
+NSW	all	SNAP-a	measured pH	spearman_rho	-0.4424	-0.6331	-0.2313	76	43
+NSW	all	SNAP-a	measured pH	partial_spearman	-0.464	-0.6632	-0.2436	76	43
+NSW	all	SNAP-a	measured pH	slope_SD_per_SD	-0.5051	-0.7343	-0.2551	76	43
+NSW	all	SNAP-a	estimated agonal score	spearman_rho	0.0292	-0.1852	0.2568	76	43
+NSW	all	SNAP-a	estimated agonal score	partial_spearman	0.026	-0.1907	0.2454	76	43
+NSW	all	SNAP-a	estimated agonal score	slope_SD_per_SD	-0.0946	-0.3146	0.1618	76	43
+NSW	all	SNAP-a	pH-axis score	spearman_rho	-0.6264	-0.7469	-0.4706	76	43
+NSW	all	SNAP-a	pH-axis score	partial_spearman	-0.6462	-0.7639	-0.4965	76	43
+NSW	all	SNAP-a	pH-axis score	slope_SD_per_SD	-0.6779	-0.8072	-0.5419	76	43
+NSW	all	SNAP-n	measured pH	spearman_rho	0.394	0.1667	0.5856	76	43
+NSW	all	SNAP-n	measured pH	partial_spearman	0.2397	0.0068	0.4563	76	43
+NSW	all	SNAP-n	measured pH	slope_SD_per_SD	0.2879	0.0846	0.457	76	43
+NSW	all	SNAP-n	estimated agonal score	spearman_rho	-0.7581	-0.8605	-0.61	76	43
+NSW	all	SNAP-n	estimated agonal score	partial_spearman	-0.6641	-0.8082	-0.474	76	43
+NSW	all	SNAP-n	estimated agonal score	slope_SD_per_SD	-0.7642	-0.9547	-0.5241	76	43
+NSW	all	SNAP-n	pH-axis score	spearman_rho	0.6023	0.4327	0.7462	76	43
+NSW	all	SNAP-n	pH-axis score	partial_spearman	0.5503	0.3622	0.7046	76	43
+NSW	all	SNAP-n	pH-axis score	slope_SD_per_SD	0.5102	0.3247	0.6777	76	43
+CMC	controls	SNAP total	measured pH	spearman_rho	0.1226	-0.1424	0.3797	53	0
+CMC	controls	SNAP total	measured pH	partial_spearman	-0.0129	-0.2926	0.282	53	0
+CMC	controls	SNAP total	measured pH	slope_SD_per_SD	0.0629	-0.1726	0.2288	53	0
+CMC	controls	SNAP total	estimated agonal score	spearman_rho	-0.6489	-0.816	-0.4012	53	0
+CMC	controls	SNAP total	estimated agonal score	partial_spearman	-0.6619	-0.8109	-0.446	53	0
+CMC	controls	SNAP total	estimated agonal score	slope_SD_per_SD	-0.5907	-0.7722	-0.3908	53	0
+CMC	controls	SNAP total	pH-axis score	spearman_rho	0.4234	0.1228	0.6549	53	0
+CMC	controls	SNAP total	pH-axis score	partial_spearman	0.3702	0.0374	0.621	53	0
+CMC	controls	SNAP total	pH-axis score	slope_SD_per_SD	0.3759	0.0865	0.6114	53	0
+CMC	controls	SNAP-a	measured pH	spearman_rho	-0.0618	-0.3812	0.2813	48	0
+CMC	controls	SNAP-a	measured pH	partial_spearman	-0.1119	-0.4326	0.2395	48	0
+CMC	controls	SNAP-a	measured pH	slope_SD_per_SD	0.0936	-0.3535	0.4783	48	0
+CMC	controls	SNAP-a	estimated agonal score	spearman_rho	-0.3897	-0.6063	-0.1433	48	0
+CMC	controls	SNAP-a	estimated agonal score	partial_spearman	-0.4018	-0.6336	-0.1364	48	0
+CMC	controls	SNAP-a	estimated agonal score	slope_SD_per_SD	-0.4124	-0.6468	-0.1685	48	0
+CMC	controls	SNAP-a	pH-axis score	spearman_rho	-0.2063	-0.4768	0.1056	48	0
+CMC	controls	SNAP-a	pH-axis score	partial_spearman	-0.248	-0.5161	0.0607	48	0
+CMC	controls	SNAP-a	pH-axis score	slope_SD_per_SD	-0.2977	-0.5472	0.0046	48	0
+CMC	controls	SNAP-n	measured pH	spearman_rho	0.1914	-0.0934	0.4488	53	0
+CMC	controls	SNAP-n	measured pH	partial_spearman	0.0669	-0.2433	0.3452	53	0
+CMC	controls	SNAP-n	measured pH	slope_SD_per_SD	0.0351	-0.1195	0.2289	53	0
+CMC	controls	SNAP-n	estimated agonal score	spearman_rho	-0.552	-0.7484	-0.3094	53	0
+CMC	controls	SNAP-n	estimated agonal score	partial_spearman	-0.535	-0.7285	-0.2928	53	0
+CMC	controls	SNAP-n	estimated agonal score	slope_SD_per_SD	-0.4693	-0.6845	-0.2413	53	0
+CMC	controls	SNAP-n	pH-axis score	spearman_rho	0.5307	0.2971	0.7026	53	0
+CMC	controls	SNAP-n	pH-axis score	partial_spearman	0.4825	0.2497	0.6695	53	0
+CMC	controls	SNAP-n	pH-axis score	slope_SD_per_SD	0.4598	0.2482	0.6469	53	0
+CMC	all	SNAP total	measured pH	spearman_rho	0.0353	-0.1608	0.2378	100	47
+CMC	all	SNAP total	measured pH	partial_spearman	-0.0044	-0.2073	0.203	100	47
+CMC	all	SNAP total	measured pH	slope_SD_per_SD	0.0144	-0.0677	0.1636	100	47
+CMC	all	SNAP total	estimated agonal score	spearman_rho	-0.5809	-0.7022	-0.4392	100	47
+CMC	all	SNAP total	estimated agonal score	partial_spearman	-0.57	-0.6905	-0.4253	100	47
+CMC	all	SNAP total	estimated agonal score	slope_SD_per_SD	-0.5163	-0.6635	-0.3694	100	47
+CMC	all	SNAP total	pH-axis score	spearman_rho	0.3103	0.116	0.4939	100	47
+CMC	all	SNAP total	pH-axis score	partial_spearman	0.2963	0.0848	0.4863	100	47
+CMC	all	SNAP total	pH-axis score	slope_SD_per_SD	0.3145	0.1118	0.5024	100	47
+CMC	all	SNAP-a	measured pH	spearman_rho	-0.2138	-0.446	0.0326	89	41
+CMC	all	SNAP-a	measured pH	partial_spearman	-0.2438	-0.4637	0.0061	89	41
+CMC	all	SNAP-a	measured pH	slope_SD_per_SD	-0.0523	-0.394	0.0572	89	41
+CMC	all	SNAP-a	estimated agonal score	spearman_rho	-0.3791	-0.5189	-0.2123	89	41
+CMC	all	SNAP-a	estimated agonal score	partial_spearman	-0.3822	-0.5361	-0.2027	89	41
+CMC	all	SNAP-a	estimated agonal score	slope_SD_per_SD	-0.3452	-0.5173	-0.1692	89	41
+CMC	all	SNAP-a	pH-axis score	spearman_rho	-0.2481	-0.4426	-0.0408	89	41
+CMC	all	SNAP-a	pH-axis score	partial_spearman	-0.2652	-0.4646	-0.0445	89	41
+CMC	all	SNAP-a	pH-axis score	slope_SD_per_SD	-0.2655	-0.4652	-0.0656	89	41
+CMC	all	SNAP-n	measured pH	spearman_rho	0.1813	-0.0217	0.3672	100	47
+CMC	all	SNAP-n	measured pH	partial_spearman	0.1507	-0.0599	0.3475	100	47
+CMC	all	SNAP-n	measured pH	slope_SD_per_SD	0.0581	0.0031	0.2333	100	47
+CMC	all	SNAP-n	estimated agonal score	spearman_rho	-0.4616	-0.608	-0.2953	100	47
+CMC	all	SNAP-n	estimated agonal score	partial_spearman	-0.4434	-0.5919	-0.2733	100	47
+CMC	all	SNAP-n	estimated agonal score	slope_SD_per_SD	-0.4138	-0.5719	-0.2476	100	47
+CMC	all	SNAP-n	pH-axis score	spearman_rho	0.4731	0.2799	0.6106	100	47
+CMC	all	SNAP-n	pH-axis score	partial_spearman	0.4622	0.2704	0.6136	100	47
+CMC	all	SNAP-n	pH-axis score	slope_SD_per_SD	0.4442	0.2802	0.5856	100	47

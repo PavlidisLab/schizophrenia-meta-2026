@@ -1,0 +1,38 @@
+# figure: fig05 panel b
+# script: analyses/figure_exports/export_fig03_fig05.py, run 2026-10-08
+# population: Fig 3 and 5 use sample-level datasets (Gemma, LIBD, PsychAD) whose set is fixed by the sample-level analyses listed in the input lines; it is not drawn from the recurrence base and does not change with it. It is not the 26-bulk-dataset core-80 set of Extended Fig. 14a (222 subject-separate pairs; ext_fig14_core80_2026-10-18). Exceptions: Fig 3b (published different-cohort pairs among the 72 lists of the core-80 base; 1,779 pairs; h1_pairs.tsv sha256 ece6ae3d57ee) and Fig 5c negative control (copy of fig02 panel c; recurrence.tsv sha256 bcbf50f8e334); this panel: the 22 bulk SZ-study dataset-regions of the covariate series and 9 external frontal-cortex datasets
+# input: analyses/controls_age_external/results/per_dataset.tsv sha256 f23944463f1e
+# per dataset, the median over its subject-separate partner pairs of rho_t and top-200 fold, by class: age_age (SZ-study age vs SZ-study age), age_ext (SZ-study age vs external age), sz_sz (SZ vs SZ), sz_ext, ext_ext; set SZ-study (22 bulk dataset-regions) or external (9 frontal-cortex datasets)
+# 2026-10-21: column cluster: GSE17612 (Maycox 2009, pools Harvard and a bank outside the named clusters) has its set of cohort clusters (multibank_cluster_sets.tsv) and GSE21935 (Barnes 2011, PMID 21538462) its own cluster
+dataset	set	cluster	age_age_n_pairs	age_age_rho_t_median	age_age_fold200_median	age_ext_n_pairs	age_ext_rho_t_median	age_ext_fold200_median	sz_sz_n_pairs	sz_sz_rho_t_median	sz_sz_fold200_median	sz_ext_n_pairs	sz_ext_rho_t_median	sz_ext_fold200_median	ext_ext_n_pairs	ext_ext_rho_t_median	ext_ext_fold200_median
+GSE21138	SZ-study	aus	20.0	0.2135	5.086	9	0.2435	6.224	20.0	0.2227	2.476	9	0.4127	2.428			
+GSE35977	SZ-study	stanley	20.0	0.03554	2.053	9	0.052	1.888	20.0	0.1725	2.767	9	0.1793	2.152			
+GSE35974	SZ-study	stanley	20.0	0.04174	1.5	9	0.06836	1.777	20.0	0.1359	1.115	9	0.1509	1.785			
+GSE53987_BA46	SZ-study	cmc+mssm+pitt+libd	15.0	0.2529	4.825	8	0.2276	5.554	15.0	0.2395	1.783	8	0.318	2.161			
+GSE53987_hippocampus	SZ-study	cmc+mssm+pitt+libd	15.0	0.2523	1.556	8	0.3274	1.339	15.0	0.2174	1.762	8	0.4369	2.304			
+GSE53987_striatum	SZ-study	cmc+mssm+pitt+libd	15.0	0.02332	2.05	8	-0.1905	1.807	15.0	0.1765	2.015	8	0.3456	2.802			
+GSE17612	SZ-study	brain_other:19255580; harvard	20.0	0.2995	4.699	9	0.5308	10.93	20.0	0.1331	1.314	9	0.1694	1.782			
+GSE21935	SZ-study	brain_other:21538462	20.0	0.2106	4.085	9	0.5132	5.983	20.0	0.1088	0.8031	9	0.009762	0.4037			
+GSE92538_GPL570	SZ-study	pritzker	16.0	0.2518	2.484	9	0.3118	6.329	16.0	0.04445	2.024	9	0.2147	4.617			
+GSE92538_GPL96	SZ-study	pritzker	17.0	0.1442	2.053	9	0.5124	6.437	17.0	0.08349	1.269	9	0.2511	1.789			
+GSE80655_DLPFC	SZ-study	pritzker	17.0	0.2081	3.571	9	0.319	6.292	17.0	0.2291	1.782	9	0.359	4.378			
+GSE80655_AnCg	SZ-study	pritzker	17.0	0.1837	4.771	9	0.3802	6.991	17.0	0.1314	2.386	9	0.4657	5.57			
+GSE80655_nAcc	SZ-study	pritzker	16.0	0.1578	1.715	9	0.09781	1.746	16.0	0.143	0.7926	9	0.2528	0.415			
+GSE208338	SZ-study	aus	20.0	0.2544	5.165	9	0.2908	10.28	20.0	0.08906	1.535	9	0.1607	2.293			
+GSE202537_NAc	SZ-study	cmc+mssm+pitt+libd	15.0	0.0839	1.198	8	0.01678	1.001	15.0	0.1219	1.15	8	0.1705	1.323			
+GSE202537_caudate	SZ-study	cmc+mssm+pitt+libd	15.0	0.1482	3.551	8	0.2123	3.632	15.0	-0.01085	1.185	8	-0.03888	1.531			
+GSE202537_putamen	SZ-study	cmc+mssm+pitt+libd	15.0	0.1423	4.081	8	0.03532	4.042	15.0	0.0787	1.189	8	-0.06783	1.84			
+GSE224683	SZ-study	cmc+mssm+pitt+libd	13.0	0.1815	3.835	8	0.4364	4.601	13.0	0.1911	2.305	8	0.4063	2.048			
+GSE26927_temporal	SZ-study	GSE26927	21.0	0.07214	1.656	9	0.2314	1.922	21.0	0.02024	1.224	9	-0.02764	0.5348			
+GSE138082_CA1	SZ-study	GSE138082	19.0	0.2452	2.386	9	0.2816	3.311	19.0	-0.1061	1.189	9	-0.1969	1.242			
+GSE138082_CA3	SZ-study	GSE138082	19.0	0.1538	1.784	9	0.08835	2.084	19.0	0.1156	1.641	9	0.24	0.8288			
+GSE138082_DG	SZ-study	GSE138082	19.0	0.09277	1.972	9	0.1074	3.356	19.0	-0.1104	1.147	9	-0.313	0.8269			
+GSE1572_frontal	external	GSE1572				22	0.2514	1.529				22	0.1632	1.189	8.0	0.37	2.375
+GSE11882_SFG	external	GSE11882				22	0.4088	5.373				22	0.2405	1.639	8.0	0.5597	11.34
+GSE30272_DLPFC	external	GSE30272				22	0.1786	3.646				22	0.05975	1.387	8.0	0.1688	5.317
+GSE36192_frontal	external	GSE36192				22	0.2145	4.571				22	0.1917	3.379	7.0	0.4062	7.673
+GSE53890_frontal	external	GSE53890				22	0.247	2.858				22	0.2243	1.769	8.0	0.5276	8.42
+GSE68719_BA9	external	GSE68719				22	0.2058	2.595				22	0.2141	2.305	8.0	0.4773	3.823
+GSE71620_BA11	external	GSE71620				15	0.3902	7.014				15	0.2275	2.342	8.0	0.4065	9.436
+GSE15745_frontal	external	GSE15745				22	0.2422	4.013				22	0.1979	2.182	7.0	0.3932	5.943
+GSE118553_frontal	external	GSE118553				22	0.07139	1.753				22	0.05108	0.8361	8.0	0.146	2.341

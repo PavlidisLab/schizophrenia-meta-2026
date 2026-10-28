@@ -1,0 +1,19 @@
+# script: analyses/cohort_tier_alternatives_2026-10-11/alternatives.py, run 2026-10-11, RECURRENCE_NK=membership
+# scenario: 'published, brain' (62 lists, study tier); cohort tier = 17 clusters from 56 lists; 6 multi-bank studies have no per-bank lists
+# inputs (sha256, first 12): primary_lists.json 7a0d2b56408d; universes.json 44772694de3d; lineage.json d21252ed845e; fig01_b_corpus_studies.tsv 7786b5e2bca1; fig01_b_distinct_subjects.tsv dc5c09ee0d72; subject_overlap_edges.tsv 94ba6ff78746; before_stated/recurrence_genes.tsv 2822cbfb8f1a; alpha_hat.json 019a4c129171
+# units = the 17 clusters + the 6 multi-bank studies as single-list units (a1); statistic = (genes in >= 5 units) / expected under the null recomputed on the drawn units; excess = observed - expected
+# bootstrap duplicates a unit, whose hits are counted twice while the null treats the copies as independent draws: it makes the null too small relative to observed; the without-replacement subsamples have no duplicates
+# seed 20261011; B = 1000
+scheme	null	B	units_per_draw	ratio_median	ratio_2.5	ratio_97.5	share_ratio_le_1	excess_median	excess_2.5	excess_97.5
+bootstrap, 23 units with replacement	uniform	1000	23	9.07	2.73	100.27	0.0	1085.6	147.0	3070.4
+bootstrap, 23 units with replacement	prior1	1000	23	2.08	1.31	10.73	0.0	597.7	105.2	1835.6
+bootstrap, 23 units with replacement	priorH	1000	23	3.55	1.67	25.67	0.0	859.2	141.2	2365.5
+subsample, 17 of 23 units without replacement	uniform	1000	17	7.62	4.82	21.19	0.0	143.3	19.9	433.6
+subsample, 17 of 23 units without replacement	prior1	1000	17	1.2	0.9	2.15	0.105	27.3	-15.1	90.8
+subsample, 17 of 23 units without replacement	priorH	1000	17	2.43	1.73	5.27	0.0	95.4	14.3	273.0
+subsample, 12 of 23 units without replacement	uniform	1000	12	11.61	0.0	64.83	0.066	17.6	-0.1	167.2
+subsample, 12 of 23 units without replacement	prior1	1000	12	1.4	0.0	5.17	0.223	4.8	-10.4	45.8
+subsample, 12 of 23 units without replacement	priorH	1000	12	3.22	0.0	14.52	0.075	13.5	-0.3	122.3
+all 23 units (no resampling)	uniform	0	23	4.97				507.4		
+all 23 units (no resampling)	prior1	0	23	1.12				66.1		
+all 23 units (no resampling)	priorH	0	23	1.92				304.5		

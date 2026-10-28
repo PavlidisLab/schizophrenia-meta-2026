@@ -1,0 +1,203 @@
+{
+ "built": "2026-10-11",
+ "script": "psychad_cellxgene/scripts/write_meta.py",
+ "compute": {
+  "host": "remote server, psychad_pseudobulk/",
+  "limits": "nice -n 15, at most 8 cores",
+  "python_env": {
+   "anndata": "0.12.19",
+   "h5py": "3.16.0",
+   "numpy": "2.4.6",
+   "pandas": "2.3.3",
+   "python": "3.11.16",
+   "scipy": "1.17.1"
+  },
+  "r_env": {
+   "bioconductor-edger": "4.8.2",
+   "bioconductor-limma": "3.66.0",
+   "bioconductor-qvalue": "2.42.0",
+   "r-base": "4.5.3",
+   "r-data.table": "1.18.6.1",
+   "r-matrix": "1.7_6"
+  }
+ },
+ "source": {
+  "cellxgene_collection": "84ce6837-548d-4a1f-919f-0bc0d9a3952f",
+  "collection_json": "psychad_cellxgene/pseudobulk/cellxgene_collection.json",
+  "downloads": [
+   {
+    "name": "HBCC_Cohort",
+    "dataset_id": "5c97eeeb-7e52-44b3-b010-b832b1f5424c",
+    "dataset_version_id": "d27fb144-f105-46c2-b36f-f51421f74e4e",
+    "url": "https://datasets.cellxgene.cziscience.com/d27fb144-f105-46c2-b36f-f51421f74e4e.h5ad",
+    "bytes": "14150526668",
+    "expected_bytes": "14150526668",
+    "sha256": "aeca0480ab8941a7e4cf6b0ff6dc8c5f9d0de376466d65ca8198dc873f1cb16f",
+    "started_utc": "2026-09-25T18:41:14Z",
+    "finished_utc": "2026-09-25T18:47:03Z"
+   },
+   {
+    "name": "Aging_Cohort",
+    "dataset_id": "4442d412-91cb-4261-acca-8adf5fa04c11",
+    "dataset_version_id": "13e8f1dd-962f-47b7-9cf7-c71d2b21b8a5",
+    "url": "https://datasets.cellxgene.cziscience.com/13e8f1dd-962f-47b7-9cf7-c71d2b21b8a5.h5ad",
+    "bytes": "12421671635",
+    "expected_bytes": "12421671635",
+    "sha256": "fc2cd87e5dcd973be40bd06aadbd94a7c0f357e0242c682f07d90a21dd39af92",
+    "started_utc": "2026-09-25T18:47:03Z",
+    "finished_utc": "2026-09-25T18:51:44Z"
+   },
+   {
+    "name": "MSSM_Cohort",
+    "dataset_id": "37a17b78-4864-4a42-b67b-31c00962795a",
+    "dataset_version_id": "0e853475-e298-4b09-881a-ed0b60d5a8c9",
+    "url": "https://datasets.cellxgene.cziscience.com/0e853475-e298-4b09-881a-ed0b60d5a8c9.h5ad",
+    "bytes": "36092176654",
+    "expected_bytes": "36092176654",
+    "sha256": "c62456941372b90bcf0df38e8cb1c34dd060bc5a507270ab1d068cbe6f1dfd54",
+    "started_utc": "2026-09-25T18:51:44Z",
+    "finished_utc": "2026-09-25T19:12:23Z"
+   }
+  ]
+ },
+ "pseudobulk": {
+  "psychad_cellxgene/pseudobulk/HBCC_Cohort/cols_class.tsv": {
+   "sha256": "8bc7cca645f0b82cd0a4d59fb5f9c80c067914ffac9c6f0a02284c59bf339b00",
+   "bytes": 90846
+  },
+  "psychad_cellxgene/pseudobulk/HBCC_Cohort/cols_subclass.tsv": {
+   "sha256": "8e7a4d366a5db2d45602e99ebc4ef4fc6bf144667319875d5b6bbdc23b8d7795",
+   "bytes": 388066
+  },
+  "psychad_cellxgene/pseudobulk/HBCC_Cohort/cols_total.tsv": {
+   "sha256": "397a30ea015b2f01d26c5608d52c6d04d139d4b4acf2ec9f48b6b244e03a3607",
+   "bytes": 11511
+  },
+  "psychad_cellxgene/pseudobulk/HBCC_Cohort/counts_class.npz": {
+   "sha256": "7f67c4f5815f121c5943a67809c04f970432930aef9c78932b747c4d4345aa87",
+   "bytes": 121138943
+  },
+  "psychad_cellxgene/pseudobulk/HBCC_Cohort/counts_subclass.npz": {
+   "sha256": "47d94ef321785e838e3185afba1566584676352538e041d0d583f13072237843",
+   "bytes": 304405104
+  },
+  "psychad_cellxgene/pseudobulk/HBCC_Cohort/counts_total.npz": {
+   "sha256": "5a5c56aab26fc0a0ceb44473a76dc5e8861ab239b551055bc2f2fe3198ade5c3",
+   "bytes": 25439380
+  },
+  "psychad_cellxgene/pseudobulk/HBCC_Cohort/genes.tsv": {
+   "sha256": "6b08425ef27776c159c6dd0fd5754d7773caeebbf805fe38c996bce310f8fb25",
+   "bytes": 1206477
+  },
+  "psychad_cellxgene/pseudobulk/HBCC_Cohort/qc.json": {
+   "sha256": "9ee0ce2f64d32761e2c4600fa506fd4853b6633e5b964ff5c01dddb8fcec3a10",
+   "bytes": 1019
+  },
+  "psychad_cellxgene/pseudobulk/MSSM_Cohort/cols_class.tsv": {
+   "sha256": "e2abcc2b5e05f8e605926b180d884ae25781bb80d3dec75ec5c6f51e0b88f112",
+   "bytes": 169056
+  },
+  "psychad_cellxgene/pseudobulk/MSSM_Cohort/cols_subclass.tsv": {
+   "sha256": "03e8cc63605ada393c078ae30a1b1ed178d85650a4fa606dca94fccc052ba106",
+   "bytes": 724614
+  },
+  "psychad_cellxgene/pseudobulk/MSSM_Cohort/cols_total.tsv": {
+   "sha256": "2b78792fc84c576d8f1012bde6bfa5ac8e0c68f00a5a17434759bcf8240cb4a1",
+   "bytes": 21430
+  },
+  "psychad_cellxgene/pseudobulk/MSSM_Cohort/counts_class.npz": {
+   "sha256": "87eae8318361662206a13653b02428f4ea219e7b7cda3278c396f2adbb765b8b",
+   "bytes": 211675694
+  },
+  "psychad_cellxgene/pseudobulk/MSSM_Cohort/counts_subclass.npz": {
+   "sha256": "3ddb595648027a1c2373418cdfdecda886e4c3c3e6916dcbc279c102e3fd19e3",
+   "bytes": 517618425
+  },
+  "psychad_cellxgene/pseudobulk/MSSM_Cohort/counts_total.npz": {
+   "sha256": "a3477a07e79dbf1a7e29e74e15b047cd98bfe37c06c2db66ca729c45b1ab5da1",
+   "bytes": 45907582
+  },
+  "psychad_cellxgene/pseudobulk/MSSM_Cohort/genes.tsv": {
+   "sha256": "6b08425ef27776c159c6dd0fd5754d7773caeebbf805fe38c996bce310f8fb25",
+   "bytes": 1206477
+  },
+  "psychad_cellxgene/pseudobulk/MSSM_Cohort/qc.json": {
+   "sha256": "4b8db4e2429f4eb6ce18919202edf656abe41f4ba1ccffb809e95c3666af0c8b",
+   "bytes": 1021
+  }
+ },
+ "results": {
+  "psychad_cellxgene/results/a_hbcc_vs_mssm.tsv": "afe4ed37e2acfa295f7b653f03c80946989d6d8d29cf68ebb689f68b97f824a9",
+  "psychad_cellxgene/results/b_reps.tsv.gz": "d252edde2c7f89cafeac92cd1089d1e05674b916abdfb7910ab4db57eacefdfb",
+  "psychad_cellxgene/results/b_summary.tsv": "19b62bff8d4414aac58decd3ce9a9c938750325ce5182f7716f5a7ec73b78a5e",
+  "psychad_cellxgene/results/c_libd.tsv": "8931a7fb33e2d381ac832e0a8a41f9bd3b4b51ac5d500d1c6c0b66913494d9e6",
+  "psychad_cellxgene/results/c_libd_matched.tsv": "e4b6e67b1cb2297ebc3cf7bba31269bea49f8e6d2753a0eda8307f31f2f6e534",
+  "psychad_cellxgene/results/c_libd_matched_summary.tsv": "361440de8a78340494309ce3cc3f89e83920fb34d73f324decbcc57a9aa5cabf",
+  "psychad_cellxgene/results/composition.log": "ca54571a8da4ef6f0d3098698c556a32d1e7c021db17eb636991216d9ffaea8a",
+  "psychad_cellxgene/results/composition.tsv": "f976ff664d9444e78eb4e4acb32911e062fa8be0c3ab6f06f4ee16cfbfd5695b",
+  "psychad_cellxgene/results/d_st4.tsv": "4bb018d2dcf161227b7cf72482945bbd0f651c2c9d1383ae7e5be1f0bc5f37ea",
+  "psychad_cellxgene/results/de.log": "4327ec79cebae2e2e580c40c0f668e2c9130b4e0df64bebafb572793f235c6a0",
+  "psychad_cellxgene/results/de/HBCC_ctrlpaper.tsv.gz": "ddfea12451e65fcfc252202ea3f1b9870fee3e7443cfd7bf474e7327437cbb6b",
+  "psychad_cellxgene/results/de/HBCC_main.tsv.gz": "20761c2e5c44e34df8a290239af7e786260ee5cee2fa2e8163b7e0408d99798b",
+  "psychad_cellxgene/results/de/MSSM_ctrlpaper.tsv.gz": "beba7ca1f7287878e9a4acb06f9c2475f0c6cda2a8d701ffa1370c57a7bbf15a",
+  "psychad_cellxgene/results/de/MSSM_main.tsv.gz": "a14d4c0af93fd3b20772b881de102723c81700211b4f7b888c021531d16852be",
+  "psychad_cellxgene/results/de/MSSM_nodementia.tsv.gz": "2a21ae296337738b3eb645dd8b7873c0fa77999dd47bebeda72426ac682133e0",
+  "psychad_cellxgene/results/de_summary.tsv": "feb597e45ec73827e0d0e2474e0132ff1a3f0e7c1da0f44e5125084274897a1e",
+  "psychad_cellxgene/results/donors_used.tsv": "2ccef28914e973ff994dff2b01d9099f377af57530759304f86cf7202bf50426",
+  "psychad_cellxgene/results/e_individuals.log": "6f703da98cba2f54fcddf99ce6d7ec02b7178a810b8aec835577f25014d64e81",
+  "psychad_cellxgene/results/e_individuals_de_agree.tsv": "db8e06491205d22f0157e601805cece5fb263aa2e97ac2d077e85f889b12ddc5",
+  "psychad_cellxgene/results/e_individuals_gene_rho.tsv.gz": "8eb46fe0823c33abc9e6868d4f3c8f1c39002a220417273359afd207771c7c02",
+  "psychad_cellxgene/results/e_individuals_geometry.log": "1375bb018cacdb47275d067dfd3995df5aba9b2b719f3b8201319e1dd274b122",
+  "psychad_cellxgene/results/e_individuals_geometry.tsv": "e35958bb777e9a2eefd0c478e458ea60dc300b2a10a43b3f049c5ecfdd1a8d62",
+  "psychad_cellxgene/results/e_individuals_geometry_calibration.tsv": "556e1548a25dac7341fb6c9ed748477baa24b60554c785cbe34d0d91d7c9b8ac",
+  "psychad_cellxgene/results/e_individuals_geometry_dist.tsv.gz": "5d8f501eee3f17332fdbc5a215196c40efe730223854b6eef0c1d1170ebb3cf6",
+  "psychad_cellxgene/results/e_individuals_geometry_meta.json": "c643ffa41d34403309bd05d59470ff6a2653a8f5071cc7bb4ca07f6e8d1991eb",
+  "psychad_cellxgene/results/e_individuals_geometry_random.tsv": "d22e14481b8a235d7100d177b583ddfb318183d06edd07206db829c06a996e74",
+  "psychad_cellxgene/results/e_individuals_identify.tsv": "48b1a424d895decfe81cf1b622ca1ceeb30396a5bf090acc9356ae7335b92066",
+  "psychad_cellxgene/results/e_individuals_identify_auroc.tsv": "23a4aa10fea39d7bddab444ad003d988e2f6a9a9a5c7611aef9b588b00dbde6e",
+  "psychad_cellxgene/results/e_individuals_identify_auroc_meta.json": "d58abee247128f98bbdb25773a70537c06cbb0120aa8369540a6ddab160bf5ac",
+  "psychad_cellxgene/results/e_individuals_identify_auroc_summary.tsv": "19a555ca9e409fa5fd4c631a0abc4abeebaf14b073ff1fa53e7c7e2b8db124b5",
+  "psychad_cellxgene/results/e_individuals_meta.json": "c914a0dae9e87ed40ca93c752e3c2512b7ea4dfe88d480d0c50467ba74a24a14",
+  "psychad_cellxgene/results/e_individuals_planted.tsv": "a8203e7a037909b6bc96aaee49d581907de05361afd7d90f697ff79130b1438c",
+  "psychad_cellxgene/results/e_individuals_report.log": "7d486af258c03f8e4e67d87039a581796c92ff9e3cd751baf9b50438e29130be",
+  "psychad_cellxgene/results/e_individuals_score_cor.tsv": "bcdbf6d5d2c6e9426d8ddc84e71f4b3d2d6c41048ec41fd1706b443de1cc0e86",
+  "psychad_cellxgene/results/e_individuals_scores.tsv": "8addd04bfbf3284c341c7a5dfe55ae629b54670e5496474a7f2d76ad88b685c6",
+  "psychad_cellxgene/results/e_individuals_signs.tsv": "9786577c23464d2ea96fff30c8374ba2da10462923c3ae7661c1fbc5c200798f",
+  "psychad_cellxgene/results/e_individuals_summary.tsv": "ab60412b90dce49656179aaec43e62204c01883eb2e8292cdd8d852cf0a87856",
+  "psychad_cellxgene/results/fingerprint.log": "3e4d9a7aed5466fc261ba990cef39e955880d520e7bf82342176c254e09d719a",
+  "psychad_cellxgene/results/fingerprint_matches.tsv": "1192c4fde992372a4900c6ff804dc5fb485ac15bd3ee84a51f801d5c4693a787",
+  "psychad_cellxgene/results/fingerprint_summary.tsv": "99e327a5fe89ae6f057131df8bcf5f965bb95b2bd99e6c5ed0f378ead9ba0ea4",
+  "psychad_cellxgene/results/gemma_libsize_check.tsv": "d719c25c9951f6391b5bb96ed909d66574661011a433b39d098937e7b828d0c8",
+  "psychad_cellxgene/results/gemma_libsize_donors.tsv": "daff34e13fb132e0f3154cd0d4fb1355dda81cb9b831913efc07b96722633710",
+  "psychad_cellxgene/results/gemma_vs_h5ad_ACTN1_astro_HBCC.tsv": "60e100724e2e45fff0d33677d8474b70ac3ad0c911a924fd60125655b4b8070b",
+  "psychad_cellxgene/results/libd_compare.log": "cd6f547104cdd2766afad5496ac9318563146453e643fdeaadd5c64e32be21b9",
+  "psychad_cellxgene/results/split_half.log": "e49722ce6a3a4b2c26ec38fd32bacd4d6e75dafbeb9efb6d366c15028bd94d7f",
+  "psychad_cellxgene/results/st4_compare.log": "fdf117791d21d5ba4b764de0cead3b41151adb6dab0c5dd10925c10016f926f2",
+  "psychad_cellxgene/results/st4_scz.tsv.gz": "32179d2bb7d47531b31bc6847415e66fb738564ab76031b2ba582195775beb63",
+  "psychad_cellxgene/results/summarize.log": "e49781fabdc50e257368035e32d0ce9324dcbfb8a6a9b4f971cfa5fa8cbb9327",
+  "psychad_cellxgene/results/summary.tsv": "dd4f3ea181a45342020516a2024ef0403ba1d255c1d1f3e7c3a1ffdf544b7727"
+ },
+ "figures": {
+  "psychad_cellxgene/figures/CAPTIONS.md": "b77b215505ba084770c57719eff0091583f78ae9d8a4a8368f3adc3d325b62e8",
+  "psychad_cellxgene/figures/fig_a_banks_split_halves.png": "62ea22bec6a202d53e080be3eddd008dd4a2db88b513035db4a8803a466460e4",
+  "psychad_cellxgene/figures/fig_a_banks_split_halves.svg": "3067908e7a32021f5d445f6d1d2a1bcad9445f3abd7822ce6a73ac803fd21f19",
+  "psychad_cellxgene/figures/fig_c_libd.png": "9b344e55da5f1f9b5ed08c6a0b5e333253ec37f2aa99c8b219ebe0def6cb9d22",
+  "psychad_cellxgene/figures/fig_c_libd.svg": "e0e873f7b435218429dd2529c5c9992323cd2e2bfe7d0b2d00fd2a89bc3b8cce",
+  "psychad_cellxgene/figures/fig_d_st4.png": "e3b1bf67c560716918cc7d8369b1d610d3f3835a8847b3ce629f8f1a1e04e1b7",
+  "psychad_cellxgene/figures/fig_d_st4.svg": "bc8d2a93ba77564b4261d404224f66bb8b22d94955e676c240a2695fb2593cd7",
+  "psychad_cellxgene/figures/fig_e_individuals.png": "d58d2723fa9f78a3bb503facef9f70f00fb8f7f407290baae8ed53451e0364e2",
+  "psychad_cellxgene/figures/fig_e_individuals.svg": "95d13845b98b6ed3a24572592031d2acc69eaa560ba8cb772979b1215b096d75",
+  "psychad_cellxgene/figures/fig_e_individuals_geometry.png": "1f6f857d4985dd7cb8514d46bcda3dac7362245a1a2d67261a87458e9ea2acfb",
+  "psychad_cellxgene/figures/fig_e_individuals_geometry.svg": "56694b23848ccdc4fe6484cca3675d30a0442c5364c3249357022076830df4fe"
+ },
+ "inputs": {
+  "psychad_cellxgene/donors.tsv": "17f8c73f2f004742c9971e9f87684490aacb9e014a428a0ffedbad3f37c3779d",
+  "donor_overlap/tables/psychad2025.tsv": "aaf63152a0c6b937b53031be3878df8688d60f3e98fa01badf201469223aa179",
+  "donor_overlap/match.py": "3ea78012ad1883c09f1055aded2fd50f76e3d15528c818ebfc3afcfb5486b4ef",
+  "fairness_sample_level/scripts/common.R": "c53281c8506112cb2df8b116d1df4b1ec376747ae4eedc2539fd4bc1813687ee",
+  "libd_brainseq/analysis/results/de_full/DLPFC.tsv.gz": "5396c42b7f6db32fe8f7fcdb9fd1eca97e09033bb987606124c9b15e0a81ed8f",
+  "libd_brainseq/analysis/results/b_de/DLPFC.tsv.gz": "e6207982e5da2cc4e4628c2e481e91b2e7ee89e01ba34e7f9b2d94d56a91761e",
+  "libd_brainseq/analysis/results/samples.tsv": "056c075233b3f62c493cc12ea991c08d6036cc4ce1d111a02b5232f9396b6f66",
+  "../data/raw/42778699/publisher/moesm3/2024-07-15352A-s3/PsychAD_SupplementaryTable4.xlsx": "1a20a7c82ca5491e65943e7191aa01e171a19726ea93673e49f9fd7df8613c29"
+ }
+}

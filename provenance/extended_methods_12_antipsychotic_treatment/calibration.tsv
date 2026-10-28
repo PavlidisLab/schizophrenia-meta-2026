@@ -1,0 +1,7 @@
+# medication/scripts/analysis.py, NPERM 5000, seed 20260926; matched on DE-prior quintile x LIBD DLPFC expression decile
+# resp = mean |z| over the set's measured genes (drug vs vehicle); dir = mean sz_sign x z (positive: drug moves genes the way SZ does)
+set	class	test	n	frac_p_le_05	frac_p_le_01	median_p
+recurrent (study_brain, uniform q < 0.1)	chronic	responsiveness	300	0.04333	0.01	0.482
+recurrent (study_brain, uniform q < 0.1)	chronic	direction	300	0.03	0.003333	0.4711
+recurrent (expression-matched q < 0.1)	chronic	responsiveness	300	0.07667	0.02333	0.5449
+recurrent (expression-matched q < 0.1)	chronic	direction	300	0.05	0.01	0.5619

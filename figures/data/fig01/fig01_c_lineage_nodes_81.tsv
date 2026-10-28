@@ -1,0 +1,648 @@
+# figure: fig01 panel c
+# script: analyses/figure_exports/export_fig01_fig11.py, run 2026-10-15
+# input: corpus/lineage.json sha256 4f919a83fea3
+# input: analyses/recurrence_units.tsv sha256 a346ce802a39
+# 81-study sibling, 2026-10-15: in_primary_population = yes for the 81 base studies (71 authors' lists + 10 derived; 74 modelled + 7 derived-list studies with no list), through fig01_c_study_to_node_81.tsv (sha256 a3c7e0776f9c); tier = authors | derived, list_flag = 'no list' for the 7; all other columns as in fig01_c_lineage_nodes.tsv
+id	pmid	label	year	relation	bank	bank_label	tissue	technology	n_total	n_cases	n_controls	times_cited	in_corpus	in_primary_population	tier	list_flag
+3987001	3987001	Harrington 1985	1985	primary	periph	Blood, LCL, fibroblast, other	other	proteomics				25	yes	no		
+1372064	1372064	Perrett 1992	1992	primary	brain_other	Other brain samples	brain	unknown	20			5	yes	no		
+10208449	10208449	Edgar 1999	1999	primary	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)	brain	proteomics	14	7	7	64	yes	no		
+10822341	10822341	Johnston-Wilson 2000	2000	primary	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	proteomics	47	24	23	395	yes	no		
+11086983	11086983	Mirnics 2000	2000	primary	pitt	University of Pittsburgh Brain Tissue Donation Program (Conte Center, CCNMD)	brain	array_early	12	6	6	643	yes	no		
+10924661	10924661	Sokolov 2000	2000	primary	mssm	Mount Sinai / JJ Peters VA Medical Center NIH Brain and Tissue Repository (MSSM)	brain	other	23	14	9	63	no	no		
+11296301	11296301	Hakak 2001	2001	primary	mssm	Mount Sinai / JJ Peters VA Medical Center NIH Brain and Tissue Repository (MSSM)	brain	array_early	24	12	12	910	yes	yes	authors	
+11149951	11149951	Ilani 2001	2001	primary	periph	Blood, LCL, fibroblast, other	blood	other				119	no	no		
+15018814	15018814	Kuromitsu 2001	2001	primary	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	array_early	46			61	yes	yes	authors	
+11326297	11326297	Mirnics 2001	2001	single-gene follow-up	pitt	University of Pittsburgh Brain Tissue Donation Program (Conte Center, CCNMD)	brain	array_early	12	6	6	319	yes	no		
+11576761	11576761	Vawter 2001	2001	primary	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	array_early	16	8	8	197	no	no		
+12090816	12090816	Hemby 2002	2002	primary	brain_other	Other brain samples	brain	array_early	8	4	4	148	yes	no		
+11923437	11923437	Middleton 2002	2002	data reuse	pitt	University of Pittsburgh Brain Tissue Donation Program (Conte Center, CCNMD)	brain	array_early	20	10	10	330	yes	no		
+11930015	11930015	Mimmack 2002	2002	primary	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	array_early	20	10	10	128	no	no		
+12363385	12363385	Vawter 2002	2002	primary	libd	Lieber Institute for Brain Development (LIBD), BrainSeq Consortium, NIMH Clinical Brain Disorders Branch (CBDB)	brain	array_early	30	15	15	212	no	no		
+12872291	12872291	Chung 2003	2003	primary	brain_other	Other brain samples	brain	array_early	4	2	2	46	yes	no		
+12867516	12867516	Hashimoto 2003	2003	primary	pitt	University of Pittsburgh Brain Tissue Donation Program (Conte Center, CCNMD)	brain	array_early	30	15	15	755	no	no		
+13678875	13678875	Tkachev 2003	2003	primary	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	array_early	30	15	15	729	yes	no		
+15334603	15334603	Aston 2004	2004	primary	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	array_early	26	12	14	211	yes	yes	authors	
+15194870	15194870	Huang 2004	2004	single-gene follow-up	periph	Blood, LCL, fibroblast, other	lcl	other				13	no	no		
+14743183	14743183	Iwamoto 2004	2004	primary	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	array_early	28	13	15	275	yes	yes	derived	no list
+15362566	15362566	Iwamoto 2004	2004	single-gene follow-up	periph	Blood, LCL, fibroblast, other	lcl	other				44	no	no		
+14993118	14993118	Konradi 2004	2004	primary	harvard	Harvard Brain Tissue Resource Center (HBTRC), McLean Hospital	brain	array_early	18	8	10	371	yes	no		
+15098003	15098003	Prabakaran 2004	2004	primary	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	array_early	92	48	44	797	yes	no		
+15542704	15542704	Sugai 2004	2004	primary	brain_other	Other brain samples	brain	array_early	12	6	6	86	yes	no		
+14741323	14741323	Vawter 2004	2004	primary	periph	Blood, LCL, fibroblast, other	blood	array_early	14	5	9	101	no	no		
+16038679	16038679	Altar 2005	2005	primary	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	array_early	46	22	24	251	yes	yes	authors	
+ext:15303102	15303102	Aston C 2005	2005	source	meta	Meta-analyses and combined analyses						330	no	no		
+ext:16230605	16230605	Choudary PV 2005	2005	source	pritzker	Pritzker Neuropsychiatric Disorders Research Consortium, UC Irvine Brain Donor Program						512	no	no		
+16103141	16103141	Frank 2005	2005	primary	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	other	105			133	no	no		
+16223876	16223876	Glatt 2005	2005	primary	harvard	Harvard Brain Tissue Resource Center (HBTRC), McLean Hospital	mixed	array_early	46	19	27	248	yes	no		
+15563509	15563509	Iwamoto 2005	2005	primary	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	array_early	69	35	34	382	yes	yes	derived	no list
+16044170	16044170	Kato 2005	2005	single-gene follow-up	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	other	70	35	35	59	no	no		
+15923110	15923110	Katsel 2005	2005	primary	mssm	Mount Sinai / JJ Peters VA Medical Center NIH Brain and Tissue Repository (MSSM)	brain	array_whole	39	21	18	106	yes	no		
+16139990	16139990	Katsel 2005	2005	data reuse	mssm	Mount Sinai / JJ Peters VA Medical Center NIH Brain and Tissue Repository (MSSM)	brain	array_whole	26	13	13	176	yes	no		
+15892139	15892139	Middleton 2005	2005	primary	periph	Blood, LCL, fibroblast, other	blood	array_early	66	33	33	79	yes	no		
+15726117	15726117	Middleton 2005	2005	data reuse	pitt	University of Pittsburgh Brain Tissue Donation Program (Conte Center, CCNMD)	brain	array_early	20	10	10	61	yes	no		
+15645418	15645418	Tsuang 2005	2005	primary	periph	Blood, LCL, fibroblast, other	blood	mixed	30	20	10	164	yes	no		
+15920292	15920292	Zvara 2005	2005	primary	periph	Blood, LCL, fibroblast, other	blood	array_early	23	13	10	56	yes	no		
+16637010	16637010	Beasley 2006	2006	primary	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	proteomics	30	15	15	240	yes	no		
+16288314	16288314	Benes 2006	2006	data reuse	harvard	Harvard Brain Tissue Resource Center (HBTRC), McLean Hospital	brain	array_early	18	8	10	143	yes	no		
+16414245	16414245	Bowden 2006	2006	primary	periph	Blood, LCL, fibroblast, other	blood	array_early	28	14	14	83	yes	no		
+16491132	16491132	Clark 2006	2006	primary	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)	brain	proteomics	20	10	10	126	yes	no		
+17012699	17012699	Haroutunian 2006	2006	primary	mssm	Mount Sinai / JJ Peters VA Medical Center NIH Brain and Tissue Repository (MSSM)	brain	array_whole	30	16	14	73	yes	no		
+17090210	17090210	Huang 2006	2006	primary	periph	Blood, LCL, fibroblast, other	other	proteomics	134			133	yes	no		
+16997002	16997002	Lipska 2006	2006	primary	brain_other	Other brain samples	brain	array_unstated	143	53	90	283	no	no		
+16406496	16406496	McCurdy 2006	2006	primary	periph	Blood, LCL, fibroblast, other	other	array_whole	12	7	5	100	yes	no		
+16788776	16788776	Mehler-Wex 2006	2006	single-gene follow-up	periph	Blood, LCL, fibroblast, other	blood	other				31	no	no		
+16624532	16624532	Mei 2006	2006	primary	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	proteomics	69	34	35	16	yes	no		
+16549361	16549361	Novikova 2006	2006	primary	harvard	Harvard Brain Tissue Resource Center (HBTRC), McLean Hospital	brain	proteomics			20	66	yes	no		
+17012697	17012697	Paz 2006	2006	primary	brain_other	Other brain samples	brain	other	28	14	14	33	no	no		
+smri:stanley_altarA		Stanley AltarA	2006	source	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium			98				no	no		
+smri:stanley_altarC		Stanley AltarC	2006	source	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium			44				no	no		
+smri:stanley_bahn	16894394	Stanley Bahn	2006	source	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium			99			172	no	no		
+smri:stanley_chen		Stanley Chen	2006	source	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium			27				no	no		
+smri:stanley_dobrin		Stanley Dobrin	2006	source	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium			78				no	no		
+smri:stanley_feinberg		Stanley Feinberg	2006	source	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium			50				no	no		
+smri:stanley_sklarA		Stanley SklarA	2006	source	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium			47				no	no		
+smri:study16		Stanley study 16 (Chu)	2006	source	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium							no	no		
+smri:study17		Stanley study 17 (Laeng)	2006	source	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium							no	no		
+smri:study18		Stanley study 18 (Aston)	2006	source	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium							no	no		
+16604350	16604350	Vawter 2006	2006	primary	periph	Blood, LCL, fibroblast, other	lcl	array_early	10	5	5	27	yes	no		
+16236523	16236523	Weidenhofer 2006	2006	primary	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)	brain	array_whole	14	7	7	49	yes	yes	authors	
+17568569	17568569	Arion 2007	2007	primary	pitt	University of Pittsburgh Brain Tissue Donation Program (Conte Center, CCNMD)	brain	array_early	28	14	14	252	no	no		
+21136665	21136665	Clark 2007	2007	primary	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)	brain	proteomics	20	10	10	31	yes	no		
+17668069	17668069	Craddock 2007	2007	primary	periph	Blood, LCL, fibroblast, other	blood	array_whole	12	6	6	76	yes	no		
+17464717	17464717	Dean 2007	2007	primary	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)	brain	other	20	10	10	67	yes	no		
+17291370	17291370	Haroutunian 2007	2007	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	array_whole			13	71	yes	no		
+17997842	17997842	Kim 2007	2007	reanalysis of public data	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	array_early	56			90	yes	no		
+ext:17440432	17440432	Matigian N 2007	2007	source	meta	Meta-analyses and combined analyses						90	no	no		
+17223013	17223013	McCullumsmith 2007	2007	single-gene follow-up	mssm	Mount Sinai / JJ Peters VA Medical Center NIH Brain and Tissue Repository (MSSM)	brain	other	75	41	34	113	no	no		
+ext:17982457	17982457	Myers AJ 2007	2007	source	periph	Blood, LCL, fibroblast, other						400	no	no		
+17287082	17287082	Numata 2007	2007	single-gene follow-up	periph	Blood, LCL, fibroblast, other	blood	other	80	40	40	10	no	no		
+17326821	17326821	Perkins 2007	2007	primary	harvard	Harvard Brain Tissue Resource Center (HBTRC), McLean Hospital	brain	array_noncoding	36	15	21	424	no	no		
+17822540	17822540	Saetre 2007	2007	primary	brain_other	Other brain samples	brain	array_early	110	55	55	220	yes	yes	authors	
+21136626	21136626	Sivagnanasundaram 2007	2007	primary	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)	brain	proteomics	20	10	10	62	yes	no		
+coll:stanley_array_collection		Stanley Medical Research Institute (SMRI) Array Collection	2007	source	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium							no	no		
+18184693	18184693	Beveridge 2008	2008	primary	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)	brain	array_noncoding	14	7	7	260	yes	no		
+18445270	18445270	Bowden 2008	2008	primary	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)	brain	array_whole	14	7	7	61	yes	yes	authors	
+18923069	18923069	Bullock 2008	2008	primary	brain_other	Other brain samples	brain	other	26			76	no	no		
+18992145	18992145	Choi 2008	2008	meta-analysis / combined	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	mixed	163	81	82	42	yes	no		
+18771015	18771015	Garbett 2008	2008	primary	pitt	University of Pittsburgh Brain Tissue Donation Program (Conte Center, CCNMD)	brain	array_whole	18	12	6	26	yes	yes	authors	
+ext:18378158	18378158	Garbett K 2008	2008	source	meta	Meta-analyses and combined analyses						310	no	no		
+19088852	19088852	Harris 2008	2008	primary	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	array_whole	24	12	12	90	yes	yes	derived	no list
+18281411	18281411	Hashimoto 2008	2008	single-gene follow-up	pitt	University of Pittsburgh Brain Tissue Donation Program (Conte Center, CCNMD)	brain	other	24	12	12	337	no	no		
+17471287	17471287	Hashimoto 2008	2008	primary	pitt	University of Pittsburgh Brain Tissue Donation Program (Conte Center, CCNMD)	brain	array_early	28	14	14	412	no	no		
+18081029	18081029	Kakiuchi 2008	2008	primary	periph	Blood, LCL, fibroblast, other	lcl	array_early	4	2	2	23	yes	no		
+18322470	18322470	Katsel 2008	2008	primary	mssm	Mount Sinai / JJ Peters VA Medical Center NIH Brain and Tissue Repository (MSSM)	brain	array_whole	35	16	19	77	yes	no		
+18681948	18681948	Khaitovich 2008	2008	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	array_unstated				71	yes	no		
+18545665	18545665	Matigian 2008	2008	primary	periph	Blood, LCL, fibroblast, other	lcl	array_early	30	16	14	38	yes	no		
+18985160	18985160	Mudge 2008	2008	primary	brain_other	Other brain samples	brain	rnaseq	20	14	6	102	yes	yes	authors	
+18778695	18778695	Narayan 2008	2008	primary	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)	brain	array_whole	55	26	29	168	yes	yes	authors	
+17938637	17938637	Pennington 2008	2008	primary	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	proteomics	64	34	30	175	yes	no		
+19003868	19003868	Pennington 2008	2008	primary	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	proteomics	25	12	13	57	yes	no		
+18191109	18191109	Shao 2008	2008	primary	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	array_early	61	32	29	153	yes	yes	authors	
+18504422	18504422	Smalla 2008	2008	primary	brain_other	Other brain samples	brain	proteomics	25	10	15	42	yes	no		
+coll:stanley_neuropathology_consortium		Stanley Medical Research Institute (SMRI) Neuropathology Consortium	2008	source	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium							no	no		
+18992130	18992130	Struyf 2008	2008	reanalysis of public data	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	unknown	227	115	112	26	yes	no		
+18226501	18226501	Yanagi 2008	2008	primary	brain_other	Other brain samples	brain	array_early	22	11	11	29	yes	no		
+18455303	18455303	Zhang 2008	2008	single-gene follow-up	periph	Blood, LCL, fibroblast, other	blood	other	78	31	47	41	no	no		
+18268500	18268500	Behan 2009	2009	primary	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	proteomics	20	10	10	137	yes	no		
+19834500	19834500	Chu 2009	2009	primary	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	array_whole	23	11	12	44	yes	yes	authors	
+19562803	19562803	English 2009	2009	primary	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	proteomics	70	35	35	125	yes	no		
+21532980	21532980	Glatt 2009	2009	primary	periph	Blood, LCL, fibroblast, other	blood	array_whole	21	13	8	38	yes	no		
+ext:19457239	19457239	Harris LW 2009	2009	source	brain_other	Other brain samples						91	no	no		
+19358997	19358997	Kuzman 2009	2009	primary	periph	Blood, LCL, fibroblast, other	blood	array_whole	64	32	32	47	yes	no		
+19772658	19772658	Martin 2009	2009	primary	periph	Blood, LCL, fibroblast, other	lcl	array_whole	10	5	5	20	yes	no		
+19034380	19034380	Martins-de-Souza 2009	2009	primary	brain_other	Other brain samples	brain	proteomics	9	5	4	111	yes	no		
+19110265	19110265	Martins-de-Souza 2009	2009	primary	brain_other	Other brain samples	brain	proteomics	16	9	7	145	yes	no		
+19405953	19405953	Martins-de-Souza 2009	2009	primary	brain_other	Other brain samples	brain	proteomics	15			110	yes	no		
+19255580	19255580	Maycox 2009	2009	primary	brain_other	Other brain samples	brain	mixed	51	28	23	174	yes	yes	authors	
+18683247	18683247	Narayan 2009	2009	primary	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)	brain	array_early	54			85	no	no		
+19296286	19296286	Nesvaderani 2009	2009	primary	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)	brain	proteomics	18	9	9	33	yes	no		
+ext:19474331	19474331	Okaty BW 2009	2009	source	meta	Meta-analyses and combined analyses						262	no	no		
+19632097	19632097	Rastogi 2009	2009	primary	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	unknown	420	210	210	44	no	no		
+ext:19307592	19307592	Somel M 2009	2009	source	meta	Meta-analyses and combined analyses						271	no	no		
+19245676	19245676	Tang 2009	2009	reanalysis of public data	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)	brain	mixed	59	29	30	36	yes	no		
+20034564	20034564	Arion 2010	2010	primary	pitt	University of Pittsburgh Brain Tissue Donation Program (Conte Center, CCNMD)	brain	array_whole	16	8	8	42	yes	yes	authors	
+19721432	19721432	Beveridge 2010	2010	primary	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)	brain	array_noncoding	50	22	28	355	no	no		
+19582768	19582768	Bousman 2010	2010	data reuse	periph	Blood, LCL, fibroblast, other	blood	array_whole	21	13	8	95	yes	no		
+ext:20552680	20552680	Bousman CA 2010	2010	source	meta	Meta-analyses and combined analyses						42	no	no		
+19011233	19011233	Ishiguro 2010	2010	single-gene follow-up	brain_other	Other brain samples	brain	array_whole	20	10	10	20	yes	no		
+20675101	20675101	Kim 2010	2010	primary	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	array_noncoding	60	29	31	244	no	no		
+18762803	18762803	Kim 2010	2010	reanalysis of public data	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	array_early	29	14	15	97	yes	no		
+20446881	20446881	Martins-De-Souza 2010	2010	primary	periph	Blood, LCL, fibroblast, other	other	proteomics	10			42	yes	no		
+20381070	20381070	Martins-de-Souza 2010	2010	primary	brain_other	Other brain samples	brain	proteomics	19	11	8	65	yes	no		
+20471030	20471030	Martins-de-Souza 2010	2010	primary	brain_other	Other brain samples	brain	proteomics	19	11	8	137	yes	no		
+20699480	20699480	Matigian 2010	2010	primary	periph	Blood, LCL, fibroblast, other	other	array_whole	23			152	yes	no		
+20083392	20083392	Takahashi 2010	2010	primary	periph	Blood, LCL, fibroblast, other	blood	array_whole	101	52	49	52	yes	no		
+20197298	20197298	Torkamani 2010	2010	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	mixed	101	47	54	111	yes	no		
+19916557	19916557	Wang 2010	2010	primary	periph	Blood, LCL, fibroblast, other	other	array_whole	24	12	12	59	yes	no		
+21538462	21538462	Barnes 2011	2011	primary	brain_other	Other brain samples	brain	array_whole	42	23	19	78	yes	yes	authors	
+21490598	21490598	Brennand 2011	2011	primary	ipsc	iPSC-derived cells and organoids	ipsc	array_whole	8	4	4	1090	yes	no		
+20921955	20921955	Chan 2011	2011	primary	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	proteomics	30	20	10	62	yes	no		
+21451437	21451437	Evgrafov 2011	2011	primary	periph	Blood, LCL, fibroblast, other	other	array_whole	16			18	yes	no		
+21536977	21536977	Föcking 2011	2011	primary	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	proteomics	40	20	20	82	yes	no		
+21922000	21922000	Gaiteri 2011	2011	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	array_early				31	yes	no		
+21972136	21972136	Glatt 2011	2011	primary	periph	Blood, LCL, fibroblast, other	blood	array_whole	19	7	12	47	yes	no		
+20585325	20585325	Herberth 2011	2011	primary	periph	Blood, LCL, fibroblast, other	blood	proteomics	18			77	yes	no		
+20695885	20695885	Horesh 2011	2011	primary	mssm	Mount Sinai / JJ Peters VA Medical Center NIH Brain and Tissue Repository (MSSM)	brain	array_whole	50	28	22	42	yes	no		
+21738743	21738743	Lai 2011	2011	primary	periph	Blood, LCL, fibroblast, other	blood	array_noncoding	60	30	30	185	yes	no		
+22373040	22373040	Lee 2011	2011	reanalysis of public data	brain_other	Other brain samples	brain	array_early	27	13	14	46	yes	no		
+21183010	21183010	Moreau 2011	2011	primary	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	unknown	101			220	no	no		
+21797804	21797804	Pedrosa 2011	2011	primary	ipsc	iPSC-derived cells and organoids	ipsc	array_unstated	3	3		102	no	no		
+20404824	20404824	Pun 2011	2011	single-gene follow-up	brain_other	Other brain samples	brain	unknown	27			44	no	no		
+21111402	21111402	Santarelli 2011	2011	primary	brain_other	Other brain samples	brain	array_noncoding	74	37	37	221	yes	no		
+21091092	21091092	Schmitt 2011	2011	primary	brain_other	Other brain samples	brain	array_whole	20	10	10	55	yes	yes	authors	
+coll:stanley_collections		Stanley Medical Research Institute (SMRI) collections	2011	source	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium							no	no		
+22832356	22832356	Tang 2011	2011	single-gene follow-up	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)	brain	array_whole	66	32	34	103	no	no		
+ext:21614001	21614001	Voineagu I 2011	2011	source	meta	Meta-analyses and combined analyses						1582	no	no		
+22545112	22545112	Catts 2012	2012	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	array_unstated				39	yes	no		
+ext:22457638	22457638	Chow ML 2012	2012	source	meta	Meta-analyses and combined analyses						163	no	no		
+23062752	23062752	Cohen 2012	2012	primary	harvard	Harvard Brain Tissue Resource Center (HBTRC), McLean Hospital	brain	array_whole	8	4	4	28	yes	no		
+22936973	22936973	Gandal 2012	2012	reanalysis of public data	brain_other	Other brain samples	brain	array_unstated				60	yes	no		
+21727898	21727898	Gardiner 2012	2012	primary	periph	Blood, LCL, fibroblast, other	blood	array_noncoding	188	112	76	198	yes	no		
+22503327	22503327	Lee 2012	2012	primary	periph	Blood, LCL, fibroblast, other	blood	array_whole	52	26	26	16	yes	no		
+22675524	22675524	Matthews 2012	2012	primary	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	array_early	20	10	10	45	no	no		
+22315408	22315408	Miller 2012	2012	primary	brain_other	Other brain samples	brain	array_noncoding	69	35	34	257	yes	no		
+ext:22302827	22302827	Ponomarev I 2012	2012	source	meta	Meta-analyses and combined analyses						330	no	no		
+22954356	22954356	Pérez-Santiago 2012	2012	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	array_early	225	107	118	63	yes	no		
+22161352	22161352	Qian 2012	2012	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	array_early	91	46	45	4	yes	no		
+22868662	22868662	Roussos 2012	2012	primary	mssm	Mount Sinai / JJ Peters VA Medical Center NIH Brain and Tissue Repository (MSSM)	brain	array_whole	40			87	yes	no		
+22441714	22441714	Schmitt 2012	2012	primary	brain_other	Other brain samples	brain	array_whole	20	10	10	30	yes	no		
+22397921	22397921	Tang 2012	2012	single-gene follow-up	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)	brain	array_whole	59	29	30	36	yes	no		
+22832956	22832956	Wirgenes 2012	2012	single-gene follow-up	periph	Blood, LCL, fibroblast, other	blood	other	667	282	385	64	no	no		
+22558445	22558445	Wu 2012	2012	primary	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)	brain	rnaseq	18	9	9	85	yes	yes	authors	
+23282246	23282246	Xu 2012	2012	primary	periph	Blood, LCL, fibroblast, other	blood	rnaseq	6	3	3	59	yes	no		
+22761806	22761806	de Jong 2012	2012	primary	periph	Blood, LCL, fibroblast, other	blood	array_whole	202	106	96	121	yes	no		
+22433715	22433715	de Jong 2012	2012	reanalysis of public data	periph	Blood, LCL, fibroblast, other	blood	array_whole	202	106	96	52	yes	no		
+22393424	22393424	van Beveren 2012	2012	primary	periph	Blood, LCL, fibroblast, other	blood	array_whole	70	41	29	59	yes	no		
+23147385	23147385	Chen 2013	2013	reanalysis of public data	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	array_whole	91	45	46	137	yes	yes	derived	
+22869038	22869038	Fillman 2013	2013	primary	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)	brain	rnaseq	40	20	20	489	yes	yes	authors	
+23941741	23941741	Fusté 2013	2013	primary	periph	Blood, LCL, fibroblast, other	blood	other	28	14	14	28	no	no		
+23218666	23218666	Gardiner 2013	2013	primary	periph	Blood, LCL, fibroblast, other	blood	array_whole	194	114	80	89	yes	no		
+24169640	24169640	Hwang 2013	2013	primary	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	rnaseq	29	14	15	163	yes	yes	authors	
+24012176	24012176	Johansson 2013	2013	primary	periph	Blood, LCL, fibroblast, other	other	unknown				54	no	no		
+22248022	22248022	Krishnamurthy 2013	2013	primary	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	proteomics	29	14	15	31	yes	no		
+23442539	23442539	Kumarasinghe 2013	2013	primary	periph	Blood, LCL, fibroblast, other	blood	array_whole	21	10	11	61	yes	no		
+23554570	23554570	Logotheti 2013	2013	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	mixed	137	69	68	18	yes	no		
+22212594	22212594	Mistry 2013	2013	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	mixed	306	153	153	80	yes	no		
+24070017	24070017	Mistry 2013	2013	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	mixed	306	153	153	49	yes	no		
+23164819	23164819	Sainz 2013	2013	primary	periph	Blood, LCL, fibroblast, other	blood	rnaseq	76	36	40	52	yes	no		
+23904455	23904455	Sanders 2013	2013	primary	periph	Blood, LCL, fibroblast, other	lcl	array_whole	714	268	446	69	yes	no		
+ext:23912948	23912948	Stoll G 2013	2013	source	meta	Meta-analyses and combined analyses						155	no	no		
+25243493	25243493	Chen 2014	2014	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	mixed	82	39	43	80	yes	no		
+25522406	25522406	Crespo-Facorro 2014	2014	data reuse	periph	Blood, LCL, fibroblast, other	blood	rnaseq			0	35	yes	no		
+24928144	24928144	Filiou 2014	2014	reanalysis of public data	brain_other	Other brain samples	brain	mixed	59	30	29	50	yes	no		
+24569695	24569695	Fillman 2014	2014	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	array_whole	70	35	35	188	no	no		
+ext:30518843	30518843	GSE13564	2014	source	meta	Meta-analyses and combined analyses						24	no	no		
+23528911	23528911	Guillozet-Bongaarts 2014	2014	primary	libd	Lieber Institute for Brain Development (LIBD), BrainSeq Consortium, NIMH Clinical Brain Disorders Branch (CBDB)	brain	other	52	19	33	102	no	no		
+ext:25494366	25494366	Gupta S 2014	2014	source	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium						436	no	no		
+24886351	24886351	Hagihara 2014	2014	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	mixed	207	107	100	47	yes	no		
+25522158	25522158	Huang 2014	2014	reanalysis of public data	brain_other	Other brain samples	brain	rnaseq	18	9	9	27	yes	no		
+24594777	24594777	Kohen 2014	2014	primary	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	rnaseq	46	17	29	61	yes	yes	authors	
+24507884	24507884	Oldmeadow 2014	2014	primary	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)	mixed	array_whole	196	116	80	33	yes	no		
+24702465	24702465	Pietersen 2014	2014	primary	harvard	Harvard Brain Tissue Resource Center (HBTRC), McLean Hospital	brain	array_whole	18	9	9	75	yes	yes	authors	
+24628518	24628518	Pietersen 2014	2014	primary	harvard	Harvard Brain Tissue Resource Center (HBTRC), McLean Hospital	brain	array_whole	16	8	8	57	yes	yes	authors	
+25175639	25175639	Pinacho 2014	2014	primary	brain_other	Other brain samples	brain	unknown	25	14	11	29	no	no		
+24287731	24287731	Sellmann 2014	2014	primary	brain_other	Other brain samples	brain	array_whole	20	10	10	16	yes	no		
+24475125	24475125	Smalheiser 2014	2014	primary	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	other	40			161	yes	no		
+24776767	24776767	Xiao 2014	2014	primary	brain_other	Other brain samples	brain	rnaseq	11			64	yes	yes	authors	
+24672753	24672753	Yu 2014	2014	single-gene follow-up	ipsc	iPSC-derived cells and organoids	ipsc	other	8	4	4	213	no	no		
+25560755	25560755	Arion 2015	2015	primary	pitt	University of Pittsburgh Brain Tissue Donation Program (Conte Center, CCNMD)	brain	array_whole	72	36	36	157	yes	yes	authors	
+26285829	26285829	Bergon 2015	2015	meta-analysis / combined	meta	Meta-analyses and combined analyses	mixed	mixed	1019	503	516	55	yes	no		
+24686136	24686136	Brennand 2015	2015	primary	ipsc	iPSC-derived cells and organoids	ipsc	array_whole	8	4	4	338	yes	no		
+25658856	25658856	Cattane 2015	2015	primary	periph	Blood, LCL, fibroblast, other	other	array_whole	40	20	20	57	yes	no		
+ext:26171982	26171982	Chan MK 2015	2015	source	meta	Meta-analyses and combined analyses						132	no	no		
+25793610	25793610	Chen 2015	2015	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	mixed	390	195	195	1	yes	no		
+25119539	25119539	Durrenberger 2015	2015	primary	brain_other	Other brain samples	brain	array_whole	20	10	10	109	yes	no		
+26485547	26485547	English 2015	2015	primary	periph	Blood, LCL, fibroblast, other	other	proteomics	18			82	yes	no		
+25665552	25665552	Fan 2015	2015	primary	periph	Blood, LCL, fibroblast, other	blood	array_noncoding	89			36	yes	no		
+25048004	25048004	Föcking 2015	2015	primary	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	proteomics	40	20	20	138	yes	no		
+ext:23671070	23671070	GSE45642	2015	source	brain_other	Other brain samples						478	no	no		
+26243375	26243375	Gilabert-Juan 2015	2015	primary	brain_other	Other brain samples	brain	array_whole		6		34	yes	no		
+ext:25786133	25786133	Lanz TA 2015	2015	source	meta	Meta-analyses and combined analyses						43	no	no		
+25433904	25433904	MacDonald 2015	2015	primary	pitt	University of Pittsburgh Brain Tissue Donation Program (Conte Center, CCNMD)	brain	proteomics	45	22	23	54	no	no		
+25444170	25444170	Maekawa 2015	2015	single-gene follow-up	brain_other	Other brain samples	mixed	array_unstated	114	52	62	45	no	no		
+25981335	25981335	Maschietto 2015	2015	data reuse	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	mixed	array_whole	59	29	30	40	yes	yes	derived	no list
+26585218	26585218	Mauney 2015	2015	primary	harvard	Harvard Brain Tissue Resource Center (HBTRC), McLean Hospital	brain	array_whole	18	9	9	79	yes	yes	authors	
+25967042	25967042	Ren 2015	2015	primary	periph	Blood, LCL, fibroblast, other	blood	array_noncoding	37	19	18	40	yes	no		
+26232077	26232077	Saia-Cereda 2015	2015	primary	brain_other	Other brain samples	brain	proteomics	16			57	yes	no		
+25459892	25459892	Schmidt 2015	2015	reanalysis of public data	brain_other	Other brain samples	brain	array_early	28	13	15	26	yes	no		
+25728835	25728835	Schubert 2015	2015	primary	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	proteomics	17	10	7	70	yes	no		
+26696568	26696568	Simões 2015	2015	meta-analysis / combined	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	array_unstated	186	89	97	9	yes	no		
+25708228	25708228	Topol 2015	2015	primary	ipsc	iPSC-derived cells and organoids	ipsc	rnaseq	10	4	6	69	yes	no		
+26485546	26485546	Topol 2015	2015	primary	ipsc	iPSC-derived cells and organoids	ipsc	proteomics	10	4	6	47	yes	no		
+26183697	26183697	Wei 2015	2015	primary	periph	Blood, LCL, fibroblast, other	blood	other	351	164	187	79	yes	no		
+25985888	25985888	Yu 2015	2015	primary	periph	Blood, LCL, fibroblast, other	blood	array_noncoding	235	105	130	60	yes	no		
+25429046	25429046	Zhang 2015	2015	data reuse	periph	Blood, LCL, fibroblast, other	blood	array_noncoding	30	15	15	32	yes	no		
+26657146	26657146	Zhang 2015	2015	reanalysis of public data	periph	Blood, LCL, fibroblast, other	blood	array_noncoding	60	33	27	18	yes	no		
+25113377	25113377	Zhao 2015	2015	primary	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	rnaseq	57	31	26	123	yes	yes	authors	
+26173148	26173148	Zhao 2015	2015	primary	ipsc	iPSC-derived cells and organoids	ipsc	rnaseq	12	6	6	88	no	no		
+25487697	25487697	de Baumont 2015	2015	reanalysis of public data	brain_other	Other brain samples	brain	array_whole	59	29	30	64	yes	yes	derived	no list
+25424713	25424713	van Eijk 2015	2015	meta-analysis / combined	periph	Blood, LCL, fibroblast, other	blood	array_whole	240	120	120	47	yes	no		
+27650396	27650396	Chen 2016	2016	primary	periph	Blood, LCL, fibroblast, other	blood	array_noncoding	6	3	3	37	yes	no		
+coll:cmc		CommonMind Consortium (CMC)	2016	source	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)							no	no		
+27622934	27622934	Darby 2016	2016	primary	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	rnaseq	95			61	yes	yes	authors	
+27219343	27219343	Ellis 2016	2016	reanalysis of public data	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	rnaseq	57	31	26	37	yes	no		
+27668389	27668389	Fromer 2016	2016	primary	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)	brain	rnaseq	537	258	279	993	yes	yes	authors	
+27450777	27450777	Hess 2016	2016	meta-analysis / combined	meta	Meta-analyses and combined analyses	mixed	mixed	893	453	440	80	yes	no		
+27727244	27727244	Horiuchi 2016	2016	primary	periph	Blood, LCL, fibroblast, other	other	array_whole	31	16	15	30	yes	no		
+27661005	27661005	Hu 2016	2016	primary	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	rnaseq	40	22	18	39	yes	yes	derived	
+26077692	26077692	Kim 2016	2016	meta-analysis / combined	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	rnaseq	30	15	15	55	yes	no		
+27898074	27898074	Kim 2016	2016	primary	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	rnaseq	93	48	45	61	yes	yes	authors	
+27846841	27846841	Lin 2016	2016	primary	ipsc	iPSC-derived cells and organoids	ipsc	rnaseq	15	8	7	89	no	no		
+28123834	28123834	Mladinov 2016	2016	primary	brain_other	Other brain samples	brain	array_whole	12			17	yes	yes	authors	
+26965827	26965827	Murai 2016	2016	single-gene follow-up	ipsc	iPSC-derived cells and organoids	ipsc	other				98	no	no		
+27236410	27236410	Pinacho 2016	2016	primary	brain_other	Other brain samples	brain	proteomics	8	4	4	28	yes	no		
+26818902	26818902	Qin 2016	2016	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	array_whole	246	122	124	31	yes	no		
+27732689	27732689	Roussos 2016	2016	primary	ipsc	iPSC-derived cells and organoids	ipsc	rnaseq	8	4	4	41	yes	no		
+27117414	27117414	Topol 2016	2016	data reuse	ipsc	iPSC-derived cells and organoids	ipsc	rnaseq	10	4	6	98	yes	no		
+27801899	27801899	Toyoshima 2016	2016	primary	ipsc	iPSC-derived cells and organoids	ipsc	array_whole	5			92	no	no		
+26697997	26697997	Wu 2016	2016	primary	periph	Blood, LCL, fibroblast, other	blood	array_whole	96	47	49	31	yes	no		
+27650867	27650867	Wu 2016	2016	single-gene follow-up	periph	Blood, LCL, fibroblast, other	blood	other	88	44	44	47	no	no		
+10.1038/srep16767	26733343	Xu 2016	2016	primary	periph	Blood, LCL, fibroblast, other	blood	array_whole	30	18	12	28	yes	no		
+26609121	26609121	Xu 2016	2016	meta-analysis / combined	meta	Meta-analyses and combined analyses	mixed	mixed	333	175	158	39	yes	no		
+26710095	26710095	Zheutlin 2016	2016	primary	periph	Blood, LCL, fibroblast, other	blood	array_whole	245			14	yes	no		
+28476208	28476208	Arion 2017	2017	primary	pitt	University of Pittsburgh Brain Tissue Donation Program (Conte Center, CCNMD)	brain	array_whole	36	17	19	81	yes	yes	derived	no list
+28809853	28809853	Chang 2017	2017	primary	libd	Lieber Institute for Brain Development (LIBD), BrainSeq Consortium, NIMH Clinical Brain Disorders Branch (CBDB)	brain	rnaseq	46	22	24	57	yes	yes	authors	
+28822801	28822801	Gassó 2017	2017	primary	periph	Blood, LCL, fibroblast, other	other	array_whole	14	8	6	14	yes	no		
+28214564	28214564	Hirayama-Kurogi 2017	2017	primary	brain_other	Other brain samples	mixed	proteomics	20			41	yes	no		
+10.1038/s41467-017-02330-5	29263384	Hoffman 2017	2017	primary	ipsc	iPSC-derived cells and organoids	ipsc	rnaseq	19	10	9	151	yes	no		
+28634288	28634288	Jaffe 2017	2017	reanalysis of public data	libd	Lieber Institute for Brain Development (LIBD), BrainSeq Consortium, NIMH Clinical Brain Disorders Branch (CBDB)	mixed	rnaseq	351	155	196	104	yes	no		
+coll:nimh_hbcc		NIMH Human Brain Collection Core (HBCC)	2017	source	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)							no	no		
+28094170	28094170	Narla 2017	2017	primary	ipsc	iPSC-derived cells and organoids	ipsc	rnaseq	8	4	4	46	yes	no		
+27916288	27916288	Ragan 2017	2017	primary	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)	brain	rnaseq	44			23	yes	no		
+28754123	28754123	Ramaker 2017	2017	primary	pritzker	Pritzker Neuropsychiatric Disorders Research Consortium, UC Irvine Brain Donor Program	brain	rnaseq	48	24	24	185	yes	yes	derived	
+28418402	28418402	Sanders 2017	2017	primary	periph	Blood, LCL, fibroblast, other	lcl	rnaseq	1189	529	660	51	yes	no		
+27940260	27940260	Voisey 2017	2017	primary	brain_other	Other brain samples	brain	rnaseq	45			7	yes	yes	authors	
+28736215	28736215	Windrem 2017	2017	primary	ipsc	iPSC-derived cells and organoids	ipsc	rnaseq	7	4	3	217	yes	no		
+28280741	28280741	Zhang 2017	2017	meta-analysis / combined	meta	Meta-analyses and combined analyses	blood	mixed	290	152	138	7	yes	no		
+29081874	29081874	Zhu 2017	2017	reanalysis of public data	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)	brain	rnaseq	537	258	279	19	yes	no		
+28485405	28485405	Birnbaum 2018	2018	data reuse	libd	Lieber Institute for Brain Development (LIBD), BrainSeq Consortium, NIMH Clinical Brain Disorders Branch (CBDB)	brain	rnaseq	340	144	196	58	yes	no		
+29467462	29467462	Casas 2018	2018	primary	ipsc	iPSC-derived cells and organoids	ipsc	array_unstated	6			44	no	no		
+30545964	30545964	Chen 2018	2018	primary	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	mixed	320	95	225	87	yes	no		
+30115913	30115913	Duan 2018	2018	primary	periph	Blood, LCL, fibroblast, other	lcl	rnaseq	1204	514	690	16	yes	no		
+29112193	29112193	Enwright Iii 2018	2018	primary	pitt	University of Pittsburgh Brain Tissue Donation Program (Conte Center, CCNMD)	brain	array_whole	72	36	36	99	yes	yes	authors	
+28641886	28641886	Fries 2018	2018	primary	periph	Blood, LCL, fibroblast, other	blood	array_whole	72	52	20	11	yes	no		
+ext:24608543	24608543	GSE54567	2018	source	meta	Meta-analyses and combined analyses						77	no	no		
+30545856	30545856	Gandal 2018	2018	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	rnaseq				1088	yes	no		
+29439242	29439242	Gandal 2018	2018	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	mixed		159		745	yes	no		
+30053206	30053206	Guffanti 2018	2018	primary	brain_other	Other brain samples	brain	rnaseq	19			37	yes	no		
+29632383	29632383	Gusev 2018	2018	meta-analysis / combined	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)	mixed	mixed	574	283	291	447	no	no		
+30016334	30016334	Hagenauer 2018	2018	primary	pritzker	Pritzker Neuropsychiatric Disorders Research Consortium, UC Irvine Brain Donor Program	brain	mixed	93	22	71	71	yes	no		
+29507296	29507296	Hoseth 2018	2018	primary	periph	Blood, LCL, fibroblast, other	blood	array_whole	842			118	no	no		
+ext:29942251	29942251	Igolkina AA 2018	2018	source	periph	Blood, LCL, fibroblast, other						20	no	no		
+30050107	30050107	Jaffe 2018	2018	primary	libd	Lieber Institute for Brain Development (LIBD), BrainSeq Consortium, NIMH Clinical Brain Disorders Branch (CBDB)	brain	rnaseq	351	155	196	346	yes	yes	authors	
+coll:libd_brainseq		Lieber Institute for Brain Development (LIBD) / BrainSeq Consortium	2018	source	libd	Lieber Institute for Brain Development (LIBD), BrainSeq Consortium, NIMH Clinical Brain Disorders Branch (CBDB)							no	no		
+29391398	29391398	Liu 2018	2018	primary	libd	Lieber Institute for Brain Development (LIBD), BrainSeq Consortium, NIMH Clinical Brain Disorders Branch (CBDB)	brain	rnaseq	46	22	24	58	yes	no		
+coll:psychencode		PsychENCODE Consortium (PEC)	2018	source	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)							no	no		
+27801890	27801890	Scarr 2018	2018	primary	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)	brain	array_whole	45	30	15	55	yes	yes	authors	
+29463818	29463818	Scarr 2018	2018	primary	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)	brain	array_whole	30	15	15	32	yes	yes	authors	
+30077719	30077719	Tian 2018	2018	primary	libd	Lieber Institute for Brain Development (LIBD), BrainSeq Consortium, NIMH Clinical Brain Disorders Branch (CBDB)	brain	rnaseq	45	21	24	37	yes	no		
+30177255	30177255	Toker 2018	2018	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	mixed	673	341	332	102	yes	no		
+29888231	29888231	Vawter 2018	2018	primary	periph	Blood, LCL, fibroblast, other	blood	array_whole	90			7	yes	no		
+29665782	29665782	de Sena Cortabitarte 2018	2018	reanalysis of public data	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)	brain	rnaseq	537	258	279	19	yes	no		
+30468562	30468562	Abdolmaleky 2019	2019	primary	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	array_whole	20	10	10	32	yes	yes	derived	no list
+31073119	31073119	Bowen 2019	2019	reanalysis of public data	pitt	University of Pittsburgh Brain Tissue Donation Program (Conte Center, CCNMD)	brain	array_whole	690	259	431	37	yes	no		
+31174959	31174959	Collado-Torres 2019	2019	primary	libd	Lieber Institute for Brain Development (LIBD), BrainSeq Consortium, NIMH Clinical Brain Disorders Branch (CBDB)	brain	rnaseq	447	177	270	222	yes	yes	authors	
+31535015	31535015	Doostparast Torshizi 2019	2019	reanalysis of public data	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)	mixed	rnaseq	3	1	2	68	yes	no		
+30770930	30770930	Du 2019	2019	primary	periph	Blood, LCL, fibroblast, other	blood	rnaseq	46			138	yes	no		
+ext:26793951	26793951	Dumitriu et al. 2016	2019	source	meta	Meta-analyses and combined analyses						106	no	no		
+30645614	30645614	Feltrin 2019	2019	meta-analysis / combined	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	array_early	69	35	34	19	yes	no		
+30870714	30870714	Geaghan 2019	2019	primary	periph	Blood, LCL, fibroblast, other	blood	rnaseq	51	36	15	18	yes	no		
+31078689	31078689	Gilabert-Juan 2019	2019	primary	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	mixed	mixed	223	154	69	7	yes	no		
+30203456	30203456	Godini 2019	2019	reanalysis of public data	brain_other	Other brain samples	brain	array_whole	20	10	10	9	yes	no		
+31127088	31127088	Guan 2019	2019	data reuse	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	rnaseq			83	74	yes	no		
+ext:23426267	23426267	Guintivano et al. 2013	2019	source	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)						336	no	no		
+29740122	29740122	Hauberg 2019	2019	reanalysis of public data	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)	brain	rnaseq	537	258	279	43	yes	no		
+31551426	31551426	Hoffman 2019	2019	primary	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)	brain	rnaseq	854	353	501	222	yes	no		
+ext:23595620	23595620	Hokama et al. 2014	2019	source	meta	Meta-analyses and combined analyses						268	no	no		
+31431609	31431609	Hu 2019	2019	primary	libd	Lieber Institute for Brain Development (LIBD), BrainSeq Consortium, NIMH Clinical Brain Disorders Branch (CBDB)	brain	rnaseq	136	34	102	40	yes	no		
+30967896	30967896	Huang 2019	2019	meta-analysis / combined	meta	Meta-analyses and combined analyses	mixed	mixed	40	20	20	13	yes	no		
+30911161	30911161	Huckins 2019	2019	reanalysis of public data	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)	brain	rnaseq	105563	40299	65264	175	no	no		
+31540999	31540999	Ishii 2019	2019	primary	ipsc	iPSC-derived cells and organoids	ipsc	array_whole	3	1	2	59	yes	no		
+30224231	30224231	Kim 2019	2019	reanalysis of public data	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	mixed	113	62	51	8	yes	no		
+31920755	31920755	Kumar 2019	2019	reanalysis of public data	brain_other	Other brain samples	brain	array_whole				8	yes	no		
+31123247	31123247	Lanz 2019	2019	primary	pitt	University of Pittsburgh Brain Tissue Donation Program (Conte Center, CCNMD)	brain	array_whole	38	19	19	164	yes	yes	authors	
+31113746	31113746	Leirer 2019	2019	primary	periph	Blood, LCL, fibroblast, other	blood	array_whole	217	68	149	39	yes	no		
+31242417	31242417	Liu 2019	2019	single-gene follow-up	ipsc	iPSC-derived cells and organoids	ipsc	rnaseq			3	34	yes	no		
+31618642	31618642	Lobentanzer 2019	2019	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	mixed		139		44	yes	no		
+ext:25129077	25129077	Lunnon et al. 2014	2019	source	meta	Meta-analyses and combined analyses						494	no	no		
+30786269	30786269	Mahmoudi 2019	2019	primary	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)	brain	rnaseq	35	17	18	66	yes	no		
+31288836	31288836	Mendizabal 2019	2019	primary	brain_other	Other brain samples	brain	rnaseq	50	23	27	95	yes	yes	authors	
+30675529	30675529	Murano 2019	2019	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	array_whole				21	yes	no		
+31055969	31055969	Nucifora 2019	2019	primary	pitt	University of Pittsburgh Brain Tissue Donation Program (Conte Center, CCNMD)	brain	proteomics	38	19	19	43	yes	no		
+31053723	31053723	Pai 2019	2019	primary	brain_other	Other brain samples	brain	rnaseq	34	17	17	63	yes	yes	authors	
+ext:27528462	27528462	Pantazatos et al. 2017	2019	source	brain_other	Other brain samples						198	no	no		
+30576541	30576541	Piras 2019	2019	meta-analysis / combined	meta	Meta-analyses and combined analyses	other	array_whole	128	71	57	24	yes	no		
+30976116	30976116	Sabunciyan 2019	2019	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	rnaseq	610	306	304	19	yes	no		
+32006661	32006661	Santarelli 2019	2019	primary	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)	brain	array_whole	74			25	yes	yes	authors	
+30718903	30718903	Sellgren 2019	2019	primary	ipsc	iPSC-derived cells and organoids	ipsc	array_whole	32			666	yes	no		
+31399567	31399567	Seney 2019	2019	reanalysis of public data	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)	brain	rnaseq	92	46	46	96	yes	no		
+30664768	30664768	Shao 2019	2019	primary	ipsc	iPSC-derived cells and organoids	ipsc	rnaseq	8	4	4	92	yes	no		
+30442475	30442475	Smith 2019	2019	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	array_unstated				16	yes	no		
+ext:29550519	29550519	Smith et al. 2018	2019	source	meta	Meta-analyses and combined analyses						165	no	no		
+ext:22433082	22433082	Soreq et al. 2017	2019	source	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)						116	no	no		
+31477693	31477693	Tiihonen 2019	2019	primary	ipsc	iPSC-derived cells and organoids	ipsc	rnaseq	16	5	11	49	yes	no		
+ext:24163133	24163133	Xu et al. 2014	2019	source	meta	Meta-analyses and combined analyses						126	no	no		
+31350824	31350824	Yang 2019	2019	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	array_whole	397	195	202	30	yes	no		
+30781971	30781971	Yao 2019	2019	primary	periph	Blood, LCL, fibroblast, other	blood	array_noncoding	18	9	9	28	yes	no		
+31011151	31011151	Yoshimi 2019	2019	primary	periph	Blood, LCL, fibroblast, other	lcl	proteomics	60			7	yes	no		
+ext:15965975	15965975	Zhang et al. 2005; Zheng et al. 2010	2019	source	meta	Meta-analyses and combined analyses						208	no	no		
+30670680	30670680	Zhu 2019	2019	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	mixed				12	yes	no		
+32109548	32109548	Akkouh 2020	2020	primary	ipsc	iPSC-derived cells and organoids	ipsc	rnaseq	6			52	yes	no		
+ext:24393808	24393808	Akula et al. 2014	2020	source	brain_other	Other brain samples						92	no	no		
+10.1155/2020/5176834	32566292	Bakshi 2020	2020	primary	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	array_whole	22	11	11	4	yes	yes	authors	
+31728928	31728928	Bristot 2020	2020	reanalysis of public data	brain_other	Other brain samples	brain	mixed				7	yes	no		
+31695175	31695175	Chagnon 2020	2020	primary	periph	Blood, LCL, fibroblast, other	lcl	array_whole	143			3	yes	no		
+32232389	32232389	Chen 2020	2020	meta-analysis / combined	meta	Meta-analyses and combined analyses	mixed	array_unstated				7	yes	no		
+31959813	31959813	Etemadikhah 2020	2020	primary	periph	Blood, LCL, fibroblast, other	other	rnaseq	16	9	7	23	yes	no		
+32143829	32143829	Evgrafov 2020	2020	primary	periph	Blood, LCL, fibroblast, other	ipsc	rnaseq	255	144	111	32	yes	no		
+32376074	32376074	Frajman 2020	2020	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	mixed	62	33	29	15	yes	no		
+ext:28825715	28825715	GSE102556	2020	source	brain_other	Other brain samples						699	no	no		
+ext:22984548	22984548	GSE38322	2020	source	meta	Meta-analyses and combined analyses						139	no	no		
+33115248	33115248	Glausier 2020	2020	reanalysis of public data	pitt	University of Pittsburgh Brain Tissue Donation Program (Conte Center, CCNMD)	brain	mixed	139	57	82	45	yes	no		
+33246498	33246498	Hathy 2020	2020	primary	ipsc	iPSC-derived cells and organoids	ipsc	rnaseq	3			24	yes	no		
+31391148	31391148	Hess 2020	2020	meta-analysis / combined	meta	Meta-analyses and combined analyses	blood	mixed	499	258	241	26	yes	no		
+32245959	32245959	Huang 2020	2020	reanalysis of public data	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)	brain	rnaseq	426	212	214	27	yes	no		
+32203495	32203495	Jaffe 2020	2020	primary	libd	Lieber Institute for Brain Development (LIBD), BrainSeq Consortium, NIMH Clinical Brain Disorders Branch (CBDB)	brain	rnaseq	168	75	93	104	yes	yes	authors	
+10.1001/jamapsychiatry.2020.0196	32186681	Kathuria 2020	2020	primary	ipsc	iPSC-derived cells and organoids	ipsc	rnaseq	16	8	8	139	yes	no		
+33184259	33184259	Maas 2020	2020	primary	brain_other	Other brain samples	brain	rnaseq	8			23	yes	yes	authors	
+31642882	31642882	MacDonald 2020	2020	primary	pitt	University of Pittsburgh Brain Tissue Donation Program (Conte Center, CCNMD)	brain	proteomics	96	48	48	44	no	no		
+33143549	33143549	Naujock 2020	2020	primary	ipsc	iPSC-derived cells and organoids	ipsc	rnaseq				19	yes	no		
+31019265	31019265	Ni 2020	2020	primary	ipsc	iPSC-derived cells and organoids	ipsc	rnaseq	30	15	15	70	yes	no		
+32712449	32712449	Ohayon 2020	2020	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	mixed	79	41	38	26	yes	no		
+31855458	31855458	Pala 2020	2020	reanalysis of public data	periph	Blood, LCL, fibroblast, other	blood	array_noncoding	30	15	15	9	yes	no		
+32260267	32260267	Petralia 2020	2020	meta-analysis / combined	meta	Meta-analyses and combined analyses	mixed	mixed	162	80	82	17	yes	no		
+30478419	30478419	Radulescu 2020	2020	data reuse	libd	Lieber Institute for Brain Development (LIBD), BrainSeq Consortium, NIMH Clinical Brain Disorders Branch (CBDB)	brain	rnaseq	164	74	90	99	yes	no		
+sc:10.1101/2020.07.29.227355		Reiner 2020 (bioRxiv)	2020	single-cell / single-nucleus	brain_other	Other brain samples	brain	single_cell	30	14	16	3	yes	no		
+32827700	32827700	Rey 2020	2020	meta-analysis / combined	meta	Meta-analyses and combined analyses	mixed	array_whole	378	196	182	32	yes	no		
+33149139	33149139	Rey 2020	2020	meta-analysis / combined	meta	Meta-analyses and combined analyses	mixed	array_whole				17	yes	no		
+38377413	38377413	Sahu 2020	2020	reanalysis of public data	brain_other	Other brain samples	brain	rnaseq	48	24	24	14	yes	no		
+sc:32764691	32764691	Sawada 2020	2020	single-cell / single-nucleus	ipsc	iPSC-derived cells and organoids	ipsc	single_cell	2	1	1	103	yes	no		
+31811028	31811028	Torretta 2020	2020	reanalysis of public data	libd	Lieber Institute for Brain Development (LIBD), BrainSeq Consortium, NIMH Clinical Brain Disorders Branch (CBDB)	brain	rnaseq	351	155	196	23	yes	no		
+32545830	32545830	Torrico 2020	2020	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	mixed				18	yes	no		
+31563948	31563948	Vawter 2020	2020	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	rnaseq	901	357	544	19	yes	no		
+32639965	32639965	Vidal-Domènech 2020	2020	primary	brain_other	Other brain samples	brain	proteomics	8	4	4	17	yes	no		
+31157371	31157371	Yang 2020	2020	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	mixed	338	166	172	180	yes	no		
+33087039	33087039	Yazdani 2020	2020	reanalysis of public data	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)	brain	rnaseq	415	209	206	23	yes	no		
+33000265	33000265	You 2020	2020	primary	periph	Blood, LCL, fibroblast, other	blood	rnaseq	6			18	yes	no		
+32038049	32038049	Zhang 2020	2020	primary	periph	Blood, LCL, fibroblast, other	blood	rnaseq	100			28	yes	no		
+31988434	31988434	Zimmerman 2020	2020	primary	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	array_unstated	68			150	yes	no		
+33571628	33571628	Akkouh 2021	2021	primary	ipsc	iPSC-derived cells and organoids	ipsc	rnaseq	6			28	yes	no		
+10.1038/s41386-020-00949-5	33558674	Akula 2021	2021	primary	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)	brain	rnaseq	99	44	55	43	yes	yes	authors	
+33508383	33508383	Alhassen 2021	2021	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	rnaseq	1495	559	936	50	yes	no		
+ext:34233199	34233199	Benraiss A 2021	2021	source	periph	Blood, LCL, fibroblast, other						44	no	no		
+34348681	34348681	Cui 2021	2021	primary	periph	Blood, LCL, fibroblast, other	blood	other	91	45	46	11	no	no		
+33442739	33442739	Enwright 2021	2021	reanalysis of public data	pitt	University of Pittsburgh Brain Tissue Donation Program (Conte Center, CCNMD)	brain	rnaseq	139	57	82	24	yes	no		
+ext:28011714	28011714	GSE89703	2021	source	mssm	Mount Sinai / JJ Peters VA Medical Center NIH Brain and Tissue Repository (MSSM)						98	no	no		
+33585819	33585819	Gatta 2021	2021	primary	periph	Blood, LCL, fibroblast, other	mixed	rnaseq	37	19	18	14	yes	no		
+34004381	34004381	Gebicke-Haerter 2021	2021	primary	brain_other	Other brain samples	brain	array_whole	20			9	yes	yes	authors	
+33673722	33673722	Hertzberg 2021	2021	meta-analysis / combined	meta	Meta-analyses and combined analyses	mixed	mixed	147	69	78	4	yes	no		
+34957416	34957416	Jin 2021	2021	reanalysis of public data	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)	brain	rnaseq	527	250	277	19	yes	no		
+33958802	33958802	Kim 2021	2021	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	rnaseq	1426	531	895	63	yes	no		
+33708146	33708146	Li 2021	2021	meta-analysis / combined	meta	Meta-analyses and combined analyses	blood	mixed	202	106	96	17	yes	no		
+34685556	34685556	Li 2021	2021	primary	ipsc	iPSC-derived cells and organoids	ipsc	rnaseq	6			23	no	no		
+32632206	32632206	Lin 2021	2021	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	mixed	592	257	335	46	yes	no		
+33079616	33079616	Lin 2021	2021	reanalysis of public data	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)	brain	array_whole	419	178	241	11	yes	no		
+34440415	34440415	Lindholm Carlström 2021	2021	primary	harvard	Harvard Brain Tissue Resource Center (HBTRC), McLean Hospital	brain	rnaseq	112	68	44	18	yes	yes	authors	
+33805976	33805976	Liu 2021	2021	reanalysis of public data	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)	brain	rnaseq	254	120	134	7	yes	no		
+33782720	33782720	Mahmoudi 2021	2021	primary	periph	Blood, LCL, fibroblast, other	blood	rnaseq	59			32	yes	no		
+34054608	34054608	Melbourne 2021	2021	primary	periph	Blood, LCL, fibroblast, other	blood	rnaseq	28	14	14	6	yes	no		
+34831190	34831190	Monfared 2021	2021	reanalysis of public data	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)	brain	rnaseq	1495	559	936	23	yes	no		
+32015466	32015466	Ni 2021	2021	primary	periph	Blood, LCL, fibroblast, other	blood	rnaseq	32			46	yes	no		
+34911938	34911938	North 2021	2021	single-gene follow-up	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	other	127			68	no	no		
+33677214	33677214	Park 2021	2021	primary	ipsc	iPSC-derived cells and organoids	ipsc	rnaseq	10	5	5	9	yes	no		
+33910328	33910328	Peng 2021	2021	primary	periph	Blood, LCL, fibroblast, other	blood	rnaseq	16			5	yes	no		
+32152472	32152472	Perez 2021	2021	primary	brain_other	Other brain samples	brain	rnaseq	26	13	13	34	yes	yes	authors	
+34439592	34439592	Petralia 2021	2021	reanalysis of public data	mssm	Mount Sinai / JJ Peters VA Medical Center NIH Brain and Tissue Repository (MSSM)	brain	array_whole	34	15	19	6	yes	no		
+33562405	33562405	Rahman 2021	2021	meta-analysis / combined	meta	Meta-analyses and combined analyses	blood	mixed	93	56	37	18	yes	no		
+34969953	34969953	Sabaie 2021	2021	reanalysis of public data	periph	Blood, LCL, fibroblast, other	other	array_whole	36	19	17	19	yes	no		
+34952924	34952924	Sabaie 2021	2021	meta-analysis / combined	meta	Meta-analyses and combined analyses	mixed	array_whole				28	yes	no		
+33410555	33410555	Snijders 2021	2021	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	other	23	9	14	60	no	no		
+34630179	34630179	Song 2021	2021	primary	periph	Blood, LCL, fibroblast, other	blood	rnaseq	30	10	20	23	yes	no		
+33288841	33288841	Stertz 2021	2021	primary	ipsc	iPSC-derived cells and organoids	ipsc	rnaseq	13	7	6	37	yes	no		
+34716291	34716291	Szabo 2021	2021	primary	ipsc	iPSC-derived cells and organoids	ipsc	rnaseq	10			32	yes	no		
+32542700	32542700	Tan 2021	2021	primary	periph	Blood, LCL, fibroblast, other	blood	rnaseq	10	5	5	39	yes	no		
+34010744	34010744	Tiihonen 2021	2021	reanalysis of public data	ipsc	iPSC-derived cells and organoids	ipsc	rnaseq	32	16	16	22	yes	no		
+34576238	34576238	Vera-Montecinos 2021	2021	primary	brain_other	Other brain samples	brain	proteomics	26			10	yes	no		
+34059796	34059796	Weissleder 2021	2021	primary	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	rnaseq	39	19	20	46	yes	yes	authors	
+34272489	34272489	Wu 2021	2021	primary	mssm	Mount Sinai / JJ Peters VA Medical Center NIH Brain and Tissue Repository (MSSM)	brain	array_whole	24	12	12	20	yes	yes	authors	
+33946654	33946654	Yu 2021	2021	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	mixed				7	yes	no		
+34357384	34357384	Akkouh 2022	2022	primary	ipsc	iPSC-derived cells and organoids	ipsc	rnaseq	7			29	yes	no		
+35354897	35354897	Alnafisah 2022	2022	primary	brain_other	Other brain samples	brain	proteomics	20	10	10	9	yes	no		
+32197935	32197935	Asah 2022	2022	reanalysis of public data	brain_other	Other brain samples	brain	rnaseq	40	21	19	2	yes	no		
+36385761	36385761	Balasubramanian 2022	2022	meta-analysis / combined	meta	Meta-analyses and combined analyses	mixed	rnaseq				6	yes	no		
+sc:36223459	36223459	Batiuk 2022	2022	single-cell / single-nucleus	brain_other	Other brain samples	brain	single_cell	23	9	14	124	yes	yes	authors	
+36319771	36319771	Benjamin 2022	2022	primary	libd	Lieber Institute for Brain Development (LIBD), BrainSeq Consortium, NIMH Clinical Brain Disorders Branch (CBDB)	brain	rnaseq	393	154	239	69	yes	yes	authors	
+35705634	35705634	Casas 2022	2022	primary	ipsc	iPSC-derived cells and organoids	ipsc	array_unstated	8			24	no	no		
+35898501	35898501	Chen 2022	2022	primary	periph	Blood, LCL, fibroblast, other	blood	rnaseq	239			11	yes	no		
+36125368	36125368	Chen 2022	2022	reanalysis of public data	brain_other	Other brain samples	brain	rnaseq	31	14	17	0	yes	no		
+35885983	35885983	Childers 2022	2022	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	mixed				17	yes	no		
+35983039	35983039	Du 2022	2022	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	array_whole	38	19	19	10	yes	no		
+35459277	35459277	Farrelly 2022	2022	primary	ipsc	iPSC-derived cells and organoids	ipsc	rnaseq	7	3	4	34	yes	no		
+ext:30356048	30356048	GSE119290	2022	source	meta	Meta-analyses and combined analyses						58	no	no		
+ext:31589133	31589133	GSE124326	2022	source	periph	Blood, LCL, fibroblast, other						30	no	no		
+ext:31792364	31792364	GSE127711	2022	source	meta	Meta-analyses and combined analyses						57	no	no		
+ext:25132547	25132547	GSE57821	2022	source	ipsc	iPSC-derived cells and organoids						485	no	no		
+sc:34728799	34728799	Gao 2022	2022	single-cell / single-nucleus	periph	Blood, LCL, fibroblast, other	blood	single_cell	6	3	3	13	yes	no		
+37861850	37861850	Hemmings 2022	2022	primary	periph	Blood, LCL, fibroblast, other	blood	rnaseq	34	16	18	8	yes	no		
+34154796	34154796	Hoffman 2022	2022	reanalysis of public data	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)	brain	rnaseq	778	341	437	63	yes	no		
+ext:25525873	25525873	Irimia et al. 2014	2022	source	meta	Meta-analyses and combined analyses						624	no	no		
+35339428	35339428	Khan 2022	2022	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	mixed	34	17	17	7	yes	no		
+36162734	36162734	Kondo 2022	2022	reanalysis of public data	libd	Lieber Institute for Brain Development (LIBD), BrainSeq Consortium, NIMH Clinical Brain Disorders Branch (CBDB)	brain	rnaseq	39	14	25	8	yes	no		
+ext:23227143	23227143	Kong et al. 2012	2022	source	meta	Meta-analyses and combined analyses						129	no	no		
+34936134	34936134	Koskuvi 2022	2022	primary	ipsc	iPSC-derived cells and organoids	ipsc	rnaseq	15	5	10	31	yes	no		
+36233204	36233204	Kozlova 2022	2022	reanalysis of public data	brain_other	Other brain samples	brain	rnaseq	62	26	36	5	yes	no		
+35016150	35016150	Li 2022	2022	primary	periph	Blood, LCL, fibroblast, other	blood	rnaseq	30	15	15	13	yes	no		
+35660966	35660966	Li 2022	2022	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	mixed				44	yes	no		
+35543802	35543802	Liao 2022	2022	primary	periph	Blood, LCL, fibroblast, other	blood	rnaseq	6	3	3	19	yes	no		
+35701597	35701597	Liu 2022	2022	data reuse	ipsc	iPSC-derived cells and organoids	ipsc	rnaseq	9	5	4	15	yes	no		
+35386517	35386517	Liu 2022	2022	reanalysis of public data	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)	brain	rnaseq	300	142	158	13	yes	no		
+merikangas2022	35091668	Merikangas 2022	2022	systematic review	meta	Meta-analyses and combined analyses	unknown					74	no	no		
+36451159	36451159	Nascimento 2022	2022	primary	ipsc	iPSC-derived cells and organoids	ipsc	proteomics	6			27	yes	no		
+sc:34789849	34789849	Notaras 2022	2022	single-cell / single-nucleus	ipsc	iPSC-derived cells and organoids	ipsc	single_cell	7	3	4	143	yes	no		
+35301253	35301253	Pan 2022	2022	primary	periph	Blood, LCL, fibroblast, other	blood	rnaseq	119			23	yes	no		
+10.1038/s41380-022-01796-0	36192459	Puvogel 2022	2022	primary	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	single_cell	29	15	14	36	yes	yes	authors	
+34954633	34954633	Qi 2022	2022	reanalysis of public data	brain_other	Other brain samples	brain	array_whole	479	201	278	4	yes	no		
+36405929	36405929	Sabaie 2022	2022	reanalysis of public data	brain_other	Other brain samples	brain	array_whole	51	28	23	8	yes	no		
+36090817	36090817	Sadeghi 2022	2022	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	rnaseq	1707	535	1172	35	yes	no		
+35855328	35855328	Wang 2022	2022	reanalysis of public data	ipsc	iPSC-derived cells and organoids	ipsc	rnaseq	56	28	28	12	yes	no		
+35981456	35981456	Yang 2022	2022	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	mixed	269	120	149	15	yes	no		
+36187923	36187923	Yang 2022	2022	meta-analysis / combined	meta	Meta-analyses and combined analyses	mixed	mixed	175	67	108	20	yes	no		
+32513544	32513544	Zeppillo 2022	2022	primary	pritzker	Pritzker Neuropsychiatric Disorders Research Consortium, UC Irvine Brain Donor Program	brain	rnaseq	20	10	10	29	yes	yes	authors	
+37498306	37498306	Arihisa 2023	2023	primary	brain_other	Other brain samples	brain	rnaseq	15			5	yes	yes	authors	
+37158323	37158323	Bartal 2023	2023	meta-analysis / combined	meta	Meta-analyses and combined analyses	mixed	mixed	423	211	212	6	yes	no		
+36462601	36462601	Bharadhwaj 2023	2023	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	mixed				8	yes	no		
+37611908	37611908	Bloch Priel 2023	2023	meta-analysis / combined	meta	Meta-analyses and combined analyses	mixed	mixed	316	149	167	6	yes	no		
+37117634	37117634	Breitmeyer 2023	2023	primary	ipsc	iPSC-derived cells and organoids	ipsc	rnaseq	6	4	2	27	yes	no		
+36424395	36424395	Chen 2023	2023	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	mixed		474		52	yes	no		
+36652379	36652379	Clifton 2023	2023	reanalysis of public data	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)	brain	rnaseq	1365	563	802	10	yes	no		
+37605121	37605121	Du 2023	2023	primary	periph	Blood, LCL, fibroblast, other	blood	rnaseq	20	10	10	19	yes	no		
+38092734	38092734	Fiorito 2023	2023	meta-analysis / combined	meta	Meta-analyses and combined analyses	mixed	array_whole	503	266	237	7	yes	no		
+ext:21756998	21756998	GSE28146	2023	source	meta	Meta-analyses and combined analyses						182	no	no		
+ext:17077275	17077275	GSE5281	2023	source	meta	Meta-analyses and combined analyses						294	no	no		
+ext:25170892	25170892	GSE54282	2023	source	meta	Meta-analyses and combined analyses						63	no	no		
+37200901	37200901	Hagihara 2023	2023	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	mixed	111	58	53	17	yes	no		
+37507766	37507766	Kathuria 2023	2023	primary	ipsc	iPSC-derived cells and organoids	ipsc	rnaseq	14			17	yes	no		
+36640659	36640659	Katz Shroitman 2023	2023	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	mixed	294	145	149	16	yes	no		
+36302706	36302706	Ketchesin 2023	2023	primary	pitt	University of Pittsburgh Brain Tissue Donation Program (Conte Center, CCNMD)	brain	rnaseq	72	36	36	26	yes	yes	authors	
+37076706	37076706	Khan 2023	2023	primary	brain_other	Other brain samples	brain	proteomics	14			4	yes	no		
+37149105	37149105	Kübler 2023	2023	primary	periph	Blood, LCL, fibroblast, other	blood	rnaseq	37	20	17	10	yes	no		
+37100927	37100927	Liao 2023	2023	meta-analysis / combined	periph	Blood, LCL, fibroblast, other	blood	array_noncoding	30	18	12	3	yes	no		
+37383091	37383091	Ma 2023	2023	meta-analysis / combined	meta	Meta-analyses and combined analyses	blood	mixed	102	61	41	4	yes	no		
+sc:36729133	36729133	Matosin 2023	2023	single-cell / single-nucleus	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)	brain	single_cell	69	36	33	54	yes	no		
+37031222	37031222	Medina 2023	2023	meta-analysis / combined	pritzker	Pritzker Neuropsychiatric Disorders Research Consortium, UC Irvine Brain Donor Program	brain	other	48	22	26	9	no	no		
+37413782	37413782	Mekiten 2023	2023	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	mixed	511	253	258	8	yes	no		
+37142572	37142572	Miyahara 2023	2023	primary	brain_other	Other brain samples	brain	rnaseq	46	25	21	14	yes	no		
+37520228	37520228	Miyahara 2023	2023	primary	brain_other	Other brain samples	brain	array_whole	13	13		9	yes	no		
+36379214	36379214	Namkung 2023	2023	primary	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	mixed	array_whole	11	5	6	38	yes	no		
+38239571	38239571	Nguyen 2023	2023	primary	brain_other	Other brain samples	brain	rnaseq	8			0	yes	no		
+36932057	36932057	Schulmann 2023	2023	reanalysis of public data	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)	brain	rnaseq	201	88	113	20	yes	yes	authors	
+36693045	36693045	Scott 2023	2023	reanalysis of public data	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)	brain	rnaseq	92	46	46	20	yes	no		
+sc:37355690	37355690	Sebastian 2023	2023	single-cell / single-nucleus	ipsc	iPSC-derived cells and organoids	ipsc	single_cell	8	4	4	63	yes	no		
+36717018	36717018	Segev 2023	2023	meta-analysis / combined	meta	Meta-analyses and combined analyses	mixed	mixed	368	179	189	4	yes	no		
+37005977	37005977	Shamir 2023	2023	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	mixed	511	253	258	4	yes	no		
+36182530	36182530	Sheikh 2023	2023	data reuse	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)	mixed	other	1030			43	yes	no		
+37674553	37674553	Shishido 2023	2023	primary	brain_other	Other brain samples	brain	rnaseq	46	25	21	7	yes	no		
+36443250	36443250	Shriebman 2023	2023	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	mixed	79	41	38	2	yes	no		
+37147304	37147304	Torsvik 2023	2023	primary	periph	Blood, LCL, fibroblast, other	blood	array_whole	518	329	189	23	yes	no		
+sc:37895019	37895019	Tung 2023	2023	single-cell / single-nucleus	periph	Blood, LCL, fibroblast, other	other	single_cell	4	2	2	7	yes	no		
+ext:33332381	33332381	Vornholt et al. 2020	2023	source	meta	Meta-analyses and combined analyses						12	no	no		
+ext:27799057	27799057	Wang et al. 2016	2023	source	meta	Meta-analyses and combined analyses						273	no	no		
+36977612	36977612	Wolf 2023	2023	meta-analysis / combined	meta	Meta-analyses and combined analyses	mixed	mixed	423	211	212	6	yes	no		
+37267675	37267675	Yang 2023	2023	primary	periph	Blood, LCL, fibroblast, other	blood	rnaseq	100	50	50	9	yes	no		
+36680208	36680208	Yao 2023	2023	single-gene follow-up	brain_other	Other brain samples	mixed	other	43	18	25	19	no	no		
+36333582	36333582	Yeo 2023	2023	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	unknown	331	132	199	14	no	no		
+10.1016/j.biopsych.2023.08.017	37661009	Akkouh 2024	2024	primary	ipsc	iPSC-derived cells and organoids	ipsc	rnaseq	28	14	14	11	yes	no		
+ext:18006270	18006270	Alter et al. 2011	2024	source	meta	Meta-analyses and combined analyses						135	no	no		
+38368435	38368435	Arakelyan 2024	2024	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	mixed	398	145	253	7	yes	no		
+38395959	38395959	Aranda 2024	2024	reanalysis of public data	brain_other	Other brain samples	brain	rnaseq	1499	563	936	5	yes	no		
+38730231	38730231	Benjamin 2024	2024	reanalysis of public data	libd	Lieber Institute for Brain Development (LIBD), BrainSeq Consortium, NIMH Clinical Brain Disorders Branch (CBDB)	brain	rnaseq				21	yes	no		
+38843579	38843579	Bharadwaj 2024	2024	reanalysis of public data	brain_other	Other brain samples	brain	rnaseq	64	28	36	3	yes	no		
+38790238	38790238	Burrack 2024	2024	meta-analysis / combined	meta	Meta-analyses and combined analyses	mixed	mixed	437	219	218	6	yes	no		
+39068467	39068467	Carceller 2024	2024	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	rnaseq	252	121	131	5	yes	no		
+39727940	39727940	Castro-Martínez 2024	2024	meta-analysis / combined	meta	Meta-analyses and combined analyses	mixed	mixed	31	14	17	3	yes	no		
+10.1038/s44220-024-00306-1		Cui 2024	2024	primary	periph	Blood, LCL, fibroblast, other	blood	rnaseq	103	43	60		yes	no		
+39665607	39665607	Dai 2024	2024	reanalysis of public data	brain_other	Other brain samples	brain	rnaseq				2	yes	no		
+38145985	38145985	Dong 2024	2024	reanalysis of public data	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)	brain	rnaseq	774	332	442	7	yes	no		
+39609319	39609319	Dor 2024	2024	meta-analysis / combined	meta	Meta-analyses and combined analyses	blood	array_whole	202	106	96	6	yes	no		
+sc:38781369	38781369	Emani 2024	2024	single-cell / single-nucleus	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)	brain	single_cell	48	24	24	188	yes	no		
+38508189	38508189	Erdogdu 2024	2024	reanalysis of public data	libd	Lieber Institute for Brain Development (LIBD), BrainSeq Consortium, NIMH Clinical Brain Disorders Branch (CBDB)	brain	rnaseq	354	146	208	7	yes	no		
+sc:39227716	39227716	Fröhlich 2024	2024	single-cell / single-nucleus	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)	brain	single_cell	87	54	33	53	yes	yes	authors	
+ext:21379579	21379579	Gregg et al. 2008	2024	source	meta	Meta-analyses and combined analyses						68	no	no		
+39372772	39372772	Guo 2024	2024	primary	ipsc	iPSC-derived cells and organoids	ipsc	rnaseq	6			1	yes	no		
+39307399	39307399	Heider 2024	2024	primary	ipsc	iPSC-derived cells and organoids	ipsc	rnaseq	7	4	3	6	yes	no		
+39028640	39028640	Huynh 2024	2024	primary	ipsc	iPSC-derived cells and organoids	ipsc	rnaseq	8	4	4	7	yes	no		
+38528182	38528182	Kaurani 2024	2024	primary	harvard	Harvard Brain Tissue Resource Center (HBTRC), McLean Hospital	mixed	rnaseq	603			15	yes	no		
+38301948	38301948	Koskuvi 2024	2024	reanalysis of public data	brain_other	Other brain samples	brain	rnaseq	1572	586	986	8	no	no		
+39702523	39702523	Li 2024	2024	primary	periph	Blood, LCL, fibroblast, other	blood	rnaseq	20	10	10	2	yes	no		
+38390236	38390236	Lian 2024	2024	meta-analysis / combined	meta	Meta-analyses and combined analyses	mixed	array_whole	34	15	19	19	yes	no		
+sc:38448582	38448582	Ling 2024	2024	single-cell / single-nucleus	harvard	Harvard Brain Tissue Resource Center (HBTRC), McLean Hospital	brain	single_cell	180	87	93	150	yes	yes	authors	
+38255234	38255234	Lorca 2024	2024	primary	brain_other	Other brain samples	brain	proteomics	30	15	15	10	yes	no		
+37454787	37454787	Ma 2024	2024	primary	ipsc	iPSC-derived cells and organoids	ipsc	rnaseq	11			21	yes	no		
+38493364	38493364	Michaelovsky 2024	2024	primary	periph	Blood, LCL, fibroblast, other	lcl	rnaseq	13			3	yes	no		
+38260577	38260577	Raabe 2024	2024	primary	ipsc	iPSC-derived cells and organoids	ipsc	rnaseq	68	34	34	2	yes	no		
+sc:38781388	38781388	Ruzicka 2024	2024	single-cell / single-nucleus	mssm	Mount Sinai / JJ Peters VA Medical Center NIH Brain and Tissue Repository (MSSM)	brain	single_cell	135	60	75	152	yes	yes	authors	
+sc:37915216	37915216	Sawada 2024	2024	single-cell / single-nucleus	ipsc	iPSC-derived cells and organoids	ipsc	single_cell	7	3	4	15	yes	no		
+40162448	40162448	Sharma 2024	2024	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	mixed	28	13	15	1	yes	no		
+39624491	39624491	Simmons 2024	2024	reanalysis of public data	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)	brain	rnaseq	781	322	459	0	yes	no		
+38684795	38684795	Spathopoulou 2024	2024	primary	ipsc	iPSC-derived cells and organoids	ipsc	rnaseq	4			8	yes	no		
+38688917	38688917	Sportelli 2024	2024	reanalysis of public data	libd	Lieber Institute for Brain Development (LIBD), BrainSeq Consortium, NIMH Clinical Brain Disorders Branch (CBDB)	brain	rnaseq	229	84	145	13	yes	no		
+sc:38263175	38263175	Stankovic 2024	2024	single-cell / single-nucleus	ipsc	iPSC-derived cells and organoids	ipsc	single_cell	6	3	3	32	yes	no		
+38704507	38704507	Stern 2024	2024	primary	ipsc	iPSC-derived cells and organoids	ipsc	rnaseq	8	2	6	22	yes	no		
+38461955	38461955	Sæther 2024	2024	meta-analysis / combined	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)	mixed	mixed	620	311	309	18	yes	no		
+38321095	38321095	Truong 2024	2024	reanalysis of public data	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)	brain	rnaseq	532	253	279	14	yes	no		
+38842000	38842000	Usta Saglam 2024	2024	primary	periph	Blood, LCL, fibroblast, other	blood	array_noncoding	76			0	yes	no		
+38716091	38716091	Wagh 2024	2024	primary	periph	Blood, LCL, fibroblast, other	blood	rnaseq	20			2	yes	no		
+38988837	38988837	Wang 2024	2024	primary	periph	Blood, LCL, fibroblast, other	blood	rnaseq	29	9	20	5	yes	no		
+38863043	38863043	Wu 2024	2024	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	array_whole	152	81	71	7	yes	no		
+38781321	38781321	Xia 2024	2024	reanalysis of public data	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)	brain	rnaseq	1825	593	1232	27	yes	no		
+sc:39355378	39355378	Yang 2024	2024	single-cell / single-nucleus	ipsc	iPSC-derived cells and organoids	mixed	mixed	239	121	118	7	yes	no		
+37993327	37993327	Yu 2024	2024	reanalysis of public data	periph	Blood, LCL, fibroblast, other	blood	mixed	734	496	238	13	yes	no		
+38648100	38648100	Zhu 2024	2024	primary	brain_other	Other brain samples	brain	rnaseq	58	29	29	9	yes	yes	authors	
+39397771	39397771	Alsema 2025	2025	primary	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	rnaseq	28			5	yes	yes	authors	
+39237723	39237723	Arbabi 2025	2025	primary	pitt	University of Pittsburgh Brain Tissue Donation Program (Conte Center, CCNMD)	brain	rnaseq	38	19	19	9	yes	yes	authors	
+sc:40162239	40162239	Bast 2025	2025	single-cell / single-nucleus	brain_other	Other brain samples	brain	single_cell	85	43	42	10	yes	no		
+sc:40819083	40819083	Chang 2025	2025	single-cell / single-nucleus	ipsc	iPSC-derived cells and organoids	ipsc	rnaseq	15	8	7	3	yes	no		
+40770299	40770299	Dong 2025	2025	primary	periph	Blood, LCL, fibroblast, other	blood	rnaseq	20	10	10	3	yes	no		
+40634861	40634861	Du 2025	2025	primary	periph	Blood, LCL, fibroblast, other	blood	rnaseq	20	10	10	5	yes	no		
+sc:40480991	40480991	Fullard 2025	2025	single-cell / single-nucleus	mssm	Mount Sinai / JJ Peters VA Medical Center NIH Brain and Tissue Repository (MSSM)	brain	single_cell				13	yes	no		
+ext:32341540	32341540	GSE144136	2025	source	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)						492	no	no		
+sc:40053590	40053590	Gerstner 2025	2025	single-cell / single-nucleus	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)	brain	single_cell	87	54	33	20	yes	no		
+40311511	40311511	Jia 2025	2025	primary	ipsc	iPSC-derived cells and organoids	ipsc	rnaseq	10			5	yes	no		
+40267851	40267851	Knowles 2025	2025	primary	periph	Blood, LCL, fibroblast, other	blood	rnaseq	343	126	217	2	yes	no		
+ext:37058563	37058563	Lee et al.	2025	source	meta	Meta-analyses and combined analyses						76	no	no		
+39974493	39974493	Li 2025	2025	primary	periph	Blood, LCL, fibroblast, other	blood	rnaseq	6	6		0	yes	no		
+40665444	40665444	Long 2025	2025	primary	periph	Blood, LCL, fibroblast, other	blood	rnaseq	10	5	5	1	yes	no		
+41210297	41210297	Mas 2025	2025	primary	brain_other	Other brain samples	brain	rnaseq	32	16	16	1	yes	yes	authors	
+40878446	40878446	Muralidharan 2025	2025	reanalysis of public data	brain_other	Other brain samples	brain	single_cell					yes	no		
+40796563	40796563	Nakatsuka 2025	2025	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	mixed	354	171	183	3	yes	no		
+39564883	39564883	Ni 2025	2025	primary	periph	Blood, LCL, fibroblast, other	blood	rnaseq	132			7	yes	no		
+41206095	41206095	North 2025	2025	primary	brain_other	Other brain samples	brain	unknown				0	no	no		
+40945317	40945317	Oraki Kohshour 2025	2025	primary	periph	Blood, LCL, fibroblast, other	blood	proteomics	150			1	yes	no		
+40015618	40015618	Pan 2025	2025	primary	periph	Blood, LCL, fibroblast, other	blood	rnaseq	177	83	94	7	yes	no		
+40473621	40473621	Perez 2025	2025	data reuse	pitt	University of Pittsburgh Brain Tissue Donation Program (Conte Center, CCNMD)	brain	rnaseq	95	36	59	5	yes	no		
+40727846	40727846	Priyanka 2025	2025	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	rnaseq		172		6	yes	no		
+41173822	41173822	Prohens 2025	2025	primary	brain_other	Other brain samples	brain	array_whole	25	25		0	yes	no		
+sc:40750773	40750773	Rao 2025	2025	single-cell / single-nucleus	ipsc	iPSC-derived cells and organoids	ipsc	single_cell	6	3	3	10	no	no		
+41422210	41422210	Rebouças 2025	2025	meta-analysis / combined	meta	Meta-analyses and combined analyses	mixed	mixed	226	102	124	0	yes	no		
+41422157	41422157	Sawada 2025	2025	reanalysis of public data	libd	Lieber Institute for Brain Development (LIBD), BrainSeq Consortium, NIMH Clinical Brain Disorders Branch (CBDB)	brain	rnaseq				4	yes	no		
+40259965	40259965	Shokrgozar 2025	2025	reanalysis of public data	brain_other	Other brain samples	brain	mixed	146	27	119	3	yes	no		
+40263528	40263528	Solomon 2025	2025	primary	periph	Blood, LCL, fibroblast, other	blood	rnaseq	899			3	yes	no		
+39617069	39617069	Szabo 2025	2025	primary	ipsc	iPSC-derived cells and organoids	ipsc	rnaseq	10			15	yes	no		
+40253403	40253403	Worf 2025	2025	data reuse	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)	brain	array_whole	130	68	62	4	yes	no		
+41125054	41125054	Xavier 2025	2025	primary	periph	Blood, LCL, fibroblast, other	blood	rnaseq	24	12	12	1	yes	no		
+40242178	40242178	Xie 2025	2025	meta-analysis / combined	meta	Meta-analyses and combined analyses	blood	array_whole	202	106	96	1	yes	no		
+41174894	41174894	Yalcinbas 2025	2025	primary	libd	Lieber Institute for Brain Development (LIBD), BrainSeq Consortium, NIMH Clinical Brain Disorders Branch (CBDB)	brain	rnaseq	68	35	33	10	yes	yes	authors	
+41398832	41398832	You 2025	2025	meta-analysis / combined	meta	Meta-analyses and combined analyses	mixed	array_whole	105	53	52	0	yes	no		
+40419114	40419114	Zhang 2025	2025	reanalysis of public data	brain_other	Other brain samples	brain	mixed				2	no	no		
+39972407	39972407	Zhang 2025	2025	meta-analysis / combined	meta	Meta-analyses and combined analyses	blood	array_whole	311	164	147	4	yes	no		
+10.1038/s41398-025-03692-x	41271614	Zhao 2025	2025	data reuse	periph	Blood, LCL, fibroblast, other	blood	rnaseq	103	43	60	1	yes	no		
+41330925	41330925	Zhou 2025	2025	single-gene follow-up	periph	Blood, LCL, fibroblast, other	blood	rnaseq	29	9	20	0	no	no		
+40076849	40076849	Zhou 2025	2025	reanalysis of public data	harvard	Harvard Brain Tissue Resource Center (HBTRC), McLean Hospital	brain	single_cell	48	24	24	2	yes	no		
+40214957	40214957	Zhu 2025	2025	meta-analysis / combined	meta	Meta-analyses and combined analyses	blood	mixed	232	124	108	3	yes	no		
+42117812	42117812	Avila 2026	2026	meta-analysis / combined	periph	Blood, LCL, fibroblast, other	blood	rnaseq				0	yes	no		
+42380610	42380610	Bach 2026	2026	reanalysis of public data	libd	Lieber Institute for Brain Development (LIBD), BrainSeq Consortium, NIMH Clinical Brain Disorders Branch (CBDB)	brain	rnaseq	378	159	219	0	yes	no		
+41984900	41984900	Bampos 2026	2026	reanalysis of public data	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)	brain	rnaseq	414	153	261	0	yes	no		
+42416198	42416198	Baumel 2026	2026	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	mixed	295	151	144	0	yes	no		
+41788806	41788806	Bejaoui 2026	2026	primary	periph	Blood, LCL, fibroblast, other	blood	rnaseq	113	21	92	0	yes	no		
+41757030	41757030	Borcuk 2026	2026	primary	libd	Lieber Institute for Brain Development (LIBD), BrainSeq Consortium, NIMH Clinical Brain Disorders Branch (CBDB)	brain	rnaseq	20	10	10	0	yes	no		
+42276261	42276261	Boughanmi 2026	2026	meta-analysis / combined	meta	Meta-analyses and combined analyses	mixed	mixed	1155	532	623	0	yes	no		
+10.64898/2026.08.14.744920		Casas 2026	2026	primary	ipsc	iPSC-derived cells and organoids	ipsc	rnaseq	7			0	yes	no		
+42385890	42385890	Casas 2026	2026	primary	ipsc	iPSC-derived cells and organoids	ipsc	rnaseq	4			0	yes	no		
+41748837	41748837	Chakraborty 2026	2026	reanalysis of public data	brain_other	Other brain samples	brain	rnaseq	141	71	70	0	yes	no		
+42461238	42461238	Dean 2026	2026	primary	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)	brain	array_whole	211			0	yes	yes	authors	
+42364336	42364336	Dey 2026	2026	meta-analysis / combined	meta	Meta-analyses and combined analyses	mixed	mixed	206	106	100	0	yes	no		
+ext:37181876	37181876	Edelmann et al. 2023	2026	source	periph	Blood, LCL, fibroblast, other						17	no	no		
+sc:10.64898/2026.09.18.752621		Endresz 2026 (bioRxiv)	2026	single-cell / single-nucleus	meta	Meta-analyses and combined analyses	brain	single_cell	469	171	298	0	yes	no		
+ext:30083721	30083721	GSE73464	2026	source	meta	Meta-analyses and combined analyses						104	no	no		
+sc:41863598	41863598	Gerstner 2026	2026	single-cell / single-nucleus	aus	New South Wales Brain Tissue Resource Centre (NSW TRC), Victorian Brain Bank Network (VBBN)	brain	single_cell	71	36	35	0	yes	no		
+40990808	40990808	Glausier 2026	2026	reanalysis of public data	pitt	University of Pittsburgh Brain Tissue Donation Program (Conte Center, CCNMD)	brain	rnaseq	139	57	82	1	yes	no		
+41388144	41388144	Hartmann 2026	2026	primary	ipsc	iPSC-derived cells and organoids	ipsc	rnaseq	7			1	yes	no		
+42736350	42736350	Ji 2026	2026	primary	periph	Blood, LCL, fibroblast, other	blood	rnaseq	173			0	yes	no		
+42800954	42800954	Kang 2026	2026	reanalysis of public data	libd	Lieber Institute for Brain Development (LIBD), BrainSeq Consortium, NIMH Clinical Brain Disorders Branch (CBDB)	brain	single_cell					yes	no		
+41159096	41159096	Kiss 2026	2026	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	mixed	1408	672	736	3	yes	no		
+41611717	41611717	Koopmans 2026	2026	primary	brain_other	Other brain samples	brain	proteomics	96	47	49	9	yes	no		
+41757081	41757081	Kwon 2026	2026	primary	libd	Lieber Institute for Brain Development (LIBD), BrainSeq Consortium, NIMH Clinical Brain Disorders Branch (CBDB)	brain	other	63	32	31	1	yes	yes	authors	
+sc:42778699	42778699	Lee 2026	2026	single-cell / single-nucleus	mssm	Mount Sinai / JJ Peters VA Medical Center NIH Brain and Tissue Repository (MSSM)	brain	single_cell	439	120	319	0	yes	yes	authors	
+41876515	41876515	Li 2026	2026	meta-analysis / combined	meta	Meta-analyses and combined analyses	blood	mixed		214		1	yes	no		
+42133007	42133007	Li 2026	2026	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	array_whole				0	yes	no		
+42034251	42034251	Liu 2026	2026	primary	periph	Blood, LCL, fibroblast, other	blood	rnaseq	103			0	yes	no		
+41691208	41691208	Lu 2026	2026	primary	periph	Blood, LCL, fibroblast, other	blood	rnaseq	12			0	yes	no		
+41713307	41713307	Lv 2026	2026	primary	periph	Blood, LCL, fibroblast, other	blood	rnaseq	100			0	yes	no		
+10.1016/j.bpsgos.2025.100650	41567988	Mendez-Victoriano 2026	2026	primary	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	rnaseq	60	40	20	0	yes	yes	authors	
+ext:39914267	39914267	Mokhtari et al. 2025	2026	source	periph	Blood, LCL, fibroblast, other						13	no	no		
+41639050	41639050	Nersisyan 2026	2026	primary	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)	brain	rnaseq	170			3	yes	no		
+42463512	42463512	Radulescu 2026	2026	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	rnaseq	297	115	182	0	yes	no		
+41506462	41506462	Sadis 2026	2026	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	mixed				1	yes	no		
+41788138	41788138	Singer 2026	2026	meta-analysis / combined	meta	Meta-analyses and combined analyses	mixed	mixed	295	151	144	2	yes	no		
+41942462	41942462	Singh 2026	2026	primary	cmc	CommonMind Consortium (CMC), PsychENCODE Consortium (PEC), NIMH Human Brain Collection Core (HBCC)	brain	rnaseq	80			0	yes	yes	authors	
+41714609	41714609	Smith 2026	2026	reanalysis of public data	brain_other	Other brain samples	brain	rnaseq	99	44	55	0	yes	no		
+41443001	41443001	Tengfei 2026	2026	meta-analysis / combined	meta	Meta-analyses and combined analyses	mixed	array_whole				1	yes	no		
+42623758	42623758	Tengfei 2026	2026	meta-analysis / combined	meta	Meta-analyses and combined analyses	mixed	array_whole	478	245	233	0	yes	no		
+42748139	42748139	Testa 2026	2026	primary	pitt	University of Pittsburgh Brain Tissue Donation Program (Conte Center, CCNMD)	brain	proteomics	103	53	50	0	yes	no		
+42033308	42033308	Torsvik 2026	2026	primary	periph	Blood, LCL, fibroblast, other	blood	rnaseq	136	100	36	0	yes	no		
+41988836	41988836	Wu 2026	2026	primary	periph	Blood, LCL, fibroblast, other	blood	rnaseq	100			0	yes	no		
+42693176	42693176	Wu 2026	2026	reanalysis of public data	brain_other	Other brain samples	brain	single_cell	201	31	170	1	yes	no		
+40947439	40947439	Yu 2026	2026	primary	ipsc	iPSC-derived cells and organoids	ipsc	rnaseq	13			3	yes	no		
+39526318	39526318	Zhang 2026	2026	primary	stanley	Stanley Medical Research Institute (SMRI): Array Collection and Neuropathology Consortium	brain	rnaseq	30	15	15	9	yes	yes	authors	
+42094829	42094829	Zhao 2026	2026	meta-analysis / combined	meta	Meta-analyses and combined analyses	brain	mixed	23	9	14	0	yes	no		

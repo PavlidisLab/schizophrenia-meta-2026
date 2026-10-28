@@ -1,0 +1,280 @@
+# built 2026-10-08 by report/scripts/workflow_counts.py; inputs and sha256 in workflow_counts_meta.json
+key	value	source	definition
+db_records	670	search/prisma_counts.json	April 2026 PubMed + Embase + Web of Science records before deduplication (april.dedup.records_before)
+db_dedup	623	search/prisma_counts.json	unique by PMID, DOI or normalized title (april.dedup.unique_by_pmid_doi_or_title)
+db_pool_records	156	search/prisma_counts.json	records in the April manual screening pool (april.pool.records)
+db_pool_papers	147	search/prisma_counts.json	distinct papers in the pool (april.pool.papers)
+db_first_screen_include	34	search/prisma_counts.json	papers included at the title/abstract screen (april.pool.include_papers)
+db_second_pass_include	26	search/prisma_counts.json	includes after the full-text second pass (april.second_pass.include)
+db_pubmed_rerun_hits	88	search/prisma_counts.json	PubMed rerun of the review's query, 2026-09-27 (april.pubmed.rerun_hits_all_dates)
+m26_in_april_files	25	search/prisma_counts.json	Merikangas studies found in the April search files (april.m26.in_any_april_file)
+ref_screened	107	search/prisma_counts.json	reference-list candidates screened, first filter (september_batch.backward.screened)
+ref_passed	78	search/prisma_counts.json	passed the biolit screen (september_batch.backward.passed)
+ref_broad_screened	112	search/prisma_counts.json	broader reference filter screened (september_batch.broader.screened)
+ref_broad_passed	33	search/prisma_counts.json	broader filter passed (september_batch.broader.passed)
+cited_sources_screened	56	search/prisma_counts.json	cited sample sources in the review batch (september_batch.batches['cited as a data source'] include + exclude)
+gemma_datasets	203	search/prisma_counts.json	Gemma datasets in the completeness check (september_batch.gemma_check.datasets)
+gemma_papers	61	search/prisma_counts.json	papers behind Gemma datasets no search had found, in the review batch
+review_batch_papers	229	search/prisma_counts.json	September review batch papers (september_batch.papers)
+fwd_pool	10051	search/prisma_counts.json	forward-citation candidate pool (forward.counts['candidate pool'])
+fwd_prefilter	2352	search/prisma_counts.json	passed the keyword prefilter (forward.counts['prefilter pass'])
+fwd_sonnet_include	161	search/prisma_counts.json	second-screen includes, added to the corpus (forward.sonnet.include)
+fwd_removed	10	search/prisma_counts.json	removed at the gene-list step (forward.removed_at_gene_list_step)
+fwd_update_screened	2342	search/prisma_counts.json	forward update 2026-09-27, class-screened rows
+fwd_update_kept	36	search/prisma_counts.json	forward update: new-data leads kept by hand
+sg_union	13290	search/prisma_counts.json	single-gene sweep PubMed union (single_gene.union)
+sg_include	1458	search/prisma_counts.json	single-gene sweep includes at the 2026-09-24 screen (single_gene.final.include)
+sg_genome_wide_rows	475	search/prisma_counts.json	rows labelled transcriptome- or proteome-wide (single_gene.genome_wide_rows)
+sc_candidates	171	search/prisma_counts.json	single-cell search candidates (single_cell.candidates)
+sc_model_include	24	search/prisma_counts.json	model includes (single_cell.model_include)
+audit_checked	334	search/prisma_counts.json	cited-source audit items checked (hand.source_audit.checked)
+audit_added	14	search/prisma_counts.json	cited-source audit additions (hand.source_audit.by_decision.added)
+r1_records	90	corpus/single_gene_sweep/batch10_verification/	round 1 verification records
+r1_include	57	corpus/single_gene_sweep/batch10_verification/	round 1 include verdicts
+r1_duplicate	3	corpus/single_gene_sweep/batch10_verification/	round 1 verdict duplicate
+r1_reject	30	corpus/single_gene_sweep/batch10_verification/	round 1 verdict reject
+r2_records	85	data/manifests/genome_wide_candidates_2026-09-30/	round 2 verification records
+r2_include	46	data/manifests/genome_wide_candidates_2026-09-30/	round 2 include verdicts
+r2_duplicate	2	data/manifests/genome_wide_candidates_2026-09-30/	round 2 verdict duplicate
+r2_exclude	24	data/manifests/genome_wide_candidates_2026-09-30/	round 2 verdict exclude
+r2_handfetch	13	data/manifests/genome_wide_candidates_2026-09-30/	round 2 verdict handfetch
+r3_records	35	data/manifests/ipsc_candidates_2026-09-30/	round 3 verification records
+r3_include	22	data/manifests/ipsc_candidates_2026-09-30/	round 3 include verdicts
+r3_exclude	9	data/manifests/ipsc_candidates_2026-09-30/	round 3 verdict exclude
+r3_handfetch	4	data/manifests/ipsc_candidates_2026-09-30/	round 3 verdict handfetch
+r4_records	5	data/manifests/leads_round4_2026-09-30/	round 4 verification records
+r4_include	4	data/manifests/leads_round4_2026-09-30/	round 4 include verdicts
+r4_exclude	1	data/manifests/leads_round4_2026-09-30/	round 4 verdict exclude
+r5_records	5	data/manifests/leads_round5_2026-09-30/	round 5 verification records
+r5_include	3	data/manifests/leads_round5_2026-09-30/	round 5 include verdicts
+r5_exclude	2	data/manifests/leads_round5_2026-09-30/	round 5 verdict exclude
+r6_records	2	data/manifests/leads_round6_2026-09-30/	round 6 verification records
+r6_include	1	data/manifests/leads_round6_2026-09-30/	round 6 include verdicts
+r6_exclude	1	data/manifests/leads_round6_2026-09-30/	round 6 verdict exclude
+r7_records	37	data/manifests/leads_round7_2026-09-30/	round 7 verification records
+r7_include	26	data/manifests/leads_round7_2026-09-30/	round 7 include verdicts
+r7_exclude	8	data/manifests/leads_round7_2026-09-30/	round 7 verdict exclude
+r7_handfetch	1	data/manifests/leads_round7_2026-09-30/	round 7 verdict handfetch
+r7_not_assessable	2	data/manifests/leads_round7_2026-09-30/	round 7 verdict not_assessable
+r8_records	3	data/manifests/leads_round8_2026-09-30/	round 8 verification records
+r8_include	1	data/manifests/leads_round8_2026-09-30/	round 8 include verdicts
+r8_exclude	2	data/manifests/leads_round8_2026-09-30/	round 8 verdict exclude
+r1_include_transcriptome	38	corpus/single_gene_sweep/batch10_verification/	round 1 includes, transcriptome-wide records
+r1_include_proteome	19	corpus/single_gene_sweep/batch10_verification/verify_F.json	round 1 includes, proteome-wide records
+excl_cell_line_no_patient_origin	1	data/manifests/*_2026-09-30/decisions.tsv	round 2-8 exclude verdicts with reason_code cell_line_no_patient_origin
+excl_no_new_data_review	4	data/manifests/*_2026-09-30/decisions.tsv	round 2-8 exclude verdicts with reason_code no_new_data_review
+excl_no_sz_cases	1	data/manifests/*_2026-09-30/decisions.tsv	round 2-8 exclude verdicts with reason_code no_sz_cases
+excl_no_sz_contrast	9	data/manifests/*_2026-09-30/decisions.tsv	round 2-8 exclude verdicts with reason_code no_sz_contrast
+excl_other	1	data/manifests/*_2026-09-30/decisions.tsv	round 2-8 exclude verdicts with reason_code other
+excl_reuse	23	data/manifests/*_2026-09-30/decisions.tsv	round 2-8 exclude verdicts with reason_code reuse
+excl_single_few_genes	8	data/manifests/*_2026-09-30/decisions.tsv	round 2-8 exclude verdicts with reason_code single_few_genes
+r3_triage_records	31	data/manifests/ipsc_candidates_2026-09-30/decisions.tsv	round 3 records from the iPSC upstream triage
+r3_lead_records	4	data/manifests/ipsc_candidates_2026-09-30/decisions.tsv	round 3 records that were round-2 leads
+r7_handfetch_records	18	data/manifests/leads_round7_2026-09-30/decisions.tsv	round 7 records that were hand-fetch items
+r7_reread_records	19	data/manifests/leads_round7_2026-09-30/decisions.tsv	round 7 re-reads of earlier records
+handfetched_files	55	data/manifests/handfetched_2026-09-30/files.tsv	files fetched by hand 2026-09-30
+handfetched_items	38	data/manifests/handfetched_2026-09-30/files.tsv	distinct studies among them
+quote_found	168	data/manifests/*_2026-09-30/decisions.tsv	round 2-8 records whose deciding quote verify_quote.py found in the local text (quote_recheck)
+quote_records	172	data/manifests/*_2026-09-30/decisions.tsv	round 2-8 records
+corpus_studies	571	corpus/lineage.json	study nodes (not outside sources or the review landmark)
+comp_previous_review	26	report/workflow/corpus_components.tsv	corpus studies attributed to: Previous review (Merikangas et al. 2022)
+comp_databases	26	report/workflow/corpus_components.tsv	corpus studies attributed to: Database searches (review's queries rerun)
+comp_backward	140	report/workflow/corpus_components.tsv	corpus studies attributed to: Backward citation chasing
+comp_forward	151	report/workflow/corpus_components.tsv	corpus studies attributed to: Forward citation chasing
+comp_sweep_single_cell	24	report/workflow/corpus_components.tsv	corpus studies attributed to: Targeted sweep: single-cell / single-nucleus
+comp_sweep_genome_wide	102	report/workflow/corpus_components.tsv	corpus studies attributed to: Targeted sweep: genome- and proteome-wide classes of the single-gene sweep
+comp_sweep_patient_cells	19	report/workflow/corpus_components.tsv	corpus studies attributed to: Targeted sweep: patient-derived cells
+comp_sweep_proteomics_list	9	report/workflow/corpus_components.tsv	corpus studies attributed to: Targeted sweep: proteomic studies missing from the corpus
+comp_leads	11	report/workflow/corpus_components.tsv	corpus studies attributed to: Lead follow-up from full text
+comp_library	46	report/workflow/corpus_components.tsv	corpus studies attributed to: Library, collection and data-resource sources
+comp_hand_retrieval	8	report/workflow/corpus_components.tsv	corpus studies attributed to: Hand retrieval (hand-fetched full texts)
+comp_pi_addition	7	report/workflow/corpus_components.tsv	corpus studies attributed to: Added by the PI
+comp_update_search	2	report/workflow/corpus_components.tsv	corpus studies attributed to: Literature update (incremental searches, search/update_literature.py)
+comp_unattributed	0	report/workflow/corpus_components.tsv	corpus studies attributed to: unattributed
+compgrp_previous_review_1	21	report/workflow/corpus_components.tsv	corpus studies of group 1 attributed to Previous review (Merikangas et al. 2022)
+compgrp_previous_review_1m	0	report/workflow/corpus_components.tsv	corpus studies of group 1m attributed to Previous review (Merikangas et al. 2022)
+compgrp_previous_review_2	0	report/workflow/corpus_components.tsv	corpus studies of group 2 attributed to Previous review (Merikangas et al. 2022)
+compgrp_previous_review_3	5	report/workflow/corpus_components.tsv	corpus studies of group 3 attributed to Previous review (Merikangas et al. 2022)
+compgrp_previous_review_p	0	report/workflow/corpus_components.tsv	corpus studies of group p attributed to Previous review (Merikangas et al. 2022)
+compgrp_previous_review_sc	0	report/workflow/corpus_components.tsv	corpus studies of group sc attributed to Previous review (Merikangas et al. 2022)
+compgrp_databases_1	21	report/workflow/corpus_components.tsv	corpus studies of group 1 attributed to Database searches (review's queries rerun)
+compgrp_databases_1m	1	report/workflow/corpus_components.tsv	corpus studies of group 1m attributed to Database searches (review's queries rerun)
+compgrp_databases_2	1	report/workflow/corpus_components.tsv	corpus studies of group 2 attributed to Database searches (review's queries rerun)
+compgrp_databases_3	3	report/workflow/corpus_components.tsv	corpus studies of group 3 attributed to Database searches (review's queries rerun)
+compgrp_databases_p	0	report/workflow/corpus_components.tsv	corpus studies of group p attributed to Database searches (review's queries rerun)
+compgrp_databases_sc	0	report/workflow/corpus_components.tsv	corpus studies of group sc attributed to Database searches (review's queries rerun)
+compgrp_backward_1	70	report/workflow/corpus_components.tsv	corpus studies of group 1 attributed to Backward citation chasing
+compgrp_backward_1m	11	report/workflow/corpus_components.tsv	corpus studies of group 1m attributed to Backward citation chasing
+compgrp_backward_2	27	report/workflow/corpus_components.tsv	corpus studies of group 2 attributed to Backward citation chasing
+compgrp_backward_3	31	report/workflow/corpus_components.tsv	corpus studies of group 3 attributed to Backward citation chasing
+compgrp_backward_p	1	report/workflow/corpus_components.tsv	corpus studies of group p attributed to Backward citation chasing
+compgrp_backward_sc	0	report/workflow/corpus_components.tsv	corpus studies of group sc attributed to Backward citation chasing
+compgrp_forward_1	3	report/workflow/corpus_components.tsv	corpus studies of group 1 attributed to Forward citation chasing
+compgrp_forward_1m	1	report/workflow/corpus_components.tsv	corpus studies of group 1m attributed to Forward citation chasing
+compgrp_forward_2	5	report/workflow/corpus_components.tsv	corpus studies of group 2 attributed to Forward citation chasing
+compgrp_forward_3	142	report/workflow/corpus_components.tsv	corpus studies of group 3 attributed to Forward citation chasing
+compgrp_forward_p	0	report/workflow/corpus_components.tsv	corpus studies of group p attributed to Forward citation chasing
+compgrp_forward_sc	0	report/workflow/corpus_components.tsv	corpus studies of group sc attributed to Forward citation chasing
+compgrp_sweep_single_cell_1	1	report/workflow/corpus_components.tsv	corpus studies of group 1 attributed to Targeted sweep: single-cell / single-nucleus
+compgrp_sweep_single_cell_1m	0	report/workflow/corpus_components.tsv	corpus studies of group 1m attributed to Targeted sweep: single-cell / single-nucleus
+compgrp_sweep_single_cell_2	0	report/workflow/corpus_components.tsv	corpus studies of group 2 attributed to Targeted sweep: single-cell / single-nucleus
+compgrp_sweep_single_cell_3	0	report/workflow/corpus_components.tsv	corpus studies of group 3 attributed to Targeted sweep: single-cell / single-nucleus
+compgrp_sweep_single_cell_p	0	report/workflow/corpus_components.tsv	corpus studies of group p attributed to Targeted sweep: single-cell / single-nucleus
+compgrp_sweep_single_cell_sc	23	report/workflow/corpus_components.tsv	corpus studies of group sc attributed to Targeted sweep: single-cell / single-nucleus
+compgrp_sweep_genome_wide_1	70	report/workflow/corpus_components.tsv	corpus studies of group 1 attributed to Targeted sweep: genome- and proteome-wide classes of the single-gene sweep
+compgrp_sweep_genome_wide_1m	3	report/workflow/corpus_components.tsv	corpus studies of group 1m attributed to Targeted sweep: genome- and proteome-wide classes of the single-gene sweep
+compgrp_sweep_genome_wide_2	0	report/workflow/corpus_components.tsv	corpus studies of group 2 attributed to Targeted sweep: genome- and proteome-wide classes of the single-gene sweep
+compgrp_sweep_genome_wide_3	0	report/workflow/corpus_components.tsv	corpus studies of group 3 attributed to Targeted sweep: genome- and proteome-wide classes of the single-gene sweep
+compgrp_sweep_genome_wide_p	29	report/workflow/corpus_components.tsv	corpus studies of group p attributed to Targeted sweep: genome- and proteome-wide classes of the single-gene sweep
+compgrp_sweep_genome_wide_sc	0	report/workflow/corpus_components.tsv	corpus studies of group sc attributed to Targeted sweep: genome- and proteome-wide classes of the single-gene sweep
+compgrp_sweep_patient_cells_1	16	report/workflow/corpus_components.tsv	corpus studies of group 1 attributed to Targeted sweep: patient-derived cells
+compgrp_sweep_patient_cells_1m	1	report/workflow/corpus_components.tsv	corpus studies of group 1m attributed to Targeted sweep: patient-derived cells
+compgrp_sweep_patient_cells_2	0	report/workflow/corpus_components.tsv	corpus studies of group 2 attributed to Targeted sweep: patient-derived cells
+compgrp_sweep_patient_cells_3	0	report/workflow/corpus_components.tsv	corpus studies of group 3 attributed to Targeted sweep: patient-derived cells
+compgrp_sweep_patient_cells_p	2	report/workflow/corpus_components.tsv	corpus studies of group p attributed to Targeted sweep: patient-derived cells
+compgrp_sweep_patient_cells_sc	0	report/workflow/corpus_components.tsv	corpus studies of group sc attributed to Targeted sweep: patient-derived cells
+compgrp_sweep_proteomics_list_1	0	report/workflow/corpus_components.tsv	corpus studies of group 1 attributed to Targeted sweep: proteomic studies missing from the corpus
+compgrp_sweep_proteomics_list_1m	0	report/workflow/corpus_components.tsv	corpus studies of group 1m attributed to Targeted sweep: proteomic studies missing from the corpus
+compgrp_sweep_proteomics_list_2	0	report/workflow/corpus_components.tsv	corpus studies of group 2 attributed to Targeted sweep: proteomic studies missing from the corpus
+compgrp_sweep_proteomics_list_3	0	report/workflow/corpus_components.tsv	corpus studies of group 3 attributed to Targeted sweep: proteomic studies missing from the corpus
+compgrp_sweep_proteomics_list_p	9	report/workflow/corpus_components.tsv	corpus studies of group p attributed to Targeted sweep: proteomic studies missing from the corpus
+compgrp_sweep_proteomics_list_sc	0	report/workflow/corpus_components.tsv	corpus studies of group sc attributed to Targeted sweep: proteomic studies missing from the corpus
+compgrp_leads_1	8	report/workflow/corpus_components.tsv	corpus studies of group 1 attributed to Lead follow-up from full text
+compgrp_leads_1m	1	report/workflow/corpus_components.tsv	corpus studies of group 1m attributed to Lead follow-up from full text
+compgrp_leads_2	0	report/workflow/corpus_components.tsv	corpus studies of group 2 attributed to Lead follow-up from full text
+compgrp_leads_3	1	report/workflow/corpus_components.tsv	corpus studies of group 3 attributed to Lead follow-up from full text
+compgrp_leads_p	1	report/workflow/corpus_components.tsv	corpus studies of group p attributed to Lead follow-up from full text
+compgrp_leads_sc	0	report/workflow/corpus_components.tsv	corpus studies of group sc attributed to Lead follow-up from full text
+compgrp_library_1	36	report/workflow/corpus_components.tsv	corpus studies of group 1 attributed to Library, collection and data-resource sources
+compgrp_library_1m	0	report/workflow/corpus_components.tsv	corpus studies of group 1m attributed to Library, collection and data-resource sources
+compgrp_library_2	2	report/workflow/corpus_components.tsv	corpus studies of group 2 attributed to Library, collection and data-resource sources
+compgrp_library_3	7	report/workflow/corpus_components.tsv	corpus studies of group 3 attributed to Library, collection and data-resource sources
+compgrp_library_p	1	report/workflow/corpus_components.tsv	corpus studies of group p attributed to Library, collection and data-resource sources
+compgrp_library_sc	0	report/workflow/corpus_components.tsv	corpus studies of group sc attributed to Library, collection and data-resource sources
+compgrp_hand_retrieval_1	8	report/workflow/corpus_components.tsv	corpus studies of group 1 attributed to Hand retrieval (hand-fetched full texts)
+compgrp_hand_retrieval_1m	0	report/workflow/corpus_components.tsv	corpus studies of group 1m attributed to Hand retrieval (hand-fetched full texts)
+compgrp_hand_retrieval_2	0	report/workflow/corpus_components.tsv	corpus studies of group 2 attributed to Hand retrieval (hand-fetched full texts)
+compgrp_hand_retrieval_3	0	report/workflow/corpus_components.tsv	corpus studies of group 3 attributed to Hand retrieval (hand-fetched full texts)
+compgrp_hand_retrieval_p	0	report/workflow/corpus_components.tsv	corpus studies of group p attributed to Hand retrieval (hand-fetched full texts)
+compgrp_hand_retrieval_sc	0	report/workflow/corpus_components.tsv	corpus studies of group sc attributed to Hand retrieval (hand-fetched full texts)
+compgrp_pi_addition_1	1	report/workflow/corpus_components.tsv	corpus studies of group 1 attributed to Added by the PI
+compgrp_pi_addition_1m	2	report/workflow/corpus_components.tsv	corpus studies of group 1m attributed to Added by the PI
+compgrp_pi_addition_2	0	report/workflow/corpus_components.tsv	corpus studies of group 2 attributed to Added by the PI
+compgrp_pi_addition_3	3	report/workflow/corpus_components.tsv	corpus studies of group 3 attributed to Added by the PI
+compgrp_pi_addition_p	1	report/workflow/corpus_components.tsv	corpus studies of group p attributed to Added by the PI
+compgrp_pi_addition_sc	0	report/workflow/corpus_components.tsv	corpus studies of group sc attributed to Added by the PI
+compgrp_update_search_1	0	report/workflow/corpus_components.tsv	corpus studies of group 1 attributed to Literature update (incremental searches, search/update_literature.py)
+compgrp_update_search_1m	0	report/workflow/corpus_components.tsv	corpus studies of group 1m attributed to Literature update (incremental searches, search/update_literature.py)
+compgrp_update_search_2	0	report/workflow/corpus_components.tsv	corpus studies of group 2 attributed to Literature update (incremental searches, search/update_literature.py)
+compgrp_update_search_3	2	report/workflow/corpus_components.tsv	corpus studies of group 3 attributed to Literature update (incremental searches, search/update_literature.py)
+compgrp_update_search_p	0	report/workflow/corpus_components.tsv	corpus studies of group p attributed to Literature update (incremental searches, search/update_literature.py)
+compgrp_update_search_sc	0	report/workflow/corpus_components.tsv	corpus studies of group sc attributed to Literature update (incremental searches, search/update_literature.py)
+group_1	255	corpus/lineage.json	corpus studies in group 1 (node category; sc = single-nucleus lane)
+group_1m	20	corpus/lineage.json	corpus studies in group 1m (node category; sc = single-nucleus lane)
+group_2	35	corpus/lineage.json	corpus studies in group 2 (node category; sc = single-nucleus lane)
+group_3	194	corpus/lineage.json	corpus studies in group 3 (node category; sc = single-nucleus lane)
+group_p	44	corpus/lineage.json	corpus studies in group p (node category; sc = single-nucleus lane)
+group_sc	23	corpus/lineage.json	corpus studies in group sc (node category; sc = single-nucleus lane)
+outside_sources	69	corpus/lineage.json	outside-source nodes
+edges_between_studies	795	corpus/lineage.json	lineage edges with both ends corpus studies
+edges_all	1102	corpus/lineage.json	all lineage edges
+curated_edges	251	corpus/curated_edges.json	curated edges (edges[])
+nodecheck_studies	441	corpus/node_check_2026-09-27/checked_*.tsv	studies checked field by field against the paper (2026-09-27)
+nodecheck_field_rows	2522	corpus/node_check_2026-09-27/checked_*.tsv	field checks
+nodecheck_not_ok	997	corpus/node_check_2026-09-27/checked_*.tsv	field checks with verdict other than ok
+groupcheck_studies	434	data/manifests/group_check_2026-09-30/group_check.tsv	studies re-checked for group against full text
+groupcheck_changed	21	data/manifests/group_check_2026-09-30/group_check.tsv	group changed
+groupcheck_proposed	4	data/manifests/group_check_2026-09-30/group_check.tsv	change proposed, not applied
+groupcheck_flag	32	data/manifests/group_check_2026-09-30/group_check.tsv	flagged for a decision
+crosscit_pairs	775	data/manifests/group_check_2026-09-30/cross_citations.tsv	within-corpus citation pairs without a lineage link, checked for data re-use
+subject_relation_pairs	946	analyses/subject_relations/subject_relations.tsv	dataset pairs with a recorded subject relation
+summary_rows	986	analyses/summary.tsv	list rows (extracted and status-only)
+lists_extracted	708	analyses/summary.tsv	rows with status extracted
+studies_with_list	355	analyses/summary.tsv	studies with an extracted list
+prov_published	537	analyses/summary.tsv	extracted lists with provenance published
+prov_gemma	155	analyses/summary.tsv	extracted lists with provenance gemma
+prov_reproduced	15	analyses/summary.tsv	extracted lists with provenance reproduced
+prov_review_compilation	1	analyses/summary.tsv	extracted lists with provenance review_compilation
+path_supplement	398	analyses/summary.tsv; data/manifest.json; data/manifests/*.json	extracted lists whose source is 'supplement' (analyses/corpus_stats.py source_of on the list's manifest entry)
+path_main_table	81	analyses/summary.tsv; data/manifest.json; data/manifests/*.json	extracted lists whose source is 'table in the main text' (analyses/corpus_stats.py source_of on the list's manifest entry)
+path_main_text	20	analyses/summary.tsv; data/manifest.json; data/manifests/*.json	extracted lists whose source is 'main text' (analyses/corpus_stats.py source_of on the list's manifest entry)
+path_figure	23	analyses/summary.tsv; data/manifest.json; data/manifests/*.json	extracted lists whose source is 'figure (transcribed)' (analyses/corpus_stats.py source_of on the list's manifest entry)
+path_repository	5	analyses/summary.tsv; data/manifest.json; data/manifests/*.json	extracted lists whose source is 'repository' (analyses/corpus_stats.py source_of on the list's manifest entry)
+path_gemma	155	analyses/summary.tsv; data/manifest.json; data/manifests/*.json	extracted lists whose source is 'Gemma reanalysis' (analyses/corpus_stats.py source_of on the list's manifest entry)
+path_reproduced	15	analyses/summary.tsv; data/manifest.json; data/manifests/*.json	extracted lists whose source is 'reproduced by us' (analyses/corpus_stats.py source_of on the list's manifest entry)
+path_review	1	analyses/summary.tsv; data/manifest.json; data/manifests/*.json	extracted lists whose source is 'review compilation' (analyses/corpus_stats.py source_of on the list's manifest entry)
+path_unknown	10	analyses/summary.tsv; data/manifest.json; data/manifests/*.json	extracted lists whose source is 'unknown' (analyses/corpus_stats.py source_of on the list's manifest entry)
+fmt_spreadsheet	277	data/manifest.json; data/manifests/*.json	published lists read from: spreadsheet or delimited file
+fmt_word	35	data/manifest.json; data/manifests/*.json	published lists read from: Word document
+fmt_text	225	data/manifest.json; data/manifests/*.json	published lists read from: read from article or PDF text and transcribed
+fmt_image	0	data/manifest.json; data/manifests/*.json	published lists read from: image
+lists_stated	460	analyses/summary.tsv	extracted lists with a count stated in the paper
+lists_match	401	analyses/summary.tsv	extracted lists matching the stated count
+status_no_list	200	analyses/summary.tsv	status-only list rows: no list published (first words of status)
+status_blocked	8	analyses/summary.tsv	status-only list rows: blocked (first words of status)
+status_no_contrast	22	analyses/summary.tsv	status-only list rows: no SZ vs control contrast (first words of status)
+status_not_applicable	48	analyses/summary.tsv	status-only list rows: not applicable (single gene, targeted, re-use, not DE) (first words of status)
+status_on_request	7	analyses/summary.tsv	status-only rows whose status mentions data available on request
+study_extracted	329	corpus/lineage.json	corpus studies whose gene-list status is 'extracted' (node genelist.status)
+study_gemma	14	corpus/lineage.json	corpus studies whose gene-list status is 'gemma' (node genelist.status)
+study_reproduced	11	corpus/lineage.json	corpus studies whose gene-list status is 'reproduced' (node genelist.status)
+study_no_list	113	corpus/lineage.json	corpus studies whose gene-list status is 'no list published' (node genelist.status)
+study_blocked	5	corpus/lineage.json	corpus studies whose gene-list status is 'blocked' (node genelist.status)
+study_not_de	95	corpus/lineage.json	corpus studies whose gene-list status is 'not DE' (node genelist.status)
+study_not_attempted	4	corpus/lineage.json	corpus studies whose gene-list status is 'not attempted' (node genelist.status)
+list_gene_rows	399791	data/lists/*.tsv	gene rows over all list files
+map_approved	238518	data/lists/*.tsv	gene rows whose map_route is: approved HGNC symbol
+map_prev_alias	10037	data/lists/*.tsv	gene rows whose map_route is: previous or alias symbol (one gene)
+map_probe	24723	data/lists/*.tsv	gene rows whose map_route is: probe through platform annotation
+map_ensembl	101410	data/lists/*.tsv	gene rows whose map_route is: Ensembl gene ID
+map_mirna	984	data/lists/*.tsv	gene rows whose map_route is: miRNA name to MIR gene
+map_excel	20	data/lists/*.tsv	gene rows whose map_route is: spreadsheet date decoded
+map_fallback	4037	data/lists/*.tsv	gene rows whose map_route is: audit fallbacks (LOC, accession, NCBI Gene, Gemma annotation, resolver)
+map_ambiguous	1716	data/lists/*.tsv	gene rows whose map_route is: ambiguous (several genes; left unmapped)
+map_unmapped	18346	data/lists/*.tsv	gene rows whose map_route is: unmapped
+universe_platform	105	analyses/universes.json	lists with universe type platform
+universe_fullstats	40	analyses/universes.json	lists with universe type fullstats
+universe_rnaseq_default	113	analyses/universes.json	lists with universe type rnaseq_default
+universe_union	67	analyses/universes.json	lists with universe type union
+universe_targeted	17	analyses/universes.json	lists with universe type targeted
+universe_exclude	135	analyses/universes.json	lists with universe type exclude
+rnaseq_default_genes	25137	analyses/universes.json	genes in the RNA-seq default universe (rnaseq_default.n_genes)
+direction_audit_lists	435	analyses/direction_audit.tsv	lists in the direction audit
+audit_unmapped_rows	15346	analyses/extraction_audit_2026-09-28/audit_numbers.json	unmapped rows at the 2026-09-28 audit (before fixes X08-X11)
+audit_mismatch_lists	43	analyses/extraction_audit_2026-09-28/audit_numbers.json	lists disagreeing with the stated count at the audit
+h4ref_candidates	31	analyses/h4/reference_genes/decisions.tsv	paper x gene candidates reviewed
+h4ref_calls	41	analyses/h4/reference_genes/candidates.tsv	H4 calls on the candidates (n_calls)
+h4ref_reference	0	analyses/h4/reference_genes/decisions.tsv	decision = reference
+h4ref_target	30	analyses/h4/reference_genes/decisions.tsv	decision = target
+h4ref_undetermined	1	analyses/h4/reference_genes/decisions.tsv	decision = undetermined
+h4ref_eval_papers_rows	14	analyses/h4/reference_genes/decisions.tsv	paper x gene rows from reference-gene evaluation papers
+h4ref_quote_found	31	analyses/h4/reference_genes/decisions.tsv	decisions whose quote verify_quote.py found
+h4sym_decisions	290	analyses/h4/symbol_fixes/decisions.tsv	paper x name-as-written decisions
+h4sym_corrected	82	analyses/h4/symbol_fixes/decisions.tsv	decision class corrected (corrected = an approved HGNC symbol replacing the assigned one)
+h4sym_ambiguous	152	analyses/h4/symbol_fixes/decisions.tsv	decision class ambiguous (corrected = an approved HGNC symbol replacing the assigned one)
+h4sym_no_gene	1	analyses/h4/symbol_fixes/decisions.tsv	decision class no_gene (corrected = an approved HGNC symbol replacing the assigned one)
+h4sym_keep	55	analyses/h4/symbol_fixes/decisions.tsv	decision class keep (corrected = an approved HGNC symbol replacing the assigned one)
+h4sym_quote_found	290	analyses/h4/symbol_fixes/decisions.tsv	decisions whose quote verify_quote.py found
+h4_findings	5981	analyses/h4/h4_counts.tsv	findings
+h4_findings_symbol_corrected	144	analyses/h4/h4_counts.tsv	findings_symbol_corrected
+h4_findings_symbol_ambiguous	247	analyses/h4/h4_counts.tsv	findings_symbol_ambiguous
+h4_findings_symbol_no_gene	1	analyses/h4/h4_counts.tsv	findings_symbol_no_gene
+h4_calls_reference_dropped	0	analyses/h4/h4_counts.tsv	calls_reference_dropped
+sncid_selected	261	data/stanley_sncid/selected_files.tsv	Stanley SNCID files selected for expression-level measurements
+sncid_downloaded	259	data/stanley_sncid/download_log.tsv	files downloaded with sha256
+sncid_lists	0	analyses/summary.tsv	extracted lists that cite Stanley SNCID raw data
+primary_in_corpus	280	analyses/recurrence.tsv	header: in-corpus studies with a primary list
+left_meta	26	analyses/recurrence.tsv	header: meta-lane studies left out
+left_multi	2	analyses/recurrence.tsv	header: multi-series reanalyses left out
+left_reanalyses	36	analyses/recurrence.tsv	header: other reanalyses left out
+non_de_dropped	43	analyses/recurrence.tsv	header: studies whose non-DE primary list was dropped
+pb_candidates	91	analyses/recurrence.tsv	published brain, study tier: n_lists_old
+pb_studies	64	analyses/recurrence.tsv	published brain, study tier: n_lists (modelled studies)
+pb_cohort_studies	58	analyses/recurrence.tsv	published brain, cohort tier: n_lists
+pb_clusters	17	analyses/recurrence.tsv	published brain, cohort tier: n_clusters
+blood_studies	25	analyses/recurrence.tsv	published blood, study tier: n_lists
+h4_papers	1506	analyses/h4/h4_counts.tsv	papers_in_units
+h4_calls	4156	analyses/h4/h4_counts.tsv	calls
+h4_calls_usable	3799	analyses/h4/h4_counts.tsv	calls_usable
+prot_studies	47	side-studies/proteomics/proteomics_inventory.tsv	proteomics side study: study rows
+prot_lists	55	side-studies/proteomics/proteomics_lists.tsv	proteomics side study: list rows

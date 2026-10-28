@@ -1,0 +1,17 @@
+# counts_by_call_and_era.tsv
+# script: agonal_cod_calls_2026-10-18/build_final.py; built 2026-10-18; definitions BRIEF.md; two blind readers per study (sonnet subagents, reader A forward, reader B reverse order), quotes verified verbatim against the named text file after whitespace normalisation (verify_quotes.py); texts copied to texts/
+# input: studies_manifest.tsv sha256 3bf811583bc8; reader files sha256 A1:6ad13d911ad0, A2:030c022ec9fb, A3:54a812eaf9d7, B1:85cc8e71174d, B2:8685ced55ed2, B3:60d1073cf55c
+# handled = adjusted + matched_or_compared + sensitivity + exclusion_rule; any_information = all but not_mentioned
+call	era	denominator	n	adjusted	matched_or_compared	sensitivity	exclusion_rule	reported_only	not_mentioned	any_information	handled
+agonal_state	all	80 studies	80	0	0	1	10	3	66	14	11
+agonal_state	all	79 (Chu 2009, no full text, left out)	79	0	0	1	10	3	65	14	11
+agonal_state	2016 on	80 studies	49	0	0	0	6	1	42	7	6
+agonal_state	2016 on	79 (Chu 2009, no full text, left out)	49	0	0	0	6	1	42	7	6
+agonal_state	before 2016	80 studies	31	0	0	1	4	2	24	7	5
+agonal_state	before 2016	79 (Chu 2009, no full text, left out)	30	0	0	1	4	2	23	7	5
+cause_or_manner	all	80 studies	80	4	6	7	6	20	37	43	23
+cause_or_manner	all	79 (Chu 2009, no full text, left out)	79	4	6	7	6	20	36	43	23
+cause_or_manner	2016 on	80 studies	49	3	4	1	3	12	26	23	11
+cause_or_manner	2016 on	79 (Chu 2009, no full text, left out)	49	3	4	1	3	12	26	23	11
+cause_or_manner	before 2016	80 studies	31	1	2	6	3	8	11	20	12
+cause_or_manner	before 2016	79 (Chu 2009, no full text, left out)	30	1	2	6	3	8	10	20	12

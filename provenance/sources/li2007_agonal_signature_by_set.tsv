@@ -1,0 +1,14 @@
+# copied 2026-10-21 as the source table of a hidden comment in supplement.md (Note 5, earlier agonal-stress signature); original location: <analysis repo> (rerun_on_80_studies/gaps/G08/previous_vs_new.tsv)
+quantity (R440, Supplementary Note 10)	earlier version text (209 set)	earlier 375 set (gaps_G06_G09 run)	new 383	new ge10 (107)	new ge5 (2,422)
+recurrent genes with a direction	208	369	376	106	2,323
+of them in the Li lists (share)	75 (36%)	133 (36%)	132 (35%)	46 (43%)	552 (24%)
+share of decile-matched pool in Li lists	11%	10.9%	10.9%	10.9%	10.9%
+listed genes that move in SZ as with agonal stress	67 of 75	123 of 133	122 of 132	45 of 46	491 of 552
+z, unlisted genes counted 0, uncorrected	7.32	10.98	10.51	9.04	13.02
+z corrected for gene-gene correlation (VIF)	1.24	1.34	1.30	1.80	0.89
+listed genes only, corrected z	0.23	0.40	0.40	0.47	0.43
+rank rho Li t vs control pH Z within set (n)	-0.828 (74)	-0.819 (132)	-0.812 (131)	-0.793 (46)	-0.807 (548)
+rank rho Li t vs Pritzker agonal t within set (n)	+0.780 (72)	+0.763 (128)	+0.758 (127)	+0.693 (44)	+0.793 (542)
+SZ-sign-aligned rho vs control pH	+0.504 (74)	+0.496 (132)	+0.472 (131)	+0.456 (46)	+0.528 (548)
+SZ-sign-aligned rho vs Pritzker agonal t	+0.372 (72)	+0.301 (128)	+0.272 (127)	+0.001 (44)	+0.443 (542)
+all-gene rho Li t vs control pH Z / Pritzker / control pH vs Pritzker	-0.822 / +0.804 / -0.704	same	same (set-independent)	same	same

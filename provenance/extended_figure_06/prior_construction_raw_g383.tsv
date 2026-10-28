@@ -1,0 +1,12 @@
+# run 2026-10-23: schizophrenia-related experiments excluded from every group before counting (the 114 picks flagged in_sz_corpus or held_out in scan176_contrasts.tsv; for the all-contrasts rows the 116 experiments flagged in either scan176_contrasts.tsv or all_contrasts_scored_public.tsv)
+# script: post_prior.py on the stored per-contrast results (checkpoints of prior_construction_383.py, run 2026-10-19; no rescoring); aggregation as that script
+construction	k	n	share	wilson95_lo	wilson95_hi	comparison_set_rate	draws	draw_share_p2_5	draw_share_p97_5	description
+project static prior, original comparison sets	110	244	0.45082	0.38963	0.513534	0.0292828	1	0.45082	0.45082	
+project static prior, re-drawn comparison sets	112	244	0.459016	0.397609	0.521694	0.0292623	1	0.459016	0.459016	
+all-experiment prior, leave-one-out	116	244	0.47541	0.413616	0.537966	0.0291803	1	0.47541	0.47541	
+all-experiment prior, whole family left out	116	244	0.47541	0.413616	0.537966	0.0291803	1	0.47541	0.47541	
+brain-only prior (k=351), leave-one-out	111	244	0.454918	0.393618	0.517616	0.028873	1	0.454918	0.454918	
+brain-only prior, no leave-out (self included)	112	244	0.459016	0.397609	0.521694	0.0288115	1	0.459016	0.459016	
+brain-only prior, whole family left out	111	244	0.454918	0.393618	0.517616	0.028873	1	0.454918	0.454918	
+size-matched all-tissue prior (k=351), leave-one-out	125	244	0.512459	0.450036	0.574496	0.0292768	100	0.491803	0.532787	100 random priors; mean over draws
+size-matched non-brain prior (k=351), leave-one-out	126.9	244	0.520082	0.457571	0.58197	0.029267	100	0.5	0.545082	100 random priors; mean over draws

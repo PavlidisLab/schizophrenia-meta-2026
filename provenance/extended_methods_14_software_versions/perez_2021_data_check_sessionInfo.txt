@@ -1,0 +1,38 @@
+R version 4.4.2 (2024-10-31)
+Platform: x86_64-apple-darwin20
+Running under: macOS Sequoia 15.7.5
+
+Matrix products: default
+BLAS:   /Library/Frameworks/R.framework/Versions/4.4-x86_64/Resources/lib/libRblas.0.dylib 
+LAPACK: /Library/Frameworks/R.framework/Versions/4.4-x86_64/Resources/lib/libRlapack.dylib;  LAPACK version 3.12.0
+
+locale:
+[1] C/C.UTF-8/C/C/C/C
+
+time zone: America/Vancouver
+tzcode source: internal
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+[1] sva_3.54.0          BiocParallel_1.40.2 genefilter_1.88.0  
+[4] mgcv_1.9-1          nlme_3.1-166        edgeR_4.4.2        
+[7] limma_3.62.2       
+
+loaded via a namespace (and not attached):
+ [1] Matrix_1.7-1            bit_4.5.0.1             jsonlite_1.8.9         
+ [4] compiler_4.4.2          crayon_1.5.3            Biobase_2.66.0         
+ [7] blob_1.3.0              Biostrings_2.74.1       parallel_4.4.2         
+[10] splines_4.4.2           IRanges_2.40.0          png_0.1-8              
+[13] fastmap_1.2.0           statmod_1.5.2           lattice_0.22-6         
+[16] R6_2.5.1                XVector_0.46.0          GenomeInfoDb_1.42.1    
+[19] BiocGenerics_0.52.0     XML_3.99-0.18           MatrixGenerics_1.18.0  
+[22] GenomeInfoDbData_1.2.13 AnnotationDbi_1.68.0    DBI_1.3.0              
+[25] rlang_1.1.4             KEGGREST_1.46.0         cachem_1.1.0           
+[28] bit64_4.5.2             annotate_1.84.0         RSQLite_3.53.3         
+[31] memoise_2.0.1           cli_3.6.3               zlibbioc_1.52.0        
+[34] grid_4.4.2              locfit_1.5-9.12         xtable_1.8-4           
+[37] S4Vectors_0.44.0        vctrs_0.6.5             codetools_0.2-20       
+[40] survival_3.7-0          stats4_4.4.2            httr_1.4.7             
+[43] UCSC.utils_1.2.0        matrixStats_1.4.1       tools_4.4.2            

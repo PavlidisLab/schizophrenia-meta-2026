@@ -1,0 +1,27 @@
+# script: confounds/ph_pathways_direction_2026-09-30/scripts/build_sets.py, run 2026-10-16
+# input: analyses/recurrence_genes.tsv sha256 dda5eb621c155963ef712788758e31b4cb169773fc7198fa4116cc89f4244195 (81-study base, run 2026-10-14)
+# input: analyses/primary_lists.json sha256 44fb07b1d2e548ec72288aa56cdf755bd14123ed74c7543d5401492dab0198a8
+# input: analyses/universes.json sha256 25a477fc64ae401637ce9b5f2ac7cc536b7acdd3c157737b47179bd6c5bb7cab
+# input: corpus/lineage.json sha256 4f919a83fea3ce5be793630b68ab30a274b48942bf3f698a667588553954ca45
+# input: analyses/fairness_lists/a5b_terms.tsv at commit None sha256 57f7a6d33007c427ccfa58a8a4169f5979962b6410ebaa58654bba61078ec821
+# input: analyses/fairness_lists/go_bp_sets.tsv.gz sha256 efd94fc4462f51add5517e695dd85a0f9a235b4d8531101a8f541b315adf8e09
+group	term	name	n_genes_go	n_lists_top	lists
+oxphos	GO:0009142	nucleoside triphosphate biosynthetic process	198	7	Wu 2012; Arion 2015; Enwright 2018; Lanz 2019; Bakshi 2020; Batiuk 2022; Zhu 2024
+oxphos	GO:0009145	purine nucleoside triphosphate biosynthetic process	184	7	Wu 2012; Arion 2015; Enwright 2018; Lanz 2019; Bakshi 2020; Batiuk 2022; Zhu 2024
+oxphos	GO:0022900	electron transport chain	117	7	Altar 2005; Maycox 2009; Wu 2012; Arion 2015; Enwright 2018; Lanz 2019; Bakshi 2020
+oxphos	GO:0015986	proton motive force-driven ATP synthesis	152	8	Altar 2005; Maycox 2009; Wu 2012; Arion 2015; Enwright 2018; Lanz 2019; Bakshi 2020; Zhu 2024
+oxphos	GO:0042776	proton motive force-driven mitochondrial ATP synthesis	71	6	Wu 2012; Arion 2015; Enwright 2018; Lanz 2019; Bakshi 2020; Zhu 2024
+oxphos	GO:0042775	mitochondrial ATP synthesis coupled electron transport	98	7	Altar 2005; Maycox 2009; Wu 2012; Arion 2015; Enwright 2018; Lanz 2019; Bakshi 2020
+oxphos	GO:0042773	ATP synthesis coupled electron transport	98	7	Altar 2005; Maycox 2009; Wu 2012; Arion 2015; Enwright 2018; Lanz 2019; Bakshi 2020
+oxphos	GO:0006754	ATP biosynthetic process	174	8	Maycox 2009; Wu 2012; Arion 2015; Enwright 2018; Lanz 2019; Bakshi 2020; Batiuk 2022; Zhu 2024
+oxphos	GO:0009206	purine ribonucleoside triphosphate biosynthetic process	184	7	Wu 2012; Arion 2015; Enwright 2018; Lanz 2019; Bakshi 2020; Batiuk 2022; Zhu 2024
+oxphos	GO:0006119	oxidative phosphorylation	143	8	Altar 2005; Maycox 2009; Wu 2012; Arion 2015; Enwright 2018; Lanz 2019; Bakshi 2020; Zhu 2024
+oxphos	GO:0022904	respiratory electron transport chain	108	7	Altar 2005; Maycox 2009; Wu 2012; Arion 2015; Enwright 2018; Lanz 2019; Bakshi 2020
+oxphos	GO:0009201	ribonucleoside triphosphate biosynthetic process	190	7	Wu 2012; Arion 2015; Enwright 2018; Lanz 2019; Bakshi 2020; Batiuk 2022; Zhu 2024
+oxphos	GO:0019646	aerobic electron transport chain	93	8	Altar 2005; Maycox 2009; Wu 2012; Arion 2015; Enwright 2018; Lanz 2019; Bakshi 2020; Zhu 2024
+oxphos	GO:0006120	mitochondrial electron transport, NADH to ubiquinone	50	5	Wu 2012; Arion 2015; Enwright 2018; Lanz 2019; Bakshi 2020
+myelin	GO:0007272	ensheathment of neurons	112	6	Aston 2004; Narayan 2008; Arion 2010; Zhao 2015; Benjamin 2022; Kwon 2026
+myelin	GO:0008366	axon ensheathment	112	5	Aston 2004; Narayan 2008; Arion 2010; Zhao 2015; Benjamin 2022
+myelin	GO:0042552	myelination	110	6	Aston 2004; Narayan 2008; Arion 2010; Zhao 2015; Benjamin 2022; Kwon 2026
+microglia	GO:0001774	microglial cell activation	54	3	Schmitt 2011; Fillman 2013; Kwon 2026
+microglia	GO:0002269	leukocyte activation involved in inflammatory response	54	3	Schmitt 2011; Fillman 2013; Kwon 2026

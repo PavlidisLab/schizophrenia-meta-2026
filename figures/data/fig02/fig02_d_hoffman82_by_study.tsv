@@ -1,0 +1,61 @@
+# figure: fig02 panel d
+# script: analyses/figure_exports/export_fig02_fig07.py, run 2026-10-16
+# population: 72 primary brain studies (recurrence.py scenario 'published, brain', study tier); n_k = |M_k| (RECURRENCE_NK=membership); analysis set = the 383 study-tier genes of analyses/confounds/recurrent_sets.tsv (set study_brain; the in-place recurrence_genes.tsv gives 383 at q < 0.1); recurrence.tsv sha256 bcbf50f8e334; corpus/lineage.json sha256 4f919a83fea3
+# input: side-studies/hoffman-2021/followup_summary_studies.tsv sha256 b458d1527e2d
+# one row per later study
+group	study	year	testable	observed	exp_uniform	p_hyper	exp_deprior	n_same_dir	n_opposite
+CMC-HBCC reanalyses	Akula 2021	2021	79	1	0.06	0.0581	0.09	1	0
+CMC-HBCC reanalyses	Clifton 2023	2023	72	69	44.82	1.99e-11	60.46	69	0
+CMC-HBCC reanalyses	Dong 2024	2024	79	56	9.84	3.07e-33	14.23	56	0
+CMC-HBCC reanalyses	Jin 2021	2021	77	71	11.15	1.01e-52	16.24	71	0
+CMC-HBCC reanalyses	Liu 2021	2021	78	61	40.11	9.3e-07	55.65	60	1
+CMC-HBCC reanalyses	Nersisyan 2026	2026	82	0	0.03	1	0.04	0	0
+CMC-HBCC reanalyses	Schulmann 2023	2023	79	62	9.48	3.6e-42	13.7	62	0
+CMC-HBCC reanalyses	Singh 2026	2026	79	2	3.12	0.825	4.5	0	2
+CMC-HBCC reanalyses	Xia 2024	2024	79	71	23.86	1.36e-28	34.1	71	0
+other banks	Alnafisah 2022	2022	82	0	0.31	1	0.45	0	0
+other banks	Alsema 2025	2025	78	0	0.48	1	0.68	0	0
+other banks	Arihisa 2023	2023	79	1	0.44	0.358	0.64	1	0
+other banks	Batiuk 2022	2022	78	0	0.8	1	1.14	0	0
+other banks	Batiuk 2022	2022	64	0	0.8	1	1.17	0	0
+other banks	Bharadwaj 2024	2024	79	9	6.3	0.176	9.1	7	1
+other banks	Chakraborty 2026	2026	79	3	2.65	0.498	3.84	2	1
+other banks	Chen 2022	2022	79	12	12.86	0.65	18.58	2	0
+other banks	Dean 2026	2026	74	0	0.25	1	0.35	0	0
+other banks	Frohlich 2024	2024	78	2	0.64	0.136	0.92	2	0
+other banks	Fröhlich 2024	2024	69	2	0.63	0.13	0.91	2	0
+other banks	Gebicke-Haerter 2021	2021	72	4	1.81	0.108	2.53	2	2
+other banks	Gerstner 2025	2025	82	6	1.24	0.00153	1.79	5	1
+other banks	Kaurani 2024	2024	82	0	0.01	1	0.01	0	0
+other banks	Khan 2023	2023	82	1	0.18	0.169	0.27	0	0
+other banks	Koopmans 2026	2026	20	1	1.48	0.786	2.26	0	1
+other banks	Lindholm Carlström 2021	2021	77	0	0.22	1	0.31	0	0
+other banks	Mas 2025	2025	79	0	0.02	1	0.03	0	0
+other banks	Mendez-Victoriano 2026	2026	79	4	0.55	0.00226	0.8	4	0
+other banks	Nguyen 2023	2023	82	0	0.09	1	0.13	0	0
+other banks	Perez 2021	2021	79	0	1.15	1	1.67	0	0
+other banks	Puvogel 2022	2022	78	0	0.06	1	0.09	0	0
+other banks	Sabaie 2022	2022	76	5	0.7	0.000685	1.0	5	0
+other banks	Smith 2026	2026	67	7	5.23	0.267	7.92	7	0
+other banks	Vera-Montecinos 2021	2021	82	0	1.06	1	1.53	0	0
+other banks	Weissleder 2021	2021	79	9	5.53	0.0999	7.99	5	4
+other banks	Worf 2025	2025	73	1	0.02	0.0159	0.02	1	0
+other banks	Wu 2026	2026	82	29	13.84	4.05e-05	20.01	25	2
+other banks	Zeppillo 2022	2022	79	3	1.47	0.183	2.13	3	0
+other banks	Zhang 2026	2026	72	11	13.24	0.796	19.27	10	1
+other banks	Zhu 2024	2024	63	6	7.77	0.805	11.1	6	0
+shared bank	Arbabi 2025	2025	78	1	0.64	0.477	0.92	1	0
+shared bank	Benjamin 2022	2022	78	13	11.17	0.322	16.11	4	9
+shared bank	Benjamin 2024	2024	79	15	8.25	0.0157	11.92	14	1
+shared bank	Emani 2024	2024	72	5	3.18	0.213	4.47	4	1
+shared bank	Ketchesin 2023	2023	67	7	3.68	0.0739	5.34	6	1
+shared bank	Kondo 2022	2022	79	2	0.48	0.0827	0.69	2	0
+shared bank	Kwon 2026	2026	70	14	5.18	0.000522	7.57	13	1
+shared bank	Lee 2025 (PsychAD)	2026	72	1	0.69	0.503	0.98	1	0
+shared bank	Lee 2026 (PsychAD)	2026	78	1	0.62	0.467	0.89	1	0
+shared bank	Perez 2025	2025	67	12	5.99	0.0147	8.69	12	0
+shared bank	Ruzicka 2024	2024	78	18	11.39	0.0302	16.28	16	2
+shared bank	Ruzicka 2024	2024	49	18	10.55	0.0106	16.17	16	2
+shared bank	Testa 2026	2026	20	9	1.83	2.81e-05	2.66	9	0
+shared bank	Wu 2021	2021	74	0	0.81	1	1.16	0	0
+shared bank	Yalcinbas 2025	2025	79	0	0.66	1	0.95	0	0

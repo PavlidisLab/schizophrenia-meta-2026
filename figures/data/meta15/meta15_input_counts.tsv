@@ -1,0 +1,22 @@
+# figure/claim: META15 part 4 / B: input datasets of the 15 meta-analyses against the 80 base studies (counts)
+# script: task_b_core80.py (assembled from task_b_core80_head.py + task_b_core80_tail.py; adapted from figure_data/mab_numbers_2026-10-12/task_b_meta_pooled.py)
+# sources (sha256): analyses/h3/h3_units.tsv f24716bad32d952f2dbe01710f9003a25b07191385e8c0622f6be3895b728c63; analyses/h3/h3_inventory.tsv 75bb8a75dc4705b71e4c6128ef7e30223bc572733ace22c2c4d671bd76e4e7f1; analyses/h3/h3_datasets.tsv 0bb26cd9db8127d3f876a6075322008be77ca0f38c3a8d0ad67b32f5aeb0ad10; base78_2026-10-16/B80/out/recurrence_units.tsv 53ff51cba5709807d8b6e641818738256b2463bf6fcc9c3427a3fdf0a6a55715; base80_studies.tsv 09dc9e52c590a731f906881604d85132b058a9bddd445899ea766678f8a6187a; the 80-study base table 51ace5bfc13b69bfd7dc09e59d60b887480e4ffedb41d649cfe7c1312f860709; corpus/lineage.json 4f919a83fea3ce5be793630b68ab30a274b48942bf3f698a667588553954ca45; base78_2026-10-16/B80/ws/analyses/primary_lists.json 44fb07b1d2e548ec72288aa56cdf755bd14123ed74c7543d5401492dab0198a8; base78_2026-10-16/B80/ws/analyses/universes.json 25a477fc64ae401637ce9b5f2ac7cc536b7acdd3c157737b47179bd6c5bb7cab; corpus/corpus_exclusions.json 00c5aecb15c94439f4ea157a448aeffc932f48eb944227f8cfe7799ddf4f14e6; corpus/geo_links.json 0e8febbe6d5e6c8c322e4c981d6132a02c84ee7426aff9890b5bcc53de4cb6ff; corpus/stanley_datasets.json 108854964b85e6913461bd386d7fdeaf9f84cf53264549cc97335005694aa010; core80_work_2026-10-16/P10/in_meta_link_evidence.tsv 74475abe6561ce48569eabc9fe1df158f2917b98b390f0784bc1268f5f2ed628
+# date: 2026-10-16
+# parameters: no random draws; base = 80 studies / 72 contributing lists (8 empty derived lists dropped); 15 brain meta-analyses = brain units of h3_units.tsv
+# Table 5 (data needed) register is not on this host: class (ii) is split by the reason recorded in the repository (reason_category_if_not_in_80), not by Table 5 membership. Ketchesin 2023 and Pai 2019 (D33 rows) are among the 80 (derived lists; Pai's is empty and dropped) and are reached by no meta-analysis dataset
+# subject counts: only where recorded (the 80-study base table n_SZ / n_control for studies among the 80, else lineage node cases/controls); otherwise blank = unknown; none estimated
+quantity	value
+meta-analyses	15
+dataset slots (meta-analysis x dataset pairs)	91
+distinct pooled datasets	42
+slots (i) among the 80 base studies	69
+distinct datasets (i) among the 80 base studies	27
+slots (ii) in the corpus, not among the 80	7
+distinct datasets (ii) in the corpus, not among the 80	3
+slots (iii) outside the corpus	15
+distinct datasets (iii) outside the corpus	12
+distinct base studies reached	25
+of which with an empty list (no contribution among the 72)	4
+of which contributing one of the 72 lists	21
+distinct datasets in (ii), reason 'no published SZ list of its own'	2
+distinct datasets in (ii), reason 'not recorded'	1

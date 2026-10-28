@@ -1,0 +1,35 @@
+# figure: supp_fig_medication panel b
+# script: analyses/figure_exports/export_supp_fig_medication.py, run 2026-10-09
+# input: analyses/medication/results/leave_one_out.tsv sha256 57791d7edd71
+# chronic units pooled with one unit left out; same matched nulls
+set	left_out	resp_obs	resp_p	dir_obs	dir_p
+recurrent (study_brain, uniform q < 0.1)	GSE119772_hypothalamus	1.063	0.0188	0.04916	0.3845
+recurrent (study_brain, uniform q < 0.1)	GSE180473_striatum	1.13	0.0024	0.09118	0.009198
+recurrent (study_brain, uniform q < 0.1)	GSE227464_striatum	1.089	0.0176	0.0826	0.03279
+recurrent (study_brain, uniform q < 0.1)	GSE2547_frontal_cortex	1.105	0.0024	0.08506	0.016
+recurrent (study_brain, uniform q < 0.1)	GSE268867_lateral_septum	1.083	0.0005999	0.1187	0.0002
+recurrent (study_brain, uniform q < 0.1)	GSE4031_cortex	1.122	0.003599	0.08745	0.0152
+recurrent (study_brain, uniform q < 0.1)	GSE45229_frontal_cortex	1.115	0.003199	0.09691	0.006199
+recurrent (study_brain, uniform q < 0.1)	GSE45229_striatum	1.105	0.002799	0.09354	0.0024
+recurrent (study_brain, uniform q < 0.1)	GSE6467_brain	1.1	0.0012	0.08677	0.0102
+recurrent (study_brain, uniform q < 0.1)	GSE6511_brain	1.106	0.002799	0.1183	0.0002
+recurrent (study_brain, uniform q < 0.1)	GSE66275_3regions	1.102	0.0024	0.08968	0.004199
+recurrent (study_brain, uniform q < 0.1)	GSE67723_striatum	1.066	0.007798	0.07142	0.06899
+recurrent (study_brain, uniform q < 0.1)	GSE67750_striatum	1.119	0.0009998	0.08141	0.008798
+recurrent (study_brain, uniform q < 0.1)	GSE67753_whole_brain	1.05	0.0003999	0.07477	0.0009998
+recurrent (study_brain, uniform q < 0.1)	GSE93918_PFC	1.084	0.0174	0.0936	0.0104
+recurrent (expression-matched q < 0.1)	GSE119772_hypothalamus	1.072	0.0002	0.07768	0.1486
+recurrent (expression-matched q < 0.1)	GSE180473_striatum	1.138	0.0002	0.1206	0.0174
+recurrent (expression-matched q < 0.1)	GSE227464_striatum	1.089	0.0003999	0.09882	0.07099
+recurrent (expression-matched q < 0.1)	GSE2547_frontal_cortex	1.115	0.0002	0.1077	0.02879
+recurrent (expression-matched q < 0.1)	GSE268867_lateral_septum	1.085	0.0002	0.1455	0.004599
+recurrent (expression-matched q < 0.1)	GSE4031_cortex	1.131	0.0002	0.1234	0.0166
+recurrent (expression-matched q < 0.1)	GSE45229_frontal_cortex	1.117	0.0002	0.1295	0.007598
+recurrent (expression-matched q < 0.1)	GSE45229_striatum	1.117	0.0002	0.1321	0.002999
+recurrent (expression-matched q < 0.1)	GSE6467_brain	1.111	0.0002	0.1177	0.0136
+recurrent (expression-matched q < 0.1)	GSE6511_brain	1.116	0.0002	0.149	0.0018
+recurrent (expression-matched q < 0.1)	GSE66275_3regions	1.118	0.0002	0.127	0.004799
+recurrent (expression-matched q < 0.1)	GSE67723_striatum	1.071	0.0002	0.08146	0.17
+recurrent (expression-matched q < 0.1)	GSE67750_striatum	1.13	0.0002	0.1072	0.02559
+recurrent (expression-matched q < 0.1)	GSE67753_whole_brain	1.066	0.0002	0.08835	0.015
+recurrent (expression-matched q < 0.1)	GSE93918_PFC	1.095	0.0002	0.1194	0.0182

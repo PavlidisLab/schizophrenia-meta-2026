@@ -1,0 +1,35 @@
+gene	n_lists_measured	n_lists_named	n_up	n_down	n_other	studies_up	studies_down
+HBB	70	11	10	1	0	Kuromitsu 2001; Arion 2010; Fillman 2013; Hwang 2013; Xiao 2014; Chang 2017; Jaffe 2018; Weissleder 2021; Schulmann 2023; Zhang 2026	Voisey 2017
+HBA1	65	8	7	1	0	Fillman 2013; Hwang 2013; Xiao 2014; Chang 2017; Maas 2020; Arihisa 2023; Zhang 2026	Voisey 2017
+HBA2	62	8	7	1	0	Fillman 2013; Hwang 2013; Xiao 2014; Chang 2017; Weissleder 2021; Arihisa 2023; Zhang 2026	Voisey 2017
+HBD	52	2	2	0	0	Chang 2017; Jaffe 2018	
+HBG1	49	2	2	0	0	Jaffe 2018; Akula 2021	
+HBG2	53	5	5	0	0	Kim 2016; Jaffe 2018; Collado-Torres 2019; Akula 2021; Lindholm Carlström 2021	
+HBM	55	1	1	0	0	Pietersen 2014 (PV neurons)	
+HBQ1	65	1	0	1	0		Xiao 2014
+HBE1	53	1	1	0	0	Fillman 2013	
+HBZ	62	0	0	0	0		
+ALAS2	56	0	0	0	0		
+SLC4A1	63	1	0	1	0		Voisey 2017
+GYPA	61	1	0	1	0		Gebicke-Haerter 2021
+GYPB	58	2	1	1	0	Pietersen 2014 (PV neurons)	Narayan 2008
+AHSP	47	0	0	0	0		
+CA1	60	0	0	0	0		
+BPGM	71	2	0	2	0		Lanz 2019; Bakshi 2020
+SLC25A37	67	7	5	2	0	Chen 2013; Chang 2017; Lanz 2019; Yalcinbas 2025; Kwon 2026	Pietersen 2014; Ruzicka 2024
+EPB42	64	2	0	2	0		Fromer 2016; Perez 2021
+BNIP3L	70	5	2	3	0	Jaffe 2018; Ruzicka 2024	Arion 2010; Benjamin 2022; Zhang 2026
+FECH	71	3	0	3	0		Chu 2009; Arion 2010; Bakshi 2020
+DMTN	70	2	1	1	0	Ruzicka 2024	Maycox 2009
+SELENBP1	71	5	4	1	0	Xiao 2014; Scarr 2018; Ramaker 2017; Singh 2026	Fromer 2016
+TRIM58	64	0	0	0	0		
+S100A8	67	10	9	1	0	Maycox 2009; Hwang 2013; Darby 2016; Hu 2016; Chang 2017; Lanz 2019; Bakshi 2020; Maas 2020; Mendez-Victoriano 2026	Voisey 2017
+S100A9	67	9	8	1	0	Kuromitsu 2001; Maycox 2009; Fillman 2013; Hwang 2013; Hu 2016; Lanz 2019; Ketchesin 2023 (own list); Mendez-Victoriano 2026	Voisey 2017
+S100A12	56	3	2	1	0	Maycox 2009; Hu 2016	Gebicke-Haerter 2021
+FCGR3B	61	2	1	1	0	Yalcinbas 2025	Voisey 2017
+CSF3R	68	1	1	0	0	Maycox 2009	
+CXCR2	63	3	2	1	0	Hu 2016; Ketchesin 2023 (own list)	Narayan 2008
+FPR1	66	6	5	1	0	Narayan 2008; Maycox 2009; Fillman 2013; Ketchesin 2023 (own list); Mendez-Victoriano 2026	Schmitt 2011
+MNDA	68	2	1	1	0	Xiao 2014	Schmitt 2011
+CD177	51	2	2	0	0	Enwright 2018; Mendez-Victoriano 2026	
+MMP9	64	1	0	1	0		Benjamin 2022

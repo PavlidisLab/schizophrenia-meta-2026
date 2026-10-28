@@ -1,0 +1,599 @@
+# script: confounds/ph_pathways_direction_2026-09-30/scripts/build_sets.py, run 2026-10-16
+# input: analyses/recurrence_genes.tsv sha256 dda5eb621c155963ef712788758e31b4cb169773fc7198fa4116cc89f4244195 (81-study base, run 2026-10-14)
+# input: analyses/primary_lists.json sha256 44fb07b1d2e548ec72288aa56cdf755bd14123ed74c7543d5401492dab0198a8
+# input: analyses/universes.json sha256 25a477fc64ae401637ce9b5f2ac7cc536b7acdd3c157737b47179bd6c5bb7cab
+# input: corpus/lineage.json sha256 4f919a83fea3ce5be793630b68ab30a274b48942bf3f698a667588553954ca45
+# input: analyses/fairness_lists/a5b_terms.tsv at commit None sha256 57f7a6d33007c427ccfa58a8a4169f5979962b6410ebaa58654bba61078ec821; analyses/fairness_lists/go_bp_sets.tsv.gz sha256 efd94fc4462f51add5517e695dd85a0f9a235b4d8531101a8f541b315adf8e09
+# version hits: genes of the group's GO terms in at least one of the group's lists (list restricted to its tested genes); sz_direction = majority of those lists' directions (mixed when tied)
+# version terms: every GO member of the group's terms; sz_direction = the group's majority over all its list hits
+group	version	gene	n_lists	up	down	both	no_direction	sz_direction	lists
+oxphos	hits	AK4	2	2	0	0	0	up	Maycox 2009:up;Zhu 2024:up
+oxphos	hits	ALDOA	2	0	2	0	0	down	Enwright 2018:down;Wu 2012:down
+oxphos	hits	ANTKMT	2	0	2	0	0	down	Lanz 2019:down;Maycox 2009:down
+oxphos	hits	ATP5F1A	2	0	2	0	0	down	Lanz 2019:down;Wu 2012:down
+oxphos	hits	ATP5F1B	4	0	4	0	0	down	Bakshi 2020:down;Enwright 2018:down;Lanz 2019:down;Wu 2012:down
+oxphos	hits	ATP5F1C	4	0	4	0	0	down	Lanz 2019:down;Maycox 2009:down;Wu 2012:down;Zhu 2024:down
+oxphos	hits	ATP5F1D	4	0	4	0	0	down	Lanz 2019:down;Maycox 2009:down;Wu 2012:down;Zhu 2024:down
+oxphos	hits	ATP5F1E	1	0	1	0	0	down	Zhu 2024:down
+oxphos	hits	ATP5F1EP2	1	0	1	0	0	down	Wu 2012:down
+oxphos	hits	ATP5IF1	5	1	3	1	0	down	Bakshi 2020:down;Enwright 2018:down;Lanz 2019:down;Maycox 2009:both;Wu 2012:up
+oxphos	hits	ATP5MC1	3	0	3	0	0	down	Batiuk 2022:down;Lanz 2019:down;Zhu 2024:down
+oxphos	hits	ATP5MC3	5	0	5	0	0	down	Enwright 2018:down;Lanz 2019:down;Maycox 2009:down;Wu 2012:down;Zhu 2024:down
+oxphos	hits	ATP5ME	1	1	0	0	0	up	Wu 2012:up
+oxphos	hits	ATP5MF	1	1	0	0	0	up	Zhu 2024:up
+oxphos	hits	ATP5MJ	1	0	1	0	0	down	Lanz 2019:down
+oxphos	hits	ATP5MK	1	0	1	0	0	down	Wu 2012:down
+oxphos	hits	ATP5PB	3	0	3	0	0	down	Enwright 2018:down;Lanz 2019:down;Maycox 2009:down
+oxphos	hits	ATP5PD	1	0	1	0	0	down	Lanz 2019:down
+oxphos	hits	ATP5PF	1	0	1	0	0	down	Lanz 2019:down
+oxphos	hits	ATP5PO	2	0	2	0	0	down	Lanz 2019:down;Zhu 2024:down
+oxphos	hits	ATP6V0C	1	0	1	0	0	down	Lanz 2019:down
+oxphos	hits	CCNB1	2	0	2	0	0	down	Bakshi 2020:down;Lanz 2019:down
+oxphos	hits	CDADC1	3	0	3	0	0	down	Bakshi 2020:down;Lanz 2019:down;Maycox 2009:down
+oxphos	hits	CHCHD2	2	0	2	0	0	down	Lanz 2019:down;Maycox 2009:down
+oxphos	hits	COX11	2	0	2	0	0	down	Bakshi 2020:down;Lanz 2019:down
+oxphos	hits	COX4I1	2	1	1	0	0	mixed	Enwright 2018:down;Wu 2012:up
+oxphos	hits	COX4I2	1	1	0	0	0	up	Maycox 2009:up
+oxphos	hits	COX5A	3	0	3	0	0	down	Enwright 2018:down;Lanz 2019:down;Wu 2012:down
+oxphos	hits	COX5B	2	0	2	0	0	down	Maycox 2009:down;Zhu 2024:down
+oxphos	hits	COX6B1	3	0	3	0	0	down	Enwright 2018:down;Lanz 2019:down;Maycox 2009:down
+oxphos	hits	COX6B2	1	1	0	0	0	up	Enwright 2018:up
+oxphos	hits	COX6C	2	0	2	0	0	down	Lanz 2019:down;Wu 2012:down
+oxphos	hits	COX7A1	1	0	1	0	0	down	Arion 2015:down
+oxphos	hits	COX7A2	4	0	4	0	0	down	Enwright 2018:down;Lanz 2019:down;Wu 2012:down;Zhu 2024:down
+oxphos	hits	COX7B	5	0	5	0	0	down	Arion 2015:down;Bakshi 2020:down;Batiuk 2022:down;Lanz 2019:down;Maycox 2009:down
+oxphos	hits	COX7C	3	0	3	0	0	down	Bakshi 2020:down;Lanz 2019:down;Wu 2012:down
+oxphos	hits	COX8A	3	0	3	0	0	down	Maycox 2009:down;Wu 2012:down;Zhu 2024:down
+oxphos	hits	COX8C	1	0	1	0	0	down	Wu 2012:down
+oxphos	hits	COXFA4	3	0	3	0	0	down	Bakshi 2020:down;Lanz 2019:down;Wu 2012:down
+oxphos	hits	CTPS2	1	1	0	0	0	up	Zhu 2024:up
+oxphos	hits	CYB561	2	1	1	0	0	mixed	Lanz 2019:down;Maycox 2009:up
+oxphos	hits	CYC1	3	0	3	0	0	down	Altar 2005:down;Lanz 2019:down;Maycox 2009:down
+oxphos	hits	CYCS	1	0	1	0	0	down	Lanz 2019:down
+oxphos	hits	DHRS2	2	0	2	0	0	down	Bakshi 2020:down;Lanz 2019:down
+oxphos	hits	DNAJC30	2	0	2	0	0	down	Bakshi 2020:down;Lanz 2019:down
+oxphos	hits	ETFB	1	1	0	0	0	up	Wu 2012:up
+oxphos	hits	ETFDH	2	1	1	0	0	mixed	Maycox 2009:up;Zhu 2024:down
+oxphos	hits	GHITM	2	0	2	0	0	down	Lanz 2019:down;Maycox 2009:down
+oxphos	hits	HCCS	2	0	2	0	0	down	Bakshi 2020:down;Lanz 2019:down
+oxphos	hits	IMPDH2	1	0	1	0	0	down	Zhu 2024:down
+oxphos	hits	ISCU	2	0	2	0	0	down	Enwright 2018:down;Zhu 2024:down
+oxphos	hits	MACROH2A1	1	0	1	0	0	down	Lanz 2019:down
+oxphos	hits	MAP2K1	1	0	1	0	0	down	Lanz 2019:down
+oxphos	hits	MLXIPL	1	0	1	0	0	down	Zhu 2024:down
+oxphos	hits	MT-ATP6	1	0	1	0	0	down	Wu 2012:down
+oxphos	hits	MT-CO1	1	0	1	0	0	down	Wu 2012:down
+oxphos	hits	MT-CO2	1	0	1	0	0	down	Wu 2012:down
+oxphos	hits	MT-CYB	1	0	1	0	0	down	Wu 2012:down
+oxphos	hits	MT-ND1	2	1	1	0	0	mixed	Batiuk 2022:up;Wu 2012:down
+oxphos	hits	MT-ND2	1	0	1	0	0	down	Wu 2012:down
+oxphos	hits	MT-ND3	1	0	1	0	0	down	Wu 2012:down
+oxphos	hits	MT-ND4	1	1	0	0	0	up	Batiuk 2022:up
+oxphos	hits	MT-ND5	1	1	0	0	0	up	Wu 2012:up
+oxphos	hits	MT-ND6	1	1	0	0	0	up	Wu 2012:up
+oxphos	hits	NDUFA1	4	1	3	0	0	down	Enwright 2018:down;Lanz 2019:down;Wu 2012:up;Zhu 2024:down
+oxphos	hits	NDUFA10	2	0	2	0	0	down	Lanz 2019:down;Zhu 2024:down
+oxphos	hits	NDUFA11	2	0	2	0	0	down	Lanz 2019:down;Wu 2012:down
+oxphos	hits	NDUFA13	2	0	2	0	0	down	Enwright 2018:down;Lanz 2019:down
+oxphos	hits	NDUFA2	3	0	3	0	0	down	Bakshi 2020:down;Lanz 2019:down;Maycox 2009:down
+oxphos	hits	NDUFA3	1	0	1	0	0	down	Enwright 2018:down
+oxphos	hits	NDUFA5	1	0	1	0	0	down	Wu 2012:down
+oxphos	hits	NDUFA6	3	0	3	0	0	down	Enwright 2018:down;Lanz 2019:down;Maycox 2009:down
+oxphos	hits	NDUFA7	1	0	1	0	0	down	Maycox 2009:down
+oxphos	hits	NDUFA8	2	0	2	0	0	down	Arion 2015:down;Lanz 2019:down
+oxphos	hits	NDUFA9	2	0	2	0	0	down	Bakshi 2020:down;Lanz 2019:down
+oxphos	hits	NDUFAB1	3	0	3	0	0	down	Lanz 2019:down;Wu 2012:down;Zhu 2024:down
+oxphos	hits	NDUFAF1	2	0	2	0	0	down	Bakshi 2020:down;Lanz 2019:down
+oxphos	hits	NDUFB1	1	0	1	0	0	down	Zhu 2024:down
+oxphos	hits	NDUFB10	2	0	2	0	0	down	Lanz 2019:down;Zhu 2024:down
+oxphos	hits	NDUFB11	3	0	3	0	0	down	Lanz 2019:down;Wu 2012:down;Zhu 2024:down
+oxphos	hits	NDUFB2	4	0	4	0	0	down	Bakshi 2020:down;Enwright 2018:down;Lanz 2019:down;Wu 2012:down
+oxphos	hits	NDUFB3	3	0	3	0	0	down	Enwright 2018:down;Lanz 2019:down;Maycox 2009:down
+oxphos	hits	NDUFB4	1	0	1	0	0	down	Wu 2012:down
+oxphos	hits	NDUFB5	4	0	4	0	0	down	Altar 2005:down;Bakshi 2020:down;Batiuk 2022:down;Lanz 2019:down
+oxphos	hits	NDUFB6	2	0	2	0	0	down	Enwright 2018:down;Lanz 2019:down
+oxphos	hits	NDUFB7	3	0	3	0	0	down	Lanz 2019:down;Maycox 2009:down;Zhu 2024:down
+oxphos	hits	NDUFB8	1	0	1	0	0	down	Enwright 2018:down
+oxphos	hits	NDUFB9	2	0	2	0	0	down	Arion 2015:down;Enwright 2018:down
+oxphos	hits	NDUFC1	2	0	2	0	0	down	Wu 2012:down;Zhu 2024:down
+oxphos	hits	NDUFS1	2	0	2	0	0	down	Lanz 2019:down;Maycox 2009:down
+oxphos	hits	NDUFS2	3	0	3	0	0	down	Bakshi 2020:down;Enwright 2018:down;Lanz 2019:down
+oxphos	hits	NDUFS3	4	0	4	0	0	down	Enwright 2018:down;Lanz 2019:down;Maycox 2009:down;Zhu 2024:down
+oxphos	hits	NDUFS4	7	0	7	0	0	down	Altar 2005:down;Arion 2015:down;Bakshi 2020:down;Lanz 2019:down;Maycox 2009:down;Wu 2012:down;Zhu 2024:down
+oxphos	hits	NDUFS5	1	1	0	0	0	up	Wu 2012:up
+oxphos	hits	NDUFS6	2	0	2	0	0	down	Lanz 2019:down;Zhu 2024:down
+oxphos	hits	NDUFS7	2	0	2	0	0	down	Wu 2012:down;Zhu 2024:down
+oxphos	hits	NDUFS8	2	0	2	0	0	down	Maycox 2009:down;Zhu 2024:down
+oxphos	hits	NDUFV1	3	0	3	0	0	down	Arion 2015:down;Enwright 2018:down;Lanz 2019:down
+oxphos	hits	NDUFV2	2	0	2	0	0	down	Lanz 2019:down;Maycox 2009:down
+oxphos	hits	NDUFV3	2	0	2	0	0	down	Lanz 2019:down;Maycox 2009:down
+oxphos	hits	NME5	2	0	2	0	0	down	Lanz 2019:down;Zhu 2024:down
+oxphos	hits	NME7	1	0	1	0	0	down	Bakshi 2020:down
+oxphos	hits	PARK7	2	0	2	0	0	down	Lanz 2019:down;Maycox 2009:down
+oxphos	hits	PINK1	4	0	4	0	0	down	Bakshi 2020:down;Enwright 2018:down;Lanz 2019:down;Maycox 2009:down
+oxphos	hits	PLEC	1	0	1	0	0	down	Zhu 2024:down
+oxphos	hits	PPARGC1A	1	1	0	0	0	up	Bakshi 2020:up
+oxphos	hits	PRKAG2	3	1	2	0	0	down	Batiuk 2022:up;Enwright 2018:down;Lanz 2019:down
+oxphos	hits	SDHB	3	0	3	0	0	down	Bakshi 2020:down;Lanz 2019:down;Zhu 2024:down
+oxphos	hits	SDHC	1	0	1	0	0	down	Maycox 2009:down
+oxphos	hits	SDHD	1	0	1	0	0	down	Bakshi 2020:down
+oxphos	hits	SHMT2	1	0	1	0	0	down	Zhu 2024:down
+oxphos	hits	SNCA	2	1	1	0	0	mixed	Lanz 2019:down;Wu 2012:up
+oxphos	hits	SPHK2	1	0	1	0	0	down	Maycox 2009:down
+oxphos	hits	STAT3	1	1	0	0	0	up	Lanz 2019:up
+oxphos	hits	STOML2	1	0	1	0	0	down	Lanz 2019:down
+oxphos	hits	TEFM	1	0	1	0	0	down	Zhu 2024:down
+oxphos	hits	TMSB4X	3	1	2	0	0	down	Enwright 2018:down;Wu 2012:up;Zhu 2024:down
+oxphos	hits	TYMS	1	0	1	0	0	down	Lanz 2019:down
+oxphos	hits	UCK1	1	1	0	0	0	up	Enwright 2018:up
+oxphos	hits	UCKL1	1	1	0	0	0	up	Enwright 2018:up
+oxphos	hits	UQCR10	2	0	2	0	0	down	Bakshi 2020:down;Lanz 2019:down
+oxphos	hits	UQCR11	1	1	0	0	0	up	Maycox 2009:up
+oxphos	hits	UQCRB	2	0	2	0	0	down	Lanz 2019:down;Zhu 2024:down
+oxphos	hits	UQCRC1	4	0	4	0	0	down	Enwright 2018:down;Lanz 2019:down;Maycox 2009:down;Zhu 2024:down
+oxphos	hits	UQCRC2	2	0	2	0	0	down	Lanz 2019:down;Maycox 2009:down
+oxphos	hits	UQCRFS1	6	0	6	0	0	down	Altar 2005:down;Arion 2015:down;Bakshi 2020:down;Lanz 2019:down;Wu 2012:down;Zhu 2024:down
+oxphos	hits	UQCRH	1	0	1	0	0	down	Wu 2012:down
+oxphos	hits	UQCRQ	5	0	5	0	0	down	Arion 2015:down;Bakshi 2020:down;Lanz 2019:down;Maycox 2009:down;Zhu 2024:down
+oxphos	hits	VCP	1	1	0	0	0	up	Zhu 2024:up
+oxphos	hits	VPS9D1	1	0	1	0	0	down	Zhu 2024:down
+oxphos	terms	ABCD1	0					down	
+oxphos	terms	ACTN3	0					down	
+oxphos	terms	ADCY10	0					down	
+oxphos	terms	AIFM2	0					down	
+oxphos	terms	AK1	0					down	
+oxphos	terms	AK3	0					down	
+oxphos	terms	AK4	2					down	
+oxphos	terms	AK4P3	0					down	
+oxphos	terms	ALDOA	2					down	
+oxphos	terms	ANTKMT	2					down	
+oxphos	terms	ATP5F1A	2					down	
+oxphos	terms	ATP5F1B	4					down	
+oxphos	terms	ATP5F1C	4					down	
+oxphos	terms	ATP5F1D	4					down	
+oxphos	terms	ATP5F1E	1					down	
+oxphos	terms	ATP5F1EP2	1					down	
+oxphos	terms	ATP5IF1	5					down	
+oxphos	terms	ATP5MC1	3					down	
+oxphos	terms	ATP5MC2	0					down	
+oxphos	terms	ATP5MC3	5					down	
+oxphos	terms	ATP5ME	1					down	
+oxphos	terms	ATP5MF	1					down	
+oxphos	terms	ATP5MG	0					down	
+oxphos	terms	ATP5MGL	0					down	
+oxphos	terms	ATP5MJ	1					down	
+oxphos	terms	ATP5MK	1					down	
+oxphos	terms	ATP5PB	3					down	
+oxphos	terms	ATP5PD	1					down	
+oxphos	terms	ATP5PF	1					down	
+oxphos	terms	ATP5PO	2					down	
+oxphos	terms	ATP6V0C	1					down	
+oxphos	terms	ATP7A	0					down	
+oxphos	terms	ATPSCKMT	0					down	
+oxphos	terms	C2ORF69	0					down	
+oxphos	terms	CAD	0					down	
+oxphos	terms	CCNB1	2					down	
+oxphos	terms	CDADC1	3					down	
+oxphos	terms	CDK1	0					down	
+oxphos	terms	CHCHD2	2					down	
+oxphos	terms	CMPK2	0					down	
+oxphos	terms	COX11	2					down	
+oxphos	terms	COX4I1	2					down	
+oxphos	terms	COX4I2	1					down	
+oxphos	terms	COX5A	3					down	
+oxphos	terms	COX5B	2					down	
+oxphos	terms	COX6A1	0					down	
+oxphos	terms	COX6A2	0					down	
+oxphos	terms	COX6B1	3					down	
+oxphos	terms	COX6B2	1					down	
+oxphos	terms	COX6C	2					down	
+oxphos	terms	COX7A1	1					down	
+oxphos	terms	COX7A2	4					down	
+oxphos	terms	COX7A2L	0					down	
+oxphos	terms	COX7A2P2	0					down	
+oxphos	terms	COX7B	5					down	
+oxphos	terms	COX7B2	0					down	
+oxphos	terms	COX7C	3					down	
+oxphos	terms	COX8A	3					down	
+oxphos	terms	COX8C	1					down	
+oxphos	terms	COXFA4	3					down	
+oxphos	terms	COXFA4L2	0					down	
+oxphos	terms	CTPS1	0					down	
+oxphos	terms	CTPS2	1					down	
+oxphos	terms	CYB561	2					down	
+oxphos	terms	CYC1	3					down	
+oxphos	terms	CYCS	1					down	
+oxphos	terms	CYTC_OXIDASE_HUMAN	0					down	
+oxphos	terms	DGUOK	0					down	
+oxphos	terms	DHRS2	2					down	
+oxphos	terms	DNAJC30	2					down	
+oxphos	terms	DTYMK	0					down	
+oxphos	terms	ENO1	0					down	
+oxphos	terms	ENOX2	0					down	
+oxphos	terms	ETFA	0					down	
+oxphos	terms	ETFA-ETFB_HUMAN	0					down	
+oxphos	terms	ETFB	1					down	
+oxphos	terms	ETFDH	2					down	
+oxphos	terms	ETFRF1	0					down	
+oxphos	terms	FAM210B	0					down	
+oxphos	terms	FDX1	0					down	
+oxphos	terms	FDX2	0					down	
+oxphos	terms	GHITM	2					down	
+oxphos	terms	HCCS	2					down	
+oxphos	terms	HNF1A	0					down	
+oxphos	terms	HSA-MIR-210-3P	0					down	
+oxphos	terms	HSA-MIR-675-5P	0					down	
+oxphos	terms	IL4	0					down	
+oxphos	terms	IMPDH1	0					down	
+oxphos	terms	IMPDH2	1					down	
+oxphos	terms	ISCU	2					down	
+oxphos	terms	MACROH2A1	1					down	
+oxphos	terms	MAP2K1	1					down	
+oxphos	terms	MITO_F1F0_ATP_SYNTHASE_HUMAN	0					down	
+oxphos	terms	MLDHR	0					down	
+oxphos	terms	MLXIPL	1					down	
+oxphos	terms	MT-ATP6	1					down	
+oxphos	terms	MT-ATP8	0					down	
+oxphos	terms	MT-CO1	1					down	
+oxphos	terms	MT-CO2	1					down	
+oxphos	terms	MT-CO3	0					down	
+oxphos	terms	MT-CYB	1					down	
+oxphos	terms	MT-ND1	2					down	
+oxphos	terms	MT-ND2	1					down	
+oxphos	terms	MT-ND3	1					down	
+oxphos	terms	MT-ND4	1					down	
+oxphos	terms	MT-ND4L	0					down	
+oxphos	terms	MT-ND5	1					down	
+oxphos	terms	MT-ND6	1					down	
+oxphos	terms	NADH_UBQ_OXRED_HUMAN	0					down	
+oxphos	terms	NDOR1	0					down	
+oxphos	terms	NDUFA1	4					down	
+oxphos	terms	NDUFA10	2					down	
+oxphos	terms	NDUFA11	2					down	
+oxphos	terms	NDUFA12	0					down	
+oxphos	terms	NDUFA13	2					down	
+oxphos	terms	NDUFA2	3					down	
+oxphos	terms	NDUFA3	1					down	
+oxphos	terms	NDUFA5	1					down	
+oxphos	terms	NDUFA6	3					down	
+oxphos	terms	NDUFA7	1					down	
+oxphos	terms	NDUFA8	2					down	
+oxphos	terms	NDUFA9	2					down	
+oxphos	terms	NDUFAB1	3					down	
+oxphos	terms	NDUFAF1	2					down	
+oxphos	terms	NDUFB1	1					down	
+oxphos	terms	NDUFB10	2					down	
+oxphos	terms	NDUFB11	3					down	
+oxphos	terms	NDUFB2	4					down	
+oxphos	terms	NDUFB3	3					down	
+oxphos	terms	NDUFB4	1					down	
+oxphos	terms	NDUFB5	4					down	
+oxphos	terms	NDUFB6	2					down	
+oxphos	terms	NDUFB7	3					down	
+oxphos	terms	NDUFB8	1					down	
+oxphos	terms	NDUFB9	2					down	
+oxphos	terms	NDUFC1	2					down	
+oxphos	terms	NDUFC2	0					down	
+oxphos	terms	NDUFC2-KCTD14	0					down	
+oxphos	terms	NDUFS1	2					down	
+oxphos	terms	NDUFS2	3					down	
+oxphos	terms	NDUFS3	4					down	
+oxphos	terms	NDUFS4	7					down	
+oxphos	terms	NDUFS5	1					down	
+oxphos	terms	NDUFS6	2					down	
+oxphos	terms	NDUFS7	2					down	
+oxphos	terms	NDUFS8	2					down	
+oxphos	terms	NDUFV1	3					down	
+oxphos	terms	NDUFV2	2					down	
+oxphos	terms	NDUFV3	2					down	
+oxphos	terms	NME1	0					down	
+oxphos	terms	NME2	0					down	
+oxphos	terms	NME2P1	0					down	
+oxphos	terms	NME3	0					down	
+oxphos	terms	NME4	0					down	
+oxphos	terms	NME5	2					down	
+oxphos	terms	NME6	0					down	
+oxphos	terms	NME7	1					down	
+oxphos	terms	NME9	0					down	
+oxphos	terms	NUDT2	0					down	
+oxphos	terms	NUPR1	0					down	
+oxphos	terms	PARK7	2					down	
+oxphos	terms	PARP1	0					down	
+oxphos	terms	PDIA5	0					down	
+oxphos	terms	PID1	0					down	
+oxphos	terms	PINK1	4					down	
+oxphos	terms	PLEC	1					down	
+oxphos	terms	POR	0					down	
+oxphos	terms	PPARA	0					down	
+oxphos	terms	PPARGC1A	1					down	
+oxphos	terms	PPIF	0					down	
+oxphos	terms	PRKAG2	3					down	
+oxphos	terms	PRKN	0					down	
+oxphos	terms	RHOA	0					down	
+oxphos	terms	SDHA	0					down	
+oxphos	terms	SDHAF2	0					down	
+oxphos	terms	SDHB	3					down	
+oxphos	terms	SDHC	1					down	
+oxphos	terms	SDHD	1					down	
+oxphos	terms	SHMT2	1					down	
+oxphos	terms	SIRT3	0					down	
+oxphos	terms	SLC25A13	0					down	
+oxphos	terms	SLC25A33	0					down	
+oxphos	terms	SLC25A51	0					down	
+oxphos	terms	SNCA	2					down	
+oxphos	terms	SPHK2	1					down	
+oxphos	terms	STAT3	1					down	
+oxphos	terms	STOML2	1					down	
+oxphos	terms	SUCCINATE_DH_HUMAN	0					down	
+oxphos	terms	TAFAZZIN	0					down	
+oxphos	terms	TEFM	1					down	
+oxphos	terms	TGFB1	0					down	
+oxphos	terms	TMSB4X	3					down	
+oxphos	terms	TNF	0					down	
+oxphos	terms	TREM2	0					down	
+oxphos	terms	TYMS	1					down	
+oxphos	terms	UBOL_CYTC_HUMAN	0					down	
+oxphos	terms	UCK1	1					down	
+oxphos	terms	UCK2	0					down	
+oxphos	terms	UCKL1	1					down	
+oxphos	terms	UQCC2	0					down	
+oxphos	terms	UQCC3	0					down	
+oxphos	terms	UQCR10	2					down	
+oxphos	terms	UQCR11	1					down	
+oxphos	terms	UQCRB	2					down	
+oxphos	terms	UQCRC1	4					down	
+oxphos	terms	UQCRC2	2					down	
+oxphos	terms	UQCRFS1	6					down	
+oxphos	terms	UQCRFS1P1	0					down	
+oxphos	terms	UQCRH	1					down	
+oxphos	terms	UQCRHL	0					down	
+oxphos	terms	UQCRQ	5					down	
+oxphos	terms	URS0000812128_9606	0					down	
+oxphos	terms	VCP	1					down	
+oxphos	terms	VPS54	0					down	
+oxphos	terms	VPS9D1	1					down	
+oxphos	terms	WDR93	0					down	
+myelin	hits	ABCA2	2	0	2	0	0	down	Benjamin 2022:down;Narayan 2008:down
+myelin	hits	ABCD1	1	0	1	0	0	down	Benjamin 2022:down
+myelin	hits	ABCD2	1	0	1	0	0	down	Narayan 2008:down
+myelin	hits	ACSBG1	1	1	0	0	0	up	Kwon 2026:up
+myelin	hits	ANK2	1	0	1	0	0	down	Narayan 2008:down
+myelin	hits	B4GALT5	1	1	0	0	0	up	Benjamin 2022:up
+myelin	hits	B4GALT6	1	0	1	0	0	down	Arion 2010:down
+myelin	hits	BCAS1	3	2	1	0	0	up	Benjamin 2022:down;Kwon 2026:up;Narayan 2008:up
+myelin	hits	CADM4	1	0	1	0	0	down	Benjamin 2022:down
+myelin	hits	CD9	2	0	2	0	0	down	Arion 2010:down;Benjamin 2022:down
+myelin	hits	CNTN1	2	0	2	0	0	down	Arion 2010:down;Narayan 2008:down
+myelin	hits	DICER1	1	0	1	0	0	down	Arion 2010:down
+myelin	hits	EIF2AK3	1	0	1	0	0	down	Arion 2010:down
+myelin	hits	EIF2B2	1	0	1	0	0	down	Kwon 2026:down
+myelin	hits	EIF2B4	1	1	0	0	0	up	Arion 2010:up
+myelin	hits	ERBB3	3	0	3	0	0	down	Aston 2004:down;Benjamin 2022:down;Narayan 2008:down
+myelin	hits	GAL3ST1	1	0	0	1	0	mixed	Narayan 2008:both
+myelin	hits	GPC1	2	2	0	0	0	up	Arion 2010:up;Kwon 2026:up
+myelin	hits	GPM6B	2	0	1	0	1	down	Benjamin 2022:down;Zhao 2015:none
+myelin	hits	IGF1	1	0	1	0	0	down	Benjamin 2022:down
+myelin	hits	ITGAX	1	0	1	0	0	down	Kwon 2026:down
+myelin	hits	JAM2	1	1	0	0	0	up	Kwon 2026:up
+myelin	hits	KLK6	3	0	3	0	0	down	Benjamin 2022:down;Kwon 2026:down;Narayan 2008:down
+myelin	hits	LPAR1	2	0	2	0	0	down	Arion 2010:down;Benjamin 2022:down
+myelin	hits	MAG	4	0	4	0	0	down	Aston 2004:down;Benjamin 2022:down;Kwon 2026:down;Narayan 2008:down
+myelin	hits	MAL	1	0	1	0	0	down	Benjamin 2022:down
+myelin	hits	MAL2	1	1	0	0	0	up	Benjamin 2022:up
+myelin	hits	MAPK1	1	0	1	0	0	down	Narayan 2008:down
+myelin	hits	MAPK3	2	1	1	0	0	mixed	Benjamin 2022:down;Kwon 2026:up
+myelin	hits	MBP	2	1	1	0	0	mixed	Benjamin 2022:down;Kwon 2026:up
+myelin	hits	MIOS	1	1	0	0	0	up	Arion 2010:up
+myelin	hits	MYRF	1	0	1	0	0	down	Narayan 2008:down
+myelin	hits	NDRG1	2	0	1	0	1	down	Benjamin 2022:down;Zhao 2015:none
+myelin	hits	NF1	2	0	2	0	0	down	Arion 2010:down;Narayan 2008:down
+myelin	hits	NKX6-2	1	0	1	0	0	down	Benjamin 2022:down
+myelin	hits	OLIG2	1	0	1	0	0	down	Benjamin 2022:down
+myelin	hits	PARD3	1	1	0	0	0	up	Benjamin 2022:up
+myelin	hits	PLEC	1	1	0	0	0	up	Kwon 2026:up
+myelin	hits	PLLP	3	0	3	0	0	down	Aston 2004:down;Benjamin 2022:down;Narayan 2008:down
+myelin	hits	PLP1	3	0	3	0	0	down	Arion 2010:down;Benjamin 2022:down;Kwon 2026:down
+myelin	hits	PMP22	2	0	1	0	1	down	Benjamin 2022:down;Zhao 2015:none
+myelin	hits	POU3F1	1	0	1	0	0	down	Benjamin 2022:down
+myelin	hits	PTEN	2	2	0	0	0	up	Benjamin 2022:up;Kwon 2026:up
+myelin	hits	PTN	1	0	1	0	0	down	Benjamin 2022:down
+myelin	hits	QKI	2	0	2	0	0	down	Arion 2010:down;Benjamin 2022:down
+myelin	hits	RAF1	1	1	0	0	0	up	Kwon 2026:up
+myelin	hits	S100B	1	1	0	0	0	up	Narayan 2008:up
+myelin	hits	SBF2	1	1	0	0	0	up	Kwon 2026:up
+myelin	hits	SCN2A	1	0	1	0	0	down	Arion 2010:down
+myelin	hits	SCN8A	1	1	0	0	0	up	Benjamin 2022:up
+myelin	hits	SELENOI	2	0	2	0	0	down	Arion 2010:down;Kwon 2026:down
+myelin	hits	SIRT2	1	0	1	0	0	down	Benjamin 2022:down
+myelin	hits	SOS1	2	1	1	0	0	mixed	Benjamin 2022:up;Narayan 2008:down
+myelin	hits	SOX10	3	0	2	0	1	down	Benjamin 2022:down;Narayan 2008:down;Zhao 2015:none
+myelin	hits	TENM4	2	2	0	0	0	up	Arion 2010:up;Benjamin 2022:up
+myelin	hits	TGFB1	1	1	0	0	0	up	Narayan 2008:up
+myelin	hits	TMEM98	1	1	0	0	0	up	Narayan 2008:up
+myelin	hits	TNFRSF21	1	0	1	0	0	down	Kwon 2026:down
+myelin	hits	TPPP	2	0	2	0	0	down	Benjamin 2022:down;Narayan 2008:down
+myelin	hits	UGT8	4	0	4	0	0	down	Arion 2010:down;Benjamin 2022:down;Kwon 2026:down;Narayan 2008:down
+myelin	hits	ZNF24	1	0	1	0	0	down	Benjamin 2022:down
+myelin	terms	ABCA2	2					down	
+myelin	terms	ABCD1	1					down	
+myelin	terms	ABCD2	1					down	
+myelin	terms	ACER3	0					down	
+myelin	terms	ACSBG1	1					down	
+myelin	terms	ADGRG6	0					down	
+myelin	terms	AMIGO1	0					down	
+myelin	terms	ANK2	1					down	
+myelin	terms	ARHGEF10	0					down	
+myelin	terms	B4GALT5	1					down	
+myelin	terms	B4GALT6	1					down	
+myelin	terms	BCAS1	3					down	
+myelin	terms	CADM4	1					down	
+myelin	terms	CD9	2					down	
+myelin	terms	CDK18	0					down	
+myelin	terms	CFH	0					down	
+myelin	terms	CLDN5	0					down	
+myelin	terms	CLU	0					down	
+myelin	terms	CMTM8	0					down	
+myelin	terms	CNTN1	2					down	
+myelin	terms	CNTNAP1	0					down	
+myelin	terms	CST7	0					down	
+myelin	terms	CXCR4	0					down	
+myelin	terms	DAG1	0					down	
+myelin	terms	DEGS1	0					down	
+myelin	terms	DHH	0					down	
+myelin	terms	DICER1	1					down	
+myelin	terms	EGR2	0					down	
+myelin	terms	EIF2AK3	1					down	
+myelin	terms	EIF2B2	1					down	
+myelin	terms	EIF2B4	1					down	
+myelin	terms	EIF2B5	0					down	
+myelin	terms	EPB41L3	0					down	
+myelin	terms	ERBB3	3					down	
+myelin	terms	GAL3ST1	1					down	
+myelin	terms	GPC1	2					down	
+myelin	terms	GPM6B	2					down	
+myelin	terms	GRB2	0					down	
+myelin	terms	HES5	0					down	
+myelin	terms	HRAS	0					down	
+myelin	terms	HSA-MIR-26A-5P	0					down	
+myelin	terms	HYCC1	0					down	
+myelin	terms	IGF1	1					down	
+myelin	terms	ITGAX	1					down	
+myelin	terms	JAM2	1					down	
+myelin	terms	KIF14	0					down	
+myelin	terms	KLK6	3					down	
+myelin	terms	LGI4	0					down	
+myelin	terms	LPAR1	2					down	
+myelin	terms	LPIN1	0					down	
+myelin	terms	MAG	4					down	
+myelin	terms	MAL	1					down	
+myelin	terms	MAL2	1					down	
+myelin	terms	MALL	0					down	
+myelin	terms	MAP2K1	0					down	
+myelin	terms	MAPK1	1					down	
+myelin	terms	MAPK3	2					down	
+myelin	terms	MARVELD1	0					down	
+myelin	terms	MBP	2					down	
+myelin	terms	MIOS	1					down	
+myelin	terms	MPZ	0					down	
+myelin	terms	MYOC	0					down	
+myelin	terms	MYRF	1					down	
+myelin	terms	NCMAP	0					down	
+myelin	terms	NDRG1	2					down	
+myelin	terms	NF1	2					down	
+myelin	terms	NFASC	0					down	
+myelin	terms	NKX6-2	1					down	
+myelin	terms	NRDC	0					down	
+myelin	terms	NSUN5	0					down	
+myelin	terms	OLIG2	1					down	
+myelin	terms	PALS1	0					down	
+myelin	terms	PARD3	1					down	
+myelin	terms	PI4KA	0					down	
+myelin	terms	PLEC	1					down	
+myelin	terms	PLLP	3					down	
+myelin	terms	PLP1	3					down	
+myelin	terms	PMP22	2					down	
+myelin	terms	POU3F1	1					down	
+myelin	terms	PPARD	0					down	
+myelin	terms	PRX	0					down	
+myelin	terms	PTEN	2					down	
+myelin	terms	PTN	1					down	
+myelin	terms	PTPRZ1	0					down	
+myelin	terms	QKI	2					down	
+myelin	terms	RAF1	1					down	
+myelin	terms	RARA	0					down	
+myelin	terms	RNF10	0					down	
+myelin	terms	RNF220	0					down	
+myelin	terms	S100B	1					down	
+myelin	terms	SBF2	1					down	
+myelin	terms	SCN2A	1					down	
+myelin	terms	SCN8A	1					down	
+myelin	terms	SELENOI	2					down	
+myelin	terms	SIRT2	1					down	
+myelin	terms	SKI	0					down	
+myelin	terms	SLC8A3	0					down	
+myelin	terms	SOD1	0					down	
+myelin	terms	SOS1	2					down	
+myelin	terms	SOX10	3					down	
+myelin	terms	TENM4	2					down	
+myelin	terms	TGFB1	1					down	
+myelin	terms	TMEM163	0					down	
+myelin	terms	TMEM98	1					down	
+myelin	terms	TNF	0					down	
+myelin	terms	TNFRSF1B	0					down	
+myelin	terms	TNFRSF21	1					down	
+myelin	terms	TPPP	2					down	
+myelin	terms	UGT8	4					down	
+myelin	terms	ZNF24	1					down	
+myelin	terms	ZNF488	0					down	
+myelin	terms	ZPR1	0					down	
+microglia	hits	AIF1	2	0	2	0	0	down	Kwon 2026:down;Schmitt 2011:down
+microglia	hits	C1QA	1	0	1	0	0	down	Kwon 2026:down
+microglia	hits	CCL3	1	0	1	0	0	down	Schmitt 2011:down
+microglia	hits	CST7	1	0	1	0	0	down	Fillman 2013:down
+microglia	hits	CX3CR1	1	0	1	0	0	down	Kwon 2026:down
+microglia	hits	IL1B	2	1	1	0	0	mixed	Fillman 2013:up;Schmitt 2011:down
+microglia	hits	IL1R1	1	1	0	0	0	up	Fillman 2013:up
+microglia	hits	IL1RAP	1	0	1	0	0	down	Schmitt 2011:down
+microglia	hits	IL6	1	1	0	0	0	up	Fillman 2013:up
+microglia	hits	ITGAM	1	0	1	0	0	down	Schmitt 2011:down
+microglia	hits	ITGB2	1	0	1	0	0	down	Kwon 2026:down
+microglia	hits	MMP8	1	0	1	0	0	down	Fillman 2013:down
+microglia	hits	NR1D1	1	1	0	0	0	up	Kwon 2026:up
+microglia	hits	PTPRC	3	1	2	0	0	down	Fillman 2013:up;Kwon 2026:down;Schmitt 2011:down
+microglia	hits	TLR9	1	1	0	0	0	up	Fillman 2013:up
+microglia	hits	TREM2	2	0	2	0	0	down	Kwon 2026:down;Schmitt 2011:down
+microglia	hits	TYROBP	2	0	2	0	0	down	Kwon 2026:down;Schmitt 2011:down
+microglia	terms	ABETA-40-42-OLIGOMER_HUMAN	0					down	
+microglia	terms	ABETA-40-42_HUMAN	0					down	
+microglia	terms	ABETA-40-OLIGOMER_HUMAN	0					down	
+microglia	terms	ABETA-42-OLIGOMER_HUMAN	0					down	
+microglia	terms	AGER	0					down	
+microglia	terms	AIF1	2					down	
+microglia	terms	APP	0					down	
+microglia	terms	AZU1	0					down	
+microglia	terms	C1QA	1					down	
+microglia	terms	C5AR1	0					down	
+microglia	terms	CALHM2	0					down	
+microglia	terms	CCL3	1					down	
+microglia	terms	CLU	0					down	
+microglia	terms	CST7	1					down	
+microglia	terms	CX3CL1	0					down	
+microglia	terms	CX3CR1	1					down	
+microglia	terms	FPR2	0					down	
+microglia	terms	GRN	0					down	
+microglia	terms	HSA-MIR-142-3P	0					down	
+microglia	terms	HSA-MIR-181C-5P	0					down	
+microglia	terms	IFNG	0					down	
+microglia	terms	IFNGR1	0					down	
+microglia	terms	IFNGR2	0					down	
+microglia	terms	IL13	0					down	
+microglia	terms	IL1B	2					down	
+microglia	terms	IL1B-IL1MR1_HUMAN-1	0					down	
+microglia	terms	IL1R1	1					down	
+microglia	terms	IL1RAP	1					down	
+microglia	terms	IL33	0					down	
+microglia	terms	IL6	1					down	
+microglia	terms	INTG_AM_B2_HUMAN	0					down	
+microglia	terms	ITGAM	1					down	
+microglia	terms	ITGB2	1					down	
+microglia	terms	JAK2	0					down	
+microglia	terms	LDLR	0					down	
+microglia	terms	LRRK2	0					down	
+microglia	terms	MAPT	0					down	
+microglia	terms	MMP8	1					down	
+microglia	terms	NR1D1	1					down	
+microglia	terms	PTPRC	3					down	
+microglia	terms	SNCA	0					down	
+microglia	terms	SPHK1	0					down	
+microglia	terms	STAP1	0					down	
+microglia	terms	SYT11	0					down	
+microglia	terms	TAFA3	0					down	
+microglia	terms	TLR1	0					down	
+microglia	terms	TLR6	0					down	
+microglia	terms	TLR9	1					down	
+microglia	terms	TNF	0					down	
+microglia	terms	TREM2	2					down	
+microglia	terms	TTBK1	0					down	
+microglia	terms	TYROBP	2					down	
+microglia	terms	URS000020BE6A_9606	0					down	
+microglia	terms	URS0000338542_9606	0					down	

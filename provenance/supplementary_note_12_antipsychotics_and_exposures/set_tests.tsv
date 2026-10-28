@@ -1,0 +1,49 @@
+# medication/scripts/analysis.py, NPERM 5000, seed 20260926; matched on DE-prior quintile x LIBD DLPFC expression decile
+# resp = mean |z| over the set's measured genes (drug vs vehicle); dir = mean sz_sign x z (positive: drug moves genes the way SZ does)
+set	unit	class	n_set_genes	n_measured	n_p05	resp_obs	resp_null_mean	resp_p	dir_obs	dir_null_mean	dir_p	n_sig_same_as_sz	n_sig_opposite_sz
+recurrent (study_brain, uniform q < 0.1)	GSE119772_hypothalamus	chronic	383	354	118	1.558	1.399	0.0012	0.6323	0.06446	0.0002	84	31
+recurrent (study_brain, uniform q < 0.1)	GSE163161_iN	cells	383	325	53	1.146	1.173	0.7361	-0.1926	-0.08574	0.1472	26	25
+recurrent (study_brain, uniform q < 0.1)	GSE180473_striatum	chronic	383	373	5	0.6123	0.6157	0.5505	0.04397	-0.0108	0.192	3	2
+recurrent (study_brain, uniform q < 0.1)	GSE197966_NT2N	cells	383	368	194	2.551	2.585	0.6375	-0.1789	-0.1933	0.9292	88	102
+recurrent (study_brain, uniform q < 0.1)	GSE227464_striatum	chronic	383	369	71	1.199	1.034	0.0002	0.1641	-0.03965	0.0016	41	30
+recurrent (study_brain, uniform q < 0.1)	GSE2547_frontal_cortex	chronic	383	331	26	0.9675	0.9626	0.4447	0.1297	0.02443	0.1018	14	11
+recurrent (study_brain, uniform q < 0.1)	GSE268867_lateral_septum	chronic	383	378	83	1.271	1.33	0.8838	-0.3407	0.03957	0.0002	28	53
+recurrent (study_brain, uniform q < 0.1)	GSE36678_SKNSH	cells	383	377	252	3.47	3.348	0.1324	-0.9709	-0.2619	0.0005999	94	152
+recurrent (study_brain, uniform q < 0.1)	GSE4031_cortex	chronic	383	331	13	0.7281	0.7056	0.2272	0.09616	-0.0054	0.04319	5	8
+recurrent (study_brain, uniform q < 0.1)	GSE45229_frontal_cortex	chronic	383	368	22	0.8248	0.7997	0.2092	-0.03618	-0.03118	0.922	10	12
+recurrent (study_brain, uniform q < 0.1)	GSE45229_striatum	chronic	383	368	29	0.9655	0.9455	0.2833	0.0109	0.05609	0.4579	13	16
+recurrent (study_brain, uniform q < 0.1)	GSE48954_striatum	acute	383	360	22	0.9243	0.8641	0.02579	0.09494	0.003658	0.09118	13	9
+recurrent (study_brain, uniform q < 0.1)	GSE59895_brain	acute	383	153	24	1.07	1.166	0.8996	0.3566	0.03487	0.006999	16	7
+recurrent (study_brain, uniform q < 0.1)	GSE6467_brain	chronic	383	300	42	1.044	1.073	0.7305	0.1058	0.06549	0.6041	25	16
+recurrent (study_brain, uniform q < 0.1)	GSE6511_brain	chronic	383	217	19	0.952	0.9246	0.2791	-0.3355	-0.1128	0.004399	5	14
+recurrent (study_brain, uniform q < 0.1)	GSE66275_3regions	chronic	383	330	41	1.01	0.9856	0.2603	0.06496	0.0534	0.866	26	15
+recurrent (study_brain, uniform q < 0.1)	GSE67723_striatum	chronic	383	367	98	1.522	1.404	0.0024	0.3206	0.006701	0.0003999	64	34
+recurrent (study_brain, uniform q < 0.1)	GSE67750_striatum	chronic	383	371	12	0.7769	0.8252	0.9584	0.1807	0.1189	0.1982	9	3
+recurrent (study_brain, uniform q < 0.1)	GSE67753_whole_brain	chronic	383	375	167	1.74	1.816	0.932	0.2736	0.3483	0.4487	96	69
+recurrent (study_brain, uniform q < 0.1)	GSE93918_PFC	chronic	383	366	72	1.267	1.114	0.0003999	0.01009	-0.05971	0.3381	37	33
+recurrent (study_brain, uniform q < 0.1)	ALL chronic (15 units)	chronic	383		818	1.096	1.062	0.002999	0.08803	0.03452	0.006999	460	347
+recurrent (study_brain, uniform q < 0.1)	ALL acute (2 units)	acute	383		46	0.9973	1.015	0.6729	0.2258	0.01926	0.0016	29	16
+recurrent (study_brain, uniform q < 0.1)	ALL cells (3 units)	cells	383		499	2.389	2.369	0.3515	-0.4475	-0.1803	0.008798	208	279
+recurrent (expression-matched q < 0.1)	GSE119772_hypothalamus	chronic	138	106	33	1.561	1.339	0.008998	0.6379	0.08685	0.0009998	23	9
+recurrent (expression-matched q < 0.1)	GSE163161_iN	cells	138	90	16	1.132	1.093	0.2897	-0.08021	-0.06645	0.9102	8	8
+recurrent (expression-matched q < 0.1)	GSE180473_striatum	chronic	138	124	4	0.6418	0.6544	0.5997	0.03627	-0.02306	0.4169	2	2
+recurrent (expression-matched q < 0.1)	GSE197966_NT2N	cells	138	130	64	2.534	2.377	0.1616	-0.0264	-0.2727	0.3395	30	32
+recurrent (expression-matched q < 0.1)	GSE227464_striatum	chronic	138	118	27	1.322	1.016	0.0002	0.3418	-0.007459	0.002	19	8
+recurrent (expression-matched q < 0.1)	GSE2547_frontal_cortex	chronic	138	106	7	0.9661	0.9595	0.4531	0.2182	0.0379	0.1124	3	4
+recurrent (expression-matched q < 0.1)	GSE268867_lateral_septum	chronic	138	125	28	1.377	1.23	0.03039	-0.311	-0.08646	0.09038	11	17
+recurrent (expression-matched q < 0.1)	GSE36678_SKNSH	cells	138	128	73	3.146	3.085	0.3783	-1.047	-0.3681	0.04079	26	46
+recurrent (expression-matched q < 0.1)	GSE4031_cortex	chronic	138	106	4	0.738	0.6824	0.1394	-0.002597	-0.03719	0.6863	0	4
+recurrent (expression-matched q < 0.1)	GSE45229_frontal_cortex	chronic	138	122	8	0.9278	0.7912	0.005599	-0.08783	-0.01153	0.3859	3	5
+recurrent (expression-matched q < 0.1)	GSE45229_striatum	chronic	138	122	10	0.9289	0.89	0.2494	-0.1237	0.07444	0.04479	4	6
+recurrent (expression-matched q < 0.1)	GSE48954_striatum	acute	138	118	11	1.039	0.8397	0.0002	0.2763	0.001465	0.004999	9	2
+recurrent (expression-matched q < 0.1)	GSE59895_brain	acute	138	45	10	1.313	1.152	0.1042	0.638	0.08486	0.007798	8	2
+recurrent (expression-matched q < 0.1)	GSE6467_brain	chronic	138	108	16	1.018	1.012	0.4559	0.07759	0.07491	0.9812	9	7
+recurrent (expression-matched q < 0.1)	GSE6511_brain	chronic	138	82	5	0.9463	0.9213	0.3671	-0.3605	-0.1126	0.06859	1	4
+recurrent (expression-matched q < 0.1)	GSE66275_3regions	chronic	138	106	13	0.9263	0.9211	0.4627	-0.05208	0.09616	0.168	7	6
+recurrent (expression-matched q < 0.1)	GSE67723_striatum	chronic	138	122	36	1.58	1.321	0.0003999	0.5849	0.01227	0.0002	29	7
+recurrent (expression-matched q < 0.1)	GSE67750_striatum	chronic	138	119	7	0.757	0.8015	0.7992	0.2239	0.06432	0.06879	6	1
+recurrent (expression-matched q < 0.1)	GSE67753_whole_brain	chronic	138	126	48	1.645	1.636	0.4585	0.4885	0.3939	0.5353	30	16
+recurrent (expression-matched q < 0.1)	GSE93918_PFC	chronic	138	118	24	1.236	1.059	0.0114	0.05396	-0.03617	0.4775	15	9
+recurrent (expression-matched q < 0.1)	ALL chronic (15 units)	chronic	138		270	1.105	1.016	0.0002	0.115	0.03509	0.0152	162	105
+recurrent (expression-matched q < 0.1)	ALL acute (2 units)	acute	138		21	1.176	0.9959	0.007598	0.4571	0.04316	0.0003999	17	4
+recurrent (expression-matched q < 0.1)	ALL cells (3 units)	cells	138		153	2.271	2.185	0.1814	-0.3846	-0.2357	0.3713	64	86

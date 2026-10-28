@@ -1,0 +1,111 @@
+# figure: fig02 panel e
+# script: analyses/figure_exports/export_fig02_fig07.py, run 2026-10-16
+# population: 72 primary brain studies (recurrence.py scenario 'published, brain', study tier); n_k = |M_k| (RECURRENCE_NK=membership); analysis set = the 383 study-tier genes of analyses/confounds/recurrent_sets.tsv (set study_brain; the in-place recurrence_genes.tsv gives 383 at q < 0.1); recurrence.tsv sha256 bcbf50f8e334; corpus/lineage.json sha256 4f919a83fea3
+# input: analyses/h3/h3_pairs.tsv sha256 049da3b58377
+# pairs of the 15 brain cross-cohort meta-analyses with lists (tissue_set brain, both_cross_cohort yes); pair_id = unit_a_unit_b; share_inputs = at least one input dataset in common; same_technology = tech_a == tech_b; shares_cohort_cluster = n_shared_cohorts > 0
+pair_id	share_inputs	fold_deprior	same_technology	shares_cohort_cluster	n_shared_datasets	dataset_jaccard	n_shared_cohorts	overlap	expected_deprior	fold_uniform	label_a	label_b	tech_a	tech_b
+22954356_22212594	yes	15.2915	yes	yes	5	0.6250	5	20	1.3079	21.2401	Pérez-Santiago 2012	Mistry 2013	microarray	microarray
+22954356_26285829:brain	yes	9.6134	yes	yes	3	0.2308	4	34	3.5367	13.3532	Pérez-Santiago 2012	Bergon 2015	microarray	microarray
+22954356_27450777:brain	yes	13.5412	yes	yes	5	0.5000	5	15	1.1077	18.8090	Pérez-Santiago 2012	Hess 2016	microarray	microarray
+22954356_26818902	yes	10.1221	yes	yes	5	0.7143	5	82	8.1011	14.0597	Pérez-Santiago 2012	Qin 2016	microarray	microarray
+22954356_30545856	no	2.3663	no	yes	0	0.0000	1	105	44.3740	3.1187	Pérez-Santiago 2012	Gandal 2018 (RNA-seq)	microarray	rnaseq
+22954356_29439242	yes	3.6536	yes	yes	2	0.2222	4	104	28.4649	4.9164	Pérez-Santiago 2012	Gandal 2018 (arrays)	microarray	microarray
+22954356_35660966	yes	22.8947	yes	yes	2	0.1429	4	11	0.4805	31.8011	Pérez-Santiago 2012	Li 2022	microarray	microarray
+22954356_36090817	no	11.8163	no	yes	0	0.0000	1	10	0.8463	15.4841	Pérez-Santiago 2012	Sadeghi 2022	microarray	rnaseq
+22954356_36462601	yes	0.0000	yes	yes	1	0.1000	3	0	0.0934	0.0000	Pérez-Santiago 2012	Bharadhwaj 2023	microarray	microarray
+22954356_36424395	yes	3.6934	yes	yes	2	0.2222	4	20	5.4151	4.8295	Pérez-Santiago 2012	Chen 2023	microarray	microarray
+22954356_40727846	no	4.0732	no	yes	0	0.0000	1	18	4.4191	5.3928	Pérez-Santiago 2012	Priyanka 2025	microarray	rnaseq
+22954356_41422210	yes	0.7055	yes	yes	1	0.1111	3	5	7.0868	0.9800	Pérez-Santiago 2012	Rebouças 2025	microarray	microarray
+22954356_40796563	no	1.1527	no	yes	0	0.0000	2	1	0.8675	1.6012	Pérez-Santiago 2012	Nakatsuka 2025	microarray	snrnaseq
+22954356_doi_10.64898_2026.09.18.752621	no	1.6419	no	yes	0	0.0000	2	63	38.3701	2.2806	Pérez-Santiago 2012	Endresz 2026 (bioRxiv)	microarray	snrnaseq
+22212594_26285829:brain	yes	1.8898	yes	yes	3	0.2143	4	5	2.6458	2.6250	Mistry 2013	Bergon 2015	microarray	microarray
+22212594_27450777:brain	yes	12.0674	yes	yes	5	0.4545	5	10	0.8287	16.7617	Mistry 2013	Hess 2016	microarray	microarray
+22212594_26818902	yes	11.5505	yes	yes	6	0.8571	5	70	6.0604	16.0438	Mistry 2013	Qin 2016	microarray	microarray
+22212594_30545856	no	1.3289	no	yes	0	0.0000	1	44	33.1098	1.7515	Mistry 2013	Gandal 2018 (RNA-seq)	microarray	rnaseq
+22212594_29439242	yes	3.1131	yes	yes	2	0.2000	4	64	20.5580	4.1891	Mistry 2013	Gandal 2018 (arrays)	microarray	microarray
+22212594_35660966	yes	5.5644	yes	yes	2	0.1333	4	2	0.3594	7.7290	Mistry 2013	Li 2022	microarray	microarray
+22212594_36090817	no	1.5755	no	yes	0	0.0000	1	1	0.6347	2.0645	Mistry 2013	Sadeghi 2022	microarray	rnaseq
+22212594_36462601	yes	0.0000	yes	yes	1	0.0909	3	0	0.0699	0.0000	Mistry 2013	Bharadhwaj 2023	microarray	microarray
+22212594_36424395	yes	3.8780	yes	yes	2	0.2000	4	7	1.8050	5.0710	Mistry 2013	Chen 2023	microarray	microarray
+22212594_40727846	no	0.6112	no	yes	0	0.0000	1	2	3.2722	0.8092	Mistry 2013	Priyanka 2025	microarray	rnaseq
+22212594_41422210	yes	1.5090	yes	yes	1	0.1000	3	8	5.3016	2.0960	Mistry 2013	Rebouças 2025	microarray	microarray
+22212594_40796563	no	1.5409	no	yes	0	0.0000	2	1	0.6490	2.1403	Mistry 2013	Nakatsuka 2025	microarray	snrnaseq
+22212594_doi_10.64898_2026.09.18.752621	no	1.7071	no	yes	0	0.0000	2	49	28.7043	2.3711	Mistry 2013	Endresz 2026 (bioRxiv)	microarray	snrnaseq
+26285829:brain_27450777:brain	yes	4.9636	yes	yes	4	0.2667	4	8	1.6117	7.1725	Bergon 2015	Hess 2016	microarray	microarray
+26285829:brain_26818902	yes	4.5156	yes	yes	3	0.2308	4	74	16.3877	6.2722	Bergon 2015	Qin 2016	microarray	microarray
+26285829:brain_30545856	no	1.7003	no	yes	0	0.0000	1	145	85.2802	2.2452	Bergon 2015	Gandal 2018 (RNA-seq)	microarray	rnaseq
+26285829:brain_29439242	yes	1.8406	yes	yes	3	0.2500	4	100	54.3313	2.4774	Bergon 2015	Gandal 2018 (arrays)	microarray	microarray
+26285829:brain_35660966	yes	10.8580	yes	yes	4	0.2500	5	7	0.6447	15.6898	Bergon 2015	Li 2022	microarray	microarray
+26285829:brain_36090817	no	11.4056	no	yes	0	0.0000	1	17	1.4905	14.8264	Bergon 2015	Sadeghi 2022	microarray	rnaseq
+26285829:brain_36462601	yes	0.0000	yes	yes	3	0.2500	4	0	0.1254	0.0000	Bergon 2015	Bharadhwaj 2023	microarray	microarray
+26285829:brain_36424395	yes	2.0746	yes	yes	3	0.2500	4	22	10.6046	2.7128	Bergon 2015	Chen 2023	microarray	microarray
+26285829:brain_40727846	no	3.7734	no	yes	0	0.0000	1	31	8.2155	5.0372	Bergon 2015	Priyanka 2025	microarray	rnaseq
+26285829:brain_41422210	yes	1.6044	yes	yes	2	0.1667	3	23	14.3359	2.2285	Bergon 2015	Rebouças 2025	microarray	microarray
+26285829:brain_40796563	no	1.2139	no	yes	0	0.0000	1	2	1.6475	1.7541	Bergon 2015	Nakatsuka 2025	microarray	snrnaseq
+26285829:brain_doi_10.64898_2026.09.18.752621	no	1.2161	no	yes	0	0.0000	1	86	70.7188	1.7573	Bergon 2015	Endresz 2026 (bioRxiv)	microarray	snrnaseq
+26818902_27450777:brain	yes	6.6241	yes	yes	4	0.3636	5	34	5.1328	9.2010	Qin 2016	Hess 2016	microarray	microarray
+27450777:brain_30545856	no	1.8504	no	yes	0	0.0000	1	54	29.1833	2.4434	Hess 2016	Gandal 2018 (RNA-seq)	microarray	rnaseq
+27450777:brain_29439242	yes	3.3268	yes	yes	3	0.2727	4	60	18.0353	4.4779	Hess 2016	Gandal 2018 (arrays)	microarray	microarray
+27450777:brain_35660966	yes	22.8362	yes	yes	3	0.1875	4	5	0.2190	32.9985	Hess 2016	Li 2022	microarray	microarray
+27450777:brain_36090817	no	5.8121	no	yes	0	0.0000	1	3	0.5162	7.5553	Hess 2016	Sadeghi 2022	microarray	rnaseq
+27450777:brain_36462601	yes	0.0000	yes	yes	2	0.1667	3	0	0.0426	0.0000	Hess 2016	Bharadhwaj 2023	microarray	microarray
+27450777:brain_36424395	yes	3.8780	yes	yes	3	0.2727	4	7	1.8050	5.0710	Hess 2016	Chen 2023	microarray	microarray
+27450777:brain_40727846	no	1.7920	no	yes	0	0.0000	1	5	2.7902	2.3922	Hess 2016	Priyanka 2025	microarray	rnaseq
+27450777:brain_41422210	yes	1.5590	yes	yes	2	0.1818	3	7	4.4901	2.1655	Hess 2016	Rebouças 2025	microarray	microarray
+27450777:brain_40796563	no	1.7872	no	yes	0	0.0000	2	1	0.5595	2.5825	Hess 2016	Nakatsuka 2025	microarray	snrnaseq
+27450777:brain_doi_10.64898_2026.09.18.752621	no	1.4573	no	yes	0	0.0000	2	35	24.0177	2.1058	Hess 2016	Endresz 2026 (bioRxiv)	microarray	snrnaseq
+26818902_30545856	no	1.2086	no	yes	0	0.0000	1	250	206.8509	1.5929	Qin 2016	Gandal 2018 (RNA-seq)	microarray	rnaseq
+26818902_29439242	yes	2.8293	yes	yes	2	0.2222	4	372	131.4809	3.8072	Qin 2016	Gandal 2018 (arrays)	microarray	microarray
+26818902_35660966	yes	7.6361	yes	yes	2	0.1429	4	17	2.2263	10.6067	Qin 2016	Li 2022	microarray	microarray
+26818902_36090817	no	2.0066	no	yes	0	0.0000	1	8	3.9868	2.6295	Qin 2016	Sadeghi 2022	microarray	rnaseq
+26818902_36462601	yes	2.3101	yes	yes	1	0.1000	3	1	0.4329	3.2088	Qin 2016	Bharadhwaj 2023	microarray	microarray
+26818902_36424395	yes	2.8875	yes	yes	2	0.2222	4	43	14.8916	3.7758	Qin 2016	Chen 2023	microarray	microarray
+26818902_40727846	no	0.6848	no	yes	0	0.0000	1	14	20.4427	0.9067	Qin 2016	Priyanka 2025	microarray	rnaseq
+26818902_41422210	yes	2.7408	yes	yes	1	0.1111	3	90	32.8372	3.8070	Qin 2016	Rebouças 2025	microarray	microarray
+26818902_40796563	no	0.9951	no	yes	0	0.0000	2	4	4.0196	1.3822	Qin 2016	Nakatsuka 2025	microarray	snrnaseq
+26818902_doi_10.64898_2026.09.18.752621	no	1.2543	no	yes	0	0.0000	2	223	177.7911	1.7422	Qin 2016	Endresz 2026 (bioRxiv)	microarray	snrnaseq
+29439242_30545856	no	1.2368	no	yes	0	0.0000	1	841	679.9662	1.6129	Gandal 2018 (arrays)	Gandal 2018 (RNA-seq)	microarray	rnaseq
+30545856_35660966	no	3.0436	no	yes	0	0.0000	1	31	10.1855	4.0942	Gandal 2018 (RNA-seq)	Li 2022	rnaseq	microarray
+30545856_36090817	yes	2.8513	yes	yes	2	0.2222	2	69	24.1993	3.7408	Gandal 2018 (RNA-seq)	Sadeghi 2022	rnaseq	rnaseq
+30545856_36462601	no	0.8838	no	yes	0	0.0000	1	2	2.2629	1.1672	Gandal 2018 (RNA-seq)	Bharadhwaj 2023	rnaseq	microarray
+30545856_36424395	no	1.2565	no	yes	0	0.0000	1	106	84.3644	1.5791	Gandal 2018 (RNA-seq)	Chen 2023	rnaseq	microarray
+30545856_40727846	no	1.4953	yes	no	0	0.0000	0	165	110.3426	2.0115	Gandal 2018 (RNA-seq)	Priyanka 2025	rnaseq	rnaseq
+30545856_41422210	no	0.7283	no	yes	0	0.0000	1	132	181.2505	0.9599	Gandal 2018 (RNA-seq)	Rebouças 2025	rnaseq	microarray
+30545856_40796563	no	0.8340	no	yes	0	0.0000	1	21	25.1808	1.1219	Gandal 2018 (RNA-seq)	Nakatsuka 2025	rnaseq	snrnaseq
+30545856_doi_10.64898_2026.09.18.752621	no	1.1693	no	yes	0	0.0000	1	1317	1126.3436	1.5729	Gandal 2018 (RNA-seq)	Endresz 2026 (bioRxiv)	rnaseq	snrnaseq
+29439242_35660966	yes	4.4707	yes	yes	5	0.5000	4	36	8.0524	6.0212	Gandal 2018 (arrays)	Li 2022	microarray	microarray
+29439242_36090817	no	2.4786	no	yes	0	0.0000	1	30	12.1037	3.2192	Gandal 2018 (arrays)	Sadeghi 2022	microarray	rnaseq
+29439242_36462601	yes	1.2680	yes	yes	3	0.4286	3	2	1.5773	1.7070	Gandal 2018 (arrays)	Bharadhwaj 2023	microarray	microarray
+29439242_36424395	yes	4.4320	yes	yes	5	1.0000	4	220	49.6385	5.7955	Gandal 2018 (arrays)	Chen 2023	microarray	microarray
+29439242_40727846	no	0.9726	no	yes	0	0.0000	1	62	63.7441	1.2718	Gandal 2018 (arrays)	Priyanka 2025	microarray	rnaseq
+29439242_41422210	yes	1.6169	yes	yes	3	0.5000	3	183	113.1820	2.1757	Gandal 2018 (arrays)	Rebouças 2025	microarray	microarray
+29439242_40796563	no	1.0095	no	yes	0	0.0000	1	14	13.8680	1.3596	Gandal 2018 (arrays)	Nakatsuka 2025	microarray	snrnaseq
+29439242_doi_10.64898_2026.09.18.752621	no	1.1701	no	yes	0	0.0000	1	720	615.3364	1.5759	Gandal 2018 (arrays)	Endresz 2026 (bioRxiv)	microarray	snrnaseq
+35660966_36090817	no	30.1132	no	yes	0	0.0000	1	6	0.1992	39.5634	Li 2022	Sadeghi 2022	microarray	rnaseq
+35660966_36462601	yes	0.0000	yes	yes	4	0.3636	4	0	0.0169	0.0000	Li 2022	Bharadhwaj 2023	microarray	microarray
+35660966_36424395	yes	4.4320	yes	yes	5	0.5000	4	11	2.4819	5.7955	Li 2022	Chen 2023	microarray	microarray
+35660966_40727846	yes	11.0680	no	yes	1	0.0769	1	10	0.9035	15.7264	Li 2022	Priyanka 2025	microarray	rnaseq
+35660966_41422210	yes	2.0539	yes	yes	3	0.2727	3	4	1.9475	2.8529	Li 2022	Rebouças 2025	microarray	microarray
+35660966_40796563	no	0.0000	no	yes	0	0.0000	1	0	0.1995	0.0000	Li 2022	Nakatsuka 2025	microarray	snrnaseq
+35660966_doi_10.64898_2026.09.18.752621	no	1.5846	no	yes	0	0.0000	1	13	8.2039	2.2533	Li 2022	Endresz 2026 (bioRxiv)	microarray	snrnaseq
+36090817_36462601	no	0.0000	no	yes	0	0.0000	1	0	0.0405	0.0000	Sadeghi 2022	Bharadhwaj 2023	rnaseq	microarray
+36090817_36424395	no	2.2069	no	yes	0	0.0000	1	12	5.4374	2.7624	Sadeghi 2022	Chen 2023	rnaseq	microarray
+36090817_40727846	yes	27.1856	yes	yes	2	0.1818	2	39	1.4346	35.7170	Sadeghi 2022	Priyanka 2025	rnaseq	rnaseq
+36090817_41422210	no	0.8610	no	yes	0	0.0000	2	3	3.4843	1.1283	Sadeghi 2022	Rebouças 2025	rnaseq	microarray
+36090817_40796563	no	2.0912	no	yes	0	0.0000	1	1	0.4782	2.7475	Sadeghi 2022	Nakatsuka 2025	rnaseq	snrnaseq
+36090817_doi_10.64898_2026.09.18.752621	no	1.1281	no	yes	0	0.0000	1	25	22.1621	1.4821	Sadeghi 2022	Endresz 2026 (bioRxiv)	rnaseq	snrnaseq
+36424395_36462601	yes		yes	yes	3	0.4286	3	0	0.0000		Chen 2023	Bharadhwaj 2023	microarray	microarray
+36462601_40727846	no	0.0000	no	yes	0	0.0000	1	0	0.2160	0.0000	Bharadhwaj 2023	Priyanka 2025	microarray	rnaseq
+36462601_41422210	yes	0.0000	yes	yes	2	0.2857	2	0	0.3787	0.0000	Bharadhwaj 2023	Rebouças 2025	microarray	microarray
+36462601_40796563	no	0.0000	no	yes	0	0.0000	1	0	0.0432	0.0000	Bharadhwaj 2023	Nakatsuka 2025	microarray	snrnaseq
+36462601_doi_10.64898_2026.09.18.752621	no	0.0000	no	yes	0	0.0000	1	0	1.8562	0.0000	Bharadhwaj 2023	Endresz 2026 (bioRxiv)	microarray	snrnaseq
+36424395_40727846	no	1.0898	no	yes	0	0.0000	1	23	21.1044	1.3706	Chen 2023	Priyanka 2025	microarray	rnaseq
+36424395_41422210	yes	1.4035	yes	yes	3	0.5000	3	19	13.5378	1.8352	Chen 2023	Rebouças 2025	microarray	microarray
+36424395_40796563	no	1.4773	no	yes	0	0.0000	1	2	1.3538	1.9318	Chen 2023	Nakatsuka 2025	microarray	snrnaseq
+36424395_doi_10.64898_2026.09.18.752621	no	1.3327	no	yes	0	0.0000	1	86	64.5301	1.7427	Chen 2023	Endresz 2026 (bioRxiv)	microarray	snrnaseq
+40727846_41422210	no	0.2233	no	yes	0	0.0000	2	4	17.9126	0.2957	Priyanka 2025	Rebouças 2025	rnaseq	microarray
+40727846_40796563	no	0.8569	no	no	0	0.0000	0	2	2.3341	1.2175	Priyanka 2025	Nakatsuka 2025	rnaseq	snrnaseq
+40727846_doi_10.64898_2026.09.18.752621	no	0.5763	no	no	0	0.0000	0	58	100.6408	0.8189	Priyanka 2025	Endresz 2026 (bioRxiv)	rnaseq	snrnaseq
+40796563_41422210	no	1.7063	no	yes	0	0.0000	1	6	3.5163	2.3701	Nakatsuka 2025	Rebouças 2025	snrnaseq	microarray
+41422210_doi_10.64898_2026.09.18.752621	no	1.0287	no	yes	0	0.0000	1	160	155.5306	1.4289	Rebouças 2025	Endresz 2026 (bioRxiv)	microarray	snrnaseq
+40796563_doi_10.64898_2026.09.18.752621	yes	1.5226	yes	yes	2	0.2857	3	34	22.3299	2.1653	Nakatsuka 2025	Endresz 2026 (bioRxiv)	snrnaseq	snrnaseq

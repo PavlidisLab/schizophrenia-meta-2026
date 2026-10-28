@@ -1,0 +1,10 @@
+# check2_list_counts.py; a1 7fe7b48a08fb; summary_9ef302baa9a0 9ef302baa9a0; summary_d189eb75c687 d189eb75c687; lineage overlay 977af3f9c6d4
+source	population	lists_stated	lists_match
+a1_listcount_candidates.tsv, all642	all642	464	405
+a1_listcount_candidates.tsv, corpus509	corpus509	431	377
+a1_listcount_candidates.tsv, noncorpus	noncorpus	33	28
+summary 9ef302baa9a0 (M4)	all extracted lists: 709 lists, 354 studies	465	406
+summary 9ef302baa9a0 (M4)	studies matched by PMID to the 665 corpus: 656 lists, 322 studies	423	369
+summary d189eb75c687 (a1 input)	all extracted lists: 708 lists, 353 studies	464	405
+summary d189eb75c687 (a1 input)	studies matched by PMID to the 665 corpus: 655 lists, 321 studies	422	368
+provenance/sources/workflow_counts.tsv (built 2026-10-08)	all extracted lists of analyses/summary.tsv at that date (708 rows with status extracted)	460	401

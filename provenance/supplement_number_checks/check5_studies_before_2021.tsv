@@ -1,0 +1,5 @@
+# check5_studies_before_2021.py; fig01_d_neglected_datasets_80.tsv a30a4f1a7552; fig01_c_lineage_nodes_80.tsv 6229f9d5886f
+# studies with no node-year row: Bakshi 2020 (2020; pooled no, reanalysed no); Akula 2021 (2021; pooled yes, reanalysed yes); Batiuk 2022 (2022; pooled yes, reanalysed yes); Ling 2024 (2024; pooled yes, reanalysed no); Ruzicka 2024 (2024; pooled yes, reanalysed no); Frohlich 2024 (2024; pooled yes, reanalysed no); Mendez-Victoriano 2026 (2026; pooled no, reanalysed no); Lee 2026 (PsychAD) (2026; pooled yes, reanalysed yes); Puvogel 2022 (2022; pooled no, reanalysed no)
+year_source	before_2021	never_pooled	never_reanalysed	studies_without_year
+label year (all 80)	53	20	17	0
+lineage-node year (merge on study_id = node id)	52	19	16	9

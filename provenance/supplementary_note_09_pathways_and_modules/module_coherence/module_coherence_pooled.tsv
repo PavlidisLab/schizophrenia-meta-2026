@@ -1,0 +1,395 @@
+# aggregate_coherence.py (module_coherence); per_dataset_coherence.tsv sha256 1584de4df71e; modules_index.tsv 30ce9eb66e48
+# est/lo/hi: coherence excess (mean pairwise r among the module's genes minus expression-matched random genes), one bulk dataset per cohort cluster independent of the module's lineage, DL random effects with HKSJ interval; interval_* blank when only one cluster; variant raw or resid (diagnosis, age, sex, region removed)
+module_uid	source	paper	module	direction	lineage	lineage_named	n_genes	variant	n_datasets_independent	n_clusters	observed_avg	null_mean_avg	est	lo	hi	I2	interval_above_0	interval_below_0
+M0000	paper_supplement	Kim 2016 (hippocampus)	S_M3	-1	Stanley/SMRI	yes	539	raw	20	6	0.1466	0.0072	0.1358	0.0718	0.1999	0.9216	1.0	0.0
+M0000	paper_supplement	Kim 2016 (hippocampus)	S_M3	-1	Stanley/SMRI	yes	539	resid	20	6	0.1433	0.0075	0.1328	0.0698	0.1958	0.918	1.0	0.0
+M0001	paper_supplement	Kim 2016 (hippocampus)	S_M8	1	Stanley/SMRI	yes	539	raw	20	6	0.2079	0.0053	0.1999	0.1472	0.2527	0.7382	1.0	0.0
+M0001	paper_supplement	Kim 2016 (hippocampus)	S_M8	1	Stanley/SMRI	yes	539	resid	20	6	0.2117	0.0053	0.2035	0.1444	0.2625	0.8107	1.0	0.0
+M0002	paper_supplement	Kim 2016 (hippocampus)	S_M13	1	Stanley/SMRI	yes	150	raw	20	6	0.2348	0.0084	0.2143	0.0959	0.3327	0.9336	1.0	0.0
+M0002	paper_supplement	Kim 2016 (hippocampus)	S_M13	1	Stanley/SMRI	yes	150	resid	20	6	0.2342	0.0084	0.2108	0.0926	0.3291	0.9303	1.0	0.0
+M0003	paper_supplement	Kim 2016 (hippocampus)	S_M16	1	Stanley/SMRI	yes	72	raw	19	6	0.3755	0.0159	0.3616	0.197	0.5261	0.9762	1.0	0.0
+M0003	paper_supplement	Kim 2016 (hippocampus)	S_M16	1	Stanley/SMRI	yes	72	resid	19	6	0.3637	0.0158	0.3492	0.1797	0.5186	0.9776	1.0	0.0
+M0004	paper_supplement	Kim 2016 (hippocampus)	S_MA_M13	1	Stanley/SMRI	yes	181	raw	19	6	0.0244	0.0056	0.0181	0.0005	0.0357	0.9078	1.0	0.0
+M0004	paper_supplement	Kim 2016 (hippocampus)	S_MA_M13	1	Stanley/SMRI	yes	181	resid	19	6	0.0246	0.0055	0.0187	0.002	0.0354	0.9203	1.0	0.0
+M0005	paper_supplement	Kim 2016 (hippocampus)	S_MA_M20	1	Stanley/SMRI	yes	409	raw	20	6	0.0446	0.0053	0.0392	0.0222	0.0562	0.8825	1.0	0.0
+M0005	paper_supplement	Kim 2016 (hippocampus)	S_MA_M20	1	Stanley/SMRI	yes	409	resid	20	6	0.0457	0.0053	0.0406	0.0234	0.0577	0.8972	1.0	0.0
+M0006	paper_supplement	Zhu 2019	E1	-1	BA10/other;NSW/VBBN;Stanley/SMRI;unnamed	no	500	raw	16	4	0.5374	0.0081	0.5373	0.2767	0.798	0.9297	1.0	0.0
+M0006	paper_supplement	Zhu 2019	E1	-1	BA10/other;NSW/VBBN;Stanley/SMRI;unnamed	no	500	resid	16	4	0.5389	0.0073	0.5351	0.2601	0.8101	0.944	1.0	0.0
+M0007	paper_supplement	Zhu 2019	E2	1	BA10/other;NSW/VBBN;Stanley/SMRI;unnamed	no	104	raw	16	4	0.5506	0.0098	0.552	0.3339	0.7701	0.8111	1.0	0.0
+M0007	paper_supplement	Zhu 2019	E2	1	BA10/other;NSW/VBBN;Stanley/SMRI;unnamed	no	104	resid	16	4	0.5542	0.0088	0.5583	0.3639	0.7526	0.7898	1.0	0.0
+M0008	paper_supplement	Zhu 2019	E1_M4	-1	BA10/other;NSW/VBBN;Stanley/SMRI;unnamed	no	208	raw	16	4	0.4829	0.0076	0.48	0.2215	0.7385	0.929	1.0	0.0
+M0008	paper_supplement	Zhu 2019	E1_M4	-1	BA10/other;NSW/VBBN;Stanley/SMRI;unnamed	no	208	resid	16	4	0.4852	0.0076	0.479	0.2043	0.7537	0.9424	1.0	0.0
+M0009	paper_supplement	Ruzicka 2024	Ex_SZCS	1	CMC lineage;McLean/Harvard	yes	500	raw	15	6	0.1986	0.01	0.1825	0.0905	0.2745	0.9414	1.0	0.0
+M0009	paper_supplement	Ruzicka 2024	Ex_SZCS	1	CMC lineage;McLean/Harvard	yes	500	resid	15	6	0.2019	0.0102	0.1871	0.0953	0.279	0.9463	1.0	0.0
+M0010	paper_supplement	Ruzicka 2024	In_SZCS	1	CMC lineage;McLean/Harvard	yes	500	raw	15	6	0.1439	0.0076	0.1203	0.0461	0.1945	0.8621	1.0	0.0
+M0010	paper_supplement	Ruzicka 2024	In_SZCS	1	CMC lineage;McLean/Harvard	yes	500	resid	15	6	0.1434	0.0077	0.1231	0.0424	0.2038	0.8826	1.0	0.0
+M0011	paper_supplement	Ruzicka 2024	Ex_SZTR	-1	CMC lineage;McLean/Harvard	yes	500	raw	15	6	0.2081	0.0052	0.1952	0.0923	0.2982	0.8927	1.0	0.0
+M0011	paper_supplement	Ruzicka 2024	Ex_SZTR	-1	CMC lineage;McLean/Harvard	yes	500	resid	15	6	0.2071	0.0052	0.1967	0.0874	0.306	0.9054	1.0	0.0
+M0012	paper_supplement	Guan 2019	M1	-1	Stanley/SMRI	yes	318	raw	20	6	0.338	0.0108	0.3227	0.1477	0.4976	0.9726	1.0	0.0
+M0012	paper_supplement	Guan 2019	M1	-1	Stanley/SMRI	yes	318	resid	20	6	0.3278	0.0113	0.3133	0.1401	0.4864	0.972	1.0	0.0
+M0013	paper_supplement	Guan 2019	M2	1	Stanley/SMRI	yes	210	raw	20	6	0.3969	0.01	0.379	0.2596	0.4985	0.8708	1.0	0.0
+M0013	paper_supplement	Guan 2019	M2	1	Stanley/SMRI	yes	210	resid	20	6	0.3745	0.0103	0.358	0.2437	0.4722	0.8777	1.0	0.0
+M0014	paper_supplement	Guan 2019	M3	-1	Stanley/SMRI	yes	59	raw	20	6	0.1465	0.0069	0.1374	0.0759	0.1989	0.94	1.0	0.0
+M0014	paper_supplement	Guan 2019	M3	-1	Stanley/SMRI	yes	59	resid	20	6	0.1495	0.0074	0.1391	0.0723	0.2059	0.9401	1.0	0.0
+M0015	paper_supplement	Guan 2019	M4	1	Stanley/SMRI	yes	56	raw	20	6	0.2175	0.0075	0.2086	0.0424	0.3748	0.9848	1.0	0.0
+M0015	paper_supplement	Guan 2019	M4	1	Stanley/SMRI	yes	56	resid	20	6	0.2052	0.0077	0.1969	0.0328	0.3609	0.9861	1.0	0.0
+M0016	paper_supplement	Guan 2019	M5	1	Stanley/SMRI	yes	55	raw	20	6	0.5318	0.0078	0.5224	0.394	0.6508	0.8491	1.0	0.0
+M0016	paper_supplement	Guan 2019	M5	1	Stanley/SMRI	yes	55	resid	20	6	0.5274	0.0075	0.5189	0.3967	0.6411	0.8419	1.0	0.0
+M0017	paper_supplement	Guan 2019	M6	-1	Stanley/SMRI	yes	49	raw	20	6	0.1197	0.0075	0.1045	0.0484	0.1605	0.8729	1.0	0.0
+M0017	paper_supplement	Guan 2019	M6	-1	Stanley/SMRI	yes	49	resid	20	6	0.1188	0.0071	0.1044	0.0457	0.1631	0.8598	1.0	0.0
+M0018	paper_supplement	Guan 2019	M7	1	Stanley/SMRI	yes	46	raw	20	6	0.3453	0.0057	0.3338	0.2271	0.4405	0.8919	1.0	0.0
+M0018	paper_supplement	Guan 2019	M7	1	Stanley/SMRI	yes	46	resid	20	6	0.3268	0.0047	0.313	0.1996	0.4264	0.883	1.0	0.0
+M0019	paper_supplement	Guan 2019	M8	1	Stanley/SMRI	yes	43	raw	20	6	0.0943	0.0066	0.0795	0.068	0.091	0.0	1.0	0.0
+M0019	paper_supplement	Guan 2019	M8	1	Stanley/SMRI	yes	43	resid	20	6	0.1017	0.0063	0.0808	0.065	0.0966	0.0228	1.0	0.0
+M0020	paper_supplement	Guan 2019	M9	-1	Stanley/SMRI	yes	37	raw	20	6	0.1829	0.0088	0.1741	0.085	0.2632	0.959	1.0	0.0
+M0020	paper_supplement	Guan 2019	M9	-1	Stanley/SMRI	yes	37	resid	20	6	0.1908	0.0073	0.1826	0.0902	0.2749	0.9583	1.0	0.0
+M0021	paper_supplement	Guan 2019	M11	1	Stanley/SMRI	yes	30	raw	20	6	0.5474	0.0147	0.5336	0.4686	0.5986	0.3735	1.0	0.0
+M0021	paper_supplement	Guan 2019	M11	1	Stanley/SMRI	yes	30	resid	20	6	0.5348	0.0135	0.5223	0.4685	0.5761	0.2271	1.0	0.0
+M0022	paper_supplement	Guan 2019	M12	1	Stanley/SMRI	yes	30	raw	20	6	0.1847	0.0072	0.1729	0.0701	0.2756	0.9041	1.0	0.0
+M0022	paper_supplement	Guan 2019	M12	1	Stanley/SMRI	yes	30	resid	20	6	0.1786	0.0079	0.1658	0.0681	0.2635	0.9092	1.0	0.0
+M0023	paper_supplement	Guan 2019	M13	-1	Stanley/SMRI	yes	28	raw	20	6	0.1659	0.0128	0.1409	0.0568	0.2249	0.8774	1.0	0.0
+M0023	paper_supplement	Guan 2019	M13	-1	Stanley/SMRI	yes	28	resid	20	6	0.1662	0.0161	0.135	0.0528	0.2173	0.8615	1.0	0.0
+M0024	paper_supplement	Guan 2019	M16	-1	Stanley/SMRI	yes	26	raw	20	6	0.2495	0.0156	0.2255	0.0428	0.4082	0.9718	1.0	0.0
+M0024	paper_supplement	Guan 2019	M16	-1	Stanley/SMRI	yes	26	resid	20	6	0.2547	0.0172	0.2321	0.0462	0.418	0.9754	1.0	0.0
+M0025	paper_supplement	Guan 2019	M18	1	Stanley/SMRI	yes	24	raw	20	6	0.0757	0.0037	0.0708	0.0039	0.1377	0.9453	1.0	0.0
+M0025	paper_supplement	Guan 2019	M18	1	Stanley/SMRI	yes	24	resid	20	6	0.0788	0.0051	0.0726	0.0062	0.139	0.9476	1.0	0.0
+M0026	paper_supplement	Guan 2019	M19	-1	Stanley/SMRI	yes	24	raw	20	6	0.256	0.009	0.2383	0.1843	0.2924	0.4537	1.0	0.0
+M0026	paper_supplement	Guan 2019	M19	-1	Stanley/SMRI	yes	24	resid	20	6	0.2512	0.009	0.231	0.1841	0.2779	0.4184	1.0	0.0
+M0027	paper_supplement	Guan 2019	M20	1	Stanley/SMRI	yes	23	raw	20	6	0.1506	0.0063	0.1167	0.0267	0.2067	0.8938	1.0	0.0
+M0027	paper_supplement	Guan 2019	M20	1	Stanley/SMRI	yes	23	resid	20	6	0.157	0.0067	0.1164	0.022	0.2108	0.8821	1.0	0.0
+M0028	paper_supplement	Nersisyan 2026	mRNA_cluster_1	1	CMC lineage	yes	283	raw	15	6	0.1147	0.0066	0.1083	0.0749	0.1417	0.7967	1.0	0.0
+M0028	paper_supplement	Nersisyan 2026	mRNA_cluster_1	1	CMC lineage	yes	283	resid	15	6	0.1152	0.0066	0.1081	0.0749	0.1413	0.7943	1.0	0.0
+M0029	paper_supplement	Nersisyan 2026	mRNA_cluster_2	-1	CMC lineage	yes	220	raw	15	6	0.1883	0.0055	0.1825	0.1013	0.2637	0.9326	1.0	0.0
+M0029	paper_supplement	Nersisyan 2026	mRNA_cluster_2	-1	CMC lineage	yes	220	resid	15	6	0.175	0.0054	0.1697	0.0989	0.2405	0.9134	1.0	0.0
+M0030	paper_supplement	Nersisyan 2026	mRNA_cluster_3	-1	CMC lineage	yes	286	raw	15	6	0.2909	0.0068	0.2814	0.2012	0.3615	0.9089	1.0	0.0
+M0030	paper_supplement	Nersisyan 2026	mRNA_cluster_3	-1	CMC lineage	yes	286	resid	15	6	0.2636	0.0069	0.2544	0.1548	0.354	0.9472	1.0	0.0
+M0031	paper_supplement	Nersisyan 2026	mRNA_cluster_4	-1	CMC lineage	yes	231	raw	15	6	0.1304	0.0069	0.1268	0.1028	0.1509	0.24	1.0	0.0
+M0031	paper_supplement	Nersisyan 2026	mRNA_cluster_4	-1	CMC lineage	yes	231	resid	15	6	0.1316	0.0066	0.1249	0.1047	0.1451	0.0	1.0	0.0
+M0032	paper_supplement	Nersisyan 2026	mRNA_cluster_5	1	CMC lineage	yes	305	raw	15	6	0.0852	0.0097	0.0731	0.0483	0.0979	0.7606	1.0	0.0
+M0032	paper_supplement	Nersisyan 2026	mRNA_cluster_5	1	CMC lineage	yes	305	resid	15	6	0.0706	0.0098	0.0594	0.037	0.0817	0.7855	1.0	0.0
+M0033	paper_supplement	Nersisyan 2026	mRNA_cluster_6	1	CMC lineage	yes	117	raw	15	6	0.2773	0.0061	0.2659	0.1912	0.3407	0.8009	1.0	0.0
+M0033	paper_supplement	Nersisyan 2026	mRNA_cluster_6	1	CMC lineage	yes	117	resid	15	6	0.2494	0.0061	0.2353	0.1825	0.2881	0.6341	1.0	0.0
+M0034	paper_supplement	Kim 2016 (choroid plexus)	S_M16	1	Stanley/SMRI;unnamed	no	629	raw	20	6	0.0484	0.0061	0.039	0.0132	0.0648	0.936	1.0	0.0
+M0034	paper_supplement	Kim 2016 (choroid plexus)	S_M16	1	Stanley/SMRI;unnamed	no	629	resid	20	6	0.046	0.0061	0.0349	0.0097	0.0601	0.9229	1.0	0.0
+M0035	paper_supplement	Kim 2016 (choroid plexus)	S_Co_M16	1	Stanley/SMRI;unnamed	no	352	raw	20	6	0.0961	0.0066	0.083	0.0432	0.1228	0.9078	1.0	0.0
+M0035	paper_supplement	Kim 2016 (choroid plexus)	S_Co_M16	1	Stanley/SMRI;unnamed	no	352	resid	20	6	0.0913	0.0065	0.0755	0.0364	0.1146	0.895	1.0	0.0
+M0036	paper_supplement	Doostparast Torshizi 2019	TCF4_regulon_CMC	1	CMC lineage	yes	54	raw	15	6	0.0228	0.0078	0.014	-0.007	0.0351	0.8795	0.0	0.0
+M0036	paper_supplement	Doostparast Torshizi 2019	TCF4_regulon_CMC	1	CMC lineage	yes	54	resid	15	6	0.0232	0.0081	0.0146	-0.007	0.0362	0.9113	0.0	0.0
+M0037	paper_supplement	Doostparast Torshizi 2019	NR1H2_regulon_CMC	1	CMC lineage	yes	46	raw	15	6	0.0478	0.0056	0.0382	0.0164	0.0599	0.7552	1.0	0.0
+M0037	paper_supplement	Doostparast Torshizi 2019	NR1H2_regulon_CMC	1	CMC lineage	yes	46	resid	15	6	0.0496	0.0063	0.0393	0.0155	0.0631	0.796	1.0	0.0
+M0038	paper_supplement	Doostparast Torshizi 2019	HDAC9_regulon_CMC	1	CMC lineage	yes	26	raw	15	6	0.0844	0.0063	0.0728	0.0303	0.1154	0.81	1.0	0.0
+M0038	paper_supplement	Doostparast Torshizi 2019	HDAC9_regulon_CMC	1	CMC lineage	yes	26	resid	15	6	0.0846	0.0075	0.0743	0.0266	0.122	0.8603	1.0	0.0
+M0039	paper_supplement	Doostparast Torshizi 2019	ZNF436_regulon_CMC	-1	CMC lineage	yes	28	raw	14	6	0.033	0.0058	0.0197	-0.0017	0.0411	0.4486	0.0	0.0
+M0039	paper_supplement	Doostparast Torshizi 2019	ZNF436_regulon_CMC	-1	CMC lineage	yes	28	resid	14	6	0.034	0.0075	0.0224	-0.0072	0.052	0.6851	0.0	0.0
+M0040	paper_supplement	Doostparast Torshizi 2019	ZNF10_regulon_CMC	-1	CMC lineage	yes	29	raw	15	6	0.0545	0.006	0.0459	-0.0544	0.1463	0.9727	0.0	0.0
+M0040	paper_supplement	Doostparast Torshizi 2019	ZNF10_regulon_CMC	-1	CMC lineage	yes	29	resid	15	6	0.0536	0.0054	0.0468	-0.0554	0.149	0.9796	0.0	0.0
+M0041	paper_supplement	Doostparast Torshizi 2019	TCF4_regulon_CNON	1	CMC lineage	yes	54	raw	14	6	0.0076	0.0057	0.0003	-0.0096	0.0103	0.6194	0.0	0.0
+M0041	paper_supplement	Doostparast Torshizi 2019	TCF4_regulon_CNON	1	CMC lineage	yes	54	resid	14	6	0.0058	0.006	-0.0025	-0.0097	0.0047	0.4243	0.0	0.0
+M0042	paper_supplement	Doostparast Torshizi 2019	ZNF436_regulon_CNON	-1	CMC lineage	yes	38	raw	15	6	0.0172	0.0056	0.0111	-0.0199	0.0421	0.9463	0.0	0.0
+M0042	paper_supplement	Doostparast Torshizi 2019	ZNF436_regulon_CNON	-1	CMC lineage	yes	38	resid	15	6	0.0198	0.0053	0.014	-0.015	0.0429	0.9396	0.0	0.0
+M0043	paper_supplement	Chen 2023	IRM4	-1	BA10/other;NSW/VBBN	yes	417	raw	18	5	0.5336	0.0118	0.5276	0.3519	0.7034	0.8993	1.0	0.0
+M0043	paper_supplement	Chen 2023	IRM4	-1	BA10/other;NSW/VBBN	yes	417	resid	18	5	0.5396	0.0117	0.5303	0.3514	0.7091	0.9198	1.0	0.0
+M0044	paper_supplement	Smith 2026	geneM1	1	CMC lineage	yes	2691	raw	14	6	0.0786	0.0055	0.071	0.0267	0.1152	0.9298	1.0	0.0
+M0044	paper_supplement	Smith 2026	geneM1	1	CMC lineage	yes	2691	resid	14	6	0.0793	0.0055	0.0722	0.0254	0.1191	0.9483	1.0	0.0
+M0045	paper_supplement	Smith 2026	geneM14	-1	CMC lineage	yes	259	raw	15	6	0.3757	0.0082	0.3596	0.2624	0.4569	0.8135	1.0	0.0
+M0045	paper_supplement	Smith 2026	geneM14	-1	CMC lineage	yes	259	resid	15	6	0.3765	0.0083	0.3601	0.2574	0.4627	0.8087	1.0	0.0
+M0046	paper_supplement	Smith 2026	geneM15	-1	CMC lineage	yes	88	raw	14	6	0.2061	0.0077	0.1952	0.0684	0.3221	0.9417	1.0	0.0
+M0046	paper_supplement	Smith 2026	geneM15	-1	CMC lineage	yes	88	resid	14	6	0.2	0.0089	0.1894	0.0652	0.3135	0.9491	1.0	0.0
+M0047	paper_supplement	Smith 2026	geneM2	1	CMC lineage	yes	1985	raw	13	5	0.024	0.0121	0.0093	-0.0092	0.0277	0.8798	0.0	0.0
+M0047	paper_supplement	Smith 2026	geneM2	1	CMC lineage	yes	1985	resid	13	5	0.0242	0.012	0.0089	-0.0092	0.0269	0.8776	0.0	0.0
+M0048	paper_supplement	Smith 2026	geneM22	1	CMC lineage	yes	55	raw	15	6	0.2088	0.0099	0.1926	0.0771	0.308	0.9468	1.0	0.0
+M0048	paper_supplement	Smith 2026	geneM22	1	CMC lineage	yes	55	resid	15	6	0.2034	0.0098	0.187	0.0626	0.3113	0.9505	1.0	0.0
+M0049	paper_supplement	Smith 2026	geneM23	1	CMC lineage	yes	42	raw	15	6	0.1579	0.0049	0.1526	0.096	0.2092	0.8717	1.0	0.0
+M0049	paper_supplement	Smith 2026	geneM23	1	CMC lineage	yes	42	resid	15	6	0.1543	0.0061	0.1461	0.0843	0.208	0.8871	1.0	0.0
+M0050	paper_supplement	Smith 2026	geneM4	1	CMC lineage	yes	800	raw	15	6	0.2386	0.0078	0.2269	0.1153	0.3386	0.9549	1.0	0.0
+M0050	paper_supplement	Smith 2026	geneM4	1	CMC lineage	yes	800	resid	15	6	0.2373	0.0078	0.2265	0.1111	0.342	0.9613	1.0	0.0
+M0051	paper_supplement	Smith 2026	geneM9	-1	CMC lineage	yes	446	raw	14	6	0.0885	0.0056	0.0704	0.0243	0.1165	0.84	1.0	0.0
+M0051	paper_supplement	Smith 2026	geneM9	-1	CMC lineage	yes	446	resid	14	6	0.0867	0.0057	0.0696	0.017	0.1223	0.8634	1.0	0.0
+M0052	paper_supplement	Kim 2019	Sch_M14	1	Stanley/SMRI	yes	127	raw	20	6	0.3907	0.0083	0.3722	0.229	0.5154	0.9379	1.0	0.0
+M0052	paper_supplement	Kim 2019	Sch_M14	1	Stanley/SMRI	yes	127	resid	20	6	0.3795	0.0087	0.3535	0.21	0.497	0.9305	1.0	0.0
+M0053	paper_supplement	Kim 2019	Sch_M2	-1	Stanley/SMRI	yes	481	raw	20	6	0.3356	0.0076	0.3274	0.2201	0.4347	0.9455	1.0	0.0
+M0053	paper_supplement	Kim 2019	Sch_M2	-1	Stanley/SMRI	yes	481	resid	20	6	0.3327	0.0077	0.3247	0.2224	0.4269	0.9364	1.0	0.0
+M0054	paper_supplement	Lin 2021	exp_magenta	1	CMC lineage	yes	229	raw	15	6	0.3671	0.01	0.3486	0.2114	0.4857	0.9493	1.0	0.0
+M0054	paper_supplement	Lin 2021	exp_magenta	1	CMC lineage	yes	229	resid	15	6	0.3609	0.0098	0.3386	0.2078	0.4694	0.9425	1.0	0.0
+M0055	paper_supplement	Lin 2021	exp_yellow	1	CMC lineage	yes	892	raw	15	6	0.2367	0.0071	0.2267	0.1686	0.2848	0.8557	1.0	0.0
+M0055	paper_supplement	Lin 2021	exp_yellow	1	CMC lineage	yes	892	resid	15	6	0.2288	0.0071	0.2192	0.1614	0.277	0.8459	1.0	0.0
+M0056	paper_supplement	Balasubramanian 2022	M1	-1	CMC lineage;Stanley/SMRI	yes	499	raw	12	5	0.1379	0.0057	0.1243	0.0447	0.204	0.8998	1.0	0.0
+M0056	paper_supplement	Balasubramanian 2022	M1	-1	CMC lineage;Stanley/SMRI	yes	499	resid	12	5	0.129	0.0057	0.119	0.0478	0.1903	0.9142	1.0	0.0
+M0057	paper_supplement	Balasubramanian 2022	M3	-1	CMC lineage;Stanley/SMRI	yes	578	raw	13	5	0.2055	0.0083	0.1827	0.0786	0.2867	0.9477	1.0	0.0
+M0057	paper_supplement	Balasubramanian 2022	M3	-1	CMC lineage;Stanley/SMRI	yes	578	resid	13	5	0.2012	0.0084	0.1713	0.0685	0.2741	0.9306	1.0	0.0
+M0058	paper_supplement	Balasubramanian 2022	M8	-1	CMC lineage;Stanley/SMRI	yes	836	raw	13	5	0.1146	0.0063	0.1054	0.0492	0.1615	0.9462	1.0	0.0
+M0058	paper_supplement	Balasubramanian 2022	M8	-1	CMC lineage;Stanley/SMRI	yes	836	resid	13	5	0.1089	0.0064	0.0993	0.0454	0.1532	0.947	1.0	0.0
+M0059	paper_supplement	MacDonald 2020	hom_Turquoise	-1	unnamed	no	137	raw	22	7	0.1188	0.0206	0.0958	0.0482	0.1434	0.9105	1.0	0.0
+M0059	paper_supplement	MacDonald 2020	hom_Turquoise	-1	unnamed	no	137	resid	22	7	0.1213	0.0215	0.0978	0.0487	0.1469	0.9073	1.0	0.0
+M0060	paper_supplement	MacDonald 2020	syn_Blue	-1	unnamed	no	64	raw	22	7	0.1544	0.0166	0.1339	0.0542	0.2136	0.9641	1.0	0.0
+M0060	paper_supplement	MacDonald 2020	syn_Blue	-1	unnamed	no	64	resid	22	7	0.1548	0.0164	0.1349	0.0521	0.2178	0.9608	1.0	0.0
+M0061	paper_supplement	MacDonald 2020	syn_Red	-1	unnamed	no	29	raw	22	7	0.1941	0.0187	0.1712	0.0802	0.2622	0.9235	1.0	0.0
+M0061	paper_supplement	MacDonald 2020	syn_Red	-1	unnamed	no	29	resid	22	7	0.1879	0.0192	0.1657	0.0774	0.254	0.9281	1.0	0.0
+M0062	paper_supplement	Liu 2021	factor_1	-1	CMC lineage	yes	339	raw	15	6	0.0843	0.0061	0.0747	0.0334	0.1161	0.8471	1.0	0.0
+M0062	paper_supplement	Liu 2021	factor_1	-1	CMC lineage	yes	339	resid	15	6	0.083	0.0056	0.0739	0.0328	0.115	0.8547	1.0	0.0
+M0063	paper_supplement	Liu 2021	factor_2	1	CMC lineage	yes	165	raw	14	6	0.0875	0.0076	0.0766	-0.0023	0.1555	0.9512	0.0	0.0
+M0063	paper_supplement	Liu 2021	factor_2	1	CMC lineage	yes	165	resid	14	6	0.0872	0.0076	0.078	-0.0053	0.1614	0.9639	0.0	0.0
+M0064	paper_supplement	Liu 2021	factor_5	1	CMC lineage	yes	33	raw	15	6	0.1901	0.0067	0.1809	0.098	0.2637	0.8656	1.0	0.0
+M0064	paper_supplement	Liu 2021	factor_5	1	CMC lineage	yes	33	resid	15	6	0.1991	0.0073	0.1881	0.0983	0.2779	0.8678	1.0	0.0
+M0065	paper_supplement	Sadeghi 2022	M13	-1	CMC lineage;Stanley/SMRI	yes	293	raw	13	5	0.2686	0.0069	0.2625	0.1919	0.3331	0.7244	1.0	0.0
+M0065	paper_supplement	Sadeghi 2022	M13	-1	CMC lineage;Stanley/SMRI	yes	293	resid	13	5	0.2669	0.0072	0.2612	0.1908	0.3316	0.7629	1.0	0.0
+M0066	paper_supplement	Sadeghi 2022	M14	1	CMC lineage;Stanley/SMRI	yes	258	raw	13	5	0.3755	0.0079	0.3632	0.2454	0.4809	0.8725	1.0	0.0
+M0066	paper_supplement	Sadeghi 2022	M14	1	CMC lineage;Stanley/SMRI	yes	258	resid	13	5	0.3706	0.0083	0.3528	0.2399	0.4656	0.8489	1.0	0.0
+M0067	paper_supplement	Sadeghi 2022	M15	-1	CMC lineage;Stanley/SMRI	yes	471	raw	13	5	0.5324	0.008	0.5348	0.483	0.5866	0.0	1.0	0.0
+M0067	paper_supplement	Sadeghi 2022	M15	-1	CMC lineage;Stanley/SMRI	yes	471	resid	13	5	0.5308	0.0082	0.5283	0.4669	0.5896	0.1275	1.0	0.0
+M0068	paper_supplement	Sadeghi 2022	M2	1	CMC lineage;Stanley/SMRI	yes	992	raw	13	5	0.239	0.0064	0.2196	0.149	0.2903	0.6793	1.0	0.0
+M0068	paper_supplement	Sadeghi 2022	M2	1	CMC lineage;Stanley/SMRI	yes	992	resid	13	5	0.2378	0.0064	0.2195	0.1417	0.2974	0.7677	1.0	0.0
+M0069	paper_supplement	Sadeghi 2022	M3	-1	CMC lineage;Stanley/SMRI	yes	950	raw	13	5	0.2493	0.0085	0.2371	0.0947	0.3795	0.9224	1.0	0.0
+M0069	paper_supplement	Sadeghi 2022	M3	-1	CMC lineage;Stanley/SMRI	yes	950	resid	13	5	0.2548	0.0084	0.2443	0.099	0.3896	0.9403	1.0	0.0
+M0070	paper_supplement	Sadeghi 2022	M4	-1	CMC lineage;Stanley/SMRI	yes	728	raw	13	5	0.21	0.0059	0.1903	0.0221	0.3586	0.976	1.0	0.0
+M0070	paper_supplement	Sadeghi 2022	M4	-1	CMC lineage;Stanley/SMRI	yes	728	resid	13	5	0.2055	0.0055	0.1905	0.0112	0.3698	0.9664	1.0	0.0
+M0071	paper_supplement	Sadeghi 2022	M5	1	CMC lineage;Stanley/SMRI	yes	572	raw	13	5	0.363	0.0057	0.3539	0.2462	0.4616	0.8816	1.0	0.0
+M0071	paper_supplement	Sadeghi 2022	M5	1	CMC lineage;Stanley/SMRI	yes	572	resid	13	5	0.3468	0.0055	0.3377	0.2322	0.4432	0.8726	1.0	0.0
+M0072	paper_supplement	Sadeghi 2022	M8	-1	CMC lineage;Stanley/SMRI	yes	459	raw	13	5	0.3287	0.0056	0.3182	0.1987	0.4377	0.8561	1.0	0.0
+M0072	paper_supplement	Sadeghi 2022	M8	-1	CMC lineage;Stanley/SMRI	yes	459	resid	13	5	0.3259	0.0057	0.3178	0.2	0.4356	0.8707	1.0	0.0
+M0073	paper_supplement	Sadeghi 2022	M9	-1	CMC lineage;Stanley/SMRI	yes	458	raw	13	5	0.1941	0.0048	0.1866	0.0824	0.2908	0.9051	1.0	0.0
+M0073	paper_supplement	Sadeghi 2022	M9	-1	CMC lineage;Stanley/SMRI	yes	458	resid	13	5	0.1912	0.0049	0.1841	0.0791	0.2891	0.9143	1.0	0.0
+M0074	paper_supplement	Zhu 2017	M2c_sLED_primary	-1	CMC lineage	yes	22	raw	15	6	0.0856	0.0053	0.0665	0.0061	0.1268	0.7479	1.0	0.0
+M0074	paper_supplement	Zhu 2017	M2c_sLED_primary	-1	CMC lineage	yes	22	resid	15	6	0.0878	0.0077	0.0683	0.0085	0.1282	0.7673	1.0	0.0
+M0075	paper_supplement	Zhu 2017	M2c_sLED_secondary	-1	CMC lineage	yes	85	raw	15	6	0.2636	0.0174	0.2452	0.1601	0.3303	0.9037	1.0	0.0
+M0075	paper_supplement	Zhu 2017	M2c_sLED_secondary	-1	CMC lineage	yes	85	resid	15	6	0.2683	0.0179	0.2496	0.1637	0.3354	0.9099	1.0	0.0
+M0076	paper_supplement	Lanz 2019	steelblue	-1	CMC lineage	yes	125	raw	15	6	0.2188	0.0074	0.2109	0.1593	0.2625	0.7614	1.0	0.0
+M0076	paper_supplement	Lanz 2019	steelblue	-1	CMC lineage	yes	125	resid	15	6	0.2193	0.0076	0.211	0.1555	0.2665	0.8566	1.0	0.0
+M0077	paper_supplement	Lanz 2019	turquoise	-1	CMC lineage	yes	1687	raw	15	6	0.257	0.0111	0.243	0.1773	0.3087	0.9389	1.0	0.0
+M0077	paper_supplement	Lanz 2019	turquoise	-1	CMC lineage	yes	1687	resid	15	6	0.2527	0.0106	0.2394	0.1804	0.2984	0.9036	1.0	0.0
+M0078	paper_supplement	Lanz 2019	yellow	-1	CMC lineage	yes	968	raw	15	6	0.2798	0.007	0.2702	0.149	0.3914	0.9687	1.0	0.0
+M0078	paper_supplement	Lanz 2019	yellow	-1	CMC lineage	yes	968	resid	15	6	0.2668	0.0068	0.258	0.1377	0.3784	0.9713	1.0	0.0
+M0079	paper_supplement	Lanz 2019	magenta	-1	CMC lineage	yes	407	raw	15	6	0.168	0.0079	0.1624	0.1282	0.1966	0.7178	1.0	0.0
+M0079	paper_supplement	Lanz 2019	magenta	-1	CMC lineage	yes	407	resid	15	6	0.172	0.0079	0.1648	0.1295	0.2	0.7611	1.0	0.0
+M0080	paper_supplement	Lanz 2019	lightcyan	-1	CMC lineage	yes	231	raw	15	6	0.2546	0.0069	0.2467	0.1896	0.3039	0.7858	1.0	0.0
+M0080	paper_supplement	Lanz 2019	lightcyan	-1	CMC lineage	yes	231	resid	15	6	0.2545	0.0067	0.2484	0.192	0.3049	0.7841	1.0	0.0
+M0081	paper_supplement	Lanz 2019	violet	1	CMC lineage	yes	121	raw	13	5	0.3198	0.0179	0.3	0.0654	0.5345	0.9902	1.0	0.0
+M0081	paper_supplement	Lanz 2019	violet	1	CMC lineage	yes	121	resid	13	5	0.3217	0.0179	0.302	0.0679	0.5361	0.9911	1.0	0.0
+M0082	paper_supplement	Lanz 2019	darkturquoise	1	CMC lineage	yes	162	raw	13	5	0.3006	0.0156	0.283	0.0612	0.5049	0.9895	1.0	0.0
+M0082	paper_supplement	Lanz 2019	darkturquoise	1	CMC lineage	yes	162	resid	13	5	0.3028	0.015	0.2862	0.0648	0.5076	0.9894	1.0	0.0
+M0083	paper_supplement	Lanz 2019	paleturquoise	1	CMC lineage	yes	122	raw	15	6	0.3503	0.0099	0.3304	0.2205	0.4403	0.923	1.0	0.0
+M0083	paper_supplement	Lanz 2019	paleturquoise	1	CMC lineage	yes	122	resid	15	6	0.3487	0.01	0.3238	0.2163	0.4314	0.906	1.0	0.0
+M0084	paper_supplement	Lanz 2019	darkred	1	CMC lineage	yes	175	raw	14	6	0.1194	0.0058	0.0973	-0.0275	0.2221	0.9786	0.0	0.0
+M0084	paper_supplement	Lanz 2019	darkred	1	CMC lineage	yes	175	resid	14	6	0.114	0.0062	0.092	-0.0274	0.2115	0.9802	0.0	0.0
+M0085	paper_supplement	Lanz 2019	saddlebrown	1	CMC lineage	yes	127	raw	15	6	0.1672	0.0064	0.1539	0.0699	0.2379	0.9319	1.0	0.0
+M0085	paper_supplement	Lanz 2019	saddlebrown	1	CMC lineage	yes	127	resid	15	6	0.1545	0.0058	0.1435	0.0714	0.2157	0.9269	1.0	0.0
+M0086	paper_supplement	Lanz 2019	midnightblue	1	CMC lineage	yes	236	raw	15	6	0.1344	0.0066	0.1179	0.0143	0.2214	0.9702	1.0	0.0
+M0086	paper_supplement	Lanz 2019	midnightblue	1	CMC lineage	yes	236	resid	15	6	0.1261	0.0065	0.1079	0.0166	0.1992	0.9649	1.0	0.0
+M0087	paper_supplement	Lanz 2019	plum1	1	CMC lineage	yes	61	raw	15	6	0.1369	0.0067	0.1236	0.089	0.1582	0.5308	1.0	0.0
+M0087	paper_supplement	Lanz 2019	plum1	1	CMC lineage	yes	61	resid	15	6	0.1275	0.0072	0.1169	0.0917	0.1421	0.3232	1.0	0.0
+M0088	paper_supplement	Schulmann 2023	M9	-1	CMC lineage	yes	268	raw	15	6	0.2596	0.0057	0.2523	0.1144	0.3901	0.957	1.0	0.0
+M0088	paper_supplement	Schulmann 2023	M9	-1	CMC lineage	yes	268	resid	15	6	0.2619	0.0054	0.2556	0.1201	0.3911	0.9598	1.0	0.0
+M0089	paper_supplement	Schulmann 2023	M10	-1	CMC lineage	yes	241	raw	15	6	0.1738	0.0051	0.1663	0.0917	0.241	0.8962	1.0	0.0
+M0089	paper_supplement	Schulmann 2023	M10	-1	CMC lineage	yes	241	resid	15	6	0.1609	0.0053	0.1539	0.0875	0.2204	0.8824	1.0	0.0
+M0090	paper_supplement	Schulmann 2023	M13	-1	CMC lineage	yes	175	raw	15	6	0.2491	0.0057	0.2411	0.0998	0.3825	0.9661	1.0	0.0
+M0090	paper_supplement	Schulmann 2023	M13	-1	CMC lineage	yes	175	resid	15	6	0.2475	0.0058	0.2401	0.1044	0.3757	0.9649	1.0	0.0
+M0091	paper_supplement	Schulmann 2023	M25	-1	CMC lineage	yes	112	raw	15	6	0.2161	0.0101	0.2034	0.1183	0.2886	0.9099	1.0	0.0
+M0091	paper_supplement	Schulmann 2023	M25	-1	CMC lineage	yes	112	resid	15	6	0.2125	0.0109	0.1999	0.1125	0.2873	0.9196	1.0	0.0
+M0092	paper_supplement	Lian 2024	brown_hub120	1	CMC lineage	yes	120	raw	15	6	0.5563	0.0075	0.5491	0.457	0.6412	0.7891	1.0	0.0
+M0092	paper_supplement	Lian 2024	brown_hub120	1	CMC lineage	yes	120	resid	15	6	0.5401	0.0074	0.5334	0.4517	0.6152	0.7506	1.0	0.0
+M0093	Gandal2018_S5	Gandal 2018	geneM3	1	BA10/other;NSW/VBBN;unnamed	no	1747	raw	18	5	0.1893	0.0099	0.1812	0.1119	0.2505	0.7076	1.0	0.0
+M0093	Gandal2018_S5	Gandal 2018	geneM3	1	BA10/other;NSW/VBBN;unnamed	no	1747	resid	18	5	0.19	0.0099	0.1825	0.1197	0.2452	0.6531	1.0	0.0
+M0094	Gandal2018_S5	Gandal 2018	geneM4	-1	BA10/other;NSW/VBBN;unnamed	no	1388	raw	10	3	0.0749	0.0047	0.0666	0.038	0.0951	0.0	1.0	0.0
+M0094	Gandal2018_S5	Gandal 2018	geneM4	-1	BA10/other;NSW/VBBN;unnamed	no	1388	resid	10	3	0.0777	0.0048	0.0689	0.0364	0.1014	0.0	1.0	0.0
+M0095	Gandal2018_S5	Gandal 2018	geneM5	1	BA10/other;NSW/VBBN;unnamed	no	579	raw	18	5	0.2911	0.008	0.2639	0.1629	0.3648	0.7663	1.0	0.0
+M0095	Gandal2018_S5	Gandal 2018	geneM5	1	BA10/other;NSW/VBBN;unnamed	no	579	resid	18	5	0.2871	0.0077	0.2527	0.1457	0.3597	0.8094	1.0	0.0
+M0096	Gandal2018_S5	Gandal 2018	geneM27	-1	BA10/other;NSW/VBBN;unnamed	no	80	raw	18	5	0.2475	0.0107	0.2332	0.1532	0.3133	0.7589	1.0	0.0
+M0096	Gandal2018_S5	Gandal 2018	geneM27	-1	BA10/other;NSW/VBBN;unnamed	no	80	resid	18	5	0.2391	0.0117	0.223	0.1536	0.2924	0.5391	1.0	0.0
+M0097	Gandal2018_S5	Gandal 2018	geneM2	-1	BA10/other;NSW/VBBN;unnamed	no	2203	raw	17	5	0.1409	0.0103	0.1259	0.0383	0.2134	0.8757	1.0	0.0
+M0097	Gandal2018_S5	Gandal 2018	geneM2	-1	BA10/other;NSW/VBBN;unnamed	no	2203	resid	17	5	0.1422	0.0102	0.1282	0.0378	0.2187	0.9014	1.0	0.0
+M0098	Gandal2018_S5	Gandal 2018	geneM1	-1	BA10/other;NSW/VBBN;unnamed	no	2645	raw	17	5	0.1609	0.0047	0.1501	0.021	0.2793	0.941	1.0	0.0
+M0098	Gandal2018_S5	Gandal 2018	geneM1	-1	BA10/other;NSW/VBBN;unnamed	no	2645	resid	17	5	0.1677	0.0048	0.159	0.0262	0.2918	0.9526	1.0	0.0
+M0099	Gandal2018_S5	Gandal 2018	geneM8	-1	BA10/other;NSW/VBBN;unnamed	no	507	raw	17	5	0.0988	0.0057	0.0803	0.0031	0.1575	0.8908	1.0	0.0
+M0099	Gandal2018_S5	Gandal 2018	geneM8	-1	BA10/other;NSW/VBBN;unnamed	no	507	resid	17	5	0.0979	0.0056	0.0794	-0.002	0.1608	0.9119	0.0	0.0
+M0100	Gandal2018_S5	Gandal 2018	geneM24	-1	BA10/other;NSW/VBBN;unnamed	no	89	raw	17	5	0.1307	0.0069	0.121	0.0414	0.2005	0.9247	1.0	0.0
+M0100	Gandal2018_S5	Gandal 2018	geneM24	-1	BA10/other;NSW/VBBN;unnamed	no	89	resid	17	5	0.1206	0.0071	0.1099	0.0238	0.196	0.9391	1.0	0.0
+M0101	Gandal2018_S5	Gandal 2018	geneM12	-1	BA10/other;NSW/VBBN;unnamed	no	183	raw	18	5	0.4189	0.0071	0.4121	0.1406	0.6836	0.9864	1.0	0.0
+M0101	Gandal2018_S5	Gandal 2018	geneM12	-1	BA10/other;NSW/VBBN;unnamed	no	183	resid	18	5	0.4199	0.0077	0.412	0.1391	0.6849	0.9852	1.0	0.0
+M0102	Gandal2018_S5	Gandal 2018	geneM14	-1	BA10/other;NSW/VBBN;unnamed	no	151	raw	18	5	0.1279	0.0074	0.12	0.0424	0.1975	0.9706	1.0	0.0
+M0102	Gandal2018_S5	Gandal 2018	geneM14	-1	BA10/other;NSW/VBBN;unnamed	no	151	resid	18	5	0.1192	0.007	0.1117	0.0394	0.184	0.9645	1.0	0.0
+M0103	Gandal2018_S5	Gandal 2018	geneM18	-1	BA10/other;NSW/VBBN;unnamed	no	116	raw	18	5	0.0647	0.0064	0.0494	0.0071	0.0917	0.7479	1.0	0.0
+M0103	Gandal2018_S5	Gandal 2018	geneM18	-1	BA10/other;NSW/VBBN;unnamed	no	116	resid	18	5	0.0648	0.0068	0.0521	0.006	0.0981	0.7959	1.0	0.0
+M0104	Gandal2018_S5	Gandal 2018	geneM26	-1	BA10/other;NSW/VBBN;unnamed	no	83	raw	18	5	0.3191	0.009	0.3049	0.2155	0.3942	0.6103	1.0	0.0
+M0104	Gandal2018_S5	Gandal 2018	geneM26	-1	BA10/other;NSW/VBBN;unnamed	no	83	resid	18	5	0.325	0.0085	0.3112	0.2161	0.4063	0.6927	1.0	0.0
+M0105	Gandal2018_S5	Gandal 2018	geneM9	1	BA10/other;NSW/VBBN;unnamed	no	262	raw	18	5	0.3715	0.012	0.3553	0.2661	0.4445	0.8613	1.0	0.0
+M0105	Gandal2018_S5	Gandal 2018	geneM9	1	BA10/other;NSW/VBBN;unnamed	no	262	resid	18	5	0.3781	0.0122	0.3623	0.2794	0.4452	0.8429	1.0	0.0
+M0106	Gandal2018_S5	Gandal 2018	geneM10	1	BA10/other;NSW/VBBN;unnamed	no	232	raw	18	5	0.1586	0.0075	0.1376	0.0665	0.2087	0.7517	1.0	0.0
+M0106	Gandal2018_S5	Gandal 2018	geneM10	1	BA10/other;NSW/VBBN;unnamed	no	232	resid	18	5	0.1598	0.0075	0.1342	0.0563	0.212	0.7509	1.0	0.0
+M0107	Gandal2018_S5	Gandal 2018	geneM19	1	BA10/other;NSW/VBBN;unnamed	no	115	raw	18	5	0.1298	0.0129	0.1039	0.0035	0.2042	0.9082	1.0	0.0
+M0107	Gandal2018_S5	Gandal 2018	geneM19	1	BA10/other;NSW/VBBN;unnamed	no	115	resid	18	5	0.1342	0.0127	0.1125	-0.0007	0.2257	0.9289	0.0	0.0
+M0108	Gandal2018_S5	Gandal 2018	geneM17	1	BA10/other;NSW/VBBN;unnamed	no	118	raw	17	5	0.104	0.0056	0.0886	0.0162	0.161	0.8416	1.0	0.0
+M0108	Gandal2018_S5	Gandal 2018	geneM17	1	BA10/other;NSW/VBBN;unnamed	no	118	resid	17	5	0.1093	0.0064	0.0946	0.0191	0.17	0.8828	1.0	0.0
+M0109	Gandal2018_S5	Gandal 2018	geneM33	-1	BA10/other;NSW/VBBN;unnamed	no	61	raw	18	5	0.5551	0.0166	0.5387	0.3196	0.7577	0.9667	1.0	0.0
+M0109	Gandal2018_S5	Gandal 2018	geneM33	-1	BA10/other;NSW/VBBN;unnamed	no	61	resid	18	5	0.5649	0.0158	0.5491	0.3232	0.775	0.9685	1.0	0.0
+M0110	Gandal2018_S5	Gandal 2018	geneM23	-1	BA10/other;NSW/VBBN;unnamed	no	93	raw	17	5	0.2356	0.0066	0.2248	0.0806	0.3691	0.9172	1.0	0.0
+M0110	Gandal2018_S5	Gandal 2018	geneM23	-1	BA10/other;NSW/VBBN;unnamed	no	93	resid	17	5	0.2353	0.0075	0.224	0.0835	0.3645	0.922	1.0	0.0
+M0111	Gandal2018_S5	Gandal 2018	geneM7	1	BA10/other;NSW/VBBN;unnamed	no	517	raw	18	5	0.1062	0.0106	0.0888	0.0597	0.1179	0.6217	1.0	0.0
+M0111	Gandal2018_S5	Gandal 2018	geneM7	1	BA10/other;NSW/VBBN;unnamed	no	517	resid	18	5	0.1081	0.0105	0.0901	0.0611	0.1191	0.6169	1.0	0.0
+M0112	Gandal2018_S5	Gandal 2018	geneM16	1	BA10/other;NSW/VBBN;unnamed	no	120	raw	18	5	0.3911	0.0081	0.3716	0.2801	0.4631	0.6033	1.0	0.0
+M0112	Gandal2018_S5	Gandal 2018	geneM16	1	BA10/other;NSW/VBBN;unnamed	no	120	resid	18	5	0.394	0.0078	0.38	0.2761	0.4839	0.7233	1.0	0.0
+M0113	Gandal2018_S5	Gandal 2018	geneM6	-1	BA10/other;NSW/VBBN;unnamed	no	533	raw	18	5	0.3285	0.01	0.3192	0.1447	0.4937	0.9247	1.0	0.0
+M0113	Gandal2018_S5	Gandal 2018	geneM6	-1	BA10/other;NSW/VBBN;unnamed	no	533	resid	18	5	0.319	0.01	0.3079	0.1313	0.4845	0.9268	1.0	0.0
+M0114	Gandal2018_S5	Gandal 2018	geneM11	1	BA10/other;NSW/VBBN;unnamed	no	190	raw	18	5	0.1448	0.0105	0.1338	0.0008	0.2667	0.9621	1.0	0.0
+M0114	Gandal2018_S5	Gandal 2018	geneM11	1	BA10/other;NSW/VBBN;unnamed	no	190	resid	18	5	0.1421	0.011	0.131	-0.0053	0.2673	0.967	0.0	0.0
+M0115	Gandal2018_S5	Gandal 2018	geneM13	1	BA10/other;NSW/VBBN;unnamed	no	179	raw	18	5	0.1441	0.0058	0.1263	0.0064	0.2462	0.9008	1.0	0.0
+M0115	Gandal2018_S5	Gandal 2018	geneM13	1	BA10/other;NSW/VBBN;unnamed	no	179	resid	18	5	0.144	0.0061	0.1306	0.0076	0.2536	0.9204	1.0	0.0
+M0116	Gandal2018_S5	Gandal 2018	geneM29	1	BA10/other;NSW/VBBN;unnamed	no	74	raw	18	5	0.1261	0.0107	0.1112	0.0243	0.1981	0.9073	1.0	0.0
+M0116	Gandal2018_S5	Gandal 2018	geneM29	1	BA10/other;NSW/VBBN;unnamed	no	74	resid	18	5	0.1302	0.0099	0.1151	0.0296	0.2006	0.9102	1.0	0.0
+M0117	Gandal2018_S5	Gandal 2018	geneM28	1	BA10/other;NSW/VBBN;unnamed	no	80	raw	18	5	0.0755	0.0087	0.0631	0.0097	0.1165	0.8953	1.0	0.0
+M0117	Gandal2018_S5	Gandal 2018	geneM28	1	BA10/other;NSW/VBBN;unnamed	no	80	resid	18	5	0.0808	0.0092	0.0681	0.0131	0.1232	0.9002	1.0	0.0
+M0118	Gandal2018_S5	Gandal 2018	geneM25	-1	BA10/other;NSW/VBBN;unnamed	no	88	raw	17	5	0.1058	0.0057	0.0936	0.0269	0.1604	0.9	1.0	0.0
+M0118	Gandal2018_S5	Gandal 2018	geneM25	-1	BA10/other;NSW/VBBN;unnamed	no	88	resid	17	5	0.0925	0.0059	0.0851	0.0323	0.1379	0.8987	1.0	0.0
+M0119	Gandal2018_S5	Gandal 2018	geneM20	1	BA10/other;NSW/VBBN;unnamed	no	105	raw	17	5	0.0958	0.0063	0.0705	0.0247	0.1163	0.6795	1.0	0.0
+M0119	Gandal2018_S5	Gandal 2018	geneM20	1	BA10/other;NSW/VBBN;unnamed	no	105	resid	17	5	0.0981	0.0051	0.07	0.0227	0.1173	0.6514	1.0	0.0
+M0120	Gandal2018_S5	Gandal 2018	geneM30	1	BA10/other;NSW/VBBN;unnamed	no	70	raw	17	5	0.039	0.0065	0.0295	-0.001	0.06	0.8275	0.0	0.0
+M0120	Gandal2018_S5	Gandal 2018	geneM30	1	BA10/other;NSW/VBBN;unnamed	no	70	resid	17	5	0.0362	0.0069	0.0271	0.0012	0.0529	0.805	1.0	0.0
+M0121	Gandal2018_S5	Gandal 2018	geneM15	1	BA10/other;NSW/VBBN;unnamed	no	132	raw	18	5	0.3513	0.0197	0.3317	0.0838	0.5797	0.9679	1.0	0.0
+M0121	Gandal2018_S5	Gandal 2018	geneM15	1	BA10/other;NSW/VBBN;unnamed	no	132	resid	18	5	0.3596	0.0191	0.3411	0.0797	0.6024	0.9789	1.0	0.0
+M0122	Gandal2018_S5	Gandal 2018	geneM31	1	BA10/other;NSW/VBBN;unnamed	no	68	raw	17	5	0.1878	0.0053	0.1708	0.0334	0.3082	0.9	1.0	0.0
+M0122	Gandal2018_S5	Gandal 2018	geneM31	1	BA10/other;NSW/VBBN;unnamed	no	68	resid	17	5	0.1929	0.0049	0.1804	0.0365	0.3243	0.9281	1.0	0.0
+M0123	Gandal2018_S5	Gandal 2018	geneM32	1	BA10/other;NSW/VBBN;unnamed	no	61	raw	18	5	0.3154	0.0095	0.2551	0.1131	0.3971	0.7195	1.0	0.0
+M0123	Gandal2018_S5	Gandal 2018	geneM32	1	BA10/other;NSW/VBBN;unnamed	no	61	resid	18	5	0.3191	0.0096	0.2716	0.1167	0.4266	0.7696	1.0	0.0
+M0124	Gandal2018_S5	Gandal 2018	geneM22	-1	BA10/other;NSW/VBBN;unnamed	no	94	raw	17	5	0.0776	0.0063	0.0669	0.0147	0.119	0.8311	1.0	0.0
+M0124	Gandal2018_S5	Gandal 2018	geneM22	-1	BA10/other;NSW/VBBN;unnamed	no	94	resid	17	5	0.0716	0.0075	0.0624	0.0159	0.1089	0.8732	1.0	0.0
+M0125	Gandal2018_S5	Gandal 2018	geneM21	-1	BA10/other;NSW/VBBN;unnamed	no	94	raw	18	5	0.1754	0.0073	0.166	0.0804	0.2515	0.8998	1.0	0.0
+M0125	Gandal2018_S5	Gandal 2018	geneM21	-1	BA10/other;NSW/VBBN;unnamed	no	94	resid	18	5	0.1773	0.0063	0.1684	0.0871	0.2498	0.9004	1.0	0.0
+M0126	Gandal2018_S5	Gandal 2018	geneM34	1	BA10/other;NSW/VBBN;unnamed	no	54	raw	18	5	0.1012	0.0079	0.0886	0.0132	0.1641	0.876	1.0	0.0
+M0126	Gandal2018_S5	Gandal 2018	geneM34	1	BA10/other;NSW/VBBN;unnamed	no	54	resid	18	5	0.1036	0.0081	0.0914	0.016	0.1667	0.8909	1.0	0.0
+M0127	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	CMC|CTRL modules|1	-1	CMC lineage	yes	49	raw	15	6	0.6201	0.0146	0.6091	0.5583	0.6598	0.1975	1.0	0.0
+M0127	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	CMC|CTRL modules|1	-1	CMC lineage	yes	49	resid	15	6	0.6185	0.0159	0.6089	0.5604	0.6574	0.1029	1.0	0.0
+M0128	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	CMC|CTRL modules|106	-1	CMC lineage	yes	38	raw	15	6	0.2292	0.0115	0.209	0.1765	0.2416	0.0	1.0	0.0
+M0128	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	CMC|CTRL modules|106	-1	CMC lineage	yes	38	resid	15	6	0.2261	0.0112	0.2054	0.1733	0.2374	0.0	1.0	0.0
+M0129	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	CMC|CTRL modules|117	-1	CMC lineage	yes	31	raw	15	6	0.3955	0.0053	0.3842	0.2246	0.5439	0.9387	1.0	0.0
+M0129	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	CMC|CTRL modules|117	-1	CMC lineage	yes	31	resid	15	6	0.3822	0.0059	0.372	0.2065	0.5376	0.9584	1.0	0.0
+M0130	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	CMC|CTRL modules|120	-1	CMC lineage	yes	31	raw	15	6	0.3944	0.0147	0.3775	0.2658	0.4891	0.8721	1.0	0.0
+M0130	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	CMC|CTRL modules|120	-1	CMC lineage	yes	31	resid	15	6	0.3965	0.0149	0.3791	0.2645	0.4938	0.8853	1.0	0.0
+M0131	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	CMC|CTRL modules|122	-1	CMC lineage	yes	53	raw	15	6	0.3143	0.011	0.2891	0.221	0.3572	0.5786	1.0	0.0
+M0131	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	CMC|CTRL modules|122	-1	CMC lineage	yes	53	resid	15	6	0.323	0.0109	0.3017	0.2327	0.3708	0.6288	1.0	0.0
+M0132	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	CMC|CTRL modules|160	-1	CMC lineage	yes	38	raw	15	6	0.5956	0.0118	0.5862	0.4515	0.721	0.941	1.0	0.0
+M0132	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	CMC|CTRL modules|160	-1	CMC lineage	yes	38	resid	15	6	0.5953	0.0115	0.5868	0.4494	0.7242	0.9484	1.0	0.0
+M0133	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	CMC|CTRL modules|17	-1	CMC lineage	yes	37	raw	15	6	0.5617	0.0094	0.5525	0.4862	0.6189	0.6276	1.0	0.0
+M0133	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	CMC|CTRL modules|17	-1	CMC lineage	yes	37	resid	15	6	0.559	0.0101	0.5511	0.4735	0.6287	0.7363	1.0	0.0
+M0134	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	CMC|CTRL modules|240	-1	CMC lineage	yes	31	raw	15	6	0.37	0.0077	0.3604	0.2084	0.5124	0.8783	1.0	0.0
+M0134	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	CMC|CTRL modules|240	-1	CMC lineage	yes	31	resid	15	6	0.3655	0.0089	0.3545	0.202	0.507	0.9077	1.0	0.0
+M0135	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	CMC|CTRL modules|29	-1	CMC lineage	yes	35	raw	15	6	0.2731	0.0105	0.2577	0.1041	0.4113	0.942	1.0	0.0
+M0135	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	CMC|CTRL modules|29	-1	CMC lineage	yes	35	resid	15	6	0.274	0.0112	0.2596	0.1092	0.41	0.9495	1.0	0.0
+M0136	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	CMC|CTRL modules|328	-1	CMC lineage	yes	43	raw	14	6	0.2087	0.0085	0.1996	0.0735	0.3257	0.9582	1.0	0.0
+M0136	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	CMC|CTRL modules|328	-1	CMC lineage	yes	43	resid	14	6	0.2099	0.008	0.2008	0.0704	0.3311	0.9687	1.0	0.0
+M0137	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	CMC|CTRL modules|51	-1	CMC lineage	yes	33	raw	14	6	0.4194	0.0068	0.4075	0.2777	0.5372	0.8927	1.0	0.0
+M0137	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	CMC|CTRL modules|51	-1	CMC lineage	yes	33	resid	14	6	0.4304	0.0059	0.4198	0.2904	0.5492	0.8854	1.0	0.0
+M0138	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	CMC|CTRL modules|6	-1	CMC lineage	yes	38	raw	15	6	0.4657	0.0087	0.4584	0.2897	0.6271	0.9426	1.0	0.0
+M0138	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	CMC|CTRL modules|6	-1	CMC lineage	yes	38	resid	15	6	0.47	0.0074	0.4644	0.2913	0.6374	0.9563	1.0	0.0
+M0139	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	CMC|CTRL modules|681	1	CMC lineage	yes	35	raw	15	6	0.5101	0.0156	0.4915	0.3093	0.6737	0.9279	1.0	0.0
+M0139	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	CMC|CTRL modules|681	1	CMC lineage	yes	35	resid	15	6	0.5007	0.0153	0.4829	0.3026	0.6632	0.9365	1.0	0.0
+M0140	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	CMC|SCZ mods|10	-1	CMC lineage	yes	35	raw	15	6	0.4432	0.014	0.4112	0.2144	0.6081	0.9177	1.0	0.0
+M0140	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	CMC|SCZ mods|10	-1	CMC lineage	yes	35	resid	15	6	0.443	0.017	0.4153	0.2224	0.6081	0.9173	1.0	0.0
+M0141	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	CMC|SCZ mods|110	-1	CMC lineage	yes	33	raw	14	6	0.445	0.0069	0.4377	0.3437	0.5316	0.7863	1.0	0.0
+M0141	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	CMC|SCZ mods|110	-1	CMC lineage	yes	33	resid	14	6	0.455	0.0069	0.4471	0.3581	0.536	0.7777	1.0	0.0
+M0142	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	CMC|SCZ mods|22	-1	CMC lineage	yes	30	raw	15	6	0.161	0.0086	0.1527	0.049	0.2564	0.965	1.0	0.0
+M0142	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	CMC|SCZ mods|22	-1	CMC lineage	yes	30	resid	15	6	0.1592	0.0077	0.1511	0.0391	0.2631	0.9739	1.0	0.0
+M0143	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	CMC|SCZ mods|73	-1	CMC lineage	yes	34	raw	15	6	0.4121	0.0115	0.3842	0.2663	0.502	0.7507	1.0	0.0
+M0143	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	CMC|SCZ mods|73	-1	CMC lineage	yes	34	resid	15	6	0.4127	0.0117	0.391	0.265	0.517	0.8141	1.0	0.0
+M0144	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	CMC|SCZ mods|74	-1	CMC lineage	yes	33	raw	15	6	0.4071	0.0086	0.3925	0.2086	0.5765	0.9527	1.0	0.0
+M0144	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	CMC|SCZ mods|74	-1	CMC lineage	yes	33	resid	15	6	0.396	0.009	0.3829	0.1973	0.5686	0.9558	1.0	0.0
+M0145	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|1	-1	McLean/Harvard	yes	49	raw	22	7	0.6348	0.0141	0.6225	0.5641	0.6809	0.4772	1.0	0.0
+M0145	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|1	-1	McLean/Harvard	yes	49	resid	22	7	0.633	0.0148	0.622	0.5667	0.6773	0.4196	1.0	0.0
+M0146	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|106	1	McLean/Harvard	yes	38	raw	22	7	0.2088	0.0111	0.1932	0.1356	0.2508	0.8401	1.0	0.0
+M0146	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|106	1	McLean/Harvard	yes	38	resid	22	7	0.2065	0.0116	0.1903	0.1357	0.245	0.8193	1.0	0.0
+M0147	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|106	-1	McLean/Harvard	yes	38	raw	22	7	0.2088	0.0122	0.1921	0.1344	0.2499	0.8423	1.0	0.0
+M0147	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|106	-1	McLean/Harvard	yes	38	resid	22	7	0.2065	0.0112	0.1908	0.137	0.2445	0.8155	1.0	0.0
+M0148	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|112	-1	McLean/Harvard	yes	38	raw	22	7	0.5438	0.0107	0.5318	0.3739	0.6896	0.9354	1.0	0.0
+M0148	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|112	-1	McLean/Harvard	yes	38	resid	22	7	0.5406	0.0091	0.5291	0.3659	0.6922	0.9387	1.0	0.0
+M0149	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|117	-1	McLean/Harvard	yes	31	raw	22	7	0.4271	0.0061	0.415	0.2646	0.5654	0.9397	1.0	0.0
+M0149	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|117	-1	McLean/Harvard	yes	31	resid	22	7	0.4162	0.0046	0.4066	0.2492	0.5639	0.9582	1.0	0.0
+M0150	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|120	-1	McLean/Harvard	yes	31	raw	22	7	0.4011	0.0144	0.3833	0.2914	0.4753	0.8474	1.0	0.0
+M0150	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|120	-1	McLean/Harvard	yes	31	resid	22	7	0.4057	0.0137	0.3877	0.2911	0.4842	0.8667	1.0	0.0
+M0151	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|122	-1	McLean/Harvard	yes	53	raw	22	7	0.321	0.0101	0.2984	0.2396	0.3572	0.5831	1.0	0.0
+M0151	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|122	-1	McLean/Harvard	yes	53	resid	22	7	0.3308	0.0105	0.3104	0.2495	0.3712	0.6332	1.0	0.0
+M0152	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|137	-1	McLean/Harvard	yes	38	raw	22	7	0.3173	0.007	0.306	0.1881	0.4238	0.9204	1.0	0.0
+M0152	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|137	-1	McLean/Harvard	yes	38	resid	22	7	0.3229	0.0065	0.3119	0.1962	0.4275	0.9223	1.0	0.0
+M0153	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|15	-1	McLean/Harvard	yes	31	raw	22	7	0.6194	0.0088	0.6091	0.4885	0.7296	0.905	1.0	0.0
+M0153	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|15	-1	McLean/Harvard	yes	31	resid	22	7	0.62	0.0072	0.6118	0.4947	0.729	0.901	1.0	0.0
+M0154	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|17	-1	McLean/Harvard	yes	37	raw	22	7	0.5811	0.0091	0.5688	0.4986	0.639	0.6872	1.0	0.0
+M0154	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|17	-1	McLean/Harvard	yes	37	resid	22	7	0.5791	0.0099	0.5677	0.4908	0.6445	0.7442	1.0	0.0
+M0155	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|198	-1	McLean/Harvard	yes	36	raw	21	7	0.4209	0.0052	0.4117	0.2843	0.5391	0.8779	1.0	0.0
+M0155	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|198	-1	McLean/Harvard	yes	36	resid	21	7	0.4219	0.0057	0.4124	0.2988	0.5259	0.8639	1.0	0.0
+M0156	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|211	-1	McLean/Harvard	yes	36	raw	22	7	0.3172	0.0079	0.3084	0.1536	0.4632	0.9674	1.0	0.0
+M0156	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|211	-1	McLean/Harvard	yes	36	resid	22	7	0.3209	0.0077	0.3128	0.1557	0.47	0.9738	1.0	0.0
+M0157	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|216	1	McLean/Harvard	yes	30	raw	22	7	0.4554	0.0059	0.4493	0.2239	0.6746	0.9847	1.0	0.0
+M0157	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|216	1	McLean/Harvard	yes	30	resid	22	7	0.4566	0.0063	0.4493	0.2262	0.6723	0.9846	1.0	0.0
+M0158	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|216	-1	McLean/Harvard	yes	30	raw	22	7	0.4554	0.0062	0.4489	0.2235	0.6743	0.9846	1.0	0.0
+M0158	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|216	-1	McLean/Harvard	yes	30	resid	22	7	0.4566	0.006	0.4496	0.2256	0.6736	0.9848	1.0	0.0
+M0159	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|240	-1	McLean/Harvard	yes	31	raw	22	7	0.3571	0.0089	0.3453	0.2192	0.4715	0.8628	1.0	0.0
+M0159	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|240	-1	McLean/Harvard	yes	31	resid	22	7	0.355	0.0077	0.3447	0.2173	0.4721	0.8938	1.0	0.0
+M0160	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|29	-1	McLean/Harvard	yes	35	raw	22	7	0.2914	0.0106	0.2767	0.1448	0.4085	0.9436	1.0	0.0
+M0160	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|29	-1	McLean/Harvard	yes	35	resid	22	7	0.292	0.0112	0.2777	0.1491	0.4063	0.9471	1.0	0.0
+M0161	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|316	-1	McLean/Harvard	yes	30	raw	21	7	0.3867	0.0107	0.3754	0.2276	0.5232	0.9538	1.0	0.0
+M0161	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|316	-1	McLean/Harvard	yes	30	resid	21	7	0.3874	0.0105	0.3769	0.2304	0.5235	0.9611	1.0	0.0
+M0162	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|317	-1	McLean/Harvard	yes	32	raw	21	7	0.1998	0.0091	0.1888	0.0931	0.2845	0.9314	1.0	0.0
+M0162	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|317	-1	McLean/Harvard	yes	32	resid	21	7	0.1966	0.0098	0.1838	0.0916	0.2759	0.9219	1.0	0.0
+M0163	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|328	-1	McLean/Harvard	yes	43	raw	21	7	0.2284	0.0075	0.2201	0.1077	0.3324	0.9595	1.0	0.0
+M0163	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|328	-1	McLean/Harvard	yes	43	resid	21	7	0.2299	0.0074	0.2213	0.1056	0.3369	0.9696	1.0	0.0
+M0164	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|35	-1	McLean/Harvard	yes	34	raw	22	7	0.4361	0.0072	0.4232	0.2941	0.5523	0.8944	1.0	0.0
+M0164	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|35	-1	McLean/Harvard	yes	34	resid	22	7	0.4346	0.0074	0.4228	0.2938	0.5519	0.8931	1.0	0.0
+M0165	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|36	-1	McLean/Harvard	yes	33	raw	22	7	0.237	0.009	0.2224	0.1274	0.3175	0.9218	1.0	0.0
+M0165	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|36	-1	McLean/Harvard	yes	33	resid	22	7	0.2398	0.0091	0.2252	0.1242	0.3262	0.9331	1.0	0.0
+M0166	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|428	-1	McLean/Harvard	yes	32	raw	21	7	0.3021	0.0093	0.2915	0.1302	0.4528	0.9637	1.0	0.0
+M0166	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|428	-1	McLean/Harvard	yes	32	resid	21	7	0.3024	0.0084	0.2928	0.133	0.4526	0.9684	1.0	0.0
+M0167	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|48	-1	McLean/Harvard	yes	39	raw	22	7	0.5258	0.0072	0.5127	0.4191	0.6063	0.7722	1.0	0.0
+M0167	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|48	-1	McLean/Harvard	yes	39	resid	22	7	0.5311	0.0082	0.5164	0.4251	0.6077	0.7826	1.0	0.0
+M0168	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|487	-1	McLean/Harvard	yes	43	raw	21	7	0.1779	0.0061	0.1639	0.0526	0.2752	0.9482	1.0	0.0
+M0168	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|487	-1	McLean/Harvard	yes	43	resid	21	7	0.1793	0.0065	0.1645	0.0464	0.2827	0.954	1.0	0.0
+M0169	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|51	-1	McLean/Harvard	yes	33	raw	21	7	0.4355	0.0057	0.4255	0.3135	0.5374	0.8933	1.0	0.0
+M0169	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|51	-1	McLean/Harvard	yes	33	resid	21	7	0.4385	0.0089	0.4252	0.3193	0.531	0.874	1.0	0.0
+M0170	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|6	1	McLean/Harvard	yes	38	raw	22	7	0.4789	0.0073	0.4731	0.3343	0.6119	0.9317	1.0	0.0
+M0170	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|6	1	McLean/Harvard	yes	38	resid	22	7	0.4832	0.0073	0.4777	0.335	0.6203	0.9482	1.0	0.0
+M0171	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|6	-1	McLean/Harvard	yes	38	raw	22	7	0.4789	0.0079	0.4725	0.333	0.612	0.9323	1.0	0.0
+M0171	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|6	-1	McLean/Harvard	yes	38	resid	22	7	0.4832	0.0079	0.4771	0.3344	0.6198	0.9484	1.0	0.0
+M0172	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|65	-1	McLean/Harvard	yes	44	raw	22	7	0.3749	0.0068	0.3632	0.277	0.4495	0.8363	1.0	0.0
+M0172	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|CTRL modules|65	-1	McLean/Harvard	yes	44	resid	22	7	0.3736	0.0053	0.3637	0.2764	0.4509	0.8414	1.0	0.0
+M0173	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|SCZ mods|10	1	McLean/Harvard	yes	35	raw	22	7	0.4268	0.0151	0.3947	0.2346	0.5549	0.9015	1.0	0.0
+M0173	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|SCZ mods|10	1	McLean/Harvard	yes	35	resid	22	7	0.4298	0.0157	0.4041	0.2478	0.5603	0.9006	1.0	0.0
+M0174	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|SCZ mods|10	-1	McLean/Harvard	yes	35	raw	22	7	0.4268	0.0157	0.394	0.2371	0.5509	0.8981	1.0	0.0
+M0174	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|SCZ mods|10	-1	McLean/Harvard	yes	35	resid	22	7	0.4298	0.0154	0.4044	0.2479	0.5608	0.9008	1.0	0.0
+M0175	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|SCZ mods|105	-1	McLean/Harvard	yes	48	raw	22	7	0.5363	0.007	0.5372	0.4958	0.5786	0.1993	1.0	0.0
+M0175	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|SCZ mods|105	-1	McLean/Harvard	yes	48	resid	22	7	0.5385	0.0085	0.5354	0.502	0.5687	0.0	1.0	0.0
+M0176	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|SCZ mods|110	-1	McLean/Harvard	yes	33	raw	21	7	0.4466	0.0086	0.4375	0.3622	0.5129	0.742	1.0	0.0
+M0176	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|SCZ mods|110	-1	McLean/Harvard	yes	33	resid	21	7	0.4478	0.0072	0.4393	0.3649	0.5137	0.7581	1.0	0.0
+M0177	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|SCZ mods|137	1	McLean/Harvard	yes	31	raw	22	7	0.297	0.0059	0.287	0.1255	0.4484	0.9654	1.0	0.0
+M0177	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|SCZ mods|137	1	McLean/Harvard	yes	31	resid	22	7	0.2951	0.0066	0.2853	0.1241	0.4465	0.9658	1.0	0.0
+M0178	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|SCZ mods|137	-1	McLean/Harvard	yes	31	raw	22	7	0.297	0.005	0.2878	0.1257	0.4499	0.9652	1.0	0.0
+M0178	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|SCZ mods|137	-1	McLean/Harvard	yes	31	resid	22	7	0.2951	0.007	0.285	0.124	0.4461	0.9663	1.0	0.0
+M0179	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|SCZ mods|164	-1	McLean/Harvard	yes	38	raw	22	7	0.2925	0.0072	0.274	0.2161	0.3318	0.6581	1.0	0.0
+M0179	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|SCZ mods|164	-1	McLean/Harvard	yes	38	resid	22	7	0.2856	0.0082	0.2684	0.2064	0.3305	0.7022	1.0	0.0
+M0180	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|SCZ mods|169	-1	McLean/Harvard	yes	44	raw	22	7	0.219	0.0083	0.209	0.0717	0.3463	0.9523	1.0	0.0
+M0180	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|SCZ mods|169	-1	McLean/Harvard	yes	44	resid	22	7	0.2201	0.0082	0.2115	0.0722	0.3507	0.9643	1.0	0.0
+M0181	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|SCZ mods|184	-1	McLean/Harvard	yes	37	raw	22	7	0.3823	0.0081	0.3708	0.1708	0.5708	0.9839	1.0	0.0
+M0181	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|SCZ mods|184	-1	McLean/Harvard	yes	37	resid	22	7	0.3743	0.0079	0.3632	0.1645	0.5619	0.983	1.0	0.0
+M0182	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|SCZ mods|22	-1	McLean/Harvard	yes	30	raw	22	7	0.1481	0.0088	0.1392	0.0505	0.228	0.9626	1.0	0.0
+M0182	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|SCZ mods|22	-1	McLean/Harvard	yes	30	resid	22	7	0.1472	0.0087	0.138	0.0458	0.2301	0.9685	1.0	0.0
+M0183	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|SCZ mods|235	-1	McLean/Harvard	yes	35	raw	21	7	0.2266	0.012	0.2137	0.0822	0.3452	0.9443	1.0	0.0
+M0183	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|SCZ mods|235	-1	McLean/Harvard	yes	35	resid	21	7	0.2272	0.0114	0.2149	0.083	0.3467	0.9539	1.0	0.0
+M0184	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|SCZ mods|24	-1	McLean/Harvard	yes	38	raw	22	7	0.5421	0.0103	0.5313	0.3866	0.6759	0.9688	1.0	0.0
+M0184	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|SCZ mods|24	-1	McLean/Harvard	yes	38	resid	22	7	0.5376	0.0105	0.5258	0.382	0.6696	0.9632	1.0	0.0
+M0185	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|SCZ mods|31	-1	McLean/Harvard	yes	41	raw	22	7	0.4519	0.0093	0.443	0.3425	0.5434	0.8887	1.0	0.0
+M0185	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|SCZ mods|31	-1	McLean/Harvard	yes	41	resid	22	7	0.4583	0.0096	0.4487	0.3409	0.5565	0.9126	1.0	0.0
+M0186	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|SCZ mods|36	-1	McLean/Harvard	yes	31	raw	22	7	0.3161	0.0089	0.298	0.149	0.447	0.908	1.0	0.0
+M0186	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|SCZ mods|36	-1	McLean/Harvard	yes	31	resid	22	7	0.3181	0.0099	0.3033	0.1505	0.4561	0.9356	1.0	0.0
+M0187	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|SCZ mods|38	-1	McLean/Harvard	yes	53	raw	22	7	0.2855	0.007	0.2774	0.2132	0.3417	0.7526	1.0	0.0
+M0187	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|SCZ mods|38	-1	McLean/Harvard	yes	53	resid	22	7	0.2831	0.0067	0.275	0.2042	0.3458	0.8163	1.0	0.0
+M0188	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|SCZ mods|52	-1	McLean/Harvard	yes	32	raw	22	7	0.2985	0.009	0.2902	0.1962	0.3843	0.7817	1.0	0.0
+M0188	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|SCZ mods|52	-1	McLean/Harvard	yes	32	resid	22	7	0.2969	0.0087	0.286	0.1824	0.3896	0.8561	1.0	0.0
+M0189	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|SCZ mods|65	-1	McLean/Harvard	yes	34	raw	21	7	0.4064	0.0156	0.3938	0.2741	0.5136	0.9127	1.0	0.0
+M0189	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|SCZ mods|65	-1	McLean/Harvard	yes	34	resid	21	7	0.4019	0.0189	0.3842	0.2737	0.4947	0.8864	1.0	0.0
+M0190	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|SCZ mods|73	-1	McLean/Harvard	yes	34	raw	22	7	0.3803	0.0106	0.3559	0.232	0.4797	0.8657	1.0	0.0
+M0190	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|SCZ mods|73	-1	McLean/Harvard	yes	34	resid	22	7	0.3821	0.0117	0.3607	0.2355	0.4859	0.8781	1.0	0.0
+M0191	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|SCZ mods|74	-1	McLean/Harvard	yes	33	raw	22	7	0.3861	0.0093	0.3701	0.2132	0.5269	0.9445	1.0	0.0
+M0191	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|SCZ mods|74	-1	McLean/Harvard	yes	33	resid	22	7	0.3785	0.0097	0.3645	0.2089	0.5202	0.9471	1.0	0.0
+M0192	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|SCZ mods|77	-1	McLean/Harvard	yes	53	raw	22	7	0.1982	0.0072	0.1889	0.0832	0.2945	0.9681	1.0	0.0
+M0192	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|SCZ mods|77	-1	McLean/Harvard	yes	53	resid	22	7	0.2001	0.0085	0.1898	0.0828	0.2968	0.9705	1.0	0.0
+M0193	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|SCZ mods|89	-1	McLean/Harvard	yes	32	raw	21	7	0.3764	0.0074	0.3606	0.2255	0.4957	0.9076	1.0	0.0
+M0193	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|SCZ mods|89	-1	McLean/Harvard	yes	32	resid	21	7	0.3515	0.0064	0.3377	0.1883	0.4871	0.9372	1.0	0.0
+M0194	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|SCZ mods|91	1	McLean/Harvard	yes	40	raw	21	7	0.4904	0.0127	0.4715	0.3361	0.607	0.8601	1.0	0.0
+M0194	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|SCZ mods|91	1	McLean/Harvard	yes	40	resid	21	7	0.4858	0.0121	0.4684	0.3308	0.606	0.8768	1.0	0.0
+M0195	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|SCZ mods|91	-1	McLean/Harvard	yes	40	raw	21	7	0.4904	0.0134	0.4709	0.3352	0.6065	0.8606	1.0	0.0
+M0195	CoPA_Kang_Oldham_2026_S14	Kang and Oldham 2026	SZBD|SCZ mods|91	-1	McLean/Harvard	yes	40	resid	21	7	0.4858	0.0129	0.4676	0.3289	0.6063	0.8784	1.0	0.0

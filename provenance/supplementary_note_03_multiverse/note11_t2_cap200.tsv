@@ -1,0 +1,7 @@
+# figure: extended_fig_13b / Note 11 shortened lists
+# script: computed 2026-10-22 from the source tables listed (no script file)
+# source: figures/data/forking_paths_v2/forking_v2_b_spec_curve.tsv sha256 7cf30383e8d8 (genes in 10+ lists, expectations); provenance/supplementary_note_03_multiverse/mapping_runs.tsv sha256 03998abc850c (overlap with the 383: columns s5_in_study_brain, s10_in_study_brain)
+# exp_ge10 is stored to one decimal in the source, so 0.0 means below 0.05; the ratio is therefore not meaningful for cap200; main is the same table row for the primary lists
+path	path_id	n_lists	genes_ge5	exp_ge5_de_prior	genes_ge10	exp_ge10_de_prior	exp_ge10_expr	exp_ge10_uniform	ratio_ge10_de_prior	ge5_in_383	ge10_in_383
+main	A|all|drop|keep|pooled|with|published|all|inclusive	72	2422	2098.5	107	44.3	8.2	0.2	2.413	383	107
+cap200	A|all|drop|keep|pooled|with|cap200|all|inclusive	72	198	69.0	4	0.0	0.0	0.0	326.749	144	4

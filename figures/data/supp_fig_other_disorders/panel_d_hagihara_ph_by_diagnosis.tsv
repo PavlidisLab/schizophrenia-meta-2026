@@ -1,0 +1,29 @@
+# script: analyses/other_disorders_176_2026-10-09/other_disorders_176.py (Hagihara Table S1 block; core80_work_2026-10-16/P11/hag/hag_run_core80.py), run 2026-10-16
+# claim: D: Hagihara Table S1 pH difference from controls, SZ and BD (pooled models and per dataset)
+# produced by: analyses/other_disorders_176_2026-10-09/other_disorders_176.py (OD_SET=study_brain); seed 20261009
+# source: analyses/other_disorders_209_2026-10-12/hagihara_table_s1_pH_by_diagnosis.tsv sha256 c90fcfaa59ee
+# date: 2026-10-12
+# input: data/raw/28776581/supplement/npp2017167x2.xlsx sha256 e67dd144bfa6, sheet TableS1; SCZ-A and Dean 2016 SZ arms counted as SZ; NOS (1 row) dropped
+# pH ~ diagnosis + dataset (OLS); coef = difference from controls in pH units
+model	dx	n_dx	n_control	n_datasets	coef_pH_units	ci_low	ci_high	t	p	residual_sd	coef_in_residual_sd
+all rows, dataset fixed effect	SZ	275	288	10	-0.142	-0.188	-0.096	-6.04	2.4907318128185598e-09	0.27	-0.52
+all rows, dataset fixed effect	BD	154	288	10	-0.129	-0.186	-0.072	-4.46	9.342672839645483e-06	0.27	-0.48
+without Dean 2016	SZ	235	268	9	-0.146	-0.195	-0.097	-5.81	1.0003093362790773e-08	0.274	-0.53
+without Dean 2016	BD	154	268	9	-0.131	-0.189	-0.073	-4.43	1.1085517520985436e-05	0.274	-0.48
+datasets with SZ, BD and controls (GSE35977, GSE53987, SMRI Collection A, SMRI Collection C)	SZ	118	118	4	-0.119	-0.191	-0.048	-3.31	0.001042473410774507	0.277	-0.43
+datasets with SZ, BD and controls (GSE35977, GSE53987, SMRI Collection A, SMRI Collection C)	BD	114	118	4	-0.113	-0.185	-0.042	-3.11	0.0020026067422235254	0.277	-0.41
+SZ minus BD in the shared-control datasets	SZ-BD			4	-0.006	-0.078	0.066	-0.16	0.8694293008138316		
+per dataset: Dean et al, 2016	SZ	40	20	1	-0.106			-1.8	0.07971735032646024		
+per dataset: GSE17612	SZ	27	23	1	-0.352			-4.88	1.7384747878133197e-05		
+per dataset: GSE21138	SZ	30	29	1	-0.066			-1.3	0.19754580638557695		
+per dataset: GSE21935	SZ	23	19	1	-0.329			-4.01	0.00045000179324596284		
+per dataset: GSE35977	SZ	49	49	1	-0.114			-1.92	0.05763651457785685		
+per dataset: GSE35977	BD	46	49	1	-0.118			-1.93	0.056433303475746724		
+per dataset: GSE5392	BD	40	42	1	-0.146			-2.26	0.026699971179106857		
+per dataset: GSE53987	SZ	19	19	1	-0.118			-1.21	0.2351299532984608		
+per dataset: GSE53987	BD	19	19	1	0.0			0.0	1.0		
+per dataset: NSWBTRC-SC	SZ	37	37	1	-0.045			-0.64	0.5214163995047555		
+per dataset: SMRI Collection A	SZ	35	35	1	-0.133			-2.19	0.03163034867726779		
+per dataset: SMRI Collection A	BD	34	35	1	-0.182			-2.65	0.010086674034478202		
+per dataset: SMRI Collection C	SZ	15	15	1	-0.107			-1.18	0.24975349087560708		
+per dataset: SMRI Collection C	BD	15	15	1	-0.087			-1.0	0.3258830080597198		

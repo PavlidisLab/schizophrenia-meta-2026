@@ -1,0 +1,19 @@
+# NEW analysis, composition-only simulation of the bulk pH and agonal axes; run 2026-10-18 on the remote environment; seed 20261018 (SeedSequence [seed, config_id, rep]); 200 reps per config
+# scripts: scripts/prep.py, scripts/sim.py, scripts/summarise.py; inputs sha256(16): axis_v2_controls.tsv.gz 2c72a9b279a24408; hardy_t_by_region.tsv.gz 54f989c55753d2af; recurrent_sets.tsv 3c42f67cdd7acb75; nsw_donor_covariates_used.tsv b93562e2ec0611e8; PsychAD HBCC counts_class.npz 7f67c4f5815f121c; MSSM counts_class.npz 87eae83183616622; NSW pb_cols.tsv 5b0bbf003ad02291; donors_used.tsv 2ccef28914e973ff
+# sign: pH axis z_stouffer positive = higher expression at higher pH; simulated t = OLS t of log2CPM on pH (positive = higher at higher pH); agonal = GTEx Hardy slow-minus-fast-death t (positive = higher in slow death), mean of BA9, BA24, Cortex
+# per-class composition slopes on pH in the 32 NSW control donors (CLR ~ pH + age + male; fraction slope = OLS of class fraction on pH + age + male, per pH unit); class mapping NSW label -> PsychAD class in nsw_class_label/class; PsychAD Mural has no NSW counterpart (fixed at the PsychAD control mean fraction, no pH dependence); simulated_* = slope of the generated class fraction on pH over reps (N=200, RNA-weighted, scale 1; Mural row not in NSW)
+class	clr_slope_per_pH	resid_sd	mean_fraction	mean_clr	nsw_class_label	nsw_fraction_slope_per_pH_adj_age_sex	profile	simulated_hi	simulated_lo	simulated_fraction_slope_mean
+EN	-0.10696	0.19969	0.42763	1.5631	Exc_Neurons	-0.011509	HBCC	0.068996	-0.12185	-0.024424
+EN	-0.10696	0.19969	0.42763	1.5631	Exc_Neurons	-0.011509	MSSM	0.071064	-0.12909	-0.025153
+IN	0.51114	0.24672	0.19488	0.75745	In_Neurons	0.10029	HBCC	0.16923	0.030667	0.10018
+IN	0.51114	0.24672	0.19488	0.75745	In_Neurons	0.10029	MSSM	0.17641	0.046138	0.10344
+Astro	-0.85778	0.43159	0.13027	0.29053	Astrocytes	-0.10982	HBCC	0.0077876	-0.21726	-0.10538
+Astro	-0.85778	0.43159	0.13027	0.29053	Astrocytes	-0.10982	MSSM	0.028126	-0.23335	-0.10899
+OPC	-0.53528	0.25742	0.058179	-0.456	OPC	-0.023524	HBCC	-0.0028748	-0.058604	-0.029477
+OPC	-0.53528	0.25742	0.058179	-0.456	OPC	-0.023524	MSSM	-0.0021355	-0.056843	-0.028655
+Oligo	0.189	0.45911	0.11572	0.15769	Oligodendrocyte	0.031197	HBCC	0.11533	-0.099781	0.02008
+Oligo	0.189	0.45911	0.11572	0.15769	Oligodendrocyte	0.031197	MSSM	0.098157	-0.091669	0.018411
+Immune	0.87766	0.54818	0.05425	-0.63187	Microglia	0.020235	HBCC	0.093234	-0.019901	0.038344
+Immune	0.87766	0.54818	0.05425	-0.63187	Microglia	0.020235	MSSM	0.092938	-0.017617	0.040274
+Endo	-0.077795	0.46047	0.019064	-1.6809	Endothelial	-0.0068634	HBCC	0.023504	-0.018536	0.00067578
+Endo	-0.077795	0.46047	0.019064	-1.6809	Endothelial	-0.0068634	MSSM	0.020449	-0.020189	0.00067088

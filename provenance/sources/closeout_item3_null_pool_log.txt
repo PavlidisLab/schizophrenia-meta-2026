@@ -1,0 +1,8 @@
+# figure: provenance comments: null pool sizes (13,465 excluding the 383; 13,735 excluding the 107)
+# script: see source; tables copied unchanged except for removal of working-folder names
+# source: recurrence_genes.tsv sha256 dda5eb621c15
+# sha256 of the data rows below (first 12): e2418eecc906
+sha256 dda5eb621c15
+published, brain rows: 15844
+genes with a SZ sign: 13841 | recurrent q_bh<0.1: 383 | of which with sign 376 | ge10: 107 | with sign 106
+pool excluding 383: 13465 | pool excluding ge10: 13735

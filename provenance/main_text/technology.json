@@ -1,0 +1,1791 @@
+{
+ "generated": "2026-10-11",
+ "script": "classify_technology.py",
+ "inputs": {
+  "primary_lists.json": "7a0d2b56408d",
+  "universes.json": "44772694de3d",
+  "lineage.json": "603b649760ba"
+ },
+ "studies": {
+  "11296301": {
+   "label": "Hakak 2001",
+   "technology": "microarray",
+   "evidence": "universe type platform (GPL80)",
+   "array_generation": "early",
+   "array_generation_evidence": "platform gene set GPL80: 5,979 genes (universes.json)"
+  },
+  "19358997": {
+   "label": "Kuzman 2009",
+   "technology": "microarray",
+   "evidence": "universe type platform (GPL570)",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform gene set GPL570: 21,383 genes (universes.json)"
+  },
+  "19088852": {
+   "label": "Harris 2008",
+   "technology": "microarray",
+   "evidence": "override: Harris 2008: reproduced list from U133 Plus 2.0 / CodeLink arrays",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform named in the text: 'U133 Plus'"
+  },
+  "27846841": {
+   "label": "Lin 2016",
+   "technology": "rnaseq",
+   "evidence": "lineage platform text: Illumina HiSeq 2000 (101-bp paired-end RNA-seq); GEO accession GSE46562"
+  },
+  "25658856": {
+   "label": "Cattane 2015",
+   "technology": "microarray",
+   "evidence": "universe type platform (GPL11532)",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform gene set GPL11532: 20,497 genes (universes.json)"
+  },
+  "30077719": {
+   "label": "Tian 2018",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "31174959": {
+   "label": "Collado-Torres 2019",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "29740122": {
+   "label": "Hauberg 2019",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "16038679": {
+   "label": "Altar 2005",
+   "technology": "microarray",
+   "evidence": "universe type platform (GPL876)",
+   "array_generation": "early",
+   "array_generation_evidence": "platform gene set GPL876: 8,482 genes (universes.json)"
+  },
+  "18985160": {
+   "label": "Mudge 2008",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "19582768": {
+   "label": "Bousman 2010",
+   "technology": "microarray",
+   "evidence": "lineage platform text: San Diego: Affymetrix GeneChip Human Exon 1.0 ST Array; Taiwan: Affymetrix U133A",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform named in the text: 'U133Plus'"
+  },
+  "21727898": {
+   "label": "Gardiner 2012",
+   "technology": "microarray",
+   "evidence": "lineage platform text: Illumina commercial miRNA microarray platform (miRBase version 9.1)",
+   "array_generation": "noncoding",
+   "array_generation_evidence": "miRNA / lncRNA array (platform text)"
+  },
+  "22503327": {
+   "label": "Lee 2012",
+   "technology": "microarray",
+   "evidence": "lineage platform text: Illumina Human-6 Expression BeadChips",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform named in the text: 'Human-6'"
+  },
+  "22441714": {
+   "label": "Schmitt 2012",
+   "technology": "microarray",
+   "evidence": "universe type platform (GPL6104, GPL6104)",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform gene set GPL6104: 17,157 genes (universes.json)"
+  },
+  "24287731": {
+   "label": "Sellmann 2014",
+   "technology": "microarray",
+   "evidence": "universe type platform (GPL6104)",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform gene set GPL6104: 17,157 genes (universes.json)"
+  },
+  "22558445": {
+   "label": "Wu 2012",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "24169640": {
+   "label": "Hwang 2013",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "23904455": {
+   "label": "Sanders 2013",
+   "technology": "microarray",
+   "evidence": "universe type platform (GPL10558)",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform gene set GPL10558: 20,554 genes (universes.json)"
+  },
+  "26183697": {
+   "label": "Wei 2015",
+   "technology": "other",
+   "evidence": "override: Wei 2015: the primary list (Table 2) is qRT-PCR of eight candidate miRNAs: 'The qRT-PCR validation showed that of these eight miRNAs identified, only miR-130b and miR-193a-3p showed significant differences (Table 2)'",
+   "assay": "qPCR of candidates"
+  },
+  "25985888": {
+   "label": "Yu 2015",
+   "technology": "microarray",
+   "evidence": "lineage platform text: Agilent Human miRNA V19.0 microarray (pooled RNA); QPCR validation",
+   "array_generation": "noncoding",
+   "array_generation_evidence": "miRNA / lncRNA array (platform text)"
+  },
+  "25429046": {
+   "label": "Zhang 2015",
+   "technology": "microarray",
+   "evidence": "lineage platform text: Exiqon miRCURY LNA Array v18.0 (GSE54578)",
+   "array_generation": "not stated",
+   "array_generation_evidence": "platform text names no array: Exiqon miRCURY LNA Array v18.0 (GSE54578)"
+  },
+  "27650396": {
+   "label": "Chen 2016",
+   "technology": "microarray",
+   "evidence": "lineage platform text: Agilent Human lncRNA array v4.0 (4X180K, Design ID: 062918, Agilent Technologies",
+   "array_generation": "noncoding",
+   "array_generation_evidence": "miRNA / lncRNA array (platform text)"
+  },
+  "26697997": {
+   "label": "Wu 2016",
+   "technology": "microarray",
+   "evidence": "lineage platform text: Illumina HumanHT-12 v3 Expression BeadChip",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform named in the text: 'HumanHT'"
+  },
+  "28418402": {
+   "label": "Sanders 2017",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "29391398": {
+   "label": "Liu 2018",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "30911161": {
+   "label": "Huckins 2019",
+   "technology": "imputed",
+   "evidence": "override: Huckins 2019: TWAS on CommonMind-trained predictors"
+  },
+  "31113746": {
+   "label": "Leirer 2019",
+   "technology": "microarray",
+   "evidence": "lineage platform text: Illumina HT-12 V4 BeadChip (Illumina, USA)",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform named in the text: 'HT-12'"
+  },
+  "33558674": {
+   "label": "Akula 2021",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "33585819": {
+   "label": "Gatta 2021",
+   "technology": "rnaseq",
+   "evidence": "override: Gatta 2021: Illumina TruSeq stranded RNA-seq"
+  },
+  "33677214": {
+   "label": "Park 2021",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "32152472": {
+   "label": "Perez 2021",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "33288841": {
+   "label": "Stertz 2021",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "36319771": {
+   "label": "Benjamin 2022",
+   "technology": "rnaseq",
+   "evidence": "override: Benjamin 2022: Illumina HiSeq 3000 total RNA-seq"
+  },
+  "35459277": {
+   "label": "Farrelly 2022",
+   "technology": "rnaseq",
+   "evidence": "lineage platform text: RNA-seq, Illumina HiSeq4000 (Sequencing_High Output mode v4)."
+  },
+  "34936134": {
+   "label": "Koskuvi 2022",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "32542700": {
+   "label": "Tan 2021",
+   "technology": "rnaseq",
+   "evidence": "lineage platform text: High-throughput sequencing (RNA-seq) of plasma exosomal circRNAs; specific platf"
+  },
+  "35701597": {
+   "label": "Liu 2022",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "36192459": {
+   "label": "Puvogel 2022",
+   "technology": "single_cell",
+   "evidence": "override: Puvogel 2022: 10x single-nucleus RNA-seq (paper check 2026-09-27: 'Single-nucleus cDNA libraries were constructed ...')"
+  },
+  "37117634": {
+   "label": "Breitmeyer 2023",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "36302706": {
+   "label": "Ketchesin 2023",
+   "technology": "rnaseq",
+   "evidence": "lineage platform text: RNA-seq, TruSeq Stranded Total RNA (Illumina), NextSeq 500, paired-end 75 bp"
+  },
+  "36379214": {
+   "label": "Namkung 2023",
+   "technology": "microarray",
+   "evidence": "override: Namkung 2023: primary list from GSE215985, U133 Plus 2.0",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform named in the text: 'U133 Plus'"
+  },
+  "37267675": {
+   "label": "Yang 2023",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "37661009": {
+   "label": "Akkouh 2024",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "39307399": {
+   "label": "Heider 2024",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "39028640": {
+   "label": "Huynh 2024",
+   "technology": "rnaseq",
+   "evidence": "lineage platform text: Bulk RNA-seq (GEO GSE86906, GSE188558)"
+  },
+  "41210297": {
+   "label": "Mas 2025",
+   "technology": "rnaseq",
+   "evidence": "override: Mas 2025: Ion AmpliSeq Transcriptome (targeted whole-transcriptome sequencing)"
+  },
+  "41567988": {
+   "label": "Mendez-Victoriano 2026",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "38704507": {
+   "label": "Stern 2024",
+   "technology": "rnaseq",
+   "evidence": "lineage platform text: RNA-seq (Illumina TruSeq RNA Sample Preparation Kit, sequenced on Illumina HiSeq"
+  },
+  "15563509": {
+   "label": "Iwamoto 2005",
+   "technology": "microarray",
+   "evidence": "lineage platform text: Affymetrix HU133A chip (22,284 probe sets)",
+   "array_generation": "early",
+   "array_generation_evidence": "platform named in the text: 'HU133A'"
+  },
+  "15892139": {
+   "label": "Middleton 2005",
+   "technology": "microarray",
+   "evidence": "universe type platform (GPL96)",
+   "array_generation": "early",
+   "array_generation_evidence": "platform gene set GPL96: 13,634 genes (universes.json)"
+  },
+  "16236523": {
+   "label": "Weidenhofer 2006",
+   "technology": "microarray",
+   "evidence": "lineage platform text: Compugen 19K oligonucleotide set, spotted arrays (Ramaciotti Centre / Adelaide M",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform named in the text: 'Compugen 19K'"
+  },
+  "18778695": {
+   "label": "Narayan 2008",
+   "technology": "microarray",
+   "evidence": "universe type platform (GPL570, GPL570, GPL570)",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform gene set GPL570: 21,383 genes (universes.json)"
+  },
+  "20034564": {
+   "label": "Arion 2010",
+   "technology": "microarray",
+   "evidence": "universe type platform (GPL570, GPL570)",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform gene set GPL570: 21,383 genes (universes.json)"
+  },
+  "21091092": {
+   "label": "Schmitt 2011",
+   "technology": "microarray",
+   "evidence": "universe type platform (GPL6104, GPL6104)",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform gene set GPL6104: 17,157 genes (universes.json)"
+  },
+  "21490598": {
+   "label": "Brennand 2011",
+   "technology": "microarray",
+   "evidence": "universe type platform (GPL6244)",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform gene set GPL6244: 20,706 genes (universes.json)"
+  },
+  "21738743": {
+   "label": "Lai 2011",
+   "technology": "microarray",
+   "evidence": "lineage platform text: TaqMan® Low Density Array (TLDA) Human MicroRNA Panel v1.0 with 7900 real-time R",
+   "array_generation": "noncoding",
+   "array_generation_evidence": "miRNA / lncRNA array (platform text)"
+  },
+  "22393424": {
+   "label": "van Beveren 2012",
+   "technology": "microarray",
+   "evidence": "universe type platform (GPL570)",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform gene set GPL570: 21,383 genes (universes.json)"
+  },
+  "23282246": {
+   "label": "Xu 2012",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "23164819": {
+   "label": "Sainz 2013",
+   "technology": "rnaseq",
+   "evidence": "lineage platform text: Illumina Genome Analyzer IIx RNA-seq (single-end 35 nt reads)"
+  },
+  "24594777": {
+   "label": "Kohen 2014",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "25113377": {
+   "label": "Zhao 2015",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "25560755": {
+   "label": "Arion 2015",
+   "technology": "microarray",
+   "evidence": "universe type platform (GPL13158)",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform gene set GPL13158: 20,623 genes (universes.json)"
+  },
+  "25981335": {
+   "label": "Maschietto 2015",
+   "technology": "microarray",
+   "evidence": "lineage platform text: Agilent Whole Human Genome Microarray Kit, 4x44K-G4112F (Agilent Technologies) f",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform named in the text: 'Whole Human Genome'"
+  },
+  "27117414": {
+   "label": "Topol 2016",
+   "technology": "rnaseq",
+   "evidence": "override: Topol 2016: the primary lists are Gemma reanalyses of GSE63734, GSE63738 and GSE80170, each 'Expression profiling by high throughput sequencing' on GPL16791 (GEO, read 2026-10-01)"
+  },
+  "27668389": {
+   "label": "Fromer 2016",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "27732689": {
+   "label": "Roussos 2016",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "28476208": {
+   "label": "Arion 2017",
+   "technology": "microarray",
+   "evidence": "lineage platform text: Affymetrix GeneChip U219",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform named in the text: 'U219'"
+  },
+  "28754123": {
+   "label": "Ramaker 2017",
+   "technology": "rnaseq",
+   "evidence": "lineage platform text: RNA-seq (Tn-RNA-seq library construction, poly(A) selection) sequenced on Illumi"
+  },
+  "29263384": {
+   "label": "Hoffman 2017",
+   "technology": "rnaseq",
+   "evidence": "lineage platform text: RNA-seq (ribo-depleted, strand-specific cDNA libraries) sequenced on Illumina Hi"
+  },
+  "30016334": {
+   "label": "Hagenauer 2018",
+   "technology": "microarray",
+   "evidence": "override: Hagenauer 2018: Gemma GSE92538, U133A / U133 Plus 2.0",
+   "array_generation": "mixed",
+   "array_generation_evidence": "override: Hagenauer 2018: the Pritzker data (GSE92538) are U133A and U133 Plus 2.0 arrays; both Gemma subsets are primary lists"
+  },
+  "30115913": {
+   "label": "Duan 2018",
+   "technology": "rnaseq",
+   "evidence": "lineage platform text: RNA-seq (Illumina HiSeq2000, ~10M reads/sample; reads aligned to Gencode v20 usi"
+  },
+  "30664768": {
+   "label": "Shao 2019",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "30781971": {
+   "label": "Yao 2019",
+   "technology": "microarray",
+   "evidence": "lineage platform text: Arraystar Human circRNA Array (8x15K) screen; qRT-PCR validation",
+   "array_generation": "noncoding",
+   "array_generation_evidence": "miRNA / lncRNA array (platform text)"
+  },
+  "31053723": {
+   "label": "Pai 2019",
+   "technology": "rnaseq",
+   "evidence": "override: Pai 2019: Gemma GSE112523, NextSeq 500 RNA-seq"
+  },
+  "31123247": {
+   "label": "Lanz 2019",
+   "technology": "microarray",
+   "evidence": "universe type platform (GPL570, GPL570, GPL570)",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform gene set GPL570: 21,383 genes (universes.json)"
+  },
+  "31535015": {
+   "label": "Doostparast Torshizi 2019",
+   "technology": "rnaseq",
+   "evidence": "lineage platform text: RNA-seq, Illumina HiSeq 2500, 100-bp paired-end reads (CMC and CNON); RNA-seq on"
+  },
+  "31959813": {
+   "label": "Etemadikhah 2020",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "32203495": {
+   "label": "Jaffe 2020",
+   "technology": "rnaseq",
+   "evidence": "lineage platform text: LCM-seq: RNA-seq, rRNA-depleted (Illumina RiboZero Gold), Illumina HiSeq 2000"
+  },
+  "15334603": {
+   "label": "Aston 2004",
+   "technology": "microarray",
+   "evidence": "universe type platform (GPL91)",
+   "array_generation": "early",
+   "array_generation_evidence": "platform gene set GPL91: 9,614 genes (universes.json)"
+  },
+  "16406496": {
+   "label": "McCurdy 2006",
+   "technology": "microarray",
+   "evidence": "lineage platform text: Compugen Human 19K oligonucleotide set, spotted glass arrays (Ramaciotti Centre)",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform named in the text: 'Compugen Human 19K'"
+  },
+  "18081029": {
+   "label": "Kakiuchi 2008",
+   "technology": "microarray",
+   "evidence": "universe type platform (GPL96)",
+   "array_generation": "early",
+   "array_generation_evidence": "platform gene set GPL96: 13,634 genes (universes.json)"
+  },
+  "14743183": {
+   "label": "Iwamoto 2004",
+   "technology": "microarray",
+   "evidence": "lineage platform text: Affymetrix HG-U95A (HU95A)",
+   "array_generation": "early",
+   "array_generation_evidence": "platform named in the text: 'U95'"
+  },
+  "18191109": {
+   "label": "Shao 2008",
+   "technology": "microarray",
+   "evidence": "universe type platform (GPL2891)",
+   "array_generation": "early",
+   "array_generation_evidence": "platform gene set GPL2891: 14,711 genes (universes.json)"
+  },
+  "15920292": {
+   "label": "Zvara 2005",
+   "technology": "microarray",
+   "evidence": "lineage platform text: In-house spotted cDNA microarray (3,200 human cDNA clones), pooled RNA",
+   "array_generation": "early",
+   "array_generation_evidence": "custom / spotted / cDNA array, no gene count: 'In-house'"
+  },
+  "18445270": {
+   "label": "Bowden 2008",
+   "technology": "microarray",
+   "evidence": "lineage platform text: Compugen Version 2 19K oligonucleotide spotted glass microarray (custom cDNA/oli",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform named in the text: 'Compugen Version 2 19K'"
+  },
+  "19255580": {
+   "label": "Maycox 2009",
+   "technology": "microarray",
+   "evidence": "universe type platform (GPL570; GPL96, GPL570; GPL96)",
+   "array_generation": "mixed",
+   "array_generation_evidence": "platforms of different generations in the list's universe: GPL570; GPL96"
+  },
+  "18771015": {
+   "label": "Garbett 2008",
+   "technology": "microarray",
+   "evidence": "universe type platform (GPL96+GPL97)",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform gene set GPL96+GPL97: 19,375 genes (universes.json)"
+  },
+  "20695885": {
+   "label": "Horesh 2011",
+   "technology": "microarray",
+   "evidence": "universe type platform (GPL96+GPL97)",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform gene set GPL96+GPL97: 19,375 genes (universes.json)"
+  },
+  "21111402": {
+   "label": "Santarelli 2011",
+   "technology": "microarray",
+   "evidence": "lineage platform text: Illumina miRNA bead array (470 annotated miRNAs, miRBase 9.1)",
+   "array_generation": "noncoding",
+   "array_generation_evidence": "miRNA / lncRNA array (platform text)"
+  },
+  "21538462": {
+   "label": "Barnes 2011",
+   "technology": "microarray",
+   "evidence": "universe type platform (GPL570)",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform gene set GPL570: 21,383 genes (universes.json)"
+  },
+  "22315408": {
+   "label": "Miller 2012",
+   "technology": "microarray",
+   "evidence": "lineage platform text: miRNA microarray (854 miRNAs)",
+   "array_generation": "noncoding",
+   "array_generation_evidence": "miRNA / lncRNA array (platform text)"
+  },
+  "22761806": {
+   "label": "de Jong 2012",
+   "technology": "microarray",
+   "evidence": "lineage platform text: Illumina HumanRef-8 V3 (batch 1) and HumanRef-12 V3 (batch 2) expression BeadChi",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform named in the text: 'HumanRef-8'"
+  },
+  "22869038": {
+   "label": "Fillman 2013",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "23218666": {
+   "label": "Gardiner 2013",
+   "technology": "microarray",
+   "evidence": "universe type platform (GPL6947)",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform gene set GPL6947: 19,282 genes (universes.json)"
+  },
+  "24507884": {
+   "label": "Oldmeadow 2014",
+   "technology": "microarray",
+   "evidence": "universe type platform (GPL5175)",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform gene set GPL5175: 22,176 genes (universes.json)"
+  },
+  "24702465": {
+   "label": "Pietersen 2014",
+   "technology": "microarray",
+   "evidence": "universe type platform (GPL1352)",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform gene set GPL1352: 20,811 genes (universes.json)"
+  },
+  "25119539": {
+   "label": "Durrenberger 2015",
+   "technology": "microarray",
+   "evidence": "override: Durrenberger 2015: Gemma GSE26927 on GPL6255 (Illumina humanRef-8 v2), technologyType ONECOLOR",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform named in the text: 'HumanRef-8'"
+  },
+  "24686136": {
+   "label": "Brennand 2015",
+   "technology": "microarray",
+   "evidence": "universe type platform (GPL6244)",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform gene set GPL6244: 20,706 genes (universes.json)"
+  },
+  "26173148": {
+   "label": "Zhao 2015",
+   "technology": "rnaseq",
+   "evidence": "lineage platform text: Illumina HiSeq2500 (single-end 50 bp reads); libraries made with NEBNext Multipl"
+  },
+  "26733343": {
+   "label": "Xu 2016",
+   "technology": "microarray",
+   "evidence": "lineage platform text: Agilent Human LncRNA Array v2.0 (8 × 60K, Arraystar), scanned with Agilent Scann",
+   "array_generation": "whole",
+   "array_generation_evidence": "override: Xu 2016: the list is mRNA from the coding-transcript probes (8,594 mRNAs detected)"
+  },
+  "27661005": {
+   "label": "Hu 2016",
+   "technology": "rnaseq",
+   "evidence": "lineage platform text: RNA-seq, poly(A)-selected, Illumina HiSeq 2000, 100 bp paired-end (GSE78936)"
+  },
+  "27727244": {
+   "label": "Horiuchi 2016",
+   "technology": "microarray",
+   "evidence": "universe type platform (GPL570)",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform gene set GPL570: 21,383 genes (universes.json)"
+  },
+  "28094170": {
+   "label": "Narla 2017",
+   "technology": "rnaseq",
+   "evidence": "lineage platform text: RNA-seq and ChIP-seq on Illumina HiSeq2500 (Tru-Seq RNA kit and Tru-seq ChIP Sam"
+  },
+  "28736215": {
+   "label": "Windrem 2017",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "28809853": {
+   "label": "Chang 2017",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "30050107": {
+   "label": "Jaffe 2018",
+   "technology": "rnaseq",
+   "evidence": "lineage platform text: RNA-seq (Illumina TruSeq RNA Sample Preparation v2 kit, sequenced on Illumina Hi"
+  },
+  "30870714": {
+   "label": "Geaghan 2019",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "31288836": {
+   "label": "Mendizabal 2019",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "31540999": {
+   "label": "Ishii 2019",
+   "technology": "microarray",
+   "evidence": "lineage platform text: Affymetrix Clariom S Assay for humans (Thermo Fisher Scientific)",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform named in the text: 'Clariom'"
+  },
+  "31019265": {
+   "label": "Ni 2020",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "32186681": {
+   "label": "Kathuria 2020",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "32566292": {
+   "label": "Bakshi 2020",
+   "technology": "microarray",
+   "evidence": "universe type platform (GPL570, GPL570)",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform gene set GPL570: 21,383 genes (universes.json)"
+  },
+  "28641886": {
+   "label": "Fries 2018",
+   "technology": "microarray",
+   "evidence": "universe type platform (GPL10558)",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform gene set GPL10558: 20,554 genes (universes.json)"
+  },
+  "16223876": {
+   "label": "Glatt 2005",
+   "technology": "microarray",
+   "evidence": "universe type platform (GPL96)",
+   "array_generation": "early",
+   "array_generation_evidence": "platform gene set GPL96: 13,634 genes (universes.json)"
+  },
+  "23442539": {
+   "label": "Kumarasinghe 2013",
+   "technology": "microarray",
+   "evidence": "universe type platform (GPL6947, GPL6947)",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform gene set GPL6947: 19,282 genes (universes.json)"
+  },
+  "18184693": {
+   "label": "Beveridge 2008",
+   "technology": "microarray",
+   "evidence": "lineage platform text: Custom spotted miRNA microarray (antisense oligonucleotides for 261 human miRNAs",
+   "array_generation": "noncoding",
+   "array_generation_evidence": "miRNA / lncRNA array (platform text)"
+  },
+  "16414245": {
+   "label": "Bowden 2006",
+   "technology": "microarray",
+   "evidence": "lineage platform text: Custom 6000-gene cDNA microarray",
+   "array_generation": "early",
+   "array_generation_evidence": "custom / spotted / cDNA array, no gene count: 'Custom'"
+  },
+  "40473621": {
+   "label": "Perez 2025",
+   "technology": "rnaseq",
+   "evidence": "GEO platforms of the pooled datasets (corpus/pooled_geo.json): rnaseq"
+  },
+  "40253403": {
+   "label": "Worf 2025",
+   "technology": "microarray",
+   "evidence": "GEO platforms of the pooled datasets (corpus/pooled_geo.json): array_whole",
+   "array_generation": "whole",
+   "array_generation_evidence": "GEO platforms of the pooled datasets (corpus/pooled_geo.json): array_whole"
+  },
+  "22832356": {
+   "label": "Tang 2011",
+   "technology": "microarray",
+   "evidence": "override: Tang 2011: Gemma GSE21138, U133 Plus 2.0",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform named in the text: 'U133 Plus'"
+  },
+  "22397921": {
+   "label": "Tang 2012",
+   "technology": "microarray",
+   "evidence": "override: Tang 2012: Gemma GSE21138, U133 Plus 2.0",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform named in the text: 'U133 Plus'"
+  },
+  "31242417": {
+   "label": "Liu 2019",
+   "technology": "rnaseq",
+   "evidence": "GEO platforms of the pooled datasets (corpus/pooled_geo.json): rnaseq"
+  },
+  "23147385": {
+   "label": "Chen 2013",
+   "technology": "microarray",
+   "evidence": "override: Chen 2013: Gemma GSE35974, Human Gene 1.0 ST",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform named in the text: 'Gene 1.0 ST'"
+  },
+  "25487697": {
+   "label": "de Baumont 2015",
+   "technology": "microarray",
+   "evidence": "override: de Baumont 2015: Gemma GSE62191 on GPL4133 (Agilent 4x44K), technologyType DUALMODE",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform named in the text: '4x44K'"
+  },
+  "18992145": {
+   "label": "Choi 2008",
+   "technology": "microarray",
+   "evidence": "universe type platform (GPL96+GPL570+GPL8300)",
+   "array_generation": "mixed",
+   "array_generation_evidence": "platforms of different generations in the list's universe: GPL96+GPL570+GPL8300"
+  },
+  "22954356": {
+   "label": "Pérez-Santiago 2012",
+   "technology": "microarray",
+   "evidence": "universe type platform (GPL96)",
+   "array_generation": "early",
+   "array_generation_evidence": "platform gene set GPL96: 13,634 genes (universes.json)"
+  },
+  "22212594": {
+   "label": "Mistry 2013",
+   "technology": "microarray",
+   "evidence": "GEO platforms of the pooled datasets (corpus/pooled_geo.json): array_early, array_whole",
+   "array_generation": "mixed",
+   "array_generation_evidence": "GEO platforms of the pooled datasets (corpus/pooled_geo.json): array_early, array_whole"
+  },
+  "24569695": {
+   "label": "Fillman 2014",
+   "technology": "microarray",
+   "evidence": "universe type platform (GPL570)",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform gene set GPL570: 21,383 genes (universes.json)"
+  },
+  "26285829": {
+   "label": "Bergon 2015",
+   "technology": "microarray",
+   "evidence": "universe type platform (GPL570, GPL570)",
+   "array_generation": "mixed",
+   "array_generation_evidence": "override: Bergon 2015: Table 1 datasets are U95Av2, U133A, U133 Plus 2.0, HumanRef-8 and HT-12"
+  },
+  "27219343": {
+   "label": "Ellis 2016",
+   "technology": "rnaseq",
+   "evidence": "override: Ellis 2016: 'RNA-seq, re-used SMRI Array Collection BA24 data from Zhao et al. 2015' (lineage platform text; 'Array Collection' is the Stanley cohort's name, not a microarray)"
+  },
+  "27450777": {
+   "label": "Hess 2016",
+   "technology": "microarray",
+   "evidence": "universe type platform (GPL570)",
+   "array_generation": "mixed",
+   "array_generation_evidence": "override: Hess 2016: the mega-analysis pools U133A-only datasets with U133 Plus 2.0, Gene/Exon ST and HT-12 datasets"
+  },
+  "30545856": {
+   "label": "Gandal 2018",
+   "technology": "rnaseq",
+   "evidence": "override: Gandal 2018 (Science): PsychENCODE RNA-seq"
+  },
+  "29632383": {
+   "label": "Gusev 2018",
+   "technology": "imputed",
+   "evidence": "override: Gusev 2018: TWAS"
+  },
+  "31073119": {
+   "label": "Bowen 2019",
+   "technology": "microarray",
+   "evidence": "override: Bowen 2019: primary list on GPL10558 (HT-12 v4)",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform gene set GPL10558: 20,554 genes (universes.json)"
+  },
+  "30576541": {
+   "label": "Piras 2019",
+   "technology": "microarray",
+   "evidence": "override: Piras 2019: Human Gene 1.1 ST / Exon 1.0 ST arrays",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform named in the text: 'U133 Plus'"
+  },
+  "34969953": {
+   "label": "Sabaie 2021",
+   "technology": "microarray",
+   "evidence": "GEO platforms of the pooled datasets (corpus/pooled_geo.json): array_whole",
+   "array_generation": "whole",
+   "array_generation_evidence": "GEO platforms of the pooled datasets (corpus/pooled_geo.json): array_whole"
+  },
+  "34010744": {
+   "label": "Tiihonen 2021",
+   "technology": "rnaseq",
+   "evidence": "lineage platform text: RNA-seq (re-used hiPSC-neuron DEG lists from Tiihonen 2019 and Hoffman 2017; new"
+  },
+  "36932057": {
+   "label": "Schulmann 2023",
+   "technology": "rnaseq",
+   "evidence": "override: Schulmann 2023: primary list from CMC_HBCC RNA-seq"
+  },
+  "22373040": {
+   "label": "Lee 2011",
+   "technology": "microarray",
+   "evidence": "GEO platforms of the pooled datasets (corpus/pooled_geo.json): array_early",
+   "array_generation": "early",
+   "array_generation_evidence": "GEO platforms of the pooled datasets (corpus/pooled_geo.json): array_early"
+  },
+  "30976116": {
+   "label": "Sabunciyan 2019",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "33562405": {
+   "label": "Rahman 2021",
+   "technology": "microarray",
+   "evidence": "GEO platforms of the pooled datasets (corpus/pooled_geo.json): array_early, array_whole",
+   "array_generation": "mixed",
+   "array_generation_evidence": "GEO platforms of the pooled datasets (corpus/pooled_geo.json): array_early, array_whole"
+  },
+  "33805976": {
+   "label": "Liu 2021",
+   "technology": "rnaseq",
+   "evidence": "lineage platform text: CommonMind DLPFC RNA-seq (Ribo-Zero Gold, TruSeq, Illumina HiSeq 2500, 100 bp PE"
+  },
+  "34952924": {
+   "label": "Sabaie 2021",
+   "technology": "microarray",
+   "evidence": "GEO platforms of the pooled datasets (corpus/pooled_geo.json): array_whole",
+   "array_generation": "whole",
+   "array_generation_evidence": "GEO platforms of the pooled datasets (corpus/pooled_geo.json): array_whole"
+  },
+  "36652379": {
+   "label": "Clifton 2023",
+   "technology": "rnaseq",
+   "evidence": "override: Clifton 2023: RNA-seq (CommonMind/PsychENCODE)"
+  },
+  "38377413": {
+   "label": "Sahu 2020",
+   "technology": "rnaseq",
+   "evidence": "GEO platforms of the pooled datasets (corpus/pooled_geo.json): rnaseq"
+  },
+  "38730231": {
+   "label": "Benjamin 2024",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "38843579": {
+   "label": "Bharadwaj 2024",
+   "technology": "rnaseq",
+   "evidence": "GEO platforms of the pooled datasets (corpus/pooled_geo.json): rnaseq"
+  },
+  "39972407": {
+   "label": "Zhang 2025",
+   "technology": "microarray",
+   "evidence": "GEO platforms of the pooled datasets (corpus/pooled_geo.json): array_whole",
+   "array_generation": "whole",
+   "array_generation_evidence": "GEO platforms of the pooled datasets (corpus/pooled_geo.json): array_whole"
+  },
+  "23554570": {
+   "label": "Logotheti 2013",
+   "technology": "microarray",
+   "evidence": "GEO platforms of the pooled datasets (corpus/pooled_geo.json): array_early, array_whole",
+   "array_generation": "mixed",
+   "array_generation_evidence": "GEO platforms of the pooled datasets (corpus/pooled_geo.json): array_early, array_whole"
+  },
+  "31399567": {
+   "label": "Seney 2019",
+   "technology": "rnaseq",
+   "evidence": "override: Seney 2019: CommonMind / Pittsburgh RNA-seq"
+  },
+  "31920755": {
+   "label": "Kumar 2019",
+   "technology": "microarray",
+   "evidence": "GEO platforms of the pooled datasets (corpus/pooled_geo.json): array_whole",
+   "array_generation": "whole",
+   "array_generation_evidence": "GEO platforms of the pooled datasets (corpus/pooled_geo.json): array_whole"
+  },
+  "35855328": {
+   "label": "Wang 2022",
+   "technology": "rnaseq",
+   "evidence": "GEO platforms of the pooled datasets (corpus/pooled_geo.json): rnaseq"
+  },
+  "35983039": {
+   "label": "Du 2022",
+   "technology": "microarray",
+   "evidence": "GEO platforms of the pooled datasets (corpus/pooled_geo.json): array_whole",
+   "array_generation": "whole",
+   "array_generation_evidence": "GEO platforms of the pooled datasets (corpus/pooled_geo.json): array_whole"
+  },
+  "36162734": {
+   "label": "Kondo 2022",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "36405929": {
+   "label": "Sabaie 2022",
+   "technology": "microarray",
+   "evidence": "GEO platforms of the pooled datasets (corpus/pooled_geo.json): array_whole",
+   "array_generation": "whole",
+   "array_generation_evidence": "GEO platforms of the pooled datasets (corpus/pooled_geo.json): array_whole"
+  },
+  "36462601": {
+   "label": "Bharadhwaj 2023",
+   "technology": "microarray",
+   "evidence": "GEO platforms of the pooled datasets (corpus/pooled_geo.json): array_early, array_whole",
+   "array_generation": "mixed",
+   "array_generation_evidence": "GEO platforms of the pooled datasets (corpus/pooled_geo.json): array_early, array_whole"
+  },
+  "38145985": {
+   "label": "Dong 2024",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "40727846": {
+   "label": "Priyanka 2025",
+   "technology": "rnaseq",
+   "evidence": "GEO platforms of the pooled datasets (corpus/pooled_geo.json): rnaseq"
+  },
+  "41422210": {
+   "label": "Rebouças 2025",
+   "technology": "mixed",
+   "evidence": "GEO platforms of the pooled datasets (corpus/pooled_geo.json): array_early, array_whole, mixed, rnaseq"
+  },
+  "41714609": {
+   "label": "Smith 2026",
+   "technology": "rnaseq",
+   "evidence": "override: Smith 2026: sgACC RNA-seq"
+  },
+  "42463512": {
+   "label": "Radulescu 2026",
+   "technology": "rnaseq",
+   "evidence": "GEO platforms of the pooled datasets (corpus/pooled_geo.json): rnaseq"
+  },
+  "42693176": {
+   "label": "Wu 2026",
+   "technology": "single_cell",
+   "evidence": "override: Wu 2026: public frontal cortex snRNA-seq datasets, pseudobulk (paper check 2026-09-27)"
+  },
+  "38781321": {
+   "label": "Xia 2024",
+   "technology": "rnaseq",
+   "evidence": "override: Xia 2024: RNA-seq (CommonMind/PsychENCODE)"
+  },
+  "25522158": {
+   "label": "Huang 2014",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "26818902": {
+   "label": "Qin 2016",
+   "technology": "microarray",
+   "evidence": "GEO platforms of the pooled datasets (corpus/pooled_geo.json): array_whole",
+   "array_generation": "whole",
+   "array_generation_evidence": "GEO platforms of the pooled datasets (corpus/pooled_geo.json): array_whole"
+  },
+  "29439242": {
+   "label": "Gandal 2018",
+   "technology": "microarray",
+   "evidence": "override: Gandal 2018 (Science, cross-disorder): primary list scz_meta_fdr05 is the microarray meta-analysis (lineage text: 'Published microarray studies (refs 3-11); RNAseq replication')",
+   "array_generation": "mixed",
+   "array_generation_evidence": "override: Gandal 2018 (Science): the microarray meta-analysis pools Human Gene 1.0 ST (GSE35978), U133A (GSE12649) and U133 Plus 2.0 (GSE17612, GSE21138) sets"
+  },
+  "34957416": {
+   "label": "Jin 2021",
+   "technology": "rnaseq",
+   "evidence": "override: Jin 2021: DESeq2 bulk RNA-seq"
+  },
+  "36090817": {
+   "label": "Sadeghi 2022",
+   "technology": "rnaseq",
+   "evidence": "lineage platform text: RNA-seq (raw reads reprocessed from nine Scz studies)"
+  },
+  "36424395": {
+   "label": "Chen 2023",
+   "technology": "mixed",
+   "evidence": "GEO platforms of the pooled datasets (corpus/pooled_geo.json): array_early, array_whole, rnaseq"
+  },
+  "39727940": {
+   "label": "Castro-Martínez 2024",
+   "technology": "microarray",
+   "evidence": "GEO platforms of the pooled datasets (corpus/pooled_geo.json): array_early, array_whole",
+   "array_generation": "mixed",
+   "array_generation_evidence": "GEO platforms of the pooled datasets (corpus/pooled_geo.json): array_early, array_whole"
+  },
+  "40796563": {
+   "label": "Nakatsuka 2025",
+   "technology": "mixed",
+   "evidence": "GEO platforms of the pooled datasets (corpus/pooled_geo.json): rnaseq, single_cell"
+  },
+  "41443001": {
+   "label": "Tengfei 2026",
+   "technology": "microarray",
+   "evidence": "GEO platforms of the pooled datasets (corpus/pooled_geo.json): array_whole",
+   "array_generation": "whole",
+   "array_generation_evidence": "GEO platforms of the pooled datasets (corpus/pooled_geo.json): array_whole"
+  },
+  "41748837": {
+   "label": "Chakraborty 2026",
+   "technology": "rnaseq",
+   "evidence": "GEO platforms of the pooled datasets (corpus/pooled_geo.json): rnaseq"
+  },
+  "19245676": {
+   "label": "Tang 2009",
+   "technology": "microarray",
+   "evidence": "GEO platforms of the pooled datasets (corpus/pooled_geo.json): array_early, array_whole",
+   "array_generation": "mixed",
+   "array_generation_evidence": "GEO platforms of the pooled datasets (corpus/pooled_geo.json): array_early, array_whole"
+  },
+  "27801890": {
+   "label": "Scarr 2018",
+   "technology": "microarray",
+   "evidence": "universe type platform (GPL5175, GPL5175, GPL5175)",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform gene set GPL5175: 22,176 genes (universes.json)"
+  },
+  "29463818": {
+   "label": "Scarr 2018",
+   "technology": "microarray",
+   "evidence": "universe type platform (GPL5175)",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform gene set GPL5175: 22,176 genes (universes.json)"
+  },
+  "34440415": {
+   "label": "Lindholm Carlström 2021",
+   "technology": "rnaseq",
+   "evidence": "lineage platform text: Illumina HiSeq 2500, poly-A selected strand-specific, 100 bp paired-end, ~30 M r"
+  },
+  "27898074": {
+   "label": "Kim 2016",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "30786269": {
+   "label": "Mahmoudi 2019",
+   "technology": "rnaseq",
+   "evidence": "lineage platform text: circRNA-enriched RNA-seq: Ribo-Zero rRNA depletion, RNase R, Illumina TruSeq Str"
+  },
+  "34059796": {
+   "label": "Weissleder 2021",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "39526318": {
+   "label": "Zhang 2026",
+   "technology": "rnaseq",
+   "evidence": "lineage platform text: Illumina NextSeq 500, TruSeq Stranded Total RNA (ribo-depleted), 2 x 75 bp; STAR"
+  },
+  "29112193": {
+   "label": "Enwright 2018",
+   "technology": "microarray",
+   "evidence": "universe type platform (GPL13667)",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform gene set GPL13667: 19,716 genes (universes.json)"
+  },
+  "34272489": {
+   "label": "Wu 2021",
+   "technology": "microarray",
+   "evidence": "universe type platform (GPL6244, GPL6244, GPL6244)",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform gene set GPL6244: 20,706 genes (universes.json)"
+  },
+  "39237723": {
+   "label": "Arbabi 2025",
+   "technology": "rnaseq",
+   "evidence": "lineage platform text: LCM-seq: SMARTer Stranded Total RNA-Seq Pico Input Kit v2, Illumina NovaSeq, 2 x"
+  },
+  "41174894": {
+   "label": "Yalcinbas 2025",
+   "technology": "rnaseq",
+   "evidence": "lineage platform text: Illumina HiSeq 3000, TruSeq Stranded Total RNA with Ribo-Zero Gold (bulk); 10x G"
+  },
+  "41757081": {
+   "label": "Kwon 2026",
+   "technology": "other",
+   "evidence": "override: Kwon 2026: Visium spatial transcriptomics (Visium-SPG), pseudobulk DE; neither bulk RNA-seq nor array",
+   "assay": "spatial transcriptomics (Visium)"
+  },
+  "31431609": {
+   "label": "Hu 2019",
+   "technology": "rnaseq",
+   "evidence": "lineage platform text: small RNA-seq (Illumina Small RNA Sample Prep, HiSeq 2000; miRBase hairpins)"
+  },
+  "19772658": {
+   "label": "Martin 2009",
+   "technology": "microarray",
+   "evidence": "lineage platform text: Affymetrix GeneChip Human Exon 1.0 ST",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform named in the text: 'Exon 1.0'"
+  },
+  "37147304": {
+   "label": "Torsvik 2023",
+   "technology": "microarray",
+   "evidence": "lineage platform text: Illumina HumanHT-12 v4 BeadChip; limma with arrayWeights, technical covariates (",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform named in the text: 'HumanHT'"
+  },
+  "42033308": {
+   "label": "Torsvik 2026",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "37861850": {
+   "label": "Hemmings 2022",
+   "technology": "rnaseq",
+   "evidence": "lineage platform text: Illumina HiSeq 2500, TruSeq Stranded Total RNA with Ribo-Zero Gold, 2 x 125 bp"
+  },
+  "28822801": {
+   "label": "Gassó 2017",
+   "technology": "microarray",
+   "evidence": "lineage platform text: Affymetrix GeneChip HG-U219 Array Plate (KFB Regensburg); RMA and limma in Babel",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform named in the text: 'HG-U219'"
+  },
+  "34630179": {
+   "label": "Song 2021",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "37149105": {
+   "label": "Kübler 2023",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "38988837": {
+   "label": "Wang 2024",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "41125054": {
+   "label": "Xavier 2025",
+   "technology": "rnaseq",
+   "evidence": "lineage platform text: Small RNA-seq, QIAseq miRNA Library Kit, Illumina NextSeq 500/550"
+  },
+  "40267851": {
+   "label": "Knowles 2025",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "41788806": {
+   "label": "Bejaoui 2026",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "37605121": {
+   "label": "Du 2023",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "40770299": {
+   "label": "Dong 2025",
+   "technology": "rnaseq",
+   "evidence": "lineage platform text: QIAseq miRNA Library Kit (Qiagen, UMI), Illumina NovaSeq; Bowtie to miRBase 22.1"
+  },
+  "17464717": {
+   "label": "Dean 2007",
+   "technology": "other",
+   "evidence": "override: Dean 2007: restriction fragment differential display (displayPROFILE), neither array nor RNA-seq",
+   "assay": "differential display"
+  },
+  "18226501": {
+   "label": "Yanagi 2008",
+   "technology": "microarray",
+   "evidence": "lineage platform text: Affymetrix HU133A (22,284 probe sets; GeneSuite), pooled RNA, one chip per group",
+   "array_generation": "early",
+   "array_generation_evidence": "platform named in the text: 'HU133A'"
+  },
+  "40015618": {
+   "label": "Pan 2025",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "35660966": {
+   "label": "Li 2022",
+   "technology": "mixed",
+   "evidence": "GEO platforms of the pooled datasets (corpus/pooled_geo.json): array_early, array_whole, rnaseq"
+  },
+  "36125368": {
+   "label": "Chen 2022",
+   "technology": "rnaseq",
+   "evidence": "GEO platforms of the pooled datasets (corpus/pooled_geo.json): rnaseq"
+  },
+  "31157371": {
+   "label": "Yang 2020",
+   "technology": "microarray",
+   "evidence": "GEO platforms of the pooled datasets (corpus/pooled_geo.json): array_early, array_whole",
+   "array_generation": "mixed",
+   "array_generation_evidence": "GEO platforms of the pooled datasets (corpus/pooled_geo.json): array_early, array_whole"
+  },
+  "27236410": {
+   "label": "Pinacho 2016",
+   "technology": "proteomics",
+   "evidence": "universe: proteomics list (batch 10; manifest modality 'proteomics')"
+  },
+  "32639965": {
+   "label": "Vidal-Domenech 2020",
+   "technology": "proteomics",
+   "evidence": "universe: proteomics list (batch 10; manifest modality 'proteomics')"
+  },
+  "35354897": {
+   "label": "Alnafisah 2022",
+   "technology": "proteomics",
+   "evidence": "universe: proteomics list (batch 10; manifest modality 'proteomics')"
+  },
+  "20921955": {
+   "label": "Chan 2011",
+   "technology": "proteomics",
+   "evidence": "universe: proteomics list (batch 10; manifest modality 'proteomics')"
+  },
+  "19034380": {
+   "label": "Martins-de-Souza 2009 (ATL)",
+   "technology": "proteomics",
+   "evidence": "universe: proteomics list (batch 10; manifest modality 'proteomics')"
+  },
+  "20381070": {
+   "label": "Martins-de-Souza 2010 (ACC)",
+   "technology": "proteomics",
+   "evidence": "universe: proteomics list (batch 10; manifest modality 'proteomics')"
+  },
+  "doi_10.1038_s44220-024-00306-1": {
+   "label": "Cui 2024",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "10208449": {
+   "label": "Edgar 1999",
+   "technology": "proteomics",
+   "evidence": "universe: proteomics list (batch 10; manifest modality 'proteomics')"
+  },
+  "10822341": {
+   "label": "Johnston-Wilson 2000",
+   "technology": "proteomics",
+   "evidence": "universe: proteomics list (batch 10; manifest modality 'proteomics')"
+  },
+  "16637010": {
+   "label": "Beasley 2006",
+   "technology": "proteomics",
+   "evidence": "universe: proteomics list (batch 10; manifest modality 'proteomics')"
+  },
+  "16549361": {
+   "label": "Novikova 2006",
+   "technology": "proteomics",
+   "evidence": "universe: proteomics list (batch 10; manifest modality 'proteomics')"
+  },
+  "17938637": {
+   "label": "Pennington 2008",
+   "technology": "proteomics",
+   "evidence": "universe: proteomics list (batch 10; manifest modality 'proteomics')"
+  },
+  "18504422": {
+   "label": "Smalla 2008",
+   "technology": "proteomics",
+   "evidence": "universe: proteomics list (batch 10; manifest modality 'proteomics')"
+  },
+  "19296286": {
+   "label": "Nesvaderani 2009",
+   "technology": "proteomics",
+   "evidence": "universe: proteomics list (batch 10; manifest modality 'proteomics')"
+  },
+  "20471030": {
+   "label": "Martins-de-Souza 2010 (thalamus)",
+   "technology": "proteomics",
+   "evidence": "universe: proteomics list (batch 10; manifest modality 'proteomics')"
+  },
+  "21536977": {
+   "label": "Focking 2011",
+   "technology": "proteomics",
+   "evidence": "universe: proteomics list (batch 10; manifest modality 'proteomics')"
+  },
+  "22248022": {
+   "label": "Krishnamurthy 2013",
+   "technology": "proteomics",
+   "evidence": "universe: proteomics list (batch 10; manifest modality 'proteomics')"
+  },
+  "31055969": {
+   "label": "Nucifora 2019",
+   "technology": "proteomics",
+   "evidence": "universe: proteomics list (batch 10; manifest modality 'proteomics')"
+  },
+  "24628518": {
+   "label": "Pietersen 2014 (PV neurons)",
+   "technology": "microarray",
+   "evidence": "universe type platform (GPL1352)",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform gene set GPL1352: 20,811 genes (universes.json)"
+  },
+  "16604350": {
+   "label": "Vawter 2006",
+   "technology": "microarray",
+   "evidence": "universe type platform (GPL96)",
+   "array_generation": "early",
+   "array_generation_evidence": "platform gene set GPL96: 13,634 genes (universes.json)"
+  },
+  "20083392": {
+   "label": "Takahashi 2010",
+   "technology": "microarray",
+   "evidence": "lineage platform text: CodeLink Human Whole Genome Bioarray (GE Healthcare; 54,847 probes; 19,121 after",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform named in the text: 'CodeLink Human Whole Genome'"
+  },
+  "22161352": {
+   "label": "Qian 2012",
+   "technology": "microarray",
+   "evidence": "lineage platform text: Re-used Affymetrix HG-U133A data from four SMRI studies",
+   "array_generation": "early",
+   "array_generation_evidence": "platform named in the text: 'HG-U133A'"
+  },
+  "35339428": {
+   "label": "Khan 2022",
+   "technology": "mixed",
+   "evidence": "GEO platforms of the pooled datasets (corpus/pooled_geo.json): array_whole, rnaseq"
+  },
+  "42623758": {
+   "label": "Tengfei 2026b",
+   "technology": "microarray",
+   "evidence": "GEO platforms of the pooled datasets (corpus/pooled_geo.json): array_whole",
+   "array_generation": "whole",
+   "array_generation_evidence": "GEO platforms of the pooled datasets (corpus/pooled_geo.json): array_whole"
+  },
+  "38448582": {
+   "label": "Ling 2024",
+   "technology": "single_cell",
+   "evidence": "lineage lane sc"
+  },
+  "38260577": {
+   "label": "Raabe 2024",
+   "technology": "rnaseq",
+   "evidence": "lineage platform text: RNA-seq (Illumina HiSeq 4000), 3'RNA-seq for polyadenylation sites, microRNA-seq"
+  },
+  "42748139": {
+   "label": "Testa 2026",
+   "technology": "proteomics",
+   "evidence": "lineage modality proteomics, platform text: TMT-labelled quantitative proteomics (Orbitrap Tribrid Eclipse) with RNA-seq tra"
+  },
+  "28485405": {
+   "label": "Birnbaum 2018",
+   "technology": "rnaseq",
+   "evidence": "lineage platform text: RNA-seq (poly(A) TruSeq v2, Illumina HiSeq 2000), analysis restricted to 561 imm"
+  },
+  "16491132": {
+   "label": "Clark 2006",
+   "technology": "proteomics",
+   "evidence": "universe: proteomics list (batch 10; manifest modality 'proteomics')"
+  },
+  "21136665": {
+   "label": "Clark 2007",
+   "technology": "proteomics",
+   "evidence": "universe: proteomics list (batch 10; manifest modality 'proteomics')"
+  },
+  "21136626": {
+   "label": "Sivagnanasundaram 2007",
+   "technology": "proteomics",
+   "evidence": "universe: proteomics list (batch 10; manifest modality 'proteomics')"
+  },
+  "19003868": {
+   "label": "Pennington 2008 (insular cortex)",
+   "technology": "proteomics",
+   "evidence": "universe: proteomics list (batch 10; manifest modality 'proteomics')"
+  },
+  "19562803": {
+   "label": "English 2009",
+   "technology": "proteomics",
+   "evidence": "universe: proteomics list (batch 10; manifest modality 'proteomics')"
+  },
+  "18268500": {
+   "label": "Behan 2009",
+   "technology": "proteomics",
+   "evidence": "universe: proteomics list (batch 10; manifest modality 'proteomics')"
+  },
+  "19110265": {
+   "label": "Martins-de-Souza 2009 (DLPFC)",
+   "technology": "proteomics",
+   "evidence": "universe: proteomics list (batch 10; manifest modality 'proteomics')"
+  },
+  "25048004": {
+   "label": "Föcking 2015",
+   "technology": "proteomics",
+   "evidence": "lineage modality proteomics, platform text: label-free shotgun LC-MS/MS (MaxQuant)"
+  },
+  "25728835": {
+   "label": "Schubert 2015",
+   "technology": "proteomics",
+   "evidence": "universe: proteomics list (batch 10; manifest modality 'proteomics')"
+  },
+  "32513544": {
+   "label": "Zeppillo 2022",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "41611717": {
+   "label": "Koopmans 2026",
+   "technology": "proteomics",
+   "evidence": "lineage modality proteomics, platform text: case-control proteomics (mass spectrometry; method not detailed in the abstract)"
+  },
+  "39397771": {
+   "label": "Alsema 2025",
+   "technology": "rnaseq",
+   "evidence": "lineage platform text: snRNA-seq of FANS-sorted NEUN+ nuclei (10x Genomics)"
+  },
+  "37498306": {
+   "label": "Arihisa 2023",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "27622934": {
+   "label": "Darby 2016",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "30053206": {
+   "label": "Guffanti 2018",
+   "technology": "rnaseq",
+   "evidence": "lineage platform text: Illumina HiSeq 2500, NuGEN Encore Complete (no polyA selection), 100 cycle paire"
+  },
+  "33184259": {
+   "label": "Maas 2020",
+   "technology": "rnaseq",
+   "evidence": "lineage platform text: BGISEQ-500 RNA-seq (BGI Genomics), RSEM/NOIseq"
+  },
+  "28123834": {
+   "label": "Mladinov 2016",
+   "technology": "microarray",
+   "evidence": "universe type platform (GPL5175, GPL5175, GPL5175, GPL5175, GPL5175, GPL5175)",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform gene set GPL5175: 22,176 genes (universes.json)"
+  },
+  "41639050": {
+   "label": "Nersisyan 2026",
+   "technology": "rnaseq",
+   "evidence": "lineage platform text: small RNA-seq (NEBNext Small RNA library, Illumina NextSeq 500)"
+  },
+  "38239571": {
+   "label": "Nguyen 2023",
+   "technology": "rnaseq",
+   "evidence": "lineage platform text: poly-A RNA-seq, Illumina HiSeq 4000"
+  },
+  "27916288": {
+   "label": "Ragan 2017",
+   "technology": "rnaseq",
+   "evidence": "lineage platform text: small RNA-seq, Illumina TruSeq small RNA, HiSeq 2000 (50 nt single-end); edgeR"
+  },
+  "32006661": {
+   "label": "Santarelli 2019",
+   "technology": "microarray",
+   "evidence": "universe type platform (GPL6947)",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform gene set GPL6947: 19,282 genes (universes.json)"
+  },
+  "41942462": {
+   "label": "Singh 2026",
+   "technology": "rnaseq",
+   "evidence": "lineage platform text: RNA-seq of sorted nuclei (plus Hi-C, 34 libraries); STAR alignment to GRCh38"
+  },
+  "24475125": {
+   "label": "Smalheiser 2014",
+   "technology": "other",
+   "evidence": "override: Smalheiser 2014: the primary list (Table 1) is from the TaqMan Low Density Array: 'The TLDA platform version 2.0 measures miRNA expression over two different 384-well plates; we employed the A plate'",
+   "assay": "qPCR array (TaqMan Low Density Array)"
+  },
+  "27940260": {
+   "label": "Voisey 2017",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "28214564": {
+   "label": "Hirayama-Kurogi 2017",
+   "technology": "proteomics",
+   "evidence": "universe: proteomics list (batch 10; manifest modality 'proteomics')"
+  },
+  "37076706": {
+   "label": "Khan 2023",
+   "technology": "proteomics",
+   "evidence": "universe: proteomics list (batch 10; manifest modality 'proteomics')"
+  },
+  "19405953": {
+   "label": "Martins-de-Souza 2009 (STG)",
+   "technology": "proteomics",
+   "evidence": "universe: proteomics list (batch 10; manifest modality 'proteomics')"
+  },
+  "34576238": {
+   "label": "Vera-Montecinos 2021",
+   "technology": "proteomics",
+   "evidence": "universe: proteomics list (batch 10; manifest modality 'proteomics')"
+  },
+  "30770930": {
+   "label": "Du 2019",
+   "technology": "rnaseq",
+   "evidence": "lineage platform text: small RNA-seq (miRNA-seq), Illumina HiSeq 2500; qRT-PCR validation"
+  },
+  "42034251": {
+   "label": "Liu 2026",
+   "technology": "rnaseq",
+   "evidence": "lineage platform text: small RNA / miRNA sequencing, Illumina HiSeq X Ten; bowtie 1.1.2; edgeR, TPM"
+  },
+  "41691208": {
+   "label": "Lu 2026",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "33782720": {
+   "label": "Mahmoudi 2021",
+   "technology": "rnaseq",
+   "evidence": "lineage platform text: rRNA-depleted (Ribo-Zero) TruSeq Stranded Total RNA-seq, Illumina NovaSeq 6000 ("
+  },
+  "32015466": {
+   "label": "Ni 2021",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "41988836": {
+   "label": "Wu 2026",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "33000265": {
+   "label": "You 2020",
+   "technology": "rnaseq",
+   "evidence": "lineage platform text: small RNA library (Gidio Biotechnology), Illumina HiSeq2000"
+  },
+  "32038049": {
+   "label": "Zhang 2020",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "26710095": {
+   "label": "Zheutlin 2016",
+   "technology": "microarray",
+   "evidence": "override: Zheutlin 2016: 'Technical replicates were run on all samples using the Illumina Human WG6 v3.0 chip'",
+   "array_generation": "whole",
+   "array_generation_evidence": "gene count stated in the platform text: '18,559 genes'"
+  },
+  "20585325": {
+   "label": "Herberth 2011",
+   "technology": "proteomics",
+   "evidence": "universe: proteomics list (batch 10; manifest modality 'proteomics')"
+  },
+  "17090210": {
+   "label": "Huang 2006",
+   "technology": "proteomics",
+   "evidence": "universe: proteomics list (batch 10; manifest modality 'proteomics')"
+  },
+  "20446881": {
+   "label": "Martins-de-Souza 2010 (CSF)",
+   "technology": "proteomics",
+   "evidence": "universe: proteomics list (batch 10; manifest modality 'proteomics')"
+  },
+  "40945317": {
+   "label": "Oraki 2025",
+   "technology": "proteomics",
+   "evidence": "universe: proteomics list (batch 10; manifest modality 'proteomics')"
+  },
+  "31011151": {
+   "label": "Yoshimi 2019",
+   "technology": "proteomics",
+   "evidence": "universe: proteomics list (batch 10; manifest modality 'proteomics')"
+  },
+  "32109548": {
+   "label": "Akkouh 2020",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "33571628": {
+   "label": "Akkouh 2021",
+   "technology": "rnaseq",
+   "evidence": "lineage platform text: QIAseq miRNA Library Kit (UMI), Illumina NextSeq 500, 75 bp single-end, ~22M rea"
+  },
+  "34357384": {
+   "label": "Akkouh 2022",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "34716291": {
+   "label": "Szabo 2021",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "39617069": {
+   "label": "Szabo 2025",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "39372772": {
+   "label": "Guo 2024",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "41388144": {
+   "label": "Hartmann 2026",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "33246498": {
+   "label": "Hathy 2020",
+   "technology": "rnaseq",
+   "evidence": "lineage platform text: Illumina NextSeq 500, 75 bp single-end, ~25M reads; HISAT2/featureCounts/DESeq2"
+  },
+  "40311511": {
+   "label": "Jia 2025",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "37507766": {
+   "label": "Kathuria 2023",
+   "technology": "rnaseq",
+   "evidence": "lineage platform text: Illumina RiboZero TruSeq Stranded Total RNA, NovaSeq6000, 100 nt paired-end; Cuf"
+  },
+  "34685556": {
+   "label": "Li 2021",
+   "technology": "rnaseq",
+   "evidence": "lineage platform text: Illumina TruSeq RNA (poly-A), Illumina HiSeq2000, Columbia Genome Center; DESeq2"
+  },
+  "38684795": {
+   "label": "Spathopoulou 2024",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "27801899": {
+   "label": "Toyoshima 2016",
+   "technology": "microarray",
+   "evidence": "lineage platform text: Affymetrix Human Genome U133 Plus 2.0 (mRNA); Agilent Human miRNA Microarray Rel",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform named in the text: 'U133 Plus'"
+  },
+  "40947439": {
+   "label": "Yu 2026",
+   "technology": "rnaseq",
+   "evidence": "lineage platform text: VAHTS Universal V6 RNA-seq (oligo(dT)), Illumina NovaSeq 6000, 150 bp paired-end"
+  },
+  "36451159": {
+   "label": "Nascimento 2022",
+   "technology": "proteomics",
+   "evidence": "universe: proteomics list (batch 10; manifest modality 'proteomics')"
+  },
+  "doi_10.64898_2026.08.14.744920": {
+   "label": "Casas 2026 (bioRxiv)",
+   "technology": "rnaseq",
+   "evidence": "override: Casas 2026 (bioRxiv): 'a standard RNA sequencing service, PolyA, 30M reads per sample, paired-end' (Supplementary methods, media-1.pdf p. 3)"
+  },
+  "26485547": {
+   "label": "English 2015",
+   "technology": "proteomics",
+   "evidence": "universe: proteomics list (batch 10; manifest modality 'proteomics')"
+  },
+  "24776767": {
+   "label": "Xiao 2014",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "31988434": {
+   "label": "Zimmerman 2020",
+   "technology": "microarray",
+   "evidence": "lineage platform text: Arraystar Human Circular RNA Microarray (13,617 probes), RNase R-treated total R",
+   "array_generation": "not stated",
+   "array_generation_evidence": "platform text names no array: Arraystar Human Circular RNA Microarray (13,617 probes), RNase R-treated total R"
+  },
+  "35301253": {
+   "label": "Pan 2022",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "35898501": {
+   "label": "Chen 2022",
+   "technology": "rnaseq",
+   "evidence": "lineage platform text: BGIseq-500 mRNA-seq after globin removal (BGI), >=20M clean reads per sample; DE"
+  },
+  "20699480": {
+   "label": "Matigian 2010",
+   "technology": "microarray",
+   "evidence": "universe type platform (GPL6104, GPL6104)",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform gene set GPL6104: 17,157 genes (universes.json)"
+  },
+  "42461238": {
+   "label": "Dean 2026",
+   "technology": "microarray",
+   "evidence": "lineage platform text: Affymetrix Human Exon 1.0 ST Array (processed at the Ramaciotti Centre for Genom",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform named in the text: 'Exon 1.0'"
+  },
+  "34004381": {
+   "label": "Gebicke-Haerter 2021",
+   "technology": "microarray",
+   "evidence": "universe type platform (GPL6104, GPL6104)",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform gene set GPL6104: 17,157 genes (universes.json)"
+  },
+  "15018814": {
+   "label": "Kuromitsu 2001",
+   "technology": "microarray",
+   "evidence": "universe type platform (GPL80)",
+   "array_generation": "early",
+   "array_generation_evidence": "platform gene set GPL80: 5,979 genes (universes.json)"
+  },
+  "25665552": {
+   "label": "Fan 2015",
+   "technology": "microarray",
+   "evidence": "lineage platform text: Affymetrix miRNA 3.0 array (Scanner 3000, Expression Console 1.3.1); TaqMan miRN",
+   "array_generation": "noncoding",
+   "array_generation_evidence": "miRNA / lncRNA array (platform text)"
+  },
+  "38493364": {
+   "label": "Michaelovsky 2024",
+   "technology": "rnaseq",
+   "evidence": "universe type rnaseq_default"
+  },
+  "21451437": {
+   "label": "Evgrafov 2011",
+   "technology": "microarray",
+   "evidence": "universe type platform (GPL5175)",
+   "array_generation": "whole",
+   "array_generation_evidence": "platform gene set GPL5175: 22,176 genes (universes.json)"
+  },
+  "26232077": {
+   "label": "Saia-Cereda 2015",
+   "technology": "proteomics",
+   "evidence": "universe: proteomics list (batch 10; manifest modality 'proteomics')"
+  },
+  "38528182": {
+   "label": "Kaurani 2024",
+   "technology": "rnaseq",
+   "evidence": "lineage platform text: small RNA-seq, NEBNext small RNA library kit, Illumina HiSeq 2000 (50-bp single "
+  },
+  "38781388": {
+   "label": "Ruzicka 2024",
+   "technology": "single_cell",
+   "evidence": "lineage lane sc"
+  },
+  "36223459": {
+   "label": "Batiuk 2022",
+   "technology": "single_cell",
+   "evidence": "lineage lane sc"
+  },
+  "42778699": {
+   "label": "Lee 2026 (PsychAD)",
+   "technology": "single_cell",
+   "evidence": "lineage lane sc"
+  },
+  "39227716": {
+   "label": "Frohlich 2024",
+   "technology": "single_cell",
+   "evidence": "lineage lane sc"
+  }
+ }
+}

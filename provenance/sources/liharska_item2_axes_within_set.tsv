@@ -1,0 +1,13 @@
+# copied 2026-10-21 as the source table of a hidden comment in supplement.md (Note 6, donor overlap, 196-gene rebuilt set); original location: <analysis repo> (open_flags/A/tables/item2_axes_within_set.tsv)
+# script: scripts/item2_liharska_no_bank9_axes.py, run 2026-10-19; seed 20261018; 10000 matched sets (expression decile x DE-prior quintile of the run; pool = run genes with a SZ sign outside the set); bootstrap over genes 2000
+# inputs sha256 prefix: ST1 d8a4171a6329; pH axis v2 controls 2c72a9b279a2; GTEx hardy_t_by_region 54f989c55753; runs/full/recurrence_genes.tsv 006adb484f56; runs/no_bank9/recurrence_genes.tsv 741de913254e
+# LIV-PM t positive = higher in postmortem; pH axis positive = higher at higher pH; agonal axis positive = higher after slow death; Spearman across set genes
+set	axis	n_genes	spearman	boot95_low	boot95_high	null_mean	null_q025	null_q975	pool_genes
+383, full run (validation)	pH axis v2	362	-0.5132	-0.5813	-0.4402	-0.1615	-0.254	-0.0669	13465
+383, full run (validation)	agonal axis	364	0.655	0.5884	0.7092	0.2001	0.1031	0.2937	13465
+383, signs from no_bank9 lists	pH axis v2	363	-0.5232	-0.5871	-0.452	-0.1634	-0.2572	-0.0684	12753
+383, signs from no_bank9 lists	agonal axis	365	0.6567	0.5958	0.7132	0.2061	0.113	0.297	12753
+196 rebuilt without the nine bank studies	pH axis v2	182	-0.6001	-0.6646	-0.5168	-0.1777	-0.3083	-0.0412	12937
+196 rebuilt without the nine bank studies	agonal axis	188	0.7219	0.6555	0.7781	0.2371	0.1032	0.3641	12937
+187 genes of the 383 that lose support (no_bank9 q_bh >= 0.1)	pH axis v2	181	-0.4097	-0.5256	-0.2804	-0.1883	-0.3243	-0.0478	12946
+187 genes of the 383 that lose support (no_bank9 q_bh >= 0.1)	agonal axis	177	0.5446	0.4325	0.6488	0.2191	0.0822	0.3502	12946

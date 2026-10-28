@@ -1,0 +1,37 @@
+# figure: forking_paths_v2 table a
+# script: analyses/forking_paths_v2_2026-10-10/export_figure_data.py, run 2026-10-17
+# population: core-80 base (80 studies, 72 contributing lists; Shao 2008 PMID 18191109 out) and the designed paths of forking_paths_v2.py (blocks 1 to 3; scope labels containing 276, 270, 96 and 180 are fixed labels)
+# input: analyses/forking_paths_v2_2026-10-10/paths_hash.tsv sha256 269126cbab10
+# fork settings counted over the designed paths (block 1: 96, block 2: 180, block 3: 36; 6 specifications occur in both blocks 1 and 2)
+fork	setting	n_designed_paths	description
+rule	R1	141	list selection rule (R2 dropped: selects the same lists as R1 in 326 of 327 studies)
+rule	A	141	
+threshold	fdr	110	list threshold tier; any criterion = 'all'
+threshold	nominal	86	
+threshold	all	86	
+empty	keep	24	empty lists kept or dropped; varied under fdr only
+empty	drop	258	
+pseudo_noexpr	drop	32	pseudogenes and genes without brain expression; gtex = median TPM >= 1 in >= 1 of 13 GTEx v8 brain regions
+pseudo_noexpr	keep	218	
+pseudo_noexpr	gtex	32	
+noncoding	drop	48	HGNC non-coding RNAs dropped or pooled
+noncoding	pooled	234	
+single_cell	without	48	single-nucleus studies without or with
+single_cell	with	234	
+cut	published	162	published list | tight (reported FDR < 0.01 else p < 0.001) | |log2FC| >= 0.26 | >= 0.58 | capped at 200 genes by P
+cut	tight	30	
+cut	fc026	30	
+cut	fc058	30	
+cut	cap200	30	
+study_filter	all	162	all | N >= 20 | 2016 on | cortex only | no severe-error study | adjusted for >= 1 covariate
+study_filter	n20	30	
+study_filter	from2016	30	
+study_filter	cortex	30	
+study_filter	covariate_adjusted	30	
+list_level	inclusive	246	inclusive (default) | partial DE lists dropped (Scarr, Arion, Altar, Shao) | non-DE-style lists dropped (Ling, Kohen) | mixed-diagnosis dropped (Pai, Frohlich) | Chang from Table S2 only | Pai as the three text-named genes | all three drops
+list_level	no_partial	6	
+list_level	no_nonDE	6	
+list_level	no_mixed	6	
+list_level	chang_s2only	6	
+list_level	pai_text	6	
+list_level	no_flagged	6	

@@ -1,0 +1,27 @@
+# figure: fig02 panel a
+# script: analyses/figure_exports/export_fig02_fig07.py, run 2026-10-16
+# population: 72 primary brain studies (recurrence.py scenario 'published, brain', study tier); n_k = |M_k| (RECURRENCE_NK=membership); analysis set = the 383 study-tier genes of analyses/confounds/recurrent_sets.tsv (set study_brain; the in-place recurrence_genes.tsv gives 383 at q < 0.1); recurrence.tsv sha256 bcbf50f8e334; corpus/lineage.json sha256 4f919a83fea3
+# input: analyses/gene_coverage/recurrence_curve.tsv sha256 b7a8239ee0f6
+# input: analyses/recurrence.tsv sha256 bcbf50f8e334
+# k = genes found DE in at least k of the 72 studies; sd = sqrt(sum P_g (1 - P_g)) over genes, from recurrence_curve.py; expectations under n_k = |M_k| (RECURRENCE_NK=membership)
+k	observed	exp_uniform	sd_uniform	exp_deprior	sd_deprior	exp_exprmatched	sd_exprmatched
+1	15844	21496.3	72.14	17497.0	64.31	17102.7	59.27
+2	10509	12070.1	75.46	10652.7	60.3	11230.8	57.19
+3	6796	5725.9	63.47	6435.8	53.05	7092.6	57.84
+4	4110	2253.6	44.28	3762.0	44.78	3940.1	50.7
+5	2422	733.5	26.46	2098.5	36.32	1908.1	38.9
+6	1309	198.8	14.01	1106.6	28.2	811.2	26.85
+7	715	45.4	6.73	548.1	20.9	305.2	17.0
+8	380	8.8	2.97	253.9	14.78	102.2	10.0
+9	195	1.5	1.21	109.8	9.99	30.6	5.51
+10	107	0.2	0.46	44.3	6.46	8.2	2.86
+11	64	0.0	0.17	16.7	4.02	2.0	1.4
+12	38	0.0	0.06	5.9	2.4	0.4	0.65
+13	21	0.0	0.02	1.9	1.38	0.1	0.29
+14	10	0.0	0.01	0.6	0.77	0.0	0.12
+15	8	0.0	0.0	0.2	0.41	0.0	0.05
+16	4	0.0	0.0	0.0	0.21	0.0	0.02
+17	1	0.0	0.0	0.0	0.11	0.0	0.01
+18	1	0.0	0.0	0.0	0.05	0.0	0.0
+19	0	0.0	0.0	0.0	0.02	0.0	0.0
+20	0	0.0	0.0	0.0	0.01	0.0	0.0

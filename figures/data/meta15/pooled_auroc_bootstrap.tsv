@@ -1,0 +1,19 @@
+# figure: Fig. 2b pooled AUROC of the 383 / 107, bootstrap intervals
+# script: meta15_pooled_auroc_2026-10-22/scripts/meta15_pooled_auroc_bootstrap.py (setup of meta15_recurrent.py unchanged + bootstrap section), run 2026-10-22 on a remote machine; seed 20261022; observed ranking = number of the 15 lists containing the gene, universe = genes tested by at least one list (34,403)
+# inputs (sha256 first 12): h3_units.tsv f24716bad32d; h3_inventory.tsv 75bb8a75dc47; recurrent_sets.tsv 3c42f67cdd7a; 1_global_our_prior.tsv 68272e907b72; hgnc_complete_set.txt 69bb5722d5a4; primary_lists.json 44fb07b1d2e5; universes.json 25a477fc64ae; meta15_input_datasets.tsv (91 slots, 42 datasets, 15 lists)
+# 1 gene bootstrap: positives and negatives resampled with replacement (multinomial over the 16 count levels), 10,000 resamples; 1b positives only. 2 list bootstrap: 15 lists drawn with replacement (integer multiplicities, so a gene on a doubled list counts twice), AUROC recomputed, 2,000 resamples. 2b Bayesian bootstrap: Dirichlet(1,...,1) x 15 weights on the lists. 3 dataset bootstrap: the 42 distinct datasets drawn with replacement; each list gets weight = (draws of its own datasets) / (its number of datasets), so unweighted at weight 1; the lists are not recomputed from the datasets (not possible: the meta-analysis results are not gene-level data we hold). 3b: a list stays whole (weight 1) when at least one of its datasets is drawn; resamples with fewer than 3 lists skipped. p2_5, p50, p97_5 = percentiles of the resamples; bias = mean of resamples minus observed
+set	method	observed	mean	p2_5	p50	p97_5	sd	n_resamples	bias_mean_minus_observed
+383	1 gene bootstrap (positives and negatives)	0.8696	0.8696	0.849	0.8699	0.8893	0.0104	10000	0.0
+383	1b gene bootstrap (positives only, negatives fixed)	0.8696	0.8695	0.8487	0.8697	0.8889	0.0103	10000	-0.0001
+383	2 list bootstrap (with replacement)	0.8696	0.8218	0.7309	0.8305	0.8664	0.0353	2000	-0.0478
+383	2b Bayesian bootstrap over lists	0.8696	0.8629	0.8526	0.8635	0.8708	0.0049	2000	-0.0067
+383	3 dataset bootstrap (list weight = share of its datasets drawn)	0.8696	0.8641	0.8408	0.8673	0.8724	0.009	2000	-0.0054
+383	3 lists with weight > 0 (mean over resamples)		14.79		15.0			2000	
+383	3b dataset bootstrap (list kept whole if any dataset drawn)	0.8696	0.8659	0.8435	0.8696	0.8697	0.0091	2000	-0.0037
+107	1 gene bootstrap (positives and negatives)	0.9069	0.9068	0.871	0.9077	0.9385	0.0174	10000	-0.0001
+107	1b gene bootstrap (positives only, negatives fixed)	0.9069	0.9067	0.8707	0.9074	0.9388	0.0174	10000	-0.0002
+107	2 list bootstrap (with replacement)	0.9069	0.8696	0.7944	0.8757	0.9072	0.0292	2000	-0.0373
+107	2b Bayesian bootstrap over lists	0.9069	0.8986	0.8845	0.8999	0.9095	0.0071	2000	-0.0083
+107	3 dataset bootstrap (list weight = share of its datasets drawn)	0.9069	0.9023	0.8891	0.9043	0.9102	0.0061	2000	-0.0046
+107	3 lists with weight > 0 (mean over resamples)		14.77		15.0			2000	
+107	3b dataset bootstrap (list kept whole if any dataset drawn)	0.9069	0.905	0.894	0.9069	0.9069	0.0049	2000	-0.0019

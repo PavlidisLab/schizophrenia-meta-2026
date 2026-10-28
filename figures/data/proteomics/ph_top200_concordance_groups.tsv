@@ -1,0 +1,15 @@
+# built 2026-10-09 by side-studies/proteomics/ph_top200_concordance.py; per donor group (units sharing a bank pooled; gene direction = majority over the group's units)
+group	units	genes_called	ph_top200_hits	concordant	share	expected_share
+aus	Edgar 1999	1	0	0		
+stanley	Johnston-Wilson 2000;Beasley 2006;Pennington 2008;Behan 2009;Pennington 2008 (insular cortex);English 2009;Chan 2011;Focking 2011;Krishnamurthy 2013;Focking 2015 (PSD);Schubert 2015	294	10	3	0.3	0.499
+nsw	Clark 2006;Nesvaderani 2009;Sivagnanasundaram 2007;Clark 2007	61	0	0		
+harvard	Novikova 2006	21	1	0	0.0	0.0
+solo:18504422	Smalla 2008	38	1	0	0.0	0.158
+mannheim	Martins-de-Souza 2009 (ATL);Martins-de-Souza 2009 (DLPFC)	54	3	3	1.0	0.545
+solo:20381070	Martins-de-Souza 2010 (ACC)	30	1	0	0.0	0.239
+solo:20471030	Martins-de-Souza 2010 (thalamus)	46	1	1	1.0	0.649
+pitt	MacDonald 2015;Nucifora 2019;MacDonald 2020;Testa 2026	670	27	20	0.741	0.465
+upv	Pinacho 2016;Vidal-Domenech 2020	203	5	0	0.0	0.505
+uci	Zeppillo 2022	128	3	1	0.333	0.433
+maryland	Alnafisah 2022	72	1	1	1.0	0.784
+stockmeier+dwork+nbb	Koopmans 2026	387	9	7	0.778	0.517

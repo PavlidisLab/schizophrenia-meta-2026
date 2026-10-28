@@ -1,0 +1,81 @@
+# figure: fig01 panel d
+# script: analyses/figure_exports/export_fig01_fig11.py fig1_d transformation (EXCLUDE_GROUP2 set in the corpus run; this table is not corpus-filtered) applied to numbers_batch_D_2026-10-15/item2_7/results_81.tsv (prior_meta_use.py output for all 81, 17 added studies from evidence17.py); run 2026-10-15
+# population: 74 modelled primary brain studies (recurrence_units modelled = yes)
+# input: numbers_batch_D_2026-10-15/item2_7/results_81.tsv sha256 3bea6250e4e3; item2_coding_81.tsv sha256 aadbe165fa7b (counts agree row by row; in_primary_population = modelled_74); 80-study base_2026-10-14/the 80-study base table sha256 51ace5bfc13b (cohort_cluster)
+# ever_pooled = n_prior_meta > 0; ever_reanalysed = n_prior_reuse_only > 0; ever_reused_any = either; counts are floors (re-use layer read by a model from available full texts)
+# trailing column cohort_cluster (the 80-study base table; 'multi-bank' marks studies spanning banks outside the clusters, 7 including Saetre 2007)
+study_id	label	bank	dataset_identity	ever_pooled	ever_reanalysed	n_prior_meta	n_prior_reanalysis_only	ever_reused_any	first_prior_meta	match_levels	in_primary_population	cohort_cluster
+11296301	Hakak 2001	mssm	own cohort / consortium data	yes	no	2	0	yes	Chen 2015 (2015)	study	yes	cmc+mssm+pitt+libd
+15018814	Kuromitsu 2001	stanley	own cohort / consortium data	no	no	0	0	no			yes	stanley
+15334603	Aston 2004	stanley	own cohort / consortium data	yes	no	1	0	yes	Chen 2015 (2015)	study	yes	stanley
+16038679	Altar 2005	stanley	SMRIDB stanley_altarA,stanley_altarB,stanley_altarC	yes	yes	21	4	yes	Khaitovich 2008 (2008)	SMRIDB; SMRIDB+study; study	yes	stanley
+18191109	Shao 2008	stanley	SMRIDB stanley_vawter	yes	yes	6	3	yes	Khaitovich 2008 (2008)	SMRIDB+study; study	yes	stanley
+18771015	Garbett 2008	pitt	own cohort / consortium data	yes	no	7	0	yes	Pérez-Santiago 2012 (2012)	study	yes	cmc+mssm+pitt+libd
+18778695	Narayan 2008	aus	GEO GSE21138,GSE26317	yes	yes	29	4	yes	Pérez-Santiago 2012 (2012)	GEO+study; study	yes	aus
+18985160	Mudge 2008	brain_other	GEO GSE12297	no	no	0	0	no			yes	independent
+19255580	Maycox 2009	brain_other	GEO GSE17612	yes	yes	34	1	yes	Pérez-Santiago 2012 (2012)	GEO+study; study	yes	multi-bank
+19834500	Chu 2009	stanley	own cohort / consortium data	no	no	0	0	no			yes	stanley
+20034564	Arion 2010	pitt	own cohort / consortium data	no	no	0	0	no			yes	cmc+mssm+pitt+libd
+21091092	Schmitt 2011	brain_other	GEO GSE26927	no	yes	0	1	yes			yes	independent
+21538462	Barnes 2011	brain_other	GEO GSE21935	yes	no	22	0	yes	Logotheti 2013 (2013)	GEO+study; study	yes	independent
+22558445	Wu 2012	aus	own cohort / consortium data	yes	yes	2	1	yes	Sadeghi 2022 (2022)	study	yes	aus
+22869038	Fillman 2013	aus	own cohort / consortium data	yes	yes	1	2	yes	Khan 2022 (2022)	study	yes	aus
+24169640	Hwang 2013	stanley	own cohort / consortium data	yes	yes	3	3	yes	Catts 2012 (2012)	study	yes	stanley
+24594777	Kohen 2014	stanley	GEO GSE42546	yes	no	1	0	yes	Carceller 2024 (2024)	GEO+study	yes	stanley
+24628518	Pietersen 2014 (PV neurons)	harvard	own cohort / consortium data	yes	no	3	0	yes	Segev 2023 (2023)	study	yes	harvard
+24702465	Pietersen 2014	harvard	GEO GSE37981	yes	no	11	0	yes	Torrico 2020 (2020)	GEO+study; study	yes	harvard
+24776767	Xiao 2014	brain_other	own cohort / consortium data	yes	no	1	0	yes	Sadeghi 2022 (2022)	study	yes	independent
+25113377	Zhao 2015	stanley	own cohort / consortium data	no	yes	0	1	yes			yes	stanley
+25560755	Arion 2015	pitt	GEO GSE10784,GSE93987	yes	no	7	0	yes	Hess 2016 (2016)	GEO; GEO+study; study	yes	cmc+mssm+pitt+libd
+26585218	Mauney 2015	harvard	own cohort / consortium data	no	no	0	0	no			yes	harvard
+27622934	Darby 2016	stanley	own cohort / consortium data	no	no	0	0	no			yes	stanley
+27668389	Fromer 2016	cmc	GEO GSE15745,GSE30272,GSE44772,GSE46706	yes	yes	21	28	yes	Chen 2014 (2014)	GEO; study	yes	cmc+mssm+pitt+libd
+27801890	Scarr 2018	aus	own cohort / consortium data	no	no	0	0	no			yes	aus
+27898074	Kim 2016	stanley	own cohort / consortium data	no	no	0	0	no			yes	stanley
+27940260	Voisey 2017	brain_other	own cohort / consortium data	no	no	0	0	no			yes	independent
+28123834	Mladinov 2016	brain_other	own cohort / consortium data	no	no	0	0	no			yes	independent
+28809853	Chang 2017	libd	own cohort / consortium data	yes	yes	6	6	yes	Childers 2022 (2022)	study	yes	cmc+mssm+pitt+libd
+29112193	Enwright 2018	pitt	own cohort / consortium data	no	no	0	0	no			yes	cmc+mssm+pitt+libd
+29463818	Scarr 2018	aus	own cohort / consortium data	no	no	0	0	no			yes	aus
+30050107	Jaffe 2018	libd	own cohort / consortium data	yes	yes	5	7	yes	Childers 2022 (2022)	study	yes	cmc+mssm+pitt+libd
+31053723	Pai 2019	brain_other	GEO GSE112179,GSE112523,GSE112524,GSE112525,GSE113093,GSE120423,GSE96107	yes	yes	1	1	yes	Rebouças 2025 (2025)	GEO+study	yes	multi-bank
+31123247	Lanz 2019	pitt	GEO GSE53987,GSE66275,GSE66276,GSE66277	yes	yes	35	4	yes	Hagihara 2014 (2014)	GEO+study; study	yes	cmc+mssm+pitt+libd
+31174959	Collado-Torres 2019	libd	own cohort / consortium data	yes	yes	6	9	yes	Kim 2021 (2021)	study	yes	cmc+mssm+pitt+libd
+31288836	Mendizabal 2019	brain_other	GEO GSE107638,GSE107729,GSE108065,GSE108066,GSE46710	yes	no	2	0	yes	Rebouças 2025 (2025)	GEO+study	yes	multi-bank
+32006661	Santarelli 2019	aus	own cohort / consortium data	no	no	0	0	no			yes	aus
+32152472	Perez 2021	brain_other	GEO GSE138082	yes	no	5	0	yes	Bloch Priel 2023 (2023)	GEO+study	yes	independent
+32203495	Jaffe 2020	libd	own cohort / consortium data	yes	yes	5	7	yes	Childers 2022 (2022)	study	yes	cmc+mssm+pitt+libd
+32513544	Zeppillo 2022	pritzker	own cohort / consortium data	no	no	0	0	no			yes	pritzker
+32566292	Bakshi 2020	stanley	own cohort / consortium data	no	no	0	0	no			yes	stanley
+33184259	Maas 2020	brain_other	own cohort / consortium data	no	no	0	0	no			yes	independent
+33558674	Akula 2021	cmc	own cohort / consortium data	yes	yes	20	27	yes	Gandal 2018 (2018)	study	yes	cmc+mssm+pitt+libd
+34004381	Gebicke-Haerter 2021	brain_other	own cohort / consortium data	no	no	0	0	no			yes	independent
+34059796	Weissleder 2021	stanley	own cohort / consortium data	no	no	0	0	no			yes	stanley
+34272489	Wu 2021	mssm	own cohort / consortium data	no	yes	0	1	yes			yes	cmc+mssm+pitt+libd
+34440415	Lindholm Carlström 2021	harvard	own cohort / consortium data	no	no	0	0	no			yes	harvard
+36223459	Batiuk 2022	brain_other	own cohort / consortium data	yes	yes	1	1	yes	Nakatsuka 2025 (2025)	study	yes	independent
+36302706	Ketchesin 2023	pitt	GEO GSE202537	no	yes	0	3	yes			yes	cmc+mssm+pitt+libd
+36319771	Benjamin 2022	libd	own cohort / consortium data	yes	yes	5	7	yes	Childers 2022 (2022)	study	yes	cmc+mssm+pitt+libd
+36932057	Schulmann 2023	cmc	GEO GSE224683,GSE6512	yes	yes	20	27	yes	Gandal 2018 (2018)	study	yes	cmc+mssm+pitt+libd
+37498306	Arihisa 2023	brain_other	own cohort / consortium data	no	no	0	0	no			yes	independent
+38448582	Ling 2024	harvard	own cohort / consortium data	yes	no	1	0	yes	Nakatsuka 2025 (2025)	study	yes	harvard
+38781388	Ruzicka 2024	mssm	own cohort / consortium data	yes	no	2	0	yes	Nakatsuka 2025 (2025)	study	yes	multi-bank
+39227716	Frohlich 2024	aus	GEO GSE254293,GSE254569	yes	no	2	0	yes	Kiss 2026 (2026)	GEO+study	yes	aus
+39526318	Zhang 2026	stanley	own cohort / consortium data	no	no	0	0	no			yes	stanley
+41174894	Yalcinbas 2025	libd	own cohort / consortium data	yes	yes	5	6	yes	Childers 2022 (2022)	study	yes	cmc+mssm+pitt+libd
+41210297	Mas 2025	brain_other	own cohort / consortium data	no	no	0	0	no			yes	independent
+41567988	Mendez-Victoriano 2026	stanley	own cohort / consortium data	no	no	0	0	no			yes	multi-bank
+41757081	Kwon 2026	libd	own cohort / consortium data	yes	yes	5	6	yes	Childers 2022 (2022)	study	yes	cmc+mssm+pitt+libd
+41942462	Singh 2026	cmc	own cohort / consortium data	yes	yes	20	27	yes	Gandal 2018 (2018)	study	yes	cmc+mssm+pitt+libd
+42461238	Dean 2026	aus	own cohort / consortium data	no	no	0	0	no			yes	aus
+42778699	Lee 2026 (PsychAD)	mssm	own cohort / consortium data	yes	yes	2	3	yes	Yeo 2023 (2023)	study	yes	multi-bank
+16236523	Weidenhofer 2006	brain_other	own cohort / consortium data	no	no	0	0	no			yes	aus
+17822540	Saetre 2007	brain_other	own cohort / consortium data	no	yes	0	1	yes			yes	multi-bank
+18445270	Bowden 2008	aus	own cohort / consortium data	no	no	0	0	no			yes	aus
+36192459	Puvogel 2022	stanley	own cohort / consortium data	no	no	0	0	no			yes	stanley
+38648100	Zhu 2024	brain_other	GEO GSE174407	yes	no	2	0	yes	Carceller 2024 (2024)	GEO+study	yes	independent
+39237723	Arbabi 2025	pitt	own cohort / consortium data	yes	no	1	0	yes	Kiss 2026 (2026)	study	yes	cmc+mssm+pitt+libd
+39397771	Alsema 2025	stanley	own cohort / consortium data	no	no	0	0	no			yes	stanley
+23147385	Chen 2013	stanley	GEO GSE21138,GSE35974,GSE35977,GSE35978	yes	yes	36	3	yes	Pérez-Santiago 2012 (2012)	GEO; GEO+study	yes	stanley
+28754123	Ramaker 2017	pritzker	GEO GSE73721,GSE80655	yes	yes	13	5	yes	Toker 2018 (2018)	GEO+study; study	yes	pritzker
+27661005	Hu 2016	stanley	GEO GSE12649,GSE17312,GSE53987,GSE78936	yes	yes	37	4	yes	Logotheti 2013 (2013)	GEO; GEO+study	yes	stanley

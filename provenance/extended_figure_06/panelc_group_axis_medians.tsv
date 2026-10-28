@@ -1,0 +1,36 @@
+# script: H/scripts/panelc_group_axis_medians.py; inputs: rho gemma_rho_picked_contrasts.tsv sha256 83d2f37ab1b7, scan176_contrasts.tsv 1c71150f2205, coi_scored.tsv c5a92fa053c1, flagged_candidates_classified.tsv 8eb7717b77e7
+# seed 20261010 (2000 bootstrap resamples of experiments); base: core-80; date: 2026-10-19; rho_pH_v2 = pH axis v2 (G3 sweep), rho_pH_v1 = five-dataset axis
+group	axis	median_abs_rho	boot95_lo	boot95_hi	n_with_rho	n_group
+SZ corpus (picked)	rho_pH_v2	0.1029	0.07287	0.12366	65	65
+SZ corpus (picked)	rho_pH_v1	0.10677	0.066092	0.13105	65	65
+SZ corpus (picked)	rho_gtex	0.10944	0.069554	0.1606	65	65
+SZ-annotated held out	rho_pH_v2	0.075699	0.052472	0.12823	49	49
+SZ-annotated held out	rho_pH_v1	0.065884	0.034199	0.12092	49	49
+SZ-annotated held out	rho_gtex	0.10213	0.083487	0.12737	49	49
+All other experiments	rho_pH_v2	0.06951	0.067675	0.07135	8587	8588
+All other experiments	rho_pH_v1	0.048334	0.046989	0.049665	8587	8588
+All other experiments	rho_gtex	0.064769	0.063156	0.066817	8587	8588
+Design flagged by regex (picked)	rho_pH_v2	0.086856	0.073048	0.10707	113	113
+Design flagged by regex (picked)	rho_pH_v1	0.055085	0.037173	0.067803	113	113
+Design flagged by regex (picked)	rho_gtex	0.073587	0.062177	0.088464	113	113
+Hypoxia / ischemia / pH contrast scored	rho_pH_v2	0.11253	0.07736	0.13938	29	69
+Hypoxia / ischemia / pH contrast scored	rho_pH_v1	0.081805	0.055085	0.097278	29	69
+Hypoxia / ischemia / pH contrast scored	rho_gtex	0.060817	0.038335	0.10347	29	69
+Ischemia as disease state (stroke, MI)	rho_pH_v2	0.16631	0.093702	0.26716	11	24
+Ischemia as disease state (stroke, MI)	rho_pH_v1	0.093498	0.039658	0.10366	11	24
+Ischemia as disease state (stroke, MI)	rho_gtex	0.12123	0.086271	0.21476	11	24
+Postmortem brain (panel b group)	rho_pH_v2	0.17972	0.14882	0.20834	277	277
+Postmortem brain (panel b group)	rho_pH_v1	0.1678	0.14275	0.19419	277	277
+Postmortem brain (panel b group)	rho_gtex	0.17649	0.15211	0.20247	277	277
+Other brain	rho_pH_v2	0.10071	0.073851	0.14482	104	104
+Other brain	rho_pH_v1	0.094774	0.075246	0.13045	104	104
+Other brain	rho_gtex	0.12809	0.098124	0.18047	104	104
+Other tissues	rho_pH_v2	0.071418	0.068265	0.07455	3155	3155
+Other tissues	rho_pH_v1	0.049423	0.046769	0.051729	3155	3155
+Other tissues	rho_gtex	0.065124	0.062525	0.068479	3155	3155
+Cell lines / in vitro	rho_pH_v2	0.063602	0.061153	0.065709	4390	4391
+Cell lines / in vitro	rho_pH_v1	0.046061	0.044368	0.047532	4390	4391
+Cell lines / in vitro	rho_gtex	0.062174	0.059829	0.064148	4390	4391
+Blood	rho_pH_v2	0.083814	0.076384	0.087704	775	775
+Blood	rho_pH_v1	0.045928	0.042841	0.049724	775	775
+Blood	rho_gtex	0.063281	0.057625	0.070302	775	775

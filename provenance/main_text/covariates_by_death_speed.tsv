@@ -1,0 +1,15 @@
+# table: covariates_by_death_speed.tsv
+# script: scripts/s2b_composition.py
+# date: 2026-10-19
+# seed: none (deterministic)
+# input: ~/.cache/stanley_death_speed_local/donors_LOCAL_ONLY.tsv sha256 f09ceaf22cfde2e847b9847f2602a7acd0b3eb865e30447972c9fb04b67c18fc
+# note: Unique donors (n=165). Rows 'test ...': Mann-Whitney P in the CTRL column, mean difference in mean_pH for pH. Not a model; context for the adjusted fits.
+group	n	mean_age	male_share	mean_pH	median_PMI	mean_PMI	SZ	BD	MDD	CTRL
+sudden	141	44.5035	0.631206	6.43195	29	31.7872	40	40	13	48
+non-sudden	24	44.7917	0.666667	6.16208	26	30.5417	10	10	2	2
+non-sudden: Slower death	3	58.3333	0.666667	6.2	18	20	0	2	0	1
+non-sudden: Possible anoxia	14	40.7143	0.785714	6.22786	28	30.9286	7	5	2	0
+non-sudden: On respirator	7	47.1429	0.428571	6.01429	26	34.2857	3	3	0	1
+test ph: non-sudden vs sudden	165			-0.269867						0.000122156
+test pmi: non-sudden vs sudden	165									0.477756
+test age: non-sudden vs sudden	165									0.86818

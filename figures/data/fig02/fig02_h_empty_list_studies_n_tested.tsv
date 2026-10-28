@@ -1,0 +1,14 @@
+# figure: Fig. 2c interactive version, grey 'genes tested' bar for the 8 studies with an empty list at FDR 5%
+# script: fig2c_interactive_data_2026-10-19/build_empty_list_studies.py, run 2026-10-19
+# input: recurrence_on_80_studies/ref_B80_inputs/universes.json sha256 25a477fc64ae401637ce9b5f2ac7cc536b7acdd3c157737b47179bd6c5bb7cab; recurrence_on_80_studies/base80_studies.tsv sha256 09dc9e52c590a731f906881604d85132b058a9bddd445899ea766678f8a6187a
+# n_tested = n_k of the study's universe as recurrence.py uses it (universes.json, 'derived' entries of the study; the same value as universe_n_k in base80_studies.tsv; asserted equal). It is the union over the study's derived units of every gene in our limma fit after the project expression filter, not the authors' tested set; n_tested_class = derived_limma_fit_after_filter (the 72 listed studies use the classes of fig02_b_study_annotation.tsv)
+# n_list_genes = 0: our derived list of the study is empty at FDR 5%, so the study is dropped from the recurrence analysis (72 of the 80 studies contribute a list); n_derived_units = derived units pooled into the universe (Maschietto 2015 and de Baumont 2015 share one GEO series, GSE62191, and the same universe)
+study_id	label	n_tested	n_tested_class	n_list_genes	universe_type	n_derived_units
+25981335	Maschietto 2015	9093	derived_limma_fit_after_filter	0	exact	1
+25487697	de Baumont 2015	9093	derived_limma_fit_after_filter	0	exact	1
+28476208	Arion 2017	16652	derived_limma_fit_after_filter	0	exact	2
+19088852	Harris 2008	17918	derived_limma_fit_after_filter	0	exact	2
+30468562	Abdolmaleky 2019	16436	derived_limma_fit_after_filter	0	exact	1
+14743183	Iwamoto 2004	7455	derived_limma_fit_after_filter	0	exact	1
+15563509	Iwamoto 2005	10792	derived_limma_fit_after_filter	0	exact	1
+31053723	Pai 2019 (own list)	25105	derived_limma_fit_after_filter	0	exact	1

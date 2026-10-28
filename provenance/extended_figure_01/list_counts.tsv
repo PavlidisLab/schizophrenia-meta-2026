@@ -1,0 +1,19 @@
+scenario	tier	run	n_lists	n_clusters	obs_ge2	obs_ge3	obs_ge5	obs_ge10	genes_q10	median_size	pairs_C_n_2
+published, brain	study	old	74		10518	6784	2370	107.0	375	180.0	2701
+published, brain	cohort	old	67	18.0	8673	4125	477		23		2211
+published, brain	study	new	72		10509	6796	2422	107.0	383	202.0	2556
+published, brain	cohort	new	66	18.0	8734	4192	499		24		2145
+published, brain, FDR lists	study	old	44		6113	2844	483	5.0	75	175.0	946
+published, brain, FDR lists	cohort	old	39	12.0	4312	1191	31		3		741
+published, brain, FDR lists	study	new	44		6358	3057	564	6.0	91	224.0	946
+published, brain, FDR lists	cohort	new	40	12.0	4515	1294	35		5		780
+published, brain, nominal lists	study	old	23		3448	931	57	0.0	11	328.0	253
+published, brain, nominal lists	study	new	22		3202	808	40	0.0	8	290.0	231
+published, brain, microarray	study	old	30		3326	1136	112	0.0	30	159.0	435
+published, brain, microarray	cohort	old	28	8.0	2302	444	2		0		378
+published, brain, microarray	study	new	29		3306	1117	109	0.0	30	185.0	406
+published, brain, microarray	cohort	new	27	8.0	2284	435	2		0		351
+published, brain, RNA-seq	study	old	37		6453	3036	514	4.0	216	263.0	666
+published, brain, RNA-seq	cohort	old	34	13.0	5618	2054	139		29		561
+published, brain, RNA-seq	study	new	36		6389	2991	481	3.0	200	268.0	630
+published, brain, RNA-seq	cohort	new	34	13.0	5581	2031	139		29		561

@@ -1,0 +1,86 @@
+# figure: fig01 panel b (core 80 base), per-study sizes
+# input: base80_studies.tsv sha256 09dc9e52c590 (base list, tier); 80-study base_2026-10-14/the 80-study base table 51ace5bfc13b (n_SZ, n_control = authors' recorded counts, eligible_fraction_2026-10-14/base71/study_level.tsv; the 80 rows are the rows of the 81 file less Shao 2008); fig01_b_corpus_studies.tsv (lineage n_total, n_cases, n_controls; blank = not recorded in the lineage node)
+# the 7 derived-list studies with no list are included and flagged in list_flag
+# tier: D30 tiers (67 authors + 13 derived, base80_studies.tsv list_origin)
+# 2026-10-21: column cohort_cluster: for the seven studies that pool several banks, the set of cohort clusters (multibank_cluster_sets.tsv)
+study	pmid	year	tier	list_flag	cohort_cluster	n_SZ_recorded	n_control_recorded	n_lineage_total	n_lineage_cases	n_lineage_controls	in_primary_population
+Hakak 2001	11296301	2001	authors		cmc+mssm+pitt+libd	12	12	24	12	12	yes
+Kuromitsu 2001	15018814	2001	authors		stanley	8	8	46			yes
+Aston 2004	15334603	2004	authors		stanley	12	14	26	12	14	yes
+Altar 2005	16038679	2005	authors		stanley	22	24	46	22	24	yes
+Weidenhofer 2006	16236523	2006	authors		aus	7	7	14	7	7	yes
+Saetre 2007	17822540	2007	authors		brain_other:17822540; harvard; stanley	55	55	110	55	55	yes
+Garbett 2008	18771015	2008	authors		cmc+mssm+pitt+libd	12	6	18	12	6	yes
+Narayan 2008	18778695	2008	authors		aus	26	29	55	26	29	yes
+Mudge 2008	18985160	2008	authors		independent	14	6	20	14	6	yes
+Bowden 2008	18445270	2008	authors		aus	7	7	14	7	7	yes
+Maycox 2009	19255580	2009	authors		brain_other:19255580; harvard	28	23	51	28	23	yes
+Chu 2009	19834500	2009	authors		stanley	11	12	23	11	12	yes
+Arion 2010	20034564	2010	authors		cmc+mssm+pitt+libd	8	8	16	8	8	yes
+Schmitt 2011	21091092	2011	authors		independent	10	10	20	10	10	yes
+Barnes 2011	21538462	2011	authors		independent	23	19	42	23	19	yes
+Wu 2012	22558445	2012	authors		aus	9	9	18	9	9	yes
+Fillman 2013	22869038	2013	authors		aus	20	20	40	20	20	yes
+Hwang 2013	24169640	2013	authors		stanley	14	15	29	14	15	yes
+Kohen 2014	24594777	2014	authors		stanley	17	29	46	17	29	yes
+Pietersen 2014 (PV neurons)	24628518	2014	authors		harvard	8	8	16	8	8	yes
+Pietersen 2014	24702465	2014	authors		harvard	9	9	18	9	9	yes
+Xiao 2014	24776767	2014	authors		independent	5	6	11			yes
+Zhao 2015	25113377	2015	authors		stanley	31	26	57	31	26	yes
+Arion 2015	25560755	2015	authors		cmc+mssm+pitt+libd	36	36	72	36	36	yes
+Mauney 2015	26585218	2015	authors		harvard	9	9	18	9	9	yes
+Darby 2016	27622934	2016	authors		stanley	35	32	95			yes
+Fromer 2016	27668389	2016	authors		cmc+mssm+pitt+libd	258	279	537	258	279	yes
+Kim 2016	27898074	2016	authors		stanley	48	45	93	48	45	yes
+Mladinov 2016	28123834	2016	authors		independent	6	6	12			yes
+Voisey 2017	27940260	2017	authors		independent	22	23	45			yes
+Chang 2017	28809853	2017	authors		cmc+mssm+pitt+libd	22	24	46	22	24	yes
+Scarr 2018 (PMID 27801890)	27801890	2018	authors		aus	30	15	45	30	15	yes
+Enwright 2018	29112193	2018	authors		cmc+mssm+pitt+libd	36	36	72	36	36	yes
+Scarr 2018 (PMID 29463818)	29463818	2018	authors		aus	15	15	30	15	15	yes
+Jaffe 2018	30050107	2018	authors		cmc+mssm+pitt+libd	155	196	351	155	196	yes
+Pai 2019	31053723	2019	derived		brain_other:31053723; cmc+mssm+pitt+libd; harvard	17	17	34	17	17	yes
+Lanz 2019	31123247	2019	authors		cmc+mssm+pitt+libd	19	19	38	19	19	yes
+Collado-Torres 2019	31174959	2019	authors		cmc+mssm+pitt+libd	177	270	447	177	270	yes
+Mendizabal 2019	31288836	2019	authors		brain_other:31288836; harvard	23	27	50	23	27	yes
+Santarelli 2019	32006661	2019	authors		aus	37	37	74			yes
+Jaffe 2020	32203495	2020	authors		cmc+mssm+pitt+libd	75	93	168	75	93	yes
+Bakshi 2020	32566292	2020	authors		stanley	11	11	22	11	11	yes
+Maas 2020	33184259	2020	authors		independent	4	4	8			yes
+Perez 2021	32152472	2021	authors		independent	13	13	26	13	13	yes
+Akula 2021	33558674	2021	authors		cmc+mssm+pitt+libd	44	55	99	44	55	yes
+Gebicke-Haerter 2021	34004381	2021	authors		independent	10	10	20			yes
+Weissleder 2021	34059796	2021	authors		stanley	19	20	39	19	20	yes
+Wu 2021	34272489	2021	authors		cmc+mssm+pitt+libd	12	12	24	12	12	yes
+Lindholm Carlström 2021	34440415	2021	authors		harvard	68	44	112	68	44	yes
+Zeppillo 2022	32513544	2022	authors		pritzker	10	10	20	10	10	yes
+Batiuk 2022	36223459	2022	authors		independent	9	14	23	9	14	yes
+Benjamin 2022	36319771	2022	authors		cmc+mssm+pitt+libd	154	239	393	154	239	yes
+Puvogel 2022	36192459	2022	authors		stanley	15	14	29	15	14	yes
+Ketchesin 2023	36302706	2023	derived		cmc+mssm+pitt+libd	28	36	72	36	36	yes
+Schulmann 2023	36932057	2023	authors		cmc+mssm+pitt+libd	88	113	201	88	113	yes
+Arihisa 2023	37498306	2023	authors		independent	10	5	15			yes
+Ling 2024	38448582	2024	authors		harvard	87	93	180	87	93	yes
+Ruzicka 2024	38781388	2024	authors		cmc+mssm+pitt+libd; harvard	60	75	135	60	75	yes
+Frohlich 2024	39227716	2024	derived		aus	36	33	87	54	33	yes
+Zhu 2024	38648100	2024	authors		independent	29	29	58	29	29	yes
+Yalcinbas 2025	41174894	2025	authors		cmc+mssm+pitt+libd	35	33	68	35	33	yes
+Mas 2025	41210297	2025	authors		independent	16	16	32	16	16	yes
+Arbabi 2025	39237723	2025	authors		cmc+mssm+pitt+libd	19	19	38	19	19	yes
+Alsema 2025	39397771	2025	authors		stanley	14	14	28			yes
+Zhang 2026	39526318	2026	authors		stanley	15	15	30	15	15	yes
+Mendez-Victoriano 2026	41567988	2026	authors		aus; stanley	40	20	60	40	20	yes
+Kwon 2026	41757081	2026	authors		cmc+mssm+pitt+libd	32	31	63	32	31	yes
+Singh 2026	41942462	2026	authors		cmc+mssm+pitt+libd	22	26	80			yes
+Dean 2026	42461238	2026	authors		aus	81	70	211			yes
+Lee 2026 (PsychAD)	42778699	2026	authors		cmc+mssm+pitt+libd	120	319	439	120	319	yes
+Chen 2013	23147385	2013	derived		stanley	45	46	91	45	46	yes
+Maschietto 2015	25981335	2015	derived	no list	stanley	29	30	59	29	30	no
+de Baumont 2015	25487697	2015	derived	no list	stanley	29	30	59	29	30	no
+Ramaker 2017	28754123	2017	derived		pritzker	24	24	48	24	24	yes
+Arion 2017	28476208	2017	derived	no list	cmc+mssm+pitt+libd	17	19	36	17	19	no
+Harris 2008	19088852	2008	derived	no list	stanley	12	12	24	12	12	no
+Abdolmaleky 2019	30468562	2019	derived	no list	stanley	10	10	20	10	10	no
+Hu 2016	27661005	2016	derived		stanley	22	18	40	22	18	yes
+Iwamoto 2004	14743183	2004	derived	no list	stanley	13	15	28	13	15	no
+Iwamoto 2005	15563509	2005	derived	no list	stanley	35	34	69	35	34	no

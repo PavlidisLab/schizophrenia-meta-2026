@@ -1,0 +1,29 @@
+# a1_uniform_vs_published.py, run 2026-10-11; rule A primary lists (published side); Gemma result sets from manifests/batch6_gemma.json (gemma/<GSE>/*_sz_vs_control.tsv)
+# left out: Iwamoto 2005: published list covers mitochondria-related probe sets only (targeted universe); Topol 2016: miRNA lists (universe type exclude)
+# one row per dataset: published primary list and the Gemma result set(s) matched to it
+study	label	tissue	published_list	published_threshold	published_universe	n_published_genes	gemma_lists	n_gemma_genes_tested	n_gemma_fdr_genes	region_published	region_gemma	contrast_matches	group	note
+19255580	Maycox 2009	brain	19255580__cchpc_ba10	nominal	platform	2022	19255580__gemma_GSE17612_all_fdr05	19456	0	prefrontal	unknown	yes	22	Maycox 2009 CCHPC BA10 (GSE17612); a member of Glatt 2005's group
+18778695	Narayan 2008	brain	18778695__s1a_short_doi	nominal	platform	1502	18778695__gemma_GSE21138_all_fdr05	19454	0	prefrontal	unknown	no	19	published list: short illness duration subgroup (8 vs 8); Gemma: all 30 vs 29
+21538462	Barnes 2011	brain	21538462__scz_ba22	nominal	platform	51	21538462__gemma_GSE21935_all_fdr05	19449	0	temporal	unknown	yes	33	BA22
+24702465	Pietersen 2014	brain	24702465__table_s3	fdr	platform	862	24702465__gemma_GSE37981_all_fdr05	19437	6	temporal	unknown	yes	53	layer 3 pyramidal neurons, BA42
+25560755	Arion 2015	brain	25560755__tables2ab_top75	fdr	platform	71	25560755__gemma_GSE93987_dorsolateral_prefrontal_cortex_layer_3_fdr05;25560755__gemma_GSE93987_dorsolateral_prefrontal_cortex_layer_5_fdr05	19458	3469	prefrontal	prefrontal	yes	58	published list pools layer 3 and layer 5; Gemma's two layer result sets combined by smallest p per gene
+31123247	Lanz 2019	brain	31123247__sz_pfc	fdr	platform	2014	31123247__gemma_GSE53987_dorsolateral_prefrontal_cortex_fdr05	19444	24	prefrontal	prefrontal	yes	101	DLPFC subset
+31288836	Mendizabal 2019	brain	31288836__neun_szdeg	fdr	rnaseq_default	299	31288836__gemma_GSE107638_all_fdr05	14661	1152	prefrontal	unknown	no	103	published list: NeuN+ nuclei; Gemma subset 'all' (43 vs 53 samples)
+32152472	Perez 2021	brain	32152472__dg	fdr	rnaseq_default	263	32152472__gemma_GSE138082_dentate_gyrus_of_hippocampal_formation_fdr05	21402	0	hippocampus	hippocampus	yes	112	dentate gyrus
+36302706	Ketchesin 2023	brain	36302706__caudate	nominal	union	812	36302706__gemma_GSE202537_caudate_nucleus_fdr05	20256	97	striatum	striatum	yes	141	caudate
+21490598	Brennand 2011	ipsc	21490598__si_table3	nominal	platform	581	21490598__gemma_GSE25673_all_fdr05	18605	2227	unknown	unknown	yes	32	hiPSC neurons
+24686136	Brennand 2015	ipsc	24686136__si_table3	fdr	platform	479	24686136__gemma_GSE40102_all_fdr05	18605	1044	unknown	unknown	yes	52	hiPSC NPCs
+28736215	Windrem 2017	ipsc	28736215__table_s2	fdr	rnaseq_default	103	28736215__gemma_GSE86906_all_fdr05	18326	1002	unknown	unknown	no	84	published list: genes shared by four per-patient comparisons
+29263384	Hoffman 2017	ipsc	29263384__sd8_npc_fdr30	fdr	union	7	29263384__gemma_GSE106589_neural_progenitor_cell_fdr05	19095	0	unknown	unknown	yes	89	hiPSC NPCs
+30664768	Shao 2019	ipsc	30664768__suppfig6f	fdr	rnaseq_default	16	30664768__gemma_GSE118313_all_fdr05	17552	1	unknown	unknown	yes	93	hiPSC cINs, pilot cohort
+33677214	Park 2021	ipsc	33677214__migrated_cins	nominal	rnaseq_default	80	33677214__gemma_GSE155067_cin_migrated_fdr05	14470	0	unknown	unknown	yes	93	hiPSC migrated cINs
+35701597	Liu 2022	ipsc	35701597__gn_suppl_table7	fdr	rnaseq_default	654	35701597__gemma_GSE184102_all_fdr05	18670	0	unknown	unknown	yes	93	hiPSC glutamatergic neurons
+31019265	Ni 2020	ipsc	31019265__suppl_table1_cins	nominal	rnaseq_default	1086	31019265__gemma_GSE125999_all_fdr05	17668	0	unknown	unknown	yes	98	hiPSC cINs, expanded cohort
+32186681	Kathuria 2020	ipsc	32186681__organoids	fdr	rnaseq_default	2495	32186681__gemma_GSE133534_all_fdr05	20332	6552	unknown	unknown	yes	113	cerebral organoids
+33288841	Stertz 2021	ipsc	33288841__neurons	fdr	rnaseq_default	372	33288841__gemma_GSE182875_all_fdr05	17027	47	unknown	unknown	yes	121	hiPSC cortical neurons
+34936134	Koskuvi 2022	ipsc	34936134__st_vs_ctrl	fdr	rnaseq_default	36	34936134__gemma_GSE191248_all_fdr05	21812	0	unknown	unknown	yes	135	hiPSC astrocytes
+37117634	Breitmeyer 2023	ipsc	37117634__microglia_suppl_table2	fdr	rnaseq_default	17	37117634__gemma_GSE213232_all_fdr05	23533	0	unknown	unknown	yes	145	iPSC microglia-like cells
+39307399	Heider 2024	ipsc	39307399__ngn2	nominal	rnaseq_default	572	39307399__gemma_GSE282524_glutamatergic_neuron_derives_from_cell_l_fdr05	21511	0	unknown	unknown	yes	166	NGN2 glutamatergic neurons
+22393424	van Beveren 2012	blood	22393424__table_s2	fdr	platform	945	22393424__gemma_GSE27383_all_fdr05	19452	1	unknown	unknown	yes	37	PBMC
+25658856	Cattane 2015	other	25658856__table2	nominal	platform	5	25658856__gemma_GSE62333_all_fdr05	18603	46	unknown	unknown	yes	59	fibroblasts
+27727244	Horiuchi 2016	other	27727244__suppl_table1	fdr	platform	1737	27727244__gemma_GSE73129_all_fdr05	19428	884	unknown	unknown	no	71	published list: microarray cohort 15 vs 15; Gemma 55 vs 60 samples

@@ -1,0 +1,37 @@
+# inputs (sha256 prefix): Liharska ST1 d8a4171a6329 (extracted from MOESM8 sha256 prefix in the file header), ST5 498be821cb72 (MOESM12), Collado-Torres Table S4 5024842c8776 (github LieberInstitute/living_brain_reanalysis processed-data/SupplementaryTables/TableS4.csv, downloaded 2026-10-18)
+# recurrence_genes.tsv dda5eb621c15; recurrent_sets.tsv 3c42f67cdd7a; DE prior 68272e907b72; pH axis v2 controls 2c72a9b279a2; GTEx hardy_t_by_region 54f989c55753; HBCC specificity 84842a9e04b2
+# script: scripts/s1_main.py, run 2026-10-18; seed 20261018; matched sets 10000; bootstrap over genes: 2000 (set analyses), 1000 (genome-wide); symbols: ENSG -> HGNC approved symbol (HGNC ensembl_gene_id column via extract.load_hgnc), minimum-P row per symbol; NEW analysis
+# gene mapping: {'ST1_rows': 21635, 'ST1_unmapped_ENSG': 3139, 'ST1_symbols': 18496, 'CT_rows_expressed': 21155, 'CT_unmapped': 2735, 'ST5_rows': 29894, 'ST5_unmapped_ENSG': 7311, 'R2_axes_on_LIV-PM Liharska (ST1)': 0.0821, 'R2_axes_on_LIV-PM Collado-Torres, no qSVA': 0.1482, 'R2_axes_on_LIV-PM Collado-Torres, with qSVA': 0.069, 'R2_axes_on_SCZ1': 0.1566, 'R2_axes_on_SCZ2': 0.1576}
+# intervals: percentile bootstrap over genes (genes are not independent: co-expression); matched null = 10,000 sets drawn from published-brain genes with an SZ sign outside the 383, same expression decile x DE-prior quintile strata as ad_383.py; null columns give mean and 2.5%-97.5% range; perm P descriptive only
+# positive stat = higher in postmortem (LIV-PM) / higher in cases (disease); pH axis positive = higher at higher pH; agonal positive = higher after slow death; n = genes with both values
+signature	kind	axis	n_genes	spearman	spearman_boot95_low	spearman_boot95_high	pearson	pearson_boot95_low	pearson_boot95_high
+LIV-PM Liharska (ST1)	livpm	pH axis v2 (positive = higher at higher pH)	13400	-0.2375	-0.2539	-0.2221	-0.2414	-0.2572	-0.2263
+LIV-PM Liharska (ST1)	livpm	agonal axis (positive = higher after slow death)	13632	0.2172	0.2017	0.2324	0.2422	0.2277	0.2575
+LIV-PM Collado-Torres reproduction of Liharska	livpm	pH axis v2 (positive = higher at higher pH)	13400	-0.2377	-0.2532	-0.2213	-0.2415	-0.2566	-0.2254
+LIV-PM Collado-Torres reproduction of Liharska	livpm	agonal axis (positive = higher after slow death)	13643	0.2173	0.2027	0.2326	0.2422	0.2278	0.2569
+LIV-PM Collado-Torres, no qSVA	livpm	pH axis v2 (positive = higher at higher pH)	13400	-0.3338	-0.3496	-0.3177	-0.3318	-0.3474	-0.3167
+LIV-PM Collado-Torres, no qSVA	livpm	agonal axis (positive = higher after slow death)	13643	0.2914	0.2761	0.3065	0.3179	0.3032	0.3319
+LIV-PM Collado-Torres, with qSVA	livpm	pH axis v2 (positive = higher at higher pH)	13400	0.0759	0.0597	0.0937	0.0703	0.0542	0.0876
+LIV-PM Collado-Torres, with qSVA	livpm	agonal axis (positive = higher after slow death)	13643	0.167	0.1504	0.1819	0.1763	0.1596	0.1914
+SCZ1	disease	pH axis v2 (positive = higher at higher pH)	13441	0.0676	0.0522	0.0848	0.0415	0.026	0.0575
+SCZ1	disease	agonal axis (positive = higher after slow death)	13540	0.3051	0.29	0.3208	0.3282	0.3114	0.3443
+SCZ2	disease	pH axis v2 (positive = higher at higher pH)	13576	0.0739	0.059	0.0904	0.0739	0.0591	0.0897
+SCZ2	disease	agonal axis (positive = higher after slow death)	13470	0.3169	0.3007	0.3326	0.3051	0.2893	0.3204
+ALZ1	disease	pH axis v2 (positive = higher at higher pH)	13801	-0.2064	-0.2211	-0.1892	-0.2132	-0.2278	-0.1971
+ALZ1	disease	agonal axis (positive = higher after slow death)	13615	0.376	0.3612	0.3905	0.3625	0.3496	0.3772
+ALZ2	disease	pH axis v2 (positive = higher at higher pH)	13620	-0.3924	-0.4066	-0.3773	-0.386	-0.3997	-0.3723
+ALZ2	disease	agonal axis (positive = higher after slow death)	13640	0.4174	0.4042	0.4311	0.3927	0.38	0.4062
+PD1	disease	pH axis v2 (positive = higher at higher pH)	13400	-0.1513	-0.1671	-0.1348	-0.1397	-0.1563	-0.1234
+PD1	disease	agonal axis (positive = higher after slow death)	13632	0.4202	0.4063	0.4338	0.4279	0.4141	0.4408
+PD2	disease	pH axis v2 (positive = higher at higher pH)	13400	-0.1241	-0.1401	-0.1076	-0.1087	-0.1247	-0.0922
+PD2	disease	agonal axis (positive = higher after slow death)	13632	0.1195	0.1033	0.1353	0.1278	0.1118	0.1429
+LIV-PM Liharska (ST1) | pH and agonal axes removed	residual	pH axis v2 (positive = higher at higher pH)	12134	-0.0025	-0.0179	0.0159	-0.0019	-0.017	0.0158
+LIV-PM Liharska (ST1) | pH and agonal axes removed	residual	agonal axis (positive = higher after slow death)	12134	-0.0213	-0.0388	-0.0061	0.0037	-0.0132	0.0187
+LIV-PM Collado-Torres, no qSVA | pH and agonal axes removed	residual	pH axis v2 (positive = higher at higher pH)	12137	-0.0162	-0.0324	0.0022	-0.0033	-0.0192	0.015
+LIV-PM Collado-Torres, no qSVA | pH and agonal axes removed	residual	agonal axis (positive = higher after slow death)	12137	-0.0268	-0.0437	-0.0092	0.0024	-0.0139	0.0187
+LIV-PM Collado-Torres, with qSVA | pH and agonal axes removed	residual	pH axis v2 (positive = higher at higher pH)	12137	0.0077	-0.0101	0.0263	0.0006	-0.0182	0.0185
+LIV-PM Collado-Torres, with qSVA | pH and agonal axes removed	residual	agonal axis (positive = higher after slow death)	12137	-0.0041	-0.0218	0.0131	-0.0051	-0.0231	0.0115
+SCZ1 | pH and agonal axes removed	residual	pH axis v2 (positive = higher at higher pH)	12091	0.0286	0.0109	0.046	0.0054	-0.0112	0.0226
+SCZ1 | pH and agonal axes removed	residual	agonal axis (positive = higher after slow death)	12091	0.0031	-0.0135	0.0211	-0.0026	-0.0219	0.0172
+SCZ2 | pH and agonal axes removed	residual	pH axis v2 (positive = higher at higher pH)	12070	0.0029	-0.0154	0.0212	-0.0009	-0.0183	0.0166
+SCZ2 | pH and agonal axes removed	residual	agonal axis (positive = higher after slow death)	12070	0.0313	0.0153	0.0488	-0.0056	-0.0241	0.0127

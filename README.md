@@ -50,6 +50,13 @@ The first step rebuilds from the delivery folder and records which files each fi
 those files into `figures/data/` (or into `supplementary_notes/<note>/data/` when only that note's figures read the file)
 and rewrites the manifests; the third checks that the repository copy rebuilds; the fourth checks the files against the manifests.
 
+## Interactive figures
+
+Two single-file HTML pages, each opened by downloading the file and opening it in a browser:
+
+- [`supplementary/sz-profiling-corpus.html`](supplementary/sz-profiling-corpus.html): the schizophrenia expression profiling corpus (Fig. 1).
+- [`supplementary/sz-fig2c-interactive.html`](supplementary/sz-fig2c-interactive.html): recurrent genes by study (Fig. 2c).
+
 ## Other folders
 
 - `supplementary/`: supplementary tables and data (tab-separated, `#` headers), provenance in `supplementary/provenance/`.
